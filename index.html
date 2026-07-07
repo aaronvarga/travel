@@ -234,6 +234,22 @@ main>section>h2+p{margin:0 0 30px;color:var(--muted);max-width:760px;font-size:1
 .budget-tbl td:last-child,.budget-tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .budget-tbl tr:last-child td{border-bottom:0;font-weight:700}
 .budget-scroll{overflow-x:auto}
+.length-table{table-layout:fixed}
+.length-table th:first-child,.length-table td:first-child{width:18%}
+.length-table th:nth-child(2),.length-table td:nth-child(2){width:24%}
+.length-table th:last-child,.length-table td:last-child{width:58%;text-align:left;font-variant-numeric:normal;white-space:normal}
+.length-table td{vertical-align:middle;overflow-wrap:break-word}
+@media (max-width:700px){
+  .length-table,.length-table tbody,.length-table tr,.length-table th,.length-table td{display:block;width:100%}
+  .length-table th:first-child,.length-table td:first-child,
+  .length-table th:nth-child(2),.length-table td:nth-child(2),
+  .length-table th:last-child,.length-table td:last-child{width:100%}
+  .length-table tr:first-child{display:none}
+  .length-table tr{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .length-table td{padding:0;border-bottom:0}
+  .length-table td+td{margin-top:7px}
+  .length-table td:nth-child(2){font-weight:700;color:var(--ink)}
+}
 .twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}
 .listcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
 .listcard h4{margin:0 0 12px;font-size:1.2rem;font-weight:600}
@@ -678,7 +694,7 @@ footer a{color:var(--muted)}
   <section id="length">
     <p class="eyebrow">Length Verdicts</p>
     <h2>Where the days are doing real work</h2>
-    <div class="budget-scroll"><table class="budget-tbl"><tr><th>Trip</th><th>Length verdict</th><th>Why it matters</th></tr>
+    <div class="budget-scroll"><table class="budget-tbl length-table"><tr><th>Trip</th><th>Length verdict</th><th>Why it matters</th></tr>
       <tr><td><b>Portugal</b></td><td>12 nights is right.</td><td>Three bases stay calm; the cold-water issue does not improve enough by cutting or stretching the route.</td></tr>
       <tr><td><b>Madeira + Crete</b></td><td>13 nights away / 12 hotel nights is right.</td><td>Four Funchal nights buy two weather shots at a clear Arieiro summit; the Lisbon buffer night is wind insurance, not a base; Chania 5 + Rethymno 2 is the honest squeeze it costs.</td></tr>
       <tr><td><b>Madeira + Sicily</b></td><td>13 nights away / 12 hotel nights, and it is maxed out.</td><td>Five Funchal nights plus the Tuesday LIS-PMO hinge force Sicily down to six nights and two bases; there is no room left to re-add Ortigia without breaking the cap or the calendar.</td></tr>
