@@ -968,7 +968,7 @@ footer a{color:var(--muted)}
 
 <nav>
   <a href="../index.html" class="nav-home" style="background:var(--ink);color:#fff;border-color:var(--ink);font-weight:800">← All Trips</a>
-  <a href="#overview">Overview</a><a href="#health-check">Health-Check</a><a href="#timing">Best Time</a><a href="#map">Trip Map</a><a href="#stays">Where We Stay</a><a href="#getting-around">Getting Around</a><a href="#air-travel">Air Travel</a><a href="#itinerary">Day by Day</a><a href="#budget">Budget</a><a href="#tips">Travel Tips</a><a href="#status">Settled & Open</a>
+  <a href="#overview">Overview</a><a href="#health-check">Health-Check</a><a href="#timing">Best Time</a><a href="#map">Trip Map</a><a href="#stays">Where We Stay</a><a href="#getting-around">Getting Around</a><a href="#air-travel">Air Travel</a><a href="#calendar">Calendar</a><a href="#itinerary">Day by Day</a><a href="#budget">Budget</a><a href="#tips">Travel Tips</a><a href="#status">Settled & Open</a>
 
 <a href="#photo-guide">Photo Guide</a><a href="#food-guide">Food Guide</a>
 </nav>
@@ -1097,6 +1097,133 @@ footer a{color:var(--muted)}
         <div class="prow"><span>Ryanair?</span><strong>Does NOT fly LIS-ATH; only ATH-CHQ (4×/wk turboprop)</strong></div>
         <div class="tip">Ride the protected Aegean/TAP or Aer Lingus through-ticket and carry-ons are included — no bag add. Cherry-picking a low-cost leg would cost ~$130 for four carry-ons; personal items stay free.</div>
       </div>
+    </div>
+  </section>
+
+  <section id="calendar" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">Week at a Glance</p>
+      <h2>The trip as an Outlook-style calendar</h2>
+      <p>The same 13 days as colored time blocks, coded by <b>activity</b> so a color means the same thing on every itinerary. Coarse by design (a car pickup plus its drive is one block). <b>Block times are schematic, not real flight times</b> &mdash; they show sequence and rough time-of-day snapped to a 2-hour grid, since 2027 schedules are not published yet. When real flights are booked, set each block to departure minus a check-in buffer.</p>
+    </div>
+
+    <style>
+      .cal-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+      .cal-legend span{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:700;color:var(--ink)}
+      .cal-legend i{width:16px;height:16px;border-radius:5px;display:inline-block}
+      .lg-air{background:#3d4d74}.lg-car{background:var(--gold)}
+      .lg-hike{background:var(--c3)}.lg-water{background:var(--c1)}.lg-town{background:var(--c2)}.lg-rest{background:#8a857c}
+      .cal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+      .cal-week{min-width:780px;margin:0 0 22px}
+      .cal-wklabel{font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+      .cal-hd{display:grid;grid-template-columns:repeat(8,1fr);gap:0}
+      .cal-hd .dh{padding:6px 4px;text-align:center;border-bottom:2px solid var(--line)}
+      .cal-hd .dh .dow{display:block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+      .cal-hd .dh .dnum{display:block;font-size:1.02rem;font-weight:800;color:var(--ink);line-height:1.1}
+      .cal-hd .dh.off{opacity:.4}
+      .cal-hd .dh.trip{background:rgba(31,111,120,.06)}
+      .cal-hd .dh.trip .dnum{color:var(--c1)}
+      .cal-hd .gut{border-bottom:2px solid var(--line)}
+      .cal-bd{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(9,32px);position:relative;
+        background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px),
+          repeating-linear-gradient(to right,transparent 0 calc(12.5% - 1px),var(--line) calc(12.5% - 1px) 12.5%)}
+      .cal-bd .tl{grid-column:1;font-size:.62rem;font-weight:700;color:var(--muted);padding:2px 4px 0 4px;text-align:right}
+      .ev{margin:2px;border-radius:6px;padding:3px 6px;font-size:.68rem;line-height:1.14;font-weight:700;color:#fff;overflow:hidden;
+        position:relative;z-index:2;box-shadow:0 1px 3px rgba(30,32,28,.2);display:flex;align-items:flex-start}
+      .ev.sm{font-size:.62rem;align-items:center}
+      .ev.air{background:#3d4d74}
+      .ev.car{background:var(--gold);color:#3a2f12;box-shadow:0 1px 2px rgba(120,90,20,.28)}
+      .ev.hike{background:var(--c3)}.ev.water{background:var(--c1)}.ev.town{background:var(--c2)}
+      .ev.rest{background:#8a857c}
+      @media(max-width:640px){.cal-week{min-width:720px}}
+    </style>
+
+    <div class="cal-legend">
+      <span><i class="lg-air"></i>✈️ Air travel</span>
+      <span><i class="lg-car"></i>🚗 Car &amp; transfers</span>
+      <span><i class="lg-hike"></i>🥾 Hike &amp; nature</span>
+      <span><i class="lg-water"></i>🏖️ Beach &amp; water</span>
+      <span><i class="lg-town"></i>🏛️ Town, culture &amp; food</span>
+      <span><i class="lg-rest"></i>🛏️ Arrival / buffer / rest</span>
+    </div>
+
+    <div class="cal-scroll">
+
+      <div class="cal-week">
+        <p class="cal-wklabel">Week 1 &middot; Jun 6&ndash;12</p>
+        <div class="cal-hd">
+          <div class="gut"></div>
+          <div class="dh off"><span class="dow">Sun</span><span class="dnum">6</span></div>
+          <div class="dh off"><span class="dow">Mon</span><span class="dnum">7</span></div>
+          <div class="dh off"><span class="dow">Tue</span><span class="dnum">8</span></div>
+          <div class="dh trip"><span class="dow">Wed</span><span class="dnum">9</span></div>
+          <div class="dh trip"><span class="dow">Thu</span><span class="dnum">10</span></div>
+          <div class="dh trip"><span class="dow">Fri</span><span class="dnum">11</span></div>
+          <div class="dh trip"><span class="dow">Sat</span><span class="dnum">12</span></div>
+        </div>
+        <div class="cal-bd">
+          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
+          <div class="ev air" style="grid-column:5;grid-row:8/10">✈️ Depart PIT — overnight red-eye</div>
+          <div class="ev air" style="grid-column:6;grid-row:2/4">✈️ Arrive Lisbon</div>
+          <div class="ev rest" style="grid-column:6;grid-row:4/9">🛏️ Cascais — recover, coast</div>
+          <div class="ev town" style="grid-column:7;grid-row:3/6">🏛️ Sintra — Regaleira / Pena</div>
+          <div class="ev town" style="grid-column:7;grid-row:6/9">🏛️ Cascais evening</div>
+          <div class="ev car sm" style="grid-column:8;grid-row:2/3">🚗 Drive to LIS airport</div>
+          <div class="ev air" style="grid-column:8;grid-row:3/7">✈️ LIS → ATH → CHQ</div>
+          <div class="ev car sm" style="grid-column:8;grid-row:7/8">🚗 Chania car pickup</div>
+          <div class="ev town sm" style="grid-column:8;grid-row:8/9">🏛️ Chania — dinner</div>
+        </div>
+      </div>
+
+      <div class="cal-week">
+        <p class="cal-wklabel">Week 2 &middot; Jun 13&ndash;19</p>
+        <div class="cal-hd">
+          <div class="gut"></div>
+          <div class="dh trip"><span class="dow">Sun</span><span class="dnum">13</span></div>
+          <div class="dh trip"><span class="dow">Mon</span><span class="dnum">14</span></div>
+          <div class="dh trip"><span class="dow">Tue</span><span class="dnum">15</span></div>
+          <div class="dh trip"><span class="dow">Wed</span><span class="dnum">16</span></div>
+          <div class="dh trip"><span class="dow">Thu</span><span class="dnum">17</span></div>
+          <div class="dh trip"><span class="dow">Fri</span><span class="dnum">18</span></div>
+          <div class="dh trip"><span class="dow">Sat</span><span class="dnum">19</span></div>
+        </div>
+        <div class="cal-bd">
+          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
+          <div class="ev town" style="grid-column:2;grid-row:3/9">🏛️ Chania old town + beaches</div>
+          <div class="ev car sm" style="grid-column:3;grid-row:2/3">🚗 Drive to Kissamos</div>
+          <div class="ev water" style="grid-column:3;grid-row:3/7">🏖️ Balos boat + lagoon</div>
+          <div class="ev car sm" style="grid-column:3;grid-row:7/8">🚗 Drive back</div>
+          <div class="ev car sm" style="grid-column:4;grid-row:2/3">🚗 Drive west</div>
+          <div class="ev water" style="grid-column:4;grid-row:3/8">🏖️ Elafonissi / Falasarna</div>
+          <div class="ev car sm" style="grid-column:5;grid-row:2/3">🚗 Drive to Imbros</div>
+          <div class="ev hike" style="grid-column:5;grid-row:3/8">🥾 Imbros Gorge + south swim</div>
+          <div class="ev water" style="grid-column:6;grid-row:3/9">🏖️ Chania flex — beach / harbor</div>
+          <div class="ev car" style="grid-column:7;grid-row:3/5">🚗 Chania → Rethymno (via Arkadi)</div>
+          <div class="ev town" style="grid-column:7;grid-row:5/9">🏛️ Rethymno — old town, Fortezza</div>
+          <div class="ev water" style="grid-column:8;grid-row:3/7">🏖️ Preveli + Kourtaliotiko</div>
+        </div>
+      </div>
+
+      <div class="cal-week">
+        <p class="cal-wklabel">Week 3 &middot; Jun 20&ndash;26</p>
+        <div class="cal-hd">
+          <div class="gut"></div>
+          <div class="dh trip"><span class="dow">Sun</span><span class="dnum">20</span></div>
+          <div class="dh trip"><span class="dow">Mon</span><span class="dnum">21</span></div>
+          <div class="dh off"><span class="dow">Tue</span><span class="dnum">22</span></div>
+          <div class="dh off"><span class="dow">Wed</span><span class="dnum">23</span></div>
+          <div class="dh off"><span class="dow">Thu</span><span class="dnum">24</span></div>
+          <div class="dh off"><span class="dow">Fri</span><span class="dnum">25</span></div>
+          <div class="dh off"><span class="dow">Sat</span><span class="dnum">26</span></div>
+        </div>
+        <div class="cal-bd">
+          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
+          <div class="ev town" style="grid-column:2;grid-row:3/9">🏛️ Rethymno old town + last swim</div>
+          <div class="ev car sm" style="grid-column:3;grid-row:2/3">🚗 Drive to airport</div>
+          <div class="ev air" style="grid-column:3;grid-row:3/8">✈️ CHQ/HER → ATH → PIT</div>
+        </div>
+      </div>
+
     </div>
   </section>
 
