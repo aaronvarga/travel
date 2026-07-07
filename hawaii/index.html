@@ -973,7 +973,7 @@ footer a{color:var(--muted)}
 
 <nav>
   <a href="../index.html" class="nav-home" style="background:var(--ink);color:#fff;border-color:var(--ink);font-weight:800">← All Trips</a>
-  <a href="#overview">Overview</a><a href="#health-check">Health-Check</a><a href="#timing">Best Time to Go</a><a href="#map">Trip Map</a><a href="#stays">Where We Stay</a><a href="#getting-around">Getting Around</a><a href="#itinerary">Day by Day</a><a href="#budget">Budget</a><a href="#tips">Travel Tips</a><a href="#balance">Trip Balance</a><a href="#status">Settled &amp; Open</a>
+  <a href="#overview">Overview</a><a href="#health-check">Health-Check</a><a href="#timing">Best Time to Go</a><a href="#map">Trip Map</a><a href="#stays">Where We Stay</a><a href="#getting-around">Getting Around</a><a href="#itinerary">Day by Day</a><a href="#budget">Budget</a><a href="#tips">Travel Tips</a><a href="#balance">Trip Balance</a><a href="#status">Settled &amp; Open</a><a href="#photo-guide">Photo Guide</a><a href="#food-guide">Food Guide</a>
 </nav>
 <main>
   <section id="overview">
@@ -1482,6 +1482,720 @@ footer a{color:var(--muted)}
     <div class="status"><div class="scol settled"><h4>Settled</h4><div class="row"><b>Route shape</b><span>Oahu + Big Island, one island hop, no Maui/Kauai add-on.</span></div><div class="row"><b>Timing</b><span>Early June beats July and late August for the summer window.</span></div><div class="row"><b>Length verdict</b><span>Just right but lean: 9 hotel nights plus the return red-eye; 8 nights is rushed, 10 starts crowding the cap.</span></div><div class="row"><b>PTO logic</b><span>No Thursday evening departure; it saves no real PTO for Hawaii.</span></div><div class="row"><b>Family balance</b><span>Water/beach remains the biggest share without losing Volcanoes NP.</span></div><div class="row"><b>Budget tier</b><span>Cap-fit only with practical lodging, one major paid splurge, limited Oahu car use, and KOA open-jaw return flights.</span></div></div><div class="scol open"><h4>Open</h4><div class="row"><b>Exact flights</b><span>Confirm PIT-HNL and KOA-PIT open-jaw fares once June 2027 schedules are fully loaded.</span></div><div class="row"><b>Waikiki lodging</b><span>Choose hotel vs condo based on total fees, not nightly headline rate.</span></div><div class="row"><b>Snorkel/luau choice</b><span>Pick one major paid splurge unless airfare and lodging come in below the midrange.</span></div><div class="row"><b>Volcano status</b><span>Check NPS/USGS immediately before travel for eruption/closure/vog conditions.</span></div></div></div>
   </section>
   <footer>Built from the same single-page itinerary structure as the Costa Rica source. Images are fetched from Wikimedia Commons and embedded as base64; map links open in Google Maps.</footer>
+  <section id="photo-guide" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">For The Photographer</p>
+      <h2>Photographer Guide</h2>
+      <p>The best frames on this trip are edge-of-day seascapes on Oahu, the Milky Way over Mauna Kea on the new-moon night, and Kīlauea's crater glow after dark. Treat midday as family and beach time; shoot dawn, dusk, and one dark night.</p>
+    </div>
+    <style id="pg-style">
+#photo-guide{--pg-ink:#171717;--pg-muted:#66615b;--pg-panel:#fff;--pg-line:#ded8cf;--pg-blue:#1e6075;--pg-gold:#b27636;--pg-red:#a34e3b;color:var(--pg-ink);}
+#photo-guide .pg-wrap{border:1px solid var(--pg-line);border-radius:16px;background:#fffdfa;overflow:hidden;box-shadow:0 20px 50px -34px rgba(0,0,0,.4);}
+#photo-guide .pg-wrap>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px clamp(16px,3vw,30px);background:#173c38;color:#fff;}
+#photo-guide .pg-wrap>summary::-webkit-details-marker{display:none;}
+#photo-guide .pg-wrap>summary .pg-sum-ico{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+#photo-guide .pg-wrap>summary .pg-sum-txt{flex:1;min-width:0;}
+#photo-guide .pg-wrap>summary h3{margin:0;font-size:clamp(1.15rem,2.4vw,1.5rem);color:#fff;font-weight:700;}
+#photo-guide .pg-wrap>summary p{margin:3px 0 0;color:#cfe3dc;font-size:.9rem;}
+#photo-guide .pg-wrap>summary .pg-chev{flex:0 0 auto;font-size:1.5rem;transition:transform .25s;color:#cfe3dc;}
+#photo-guide .pg-wrap[open]>summary .pg-chev{transform:rotate(180deg);}
+#photo-guide .pg-body{padding:clamp(16px,3vw,34px);}
+#photo-guide p{margin:0;}
+#photo-guide .pg-muted,#photo-guide .pg-strategy-card p,#photo-guide .pg-area-head p,#photo-guide .pg-grid p,#photo-guide li{color:var(--pg-muted);}
+#photo-guide .pg-eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:800;color:var(--pg-gold);margin:0 0 6px;}
+#photo-guide .pg-strategy{margin:0 0 12px;}
+#photo-guide .pg-strategy-card h2{margin:.1em 0 .35em;font-size:clamp(1.4rem,3vw,2rem);font-weight:700;}
+#photo-guide .pg-shots ul,#photo-guide .pg-grid ul{margin:0;padding-left:18px;}
+#photo-guide .pg-warning{margin-top:14px;padding:14px 16px;border-left:4px solid var(--pg-red);background:#fff3ee;border-radius:0 8px 8px 0;color:#5c3027;}
+#photo-guide .pg-area{margin-top:44px;padding-top:24px;border-top:3px solid var(--pg-blue);}
+#photo-guide .pg-area:first-of-type{margin-top:20px;}
+#photo-guide .pg-area-head{max-width:820px;margin-bottom:22px;}
+#photo-guide .pg-area-head h2{margin:.05em 0 .3em;font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:700;}
+#photo-guide .pg-spot{overflow:hidden;margin:0 0 30px;border:1px solid var(--pg-line);border-radius:12px;background:var(--pg-panel);}
+#photo-guide .pg-spot-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;padding:16px 18px;border-bottom:1px solid var(--pg-line);background:#fffdfa;}
+#photo-guide .pg-spot-head .pg-tag{grid-column:1/-1;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:800;color:var(--pg-blue);}
+#photo-guide .pg-spot-head h3{margin:0;font-size:clamp(1.15rem,2.4vw,1.45rem);font-weight:700;}
+#photo-guide .pg-map{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:6px 12px;border:1px solid var(--pg-line);border-radius:999px;color:var(--pg-ink);text-decoration:none;font-weight:800;white-space:nowrap;background:#fff;font-size:.85rem;}
+#photo-guide .pg-map:hover{border-color:var(--pg-gold);color:var(--pg-red);}
+#photo-guide .pg-gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:120px;gap:8px;padding:16px 18px;}
+#photo-guide .pg-gitem{border:0;padding:0;cursor:pointer;background-size:cover;background-position:center;background-color:#e9e4da;border-radius:9px;position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;}
+#photo-guide .pg-gitem.pg-hero{grid-column:span 2;grid-row:span 2;}
+#photo-guide .pg-gitem::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.28));opacity:0;transition:opacity .25s;}
+#photo-guide .pg-gitem:hover{transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(0,0,0,.55);z-index:2;}
+#photo-guide .pg-gitem:hover::after{opacity:1;}
+#photo-guide .pg-gcount{position:absolute;left:12px;bottom:11px;color:#fff;font-weight:800;font-size:.8rem;text-shadow:0 1px 6px rgba(0,0,0,.6);z-index:2;background:rgba(0,0,0,.32);padding:4px 10px;border-radius:999px;backdrop-filter:blur(3px);}
+#photo-guide .pg-spot-meta{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,1fr);gap:22px;align-items:start;padding:0 18px 18px;}
+#photo-guide .pg-grid,#photo-guide .pg-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border:1px solid var(--pg-line);border-radius:10px;overflow:hidden;}
+#photo-guide .pg-shots{margin-top:14px;}
+#photo-guide .pg-grid section,#photo-guide .pg-shots section{padding:14px 16px;border-bottom:1px solid var(--pg-line);}
+#photo-guide .pg-grid section:nth-child(odd),#photo-guide .pg-shots section:nth-child(odd){border-right:1px solid var(--pg-line);}
+#photo-guide .pg-grid section:nth-last-child(-n+2),#photo-guide .pg-shots section{border-bottom:0;}
+#photo-guide .pg-grid h4,#photo-guide .pg-shots h4{margin:0 0 6px;font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--pg-ink);}
+#photo-guide .pg-meta-side{display:flex;flex-direction:column;gap:14px;position:sticky;top:64px;}
+#photo-guide .pg-map-embed{position:relative;width:100%;aspect-ratio:4/3;background:#e9e4da;border-radius:8px;overflow:hidden;}
+#photo-guide .pg-map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+#photo-guide .pg-inspiration-links{padding:14px 16px;border:1px solid var(--pg-line);border-radius:8px;background:#fffaf0;}
+#photo-guide .pg-inspiration-links h4{margin:0 0 6px;font-size:.9rem;}
+#photo-guide .pg-inspiration-links p{margin:0 0 10px;font-size:.82rem;}
+#photo-guide .pg-inspiration-buttons{display:flex;flex-wrap:wrap;gap:8px;}
+#photo-guide .pg-inspiration-buttons a{display:inline-flex;align-items:center;min-height:32px;padding:6px 11px;border:1px solid var(--pg-line);border-radius:999px;background:#fff;color:var(--pg-ink);font-size:.8rem;font-weight:800;text-decoration:none;}
+#photo-guide .pg-inspiration-buttons a:hover{border-color:var(--pg-gold);color:var(--pg-red);}
+@media(max-width:820px){#photo-guide .pg-spot-meta{grid-template-columns:1fr;}#photo-guide .pg-meta-side{position:static;}#photo-guide .pg-grid,#photo-guide .pg-shots,#photo-guide .pg-spot-head{grid-template-columns:1fr;}#photo-guide .pg-grid section:nth-child(odd),#photo-guide .pg-shots section:nth-child(odd){border-right:0;}#photo-guide .pg-grid section,#photo-guide .pg-shots section:first-child{border-bottom:1px solid var(--pg-line);}#photo-guide .pg-map{justify-self:start;}}
+@media(max-width:760px){#photo-guide .pg-gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px;}}
+.pg-lightbox{position:fixed;inset:0;z-index:3000;display:none;align-items:center;justify-content:center;background:rgba(12,10,8,.94);backdrop-filter:blur(4px);}
+.pg-lightbox.open{display:flex;}
+.pg-lightbox img{max-width:92vw;max-height:86vh;border-radius:8px;box-shadow:0 30px 80px -20px #000;}
+.pg-lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#f3ece2;font-size:.9rem;}
+.pg-lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;font-size:1.7rem;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.pg-lb-btn:hover{background:rgba(0,0,0,.6);}
+.pg-lb-prev{left:18px;}.pg-lb-next{right:18px;}
+.pg-lb-close{position:absolute;top:16px;right:18px;width:44px;height:44px;font-size:1.4rem;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;cursor:pointer;}
+.pg-lb-count{position:absolute;top:22px;left:22px;color:#cfc6ba;font-weight:700;font-size:.85rem;}
+</style>
+    <details class="pg-wrap">
+      <summary>
+        <span class="pg-sum-ico">📸</span>
+        <span class="pg-sum-txt"><h3>Landscape photo spots — Oahu + Big Island</h3><p>Exact map targets, light timing, iconic + hidden angles, and click-to-open photo galleries. Tap to expand.</p></span>
+        <span class="pg-chev">▾</span>
+      </summary>
+      <div class="pg-body">
+        <section class="pg-strategy" id="pg-strategy">
+      <div class="pg-strategy-card">
+        <p class="pg-eyebrow">How to shoot the trip</p>
+        <h2>Chase the edges of the day — and one dark night</h2>
+        <p>The headline Hawaii frames are sunrise seascapes on Oahu's windward coast, the Milky Way over Mauna Kea on the new-moon night (~June 9, 2027), and Kīlauea's after-dark glow. Midday is harsh and crowded — bank it as beach and family time and shoot the golden edges.</p>
+        <div class="pg-warning">Verify Kīlauea's eruption status, air quality (vog), and viewing access before building a night around it; the Mauna Kea summit needs a 4WD and altitude caution (shoot from the 9,200 ft visitor center if unsure); Hanauma Bay needs a timed reservation. Plug each target into PhotoPills once 2027 dates lock.</div>
+      </div>
+      <aside class="kit">
+        <p class="pg-eyebrow">Useful kit</p>
+        <ul>
+          <li>16-35mm for seascapes, cliffs, the caldera, and tight overlooks.</li>
+          <li>24-105mm travel zoom for family + landscape flexibility.</li>
+          <li>70-200mm for surf compression, island layers, and Mauna Kea foregrounds.</li>
+          <li>Fast wide (14-24mm f/2.8) + sturdy tripod for the Milky Way and lava glow.</li>
+          <li>CPL for turquoise water and reefs; 3-6 stop ND for waterfalls and surf.</li>
+          <li>Warm layers + gloves for the freezing Mauna Kea summit; red headlamp for night work.</li>
+        </ul>
+      </aside>
+    </section>
+        <section class="pg-area" id="pg-oahu">
+    <div class="pg-area-head">
+      <p class="pg-eyebrow">Base: Oahu</p>
+      <h2>Oahu</h2>
+      <p>June light: sunrise around 5:50, sunset around 19:15. The windward coast (Lanikai, Pali, Hanauma) is the sunrise money; the North Shore is calm in summer and best at golden hour.</p>
+    </div>
+    <article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Iconic sunrise seascape</p>
+    <h3>Waikiki Beach + Diamond Head</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Diamond%20Head%20Crater%20Honolulu%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1507876466758-bc54f384809c?auto=format&fit=crop&w=1800&q=80" data-cap="Waikiki Beach + Diamond Head &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1507876466758-bc54f384809c?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Waikiki Beach + Diamond Head"><span class="pg-gcount">4 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1524565308556-b777381b2f73?auto=format&fit=crop&w=1800&q=80" data-cap="Waikiki Beach + Diamond Head &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1524565308556-b777381b2f73?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Waikiki Beach + Diamond Head"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/15663534/pexels-photo-15663534.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Waikiki Beach + Diamond Head &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/15663534/pexels-photo-15663534.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 3 of Waikiki Beach + Diamond Head"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/5232473/pexels-photo-5232473.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Waikiki Beach + Diamond Head &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/5232473/pexels-photo-5232473.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 4 of Waikiki Beach + Diamond Head"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>Diamond Head crater overlooks the 1.5-mile Waikiki shoreline in central Honolulu.</p></section>
+      <section><h4>How To Get There</h4><p>Walk or taxi to Waikiki Beach; the Diamond Head trail is a 1.6-mile hike ($5 entry, opens 6:00 AM). No permit for beach photography.</p></section>
+      <section><h4>Best Time</h4><p>Sunrise 5:50–6:15 for golden light on Diamond Head; blue hour 30 min before for pastels; sunset for a warm glow.</p></section>
+      <section><h4>Field Tips</h4><p>Start 45 min before sunrise for pre-dawn pastels; a CPL cuts glare and saturates the reef water; arrive by 6:30 to beat crowds.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Diamond Head rising from turquoise water at sunrise with the Waikiki skyline (16–35mm).</li><li>Curved beach, hotels, and crater from the Diamond Head summit.</li><li>A surfer paddling out at golden hour with the crater framed behind.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Shoot from Fort DeRussy Park at the west end looking back at Diamond Head at sunset — fewer crowds.</li><li>Frame palms and beach umbrellas against the volcano for foreground layers.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Waikiki Beach + Diamond Head" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sDiamond+Head+Crater+Honolulu+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Waikiki%20Beach%20%2B%20Diamond%20Head%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=diamondhead" target="_blank" rel="noreferrer">IG · diamondhead</a><a href="https://www.instagram.com/explore/search/keyword/?q=waikiki" target="_blank" rel="noreferrer">IG · waikiki</a><a href="https://500px.com/search?q=Waikiki%20Beach%20%2B%20Diamond%20Head%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Waikiki%20Beach%20%2B%20Diamond%20Head%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Turquoise crater cove</p>
+    <h3>Hanauma Bay Overlook</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Hanauma%20Bay%20State%20Park%20Honolulu%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1651346907013-f65ca68a93c7?auto=format&fit=crop&w=1800&q=80" data-cap="Hanauma Bay Overlook &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1651346907013-f65ca68a93c7?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Hanauma Bay Overlook"><span class="pg-gcount">3 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1580432958970-ec46508dcfb4?auto=format&fit=crop&w=1800&q=80" data-cap="Hanauma Bay Overlook &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1580432958970-ec46508dcfb4?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Hanauma Bay Overlook"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1640966684633-0b8f631d720d?auto=format&fit=crop&w=1800&q=80" data-cap="Hanauma Bay Overlook &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1640966684633-0b8f631d720d?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Hanauma Bay Overlook"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>A protected marine sanctuary in a natural amphitheater of turquoise water on Kalanianaʻole Hwy.</p></section>
+      <section><h4>How To Get There</h4><p>Free overlook above the lot; beach entry is $7 (reservation required, closed Mon–Tue), open from 6:45 AM. Steep stairs to the sand.</p></section>
+      <section><h4>Best Time</h4><p>Sunrise for soft light on the cliffs; mid-morning 9:00–10:00 for the most saturated turquoise and visible reef.</p></section>
+      <section><h4>Field Tips</h4><p>A polarizer is essential to reveal the reef beneath the surface; a graduated ND balances a bright sky against the darker crater walls.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Wide panorama of the crater bay — turquoise water, dark volcanic cliffs, reef patterns beneath.</li><li>Elevated view of the curved beach, swimmers, and reef from the overlook.</li><li>Long shadows raking across the crater floor at sunrise.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Hike the nearby Makapuʻu Lighthouse Trail for an elevated angle over the bay and offshore islands.</li><li>Shoot the reef detail from the shallows with a CPL, crater walls behind.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Hanauma Bay Overlook" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sHanauma+Bay+State+Park+Honolulu+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Hanauma%20Bay%20Overlook%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=hanaumabay" target="_blank" rel="noreferrer">IG · hanaumabay</a><a href="https://500px.com/search?q=Hanauma%20Bay%20Overlook%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Hanauma%20Bay%20Overlook%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">White sand + twin islands</p>
+    <h3>Lanikai Beach + Mokulua Islands</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Lanikai%20Beach%20Kailua%20Oahu%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1576122800181-bc3194265f27?auto=format&fit=crop&w=1800&q=80" data-cap="Lanikai Beach + Mokulua Islands &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1576122800181-bc3194265f27?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Lanikai Beach + Mokulua Islands"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>A 2.5-mile stretch of powdery white sand in Kailua, with the twin Mokulua islands offshore.</p></section>
+      <section><h4>How To Get There</h4><p>Free street parking near Kalapawai Market, then a short walk to public beach access. Uncrowded early.</p></section>
+      <section><h4>Best Time</h4><p>Sunrise 5:50–6:20 for backlit sand and the Mokes in silhouette; blue hour for cool, moody tones.</p></section>
+      <section><h4>Field Tips</h4><p>Windward light is often backlit — embrace it for silhouettes and rim light; water is clearest before swimmers churn the sand.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Wide beach curve with the Mokulua islands on the horizon (24–35mm, low from the sand).</li><li>Twin islands compressed over turquoise water (70–200mm).</li><li>Islands reflected in wet sand at low tide.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Hike the short Kalapawai path for an elevated view over the beach and islands.</li><li>Frame the islands through palm trunks and fronds for depth.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Lanikai Beach + Mokulua Islands" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sLanikai+Beach+Kailua+Oahu+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Lanikai%20Beach%20%2B%20Mokulua%20Islands%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=lanikaibeach" target="_blank" rel="noreferrer">IG · lanikaibeach</a><a href="https://www.instagram.com/explore/search/keyword/?q=mokulua" target="_blank" rel="noreferrer">IG · mokulua</a><a href="https://500px.com/search?q=Lanikai%20Beach%20%2B%20Mokulua%20Islands%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Lanikai%20Beach%20%2B%20Mokulua%20Islands%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Legendary surf + golden hour</p>
+    <h3>North Shore — Waimea, Sunset &amp; Pipeline</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Waimea%20Bay%20Beach%20Park%20Haleiwa%20Oahu" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1476574898132-040f50db0a01?auto=format&fit=crop&w=1800&q=80" data-cap="North Shore — Waimea, Sunset &amp; Pipeline &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1476574898132-040f50db0a01?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of North Shore — Waimea, Sunset &amp; Pipeline"><span class="pg-gcount">4 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1746215186951-285967178e67?auto=format&fit=crop&w=1800&q=80" data-cap="North Shore — Waimea, Sunset &amp; Pipeline &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1746215186951-285967178e67?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of North Shore — Waimea, Sunset &amp; Pipeline"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1610236681520-b70aee1514a3?auto=format&fit=crop&w=1800&q=80" data-cap="North Shore — Waimea, Sunset &amp; Pipeline &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1610236681520-b70aee1514a3?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of North Shore — Waimea, Sunset &amp; Pipeline"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/4784090/pexels-photo-4784090.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="North Shore — Waimea, Sunset &amp; Pipeline &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/4784090/pexels-photo-4784090.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 4 of North Shore — Waimea, Sunset &amp; Pipeline"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>A 2-mile cluster of world-famous breaks along Haleiwa’s north coast; Waimea is calm in summer, Pipeline epic year-round.</p></section>
+      <section><h4>How To Get There</h4><p>Free parking at Waimea Bay or Sunset Beach Park; limited street parking at Pipeline — arrive early. Public access; respect surfers.</p></section>
+      <section><h4>Best Time</h4><p>Sunrise for backlit, glassy water; golden hour 18:45–19:15 for warm tones on breaking waves. June brings smaller, cleaner summer swells.</p></section>
+      <section><h4>Field Tips</h4><p>Bring a 200–400mm to isolate surfers without crowding the lineup; stay clear during dawn patrol (6:00–8:00 AM).</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Silhouetted surfer riding a wave against a warm sky at sunset.</li><li>Wave crest breaking over the reef with backlit spray.</li><li>Summer-calm Waimea Bay in soft turquoise and white sand.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Shoot from the elevated Kamehameha Hwy roadside for an unobstructed line on Pipeline.</li><li>Climb the short cliff behind Sunset Beach for a west-facing lineup view.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of North Shore — Waimea, Sunset &amp; Pipeline" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sWaimea+Bay+Beach+Park+Haleiwa+Oahu!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=North%20Shore%20%E2%80%94%20Waimea%2C%20Sunset%20and%20Pipeline%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=northshoreoahu" target="_blank" rel="noreferrer">IG · northshoreoahu</a><a href="https://www.instagram.com/explore/search/keyword/?q=banzaipipeline" target="_blank" rel="noreferrer">IG · banzaipipeline</a><a href="https://500px.com/search?q=North%20Shore%20%E2%80%94%20Waimea%2C%20Sunset%20and%20Pipeline%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=North%20Shore%20%E2%80%94%20Waimea%2C%20Sunset%20and%20Pipeline%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Dramatic windward vista</p>
+    <h3>Nuʻuanu Pali Lookout</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Nuuanu%20Pali%20Lookout%20Oahu%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1542741082-254873c23996?auto=format&fit=crop&w=1800&q=80" data-cap="Nuʻuanu Pali Lookout &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1542741082-254873c23996?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Nuʻuanu Pali Lookout"><span class="pg-gcount">2 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1602214767329-fb4d34d923f9?auto=format&fit=crop&w=1800&q=80" data-cap="Nuʻuanu Pali Lookout &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1602214767329-fb4d34d923f9?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Nuʻuanu Pali Lookout"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>An 1,186-ft overlook on the Pali Hwy with views of Kāneʻohe, Kailua, and the Koʻolau cliffs.</p></section>
+      <section><h4>How To Get There</h4><p>Drive north from Honolulu on the Pali Hwy; $7 parking, open 6:00 AM. Short walk to the railings. Notoriously windy.</p></section>
+      <section><h4>Best Time</h4><p>Sunrise for soft light on the Koʻolau cliffs and pastel sky; mid-morning for vivid greens and cloud formations.</p></section>
+      <section><h4>Field Tips</h4><p>Winds can exceed 40 mph — use a strap and a fast shutter (1/500+); a graduated ND balances the bright sky against the cliffs.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>180° panorama of the Koʻolau cliffs down to Kāneʻohe Bay (16–35mm).</li><li>Jagged ridgeline with clouds weaving between the peaks.</li><li>Soft light on the patchwork of Kailua and Kāneʻohe below.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Shoot from the parking-area edges toward the Pali Pass for fewer photographers and dramatic skies.</li><li>Catch morning mist rolling over the cliffs for layered, moody frames.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Nuʻuanu Pali Lookout" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sNuuanu+Pali+Lookout+Oahu+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Nu%CA%BBuanu%20Pali%20Lookout%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=nuuanupali" target="_blank" rel="noreferrer">IG · nuuanupali</a><a href="https://www.instagram.com/explore/search/keyword/?q=koolau" target="_blank" rel="noreferrer">IG · koolau</a><a href="https://500px.com/search?q=Nu%CA%BBuanu%20Pali%20Lookout%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Nu%CA%BBuanu%20Pali%20Lookout%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article>
+</section>
+        <section class="pg-area" id="pg-bigisland">
+    <div class="pg-area-head">
+      <p class="pg-eyebrow">Base: Big Island</p>
+      <h2>Big Island</h2>
+      <p>Kona (leeward) is dry and warm; Hilo (windward) is wet and green. The headline frames are Mauna Kea’s Milky Way on the new-moon night (~June 9) and Kīlauea’s after-dark glow.</p>
+    </div>
+    <article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Sea cliffs + historic bay</p>
+    <h3>Kealakekua Bay + Captain Cook Monument</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Kealakekua%20Bay%20Kona%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://upload.wikimedia.org/wikipedia/commons/f/fa/Kealakekua_Bay_in_the_morning.jpg" data-cap="Kealakekua Bay + Captain Cook Monument &middot; Wikimedia Commons" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/f/fa/Kealakekua_Bay_in_the_morning.jpg')" aria-label="Open photo 1 of Kealakekua Bay + Captain Cook Monument"><span class="pg-gcount">3 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1630116521535-c57e5487cb42?auto=format&fit=crop&w=1800&q=80" data-cap="Kealakekua Bay + Captain Cook Monument &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1630116521535-c57e5487cb42?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Kealakekua Bay + Captain Cook Monument"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?auto=format&fit=crop&w=1800&q=80" data-cap="Kealakekua Bay + Captain Cook Monument &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1437719417032-8595fd9e9dc6?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Kealakekua Bay + Captain Cook Monument"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>A crescent bay ~12 miles south of Kailua-Kona, ringed by 1,000-ft sea cliffs with a white obelisk across the water.</p></section>
+      <section><h4>How To Get There</h4><p>The monument is visible from Napoʻopoʻo Beach Park (free); for a close-up, kayak (~$35–50/day) or take a boat tour. The hiking trail is steep, ~90 min round-trip.</p></section>
+      <section><h4>Best Time</h4><p>Sunrise for soft backlit cliffs and a monument silhouette; mid-morning 7:30–9:30 for turquoise water detail.</p></section>
+      <section><h4>Field Tips</h4><p>Kayaking at first light gives the best cliff perspective; water clarity is exceptional (80–100 ft) so a CPL pays off. Wear water shoes on the rocky Napoʻopoʻo side.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Monument rising from turquoise water against the massive sea cliffs.</li><li>Aerial-feeling crescent of bay, reef, and cliffs from the trail rim.</li><li>Cliffs and monument in golden-hour relief.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Shoot from the cliff rim above the bay looking down on monument and reef.</li><li>Kayak to the eastern edge for the monument with the Kona coast behind.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Kealakekua Bay + Captain Cook Monument" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sKealakekua+Bay+Kona+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Kealakekua%20Bay%20%2B%20Captain%20Cook%20Monument%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=kealakekuabay" target="_blank" rel="noreferrer">IG · kealakekuabay</a><a href="https://www.instagram.com/explore/search/keyword/?q=captaincook" target="_blank" rel="noreferrer">IG · captaincook</a><a href="https://500px.com/search?q=Kealakekua%20Bay%20%2B%20Captain%20Cook%20Monument%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Kealakekua%20Bay%20%2B%20Captain%20Cook%20Monument%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Milky Way over the summit</p>
+    <h3>Mauna Kea Summit + Milky Way</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Mauna%20Kea%20Summit%20Hilo%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1635713233211-40e35e7637a3?auto=format&fit=crop&w=1800&q=80" data-cap="Mauna Kea Summit + Milky Way &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1635713233211-40e35e7637a3?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Mauna Kea Summit + Milky Way"><span class="pg-gcount">3 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1742626157111-59f3f1019a8a?auto=format&fit=crop&w=1800&q=80" data-cap="Mauna Kea Summit + Milky Way &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1742626157111-59f3f1019a8a?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Mauna Kea Summit + Milky Way"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1765825365130-52e276bca060?auto=format&fit=crop&w=1800&q=80" data-cap="Mauna Kea Summit + Milky Way &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1765825365130-52e276bca060?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Mauna Kea Summit + Milky Way"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>A 13,796-ft volcano summit and one of Earth’s best dark-sky sites; the Onizuka Visitor Center (9,200 ft) is the public access point.</p></section>
+      <section><h4>How To Get There</h4><p>Self-drive to the visitor center (free); summit access needs a 4WD and stops 30 min after sunset. Guided stargazing tours handle transport and altitude.</p></section>
+      <section><h4>Best Time</h4><p>Milky Way core visible Mar–Oct; shoot 23:00–4:00 on a new-moon night (~June 9, 2027). Freezing even in summer.</p></section>
+      <section><h4>Field Tips</h4><p>Wide fast lens (14–24mm f/2.8), sturdy tripod; ISO 1600–3200, 15–20 sec, manual focus to infinity. Dress in extreme-cold layers and use a red headlamp.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Milky Way arch spanning the sky over silhouetted cinder cones.</li><li>Milky Way core over the observatory domes as foreground silhouettes.</li><li>Star trails or a Milky Way time-lapse above the summit.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Shoot from the 9,200-ft visitor center for easier access, less wind, and still-excellent clarity.</li><li>Walk to a nearby cinder cone for elevated foreground interest.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Mauna Kea Summit + Milky Way" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sMauna+Kea+Summit+Hilo+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Mauna%20Kea%20Summit%20%2B%20Milky%20Way%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=maunakea" target="_blank" rel="noreferrer">IG · maunakea</a><a href="https://www.instagram.com/explore/search/keyword/?q=milkyway" target="_blank" rel="noreferrer">IG · milkyway</a><a href="https://500px.com/search?q=Mauna%20Kea%20Summit%20%2B%20Milky%20Way%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Mauna%20Kea%20Summit%20%2B%20Milky%20Way%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Black sand + sea turtles</p>
+    <h3>Punaluʻu Black Sand Beach</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Punaluu%20Black%20Sand%20Beach%20Big%20Island%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.pexels.com/photos/12740678/pexels-photo-12740678.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Punaluʻu Black Sand Beach &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/12740678/pexels-photo-12740678.jpeg?auto=compress&cs=tinysrgb&w=1100')" aria-label="Open photo 1 of Punaluʻu Black Sand Beach"><span class="pg-gcount">3 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1529391387768-ab39476d6a52?auto=format&fit=crop&w=1800&q=80" data-cap="Punaluʻu Black Sand Beach &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1529391387768-ab39476d6a52?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Punaluʻu Black Sand Beach"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1654293813344-ef19554f3eb6?auto=format&fit=crop&w=1800&q=80" data-cap="Punaluʻu Black Sand Beach &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1654293813344-ef19554f3eb6?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Punaluʻu Black Sand Beach"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>A 2-mile stretch of jet-black lava sand ~32 miles southeast of Kona, home to green sea turtles (honu).</p></section>
+      <section><h4>How To Get There</h4><p>Free parking, roadside access, restrooms and showers. Stay 15 ft from turtles, no touching, and no flash.</p></section>
+      <section><h4>Best Time</h4><p>Golden hour for warm tones on the black sand and lava rock; late afternoon 4:00–5:30 for turtle-basking activity.</p></section>
+      <section><h4>Field Tips</h4><p>Black sand fools meters — expose for the dark foreground, not the sky, and use a graduated ND. A 200–400mm keeps a respectful distance from turtles.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Curved black-sand beach with palm framing, turquoise water, and lava formations.</li><li>White foam breaking on black sand (high-contrast).</li><li>Silhouetted palms against a golden sunset and dark sand.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Shoot from the low cliff above for the crescent of black sand and turtles.</li><li>Capture turtle tracks meandering across the sand at low tide.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Punaluʻu Black Sand Beach" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sPunaluu+Black+Sand+Beach+Big+Island+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Punalu%CA%BBu%20Black%20Sand%20Beach%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=punaluu" target="_blank" rel="noreferrer">IG · punaluu</a><a href="https://www.instagram.com/explore/search/keyword/?q=blacksandbeach" target="_blank" rel="noreferrer">IG · blacksandbeach</a><a href="https://500px.com/search?q=Punalu%CA%BBu%20Black%20Sand%20Beach%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Punalu%CA%BBu%20Black%20Sand%20Beach%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Caldera + lava glow</p>
+    <h3>Hawaiʻi Volcanoes NP — Kīlauea</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Hawaii%20Volcanoes%20National%20Park%20Kilauea%20crater" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.pexels.com/photos/35613489/pexels-photo-35613489.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Hawaiʻi Volcanoes NP — Kīlauea &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/35613489/pexels-photo-35613489.jpeg?auto=compress&cs=tinysrgb&w=1100')" aria-label="Open photo 1 of Hawaiʻi Volcanoes NP — Kīlauea"><span class="pg-gcount">3 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1576941026827-bccc82341bdd?auto=format&fit=crop&w=1800&q=80" data-cap="Hawaiʻi Volcanoes NP — Kīlauea &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1576941026827-bccc82341bdd?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Hawaiʻi Volcanoes NP — Kīlauea"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1506368153642-f361edca71a1?auto=format&fit=crop&w=1800&q=80" data-cap="Hawaiʻi Volcanoes NP — Kīlauea &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1506368153642-f361edca71a1?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Hawaiʻi Volcanoes NP — Kīlauea"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>Kīlauea’s summit caldera ~30 miles from Hilo; Halemaʻumaʻu has shown episodic lava-lake glow visible at night from the rim.</p></section>
+      <section><h4>How To Get There</h4><p>Park entry $30/vehicle (7-day). Free rim viewpoints: Uēkahuna, Kīlauea Overlook, Keanakākoʻi, Volcano House. Night viewing is best for the glow.</p></section>
+      <section><h4>Best Time</h4><p>Sunrise for soft light and steam on the crater walls; night 20:00–midnight for the red/orange glow (darkest skies for best color).</p></section>
+      <section><h4>Field Tips</h4><p>Night glow: tripod, 16–24mm, ISO 800–1600, 10–20 sec. Check the NPS site for eruption status and vog; mornings are clearer than afternoons.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Halemaʻumaʻu crater with steaming vents and lava-lake glow at night.</li><li>Observatory domes silhouetted against the glowing crater.</li><li>Crater-rim trail with hikers and a dramatic caldera backdrop.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Walk the Crater Rim Trail at dawn to hit several overlooks in one soft-light window.</li><li>Frame the crater through the historic Volcano House windows at golden hour.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Hawaiʻi Volcanoes NP — Kīlauea" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sHawaii+Volcanoes+National+Park+Kilauea+crater!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Hawai%CA%BBi%20Volcanoes%20NP%20%E2%80%94%20K%C4%ABlauea%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=kilauea" target="_blank" rel="noreferrer">IG · kilauea</a><a href="https://www.instagram.com/explore/search/keyword/?q=volcanoesnationalpark" target="_blank" rel="noreferrer">IG · volcanoesnationalpark</a><a href="https://500px.com/search?q=Hawai%CA%BBi%20Volcanoes%20NP%20%E2%80%94%20K%C4%ABlauea%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Hawai%CA%BBi%20Volcanoes%20NP%20%E2%80%94%20K%C4%ABlauea%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Waterfall with morning rainbow</p>
+    <h3>Rainbow Falls (Waiānuenue), Hilo</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Rainbow%20Falls%20Hilo%20Big%20Island%20Hawaii" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1575488469369-3c02745002bb?auto=format&fit=crop&w=1800&q=80" data-cap="Rainbow Falls (Waiānuenue), Hilo &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1575488469369-3c02745002bb?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Rainbow Falls (Waiānuenue), Hilo"><span class="pg-gcount">2 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1545148483-c92b13f54f97?auto=format&fit=crop&w=1800&q=80" data-cap="Rainbow Falls (Waiānuenue), Hilo &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1545148483-c92b13f54f97?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Rainbow Falls (Waiānuenue), Hilo"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>An 80-ft waterfall dropping into a wide pool ~3 miles from Hilo, wrapped in tropical rainforest.</p></section>
+      <section><h4>How To Get There</h4><p>Short 5-min walk to the overlook; $5/person, $7 parking. The lower-pool trail is steep and muddy — wear grippy shoes.</p></section>
+      <section><h4>Best Time</h4><p>Early morning for soft light and mist; late morning 9:30–11:00 often produces the fullest rainbow arcs.</p></section>
+      <section><h4>Field Tips</h4><p>Rainbows sit opposite the sun — morning east light makes the bow visible from the overlook. Fast shutter to freeze the falls, or 2–4 sec to smooth them.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Full rainbow arc spanning the mist below the falls (wide-angle).</li><li>Foreground ferns and ginger with the falls and rainbow behind.</li><li>Wide panorama of the lush green gorge and falling water.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Take the steep lower-pool trail for a closer, more intimate angle.</li><li>Shoot from the side for an off-axis view of the rainbow and water column.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Rainbow Falls (Waiānuenue), Hilo" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sRainbow+Falls+Hilo+Big+Island+Hawaii!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Rainbow%20Falls%20(Wai%C4%81nuenue)%2C%20Hilo%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=rainbowfalls" target="_blank" rel="noreferrer">IG · rainbowfalls</a><a href="https://www.instagram.com/explore/search/keyword/?q=hilo" target="_blank" rel="noreferrer">IG · hilo</a><a href="https://500px.com/search?q=Rainbow%20Falls%20(Wai%C4%81nuenue)%2C%20Hilo%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Rainbow%20Falls%20(Wai%C4%81nuenue)%2C%20Hilo%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article>
+</section>
+      </div>
+    </details>
+    <div class="pg-lightbox" id="pg-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <span class="pg-lb-count" id="pgLbCount"></span>
+  <button class="pg-lb-close" id="pgLbClose" aria-label="Close">&times;</button>
+  <button class="pg-lb-btn pg-lb-prev" id="pgLbPrev" aria-label="Previous">&#8249;</button>
+  <img id="pgLbImg" alt="">
+  <button class="pg-lb-btn pg-lb-next" id="pgLbNext" aria-label="Next">&#8250;</button>
+  <div class="pg-lb-cap" id="pgLbCap"></div>
+</div>
+<script>
+(function(){
+  var lb=document.getElementById('pg-lightbox');if(!lb)return;
+  var img=document.getElementById('pgLbImg'),cap=document.getElementById('pgLbCap'),cnt=document.getElementById('pgLbCount');
+  var list=[],idx=0;
+  function show(){var it=list[idx];img.src=it.full;img.alt=it.cap;cap.textContent=it.cap;cnt.textContent=(idx+1)+' / '+list.length;}
+  function open(items,i){list=items;idx=i;lb.classList.add('open');document.body.style.overflow='hidden';show();}
+  function close(){lb.classList.remove('open');img.src='';document.body.style.overflow='';}
+  function step(d){idx=(idx+d+list.length)%list.length;show();}
+  document.querySelectorAll('#photo-guide .pg-gallery[data-gallery]').forEach(function(g){
+    var items=[].map.call(g.querySelectorAll('.pg-gitem'),function(b){return {full:b.getAttribute('data-full'),cap:b.getAttribute('data-cap')};});
+    g.querySelectorAll('.pg-gitem').forEach(function(b,i){b.addEventListener('click',function(){open(items,i);});});
+  });
+  document.getElementById('pgLbClose').onclick=close;
+  document.getElementById('pgLbPrev').onclick=function(){step(-1);};
+  document.getElementById('pgLbNext').onclick=function(){step(1);};
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close();else if(e.key==='ArrowLeft')step(-1);else if(e.key==='ArrowRight')step(1);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){
+    if(en.isIntersecting){var f=en.target;if(!f.getAttribute('src'))f.setAttribute('src',f.getAttribute('data-src'));io.unobserve(f);}});},{rootMargin:'300px'});
+  document.querySelectorAll('#photo-guide .pg-map-embed iframe[data-src]').forEach(function(f){io.observe(f);});
+})();
+</script>
+  </section>
+  <!--PG:END-->
+  <!--FG:START-->
+  <section id="food-guide" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">For The Family Table</p>
+      <h2>Restaurants &amp; Food Guide</h2>
+      <p>Fun, casual, genuinely-good-food picks grouped by base — chosen for atmosphere over fine dining, steered away from seafood-first spots, and pressure-tested so a picky kid always has something to eat. Every pick links out to the real reviews behind it.</p>
+    </div>
+    <style id="fg-style">
+#food-guide{--fg-ink:#171717;--fg-muted:#66615b;--fg-panel:#fff;--fg-line:#ded8cf;--fg-wine:#6d3b30;--fg-gold:#b27636;--fg-red:#a34e3b;color:var(--fg-ink);}
+#food-guide .fg-wrap{border:1px solid var(--fg-line);border-radius:16px;background:#fffdfa;overflow:hidden;box-shadow:0 20px 50px -34px rgba(0,0,0,.4);}
+#food-guide .fg-wrap>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px clamp(16px,3vw,30px);background:var(--fg-wine);color:#fff;}
+#food-guide .fg-wrap>summary::-webkit-details-marker{display:none;}
+#food-guide .fg-wrap>summary .fg-sum-ico{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+#food-guide .fg-wrap>summary .fg-sum-txt{flex:1;min-width:0;}
+#food-guide .fg-wrap>summary h3{margin:0;font-size:clamp(1.15rem,2.4vw,1.5rem);color:#fff;font-weight:700;}
+#food-guide .fg-wrap>summary p{margin:3px 0 0;color:#f0d9cf;font-size:.9rem;}
+#food-guide .fg-wrap>summary .fg-chev{flex:0 0 auto;font-size:1.5rem;transition:transform .25s;color:#f0d9cf;}
+#food-guide .fg-wrap[open]>summary .fg-chev{transform:rotate(180deg);}
+#food-guide .fg-body{padding:clamp(16px,3vw,30px);}
+#food-guide p{margin:0;}
+#food-guide .fg-eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:800;color:var(--fg-gold);margin:0 0 6px;}
+#food-guide .fg-strategy{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,1fr);gap:22px;align-items:start;margin:0 0 8px;}
+#food-guide .fg-strategy-card h2{margin:.1em 0 .35em;font-size:clamp(1.35rem,3vw,1.9rem);font-weight:700;}
+#food-guide .fg-strategy-card p,#food-guide .kit li{color:var(--fg-muted);}
+#food-guide .kit ul{margin:0;padding-left:18px;}
+#food-guide .kit li{margin-bottom:6px;}
+#food-guide .fg-warning{margin-top:14px;padding:13px 16px;border-left:4px solid var(--fg-red);background:#fff3ee;border-radius:0 8px 8px 0;color:#5c3027;}
+#food-guide .fg-hub{margin-top:34px;padding-top:20px;border-top:3px solid var(--fg-wine);}
+#food-guide .fg-hub:first-of-type{margin-top:18px;}
+#food-guide .fg-hub-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:16px;}
+#food-guide .fg-hub-head h2{margin:0;font-size:clamp(1.4rem,3vw,2rem);font-weight:700;}
+#food-guide .fg-hub-days{color:var(--fg-muted);font-size:.85rem;font-weight:700;}
+#food-guide .fg-list{display:grid;gap:12px;}
+#food-guide .fg-spot{border:1px solid var(--fg-line);border-radius:12px;background:var(--fg-panel);padding:14px 16px;}
+#food-guide .fg-spot-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 12px;margin-bottom:6px;}
+#food-guide .fg-spot-top h3{margin:0;font-size:1.08rem;font-weight:700;}
+#food-guide .fg-spot-top h3 .fg-tag{font-size:.8rem;font-weight:700;color:var(--fg-wine);}
+#food-guide .fg-spot-top h3 .fg-tag::before{content:"\00b7 ";color:var(--fg-muted);}
+#food-guide .fg-price{flex:0 0 auto;display:inline-flex;align-items:center;padding:4px 11px;border:1px solid var(--fg-line);border-radius:999px;background:#fffdfa;font-weight:800;font-size:.75rem;color:var(--fg-ink);white-space:nowrap;}
+#food-guide .fg-why{font-size:.92rem;line-height:1.5;color:var(--fg-ink);margin-bottom:8px;}
+#food-guide .fg-meta{font-size:.83rem;line-height:1.45;color:var(--fg-muted);margin-bottom:10px;}
+#food-guide .fg-meta strong{color:var(--fg-ink);}
+#food-guide .fg-link-buttons{display:flex;flex-wrap:wrap;gap:7px;}
+#food-guide .fg-link-buttons a{display:inline-flex;align-items:center;min-height:30px;padding:5px 11px;border:1px solid var(--fg-line);border-radius:999px;background:#fff;color:var(--fg-ink);font-size:.76rem;font-weight:800;text-decoration:none;}
+#food-guide .fg-link-buttons a:hover{border-color:var(--fg-gold);color:var(--fg-red);}
+#food-guide .fg-link-buttons a.fg-map{background:var(--fg-wine);color:#fff;border-color:var(--fg-wine);}
+#food-guide .fg-link-buttons a.fg-map:hover{background:#572d24;color:#fff;}
+@media(max-width:820px){#food-guide .fg-strategy{grid-template-columns:1fr;}}
+    </style>
+    <details class="fg-wrap">
+      <summary>
+        <span class="fg-sum-ico">🍽️</span>
+        <span class="fg-sum-txt"><h3>Where to eat — Waikiki & Honolulu, North Shore (Oahu), Kona, Volcano Village & Hilo</h3><p>Casual, kid-safe, non-seafood picks grouped by base, with the real review threads behind them. Tap to expand.</p></span>
+        <span class="fg-chev">▾</span>
+      </summary>
+      <div class="fg-body">
+        <section class="fg-strategy">
+          <div class="fg-strategy-card">
+            <p class="fg-eyebrow">How to eat the trip</p>
+            <h2>Casual, fun, and picky-kid-proof</h2>
+            <p>Every pick leans on atmosphere and genuinely good food over fine dining, and deliberately skips the seafood-first spots. Each one has something a picky kid will actually eat — pizza, pasta, fries, grilled chicken, or bread — without making kids’ food the whole menu. These regions eat dinner late, so with kids either book ahead or aim to be seated by 19:00 before kitchens fill after 20:00.</p>
+            <div class="fg-warning">Skip the picture-menu tourist traps: the Waikiki-strip chains and seafood-led tourist spots; the pricier Kahuku Giovanni’s pilgrimage line — the Haleiwa trucks are as good; high-end resort restaurants and seafood-display spots on Aliʻi Drive; formal resort dining — stick to the local diners near the park. Walk a few blocks inland. Ratings, prices and hours here are July 2026 proxies; reconfirm and re-book once 2027 dates lock.</div>
+          </div>
+          <aside class="kit">
+            <p class="fg-eyebrow">Family tactics</p>
+            <ul>
+              <li>Reserve dinner or eat by 19:00; kitchens get busy after 20:00.</li>
+              <li>Keep a bakery / gelato backup nearby for a melting-down kid.</li>
+              <li>Carry cash: small family-run spots often prefer it.</li>
+              <li>A menu with 50+ items in five languages is a tourist-trap tell — walk on.</li>
+              <li>Tap the review buttons on each card to sanity-check before you book.</li>
+            </ul>
+          </aside>
+        </section>
+        <section class="fg-hub" id="fg-waikiki">
+          <div class="fg-hub-head"><h2>Waikiki & Honolulu</h2><span class="fg-hub-days">Days 1–4 · Oahu base dinners</span></div>
+          <div class="fg-list">
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Eggs 'n Things <span class="fg-tag">Massive breakfast · always busy</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A 30-year Hawaii classic and a genuine family crowd — the under-10 menu’s silver-dollar pancakes are exactly what a picky kid demolishes. Arrive early; the line is real.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> whipped-cream pancakes, mochi waffles · <strong>Seafood:</strong> none — breakfast only</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Eggs%20N%20Things%20Waikiki%20Honolulu" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Eggs%20'n%20Things%20Waikiki" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Eggs%20'n%20Things%20Waikiki" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Eggs%20'n%20Things%20Waikiki%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Duke's Waikiki <span class="fg-tag">Beachfront icon · live music</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">Right on the sand with Diamond Head views, a kids’ menu, and the famous Hula Pie — families and locals both rave. The easy, atmospheric night-one dinner.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> burgers, sandwiches, fries, Hula Pie · <strong>Seafood:</strong> seafood available but not required</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Dukes%20Waikiki%20Honolulu" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Duke's%20Waikiki%20Waikiki" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Duke's%20Waikiki%20Waikiki" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Duke's%20Waikiki%20Waikiki%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Rainbow Drive-In <span class="fg-tag">Local plate-lunch counter · retro</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A 1961 institution and the plate-lunch archetype: two scoops rice, one scoop mac salad, simple grilled proteins. Fast, cheap, and picky-kid-simple.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> BBQ, kalua pig, chicken, rice, mac salad, fries · <strong>Seafood:</strong> poke exists but non-seafood dominates</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Rainbow%20Drive-In%20Kapahulu%20Honolulu" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Rainbow%20Drive-In%20Kapahulu" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Rainbow%20Drive-In%20Kapahulu" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Rainbow%20Drive-In%20Kapahulu%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Liliha Bakery <span class="fg-tag">Retro diner & bakery · comfort food</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A Honolulu institution since 1950, famous for Coco Puffs (chocolate cream puffs) plus loco moco and pancakes — nostalgic, all-comfort, kid catnip. Handy branch in the International Marketplace.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> Coco Puffs, chocolate pastries, pancakes, loco moco · <strong>Seafood:</strong> none — bakery/diner</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Liliha%20Bakery%20International%20Marketplace%20Waikiki" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Liliha%20Bakery%20Waikiki" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Liliha%20Bakery%20Waikiki" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Liliha%20Bakery%20Waikiki%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Monkeypod Kitchen <span class="fg-tag">Wood-fired pizza · oceanfront</span></h3><span class="fg-price">$ · reserve</span></div>
+              <p class="fg-why">A boisterous, oceanfront Merriman spot with wood-fired pizzas and farm-fresh tacos; staff are used to families and kids go for the pizza and pancakes.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> wood-fired pizza, pancakes, tacos · <strong>Seafood:</strong> fresh fish available but pizza/tacos dominate</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Monkeypod%20Kitchen%20Waikiki%20Honolulu" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Monkeypod%20Kitchen%20Waikiki" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Monkeypod%20Kitchen%20Waikiki" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Monkeypod%20Kitchen%20Waikiki%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="fg-hub" id="fg-northshore">
+          <div class="fg-hub-head"><h2>North Shore (Oahu)</h2><span class="fg-hub-days">Day 4 · North Shore loop stops</span></div>
+          <div class="fg-list">
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Mike's Huli Chicken <span class="fg-tag">Kiawe-grilled chicken truck</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A North Shore BBQ truck grilling chicken over kiawe wood (plus kalua pig) — the universally kid-safe protein, open-air and easy. The best non-seafood truck stop on the loop.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> grilled chicken, kalua pig, rice · <strong>Seafood:</strong> poultry/pork only — zero seafood</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Mikes%20Huli%20Chicken%20Kahuku" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Mike's%20Huli%20Chicken%20Kahuku" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Mike's%20Huli%20Chicken%20Kahuku" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Mike's%20Huli%20Chicken%20Kahuku%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Kono's <span class="fg-tag">Kalua-pork breakfast burritos</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A tiny local hole-in-the-wall famous for "bomber" kalua-pork breakfast burritos and milkshakes, with a keiki menu — very family-friendly despite the small footprint.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> breakfast burritos, milkshakes · <strong>Seafood:</strong> none — burritos</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Konos%20Northshore%20Haleiwa" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Kono's%20Haleiwa" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Kono's%20Haleiwa" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Kono's%20Haleiwa%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Surf N' Salsa <span class="fg-tag">Casual Mexican food truck</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">Handmade tacos and burritos with customizable, kid-friendly spice levels — the reliable non-seafood taco truck when the shrimp trucks won’t fly with picky eaters.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> build-your-own tacos, burritos, rice bowls · <strong>Seafood:</strong> fish tacos exist but non-seafood primary</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Surf%20N%20Salsa%20Haleiwa" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Surf%20N'%20Salsa%20Haleiwa" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Surf%20N'%20Salsa%20Haleiwa" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Surf%20N'%20Salsa%20Haleiwa%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Ted's Bakery <span class="fg-tag">Plate lunch + chocolate-haupia pie</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A North Shore legend for its chocolate-haupia cream pie, plus breakfast and local plate lunches — an easy, beloved fuel stop with something for everyone.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> plate lunch, burgers, chocolate-haupia pie · <strong>Seafood:</strong> plates vary; non-seafood options easy</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Teds%20Bakery%20Sunset%20Beach%20Haleiwa" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Ted's%20Bakery%20Sunset%20Beach" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Ted's%20Bakery%20Sunset%20Beach" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Ted's%20Bakery%20Sunset%20Beach%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Matsumoto Shave Ice <span class="fg-tag">Iconic rainbow shave ice</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">The most famous shave ice on the island — colorful syrups over fluffy ice that reliably wins over picky kids on a hot North Shore afternoon.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> rainbow shave ice · <strong>Seafood:</strong> none — shave ice</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Matsumoto%20Shave%20Ice%20Haleiwa" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Matsumoto%20Shave%20Ice%20Haleiwa" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Matsumoto%20Shave%20Ice%20Haleiwa" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Matsumoto%20Shave%20Ice%20Haleiwa%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="fg-hub" id="fg-kona">
+          <div class="fg-hub-head"><h2>Kona</h2><span class="fg-hub-days">Days 5–7 · Kona base dinners</span></div>
+          <div class="fg-list">
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Kona Brewing Co <span class="fg-tag">Brewery taproom · pizza & play space</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A relaxed brewery with pizza and shoyu chicken that are big hits with kids, plus outdoor space to move around. The easy, casual Kona dinner.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> pizza, chicken, fries · <strong>Seafood:</strong> minimal — pizza/chicken focused</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Kona%20Brewing%20Company%20Kona" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Kona%20Brewing%20Co%20Kona" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Kona%20Brewing%20Co%20Kona" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Kona%20Brewing%20Co%20Kona%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Island Ono Loa Grill <span class="fg-tag">Order-at-counter burger grill</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A tucked-away local favorite in a shopping center (not touristy) with burgers that carry the menu — order at the counter and grab open-air seating.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> burgers, fries · <strong>Seafood:</strong> seafood available but burgers dominate</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Island%20Ono%20Loa%20Grill%20Kona" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Island%20Ono%20Loa%20Grill%20Kona" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Island%20Ono%20Loa%20Grill%20Kona" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Island%20Ono%20Loa%20Grill%20Kona%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Rebel Kitchen <span class="fg-tag">Casual burger shack</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A counter-service burger shack south of Kona doing burgers, tacos, homemade ketchup and desserts — casual and picky-kid friendly on the way to snorkel spots.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> burgers, tacos, homemade sweets · <strong>Seafood:</strong> fish tacos optional; burgers primary</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Rebel%20Kitchen%20Kealakekua" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Rebel%20Kitchen%20Kealakekua" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Rebel%20Kitchen%20Kealakekua" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Rebel%20Kitchen%20Kealakekua%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>The Coffee Shack <span class="fg-tag">Roadside café · ocean views</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A hillside café with big ocean views, coffee, pastries and sandwiches — the perfect quick stop with a view en route south toward Volcano.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> pastries, sandwiches, hot chocolate · <strong>Seafood:</strong> none — café/bakery</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Coffee%20Shack%20Captain%20Cook%20Big%20Island" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=The%20Coffee%20Shack%20Captain%20Cook" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=The%20Coffee%20Shack%20Captain%20Cook" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=The%20Coffee%20Shack%20Captain%20Cook%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Huggo's on the Rocks <span class="fg-tag">Beachfront casual · toes-in-sand</span></h3><span class="fg-price">$ · reserve dinner</span></div>
+              <p class="fg-why">A laid-back oceanfront spot with a varied menu (not seafood-only) — burgers and pasta alongside Hawaiian fare, in the best sunset seat in Kona.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> burgers, pasta, plain rice · <strong>Seafood:</strong> seafood available but non-seafood substantial</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Huggos%20on%20the%20Rocks%20Kona" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Huggo's%20on%20the%20Rocks%20Kona" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Huggo's%20on%20the%20Rocks%20Kona" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Huggo's%20on%20the%20Rocks%20Kona%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+          </div>
+        </section>
+        <section class="fg-hub" id="fg-volcano">
+          <div class="fg-hub-head"><h2>Volcano Village & Hilo</h2><span class="fg-hub-days">Days 8–10 · Volcano & Hilo</span></div>
+          <div class="fg-list">
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Ken's House of Pancakes <span class="fg-tag">24-hour classic diner</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A round-the-clock Hilo staple every family knows — pancakes, burgers, eggs and mac & cheese, fast and no-frills. The dependable any-hour option.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> pancakes, burgers, eggs, mac & cheese · <strong>Seafood:</strong> none — diner fare</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Kens%20House%20of%20Pancakes%20Hilo" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Ken's%20House%20of%20Pancakes%20Hilo" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Ken's%20House%20of%20Pancakes%20Hilo" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Ken's%20House%20of%20Pancakes%20Hilo%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Lava Rock Cafe <span class="fg-tag">Local diner · park-side</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">Next to the Kīlauea general store: big omelets, pancakes, burgers and fried chicken, with takeout for park hikers. The go-to near Hawaiʻi Volcanoes NP.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> pancakes, burgers, fried chicken · <strong>Seafood:</strong> none — comfort food</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Lava%20Rock%20Cafe%20Volcano%20Village" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Lava%20Rock%20Cafe%20Volcano%20Village" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Lava%20Rock%20Cafe%20Volcano%20Village" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Lava%20Rock%20Cafe%20Volcano%20Village%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Café 100 <span class="fg-tag">Loco moco birthplace · counter</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">The affordable, authentic home of the loco moco (burger, gravy, egg, rice) and plate lunches — iconic Hilo comfort food that picky kids settle into via simple proteins and rice.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> loco moco, rice, burgers · <strong>Seafood:</strong> none — plate lunch</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20100%20Hilo" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Caf%C3%A9%20100%20Hilo" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Caf%C3%A9%20100%20Hilo" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Caf%C3%A9%20100%20Hilo%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Thai Thai Restaurant <span class="fg-tag">Thai + western comfort</span></h3><span class="fg-price">$ · reserve</span></div>
+              <p class="fg-why">A family-run Volcano spot serving Thai curries alongside western entrées (burgers, fried chicken) with kid dishes — often busy, so call ahead.</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> fried chicken, burgers, mild curry · <strong>Seafood:</strong> minimal — Thai comfort food</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Thai%20Thai%20Restaurant%20Volcano%20Village" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Thai%20Thai%20Restaurant%20Volcano%20Village" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Thai%20Thai%20Restaurant%20Volcano%20Village" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Thai%20Thai%20Restaurant%20Volcano%20Village%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+            <article class="fg-spot">
+              <div class="fg-spot-top"><h3>Café Ono <span class="fg-tag">Garden vegetarian lunch</span></h3><span class="fg-price">$ · walk-in</span></div>
+              <p class="fg-why">A cozy garden café (in Volcano Garden Arts) with locally grown vegetarian soups, salads and sandwiches — a light, healthy lunch near the park (Thu–Sun).</p>
+              <p class="fg-meta"><strong>Picky kids:</strong> customizable salads, sandwiches · <strong>Seafood:</strong> none — vegetarian</p>
+              <div class="fg-link-buttons"><a class="fg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Ono%20Volcano%20Village" target="_blank" rel="noreferrer">Map ↗</a><a href="https://www.tripadvisor.com/Search?q=Caf%C3%A9%20Ono%20Volcano%20Village" target="_blank" rel="noreferrer">TripAdvisor</a><a href="https://www.reddit.com/search/?q=Caf%C3%A9%20Ono%20Volcano%20Village" target="_blank" rel="noreferrer">Reddit</a><a href="https://www.google.com/search?q=Caf%C3%A9%20Ono%20Volcano%20Village%20reviews" target="_blank" rel="noreferrer">Google</a></div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </details>
+  </section>
+  <!--FG:END-->
 </main>
 <script>/* @preserve
  * Leaflet 1.9.4, a JS library for interactive maps. https://leafletjs.com
@@ -1529,4 +2243,14 @@ document.querySelectorAll('.carousel').forEach(function(c){
   fit('all');
   setTimeout(function(){map.invalidateSize();},300);
 })();
-</script></body></html>
+</script><button id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+<style>
+#backToTop{position:fixed;right:20px;bottom:20px;z-index:9999;width:48px;height:48px;border:none;border-radius:50%;background:rgba(26,23,18,.85);color:#f6f1e7;font-size:22px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,background .2s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+#backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}
+#backToTop:hover{background:rgba(26,23,18,1)}
+@media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}
+</style>
+<script>
+(function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script>
+</body></html>
