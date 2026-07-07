@@ -924,19 +924,59 @@ footer a{color:var(--muted)}
 .day.c4 .day-badge{background:var(--c4)}
 .base.b4 .band{background:var(--c4)}
 .base.b4 .nights{background:var(--c4)}
-</style></head><body><header>
-  <div class="hero-inner">
-    <span class="kicker">Family Trip · Jun 8-21, 2027</span>
-    <h1>Portugal + Sicily<br>Warm-Water Hybrid</h1>
-    <p class="lead">A cap-fit hybrid that keeps Portugal as the opening act, then moves the real swim portion to Sicily instead of forcing the Algarve or Madeira. The route uses Cascais/Sintra for the Portugal feel, then a Friday Lisbon-to-Palermo nonstop pattern to reach Cefalù, Ortigia/Noto, and Taormina/Etna without backtracking.</p>
-    <div class="hero-meta">
-      <div><b>12</b><span>Hotel nights</span></div><div><b>4</b><span>Home bases</span></div><div><b>9</b><span>Stops mapped</span></div><div><b>Jun 8-21</b><span>2027</span></div>
+/* TRIP PREVIEW */
+.preview{display:grid;grid-template-columns:minmax(300px,34%) 1fr;min-height:82vh;background:var(--ink);color:#fff}
+.pv-pane{padding:clamp(22px,4vw,54px);display:flex;flex-direction:column;justify-content:center;gap:16px}
+.pv-kicker{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#e0a13a;font-weight:800}
+.pv-pane h1{font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.02;margin:0;font-weight:800}
+.pv-pane h1 span{display:block;font-size:.42em;font-weight:500;color:rgba(255,255,255,.7);margin-top:8px;letter-spacing:.01em}
+.pv-lead{color:rgba(255,255,255,.82);font-size:.96rem;line-height:1.5;max-width:46ch;margin:0}
+.pv-stats{display:flex;flex-wrap:wrap;gap:10px}
+.pv-stats>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:9px 13px;min-width:62px}
+.pv-stats b{display:block;font-size:1.3rem;font-weight:800;line-height:1}
+.pv-stats span{font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;color:rgba(255,255,255,.6)}
+.pv-split{display:flex;height:46px;border-radius:10px;overflow:hidden}
+.pv-split .seg{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;min-width:0;padding:0 4px;text-align:center}
+.pv-split .seg b{font-size:.92rem;line-height:1;font-weight:800}
+.pv-split .seg span{font-size:.55rem;text-transform:uppercase;letter-spacing:.04em;opacity:.92;white-space:nowrap;margin-top:2px}
+.pv-split .water{background:#2f8f9d}.pv-split .town{background:#c25a3a}.pv-split .nature{background:#3f7d4e}
+.pv-cue{margin:2px 0 0;font-size:.74rem;color:rgba(255,255,255,.5);font-weight:700}
+.pvcar{background:#000}
+.pvcar .track img{aspect-ratio:auto;height:82vh}
+.pvcar .track figcaption{padding:96px 20px 20px;display:flex;flex-direction:column;gap:5px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4) 34%,rgba(0,0,0,.86))}
+.pvcar .cap-day{font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f0b350}
+.pvcar .track figcaption strong{font-size:1.04rem;font-weight:800;line-height:1.2}
+.pvcar .cap-desc{font-size:.83rem;line-height:1.42;color:rgba(255,255,255,.9);max-width:64ch;font-weight:400}
+.pvcar .counter{font-size:.78rem;padding:5px 12px}
+@media(max-width:820px){.preview{grid-template-columns:1fr;min-height:auto}.pvcar .track img{height:56vh}.pv-pane{padding:26px 20px}}
+</style></head><body>
+<section class="preview">
+  <div class="pv-pane">
+    <span class="pv-kicker">Family Trip &middot; Jun 8&ndash;21, 2027</span>
+    <h1>Portugal + Sicily<span>Warm-Water Hybrid</span></h1>
+    <p class="pv-lead">A cap-fit hybrid that keeps Portugal as the opening act, then moves the real swim portion to Sicily &mdash; Cascais and Sintra set the tone, then a Friday Lisbon-to-Palermo nonstop reaches Cefal&ugrave;, Ortigia, Noto, and Taormina/Etna.</p>
+    <div class="pv-stats"><div><b>12</b><span>Hotel nights</span></div><div><b>4</b><span>Home bases</span></div><div><b>9</b><span>Stops mapped</span></div><div><b>Jun 8-21</b><span>2027</span></div></div>
+    <div class="pv-split" role="img" aria-label="Trip mix: about 45% water, 30% towns and food, 25% nature">
+      <div class="seg water" style="flex:45"><b>45%</b><span>Water</span></div>
+      <div class="seg town" style="flex:30"><b>30%</b><span>Towns &amp; food</span></div>
+      <div class="seg nature" style="flex:25"><b>25%</b><span>Nature</span></div>
     </div>
+    <p class="pv-cue">&darr; Full day-by-day plan below</p>
   </div>
-</header>
+  <div class="carousel pvcar" data-n="22">
+    <div class="track"><figure><img src="https://images.pexels.com/photos/38206392/pexels-photo-38206392.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Cascais waterfront + Boca do Inferno"><figcaption><span class="cap-day">Day 1 &middot; Wed &middot; Jun 9</span><strong>Cascais waterfront + Boca do Inferno</strong><span class="cap-desc">Soft landing on the Portuguese coast &mdash; sea-front promenade, past&eacute;is, and the Boca do Inferno cliffs on an easy first day while jet lag wears off.</span></figcaption></figure><figure><img src="https://images.pexels.com/photos/33720598/pexels-photo-33720598.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cascais waterfront + Boca do Inferno" loading="lazy"><figcaption><span class="cap-day">Day 1 &middot; Wed &middot; Jun 9</span><strong>Cascais waterfront + Boca do Inferno</strong><span class="cap-desc">Soft landing on the Portuguese coast &mdash; sea-front promenade, past&eacute;is, and the Boca do Inferno cliffs on an easy first day while jet lag wears off.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1567069231446-9106f2dd1616?w=1200&q=80&auto=format&fit=crop" alt="Cascais waterfront + Boca do Inferno" loading="lazy"><figcaption><span class="cap-day">Day 1 &middot; Wed &middot; Jun 9</span><strong>Cascais waterfront + Boca do Inferno</strong><span class="cap-desc">Soft landing on the Portuguese coast &mdash; sea-front promenade, past&eacute;is, and the Boca do Inferno cliffs on an easy first day while jet lag wears off.</span></figcaption></figure><figure><img src="https://images.pexels.com/photos/4330132/pexels-photo-4330132.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sintra: Quinta da Regaleira + Praia da Adraga" loading="lazy"><figcaption><span class="cap-day">Day 2 &middot; Thu &middot; Jun 10</span><strong>Sintra: Quinta da Regaleira + Praia da Adraga</strong><span class="cap-desc">Castle-and-forest day &mdash; Quinta da Regaleira&rsquo;s mossy wells and gardens paired with the Atlantic cliffs at Praia da Adraga before the flight south.</span></figcaption></figure><figure><img src="https://images.pexels.com/photos/10154973/pexels-photo-10154973.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sintra: Quinta da Regaleira + Praia da Adraga" loading="lazy"><figcaption><span class="cap-day">Day 2 &middot; Thu &middot; Jun 10</span><strong>Sintra: Quinta da Regaleira + Praia da Adraga</strong><span class="cap-desc">Castle-and-forest day &mdash; Quinta da Regaleira&rsquo;s mossy wells and gardens paired with the Atlantic cliffs at Praia da Adraga before the flight south.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1579718311580-4577a67ce957?w=1200&q=80&auto=format&fit=crop" alt="Sintra: Quinta da Regaleira + Praia da Adraga" loading="lazy"><figcaption><span class="cap-day">Day 2 &middot; Thu &middot; Jun 10</span><strong>Sintra: Quinta da Regaleira + Praia da Adraga</strong><span class="cap-desc">Castle-and-forest day &mdash; Quinta da Regaleira&rsquo;s mossy wells and gardens paired with the Atlantic cliffs at Praia da Adraga before the flight south.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1524942434100-2b3f200f5b40?w=1920&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"><figcaption><span class="cap-day">Day 3 &middot; Fri &middot; Jun 11</span><strong>Cefalù old town + beach + La Rocca</strong><span class="cap-desc">Friday nonstop from Lisbon to Palermo, then down to Cefal&ugrave; for the first Sicily swim &mdash; golden old town under La Rocca and an easy beach.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"><figcaption><span class="cap-day">Day 3 &middot; Fri &middot; Jun 11</span><strong>Cefalù old town + beach + La Rocca</strong><span class="cap-desc">Friday nonstop from Lisbon to Palermo, then down to Cefal&ugrave; for the first Sicily swim &mdash; golden old town under La Rocca and an easy beach.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"><figcaption><span class="cap-day">Day 3 &middot; Fri &middot; Jun 11</span><strong>Cefalù old town + beach + La Rocca</strong><span class="cap-desc">Friday nonstop from Lisbon to Palermo, then down to Cefal&ugrave; for the first Sicily swim &mdash; golden old town under La Rocca and an easy beach.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1541777490254-a50eb9045486?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"><figcaption><span class="cap-day">Day 5 &middot; Sun &middot; Jun 13</span><strong>Palermo historic core + Mondello</strong><span class="cap-desc">Sicily&rsquo;s city texture &mdash; Palermo&rsquo;s markets, baroque churches, and street food &mdash; kept flexible, with Mondello&rsquo;s bay as a swim backup when the heat wins.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1683978345304-e12d6531b24f?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"><figcaption><span class="cap-day">Day 5 &middot; Sun &middot; Jun 13</span><strong>Palermo historic core + Mondello</strong><span class="cap-desc">Sicily&rsquo;s city texture &mdash; Palermo&rsquo;s markets, baroque churches, and street food &mdash; kept flexible, with Mondello&rsquo;s bay as a swim backup when the heat wins.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1586729223498-2cc4a05d3858?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"><figcaption><span class="cap-day">Day 5 &middot; Sun &middot; Jun 13</span><strong>Palermo historic core + Mondello</strong><span class="cap-desc">Sicily&rsquo;s city texture &mdash; Palermo&rsquo;s markets, baroque churches, and street food &mdash; kept flexible, with Mondello&rsquo;s bay as a swim backup when the heat wins.</span></figcaption></figure><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Blue_Hour_Piazza_Duomo_5_-_Syracuse_-_Unesco_World_Heritage.jpg/1280px-Blue_Hour_Piazza_Duomo_5_-_Syracuse_-_Unesco_World_Heritage.jpg" alt="Ortigia island + Syracuse sea caves" loading="lazy"><figcaption><span class="cap-day">Day 6 &middot; Mon &middot; Jun 14</span><strong>Ortigia island + Syracuse sea caves</strong><span class="cap-desc">Transfer southeast to the island of Ortigia &mdash; Syracuse&rsquo;s sea caves, tight stone lanes, and a first island evening out on the water.</span></figcaption></figure><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg/1280px-Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg" alt="Ortigia island + Syracuse sea caves" loading="lazy"><figcaption><span class="cap-day">Day 6 &middot; Mon &middot; Jun 14</span><strong>Ortigia island + Syracuse sea caves</strong><span class="cap-desc">Transfer southeast to the island of Ortigia &mdash; Syracuse&rsquo;s sea caves, tight stone lanes, and a first island evening out on the water.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1512119384946-808e3d503064?w=1200&q=80&auto=format&fit=crop" alt="Ortigia island + Syracuse sea caves" loading="lazy"><figcaption><span class="cap-day">Day 6 &middot; Mon &middot; Jun 14</span><strong>Ortigia island + Syracuse sea caves</strong><span class="cap-desc">Transfer southeast to the island of Ortigia &mdash; Syracuse&rsquo;s sea caves, tight stone lanes, and a first island evening out on the water.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1568732304366-ebc75ac09920?w=1200&q=80&auto=format&fit=crop" alt="Noto + Vendicari / Calamosche" loading="lazy"><figcaption><span class="cap-day">Day 8 &middot; Wed &middot; Jun 16</span><strong>Noto + Vendicari / Calamosche</strong><span class="cap-desc">Beach-then-baroque day &mdash; swim first at Vendicari or Calamosche, then Noto&rsquo;s honey-colored streets glowing at golden hour, with gelato along the way.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1589823934957-5e9ce265422a?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"><figcaption><span class="cap-day">Day 10 &middot; Fri &middot; Jun 18</span><strong>Taormina + Isola Bella</strong><span class="cap-desc">Juneteenth transfer up the coast to Taormina &mdash; a scenic move and beach arrival at Isola Bella that spends the holiday, not PTO.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"><figcaption><span class="cap-day">Day 10 &middot; Fri &middot; Jun 18</span><strong>Taormina + Isola Bella</strong><span class="cap-desc">Juneteenth transfer up the coast to Taormina &mdash; a scenic move and beach arrival at Isola Bella that spends the holiday, not PTO.</span></figcaption></figure><figure><img src="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Taormina + Isola Bella" loading="lazy"><figcaption><span class="cap-day">Day 10 &middot; Fri &middot; Jun 18</span><strong>Taormina + Isola Bella</strong><span class="cap-desc">Juneteenth transfer up the coast to Taormina &mdash; a scenic move and beach arrival at Isola Bella that spends the holiday, not PTO.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1497002961800-ea7dbfe18696?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"><figcaption><span class="cap-day">Day 11 &middot; Sat &middot; Jun 19</span><strong>Mount Etna south slope</strong><span class="cap-desc">The trip&rsquo;s nature pillar &mdash; a cool morning on Etna&rsquo;s south slope among craters and lava, then a recovery swim back down on the coast.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1631338034841-e96e0e46b36e?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"><figcaption><span class="cap-day">Day 11 &middot; Sat &middot; Jun 19</span><strong>Mount Etna south slope</strong><span class="cap-desc">The trip&rsquo;s nature pillar &mdash; a cool morning on Etna&rsquo;s south slope among craters and lava, then a recovery swim back down on the coast.</span></figcaption></figure><figure><img src="https://images.unsplash.com/photo-1600723353541-c73d1ec0d2cd?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"><figcaption><span class="cap-day">Day 11 &middot; Sat &middot; Jun 19</span><strong>Mount Etna south slope</strong><span class="cap-desc">The trip&rsquo;s nature pillar &mdash; a cool morning on Etna&rsquo;s south slope among craters and lava, then a recovery swim back down on the coast.</span></figcaption></figure></div>
+    <button class="nav prev" aria-label="Previous">&#8249;</button>
+    <button class="nav next" aria-label="Next">&#8250;</button>
+    <div class="counter"><span class="cur">1</span> / 22</div>
+  </div>
+</section>
+
 <nav>
   <a href="../index.html" class="nav-home" style="background:var(--ink);color:#fff;border-color:var(--ink);font-weight:800">← All Trips</a>
   <a href="#overview">Overview</a><a href="#health-check">Health-Check</a><a href="#timing">Best Time</a><a href="#map">Trip Map</a><a href="#stays">Where We Stay</a><a href="#getting-around">Getting Around</a><a href="#air-travel">Air Travel</a><a href="#itinerary">Day by Day</a><a href="#budget">Budget</a><a href="#tips">Travel Tips</a><a href="#status">Settled & Open</a>
+
+
+<a href="#photo-guide">Photo Guide</a>
 </nav>
 <main>
   <section id="overview">
@@ -1671,6 +1711,673 @@ footer a{color:var(--muted)}
       </div>
     </div>
   </section>
+
+
+
+  <!--PG:START-->
+  <section id="photo-guide" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">For The Photographer</p>
+      <h2>Photographer Guide</h2>
+      <p>Portugal supplies edge-of-day Atlantic coastline; Sicily supplies golden baroque towns, a blue-hour island city, and a volcano. Plan around light first, logistics second.</p>
+    </div>
+    <style id="pg-style">
+#photo-guide{--pg-ink:#171717;--pg-muted:#66615b;--pg-panel:#fff;--pg-line:#ded8cf;--pg-blue:#1e6075;--pg-gold:#b27636;--pg-red:#a34e3b;color:var(--pg-ink);}
+#photo-guide .pg-wrap{border:1px solid var(--pg-line);border-radius:16px;background:#fffdfa;overflow:hidden;box-shadow:0 20px 50px -34px rgba(0,0,0,.4);}
+#photo-guide .pg-wrap>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:16px;padding:22px clamp(16px,3vw,30px);background:#173c38;color:#fff;}
+#photo-guide .pg-wrap>summary::-webkit-details-marker{display:none;}
+#photo-guide .pg-wrap>summary .pg-sum-ico{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+#photo-guide .pg-wrap>summary .pg-sum-txt{flex:1;min-width:0;}
+#photo-guide .pg-wrap>summary h3{margin:0;font-size:clamp(1.15rem,2.4vw,1.5rem);color:#fff;font-weight:700;}
+#photo-guide .pg-wrap>summary p{margin:3px 0 0;color:#cfe3dc;font-size:.9rem;}
+#photo-guide .pg-wrap>summary .pg-chev{flex:0 0 auto;font-size:1.5rem;transition:transform .25s;color:#cfe3dc;}
+#photo-guide .pg-wrap[open]>summary .pg-chev{transform:rotate(180deg);}
+#photo-guide .pg-body{padding:clamp(16px,3vw,34px);}
+#photo-guide p{margin:0;}
+#photo-guide .pg-muted,#photo-guide .pg-strategy-card p,#photo-guide .pg-area-head p,#photo-guide .pg-grid p,#photo-guide li{color:var(--pg-muted);}
+#photo-guide .pg-eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:800;color:var(--pg-gold);margin:0 0 6px;}
+#photo-guide .pg-strategy{margin:0 0 12px;}
+#photo-guide .pg-strategy-card h2{margin:.1em 0 .35em;font-size:clamp(1.4rem,3vw,2rem);font-weight:700;}
+#photo-guide .pg-shots ul,#photo-guide .pg-grid ul{margin:0;padding-left:18px;}
+#photo-guide .pg-warning{margin-top:14px;padding:14px 16px;border-left:4px solid var(--pg-red);background:#fff3ee;border-radius:0 8px 8px 0;color:#5c3027;}
+#photo-guide .pg-area{margin-top:44px;padding-top:24px;border-top:3px solid var(--pg-blue);}
+#photo-guide .pg-area:first-of-type{margin-top:20px;}
+#photo-guide .pg-area-head{max-width:820px;margin-bottom:22px;}
+#photo-guide .pg-area-head h2{margin:.05em 0 .3em;font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:700;}
+#photo-guide .pg-spot{overflow:hidden;margin:0 0 30px;border:1px solid var(--pg-line);border-radius:12px;background:var(--pg-panel);}
+#photo-guide .pg-spot-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;padding:16px 18px;border-bottom:1px solid var(--pg-line);background:#fffdfa;}
+#photo-guide .pg-spot-head .pg-tag{grid-column:1/-1;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:800;color:var(--pg-blue);}
+#photo-guide .pg-spot-head h3{margin:0;font-size:clamp(1.15rem,2.4vw,1.45rem);font-weight:700;}
+#photo-guide .pg-map{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:6px 12px;border:1px solid var(--pg-line);border-radius:999px;color:var(--pg-ink);text-decoration:none;font-weight:800;white-space:nowrap;background:#fff;font-size:.85rem;}
+#photo-guide .pg-map:hover{border-color:var(--pg-gold);color:var(--pg-red);}
+#photo-guide .pg-gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:120px;gap:8px;padding:16px 18px;}
+#photo-guide .pg-gitem{border:0;padding:0;cursor:pointer;background-size:cover;background-position:center;background-color:#e9e4da;border-radius:9px;position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease;}
+#photo-guide .pg-gitem.pg-hero{grid-column:span 2;grid-row:span 2;}
+#photo-guide .pg-gitem::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.28));opacity:0;transition:opacity .25s;}
+#photo-guide .pg-gitem:hover{transform:translateY(-2px);box-shadow:0 12px 30px -12px rgba(0,0,0,.55);z-index:2;}
+#photo-guide .pg-gitem:hover::after{opacity:1;}
+#photo-guide .pg-gcount{position:absolute;left:12px;bottom:11px;color:#fff;font-weight:800;font-size:.8rem;text-shadow:0 1px 6px rgba(0,0,0,.6);z-index:2;background:rgba(0,0,0,.32);padding:4px 10px;border-radius:999px;backdrop-filter:blur(3px);}
+#photo-guide .pg-spot-meta{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(240px,1fr);gap:22px;align-items:start;padding:0 18px 18px;}
+#photo-guide .pg-grid,#photo-guide .pg-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border:1px solid var(--pg-line);border-radius:10px;overflow:hidden;}
+#photo-guide .pg-shots{margin-top:14px;}
+#photo-guide .pg-grid section,#photo-guide .pg-shots section{padding:14px 16px;border-bottom:1px solid var(--pg-line);}
+#photo-guide .pg-grid section:nth-child(odd),#photo-guide .pg-shots section:nth-child(odd){border-right:1px solid var(--pg-line);}
+#photo-guide .pg-grid section:nth-last-child(-n+2),#photo-guide .pg-shots section{border-bottom:0;}
+#photo-guide .pg-grid h4,#photo-guide .pg-shots h4{margin:0 0 6px;font-size:.82rem;text-transform:uppercase;letter-spacing:.06em;color:var(--pg-ink);}
+#photo-guide .pg-meta-side{display:flex;flex-direction:column;gap:14px;position:sticky;top:64px;}
+#photo-guide .pg-map-embed{position:relative;width:100%;aspect-ratio:4/3;background:#e9e4da;border-radius:8px;overflow:hidden;}
+#photo-guide .pg-map-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+#photo-guide .pg-inspiration-links{padding:14px 16px;border:1px solid var(--pg-line);border-radius:8px;background:#fffaf0;}
+#photo-guide .pg-inspiration-links h4{margin:0 0 6px;font-size:.9rem;}
+#photo-guide .pg-inspiration-links p{margin:0 0 10px;font-size:.82rem;}
+#photo-guide .pg-inspiration-buttons{display:flex;flex-wrap:wrap;gap:8px;}
+#photo-guide .pg-inspiration-buttons a{display:inline-flex;align-items:center;min-height:32px;padding:6px 11px;border:1px solid var(--pg-line);border-radius:999px;background:#fff;color:var(--pg-ink);font-size:.8rem;font-weight:800;text-decoration:none;}
+#photo-guide .pg-inspiration-buttons a:hover{border-color:var(--pg-gold);color:var(--pg-red);}
+@media(max-width:820px){#photo-guide .pg-spot-meta{grid-template-columns:1fr;}#photo-guide .pg-meta-side{position:static;}#photo-guide .pg-grid,#photo-guide .pg-shots,#photo-guide .pg-spot-head{grid-template-columns:1fr;}#photo-guide .pg-grid section:nth-child(odd),#photo-guide .pg-shots section:nth-child(odd){border-right:0;}#photo-guide .pg-grid section,#photo-guide .pg-shots section:first-child{border-bottom:1px solid var(--pg-line);}#photo-guide .pg-map{justify-self:start;}}
+@media(max-width:760px){#photo-guide .pg-gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px;}}
+.pg-lightbox{position:fixed;inset:0;z-index:3000;display:none;align-items:center;justify-content:center;background:rgba(12,10,8,.94);backdrop-filter:blur(4px);}
+.pg-lightbox.open{display:flex;}
+.pg-lightbox img{max-width:92vw;max-height:86vh;border-radius:8px;box-shadow:0 30px 80px -20px #000;}
+.pg-lb-cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#f3ece2;font-size:.9rem;}
+.pg-lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:54px;height:54px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;font-size:1.7rem;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.pg-lb-btn:hover{background:rgba(0,0,0,.6);}
+.pg-lb-prev{left:18px;}.pg-lb-next{right:18px;}
+.pg-lb-close{position:absolute;top:16px;right:18px;width:44px;height:44px;font-size:1.4rem;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;cursor:pointer;}
+.pg-lb-count{position:absolute;top:22px;left:22px;color:#cfc6ba;font-weight:700;font-size:.85rem;}
+</style>
+    <details class="pg-wrap">
+      <summary>
+        <span class="pg-sum-ico">📸</span>
+        <span class="pg-sum-txt"><h3>Landscape photo spots — Cascais/Sintra coast + Sicily</h3><p>Exact map targets, light timing, iconic + hidden angles, and click-to-open photo galleries. Tap to expand.</p></span>
+        <span class="pg-chev">▾</span>
+      </summary>
+      <div class="pg-body">
+        <section class="pg-strategy" id="pg-strategy">
+      <div class="pg-strategy-card">
+        <p class="pg-eyebrow">How to shoot the trip</p>
+        <h2>Prioritize light, then logistics</h2>
+        <p>The best frames on this route are mostly edge-of-day coastline, early-access palace/garden atmosphere, and Madeira weather windows. Treat midday as family time, scouting time, or water time unless the goal is turquoise water color.</p>
+        <div class="pg-warning">For exact 2027 sunrise/sunset, tide, moon, and Milky Way planning, plug each map target into PhotoPills, TPE, or Sun Surveyor once dates are locked. Coastal access and Benagil rules can change; verify locally before building a shoot around a restricted spot.</div>
+      </div>
+      <aside class="kit">
+        <p class="pg-eyebrow">Useful kit</p>
+        <ul>
+          <li>16-35mm or similar for caves, cliffs, streets, and tight viewpoints.</li>
+          <li>24-70mm / 24-105mm travel zoom for family + landscape flexibility.</li>
+          <li>70-200mm for cliff compression, villages, harbor layers, and Madeira viewpoints.</li>
+          <li>CPL for midday water; 3-6 stop ND for surf movement; microfiber cloths for spray.</li>
+          <li>Light tripod only if you will actually carry it; many family-trip frames are handheld windows.</li>
+        </ul>
+      </aside>
+    </section>
+        <section class="pg-area" id="pg-cascais-sintra">
+    <div class="pg-area-head">
+      <p class="pg-eyebrow">Base: Cascais</p>
+      <h2>Cascais and Sintra Coast</h2>
+      <p>June light: sunrise around 6:10, sunset around 21:05. West-facing coast is the money light; Sintra forest/gardens are better early before tour traffic.</p>
+    </div>
+    <article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Iconic arrival set</p>
+    <h3>Cascais Bay, Praia da Rainha, and the promenade</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Praia+da+Rainha+Cascais+Portugal" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1587973878097-ef3aabd5eeaa?auto=format&fit=crop&w=1800&q=80" data-cap="Cascais Bay, Praia da Rainha, and the promenade &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1587973878097-ef3aabd5eeaa?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Cascais Bay, Praia da Rainha, and the promenade"><span class="pg-gcount">5 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/36736017/pexels-photo-36736017.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Cascais Bay, Praia da Rainha, and the promenade &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/36736017/pexels-photo-36736017.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 2 of Cascais Bay, Praia da Rainha, and the promenade"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/7595327/pexels-photo-7595327.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Cascais Bay, Praia da Rainha, and the promenade &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/7595327/pexels-photo-7595327.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 3 of Cascais Bay, Praia da Rainha, and the promenade"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1649767580754-40bb08fae022?auto=format&fit=crop&w=1800&q=80" data-cap="Cascais Bay, Praia da Rainha, and the promenade &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1649767580754-40bb08fae022?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 4 of Cascais Bay, Praia da Rainha, and the promenade"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1675165185096-1a9600218429?auto=format&fit=crop&w=1800&q=80" data-cap="Cascais Bay, Praia da Rainha, and the promenade &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1675165185096-1a9600218429?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 5 of Cascais Bay, Praia da Rainha, and the promenade"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section>
+        <h4>Exact Location</h4>
+        <p>Praia da Rainha / Cascais Bay waterfront, central Cascais.</p>
+      </section>
+      <section>
+        <h4>How To Get There</h4>
+        <p>From a Cascais stay, walk. If driving, park once near Cascais Villa / central car parks and shoot on foot; do not try to move the car for each beach.</p>
+      </section>
+      <section>
+        <h4>Best Time</h4>
+        <p>Sunrise for empty sand and soft town light; golden hour for silhouettes on wet sand. Midday only works for bright family/beach lifestyle shots.</p>
+      </section>
+      <section>
+        <h4>Field Tips</h4>
+        <p>Bring a compact setup the first evening; this is a decompression walk, not a tripod expedition. Polarizer helps at midday, but at golden hour protect highlight detail on the water.</p>
+      </section>
+    </div>
+    <div class="pg-shots">
+      <section>
+        <h4>Iconic / Instagram-Worthy Frames</h4>
+        <ul><li>Low angle on wet sand at Praia da Rainha with the cove walls framing the town.</li><li>Compressed promenade shot with walkers/cyclists against the bay.</li><li>Evening reflections after small waves wash over the beach.</li></ul>
+      </section>
+      <section>
+        <h4>Hidden / Less Obvious Angles</h4>
+        <ul><li>Shoot from the small overlooks above Praia da Rainha instead of only from the sand.</li><li>Use the underpass/stone edges along the promenade for foreground layers.</li></ul>
+      </section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Cascais Bay, Praia da Rainha, and the promenade" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sPraia+da+Rainha+Cascais+Portugal!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>These open live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Praia%20da%20Rainha%20Cascais%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=cascais" target="_blank" rel="noreferrer">IG · Cascais</a><a href="https://www.instagram.com/explore/search/keyword/?q=praiadarainha" target="_blank" rel="noreferrer">IG · Praia da Rainha</a><a href="https://500px.com/search?q=Praia%20da%20Rainha%20Cascais%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Praia%20da%20Rainha%20Cascais%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Iconic cliff/seascape</p>
+    <h3>Boca do Inferno</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Boca+do+Inferno+Cascais" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1525968561557-b3d3c823fee2?auto=format&fit=crop&w=1800&q=80" data-cap="Boca do Inferno &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1525968561557-b3d3c823fee2?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Boca do Inferno"><span class="pg-gcount">5 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1525968673172-f33a3a0742b7?auto=format&fit=crop&w=1800&q=80" data-cap="Boca do Inferno &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1525968673172-f33a3a0742b7?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Boca do Inferno"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1567069231446-9106f2dd1616?auto=format&fit=crop&w=1800&q=80" data-cap="Boca do Inferno &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1567069231446-9106f2dd1616?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Boca do Inferno"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1650462788236-965b35bec5df?auto=format&fit=crop&w=1800&q=80" data-cap="Boca do Inferno &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1650462788236-965b35bec5df?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 4 of Boca do Inferno"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1558905586-b023029262f1?auto=format&fit=crop&w=1800&q=80" data-cap="Boca do Inferno &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1558905586-b023029262f1?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 5 of Boca do Inferno"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section>
+        <h4>Exact Location</h4>
+        <p>Sea arch and chasm about 2 km northwest of Cascais along Costa da Guia.</p>
+      </section>
+      <section>
+        <h4>How To Get There</h4>
+        <p>Walk or bike from Cascais in 25-35 minutes along the coast, or drive/taxi for a quick sunset stop. Parking is usually easier than central Cascais but still tighter near sunset.</p>
+      </section>
+      <section>
+        <h4>Best Time</h4>
+        <p>Sunset and blue hour. High surf adds drama; calm water makes cleaner color but less spray.</p>
+      </section>
+      <section>
+        <h4>Field Tips</h4>
+        <p>Stay behind barriers; the good shot is not worth unstable cliff edges. Use a lens cloth because spray and wind are real.</p>
+      </section>
+    </div>
+    <div class="pg-shots">
+      <section>
+        <h4>Iconic / Instagram-Worthy Frames</h4>
+        <ul><li>Wide frame of the chasm with crashing surf and the setting sun off-frame.</li><li>Long exposure from the safe viewing area to turn the surge into white ribbons.</li><li>Telephoto detail of water exploding through the rock window.</li></ul>
+      </section>
+      <section>
+        <h4>Hidden / Less Obvious Angles</h4>
+        <ul><li>Walk the coast path west after the main viewpoint for cleaner cliff layers and fewer people.</li><li>Use people on the official railings as scale instead of trying to get beyond barriers.</li></ul>
+      </section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Boca do Inferno" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sBoca+do+Inferno+Cascais!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>These open live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Boca%20do%20Inferno%20Cascais%20sunset%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=bocadoinferno" target="_blank" rel="noreferrer">IG · Boca do Inferno</a><a href="https://500px.com/search?q=Boca%20do%20Inferno%20Cascais%20sunset%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Boca%20do%20Inferno%20Cascais%20sunset%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Iconic architecture/garden fantasy</p>
+    <h3>Quinta da Regaleira</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Quinta+da+Regaleira+Sintra" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1696535203558-47e6461fbd8e?auto=format&fit=crop&w=1800&q=80" data-cap="Quinta da Regaleira &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1696535203558-47e6461fbd8e?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Quinta da Regaleira"><span class="pg-gcount">5 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/24407901/pexels-photo-24407901.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Quinta da Regaleira &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/24407901/pexels-photo-24407901.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 2 of Quinta da Regaleira"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1677327258611-553f86d76b22?auto=format&fit=crop&w=1800&q=80" data-cap="Quinta da Regaleira &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1677327258611-553f86d76b22?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Quinta da Regaleira"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/24407895/pexels-photo-24407895.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Quinta da Regaleira &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/24407895/pexels-photo-24407895.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 4 of Quinta da Regaleira"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1632733033743-4f953afcfb1d?auto=format&fit=crop&w=1800&q=80" data-cap="Quinta da Regaleira &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1632733033743-4f953afcfb1d?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 5 of Quinta da Regaleira"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section>
+        <h4>Exact Location</h4>
+        <p>Quinta da Regaleira estate, R. Barbosa du Bocage 5, Sintra.</p>
+      </section>
+      <section>
+        <h4>How To Get There</h4>
+        <p>Drive or taxi from Cascais to Sintra, then arrive early. The official ticket system uses timed slots and a one-hour grace period after the ticketed time.</p>
+      </section>
+      <section>
+        <h4>Best Time</h4>
+        <p>First entry slot. The Initiation Well gets crowded quickly; gardens hold mist and soft light early.</p>
+      </section>
+      <section>
+        <h4>Field Tips</h4>
+        <p>Fast wide lens beats tripod here. Raise ISO and protect mood; the best images are about atmosphere, not sterile sharpness.</p>
+      </section>
+    </div>
+    <div class="pg-shots">
+      <section>
+        <h4>Iconic / Instagram-Worthy Frames</h4>
+        <ul><li>Top-down spiral of the Initiation Well, exposed for moss detail.</li><li>Person framed in the well arches for scale and story.</li><li>Palace facade through foreground leaves for that storybook Sintra mood.</li></ul>
+      </section>
+      <section>
+        <h4>Hidden / Less Obvious Angles</h4>
+        <ul><li>Shoot tunnels and grotto exits as natural frames instead of only the well.</li><li>Use the chapel and terrace details while crowds bottleneck at the well.</li></ul>
+      </section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Quinta da Regaleira" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sQuinta+da+Regaleira+Sintra!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>These open live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Quinta%20da%20Regaleira%20Initiation%20Well%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=quintadaregaleira" target="_blank" rel="noreferrer">IG · Quinta da Regaleira</a><a href="https://500px.com/search?q=Quinta%20da%20Regaleira%20Initiation%20Well%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Quinta%20da%20Regaleira%20Initiation%20Well%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Wild beach and rock forms</p>
+    <h3>Praia da Adraga</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Praia+da+Adraga+Sintra" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1579646696549-4ef5f966c177?auto=format&fit=crop&w=1800&q=80" data-cap="Praia da Adraga &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1579646696549-4ef5f966c177?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Praia da Adraga"><span class="pg-gcount">5 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1675685468800-2008e2c672ef?auto=format&fit=crop&w=1800&q=80" data-cap="Praia da Adraga &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1675685468800-2008e2c672ef?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Praia da Adraga"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/17832527/pexels-photo-17832527.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Praia da Adraga &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/17832527/pexels-photo-17832527.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 3 of Praia da Adraga"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1652395488833-e24431bfe874?auto=format&fit=crop&w=1800&q=80" data-cap="Praia da Adraga &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1652395488833-e24431bfe874?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 4 of Praia da Adraga"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/20112187/pexels-photo-20112187.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Praia da Adraga &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/20112187/pexels-photo-20112187.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 5 of Praia da Adraga"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section>
+        <h4>Exact Location</h4>
+        <p>Praia da Adraga, near Almoçageme, Sintra-Cascais Natural Park.</p>
+      </section>
+      <section>
+        <h4>How To Get There</h4>
+        <p>Drive from Cascais/Sintra; there is beach parking, but go early or late in June. The road is narrow in places.</p>
+      </section>
+      <section>
+        <h4>Best Time</h4>
+        <p>Golden hour through sunset. Low tide gives better rock foregrounds and walking room.</p>
+      </section>
+      <section>
+        <h4>Field Tips</h4>
+        <p>Check tide and swell. Keep children and gear away from surge channels; Atlantic wash can run farther than expected.</p>
+      </section>
+    </div>
+    <div class="pg-shots">
+      <section>
+        <h4>Iconic / Instagram-Worthy Frames</h4>
+        <ul><li>Sea stacks and cliffs with receding foam lines.</li><li>Person small against the rock wall for scale.</li><li>Long exposure with the arch/rocks as foreground anchors.</li></ul>
+      </section>
+      <section>
+        <h4>Hidden / Less Obvious Angles</h4>
+        <ul><li>Explore the north/south ends of the beach at low tide for less repeated angles.</li><li>Shoot the approach road and cliff layers from higher pullouts if marine haze is glowing.</li></ul>
+      </section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Praia da Adraga" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sPraia+da+Adraga+Sintra!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>These open live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Praia%20da%20Adraga%20Sintra%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=praiadaadraga" target="_blank" rel="noreferrer">IG · Praia da Adraga</a><a href="https://500px.com/search?q=Praia%20da%20Adraga%20Sintra%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Praia%20da%20Adraga%20Sintra%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Instagram village classic</p>
+    <h3>Azenhas do Mar</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Azenhas+do+Mar+viewpoint" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.pexels.com/photos/31252856/pexels-photo-31252856.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Azenhas do Mar &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/31252856/pexels-photo-31252856.jpeg?auto=compress&cs=tinysrgb&w=1100')" aria-label="Open photo 1 of Azenhas do Mar"><span class="pg-gcount">5 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1695295446085-8a8e14b5148c?auto=format&fit=crop&w=1800&q=80" data-cap="Azenhas do Mar &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1695295446085-8a8e14b5148c?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Azenhas do Mar"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/12945528/pexels-photo-12945528.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Azenhas do Mar &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/12945528/pexels-photo-12945528.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 3 of Azenhas do Mar"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1655369000751-1998213b0ea5?auto=format&fit=crop&w=1800&q=80" data-cap="Azenhas do Mar &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1655369000751-1998213b0ea5?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 4 of Azenhas do Mar"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/14575429/pexels-photo-14575429.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Azenhas do Mar &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/14575429/pexels-photo-14575429.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 5 of Azenhas do Mar"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section>
+        <h4>Exact Location</h4>
+        <p>Cliffside village viewpoint above Azenhas do Mar ocean pool.</p>
+      </section>
+      <section>
+        <h4>How To Get There</h4>
+        <p>Drive from Sintra coast day; park above the village and walk down. Avoid tight lanes if you are not comfortable reversing.</p>
+      </section>
+      <section>
+        <h4>Best Time</h4>
+        <p>Late afternoon into blue hour, when white houses pick up warm light and the ocean pool glows.</p>
+      </section>
+      <section>
+        <h4>Field Tips</h4>
+        <p>Telephoto compression is your friend. The famous view can look tiny on a phone if shot too wide.</p>
+      </section>
+    </div>
+    <div class="pg-shots">
+      <section>
+        <h4>Iconic / Instagram-Worthy Frames</h4>
+        <ul><li>Classic cliff village composition from the main roadside overlook.</li><li>Vertical frame with ocean pool at bottom and stacked white houses above.</li><li>Blue-hour village lights with the Atlantic softened by longer shutter.</li></ul>
+      </section>
+      <section>
+        <h4>Hidden / Less Obvious Angles</h4>
+        <ul><li>Walk the upper lanes for foreground walls/flowers instead of only shooting the postcard angle.</li><li>Include diners or swimmers at the pool for scale and life.</li></ul>
+      </section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Azenhas do Mar" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sAzenhas+do+Mar+viewpoint!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>These open live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Azenhas%20do%20Mar%20Portugal%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=azenhasdomar" target="_blank" rel="noreferrer">IG · Azenhas do Mar</a><a href="https://500px.com/search?q=Azenhas%20do%20Mar%20Portugal%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Azenhas%20do%20Mar%20Portugal%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Western edge / hidden cliff drama</p>
+    <h3>Cabo da Roca and Praia da Ursa overlook</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Cabo+da+Roca+Portugal" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery>
+<button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1593897875349-193e751c9b14?auto=format&fit=crop&w=1800&q=80" data-cap="Cabo da Roca and Praia da Ursa overlook &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1593897875349-193e751c9b14?auto=format&fit=crop&w=1100&q=75')" aria-label="Open photo 1 of Cabo da Roca and Praia da Ursa overlook"><span class="pg-gcount">5 photos</span></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1591266360949-c54e3296de4c?auto=format&fit=crop&w=1800&q=80" data-cap="Cabo da Roca and Praia da Ursa overlook &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1591266360949-c54e3296de4c?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 2 of Cabo da Roca and Praia da Ursa overlook"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1496694971191-58e2450fc841?auto=format&fit=crop&w=1800&q=80" data-cap="Cabo da Roca and Praia da Ursa overlook &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1496694971191-58e2450fc841?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 3 of Cabo da Roca and Praia da Ursa overlook"></button>
+<button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/33725140/pexels-photo-33725140.jpeg?auto=compress&cs=tinysrgb&w=1800" data-cap="Cabo da Roca and Praia da Ursa overlook &middot; Pexels" style="background-image:url('https://images.pexels.com/photos/33725140/pexels-photo-33725140.jpeg?auto=compress&cs=tinysrgb&w=700')" aria-label="Open photo 4 of Cabo da Roca and Praia da Ursa overlook"></button>
+<button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1562760157-83585c4d01f8?auto=format&fit=crop&w=1800&q=80" data-cap="Cabo da Roca and Praia da Ursa overlook &middot; Unsplash" style="background-image:url('https://images.unsplash.com/photo-1562760157-83585c4d01f8?auto=format&fit=crop&w=700&q=75')" aria-label="Open photo 5 of Cabo da Roca and Praia da Ursa overlook"></button>
+</div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section>
+        <h4>Exact Location</h4>
+        <p>Cabo da Roca lighthouse/monument area; optional Praia da Ursa trail begins nearby.</p>
+      </section>
+      <section>
+        <h4>How To Get There</h4>
+        <p>Drive from Cascais or Sintra. Without a car, use the Cascais/Sintra bus routes or ride share, but plan the return before sunset.</p>
+      </section>
+      <section>
+        <h4>Best Time</h4>
+        <p>Sunset, but bring a jacket even in summer. Wind is part of the place.</p>
+      </section>
+      <section>
+        <h4>Field Tips</h4>
+        <p>Do not cross fences. The cliffs are steep, windy, and unstable. The better photographer move is lens choice and patience, not risky footing.</p>
+      </section>
+    </div>
+    <div class="pg-shots">
+      <section>
+        <h4>Iconic / Instagram-Worthy Frames</h4>
+        <ul><li>Lighthouse and cliff edge with the Atlantic horizon.</li><li>Backlit grasses in the foreground and cliffs receding north.</li><li>Telephoto layers of cliff faces after sunset when contrast softens.</li></ul>
+      </section>
+      <section>
+        <h4>Hidden / Less Obvious Angles</h4>
+        <ul><li>Walk north on official paths for quieter cliff compositions.</li><li>Praia da Ursa viewpoint/trail gives sea-pillar drama; only descend if conditions, footwear, daylight, and family energy are right.</li></ul>
+      </section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+  <div class="pg-map-embed"><iframe title="Map of Cabo da Roca and Praia da Ursa overlook" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sCabo+da+Roca+Portugal!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+  <div class="pg-inspiration-links">
+      <h4>Pro Inspiration Searches</h4>
+      <p>These open live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+      <div class="pg-inspiration-buttons">
+        <a href="https://www.google.com/search?tbm=isch&amp;q=Cabo%20da%20Roca%20Praia%20da%20Ursa%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=cabodaroca" target="_blank" rel="noreferrer">IG · Cabo da Roca</a><a href="https://www.instagram.com/explore/search/keyword/?q=praiadaursa" target="_blank" rel="noreferrer">IG · Praia da Ursa</a><a href="https://500px.com/search?q=Cabo%20da%20Roca%20Praia%20da%20Ursa%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Cabo%20da%20Roca%20Praia%20da%20Ursa%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+      </div>
+    </div>
+</aside>
+  </div>
+</article>
+  </section>
+<section class="pg-area" id="pg-sicily">
+  <div class="pg-area-head">
+    <p class="pg-eyebrow">Base: Cefalù, Taormina &amp; Ortigia</p>
+    <h2>Sicily</h2>
+    <p>June light: sunrise around 5:40, sunset around 20:30. Golden baroque towns (Noto, Cefalù) peak in warm side light; Ortigia is a blue-hour city; Etna and Taormina&#x27;s theatre reward sunrise and clear nights.</p>
+  </div>
+  <article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Cliff-town classic</p>
+    <h3>Cefalù Old Town, Beach &amp; La Rocca</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Cefalu+Sicily" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery><button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1524942434100-2b3f200f5b40?w=1600&q=80&auto=format&fit=crop" data-cap="Cefalù old town · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1524942434100-2b3f200f5b40?w=1600&q=80&auto=format&fit=crop')" aria-label="Open photo 1"><span class="pg-gcount">3 photos</span></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" data-cap="Cefalù rooftops · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 2"></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" data-cap="Cefalù beach · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 3"></button></div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>Cefalù old town beneath La Rocca headland (approx 38.0394, 14.0229), north coast, ~1 hr east of Palermo.</p></section>
+      <section><h4>How To Get There</h4><p>Walk the old town on foot. La Rocca is a steep ~30-45 min hike with a ticketed entrance; start early or late to avoid heat.</p></section>
+      <section><h4>Best Time &amp; Light</h4><p>Golden hour and blue hour along the Lungomare, looking back at the honey-colored houses stacked under La Rocca. From La Rocca, the whole town-and-sea aerial opens up.</p></section>
+      <section><h4>Field Tips</h4><p>The signature ground shot is from the western Lungomare / old jetty. For the aerial, budget time and water for the La Rocca climb.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Old houses tumbling to the sea from the western breakwater at sunset.</li><li>La Rocca aerial over the terracotta town and cathedral.</li><li>Cathedral facade framed by narrow medieval lanes.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Shoot the medieval washhouse (Lavatoio) and stepped alleys.</li><li>Long lens from the beach compressing swimmers, town, and headland.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+      <div class="pg-map-embed"><iframe title="Map of Cefalù Old Town, Beach &amp; La Rocca" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sCefalu+Sicily!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <div class="pg-inspiration-links">
+        <h4>Pro Inspiration Searches</h4>
+        <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+        <div class="pg-inspiration-buttons">
+          <a href="https://www.google.com/search?tbm=isch&amp;q=Cefal%C3%B9%20Old%20Town%2C%20Beach%20%26%20La%20Rocca%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=cefalu" target="_blank" rel="noreferrer">IG · Cefalù</a><a href="https://www.instagram.com/explore/search/keyword/?q=laroccacefalu" target="_blank" rel="noreferrer">IG · La Rocca</a><a href="https://500px.com/search?q=Cefal%C3%B9%20Old%20Town%2C%20Beach%20%26%20La%20Rocca%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Cefal%C3%B9%20Old%20Town%2C%20Beach%20%26%20La%20Rocca%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Capital &amp; seaside</p>
+    <h3>Palermo Historic Core &amp; Mondello</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Palermo+Sicily" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery><button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1541777490254-a50eb9045486?w=1600&q=80&auto=format&fit=crop" data-cap="Palermo core · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1541777490254-a50eb9045486?w=1600&q=80&auto=format&fit=crop')" aria-label="Open photo 1"><span class="pg-gcount">3 photos</span></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1683978345304-e12d6531b24f?w=1200&q=80&auto=format&fit=crop" data-cap="Palermo street · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1683978345304-e12d6531b24f?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 2"></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1586729223498-2cc4a05d3858?w=1200&q=80&auto=format&fit=crop" data-cap="Mondello bay · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1586729223498-2cc4a05d3858?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 3"></button></div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>Palermo historic center (approx 38.1157, 13.3615); Mondello beach is ~11 km north (approx 38.2019, 13.3289).</p></section>
+      <section><h4>How To Get There</h4><p>Explore the center on foot; taxi/bus or drive to Mondello. Markets (Ballarò, Vucciria) are dense and best walked.</p></section>
+      <section><h4>Best Time &amp; Light</h4><p>Early morning for empty piazzas and market light; late afternoon for warm facades. Mondello&#x27;s pastel bathhouse and turquoise bay glow in soft evening light.</p></section>
+      <section><h4>Field Tips</h4><p>Fast wide lens for markets and lanes — protect atmosphere over sterile sharpness. Mind belongings in crowded market scenes.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Quattro Canti baroque corners and Piazza Pretoria fountain.</li><li>Market chaos: hanging produce, steam, backlit awnings.</li><li>Mondello&#x27;s Liberty-style bathhouse over turquoise water.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Rooftop bar / cathedral terrace for an elevated city frame.</li><li>Vucciria and Ballarò side-alleys for candid street texture.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+      <div class="pg-map-embed"><iframe title="Map of Palermo Historic Core &amp; Mondello" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sPalermo+Sicily!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <div class="pg-inspiration-links">
+        <h4>Pro Inspiration Searches</h4>
+        <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+        <div class="pg-inspiration-buttons">
+          <a href="https://www.google.com/search?tbm=isch&amp;q=Palermo%20Historic%20Core%20%26%20Mondello%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=palermo" target="_blank" rel="noreferrer">IG · Palermo</a><a href="https://www.instagram.com/explore/search/keyword/?q=mondello" target="_blank" rel="noreferrer">IG · Mondello</a><a href="https://500px.com/search?q=Palermo%20Historic%20Core%20%26%20Mondello%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Palermo%20Historic%20Core%20%26%20Mondello%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Baroque blue hour</p>
+    <h3>Ortigia &amp; Syracuse Sea Caves</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Ortigia+Syracuse+Sicily" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery><button class="pg-gitem pg-hero" type="button" data-full="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Blue_Hour_Piazza_Duomo_5_-_Syracuse_-_Unesco_World_Heritage.jpg/1280px-Blue_Hour_Piazza_Duomo_5_-_Syracuse_-_Unesco_World_Heritage.jpg" data-cap="Piazza Duomo blue hour · Wikimedia" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Blue_Hour_Piazza_Duomo_5_-_Syracuse_-_Unesco_World_Heritage.jpg/1280px-Blue_Hour_Piazza_Duomo_5_-_Syracuse_-_Unesco_World_Heritage.jpg')" aria-label="Open photo 1"><span class="pg-gcount">3 photos</span></button><button class="pg-gitem" type="button" data-full="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg/1280px-Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg" data-cap="Ortigia lungomare · Wikimedia" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg/1280px-Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg')" aria-label="Open photo 2"></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1512119384946-808e3d503064?w=1200&q=80&auto=format&fit=crop" data-cap="Ortigia lanes · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1512119384946-808e3d503064?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 3"></button></div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>Ortigia island, the old town of Syracuse (approx 37.0609, 15.293). Piazza del Duomo is the showpiece.</p></section>
+      <section><h4>How To Get There</h4><p>Ortigia is walkable and largely pedestrian; park on the mainland side and cross the bridge. Sea-cave boat tours leave from the marina.</p></section>
+      <section><h4>Best Time &amp; Light</h4><p>Blue hour in Piazza del Duomo, when the floodlit baroque cathedral balances a deep blue sky over the pale marble. Morning boat tours for the clearest sea-cave light.</p></section>
+      <section><h4>Field Tips</h4><p>A low, wide angle exaggerates the sweeping curve of Piazza del Duomo. For the caves, a fast lens and higher ISO handle the dim interiors.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Piazza del Duomo blue hour with wet-marble reflections.</li><li>Lungomare and Castello Maniace over the sea at sunset.</li><li>Sea-cave interiors with turquoise light bouncing off water.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Fonte Aretusa papyrus pool and quiet back lanes at dawn.</li><li>Long lens compressing the layered baroque balconies of Via Maestranza.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+      <div class="pg-map-embed"><iframe title="Map of Ortigia &amp; Syracuse Sea Caves" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sOrtigia+Syracuse+Sicily!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <div class="pg-inspiration-links">
+        <h4>Pro Inspiration Searches</h4>
+        <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+        <div class="pg-inspiration-buttons">
+          <a href="https://www.google.com/search?tbm=isch&amp;q=Ortigia%20%26%20Syracuse%20Sea%20Caves%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=ortigia" target="_blank" rel="noreferrer">IG · Ortigia</a><a href="https://www.instagram.com/explore/search/keyword/?q=syracuse" target="_blank" rel="noreferrer">IG · Syracuse</a><a href="https://500px.com/search?q=Ortigia%20%26%20Syracuse%20Sea%20Caves%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Ortigia%20%26%20Syracuse%20Sea%20Caves%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Golden-town &amp; wild coves</p>
+    <h3>Noto &amp; Vendicari / Calamosche</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Noto+Sicily" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery><button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1568732304366-ebc75ac09920?w=1600&q=80&auto=format&fit=crop" data-cap="Noto baroque · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1568732304366-ebc75ac09920?w=1600&q=80&auto=format&fit=crop')" aria-label="Open photo 1"><span class="pg-gcount">3 photos</span></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1512119384946-808e3d503064?w=1200&q=80&auto=format&fit=crop" data-cap="Baroque street · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1512119384946-808e3d503064?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 2"></button><button class="pg-gitem" type="button" data-full="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg/1280px-Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg" data-cap="Southeast coast · Wikimedia" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg/1280px-Lungomare_di_Levante_Ortigia._Syracuse%2C_Italy.jpg')" aria-label="Open photo 3"></button></div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>Noto, the baroque capital of the southeast (approx 36.8897, 15.069); Vendicari reserve &amp; Calamosche cove ~15 km southeast (approx 36.8000, 15.1050).</p></section>
+      <section><h4>How To Get There</h4><p>Drive to Noto and walk the Corso; Calamosche needs a ~20 min walk from the Vendicari car park. Combine town + reserve in a day.</p></section>
+      <section><h4>Best Time &amp; Light</h4><p>Late afternoon, when the soft local limestone of Noto turns literally gold. Vendicari&#x27;s coves are best under bright midday light for water color.</p></section>
+      <section><h4>Field Tips</h4><p>Shoot Noto&#x27;s Corso Vittorio Emanuele up toward the cathedral as the stone warms. At Calamosche, keep the frame simple — sand, water, low headlands.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Noto cathedral and staircase glowing gold at sunset.</li><li>Baroque balcony corbels (Palazzo Nicolaci) in raking light.</li><li>Calamosche&#x27;s sheltered cove framed by low cliffs.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Rooftop / church-tower view over Noto&#x27;s honey-colored skyline.</li><li>Vendicari&#x27;s old tonnara ruins and salt-pan flamingos as foreground.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+      <div class="pg-map-embed"><iframe title="Map of Noto &amp; Vendicari / Calamosche" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sNoto+Sicily!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <div class="pg-inspiration-links">
+        <h4>Pro Inspiration Searches</h4>
+        <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+        <div class="pg-inspiration-buttons">
+          <a href="https://www.google.com/search?tbm=isch&amp;q=Noto%20%26%20Vendicari%20/%20Calamosche%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=noto" target="_blank" rel="noreferrer">IG · Noto</a><a href="https://www.instagram.com/explore/search/keyword/?q=vendicari" target="_blank" rel="noreferrer">IG · Vendicari</a><a href="https://www.instagram.com/explore/search/keyword/?q=calamosche" target="_blank" rel="noreferrer">IG · Calamosche</a><a href="https://500px.com/search?q=Noto%20%26%20Vendicari%20/%20Calamosche%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Noto%20%26%20Vendicari%20/%20Calamosche%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Theatre with a volcano</p>
+    <h3>Taormina &amp; Isola Bella</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Taormina+Sicily" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery><button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1589823934957-5e9ce265422a?w=1600&q=80&auto=format&fit=crop" data-cap="Taormina coast · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1589823934957-5e9ce265422a?w=1600&q=80&auto=format&fit=crop')" aria-label="Open photo 1"><span class="pg-gcount">3 photos</span></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" data-cap="Isola Bella · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 2"></button><button class="pg-gitem" type="button" data-full="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" data-cap="Taormina view · Pexels" style="background-image:url('https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200')" aria-label="Open photo 3"></button></div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>Taormina hilltop old town (approx 37.8522, 15.2866); Isola Bella islet in the bay below (approx 37.8517, 15.2975), reached by cable car.</p></section>
+      <section><h4>How To Get There</h4><p>Drive/park below and take the cable car or walk up. The Greek Theatre is ticketed — arrive at opening for light and space.</p></section>
+      <section><h4>Best Time &amp; Light</h4><p>Sunrise at the Greek Theatre, when the columns backlight and Mount Etna often shows above the coast. Isola Bella&#x27;s causeway and turquoise bay peak in bright midday light.</p></section>
+      <section><h4>Field Tips</h4><p>The iconic frame is the theatre&#x27;s stage arches with the sea and Etna beyond — a longer lens compresses the volcano. Go early; it gets packed.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Greek Theatre arches framing the bay and Etna at sunrise.</li><li>Isola Bella islet and its pebble causeway from the clifftop overlook.</li><li>Corso Umberto and Piazza IX Aprile terrace over the coast.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Public Gardens (Villa Comunale) for a quieter Etna-and-sea view.</li><li>Long lens from Isola Bella beach up at the town clinging to the cliff.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+      <div class="pg-map-embed"><iframe title="Map of Taormina &amp; Isola Bella" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sTaormina+Sicily!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <div class="pg-inspiration-links">
+        <h4>Pro Inspiration Searches</h4>
+        <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+        <div class="pg-inspiration-buttons">
+          <a href="https://www.google.com/search?tbm=isch&amp;q=Taormina%20%26%20Isola%20Bella%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=taormina" target="_blank" rel="noreferrer">IG · Taormina</a><a href="https://www.instagram.com/explore/search/keyword/?q=isolabella" target="_blank" rel="noreferrer">IG · Isola Bella</a><a href="https://500px.com/search?q=Taormina%20%26%20Isola%20Bella%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Taormina%20%26%20Isola%20Bella%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</article><article class="pg-spot">
+  <div class="pg-spot-head">
+    <p class="pg-tag">Volcano landscape</p>
+    <h3>Mount Etna — South Slope</h3>
+    <a class="pg-map" href="https://www.google.com/maps/search/?api=1&amp;query=Rifugio+Sapienza+Etna+Sicily" target="_blank" rel="noreferrer">Open map ↗</a>
+  </div>
+  <div class="pg-gallery" data-gallery><button class="pg-gitem pg-hero" type="button" data-full="https://images.unsplash.com/photo-1497002961800-ea7dbfe18696?w=1600&q=80&auto=format&fit=crop" data-cap="Etna slopes · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1497002961800-ea7dbfe18696?w=1600&q=80&auto=format&fit=crop')" aria-label="Open photo 1"><span class="pg-gcount">3 photos</span></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1631338034841-e96e0e46b36e?w=1200&q=80&auto=format&fit=crop" data-cap="Etna craters · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1631338034841-e96e0e46b36e?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 2"></button><button class="pg-gitem" type="button" data-full="https://images.unsplash.com/photo-1600723353541-c73d1ec0d2cd?w=1200&q=80&auto=format&fit=crop" data-cap="Lava fields · Unsplash" style="background-image:url('https://images.unsplash.com/photo-1600723353541-c73d1ec0d2cd?w=1200&q=80&auto=format&fit=crop')" aria-label="Open photo 3"></button></div>
+  <div class="pg-spot-meta">
+    <div class="pg-meta-main">
+    <div class="pg-grid">
+      <section><h4>Exact Location</h4><p>South-slope base at Rifugio Sapienza (approx 37.6995, 15.0021), ~1900 m. Cable car + 4x4 climb higher toward the summit craters.</p></section>
+      <section><h4>How To Get There</h4><p>Drive up from Nicolosi/Catania to Rifugio Sapienza. Guided trucks/tours go higher; the Silvestri craters near the car park are free to walk.</p></section>
+      <section><h4>Best Time &amp; Light</h4><p>Sunrise or sunset for long shadows across the black lava and steam; clear nights up here are prime Milky Way over the caldera. Bring warm layers — it is cold at altitude.</p></section>
+      <section><h4>Field Tips</h4><p>Include a person or the truck for scale on the vast lava fields. A polarizer cuts haze; check the volcano&#x27;s activity/access status before going.</p></section>
+    </div>
+    <div class="pg-shots">
+      <section><h4>Iconic / Instagram-Worthy Frames</h4><ul><li>Steaming summit cones under raking low light.</li><li>Endless black lava fields with a lone figure for scale.</li><li>Milky Way arching over the caldera on a clear night.</li></ul></section>
+      <section><h4>Hidden / Less Obvious Angles</h4><ul><li>Old Silvestri craters and hardened lava ripples as foreground.</li><li>Long lens from the coast/Taormina at dusk catching a summit glow.</li></ul></section>
+    </div>
+    </div>
+    <aside class="pg-meta-side">
+      <div class="pg-map-embed"><iframe title="Map of Mount Etna — South Slope" loading="lazy" data-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1sRifugio+Sapienza+Etna+Sicily!6i13" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      <div class="pg-inspiration-links">
+        <h4>Pro Inspiration Searches</h4>
+        <p>Live search pages where higher-end travel, Instagram, and landscape work is more likely to show up.</p>
+        <div class="pg-inspiration-buttons">
+          <a href="https://www.google.com/search?tbm=isch&amp;q=Mount%20Etna%20%E2%80%94%20South%20Slope%20landscape%20photography" target="_blank" rel="noreferrer">Google Images</a><a href="https://www.instagram.com/explore/search/keyword/?q=mountetna" target="_blank" rel="noreferrer">IG · Mount Etna</a><a href="https://500px.com/search?q=Mount%20Etna%20%E2%80%94%20South%20Slope%20landscape%20photography&amp;type=photos" target="_blank" rel="noreferrer">500px</a><a href="https://www.flickr.com/search/?text=Mount%20Etna%20%E2%80%94%20South%20Slope%20landscape%20photography" target="_blank" rel="noreferrer">Flickr</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</article>
+</section>
+      </div>
+    </details>
+    <div class="pg-lightbox" id="pg-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <span class="pg-lb-count" id="pgLbCount"></span>
+  <button class="pg-lb-close" id="pgLbClose" aria-label="Close">&times;</button>
+  <button class="pg-lb-btn pg-lb-prev" id="pgLbPrev" aria-label="Previous">&#8249;</button>
+  <img id="pgLbImg" alt="">
+  <button class="pg-lb-btn pg-lb-next" id="pgLbNext" aria-label="Next">&#8250;</button>
+  <div class="pg-lb-cap" id="pgLbCap"></div>
+</div>
+<script>
+(function(){
+  var lb=document.getElementById('pg-lightbox');if(!lb)return;
+  var img=document.getElementById('pgLbImg'),cap=document.getElementById('pgLbCap'),cnt=document.getElementById('pgLbCount');
+  var list=[],idx=0;
+  function show(){var it=list[idx];img.src=it.full;img.alt=it.cap;cap.textContent=it.cap;cnt.textContent=(idx+1)+' / '+list.length;}
+  function open(items,i){list=items;idx=i;lb.classList.add('open');document.body.style.overflow='hidden';show();}
+  function close(){lb.classList.remove('open');img.src='';document.body.style.overflow='';}
+  function step(d){idx=(idx+d+list.length)%list.length;show();}
+  document.querySelectorAll('#photo-guide .pg-gallery[data-gallery]').forEach(function(g){
+    var items=[].map.call(g.querySelectorAll('.pg-gitem'),function(b){return {full:b.getAttribute('data-full'),cap:b.getAttribute('data-cap')};});
+    g.querySelectorAll('.pg-gitem').forEach(function(b,i){b.addEventListener('click',function(){open(items,i);});});
+  });
+  document.getElementById('pgLbClose').onclick=close;
+  document.getElementById('pgLbPrev').onclick=function(){step(-1);};
+  document.getElementById('pgLbNext').onclick=function(){step(1);};
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close();else if(e.key==='ArrowLeft')step(-1);else if(e.key==='ArrowRight')step(1);});
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){
+    if(en.isIntersecting){var f=en.target;if(!f.getAttribute('src'))f.setAttribute('src',f.getAttribute('data-src'));io.unobserve(f);}});},{rootMargin:'300px'});
+  document.querySelectorAll('#photo-guide .pg-map-embed iframe[data-src]').forEach(function(f){io.observe(f);});
+})();
+</script>
+  </section>
+  <!--PG:END-->
 </main>
 <footer>
   <p>Portugal + Sicily hybrid — working family itinerary for June 2027. Photos are Unsplash/Pexels, hotlinked; hover for credits. Prices researched July 2026 using current 2026/public proxy data where 2027 is unavailable — reconfirm before booking. Maps via Google & OpenStreetMap.</p>
