@@ -75,3 +75,24 @@
 }
 .weight-panel .custom-flag[hidden] { display: none; }
 .compare-table .tot-max { font-size: .72rem; font-weight: 600; color: #7c8a86; }
+
+/* ---- Feature 3: sticky faceted filters ---------------------------------- */
+.filter-bar {
+  padding: 14px 18px;
+  position: sticky;
+  top: 8px;
+  z-index: 30;
+}
+.filter-count { font-size: .8rem; font-weight: 800; color: var(--c1, #1f6f78); font-variant-numeric: tabular-nums; }
+.filter-count.is-empty { color: #b85d42; }
+.filter-controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.filter-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .82rem; font-weight: 700; color: #334649;
+  border: 1px solid var(--line); background: #fff; border-radius: 999px;
+  padding: 7px 13px; cursor: pointer; user-select: none;
+}
+.filter-toggle:hover { border-color: #cfe0d6; }
+.filter-toggle input { accent-color: var(--c1, #1f6f78); margin: 0; }
+.filter-budget { display: inline-flex; align-items: center; gap: 10px; font-size: .82rem; font-weight: 700; color: #334649; }
+.filter-budget input[type="range"] { accent-color: var(--c1, #1f6f78); width: 160px; }
