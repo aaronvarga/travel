@@ -1532,3 +1532,43 @@ document.querySelectorAll('.carousel').forEach(function(c){var track=c.querySele
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
 <script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
+<style media="print">
+  /* Phase 7 — print/PDF degradation for itineraries. */
+  @page { margin: 14mm; }
+  .site-nav, .site-nav-menu { display: none !important; }
+  /* Carousels: reveal every photo, stacked; drop interactive chrome. */
+  .carousel { height: auto !important; overflow: visible !important; }
+  .carousel .track { display: block !important; transform: none !important; overflow: visible !important; width: auto !important; }
+  .carousel figure { display: block !important; width: 100% !important; break-inside: avoid; margin: 0 0 8px !important; }
+  .carousel figure img { max-height: 320px; width: auto !important; max-width: 100% !important; object-fit: contain !important; }
+  .carousel .nav, .carousel .counter, .carousel .dots { display: none !important; }
+  /* Maps: drop interactive controls; keep the loaded tile snapshot; the Google
+     Maps link remains as a printed fallback reference. */
+  .leaflet-control-container, .mapbtns, .leaflet-control-zoom { display: none !important; }
+  .mapstage, .mapwrap { break-inside: avoid; }
+  [class$="-map-embed"], .mapstage { max-height: 360px !important; }
+  a.gmap, .gmap-btn { text-decoration: underline; }
+  /* Keep logical blocks intact across page breaks. */
+  .day, .spot, .pcard, .todo-block, .winner-card, .hc, section { break-inside: avoid; }
+  section { page-break-inside: avoid; }
+  details { display: block !important; }
+  details:not([open]) > *:not(summary) { display: revert !important; }
+  a[href] { color: inherit; }
+</style>
+<script>
+  /* Force-load lazy images and open <details> before printing so nothing is
+     blank or collapsed in the PDF. */
+  (function () {
+    function prep() {
+      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
+        img.loading = 'eager';
+        if (img.dataset && img.dataset.src && !img.src) img.src = img.dataset.src;
+      });
+      document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+    }
+    window.addEventListener('beforeprint', prep);
+    if (window.matchMedia) {
+      try { window.matchMedia('print').addEventListener('change', function (e) { if (e.matches) prep(); }); } catch (e) {}
+    }
+  })();
+</script>
