@@ -21,7 +21,7 @@
   --save:#3f7d4e;
   --splurge:#a9862b;
   --shadow:0 18px 46px rgba(30,32,28,.14);
-  --hero-url:url("https://www.nps.gov/mora/planyourvisit/images/Sunrise-at-Sunrise-1_web.jpeg?maxwidth=1800&maxheight=1400&autorotate=false&format=webp");
+  --hero-url:url("assets/aaron-amanda-sedona.png");
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -37,17 +37,17 @@ h1,h2,h3,h4{font-family:"Fraunces","Georgia",serif;letter-spacing:0}
 a{color:var(--c1)}
 img{display:block;max-width:100%}
 .eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-header{position:relative;min-height:90vh;display:grid;align-items:end;padding:40px clamp(20px,5vw,80px) 54px;color:#fff;overflow:hidden}
-header::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,24,.12),rgba(10,18,22,.34) 45%,rgba(8,14,18,.88)),var(--hero-url) center 42% / cover;transform:scale(1.03);z-index:-1}
-.hero-inner{max-width:1100px}
+header{position:relative;isolation:isolate;min-height:90vh;display:grid;align-items:end;padding:40px clamp(20px,5vw,80px) 54px;color:#fff;overflow:hidden;background:linear-gradient(90deg,#17130f 0%,#17130f 42%,#3b2419 72%,#6c3f25 100%)}
+header::before{content:"";position:absolute;top:0;right:-5vw;bottom:0;width:min(62vw,1010px);background:var(--hero-url) center / cover no-repeat;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.06) 13%,rgba(0,0,0,.42) 25%,#000 42%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.06) 13%,rgba(0,0,0,.42) 25%,#000 42%)}
+header::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,16,12,.99) 0%,rgba(18,16,12,.96) 40%,rgba(18,16,12,.74) 56%,rgba(18,16,12,.24) 74%,rgba(18,16,12,.46) 100%),linear-gradient(180deg,rgba(10,20,24,.03),rgba(10,18,22,.18) 45%,rgba(8,14,18,.84));z-index:0}
+.hero-inner{max-width:700px;position:relative;z-index:1}
 header .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}
-h1{margin:0 0 18px;font-size:clamp(2.8rem,8vw,6.4rem);line-height:.92;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}
-header .lead{max-width:680px;margin:0 0 26px;font-size:clamp(1.05rem,2.1vw,1.3rem);color:rgba(255,255,255,.94);line-height:1.5}
+h1{max-width:660px;margin:0 0 16px;font-size:clamp(2.55rem,4.85vw,4.35rem);line-height:.95;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+header .lead{max-width:620px;margin:0 0 24px;font-size:clamp(1rem,1.35vw,1.08rem);color:rgba(255,255,255,.94);line-height:1.48}
 .hero-meta{display:flex;flex-wrap:wrap;gap:26px}
 .hero-meta div{display:flex;flex-direction:column}
 .hero-meta b{font-family:"Fraunces",serif;font-size:1.5rem;line-height:1}
 .hero-meta span{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}
-.photo-credit{position:absolute;right:18px;bottom:14px;color:rgba(255,255,255,.68);font-size:.72rem}
 section[id],article[id]{scroll-margin-top:84px}
 .site-nav{z-index:500;--nav-bg:#17130f;--nav-panel:#211c16;--nav-line:rgba(246,241,231,.16);--nav-text:#f6f1e7;--nav-muted:rgba(246,241,231,.62);--nav-active:#5f9aa3;--nav-active-ink:#061517}
 .site-nav summary{list-style:none}
