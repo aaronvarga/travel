@@ -3,7 +3,7 @@ pagination:
   data: trips
   size: 1
   alias: trip
-permalink: "/{{ trip.slug }}/index.html"
+permalink: "/locations/{{ trip.slug }}/index.html"
 ---
 {%- macro carousel(spot) -%}
 {%- set n = spot.images | length -%}
