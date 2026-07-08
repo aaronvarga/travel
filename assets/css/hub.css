@@ -96,3 +96,41 @@
 .filter-toggle input { accent-color: var(--c1, #1f6f78); margin: 0; }
 .filter-budget { display: inline-flex; align-items: center; gap: 10px; font-size: .82rem; font-weight: 700; color: #334649; }
 .filter-budget input[type="range"] { accent-color: var(--c1, #1f6f78); width: 160px; }
+
+/* ---- Feature 2: compare ------------------------------------------------- */
+.cmp-toggle {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .92);
+  color: #334649;
+  font-weight: 800;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.cmp-toggle:hover { border-color: #cfe0d6; }
+.cmp-toggle.on { background: var(--c1, #1f6f78); color: #fff; border-color: var(--c1, #1f6f78); }
+.cmp-toggle:disabled { opacity: .4; cursor: default; }
+.cmp-card-toggle {
+  position: absolute; top: 10px; right: 10px; z-index: 3;
+  font-size: .72rem; padding: 5px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+}
+.cmp-row-toggle { display: inline-block; margin-top: 6px; font-size: .68rem; padding: 3px 9px; }
+
+.compare-bar { padding: 16px 18px; }
+.cmp-hint { margin: 0; font-size: .84rem; color: #5f675f; }
+.cmp-scroll { overflow-x: auto; }
+.cmp-table { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 420px; }
+.cmp-table th, .cmp-table td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.cmp-table thead th { font-family: "Fraunces", "Spectral", serif; font-weight: 600; color: var(--ink, #193c45); }
+.cmp-table tbody th { font-weight: 700; color: #4f5d5e; white-space: nowrap; }
+.cmp-table td { font-variant-numeric: tabular-nums; }
+.cmp-table tr.cmp-strong td, .cmp-table tr.cmp-strong th { font-size: .95rem; font-weight: 800; }
+.cmp-table td.cmp-best { background: #eef9f2; color: #14573a; font-weight: 800; box-shadow: inset 3px 0 0 #2f8f65; }
+.cmp-name { display: inline-block; margin-right: 6px; }
+.cmp-remove {
+  border: 0; background: none; cursor: pointer; color: #b85d42;
+  font-size: 1rem; font-weight: 900; line-height: 1; padding: 0 2px;
+}
+.cmp-remove:hover { color: #8d3f2b; }
