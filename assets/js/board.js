@@ -89,28 +89,32 @@
       return d !== 0 ? d : a.budget.floorUsd - b.budget.floorUsd;
     });
 
+    // Compare-selection state applies to every row/card regardless of order or
+    // visibility (uses .is-compared to avoid clobbering the decision-console's
+    // own .is-picked highlight).
+    Object.entries(B.rows).forEach(([slug, tr]) => {
+      tr.classList.toggle('is-compared', selected.includes(slug));
+    });
+
     const tbody = document.querySelector('.compare-table tbody');
     if (tbody) {
       ordered.forEach((t) => {
         const tr = B.rows[t.slug];
         if (!tr) return;
-        const tot = B.total(t, weights);
         const cell = tr.querySelector('td:last-child b');
-        if (cell) cell.textContent = tot;
-        tr.classList.toggle('is-picked', selected.includes(t.slug));
+        if (cell) cell.textContent = B.total(t, weights);
         tr.style.display = '';
         tbody.appendChild(tr); // reorder
       });
-      // Hide filtered-out rows.
       Object.entries(B.rows).forEach(([slug, tr]) => {
         if (!visibleSlugs.has(slug)) tr.style.display = 'none';
       });
     }
 
-    // Cards keep editorial order; only toggle visibility + picked state + meters.
+    // Cards keep editorial order; toggle visibility + compare state.
     Object.entries(B.cards).forEach(([slug, a]) => {
       a.style.display = visibleSlugs.has(slug) ? '' : 'none';
-      a.classList.toggle('is-picked', selected.includes(slug));
+      a.classList.toggle('is-compared', selected.includes(slug));
     });
 
     // Update the scoreboard total header to reflect the live max.
