@@ -1,0 +1,927 @@
+{
+  "slug": "spain",
+  "lang": "en",
+  "title": "Spain · Andalusia · Costa del Sol — June 2027",
+  "hasPhotoGuide": false,
+  "hasFoodGuide": false,
+  "mapPoints": [
+    {
+      "n": "Madrid-Barajas arrival",
+      "lat": 40.4983,
+      "lng": -3.5676,
+      "r": "seville",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.4983,-3.5676"
+    },
+    {
+      "n": "Seville base",
+      "lat": 37.3891,
+      "lng": -5.9845,
+      "r": "seville",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.3891,-5.9845"
+    },
+    {
+      "n": "Real Alcazar of Seville",
+      "lat": 37.3831,
+      "lng": -5.9903,
+      "r": "seville",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.3831,-5.9903"
+    },
+    {
+      "n": "Cordoba Mosque-Cathedral",
+      "lat": 37.8792,
+      "lng": -4.7794,
+      "r": "seville",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.8792,-4.7794"
+    },
+    {
+      "n": "Granada base",
+      "lat": 37.1773,
+      "lng": -3.5986,
+      "r": "granada",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.1773,-3.5986"
+    },
+    {
+      "n": "Alhambra",
+      "lat": 37.1761,
+      "lng": -3.5881,
+      "r": "granada",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.1761,-3.5881"
+    },
+    {
+      "n": "Albaicin / Mirador San Nicolas",
+      "lat": 37.181,
+      "lng": -3.592,
+      "r": "granada",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.181,-3.592"
+    },
+    {
+      "n": "Nerja / Costa del Sol base",
+      "lat": 36.7469,
+      "lng": -3.8797,
+      "r": "costasol",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.7469,-3.8797"
+    },
+    {
+      "n": "Caves of Nerja",
+      "lat": 36.7619,
+      "lng": -3.8446,
+      "r": "costasol",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.7619,-3.8446"
+    },
+    {
+      "n": "Maro-Cerro Gordo cliffs",
+      "lat": 36.7544,
+      "lng": -3.8367,
+      "r": "costasol",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.7544,-3.8367"
+    },
+    {
+      "n": "Malaga Alcazaba",
+      "lat": 36.7213,
+      "lng": -4.4165,
+      "r": "costasol",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.7213,-4.4165"
+    },
+    {
+      "n": "Frigiliana",
+      "lat": 36.7875,
+      "lng": -3.8944,
+      "r": "costasol",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.7875,-3.8944"
+    },
+    {
+      "n": "Aqualand Torremolinos",
+      "lat": 36.6226,
+      "lng": -4.4993,
+      "r": "costasol",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.6226,-4.4993"
+    },
+    {
+      "n": "Malaga Airport departure",
+      "lat": 36.6749,
+      "lng": -4.4991,
+      "r": "costasol",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.6749,-4.4991"
+    }
+  ],
+  "mapColors": {
+    "seville": "#1f6f78",
+    "granada": "#c25a3a",
+    "costasol": "#3f7d4e"
+  },
+  "itinerary": {
+    "className": "divider",
+    "labelHtml": "<p class=\"eyebrow\">The Itinerary</p><h2>Day by day</h2><p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, an alternative, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>",
+    "daysClass": "days",
+    "days": [
+      {
+        "id": "day0",
+        "colorClass": "c0",
+        "badge": "0",
+        "eyebrow": "Thu · Jun 3",
+        "heading": "Depart Pittsburgh after work",
+        "feel": "Travel day",
+        "daycost": "Est. ~$55 · airport dinner",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Overnight toward Madrid"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "PIT → connection → Madrid (MAD)"
+          }
+        ],
+        "note": "Work the full Thursday. There is no PIT–Madrid/Barcelona nonstop, so assume a real connection through a US hub or London; total door-to-door to Seville is long, but the evening departure preserves PTO.",
+        "travelNote": "✈︎ Travel day — no stops",
+        "spots": []
+      },
+      {
+        "id": "day1",
+        "colorClass": "c1",
+        "badge": "1",
+        "eyebrow": "Fri · Jun 4",
+        "heading": "Arrive Madrid, train to Seville",
+        "feel": "Arrival + soft landing",
+        "daycost": "Est. ~$170 · train snacks + dinner",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Seville · night 1 of 3"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "MAD arrival, AVE to Seville, evening Plaza de España"
+          }
+        ],
+        "note": "This is the hardest travel day: international arrival plus rail transfer. Do not rent a car. Get to Seville, check in, eat early, and stop.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Seville arrival walk &amp; Plaza de España",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Seville+arrival+walk+%26+Plaza+de+Espa%C3%B1a\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=seville\" target=\"_blank\" rel=\"noreferrer\">IG · Seville</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=plazadeespana\" target=\"_blank\" rel=\"noreferrer\">IG · Plaza de España</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Seville+arrival+walk+%26+Plaza+de+Espa%C3%B1a&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c1",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1559386081-325882507af7?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1559386081-325882507af7?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Seville arrival walk & Plaza de España",
+                "captionTitle": "Seville arrival walk &amp; Plaza de España",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1688404808661-92f72f2ea258?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1688404808661-92f72f2ea258?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Seville arrival walk & Plaza de España",
+                "captionTitle": "Seville arrival walk &amp; Plaza de España",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1661442197060-5fce68a9afc6?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1661442197060-5fce68a9afc6?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Seville arrival walk & Plaza de España",
+                "captionTitle": "Seville arrival walk &amp; Plaza de España",
+                "credit": "Photo: Unsplash"
+              }
+            ],
+            "cost": "Free, plus taxis/Metro from Santa Justa if everyone is cooked after the AVE. Budget €45–65 for an easy dinner.",
+            "climateLabel": "June weather",
+            "climate": "<b>88°F</b> average early-June high, often hotter in sun. No water temp here — this is a shade-and-fountain evening, not a swim day.",
+            "saveHtml": "<b>Save</b> Use the train from Madrid to Seville instead of renting on arrival: no airport-car stress, no Madrid ZBE exposure, and no old-town parking yet.",
+            "splurgeHtml": "<b>Splurge</b> A horse carriage around the plaza/park can run €45–60; pretty, but only worth it if jet lag is winning.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alimentari+e+Diversi\" target=\"_blank\" rel=\"noreferrer\"><b>Alimentari e Diversi</b></a> — Tripadvisor 4.9; Italian/pizza, $$, pasta and pizza that solve the first-night picky-eater problem before a 9pm Spanish dinner.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Bartola\" target=\"_blank\" rel=\"noreferrer\"><b>La Bartola</b></a> — Google ~4.6; tapas plus croquetas, tortilla, chicken and fries, workable before the late local dinner rush.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Mercado+Lonja+del+Barranco\" target=\"_blank\" rel=\"noreferrer\"><b>Mercado Lonja del Barranco</b></a> — food-hall format, burgers/pizza/empanadas, roughly €8–16pp; easiest early-dinner workaround in Seville.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Setas+de+Sevilla\" target=\"_blank\" rel=\"noreferrer\"><b>Setas de Sevilla</b> ↩</a> — Shaded-ish evening viewpoint and a short walk from food options if Plaza de España feels too exposed after travel.</p>",
+            "bloglinksHtml": "<a href=\"https://www.familycantravel.com/seville-with-kids/\" target=\"_blank\" rel=\"noreferrer\">Family Can Travel: Seville with kids</a><a href=\"https://devourtours.com/blog/kid-friendly-spanish-food-in-seville/\" target=\"_blank\" rel=\"noreferrer\">Devour Tours: kid-friendly food in Seville</a>",
+            "lat": "37.3772",
+            "lng": "-5.9869",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.3772,-5.9869&z=14&output=embed\" title=\"Map of Seville arrival walk &amp; Plaza de España\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.3772,-5.9869\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day2",
+        "colorClass": "c1",
+        "badge": "2",
+        "eyebrow": "Sat · Jun 5",
+        "heading": "Real Alcázar + shaded Seville",
+        "feel": "Timed monument morning",
+        "daycost": "Est. ~$140 · Alcázar + meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Seville · night 2 of 3"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "First-slot Alcázar, Cathedral area from outside, siesta/pool/AC, early dinner workaround"
+          }
+        ],
+        "note": "The morning is the itinerary. Seville heat and Spanish dinner timing are both real; use a big lunch and an early food-hall/Italian dinner if the 8-year-old is fading.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Real Alcázar of Seville",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Real+Alc%C3%A1zar+of+Seville\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=realalcazar\" target=\"_blank\" rel=\"noreferrer\">IG · Real Alcázar</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Real+Alc%C3%A1zar+of+Seville&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c2",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1663788225253-0d8458196a8e?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1663788225253-0d8458196a8e?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Real Alcázar of Seville",
+                "captionTitle": "Real Alcázar of Seville",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1663788225286-421b0bf8243e?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1663788225286-421b0bf8243e?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Real Alcázar of Seville",
+                "captionTitle": "Real Alcázar of Seville",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1572136944825-044dca70ee67?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1572136944825-044dca70ee67?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Real Alcázar of Seville",
+                "captionTitle": "Real Alcázar of Seville",
+                "credit": "Photo: Unsplash"
+              }
+            ],
+            "cost": "Official general admission <b>€15.50</b>; minors up to 13 need a free ticket. Family of 4 is roughly <b>€31–39</b> depending on the 13-year-old bracket and add-ons.",
+            "climateLabel": "June weather",
+            "climate": "<b>88–92°F</b> early June, with stone courtyards heating fast. Book the first slot and leave by lunch; late Spanish lunch is easier than late dinner.",
+            "saveHtml": "<b>Save</b> Book the basic official ticket, first morning slot, and skip paid line-skipping resellers unless official slots are gone.",
+            "splurgeHtml": "<b>Splurge</b> Add the Cuarto Real Alto if available (€5.50pp) or a private family guide; it helps the 8-year-old care about more than tiled rooms.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alimentari+e+Diversi\" target=\"_blank\" rel=\"noreferrer\"><b>Alimentari e Diversi</b></a> — Tripadvisor 4.9; Italian/pizza, $$, pasta and pizza that solve the first-night picky-eater problem before a 9pm Spanish dinner.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Bartola\" target=\"_blank\" rel=\"noreferrer\"><b>La Bartola</b></a> — Google ~4.6; tapas plus croquetas, tortilla, chicken and fries, workable before the late local dinner rush.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Mercado+Lonja+del+Barranco\" target=\"_blank\" rel=\"noreferrer\"><b>Mercado Lonja del Barranco</b></a> — food-hall format, burgers/pizza/empanadas, roughly €8–16pp; easiest early-dinner workaround in Seville.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Seville+Cathedral+%26+Giralda\" target=\"_blank\" rel=\"noreferrer\"><b>Seville Cathedral &amp; Giralda</b> ↩</a> — Right next door, but do not stack both interiors on one hot afternoon unless the kids are still fresh.</p>",
+            "bloglinksHtml": "<a href=\"https://alcazarsevilla.org/prepara-la-visita/\" target=\"_blank\" rel=\"noreferrer\">Official Real Alcazar visitor info</a><a href=\"https://traveltalesandteddybears.com/2019/06/08/what-to-do-and-where-to-eat-in-seville-with-kids/\" target=\"_blank\" rel=\"noreferrer\">Travel Tales and Teddy Bears: Seville with kids</a>",
+            "lat": "37.3831",
+            "lng": "-5.9903",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.3831,-5.9903&z=14&output=embed\" title=\"Map of Real Alcázar of Seville\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.3831,-5.9903\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day3",
+        "colorClass": "c1",
+        "badge": "3",
+        "eyebrow": "Sun · Jun 6",
+        "heading": "Slow Seville day",
+        "feel": "No-car city day",
+        "daycost": "Est. ~$110 · food + gelato",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Seville · night 3 of 3"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Parque de María Luisa, Triana, Setas or hotel pool/AC"
+          }
+        ],
+        "note": "Keep this flexible before the first car day. If a heat spike hits, move only in the morning/evening and let lunch/siesta occupy the center of the day.",
+        "travelNote": "✈︎ Travel day — no stops",
+        "spots": []
+      },
+      {
+        "id": "day4",
+        "colorClass": "c1",
+        "badge": "4",
+        "eyebrow": "Mon · Jun 7",
+        "heading": "Pick up car, Córdoba, then Granada",
+        "feel": "Transfer + major stop",
+        "daycost": "Est. ~$185 · Mezquita + meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Granada · night 1 of 3"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Seville car pickup, Córdoba Mosque-Cathedral, drive to Granada"
+          }
+        ],
+        "note": "This is the one clever routing day: Córdoba sits between Seville and Granada, so it becomes a stop instead of a separate backtrack. Do the Mezquita before lunch heat.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Córdoba Mosque-Cathedral",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=C%C3%B3rdoba+Mosque-Cathedral\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=cordobamosquecathedral\" target=\"_blank\" rel=\"noreferrer\">IG · Córdoba Mosque-Cathedral</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=C%C3%B3rdoba+Mosque-Cathedral&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c3",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1606981693736-62d6c4954ba5?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1606981693736-62d6c4954ba5?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Córdoba Mosque-Cathedral",
+                "captionTitle": "Córdoba Mosque-Cathedral",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1632904080322-e71e16a5987f?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Córdoba Mosque-Cathedral",
+                "captionTitle": "Córdoba Mosque-Cathedral",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1626037551829-5c2b8fdca6d7?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1626037551829-5c2b8fdca6d7?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Córdoba Mosque-Cathedral",
+                "captionTitle": "Córdoba Mosque-Cathedral",
+                "credit": "Photo: Unsplash"
+              }
+            ],
+            "cost": "Official basic visit <b>€15 adult</b>; children 10–14 about <b>€8</b>, under 10 free. Family of 4 roughly <b>€38</b> before audio guides.",
+            "climateLabel": "June weather",
+            "climate": "<b>90–94°F</b> in early June and hotter later. The Mezquita is cool inside; the friction is the walk through the Judería at lunch heat.",
+            "saveHtml": "<b>Save</b> Use Córdoba as an en-route stop Seville → Granada so it costs one parking block, not a separate round-trip day.",
+            "splurgeHtml": "<b>Splurge</b> Book a short guide or bell tower slot only if everyone wants one; the tower adds stairs and sun when the main hall is already enough.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Canadian+Bar+and+Tapas+Cordoba\" target=\"_blank\" rel=\"noreferrer\"><b>Canadian Bar and Tapas Cordoba</b></a> — Google ~4.5; burgers, chicken, fries and nachos near the old center, €10–16.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Tranquera+Restaurante\" target=\"_blank\" rel=\"noreferrer\"><b>La Tranquera Restaurante</b></a> — Tripadvisor ~4.7; empanadas, grilled meats, fries, good if tapas fatigue hits.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bocadi\" target=\"_blank\" rel=\"noreferrer\"><b>Bocadi</b></a> — casual sandwiches/burgers around €6–12, fast enough before the drive to Granada.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Medina+Azahara\" target=\"_blank\" rel=\"noreferrer\"><b>Medina Azahara</b> ↩</a> — Bigger archaeology, more heat and less shade; save it for a cooler-season Spain trip.</p>",
+            "bloglinksHtml": "<a href=\"https://mezquita-catedraldecordoba.es/en/organiza-la-visita/entradas-y-horarios/mezquita-catedral/\" target=\"_blank\" rel=\"noreferrer\">Official Mosque-Cathedral tickets</a><a href=\"https://www.spain.info/en/places-of-interest/mosque-cathedral-cordoba/\" target=\"_blank\" rel=\"noreferrer\">Spain.info: Cordoba Mosque-Cathedral</a>",
+            "lat": "37.8792",
+            "lng": "-4.7794",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.8792,-4.7794&z=14&output=embed\" title=\"Map of Córdoba Mosque-Cathedral\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.8792,-4.7794\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day5",
+        "colorClass": "c2",
+        "badge": "5",
+        "eyebrow": "Tue · Jun 8",
+        "heading": "The Alhambra",
+        "feel": "Mandatory timed-entry day",
+        "daycost": "Est. ~$175 · tickets + guide buffer",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Granada · night 2 of 3"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Earliest Nasrid Palace slot, Generalife, pool/siesta afternoon"
+          }
+        ],
+        "note": "Book this first. The Alhambra is the non-negotiable Spain reservation, and late-morning slots make the whole day hotter and harder.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "The Alhambra &amp; Nasrid Palaces",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=The+Alhambra+%26+Nasrid+Palaces\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=alhambra\" target=\"_blank\" rel=\"noreferrer\">IG · Alhambra</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=nasridpalaces\" target=\"_blank\" rel=\"noreferrer\">IG · Nasrid Palaces</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=The+Alhambra+%26+Nasrid+Palaces&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c4",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1572445831032-f30b10464bde?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1572445831032-f30b10464bde?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Muqarnas ceiling, Hall of the Two Sisters, Alhambra",
+                "captionTitle": "Muqarnas ceiling, Hall of the Two Sisters",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1564697546537-e71eb2aaad1b?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1564697546537-e71eb2aaad1b?w=1600&q=80&auto=format&fit=crop",
+                "alt": "The Alhambra & Nasrid Palaces",
+                "captionTitle": "The Alhambra &amp; Nasrid Palaces",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1620677366922-4c1741eb010d?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1620677366922-4c1741eb010d?w=1600&q=80&auto=format&fit=crop",
+                "alt": "The Alhambra & Nasrid Palaces",
+                "captionTitle": "The Alhambra &amp; Nasrid Palaces",
+                "credit": "Photo: Unsplash"
+              }
+            ],
+            "cost": "Alhambra General (Monumental Complex day tour) is <b>€22.27 adult</b>; under-12s are free. Family of 4 with a 13-year-old and an 8-year-old is roughly <b>€67</b> (3 paid tickets). <b>Timed Nasrid entry is mandatory</b>.",
+            "climateLabel": "June weather",
+            "climate": "<b>82–88°F</b> early June in Granada, but exposed walks feel hotter. No water temp; plan hotel pool/AC after lunch.",
+            "saveHtml": "<b>Save</b> Buy official tickets as soon as the 2027 date opens, take the earliest Nasrid slot, and park the afternoon for pool/siesta only.",
+            "splurgeHtml": "<b>Splurge</b> A licensed guide is the right splurge here; it turns a long palace complex into a 2.5–3 hr story the 8-year-old can follow.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Piccola+Carmela\" target=\"_blank\" rel=\"noreferrer\"><b>La Piccola Carmela</b></a> — Google ~4.4; pizza and pasta near the center, €10–18 mains, useful after Alhambra stairs.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Burger+Dallas+Granada\" target=\"_blank\" rel=\"noreferrer\"><b>Burger Dallas Granada</b></a> — local burger/fries fallback, generally €9–14, casual and early by Spanish standards.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Carmela+Restaurante\" target=\"_blank\" rel=\"noreferrer\"><b>Carmela Restaurante</b></a> — family-friendly Spanish menu, croquetas, chicken, salads and pasta-ish options, $$; reserve or go early.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Dobla+de+Oro+ticket\" target=\"_blank\" rel=\"noreferrer\"><b>Dobla de Oro ticket</b> ↩</a> — If normal Alhambra General tickets sell out, this bundle can sometimes preserve Nasrid access plus Albaicín monuments.</p>",
+            "bloglinksHtml": "<a href=\"https://tickets.alhambra-patronato.es/en/\" target=\"_blank\" rel=\"noreferrer\">Official Alhambra tickets</a><a href=\"https://www.spain.info/en/top/how-to-buy-tickets-visit-alhambra/\" target=\"_blank\" rel=\"noreferrer\">Spain.info: buying Alhambra tickets</a>",
+            "lat": "37.1761",
+            "lng": "-3.5881",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.1761,-3.5881&z=14&output=embed\" title=\"Map of The Alhambra &amp; Nasrid Palaces\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.1761,-3.5881\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day6",
+        "colorClass": "c2",
+        "badge": "6",
+        "eyebrow": "Wed · Jun 9",
+        "heading": "Granada evening rhythm",
+        "feel": "Flexible recovery day",
+        "daycost": "Est. ~$105 · meals + taxis",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Granada · night 3 of 3"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "AC/pool midday, Albaicín and Mirador near sunset"
+          }
+        ],
+        "note": "After the Alhambra, do not schedule another big monument. Granada is best for this family as a late-day wander with taxi back if the hills win.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Albaicín, Mirador &amp; Granada evening",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Albaic%C3%ADn%2C+Mirador+%26+Granada+evening\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=albaicin\" target=\"_blank\" rel=\"noreferrer\">IG · Albaicín</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=mirador\" target=\"_blank\" rel=\"noreferrer\">IG · Mirador</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=granada\" target=\"_blank\" rel=\"noreferrer\">IG · Granada</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Albaic%C3%ADn%2C+Mirador+%26+Granada+evening&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c5",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1604196623280-af1e955b4b64?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1604196623280-af1e955b4b64?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Albaicín, Mirador & Granada evening",
+                "captionTitle": "Albaicín, Mirador &amp; Granada evening",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1620677368158-32b1293fac36?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Albaicín, Mirador & Granada evening",
+                "captionTitle": "Albaicín, Mirador &amp; Granada evening",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1721244982637-31b6474a0eb7?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1721244982637-31b6474a0eb7?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Narrow cobblestone lane in the Albaicín, Granada",
+                "captionTitle": "Albaicín cobblestone lane",
+                "credit": "Photo: Unsplash"
+              }
+            ],
+            "cost": "Free wandering; budget €12–18pp for an early casual dinner or tapas crawl. Taxi back uphill/downhill €8–12 if legs are done.",
+            "climateLabel": "June weather",
+            "climate": "<b>84–90°F</b> day, cooling fast after sunset. The best family window is after 6pm, not midday.",
+            "saveHtml": "<b>Save</b> Make this an evening walk instead of a full sightseeing day; Granada rewards slow wandering when the heat drops.",
+            "splurgeHtml": "<b>Splurge</b> Book a short flamenco show in Sacromonte if the kids can handle a later night; otherwise skip, because shows often start after 8:30pm.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Piccola+Carmela\" target=\"_blank\" rel=\"noreferrer\"><b>La Piccola Carmela</b></a> — Google ~4.4; pizza and pasta near the center, €10–18 mains, useful after Alhambra stairs.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Burger+Dallas+Granada\" target=\"_blank\" rel=\"noreferrer\"><b>Burger Dallas Granada</b></a> — local burger/fries fallback, generally €9–14, casual and early by Spanish standards.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Carmela+Restaurante\" target=\"_blank\" rel=\"noreferrer\"><b>Carmela Restaurante</b></a> — family-friendly Spanish menu, croquetas, chicken, salads and pasta-ish options, $$; reserve or go early.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Science+Park+Granada\" target=\"_blank\" rel=\"noreferrer\"><b>Science Park Granada</b> ↩</a> — Air-conditioned, kid-friendly and a good swap if a heat spike makes Albaicín stairs a bad idea.</p>",
+            "bloglinksHtml": "<a href=\"https://www.earthtrekkers.com/granada-spain-itinerary/\" target=\"_blank\" rel=\"noreferrer\">Earth Trekkers: Granada itinerary</a><a href=\"https://www.lovegranada.com/alhambra/parking/\" target=\"_blank\" rel=\"noreferrer\">Love Granada: Alhambra parking</a>",
+            "lat": "37.181",
+            "lng": "-3.592",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.181,-3.592&z=14&output=embed\" title=\"Map of Albaicín, Mirador &amp; Granada evening\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.181,-3.592\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day7",
+        "colorClass": "c3",
+        "badge": "7",
+        "eyebrow": "Thu · Jun 10",
+        "heading": "Drive to Nerja / Costa del Sol",
+        "feel": "Coast arrival",
+        "daycost": "Est. ~$125 · groceries + dinner",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Nerja/Torrox · night 1 of 6"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Granada → Nerja, beach walk, settle into apartment"
+          }
+        ],
+        "note": "The trip changes gears here. From this point, the car mostly supports short outings; the family rhythm should become pool, beach, dinner, repeat.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Nerja beach-base arrival",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Nerja+beach-base+arrival\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=nerja\" target=\"_blank\" rel=\"noreferrer\">IG · Nerja</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Nerja+beach-base+arrival&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c6",
+            "images": [
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Plaza_del_Balc%C3%B3n_de_Europa%2C_Nerja.jpg/1280px-Plaza_del_Balc%C3%B3n_de_Europa%2C_Nerja.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Plaza_del_Balc%C3%B3n_de_Europa%2C_Nerja.jpg/1280px-Plaza_del_Balc%C3%B3n_de_Europa%2C_Nerja.jpg",
+                "alt": "Balcón de Europa promenade at dusk, Nerja",
+                "captionTitle": "Balcón de Europa promenade at dusk",
+                "credit": "Photo: Wikimedia Commons"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Nerja%2C_on_the_Balc%C3%B3n_de_Europa.jpg/1280px-Nerja%2C_on_the_Balc%C3%B3n_de_Europa.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Nerja%2C_on_the_Balc%C3%B3n_de_Europa.jpg/1280px-Nerja%2C_on_the_Balc%C3%B3n_de_Europa.jpg",
+                "alt": "View over Nerja town from the Balcón de Europa",
+                "captionTitle": "Nerja town from the Balcón de Europa",
+                "credit": "Photo: Wikimedia Commons"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Balc%C3%B3n_de_Europa_Nerja.jpg/1280px-Balc%C3%B3n_de_Europa_Nerja.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Balc%C3%B3n_de_Europa_Nerja.jpg/1280px-Balc%C3%B3n_de_Europa_Nerja.jpg",
+                "alt": "Balcón de Europa clifftop viewpoint, Nerja",
+                "captionTitle": "Balcón de Europa clifftop viewpoint",
+                "credit": "Photo: Wikimedia Commons"
+              }
+            ],
+            "cost": "Free beach walk; budget €65–90 for groceries and a casual first coast dinner. Old-town parking usually means a paid lot, not curb luck.",
+            "climateLabel": "June weather",
+            "climate": "<b>78–82°F</b> coast highs; Mediterranean water around <b>68–72°F</b> in early June, cooler than it looks but swimmable for kids.",
+            "saveHtml": "<b>Save</b> Base in Nerja/Torrox with parking and a pool, not Málaga old town; the car can stay mostly parked.",
+            "splurgeHtml": "<b>Splurge</b> Pay for a sea-view apartment or pool if one base gets the splurge — six coast nights makes that upgrade matter.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Little Italy Nerja</b></a> — Tripadvisor favorite for cheap pizza/pasta; pizzas often quoted around €6 and pasta around €7–10.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Paparazzi+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Paparazzi Nerja</b></a> — Tripadvisor 4.3; Italian/pizza, €10–18 mains, reliable family dinner near the center.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bakers+Restaurant+%26+Bar\" target=\"_blank\" rel=\"noreferrer\"><b>Bakers Restaurant &amp; Bar</b></a> — Tripadvisor 4.7; burgers, chips, chicken and breakfast-for-dinner energy, good for picky kids.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Torrox+Costa\" target=\"_blank\" rel=\"noreferrer\"><b>Torrox Costa</b> ↩</a> — Less postcard-pretty than Nerja, but easier parking and often cheaper family apartments.</p>",
+            "bloglinksHtml": "<a href=\"https://www.nowhereonearth.com/nerjaspain\" target=\"_blank\" rel=\"noreferrer\">Nowhere On Earth: Nerja with kids</a><a href=\"https://lamamilife.com/2025/02/22/visiting-nerja-with-kids-10-family-friendly-activities-tips/\" target=\"_blank\" rel=\"noreferrer\">La Mami Life: visiting Nerja with kids</a>",
+            "lat": "36.7469",
+            "lng": "-3.8797",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=36.7469,-3.8797&z=14&output=embed\" title=\"Map of Nerja beach-base arrival\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=36.7469,-3.8797\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day8",
+        "colorClass": "c3",
+        "badge": "8",
+        "eyebrow": "Fri · Jun 11",
+        "heading": "Caves of Nerja + beach",
+        "feel": "Cool cave, warm coast",
+        "daycost": "Est. ~$150 · cave tickets + lunch",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Nerja/Torrox · night 2 of 6"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "First-slot cave visit, Burriana Beach afternoon"
+          }
+        ],
+        "note": "The cave is the perfect early coast activity: cool interior, finite duration, and then a beach/pool afternoon with no more sightseeing obligations.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Caves of Nerja + Burriana Beach",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Caves+of+Nerja+%2B+Burriana+Beach\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=nerja\" target=\"_blank\" rel=\"noreferrer\">IG · Nerja</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=burriana\" target=\"_blank\" rel=\"noreferrer\">IG · Burriana Beach</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Caves+of+Nerja+%2B+Burriana+Beach&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c7",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1601327707904-7d10d6e820f7?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1601327707904-7d10d6e820f7?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Cuevas de Nerja cave interior with stalactites",
+                "captionTitle": "Cuevas de Nerja cave interior",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Nerja_Playa_Burriana.JPG/1280px-Nerja_Playa_Burriana.JPG",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Nerja_Playa_Burriana.JPG/1280px-Nerja_Playa_Burriana.JPG",
+                "alt": "Burriana Beach, Nerja",
+                "captionTitle": "Burriana Beach",
+                "credit": "Photo: Wikimedia Commons"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/BurrianaD03_%286993113983%29.jpg/1280px-BurrianaD03_%286993113983%29.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/BurrianaD03_%286993113983%29.jpg/1280px-BurrianaD03_%286993113983%29.jpg",
+                "alt": "Burriana Beach with fishing boats, Nerja",
+                "captionTitle": "Burriana Beach with fishing boats",
+                "credit": "Photo: Wikimedia Commons"
+              }
+            ],
+            "cost": "Cave standard ticket about <b>€15 adult / €13 child 6–12</b>; family of 4 roughly <b>€56</b>. Beach is free.",
+            "climateLabel": "June weather",
+            "climate": "Cave interior is a steady <b>66°F</b>; outside coast <b>80°F</b>, sea <b>68–72°F</b>. The cave has 400+ steps, so do it before the beach.",
+            "saveHtml": "<b>Save</b> Buy timed cave tickets online and take the first slot; then the paid parking/heat problem is much easier.",
+            "splurgeHtml": "<b>Splurge</b> Rent loungers on Burriana and make the afternoon intentionally lazy; it is cheaper than a second structured activity.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Little Italy Nerja</b></a> — Tripadvisor favorite for cheap pizza/pasta; pizzas often quoted around €6 and pasta around €7–10.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Paparazzi+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Paparazzi Nerja</b></a> — Tripadvisor 4.3; Italian/pizza, €10–18 mains, reliable family dinner near the center.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bakers+Restaurant+%26+Bar\" target=\"_blank\" rel=\"noreferrer\"><b>Bakers Restaurant &amp; Bar</b></a> — Tripadvisor 4.7; burgers, chips, chicken and breakfast-for-dinner energy, good for picky kids.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Nerja+Museum+%2B+tourist+train\" target=\"_blank\" rel=\"noreferrer\"><b>Nerja Museum + tourist train</b> ↩</a> — A gentler add-on if the cave stairs are enough and everyone wants AC rather than more beach.</p>",
+            "bloglinksHtml": "<a href=\"https://cuevadenerja.es/en/cave/\" target=\"_blank\" rel=\"noreferrer\">Official Cueva de Nerja</a><a href=\"https://www.novo-monde.com/en/nerja-caves-andalusia/\" target=\"_blank\" rel=\"noreferrer\">Novo-monde: Nerja caves guide</a>",
+            "lat": "36.7619",
+            "lng": "-3.8446",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=36.7619,-3.8446&z=14&output=embed\" title=\"Map of Caves of Nerja + Burriana Beach\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=36.7619,-3.8446\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day9",
+        "colorClass": "c3",
+        "badge": "9",
+        "eyebrow": "Sat · Jun 12",
+        "heading": "Maro kayak &amp; snorkel",
+        "feel": "Water + nature morning",
+        "daycost": "Est. ~$250 · kayak tour + meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Nerja/Torrox · night 3 of 6"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Morning kayak/snorkel along the cliffs, free afternoon"
+          }
+        ],
+        "note": "Mediterranean water in early June is swimmable but not bathwater. Put the 8-year-old in a rash guard and choose the earliest calm-water slot.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Maro-Cerro Gordo kayak &amp; snorkel",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Maro-Cerro+Gordo+kayak+%26+snorkel\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=marocerrogordo\" target=\"_blank\" rel=\"noreferrer\">IG · Maro-Cerro Gordo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Maro-Cerro+Gordo+kayak+%26+snorkel&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c8",
+            "images": [
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Acantilados_de_Maro-Cerro_Gordo_kz01.jpg/1280px-Acantilados_de_Maro-Cerro_Gordo_kz01.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Acantilados_de_Maro-Cerro_Gordo_kz01.jpg/1280px-Acantilados_de_Maro-Cerro_Gordo_kz01.jpg",
+                "alt": "Sunlit sea and cliffs, Acantilados de Maro-Cerro Gordo",
+                "captionTitle": "Acantilados de Maro-Cerro Gordo",
+                "credit": "Photo: Wikimedia Commons"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Maro_Cerro_Gordo.jpg/1280px-Maro_Cerro_Gordo.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Maro_Cerro_Gordo.jpg/1280px-Maro_Cerro_Gordo.jpg",
+                "alt": "Vivid blue coastline and pine-covered cliffs at Cerro Gordo",
+                "captionTitle": "Cerro Gordo Natural Park cliffs",
+                "credit": "Photo: Wikimedia Commons"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ca%C3%B1uelo_Beach_in_Maro.jpg/1280px-Ca%C3%B1uelo_Beach_in_Maro.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Ca%C3%B1uelo_Beach_in_Maro.jpg/1280px-Ca%C3%B1uelo_Beach_in_Maro.jpg",
+                "alt": "Crystal-clear water and sea stack at Cala del Cañuelo, Maro",
+                "captionTitle": "Cala del Cañuelo, Maro",
+                "credit": "Photo: Wikimedia Commons"
+              }
+            ],
+            "cost": "Guided kayak/snorkel tours commonly run <b>€35–45pp</b>; family of 4 roughly <b>€140–180</b>.",
+            "climateLabel": "June weather",
+            "climate": "<b>80°F</b> air, Mediterranean water <b>68–72°F</b> in early June. Rash guards help; the 8-year-old may find the first plunge cold.",
+            "saveHtml": "<b>Save</b> Book the first morning departure before wind and parking get annoying; pack snacks so lunch timing stays under your control.",
+            "splurgeHtml": "<b>Splurge</b> A small private boat/catamaran from Nerja is the splurge if kayaking feels too physical for the youngest.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Little Italy Nerja</b></a> — Tripadvisor favorite for cheap pizza/pasta; pizzas often quoted around €6 and pasta around €7–10.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Paparazzi+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Paparazzi Nerja</b></a> — Tripadvisor 4.3; Italian/pizza, €10–18 mains, reliable family dinner near the center.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bakers+Restaurant+%26+Bar\" target=\"_blank\" rel=\"noreferrer\"><b>Bakers Restaurant &amp; Bar</b></a> — Tripadvisor 4.7; burgers, chips, chicken and breakfast-for-dinner energy, good for picky kids.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Playa+de+Maro+shuttle+beach+day\" target=\"_blank\" rel=\"noreferrer\"><b>Playa de Maro shuttle beach day</b> ↩</a> — Same clear-water coastline with less paddling; parking fills early, so use the shuttle if running late.</p>",
+            "bloglinksHtml": "<a href=\"https://www.expedia.com/things-to-do/nerja-nerja-and-cascada-de-maro-sea-kayak-tour.a4777825.activity-details\" target=\"_blank\" rel=\"noreferrer\">Expedia: Nerja/Maro kayak tour example</a><a href=\"https://www.andalucia.org/en/natural-spaces-acantilados-de-maro-cerro-gordo\" target=\"_blank\" rel=\"noreferrer\">Andalucia: Maro-Cerro Gordo cliffs</a>",
+            "lat": "36.7544",
+            "lng": "-3.8367",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=36.7544,-3.8367&z=14&output=embed\" title=\"Map of Maro-Cerro Gordo kayak &amp; snorkel\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=36.7544,-3.8367\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day10",
+        "colorClass": "c3",
+        "badge": "10",
+        "eyebrow": "Sun · Jun 13",
+        "heading": "Málaga city and beach",
+        "feel": "Short city day",
+        "daycost": "Est. ~$150 · parking + lunch + sights",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Nerja/Torrox · night 4 of 6"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Drive to Málaga, Alcazaba or harbor, beach/gelato"
+          }
+        ],
+        "note": "This gives one bigger city taste without adding a fourth base. Park once, stay near the harbor/center, and leave before late dinner traffic.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Málaga Alcazaba + city beach",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=M%C3%A1laga+Alcazaba+%2B+city+beach\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=malaga\" target=\"_blank\" rel=\"noreferrer\">IG · Málaga</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=alcazaba\" target=\"_blank\" rel=\"noreferrer\">IG · Alcazaba</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=M%C3%A1laga+Alcazaba+%2B+city+beach&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c9",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1589999558475-e871ef18e6c9?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1589999558475-e871ef18e6c9?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Málaga Alcazaba + city beach",
+                "captionTitle": "Málaga Alcazaba + city beach",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1536251974095-f49deac81a96?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1536251974095-f49deac81a96?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Calle Marqués de Larios at blue hour, Málaga",
+                "captionTitle": "Calle Marqués de Larios, Málaga",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1615839131653-d2aeba93b1d3?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1615839131653-d2aeba93b1d3?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Málaga Alcazaba + city beach",
+                "captionTitle": "Málaga Alcazaba + city beach",
+                "credit": "Photo: Unsplash"
+              }
+            ],
+            "cost": "Alcazaba tickets are inexpensive (roughly <b>€3.50 adult</b>; combo with Gibralfaro more). Budget €80–120 for parking, lunch and gelato.",
+            "climateLabel": "June weather",
+            "climate": "<b>80–84°F</b> coast high; La Malagueta water about <b>69–72°F</b>. City stone gets hot, beach breeze helps.",
+            "saveHtml": "<b>Save</b> Drive in after breakfast, park once near Muelle Uno/center, and leave before dinner traffic.",
+            "splurgeHtml": "<b>Splurge</b> Do a rooftop drink/view or Picasso Museum if the family wants culture; otherwise the Alcazaba + beach is plenty.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Spago%27s+Pasta+Fresca\" target=\"_blank\" rel=\"noreferrer\"><b>Spago's Pasta Fresca</b></a> — Tripadvisor 4.8; fast pasta, $, easy kid lunch in Málaga center.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Pizzeria+Italiana+Vittoria\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Italiana Vittoria</b></a> — Tripadvisor 4.7; pizza and Italian mains, $$, safer than gambling on seafood for tired kids.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Burguesita+Malaga\" target=\"_blank\" rel=\"noreferrer\"><b>La Burguesita Malaga</b></a> — Tripadvisor ~4.5; burgers/fries, casual, good late-lunch workaround.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Muelle+Uno+%2B+Centre+Pompidou+outside\" target=\"_blank\" rel=\"noreferrer\"><b>Muelle Uno + Centre Pompidou outside</b> ↩</a> — More shade, food and harbor wandering if the Alcazaba feels too hot.</p>",
+            "bloglinksHtml": "<a href=\"https://theculturemap.com/malaga-with-kids/\" target=\"_blank\" rel=\"noreferrer\">The Culture Map: Malaga with kids</a><a href=\"https://www.spain.info/en/places-of-interest/alcazaba-malaga/\" target=\"_blank\" rel=\"noreferrer\">Spain.info: Malaga Alcazaba</a>",
+            "lat": "36.7213",
+            "lng": "-4.4165",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=36.7213,-4.4165&z=14&output=embed\" title=\"Map of Málaga Alcazaba + city beach\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=36.7213,-4.4165\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day11",
+        "colorClass": "c3",
+        "badge": "11",
+        "eyebrow": "Mon · Jun 14",
+        "heading": "Frigiliana + pool afternoon",
+        "feel": "White village morning",
+        "daycost": "Est. ~$95 · lunch + snacks",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Nerja/Torrox · night 5 of 6"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Morning Frigiliana, afternoon pool/beach"
+          }
+        ],
+        "note": "Pretty white villages are heat reflectors. Go early, keep it short, and let the afternoon be water again.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Frigiliana white village morning",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Frigiliana+white+village+morning\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=frigiliana\" target=\"_blank\" rel=\"noreferrer\">IG · Frigiliana</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Frigiliana+white+village+morning&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c10",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1569834799085-9136e8897011?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1569834799085-9136e8897011?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Frigiliana white village morning",
+                "captionTitle": "Frigiliana white village morning",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1738743136143-3260af24f020?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1738743136143-3260af24f020?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Frigiliana white village morning",
+                "captionTitle": "Frigiliana white village morning",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Frigiliana_20230910.jpg/1280px-Frigiliana_20230910.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Frigiliana_20230910.jpg/1280px-Frigiliana_20230910.jpg",
+                "alt": "Aerial view of Frigiliana's white rooftops against the hillside",
+                "captionTitle": "Frigiliana from above",
+                "credit": "Photo: Wikimedia Commons"
+              }
+            ],
+            "cost": "Free wandering; budget €40–70 for coffee, ice cream and a simple lunch. Parking lots are cheaper/easier before 10am.",
+            "climateLabel": "June weather",
+            "climate": "<b>82–88°F</b> inland hillside heat, so go early and leave after lunch. No water temp; this pairs with a pool/beach afternoon.",
+            "saveHtml": "<b>Save</b> Treat Frigiliana as a 9am–1pm half-day, not a full day; the white streets are beautiful but reflective and hot.",
+            "splurgeHtml": "<b>Splurge</b> A guided e-bike or tuk-tuk style tour is the only splurge worth considering, mainly to spare tired legs.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Tahona+del+Zacatin\" target=\"_blank\" rel=\"noreferrer\"><b>La Tahona del Zacatin</b></a> — casual bakery/cafe; pastries, sandwiches and pizza-like kid options, €5–12.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=The+Garden+Restaurant+Frigiliana\" target=\"_blank\" rel=\"noreferrer\"><b>The Garden Restaurant Frigiliana</b></a> — views, broad menu, $$; reserve or arrive early.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Splash+Bistro+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Splash Bistro Nerja</b></a> — back in Nerja: burgers, ribs, chicken and fries, easy after the village.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Competa\" target=\"_blank\" rel=\"noreferrer\"><b>Competa</b> ↩</a> — Another white village, less polished and a bit farther; better if you want fewer visitors and more driving.</p>",
+            "bloglinksHtml": "<a href=\"https://www.costaexcursions.es/nerja-frigiliana-day-trip-malaga/\" target=\"_blank\" rel=\"noreferrer\">Costa Excursions: Nerja and Frigiliana</a><a href=\"https://lamamilife.com/2025/02/22/visiting-nerja-with-kids-10-family-friendly-activities-tips/\" target=\"_blank\" rel=\"noreferrer\">La Mami Life: Frigiliana with kids</a>",
+            "lat": "36.7875",
+            "lng": "-3.8944",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=36.7875,-3.8944&z=14&output=embed\" title=\"Map of Frigiliana white village morning\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=36.7875,-3.8944\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day12",
+        "colorClass": "c3",
+        "badge": "12",
+        "eyebrow": "Tue · Jun 15",
+        "heading": "Water-park choice or pure beach day",
+        "feel": "Last full day",
+        "daycost": "Est. ~$75–240 · depends on Aqualand",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Nerja/Torrox · night 6 of 6"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Choose Aqualand Torremolinos or stay local for Burriana/pool"
+          }
+        ],
+        "note": "This is deliberately a choice day. If the kids want slides, pay for the water park. If parents want sanity, stay local and spend almost nothing.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Water-park or beach-choice day",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Water-park+or+beach-choice+day\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=waterpark\" target=\"_blank\" rel=\"noreferrer\">IG · Water-park</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Water-park+or+beach-choice+day&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c11",
+            "images": [
+              {
+                "href": "https://images.unsplash.com/photo-1701361650313-9b20b1d76820?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1701361650313-9b20b1d76820?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Water-park or beach-choice day",
+                "captionTitle": "Water-park or beach-choice day",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1706843540963-ae52d784de62?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1706843540963-ae52d784de62?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Water-park or beach-choice day",
+                "captionTitle": "Water-park or beach-choice day",
+                "credit": "Photo: Unsplash"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1706843540922-5682f3ad5b98?w=1600&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1706843540922-5682f3ad5b98?w=1600&q=80&auto=format&fit=crop",
+                "alt": "Water-park or beach-choice day",
+                "captionTitle": "Water-park or beach-choice day",
+                "credit": "Photo: Unsplash"
+              }
+            ],
+            "cost": "Aqualand Torremolinos online tickets: adult from <b>€37</b>, child from <b>€29</b>; family roughly <b>€132</b> before food/lockers. Beach alternative is free.",
+            "climateLabel": "June weather",
+            "climate": "<b>82°F</b> coast high; pools are comfortable, sea about <b>70°F</b>. This is the pressure-release day for the 8-year-old.",
+            "saveHtml": "<b>Save</b> Only buy Aqualand tickets after checking weather and appetite for crowds; a free Nerja beach day is the budget move.",
+            "splurgeHtml": "<b>Splurge</b> Fast-pass style add-ons can be worth it in July/August; in early June, arrive at opening before paying for upgrades.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Aqualand+food+courts\" target=\"_blank\" rel=\"noreferrer\"><b>Aqualand food courts</b></a> — pizza, burgers, fries and chicken exist inside, but expect theme-park pricing around €10–15pp.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bakers+Restaurant+%26+Bar\" target=\"_blank\" rel=\"noreferrer\"><b>Bakers Restaurant &amp; Bar</b></a> — back in Nerja: burgers/chicken/chips for dinner if water-park food disappoints.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Little Italy Nerja</b></a> — cheap pizza/pasta reset if everyone is wiped out.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Playa+de+Burriana+full+rest+day\" target=\"_blank\" rel=\"noreferrer\"><b>Playa de Burriana full rest day</b> ↩</a> — The honest alternative: no driving, no ticket cost, no queues, and usually better for parents.</p>",
+            "bloglinksHtml": "<a href=\"https://www.aqualand.es/torremolinos/en/tickets/\" target=\"_blank\" rel=\"noreferrer\">Official Aqualand Torremolinos tickets</a><a href=\"https://torremolinos.app/articles/aqualand-or-beach-day-in-torremolinos-which-family-day-should-you-choose/\" target=\"_blank\" rel=\"noreferrer\">Torremolinos water park vs beach guide</a>",
+            "lat": "36.6226",
+            "lng": "-4.4993",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=36.6226,-4.4993&z=14&output=embed\" title=\"Map of Water-park or beach-choice day\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=36.6226,-4.4993\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          },
+          {
+            "name": "Last beach day in Nerja",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Last+beach+day+in+Nerja\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=nerja\" target=\"_blank\" rel=\"noreferrer\">IG · Nerja</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Last+beach+day+in+Nerja&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c12",
+            "images": [
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Nerja%2C_the_beach_%22Playa_Torrecilla%22.jpg/1280px-Nerja%2C_the_beach_%22Playa_Torrecilla%22.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Nerja%2C_the_beach_%22Playa_Torrecilla%22.jpg/1280px-Nerja%2C_the_beach_%22Playa_Torrecilla%22.jpg",
+                "alt": "Playa de la Torrecilla, Nerja",
+                "captionTitle": "Playa de la Torrecilla",
+                "credit": "Photo: Wikimedia Commons"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Playa_de_la_Torrecilla_Nerja.jpg/1280px-Playa_de_la_Torrecilla_Nerja.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Playa_de_la_Torrecilla_Nerja.jpg/1280px-Playa_de_la_Torrecilla_Nerja.jpg",
+                "alt": "Playa de la Torrecilla beachfront, Nerja",
+                "captionTitle": "Playa de la Torrecilla beachfront",
+                "credit": "Photo: Wikimedia Commons"
+              },
+              {
+                "href": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Playa_Caletilla_en_Nerja.jpg/1280px-Playa_Caletilla_en_Nerja.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Playa_Caletilla_en_Nerja.jpg/1280px-Playa_Caletilla_en_Nerja.jpg",
+                "alt": "Playa Caletilla turquoise cove, Nerja",
+                "captionTitle": "Playa Caletilla",
+                "credit": "Photo: Wikimedia Commons"
+              }
+            ],
+            "cost": "Free unless you rent loungers/paddleboards; budget €60–100 for lunch, snacks and a last dinner.",
+            "climateLabel": "June weather",
+            "climate": "<b>80–83°F</b> air, sea <b>69–72°F</b>. Warmer than San Sebastián, cooler than Greece/Aegean peak summer.",
+            "saveHtml": "<b>Save</b> Keep the final full day local so packing does not collide with a long drive or timed ticket.",
+            "splurgeHtml": "<b>Splurge</b> Book one sea-view dinner if you want a finale; otherwise sunset on the Balcón costs nothing.",
+            "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Little+Italy+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Little Italy Nerja</b></a> — Tripadvisor favorite for cheap pizza/pasta; pizzas often quoted around €6 and pasta around €7–10.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Paparazzi+Nerja\" target=\"_blank\" rel=\"noreferrer\"><b>Paparazzi Nerja</b></a> — Tripadvisor 4.3; Italian/pizza, €10–18 mains, reliable family dinner near the center.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bakers+Restaurant+%26+Bar\" target=\"_blank\" rel=\"noreferrer\"><b>Bakers Restaurant &amp; Bar</b></a> — Tripadvisor 4.7; burgers, chips, chicken and breakfast-for-dinner energy, good for picky kids.</li>",
+            "altboxHtml": "<p><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Playa+Calahonda\" target=\"_blank\" rel=\"noreferrer\"><b>Playa Calahonda</b> ↩</a> — Tiny cove below the Balcón; prettier for a last photo, less practical for a long family beach day.</p>",
+            "bloglinksHtml": "<a href=\"https://www.nowhereonearth.com/nerjaspain\" target=\"_blank\" rel=\"noreferrer\">Nowhere On Earth: Nerja beach guide</a><a href=\"https://wanderlog.com/list/geoCategory/33553/best-family-restaurants-in-nerja\" target=\"_blank\" rel=\"noreferrer\">Wanderlog: family restaurants in Nerja</a>",
+            "lat": "36.75",
+            "lng": "-3.872",
+            "spotMapHtml": "<div class=\"spot-map\"><div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=36.75,-3.872&z=14&output=embed\" title=\"Map of Last beach day in Nerja\"></iframe></div><a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=36.75,-3.872\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a></div>"
+          }
+        ]
+      },
+      {
+        "id": "day13",
+        "colorClass": "c0",
+        "badge": "13",
+        "eyebrow": "Wed · Jun 16",
+        "heading": "Fly home from Málaga",
+        "feel": "Travel day",
+        "daycost": "Est. ~$60 · airport food",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Home that night if routing works"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Return rental car at AGP, fly AGP → hub → PIT"
+          }
+        ],
+        "note": "Open-jaw AGP home avoids a long backtrack to Madrid. If AGP fares are ugly, return the car in Málaga and take AVE back to Madrid the evening before instead.",
+        "travelNote": "✈︎ Travel day — no stops",
+        "spots": []
+      }
+    ]
+  },
+  "parts": [
+    {
+      "t": "raw",
+      "html": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Spain &middot; Andalusia &middot; Costa del Sol &mdash; June 2027</title><style>/* required styles */\n\n.leaflet-pane,\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-tile-container,\n.leaflet-pane > svg,\n.leaflet-pane > canvas,\n.leaflet-zoom-box,\n.leaflet-image-layer,\n.leaflet-layer {\n\tposition: absolute;\n\tleft: 0;\n\ttop: 0;\n\t}\n.leaflet-container {\n\toverflow: hidden;\n\t}\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\t-webkit-user-select: none;\n\t   -moz-user-select: none;\n\t        user-select: none;\n\t  -webkit-user-drag: none;\n\t}\n/* Prevents IE11 from highlighting tiles in blue */\n.leaflet-tile::selection {\n\tbackground: transparent;\n}\n/* Safari renders non-retina tile on retina better with this, but Chrome is worse */\n.leaflet-safari .leaflet-tile {\n\timage-rendering: -webkit-optimize-contrast;\n\t}\n/* hack that prevents hw layers \"stretching\" when loading new tiles */\n.leaflet-safari .leaflet-tile-container {\n\twidth: 1600px;\n\theight: 1600px;\n\t-webkit-transform-origin: 0 0;\n\t}\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\tdisplay: block;\n\t}\n/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */\n/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */\n.leaflet-container .leaflet-overlay-pane svg {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\t}\n.leaflet-container .leaflet-marker-pane img,\n.leaflet-container .leaflet-shadow-pane img,\n.leaflet-container .leaflet-tile-pane img,\n.leaflet-container img.leaflet-image-layer,\n.leaflet-container .leaflet-tile {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\twidth: auto;\n\tpadding: 0;\n\t}\n\n.leaflet-container img.leaflet-tile {\n\t/* See: https://bugs.chromium.org/p/chromium/issues/detail?id=600120 */\n\tmix-blend-mode: plus-lighter;\n}\n\n.leaflet-container.leaflet-touch-zoom {\n\t-ms-touch-action: pan-x pan-y;\n\ttouch-action: pan-x pan-y;\n\t}\n.leaflet-container.leaflet-touch-drag {\n\t-ms-touch-action: pinch-zoom;\n\t/* Fallback for FF which doesn't support pinch-zoom */\n\ttouch-action: none;\n\ttouch-action: pinch-zoom;\n}\n.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {\n\t-ms-touch-action: none;\n\ttouch-action: none;\n}\n.leaflet-container {\n\t-webkit-tap-highlight-color: transparent;\n}\n.leaflet-container a {\n\t-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);\n}\n.leaflet-tile {\n\tfilter: inherit;\n\tvisibility: hidden;\n\t}\n.leaflet-tile-loaded {\n\tvisibility: inherit;\n\t}\n.leaflet-zoom-box {\n\twidth: 0;\n\theight: 0;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tz-index: 800;\n\t}\n/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */\n.leaflet-overlay-pane svg {\n\t-moz-user-select: none;\n\t}\n\n.leaflet-pane         { z-index: 400; }\n\n.leaflet-tile-pane    { z-index: 200; }\n.leaflet-overlay-pane { z-index: 400; }\n.leaflet-shadow-pane  { z-index: 500; }\n.leaflet-marker-pane  { z-index: 600; }\n.leaflet-tooltip-pane   { z-index: 650; }\n.leaflet-popup-pane   { z-index: 700; }\n\n.leaflet-map-pane canvas { z-index: 100; }\n.leaflet-map-pane svg    { z-index: 200; }\n\n.leaflet-vml-shape {\n\twidth: 1px;\n\theight: 1px;\n\t}\n.lvml {\n\tbehavior: url(#default#VML);\n\tdisplay: inline-block;\n\tposition: absolute;\n\t}\n\n\n/* control positioning */\n\n.leaflet-control {\n\tposition: relative;\n\tz-index: 800;\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n.leaflet-top,\n.leaflet-bottom {\n\tposition: absolute;\n\tz-index: 1000;\n\tpointer-events: none;\n\t}\n.leaflet-top {\n\ttop: 0;\n\t}\n.leaflet-right {\n\tright: 0;\n\t}\n.leaflet-bottom {\n\tbottom: 0;\n\t}\n.leaflet-left {\n\tleft: 0;\n\t}\n.leaflet-control {\n\tfloat: left;\n\tclear: both;\n\t}\n.leaflet-right .leaflet-control {\n\tfloat: right;\n\t}\n.leaflet-top .leaflet-control {\n\tmargin-top: 10px;\n\t}\n.leaflet-bottom .leaflet-control {\n\tmargin-bottom: 10px;\n\t}\n.leaflet-left .leaflet-control {\n\tmargin-left: 10px;\n\t}\n.leaflet-right .leaflet-control {\n\tmargin-right: 10px;\n\t}\n\n\n/* zoom and fade animations */\n\n.leaflet-fade-anim .leaflet-popup {\n\topacity: 0;\n\t-webkit-transition: opacity 0.2s linear;\n\t   -moz-transition: opacity 0.2s linear;\n\t        transition: opacity 0.2s linear;\n\t}\n.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {\n\topacity: 1;\n\t}\n.leaflet-zoom-animated {\n\t-webkit-transform-origin: 0 0;\n\t    -ms-transform-origin: 0 0;\n\t        transform-origin: 0 0;\n\t}\nsvg.leaflet-zoom-animated {\n\twill-change: transform;\n}\n\n.leaflet-zoom-anim .leaflet-zoom-animated {\n\t-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);\n\t}\n.leaflet-zoom-anim .leaflet-tile,\n.leaflet-pan-anim .leaflet-tile {\n\t-webkit-transition: none;\n\t   -moz-transition: none;\n\t        transition: none;\n\t}\n\n.leaflet-zoom-anim .leaflet-zoom-hide {\n\tvisibility: hidden;\n\t}\n\n\n/* cursors */\n\n.leaflet-interactive {\n\tcursor: pointer;\n\t}\n.leaflet-grab {\n\tcursor: -webkit-grab;\n\tcursor:    -moz-grab;\n\tcursor:         grab;\n\t}\n.leaflet-crosshair,\n.leaflet-crosshair .leaflet-interactive {\n\tcursor: crosshair;\n\t}\n.leaflet-popup-pane,\n.leaflet-control {\n\tcursor: auto;\n\t}\n.leaflet-dragging .leaflet-grab,\n.leaflet-dragging .leaflet-grab .leaflet-interactive,\n.leaflet-dragging .leaflet-marker-draggable {\n\tcursor: move;\n\tcursor: -webkit-grabbing;\n\tcursor:    -moz-grabbing;\n\tcursor:         grabbing;\n\t}\n\n/* marker & overlays interactivity */\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-image-layer,\n.leaflet-pane > svg path,\n.leaflet-tile-container {\n\tpointer-events: none;\n\t}\n\n.leaflet-marker-icon.leaflet-interactive,\n.leaflet-image-layer.leaflet-interactive,\n.leaflet-pane > svg path.leaflet-interactive,\nsvg.leaflet-image-layer.leaflet-interactive path {\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n\n/* visual tweaks */\n\n.leaflet-container {\n\tbackground: #ddd;\n\toutline-offset: 1px;\n\t}\n.leaflet-container a {\n\tcolor: #0078A8;\n\t}\n.leaflet-zoom-box {\n\tborder: 2px dotted #38f;\n\tbackground: rgba(255,255,255,0.5);\n\t}\n\n\n/* general typography */\n.leaflet-container {\n\tfont-family: \"Helvetica Neue\", Arial, Helvetica, sans-serif;\n\tfont-size: 12px;\n\tfont-size: 0.75rem;\n\tline-height: 1.5;\n\t}\n\n\n/* general toolbar styles */\n\n.leaflet-bar {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.65);\n\tborder-radius: 4px;\n\t}\n.leaflet-bar a {\n\tbackground-color: #fff;\n\tborder-bottom: 1px solid #ccc;\n\twidth: 26px;\n\theight: 26px;\n\tline-height: 26px;\n\tdisplay: block;\n\ttext-align: center;\n\ttext-decoration: none;\n\tcolor: black;\n\t}\n.leaflet-bar a,\n.leaflet-control-layers-toggle {\n\tbackground-position: 50% 50%;\n\tbackground-repeat: no-repeat;\n\tdisplay: block;\n\t}\n.leaflet-bar a:hover,\n.leaflet-bar a:focus {\n\tbackground-color: #f4f4f4;\n\t}\n.leaflet-bar a:first-child {\n\tborder-top-left-radius: 4px;\n\tborder-top-right-radius: 4px;\n\t}\n.leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 4px;\n\tborder-bottom-right-radius: 4px;\n\tborder-bottom: none;\n\t}\n.leaflet-bar a.leaflet-disabled {\n\tcursor: default;\n\tbackground-color: #f4f4f4;\n\tcolor: #bbb;\n\t}\n\n.leaflet-touch .leaflet-bar a {\n\twidth: 30px;\n\theight: 30px;\n\tline-height: 30px;\n\t}\n.leaflet-touch .leaflet-bar a:first-child {\n\tborder-top-left-radius: 2px;\n\tborder-top-right-radius: 2px;\n\t}\n.leaflet-touch .leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 2px;\n\tborder-bottom-right-radius: 2px;\n\t}\n\n/* zoom control */\n\n.leaflet-control-zoom-in,\n.leaflet-control-zoom-out {\n\tfont: bold 18px 'Lucida Console', Monaco, monospace;\n\ttext-indent: 1px;\n\t}\n\n.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {\n\tfont-size: 22px;\n\t}\n\n\n/* layers control */\n\n.leaflet-control-layers {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.4);\n\tbackground: #fff;\n\tborder-radius: 5px;\n\t}\n.leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers.png);\n\twidth: 36px;\n\theight: 36px;\n\t}\n.leaflet-retina .leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers-2x.png);\n\tbackground-size: 26px 26px;\n\t}\n.leaflet-touch .leaflet-control-layers-toggle {\n\twidth: 44px;\n\theight: 44px;\n\t}\n.leaflet-control-layers .leaflet-control-layers-list,\n.leaflet-control-layers-expanded .leaflet-control-layers-toggle {\n\tdisplay: none;\n\t}\n.leaflet-control-layers-expanded .leaflet-control-layers-list {\n\tdisplay: block;\n\tposition: relative;\n\t}\n.leaflet-control-layers-expanded {\n\tpadding: 6px 10px 6px 6px;\n\tcolor: #333;\n\tbackground: #fff;\n\t}\n.leaflet-control-layers-scrollbar {\n\toverflow-y: scroll;\n\toverflow-x: hidden;\n\tpadding-right: 5px;\n\t}\n.leaflet-control-layers-selector {\n\tmargin-top: 2px;\n\tposition: relative;\n\ttop: 1px;\n\t}\n.leaflet-control-layers label {\n\tdisplay: block;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\t}\n.leaflet-control-layers-separator {\n\theight: 0;\n\tborder-top: 1px solid #ddd;\n\tmargin: 5px -10px 5px -6px;\n\t}\n\n/* Default icon URLs */\n.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */\n\tbackground-image: url(images/marker-icon.png);\n\t}\n\n\n/* attribution and scale controls */\n\n.leaflet-container .leaflet-control-attribution {\n\tbackground: #fff;\n\tbackground: rgba(255, 255, 255, 0.8);\n\tmargin: 0;\n\t}\n.leaflet-control-attribution,\n.leaflet-control-scale-line {\n\tpadding: 0 5px;\n\tcolor: #333;\n\tline-height: 1.4;\n\t}\n.leaflet-control-attribution a {\n\ttext-decoration: none;\n\t}\n.leaflet-control-attribution a:hover,\n.leaflet-control-attribution a:focus {\n\ttext-decoration: underline;\n\t}\n.leaflet-attribution-flag {\n\tdisplay: inline !important;\n\tvertical-align: baseline !important;\n\twidth: 1em;\n\theight: 0.6669em;\n\t}\n.leaflet-left .leaflet-control-scale {\n\tmargin-left: 5px;\n\t}\n.leaflet-bottom .leaflet-control-scale {\n\tmargin-bottom: 5px;\n\t}\n.leaflet-control-scale-line {\n\tborder: 2px solid #777;\n\tborder-top: none;\n\tline-height: 1.1;\n\tpadding: 2px 5px 1px;\n\twhite-space: nowrap;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tbackground: rgba(255, 255, 255, 0.8);\n\ttext-shadow: 1px 1px #fff;\n\t}\n.leaflet-control-scale-line:not(:first-child) {\n\tborder-top: 2px solid #777;\n\tborder-bottom: none;\n\tmargin-top: -2px;\n\t}\n.leaflet-control-scale-line:not(:first-child):not(:last-child) {\n\tborder-bottom: 2px solid #777;\n\t}\n\n.leaflet-touch .leaflet-control-attribution,\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tbox-shadow: none;\n\t}\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tborder: 2px solid rgba(0,0,0,0.2);\n\tbackground-clip: padding-box;\n\t}\n\n\n/* popup */\n\n.leaflet-popup {\n\tposition: absolute;\n\ttext-align: center;\n\tmargin-bottom: 20px;\n\t}\n.leaflet-popup-content-wrapper {\n\tpadding: 1px;\n\ttext-align: left;\n\tborder-radius: 12px;\n\t}\n.leaflet-popup-content {\n\tmargin: 13px 24px 13px 20px;\n\tline-height: 1.3;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\tmin-height: 1px;\n\t}\n.leaflet-popup-content p {\n\tmargin: 17px 0;\n\tmargin: 1.3em 0;\n\t}\n.leaflet-popup-tip-container {\n\twidth: 40px;\n\theight: 20px;\n\tposition: absolute;\n\tleft: 50%;\n\tmargin-top: -1px;\n\tmargin-left: -20px;\n\toverflow: hidden;\n\tpointer-events: none;\n\t}\n.leaflet-popup-tip {\n\twidth: 17px;\n\theight: 17px;\n\tpadding: 1px;\n\n\tmargin: -10px auto 0;\n\tpointer-events: auto;\n\n\t-webkit-transform: rotate(45deg);\n\t   -moz-transform: rotate(45deg);\n\t    -ms-transform: rotate(45deg);\n\t        transform: rotate(45deg);\n\t}\n.leaflet-popup-content-wrapper,\n.leaflet-popup-tip {\n\tbackground: white;\n\tcolor: #333;\n\tbox-shadow: 0 3px 14px rgba(0,0,0,0.4);\n\t}\n.leaflet-container a.leaflet-popup-close-button {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tborder: none;\n\ttext-align: center;\n\twidth: 24px;\n\theight: 24px;\n\tfont: 16px/24px Tahoma, Verdana, sans-serif;\n\tcolor: #757575;\n\ttext-decoration: none;\n\tbackground: transparent;\n\t}\n.leaflet-container a.leaflet-popup-close-button:hover,\n.leaflet-container a.leaflet-popup-close-button:focus {\n\tcolor: #585858;\n\t}\n.leaflet-popup-scrolled {\n\toverflow: auto;\n\t}\n\n.leaflet-oldie .leaflet-popup-content-wrapper {\n\t-ms-zoom: 1;\n\t}\n.leaflet-oldie .leaflet-popup-tip {\n\twidth: 24px;\n\tmargin: 0 auto;\n\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)\";\n\tfilter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);\n\t}\n\n.leaflet-oldie .leaflet-control-zoom,\n.leaflet-oldie .leaflet-control-layers,\n.leaflet-oldie .leaflet-popup-content-wrapper,\n.leaflet-oldie .leaflet-popup-tip {\n\tborder: 1px solid #999;\n\t}\n\n\n/* div icon */\n\n.leaflet-div-icon {\n\tbackground: #fff;\n\tborder: 1px solid #666;\n\t}\n\n\n/* Tooltip */\n/* Base styles for the element that has a tooltip */\n.leaflet-tooltip {\n\tposition: absolute;\n\tpadding: 6px;\n\tbackground-color: #fff;\n\tborder: 1px solid #fff;\n\tborder-radius: 3px;\n\tcolor: #222;\n\twhite-space: nowrap;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n\tpointer-events: none;\n\tbox-shadow: 0 1px 3px rgba(0,0,0,0.4);\n\t}\n.leaflet-tooltip.leaflet-interactive {\n\tcursor: pointer;\n\tpointer-events: auto;\n\t}\n.leaflet-tooltip-top:before,\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\tposition: absolute;\n\tpointer-events: none;\n\tborder: 6px solid transparent;\n\tbackground: transparent;\n\tcontent: \"\";\n\t}\n\n/* Directions */\n\n.leaflet-tooltip-bottom {\n\tmargin-top: 6px;\n}\n.leaflet-tooltip-top {\n\tmargin-top: -6px;\n}\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-top:before {\n\tleft: 50%;\n\tmargin-left: -6px;\n\t}\n.leaflet-tooltip-top:before {\n\tbottom: 0;\n\tmargin-bottom: -12px;\n\tborder-top-color: #fff;\n\t}\n.leaflet-tooltip-bottom:before {\n\ttop: 0;\n\tmargin-top: -12px;\n\tmargin-left: -6px;\n\tborder-bottom-color: #fff;\n\t}\n.leaflet-tooltip-left {\n\tmargin-left: -6px;\n}\n.leaflet-tooltip-right {\n\tmargin-left: 6px;\n}\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\ttop: 50%;\n\tmargin-top: -6px;\n\t}\n.leaflet-tooltip-left:before {\n\tright: 0;\n\tmargin-right: -12px;\n\tborder-left-color: #fff;\n\t}\n.leaflet-tooltip-right:before {\n\tleft: 0;\n\tmargin-left: -12px;\n\tborder-right-color: #fff;\n\t}\n\n/* Printing */\n\n@media print {\n\t/* Prevent printers from removing background-images of controls. */\n\t.leaflet-control {\n\t\t-webkit-print-color-adjust: exact;\n\t\tprint-color-adjust: exact;\n\t\t}\n\t}\n\n\n:root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;\n --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;\n --save:#3f7d4e;--splurge:#a9862b;--shadow:0 18px 46px rgba(30,32,28,.14)}\n*{box-sizing:border-box}\nhtml{scroll-behavior:smooth}\nbody{margin:0;background:var(--paper);color:var(--ink);\n font:16px/1.55 \"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;-webkit-font-smoothing:antialiased}\nh1,h2,h3,h4{font-family:\"Fraunces\",\"Georgia\",serif;letter-spacing:-.01em}\na{color:var(--c1)}\n.eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}\n/* HERO */\nheader{position:relative;min-height:90vh;display:grid;align-items:end;padding:40px clamp(20px,5vw,80px) 54px;color:#fff;overflow:hidden}\nheader::before{content:\"\";position:absolute;inset:0;\n background:linear-gradient(180deg,rgba(10,20,24,.12),rgba(10,18,22,.34) 45%,rgba(8,14,18,.88)),var(--hero-url) center 40% / cover;transform:scale(1.03);z-index:-1}\n.hero-inner{max-width:1100px}\nheader .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}\nh1{margin:0 0 18px;font-size:clamp(2.9rem,9vw,7rem);line-height:.9;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}\nheader .lead{max-width:640px;margin:0 0 26px;font-size:clamp(1.05rem,2.1vw,1.3rem);color:rgba(255,255,255,.94);line-height:1.5}\n.hero-meta{display:flex;flex-wrap:wrap;gap:26px}\n.hero-meta div{display:flex;flex-direction:column}\n.hero-meta b{font-family:\"Fraunces\",serif;font-size:1.5rem;line-height:1}\n.hero-meta span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}\n/* NAV */\nnav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;padding:11px clamp(16px,5vw,80px);background:rgba(246,241,231,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);scrollbar-width:none}\nnav::-webkit-scrollbar{display:none}\nnav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}\nnav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}\nnav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}\nmain{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}\n.section-label{text-align:center;margin:0 auto 40px;max-width:760px}\n.section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}\n.section-label p{margin:0;color:var(--muted)}\n.divider{margin:78px 0 40px}\n/* OVERVIEW */\n.overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}\n.ocard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.ocard .eyebrow{color:var(--c1)}\n.ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}\n.ocard p{margin:0;color:var(--muted);font-size:.92rem}\n/* TRIP MAP */\n.hc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}\n.hc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}\n.hc.actnow{border-top-color:#c0392b}\n.hc.watch{border-top-color:var(--gold)}\n.hc.good{border-top-color:var(--c3)}\n.hc-tag{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:10px;color:#fff}\n.hc.actnow .hc-tag{background:#c0392b}\n.hc.watch .hc-tag{background:var(--gold)}\n.hc.good .hc-tag{background:var(--c3)}\n.hc h4{margin:0 0 8px;font-size:1.15rem;font-weight:600;line-height:1.15}\n.hc p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}\n.hc p b{color:var(--ink)}\n\n/* TRAVEL TIPS */\n.tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}\n.tips-order p.mini-h{margin:0 0 12px}\n.tips-order ol{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;counter-reset:step}\n.tips-order li{counter-increment:step;position:relative;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 30px;font-size:.82rem;font-weight:600}\n.tips-order li::before{content:counter(step);position:absolute;left:6px;top:50%;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:var(--c1);color:#fff;font-size:.68rem;font-weight:800;display:grid;place-items:center}\n.tips-order li span{color:var(--muted);font-weight:600}\n.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}\n.tipcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--c1)}\n.tipcard.t2{border-top-color:var(--c2)}.tipcard.t3{border-top-color:var(--gold)}.tipcard.t4{border-top-color:var(--c3)}\n.tipcard h4{margin:0 0 4px;font-size:1.2rem;font-weight:600}\n.tipcard .sub{margin:0 0 12px;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.tipcard ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}\n.tipcard li{font-size:.88rem;color:var(--muted);line-height:1.5;padding-left:16px;position:relative}\n.tipcard li::before{content:\"\";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.tipcard li b{color:var(--ink)}\n.tipcard li.flag::before{background:#c0392b;width:8px;height:8px;top:7px}\n.tipcard li.flag b{color:#b5361f}\n\n.daycost{display:inline-block;margin:8px 0 0;font-size:.76rem;font-weight:700;color:var(--c2);background:rgba(194,90,58,.1);border:1px solid rgba(194,90,58,.28);border-radius:999px;padding:3px 11px}\n.budget-tbl.grand tr.total td{background:var(--ink);color:#fff;font-size:1.05rem;font-weight:800}\n.rate-note{margin:12px 2px 0;font-size:.78rem;color:var(--muted);line-height:1.5}\n\n.kv.climate{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}\n.kv.climate span{color:var(--c1)}\n\n/* TIMING COMPARE */\n.timing-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:22px}\n.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}\n.tcard.now{border-top-color:var(--c1)}\n.tcard.later{border-top-color:var(--c2)}\n.tcard.best{border-top-color:var(--c3)}\n.tcard.best .tlabel{background:var(--c3)}\n.tcard .tlabel{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px;color:#fff}\n.tcard.now .tlabel{background:var(--c1)}\n.tcard.later .tlabel{background:var(--c2)}\n.tcard h4{margin:0 0 12px;font-size:1.25rem;font-weight:600}\n.tcard .trow{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.88rem}\n.tcard .trow:last-child{border-bottom:0}\n.tcard .trow span{color:var(--muted)}\n.tcard .trow strong{text-align:right}\n.tcard .trow strong.bad{color:#b5361f}\n.listcard.pro-list{border-top:4px solid var(--c3)}\n.listcard.con-list{border-top:4px solid #c0392b}\n.listcard.pro-list li::before{content:\"✓\";position:static;width:auto;height:auto;border-radius:0;background:none;color:var(--c3);font-weight:800;margin-right:6px}\n.listcard.con-list li::before{content:\"✗\";position:static;width:auto;height:auto;border-radius:0;background:none;color:#c0392b;font-weight:800;margin-right:6px}\n.listcard.pro-list li,.listcard.con-list li{padding-left:0;display:flex;gap:2px}\n.listcard.pro-list li>span,.listcard.con-list li>span{flex:1}\n.verdict-box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ink);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin-top:20px}\n.verdict-box h4{margin:0 0 8px;font-size:1.1rem;font-weight:800}\n.verdict-box p{margin:0 0 10px;font-size:.92rem;color:var(--muted);line-height:1.55}\n.verdict-box p:last-child{margin-bottom:0}\n.verdict-box .aside{font-size:.82rem;font-style:italic;border-top:1px dashed var(--line);padding-top:10px;margin-top:12px}\n\n.tripmap-wrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow)}\n.mapbtns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}\n.mapbtns button{border:1px solid var(--line);background:var(--paper);color:var(--ink);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;cursor:pointer;transition:.15s}\n.mapbtns button:hover{background:var(--ink);color:#fff}\n.mapbtns button .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}\n#tripmap{height:460px;border-radius:14px;z-index:1}\n.leaflet-popup-content{font:14px/1.4 \"Inter\",sans-serif}\n.leaflet-popup-content b{font-family:\"Fraunces\",serif}\n.pin{width:16px;height:16px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.5)}\n/* BASES */\n.bases{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}\n.base{position:relative;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}\n.base .band{height:6px}\n.base.b1 .band{background:var(--c1)}.base.b2 .band{background:var(--c2)}.base.b3 .band{background:var(--c3)}\n.base .bimg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}\n.base .bbody{padding:18px 20px 22px}\n.base .nights{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.06em;color:#fff;margin-bottom:10px}\n.base.b1 .nights{background:var(--c1)}.base.b2 .nights{background:var(--c2)}.base.b3 .nights{background:var(--c3)}\n.base h4{margin:0 0 4px;font-size:1.55rem;font-weight:600}\n.base .dates{margin:0 0 10px;color:var(--muted);font-size:.85rem;font-weight:600}\n.base p{margin:0;color:var(--muted);font-size:.9rem}\n.base .book{margin:12px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink)}\n.base .book b{color:var(--c2)}\n/* PLAN GRID */\n.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.pcard h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:10px}\n.pcard h4 .dot{width:10px;height:10px;border-radius:50%;background:var(--gold)}\n.prow{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.prow:last-of-type{border-bottom:0}\n.prow span{color:var(--muted)}.prow strong{text-align:right}\n.pcard .tip{margin:12px 0 0;padding:10px 12px;background:rgba(217,164,65,.12);border-radius:10px;font-size:.82rem;color:#8a6a1e}\n/* DAYS */\n.days{display:grid;gap:26px}\n.day{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border-left:6px solid var(--c1)}\n.day.c1{border-left-color:var(--c1)}.day.c2{border-left-color:var(--c2)}.day.c3{border-left-color:var(--c3)}.day.c0{border-left-color:var(--muted)}\n.day-head{display:flex;gap:18px;align-items:center;padding:20px 24px 6px}\n.day-badge{flex:0 0 auto;width:58px;height:58px;border-radius:14px;display:grid;place-items:center;font-family:\"Fraunces\",serif;font-weight:600;font-size:1.15rem;color:#fff;line-height:1;text-align:center}\n.day.c1 .day-badge{background:var(--c1)}.day.c2 .day-badge{background:var(--c2)}.day.c3 .day-badge{background:var(--c3)}.day.c0 .day-badge{background:var(--muted)}\n.day-title h3{margin:2px 0 4px;font-size:1.4rem;font-weight:600;line-height:1.05}\n.day-title .feel{margin:0;color:var(--c2);font-size:.82rem;font-weight:700}\n.logistics{padding:4px 24px 12px}\n.facts{display:grid;margin:6px 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden}\n.facts div{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:9px 13px;border-bottom:1px solid var(--line);font-size:.86rem}\n.facts div:last-child{border-bottom:0}\n.facts span{color:var(--muted);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}\n.facts strong{font-weight:600}\n.note{margin:0;color:var(--ink);font-size:.94rem;line-height:1.55}\n/* SPOTS */\n.spots-wrap{display:grid;gap:20px;padding:6px 24px 24px}\n.travel-note{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px;font-weight:600}\n.spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}\n.spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}\n.spot-name{margin:0;font-size:1.22rem;font-weight:600}\n.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}\n.explore::-webkit-scrollbar{display:none}\n.explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}\n.explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}\n.explore .xg{background:#4285F4}\n.explore .xi{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}\n.explore .xf{background:#0063dc}\n/* CAROUSEL */\n.carousel{position:relative;overflow:hidden;background:#e7e1d4}\n.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}\n.track::-webkit-scrollbar{display:none}\n.track figure{margin:0;flex:0 0 100%;scroll-snap-align:center;position:relative}\n.track img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#e7e1d4}\n.track figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:.74rem;line-height:1.3;background:linear-gradient(180deg,transparent,rgba(0,0,0,.68))}\n.track figcaption strong{display:block;font-weight:700}\n.track figcaption span{color:rgba(255,255,255,.82);font-size:.66rem}\n.nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.86);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:.15s;z-index:2}\n.nav:hover{background:#fff;transform:translateY(-50%) scale(1.08)}\n.nav.prev{left:12px}.nav.next{right:12px}\n.counter{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;z-index:2}\n.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;flex-wrap:wrap;padding:0 40px}\n.dots .dot{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer;padding:0;transition:.15s}\n.dots .dot.on{background:#fff;width:20px;border-radius:999px}\n/* SPOT GRID */\n.spot-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px;padding:16px}\n.mini-h{margin:0 0 6px;font-weight:800;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.kv{margin-bottom:12px}\n.kv span{font-weight:800;font-size:.78rem;color:var(--ink)}\n.kv p{margin:4px 0 0;font-size:.9rem;color:var(--muted)}\n.callout{border-radius:10px;padding:10px 12px;font-size:.86rem;margin-bottom:10px;line-height:1.45}\n.callout b{font-weight:800}\n.callout.save{background:rgba(63,125,78,.1);border-left:3px solid var(--save)}\n.callout.save b{color:var(--save)}\n.callout.splurge{background:rgba(217,164,65,.14);border-left:3px solid var(--splurge)}\n.callout.splurge b{color:var(--splurge)}\n.resto{margin:14px 0 4px}\n.resto ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.resto li{font-size:.85rem;color:var(--muted);line-height:1.4;padding-left:14px;position:relative}\n.resto li::before{content:\"\";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.resto li a{text-decoration:none}.resto li b{color:var(--ink)}\n.altbox{margin:14px 0 4px;padding:12px;background:rgba(31,111,120,.07);border-radius:10px}\n.altbox p:last-child{margin:0;font-size:.86rem;color:var(--muted);line-height:1.45}\n.altbox a{text-decoration:none}\n.bloglinks{margin-top:14px;display:flex;flex-direction:column;gap:6px}\n.bloglinks a{font-size:.83rem;text-decoration:none;color:var(--c1);font-weight:600}\n.bloglinks a:hover{text-decoration:underline}\n.spot-map{display:flex;flex-direction:column}\n.mapwrap{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);flex:1;min-height:240px}\n.gmap{width:100%;height:100%;min-height:240px;border:0;display:block}\n.gmap-btn{margin-top:10px;text-align:center;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:10px;border-radius:10px;transition:.15s}\n.gmap-btn:hover{background:var(--c1)}\n/* BUDGET */\n.budget-tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}\n.budget-tbl th{background:rgba(31,111,120,.08);font-family:\"Fraunces\",serif;font-weight:600}\n.budget-tbl td:last-child,.budget-tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}\n.budget-tbl tr:last-child td{border-bottom:0;font-weight:700}\n.budget-scroll{overflow-x:auto}\n.twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}\n.listcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}\n.listcard h4{margin:0 0 12px;font-size:1.2rem;font-weight:600}\n.listcard.save-list{border-top:4px solid var(--save)}\n.listcard.splurge-list{border-top:4px solid var(--splurge)}\n.listcard ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}\n.listcard li{font-size:.88rem;color:var(--muted);line-height:1.45;padding-left:22px;position:relative}\n.save-list li::before{content:\"💰\";position:absolute;left:0;top:0}\n.splurge-list li::before{content:\"✨\";position:absolute;left:0;top:0}\n.listcard li b{color:var(--ink)}\n/* BALANCE */\n.bar{height:10px;border-radius:999px;background:rgba(26,23,18,.08);overflow:hidden;margin:14px 0 24px;display:flex}\n.bar i{height:100%;display:block}\n.balance{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}\n.bcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.bcard .pct{font-family:\"Fraunces\",serif;font-size:2.4rem;font-weight:600;line-height:1}\n.bcard.k1 .pct{color:var(--c1)}.bcard.k2 .pct{color:var(--c2)}.bcard.k3 .pct{color:var(--c3)}.bcard.k4 .pct{color:var(--muted)}\n.bcard h4{margin:6px 0;font-family:\"Inter\",sans-serif;font-size:.95rem;font-weight:800}\n.bcard p{margin:0;color:var(--muted);font-size:.84rem}\n/* STATUS */\n.status{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.scol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.scol h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:8px}\n.scol.settled h4::before{content:\"✓\";color:var(--c3);font-weight:800}\n.scol.open h4::before{content:\"○\";color:var(--c2);font-weight:800}\n.scol .row{padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.scol .row:last-child{border-bottom:0}\n.scol .row b{display:block;margin-bottom:2px}\n.scol .row span{color:var(--muted)}\nfooter{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}\nfooter a{color:var(--muted)}\n@media(max-width:860px){\n header{min-height:80vh}\n .plan-grid,.status,.twocol{grid-template-columns:1fr}\n .spot-grid{grid-template-columns:1fr}\n .day-head{gap:14px;padding:18px 16px 4px}\n .logistics{padding:4px 16px 10px}\n .spots-wrap{padding:6px 12px 18px}\n #tripmap{height:380px}\n}\n\n:root{--c4:#3a6ea5}\n.day.c4{border-left-color:var(--c4)}\n.day.c4 .day-badge{background:var(--c4)}\n.base.b4 .band{background:var(--c4)}\n.base.b4 .nights{background:var(--c4)}\n</style></head><body><header style=\"--hero-url:url('https://images.unsplash.com/photo-1564740603199-5f56138c6679?w=2400&q=80&auto=format&fit=crop')\"><div class=\"hero-inner\"><span class=\"kicker\">Family Trip &middot; June 2027</span><h1>Spain,<br>Andalusia to the Sea</h1><p class=\"lead\">Twelve nights &mdash; Seville first, Granada and the Alhambra before the real heat builds, then six straight nights on the Costa del Sol for beaches, caves, kayaks, and flexible pool days. Same itinerary format as the prior family plans, with real advance-booking risks, picky-kid food, driving friction, and heat tradeoffs called out plainly.</p><div class=\"hero-meta\"><div><b>12</b><span>Nights</span></div><div><b>3</b><span>Home bases</span></div><div><b>12</b><span>Stops mapped</span></div><div><b>Jun 3&ndash;16</b><span>2027</span></div></div></div></header><nav>\n  <a href=\"../index.html\" class=\"nav-home\" style=\"background:var(--ink);color:#fff;border-color:var(--ink);font-weight:800\">← All Trips</a><a href=\"#overview\">Overview</a><a href=\"#health-check\">Health-Check</a><a href=\"#timing\">Best Time to Go</a><a href=\"#map\">Trip Map</a><a href=\"#stays\">Where We Stay</a><a href=\"#getting-around\">Getting Around</a><a href=\"#itinerary\">Day by Day</a><a href=\"#budget\">Budget</a><a href=\"#tips\">Travel Tips</a><a href=\"#status\">Settled &amp; Open</a></nav><main>\n<section id=\"overview\"><div class=\"section-label\"><p class=\"eyebrow\">The Plan at a Glance</p><h2>Andalusia deep-dive, with the beach half protected</h2><p>This route chooses one coherent region instead of trying to bolt Barcelona/Costa Brava or the Basque Country onto Andalusia. The reason is practical: the Alhambra is the must-book Spain moment, Seville and C&oacute;rdoba provide the town/history punch, and Nerja/Costa del Sol gives warm-enough Mediterranean water without a second domestic flight or a long north-south transfer.</p></div><div class=\"overview\"><div class=\"ocard\"><p class=\"eyebrow\">Route</p><h4>PIT &rarr; Madrid &rarr; Seville &rarr; C&oacute;rdoba &rarr; Granada &rarr; Nerja/Costa del Sol &rarr; M&aacute;laga</h4><p>Fly into Madrid, AVE train to Seville, then rent a car only after the city days. Fly home from M&aacute;laga if pricing works; otherwise return by train to Madrid.</p></div><div class=\"ocard\"><p class=\"eyebrow\">Lodging split</p><h4>3 + 3 + 6 nights</h4><p>Three nights Seville, three Granada, six Nerja/Torrox on the Costa del Sol.</p></div><div class=\"ocard\"><p class=\"eyebrow\">Rough all-in</p><h4>~$8.8k&ndash;14.8k &middot; family of 4</h4><p>Flights are the swing item: Spain stays under the $15k cap, but not reliably under the $12k target if open-jaw fares price high.</p></div><div class=\"ocard\"><p class=\"eyebrow\">Trip feel</p><h4>~45% water &middot; 30% towns/food &middot; 25% nature/history</h4><p>Six coast nights carry the water share; Seville/Granada/C&oacute;rdoba carry the towns and big monuments.</p></div></div></section>\n<section id=\"health-check\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Plan Health-Check</p><h2>What to lock, watch, and expect</h2><p>A critical review against the family, heat, flight, car, and picky-eater constraints &mdash; researched July 2026. Kids assumed 13 &amp; 8 in June 2027.</p></div><div class=\"hc-grid\"><div class=\"hc actnow\"><span class=\"hc-tag\">Act now</span><h4>Alhambra timed Nasrid Palace entry is the mandatory booking</h4><p>Granada's Alhambra is the Spain equivalent of the Costa Rica Manuel Antonio constraint. Official tickets are dated, nominal, and the <b>Nasrid Palaces have a fixed entry time</b>; Spain.info recommends booking as early as possible, up to about three months ahead. Build the whole Granada block around the slot you get.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Heads-up</span><h4>Heat is the real constraint &mdash; not rain, not roads</h4><p>Seville's hot season starts around mid-June and July averages near <b>96&deg;F</b>. Late June through August can turn inland sightseeing into a survival exercise for an 8-year-old, so this plan uses <b>June 3&ndash;16</b>, earliest timed entries, AC/siesta blocks, and a long coast finish.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Heads-up</span><h4>Spanish meal timing is a family friction point</h4><p>Lunch often runs 2&ndash;4pm and real dinner commonly starts 9&ndash;10pm. That conflicts with an 8-year-old's schedule. The workaround is not magical: bigger late lunch, grocery/apartment snacks, food halls, Italian/burger backups, and restaurants that open closer to 7&ndash;8pm.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Heads-up</span><h4>ZBE zones and old-town parking argue against renting too early</h4><p>Madrid and Barcelona have strict low-emission zones, and Seville/Granada old centers are miserable by car. Spanish-plated rentals usually carry a DGT label, but access cameras, hotel-only streets, and &euro;15&ndash;25/day garages are still real. Rent after Seville, not at MAD on arrival.</p></div><div class=\"hc good\"><span class=\"hc-tag\">Now fixed</span><h4>PTO math corrected</h4><p><b>Depart Thursday evening, Jun 3, after work.</b> The full Thursday workday is preserved, but a Wednesday Jun 16 return uses <b>9 PTO days</b>, not 8. To keep 8 PTO you would need an 11-night version; the 12-night version is still the better trip.</p></div><div class=\"hc good\"><span class=\"hc-tag\">Now fixed</span><h4>Length verdict: 12 nights is just right</h4><p>Shortening to 11 nights would protect PTO but compress the coast, which is the budget-friendly family rhythm. Keep 12 nights unless PTO is harder than budget.</p></div><div class=\"hc good\"><span class=\"hc-tag\">Now fixed</span><h4>Picky-eater coverage exists at every stop</h4><p>Every day below includes pizza, pasta, burgers, fries, chicken, or food-hall options with real price bands/ratings where findable. The plan also flags the honest pain point: late Spanish dinners are harder than finding plain food.</p></div></div></section>\n<section id=\"timing\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Best Time to Go</p><h2>Early June wins because Andalusia gets hot fast</h2><p>Weighing late May through early September 2027: May is cooler but often worse for school logistics; July/August are beach-peak but inland Andalusia is too hot; late June is the danger zone. Early June is the best compromise if Spain stays on the summer calendar.</p></div><div class=\"timing-compare\"><div class=\"tcard best\"><span class=\"tlabel\">Recommended &mdash; base plan</span><h4>Thu Jun 3 &rarr; Wed Jun 16, 2027</h4><div class=\"trow\"><span>Depart</span><strong>Thu Jun 3 evening, after work</strong></div><div class=\"trow\"><span>Home</span><strong>Wed Jun 16</strong></div><div class=\"trow\"><span>Nights away</span><strong>12</strong></div><div class=\"trow\"><span>PTO days used</span><strong>9</strong></div><div class=\"trow\"><span>Heat risk</span><strong>Manageable if mornings only inland</strong></div></div><div class=\"tcard now\"><span class=\"tlabel\">Cooler shoulder</span><h4>Thu May 20 &rarr; Wed Jun 2, 2027</h4><div class=\"trow\"><span>Upside</span><strong>Seville/Granada several degrees easier</strong></div><div class=\"trow\"><span>Downside</span><strong class=\"bad\">School-year conflict likely</strong></div><div class=\"trow\"><span>Water</span><strong class=\"bad\">Mediterranean cooler</strong></div><div class=\"trow\"><span>PTO</span><strong>Same geometry</strong></div></div><div class=\"tcard later\"><span class=\"tlabel\">Late June</span><h4>Thu Jun 17 &rarr; Wed Jun 30, 2027</h4><div class=\"trow\"><span>Seville</span><strong class=\"bad\">Hot season underway</strong></div><div class=\"trow\"><span>Granada</span><strong class=\"bad\">Daily highs pushing 90&deg;F</strong></div><div class=\"trow\"><span>Water</span><strong>Warmer, but not worth it</strong></div><div class=\"trow\"><span>Verdict</span><strong class=\"bad\">Avoid for inland days</strong></div></div><div class=\"tcard\"><span class=\"tlabel\">July / August</span><h4>Peak summer</h4><div class=\"trow\"><span>Beach</span><strong>Warmest sea</strong></div><div class=\"trow\"><span>Flights/lodging</span><strong class=\"bad\">Peak pricing</strong></div><div class=\"trow\"><span>Seville</span><strong class=\"bad\">95&ndash;100&deg;F+ risk</strong></div><div class=\"trow\"><span>Verdict</span><strong class=\"bad\">Wrong fit with an 8-year-old</strong></div></div></div><div class=\"verdict-box\" style=\"border-left-color:var(--gold);margin-top:0;margin-bottom:22px\"><h4>Region choice verdict</h4><p><b>Pick Andalusia + Costa del Sol, not a two-region Spain sampler.</b> Costa Brava is excellent but adds Barcelona timed-ticket/ZBE complexity and moves the trip away from the Alhambra. Basque Country has the best summer climate, but San Sebasti&aacute;n's Atlantic water averages only about <b>66&deg;F in June</b>, much closer to Cascais than the Aegean. Andalusia gives the best history/food payoff, and the Costa del Sol gives the beach half without backtracking.</p></div><div class=\"verdict-box\"><h4>Overall verdict</h4><p><b>Go early June and protect the inland mornings.</b> If the calendar can move earlier without school pain, late May is meteorologically better. If it has to be summer, June 3&ndash;16 is the cleanest window: Seville and Granada happen before the worst heat, then the itinerary shifts to the coast before the family burns out. It is a 12-night, 9-PTO plan; use an 11-night version only if PTO is the limiting factor.</p></div></section>\n<section id=\"map\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">The Whole Trip, Mapped</p><h2>Every stop on one map</h2><p>Tap a region to fly there; click any pin for its name and a one-tap link into Google Maps. Colors match the day cards below.</p></div><div class=\"tripmap-wrap\"><div class=\"mapbtns\"><button data-region=\"seville\"><span class=\"sw\" style=\"background:#1f6f78\"></span>Seville / C&oacute;rdoba</button><button data-region=\"granada\"><span class=\"sw\" style=\"background:#c25a3a\"></span>Granada</button><button data-region=\"costasol\"><span class=\"sw\" style=\"background:#3f7d4e\"></span>Costa del Sol</button><button data-region=\"all\">Whole trip</button></div><div id=\"tripmap\"></div></div></section>\n<section id=\"stays\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Where We Are Staying</p><h2>Three home bases</h2><p>Each base is chosen for AC, laundry access, a realistic family dinner radius, and sane car logistics. The coast base should have a pool.</p></div><div class=\"bases\"><div class=\"base b1\"><div class=\"band\"></div><img class=\"bimg\" src=\"https://images.unsplash.com/photo-1653135429578-53a4b026ac52?w=1600&q=80&auto=format&fit=crop\" alt=\"Seville Cathedral\"><div class=\"bbody\"><span class=\"nights\">3 nights &middot; Jun 4&ndash;6</span><h4>Seville</h4><p class=\"dates\">Arrival, Alc&aacute;zar, plazas, food halls</p><p>Stay central enough to walk, but do not keep a car here. AC matters more than views.</p><p class=\"book\"><b>Book:</b> Family room or 2BR apartment with AC, elevator, and washer access. Realistic June band: <b>$150&ndash;250/night</b>; parking, if needed, often adds &euro;18&ndash;25/day.</p></div></div><div class=\"base b2\"><div class=\"band\"></div><img class=\"bimg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Patio_de_los_Arrayanes_%281%29.JPG/1280px-Patio_de_los_Arrayanes_%281%29.JPG\" alt=\"Patio de los Arrayanes reflecting pool, Alhambra\"><div class=\"bbody\"><span class=\"nights\">3 nights &middot; Jun 7&ndash;9</span><h4>Granada</h4><p class=\"dates\">Alhambra + evenings after heat</p><p>Sleep somewhere car-accessible, then use taxis/buses for the old town and Alhambra.</p><p class=\"book\"><b>Book:</b> AC apartment or hotel near Centro/Realejo with nearby garage. Realistic band: <b>$140&ndash;230/night</b>; central garages often &euro;15&ndash;22/day.</p></div></div><div class=\"base b3\"><div class=\"band\"></div><img class=\"bimg\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nerja.jpg/1280px-Nerja.jpg\" alt=\"Nerja and the Costa del Sol coastline\"><div class=\"bbody\"><span class=\"nights\">6 nights &middot; Jun 10&ndash;15</span><h4>Nerja / Torrox Costa</h4><p class=\"dates\">Beach, pool, caves, kayaking</p><p>The longest stay deliberately shifts the trip from monuments to water and flexible family rhythm.</p><p class=\"book\"><b>Book:</b> 2BR apartment with AC, washer, parking and pool. Nerja/Costa del Sol June family rentals commonly land <b>$150&ndash;230/night</b> for a standard non-view unit; sea-view/pool-front runs $230&ndash;300/night as the optional splurge below, not the base plan.</p></div></div></div></section>\n<section id=\"getting-around\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Getting Around</p><h2>Train first, rental car after Seville</h2><p>This is the cleanest way to keep the rental car useful without dragging it through Madrid and Seville low-emission/old-town parking problems.</p></div><div class=\"plan-grid\"><div class=\"pcard\"><h4><span class=\"dot\"></span>Flights &amp; Arrival Routing</h4><div class=\"prow\"><span>Direct PIT&ndash;Spain?</span><strong>No direct PIT&ndash;Madrid or PIT&ndash;Barcelona</strong></div><div class=\"prow\"><span>Likely outbound</span><strong>PIT &rarr; PHL/IAD/JFK/LHR &rarr; MAD</strong></div><div class=\"prow\"><span>Total transit</span><strong>~11&ndash;15 hrs to Madrid, then AVE</strong></div><div class=\"prow\"><span>Typical summer fare</span><strong>~$730&ndash;1,400pp economy</strong></div><div class=\"tip\">Best practical plan: one-stop PIT&ndash;MAD, train to Seville the same day, then open-jaw home from AGP if fare difference is reasonable.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Train + Car Split</h4><div class=\"prow\"><span>Madrid airport &rarr; Seville</span><strong>Taxi/Metro + AVE, ~3.5&ndash;4.5 hrs all-in</strong></div><div class=\"prow\"><span>Car pickup</span><strong>Seville, morning Jun 7</strong></div><div class=\"prow\"><span>Car return</span><strong>M&aacute;laga Airport, Jun 16</strong></div><div class=\"prow\"><span>Car class</span><strong>Compact SUV / family hatchback</strong></div><div class=\"tip\">This avoids Madrid ZBE entirely and avoids paying for three garage nights while walking Seville.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Tolls, Fuel &amp; Parking</h4><div class=\"prow\"><span>Core route tolls</span><strong>Mostly toll-free A-92 / A-45 / A-7</strong></div><div class=\"prow\"><span>Optional AP-46 near M&aacute;laga</span><strong>&euro;3.95 low / &euro;6.00 high season (June = high)</strong></div><div class=\"prow\"><span>Fuel + parking buffer</span><strong>~$260&ndash;430 total</strong></div><div class=\"prow\"><span>Old-town garages</span><strong>Often &euro;15&ndash;25/day</strong></div><div class=\"tip\">Seville and Granada old-town parking is a logistics cost, not a convenience. Book lodging with explicit parking instructions.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>ZBE / Low-Emission Zones</h4><div class=\"prow\"><span>Madrid/Barcelona</span><strong>Strict; avoid driving in</strong></div><div class=\"prow\"><span>Seville/Granada</span><strong>Use garages, avoid old-center streets</strong></div><div class=\"prow\"><span>Rental plate</span><strong>Spanish DGT label usually included</strong></div><div class=\"prow\"><span>Risk</span><strong>Camera fines + agency admin fees</strong></div><div class=\"tip\">An American driver does not need an IDP by treaty for a short tourist rental, but carrying one is still useful as a Spanish-language backup.</div></div></div></section>\n"
+    },
+    {
+      "t": "itinerary"
+    },
+    {
+      "t": "raw",
+      "html": "\n<section id=\"budget\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">The Money</p><h2>Budget, savers &amp; splurges</h2><p>Family of 4, USD unless noted. 2027 flights/lodging are not bookable yet, so fare and lodging lines use current typical-summer bands researched July 2026.</p></div><div class=\"budget-scroll\"><table class=\"budget-tbl\"><tr><th>Line item</th><th>Estimate (family of 4)</th></tr><tr><td>Flights &mdash; PIT&rarr;MAD / AGP&rarr;PIT open-jaw</td><td>$2,900&ndash;5,600</td></tr><tr><td>Madrid&ndash;Seville AVE + local transfers</td><td>$220&ndash;380</td></tr><tr><td>Rental car, ~9 days, one-way Seville to M&aacute;laga</td><td>$650&ndash;1,150</td></tr><tr><td>Fuel, tolls, parking garages</td><td>$260&ndash;430</td></tr><tr><td>Food &mdash; ~$100&ndash;150/day &times; 12</td><td>$1,200&ndash;1,800</td></tr><tr><td>Seville/C&oacute;rdoba/Granada paid sights</td><td>$300&ndash;650</td></tr><tr><td>Costa del Sol activities &mdash; caves + kayak baseline, water park optional</td><td>$300&ndash;500</td></tr><tr><td>Lodging &mdash; 12 nights, 3 bases</td><td>$1,860&ndash;2,910</td></tr></table></div><div class=\"twocol\"><div class=\"listcard save-list\"><h4>Save money</h4><ul><li>Rent the car after Seville, not at MAD &mdash; saves three garage days and avoids city-ZBE stress.</li><li>Use C&oacute;rdoba as an en-route stop instead of a separate day trip.</li><li>Choose Nerja/Torrox apartment with kitchen and parking over hotel rooms plus daily garage fees.</li><li>Default to a standard non-view Nerja/Torrox unit ($150&ndash;230/night) instead of sea-view/pool-front &mdash; saves roughly $400&ndash;450 across six nights.</li><li>Skip Aqualand by default. Nerja Caves (~$60 family) plus a Maro kayak morning (~$100&ndash;150 family) already deliver the water/nature blend for under $250 total; treat the water park as a bonus day, not baseline budget.</li><li>Book official monument tickets directly; skip reseller markups unless official Alhambra slots are gone.</li></ul></div><div class=\"listcard splurge-list\"><h4>Worth the splurge</h4><ul><li><b>Alhambra guide</b> &mdash; the one guide most likely to change the family's experience.</li><li><b>Sea-view or pool apartment in Nerja/Torrox</b> &mdash; six nights makes the upgrade pay off every day.</li><li><b>Maro kayak/boat morning</b> &mdash; best nature/water blend on the coast.</li><li><b>Open-jaw flight home from M&aacute;laga</b> if it costs under ~$150pp more than returning from Madrid.</li></ul></div></div></section>\n<section id=\"totals\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Bottom Line</p><h2>Total trip cost</h2><p>Family of 4, June 2027. The range is wider than Portugal because Spain summer transatlantic airfare and open-jaw pricing are the biggest unknowns.</p></div><div class=\"budget-scroll\"><table class=\"budget-tbl grand\"><tr><th>Category</th><th>Estimate (family of 4)</th></tr><tr><td>Flights + train positioning</td><td>$3,400&ndash;6,300</td></tr><tr><td>Rental car + fuel + tolls + parking</td><td>$950&ndash;1,650</td></tr><tr><td>Lodging &mdash; 12 nights</td><td>$2,100&ndash;3,200</td></tr><tr><td>Food + activities</td><td>$2,100&ndash;3,350</td></tr><tr><td>Docs/extras/eSIM/incidentals</td><td>$250&ndash;300</td></tr><tr class=\"total\"><td>Grand total &mdash; family of 4</td><td>~$8,800&ndash;14,800</td></tr></table></div><p class=\"rate-note\">Per-day blocks cover food + activities only. Lodging, flights, train, rental car, fuel, tolls and parking sit in the totals above, not the daily numbers &mdash; don't double-count. Length verdict: <b>12 nights is just right</b>; it uses 9 PTO, while an 11-night version can hit 8 PTO at the cost of a rushed coast. Re-check every 2027 price once schedules open.</p></section>\n<section id=\"tips\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Travel Tips</p><h2>The stuff nobody tells you</h2><p>Non-obvious logistics that make Spain smoother with a 13-year-old and an 8-year-old.</p></div><div class=\"tips-order\"><p class=\"mini-h\">Book in roughly this order &mdash; exact target dates (trip departs Thu Jun 3, 2027)</p><ol><li>Flights + Seville/M&aacute;laga car quotes<span> &middot; as soon as 2027 fares load</span></li><li>Alhambra General / Nasrid timed entry<span> &middot; as soon as available</span></li><li>Seville and Granada lodging with AC/parking clarity<span> &middot; before family rooms thin out</span></li><li>Alc&aacute;zar and Nerja Cave timed tickets<span> &middot; 4&ndash;8 weeks out</span></li><li>Maro kayak / optional Aqualand<span> &middot; 1&ndash;3 weeks out</span></li><li>Restaurant reservations for splurge dinners only<span> &middot; a few days ahead</span></li></ol></div><div class=\"tips-grid\"><div class=\"tipcard\"><h4>Before you go &mdash; documents</h4><p class=\"sub\">Months ahead</p><ul><li><b>US citizens do not need a tourist visa</b> for a normal short Spain trip within Schengen limits.</li><li class=\"flag\"><b>Check passports now.</b> Kids' passports are only valid 5 years and Schengen entry rules require validity beyond departure.</li><li><b>Carry the rental contract and hotel parking instructions</b> for old-town access questions.</li></ul></div><div class=\"tipcard t2\"><h4>Heat rules</h4><p class=\"sub\">This is the trip constraint</p><ul><li class=\"flag\"><b>Book first slots for Alc&aacute;zar, Alhambra and Nerja Cave.</b> By 1&ndash;5pm, inland sightseeing gets ugly.</li><li><b>Adopt Spain's split day:</b> sightsee early, big lunch, AC/pool, then evening walk.</li><li><b>Late dinner is not kid-neutral.</b> Plan apartment snacks and 7pm food options.</li></ul></div><div class=\"tipcard t3\"><h4>Driving &amp; parking</h4><p class=\"sub\">Keep the car useful</p><ul><li><b>Do not drive into Madrid or Barcelona.</b> Their ZBE systems are not worth it for this route.</li><li><b>Central Seville and Granada garages often run &euro;15&ndash;25/day.</b> Confirm height limits and access streets before booking.</li><li><b>Most core Andalusia highways are toll-free;</b> AP-46 near M&aacute;laga is optional and modest.</li></ul></div><div class=\"tipcard t4\"><h4>Food rhythm</h4><p class=\"sub\">Picky kids + Spain hours</p><ul><li><b>Lunch is the reliable restaurant meal.</b> Use it for Spanish food; use dinner for pizza/burgers if needed.</li><li><b>Food halls solve timing.</b> Mercado Lonja del Barranco and M&aacute;laga harbor options are easier than formal restaurants.</li><li><b>Book apartments with breakfast/snack capacity</b> so nobody is forced to wait until 9:30pm.</li></ul></div><div class=\"tipcard\"><h4>Water expectations</h4><p class=\"sub\">Mediterranean, but early season</p><ul><li><b>Costa del Sol water in early June is usually around 68&ndash;72&deg;F.</b> Swimmable, not bathwater.</li><li><b>Basque water is cooler</b> &mdash; San Sebasti&aacute;n June averages around 66&deg;F, a major reason it lost for this family-beach target.</li><li><b>Pick lodging with a pool</b> so water days survive wind, waves or cold-water complaints.</li></ul></div><div class=\"tipcard t2\"><h4>Smart packing</h4><p class=\"sub\">Small things that matter</p><ul><li><b>UPF shirts, hats and refillable bottles</b> for inland days.</li><li><b>Water shoes/rash guards</b> for Maro kayaking and rocky coves.</li><li><b>Offline maps and an eSIM</b> before landing; old-town driving instructions are easier when data works.</li></ul></div></div></section>\n<section id=\"balance\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Trip Balance</p><h2>What the days add up to</h2><p>The target: water-biased, but not beach-only.</p></div><div class=\"bar\"><i style=\"width:45%;background:var(--c1)\"></i><i style=\"width:30%;background:var(--c2)\"></i><i style=\"width:25%;background:var(--c3)\"></i></div><div class=\"balance\"><div class=\"bcard k1\"><div class=\"pct\">45%</div><h4>Water &middot; Beach &middot; Caves</h4><p>Nerja/Torrox base, Burriana, Maro kayaking, optional Aqualand, Costa del Sol pool time.</p></div><div class=\"bcard k2\"><div class=\"pct\">30%</div><h4>Towns &amp; Food</h4><p>Seville, Granada, C&oacute;rdoba, Frigiliana, M&aacute;laga, food halls and early family dinners.</p></div><div class=\"bcard k3\"><div class=\"pct\">25%</div><h4>Nature &amp; History</h4><p>Alhambra, Alc&aacute;zar, Mezquita, caves, cliffs, white villages and coast walks.</p></div><div class=\"bcard k4\"><div class=\"pct\">5&ndash;8%</div><h4>Transfer &amp; Logistics</h4><p>Arrival train day, two driving transfers, and the M&aacute;laga flight home.</p></div></div></section>\n<section id=\"status\" class=\"divider\"><div class=\"section-label\"><p class=\"eyebrow\">Decisions</p><h2>Settled &amp; still open</h2></div><div class=\"status\"><div class=\"scol settled\"><h4>Settled</h4><div class=\"row\"><b>Destination</b><span>Andalusia + Costa del Sol, not Barcelona/Costa Brava or Basque add-on.</span></div><div class=\"row\"><b>Length &amp; split</b><span>12 nights &mdash; 3 Seville + 3 Granada + 6 Nerja/Torrox.</span></div><div class=\"row\"><b>Timing</b><span>Early June, Jun 3&ndash;16, to reduce inland heat risk.</span></div><div class=\"row\"><b>Must-book item</b><span>Alhambra General ticket with timed Nasrid Palace entry.</span></div><div class=\"row\"><b>Car strategy</b><span>Train to Seville first; rent after Seville and return at M&aacute;laga Airport.</span></div></div><div class=\"scol open\"><h4>Still Open</h4><div class=\"row\"><b>Exact flights</b><span>2027 fares not loaded yet; compare PIT&ndash;MAD/AGP open jaw against round-trip MAD.</span></div><div class=\"row\"><b>Alhambra time slot</b><span>Book earliest possible Nasrid entry once tickets open.</span></div><div class=\"row\"><b>Nerja vs. Torrox lodging</b><span>Nerja is prettier/walkable; Torrox often easier/cheaper with parking.</span></div><div class=\"row\"><b>Aqualand day</b><span>Keep optional until weather/crowd/pricing are clear.</span></div><div class=\"row\"><b>Heat fallback</b><span>If forecast spikes over 100&deg;F inland, cut extra Seville/Granada wandering and protect AC/pool time.</span></div></div></div></section></main><footer><p>Spain &mdash; working family itinerary for June 2027. Photos are Wikimedia Commons (CC), embedded for offline viewing; hover for credits. Prices are July 2026 research where current, with 2027 flights/lodging treated as typical-summer bands, not quotes &mdash; reconfirm at booking. Maps via Google &amp; OpenStreetMap.</p></footer><script>/* @preserve\n * Leaflet 1.9.4, a JS library for interactive maps. https://leafletjs.com\n * (c) 2010-2023 Vladimir Agafonkin, (c) 2010-2011 CloudMade\n */\n//# sourceMappingURL=leaflet.js.map</script>"
+    },
+    {
+      "t": "lib",
+      "key": "1f252bc08ec393b31f65de1e0b899e59"
+    },
+    {
+      "t": "raw",
+      "html": "\n<script>window.__MAP_POINTS__=[{\"n\": \"Madrid-Barajas arrival\", \"lat\": 40.4983, \"lng\": -3.5676, \"r\": \"seville\", \"g\": \"https://www.google.com/maps/search/?api=1&query=40.4983,-3.5676\"}, {\"n\": \"Seville base\", \"lat\": 37.3891, \"lng\": -5.9845, \"r\": \"seville\", \"g\": \"https://www.google.com/maps/search/?api=1&query=37.3891,-5.9845\"}, {\"n\": \"Real Alcazar of Seville\", \"lat\": 37.3831, \"lng\": -5.9903, \"r\": \"seville\", \"g\": \"https://www.google.com/maps/search/?api=1&query=37.3831,-5.9903\"}, {\"n\": \"Cordoba Mosque-Cathedral\", \"lat\": 37.8792, \"lng\": -4.7794, \"r\": \"seville\", \"g\": \"https://www.google.com/maps/search/?api=1&query=37.8792,-4.7794\"}, {\"n\": \"Granada base\", \"lat\": 37.1773, \"lng\": -3.5986, \"r\": \"granada\", \"g\": \"https://www.google.com/maps/search/?api=1&query=37.1773,-3.5986\"}, {\"n\": \"Alhambra\", \"lat\": 37.1761, \"lng\": -3.5881, \"r\": \"granada\", \"g\": \"https://www.google.com/maps/search/?api=1&query=37.1761,-3.5881\"}, {\"n\": \"Albaicin / Mirador San Nicolas\", \"lat\": 37.181, \"lng\": -3.592, \"r\": \"granada\", \"g\": \"https://www.google.com/maps/search/?api=1&query=37.181,-3.592\"}, {\"n\": \"Nerja / Costa del Sol base\", \"lat\": 36.7469, \"lng\": -3.8797, \"r\": \"costasol\", \"g\": \"https://www.google.com/maps/search/?api=1&query=36.7469,-3.8797\"}, {\"n\": \"Caves of Nerja\", \"lat\": 36.7619, \"lng\": -3.8446, \"r\": \"costasol\", \"g\": \"https://www.google.com/maps/search/?api=1&query=36.7619,-3.8446\"}, {\"n\": \"Maro-Cerro Gordo cliffs\", \"lat\": 36.7544, \"lng\": -3.8367, \"r\": \"costasol\", \"g\": \"https://www.google.com/maps/search/?api=1&query=36.7544,-3.8367\"}, {\"n\": \"Malaga Alcazaba\", \"lat\": 36.7213, \"lng\": -4.4165, \"r\": \"costasol\", \"g\": \"https://www.google.com/maps/search/?api=1&query=36.7213,-4.4165\"}, {\"n\": \"Frigiliana\", \"lat\": 36.7875, \"lng\": -3.8944, \"r\": \"costasol\", \"g\": \"https://www.google.com/maps/search/?api=1&query=36.7875,-3.8944\"}, {\"n\": \"Aqualand Torremolinos\", \"lat\": 36.6226, \"lng\": -4.4993, \"r\": \"costasol\", \"g\": \"https://www.google.com/maps/search/?api=1&query=36.6226,-4.4993\"}, {\"n\": \"Malaga Airport departure\", \"lat\": 36.6749, \"lng\": -4.4991, \"r\": \"costasol\", \"g\": \"https://www.google.com/maps/search/?api=1&query=36.6749,-4.4991\"}];window.__MAP_COLORS__={\"seville\": \"#1f6f78\", \"granada\": \"#c25a3a\", \"costasol\": \"#3f7d4e\"};</script><script>// ---- carousels ----\ndocument.querySelectorAll('.carousel').forEach(function(c){var track=c.querySelector('.track'),cur=c.querySelector('.cur'),dots=[].slice.call(c.querySelectorAll('.dot')),n=+c.dataset.n;function idx(){return Math.round(track.scrollLeft/track.clientWidth);}function sync(){var i=idx();if(cur)cur.textContent=i+1;dots.forEach(function(d,j){d.classList.toggle('on',j===i);});}function go(i){i=Math.max(0,Math.min(n-1,i));track.scrollTo({left:i*track.clientWidth,behavior:'smooth'});}var p=c.querySelector('.prev'),nx=c.querySelector('.next');if(p)p.addEventListener('click',function(){go(idx()-1);});if(nx)nx.addEventListener('click',function(){go(idx()+1);});dots.forEach(function(d){d.addEventListener('click',function(){go(+d.dataset.i);});});var t;track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(sync,80);});sync();});\n(function(){var el=document.getElementById('tripmap');if(!el||typeof L==='undefined')return;var pts=window.__MAP_POINTS__||[],colors=window.__MAP_COLORS__||{};var map=L.map('tripmap',{scrollWheelZoom:false}).setView([37.2,-4.2],7);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(map);var groups={};pts.forEach(function(p){groups[p.r]=groups[p.r]||[];var col=colors[p.r]||'#c25a3a';var m=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:'<div class=\"pin\" style=\"background:'+col+'\"></div>',iconSize:[16,16],iconAnchor:[8,8]})}).addTo(map);m.bindPopup('<b>'+p.n+'</b><br><a href=\"'+p.g+'\" target=\"_blank\" rel=\"noreferrer\">Open in Google Maps &#8599;</a>');groups[p.r].push([p.lat,p.lng]);});function fit(region){var arr=region==='all'?pts.map(function(p){return [p.lat,p.lng];}):groups[region];if(arr&&arr.length)map.flyToBounds(L.latLngBounds(arr).pad(0.25),{maxZoom:region==='all'?8:12});}document.querySelectorAll('.mapbtns button').forEach(function(b){b.addEventListener('click',function(){fit(b.dataset.region);});});fit('all');setTimeout(function(){map.invalidateSize();},300);})();</script><button id=\"backToTop\" aria-label=\"Back to top\" title=\"Back to top\">↑</button>\n<style>\n#backToTop{position:fixed;right:20px;bottom:20px;z-index:9999;width:48px;height:48px;border:none;border-radius:50%;background:rgba(26,23,18,.85);color:#f6f1e7;font-size:22px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,background .2s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}\n#backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}\n#backToTop:hover{background:rgba(26,23,18,1)}\n@media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}\n</style>\n<script>\n(function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();\n</script>\n<script>/*scrollspy*/(function(){var nav=document.querySelector(\"nav\");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^=\"#\"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute(\"href\").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle(\"active\",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:\"smooth\"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:\"smooth\"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:\"-50% 0px -50% 0px\",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>\n"
+    }
+  ]
+}

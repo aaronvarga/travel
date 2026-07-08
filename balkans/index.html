@@ -686,6 +686,7 @@ nav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;paddi
 nav::-webkit-scrollbar{display:none}
 nav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}
 nav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 40px;max-width:760px}
 .section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
@@ -819,7 +820,8 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}
 .spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}
 .spot-name{margin:0;font-size:1.22rem;font-weight:600}
-.explore{display:flex;gap:6px;flex:0 0 auto}
+.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.explore::-webkit-scrollbar{display:none}
 .explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}
 .explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .explore .xg{background:#4285F4}
@@ -1046,62 +1048,55 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="itinerary" class="divider">
-    <div class="section-label">
+      <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
-      <p>Swipe each carousel for photos. Every stop carries its cost, a &#128176; money-saving tip, an &#10024; splurge, picky-kid restaurants, an alternative, blog links, and a map — tap &ldquo;Open in Google Maps&rdquo; to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
+      <p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, an alternative, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
     </div>
-    <div class="days">
-      <article class="day c0" id="day0">
+      <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
         <div class="day-title"><p class="eyebrow">Thu · Jul 1</p><h3>Depart Pittsburgh after work</h3><p class="feel">Overnight travel</p><p class="daycost">Est. $100-$180 · airport meals</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Overnight flight</strong></div><div><span>Plan</span><strong>PIT -> Europe connection -> Dubrovnik preferred</strong></div><div><span>PTO</span><strong>No PTO if after-work departure works</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Overnight flight</strong></div><div><span>Plan</span><strong>PIT -&gt; Europe connection -&gt; Dubrovnik preferred</strong></div><div><span>PTO</span><strong>No PTO if after-work departure works</strong></div></div>
         <p class="note">Price Dubrovnik and Tirana, but Dubrovnik is the route-friendly arrival. Tirana only wins if fare savings are big enough to justify the long northbound drive.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c1" id="day1">
       <div class="day-head">
         <div class="day-badge">1</div>
         <div class="day-title"><p class="eyebrow">Fri · Jul 2</p><h3>Land, pick up car, drive to Mostar</h3><p class="feel">Arrival + soft landing</p><p class="daycost">Est. $170-$290 · food, tolls, parking</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Drive</span><strong>DBV -> Mostar ~2.5-3 hr plus border</strong></div><div><span>Sleep</span><strong>Mostar night 1 of 3</strong></div><div><span>PTO</span><strong>PTO day 1</strong></div></div>
+        <div class="facts"><div><span>Drive</span><strong>DBV -&gt; Mostar ~2.5-3 hr plus border</strong></div><div><span>Sleep</span><strong>Mostar night 1 of 3</strong></div><div><span>PTO</span><strong>PTO day 1</strong></div></div>
         <p class="note">Keep this day simple: border, check-in, dinner, and first bridge views. Do not schedule Kravica after an overnight flight.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Mostar Old Town + Stari Most</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Mostar%20Old%20Town%20%2B%20Stari%20Most" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mostar" target="_blank" rel="noreferrer">IG · Mostar</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=starimost" target="_blank" rel="noreferrer">IG · Stari Most</a><a class="xf" href="https://www.flickr.com/search/?text=Mostar%20Old%20Town%20%2B%20Stari%20Most&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Mostar%20Old%20Town%20%2B%20Stari%20Most" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mostar" target="_blank" rel="noreferrer">IG · Mostar</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=starimost" target="_blank" rel="noreferrer">IG · Stari Most</a><a class="xf" href="https://www.flickr.com/search/?text=Mostar%20Old%20Town%20%2B%20Stari%20Most&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1716968921433-835ec227f847?w=1920&q=80&auto=format&fit=crop" alt="Mostar Old Town + Stari Most" loading="lazy"><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Christian Lue · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1280px-Mostar_Old_Town_Panorama_2007.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Ramirez · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar,_Stari_Most_at_night.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mostar%2C_Stari_Most_at_night.jpg/1280px-Mostar%2C_Stari_Most_at_night.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>BathoryPeter · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1716968921433-835ec227f847?w=1920&q=80&auto=format&fit=crop" alt="Mostar Old Town + Stari Most" loading="lazy"><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Christian Lue · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1280px-Mostar_Old_Town_Panorama_2007.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Ramirez · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar,_Stari_Most_at_night.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mostar%2C_Stari_Most_at_night.jpg/1280px-Mostar%2C_Stari_Most_at_night.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>BathoryPeter · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Old Bridge and bazaar are free. Koski Mehmed Pasha Mosque/minaret is paid; recent reports conflict around EUR7-EUR15, so ask at the door.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>July: hot</b>, often upper 80s to low 90s F daytime / upper 60s F nights. Neretva swimming is cold and local-condition dependent.</p></div>
+          <div class="kv"><span>Cost</span><p>Old Bridge and bazaar are free. Koski Mehmed Pasha Mosque/minaret is paid; recent reports conflict around EUR7-EUR15, so ask at the door.</p></div><div class="kv climate"><span>Weather</span><p><b>July: hot</b>, often upper 80s to low 90s F daytime / upper 60s F nights. Neretva swimming is cold and local-condition dependent.</p></div>
           <div class="callout save"><b>Save</b> Stay walkable and skip paid viewpoints; the bridge, bazaar, riverbanks, and sunset angles are free.</div>
           <div class="callout splurge"><b>Splurge</b> Pay for the mosque/minaret viewpoint if open; budget roughly EUR30-EUR60 family depending the current tariff.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&id=178%3Arestoran-pizzeria-megi&lang=en&option=com_content&view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
+            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.alongdustyroads.com/posts/pocitelj-bosnia" target="_blank" rel="noreferrer"><b>Pocitelj</b> &#8617;</a> — a compact Ottoman stone village if Mostar feels crowded.</p>
+            <p><a href="https://www.alongdustyroads.com/posts/pocitelj-bosnia" target="_blank" rel="noreferrer"><b>Pocitelj</b> ↩</a> — a compact Ottoman stone village if Mostar feels crowded.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://exploremostar.com/mostar-old-bridge-guide/" target="_blank" rel="noreferrer">Explore Mostar bridge guide ↗</a>
-            <a href="https://bucketlistbums.com/single-post/mostar/" target="_blank" rel="noreferrer">Bucket List Bums Mostar ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://exploremostar.com/mostar-old-bridge-guide/" target="_blank" rel="noreferrer">Explore Mostar bridge guide ↗</a><a href="https://bucketlistbums.com/single-post/mostar/" target="_blank" rel="noreferrer">Bucket List Bums Mostar ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=43.3373,17.8149&z=14&output=embed" title="Map of Mostar Old Town + Stari Most"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=43.3373,17.8149" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day2">
       <div class="day-head">
         <div class="day-badge">2</div>
@@ -1114,123 +1109,103 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Mostar Old Town + Stari Most</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Mostar%20Old%20Town%20%2B%20Stari%20Most" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mostar" target="_blank" rel="noreferrer">IG · Mostar</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=starimost" target="_blank" rel="noreferrer">IG · Stari Most</a><a class="xf" href="https://www.flickr.com/search/?text=Mostar%20Old%20Town%20%2B%20Stari%20Most&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Mostar%20Old%20Town%20%2B%20Stari%20Most" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mostar" target="_blank" rel="noreferrer">IG · Mostar</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=starimost" target="_blank" rel="noreferrer">IG · Stari Most</a><a class="xf" href="https://www.flickr.com/search/?text=Mostar%20Old%20Town%20%2B%20Stari%20Most&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1716968921433-835ec227f847?w=1920&q=80&auto=format&fit=crop" alt="Mostar Old Town + Stari Most" loading="lazy"><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Christian Lue · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1280px-Mostar_Old_Town_Panorama_2007.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Ramirez · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar,_Stari_Most_at_night.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mostar%2C_Stari_Most_at_night.jpg/1280px-Mostar%2C_Stari_Most_at_night.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>BathoryPeter · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1716968921433-835ec227f847?w=1920&q=80&auto=format&fit=crop" alt="Mostar Old Town + Stari Most" loading="lazy"><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Christian Lue · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1280px-Mostar_Old_Town_Panorama_2007.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>Ramirez · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Mostar,_Stari_Most_at_night.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mostar%2C_Stari_Most_at_night.jpg/1280px-Mostar%2C_Stari_Most_at_night.jpg" alt="Mostar Old Town + Stari Most" loading="lazy"></a><figcaption><strong>Mostar Old Town + Stari Most</strong><span>BathoryPeter · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Old Bridge and bazaar are free. Koski Mehmed Pasha Mosque/minaret is paid; recent reports conflict around EUR7-EUR15, so ask at the door.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>July: hot</b>, often upper 80s to low 90s F daytime / upper 60s F nights. Neretva swimming is cold and local-condition dependent.</p></div>
+          <div class="kv"><span>Cost</span><p>Old Bridge and bazaar are free. Koski Mehmed Pasha Mosque/minaret is paid; recent reports conflict around EUR7-EUR15, so ask at the door.</p></div><div class="kv climate"><span>Weather</span><p><b>July: hot</b>, often upper 80s to low 90s F daytime / upper 60s F nights. Neretva swimming is cold and local-condition dependent.</p></div>
           <div class="callout save"><b>Save</b> Stay walkable and skip paid viewpoints; the bridge, bazaar, riverbanks, and sunset angles are free.</div>
           <div class="callout splurge"><b>Splurge</b> Pay for the mosque/minaret viewpoint if open; budget roughly EUR30-EUR60 family depending the current tariff.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&id=178%3Arestoran-pizzeria-megi&lang=en&option=com_content&view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
+            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.alongdustyroads.com/posts/pocitelj-bosnia" target="_blank" rel="noreferrer"><b>Pocitelj</b> &#8617;</a> — a compact Ottoman stone village if Mostar feels crowded.</p>
+            <p><a href="https://www.alongdustyroads.com/posts/pocitelj-bosnia" target="_blank" rel="noreferrer"><b>Pocitelj</b> ↩</a> — a compact Ottoman stone village if Mostar feels crowded.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://exploremostar.com/mostar-old-bridge-guide/" target="_blank" rel="noreferrer">Explore Mostar bridge guide ↗</a>
-            <a href="https://bucketlistbums.com/single-post/mostar/" target="_blank" rel="noreferrer">Bucket List Bums Mostar ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://exploremostar.com/mostar-old-bridge-guide/" target="_blank" rel="noreferrer">Explore Mostar bridge guide ↗</a><a href="https://bucketlistbums.com/single-post/mostar/" target="_blank" rel="noreferrer">Bucket List Bums Mostar ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=43.3373,17.8149&z=14&output=embed" title="Map of Mostar Old Town + Stari Most"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=43.3373,17.8149" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day3">
       <div class="day-head">
         <div class="day-badge">3</div>
         <div class="day-title"><p class="eyebrow">Sun · Jul 4</p><h3>Blagaj cliff spring and Kravica swim</h3><p class="feel">Nature + swim</p><p class="daycost">Est. $190-$330 · tickets, parking, lunch</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Drive</span><strong>Mostar -> Blagaj -> Kravica loop</strong></div><div><span>Tickets</span><strong>Kravica about 60 KM family + parking</strong></div><div><span>Sleep</span><strong>Mostar night 3 of 3</strong></div></div>
+        <div class="facts"><div><span>Drive</span><strong>Mostar -&gt; Blagaj -&gt; Kravica loop</strong></div><div><span>Tickets</span><strong>Kravica about 60 KM family + parking</strong></div><div><span>Sleep</span><strong>Mostar night 3 of 3</strong></div></div>
         <p class="note">This is the Herzegovina day that justifies Mostar as a base: cliff monastery in the morning, waterfall swimming later when heat peaks.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Blagaj Tekke + Buna Spring</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Blagaj%20Tekke%20%2B%20Buna%20Spring" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=blagajtekke" target="_blank" rel="noreferrer">IG · Blagaj Tekke</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=bunaspring" target="_blank" rel="noreferrer">IG · Buna Spring</a><a class="xf" href="https://www.flickr.com/search/?text=Blagaj%20Tekke%20%2B%20Buna%20Spring&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Blagaj%20Tekke%20%2B%20Buna%20Spring" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=blagajtekke" target="_blank" rel="noreferrer">IG · Blagaj Tekke</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=bunaspring" target="_blank" rel="noreferrer">IG · Buna Spring</a><a class="xf" href="https://www.flickr.com/search/?text=Blagaj%20Tekke%20%2B%20Buna%20Spring&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Blagaj_%E2%80%93_Vrelo_Bune_3.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_3.jpg" alt="Blagaj Tekke + Buna Spring" loading="lazy"><figcaption><strong>Blagaj Tekke + Buna Spring</strong><span>Julian Nyca · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Blagaj_%E2%80%93_Vrelo_Bune_6.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Blagaj_%E2%80%93_Vrelo_Bune_6.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_6.jpg" alt="Blagaj Tekke + Buna Spring" loading="lazy"></a><figcaption><strong>Blagaj Tekke + Buna Spring</strong><span>Julian Nyca · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Blagaj_%E2%80%93_Vrelo_Bune_5.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Blagaj_%E2%80%93_Vrelo_Bune_5.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_5.jpg" alt="Blagaj Tekke + Buna Spring" loading="lazy"></a><figcaption><strong>Blagaj Tekke + Buna Spring</strong><span>Julian Nyca · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Blagaj_%E2%80%93_Vrelo_Bune_3.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_3.jpg" alt="Blagaj Tekke + Buna Spring" loading="lazy"><figcaption><strong>Blagaj Tekke + Buna Spring</strong><span>Julian Nyca · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Blagaj_%E2%80%93_Vrelo_Bune_6.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Blagaj_%E2%80%93_Vrelo_Bune_6.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_6.jpg" alt="Blagaj Tekke + Buna Spring" loading="lazy"></a><figcaption><strong>Blagaj Tekke + Buna Spring</strong><span>Julian Nyca · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Blagaj_%E2%80%93_Vrelo_Bune_5.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Blagaj_%E2%80%93_Vrelo_Bune_5.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_5.jpg" alt="Blagaj Tekke + Buna Spring" loading="lazy"></a><figcaption><strong>Blagaj Tekke + Buna Spring</strong><span>Julian Nyca · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Outside river views are free. Tekke interior is unconfirmed but recent sources report about 10 KM / EUR5 per person.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Hot afternoons</b>; go morning or late day. The cliff spring area feels cooler than Mostar old town.</p></div>
+          <div class="kv"><span>Cost</span><p>Outside river views are free. Tekke interior is unconfirmed but recent sources report about 10 KM / EUR5 per person.</p></div><div class="kv climate"><span>Weather</span><p><b>Hot afternoons</b>; go morning or late day. The cliff spring area feels cooler than Mostar old town.</p></div>
           <div class="callout save"><b>Save</b> See the Tekke from the riverside restaurants and bridge for free if the kids are not interested in the interior.</div>
           <div class="callout splurge"><b>Splurge</b> Do a riverside lunch with the cliff view; expect a higher tourist-location bill than Mostar.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&id=178%3Arestoran-pizzeria-megi&lang=en&option=com_content&view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
+            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://tekijablagaj.ba/en/" target="_blank" rel="noreferrer"><b>Dervish House viewpoint only</b> &#8617;</a> — keeps the visual payoff without committing to a full interior visit.</p>
+            <p><a href="https://tekijablagaj.ba/en/" target="_blank" rel="noreferrer"><b>Dervish House viewpoint only</b> ↩</a> — keeps the visual payoff without committing to a full interior visit.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://sandaltanman.com/things-to-do-in-blagaj/" target="_blank" rel="noreferrer">Blagaj practical guide ↗</a>
-            <a href="https://theblogtrotter.com/destinations/bosnia-herzegovina/blagaj/" target="_blank" rel="noreferrer">Blagaj fee/dress notes ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://sandaltanman.com/things-to-do-in-blagaj/" target="_blank" rel="noreferrer">Blagaj practical guide ↗</a><a href="https://theblogtrotter.com/destinations/bosnia-herzegovina/blagaj/" target="_blank" rel="noreferrer">Blagaj fee/dress notes ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=43.2567,17.9047&z=14&output=embed" title="Map of Blagaj Tekke + Buna Spring"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=43.2567,17.9047" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section><section class="spot">
+      </div></section><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Kravica Waterfalls</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Kravica%20Waterfalls" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kravica" target="_blank" rel="noreferrer">IG · Kravica Waterfalls</a><a class="xf" href="https://www.flickr.com/search/?text=Kravica%20Waterfalls&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Kravica%20Waterfalls" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kravica" target="_blank" rel="noreferrer">IG · Kravica Waterfalls</a><a class="xf" href="https://www.flickr.com/search/?text=Kravica%20Waterfalls&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Waterfalls_Kravica_5%2C_Bosnia_and_Herzegovina.jpg/1280px-Waterfalls_Kravica_5%2C_Bosnia_and_Herzegovina.jpg" alt="Kravica Waterfalls" loading="lazy"><figcaption><strong>Kravica Waterfalls</strong><span>Matej Batha · CC BY-SA 2.5</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kravica_Waterfalls,Bosnia_%26_Herzegovina.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kravica_Waterfalls%2CBosnia_%26_Herzegovina.jpg/1280px-Kravica_Waterfalls%2CBosnia_%26_Herzegovina.jpg" alt="Kravica Waterfalls" loading="lazy"></a><figcaption><strong>Kravica Waterfalls</strong><span>john mcsporran · CC BY 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Waterfalls_Kravica_6,_Bosnia_and_Herzegovina.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Waterfalls_Kravica_6%2C_Bosnia_and_Herzegovina.jpg/1280px-Waterfalls_Kravica_6%2C_Bosnia_and_Herzegovina.jpg" alt="Kravica Waterfalls" loading="lazy"></a><figcaption><strong>Kravica Waterfalls</strong><span>Matej Batha · CC BY-SA 2.5</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Waterfalls_Kravica_5%2C_Bosnia_and_Herzegovina.jpg/1280px-Waterfalls_Kravica_5%2C_Bosnia_and_Herzegovina.jpg" alt="Kravica Waterfalls" loading="lazy"><figcaption><strong>Kravica Waterfalls</strong><span>Matej Batha · CC BY-SA 2.5</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kravica_Waterfalls,Bosnia_%26_Herzegovina.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kravica_Waterfalls%2CBosnia_%26_Herzegovina.jpg/1280px-Kravica_Waterfalls%2CBosnia_%26_Herzegovina.jpg" alt="Kravica Waterfalls" loading="lazy"></a><figcaption><strong>Kravica Waterfalls</strong><span>john mcsporran · CC BY 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Waterfalls_Kravica_6,_Bosnia_and_Herzegovina.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Waterfalls_Kravica_6%2C_Bosnia_and_Herzegovina.jpg/1280px-Waterfalls_Kravica_6%2C_Bosnia_and_Herzegovina.jpg" alt="Kravica Waterfalls" loading="lazy"></a><figcaption><strong>Kravica Waterfalls</strong><span>Matej Batha · CC BY-SA 2.5</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Official 2026 pricing: 20 KM adult, 10 KM ages 7-18, under 7 free; parking 3 KM/hour or 6 KM/day. Family estimate: 60 KM plus parking.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Water is cool</b>, roughly high 60s F to low 70s F in summer, but swimmable in hot weather.</p></div>
+          <div class="kv"><span>Cost</span><p>Official 2026 pricing: 20 KM adult, 10 KM ages 7-18, under 7 free; parking 3 KM/hour or 6 KM/day. Family estimate: 60 KM plus parking.</p></div><div class="kv climate"><span>Weather</span><p><b>Water is cool</b>, roughly high 60s F to low 70s F in summer, but swimmable in hot weather.</p></div>
           <div class="callout save"><b>Save</b> Bring towels, water shoes, and snacks so the falls are a half-day swim/picnic instead of a restaurant day.</div>
           <div class="callout splurge"><b>Splurge</b> Use the on-site restaurant and stay through late afternoon light; budget about 80-120 KM for an easy meal.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&id=178%3Arestoran-pizzeria-megi&lang=en&option=com_content&view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
+            <ul><li><a href="https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article" target="_blank" rel="noreferrer"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href="https://nidjeveze.ba/" target="_blank" rel="noreferrer"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href="https://www.instagram.com/restoran_vodopad_kravice/" target="_blank" rel="noreferrer"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://exploremostar.com/kravica-waterfall/" target="_blank" rel="noreferrer"><b>Buna canals near Blagaj</b> &#8617;</a> — less of a swim spectacle, but easier if Kravica crowds look rough.</p>
+            <p><a href="https://exploremostar.com/kravica-waterfall/" target="_blank" rel="noreferrer"><b>Buna canals near Blagaj</b> ↩</a> — less of a swim spectacle, but easier if Kravica crowds look rough.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://kravica.ba/en/for-visitors/" target="_blank" rel="noreferrer">Official Kravica visitor info ↗</a>
-            <a href="https://traveltomtom.net/destinations/europe/bosnia/visiting-kravice-waterfalls-bosnia" target="_blank" rel="noreferrer">Kravica swim tips ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://kravica.ba/en/for-visitors/" target="_blank" rel="noreferrer">Official Kravica visitor info ↗</a><a href="https://traveltomtom.net/destinations/europe/bosnia/visiting-kravice-waterfalls-bosnia" target="_blank" rel="noreferrer">Kravica swim tips ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=43.1562,17.6087&z=14&output=embed" title="Map of Kravica Waterfalls"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=43.1562,17.6087" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day4">
       <div class="day-head">
         <div class="day-badge">4</div>
         <div class="day-title"><p class="eyebrow">Mon · Jul 5</p><h3>Drive to the Bay of Kotor</h3><p class="feel">Transfer + bay arrival</p><p class="daycost">Est. $170-$300 · fuel, food, parking</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Drive</span><strong>Mostar -> Kotor ~3.5-4.5 hr with border</strong></div><div><span>Sleep</span><strong>Kotor night 1 of 3</strong></div><div><span>Holiday</span><strong>Independence Day observed - PTO saved</strong></div></div>
+        <div class="facts"><div><span>Drive</span><strong>Mostar -&gt; Kotor ~3.5-4.5 hr with border</strong></div><div><span>Sleep</span><strong>Kotor night 1 of 3</strong></div><div><span>Holiday</span><strong>Independence Day observed - PTO saved</strong></div></div>
         <p class="note">Route via Trebinje/Sitnica rather than backtracking through Dubrovnik unless live border conditions make the coast better.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Kotor Old Town + City Walls</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Kotor%20Old%20Town%20%2B%20City%20Walls" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kotor" target="_blank" rel="noreferrer">IG · Kotor</a><a class="xf" href="https://www.flickr.com/search/?text=Kotor%20Old%20Town%20%2B%20City%20Walls&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Kotor%20Old%20Town%20%2B%20City%20Walls" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kotor" target="_blank" rel="noreferrer">IG · Kotor</a><a class="xf" href="https://www.flickr.com/search/?text=Kotor%20Old%20Town%20%2B%20City%20Walls&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1502824420498-012d4c4f0c42?w=1200&q=80&auto=format&fit=crop" alt="Kotor Old Town + City Walls" loading="lazy"><figcaption><strong>Kotor Old Town + City Walls</strong><span>Faruk Kaymak · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/1280px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Bay_of_Kotor_from_Lepetani%27s_road.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Bay_of_Kotor_from_Lepetani%27s_road.jpg/1280px-Bay_of_Kotor_from_Lepetani%27s_road.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Gzzz · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1502824420498-012d4c4f0c42?w=1200&q=80&auto=format&fit=crop" alt="Kotor Old Town + City Walls" loading="lazy"><figcaption><strong>Kotor Old Town + City Walls</strong><span>Faruk Kaymak · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/1280px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Bay_of_Kotor_from_Lepetani%27s_road.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Bay_of_Kotor_from_Lepetani%27s_road.jpg/1280px-Bay_of_Kotor_from_Lepetani%27s_road.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Gzzz · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>City walls/San Giovanni fortress currently reported at EUR15 per person, under 12 free; family estimate about EUR45.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>July:</b> around low-to-mid 80s F days / upper 60s to low 70s nights. Bay water averages about <b>77-79 F</b>.</p></div>
+          <div class="kv"><span>Cost</span><p>City walls/San Giovanni fortress currently reported at EUR15 per person, under 12 free; family estimate about EUR45.</p></div><div class="kv climate"><span>Weather</span><p><b>July:</b> around low-to-mid 80s F days / upper 60s to low 70s nights. Bay water averages about <b>77-79 F</b>.</p></div>
           <div class="callout save"><b>Save</b> Climb early, carry water, and skip paid boat tours on this day; old-town wandering is free.</div>
           <div class="callout splurge"><b>Splurge</b> Private or small-group bay boat after the climb; expect EUR100+ family depending duration.</div>
           <div class="resto">
@@ -1239,19 +1214,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://adriaticways.com/kotor-fortress-city-walls/" target="_blank" rel="noreferrer"><b>Ladder of Kotor lower viewpoint</b> &#8617;</a> — similar views if the full fortress climb is too hot.</p>
+            <p><a href="https://adriaticways.com/kotor-fortress-city-walls/" target="_blank" rel="noreferrer"><b>Ladder of Kotor lower viewpoint</b> ↩</a> — similar views if the full fortress climb is too hot.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://alexjessicamills.com/best-things-to-do-in-kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">Kotor with kids ↗</a>
-            <a href="https://www.nickkembel.com/kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">More Kotor family ideas ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://alexjessicamills.com/best-things-to-do-in-kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">Kotor with kids ↗</a><a href="https://www.nickkembel.com/kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">More Kotor family ideas ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=42.4247,18.7712&z=14&output=embed" title="Map of Kotor Old Town + City Walls"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=42.4247,18.7712" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day5">
       <div class="day-head">
         <div class="day-badge">5</div>
@@ -1264,13 +1235,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Kotor Old Town + City Walls</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Kotor%20Old%20Town%20%2B%20City%20Walls" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kotor" target="_blank" rel="noreferrer">IG · Kotor</a><a class="xf" href="https://www.flickr.com/search/?text=Kotor%20Old%20Town%20%2B%20City%20Walls&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Kotor%20Old%20Town%20%2B%20City%20Walls" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kotor" target="_blank" rel="noreferrer">IG · Kotor</a><a class="xf" href="https://www.flickr.com/search/?text=Kotor%20Old%20Town%20%2B%20City%20Walls&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1502824420498-012d4c4f0c42?w=1200&q=80&auto=format&fit=crop" alt="Kotor Old Town + City Walls" loading="lazy"><figcaption><strong>Kotor Old Town + City Walls</strong><span>Faruk Kaymak · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/1280px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Bay_of_Kotor_from_Lepetani%27s_road.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Bay_of_Kotor_from_Lepetani%27s_road.jpg/1280px-Bay_of_Kotor_from_Lepetani%27s_road.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Gzzz · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1502824420498-012d4c4f0c42?w=1200&q=80&auto=format&fit=crop" alt="Kotor Old Town + City Walls" loading="lazy"><figcaption><strong>Kotor Old Town + City Walls</strong><span>Faruk Kaymak · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/1280px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Bay_of_Kotor_from_Lepetani%27s_road.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Bay_of_Kotor_from_Lepetani%27s_road.jpg/1280px-Bay_of_Kotor_from_Lepetani%27s_road.jpg" alt="Kotor Old Town + City Walls" loading="lazy"></a><figcaption><strong>Kotor Old Town + City Walls</strong><span>Gzzz · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>City walls/San Giovanni fortress currently reported at EUR15 per person, under 12 free; family estimate about EUR45.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>July:</b> around low-to-mid 80s F days / upper 60s to low 70s nights. Bay water averages about <b>77-79 F</b>.</p></div>
+          <div class="kv"><span>Cost</span><p>City walls/San Giovanni fortress currently reported at EUR15 per person, under 12 free; family estimate about EUR45.</p></div><div class="kv climate"><span>Weather</span><p><b>July:</b> around low-to-mid 80s F days / upper 60s to low 70s nights. Bay water averages about <b>77-79 F</b>.</p></div>
           <div class="callout save"><b>Save</b> Climb early, carry water, and skip paid boat tours on this day; old-town wandering is free.</div>
           <div class="callout splurge"><b>Splurge</b> Private or small-group bay boat after the climb; expect EUR100+ family depending duration.</div>
           <div class="resto">
@@ -1279,19 +1248,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://adriaticways.com/kotor-fortress-city-walls/" target="_blank" rel="noreferrer"><b>Ladder of Kotor lower viewpoint</b> &#8617;</a> — similar views if the full fortress climb is too hot.</p>
+            <p><a href="https://adriaticways.com/kotor-fortress-city-walls/" target="_blank" rel="noreferrer"><b>Ladder of Kotor lower viewpoint</b> ↩</a> — similar views if the full fortress climb is too hot.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://alexjessicamills.com/best-things-to-do-in-kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">Kotor with kids ↗</a>
-            <a href="https://www.nickkembel.com/kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">More Kotor family ideas ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://alexjessicamills.com/best-things-to-do-in-kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">Kotor with kids ↗</a><a href="https://www.nickkembel.com/kotor-montenegro-with-kids/" target="_blank" rel="noreferrer">More Kotor family ideas ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=42.4247,18.7712&z=14&output=embed" title="Map of Kotor Old Town + City Walls"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=42.4247,18.7712" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day6">
       <div class="day-head">
         <div class="day-badge">6</div>
@@ -1304,13 +1269,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Perast + Our Lady of the Rocks</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Perast%20%2B%20Our%20Lady%20of%20the%20Rocks" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=perast" target="_blank" rel="noreferrer">IG · Perast</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ourladyoftherocks" target="_blank" rel="noreferrer">IG · Our Lady of the Rocks</a><a class="xf" href="https://www.flickr.com/search/?text=Perast%20%2B%20Our%20Lady%20of%20the%20Rocks&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Perast%20%2B%20Our%20Lady%20of%20the%20Rocks" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=perast" target="_blank" rel="noreferrer">IG · Perast</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ourladyoftherocks" target="_blank" rel="noreferrer">IG · Our Lady of the Rocks</a><a class="xf" href="https://www.flickr.com/search/?text=Perast%20%2B%20Our%20Lady%20of%20the%20Rocks&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Church_of_Our_Lady_of_the_Rocks%2C_Perast_%2849631172447%29.jpg/1280px-Church_of_Our_Lady_of_the_Rocks%2C_Perast_%2849631172447%29.jpg" alt="Perast + Our Lady of the Rocks" loading="lazy"><figcaption><strong>Perast + Our Lady of the Rocks</strong><span>Jocelyn Erskine-Kellie · CC BY-SA 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Church_of_Our_Lady_of_the_Rocks_3.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Church_of_Our_Lady_of_the_Rocks_3.jpg/1280px-Church_of_Our_Lady_of_the_Rocks_3.jpg" alt="Perast + Our Lady of the Rocks" loading="lazy"></a><figcaption><strong>Perast + Our Lady of the Rocks</strong><span>Gertjan R. · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Church_of_Our_Lady_of_the_Rocks,_Perast.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Church_of_Our_Lady_of_the_Rocks%2C_Perast.jpg/1280px-Church_of_Our_Lady_of_the_Rocks%2C_Perast.jpg" alt="Perast + Our Lady of the Rocks" loading="lazy"></a><figcaption><strong>Perast + Our Lady of the Rocks</strong><span>Jocelyn Erskine-Kellie · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Church_of_Our_Lady_of_the_Rocks%2C_Perast_%2849631172447%29.jpg/1280px-Church_of_Our_Lady_of_the_Rocks%2C_Perast_%2849631172447%29.jpg" alt="Perast + Our Lady of the Rocks" loading="lazy"><figcaption><strong>Perast + Our Lady of the Rocks</strong><span>Jocelyn Erskine-Kellie · CC BY-SA 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Church_of_Our_Lady_of_the_Rocks_3.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Church_of_Our_Lady_of_the_Rocks_3.jpg/1280px-Church_of_Our_Lady_of_the_Rocks_3.jpg" alt="Perast + Our Lady of the Rocks" loading="lazy"></a><figcaption><strong>Perast + Our Lady of the Rocks</strong><span>Gertjan R. · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Church_of_Our_Lady_of_the_Rocks,_Perast.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Church_of_Our_Lady_of_the_Rocks%2C_Perast.jpg/1280px-Church_of_Our_Lady_of_the_Rocks%2C_Perast.jpg" alt="Perast + Our Lady of the Rocks" loading="lazy"></a><figcaption><strong>Perast + Our Lady of the Rocks</strong><span>Jocelyn Erskine-Kellie · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Perast waterfront is free. Boat to Our Lady of the Rocks commonly runs EUR5-EUR10 pp return; church/museum often EUR2-EUR3 pp.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Warm bay day</b>; water is usually comfortable, shade is limited along the waterfront.</p></div>
+          <div class="kv"><span>Cost</span><p>Perast waterfront is free. Boat to Our Lady of the Rocks commonly runs EUR5-EUR10 pp return; church/museum often EUR2-EUR3 pp.</p></div><div class="kv climate"><span>Weather</span><p><b>Warm bay day</b>; water is usually comfortable, shade is limited along the waterfront.</p></div>
           <div class="callout save"><b>Save</b> Drive or taxi to Perast and use the short local boat instead of a longer Kotor speedboat tour.</div>
           <div class="callout splurge"><b>Splurge</b> Take a 2-hour bay boat from Kotor if parking stress matters more than price; plan EUR25+ per person.</div>
           <div class="resto">
@@ -1319,28 +1282,22 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.montenegropulse.com/dobrota.html" target="_blank" rel="noreferrer"><b>Dobrota waterfront swim</b> &#8617;</a> — simpler, cheaper, and close to Kotor if the family wants downtime.</p>
+            <p><a href="https://www.montenegropulse.com/dobrota.html" target="_blank" rel="noreferrer"><b>Dobrota waterfront swim</b> ↩</a> — simpler, cheaper, and close to Kotor if the family wants downtime.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.adventurouskate.com/perast-montenegro/" target="_blank" rel="noreferrer">Adventurous Kate Perast ↗</a>
-            <a href="https://montenegrosubmarine.me/tours/perast-and-our-lady-of-the-rocks-2h" target="_blank" rel="noreferrer">Perast boat reference ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.adventurouskate.com/perast-montenegro/" target="_blank" rel="noreferrer">Adventurous Kate Perast ↗</a><a href="https://montenegrosubmarine.me/tours/perast-and-our-lady-of-the-rocks-2h" target="_blank" rel="noreferrer">Perast boat reference ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=42.4869,18.6992&z=14&output=embed" title="Map of Perast + Our Lady of the Rocks"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=42.4869,18.6992" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section><section class="spot">
+      </div></section><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Budva + Sveti Stefan</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Budva%20%2B%20Sveti%20Stefan" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=budva" target="_blank" rel="noreferrer">IG · Budva</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=svetistefan" target="_blank" rel="noreferrer">IG · Sveti Stefan</a><a class="xf" href="https://www.flickr.com/search/?text=Budva%20%2B%20Sveti%20Stefan&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Budva%20%2B%20Sveti%20Stefan" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=budva" target="_blank" rel="noreferrer">IG · Budva</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=svetistefan" target="_blank" rel="noreferrer">IG · Sveti Stefan</a><a class="xf" href="https://www.flickr.com/search/?text=Budva%20%2B%20Sveti%20Stefan&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sveti_Stefan_%2806%29.jpg/1280px-Sveti_Stefan_%2806%29.jpg" alt="Budva + Sveti Stefan" loading="lazy"><figcaption><strong>Budva + Sveti Stefan</strong><span>Marcin Konsek · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Sveti_Stefan_(05).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sveti_Stefan_%2805%29.jpg/1280px-Sveti_Stefan_%2805%29.jpg" alt="Budva + Sveti Stefan" loading="lazy"></a><figcaption><strong>Budva + Sveti Stefan</strong><span>Marcin Konsek · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Sveti_Stefan,_Budva_06.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Sveti_Stefan%2C_Budva_06.jpg/1280px-Sveti_Stefan%2C_Budva_06.jpg" alt="Budva + Sveti Stefan" loading="lazy"></a><figcaption><strong>Budva + Sveti Stefan</strong><span>Jaba1977 · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sveti_Stefan_%2806%29.jpg/1280px-Sveti_Stefan_%2806%29.jpg" alt="Budva + Sveti Stefan" loading="lazy"><figcaption><strong>Budva + Sveti Stefan</strong><span>Marcin Konsek · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Sveti_Stefan_(05).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sveti_Stefan_%2805%29.jpg/1280px-Sveti_Stefan_%2805%29.jpg" alt="Budva + Sveti Stefan" loading="lazy"></a><figcaption><strong>Budva + Sveti Stefan</strong><span>Marcin Konsek · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Sveti_Stefan,_Budva_06.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Sveti_Stefan%2C_Budva_06.jpg/1280px-Sveti_Stefan%2C_Budva_06.jpg" alt="Budva + Sveti Stefan" loading="lazy"></a><figcaption><strong>Budva + Sveti Stefan</strong><span>Jaba1977 · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Budva old town and Sveti Stefan viewpoints are free; parking is variable, often around EUR1-EUR4/hour in busy areas.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Hot coastal afternoon</b>; build in a swim and avoid trying to sightsee all day.</p></div>
+          <div class="kv"><span>Cost</span><p>Budva old town and Sveti Stefan viewpoints are free; parking is variable, often around EUR1-EUR4/hour in busy areas.</p></div><div class="kv climate"><span>Weather</span><p><b>Hot coastal afternoon</b>; build in a swim and avoid trying to sightsee all day.</p></div>
           <div class="callout save"><b>Save</b> Use Sveti Stefan as a viewpoint/photo stop instead of paying for resort-adjacent extras.</div>
           <div class="callout splurge"><b>Splurge</b> Beach-club loungers near Budva/Sveti Stefan can turn the day easy; confirm the set price before sitting.</div>
           <div class="resto">
@@ -1349,38 +1306,32 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.montenegropulse.com/lustica-peninsula.html" target="_blank" rel="noreferrer"><b>Lustica peninsula</b> &#8617;</a> — more coves and less old-town traffic if Budva sounds too busy.</p>
+            <p><a href="https://www.montenegropulse.com/lustica-peninsula.html" target="_blank" rel="noreferrer"><b>Lustica peninsula</b> ↩</a> — more coves and less old-town traffic if Budva sounds too busy.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.travellingtrekker.com/post/budva-montenegro-travel-guide" target="_blank" rel="noreferrer">Budva parking/traffic tips ↗</a>
-            <a href="https://adriaticways.com/budva-parking-guide/" target="_blank" rel="noreferrer">Budva parking guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.travellingtrekker.com/post/budva-montenegro-travel-guide" target="_blank" rel="noreferrer">Budva parking/traffic tips ↗</a><a href="https://adriaticways.com/budva-parking-guide/" target="_blank" rel="noreferrer">Budva parking guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=42.2557,18.8964&z=14&output=embed" title="Map of Budva + Sveti Stefan"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=42.2557,18.8964" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day7">
       <div class="day-head">
         <div class="day-badge">7</div>
         <div class="day-title"><p class="eyebrow">Thu · Jul 8</p><h3>Long drive to Ksamil</h3><p class="feel">Big transfer day</p><p class="daycost">Est. $210-$370 · fuel, snacks, road meals</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>PTO</span><strong>PTO day 4</strong></div><div><span>Drive</span><strong>Kotor -> Ksamil ~7.5-8 hr before stops</strong></div><div><span>Border</span><strong>Montenegro -> Albania</strong></div><div><span>Sleep</span><strong>Ksamil/Saranda night 1 of 3</strong></div></div>
+        <div class="facts"><div><span>PTO</span><strong>PTO day 4</strong></div><div><span>Drive</span><strong>Kotor -&gt; Ksamil ~7.5-8 hr before stops</strong></div><div><span>Border</span><strong>Montenegro -&gt; Albania</strong></div><div><span>Sleep</span><strong>Ksamil/Saranda night 1 of 3</strong></div></div>
         <p class="note">Leave early and treat the day as logistics. If the drive looks like too much, insert Gjirokaster and cut one Corfu night.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Ksamil Beaches + Islands</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Ksamil%20Beaches%20%2B%20Islands" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ksamil" target="_blank" rel="noreferrer">IG · Ksamil</a><a class="xf" href="https://www.flickr.com/search/?text=Ksamil%20Beaches%20%2B%20Islands&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Ksamil%20Beaches%20%2B%20Islands" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ksamil" target="_blank" rel="noreferrer">IG · Ksamil</a><a class="xf" href="https://www.flickr.com/search/?text=Ksamil%20Beaches%20%2B%20Islands&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1752778080456-928bc88c4e2a?w=1920&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"><figcaption><strong>Ksamil Beaches + Islands</strong><span>Arlind Photography · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Adventure Albania · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Ksamil,_Albania_-_beach.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ksamil%2C_Albania_-_beach.JPG/1280px-Ksamil%2C_Albania_-_beach.JPG" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1752778080456-928bc88c4e2a?w=1920&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"><figcaption><strong>Ksamil Beaches + Islands</strong><span>Arlind Photography · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Adventure Albania · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Ksamil,_Albania_-_beach.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ksamil%2C_Albania_-_beach.JPG/1280px-Ksamil%2C_Albania_-_beach.JPG" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>SunEasy lists Ksamil beach sets around 1,000-1,700 ALL/day for some clubs; central/popular spots can run 2,000-4,000 ALL.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>July:</b> hot beach weather, often mid-to-upper 80s F daytime; sea averages about <b>76-78 F</b>, usually the warmest water of the trip.</p></div>
+          <div class="kv"><span>Cost</span><p>SunEasy lists Ksamil beach sets around 1,000-1,700 ALL/day for some clubs; central/popular spots can run 2,000-4,000 ALL.</p></div><div class="kv climate"><span>Weather</span><p><b>July:</b> hot beach weather, often mid-to-upper 80s F daytime; sea averages about <b>76-78 F</b>, usually the warmest water of the trip.</p></div>
           <div class="callout save"><b>Save</b> Pick an off-center beach or late-afternoon set; central first-row loungers are where prices jump.</div>
           <div class="callout splurge"><b>Splurge</b> Rent kayaks/pedal boat or take a short island boat hop; confirm the price before boarding.</div>
           <div class="resto">
@@ -1389,19 +1340,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.sunshineseeker.com/destinations/ksamil-beaches/" target="_blank" rel="noreferrer"><b>Pulbardha Beach</b> &#8617;</a> — a prettier escape if central Ksamil feels packed.</p>
+            <p><a href="https://www.sunshineseeker.com/destinations/ksamil-beaches/" target="_blank" rel="noreferrer"><b>Pulbardha Beach</b> ↩</a> — a prettier escape if central Ksamil feels packed.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.sunshineseeker.com/destinations/ksamil/" target="_blank" rel="noreferrer">Ksamil overview ↗</a>
-            <a href="https://himara.net/blog/albanian-riviera-sunbed-prices-guide" target="_blank" rel="noreferrer">2026 sunbed price guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.sunshineseeker.com/destinations/ksamil/" target="_blank" rel="noreferrer">Ksamil overview ↗</a><a href="https://himara.net/blog/albanian-riviera-sunbed-prices-guide" target="_blank" rel="noreferrer">2026 sunbed price guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.7684,19.9992&z=14&output=embed" title="Map of Ksamil Beaches + Islands"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.7684,19.9992" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day8">
       <div class="day-head">
         <div class="day-badge">8</div>
@@ -1414,13 +1361,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Ksamil Beaches + Islands</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Ksamil%20Beaches%20%2B%20Islands" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ksamil" target="_blank" rel="noreferrer">IG · Ksamil</a><a class="xf" href="https://www.flickr.com/search/?text=Ksamil%20Beaches%20%2B%20Islands&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Ksamil%20Beaches%20%2B%20Islands" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ksamil" target="_blank" rel="noreferrer">IG · Ksamil</a><a class="xf" href="https://www.flickr.com/search/?text=Ksamil%20Beaches%20%2B%20Islands&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1752778080456-928bc88c4e2a?w=1920&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"><figcaption><strong>Ksamil Beaches + Islands</strong><span>Arlind Photography · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Adventure Albania · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Ksamil,_Albania_-_beach.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ksamil%2C_Albania_-_beach.JPG/1280px-Ksamil%2C_Albania_-_beach.JPG" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1752778080456-928bc88c4e2a?w=1920&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"><figcaption><strong>Ksamil Beaches + Islands</strong><span>Arlind Photography · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Adventure Albania · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Ksamil,_Albania_-_beach.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ksamil%2C_Albania_-_beach.JPG/1280px-Ksamil%2C_Albania_-_beach.JPG" alt="Ksamil Beaches + Islands" loading="lazy"></a><figcaption><strong>Ksamil Beaches + Islands</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>SunEasy lists Ksamil beach sets around 1,000-1,700 ALL/day for some clubs; central/popular spots can run 2,000-4,000 ALL.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>July:</b> hot beach weather, often mid-to-upper 80s F daytime; sea averages about <b>76-78 F</b>, usually the warmest water of the trip.</p></div>
+          <div class="kv"><span>Cost</span><p>SunEasy lists Ksamil beach sets around 1,000-1,700 ALL/day for some clubs; central/popular spots can run 2,000-4,000 ALL.</p></div><div class="kv climate"><span>Weather</span><p><b>July:</b> hot beach weather, often mid-to-upper 80s F daytime; sea averages about <b>76-78 F</b>, usually the warmest water of the trip.</p></div>
           <div class="callout save"><b>Save</b> Pick an off-center beach or late-afternoon set; central first-row loungers are where prices jump.</div>
           <div class="callout splurge"><b>Splurge</b> Rent kayaks/pedal boat or take a short island boat hop; confirm the price before boarding.</div>
           <div class="resto">
@@ -1429,19 +1374,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.sunshineseeker.com/destinations/ksamil-beaches/" target="_blank" rel="noreferrer"><b>Pulbardha Beach</b> &#8617;</a> — a prettier escape if central Ksamil feels packed.</p>
+            <p><a href="https://www.sunshineseeker.com/destinations/ksamil-beaches/" target="_blank" rel="noreferrer"><b>Pulbardha Beach</b> ↩</a> — a prettier escape if central Ksamil feels packed.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.sunshineseeker.com/destinations/ksamil/" target="_blank" rel="noreferrer">Ksamil overview ↗</a>
-            <a href="https://himara.net/blog/albanian-riviera-sunbed-prices-guide" target="_blank" rel="noreferrer">2026 sunbed price guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.sunshineseeker.com/destinations/ksamil/" target="_blank" rel="noreferrer">Ksamil overview ↗</a><a href="https://himara.net/blog/albanian-riviera-sunbed-prices-guide" target="_blank" rel="noreferrer">2026 sunbed price guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.7684,19.9992&z=14&output=embed" title="Map of Ksamil Beaches + Islands"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.7684,19.9992" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day9">
       <div class="day-head">
         <div class="day-badge">9</div>
@@ -1454,13 +1395,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Butrint National Park</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Butrint%20National%20Park" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=butrint" target="_blank" rel="noreferrer">IG · Butrint</a><a class="xf" href="https://www.flickr.com/search/?text=Butrint%20National%20Park&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Butrint%20National%20Park" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=butrint" target="_blank" rel="noreferrer">IG · Butrint</a><a class="xf" href="https://www.flickr.com/search/?text=Butrint%20National%20Park&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c11" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Scenery_at_Butrint_Archaeological_Site_-_Butrint_National_Park_-_Albania_-_04_%2841642483034%29.jpg/1280px-Scenery_at_Butrint_Archaeological_Site_-_Butrint_National_Park_-_Albania_-_04_%2841642483034%29.jpg" alt="Butrint National Park" loading="lazy"><figcaption><strong>Butrint National Park</strong><span>Adam Jones · CC BY-SA 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Parku_Kombetar_%22Butrint%22.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Parku_Kombetar_%22Butrint%22.jpg/1280px-Parku_Kombetar_%22Butrint%22.jpg" alt="Butrint National Park" loading="lazy"></a><figcaption><strong>Butrint National Park</strong><span>Grgml91 · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Vivari_Channel_within_the_Butrint_National_Park_in_Albania.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Vivari_Channel_within_the_Butrint_National_Park_in_Albania.jpg" alt="Butrint National Park" loading="lazy"></a><figcaption><strong>Butrint National Park</strong><span>A.A · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c11" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Scenery_at_Butrint_Archaeological_Site_-_Butrint_National_Park_-_Albania_-_04_%2841642483034%29.jpg/1280px-Scenery_at_Butrint_Archaeological_Site_-_Butrint_National_Park_-_Albania_-_04_%2841642483034%29.jpg" alt="Butrint National Park" loading="lazy"><figcaption><strong>Butrint National Park</strong><span>Adam Jones · CC BY-SA 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Parku_Kombetar_%22Butrint%22.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Parku_Kombetar_%22Butrint%22.jpg/1280px-Parku_Kombetar_%22Butrint%22.jpg" alt="Butrint National Park" loading="lazy"></a><figcaption><strong>Butrint National Park</strong><span>Grgml91 · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Vivari_Channel_within_the_Butrint_National_Park_in_Albania.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Vivari_Channel_within_the_Butrint_National_Park_in_Albania.jpg" alt="Butrint National Park" loading="lazy"></a><figcaption><strong>Butrint National Park</strong><span>A.A · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Official pricing: 1,000 ALL adult, 500 ALL ages 12-18, under 12 free. Family estimate: 2,500 ALL.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Warm and exposed</b>; go early, then use the afternoon for beach recovery.</p></div>
+          <div class="kv"><span>Cost</span><p>Official pricing: 1,000 ALL adult, 500 ALL ages 12-18, under 12 free. Family estimate: 2,500 ALL.</p></div><div class="kv climate"><span>Weather</span><p><b>Warm and exposed</b>; go early, then use the afternoon for beach recovery.</p></div>
           <div class="callout save"><b>Save</b> Drive yourselves from Ksamil, arrive early, and skip guided add-ons unless the kids want ruins context.</div>
           <div class="callout splurge"><b>Splurge</b> Hire a guide or combine with a relaxed seafood lunch on the Vivari Channel.</div>
           <div class="resto">
@@ -1469,28 +1408,22 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.lonelyplanet.com/albania/saranda/attractions/lekuresi-castle/a/poi-sig/1573771/360798" target="_blank" rel="noreferrer"><b>Lekuresi Castle sunset</b> &#8617;</a> — less archaeology, better easy-view payoff over Saranda.</p>
+            <p><a href="https://www.lonelyplanet.com/albania/saranda/attractions/lekuresi-castle/a/poi-sig/1573771/360798" target="_blank" rel="noreferrer"><b>Lekuresi Castle sunset</b> ↩</a> — less archaeology, better easy-view payoff over Saranda.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.alongdustyroads.com/posts/visit-butrint-national-park-albania" target="_blank" rel="noreferrer">Butrint practical guide ↗</a>
-            <a href="https://butrint.al/cmimet-e-biletave/index.html" target="_blank" rel="noreferrer">Official Butrint prices ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.alongdustyroads.com/posts/visit-butrint-national-park-albania" target="_blank" rel="noreferrer">Butrint practical guide ↗</a><a href="https://butrint.al/cmimet-e-biletave/index.html" target="_blank" rel="noreferrer">Official Butrint prices ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.7466,20.0202&z=14&output=embed" title="Map of Butrint National Park"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.7466,20.0202" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section><section class="spot">
+      </div></section><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">The Blue Eye</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=The%20Blue%20Eye" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=blueeye" target="_blank" rel="noreferrer">IG · Blue Eye</a><a class="xf" href="https://www.flickr.com/search/?text=The%20Blue%20Eye&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=The%20Blue%20Eye" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=blueeye" target="_blank" rel="noreferrer">IG · Blue Eye</a><a class="xf" href="https://www.flickr.com/search/?text=The%20Blue%20Eye&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c12" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Blue_Eye_%28Syri_i_kalt%C3%ABr%29_03.JPG/1280px-Blue_Eye_%28Syri_i_kalt%C3%ABr%29_03.JPG" alt="The Blue Eye" loading="lazy"><figcaption><strong>The Blue Eye</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Blue_Eye_(Syri_i_kalt%C3%ABr)_01.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Blue_Eye_%28Syri_i_kalt%C3%ABr%29_01.JPG/1280px-Blue_Eye_%28Syri_i_kalt%C3%ABr%29_01.JPG" alt="The Blue Eye" loading="lazy"></a><figcaption><strong>The Blue Eye</strong><span>Pudelek · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Syri_i_kalter_(The_Blue_Eye),_Albania,_September_2022_08.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Syri_i_kalter_%28The_Blue_Eye%29%2C_Albania%2C_September_2022_08.jpg/1280px-Syri_i_kalter_%28The_Blue_Eye%29%2C_Albania%2C_September_2022_08.jpg" alt="The Blue Eye" loading="lazy"></a><figcaption><strong>The Blue Eye</strong><span>Calistemon · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c12" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Blue_Eye_%28Syri_i_kalt%C3%ABr%29_03.JPG/1280px-Blue_Eye_%28Syri_i_kalt%C3%ABr%29_03.JPG" alt="The Blue Eye" loading="lazy"><figcaption><strong>The Blue Eye</strong><span>Pudelek · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Blue_Eye_(Syri_i_kalt%C3%ABr)_01.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Blue_Eye_%28Syri_i_kalt%C3%ABr%29_01.JPG/1280px-Blue_Eye_%28Syri_i_kalt%C3%ABr%29_01.JPG" alt="The Blue Eye" loading="lazy"></a><figcaption><strong>The Blue Eye</strong><span>Pudelek · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Syri_i_kalter_(The_Blue_Eye),_Albania,_September_2022_08.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Syri_i_kalter_%28The_Blue_Eye%29%2C_Albania%2C_September_2022_08.jpg/1280px-Syri_i_kalter_%28The_Blue_Eye%29%2C_Albania%2C_September_2022_08.jpg" alt="The Blue Eye" loading="lazy"></a><figcaption><strong>The Blue Eye</strong><span>Calistemon · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Recent 2026 visit report: 50 ALL/person entry, 300 ALL parking up to 3 hours, tourist train 300 ALL one-way or 600 ALL round trip.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Cool spring water, hot walk</b>. Swimming is restricted at the spring itself; treat it as a nature stop, not a full swim day.</p></div>
+          <div class="kv"><span>Cost</span><p>Recent 2026 visit report: 50 ALL/person entry, 300 ALL parking up to 3 hours, tourist train 300 ALL one-way or 600 ALL round trip.</p></div><div class="kv climate"><span>Weather</span><p><b>Cool spring water, hot walk</b>. Swimming is restricted at the spring itself; treat it as a nature stop, not a full swim day.</p></div>
           <div class="callout save"><b>Save</b> Walk the 20-30 minutes instead of taking the train if the heat is manageable.</div>
           <div class="callout splurge"><b>Splurge</b> Use the train both ways with kids if the day is hot; family train round trip can be about 2,400 ALL.</div>
           <div class="resto">
@@ -1499,38 +1432,32 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.alongdustyroads.com/posts/gjirokaster-albania" target="_blank" rel="noreferrer"><b>Gjirokaster old town</b> &#8617;</a> — swap in if you want culture and a break on the Kotor-Ksamil transfer.</p>
+            <p><a href="https://www.alongdustyroads.com/posts/gjirokaster-albania" target="_blank" rel="noreferrer"><b>Gjirokaster old town</b> ↩</a> — swap in if you want culture and a break on the Kotor-Ksamil transfer.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://albania-blog.com/en/how-to-visit-blue-eye-albania/" target="_blank" rel="noreferrer">2026 Blue Eye logistics ↗</a>
-            <a href="https://www.alongdustyroads.com/posts/visit-the-blue-eye-albania-saranda" target="_blank" rel="noreferrer">Blue Eye planning guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://albania-blog.com/en/how-to-visit-blue-eye-albania/" target="_blank" rel="noreferrer">2026 Blue Eye logistics ↗</a><a href="https://www.alongdustyroads.com/posts/visit-the-blue-eye-albania-saranda" target="_blank" rel="noreferrer">Blue Eye planning guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.9237,20.1924&z=14&output=embed" title="Map of The Blue Eye"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.9237,20.1924" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day10">
       <div class="day-head">
         <div class="day-badge">10</div>
         <div class="day-title"><p class="eyebrow">Sun · Jul 11</p><h3>Return car, ferry Saranda to Corfu</h3><p class="feel">Boat transfer + island arrival</p><p class="daycost">Est. $260-$450 · ferry, taxis, food</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Ferry</span><strong>Saranda -> Corfu ~30-70 min</strong></div><div><span>Car</span><strong>Return before ferry</strong></div><div><span>Sleep</span><strong>Corfu night 1 of 3</strong></div></div>
+        <div class="facts"><div><span>Ferry</span><strong>Saranda -&gt; Corfu ~30-70 min</strong></div><div><span>Car</span><strong>Return before ferry</strong></div><div><span>Sleep</span><strong>Corfu night 1 of 3</strong></div></div>
         <p class="note">Build in passport-control time and remember Greece is one hour ahead. Keep Corfu arrival to check-in, Old Town, and dinner.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Corfu Town + Old Fortress</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Corfu%20Town%20%2B%20Old%20Fortress" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=corfu" target="_blank" rel="noreferrer">IG · Corfu</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=oldfortress" target="_blank" rel="noreferrer">IG · Old Fortress</a><a class="xf" href="https://www.flickr.com/search/?text=Corfu%20Town%20%2B%20Old%20Fortress&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Corfu%20Town%20%2B%20Old%20Fortress" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=corfu" target="_blank" rel="noreferrer">IG · Corfu</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=oldfortress" target="_blank" rel="noreferrer">IG · Old Fortress</a><a class="xf" href="https://www.flickr.com/search/?text=Corfu%20Town%20%2B%20Old%20Fortress&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c13" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1707148106664-6b5bc7f2c99c?w=1920&q=80&auto=format&fit=crop" alt="Corfu Town + Old Fortress" loading="lazy"><figcaption><strong>Corfu Town + Old Fortress</strong><span>Mihajlo Sivc · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg/1280px-The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg" alt="Corfu Town + Old Fortress" loading="lazy"></a><figcaption><strong>Corfu Town + Old Fortress</strong><span>Martin Falbisoner · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Korfu,_Alte_Festung_--_2018_--_1137.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Korfu_%28GR%29%2C_Korfu%2C_Alte_Festung_--_2018_--_1137.jpg/1280px-Korfu_%28GR%29%2C_Korfu%2C_Alte_Festung_--_2018_--_1137.jpg" alt="Corfu Town + Old Fortress" loading="lazy"></a><figcaption><strong>Corfu Town + Old Fortress</strong><span>Dietmar Rabich · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c13" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1707148106664-6b5bc7f2c99c?w=1920&q=80&auto=format&fit=crop" alt="Corfu Town + Old Fortress" loading="lazy"><figcaption><strong>Corfu Town + Old Fortress</strong><span>Mihajlo Sivc · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg/1280px-The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg" alt="Corfu Town + Old Fortress" loading="lazy"></a><figcaption><strong>Corfu Town + Old Fortress</strong><span>Martin Falbisoner · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Korfu,_Alte_Festung_--_2018_--_1137.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Korfu_%28GR%29%2C_Korfu%2C_Alte_Festung_--_2018_--_1137.jpg/1280px-Korfu_%28GR%29%2C_Korfu%2C_Alte_Festung_--_2018_--_1137.jpg" alt="Corfu Town + Old Fortress" loading="lazy"></a><figcaption><strong>Corfu Town + Old Fortress</strong><span>Dietmar Rabich · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Official Old Fortress / Byzantine Collection ticket is EUR10; family estimate EUR40 unless child reductions apply at booking.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>July:</b> warm to hot, often upper 80s F days; Ionian water is typically upper 70s F.</p></div>
+          <div class="kv"><span>Cost</span><p>Official Old Fortress / Byzantine Collection ticket is EUR10; family estimate EUR40 unless child reductions apply at booking.</p></div><div class="kv climate"><span>Weather</span><p><b>July:</b> warm to hot, often upper 80s F days; Ionian water is typically upper 70s F.</p></div>
           <div class="callout save"><b>Save</b> Use the Liston, old lanes, harbor views, and sunset walks as the free half of the day.</div>
           <div class="callout splurge"><b>Splurge</b> Do the Old Fortress plus a nicer last-night dinner in town; budget EUR120-EUR180 family.</div>
           <div class="resto">
@@ -1539,19 +1466,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.discovergreece.com/travel-ideas/best-of/mon-repos-corfu" target="_blank" rel="noreferrer"><b>Mon Repos park</b> &#8617;</a> — a greener, lower-key substitute if fortress heat is too much.</p>
+            <p><a href="https://www.discovergreece.com/travel-ideas/best-of/mon-repos-corfu" target="_blank" rel="noreferrer"><b>Mon Repos park</b> ↩</a> — a greener, lower-key substitute if fortress heat is too much.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://archaeologicalmuseums.gr/en/museum/5df34af3deca5e2d79e8c163/byzantine-collection-of-kerkyra-old-fortress" target="_blank" rel="noreferrer">Official fortress ticket ↗</a>
-            <a href="https://johnnyafrica.com/corfu-travel-guide/" target="_blank" rel="noreferrer">Corfu travel guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://archaeologicalmuseums.gr/en/museum/5df34af3deca5e2d79e8c163/byzantine-collection-of-kerkyra-old-fortress" target="_blank" rel="noreferrer">Official fortress ticket ↗</a><a href="https://johnnyafrica.com/corfu-travel-guide/" target="_blank" rel="noreferrer">Corfu travel guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.6243,19.9217&z=14&output=embed" title="Map of Corfu Town + Old Fortress"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.6243,19.9217" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day11">
       <div class="day-head">
         <div class="day-badge">11</div>
@@ -1564,13 +1487,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Paleokastritsa Beaches + Caves</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Paleokastritsa%20Beaches%20%2B%20Caves" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=paleokastritsa" target="_blank" rel="noreferrer">IG · Paleokastritsa</a><a class="xf" href="https://www.flickr.com/search/?text=Paleokastritsa%20Beaches%20%2B%20Caves&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Paleokastritsa%20Beaches%20%2B%20Caves" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=paleokastritsa" target="_blank" rel="noreferrer">IG · Paleokastritsa</a><a class="xf" href="https://www.flickr.com/search/?text=Paleokastritsa%20Beaches%20%2B%20Caves&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c14" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Corfu_Paleokastritsa_Beach_R01.jpg/1280px-Corfu_Paleokastritsa_Beach_R01.jpg" alt="Paleokastritsa Beaches + Caves" loading="lazy"><figcaption><strong>Paleokastritsa Beaches + Caves</strong><span>Marc Ryckaert · CC BY 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Paleokastritsa,_Kloster_--_2018_--_1256.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1256.jpg/1280px-Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1256.jpg" alt="Paleokastritsa Beaches + Caves" loading="lazy"></a><figcaption><strong>Paleokastritsa Beaches + Caves</strong><span>Dietmar Rabich · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Paleokastritsa,_Kloster_--_2018_--_1250.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1250.jpg/1280px-Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1250.jpg" alt="Paleokastritsa Beaches + Caves" loading="lazy"></a><figcaption><strong>Paleokastritsa Beaches + Caves</strong><span>Dietmar Rabich · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c14" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Corfu_Paleokastritsa_Beach_R01.jpg/1280px-Corfu_Paleokastritsa_Beach_R01.jpg" alt="Paleokastritsa Beaches + Caves" loading="lazy"><figcaption><strong>Paleokastritsa Beaches + Caves</strong><span>Marc Ryckaert · CC BY 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Paleokastritsa,_Kloster_--_2018_--_1256.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1256.jpg/1280px-Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1256.jpg" alt="Paleokastritsa Beaches + Caves" loading="lazy"></a><figcaption><strong>Paleokastritsa Beaches + Caves</strong><span>Dietmar Rabich · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Paleokastritsa,_Kloster_--_2018_--_1250.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1250.jpg/1280px-Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1250.jpg" alt="Paleokastritsa Beaches + Caves" loading="lazy"></a><figcaption><strong>Paleokastritsa Beaches + Caves</strong><span>Dietmar Rabich · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Boat pricing varies: general Paradise Beach boats often EUR15-EUR20 pp; operator listings showed tours from EUR55. Beach set pricing varies by cove.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Swim day</b>; coves are clear, and the water should be comfortably warm in July, with limited shade away from the beach umbrellas.</p></div>
+          <div class="kv"><span>Cost</span><p>Boat pricing varies: general Paradise Beach boats often EUR15-EUR20 pp; operator listings showed tours from EUR55. Beach set pricing varies by cove.</p></div><div class="kv climate"><span>Weather</span><p><b>Swim day</b>; coves are clear, and the water should be comfortably warm in July, with limited shade away from the beach umbrellas.</p></div>
           <div class="callout save"><b>Save</b> Use public beaches and a short water taxi instead of a full private boat.</div>
           <div class="callout splurge"><b>Splurge</b> Book a longer cave/Paradise Beach boat if the sea is calm; this is one of the trip's best splurge days.</div>
           <div class="resto">
@@ -1579,19 +1500,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.thethinkingtraveller.com/blog/paleokastritsa-beach-corfu" target="_blank" rel="noreferrer"><b>Rovinia Beach</b> &#8617;</a> — nearby, beautiful, and often a better crowd tradeoff.</p>
+            <p><a href="https://www.thethinkingtraveller.com/blog/paleokastritsa-beach-corfu" target="_blank" rel="noreferrer"><b>Rovinia Beach</b> ↩</a> — nearby, beautiful, and often a better crowd tradeoff.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.discovergreece.com/experiences/boat-trip-paradise-beach-corfu" target="_blank" rel="noreferrer">Paradise Beach boat trip ↗</a>
-            <a href="https://www.thethinkingtraveller.com/blog/paleokastritsa-beach-corfu" target="_blank" rel="noreferrer">Paleokastritsa beach guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.discovergreece.com/experiences/boat-trip-paradise-beach-corfu" target="_blank" rel="noreferrer">Paradise Beach boat trip ↗</a><a href="https://www.thethinkingtraveller.com/blog/paleokastritsa-beach-corfu" target="_blank" rel="noreferrer">Paleokastritsa beach guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.6725,19.7057&z=14&output=embed" title="Map of Paleokastritsa Beaches + Caves"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.6725,19.7057" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day12">
       <div class="day-head">
         <div class="day-badge">12</div>
@@ -1604,13 +1521,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Porto Timoni or Glyfada Beach</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Porto%20Timoni%20or%20Glyfada%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=portotimoni" target="_blank" rel="noreferrer">IG · Porto Timoni</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=glyfada" target="_blank" rel="noreferrer">IG · Glyfada</a><a class="xf" href="https://www.flickr.com/search/?text=Porto%20Timoni%20or%20Glyfada%20Beach&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Porto%20Timoni%20or%20Glyfada%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=portotimoni" target="_blank" rel="noreferrer">IG · Porto Timoni</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=glyfada" target="_blank" rel="noreferrer">IG · Glyfada</a><a class="xf" href="https://www.flickr.com/search/?text=Porto%20Timoni%20or%20Glyfada%20Beach&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c15" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Porto_Timoni_beach_Corfu_%2847081300044%29.jpg" alt="Porto Timoni or Glyfada Beach" loading="lazy"><figcaption><strong>Porto Timoni or Glyfada Beach</strong><span>dronepicr · CC BY 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Timoni_Beach.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Porto_Timoni_Beach.jpg/1280px-Porto_Timoni_Beach.jpg" alt="Porto Timoni or Glyfada Beach" loading="lazy"></a><figcaption><strong>Porto Timoni or Glyfada Beach</strong><span>Przemek Pietrak · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Timoni_Beach_(3).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Porto_Timoni_Beach_%283%29.jpg/1280px-Porto_Timoni_Beach_%283%29.jpg" alt="Porto Timoni or Glyfada Beach" loading="lazy"></a><figcaption><strong>Porto Timoni or Glyfada Beach</strong><span>Przemek Pietrak · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c15" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Porto_Timoni_beach_Corfu_%2847081300044%29.jpg" alt="Porto Timoni or Glyfada Beach" loading="lazy"><figcaption><strong>Porto Timoni or Glyfada Beach</strong><span>dronepicr · CC BY 2.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Timoni_Beach.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Porto_Timoni_Beach.jpg/1280px-Porto_Timoni_Beach.jpg" alt="Porto Timoni or Glyfada Beach" loading="lazy"></a><figcaption><strong>Porto Timoni or Glyfada Beach</strong><span>Przemek Pietrak · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Timoni_Beach_(3).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Porto_Timoni_Beach_%283%29.jpg/1280px-Porto_Timoni_Beach_%283%29.jpg" alt="Porto Timoni or Glyfada Beach" loading="lazy"></a><figcaption><strong>Porto Timoni or Glyfada Beach</strong><span>Przemek Pietrak · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Porto Timoni has no facilities; Afionas parking is often EUR7-EUR15/day. Boat taxis can run EUR10-EUR20 pp. Glyfada sets often EUR20-EUR40/pair.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Hot beach day</b>; Porto Timoni hike is 30-40 minutes each way with little shade, so morning is better.</p></div>
+          <div class="kv"><span>Cost</span><p>Porto Timoni has no facilities; Afionas parking is often EUR7-EUR15/day. Boat taxis can run EUR10-EUR20 pp. Glyfada sets often EUR20-EUR40/pair.</p></div><div class="kv climate"><span>Weather</span><p><b>Hot beach day</b>; Porto Timoni hike is 30-40 minutes each way with little shade, so morning is better.</p></div>
           <div class="callout save"><b>Save</b> Choose one beach and pack water/snacks; moving between west-coast beaches burns time and parking money.</div>
           <div class="callout splurge"><b>Splurge</b> Take a boat taxi to avoid the hike if the heat or kid morale is not cooperating.</div>
           <div class="resto">
@@ -1619,32 +1534,27 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.tripadvisor.com/Attraction_Review-g2667806-d14929229-Reviews-Glyfada_Beach-Glyfada_Corfu_Ionian_Islands.html" target="_blank" rel="noreferrer"><b>Glyfada only</b> &#8617;</a> — easier infrastructure, fewer hike logistics, still a classic Corfu beach day.</p>
+            <p><a href="https://www.tripadvisor.com/Attraction_Review-g2667806-d14929229-Reviews-Glyfada_Beach-Glyfada_Corfu_Ionian_Islands.html" target="_blank" rel="noreferrer"><b>Glyfada only</b> ↩</a> — easier infrastructure, fewer hike logistics, still a classic Corfu beach day.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://roads-and-rivers.com/en/porto-timoni-beach-corfu/" target="_blank" rel="noreferrer">Porto Timoni 2026 guide ↗</a>
-            <a href="https://www.calloftheworld.com/greece/porto-timoni-guide-how-to-find-corfus-famous-double-beach" target="_blank" rel="noreferrer">Porto Timoni access notes ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://roads-and-rivers.com/en/porto-timoni-beach-corfu/" target="_blank" rel="noreferrer">Porto Timoni 2026 guide ↗</a><a href="https://www.calloftheworld.com/greece/porto-timoni-guide-how-to-find-corfus-famous-double-beach" target="_blank" rel="noreferrer">Porto Timoni access notes ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.7226,19.6567&z=14&output=embed" title="Map of Porto Timoni or Glyfada Beach"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.7226,19.6567" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c0" id="day13">
       <div class="day-head">
         <div class="day-badge">13</div>
         <div class="day-title"><p class="eyebrow">Wed · Jul 14</p><h3>Fly Corfu to Pittsburgh</h3><p class="feel">Travel home</p><p class="daycost">Est. $120-$220 · airport food/taxis</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Route</span><strong>CFU -> European hub -> U.S. hub -> PIT</strong></div><div><span>Reality</span><strong>No nonstop</strong></div><div><span>PTO</span><strong>PTO day 8</strong></div></div>
+        <div class="facts"><div><span>Route</span><strong>CFU -&gt; European hub -&gt; U.S. hub -&gt; PIT</strong></div><div><span>Reality</span><strong>No nonstop</strong></div><div><span>PTO</span><strong>PTO day 8</strong></div></div>
         <p class="note">Book a sane connection. Corfu airport is small, but international connections can be fragile if the first leg is delayed.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
-    </article>
-    </div>
-  </section>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
+    </article></div>
+    </section>
 
   <section id="budget" class="divider">
     <div class="section-label">
@@ -1794,4 +1704,4 @@ document.querySelectorAll('.carousel').forEach(function(c){
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-</body></html>
+<script>/*scrollspy*/(function(){var nav=document.querySelector("nav");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:"smooth"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:"smooth"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>

@@ -1,0 +1,1110 @@
+{
+  "slug": "balkans",
+  "lang": "en",
+  "title": "Balkan Coast Road Trip - July 2027",
+  "hasPhotoGuide": false,
+  "hasFoodGuide": false,
+  "mapPoints": [
+    {
+      "n": "Dubrovnik Airport (arrival gateway)",
+      "lat": 42.5614,
+      "lng": 18.2682,
+      "r": "mostar",
+      "g": "https://www.google.com/maps/search/?api=1&query=Dubrovnik+Airport"
+    },
+    {
+      "n": "Saranda Ferry Port",
+      "lat": 39.871,
+      "lng": 20.003,
+      "r": "ksamil",
+      "g": "https://www.google.com/maps/search/?api=1&query=Saranda+Ferry+Port"
+    },
+    {
+      "n": "Corfu Airport (fly home)",
+      "lat": 39.6019,
+      "lng": 19.9121,
+      "r": "corfu",
+      "g": "https://www.google.com/maps/search/?api=1&query=Corfu+Airport"
+    },
+    {
+      "n": "Mostar Old Town + Stari Most",
+      "lat": 43.3373,
+      "lng": 17.8149,
+      "r": "mostar",
+      "g": "https://www.google.com/maps/search/?api=1&query=43.3373,17.8149"
+    },
+    {
+      "n": "Blagaj Tekke + Buna Spring",
+      "lat": 43.2567,
+      "lng": 17.9047,
+      "r": "mostar",
+      "g": "https://www.google.com/maps/search/?api=1&query=43.2567,17.9047"
+    },
+    {
+      "n": "Kravica Waterfalls",
+      "lat": 43.1562,
+      "lng": 17.6087,
+      "r": "mostar",
+      "g": "https://www.google.com/maps/search/?api=1&query=43.1562,17.6087"
+    },
+    {
+      "n": "Kotor Old Town + City Walls",
+      "lat": 42.4247,
+      "lng": 18.7712,
+      "r": "kotor",
+      "g": "https://www.google.com/maps/search/?api=1&query=42.4247,18.7712"
+    },
+    {
+      "n": "Perast + Our Lady of the Rocks",
+      "lat": 42.4869,
+      "lng": 18.6992,
+      "r": "kotor",
+      "g": "https://www.google.com/maps/search/?api=1&query=42.4869,18.6992"
+    },
+    {
+      "n": "Budva + Sveti Stefan",
+      "lat": 42.2557,
+      "lng": 18.8964,
+      "r": "kotor",
+      "g": "https://www.google.com/maps/search/?api=1&query=42.2557,18.8964"
+    },
+    {
+      "n": "Ksamil Beaches + Islands",
+      "lat": 39.7684,
+      "lng": 19.9992,
+      "r": "ksamil",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.7684,19.9992"
+    },
+    {
+      "n": "Butrint National Park",
+      "lat": 39.7466,
+      "lng": 20.0202,
+      "r": "ksamil",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.7466,20.0202"
+    },
+    {
+      "n": "The Blue Eye",
+      "lat": 39.9237,
+      "lng": 20.1924,
+      "r": "ksamil",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.9237,20.1924"
+    },
+    {
+      "n": "Corfu Town + Old Fortress",
+      "lat": 39.6243,
+      "lng": 19.9217,
+      "r": "corfu",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.6243,19.9217"
+    },
+    {
+      "n": "Paleokastritsa Beaches + Caves",
+      "lat": 39.6725,
+      "lng": 19.7057,
+      "r": "corfu",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.6725,19.7057"
+    },
+    {
+      "n": "Porto Timoni or Glyfada Beach",
+      "lat": 39.7226,
+      "lng": 19.6567,
+      "r": "corfu",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.7226,19.6567"
+    }
+  ],
+  "mapColors": {
+    "mostar": "#1f6f78",
+    "kotor": "#c25a3a",
+    "ksamil": "#3f7d4e",
+    "corfu": "#3a6ea5"
+  },
+  "itinerary": {
+    "className": "divider",
+    "labelHtml": "\n      <p class=\"eyebrow\">The Itinerary</p>\n      <h2>Day by day</h2>\n      <p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, an alternative, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>\n    ",
+    "daysClass": "days",
+    "days": [
+      {
+        "id": "day0",
+        "colorClass": "c0",
+        "badge": "0",
+        "eyebrow": "Thu · Jul 1",
+        "heading": "Depart Pittsburgh after work",
+        "feel": "Overnight travel",
+        "daycost": "Est. $100-$180 · airport meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Overnight flight"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "PIT -&gt; Europe connection -&gt; Dubrovnik preferred"
+          },
+          {
+            "label": "PTO",
+            "valueHtml": "No PTO if after-work departure works"
+          }
+        ],
+        "note": "Price Dubrovnik and Tirana, but Dubrovnik is the route-friendly arrival. Tirana only wins if fare savings are big enough to justify the long northbound drive.",
+        "travelNote": "✈︎ Travel day — no stops",
+        "spots": []
+      },
+      {
+        "id": "day1",
+        "colorClass": "c1",
+        "badge": "1",
+        "eyebrow": "Fri · Jul 2",
+        "heading": "Land, pick up car, drive to Mostar",
+        "feel": "Arrival + soft landing",
+        "daycost": "Est. $170-$290 · food, tolls, parking",
+        "facts": [
+          {
+            "label": "Drive",
+            "valueHtml": "DBV -&gt; Mostar ~2.5-3 hr plus border"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Mostar night 1 of 3"
+          },
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 1"
+          }
+        ],
+        "note": "Keep this day simple: border, check-in, dinner, and first bridge views. Do not schedule Kravica after an overnight flight.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Mostar Old Town + Stari Most",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Mostar%20Old%20Town%20%2B%20Stari%20Most\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=mostar\" target=\"_blank\" rel=\"noreferrer\">IG · Mostar</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=starimost\" target=\"_blank\" rel=\"noreferrer\">IG · Stari Most</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Mostar%20Old%20Town%20%2B%20Stari%20Most&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c1",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1716968921433-835ec227f847?w=1920&q=80&auto=format&fit=crop",
+                "alt": "Mostar Old Town + Stari Most",
+                "captionTitle": "Mostar Old Town + Stari Most",
+                "credit": "Christian Lue · Unsplash License"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1280px-Mostar_Old_Town_Panorama_2007.jpg",
+                "alt": "Mostar Old Town + Stari Most",
+                "captionTitle": "Mostar Old Town + Stari Most",
+                "credit": "Ramirez · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Mostar,_Stari_Most_at_night.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mostar%2C_Stari_Most_at_night.jpg/1280px-Mostar%2C_Stari_Most_at_night.jpg",
+                "alt": "Mostar Old Town + Stari Most",
+                "captionTitle": "Mostar Old Town + Stari Most",
+                "credit": "BathoryPeter · CC BY-SA 3.0"
+              }
+            ],
+            "cost": "Old Bridge and bazaar are free. Koski Mehmed Pasha Mosque/minaret is paid; recent reports conflict around EUR7-EUR15, so ask at the door.",
+            "climateLabel": "Weather",
+            "climate": "<b>July: hot</b>, often upper 80s to low 90s F daytime / upper 60s F nights. Neretva swimming is cold and local-condition dependent.",
+            "saveHtml": "<b>Save</b> Stay walkable and skip paid viewpoints; the bridge, bazaar, riverbanks, and sunset angles are free.",
+            "splurgeHtml": "<b>Splurge</b> Pay for the mosque/minaret viewpoint if open; budget roughly EUR30-EUR60 family depending the current tariff.",
+            "restoHtml": "<li><a href=\"https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href=\"https://nidjeveze.ba/\" target=\"_blank\" rel=\"noreferrer\"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href=\"https://www.instagram.com/restoran_vodopad_kravice/\" target=\"_blank\" rel=\"noreferrer\"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li>",
+            "altboxHtml": "<p><a href=\"https://www.alongdustyroads.com/posts/pocitelj-bosnia\" target=\"_blank\" rel=\"noreferrer\"><b>Pocitelj</b> ↩</a> — a compact Ottoman stone village if Mostar feels crowded.</p>",
+            "bloglinksHtml": "<a href=\"https://exploremostar.com/mostar-old-bridge-guide/\" target=\"_blank\" rel=\"noreferrer\">Explore Mostar bridge guide ↗</a><a href=\"https://bucketlistbums.com/single-post/mostar/\" target=\"_blank\" rel=\"noreferrer\">Bucket List Bums Mostar ↗</a>",
+            "lat": "43.3373",
+            "lng": "17.8149",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=43.3373,17.8149&z=14&output=embed\" title=\"Map of Mostar Old Town + Stari Most\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=43.3373,17.8149\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day2",
+        "colorClass": "c1",
+        "badge": "2",
+        "eyebrow": "Sat · Jul 3",
+        "heading": "Mostar old town, bridge views, Neretva edges",
+        "feel": "Town day with water breaks",
+        "daycost": "Est. $150-$260 · food + viewpoint options",
+        "facts": [
+          {
+            "label": "Morning",
+            "valueHtml": "Old town before heat"
+          },
+          {
+            "label": "Afternoon",
+            "valueHtml": "Rest/pool/river edge"
+          },
+          {
+            "label": "Evening",
+            "valueHtml": "Bridge light + easy pizza"
+          }
+        ],
+        "note": "The bridge and bazaar give a full-feeling day without tickets. Use the paid mosque/minaret only if everyone still has energy.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Mostar Old Town + Stari Most",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Mostar%20Old%20Town%20%2B%20Stari%20Most\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=mostar\" target=\"_blank\" rel=\"noreferrer\">IG · Mostar</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=starimost\" target=\"_blank\" rel=\"noreferrer\">IG · Stari Most</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Mostar%20Old%20Town%20%2B%20Stari%20Most&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c2",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1716968921433-835ec227f847?w=1920&q=80&auto=format&fit=crop",
+                "alt": "Mostar Old Town + Stari Most",
+                "captionTitle": "Mostar Old Town + Stari Most",
+                "credit": "Christian Lue · Unsplash License"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Mostar_Old_Town_Panorama_2007.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1280px-Mostar_Old_Town_Panorama_2007.jpg",
+                "alt": "Mostar Old Town + Stari Most",
+                "captionTitle": "Mostar Old Town + Stari Most",
+                "credit": "Ramirez · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Mostar,_Stari_Most_at_night.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mostar%2C_Stari_Most_at_night.jpg/1280px-Mostar%2C_Stari_Most_at_night.jpg",
+                "alt": "Mostar Old Town + Stari Most",
+                "captionTitle": "Mostar Old Town + Stari Most",
+                "credit": "BathoryPeter · CC BY-SA 3.0"
+              }
+            ],
+            "cost": "Old Bridge and bazaar are free. Koski Mehmed Pasha Mosque/minaret is paid; recent reports conflict around EUR7-EUR15, so ask at the door.",
+            "climateLabel": "Weather",
+            "climate": "<b>July: hot</b>, often upper 80s to low 90s F daytime / upper 60s F nights. Neretva swimming is cold and local-condition dependent.",
+            "saveHtml": "<b>Save</b> Stay walkable and skip paid viewpoints; the bridge, bazaar, riverbanks, and sunset angles are free.",
+            "splurgeHtml": "<b>Splurge</b> Pay for the mosque/minaret viewpoint if open; budget roughly EUR30-EUR60 family depending the current tariff.",
+            "restoHtml": "<li><a href=\"https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href=\"https://nidjeveze.ba/\" target=\"_blank\" rel=\"noreferrer\"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href=\"https://www.instagram.com/restoran_vodopad_kravice/\" target=\"_blank\" rel=\"noreferrer\"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li>",
+            "altboxHtml": "<p><a href=\"https://www.alongdustyroads.com/posts/pocitelj-bosnia\" target=\"_blank\" rel=\"noreferrer\"><b>Pocitelj</b> ↩</a> — a compact Ottoman stone village if Mostar feels crowded.</p>",
+            "bloglinksHtml": "<a href=\"https://exploremostar.com/mostar-old-bridge-guide/\" target=\"_blank\" rel=\"noreferrer\">Explore Mostar bridge guide ↗</a><a href=\"https://bucketlistbums.com/single-post/mostar/\" target=\"_blank\" rel=\"noreferrer\">Bucket List Bums Mostar ↗</a>",
+            "lat": "43.3373",
+            "lng": "17.8149",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=43.3373,17.8149&z=14&output=embed\" title=\"Map of Mostar Old Town + Stari Most\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=43.3373,17.8149\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day3",
+        "colorClass": "c1",
+        "badge": "3",
+        "eyebrow": "Sun · Jul 4",
+        "heading": "Blagaj cliff spring and Kravica swim",
+        "feel": "Nature + swim",
+        "daycost": "Est. $190-$330 · tickets, parking, lunch",
+        "facts": [
+          {
+            "label": "Drive",
+            "valueHtml": "Mostar -&gt; Blagaj -&gt; Kravica loop"
+          },
+          {
+            "label": "Tickets",
+            "valueHtml": "Kravica about 60 KM family + parking"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Mostar night 3 of 3"
+          }
+        ],
+        "note": "This is the Herzegovina day that justifies Mostar as a base: cliff monastery in the morning, waterfall swimming later when heat peaks.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Blagaj Tekke + Buna Spring",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Blagaj%20Tekke%20%2B%20Buna%20Spring\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=blagajtekke\" target=\"_blank\" rel=\"noreferrer\">IG · Blagaj Tekke</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=bunaspring\" target=\"_blank\" rel=\"noreferrer\">IG · Buna Spring</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Blagaj%20Tekke%20%2B%20Buna%20Spring&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c3",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Blagaj_%E2%80%93_Vrelo_Bune_3.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_3.jpg",
+                "alt": "Blagaj Tekke + Buna Spring",
+                "captionTitle": "Blagaj Tekke + Buna Spring",
+                "credit": "Julian Nyca · CC BY-SA 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Blagaj_%E2%80%93_Vrelo_Bune_6.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Blagaj_%E2%80%93_Vrelo_Bune_6.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_6.jpg",
+                "alt": "Blagaj Tekke + Buna Spring",
+                "captionTitle": "Blagaj Tekke + Buna Spring",
+                "credit": "Julian Nyca · CC BY-SA 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Blagaj_%E2%80%93_Vrelo_Bune_5.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Blagaj_%E2%80%93_Vrelo_Bune_5.jpg/1280px-Blagaj_%E2%80%93_Vrelo_Bune_5.jpg",
+                "alt": "Blagaj Tekke + Buna Spring",
+                "captionTitle": "Blagaj Tekke + Buna Spring",
+                "credit": "Julian Nyca · CC BY-SA 3.0"
+              }
+            ],
+            "cost": "Outside river views are free. Tekke interior is unconfirmed but recent sources report about 10 KM / EUR5 per person.",
+            "climateLabel": "Weather",
+            "climate": "<b>Hot afternoons</b>; go morning or late day. The cliff spring area feels cooler than Mostar old town.",
+            "saveHtml": "<b>Save</b> See the Tekke from the riverside restaurants and bridge for free if the kids are not interested in the interior.",
+            "splurgeHtml": "<b>Splurge</b> Do a riverside lunch with the cliff view; expect a higher tourist-location bill than Mostar.",
+            "restoHtml": "<li><a href=\"https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href=\"https://nidjeveze.ba/\" target=\"_blank\" rel=\"noreferrer\"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href=\"https://www.instagram.com/restoran_vodopad_kravice/\" target=\"_blank\" rel=\"noreferrer\"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li>",
+            "altboxHtml": "<p><a href=\"https://tekijablagaj.ba/en/\" target=\"_blank\" rel=\"noreferrer\"><b>Dervish House viewpoint only</b> ↩</a> — keeps the visual payoff without committing to a full interior visit.</p>",
+            "bloglinksHtml": "<a href=\"https://sandaltanman.com/things-to-do-in-blagaj/\" target=\"_blank\" rel=\"noreferrer\">Blagaj practical guide ↗</a><a href=\"https://theblogtrotter.com/destinations/bosnia-herzegovina/blagaj/\" target=\"_blank\" rel=\"noreferrer\">Blagaj fee/dress notes ↗</a>",
+            "lat": "43.2567",
+            "lng": "17.9047",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=43.2567,17.9047&z=14&output=embed\" title=\"Map of Blagaj Tekke + Buna Spring\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=43.2567,17.9047\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          },
+          {
+            "name": "Kravica Waterfalls",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Kravica%20Waterfalls\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=kravica\" target=\"_blank\" rel=\"noreferrer\">IG · Kravica Waterfalls</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Kravica%20Waterfalls&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c4",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Waterfalls_Kravica_5%2C_Bosnia_and_Herzegovina.jpg/1280px-Waterfalls_Kravica_5%2C_Bosnia_and_Herzegovina.jpg",
+                "alt": "Kravica Waterfalls",
+                "captionTitle": "Kravica Waterfalls",
+                "credit": "Matej Batha · CC BY-SA 2.5"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Kravica_Waterfalls,Bosnia_%26_Herzegovina.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Kravica_Waterfalls%2CBosnia_%26_Herzegovina.jpg/1280px-Kravica_Waterfalls%2CBosnia_%26_Herzegovina.jpg",
+                "alt": "Kravica Waterfalls",
+                "captionTitle": "Kravica Waterfalls",
+                "credit": "john mcsporran · CC BY 2.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Waterfalls_Kravica_6,_Bosnia_and_Herzegovina.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Waterfalls_Kravica_6%2C_Bosnia_and_Herzegovina.jpg/1280px-Waterfalls_Kravica_6%2C_Bosnia_and_Herzegovina.jpg",
+                "alt": "Kravica Waterfalls",
+                "captionTitle": "Kravica Waterfalls",
+                "credit": "Matej Batha · CC BY-SA 2.5"
+              }
+            ],
+            "cost": "Official 2026 pricing: 20 KM adult, 10 KM ages 7-18, under 7 free; parking 3 KM/hour or 6 KM/day. Family estimate: 60 KM plus parking.",
+            "climateLabel": "Weather",
+            "climate": "<b>Water is cool</b>, roughly high 60s F to low 70s F in summer, but swimmable in hot weather.",
+            "saveHtml": "<b>Save</b> Bring towels, water shoes, and snacks so the falls are a half-day swim/picnic instead of a restaurant day.",
+            "splurgeHtml": "<b>Splurge</b> Use the on-site restaurant and stay through late afternoon light; budget about 80-120 KM for an easy meal.",
+            "restoHtml": "<li><a href=\"https://turizam.mostar.ba/index.php?Itemid=411&amp;id=178%3Arestoran-pizzeria-megi&amp;lang=en&amp;option=com_content&amp;view=article\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurant-Pizzeria Megi</b></a> — pizza, pasta, lasagna, steaks, cakes; plain pizza/pasta works</li><li><a href=\"https://nidjeveze.ba/\" target=\"_blank\" rel=\"noreferrer\"><b>Nide Veze</b></a> — pizza, sandwiches, pancakes, waffles; Margherita pizza is the easy order</li><li><a href=\"https://www.instagram.com/restoran_vodopad_kravice/\" target=\"_blank\" rel=\"noreferrer\"><b>Restoran Vodopad Kravice</b></a> — at the falls; burger/fries, chicken, and pizza-style options reported</li>",
+            "altboxHtml": "<p><a href=\"https://exploremostar.com/kravica-waterfall/\" target=\"_blank\" rel=\"noreferrer\"><b>Buna canals near Blagaj</b> ↩</a> — less of a swim spectacle, but easier if Kravica crowds look rough.</p>",
+            "bloglinksHtml": "<a href=\"https://kravica.ba/en/for-visitors/\" target=\"_blank\" rel=\"noreferrer\">Official Kravica visitor info ↗</a><a href=\"https://traveltomtom.net/destinations/europe/bosnia/visiting-kravice-waterfalls-bosnia\" target=\"_blank\" rel=\"noreferrer\">Kravica swim tips ↗</a>",
+            "lat": "43.1562",
+            "lng": "17.6087",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=43.1562,17.6087&z=14&output=embed\" title=\"Map of Kravica Waterfalls\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=43.1562,17.6087\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day4",
+        "colorClass": "c2",
+        "badge": "4",
+        "eyebrow": "Mon · Jul 5",
+        "heading": "Drive to the Bay of Kotor",
+        "feel": "Transfer + bay arrival",
+        "daycost": "Est. $170-$300 · fuel, food, parking",
+        "facts": [
+          {
+            "label": "Drive",
+            "valueHtml": "Mostar -&gt; Kotor ~3.5-4.5 hr with border"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Kotor night 1 of 3"
+          },
+          {
+            "label": "Holiday",
+            "valueHtml": "Independence Day observed - PTO saved"
+          }
+        ],
+        "note": "Route via Trebinje/Sitnica rather than backtracking through Dubrovnik unless live border conditions make the coast better.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Kotor Old Town + City Walls",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Kotor%20Old%20Town%20%2B%20City%20Walls\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=kotor\" target=\"_blank\" rel=\"noreferrer\">IG · Kotor</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Kotor%20Old%20Town%20%2B%20City%20Walls&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c5",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1502824420498-012d4c4f0c42?w=1200&q=80&auto=format&fit=crop",
+                "alt": "Kotor Old Town + City Walls",
+                "captionTitle": "Kotor Old Town + City Walls",
+                "credit": "Faruk Kaymak · Unsplash License"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/1280px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg",
+                "alt": "Kotor Old Town + City Walls",
+                "captionTitle": "Kotor Old Town + City Walls",
+                "credit": "Pudelek · CC BY-SA 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Bay_of_Kotor_from_Lepetani%27s_road.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Bay_of_Kotor_from_Lepetani%27s_road.jpg/1280px-Bay_of_Kotor_from_Lepetani%27s_road.jpg",
+                "alt": "Kotor Old Town + City Walls",
+                "captionTitle": "Kotor Old Town + City Walls",
+                "credit": "Gzzz · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "City walls/San Giovanni fortress currently reported at EUR15 per person, under 12 free; family estimate about EUR45.",
+            "climateLabel": "Weather",
+            "climate": "<b>July:</b> around low-to-mid 80s F days / upper 60s to low 70s nights. Bay water averages about <b>77-79 F</b>.",
+            "saveHtml": "<b>Save</b> Climb early, carry water, and skip paid boat tours on this day; old-town wandering is free.",
+            "splurgeHtml": "<b>Splurge</b> Private or small-group bay boat after the climb; expect EUR100+ family depending duration.",
+            "restoHtml": "<li><a href=\"https://pizzeriapronto.me/\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Pronto</b></a> — wood-fired pizza in Kotor Old Town; order Margherita</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g295381-d6848872-Reviews-BBQ_Tanjga-Kotor_Kotor_Municipality.html\" target=\"_blank\" rel=\"noreferrer\"><b>BBQ Tanjga</b></a> — casual grilled meats; chicken and fries are the picky-kid backup</li><li><a href=\"https://www.babaluu.me/en/menu/kids-menu/15\" target=\"_blank\" rel=\"noreferrer\"><b>Babaluu</b></a> — Budva kids menu with chicken fingers, burgers, fries, pasta, and pizza</li>",
+            "altboxHtml": "<p><a href=\"https://adriaticways.com/kotor-fortress-city-walls/\" target=\"_blank\" rel=\"noreferrer\"><b>Ladder of Kotor lower viewpoint</b> ↩</a> — similar views if the full fortress climb is too hot.</p>",
+            "bloglinksHtml": "<a href=\"https://alexjessicamills.com/best-things-to-do-in-kotor-montenegro-with-kids/\" target=\"_blank\" rel=\"noreferrer\">Kotor with kids ↗</a><a href=\"https://www.nickkembel.com/kotor-montenegro-with-kids/\" target=\"_blank\" rel=\"noreferrer\">More Kotor family ideas ↗</a>",
+            "lat": "42.4247",
+            "lng": "18.7712",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=42.4247,18.7712&z=14&output=embed\" title=\"Map of Kotor Old Town + City Walls\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=42.4247,18.7712\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day5",
+        "colorClass": "c2",
+        "badge": "5",
+        "eyebrow": "Tue · Jul 6",
+        "heading": "Kotor walls early, bay swim later",
+        "feel": "Town + active climb + swim",
+        "daycost": "Est. $220-$380 · walls, food, swim extras",
+        "facts": [
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 2"
+          },
+          {
+            "label": "Morning",
+            "valueHtml": "City walls before heat"
+          },
+          {
+            "label": "Afternoon",
+            "valueHtml": "Dobrota/Pranj bay swim"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Kotor night 2 of 3"
+          }
+        ],
+        "note": "The fortress climb is the hot-weather risk. Start early, carry water, and let the afternoon be low-structure bay time.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Kotor Old Town + City Walls",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Kotor%20Old%20Town%20%2B%20City%20Walls\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=kotor\" target=\"_blank\" rel=\"noreferrer\">IG · Kotor</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Kotor%20Old%20Town%20%2B%20City%20Walls&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c6",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1502824420498-012d4c4f0c42?w=1200&q=80&auto=format&fit=crop",
+                "alt": "Kotor Old Town + City Walls",
+                "captionTitle": "Kotor Old Town + City Walls",
+                "credit": "Faruk Kaymak · Unsplash License"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg/1280px-Kotor_and_Boka_kotorska_-_view_from_city_wall.jpg",
+                "alt": "Kotor Old Town + City Walls",
+                "captionTitle": "Kotor Old Town + City Walls",
+                "credit": "Pudelek · CC BY-SA 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Bay_of_Kotor_from_Lepetani%27s_road.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Bay_of_Kotor_from_Lepetani%27s_road.jpg/1280px-Bay_of_Kotor_from_Lepetani%27s_road.jpg",
+                "alt": "Kotor Old Town + City Walls",
+                "captionTitle": "Kotor Old Town + City Walls",
+                "credit": "Gzzz · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "City walls/San Giovanni fortress currently reported at EUR15 per person, under 12 free; family estimate about EUR45.",
+            "climateLabel": "Weather",
+            "climate": "<b>July:</b> around low-to-mid 80s F days / upper 60s to low 70s nights. Bay water averages about <b>77-79 F</b>.",
+            "saveHtml": "<b>Save</b> Climb early, carry water, and skip paid boat tours on this day; old-town wandering is free.",
+            "splurgeHtml": "<b>Splurge</b> Private or small-group bay boat after the climb; expect EUR100+ family depending duration.",
+            "restoHtml": "<li><a href=\"https://pizzeriapronto.me/\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Pronto</b></a> — wood-fired pizza in Kotor Old Town; order Margherita</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g295381-d6848872-Reviews-BBQ_Tanjga-Kotor_Kotor_Municipality.html\" target=\"_blank\" rel=\"noreferrer\"><b>BBQ Tanjga</b></a> — casual grilled meats; chicken and fries are the picky-kid backup</li><li><a href=\"https://www.babaluu.me/en/menu/kids-menu/15\" target=\"_blank\" rel=\"noreferrer\"><b>Babaluu</b></a> — Budva kids menu with chicken fingers, burgers, fries, pasta, and pizza</li>",
+            "altboxHtml": "<p><a href=\"https://adriaticways.com/kotor-fortress-city-walls/\" target=\"_blank\" rel=\"noreferrer\"><b>Ladder of Kotor lower viewpoint</b> ↩</a> — similar views if the full fortress climb is too hot.</p>",
+            "bloglinksHtml": "<a href=\"https://alexjessicamills.com/best-things-to-do-in-kotor-montenegro-with-kids/\" target=\"_blank\" rel=\"noreferrer\">Kotor with kids ↗</a><a href=\"https://www.nickkembel.com/kotor-montenegro-with-kids/\" target=\"_blank\" rel=\"noreferrer\">More Kotor family ideas ↗</a>",
+            "lat": "42.4247",
+            "lng": "18.7712",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=42.4247,18.7712&z=14&output=embed\" title=\"Map of Kotor Old Town + City Walls\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=42.4247,18.7712\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day6",
+        "colorClass": "c2",
+        "badge": "6",
+        "eyebrow": "Wed · Jul 7",
+        "heading": "Perast, Our Lady of the Rocks, Budva/Sveti Stefan",
+        "feel": "Postcard Montenegro",
+        "daycost": "Est. $250-$430 · boats, parking, food",
+        "facts": [
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 3"
+          },
+          {
+            "label": "Morning",
+            "valueHtml": "Perast + island boat"
+          },
+          {
+            "label": "Afternoon",
+            "valueHtml": "Budva or Sveti Stefan viewpoint"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Kotor night 3 of 3"
+          }
+        ],
+        "note": "This can become too much if traffic is bad. If everyone wants water more than towns, skip Budva and swim near the bay.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Perast + Our Lady of the Rocks",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Perast%20%2B%20Our%20Lady%20of%20the%20Rocks\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=perast\" target=\"_blank\" rel=\"noreferrer\">IG · Perast</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=ourladyoftherocks\" target=\"_blank\" rel=\"noreferrer\">IG · Our Lady of the Rocks</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Perast%20%2B%20Our%20Lady%20of%20the%20Rocks&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c7",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Church_of_Our_Lady_of_the_Rocks%2C_Perast_%2849631172447%29.jpg/1280px-Church_of_Our_Lady_of_the_Rocks%2C_Perast_%2849631172447%29.jpg",
+                "alt": "Perast + Our Lady of the Rocks",
+                "captionTitle": "Perast + Our Lady of the Rocks",
+                "credit": "Jocelyn Erskine-Kellie · CC BY-SA 2.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Church_of_Our_Lady_of_the_Rocks_3.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Church_of_Our_Lady_of_the_Rocks_3.jpg/1280px-Church_of_Our_Lady_of_the_Rocks_3.jpg",
+                "alt": "Perast + Our Lady of the Rocks",
+                "captionTitle": "Perast + Our Lady of the Rocks",
+                "credit": "Gertjan R. · CC BY-SA 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Church_of_Our_Lady_of_the_Rocks,_Perast.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Church_of_Our_Lady_of_the_Rocks%2C_Perast.jpg/1280px-Church_of_Our_Lady_of_the_Rocks%2C_Perast.jpg",
+                "alt": "Perast + Our Lady of the Rocks",
+                "captionTitle": "Perast + Our Lady of the Rocks",
+                "credit": "Jocelyn Erskine-Kellie · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "Perast waterfront is free. Boat to Our Lady of the Rocks commonly runs EUR5-EUR10 pp return; church/museum often EUR2-EUR3 pp.",
+            "climateLabel": "Weather",
+            "climate": "<b>Warm bay day</b>; water is usually comfortable, shade is limited along the waterfront.",
+            "saveHtml": "<b>Save</b> Drive or taxi to Perast and use the short local boat instead of a longer Kotor speedboat tour.",
+            "splurgeHtml": "<b>Splurge</b> Take a 2-hour bay boat from Kotor if parking stress matters more than price; plan EUR25+ per person.",
+            "restoHtml": "<li><a href=\"https://pizzeriapronto.me/\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Pronto</b></a> — wood-fired pizza in Kotor Old Town; order Margherita</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g295381-d6848872-Reviews-BBQ_Tanjga-Kotor_Kotor_Municipality.html\" target=\"_blank\" rel=\"noreferrer\"><b>BBQ Tanjga</b></a> — casual grilled meats; chicken and fries are the picky-kid backup</li><li><a href=\"https://www.babaluu.me/en/menu/kids-menu/15\" target=\"_blank\" rel=\"noreferrer\"><b>Babaluu</b></a> — Budva kids menu with chicken fingers, burgers, fries, pasta, and pizza</li>",
+            "altboxHtml": "<p><a href=\"https://www.montenegropulse.com/dobrota.html\" target=\"_blank\" rel=\"noreferrer\"><b>Dobrota waterfront swim</b> ↩</a> — simpler, cheaper, and close to Kotor if the family wants downtime.</p>",
+            "bloglinksHtml": "<a href=\"https://www.adventurouskate.com/perast-montenegro/\" target=\"_blank\" rel=\"noreferrer\">Adventurous Kate Perast ↗</a><a href=\"https://montenegrosubmarine.me/tours/perast-and-our-lady-of-the-rocks-2h\" target=\"_blank\" rel=\"noreferrer\">Perast boat reference ↗</a>",
+            "lat": "42.4869",
+            "lng": "18.6992",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=42.4869,18.6992&z=14&output=embed\" title=\"Map of Perast + Our Lady of the Rocks\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=42.4869,18.6992\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          },
+          {
+            "name": "Budva + Sveti Stefan",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Budva%20%2B%20Sveti%20Stefan\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=budva\" target=\"_blank\" rel=\"noreferrer\">IG · Budva</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=svetistefan\" target=\"_blank\" rel=\"noreferrer\">IG · Sveti Stefan</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Budva%20%2B%20Sveti%20Stefan&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c8",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sveti_Stefan_%2806%29.jpg/1280px-Sveti_Stefan_%2806%29.jpg",
+                "alt": "Budva + Sveti Stefan",
+                "captionTitle": "Budva + Sveti Stefan",
+                "credit": "Marcin Konsek · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Sveti_Stefan_(05).jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sveti_Stefan_%2805%29.jpg/1280px-Sveti_Stefan_%2805%29.jpg",
+                "alt": "Budva + Sveti Stefan",
+                "captionTitle": "Budva + Sveti Stefan",
+                "credit": "Marcin Konsek · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Sveti_Stefan,_Budva_06.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Sveti_Stefan%2C_Budva_06.jpg/1280px-Sveti_Stefan%2C_Budva_06.jpg",
+                "alt": "Budva + Sveti Stefan",
+                "captionTitle": "Budva + Sveti Stefan",
+                "credit": "Jaba1977 · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "Budva old town and Sveti Stefan viewpoints are free; parking is variable, often around EUR1-EUR4/hour in busy areas.",
+            "climateLabel": "Weather",
+            "climate": "<b>Hot coastal afternoon</b>; build in a swim and avoid trying to sightsee all day.",
+            "saveHtml": "<b>Save</b> Use Sveti Stefan as a viewpoint/photo stop instead of paying for resort-adjacent extras.",
+            "splurgeHtml": "<b>Splurge</b> Beach-club loungers near Budva/Sveti Stefan can turn the day easy; confirm the set price before sitting.",
+            "restoHtml": "<li><a href=\"https://pizzeriapronto.me/\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Pronto</b></a> — wood-fired pizza in Kotor Old Town; order Margherita</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g295381-d6848872-Reviews-BBQ_Tanjga-Kotor_Kotor_Municipality.html\" target=\"_blank\" rel=\"noreferrer\"><b>BBQ Tanjga</b></a> — casual grilled meats; chicken and fries are the picky-kid backup</li><li><a href=\"https://www.babaluu.me/en/menu/kids-menu/15\" target=\"_blank\" rel=\"noreferrer\"><b>Babaluu</b></a> — Budva kids menu with chicken fingers, burgers, fries, pasta, and pizza</li>",
+            "altboxHtml": "<p><a href=\"https://www.montenegropulse.com/lustica-peninsula.html\" target=\"_blank\" rel=\"noreferrer\"><b>Lustica peninsula</b> ↩</a> — more coves and less old-town traffic if Budva sounds too busy.</p>",
+            "bloglinksHtml": "<a href=\"https://www.travellingtrekker.com/post/budva-montenegro-travel-guide\" target=\"_blank\" rel=\"noreferrer\">Budva parking/traffic tips ↗</a><a href=\"https://adriaticways.com/budva-parking-guide/\" target=\"_blank\" rel=\"noreferrer\">Budva parking guide ↗</a>",
+            "lat": "42.2557",
+            "lng": "18.8964",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=42.2557,18.8964&z=14&output=embed\" title=\"Map of Budva + Sveti Stefan\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=42.2557,18.8964\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day7",
+        "colorClass": "c3",
+        "badge": "7",
+        "eyebrow": "Thu · Jul 8",
+        "heading": "Long drive to Ksamil",
+        "feel": "Big transfer day",
+        "daycost": "Est. $210-$370 · fuel, snacks, road meals",
+        "facts": [
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 4"
+          },
+          {
+            "label": "Drive",
+            "valueHtml": "Kotor -&gt; Ksamil ~7.5-8 hr before stops"
+          },
+          {
+            "label": "Border",
+            "valueHtml": "Montenegro -&gt; Albania"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Ksamil/Saranda night 1 of 3"
+          }
+        ],
+        "note": "Leave early and treat the day as logistics. If the drive looks like too much, insert Gjirokaster and cut one Corfu night.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Ksamil Beaches + Islands",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Ksamil%20Beaches%20%2B%20Islands\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=ksamil\" target=\"_blank\" rel=\"noreferrer\">IG · Ksamil</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Ksamil%20Beaches%20%2B%20Islands&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c9",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1752778080456-928bc88c4e2a?w=1920&q=80&auto=format&fit=crop",
+                "alt": "Ksamil Beaches + Islands",
+                "captionTitle": "Ksamil Beaches + Islands",
+                "credit": "Arlind Photography · Unsplash License"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop",
+                "alt": "Ksamil Beaches + Islands",
+                "captionTitle": "Ksamil Beaches + Islands",
+                "credit": "Adventure Albania · Unsplash License"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Ksamil,_Albania_-_beach.JPG",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ksamil%2C_Albania_-_beach.JPG/1280px-Ksamil%2C_Albania_-_beach.JPG",
+                "alt": "Ksamil Beaches + Islands",
+                "captionTitle": "Ksamil Beaches + Islands",
+                "credit": "Pudelek · CC BY-SA 3.0"
+              }
+            ],
+            "cost": "SunEasy lists Ksamil beach sets around 1,000-1,700 ALL/day for some clubs; central/popular spots can run 2,000-4,000 ALL.",
+            "climateLabel": "Weather",
+            "climate": "<b>July:</b> hot beach weather, often mid-to-upper 80s F daytime; sea averages about <b>76-78 F</b>, usually the warmest water of the trip.",
+            "saveHtml": "<b>Save</b> Pick an off-center beach or late-afternoon set; central first-row loungers are where prices jump.",
+            "splurgeHtml": "<b>Splurge</b> Rent kayaks/pedal boat or take a short island boat hop; confirm the price before boarding.",
+            "restoHtml": "<li><a href=\"https://limanisarande.com/menu/\" target=\"_blank\" rel=\"noreferrer\"><b>Limani Sarande</b></a> — Margherita pizza, fries, chicken fillet, penne chicken, club sandwich</li><li><a href=\"https://www.familyrestaurant.al/en/menu\" target=\"_blank\" rel=\"noreferrer\"><b>Family Restaurant Ksamil</b></a> — Bolognese, pasta alla crema, schnitzel, grilled chicken fillet</li><li><a href=\"https://skip.menu/at/27527-larte-della-pizza-ksamil-cucinadimare-pasta-fresca\" target=\"_blank\" rel=\"noreferrer\"><b>L'arte Della Pizza Ksamil</b></a> — pizza, pasta, burgers, and kid-friendly basics</li>",
+            "altboxHtml": "<p><a href=\"https://www.sunshineseeker.com/destinations/ksamil-beaches/\" target=\"_blank\" rel=\"noreferrer\"><b>Pulbardha Beach</b> ↩</a> — a prettier escape if central Ksamil feels packed.</p>",
+            "bloglinksHtml": "<a href=\"https://www.sunshineseeker.com/destinations/ksamil/\" target=\"_blank\" rel=\"noreferrer\">Ksamil overview ↗</a><a href=\"https://himara.net/blog/albanian-riviera-sunbed-prices-guide\" target=\"_blank\" rel=\"noreferrer\">2026 sunbed price guide ↗</a>",
+            "lat": "39.7684",
+            "lng": "19.9992",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=39.7684,19.9992&z=14&output=embed\" title=\"Map of Ksamil Beaches + Islands\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=39.7684,19.9992\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day8",
+        "colorClass": "c3",
+        "badge": "8",
+        "eyebrow": "Fri · Jul 9",
+        "heading": "Ksamil beach reset",
+        "feel": "Water day",
+        "daycost": "Est. $220-$410 · beach set, lunch, dinner",
+        "facts": [
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 5"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "One main beach, not beach-hopping all day"
+          },
+          {
+            "label": "Water",
+            "valueHtml": "Warmest sea of the trip"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Ksamil/Saranda night 2 of 3"
+          }
+        ],
+        "note": "After the long transfer, this is deliberately simple: clear water, shade, picky-kid food, and no ruins until tomorrow.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Ksamil Beaches + Islands",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Ksamil%20Beaches%20%2B%20Islands\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=ksamil\" target=\"_blank\" rel=\"noreferrer\">IG · Ksamil</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Ksamil%20Beaches%20%2B%20Islands&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c10",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1752778080456-928bc88c4e2a?w=1920&q=80&auto=format&fit=crop",
+                "alt": "Ksamil Beaches + Islands",
+                "captionTitle": "Ksamil Beaches + Islands",
+                "credit": "Arlind Photography · Unsplash License"
+              },
+              {
+                "href": "https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop",
+                "src": "https://images.unsplash.com/photo-1742244214797-4e3856333d70?w=1200&q=80&auto=format&fit=crop",
+                "alt": "Ksamil Beaches + Islands",
+                "captionTitle": "Ksamil Beaches + Islands",
+                "credit": "Adventure Albania · Unsplash License"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Ksamil,_Albania_-_beach.JPG",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ksamil%2C_Albania_-_beach.JPG/1280px-Ksamil%2C_Albania_-_beach.JPG",
+                "alt": "Ksamil Beaches + Islands",
+                "captionTitle": "Ksamil Beaches + Islands",
+                "credit": "Pudelek · CC BY-SA 3.0"
+              }
+            ],
+            "cost": "SunEasy lists Ksamil beach sets around 1,000-1,700 ALL/day for some clubs; central/popular spots can run 2,000-4,000 ALL.",
+            "climateLabel": "Weather",
+            "climate": "<b>July:</b> hot beach weather, often mid-to-upper 80s F daytime; sea averages about <b>76-78 F</b>, usually the warmest water of the trip.",
+            "saveHtml": "<b>Save</b> Pick an off-center beach or late-afternoon set; central first-row loungers are where prices jump.",
+            "splurgeHtml": "<b>Splurge</b> Rent kayaks/pedal boat or take a short island boat hop; confirm the price before boarding.",
+            "restoHtml": "<li><a href=\"https://limanisarande.com/menu/\" target=\"_blank\" rel=\"noreferrer\"><b>Limani Sarande</b></a> — Margherita pizza, fries, chicken fillet, penne chicken, club sandwich</li><li><a href=\"https://www.familyrestaurant.al/en/menu\" target=\"_blank\" rel=\"noreferrer\"><b>Family Restaurant Ksamil</b></a> — Bolognese, pasta alla crema, schnitzel, grilled chicken fillet</li><li><a href=\"https://skip.menu/at/27527-larte-della-pizza-ksamil-cucinadimare-pasta-fresca\" target=\"_blank\" rel=\"noreferrer\"><b>L'arte Della Pizza Ksamil</b></a> — pizza, pasta, burgers, and kid-friendly basics</li>",
+            "altboxHtml": "<p><a href=\"https://www.sunshineseeker.com/destinations/ksamil-beaches/\" target=\"_blank\" rel=\"noreferrer\"><b>Pulbardha Beach</b> ↩</a> — a prettier escape if central Ksamil feels packed.</p>",
+            "bloglinksHtml": "<a href=\"https://www.sunshineseeker.com/destinations/ksamil/\" target=\"_blank\" rel=\"noreferrer\">Ksamil overview ↗</a><a href=\"https://himara.net/blog/albanian-riviera-sunbed-prices-guide\" target=\"_blank\" rel=\"noreferrer\">2026 sunbed price guide ↗</a>",
+            "lat": "39.7684",
+            "lng": "19.9992",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=39.7684,19.9992&z=14&output=embed\" title=\"Map of Ksamil Beaches + Islands\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=39.7684,19.9992\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day9",
+        "colorClass": "c3",
+        "badge": "9",
+        "eyebrow": "Sat · Jul 10",
+        "heading": "Butrint early, Blue Eye or beach later",
+        "feel": "Ruins + nature + swim",
+        "daycost": "Est. $220-$400 · tickets, parking, beach",
+        "facts": [
+          {
+            "label": "Morning",
+            "valueHtml": "Butrint before heat"
+          },
+          {
+            "label": "Afternoon",
+            "valueHtml": "Blue Eye or beach depending morale"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Ksamil/Saranda night 3 of 3"
+          }
+        ],
+        "note": "Butrint and Blue Eye are both worthwhile, but doing both plus a beach is a lot. If the kids need water, keep Blue Eye as the optional swap.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Butrint National Park",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Butrint%20National%20Park\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=butrint\" target=\"_blank\" rel=\"noreferrer\">IG · Butrint</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Butrint%20National%20Park&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c11",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Scenery_at_Butrint_Archaeological_Site_-_Butrint_National_Park_-_Albania_-_04_%2841642483034%29.jpg/1280px-Scenery_at_Butrint_Archaeological_Site_-_Butrint_National_Park_-_Albania_-_04_%2841642483034%29.jpg",
+                "alt": "Butrint National Park",
+                "captionTitle": "Butrint National Park",
+                "credit": "Adam Jones · CC BY-SA 2.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Parku_Kombetar_%22Butrint%22.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Parku_Kombetar_%22Butrint%22.jpg/1280px-Parku_Kombetar_%22Butrint%22.jpg",
+                "alt": "Butrint National Park",
+                "captionTitle": "Butrint National Park",
+                "credit": "Grgml91 · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Vivari_Channel_within_the_Butrint_National_Park_in_Albania.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/4/42/Vivari_Channel_within_the_Butrint_National_Park_in_Albania.jpg",
+                "alt": "Butrint National Park",
+                "captionTitle": "Butrint National Park",
+                "credit": "A.A · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "Official pricing: 1,000 ALL adult, 500 ALL ages 12-18, under 12 free. Family estimate: 2,500 ALL.",
+            "climateLabel": "Weather",
+            "climate": "<b>Warm and exposed</b>; go early, then use the afternoon for beach recovery.",
+            "saveHtml": "<b>Save</b> Drive yourselves from Ksamil, arrive early, and skip guided add-ons unless the kids want ruins context.",
+            "splurgeHtml": "<b>Splurge</b> Hire a guide or combine with a relaxed seafood lunch on the Vivari Channel.",
+            "restoHtml": "<li><a href=\"https://limanisarande.com/menu/\" target=\"_blank\" rel=\"noreferrer\"><b>Limani Sarande</b></a> — Margherita pizza, fries, chicken fillet, penne chicken, club sandwich</li><li><a href=\"https://www.familyrestaurant.al/en/menu\" target=\"_blank\" rel=\"noreferrer\"><b>Family Restaurant Ksamil</b></a> — Bolognese, pasta alla crema, schnitzel, grilled chicken fillet</li><li><a href=\"https://skip.menu/at/27527-larte-della-pizza-ksamil-cucinadimare-pasta-fresca\" target=\"_blank\" rel=\"noreferrer\"><b>L'arte Della Pizza Ksamil</b></a> — pizza, pasta, burgers, and kid-friendly basics</li>",
+            "altboxHtml": "<p><a href=\"https://www.lonelyplanet.com/albania/saranda/attractions/lekuresi-castle/a/poi-sig/1573771/360798\" target=\"_blank\" rel=\"noreferrer\"><b>Lekuresi Castle sunset</b> ↩</a> — less archaeology, better easy-view payoff over Saranda.</p>",
+            "bloglinksHtml": "<a href=\"https://www.alongdustyroads.com/posts/visit-butrint-national-park-albania\" target=\"_blank\" rel=\"noreferrer\">Butrint practical guide ↗</a><a href=\"https://butrint.al/cmimet-e-biletave/index.html\" target=\"_blank\" rel=\"noreferrer\">Official Butrint prices ↗</a>",
+            "lat": "39.7466",
+            "lng": "20.0202",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=39.7466,20.0202&z=14&output=embed\" title=\"Map of Butrint National Park\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=39.7466,20.0202\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          },
+          {
+            "name": "The Blue Eye",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=The%20Blue%20Eye\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=blueeye\" target=\"_blank\" rel=\"noreferrer\">IG · Blue Eye</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=The%20Blue%20Eye&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c12",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Blue_Eye_%28Syri_i_kalt%C3%ABr%29_03.JPG/1280px-Blue_Eye_%28Syri_i_kalt%C3%ABr%29_03.JPG",
+                "alt": "The Blue Eye",
+                "captionTitle": "The Blue Eye",
+                "credit": "Pudelek · CC BY-SA 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Blue_Eye_(Syri_i_kalt%C3%ABr)_01.JPG",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Blue_Eye_%28Syri_i_kalt%C3%ABr%29_01.JPG/1280px-Blue_Eye_%28Syri_i_kalt%C3%ABr%29_01.JPG",
+                "alt": "The Blue Eye",
+                "captionTitle": "The Blue Eye",
+                "credit": "Pudelek · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Syri_i_kalter_(The_Blue_Eye),_Albania,_September_2022_08.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Syri_i_kalter_%28The_Blue_Eye%29%2C_Albania%2C_September_2022_08.jpg/1280px-Syri_i_kalter_%28The_Blue_Eye%29%2C_Albania%2C_September_2022_08.jpg",
+                "alt": "The Blue Eye",
+                "captionTitle": "The Blue Eye",
+                "credit": "Calistemon · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "Recent 2026 visit report: 50 ALL/person entry, 300 ALL parking up to 3 hours, tourist train 300 ALL one-way or 600 ALL round trip.",
+            "climateLabel": "Weather",
+            "climate": "<b>Cool spring water, hot walk</b>. Swimming is restricted at the spring itself; treat it as a nature stop, not a full swim day.",
+            "saveHtml": "<b>Save</b> Walk the 20-30 minutes instead of taking the train if the heat is manageable.",
+            "splurgeHtml": "<b>Splurge</b> Use the train both ways with kids if the day is hot; family train round trip can be about 2,400 ALL.",
+            "restoHtml": "<li><a href=\"https://limanisarande.com/menu/\" target=\"_blank\" rel=\"noreferrer\"><b>Limani Sarande</b></a> — Margherita pizza, fries, chicken fillet, penne chicken, club sandwich</li><li><a href=\"https://www.familyrestaurant.al/en/menu\" target=\"_blank\" rel=\"noreferrer\"><b>Family Restaurant Ksamil</b></a> — Bolognese, pasta alla crema, schnitzel, grilled chicken fillet</li><li><a href=\"https://skip.menu/at/27527-larte-della-pizza-ksamil-cucinadimare-pasta-fresca\" target=\"_blank\" rel=\"noreferrer\"><b>L'arte Della Pizza Ksamil</b></a> — pizza, pasta, burgers, and kid-friendly basics</li>",
+            "altboxHtml": "<p><a href=\"https://www.alongdustyroads.com/posts/gjirokaster-albania\" target=\"_blank\" rel=\"noreferrer\"><b>Gjirokaster old town</b> ↩</a> — swap in if you want culture and a break on the Kotor-Ksamil transfer.</p>",
+            "bloglinksHtml": "<a href=\"https://albania-blog.com/en/how-to-visit-blue-eye-albania/\" target=\"_blank\" rel=\"noreferrer\">2026 Blue Eye logistics ↗</a><a href=\"https://www.alongdustyroads.com/posts/visit-the-blue-eye-albania-saranda\" target=\"_blank\" rel=\"noreferrer\">Blue Eye planning guide ↗</a>",
+            "lat": "39.9237",
+            "lng": "20.1924",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=39.9237,20.1924&z=14&output=embed\" title=\"Map of The Blue Eye\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=39.9237,20.1924\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day10",
+        "colorClass": "c4",
+        "badge": "10",
+        "eyebrow": "Sun · Jul 11",
+        "heading": "Return car, ferry Saranda to Corfu",
+        "feel": "Boat transfer + island arrival",
+        "daycost": "Est. $260-$450 · ferry, taxis, food",
+        "facts": [
+          {
+            "label": "Ferry",
+            "valueHtml": "Saranda -&gt; Corfu ~30-70 min"
+          },
+          {
+            "label": "Car",
+            "valueHtml": "Return before ferry"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Corfu night 1 of 3"
+          }
+        ],
+        "note": "Build in passport-control time and remember Greece is one hour ahead. Keep Corfu arrival to check-in, Old Town, and dinner.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Corfu Town + Old Fortress",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Corfu%20Town%20%2B%20Old%20Fortress\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=corfu\" target=\"_blank\" rel=\"noreferrer\">IG · Corfu</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=oldfortress\" target=\"_blank\" rel=\"noreferrer\">IG · Old Fortress</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Corfu%20Town%20%2B%20Old%20Fortress&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c13",
+            "images": [
+              {
+                "src": "https://images.unsplash.com/photo-1707148106664-6b5bc7f2c99c?w=1920&q=80&auto=format&fit=crop",
+                "alt": "Corfu Town + Old Fortress",
+                "captionTitle": "Corfu Town + Old Fortress",
+                "credit": "Mihajlo Sivc · Unsplash License"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg/1280px-The_Old_Fortress_and_the_Old_Town_of_Corfu_-_September_2017.jpg",
+                "alt": "Corfu Town + Old Fortress",
+                "captionTitle": "Corfu Town + Old Fortress",
+                "credit": "Martin Falbisoner · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Korfu,_Alte_Festung_--_2018_--_1137.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Korfu_%28GR%29%2C_Korfu%2C_Alte_Festung_--_2018_--_1137.jpg/1280px-Korfu_%28GR%29%2C_Korfu%2C_Alte_Festung_--_2018_--_1137.jpg",
+                "alt": "Corfu Town + Old Fortress",
+                "captionTitle": "Corfu Town + Old Fortress",
+                "credit": "Dietmar Rabich · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "Official Old Fortress / Byzantine Collection ticket is EUR10; family estimate EUR40 unless child reductions apply at booking.",
+            "climateLabel": "Weather",
+            "climate": "<b>July:</b> warm to hot, often upper 80s F days; Ionian water is typically upper 70s F.",
+            "saveHtml": "<b>Save</b> Use the Liston, old lanes, harbor views, and sunset walks as the free half of the day.",
+            "splurgeHtml": "<b>Splurge</b> Do the Old Fortress plus a nicer last-night dinner in town; budget EUR120-EUR180 family.",
+            "restoHtml": "<li><a href=\"https://www.oldtimescorfu.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Old Times Corfu</b></a> — pizza, linguine carbonara/Bolognese, fries, chicken fillet, gyros</li><li><a href=\"https://vrachosp.gr/restaurant/\" target=\"_blank\" rel=\"noreferrer\"><b>Vrachos Paleokastritsa</b></a> — kids chicken nuggets, hamburger, tomato pasta, fries</li><li><a href=\"https://pazuzu.gr/\" target=\"_blank\" rel=\"noreferrer\"><b>Pazuzu Glyfada</b></a> — burger with fries, crispy chicken, spaghetti pomodoro, roasted chicken</li>",
+            "altboxHtml": "<p><a href=\"https://www.discovergreece.com/travel-ideas/best-of/mon-repos-corfu\" target=\"_blank\" rel=\"noreferrer\"><b>Mon Repos park</b> ↩</a> — a greener, lower-key substitute if fortress heat is too much.</p>",
+            "bloglinksHtml": "<a href=\"https://archaeologicalmuseums.gr/en/museum/5df34af3deca5e2d79e8c163/byzantine-collection-of-kerkyra-old-fortress\" target=\"_blank\" rel=\"noreferrer\">Official fortress ticket ↗</a><a href=\"https://johnnyafrica.com/corfu-travel-guide/\" target=\"_blank\" rel=\"noreferrer\">Corfu travel guide ↗</a>",
+            "lat": "39.6243",
+            "lng": "19.9217",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=39.6243,19.9217&z=14&output=embed\" title=\"Map of Corfu Town + Old Fortress\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=39.6243,19.9217\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day11",
+        "colorClass": "c4",
+        "badge": "11",
+        "eyebrow": "Mon · Jul 12",
+        "heading": "Beach-and-boat day in Paleokastritsa",
+        "feel": "Swim day",
+        "daycost": "Est. $260-$500 · boats, loungers, food",
+        "facts": [
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 6"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Coves, caves, or Paradise Beach boat"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Corfu night 2 of 3"
+          }
+        ],
+        "note": "This is the reward day: use it for water, not errands. Book boat time only if the sea looks calm.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Paleokastritsa Beaches + Caves",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Paleokastritsa%20Beaches%20%2B%20Caves\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=paleokastritsa\" target=\"_blank\" rel=\"noreferrer\">IG · Paleokastritsa</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Paleokastritsa%20Beaches%20%2B%20Caves&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c14",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Corfu_Paleokastritsa_Beach_R01.jpg/1280px-Corfu_Paleokastritsa_Beach_R01.jpg",
+                "alt": "Paleokastritsa Beaches + Caves",
+                "captionTitle": "Paleokastritsa Beaches + Caves",
+                "credit": "Marc Ryckaert · CC BY 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Paleokastritsa,_Kloster_--_2018_--_1256.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1256.jpg/1280px-Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1256.jpg",
+                "alt": "Paleokastritsa Beaches + Caves",
+                "captionTitle": "Paleokastritsa Beaches + Caves",
+                "credit": "Dietmar Rabich · CC BY-SA 4.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Korfu_(GR),_Paleokastritsa,_Kloster_--_2018_--_1250.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1250.jpg/1280px-Korfu_%28GR%29%2C_Paleokastritsa%2C_Kloster_--_2018_--_1250.jpg",
+                "alt": "Paleokastritsa Beaches + Caves",
+                "captionTitle": "Paleokastritsa Beaches + Caves",
+                "credit": "Dietmar Rabich · CC BY-SA 4.0"
+              }
+            ],
+            "cost": "Boat pricing varies: general Paradise Beach boats often EUR15-EUR20 pp; operator listings showed tours from EUR55. Beach set pricing varies by cove.",
+            "climateLabel": "Weather",
+            "climate": "<b>Swim day</b>; coves are clear, and the water should be comfortably warm in July, with limited shade away from the beach umbrellas.",
+            "saveHtml": "<b>Save</b> Use public beaches and a short water taxi instead of a full private boat.",
+            "splurgeHtml": "<b>Splurge</b> Book a longer cave/Paradise Beach boat if the sea is calm; this is one of the trip's best splurge days.",
+            "restoHtml": "<li><a href=\"https://www.oldtimescorfu.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Old Times Corfu</b></a> — pizza, linguine carbonara/Bolognese, fries, chicken fillet, gyros</li><li><a href=\"https://vrachosp.gr/restaurant/\" target=\"_blank\" rel=\"noreferrer\"><b>Vrachos Paleokastritsa</b></a> — kids chicken nuggets, hamburger, tomato pasta, fries</li><li><a href=\"https://pazuzu.gr/\" target=\"_blank\" rel=\"noreferrer\"><b>Pazuzu Glyfada</b></a> — burger with fries, crispy chicken, spaghetti pomodoro, roasted chicken</li>",
+            "altboxHtml": "<p><a href=\"https://www.thethinkingtraveller.com/blog/paleokastritsa-beach-corfu\" target=\"_blank\" rel=\"noreferrer\"><b>Rovinia Beach</b> ↩</a> — nearby, beautiful, and often a better crowd tradeoff.</p>",
+            "bloglinksHtml": "<a href=\"https://www.discovergreece.com/experiences/boat-trip-paradise-beach-corfu\" target=\"_blank\" rel=\"noreferrer\">Paradise Beach boat trip ↗</a><a href=\"https://www.thethinkingtraveller.com/blog/paleokastritsa-beach-corfu\" target=\"_blank\" rel=\"noreferrer\">Paleokastritsa beach guide ↗</a>",
+            "lat": "39.6725",
+            "lng": "19.7057",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=39.6725,19.7057&z=14&output=embed\" title=\"Map of Paleokastritsa Beaches + Caves\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=39.6725,19.7057\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day12",
+        "colorClass": "c4",
+        "badge": "12",
+        "eyebrow": "Tue · Jul 13",
+        "heading": "Porto Timoni or Glyfada",
+        "feel": "West-coast beach day",
+        "daycost": "Est. $220-$430 · parking/boat/loungers",
+        "facts": [
+          {
+            "label": "Choice",
+            "valueHtml": "Hike/boat adventure or easy serviced beach"
+          },
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 7"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Corfu night 3 of 3"
+          }
+        ],
+        "note": "Porto Timoni is prettier and harder; Glyfada is easier and more serviced. Choose based on heat and kid patience, then keep the final dinner close to lodging for packing.",
+        "travelNote": null,
+        "spots": [
+          {
+            "name": "Porto Timoni or Glyfada Beach",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Porto%20Timoni%20or%20Glyfada%20Beach\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=portotimoni\" target=\"_blank\" rel=\"noreferrer\">IG · Porto Timoni</a><a class=\"xi\" href=\"https://www.instagram.com/explore/search/keyword/?q=glyfada\" target=\"_blank\" rel=\"noreferrer\">IG · Glyfada</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Porto%20Timoni%20or%20Glyfada%20Beach&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "c15",
+            "images": [
+              {
+                "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Porto_Timoni_beach_Corfu_%2847081300044%29.jpg",
+                "alt": "Porto Timoni or Glyfada Beach",
+                "captionTitle": "Porto Timoni or Glyfada Beach",
+                "credit": "dronepicr · CC BY 2.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Porto_Timoni_Beach.jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Porto_Timoni_Beach.jpg/1280px-Porto_Timoni_Beach.jpg",
+                "alt": "Porto Timoni or Glyfada Beach",
+                "captionTitle": "Porto Timoni or Glyfada Beach",
+                "credit": "Przemek Pietrak · CC BY-SA 3.0"
+              },
+              {
+                "href": "https://commons.wikimedia.org/wiki/File:Porto_Timoni_Beach_(3).jpg",
+                "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Porto_Timoni_Beach_%283%29.jpg/1280px-Porto_Timoni_Beach_%283%29.jpg",
+                "alt": "Porto Timoni or Glyfada Beach",
+                "captionTitle": "Porto Timoni or Glyfada Beach",
+                "credit": "Przemek Pietrak · CC BY-SA 3.0"
+              }
+            ],
+            "cost": "Porto Timoni has no facilities; Afionas parking is often EUR7-EUR15/day. Boat taxis can run EUR10-EUR20 pp. Glyfada sets often EUR20-EUR40/pair.",
+            "climateLabel": "Weather",
+            "climate": "<b>Hot beach day</b>; Porto Timoni hike is 30-40 minutes each way with little shade, so morning is better.",
+            "saveHtml": "<b>Save</b> Choose one beach and pack water/snacks; moving between west-coast beaches burns time and parking money.",
+            "splurgeHtml": "<b>Splurge</b> Take a boat taxi to avoid the hike if the heat or kid morale is not cooperating.",
+            "restoHtml": "<li><a href=\"https://www.oldtimescorfu.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Old Times Corfu</b></a> — pizza, linguine carbonara/Bolognese, fries, chicken fillet, gyros</li><li><a href=\"https://vrachosp.gr/restaurant/\" target=\"_blank\" rel=\"noreferrer\"><b>Vrachos Paleokastritsa</b></a> — kids chicken nuggets, hamburger, tomato pasta, fries</li><li><a href=\"https://pazuzu.gr/\" target=\"_blank\" rel=\"noreferrer\"><b>Pazuzu Glyfada</b></a> — burger with fries, crispy chicken, spaghetti pomodoro, roasted chicken</li>",
+            "altboxHtml": "<p><a href=\"https://www.tripadvisor.com/Attraction_Review-g2667806-d14929229-Reviews-Glyfada_Beach-Glyfada_Corfu_Ionian_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Glyfada only</b> ↩</a> — easier infrastructure, fewer hike logistics, still a classic Corfu beach day.</p>",
+            "bloglinksHtml": "<a href=\"https://roads-and-rivers.com/en/porto-timoni-beach-corfu/\" target=\"_blank\" rel=\"noreferrer\">Porto Timoni 2026 guide ↗</a><a href=\"https://www.calloftheworld.com/greece/porto-timoni-guide-how-to-find-corfus-famous-double-beach\" target=\"_blank\" rel=\"noreferrer\">Porto Timoni access notes ↗</a>",
+            "lat": "39.7226",
+            "lng": "19.6567",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=39.7226,19.6567&z=14&output=embed\" title=\"Map of Porto Timoni or Glyfada Beach\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=39.7226,19.6567\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ]
+      },
+      {
+        "id": "day13",
+        "colorClass": "c0",
+        "badge": "13",
+        "eyebrow": "Wed · Jul 14",
+        "heading": "Fly Corfu to Pittsburgh",
+        "feel": "Travel home",
+        "daycost": "Est. $120-$220 · airport food/taxis",
+        "facts": [
+          {
+            "label": "Route",
+            "valueHtml": "CFU -&gt; European hub -&gt; U.S. hub -&gt; PIT"
+          },
+          {
+            "label": "Reality",
+            "valueHtml": "No nonstop"
+          },
+          {
+            "label": "PTO",
+            "valueHtml": "PTO day 8"
+          }
+        ],
+        "note": "Book a sane connection. Corfu airport is small, but international connections can be fragile if the first leg is delayed.",
+        "travelNote": "✈︎ Travel day — no stops",
+        "spots": []
+      }
+    ]
+  },
+  "parts": [
+    {
+      "t": "raw",
+      "html": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Balkan Coast Road Trip - July 2027</title><style>/* required styles */\n\n.leaflet-pane,\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-tile-container,\n.leaflet-pane > svg,\n.leaflet-pane > canvas,\n.leaflet-zoom-box,\n.leaflet-image-layer,\n.leaflet-layer {\n\tposition: absolute;\n\tleft: 0;\n\ttop: 0;\n\t}\n.leaflet-container {\n\toverflow: hidden;\n\t}\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\t-webkit-user-select: none;\n\t   -moz-user-select: none;\n\t        user-select: none;\n\t  -webkit-user-drag: none;\n\t}\n/* Prevents IE11 from highlighting tiles in blue */\n.leaflet-tile::selection {\n\tbackground: transparent;\n}\n/* Safari renders non-retina tile on retina better with this, but Chrome is worse */\n.leaflet-safari .leaflet-tile {\n\timage-rendering: -webkit-optimize-contrast;\n\t}\n/* hack that prevents hw layers \"stretching\" when loading new tiles */\n.leaflet-safari .leaflet-tile-container {\n\twidth: 1600px;\n\theight: 1600px;\n\t-webkit-transform-origin: 0 0;\n\t}\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\tdisplay: block;\n\t}\n/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */\n/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */\n.leaflet-container .leaflet-overlay-pane svg {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\t}\n.leaflet-container .leaflet-marker-pane img,\n.leaflet-container .leaflet-shadow-pane img,\n.leaflet-container .leaflet-tile-pane img,\n.leaflet-container img.leaflet-image-layer,\n.leaflet-container .leaflet-tile {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\twidth: auto;\n\tpadding: 0;\n\t}\n\n.leaflet-container img.leaflet-tile {\n\t/* See: https://bugs.chromium.org/p/chromium/issues/detail?id=600120 */\n\tmix-blend-mode: plus-lighter;\n}\n\n.leaflet-container.leaflet-touch-zoom {\n\t-ms-touch-action: pan-x pan-y;\n\ttouch-action: pan-x pan-y;\n\t}\n.leaflet-container.leaflet-touch-drag {\n\t-ms-touch-action: pinch-zoom;\n\t/* Fallback for FF which doesn't support pinch-zoom */\n\ttouch-action: none;\n\ttouch-action: pinch-zoom;\n}\n.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {\n\t-ms-touch-action: none;\n\ttouch-action: none;\n}\n.leaflet-container {\n\t-webkit-tap-highlight-color: transparent;\n}\n.leaflet-container a {\n\t-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);\n}\n.leaflet-tile {\n\tfilter: inherit;\n\tvisibility: hidden;\n\t}\n.leaflet-tile-loaded {\n\tvisibility: inherit;\n\t}\n.leaflet-zoom-box {\n\twidth: 0;\n\theight: 0;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tz-index: 800;\n\t}\n/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */\n.leaflet-overlay-pane svg {\n\t-moz-user-select: none;\n\t}\n\n.leaflet-pane         { z-index: 400; }\n\n.leaflet-tile-pane    { z-index: 200; }\n.leaflet-overlay-pane { z-index: 400; }\n.leaflet-shadow-pane  { z-index: 500; }\n.leaflet-marker-pane  { z-index: 600; }\n.leaflet-tooltip-pane   { z-index: 650; }\n.leaflet-popup-pane   { z-index: 700; }\n\n.leaflet-map-pane canvas { z-index: 100; }\n.leaflet-map-pane svg    { z-index: 200; }\n\n.leaflet-vml-shape {\n\twidth: 1px;\n\theight: 1px;\n\t}\n.lvml {\n\tbehavior: url(#default#VML);\n\tdisplay: inline-block;\n\tposition: absolute;\n\t}\n\n\n/* control positioning */\n\n.leaflet-control {\n\tposition: relative;\n\tz-index: 800;\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n.leaflet-top,\n.leaflet-bottom {\n\tposition: absolute;\n\tz-index: 1000;\n\tpointer-events: none;\n\t}\n.leaflet-top {\n\ttop: 0;\n\t}\n.leaflet-right {\n\tright: 0;\n\t}\n.leaflet-bottom {\n\tbottom: 0;\n\t}\n.leaflet-left {\n\tleft: 0;\n\t}\n.leaflet-control {\n\tfloat: left;\n\tclear: both;\n\t}\n.leaflet-right .leaflet-control {\n\tfloat: right;\n\t}\n.leaflet-top .leaflet-control {\n\tmargin-top: 10px;\n\t}\n.leaflet-bottom .leaflet-control {\n\tmargin-bottom: 10px;\n\t}\n.leaflet-left .leaflet-control {\n\tmargin-left: 10px;\n\t}\n.leaflet-right .leaflet-control {\n\tmargin-right: 10px;\n\t}\n\n\n/* zoom and fade animations */\n\n.leaflet-fade-anim .leaflet-popup {\n\topacity: 0;\n\t-webkit-transition: opacity 0.2s linear;\n\t   -moz-transition: opacity 0.2s linear;\n\t        transition: opacity 0.2s linear;\n\t}\n.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {\n\topacity: 1;\n\t}\n.leaflet-zoom-animated {\n\t-webkit-transform-origin: 0 0;\n\t    -ms-transform-origin: 0 0;\n\t        transform-origin: 0 0;\n\t}\nsvg.leaflet-zoom-animated {\n\twill-change: transform;\n}\n\n.leaflet-zoom-anim .leaflet-zoom-animated {\n\t-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);\n\t}\n.leaflet-zoom-anim .leaflet-tile,\n.leaflet-pan-anim .leaflet-tile {\n\t-webkit-transition: none;\n\t   -moz-transition: none;\n\t        transition: none;\n\t}\n\n.leaflet-zoom-anim .leaflet-zoom-hide {\n\tvisibility: hidden;\n\t}\n\n\n/* cursors */\n\n.leaflet-interactive {\n\tcursor: pointer;\n\t}\n.leaflet-grab {\n\tcursor: -webkit-grab;\n\tcursor:    -moz-grab;\n\tcursor:         grab;\n\t}\n.leaflet-crosshair,\n.leaflet-crosshair .leaflet-interactive {\n\tcursor: crosshair;\n\t}\n.leaflet-popup-pane,\n.leaflet-control {\n\tcursor: auto;\n\t}\n.leaflet-dragging .leaflet-grab,\n.leaflet-dragging .leaflet-grab .leaflet-interactive,\n.leaflet-dragging .leaflet-marker-draggable {\n\tcursor: move;\n\tcursor: -webkit-grabbing;\n\tcursor:    -moz-grabbing;\n\tcursor:         grabbing;\n\t}\n\n/* marker & overlays interactivity */\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-image-layer,\n.leaflet-pane > svg path,\n.leaflet-tile-container {\n\tpointer-events: none;\n\t}\n\n.leaflet-marker-icon.leaflet-interactive,\n.leaflet-image-layer.leaflet-interactive,\n.leaflet-pane > svg path.leaflet-interactive,\nsvg.leaflet-image-layer.leaflet-interactive path {\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n\n/* visual tweaks */\n\n.leaflet-container {\n\tbackground: #ddd;\n\toutline-offset: 1px;\n\t}\n.leaflet-container a {\n\tcolor: #0078A8;\n\t}\n.leaflet-zoom-box {\n\tborder: 2px dotted #38f;\n\tbackground: rgba(255,255,255,0.5);\n\t}\n\n\n/* general typography */\n.leaflet-container {\n\tfont-family: \"Helvetica Neue\", Arial, Helvetica, sans-serif;\n\tfont-size: 12px;\n\tfont-size: 0.75rem;\n\tline-height: 1.5;\n\t}\n\n\n/* general toolbar styles */\n\n.leaflet-bar {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.65);\n\tborder-radius: 4px;\n\t}\n.leaflet-bar a {\n\tbackground-color: #fff;\n\tborder-bottom: 1px solid #ccc;\n\twidth: 26px;\n\theight: 26px;\n\tline-height: 26px;\n\tdisplay: block;\n\ttext-align: center;\n\ttext-decoration: none;\n\tcolor: black;\n\t}\n.leaflet-bar a,\n.leaflet-control-layers-toggle {\n\tbackground-position: 50% 50%;\n\tbackground-repeat: no-repeat;\n\tdisplay: block;\n\t}\n.leaflet-bar a:hover,\n.leaflet-bar a:focus {\n\tbackground-color: #f4f4f4;\n\t}\n.leaflet-bar a:first-child {\n\tborder-top-left-radius: 4px;\n\tborder-top-right-radius: 4px;\n\t}\n.leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 4px;\n\tborder-bottom-right-radius: 4px;\n\tborder-bottom: none;\n\t}\n.leaflet-bar a.leaflet-disabled {\n\tcursor: default;\n\tbackground-color: #f4f4f4;\n\tcolor: #bbb;\n\t}\n\n.leaflet-touch .leaflet-bar a {\n\twidth: 30px;\n\theight: 30px;\n\tline-height: 30px;\n\t}\n.leaflet-touch .leaflet-bar a:first-child {\n\tborder-top-left-radius: 2px;\n\tborder-top-right-radius: 2px;\n\t}\n.leaflet-touch .leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 2px;\n\tborder-bottom-right-radius: 2px;\n\t}\n\n/* zoom control */\n\n.leaflet-control-zoom-in,\n.leaflet-control-zoom-out {\n\tfont: bold 18px 'Lucida Console', Monaco, monospace;\n\ttext-indent: 1px;\n\t}\n\n.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {\n\tfont-size: 22px;\n\t}\n\n\n/* layers control */\n\n.leaflet-control-layers {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.4);\n\tbackground: #fff;\n\tborder-radius: 5px;\n\t}\n.leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers.png);\n\twidth: 36px;\n\theight: 36px;\n\t}\n.leaflet-retina .leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers-2x.png);\n\tbackground-size: 26px 26px;\n\t}\n.leaflet-touch .leaflet-control-layers-toggle {\n\twidth: 44px;\n\theight: 44px;\n\t}\n.leaflet-control-layers .leaflet-control-layers-list,\n.leaflet-control-layers-expanded .leaflet-control-layers-toggle {\n\tdisplay: none;\n\t}\n.leaflet-control-layers-expanded .leaflet-control-layers-list {\n\tdisplay: block;\n\tposition: relative;\n\t}\n.leaflet-control-layers-expanded {\n\tpadding: 6px 10px 6px 6px;\n\tcolor: #333;\n\tbackground: #fff;\n\t}\n.leaflet-control-layers-scrollbar {\n\toverflow-y: scroll;\n\toverflow-x: hidden;\n\tpadding-right: 5px;\n\t}\n.leaflet-control-layers-selector {\n\tmargin-top: 2px;\n\tposition: relative;\n\ttop: 1px;\n\t}\n.leaflet-control-layers label {\n\tdisplay: block;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\t}\n.leaflet-control-layers-separator {\n\theight: 0;\n\tborder-top: 1px solid #ddd;\n\tmargin: 5px -10px 5px -6px;\n\t}\n\n/* Default icon URLs */\n.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */\n\tbackground-image: url(images/marker-icon.png);\n\t}\n\n\n/* attribution and scale controls */\n\n.leaflet-container .leaflet-control-attribution {\n\tbackground: #fff;\n\tbackground: rgba(255, 255, 255, 0.8);\n\tmargin: 0;\n\t}\n.leaflet-control-attribution,\n.leaflet-control-scale-line {\n\tpadding: 0 5px;\n\tcolor: #333;\n\tline-height: 1.4;\n\t}\n.leaflet-control-attribution a {\n\ttext-decoration: none;\n\t}\n.leaflet-control-attribution a:hover,\n.leaflet-control-attribution a:focus {\n\ttext-decoration: underline;\n\t}\n.leaflet-attribution-flag {\n\tdisplay: inline !important;\n\tvertical-align: baseline !important;\n\twidth: 1em;\n\theight: 0.6669em;\n\t}\n.leaflet-left .leaflet-control-scale {\n\tmargin-left: 5px;\n\t}\n.leaflet-bottom .leaflet-control-scale {\n\tmargin-bottom: 5px;\n\t}\n.leaflet-control-scale-line {\n\tborder: 2px solid #777;\n\tborder-top: none;\n\tline-height: 1.1;\n\tpadding: 2px 5px 1px;\n\twhite-space: nowrap;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tbackground: rgba(255, 255, 255, 0.8);\n\ttext-shadow: 1px 1px #fff;\n\t}\n.leaflet-control-scale-line:not(:first-child) {\n\tborder-top: 2px solid #777;\n\tborder-bottom: none;\n\tmargin-top: -2px;\n\t}\n.leaflet-control-scale-line:not(:first-child):not(:last-child) {\n\tborder-bottom: 2px solid #777;\n\t}\n\n.leaflet-touch .leaflet-control-attribution,\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tbox-shadow: none;\n\t}\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tborder: 2px solid rgba(0,0,0,0.2);\n\tbackground-clip: padding-box;\n\t}\n\n\n/* popup */\n\n.leaflet-popup {\n\tposition: absolute;\n\ttext-align: center;\n\tmargin-bottom: 20px;\n\t}\n.leaflet-popup-content-wrapper {\n\tpadding: 1px;\n\ttext-align: left;\n\tborder-radius: 12px;\n\t}\n.leaflet-popup-content {\n\tmargin: 13px 24px 13px 20px;\n\tline-height: 1.3;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\tmin-height: 1px;\n\t}\n.leaflet-popup-content p {\n\tmargin: 17px 0;\n\tmargin: 1.3em 0;\n\t}\n.leaflet-popup-tip-container {\n\twidth: 40px;\n\theight: 20px;\n\tposition: absolute;\n\tleft: 50%;\n\tmargin-top: -1px;\n\tmargin-left: -20px;\n\toverflow: hidden;\n\tpointer-events: none;\n\t}\n.leaflet-popup-tip {\n\twidth: 17px;\n\theight: 17px;\n\tpadding: 1px;\n\n\tmargin: -10px auto 0;\n\tpointer-events: auto;\n\n\t-webkit-transform: rotate(45deg);\n\t   -moz-transform: rotate(45deg);\n\t    -ms-transform: rotate(45deg);\n\t        transform: rotate(45deg);\n\t}\n.leaflet-popup-content-wrapper,\n.leaflet-popup-tip {\n\tbackground: white;\n\tcolor: #333;\n\tbox-shadow: 0 3px 14px rgba(0,0,0,0.4);\n\t}\n.leaflet-container a.leaflet-popup-close-button {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tborder: none;\n\ttext-align: center;\n\twidth: 24px;\n\theight: 24px;\n\tfont: 16px/24px Tahoma, Verdana, sans-serif;\n\tcolor: #757575;\n\ttext-decoration: none;\n\tbackground: transparent;\n\t}\n.leaflet-container a.leaflet-popup-close-button:hover,\n.leaflet-container a.leaflet-popup-close-button:focus {\n\tcolor: #585858;\n\t}\n.leaflet-popup-scrolled {\n\toverflow: auto;\n\t}\n\n.leaflet-oldie .leaflet-popup-content-wrapper {\n\t-ms-zoom: 1;\n\t}\n.leaflet-oldie .leaflet-popup-tip {\n\twidth: 24px;\n\tmargin: 0 auto;\n\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)\";\n\tfilter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);\n\t}\n\n.leaflet-oldie .leaflet-control-zoom,\n.leaflet-oldie .leaflet-control-layers,\n.leaflet-oldie .leaflet-popup-content-wrapper,\n.leaflet-oldie .leaflet-popup-tip {\n\tborder: 1px solid #999;\n\t}\n\n\n/* div icon */\n\n.leaflet-div-icon {\n\tbackground: #fff;\n\tborder: 1px solid #666;\n\t}\n\n\n/* Tooltip */\n/* Base styles for the element that has a tooltip */\n.leaflet-tooltip {\n\tposition: absolute;\n\tpadding: 6px;\n\tbackground-color: #fff;\n\tborder: 1px solid #fff;\n\tborder-radius: 3px;\n\tcolor: #222;\n\twhite-space: nowrap;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n\tpointer-events: none;\n\tbox-shadow: 0 1px 3px rgba(0,0,0,0.4);\n\t}\n.leaflet-tooltip.leaflet-interactive {\n\tcursor: pointer;\n\tpointer-events: auto;\n\t}\n.leaflet-tooltip-top:before,\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\tposition: absolute;\n\tpointer-events: none;\n\tborder: 6px solid transparent;\n\tbackground: transparent;\n\tcontent: \"\";\n\t}\n\n/* Directions */\n\n.leaflet-tooltip-bottom {\n\tmargin-top: 6px;\n}\n.leaflet-tooltip-top {\n\tmargin-top: -6px;\n}\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-top:before {\n\tleft: 50%;\n\tmargin-left: -6px;\n\t}\n.leaflet-tooltip-top:before {\n\tbottom: 0;\n\tmargin-bottom: -12px;\n\tborder-top-color: #fff;\n\t}\n.leaflet-tooltip-bottom:before {\n\ttop: 0;\n\tmargin-top: -12px;\n\tmargin-left: -6px;\n\tborder-bottom-color: #fff;\n\t}\n.leaflet-tooltip-left {\n\tmargin-left: -6px;\n}\n.leaflet-tooltip-right {\n\tmargin-left: 6px;\n}\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\ttop: 50%;\n\tmargin-top: -6px;\n\t}\n.leaflet-tooltip-left:before {\n\tright: 0;\n\tmargin-right: -12px;\n\tborder-left-color: #fff;\n\t}\n.leaflet-tooltip-right:before {\n\tleft: 0;\n\tmargin-left: -12px;\n\tborder-right-color: #fff;\n\t}\n\n/* Printing */\n\n@media print {\n\t/* Prevent printers from removing background-images of controls. */\n\t.leaflet-control {\n\t\t-webkit-print-color-adjust: exact;\n\t\tprint-color-adjust: exact;\n\t\t}\n\t}\n\n:root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;\n --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;\n --save:#3f7d4e;--splurge:#a9862b;--shadow:0 18px 46px rgba(30,32,28,.14)}\n*{box-sizing:border-box}\nhtml{scroll-behavior:smooth}\nbody{margin:0;background:var(--paper);color:var(--ink);\n font:16px/1.55 \"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;-webkit-font-smoothing:antialiased}\nh1,h2,h3,h4{font-family:\"Fraunces\",\"Georgia\",serif;letter-spacing:-.01em}\na{color:var(--c1)}\n.eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}\n/* HERO */\nheader{position:relative;min-height:90vh;display:grid;align-items:end;padding:40px clamp(20px,5vw,80px) 54px;color:#fff;overflow:hidden}\nheader::before{content:\"\";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,24,.12),rgba(10,18,22,.34) 45%,rgba(8,14,18,.88)),url(\"https://images.unsplash.com/photo-1614122027743-50a9e6e8002f?w=1920&q=80&auto=format&fit=crop\") center 40% / cover;transform:scale(1.03);z-index:-1}\n.hero-inner{max-width:1100px}\nheader .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}\nh1{margin:0 0 18px;font-size:clamp(2.9rem,9vw,7rem);line-height:.9;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}\nheader .lead{max-width:640px;margin:0 0 26px;font-size:clamp(1.05rem,2.1vw,1.3rem);color:rgba(255,255,255,.94);line-height:1.5}\n.hero-meta{display:flex;flex-wrap:wrap;gap:26px}\n.hero-meta div{display:flex;flex-direction:column}\n.hero-meta b{font-family:\"Fraunces\",serif;font-size:1.5rem;line-height:1}\n.hero-meta span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}\n/* NAV */\nnav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;padding:11px clamp(16px,5vw,80px);background:rgba(246,241,231,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);scrollbar-width:none}\nnav::-webkit-scrollbar{display:none}\nnav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}\nnav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}\nnav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}\nmain{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}\n.section-label{text-align:center;margin:0 auto 40px;max-width:760px}\n.section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}\n.section-label p{margin:0;color:var(--muted)}\n.divider{margin:78px 0 40px}\n/* OVERVIEW */\n.overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}\n.ocard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.ocard .eyebrow{color:var(--c1)}\n.ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}\n.ocard p{margin:0;color:var(--muted);font-size:.92rem}\n/* TRIP MAP */\n.hc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}\n.hc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}\n.hc.actnow{border-top-color:#c0392b}\n.hc.watch{border-top-color:var(--gold)}\n.hc.good{border-top-color:var(--c3)}\n.hc-tag{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:10px;color:#fff}\n.hc.actnow .hc-tag{background:#c0392b}\n.hc.watch .hc-tag{background:var(--gold)}\n.hc.good .hc-tag{background:var(--c3)}\n.hc h4{margin:0 0 8px;font-size:1.15rem;font-weight:600;line-height:1.15}\n.hc p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}\n.hc p b{color:var(--ink)}\n\n/* TRAVEL TIPS */\n.tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}\n.tips-order p.mini-h{margin:0 0 12px}\n.tips-order ol{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;counter-reset:step}\n.tips-order li{counter-increment:step;position:relative;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 30px;font-size:.82rem;font-weight:600}\n.tips-order li::before{content:counter(step);position:absolute;left:6px;top:50%;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:var(--c1);color:#fff;font-size:.68rem;font-weight:800;display:grid;place-items:center}\n.tips-order li span{color:var(--muted);font-weight:600}\n.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}\n.tipcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--c1)}\n.tipcard.t2{border-top-color:var(--c2)}.tipcard.t3{border-top-color:var(--gold)}.tipcard.t4{border-top-color:var(--c3)}\n.tipcard h4{margin:0 0 4px;font-size:1.2rem;font-weight:600}\n.tipcard .sub{margin:0 0 12px;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.tipcard ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}\n.tipcard li{font-size:.88rem;color:var(--muted);line-height:1.5;padding-left:16px;position:relative}\n.tipcard li::before{content:\"\";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.tipcard li b{color:var(--ink)}\n.tipcard li.flag::before{background:#c0392b;width:8px;height:8px;top:7px}\n.tipcard li.flag b{color:#b5361f}\n\n.daycost{display:inline-block;margin:8px 0 0;font-size:.76rem;font-weight:700;color:var(--c2);background:rgba(194,90,58,.1);border:1px solid rgba(194,90,58,.28);border-radius:999px;padding:3px 11px}\n.budget-tbl.grand tr.total td{background:var(--ink);color:#fff;font-size:1.05rem;font-weight:800}\n.rate-note{margin:12px 2px 0;font-size:.78rem;color:var(--muted);line-height:1.5}\n\n.kv.climate{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}\n.kv.climate span{color:var(--c1)}\n\n/* TIMING COMPARE */\n.timing-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:22px}\n.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}\n.tcard.now{border-top-color:var(--c1)}\n.tcard.later{border-top-color:var(--c2)}\n.tcard.best{border-top-color:var(--c3)}\n.tcard.best .tlabel{background:var(--c3)}\n.tcard .tlabel{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px;color:#fff}\n.tcard.now .tlabel{background:var(--c1)}\n.tcard.later .tlabel{background:var(--c2)}\n.tcard h4{margin:0 0 12px;font-size:1.25rem;font-weight:600}\n.tcard .trow{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.88rem}\n.tcard .trow:last-child{border-bottom:0}\n.tcard .trow span{color:var(--muted)}\n.tcard .trow strong{text-align:right}\n.tcard .trow strong.bad{color:#b5361f}\n.listcard.pro-list{border-top:4px solid var(--c3)}\n.listcard.con-list{border-top:4px solid #c0392b}\n.listcard.pro-list li::before{content:\"✓\";position:static;width:auto;height:auto;border-radius:0;background:none;color:var(--c3);font-weight:800;margin-right:6px}\n.listcard.con-list li::before{content:\"✗\";position:static;width:auto;height:auto;border-radius:0;background:none;color:#c0392b;font-weight:800;margin-right:6px}\n.listcard.pro-list li,.listcard.con-list li{padding-left:0;display:flex;gap:2px}\n.listcard.pro-list li>span,.listcard.con-list li>span{flex:1}\n.verdict-box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ink);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin-top:20px}\n.verdict-box h4{margin:0 0 8px;font-size:1.1rem;font-weight:800}\n.verdict-box p{margin:0 0 10px;font-size:.92rem;color:var(--muted);line-height:1.55}\n.verdict-box p:last-child{margin-bottom:0}\n.verdict-box .aside{font-size:.82rem;font-style:italic;border-top:1px dashed var(--line);padding-top:10px;margin-top:12px}\n\n.tripmap-wrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow)}\n.mapbtns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}\n.mapbtns button{border:1px solid var(--line);background:var(--paper);color:var(--ink);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;cursor:pointer;transition:.15s}\n.mapbtns button:hover{background:var(--ink);color:#fff}\n.mapbtns button .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}\n#tripmap{height:460px;border-radius:14px;z-index:1}\n.leaflet-popup-content{font:14px/1.4 \"Inter\",sans-serif}\n.leaflet-popup-content b{font-family:\"Fraunces\",serif}\n.pin{width:16px;height:16px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.5)}\n/* BASES */\n.bases{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}\n.base{position:relative;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}\n.base .band{height:6px}\n.base.b1 .band{background:var(--c1)}.base.b2 .band{background:var(--c2)}.base.b3 .band{background:var(--c3)}\n.base .bimg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}\n.base .bbody{padding:18px 20px 22px}\n.base .nights{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.06em;color:#fff;margin-bottom:10px}\n.base.b1 .nights{background:var(--c1)}.base.b2 .nights{background:var(--c2)}.base.b3 .nights{background:var(--c3)}\n.base h4{margin:0 0 4px;font-size:1.55rem;font-weight:600}\n.base .dates{margin:0 0 10px;color:var(--muted);font-size:.85rem;font-weight:600}\n.base p{margin:0;color:var(--muted);font-size:.9rem}\n.base .book{margin:12px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink)}\n.base .book b{color:var(--c2)}\n/* PLAN GRID */\n.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.pcard h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:10px}\n.pcard h4 .dot{width:10px;height:10px;border-radius:50%;background:var(--gold)}\n.prow{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.prow:last-of-type{border-bottom:0}\n.prow span{color:var(--muted)}.prow strong{text-align:right}\n.pcard .tip{margin:12px 0 0;padding:10px 12px;background:rgba(217,164,65,.12);border-radius:10px;font-size:.82rem;color:#8a6a1e}\n/* DAYS */\n.days{display:grid;gap:26px}\n.day{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border-left:6px solid var(--c1)}\n.day.c1{border-left-color:var(--c1)}.day.c2{border-left-color:var(--c2)}.day.c3{border-left-color:var(--c3)}.day.c0{border-left-color:var(--muted)}\n.day-head{display:flex;gap:18px;align-items:center;padding:20px 24px 6px}\n.day-badge{flex:0 0 auto;width:58px;height:58px;border-radius:14px;display:grid;place-items:center;font-family:\"Fraunces\",serif;font-weight:600;font-size:1.15rem;color:#fff;line-height:1;text-align:center}\n.day.c1 .day-badge{background:var(--c1)}.day.c2 .day-badge{background:var(--c2)}.day.c3 .day-badge{background:var(--c3)}.day.c0 .day-badge{background:var(--muted)}\n.day-title h3{margin:2px 0 4px;font-size:1.4rem;font-weight:600;line-height:1.05}\n.day-title .feel{margin:0;color:var(--c2);font-size:.82rem;font-weight:700}\n.logistics{padding:4px 24px 12px}\n.facts{display:grid;margin:6px 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden}\n.facts div{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:9px 13px;border-bottom:1px solid var(--line);font-size:.86rem}\n.facts div:last-child{border-bottom:0}\n.facts span{color:var(--muted);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}\n.facts strong{font-weight:600}\n.note{margin:0;color:var(--ink);font-size:.94rem;line-height:1.55}\n/* SPOTS */\n.spots-wrap{display:grid;gap:20px;padding:6px 24px 24px}\n.travel-note{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px;font-weight:600}\n.spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}\n.spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}\n.spot-name{margin:0;font-size:1.22rem;font-weight:600}\n.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}\n.explore::-webkit-scrollbar{display:none}\n.explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}\n.explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}\n.explore .xg{background:#4285F4}\n.explore .xi{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}\n.explore .xf{background:#0063dc}\n/* CAROUSEL */\n.carousel{position:relative;overflow:hidden;background:#e7e1d4}\n.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}\n.track::-webkit-scrollbar{display:none}\n.track figure{margin:0;flex:0 0 100%;scroll-snap-align:center;position:relative}\n.track img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#e7e1d4}\n.track figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:.74rem;line-height:1.3;background:linear-gradient(180deg,transparent,rgba(0,0,0,.68))}\n.track figcaption strong{display:block;font-weight:700}\n.track figcaption span{color:rgba(255,255,255,.82);font-size:.66rem}\n.nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.86);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:.15s;z-index:2}\n.nav:hover{background:#fff;transform:translateY(-50%) scale(1.08)}\n.nav.prev{left:12px}.nav.next{right:12px}\n.counter{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;z-index:2}\n.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;flex-wrap:wrap;padding:0 40px}\n.dots .dot{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer;padding:0;transition:.15s}\n.dots .dot.on{background:#fff;width:20px;border-radius:999px}\n/* SPOT GRID */\n.spot-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px;padding:16px}\n.mini-h{margin:0 0 6px;font-weight:800;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.kv{margin-bottom:12px}\n.kv span{font-weight:800;font-size:.78rem;color:var(--ink)}\n.kv p{margin:4px 0 0;font-size:.9rem;color:var(--muted)}\n.callout{border-radius:10px;padding:10px 12px;font-size:.86rem;margin-bottom:10px;line-height:1.45}\n.callout b{font-weight:800}\n.callout.save{background:rgba(63,125,78,.1);border-left:3px solid var(--save)}\n.callout.save b{color:var(--save)}\n.callout.splurge{background:rgba(217,164,65,.14);border-left:3px solid var(--splurge)}\n.callout.splurge b{color:var(--splurge)}\n.resto{margin:14px 0 4px}\n.resto ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.resto li{font-size:.85rem;color:var(--muted);line-height:1.4;padding-left:14px;position:relative}\n.resto li::before{content:\"\";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.resto li a{text-decoration:none}.resto li b{color:var(--ink)}\n.altbox{margin:14px 0 4px;padding:12px;background:rgba(31,111,120,.07);border-radius:10px}\n.altbox p:last-child{margin:0;font-size:.86rem;color:var(--muted);line-height:1.45}\n.altbox a{text-decoration:none}\n.bloglinks{margin-top:14px;display:flex;flex-direction:column;gap:6px}\n.bloglinks a{font-size:.83rem;text-decoration:none;color:var(--c1);font-weight:600}\n.bloglinks a:hover{text-decoration:underline}\n.spot-map{display:flex;flex-direction:column}\n.mapwrap{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);flex:1;min-height:240px}\n.gmap{width:100%;height:100%;min-height:240px;border:0;display:block}\n.gmap-btn{margin-top:10px;text-align:center;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:10px;border-radius:10px;transition:.15s}\n.gmap-btn:hover{background:var(--c1)}\n/* BUDGET */\n.budget-tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}\n.budget-tbl th{background:rgba(31,111,120,.08);font-family:\"Fraunces\",serif;font-weight:600}\n.budget-tbl td:last-child,.budget-tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}\n.budget-tbl tr:last-child td{border-bottom:0;font-weight:700}\n.budget-scroll{overflow-x:auto}\n.twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}\n.listcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}\n.listcard h4{margin:0 0 12px;font-size:1.2rem;font-weight:600}\n.listcard.save-list{border-top:4px solid var(--save)}\n.listcard.splurge-list{border-top:4px solid var(--splurge)}\n.listcard ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}\n.listcard li{font-size:.88rem;color:var(--muted);line-height:1.45;padding-left:22px;position:relative}\n.save-list li::before{content:\"💰\";position:absolute;left:0;top:0}\n.splurge-list li::before{content:\"✨\";position:absolute;left:0;top:0}\n.listcard li b{color:var(--ink)}\n/* BALANCE */\n.bar{height:10px;border-radius:999px;background:rgba(26,23,18,.08);overflow:hidden;margin:14px 0 24px;display:flex}\n.bar i{height:100%;display:block}\n.balance{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}\n.bcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.bcard .pct{font-family:\"Fraunces\",serif;font-size:2.4rem;font-weight:600;line-height:1}\n.bcard.k1 .pct{color:var(--c1)}.bcard.k2 .pct{color:var(--c2)}.bcard.k3 .pct{color:var(--c3)}.bcard.k4 .pct{color:var(--muted)}\n.bcard h4{margin:6px 0;font-family:\"Inter\",sans-serif;font-size:.95rem;font-weight:800}\n.bcard p{margin:0;color:var(--muted);font-size:.84rem}\n/* STATUS */\n.status{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.scol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.scol h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:8px}\n.scol.settled h4::before{content:\"✓\";color:var(--c3);font-weight:800}\n.scol.open h4::before{content:\"○\";color:var(--c2);font-weight:800}\n.scol .row{padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.scol .row:last-child{border-bottom:0}\n.scol .row b{display:block;margin-bottom:2px}\n.scol .row span{color:var(--muted)}\nfooter{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}\nfooter a{color:var(--muted)}\n@media(max-width:860px){\n header{min-height:80vh}\n .plan-grid,.status,.twocol{grid-template-columns:1fr}\n .spot-grid{grid-template-columns:1fr}\n .day-head{gap:14px;padding:18px 16px 4px}\n .logistics{padding:4px 16px 10px}\n .spots-wrap{padding:6px 12px 18px}\n #tripmap{height:380px}\n}\n\n:root{\n--c4:#3a6ea5;\n}\n.day.c4{border-left-color:var(--c4)}\n.day.c4 .day-badge{background:var(--c4)}\n.base.b4 .band{background:var(--c4)}\n.base.b4 .nights{background:var(--c4)}\n</style></head><body><header>\n  <div class=\"hero-inner\">\n    <span class=\"kicker\">Family Trip · Jul 1-14, 2027</span>\n    <h1>Balkan Coast<br>Road Trip</h1>\n    <p class=\"lead\">A corrected 12-hotel-night, four-base version of the big Balkan loop inside the required 2027 window: depart after work Thu Jul 1, use the observed July 5 holiday, avoid the Jun 23-26 Pittsburgh blackout entirely, and fly home Wed Jul 14. The route stays mostly linear from Dubrovnik/Mostar down to Corfu, but July peak pricing means this is now quote-gated against the $15k hard cap.</p>\n    <div class=\"hero-meta\">\n      <div><b>12</b><span>Hotel nights</span></div><div><b>4</b><span>Home bases</span></div><div><b>10</b><span>Stops mapped</span></div><div><b>Jul 1-14</b><span>2027</span></div>\n    </div>\n  </div>\n</header>\n<nav>\n  <a href=\"../index.html\" class=\"nav-home\" style=\"background:var(--ink);color:#fff;border-color:var(--ink);font-weight:800\">← All Trips</a>\n  <a href=\"#overview\">Overview</a><a href=\"#health-check\">Health-Check</a><a href=\"#timing\">Best Time</a><a href=\"#map\">Trip Map</a><a href=\"#stays\">Where We Stay</a><a href=\"#getting-around\">Getting Around</a><a href=\"#itinerary\">Day by Day</a><a href=\"#budget\">Budget</a><a href=\"#tips\">Travel Tips</a><a href=\"#status\">Settled & Open</a>\n</nav>\n<main>\n  <section id=\"overview\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">The Plan at a Glance</p>\n      <h2>A tight west-to-south arc: Mostar, Kotor, Ksamil, Corfu</h2>\n      <p>I kept the recommended four-base spine because it is the cleanest family version: water-heavy, low backtracking, and easy to end at Corfu airport. The original month route would be excellent with more time, but too many bases for this trip.</p>\n    </div>\n    <div class=\"overview\">\n      <div class=\"ocard\"><p class=\"eyebrow\">Route</p><h4>PIT -> Dubrovnik -> Mostar -> Kotor -> Ksamil -> Corfu -> PIT</h4><p>Dubrovnik is the preferred arrival gateway because Tirana makes the first day a 6.5-7 hour northbound drive before the route turns south again.</p></div><div class=\"ocard\"><p class=\"eyebrow\">What got cut</p><h4>Sarajevo, Durmitor, Tirana, Skopje, Matka, Ohrid</h4><p>Those are the month-long extensions: Sarajevo adds a northern start, Durmitor is an inland detour, and the eastern loop swings far inland before doubling back toward Corfu.</p></div><div class=\"ocard\"><p class=\"eyebrow\">Lodging split</p><h4>3 + 3 + 3 + 3 nights</h4><p>Three nights each in Mostar, Kotor, Ksamil, and Corfu keeps transfers tolerable while trimming the expensive extra island night.</p></div><div class=\"ocard\"><p class=\"eyebrow\">Trip feel</p><h4>~45% water · 30% towns · 25% nature</h4><p>The daily plan intentionally stacks waterfalls, bay swims, beaches, boat time, and the Blue Eye around compact old-town exploring.</p></div>\n    </div>\n  </section>\n\n  <section id=\"health-check\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">Plan Health-Check</p>\n      <h2>What to lock, watch, and expect</h2>\n      <p>Research updated July 2026 for a family of 4, with kids treated as roughly 14 and 9 in trip year 2027. The dates now stay inside Jun 6-Aug 15, 2027 and keep the family in Pittsburgh for the full Jun 23-26 blackout.</p>\n    </div>\n    <div class=\"hc-grid\">\n      <div class=\"hc actnow\"><span class=\"hc-tag\">Book first</span><h4>Flights and car need quote-level confirmation</h4><p>July 2027 air calendars are not fully live yet, so current summer fare signals put the open-jaw pattern at roughly <b>$950-$1,350 per person</b>. Treat the cap-fit version as valid only if flights stay at or below about <b>$4.8k family</b>, the Balkan rental car stays at or below about <b>$2.4k all-in</b>, and lodging lands near the middle of the ranges below.</p></div><div class=\"hc actnow\"><span class=\"hc-tag\">Critical</span><h4>The Balkan rental car probably stops in Albania</h4><p>Do <b>not</b> assume a Croatia rental can enter Bosnia, Montenegro, Albania, and then go to Corfu. Get written cross-border approval and plan to return the car before the Saranda-Corfu ferry.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Long day</span><h4>Kotor to Ksamil is the hard transfer</h4><p>Expect <b>7.5-8 hours</b> before stops and borders. The plan keeps it as one long day to preserve four bases, but Gjirokaster or Shkoder is the pressure-release valve if needed.</p></div><div class=\"hc good\"><span class=\"hc-tag\">PTO win</span><h4>July 5 observed holiday makes the window work</h4><p>Depart after work Thu Jul 1, land Fri Jul 2, use <b>Mon Jul 5</b> as the observed Independence Day holiday, and return Wed Jul 14. That keeps the trip to about <b>8 PTO days</b> without touching the Jun 23-26 blackout.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Now fixed</span><h4>Length verdict: 12 hotel nights stays right</h4><p>The route breathes better at 13 hotel nights, but 12 is the defensible budget version. July peak demand raises the high-end estimate, so the trip now fits the cap only with disciplined flight, car, and lodging quotes.</p></div><div class=\"hc good\"><span class=\"hc-tag\">Water fit</span><h4>July gives better swimming than June</h4><p>July averages are swim-friendly: Bay of Kotor is usually around <b>77-79 F</b>, Ksamil around <b>76-78 F</b>, and Corfu/Ionian water typically upper 70s.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Cash + docs</span><h4>Borders, parking, and small tickets are not fully card-first</h4><p>Carry passports, IDP, rental paperwork, green-card/insurance proof, and enough EUR/KM/ALL cash for small tickets, parking, beach sets, and ferry-port friction.</p></div>\n    </div>\n  </section>\n\n  \n<section id=\"timing\" class=\"divider\">\n  <div class=\"section-label\">\n    <p class=\"eyebrow\">Best Time to Go</p>\n    <h2>Why Jul 1-14 is the clean 2027 fit</h2>\n    <p>The required window is Jun 6-Aug 15, 2027, with a hard blackout in Pittsburgh from Jun 23-26. July 1-14 avoids the blackout by a full week, uses the observed Independence Day holiday, and keeps the route at 12 hotel nights.</p>\n  </div>\n  <div class=\"timing-compare\">\n    <div class=\"tcard\"><span>Possible but tight</span><h4>Jun 9-22</h4><p>Lower heat and likely lower lodging pressure, but a return delay could spill directly into the Jun 23 Pittsburgh blackout. That is too thin for an international multi-leg trip.</p></div>\n    <div class=\"tcard best\"><span>Recommended</span><h4>Jul 1-14</h4><p>Clean blackout separation, one observed federal holiday, warm water, and the same linear route. The tradeoff is hotter days and peak-season price pressure.</p></div>\n    <div class=\"tcard\"><span>Later option</span><h4>Jul 30-Aug 12</h4><p>Still inside the allowed window and warmest water, but no holiday help, hotter conditions, and stronger August crowd pressure in Ksamil and Corfu.</p></div>\n  </div>\n  <div class=\"verdict-box\"><b>PTO check:</b> Depart after work Thu Jul 1, land Fri Jul 2, return Wed Jul 14. Count PTO for Jul 2, Jul 6-9, and Jul 12-14: about 8 PTO days if Mon Jul 5 is observed for Independence Day.</div>\n</section>\n\n\n  <section id=\"map\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">The Whole Trip, Mapped</p>\n      <h2>Every stop on one map</h2>\n      <p>Tap a region to fly there; click any pin for its name and a one-tap link into Google Maps. Colors match the day cards below.</p>\n    </div>\n    <div class=\"tripmap-wrap\">\n      <div class=\"mapbtns\">\n        <button data-region=\"mostar\"><span class=\"sw\" style=\"background:#1f6f78\"></span>Mostar + Herzegovina</button><button data-region=\"kotor\"><span class=\"sw\" style=\"background:#c25a3a\"></span>Bay of Kotor</button><button data-region=\"ksamil\"><span class=\"sw\" style=\"background:#3f7d4e\"></span>Ksamil + Saranda</button><button data-region=\"corfu\"><span class=\"sw\" style=\"background:#3a6ea5\"></span>Corfu</button><button data-region=\"all\">Whole trip</button>\n      </div>\n      <div id=\"tripmap\"></div>\n    </div>\n  </section>\n\n  <section id=\"stays\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">Where We Are Staying</p>\n      <h2>Four bases, one direction</h2>\n      <p>Each base earns its nights: Mostar for river-town texture, Kotor for the bay, Ksamil for clear water, and Corfu for the island finish.</p>\n    </div>\n    <div class=\"bases\">\n      <div class=\"base b1\"><div class=\"band\"></div>\n        <img class=\"bimg\" src=\"https://images.unsplash.com/photo-1716968921433-835ec227f847?w=1920&q=80&auto=format&fit=crop\" alt=\"Mostar, Bosnia and Herzegovina\">\n        <div class=\"bbody\">\n          <span class=\"nights\">3 nights · Jul 2-4</span>\n          <h4>Mostar, Bosnia and Herzegovina</h4><p class=\"dates\">Arrival base from Dubrovnik</p>\n          <p>Mostar keeps the first drive short after an overnight flight and gives the kids a compact old town, bridge views, cold river water, Blagaj, and Kravica without changing hotels.</p>\n          <p class=\"book\"><b>Book:</b> Family apartment or small hotel inside a 10-15 minute walk of Stari Most; current family-capable signals suggest roughly $90-$150/night in the July peak window.</p>\n        </div>\n      </div><div class=\"base b2\"><div class=\"band\"></div>\n        <img class=\"bimg\" src=\"https://images.unsplash.com/photo-1614122027743-50a9e6e8002f?w=1920&q=80&auto=format&fit=crop\" alt=\"Bay of Kotor, Montenegro\">\n        <div class=\"bbody\">\n          <span class=\"nights\">3 nights · Jul 5-7</span>\n          <h4>Bay of Kotor, Montenegro</h4><p class=\"dates\">Bay swims, old towns, fortress views</p>\n          <p>Base in Kotor, Dobrota, or Prcanj for easy evenings on the water. The itinerary uses one Kotor day and one Perast/Budva/Sveti Stefan day.</p>\n          <p class=\"book\"><b>Book:</b> Apartment with parking outside the old-town walls; July family-capable bands are roughly $175-$300/night before taxes.</p>\n        </div>\n      </div><div class=\"base b3\"><div class=\"band\"></div>\n        <img class=\"bimg\" src=\"https://images.unsplash.com/photo-1752778080456-928bc88c4e2a?w=1920&q=80&auto=format&fit=crop\" alt=\"Ksamil or Saranda, Albania\">\n        <div class=\"bbody\">\n          <span class=\"nights\">3 nights · Jul 8-10</span>\n          <h4>Ksamil or Saranda, Albania</h4><p class=\"dates\">Beach-heavy middle-south base</p>\n          <p>Ksamil is the clearest-water choice; Saranda is easier for restaurants, parking, and the ferry. Staying just outside central Ksamil can save money and stress.</p>\n          <p class=\"book\"><b>Book:</b> Apartment or family room with parking; July family rooms run roughly EUR140-EUR280/night in Ksamil, often less in Saranda.</p>\n        </div>\n      </div><div class=\"base b4\"><div class=\"band\"></div>\n        <img class=\"bimg\" src=\"https://images.unsplash.com/photo-1707148106664-6b5bc7f2c99c?w=1920&q=80&auto=format&fit=crop\" alt=\"Corfu, Greece\">\n        <div class=\"bbody\">\n          <span class=\"nights\">3 nights · Jul 11-13</span>\n          <h4>Corfu, Greece</h4><p class=\"dates\">Island landing before flying home</p>\n          <p>The car logistics reset here: arrive as foot passengers, rent locally only if needed, and slow down with beaches, a boat day, and one compact Old Town evening before flying home.</p>\n          <p class=\"book\"><b>Book:</b> Family rental near Corfu Town, Gouvia, Dassia, or Paleokastritsa depending whether airport access or beach access matters more; July comparable rentals cluster around $250-$420/night.</p>\n        </div>\n      </div>\n    </div>\n  </section>\n\n  <section id=\"getting-around\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">Getting Around</p>\n      <h2>Fly open-jaw, drive the Balkan legs, ferry as foot passengers</h2>\n      <p>The low-backtracking version starts near Dubrovnik and ends at Corfu airport. Tirana is worth pricing, but it fights the geography.</p>\n    </div>\n    <div class=\"plan-grid\">\n      <div class=\"pcard\"><h4><span class=\"dot\"></span>Flights</h4><div class=\"prow\"><span>Best shape</span><strong>PIT -> DBV / CFU -> PIT</strong></div><div class=\"prow\"><span>Price signal</span><strong>~$950-$1,350 pp volatile</strong></div><div class=\"prow\"><span>Fallback</span><strong>PIT -> TIA if airfare savings beat the drive</strong></div><div class=\"tip\">Dubrovnik keeps arrival day near 2.5 hours to Mostar. July 2027 return dates are not fully loaded yet, so set alerts as soon as the 331-337 day booking window opens.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Rental car</h4><div class=\"prow\"><span>Route</span><strong>DBV -> BiH -> Montenegro -> Albania</strong></div><div class=\"prow\"><span>Rule</span><strong>Written cross-border approval</strong></div><div class=\"prow\"><span>Drop</span><strong>Saranda/Tirana before ferry</strong></div><div class=\"tip\">A Croatia-origin car may not be allowed into Albania with mainstream suppliers. Use a Balkan specialist or get every country and one-way fee in writing.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Saranda-Corfu ferry</h4><div class=\"prow\"><span>Operators</span><strong>Finikas, Ionian Seaways, Albania Luxury</strong></div><div class=\"prow\"><span>Time</span><strong>~30-70 min plus passport control</strong></div><div class=\"prow\"><span>Family estimate</span><strong>~EUR110-EUR150 one-way</strong></div><div class=\"tip\">2026 summer pricing shows higher fast-boat fares than the old estimate. Exact July 2027 departures should be booked live. Albania is one hour behind Greece in summer.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Hard drive</h4><div class=\"prow\"><span>Kotor -> Ksamil</span><strong>~435-453 km</strong></div><div class=\"prow\"><span>Moving time</span><strong>~7.5-8 hr before stops</strong></div><div class=\"prow\"><span>Border</span><strong>Montenegro -> Albania</strong></div><div class=\"tip\">Leave early, keep snacks ready, and treat this as a transfer day. If the family is done, add a night in Gjirokaster and cut one Corfu night.</div></div>\n    </div>\n  </section>\n\n  "
+    },
+    {
+      "t": "itinerary"
+    },
+    {
+      "t": "raw",
+      "html": "\n\n  <section id=\"budget\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">The Money</p>\n      <h2>Budget, savers &amp; splurges</h2>\n      <p>Built from July 2026 research and repriced for the Jul 1-14, 2027 window. Some tickets and ferry rules are current/official; flights, lodging, and rental-car one-way fees still need live quotes because many July 2027 calendars are not fully open yet.</p>\n    </div>\n    <div class=\"budget-scroll\">\n      <table class=\"budget-tbl\">\n        <tr><th>Line item</th><th>Estimate (family of 4)</th></tr>\n        <tr><td>Open-jaw flights, PIT -> DBV/TIA and CFU -> PIT</td><td>$3,800-$5,400</td></tr><tr><td>Mostar lodging, 3 nights</td><td>$270-$450</td></tr><tr><td>Kotor lodging, 3 nights</td><td>$525-$900</td></tr><tr><td>Ksamil/Saranda lodging, 3 nights</td><td>$450-$900</td></tr><tr><td>Corfu lodging, 3 nights</td><td>$750-$1,250</td></tr><tr><td>Balkan rental car, insurance, cross-border, one-way</td><td>$1,600-$2,800</td></tr><tr><td>Corfu local car/taxis/airport transfers</td><td>$250-$600</td></tr><tr><td>Saranda-Corfu ferry, family foot passengers</td><td>$125-$160</td></tr><tr><td>Activities, tickets, parking, beach sets, boats</td><td>$1,050-$1,750</td></tr><tr><td>Food, snacks, groceries, water</td><td>$1,750-$2,550</td></tr>\n      </table>\n    </div>\n    <div class=\"twocol\">\n      <div class=\"listcard save-list\">\n        <h4>Save money</h4>\n        <ul>\n          <li><b>Fly into Dubrovnik if fares are close.</b> It saves 4+ arrival-day driving hours versus Tirana.</li><li><b>Use quote gates.</b> Do not green-light this route unless flights are <=$4.8k family, the Balkan car is <=$2.4k all-in, and lodging is not pricing at the top of every range.</li><li><b>Stay outside Kotor Old Town.</b> Parking and family apartments are easier in Dobrota/Prcanj.</li><li><b>Use one beach per day.</b> Beach-hopping in Ksamil/Corfu turns into duplicate parking and lounger fees.</li><li><b>Book the ferry as foot passengers.</b> Dropping the car before Corfu avoids the most complex rental rule.</li><li><b>Keep Corfu car-light.</b> Rent only for west-coast beach days if lodging is near town or a beach bus/taxi route.</li><li><b>Use picnic lunches at Kravica/Ksamil.</b> Restaurant spend climbs fast around swim spots.</li>\n        </ul>\n      </div>\n      <div class=\"listcard splurge-list\">\n        <h4>Worth the splurge</h4>\n        <ul>\n          <li><b>Bay or Paleokastritsa boat time.</b> These are the water splurges most likely to feel worth it.</li><li><b>Cross-border specialist rental.</b> Paying more upfront may be cheaper than a denied border or illegal route.</li><li><b>Corfu lodging with pool.</b> It protects the final three nights from heat, crowds, and beach logistics.</li><li><b>One guided/history add-on.</b> Butrint or Mostar benefits most if the family wants context.</li>\n        </ul>\n      </div>\n    </div>\n  </section>\n\n    <section id=\"totals\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">Bottom Line</p>\n      <h2>Total trip cost</h2>\n      <p>The July move solves the blackout problem but weakens the budget cushion. This is cap-fit only if flights, the cross-border car, and at least two lodging bases price in the middle of their ranges.</p>\n    </div>\n    <div class=\"budget-scroll\">\n      <table class=\"budget-tbl grand\">\n        <tr><th>Category</th><th>Estimate (family of 4)</th></tr>\n        <tr><td>Flights</td><td>$3,800-$5,400</td></tr><tr><td>Lodging</td><td>$1,995-$3,500</td></tr><tr><td>Cars, ferry, local transport</td><td>$1,975-$3,560</td></tr><tr><td>Food</td><td>$1,750-$2,550</td></tr><tr><td>Activities and beach/boat costs</td><td>$1,050-$1,750</td></tr>\n        <tr class=\"total\"><td>Grand total — family of 4</td><td>~$10.6k-$16.8k</td></tr>\n      </table>\n    </div>\n    <p class=\"rate-note\">Per-day blocks in the itinerary cover food + activities only. Lodging, flights, rental cars, and docs sit in the totals above, not the daily numbers — don't double-count. Re-check every price closer to booking. A Jun 9-22 version may price lower, but it leaves only one day of delay cushion before the Pittsburgh blackout.</p>\n  </section>\n\n  <section id=\"tips\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">Travel Tips</p>\n      <h2>The stuff nobody tells you</h2>\n      <p>Updated July 2026 for the July 2027 travel window; re-check flight, rental, and ferry rules before paying because those are the unstable pieces.</p>\n    </div>\n\n    <div class=\"tips-order\">\n      <p class=\"mini-h\">Book in roughly this order</p>\n      <ol>\n        <li>Open-jaw flights<span> · first, because route choice depends on DBV/TIA pricing</span></li><li>Cross-border rental quote<span> · before lodging is locked</span></li><li>Lodging with parking<span> · immediately after car plan</span></li><li>Saranda-Corfu ferry<span> · once car drop timing is known</span></li><li>Corfu local transport<span> · after lodging location</span></li><li>Boat days<span> · 1-2 weeks out, then weather-check</span></li>\n      </ol>\n    </div>\n\n    <div class=\"tips-grid\">\n      <div class=\"tipcard\"><h4>Documents</h4><p class=\"sub\">Avoid border surprises</p><ul><li class=\"flag\"><b>Passports.</b> Required for every border and the Saranda-Corfu ferry.</li><li class=\"flag\"><b>IDP.</b> Bring one even if some agencies do not ask; it is cheap insurance.</li><li class=\"flag\"><b>Rental paperwork.</b> Carry written country permissions and green-card/insurance proof.</li></ul></div><div class=\"tipcard t2\"><h4>Car Strategy</h4><p class=\"sub\">The make-or-break logistics</p><ul><li class=\"flag\"><b>Get it in writing.</b> Croatia, Bosnia, Montenegro, Albania, one-way drop, and ferry prohibition should all be explicit.</li><li><b>Photograph the car.</b> Do a full video at pickup and drop-off, including wheels and underside edges.</li><li class=\"flag\"><b>Do not ferry the car.</b> Plan the Balkan car to end before Corfu.</li></ul></div><div class=\"tipcard t3\"><h4>Money</h4><p class=\"sub\">Small cash still matters</p><ul><li><b>Currencies.</b> EUR for Montenegro/Greece/ferry, KM for Bosnia, ALL for Albania.</li><li><b>Cards.</b> Good at hotels and many restaurants, less reliable for parking, small tickets, beach sets.</li><li><b>ATMs.</b> Use bank ATMs and decline dynamic currency conversion.</li></ul></div><div class=\"tipcard t4\"><h4>Heat + Swim</h4><p class=\"sub\">Make the day survivable</p><ul><li><b>Early starts.</b> Fortress, Butrint, and Porto Timoni are morning activities.</li><li><b>Water shoes.</b> Useful for Kravica, bay ladders, Ksamil rocks, and Corfu coves.</li><li><b>Shade tax.</b> Lounger sets can be worth it when the alternative is four overheated people.</li></ul></div><div class=\"tipcard\"><h4>Food</h4><p class=\"sub\">Picky-kid fail-safes</p><ul><li><b>Pizza/pasta anchors.</b> Every base has at least one researched plain-food option.</li><li class=\"flag\"><b>Road snacks.</b> The Kotor-Ksamil day needs grocery snacks before departure.</li><li><b>Late dinners.</b> Balkan/Greek summer dinners run later; feed kids something plain before scenic dinners if needed.</li></ul></div><div class=\"tipcard t2\"><h4>Ferry + Time</h4><p class=\"sub\">The Corfu crossing has one hidden trap</p><ul><li class=\"flag\"><b>Time zone.</b> Greece is one hour ahead of Albania in summer.</li><li class=\"flag\"><b>Passport control.</b> Arrive early and do not stack a tight airport plan after the ferry.</li><li><b>Tickets.</b> Book online when possible, but keep cash/card flexibility at Saranda port.</li></ul></div>\n    </div>\n  </section>\n\n  <section id=\"balance\" class=\"divider\">\n    <div class=\"section-label\">\n      <p class=\"eyebrow\">Trip Balance</p>\n      <h2>What the days add up to</h2>\n      <p>The target: beach-biased, but never beach-only.</p>\n    </div>\n    <div class=\"bar\"><i style=\"width:45%;background:#1f6f78\"></i><i style=\"width:30%;background:#c25a3a\"></i><i style=\"width:25%;background:#3f7d4e\"></i></div>\n    <div class=\"balance\">\n      <div class=\"bcard k1\"><div class=\"pct\">45%</div><h4>Beach · Water · Boats</h4><p>Kravica, Bay of Kotor swims, Ksamil beaches, Saranda-Corfu ferry, Paleokastritsa, Porto Timoni/Glyfada</p></div><div class=\"bcard k2\"><div class=\"pct\">30%</div><h4>Towns · Food · Old Streets</h4><p>Mostar, Kotor, Perast, Budva, Corfu Town</p></div><div class=\"bcard k3\"><div class=\"pct\">25%</div><h4>Nature · Ruins · Viewpoints</h4><p>Blagaj, Kravica, Kotor walls, Butrint, Blue Eye, Porto Timoni hike</p></div>\n    </div>\n  </section>\n\n  <section id=\"status\" class=\"divider\">\n    <div class=\"section-label\"><p class=\"eyebrow\">Decisions</p><h2>Settled &amp; still open</h2></div>\n    <div class=\"status\">\n      <div class=\"scol settled\"><h4>Settled</h4>\n        <div class=\"row\"><b>Route</b><span>Mostar -> Kotor -> Ksamil -> Corfu, ending at CFU.</span></div><div class=\"row\"><b>Dates</b><span>Jul 1-14, 2027, using the observed Independence Day holiday and avoiding Jun 23-26.</span></div><div class=\"row\"><b>Length</b><span>12 hotel nights plus outbound overnight flight.</span></div><div class=\"row\"><b>Bases</b><span>Four bases; no Sarajevo, Durmitor, or eastern loop in the core plan.</span></div><div class=\"row\"><b>Activity mix</b><span>Water-biased without becoming beach-only.</span></div>\n      </div>\n      <div class=\"scol open\"><h4>Still Open</h4>\n        <div class=\"row\"><b>Flights</b><span>Live DBV/TIA open-jaw pricing decides the arrival airport once July 2027 dates are bookable.</span></div><div class=\"row\"><b>Rental car</b><span>Cross-border + Albania drop quote must be confirmed in writing.</span></div><div class=\"row\"><b>Ferry</b><span>Exact July 2027 departure time should be booked live once schedules publish.</span></div><div class=\"row\"><b>Kotor-Ksamil drive</b><span>Keep the option to insert Gjirokaster if the long transfer feels too aggressive.</span></div><div class=\"row\"><b>Corfu lodging</b><span>Choose town/airport convenience vs west-coast beach access.</span></div>\n      </div>\n    </div>\n  </section>\n</main>\n<footer>\n  <p>Balkan Coast Road Trip - working family itinerary for Jul 1-14, 2027. Photos are Unsplash/Wikimedia Commons, hotlinked; hover for credits. Prices refreshed July 2026 and should be reconfirmed before booking. Maps via Google & OpenStreetMap.</p>\n</footer>\n<script>/* @preserve\n * Leaflet 1.9.4, a JS library for interactive maps. https://leafletjs.com\n * (c) 2010-2023 Vladimir Agafonkin, (c) 2010-2011 CloudMade\n */\n//# sourceMappingURL=leaflet.js.map</script>"
+    },
+    {
+      "t": "lib",
+      "key": "1f252bc08ec393b31f65de1e0b899e59"
+    },
+    {
+      "t": "raw",
+      "html": "<script>window.__MAP_POINTS__=[{\"n\": \"Dubrovnik Airport (arrival gateway)\", \"lat\": 42.5614, \"lng\": 18.2682, \"r\": \"mostar\", \"g\": \"https://www.google.com/maps/search/?api=1&query=Dubrovnik+Airport\"}, {\"n\": \"Saranda Ferry Port\", \"lat\": 39.871, \"lng\": 20.003, \"r\": \"ksamil\", \"g\": \"https://www.google.com/maps/search/?api=1&query=Saranda+Ferry+Port\"}, {\"n\": \"Corfu Airport (fly home)\", \"lat\": 39.6019, \"lng\": 19.9121, \"r\": \"corfu\", \"g\": \"https://www.google.com/maps/search/?api=1&query=Corfu+Airport\"}, {\"n\": \"Mostar Old Town + Stari Most\", \"lat\": 43.3373, \"lng\": 17.8149, \"r\": \"mostar\", \"g\": \"https://www.google.com/maps/search/?api=1&query=43.3373,17.8149\"}, {\"n\": \"Blagaj Tekke + Buna Spring\", \"lat\": 43.2567, \"lng\": 17.9047, \"r\": \"mostar\", \"g\": \"https://www.google.com/maps/search/?api=1&query=43.2567,17.9047\"}, {\"n\": \"Kravica Waterfalls\", \"lat\": 43.1562, \"lng\": 17.6087, \"r\": \"mostar\", \"g\": \"https://www.google.com/maps/search/?api=1&query=43.1562,17.6087\"}, {\"n\": \"Kotor Old Town + City Walls\", \"lat\": 42.4247, \"lng\": 18.7712, \"r\": \"kotor\", \"g\": \"https://www.google.com/maps/search/?api=1&query=42.4247,18.7712\"}, {\"n\": \"Perast + Our Lady of the Rocks\", \"lat\": 42.4869, \"lng\": 18.6992, \"r\": \"kotor\", \"g\": \"https://www.google.com/maps/search/?api=1&query=42.4869,18.6992\"}, {\"n\": \"Budva + Sveti Stefan\", \"lat\": 42.2557, \"lng\": 18.8964, \"r\": \"kotor\", \"g\": \"https://www.google.com/maps/search/?api=1&query=42.2557,18.8964\"}, {\"n\": \"Ksamil Beaches + Islands\", \"lat\": 39.7684, \"lng\": 19.9992, \"r\": \"ksamil\", \"g\": \"https://www.google.com/maps/search/?api=1&query=39.7684,19.9992\"}, {\"n\": \"Butrint National Park\", \"lat\": 39.7466, \"lng\": 20.0202, \"r\": \"ksamil\", \"g\": \"https://www.google.com/maps/search/?api=1&query=39.7466,20.0202\"}, {\"n\": \"The Blue Eye\", \"lat\": 39.9237, \"lng\": 20.1924, \"r\": \"ksamil\", \"g\": \"https://www.google.com/maps/search/?api=1&query=39.9237,20.1924\"}, {\"n\": \"Corfu Town + Old Fortress\", \"lat\": 39.6243, \"lng\": 19.9217, \"r\": \"corfu\", \"g\": \"https://www.google.com/maps/search/?api=1&query=39.6243,19.9217\"}, {\"n\": \"Paleokastritsa Beaches + Caves\", \"lat\": 39.6725, \"lng\": 19.7057, \"r\": \"corfu\", \"g\": \"https://www.google.com/maps/search/?api=1&query=39.6725,19.7057\"}, {\"n\": \"Porto Timoni or Glyfada Beach\", \"lat\": 39.7226, \"lng\": 19.6567, \"r\": \"corfu\", \"g\": \"https://www.google.com/maps/search/?api=1&query=39.7226,19.6567\"}];window.__MAP_COLORS__={\"mostar\": \"#1f6f78\", \"kotor\": \"#c25a3a\", \"ksamil\": \"#3f7d4e\", \"corfu\": \"#3a6ea5\"};</script><script>// ---- carousels ----\ndocument.querySelectorAll('.carousel').forEach(function(c){\n  var track=c.querySelector('.track'), cur=c.querySelector('.cur'),\n      dots=[].slice.call(c.querySelectorAll('.dot')), n=+c.dataset.n;\n  function idx(){return Math.round(track.scrollLeft/track.clientWidth);}\n  function sync(){var i=idx();if(cur)cur.textContent=i+1;dots.forEach(function(d,j){d.classList.toggle('on',j===i);});}\n  function go(i){i=Math.max(0,Math.min(n-1,i));track.scrollTo({left:i*track.clientWidth,behavior:'smooth'});}\n  var p=c.querySelector('.prev'),nx=c.querySelector('.next');\n  if(p)p.addEventListener('click',function(){go(idx()-1);});\n  if(nx)nx.addEventListener('click',function(){go(idx()+1);});\n  dots.forEach(function(d){d.addEventListener('click',function(){go(+d.dataset.i);});});\n  var t;track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(sync,80);});\n  sync();\n});\n\n// ---- trip map (Leaflet) ----\n(function(){\n  var el=document.getElementById('tripmap');\n  if(!el||typeof L==='undefined')return;\n  var pts=window.__MAP_POINTS__||[], colors=window.__MAP_COLORS__||{};\n  var map=L.map('tripmap',{scrollWheelZoom:false}).setView([20,0],2);\n  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{\n    maxZoom:19, attribution:'&copy; OpenStreetMap'}).addTo(map);\n  var groups={};\n  pts.forEach(function(p){\n    var col=colors[p.r]||'#c25a3a';\n    var m=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',\n      html:'<div class=\"pin\" style=\"background:'+col+'\"></div>',iconSize:[16,16],iconAnchor:[8,8]})}).addTo(map);\n    m.bindPopup('<b>'+p.n+'</b><br><a href=\"'+p.g+'\" target=\"_blank\" rel=\"noreferrer\">Open in Google Maps &#8599;</a>');\n    if(!groups[p.r])groups[p.r]=[];\n    groups[p.r].push([p.lat,p.lng]);\n  });\n  function fit(region){\n    var arr=region==='all'?pts.map(function(p){return [p.lat,p.lng];}):groups[region];\n    if(arr&&arr.length)map.flyToBounds(L.latLngBounds(arr).pad(0.25),{maxZoom:region==='all'?6:12});\n  }\n  document.querySelectorAll('.mapbtns button').forEach(function(b){\n    b.addEventListener('click',function(){fit(b.dataset.region);});\n  });\n  fit('all');\n  setTimeout(function(){map.invalidateSize();},300);\n})();\n</script>\n<button id=\"backToTop\" aria-label=\"Back to top\" title=\"Back to top\">↑</button>\n<style>\n#backToTop{position:fixed;right:20px;bottom:20px;z-index:9999;width:48px;height:48px;border:none;border-radius:50%;background:rgba(26,23,18,.85);color:#f6f1e7;font-size:22px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,background .2s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}\n#backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}\n#backToTop:hover{background:rgba(26,23,18,1)}\n@media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}\n</style>\n<script>\n(function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();\n</script>\n<script>/*scrollspy*/(function(){var nav=document.querySelector(\"nav\");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^=\"#\"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute(\"href\").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle(\"active\",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:\"smooth\"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:\"smooth\"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:\"-50% 0px -50% 0px\",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>\n"
+    }
+  ]
+}

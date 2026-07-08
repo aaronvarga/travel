@@ -686,6 +686,7 @@ nav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;paddi
 nav::-webkit-scrollbar{display:none}
 nav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}
 nav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 40px;max-width:760px}
 .section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
@@ -819,7 +820,8 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}
 .spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}
 .spot-name{margin:0;font-size:1.22rem;font-weight:600}
-.explore{display:flex;gap:6px;flex:0 0 auto}
+.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.explore::-webkit-scrollbar{display:none}
 .explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}
 .explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .explore .xg{background:#4285F4}
@@ -1236,26 +1238,25 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="itinerary" class="divider">
-    <div class="section-label">
+      <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
-      <p>Swipe each carousel for photos. Every stop carries its cost, a &#128176; money-saving tip, an &#10024; splurge, picky-kid restaurants, an alternative, blog links, and a map — tap &ldquo;Open in Google Maps&rdquo; to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
+      <p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, an alternative, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
     </div>
-    <div class="days">
-      <article class="day c0" id="day0">
+      <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
         <div class="day-title"><p class="eyebrow">Tue · Jun 8</p><h3>Depart Pittsburgh after work</h3><p class="feel">Overnight travel</p><p class="daycost">Est. ~$80 · airport meals</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Overnight flight toward Madeira</strong></div><div><span>Plan</span><strong>PIT -> EWR -> FNC nonstop, or PIT -> gateway -> LIS -> FNC</strong></div><div><span>PTO</span><strong>No PTO if evening departure works</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Overnight flight toward Madeira</strong></div><div><span>Plan</span><strong>PIT -&gt; EWR -&gt; FNC nonstop, or PIT -&gt; gateway -&gt; LIS -&gt; FNC</strong></div><div><span>PTO</span><strong>No PTO if evening departure works</strong></div></div>
         <p class="note">One protected ticket, whichever routing prices better. Tuesday is deliberate: it matches United's Tue/Thu/Sat EWR-FNC red-eye pattern and sets up the Tuesday LIS-PMO hop a week later.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c1" id="day1">
       <div class="day-head">
         <div class="day-badge">1</div>
-        <div class="day-title"><p class="eyebrow">Wed · Jun 9</p><h3>Arrive Funchal -> soft landing</h3><p class="feel">Jet lag + island reset</p><p class="daycost">Est. ~$180 · car pickup, groceries, easy dinner</p></div>
+        <div class="day-title"><p class="eyebrow">Wed · Jun 9</p><h3>Arrive Funchal -&gt; soft landing</h3><p class="feel">Jet lag + island reset</p><p class="daycost">Est. ~$180 · car pickup, groceries, easy dinner</p></div>
       </div>
       <div class="logistics">
         <div class="facts"><div><span>Sleep</span><strong>Funchal · night 1 of 5</strong></div><div><span>Plan</span><strong>Pick up car, apartment, old-town wander, cable car if energy allows</strong></div><div><span>Rule</span><strong>No mountain driving on arrival day</strong></div></div>
@@ -1263,14 +1264,12 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Funchal old town + Monte cable car & toboggans</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Funchal%20old%20town%20%2B%20Monte%20cable%20car%20%26%20toboggans" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=funchal" target="_blank" rel="noreferrer">IG · Funchal</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=monte" target="_blank" rel="noreferrer">IG · Monte</a><a class="xf" href="https://www.flickr.com/search/?text=Funchal%20old%20town%20%2B%20Monte%20cable%20car%20%26%20toboggans&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Funchal old town + Monte cable car &amp; toboggans</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Funchal%20old%20town%20%2B%20Monte%20cable%20car%20%26%20toboggans" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=funchal" target="_blank" rel="noreferrer">IG · Funchal</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=monte" target="_blank" rel="noreferrer">IG · Monte</a><a class="xf" href="https://www.flickr.com/search/?text=Funchal%20old%20town%20%2B%20Monte%20cable%20car%20%26%20toboggans&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1641850963355-6aaec6de0d09?w=1200&q=80&auto=format&fit=crop" alt="Funchal old town + Monte cable car & toboggans" loading="lazy"><figcaption><strong>Funchal old town + Monte cable car & toboggans</strong><span>Erik Karits · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1674333362725-84e9996aa6fb?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1674333362725-84e9996aa6fb?w=1200&q=80&auto=format&fit=crop" alt="Funchal old town + Monte cable car & toboggans" loading="lazy"></a><figcaption><strong>Funchal old town + Monte cable car & toboggans</strong><span>Sofia Vila Flor · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1725380055302-75ef7cec17bd?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1725380055302-75ef7cec17bd?w=1200&q=80&auto=format&fit=crop" alt="Funchal old town + Monte cable car & toboggans" loading="lazy"></a><figcaption><strong>Funchal old town + Monte cable car & toboggans</strong><span>Mick Kirchman · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1641850963355-6aaec6de0d09?w=1200&q=80&auto=format&fit=crop" alt="Funchal old town + Monte cable car & toboggans" loading="lazy"><figcaption><strong>Funchal old town + Monte cable car &amp; toboggans</strong><span>Erik Karits · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1674333362725-84e9996aa6fb?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1674333362725-84e9996aa6fb?w=1200&q=80&auto=format&fit=crop" alt="Funchal old town + Monte cable car & toboggans" loading="lazy"></a><figcaption><strong>Funchal old town + Monte cable car &amp; toboggans</strong><span>Sofia Vila Flor · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1725380055302-75ef7cec17bd?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1725380055302-75ef7cec17bd?w=1200&q=80&auto=format&fit=crop" alt="Funchal old town + Monte cable car & toboggans" loading="lazy"></a><figcaption><strong>Funchal old town + Monte cable car &amp; toboggans</strong><span>Mick Kirchman · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Monte cable car (current official 2026): EUR22 adult round trip, EUR16 one-way; ages 7-14 half price, so both kids qualify — family round trip about EUR66. Monte toboggan: EUR40 per 2-person basket (May 2026 price), so EUR80 for two baskets — <b>cash only</b>.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June Funchal:</b> about <b>72-75 F</b> days / <b>61-64 F</b> nights, with the morning "capacete" cloud helmet that usually burns off by midday. Sea near Funchal is ~<b>68 F</b> — swimmable but brisk; treat lido dips as a bonus.</p></div>
+          <div class="kv"><span>Cost</span><p>Monte cable car (current official 2026): EUR22 adult round trip, EUR16 one-way; ages 7-14 half price, so both kids qualify — family round trip about EUR66. Monte toboggan: EUR40 per 2-person basket (May 2026 price), so EUR80 for two baskets — <b>cash only</b>.</p></div><div class="kv climate"><span>Weather</span><p><b>June Funchal:</b> about <b>72-75 F</b> days / <b>61-64 F</b> nights, with the morning "capacete" cloud helmet that usually burns off by midday. Sea near Funchal is ~<b>68 F</b> — swimmable but brisk; treat lido dips as a bonus.</p></div>
           <div class="callout save"><b>Save</b> Ride the cable car up and toboggan partway down, then walk/bus instead of taxiing from the toboggan drop-off at Livramento — the baskets do not return you to central Funchal.</div>
           <div class="callout splurge"><b>Splurge</b> Do both icons in one afternoon — cable car up (EUR66 family) plus two toboggan baskets (EUR80) is about EUR146 for the single most kid-memorable hour in Funchal.</div>
           <div class="resto">
@@ -1279,19 +1278,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://ifcn.madeira.gov.pt/en/tourism-and-leisure/botanical-garden.html" target="_blank" rel="noreferrer"><b>Jardim Botânico da Madeira</b> &#8617;</a> — gardens with amphitheater views and its own cable-car link if Monte is fogged in.</p>
+            <p><a href="https://ifcn.madeira.gov.pt/en/tourism-and-leisure/botanical-garden.html" target="_blank" rel="noreferrer"><b>Jardim Botânico da Madeira</b> ↩</a> — gardens with amphitheater views and its own cable-car link if Monte is fogged in.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://madeiracablecar.com/en/price-and-schedule/" target="_blank" rel="noreferrer">Official cable-car prices ↗</a>
-            <a href="https://www.carreirosdomonte.com/" target="_blank" rel="noreferrer">Official toboggan site ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://madeiracablecar.com/en/price-and-schedule/" target="_blank" rel="noreferrer">Official cable-car prices ↗</a><a href="https://www.carreirosdomonte.com/" target="_blank" rel="noreferrer">Official toboggan site ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.6496,-16.9086&z=14&output=embed" title="Map of Funchal old town + Monte cable car & toboggans"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=32.6496,-16.9086" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day2">
       <div class="day-head">
         <div class="day-badge">2</div>
@@ -1303,14 +1298,12 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Pico do Arieiro -> Pico Ruivo ridge (PR1)</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Pico%20do%20Arieiro%20-%3E%20Pico%20Ruivo%20ridge%20%28PR1%29" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=picodoarieiro" target="_blank" rel="noreferrer">IG · Pico do Arieiro</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=picoruivo" target="_blank" rel="noreferrer">IG · Pico Ruivo</a><a class="xf" href="https://www.flickr.com/search/?text=Pico%20do%20Arieiro%20-%3E%20Pico%20Ruivo%20ridge%20%28PR1%29&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Pico do Arieiro -&gt; Pico Ruivo ridge (PR1)</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Pico%20do%20Arieiro%20-%3E%20Pico%20Ruivo%20ridge%20%28PR1%29" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=picodoarieiro" target="_blank" rel="noreferrer">IG · Pico do Arieiro</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=picoruivo" target="_blank" rel="noreferrer">IG · Pico Ruivo</a><a class="xf" href="https://www.flickr.com/search/?text=Pico%20do%20Arieiro%20-%3E%20Pico%20Ruivo%20ridge%20%28PR1%29&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1746523812328-74b97419f828?w=1920&q=80&auto=format&fit=crop" alt="Pico do Arieiro -> Pico Ruivo ridge (PR1)" loading="lazy"><figcaption><strong>Pico do Arieiro -> Pico Ruivo ridge (PR1)</strong><span>Samielle Støyl · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1745776115068-f21ba1da5cd6?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1745776115068-f21ba1da5cd6?w=1200&q=80&auto=format&fit=crop" alt="Pico do Arieiro -> Pico Ruivo ridge (PR1)" loading="lazy"></a><figcaption><strong>Pico do Arieiro -> Pico Ruivo ridge (PR1)</strong><span>Luis Gonçalves · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1689349666953-e8d81553fda2?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1689349666953-e8d81553fda2?w=1200&q=80&auto=format&fit=crop" alt="Pico do Arieiro -> Pico Ruivo ridge (PR1)" loading="lazy"></a><figcaption><strong>Pico do Arieiro -> Pico Ruivo ridge (PR1)</strong><span>rowan zomerdijk · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1746523812328-74b97419f828?w=1920&q=80&auto=format&fit=crop" alt="Pico do Arieiro -> Pico Ruivo ridge (PR1)" loading="lazy"><figcaption><strong>Pico do Arieiro -&gt; Pico Ruivo ridge (PR1)</strong><span>Samielle Støyl · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1745776115068-f21ba1da5cd6?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1745776115068-f21ba1da5cd6?w=1200&q=80&auto=format&fit=crop" alt="Pico do Arieiro -> Pico Ruivo ridge (PR1)" loading="lazy"></a><figcaption><strong>Pico do Arieiro -&gt; Pico Ruivo ridge (PR1)</strong><span>Luis Gonçalves · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1689349666953-e8d81553fda2?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1689349666953-e8d81553fda2?w=1200&q=80&auto=format&fit=crop" alt="Pico do Arieiro -> Pico Ruivo ridge (PR1)" loading="lazy"></a><figcaption><strong>Pico do Arieiro -&gt; Pico Ruivo ridge (PR1)</strong><span>rowan zomerdijk · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>PR1 fully reopened Apr 2026 after the wildfire closure. Full-trail ticket EUR10.50/person 13+ (kids 12 and under free but must be registered); the Arieiro-Pedra Rija segment stayed two-way with a EUR4.50 partial ticket during phased reopening — <b>confirm which ticket the out-and-back needs on SIMplifica when booking</b>. Arieiro parking reportedly EUR4.50. The summit viewpoint itself needs no trail ticket.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>At 6,000 ft:</b> June highs only <b>50-59 F</b> and windy — pack fleece and windbreakers. Mornings are usually clear and cloud builds by mid-morning: this is the <b>cloud lottery</b>, and it is exactly why the plan holds five Madeira nights. Check the Arieiro webcam the same morning before committing.</p></div>
+          <div class="kv"><span>Cost</span><p>PR1 fully reopened Apr 2026 after the wildfire closure. Full-trail ticket EUR10.50/person 13+ (kids 12 and under free but must be registered); the Arieiro-Pedra Rija segment stayed two-way with a EUR4.50 partial ticket during phased reopening — <b>confirm which ticket the out-and-back needs on SIMplifica when booking</b>. Arieiro parking reportedly EUR4.50. The summit viewpoint itself needs no trail ticket.</p></div><div class="kv climate"><span>Weather</span><p><b>At 6,000 ft:</b> June highs only <b>50-59 F</b> and windy — pack fleece and windbreakers. Mornings are usually clear and cloud builds by mid-morning: this is the <b>cloud lottery</b>, and it is exactly why the plan holds five Madeira nights. Check the Arieiro webcam the same morning before committing.</p></div>
           <div class="callout save"><b>Save</b> The family version is the out-and-back from Arieiro to the Ninho da Manta and Pedra Rija balconies (~1.2-2 km each way) — the postcard "Stairway to Heaven" staircase views without the full traverse, which is too strenuous for the 8-year-old.</div>
           <div class="callout splurge"><b>Splurge</b> If you skip the rental car, a sunrise shuttle runs about EUR35-40/person (EUR140-160 family) door-to-door — otherwise drive up 60+ minutes before sunrise, because the summit lot fills and police close the road when it overflows.</div>
           <div class="resto">
@@ -1319,19 +1312,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://madeirahiking.org/trails/pr1-2" target="_blank" rel="noreferrer"><b>Pico Ruivo from Achada do Teixeira (PR1.2)</b> &#8617;</a> — the short, paved back-door route to Madeira's highest summit — the easier big-view day if the Arieiro side is clouded or booked out.</p>
+            <p><a href="https://madeirahiking.org/trails/pr1-2" target="_blank" rel="noreferrer"><b>Pico Ruivo from Achada do Teixeira (PR1.2)</b> ↩</a> — the short, paved back-door route to Madeira's highest summit — the easier big-view day if the Arieiro side is clouded or booked out.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://madeirahiking.org/trails/pr1" target="_blank" rel="noreferrer">PR1 status + fees ↗</a>
-            <a href="https://hikingmadeira.com/blog/new-rules-for-the-pr1-madeira-reopening-in-2026/" target="_blank" rel="noreferrer">2026 reopening rules ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://madeirahiking.org/trails/pr1" target="_blank" rel="noreferrer">PR1 status + fees ↗</a><a href="https://hikingmadeira.com/blog/new-rules-for-the-pr1-madeira-reopening-in-2026/" target="_blank" rel="noreferrer">2026 reopening rules ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.7357,-16.9286&z=14&output=embed" title="Map of Pico do Arieiro -> Pico Ruivo ridge (PR1)"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=32.7357,-16.9286" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day3">
       <div class="day-head">
         <div class="day-badge">3</div>
@@ -1344,13 +1333,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Rabaçal: 25 Fontes + Risco levada (PR6)</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Raba%C3%A7al%3A%2025%20Fontes%20%2B%20Risco%20levada%20%28PR6%29" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=rabacal" target="_blank" rel="noreferrer">IG · Rabaçal</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=25fontes" target="_blank" rel="noreferrer">IG · 25 Fontes</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=risco" target="_blank" rel="noreferrer">IG · Risco</a><a class="xf" href="https://www.flickr.com/search/?text=Raba%C3%A7al%3A%2025%20Fontes%20%2B%20Risco%20levada%20%28PR6%29&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Raba%C3%A7al%3A%2025%20Fontes%20%2B%20Risco%20levada%20%28PR6%29" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=rabacal" target="_blank" rel="noreferrer">IG · Rabaçal</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=25fontes" target="_blank" rel="noreferrer">IG · 25 Fontes</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=risco" target="_blank" rel="noreferrer">IG · Risco</a><a class="xf" href="https://www.flickr.com/search/?text=Raba%C3%A7al%3A%2025%20Fontes%20%2B%20Risco%20levada%20%28PR6%29&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1637596206270-b4259015100e?w=1200&q=80&auto=format&fit=crop" alt="Rabaçal: 25 Fontes + Risco levada (PR6)" loading="lazy"><figcaption><strong>Rabaçal: 25 Fontes + Risco levada (PR6)</strong><span>Mario La Pergola · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1645387961104-8e7009aa840c?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1645387961104-8e7009aa840c?w=1200&q=80&auto=format&fit=crop" alt="Rabaçal: 25 Fontes + Risco levada (PR6)" loading="lazy"></a><figcaption><strong>Rabaçal: 25 Fontes + Risco levada (PR6)</strong><span>Amador Loureiro · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1619360522847-59ec246bbf43?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1619360522847-59ec246bbf43?w=1200&q=80&auto=format&fit=crop" alt="Rabaçal: 25 Fontes + Risco levada (PR6)" loading="lazy"></a><figcaption><strong>Rabaçal: 25 Fontes + Risco levada (PR6)</strong><span>Piotr Musioł · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1637596206270-b4259015100e?w=1200&q=80&auto=format&fit=crop" alt="Rabaçal: 25 Fontes + Risco levada (PR6)" loading="lazy"><figcaption><strong>Rabaçal: 25 Fontes + Risco levada (PR6)</strong><span>Mario La Pergola · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1645387961104-8e7009aa840c?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1645387961104-8e7009aa840c?w=1200&q=80&auto=format&fit=crop" alt="Rabaçal: 25 Fontes + Risco levada (PR6)" loading="lazy"></a><figcaption><strong>Rabaçal: 25 Fontes + Risco levada (PR6)</strong><span>Amador Loureiro · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1619360522847-59ec246bbf43?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1619360522847-59ec246bbf43?w=1200&q=80&auto=format&fit=crop" alt="Rabaçal: 25 Fontes + Risco levada (PR6)" loading="lazy"></a><figcaption><strong>Rabaçal: 25 Fontes + Risco levada (PR6)</strong><span>Piotr Musioł · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Trail fee EUR4.50/person 13+ (kids 12 and under free, but register them), booked on SIMplifica with a 30-minute entry slot. The spur road down to the Rabaçal house is closed to cars: park free on the plateau, then walk or ride the shuttle (~EUR3 down / EUR5 return, cash).</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>On the Paul da Serra plateau (~4,000 ft):</b> cooler than Funchal, often 55-65 F, and mist can roll through even on sunny coast days. The levada itself is shaded and green — this is the trip's rainforest-waterfall day.</p></div>
+          <div class="kv"><span>Cost</span><p>Trail fee EUR4.50/person 13+ (kids 12 and under free, but register them), booked on SIMplifica with a 30-minute entry slot. The spur road down to the Rabaçal house is closed to cars: park free on the plateau, then walk or ride the shuttle (~EUR3 down / EUR5 return, cash).</p></div><div class="kv climate"><span>Weather</span><p><b>On the Paul da Serra plateau (~4,000 ft):</b> cooler than Funchal, often 55-65 F, and mist can roll through even on sunny coast days. The levada itself is shaded and green — this is the trip's rainforest-waterfall day.</p></div>
           <div class="callout save"><b>Save</b> Book the trail fee directly on SIMplifica (EUR4.50) instead of joining a guided levada tour — the path is well-marked and the family saves EUR100+.</div>
           <div class="callout splurge"><b>Splurge</b> Ride the shuttle both ways (EUR5/person return) to cut ~3 km of pavement and save the 8-year-old's legs for the actual levada and the 25 Fontes lagoon steps.</div>
           <div class="resto">
@@ -1359,19 +1346,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://madeirahiking.org/trails/pr9" target="_blank" rel="noreferrer"><b>Levada do Caldeirão Verde (PR9)</b> &#8617;</a> — the other classic waterfall levada, on the north side near Santana — a like-for-like swap if Rabaçal slots are gone.</p>
+            <p><a href="https://madeirahiking.org/trails/pr9" target="_blank" rel="noreferrer"><b>Levada do Caldeirão Verde (PR9)</b> ↩</a> — the other classic waterfall levada, on the north side near Santana — a like-for-like swap if Rabaçal slots are gone.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://madeirahiking.org/trails/pr6" target="_blank" rel="noreferrer">PR6 trail guide + fees ↗</a>
-            <a href="https://www.earthtrekkers.com/levada-das-25-fontes-levada-do-risco/" target="_blank" rel="noreferrer">25 Fontes with-kids walkthrough ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://madeirahiking.org/trails/pr6" target="_blank" rel="noreferrer">PR6 trail guide + fees ↗</a><a href="https://www.earthtrekkers.com/levada-das-25-fontes-levada-do-risco/" target="_blank" rel="noreferrer">25 Fontes with-kids walkthrough ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.7594,-17.132&z=14&output=embed" title="Map of Rabaçal: 25 Fontes + Risco levada (PR6)"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=32.7594,-17.132" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day4">
       <div class="day-head">
         <div class="day-badge">4</div>
@@ -1384,13 +1367,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Porto Moniz lava pools + Fanal fog forest</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Porto%20Moniz%20lava%20pools%20%2B%20Fanal%20fog%20forest" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=portomoniz" target="_blank" rel="noreferrer">IG · Porto Moniz</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=fanal" target="_blank" rel="noreferrer">IG · Fanal</a><a class="xf" href="https://www.flickr.com/search/?text=Porto%20Moniz%20lava%20pools%20%2B%20Fanal%20fog%20forest&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Porto%20Moniz%20lava%20pools%20%2B%20Fanal%20fog%20forest" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=portomoniz" target="_blank" rel="noreferrer">IG · Porto Moniz</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=fanal" target="_blank" rel="noreferrer">IG · Fanal</a><a class="xf" href="https://www.flickr.com/search/?text=Porto%20Moniz%20lava%20pools%20%2B%20Fanal%20fog%20forest&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1590963852640-2714d687c102?w=1200&q=80&auto=format&fit=crop" alt="Porto Moniz lava pools + Fanal fog forest" loading="lazy"><figcaption><strong>Porto Moniz lava pools + Fanal fog forest</strong><span>Steve Douglas · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1723098281716-bb15452fed31?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1723098281716-bb15452fed31?w=1200&q=80&auto=format&fit=crop" alt="Porto Moniz lava pools + Fanal fog forest" loading="lazy"></a><figcaption><strong>Porto Moniz lava pools + Fanal fog forest</strong><span>Markus Kammermann · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1713964685661-bd5e3ffebf64?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1713964685661-bd5e3ffebf64?w=1200&q=80&auto=format&fit=crop" alt="Porto Moniz lava pools + Fanal fog forest" loading="lazy"></a><figcaption><strong>Porto Moniz lava pools + Fanal fog forest</strong><span>Tomas Trajan · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1590963852640-2714d687c102?w=1200&q=80&auto=format&fit=crop" alt="Porto Moniz lava pools + Fanal fog forest" loading="lazy"><figcaption><strong>Porto Moniz lava pools + Fanal fog forest</strong><span>Steve Douglas · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1723098281716-bb15452fed31?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1723098281716-bb15452fed31?w=1200&q=80&auto=format&fit=crop" alt="Porto Moniz lava pools + Fanal fog forest" loading="lazy"></a><figcaption><strong>Porto Moniz lava pools + Fanal fog forest</strong><span>Markus Kammermann · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1713964685661-bd5e3ffebf64?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1713964685661-bd5e3ffebf64?w=1200&q=80&auto=format&fit=crop" alt="Porto Moniz lava pools + Fanal fog forest" loading="lazy"></a><figcaption><strong>Porto Moniz lava pools + Fanal fog forest</strong><span>Tomas Trajan · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Porto Moniz developed pools: EUR3/person (lifeguards, changing rooms; the rugged free Cachalote pools sit next door). Parking ~EUR1.50-3/hr. Fanal is free — the ancient laurel trees are steps from the free marked lot on ER110.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> Porto Moniz sits on the cooler north coast — pool water is Atlantic-brisk (~66-68 F) inside sun-warmed lava rims. Fanal at ~3,800 ft runs a genuine fog lottery: afternoons when cloud sits on the plateau give the spooky look; clear days give cow pastures instead.</p></div>
+          <div class="kv"><span>Cost</span><p>Porto Moniz developed pools: EUR3/person (lifeguards, changing rooms; the rugged free Cachalote pools sit next door). Parking ~EUR1.50-3/hr. Fanal is free — the ancient laurel trees are steps from the free marked lot on ER110.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> Porto Moniz sits on the cooler north coast — pool water is Atlantic-brisk (~66-68 F) inside sun-warmed lava rims. Fanal at ~3,800 ft runs a genuine fog lottery: afternoons when cloud sits on the plateau give the spooky look; clear days give cow pastures instead.</p></div>
           <div class="callout save"><b>Save</b> Swim the developed pools for about EUR12 total — the cheapest "whoa" swim of the entire trip, volcanic rock rims and crashing surf included.</div>
           <div class="callout splurge"><b>Splurge</b> Lunch at Sea View's rooftop over the pools (~EUR60-80 family) so the kids can watch waves detonate on the lava while eating burgers.</div>
           <div class="resto">
@@ -1399,28 +1380,22 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://visitmadeira.com/en/what-to-do/sports-and-sea/sea/beaches-and-swimming-pools/seixal-natural-swimming-pools/" target="_blank" rel="noreferrer"><b>Seixal natural pools + black-sand beach</b> &#8617;</a> — wilder, quieter pools 15 minutes east if Porto Moniz is packed — plus Madeira's black-sand beach.</p>
+            <p><a href="https://visitmadeira.com/en/what-to-do/sports-and-sea/sea/beaches-and-swimming-pools/seixal-natural-swimming-pools/" target="_blank" rel="noreferrer"><b>Seixal natural pools + black-sand beach</b> ↩</a> — wilder, quieter pools 15 minutes east if Porto Moniz is packed — plus Madeira's black-sand beach.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://wiseviator.com/porto-moniz-natural-swimming-pools/" target="_blank" rel="noreferrer">Pools practical guide ↗</a>
-            <a href="https://www.saltinourhair.com/madeira/fanal-forest/" target="_blank" rel="noreferrer">Fanal forest guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://wiseviator.com/porto-moniz-natural-swimming-pools/" target="_blank" rel="noreferrer">Pools practical guide ↗</a><a href="https://www.saltinourhair.com/madeira/fanal-forest/" target="_blank" rel="noreferrer">Fanal forest guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.8668,-17.1699&z=14&output=embed" title="Map of Porto Moniz lava pools + Fanal fog forest"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=32.8668,-17.1699" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section><section class="spot">
+      </div></section><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Cabo Girão skywalk + Câmara de Lobos</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Cabo%20Gir%C3%A3o%20skywalk%20%2B%20C%C3%A2mara%20de%20Lobos" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cabogirao" target="_blank" rel="noreferrer">IG · Cabo Girão</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=camaradelobos" target="_blank" rel="noreferrer">IG · Câmara de Lobos</a><a class="xf" href="https://www.flickr.com/search/?text=Cabo%20Gir%C3%A3o%20skywalk%20%2B%20C%C3%A2mara%20de%20Lobos&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Cabo%20Gir%C3%A3o%20skywalk%20%2B%20C%C3%A2mara%20de%20Lobos" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cabogirao" target="_blank" rel="noreferrer">IG · Cabo Girão</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=camaradelobos" target="_blank" rel="noreferrer">IG · Câmara de Lobos</a><a class="xf" href="https://www.flickr.com/search/?text=Cabo%20Gir%C3%A3o%20skywalk%20%2B%20C%C3%A2mara%20de%20Lobos&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1532017754072-c23ff26ea268?w=1200&q=80&auto=format&fit=crop" alt="Cabo Girão skywalk + Câmara de Lobos" loading="lazy"><figcaption><strong>Cabo Girão skywalk + Câmara de Lobos</strong><span>Thibault Mokuenko · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1556368373-ecd7e850f56d?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1556368373-ecd7e850f56d?w=1200&q=80&auto=format&fit=crop" alt="Cabo Girão skywalk + Câmara de Lobos" loading="lazy"></a><figcaption><strong>Cabo Girão skywalk + Câmara de Lobos</strong><span>Arnaud STECKLE · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1744914761157-9280e2ab3828?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1744914761157-9280e2ab3828?w=1200&q=80&auto=format&fit=crop" alt="Cabo Girão skywalk + Câmara de Lobos" loading="lazy"></a><figcaption><strong>Cabo Girão skywalk + Câmara de Lobos</strong><span>Ana María García Orellana · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1532017754072-c23ff26ea268?w=1200&q=80&auto=format&fit=crop" alt="Cabo Girão skywalk + Câmara de Lobos" loading="lazy"><figcaption><strong>Cabo Girão skywalk + Câmara de Lobos</strong><span>Thibault Mokuenko · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1556368373-ecd7e850f56d?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1556368373-ecd7e850f56d?w=1200&q=80&auto=format&fit=crop" alt="Cabo Girão skywalk + Câmara de Lobos" loading="lazy"></a><figcaption><strong>Cabo Girão skywalk + Câmara de Lobos</strong><span>Arnaud STECKLE · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1744914761157-9280e2ab3828?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1744914761157-9280e2ab3828?w=1200&q=80&auto=format&fit=crop" alt="Cabo Girão skywalk + Câmara de Lobos" loading="lazy"></a><figcaption><strong>Cabo Girão skywalk + Câmara de Lobos</strong><span>Ana María García Orellana · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Skywalk entry EUR5/adult since Jan 2026; children under 12 free — so the 13-year-old pays and the 8-year-old doesn't: about EUR15 for the family. Câmara de Lobos harbor below is free wandering.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> the 1,900-ft glass platform is usually clear when the coast is sunny — go on a clear afternoon on the way back from the west side rather than on a capacete morning.</p></div>
+          <div class="kv"><span>Cost</span><p>Skywalk entry EUR5/adult since Jan 2026; children under 12 free — so the 13-year-old pays and the 8-year-old doesn't: about EUR15 for the family. Câmara de Lobos harbor below is free wandering.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> the 1,900-ft glass platform is usually clear when the coast is sunny — go on a clear afternoon on the way back from the west side rather than on a capacete morning.</p></div>
           <div class="callout save"><b>Save</b> Stack it onto the Porto Moniz/Fanal day as a 20-minute stop — it is directly on the return road, so it costs no extra driving.</div>
           <div class="callout splurge"><b>Splurge</b> Ten minutes below, Câmara de Lobos' painted-boat harbor is the postcard gelato-and-golden-hour stop; EUR20 of gelato and a slow lap is the whole spend.</div>
           <div class="resto">
@@ -1429,19 +1404,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://visitmadeira.com/en/where-to-go/camara-de-lobos/" target="_blank" rel="noreferrer"><b>Câmara de Lobos harbor evening</b> &#8617;</a> — skip the skywalk fee entirely and do the fishing-village harbor at golden hour instead.</p>
+            <p><a href="https://visitmadeira.com/en/where-to-go/camara-de-lobos/" target="_blank" rel="noreferrer"><b>Câmara de Lobos harbor evening</b> ↩</a> — skip the skywalk fee entirely and do the fishing-village harbor at golden hour instead.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.timesofmadeira.com/cabo-girao-entry-fee-increases-by-66-from-january" target="_blank" rel="noreferrer">2026 fee change ↗</a>
-            <a href="https://visitmadeira.com/en/where-to-go/camara-de-lobos/" target="_blank" rel="noreferrer">Câmara de Lobos guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.timesofmadeira.com/cabo-girao-entry-fee-increases-by-66-from-january" target="_blank" rel="noreferrer">2026 fee change ↗</a><a href="https://visitmadeira.com/en/where-to-go/camara-de-lobos/" target="_blank" rel="noreferrer">Câmara de Lobos guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.6553,-17.0058&z=14&output=embed" title="Map of Cabo Girão skywalk + Câmara de Lobos"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=32.6553,-17.0058" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day5">
       <div class="day-head">
         <div class="day-badge">5</div>
@@ -1454,13 +1425,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Ponta de São Lourenço cliffs (PR8)</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Ponta%20de%20S%C3%A3o%20Louren%C3%A7o%20cliffs%20%28PR8%29" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=pontadesaolourenco" target="_blank" rel="noreferrer">IG · Ponta de São Lourenço</a><a class="xf" href="https://www.flickr.com/search/?text=Ponta%20de%20S%C3%A3o%20Louren%C3%A7o%20cliffs%20%28PR8%29&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Ponta%20de%20S%C3%A3o%20Louren%C3%A7o%20cliffs%20%28PR8%29" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=pontadesaolourenco" target="_blank" rel="noreferrer">IG · Ponta de São Lourenço</a><a class="xf" href="https://www.flickr.com/search/?text=Ponta%20de%20S%C3%A3o%20Louren%C3%A7o%20cliffs%20%28PR8%29&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1623571473285-c9562d507794?w=1200&q=80&auto=format&fit=crop" alt="Ponta de São Lourenço cliffs (PR8)" loading="lazy"><figcaption><strong>Ponta de São Lourenço cliffs (PR8)</strong><span>MyLife Art · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1583570986513-be4e73a452b3?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1583570986513-be4e73a452b3?w=1200&q=80&auto=format&fit=crop" alt="Ponta de São Lourenço cliffs (PR8)" loading="lazy"></a><figcaption><strong>Ponta de São Lourenço cliffs (PR8)</strong><span>Sergey Nikolaev · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1619360523057-dcae909ea22d?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1619360523057-dcae909ea22d?w=1200&q=80&auto=format&fit=crop" alt="Ponta de São Lourenço cliffs (PR8)" loading="lazy"></a><figcaption><strong>Ponta de São Lourenço cliffs (PR8)</strong><span>Piotr Musioł · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1623571473285-c9562d507794?w=1200&q=80&auto=format&fit=crop" alt="Ponta de São Lourenço cliffs (PR8)" loading="lazy"><figcaption><strong>Ponta de São Lourenço cliffs (PR8)</strong><span>MyLife Art · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1583570986513-be4e73a452b3?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1583570986513-be4e73a452b3?w=1200&q=80&auto=format&fit=crop" alt="Ponta de São Lourenço cliffs (PR8)" loading="lazy"></a><figcaption><strong>Ponta de São Lourenço cliffs (PR8)</strong><span>Sergey Nikolaev · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1619360523057-dcae909ea22d?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1619360523057-dcae909ea22d?w=1200&q=80&auto=format&fit=crop" alt="Ponta de São Lourenço cliffs (PR8)" loading="lazy"></a><figcaption><strong>Ponta de São Lourenço cliffs (PR8)</strong><span>Piotr Musioł · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Trail fee EUR4.50/person 13+ (8-year-old free, registered), booked on SIMplifica. Free parking at the Baía d'Abra trailhead. Full out-and-back is ~7-8 km, 2.5-4 hours; turning around at the second viewpoint halves it.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> the peninsula is the dry, desert-colored end of Madeira — <b>zero shade, strong wind, full sun</b>. Start 8-9 AM, bring hats and 2+ liters of water. There's a café at Cais do Sardinha midway.</p></div>
+          <div class="kv"><span>Cost</span><p>Trail fee EUR4.50/person 13+ (8-year-old free, registered), booked on SIMplifica. Free parking at the Baía d'Abra trailhead. Full out-and-back is ~7-8 km, 2.5-4 hours; turning around at the second viewpoint halves it.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> the peninsula is the dry, desert-colored end of Madeira — <b>zero shade, strong wind, full sun</b>. Start 8-9 AM, bring hats and 2+ liters of water. There's a café at Cais do Sardinha midway.</p></div>
           <div class="callout save"><b>Save</b> Turn around at the Ponta do Furado viewpoint if the 8-year-old fades — the striated-cliff money views come in the first half of the trail.</div>
           <div class="callout splurge"><b>Splurge</b> Post-hike pizza in Machico (Alforno) or a Caniçal grill lunch turns the hot morning into an easy half-day before the Monte toboggan afternoon.</div>
           <div class="resto">
@@ -1469,38 +1438,32 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://visitmadeira.com/en/where-to-go/machico/" target="_blank" rel="noreferrer"><b>Machico town beach</b> &#8617;</a> — golden imported-sand beach 10 minutes away — the easy swim cool-down after the exposed hike.</p>
+            <p><a href="https://visitmadeira.com/en/where-to-go/machico/" target="_blank" rel="noreferrer"><b>Machico town beach</b> ↩</a> — golden imported-sand beach 10 minutes away — the easy swim cool-down after the exposed hike.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-8-vereda-da-ponta-de-sao-lourenco/" target="_blank" rel="noreferrer">Official PR8 page ↗</a>
-            <a href="https://madeirahiking.org/trails/pr8" target="_blank" rel="noreferrer">PR8 trail guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/pr-8-vereda-da-ponta-de-sao-lourenco/" target="_blank" rel="noreferrer">Official PR8 page ↗</a><a href="https://madeirahiking.org/trails/pr8" target="_blank" rel="noreferrer">PR8 trail guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=32.7442,-16.705&z=14&output=embed" title="Map of Ponta de São Lourenço cliffs (PR8)"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=32.7442,-16.705" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day6">
       <div class="day-head">
         <div class="day-badge">6</div>
-        <div class="day-title"><p class="eyebrow">Mon · Jun 14</p><h3>FNC -> LIS + insurance night</h3><p class="feel">Travel + bonus mainland evening</p><p class="daycost">Est. ~$180 · meals + transfers (Oceanarium optional)</p></div>
+        <div class="day-title"><p class="eyebrow">Mon · Jun 14</p><h3>FNC -&gt; LIS + insurance night</h3><p class="feel">Travel + bonus mainland evening</p><p class="daycost">Est. ~$180 · meals + transfers (Oceanarium optional)</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Lisbon airport zone · 1 night</strong></div><div><span>Flight</span><strong>FNC -> LIS · ~7-11 departures/day</strong></div><div><span>Why</span><strong>FNC wind insurance — never chain FNC -> LIS -> PMO same-day</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Lisbon airport zone · 1 night</strong></div><div><span>Flight</span><strong>FNC -&gt; LIS · ~7-11 departures/day</strong></div><div><span>Why</span><strong>FNC wind insurance — never chain FNC -&gt; LIS -&gt; PMO same-day</strong></div></div>
         <p class="note">This night is the plan's shock absorber: if Madeira wind delays the hop, a whole day of slack exists before the twice-weekly Palermo flight. If everything runs on time, it's a free Parque das Nações waterfront evening.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Lisbon buffer evening: Parque das Nações</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Lisbon%20buffer%20evening%3A%20Parque%20das%20Na%C3%A7%C3%B5es" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=parquedasnacoes" target="_blank" rel="noreferrer">IG · Parque das Nações</a><a class="xf" href="https://www.flickr.com/search/?text=Lisbon%20buffer%20evening%3A%20Parque%20das%20Na%C3%A7%C3%B5es&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Lisbon%20buffer%20evening%3A%20Parque%20das%20Na%C3%A7%C3%B5es" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=parquedasnacoes" target="_blank" rel="noreferrer">IG · Parque das Nações</a><a class="xf" href="https://www.flickr.com/search/?text=Lisbon%20buffer%20evening%3A%20Parque%20das%20Na%C3%A7%C3%B5es&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1715099734912-dc2ad96b7b21?w=1200&q=80&auto=format&fit=crop" alt="Lisbon buffer evening: Parque das Nações" loading="lazy"><figcaption><strong>Lisbon buffer evening: Parque das Nações</strong><span>Natali Martynova · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1686528510153-ce639eb1ffb2?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1686528510153-ce639eb1ffb2?w=1200&q=80&auto=format&fit=crop" alt="Lisbon buffer evening: Parque das Nações" loading="lazy"></a><figcaption><strong>Lisbon buffer evening: Parque das Nações</strong><span>Ryan Stanikk · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1652377613571-7032bc9e005b?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1652377613571-7032bc9e005b?w=1200&q=80&auto=format&fit=crop" alt="Lisbon buffer evening: Parque das Nações" loading="lazy"></a><figcaption><strong>Lisbon buffer evening: Parque das Nações</strong><span>Parker Hilton · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1715099734912-dc2ad96b7b21?w=1200&q=80&auto=format&fit=crop" alt="Lisbon buffer evening: Parque das Nações" loading="lazy"><figcaption><strong>Lisbon buffer evening: Parque das Nações</strong><span>Natali Martynova · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1686528510153-ce639eb1ffb2?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1686528510153-ce639eb1ffb2?w=1200&q=80&auto=format&fit=crop" alt="Lisbon buffer evening: Parque das Nações" loading="lazy"></a><figcaption><strong>Lisbon buffer evening: Parque das Nações</strong><span>Ryan Stanikk · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1652377613571-7032bc9e005b?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1652377613571-7032bc9e005b?w=1200&q=80&auto=format&fit=crop" alt="Lisbon buffer evening: Parque das Nações" loading="lazy"></a><figcaption><strong>Lisbon buffer evening: Parque das Nações</strong><span>Parker Hilton · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>The waterfront, cable car views, and playgrounds are free. Lisbon Oceanarium (a 10-minute walk from the airport-zone hotels): EUR25 adults/13+, EUR15 ages 3-12 — about EUR80 for the family if used.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June Lisbon:</b> about <b>77-80 F</b> days / <b>63 F</b> evenings — a warm, easy riverfront stroll after five mountain days.</p></div>
+          <div class="kv"><span>Cost</span><p>The waterfront, cable car views, and playgrounds are free. Lisbon Oceanarium (a 10-minute walk from the airport-zone hotels): EUR25 adults/13+, EUR15 ages 3-12 — about EUR80 for the family if used.</p></div><div class="kv climate"><span>Weather</span><p><b>June Lisbon:</b> about <b>77-80 F</b> days / <b>63 F</b> evenings — a warm, easy riverfront stroll after five mountain days.</p></div>
           <div class="callout save"><b>Save</b> Skip a city push entirely. This night exists as FNC wind insurance; the win is a 10-minute transfer, a waterfront dinner, and everyone horizontal early before the 07:05-pattern Palermo flight.</div>
           <div class="callout splurge"><b>Splurge</b> If the 2027 LIS-PMO rotation is the afternoon departure, upgrade the evening: Oceanarium (EUR80 family) plus the riverfront cable car, or trade the airport zone for a Cascais sunset instead.</div>
           <div class="resto">
@@ -1509,38 +1472,32 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.visitcascais.com/en" target="_blank" rel="noreferrer"><b>Cascais evening</b> &#8617;</a> — the prettier evening 30-40 minutes away — only worth the transfers if the next morning's flight is late.</p>
+            <p><a href="https://www.visitcascais.com/en" target="_blank" rel="noreferrer"><b>Cascais evening</b> ↩</a> — the prettier evening 30-40 minutes away — only worth the transfers if the next morning's flight is late.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://oceanario.pt/en/visit/tickets/" target="_blank" rel="noreferrer">Oceanarium tickets ↗</a>
-            <a href="https://www.tripadvisor.com/Attraction_Review-g189158-d546590-Reviews-Parque_Das_Nacoes-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank" rel="noreferrer">Parque das Nações overview ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://oceanario.pt/en/visit/tickets/" target="_blank" rel="noreferrer">Oceanarium tickets ↗</a><a href="https://www.tripadvisor.com/Attraction_Review-g189158-d546590-Reviews-Parque_Das_Nacoes-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank" rel="noreferrer">Parque das Nações overview ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=38.7681,-9.0952&z=14&output=embed" title="Map of Lisbon buffer evening: Parque das Nações"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=38.7681,-9.0952" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day7">
       <div class="day-head">
         <div class="day-badge">7</div>
-        <div class="day-title"><p class="eyebrow">Tue · Jun 15</p><h3>Lisbon -> Palermo nonstop -> Cefalù</h3><p class="feel">Travel + first warm swim</p><p class="daycost">Est. ~$240 · transfers + easy dinner</p></div>
+        <div class="day-title"><p class="eyebrow">Tue · Jun 15</p><h3>Lisbon -&gt; Palermo nonstop -&gt; Cefalù</h3><p class="feel">Travel + first warm swim</p><p class="daycost">Est. ~$240 · transfers + easy dinner</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Cefalù · night 1 of 3</strong></div><div><span>Flight</span><strong>LIS -> PMO nonstop pattern, ~3 hr</strong></div><div><span>Drive</span><strong>PMO -> Cefalù ~75-90 min; pick up rental at PMO</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Cefalù · night 1 of 3</strong></div><div><span>Flight</span><strong>LIS -&gt; PMO nonstop pattern, ~3 hr</strong></div><div><span>Drive</span><strong>PMO -&gt; Cefalù ~75-90 min; pick up rental at PMO</strong></div></div>
         <p class="note">The route hinge: the Tuesday easyJet rotation is what makes five Madeira nights possible. If the 2027 schedule kills it, the same-day one-stop via Rome preserves this exact day.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Cefalù old town + beach + La Rocca</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cefalu" target="_blank" rel="noreferrer">IG · Cefalù</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=larocca" target="_blank" rel="noreferrer">IG · La Rocca</a><a class="xf" href="https://www.flickr.com/search/?text=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cefalu" target="_blank" rel="noreferrer">IG · Cefalù</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=larocca" target="_blank" rel="noreferrer">IG · La Rocca</a><a class="xf" href="https://www.flickr.com/search/?text=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1524942434100-2b3f200f5b40?w=1920&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Jacek Dylag · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Freysteinn G. Jonsson · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Petr Slovacek · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1524942434100-2b3f200f5b40?w=1920&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Jacek Dylag · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Freysteinn G. Jonsson · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Petr Slovacek · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Beach/old town are free. La Rocca urban park is currently EUR5 full / EUR2.50 reduced ages 6-14; family estimate about EUR15.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Mid-June:</b> warm coastal days, often upper 70s to low 80s F. Sea commonly runs about <b>72-75 F</b> by mid/late June — this is where the trip's warm-water act begins after Madeira's brisk pools.</p></div>
+          <div class="kv"><span>Cost</span><p>Beach/old town are free. La Rocca urban park is currently EUR5 full / EUR2.50 reduced ages 6-14; family estimate about EUR15.</p></div><div class="kv climate"><span>Weather</span><p><b>Mid-June:</b> warm coastal days, often upper 70s to low 80s F. Sea commonly runs about <b>72-75 F</b> by mid/late June — this is where the trip's warm-water act begins after Madeira's brisk pools.</p></div>
           <div class="callout save"><b>Save</b> Make the best day nearly free: beach, old town, sunset harbor, grocery breakfast, and La Rocca only if the morning is cool.</div>
           <div class="callout splurge"><b>Splurge</b> Rent a beach set or do a short boat outing along the coast; confirm the chair/umbrella price before sitting.</div>
           <div class="resto">
@@ -1549,19 +1506,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.visitsicily.info/en/campofelice-di-roccella/" target="_blank" rel="noreferrer"><b>Campofelice di Roccella</b> &#8617;</a> — less postcard charm, but sometimes better-value beach lodging with parking.</p>
+            <p><a href="https://www.visitsicily.info/en/campofelice-di-roccella/" target="_blank" rel="noreferrer"><b>Campofelice di Roccella</b> ↩</a> — less postcard charm, but sometimes better-value beach lodging with parking.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://travelmademedoit.com/rocca-di-cefalu/" target="_blank" rel="noreferrer">La Rocca practical guide ↗</a>
-            <a href="https://savoringsicily.com/restaurants-in-cefalu/" target="_blank" rel="noreferrer">Cefalù restaurant ideas ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://travelmademedoit.com/rocca-di-cefalu/" target="_blank" rel="noreferrer">La Rocca practical guide ↗</a><a href="https://savoringsicily.com/restaurants-in-cefalu/" target="_blank" rel="noreferrer">Cefalù restaurant ideas ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=38.0394,14.0229&z=14&output=embed" title="Map of Cefalù old town + beach + La Rocca"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=38.0394,14.0229" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day8">
       <div class="day-head">
         <div class="day-badge">8</div>
@@ -1574,13 +1527,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Cefalù old town + beach + La Rocca</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cefalu" target="_blank" rel="noreferrer">IG · Cefalù</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=larocca" target="_blank" rel="noreferrer">IG · La Rocca</a><a class="xf" href="https://www.flickr.com/search/?text=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cefalu" target="_blank" rel="noreferrer">IG · Cefalù</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=larocca" target="_blank" rel="noreferrer">IG · La Rocca</a><a class="xf" href="https://www.flickr.com/search/?text=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1524942434100-2b3f200f5b40?w=1920&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Jacek Dylag · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Freysteinn G. Jonsson · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Petr Slovacek · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1524942434100-2b3f200f5b40?w=1920&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Jacek Dylag · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1621965466770-796bf5000084?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Freysteinn G. Jonsson · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1597934166715-659e4354d225?w=1200&q=80&auto=format&fit=crop" alt="Cefalù old town + beach + La Rocca" loading="lazy"></a><figcaption><strong>Cefalù old town + beach + La Rocca</strong><span>Petr Slovacek · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Beach/old town are free. La Rocca urban park is currently EUR5 full / EUR2.50 reduced ages 6-14; family estimate about EUR15.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Mid-June:</b> warm coastal days, often upper 70s to low 80s F. Sea commonly runs about <b>72-75 F</b> by mid/late June — this is where the trip's warm-water act begins after Madeira's brisk pools.</p></div>
+          <div class="kv"><span>Cost</span><p>Beach/old town are free. La Rocca urban park is currently EUR5 full / EUR2.50 reduced ages 6-14; family estimate about EUR15.</p></div><div class="kv climate"><span>Weather</span><p><b>Mid-June:</b> warm coastal days, often upper 70s to low 80s F. Sea commonly runs about <b>72-75 F</b> by mid/late June — this is where the trip's warm-water act begins after Madeira's brisk pools.</p></div>
           <div class="callout save"><b>Save</b> Make the best day nearly free: beach, old town, sunset harbor, grocery breakfast, and La Rocca only if the morning is cool.</div>
           <div class="callout splurge"><b>Splurge</b> Rent a beach set or do a short boat outing along the coast; confirm the chair/umbrella price before sitting.</div>
           <div class="resto">
@@ -1589,19 +1540,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.visitsicily.info/en/campofelice-di-roccella/" target="_blank" rel="noreferrer"><b>Campofelice di Roccella</b> &#8617;</a> — less postcard charm, but sometimes better-value beach lodging with parking.</p>
+            <p><a href="https://www.visitsicily.info/en/campofelice-di-roccella/" target="_blank" rel="noreferrer"><b>Campofelice di Roccella</b> ↩</a> — less postcard charm, but sometimes better-value beach lodging with parking.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://travelmademedoit.com/rocca-di-cefalu/" target="_blank" rel="noreferrer">La Rocca practical guide ↗</a>
-            <a href="https://savoringsicily.com/restaurants-in-cefalu/" target="_blank" rel="noreferrer">Cefalù restaurant ideas ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://travelmademedoit.com/rocca-di-cefalu/" target="_blank" rel="noreferrer">La Rocca practical guide ↗</a><a href="https://savoringsicily.com/restaurants-in-cefalu/" target="_blank" rel="noreferrer">Cefalù restaurant ideas ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=38.0394,14.0229&z=14&output=embed" title="Map of Cefalù old town + beach + La Rocca"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=38.0394,14.0229" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day9">
       <div class="day-head">
         <div class="day-badge">9</div>
@@ -1614,13 +1561,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Palermo historic core + Mondello</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Palermo%20historic%20core%20%2B%20Mondello" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=palermo" target="_blank" rel="noreferrer">IG · Palermo</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mondello" target="_blank" rel="noreferrer">IG · Mondello</a><a class="xf" href="https://www.flickr.com/search/?text=Palermo%20historic%20core%20%2B%20Mondello&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Palermo%20historic%20core%20%2B%20Mondello" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=palermo" target="_blank" rel="noreferrer">IG · Palermo</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mondello" target="_blank" rel="noreferrer">IG · Mondello</a><a class="xf" href="https://www.flickr.com/search/?text=Palermo%20historic%20core%20%2B%20Mondello&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1541777490254-a50eb9045486?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"><figcaption><strong>Palermo historic core + Mondello</strong><span>Cristina Gottardi · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1683978345304-e12d6531b24f?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1683978345304-e12d6531b24f?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"></a><figcaption><strong>Palermo historic core + Mondello</strong><span>Stepan Dudycha · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1586729223498-2cc4a05d3858?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1586729223498-2cc4a05d3858?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"></a><figcaption><strong>Palermo historic core + Mondello</strong><span>Michele Bitetto · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1541777490254-a50eb9045486?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"><figcaption><strong>Palermo historic core + Mondello</strong><span>Cristina Gottardi · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1683978345304-e12d6531b24f?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1683978345304-e12d6531b24f?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"></a><figcaption><strong>Palermo historic core + Mondello</strong><span>Stepan Dudycha · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1586729223498-2cc4a05d3858?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1586729223498-2cc4a05d3858?w=1200&q=80&auto=format&fit=crop" alt="Palermo historic core + Mondello" loading="lazy"></a><figcaption><strong>Palermo historic core + Mondello</strong><span>Michele Bitetto · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Street wandering is free. Palazzo dei Normanni / Palatine Chapel official current adult tickets vary by day/access; plan roughly EUR15.50-EUR19.50 adult and check the exact calendar.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> Palermo is hotter and less breezy than Cefalù. Do culture early, then use Mondello for afternoon water if the city gets heavy.</p></div>
+          <div class="kv"><span>Cost</span><p>Street wandering is free. Palazzo dei Normanni / Palatine Chapel official current adult tickets vary by day/access; plan roughly EUR15.50-EUR19.50 adult and check the exact calendar.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> Palermo is hotter and less breezy than Cefalù. Do culture early, then use Mondello for afternoon water if the city gets heavy.</p></div>
           <div class="callout save"><b>Save</b> Train from Cefalù into Palermo avoids city parking; Palermo-Cefalù rail is frequent and cheap enough for a family city day.</div>
           <div class="callout splurge"><b>Splurge</b> Palatine Chapel/Norman Palace is the paid anchor if mosaics matter; skip it if the kids need beach more than gold ceilings.</div>
           <div class="resto">
@@ -1629,38 +1574,32 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.visitsicily.info/en/monreale/" target="_blank" rel="noreferrer"><b>Monreale Cathedral</b> &#8617;</a> — another mosaic masterpiece if Palermo feels too intense.</p>
+            <p><a href="https://www.visitsicily.info/en/monreale/" target="_blank" rel="noreferrer"><b>Monreale Cathedral</b> ↩</a> — another mosaic masterpiece if Palermo feels too intense.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.federicosecondo.org/en/visit/" target="_blank" rel="noreferrer">Official Norman Palace visit info ↗</a>
-            <a href="https://www.alongdustyroads.com/posts/palermo-sicily-travel-guide" target="_blank" rel="noreferrer">Palermo practical tips ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.federicosecondo.org/en/visit/" target="_blank" rel="noreferrer">Official Norman Palace visit info ↗</a><a href="https://www.alongdustyroads.com/posts/palermo-sicily-travel-guide" target="_blank" rel="noreferrer">Palermo practical tips ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=38.1157,13.3615&z=14&output=embed" title="Map of Palermo historic core + Mondello"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=38.1157,13.3615" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day10">
       <div class="day-head">
         <div class="day-badge">10</div>
         <div class="day-title"><p class="eyebrow">Fri · Jun 18</p><h3>Juneteenth transfer to the Taormina coast</h3><p class="feel">Holiday + beach arrival</p><p class="daycost">Est. ~$260 · fuel/tolls + beach</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Taormina coast · night 1 of 3</strong></div><div><span>Holiday</span><strong>Observed Juneteenth · no PTO</strong></div><div><span>Drive</span><strong>Cefalù -> Giardini-Naxos ~2.5-3 hr on the A20/A18</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Taormina coast · night 1 of 3</strong></div><div><span>Holiday</span><strong>Observed Juneteenth · no PTO</strong></div><div><span>Drive</span><strong>Cefalù -&gt; Giardini-Naxos ~2.5-3 hr on the A20/A18</strong></div></div>
         <p class="note">The federal holiday lands exactly on the long transfer day, so it costs nothing. Arrive by early afternoon, Isola Bella swim, Taormina evening up the hill if energy allows.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Taormina + Isola Bella</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Taormina%20%2B%20Isola%20Bella" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=taormina" target="_blank" rel="noreferrer">IG · Taormina</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=isolabella" target="_blank" rel="noreferrer">IG · Isola Bella</a><a class="xf" href="https://www.flickr.com/search/?text=Taormina%20%2B%20Isola%20Bella&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Taormina%20%2B%20Isola%20Bella" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=taormina" target="_blank" rel="noreferrer">IG · Taormina</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=isolabella" target="_blank" rel="noreferrer">IG · Isola Bella</a><a class="xf" href="https://www.flickr.com/search/?text=Taormina%20%2B%20Isola%20Bella&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c11" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1589823934957-5e9ce265422a?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"><figcaption><strong>Taormina + Isola Bella</strong><span>Giuseppe Famiani · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Yoav Aziz · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Aleksandar Petrov · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c11" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1589823934957-5e9ce265422a?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"><figcaption><strong>Taormina + Isola Bella</strong><span>Giuseppe Famiani · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Yoav Aziz · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Aleksandar Petrov · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Ancient Theatre official current fare: EUR14 full / EUR7 reduced. Isola Bella beach is free; beach sets/boat extras vary.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Mid/late June:</b> warm to hot, with Ionian water around <b>72-75 F</b>. This is the swim finale the Madeira week deliberately saved itself for.</p></div>
+          <div class="kv"><span>Cost</span><p>Ancient Theatre official current fare: EUR14 full / EUR7 reduced. Isola Bella beach is free; beach sets/boat extras vary.</p></div><div class="kv climate"><span>Weather</span><p><b>Mid/late June:</b> warm to hot, with Ionian water around <b>72-75 F</b>. This is the swim finale the Madeira week deliberately saved itself for.</p></div>
           <div class="callout save"><b>Save</b> Stay below Taormina and use cable car/taxi into town; avoid old-town parking and lodging premiums.</div>
           <div class="callout splurge"><b>Splurge</b> Greek Theatre at golden hour plus an Isola Bella boat/swim stop; budget $120-250 family depending tour style.</div>
           <div class="resto">
@@ -1669,19 +1608,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.visitsicily.info/en/giardini-naxos/" target="_blank" rel="noreferrer"><b>Giardini-Naxos beach</b> &#8617;</a> — easier beach logistics and lower prices if Taormina is crowded.</p>
+            <p><a href="https://www.visitsicily.info/en/giardini-naxos/" target="_blank" rel="noreferrer"><b>Giardini-Naxos beach</b> ↩</a> — easier beach logistics and lower prices if Taormina is crowded.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://parchiarcheologici.regione.sicilia.it/naxos-taormina/en/biglietti/teatro-antico-di-taormina-2/" target="_blank" rel="noreferrer">Official theatre tickets ↗</a>
-            <a href="https://www.traveltaormina.com/en/monuments/greek-theatre-taormina.html" target="_blank" rel="noreferrer">Taormina theatre guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://parchiarcheologici.regione.sicilia.it/naxos-taormina/en/biglietti/teatro-antico-di-taormina-2/" target="_blank" rel="noreferrer">Official theatre tickets ↗</a><a href="https://www.traveltaormina.com/en/monuments/greek-theatre-taormina.html" target="_blank" rel="noreferrer">Taormina theatre guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=37.8522,15.2866&z=14&output=embed" title="Map of Taormina + Isola Bella"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=37.8522,15.2866" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day11">
       <div class="day-head">
         <div class="day-badge">11</div>
@@ -1694,13 +1629,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Mount Etna south slope</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Mount%20Etna%20south%20slope" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mountetna" target="_blank" rel="noreferrer">IG · Mount Etna</a><a class="xf" href="https://www.flickr.com/search/?text=Mount%20Etna%20south%20slope&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Mount%20Etna%20south%20slope" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mountetna" target="_blank" rel="noreferrer">IG · Mount Etna</a><a class="xf" href="https://www.flickr.com/search/?text=Mount%20Etna%20south%20slope&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c12" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1497002961800-ea7dbfe18696?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"><figcaption><strong>Mount Etna south slope</strong><span>Shawn Appel · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1631338034841-e96e0e46b36e?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1631338034841-e96e0e46b36e?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"></a><figcaption><strong>Mount Etna south slope</strong><span>Bernd Dittrich · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1600723353541-c73d1ec0d2cd?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1600723353541-c73d1ec0d2cd?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"></a><figcaption><strong>Mount Etna south slope</strong><span>Petr Slovacek · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c12" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1497002961800-ea7dbfe18696?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"><figcaption><strong>Mount Etna south slope</strong><span>Shawn Appel · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1631338034841-e96e0e46b36e?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1631338034841-e96e0e46b36e?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"></a><figcaption><strong>Mount Etna south slope</strong><span>Bernd Dittrich · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1600723353541-c73d1ec0d2cd?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1600723353541-c73d1ec0d2cd?w=1200&q=80&auto=format&fit=crop" alt="Mount Etna south slope" loading="lazy"></a><figcaption><strong>Mount Etna south slope</strong><span>Petr Slovacek · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Free Silvestri craters are the budget plan. Cable-car-only prices have been reported around EUR50 adult / EUR30 kids 5-10; 4x4/guided higher-slope options can push a family toward EUR250-EUR320.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Mountain day:</b> cooler and windier than the coast. Visibility drives value; do not buy expensive summit options if clouds/ash are poor.</p></div>
+          <div class="kv"><span>Cost</span><p>Free Silvestri craters are the budget plan. Cable-car-only prices have been reported around EUR50 adult / EUR30 kids 5-10; 4x4/guided higher-slope options can push a family toward EUR250-EUR320.</p></div><div class="kv climate"><span>Weather</span><p><b>Mountain day:</b> cooler and windier than the coast. Visibility drives value; do not buy expensive summit options if clouds/ash are poor.</p></div>
           <div class="callout save"><b>Save</b> Walk Silvestri craters for free, then spend the money on a beach dinner or boat day.</div>
           <div class="callout splurge"><b>Splurge</b> Cable car or 4x4 only on a clear morning; the 13-year-old will get more out of it than the 8-year-old if the weather cooperates.</div>
           <div class="resto">
@@ -1709,19 +1642,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.visitsicily.info/en/gole-dellalcantara/" target="_blank" rel="noreferrer"><b>Alcantara Gorge</b> &#8617;</a> — cool-water nature day if Etna weather is bad or crater access is restricted.</p>
+            <p><a href="https://www.visitsicily.info/en/gole-dellalcantara/" target="_blank" rel="noreferrer"><b>Alcantara Gorge</b> ↩</a> — cool-water nature day if Etna weather is bad or crater access is restricted.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.sicilyactive.com/en/mount-etna-cable-car" target="_blank" rel="noreferrer">Etna cable-car price proxy ↗</a>
-            <a href="https://guidevulcanologicheetna.it/en/prices-update-of-the-etnas-cableway/" target="_blank" rel="noreferrer">Etna 4x4 price proxy ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.sicilyactive.com/en/mount-etna-cable-car" target="_blank" rel="noreferrer">Etna cable-car price proxy ↗</a><a href="https://guidevulcanologicheetna.it/en/prices-update-of-the-etnas-cableway/" target="_blank" rel="noreferrer">Etna 4x4 price proxy ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=37.6995,15.0021&z=14&output=embed" title="Map of Mount Etna south slope"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=37.6995,15.0021" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day12">
       <div class="day-head">
         <div class="day-badge">12</div>
@@ -1734,13 +1663,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Taormina + Isola Bella</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Taormina%20%2B%20Isola%20Bella" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=taormina" target="_blank" rel="noreferrer">IG · Taormina</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=isolabella" target="_blank" rel="noreferrer">IG · Isola Bella</a><a class="xf" href="https://www.flickr.com/search/?text=Taormina%20%2B%20Isola%20Bella&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Taormina%20%2B%20Isola%20Bella" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=taormina" target="_blank" rel="noreferrer">IG · Taormina</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=isolabella" target="_blank" rel="noreferrer">IG · Isola Bella</a><a class="xf" href="https://www.flickr.com/search/?text=Taormina%20%2B%20Isola%20Bella&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c13" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1589823934957-5e9ce265422a?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"><figcaption><strong>Taormina + Isola Bella</strong><span>Giuseppe Famiani · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Yoav Aziz · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Aleksandar Petrov · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c13" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1589823934957-5e9ce265422a?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"><figcaption><strong>Taormina + Isola Bella</strong><span>Giuseppe Famiani · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1688105554670-c7acbc7a1277?w=1200&q=80&auto=format&fit=crop" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Yoav Aziz · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/37559208/pexels-photo-37559208.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Taormina + Isola Bella" loading="lazy"></a><figcaption><strong>Taormina + Isola Bella</strong><span>Aleksandar Petrov · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Ancient Theatre official current fare: EUR14 full / EUR7 reduced. Isola Bella beach is free; beach sets/boat extras vary.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>Mid/late June:</b> warm to hot, with Ionian water around <b>72-75 F</b>. This is the swim finale the Madeira week deliberately saved itself for.</p></div>
+          <div class="kv"><span>Cost</span><p>Ancient Theatre official current fare: EUR14 full / EUR7 reduced. Isola Bella beach is free; beach sets/boat extras vary.</p></div><div class="kv climate"><span>Weather</span><p><b>Mid/late June:</b> warm to hot, with Ionian water around <b>72-75 F</b>. This is the swim finale the Madeira week deliberately saved itself for.</p></div>
           <div class="callout save"><b>Save</b> Stay below Taormina and use cable car/taxi into town; avoid old-town parking and lodging premiums.</div>
           <div class="callout splurge"><b>Splurge</b> Greek Theatre at golden hour plus an Isola Bella boat/swim stop; budget $120-250 family depending tour style.</div>
           <div class="resto">
@@ -1749,32 +1676,27 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.visitsicily.info/en/giardini-naxos/" target="_blank" rel="noreferrer"><b>Giardini-Naxos beach</b> &#8617;</a> — easier beach logistics and lower prices if Taormina is crowded.</p>
+            <p><a href="https://www.visitsicily.info/en/giardini-naxos/" target="_blank" rel="noreferrer"><b>Giardini-Naxos beach</b> ↩</a> — easier beach logistics and lower prices if Taormina is crowded.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://parchiarcheologici.regione.sicilia.it/naxos-taormina/en/biglietti/teatro-antico-di-taormina-2/" target="_blank" rel="noreferrer">Official theatre tickets ↗</a>
-            <a href="https://www.traveltaormina.com/en/monuments/greek-theatre-taormina.html" target="_blank" rel="noreferrer">Taormina theatre guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://parchiarcheologici.regione.sicilia.it/naxos-taormina/en/biglietti/teatro-antico-di-taormina-2/" target="_blank" rel="noreferrer">Official theatre tickets ↗</a><a href="https://www.traveltaormina.com/en/monuments/greek-theatre-taormina.html" target="_blank" rel="noreferrer">Taormina theatre guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=37.8522,15.2866&z=14&output=embed" title="Map of Taormina + Isola Bella"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=37.8522,15.2866" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c0" id="day13">
       <div class="day-head">
         <div class="day-badge">13</div>
-        <div class="day-title"><p class="eyebrow">Mon · Jun 21</p><h3>Fly Catania -> Pittsburgh</h3><p class="feel">Homebound travel</p><p class="daycost">Est. ~$90 · airport meals</p></div>
+        <div class="day-title"><p class="eyebrow">Mon · Jun 21</p><h3>Fly Catania -&gt; Pittsburgh</h3><p class="feel">Homebound travel</p><p class="daycost">Est. ~$90 · airport meals</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Home</strong></div><div><span>Plan</span><strong>Drop car at CTA, fly CTA -> gateway -> PIT</strong></div><div><span>Buffer</span><strong>Home two days before the Jun 23 blackout</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Home</strong></div><div><span>Plan</span><strong>Drop car at CTA, fly CTA -&gt; gateway -&gt; PIT</strong></div><div><span>Buffer</span><strong>Home two days before the Jun 23 blackout</strong></div></div>
         <p class="note">Prefer a conservative connection over the cheapest impossible itinerary. The schedule is built to avoid any travel over Jun 23-26.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
-    </article>
-    </div>
-  </section>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
+    </article></div>
+    </section>
 
   <section id="budget" class="divider">
     <div class="section-label">
@@ -3222,4 +3144,4 @@ document.querySelectorAll('.carousel').forEach(function(c){
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-</body></html>
+<script>/*scrollspy*/(function(){var nav=document.querySelector("nav");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:"smooth"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:"smooth"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>

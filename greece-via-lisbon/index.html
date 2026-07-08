@@ -687,6 +687,7 @@ nav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;paddi
 nav::-webkit-scrollbar{display:none}
 nav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}
 nav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 40px;max-width:760px}
 .section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
@@ -820,7 +821,8 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}
 .spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}
 .spot-name{margin:0;font-size:1.22rem;font-weight:600}
-.explore{display:flex;gap:6px;flex:0 0 auto}
+.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.explore::-webkit-scrollbar{display:none}
 .explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}
 .explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .explore .xg{background:#4285F4}
@@ -1131,13 +1133,12 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="itinerary" class="divider">
-    <div class="section-label">
+      <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
-      <p>Swipe each carousel for photos. Every stop carries its cost, a &#128176; money-saving tip, an &#10024; splurge, picky-kid restaurants, an alternative, blog links, and a map — tap &ldquo;Open in Google Maps&rdquo; to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
+      <p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, an alternative, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
     </div>
-    <div class="days">
-      <article class="day c0" id="day0">
+      <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
         <div class="day-title"><p class="eyebrow">Wed · Jun 9</p><h3>Depart Pittsburgh after work</h3><p class="feel">Travel day</p><p class="daycost">Est. ~$60 · airport meals · travel day</p></div>
@@ -1146,26 +1147,24 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Sleep</span><strong>Overnight flight toward Lisbon</strong></div><div><span>Plan</span><strong>PIT → European gateway → Lisbon</strong></div></div>
         <p class="note">Work the full day Wednesday — an evening flight costs no PTO. Juneteenth (observed Fri Jun 18) falls later in the trip, during the Chania stay — a holiday that would otherwise cost a workday.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c1" id="day1">
       <div class="day-head">
         <div class="day-badge">1</div>
         <div class="day-title"><p class="eyebrow">Thu · Jun 10</p><h3>Arrive Lisbon → Cascais</h3><p class="feel">Light recovery + beach</p><p class="daycost">Est. ~$110 · groceries + casual dinner</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Cascais · night 1 of 2</strong></div><div><span>Plan</span><strong>Cascais beach & promenade, easy dinner</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Cascais · night 1 of 2</strong></div><div><span>Plan</span><strong>Cascais beach &amp; promenade, easy dinner</strong></div></div>
         <p class="note">The win today is a smooth landing, groceries, a pool or beach, and an early dinner — this is a recovery day, not a sightseeing day. LIS → Cascais is ~33 km / 25–35 min.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Cascais Bay & Beach</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Cascais%20Bay%20%26%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cascaisbay" target="_blank" rel="noreferrer">IG · Cascais Bay</a><a class="xf" href="https://www.flickr.com/search/?text=Cascais%20Bay%20%26%20Beach&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Cascais Bay &amp; Beach</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Cascais%20Bay%20%26%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cascaisbay" target="_blank" rel="noreferrer">IG · Cascais Bay</a><a class="xf" href="https://www.flickr.com/search/?text=Cascais%20Bay%20%26%20Beach&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1615672337780-6e19a28a5b39?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Cascais Waterfront & Lighthouse" loading="lazy"><figcaption><strong>Cascais Waterfront & Lighthouse</strong><span>Jeroen den Otter · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/q13k3WTW0zk" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1587973878097-ef3aabd5eeaa?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Cascais Bay & Beach" loading="lazy"></a><figcaption><strong>Cascais Bay & Beach</strong><span>Calin Stan · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/Lw5SFFSb8-o" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1643119763555-d4239b5dfa12?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Cascais Coastline near Boca do Inferno" loading="lazy"></a><figcaption><strong>Cascais Coastline</strong><span>Max · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1615672337780-6e19a28a5b39?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Cascais Waterfront & Lighthouse" loading="lazy"><figcaption><strong>Cascais Waterfront &amp; Lighthouse</strong><span>Jeroen den Otter · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/q13k3WTW0zk" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1587973878097-ef3aabd5eeaa?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Cascais Bay & Beach" loading="lazy"></a><figcaption><strong>Cascais Bay &amp; Beach</strong><span>Calin Stan · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/Lw5SFFSb8-o" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1643119763555-d4239b5dfa12?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Cascais Coastline near Boca do Inferno" loading="lazy"></a><figcaption><strong>Cascais Coastline</strong><span>Max · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Beach free; central parking ~$0.50/hr. Lisbon–Cascais train $2.50 adult / $1.50 child 4–12.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>75°F</b> day / <b>63°F</b> night. Sea <b>63°F</b> (58–68°F) — bracing, not a real swim without a wetsuit; treat this stop as a beach-walk-and-recover day, not a swim day.</p></div>
+          <div class="kv"><span>Cost</span><p>Beach free; central parking ~$0.50/hr. Lisbon–Cascais train $2.50 adult / $1.50 child 4–12.</p></div><div class="kv climate"><span>June weather</span><p><b>75°F</b> day / <b>63°F</b> night. Sea <b>63°F</b> (58–68°F) — bracing, not a real swim without a wetsuit; treat this stop as a beach-walk-and-recover day, not a swim day.</p></div>
           <div class="callout save"><b>Save</b> Kids 4–12 ride the Lisbon–Cascais train half-price — a family of 4 saves ~$10 round trip.</div>
           <div class="callout splurge"><b>Splurge</b> Coastal horseback ride near Quinta da Marinha, ~$45–70 pp.</div>
           <div class="resto">
@@ -1174,19 +1173,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.tripadvisor.com/Attraction_Review-g189154-d3281717-Reviews-Ribeira_Beach-Cascais_Lisbon_District_Central_Portugal.html" target="_blank" rel="noreferrer"><b>Praia da Ribeira</b> &#8617;</a> — Sheltered in-town beach, calm water — a gentler first swim than the open bay after a redeye.</p>
+            <p><a href="https://www.tripadvisor.com/Attraction_Review-g189154-d3281717-Reviews-Ribeira_Beach-Cascais_Lisbon_District_Central_Portugal.html" target="_blank" rel="noreferrer"><b>Praia da Ribeira</b> ↩</a> — Sheltered in-town beach, calm water — a gentler first swim than the open bay after a redeye.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://savourthetrip.com/cascais-with-kids-the-family-travel-guide-to-lisbons-charming-coastal-escape/" target="_blank" rel="noreferrer">Cascais with kids — family guide ↗</a>
-            <a href="https://ciaobambino.com/cascais-portugal-with-kids" target="_blank" rel="noreferrer">Ciao Bambino — young kids ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://savourthetrip.com/cascais-with-kids-the-family-travel-guide-to-lisbons-charming-coastal-escape/" target="_blank" rel="noreferrer">Cascais with kids — family guide ↗</a><a href="https://ciaobambino.com/cascais-portugal-with-kids" target="_blank" rel="noreferrer">Ciao Bambino — young kids ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=38.6968,-9.4215&z=14&output=embed" title="Map of Cascais Bay & Beach"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=38.6968,-9.4215" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day2">
       <div class="day-head">
         <div class="day-badge">2</div>
@@ -1198,14 +1193,12 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Belém Tower & Jerónimos Monastery</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Bel%C3%A9m%20Tower%20%26%20Jer%C3%B3nimos%20Monastery" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=belemtower" target="_blank" rel="noreferrer">IG · Belém Tower</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=jeronimosmonastery" target="_blank" rel="noreferrer">IG · Jerónimos Monastery</a><a class="xf" href="https://www.flickr.com/search/?text=Bel%C3%A9m%20Tower%20%26%20Jer%C3%B3nimos%20Monastery&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Belém Tower &amp; Jerónimos Monastery</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Bel%C3%A9m%20Tower%20%26%20Jer%C3%B3nimos%20Monastery" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=belemtower" target="_blank" rel="noreferrer">IG · Belém Tower</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=jeronimosmonastery" target="_blank" rel="noreferrer">IG · Jerónimos Monastery</a><a class="xf" href="https://www.flickr.com/search/?text=Bel%C3%A9m%20Tower%20%26%20Jer%C3%B3nimos%20Monastery&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Torre_Bel%C3%A9m_April_2009-4a.jpg" alt="Belém Tower & Jerónimos Monastery" loading="lazy"><figcaption><strong>Belém Tower & Jerónimos Monastery</strong><span>Alvesgaspar · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Monasterio_de_los_Jer%C3%B3nimos,_Lisboa,_Portugal,_2022-07-24,_DD_38-40_HDR.jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monasterio%20de%20los%20Jer%C3%B3nimos%2C%20Lisboa%2C%20Portugal%2C%202022-07-24%2C%20DD%2038-40%20HDR.jpg" alt="Jerónimos Monastery Interior" loading="lazy"></a><figcaption><strong>Jerónimos Monastery Interior</strong><span>Diego Delso · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/belem-tower-at-sunset-with-trees-framing-view-69P1Cbp89sk" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1758264091132-395618369df5?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Belém Tower at Sunset" loading="lazy"></a><figcaption><strong>Belém Tower at Sunset</strong><span>Domenico Adornato · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Torre_Bel%C3%A9m_April_2009-4a.jpg" alt="Belém Tower & Jerónimos Monastery" loading="lazy"><figcaption><strong>Belém Tower &amp; Jerónimos Monastery</strong><span>Alvesgaspar · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Monasterio_de_los_Jer%C3%B3nimos,_Lisboa,_Portugal,_2022-07-24,_DD_38-40_HDR.jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Monasterio%20de%20los%20Jer%C3%B3nimos%2C%20Lisboa%2C%20Portugal%2C%202022-07-24%2C%20DD%2038-40%20HDR.jpg" alt="Jerónimos Monastery Interior" loading="lazy"></a><figcaption><strong>Jerónimos Monastery Interior</strong><span>Diego Delso · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/belem-tower-at-sunset-with-trees-framing-view-69P1Cbp89sk" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1758264091132-395618369df5?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Belém Tower at Sunset" loading="lazy"></a><figcaption><strong>Belém Tower at Sunset</strong><span>Domenico Adornato · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Belém Tower $7 adult / free ≤12; Jerónimos Monastery $12 adult / free ≤12. Both free on first Sunday of the month (arrive early, long lines).</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>75°F</b> day / <b>64°F</b> night — Lisbon's riverside is breezier than Cascais, pack a light layer.</p></div>
+          <div class="kv"><span>Cost</span><p>Belém Tower $7 adult / free ≤12; Jerónimos Monastery $12 adult / free ≤12. Both free on first Sunday of the month (arrive early, long lines).</p></div><div class="kv climate"><span>June weather</span><p><b>75°F</b> day / <b>64°F</b> night — Lisbon's riverside is breezier than Cascais, pack a light layer.</p></div>
           <div class="callout save"><b>Save</b> Skip both interiors and see the exteriors + riverside park free — the towers themselves are the photo, not always worth the ticket queue with tired kids.</div>
           <div class="callout splurge"><b>Splurge</b> Pastéis de Belém at the original 1837 bakery — not expensive, but worth planning around the line (~15–30 min in June).</div>
           <div class="resto">
@@ -1214,19 +1207,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.lxfactory.com/en/" target="_blank" rel="noreferrer"><b>LX Factory</b> &#8617;</a> — Converted industrial complex a few minutes away — bookshops, murals, casual food, less monument-fatigue for kids.</p>
+            <p><a href="https://www.lxfactory.com/en/" target="_blank" rel="noreferrer"><b>LX Factory</b> ↩</a> — Converted industrial complex a few minutes away — bookshops, murals, casual food, less monument-fatigue for kids.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.thisisathens.org/" target="_blank" rel="noreferrer">General Lisbon-with-kids day-trip guides ↗</a>
-            <a href="https://ciaobambino.com/lisbon-portugal-with-kids" target="_blank" rel="noreferrer">Ciao Bambino — Lisbon with kids ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.thisisathens.org/" target="_blank" rel="noreferrer">General Lisbon-with-kids day-trip guides ↗</a><a href="https://ciaobambino.com/lisbon-portugal-with-kids" target="_blank" rel="noreferrer">Ciao Bambino — Lisbon with kids ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=38.6916,-9.216&z=14&output=embed" title="Map of Belém Tower & Jerónimos Monastery"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=38.6916,-9.216" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day3">
       <div class="day-head">
         <div class="day-badge">3</div>
@@ -1239,13 +1228,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Plaka, Athens's Old Town</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Plaka%2C%20Athens%27s%20Old%20Town" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=plaka" target="_blank" rel="noreferrer">IG · Plaka</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=athens" target="_blank" rel="noreferrer">IG · Athens</a><a class="xf" href="https://www.flickr.com/search/?text=Plaka%2C%20Athens%27s%20Old%20Town&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Plaka%2C%20Athens%27s%20Old%20Town" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=plaka" target="_blank" rel="noreferrer">IG · Plaka</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=athens" target="_blank" rel="noreferrer">IG · Athens</a><a class="xf" href="https://www.flickr.com/search/?text=Plaka%2C%20Athens%27s%20Old%20Town&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1684196922832-f1caa34e6a14?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Plaka, Athens's Old Town" loading="lazy"><figcaption><strong>Plaka, Athens's Old Town</strong><span>Matt Cramblett · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/people-walking-on-a-street-in-plaka-athens-h2jEveeFiig" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1782235796243-e09f963bfa0d?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Plaka Street, Athens" loading="lazy"></a><figcaption><strong>Plaka Street, Athens</strong><span>Anastase Maragos · Unsplash</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:The_neighborhood_of_Anafiotika_in_Athens.jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20neighborhood%20of%20Anafiotika%20in%20Athens.jpg" alt="Anafiotika by Night, Beneath the Acropolis" loading="lazy"></a><figcaption><strong>Anafiotika by Night</strong><span>George E. Koronaios · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1684196922832-f1caa34e6a14?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Plaka, Athens's Old Town" loading="lazy"><figcaption><strong>Plaka, Athens's Old Town</strong><span>Matt Cramblett · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/people-walking-on-a-street-in-plaka-athens-h2jEveeFiig" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1782235796243-e09f963bfa0d?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Plaka Street, Athens" loading="lazy"></a><figcaption><strong>Plaka Street, Athens</strong><span>Anastase Maragos · Unsplash</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:The_neighborhood_of_Anafiotika_in_Athens.jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/The%20neighborhood%20of%20Anafiotika%20in%20Athens.jpg" alt="Anafiotika by Night, Beneath the Acropolis" loading="lazy"></a><figcaption><strong>Anafiotika by Night</strong><span>George E. Koronaios · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Free to wander; tavernas ~$10–25 pp. The T5 tram from Syntagma is $1.20 pp if you're staying further out.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>84°F</b> day / <b>72°F</b> night in late June — genuinely hot; save the walking for morning/evening and nap or pool-break midday.</p></div>
+          <div class="kv"><span>Cost</span><p>Free to wander; tavernas ~$10–25 pp. The T5 tram from Syntagma is $1.20 pp if you're staying further out.</p></div><div class="kv climate"><span>June weather</span><p><b>84°F</b> day / <b>72°F</b> night in late June — genuinely hot; save the walking for morning/evening and nap or pool-break midday.</p></div>
           <div class="callout save"><b>Save</b> Souvlaki-stand dinner (Thanassis, Monastiraki) instead of a sit-down taverna — $8–12 pp vs $20–30.</div>
           <div class="callout splurge"><b>Splurge</b> A rooftop dinner with an illuminated Acropolis view — ~$40–60 pp at one of Plaka's terrace restaurants.</div>
           <div class="resto">
@@ -1254,19 +1241,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.athensguide.com/plaka.html" target="_blank" rel="noreferrer"><b>Anafiotika</b> &#8617;</a> — A tiny whitewashed Cycladic-style neighborhood tucked into Plaka's hillside — feels like a preview of the islands, free to wander, fewer crowds.</p>
+            <p><a href="https://www.athensguide.com/plaka.html" target="_blank" rel="noreferrer"><b>Anafiotika</b> ↩</a> — A tiny whitewashed Cycladic-style neighborhood tucked into Plaka's hillside — feels like a preview of the islands, free to wander, fewer crowds.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.machupicchu.org/athens-with-kids-2026-complete-family-travel-guide.htm" target="_blank" rel="noreferrer">Athens with kids — 2026 family guide ↗</a>
-            <a href="https://www.familycantravel.com/athens-with-kids/" target="_blank" rel="noreferrer">Family Can Travel — Athens with kids ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.machupicchu.org/athens-with-kids-2026-complete-family-travel-guide.htm" target="_blank" rel="noreferrer">Athens with kids — 2026 family guide ↗</a><a href="https://www.familycantravel.com/athens-with-kids/" target="_blank" rel="noreferrer">Family Can Travel — Athens with kids ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=37.9715,23.7295&z=14&output=embed" title="Map of Plaka, Athens's Old Town"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=37.9715,23.7295" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day4">
       <div class="day-head">
         <div class="day-badge">4</div>
@@ -1278,14 +1261,12 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">The Acropolis & Acropolis Museum</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=The%20Acropolis%20%26%20Acropolis%20Museum" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=acropolis" target="_blank" rel="noreferrer">IG · Acropolis</a><a class="xf" href="https://www.flickr.com/search/?text=The%20Acropolis%20%26%20Acropolis%20Museum&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">The Acropolis &amp; Acropolis Museum</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=The%20Acropolis%20%26%20Acropolis%20Museum" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=acropolis" target="_blank" rel="noreferrer">IG · Acropolis</a><a class="xf" href="https://www.flickr.com/search/?text=The%20Acropolis%20%26%20Acropolis%20Museum&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://plus.unsplash.com/premium_photo-1661963720399-b0d05bee9005?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="The Acropolis & Acropolis Museum" loading="lazy"><figcaption><strong>The Acropolis & Acropolis Museum</strong><span>Getty Images · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/people-walking-on-white-tiled-floor-fekOj0LCFQY" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1629097671365-5c03e55c6c79?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Acropolis Museum Interior" loading="lazy"></a><figcaption><strong>Acropolis Museum Interior</strong><span>Arno Senoner · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/an-aerial-shot-of-the-parthenon-temple-at-night-in-athens-greece-qgwnBjYIo0Q" target="_blank" rel="noreferrer"><img src="https://plus.unsplash.com/premium_photo-1697730147929-992a10bbde98?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="The Acropolis Illuminated at Night" loading="lazy"></a><figcaption><strong>The Acropolis at Night</strong><span>Getty Images · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://plus.unsplash.com/premium_photo-1661963720399-b0d05bee9005?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="The Acropolis & Acropolis Museum" loading="lazy"><figcaption><strong>The Acropolis &amp; Acropolis Museum</strong><span>Getty Images · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/people-walking-on-white-tiled-floor-fekOj0LCFQY" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1629097671365-5c03e55c6c79?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Acropolis Museum Interior" loading="lazy"></a><figcaption><strong>Acropolis Museum Interior</strong><span>Arno Senoner · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/an-aerial-shot-of-the-parthenon-temple-at-night-in-athens-greece-qgwnBjYIo0Q" target="_blank" rel="noreferrer"><img src="https://plus.unsplash.com/premium_photo-1697730147929-992a10bbde98?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="The Acropolis Illuminated at Night" loading="lazy"></a><figcaption><strong>The Acropolis at Night</strong><span>Getty Images · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Acropolis: $33 adult / $16 child 6–17 (non-EU) / free under 6. Combined with the Museum, budget ~$140–160 for a family of 4. Mandatory timed-entry via hhticket.gr — book 1–3 weeks ahead for June.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>84°F</b> day, exposed with almost no shade — book the <b>8:00am slot</b> and be done by 10:30–11am, well before midday heat and in time for the airport transfer.</p></div>
+          <div class="kv"><span>Cost</span><p>Acropolis: $33 adult / $16 child 6–17 (non-EU) / free under 6. Combined with the Museum, budget ~$140–160 for a family of 4. Mandatory timed-entry via hhticket.gr — book 1–3 weeks ahead for June.</p></div><div class="kv climate"><span>June weather</span><p><b>84°F</b> day, exposed with almost no shade — book the <b>8:00am slot</b> and be done by 10:30–11am, well before midday heat and in time for the airport transfer.</p></div>
           <div class="callout save"><b>Save</b> Skip the on-site café and bring water + snacks — food/drink on the hill is pricey and there's nowhere to sit in shade.</div>
           <div class="callout splurge"><b>Splurge</b> A private licensed guide for the Acropolis (~$250–350 for the group) — turns 2 hours of ruins into a story kids actually follow, and keeps the visit efficient with a flight to catch.</div>
           <div class="resto">
@@ -1294,19 +1275,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.theacropolismuseum.gr/en/plan-your-visit" target="_blank" rel="noreferrer"><b>Acropolis Museum alone</b> &#8617;</a> — If the hill itself feels like too much heat/exposure for the 8-year-old, the museum's glass floors, kid-eye-level statues, and AC cover most of the same story in comfort — and it's faster if the flight window is tight.</p>
+            <p><a href="https://www.theacropolismuseum.gr/en/plan-your-visit" target="_blank" rel="noreferrer"><b>Acropolis Museum alone</b> ↩</a> — If the hill itself feels like too much heat/exposure for the 8-year-old, the museum's glass floors, kid-eye-level statues, and AC cover most of the same story in comfort — and it's faster if the flight window is tight.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.athenstourism.org/athens-historical-sites-museums/acropolis-athens-complete-guide/" target="_blank" rel="noreferrer">Acropolis 2026 ticket guide ↗</a>
-            <a href="https://www.thisisathens.org/itineraries/family-itinerary" target="_blank" rel="noreferrer">Official Athens family itinerary ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.athenstourism.org/athens-historical-sites-museums/acropolis-athens-complete-guide/" target="_blank" rel="noreferrer">Acropolis 2026 ticket guide ↗</a><a href="https://www.thisisathens.org/itineraries/family-itinerary" target="_blank" rel="noreferrer">Official Athens family itinerary ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=37.9715,23.7257&z=14&output=embed" title="Map of The Acropolis & Acropolis Museum"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=37.9715,23.7257" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day5">
       <div class="day-head">
         <div class="day-badge">5</div>
@@ -1319,13 +1296,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Chania Old Town &amp; Venetian Harbour</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Chania%20Old%20Town%20%26%20Venetian%20Harbour" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=chania" target="_blank" rel="noreferrer">IG · Chania</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=venetianharbour" target="_blank" rel="noreferrer">IG · Venetian Harbour</a><a class="xf" href="https://www.flickr.com/search/?text=Chania%20Venetian%20Harbour&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Chania%20Old%20Town%20%26%20Venetian%20Harbour" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=chania" target="_blank" rel="noreferrer">IG · Chania</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=venetianharbour" target="_blank" rel="noreferrer">IG · Venetian Harbour</a><a class="xf" href="https://www.flickr.com/search/?text=Chania%20Venetian%20Harbour&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chania_-_Venetian_harbor_1.jpg/1280px-Chania_-_Venetian_harbor_1.jpg" alt="Chania Old Town & Venetian Harbour" loading="lazy"><figcaption><strong>Chania Old Town &amp; Venetian Harbour</strong><span>Lapplaender · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/silhouette-of-lighthouse-during-sunset-VLwCzCu96rE" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601202279468-fe904fe6021c?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Chania Lighthouse at Sunset" loading="lazy"></a><figcaption><strong>Chania Lighthouse at Sunset</strong><span>Eleni Afiontzi · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/colorful-buildings-line-the-waterfront-under-a-clear-sky-s4_j-Xenny8" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1759510401513-c2526509d2b9?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Chania Waterfront, Old Town" loading="lazy"></a><figcaption><strong>Chania Waterfront, Old Town</strong><span>Martyna Kosik · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Chania_-_Venetian_harbor_1.jpg/1280px-Chania_-_Venetian_harbor_1.jpg" alt="Chania Old Town & Venetian Harbour" loading="lazy"><figcaption><strong>Chania Old Town &amp; Venetian Harbour</strong><span>Lapplaender · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/silhouette-of-lighthouse-during-sunset-VLwCzCu96rE" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601202279468-fe904fe6021c?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Chania Lighthouse at Sunset" loading="lazy"></a><figcaption><strong>Chania Lighthouse at Sunset</strong><span>Eleni Afiontzi · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/colorful-buildings-line-the-waterfront-under-a-clear-sky-s4_j-Xenny8" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1759510401513-c2526509d2b9?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Chania Waterfront, Old Town" loading="lazy"></a><figcaption><strong>Chania Waterfront, Old Town</strong><span>Martyna Kosik · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Free to wander. Firka Fortress/Naval Museum ~$4 adult / free under 12. Harbor-front tavernas run 30–50% pricier than 2–3 streets back.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>84°F</b> day / <b>68°F</b> night. Sea <b>~72–73°F</b> (22–23°C) off the harbor breakwater — a real swim if you want one, though Nea Chora beach a 15-min walk west is calmer for kids.</p></div>
+          <div class="kv"><span>Cost</span><p>Free to wander. Firka Fortress/Naval Museum ~$4 adult / free under 12. Harbor-front tavernas run 30–50% pricier than 2–3 streets back.</p></div><div class="kv climate"><span>June weather</span><p><b>84°F</b> day / <b>68°F</b> night. Sea <b>~72–73°F</b> (22–23°C) off the harbor breakwater — a real swim if you want one, though Nea Chora beach a 15-min walk west is calmer for kids.</p></div>
           <div class="callout save"><b>Save</b> Walk 2–3 streets back from the first row of harbor restaurants — locals say quality goes up and prices drop 30–50% just off the water.</div>
           <div class="callout splurge"><b>Splurge</b> A sunset seat right on the harbor for one dinner — touristy, but the lighthouse-and-minaret view earns it once.</div>
           <div class="resto">
@@ -1334,38 +1309,32 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.rental-center-crete.com/blog/crete-with-kids/" target="_blank" rel="noreferrer"><b>Nea Chora Beach</b> &#8617;</a> — The closest beach to town, about a 1km walk west of the harbor — calmer water than the harbor itself for an actual swim.</p>
+            <p><a href="https://www.rental-center-crete.com/blog/crete-with-kids/" target="_blank" rel="noreferrer"><b>Nea Chora Beach</b> ↩</a> — The closest beach to town, about a 1km walk west of the harbor — calmer water than the harbor itself for an actual swim.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://arewethereyetkids.com/ultimate-guide-to-crete-with-kids/" target="_blank" rel="noreferrer">Ultimate guide to Crete with kids ↗</a>
-            <a href="https://www.familycantravel.com/family-friendly-beaches-on-crete/" target="_blank" rel="noreferrer">Family Can Travel — Crete beaches ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://arewethereyetkids.com/ultimate-guide-to-crete-with-kids/" target="_blank" rel="noreferrer">Ultimate guide to Crete with kids ↗</a><a href="https://www.familycantravel.com/family-friendly-beaches-on-crete/" target="_blank" rel="noreferrer">Family Can Travel — Crete beaches ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=35.5155,24.0176&z=15&output=embed" title="Map of Chania Old Town & Venetian Harbour"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=35.5155,24.0176" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day6">
       <div class="day-head">
         <div class="day-badge">6</div>
         <div class="day-title"><p class="eyebrow">Tue · Jun 15</p><h3>Balos Lagoon Boat Tour</h3><p class="feel">Lagoon day, no driving</p><p class="daycost">Est. ~$170 · boat tour ~$120 + lunch</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Chania · night 3 of 5</strong></div><div><span>Plan</span><strong>Boat tour to Balos & Gramvousa from Kissamos, ~1.5hrs each way, 2.5hrs at the lagoon</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Chania · night 3 of 5</strong></div><div><span>Plan</span><strong>Boat tour to Balos &amp; Gramvousa from Kissamos, ~1.5hrs each way, 2.5hrs at the lagoon</strong></div></div>
         <p class="note">Skip the rough 4x4 track to Balos entirely — book the boat. It's a full day, but the lagoon's shallow, current-free turquoise water is worth it for an 8-year-old.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Balos Lagoon</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Balos%20Lagoon" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=baloslagoon" target="_blank" rel="noreferrer">IG · Balos Lagoon</a><a class="xf" href="https://www.flickr.com/search/?text=Balos%20Lagoon&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Balos%20Lagoon" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=baloslagoon" target="_blank" rel="noreferrer">IG · Balos Lagoon</a><a class="xf" href="https://www.flickr.com/search/?text=Balos%20Lagoon&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Aerial_view_of_Balos_beach.jpg/1280px-Aerial_view_of_Balos_beach.jpg" alt="Balos Lagoon" loading="lazy"><figcaption><strong>Balos Lagoon</strong><span>Simao Arinto · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/xvknd8C7Kic" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601202278710-3bf072d6c950?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Balos Lagoon from Above" loading="lazy"></a><figcaption><strong>Balos Lagoon from Above</strong><span>Eleni Afiontzi · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/tDzHKtE2eA0" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1665910338476-b8af69af9551?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Balos Lagoon's Crystal-Clear Water" loading="lazy"></a><figcaption><strong>Balos Lagoon's Crystal-Clear Water</strong><span>Birk Enwald · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Aerial_view_of_Balos_beach.jpg/1280px-Aerial_view_of_Balos_beach.jpg" alt="Balos Lagoon" loading="lazy"><figcaption><strong>Balos Lagoon</strong><span>Simao Arinto · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/xvknd8C7Kic" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601202278710-3bf072d6c950?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Balos Lagoon from Above" loading="lazy"></a><figcaption><strong>Balos Lagoon from Above</strong><span>Eleni Afiontzi · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/tDzHKtE2eA0" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1665910338476-b8af69af9551?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Balos Lagoon's Crystal-Clear Water" loading="lazy"></a><figcaption><strong>Balos Lagoon's Crystal-Clear Water</strong><span>Birk Enwald · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Boat tour ~$30–40 adult / ~$15–20 child 3–12 — a family of 4 (2 adults, a 13-year-old likely at adult rate, an 8-year-old at child rate) runs roughly $110–150. Self-service snack bar on board.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>84°F</b> day. Sea <b>~72–73°F</b> (22–23°C), shallow and current-free at the lagoon — genuinely safe for a young kid, unlike open-water Aegean beaches.</p></div>
+          <div class="kv"><span>Cost</span><p>Boat tour ~$30–40 adult / ~$15–20 child 3–12 — a family of 4 (2 adults, a 13-year-old likely at adult rate, an 8-year-old at child rate) runs roughly $110–150. Self-service snack bar on board.</p></div><div class="kv climate"><span>June weather</span><p><b>84°F</b> day. Sea <b>~72–73°F</b> (22–23°C), shallow and current-free at the lagoon — genuinely safe for a young kid, unlike open-water Aegean beaches.</p></div>
           <div class="callout save"><b>Save</b> Book directly with a Kissamos-based boat operator rather than through a resale site or hotel desk — same boat, lower markup.</div>
           <div class="callout splurge"><b>Splurge</b> The Gramvousa island stop most tours include — a short walk up to the Venetian castle ruins for a view over both lagoons.</div>
           <div class="resto">
@@ -1374,19 +1343,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.voyagetips.com/en/balos-beach/" target="_blank" rel="noreferrer"><b>Elafonissi</b> &#8617;</a> — Reachable by car instead of boat (see Thursday) — the easier, no-boat alternative if a long boat ride is the sticking point for your kids.</p>
+            <p><a href="https://www.voyagetips.com/en/balos-beach/" target="_blank" rel="noreferrer"><b>Elafonissi</b> ↩</a> — Reachable by car instead of boat (see Thursday) — the easier, no-boat alternative if a long boat ride is the sticking point for your kids.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://travelinggreek.com/blog/balos-lagoon-crete-boat-trip" target="_blank" rel="noreferrer">Balos Lagoon boat trip guide ↗</a>
-            <a href="https://www.voyagetips.com/en/balos-beach/" target="_blank" rel="noreferrer">Balos Beach — how to visit ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://travelinggreek.com/blog/balos-lagoon-crete-boat-trip" target="_blank" rel="noreferrer">Balos Lagoon boat trip guide ↗</a><a href="https://www.voyagetips.com/en/balos-beach/" target="_blank" rel="noreferrer">Balos Beach — how to visit ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=35.5980,23.5946&z=13&output=embed" title="Map of Balos Lagoon"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=35.5980,23.5946" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day7">
       <div class="day-head">
         <div class="day-badge">7</div>
@@ -1399,13 +1364,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Imbros Gorge</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Imbros%20Gorge" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=imbrosgorge" target="_blank" rel="noreferrer">IG · Imbros Gorge</a><a class="xf" href="https://www.flickr.com/search/?text=Imbros%20Gorge&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Imbros%20Gorge" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=imbrosgorge" target="_blank" rel="noreferrer">IG · Imbros Gorge</a><a class="xf" href="https://www.flickr.com/search/?text=Imbros%20Gorge&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Imbros_gorge_%28Crete%29.JPG/1280px-Imbros_gorge_%28Crete%29.JPG" alt="Imbros Gorge" loading="lazy"><figcaption><strong>Imbros Gorge</strong><span>Chris.urs-o · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Imbros_gorge_(Crete)_narrow.JPG" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Imbros%20gorge%20(Crete)%20narrow.JPG" alt="Imbros Gorge's Narrowest Point" loading="lazy"></a><figcaption><strong>Imbros Gorge's Narrowest Point</strong><span>Chris.urs-o · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:At_the_end_is_the_light_and_the_sea..._(13688129825).jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/At%20the%20end%20is%20the%20light%20and%20the%20sea...%20(13688129825).jpg" alt="Imbros Gorge Opening to the Sea" loading="lazy"></a><figcaption><strong>Imbros Gorge Opening to the Sea</strong><span>Roberto Strauss · CC BY-SA 2.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Imbros_gorge_%28Crete%29.JPG/1280px-Imbros_gorge_%28Crete%29.JPG" alt="Imbros Gorge" loading="lazy"><figcaption><strong>Imbros Gorge</strong><span>Chris.urs-o · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Imbros_gorge_(Crete)_narrow.JPG" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Imbros%20gorge%20(Crete)%20narrow.JPG" alt="Imbros Gorge's Narrowest Point" loading="lazy"></a><figcaption><strong>Imbros Gorge's Narrowest Point</strong><span>Chris.urs-o · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:At_the_end_is_the_light_and_the_sea..._(13688129825).jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/At%20the%20end%20is%20the%20light%20and%20the%20sea...%20(13688129825).jpg" alt="Imbros Gorge Opening to the Sea" loading="lazy"></a><figcaption><strong>Imbros Gorge Opening to the Sea</strong><span>Roberto Strauss · CC BY-SA 2.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>National park entrance ~$3–5 pp, family ~$12–20. Return taxi/bus from Komitades back to the car at Imbros, ~$10–15 pp — book before you start walking, not after.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>82°F</b> day, but the gorge itself runs noticeably cooler and shadier than the coast — one of the few genuinely comfortable midday activities in June.</p></div>
+          <div class="kv"><span>Cost</span><p>National park entrance ~$3–5 pp, family ~$12–20. Return taxi/bus from Komitades back to the car at Imbros, ~$10–15 pp — book before you start walking, not after.</p></div><div class="kv climate"><span>June weather</span><p><b>82°F</b> day, but the gorge itself runs noticeably cooler and shadier than the coast — one of the few genuinely comfortable midday activities in June.</p></div>
           <div class="callout save"><b>Save</b> Closed Nov–Apr for flash-flood risk, but June is well within the normal open season — no permit or advance ticket needed, just the entrance fee at the gate.</div>
           <div class="callout splurge"><b>Splurge</b> A guided family hike (~$40–60 pp) if you'd rather have someone else handle pacing and water stops for an 8-year-old.</div>
           <div class="resto">
@@ -1414,19 +1377,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://creteinsider.com/imbros-gorge-chania-crete/" target="_blank" rel="noreferrer"><b>Shorter southern half only</b> &#8617;</a> — Walk in from Komitades and back out the same way if energy is a concern — skips the taxi and the full 8km, still real gorge scenery.</p>
+            <p><a href="https://creteinsider.com/imbros-gorge-chania-crete/" target="_blank" rel="noreferrer"><b>Shorter southern half only</b> ↩</a> — Walk in from Komitades and back out the same way if energy is a concern — skips the taxi and the full 8km, still real gorge scenery.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.thetinybook.com/imbros-gorge-crete/" target="_blank" rel="noreferrer">Imbros Gorge — complete guide ↗</a>
-            <a href="https://www.rental-center-crete.com/blog/imbros-gorge-crete/" target="_blank" rel="noreferrer">Imbros Gorge — hiking & transport ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.thetinybook.com/imbros-gorge-crete/" target="_blank" rel="noreferrer">Imbros Gorge — complete guide ↗</a><a href="https://www.rental-center-crete.com/blog/imbros-gorge-crete/" target="_blank" rel="noreferrer">Imbros Gorge — hiking &amp; transport ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=35.2939,24.2789&z=13&output=embed" title="Map of Imbros Gorge"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=35.2939,24.2789" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day8">
       <div class="day-head">
         <div class="day-badge">8</div>
@@ -1439,13 +1398,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Elafonissi Beach</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Elafonissi%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=elafonissi" target="_blank" rel="noreferrer">IG · Elafonissi</a><a class="xf" href="https://www.flickr.com/search/?text=Elafonissi%20Beach&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Elafonissi%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=elafonissi" target="_blank" rel="noreferrer">IG · Elafonissi</a><a class="xf" href="https://www.flickr.com/search/?text=Elafonissi%20Beach&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Aerial_view_of_Elafonisi_Beach_on_Crete%2C_Greece.jpg/1280px-Aerial_view_of_Elafonisi_Beach_on_Crete%2C_Greece.jpg" alt="Elafonissi Beach" loading="lazy"><figcaption><strong>Elafonissi Beach</strong><span>dronepicr · CC BY 2.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/aerial-view-of-a-lake-yGA8EEV2xtU" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1627240821327-9612440a286e?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Elafonissi's Turquoise Lagoon" loading="lazy"></a><figcaption><strong>Elafonissi's Turquoise Lagoon</strong><span>Dimitris Kiriakakis · Unsplash</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Pink_sand_of_Elafonisi.jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pink%20sand%20of%20Elafonisi.jpg" alt="Elafonissi's Pink Sand" loading="lazy"></a><figcaption><strong>Elafonissi's Pink Sand</strong><span>Przemek Pietrak · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Aerial_view_of_Elafonisi_Beach_on_Crete%2C_Greece.jpg/1280px-Aerial_view_of_Elafonisi_Beach_on_Crete%2C_Greece.jpg" alt="Elafonissi Beach" loading="lazy"><figcaption><strong>Elafonissi Beach</strong><span>dronepicr · CC BY 2.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/aerial-view-of-a-lake-yGA8EEV2xtU" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1627240821327-9612440a286e?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Elafonissi's Turquoise Lagoon" loading="lazy"></a><figcaption><strong>Elafonissi's Turquoise Lagoon</strong><span>Dimitris Kiriakakis · Unsplash</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Pink_sand_of_Elafonisi.jpg" target="_blank" rel="noreferrer"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pink%20sand%20of%20Elafonisi.jpg" alt="Elafonissi's Pink Sand" loading="lazy"></a><figcaption><strong>Elafonissi's Pink Sand</strong><span>Przemek Pietrak · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Free beach access. Umbrella/sunbed rental ~$10–15, parking ~$3–5. Tavernas on-site for lunch.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>84°F</b> day. Sea <b>~72°F</b> (22°C), shallow and warm in the lagoon by late June — one of the warmest, calmest swims on the island.</p></div>
+          <div class="kv"><span>Cost</span><p>Free beach access. Umbrella/sunbed rental ~$10–15, parking ~$3–5. Tavernas on-site for lunch.</p></div><div class="kv climate"><span>June weather</span><p><b>84°F</b> day. Sea <b>~72°F</b> (22°C), shallow and warm in the lagoon by late June — one of the warmest, calmest swims on the island.</p></div>
           <div class="callout save"><b>Save</b> Go early (by 10am) — Elafonissi is Crete's most famous beach and the car park fills by midday in June.</div>
           <div class="callout splurge"><b>Splurge</b> Lunch at one of the beachfront tavernas rather than packing food — a rare case where staying put beats a picnic.</div>
           <div class="resto">
@@ -1454,38 +1411,32 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.voyagetips.com/en/balos-beach/" target="_blank" rel="noreferrer"><b>Balos</b> &#8617;</a> — Already covered by boat tour earlier in the week — Elafonissi is the drive-up equivalent for a more relaxed last Chania day.</p>
+            <p><a href="https://www.voyagetips.com/en/balos-beach/" target="_blank" rel="noreferrer"><b>Balos</b> ↩</a> — Already covered by boat tour earlier in the week — Elafonissi is the drive-up equivalent for a more relaxed last Chania day.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.kidslovegreece.com/25130-best-of-family-friendly-beaches-in-crete-an-interview-with-an-expert/" target="_blank" rel="noreferrer">Best family beaches in Crete ↗</a>
-            <a href="https://santorinidave.com/crete-family-hotels" target="_blank" rel="noreferrer">Best kid-friendly hotels in Crete ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.kidslovegreece.com/25130-best-of-family-friendly-beaches-in-crete-an-interview-with-an-expert/" target="_blank" rel="noreferrer">Best family beaches in Crete ↗</a><a href="https://santorinidave.com/crete-family-hotels" target="_blank" rel="noreferrer">Best kid-friendly hotels in Crete ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=35.2765,23.5352&z=13&output=embed" title="Map of Elafonissi Beach"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=35.2765,23.5352" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day9">
       <div class="day-head">
         <div class="day-badge">9</div>
         <div class="day-title"><p class="eyebrow">Fri · Jun 18</p><h3>Drive to Rethymno + Fortezza &amp; Old Town</h3><p class="feel">Move day + Venetian fortress</p><p class="daycost">Est. ~$80 · Fortezza tickets + dinner</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Rethymno · night 1 of 3</strong></div><div><span>Plan</span><strong>40-min drive from Chania, afternoon at the Fortezza & Old Town, evening at the harbor</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Rethymno · night 1 of 3</strong></div><div><span>Plan</span><strong>40-min drive from Chania, afternoon at the Fortezza &amp; Old Town, evening at the harbor</strong></div></div>
         <p class="note">The only "moving day" left in the trip, and it's a 40-minute drive, not a ferry — check out of Chania late morning and you're exploring Rethymno's Fortezza by early afternoon.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Rethymno Fortezza &amp; Old Town</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Rethymno%20Fortezza%20%26%20Old%20Town" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=rethymnofortezza" target="_blank" rel="noreferrer">IG · Rethymno Fortezza</a><a class="xf" href="https://www.flickr.com/search/?text=Rethymno%20Fortezza&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Rethymno%20Fortezza%20%26%20Old%20Town" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=rethymnofortezza" target="_blank" rel="noreferrer">IG · Rethymno Fortezza</a><a class="xf" href="https://www.flickr.com/search/?text=Rethymno%20Fortezza&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Silhouette_of_Old_Venetian_port_at_sunset%2C_Rethymno%2C_Crete%2C_Greece_julesvernex2.jpg/1280px-Silhouette_of_Old_Venetian_port_at_sunset%2C_Rethymno%2C_Crete%2C_Greece_julesvernex2.jpg" alt="Rethymno Fortezza & Old Town" loading="lazy"><figcaption><strong>Rethymno Fortezza &amp; Old Town</strong><span>Jules Verne Times Two · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/a-narrow-street-with-a-tall-tower-in-the-background-UgOkt6D0CiU" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1684323888011-679478403323?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Rethymno Old Town Lane & Minaret" loading="lazy"></a><figcaption><strong>Rethymno Old Town Lane & Minaret</strong><span>Marcel Hoberg · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/a-view-of-a-light-house-through-an-archway-0GZ8FbA_aCw" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1738530570697-4c75d3388505?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Rethymno Harbour Lighthouse" loading="lazy"></a><figcaption><strong>Rethymno Harbour Lighthouse</strong><span>Kurt Hänel · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Silhouette_of_Old_Venetian_port_at_sunset%2C_Rethymno%2C_Crete%2C_Greece_julesvernex2.jpg/1280px-Silhouette_of_Old_Venetian_port_at_sunset%2C_Rethymno%2C_Crete%2C_Greece_julesvernex2.jpg" alt="Rethymno Fortezza & Old Town" loading="lazy"><figcaption><strong>Rethymno Fortezza &amp; Old Town</strong><span>Jules Verne Times Two · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/a-narrow-street-with-a-tall-tower-in-the-background-UgOkt6D0CiU" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1684323888011-679478403323?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Rethymno Old Town Lane & Minaret" loading="lazy"></a><figcaption><strong>Rethymno Old Town Lane &amp; Minaret</strong><span>Marcel Hoberg · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/a-view-of-a-light-house-through-an-archway-0GZ8FbA_aCw" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1738530570697-4c75d3388505?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Rethymno Harbour Lighthouse" loading="lazy"></a><figcaption><strong>Rethymno Harbour Lighthouse</strong><span>Kurt Hänel · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Fortezza entrance ~$4–6 adult / reduced child rate. Old Town free to wander; backstreet tavernas (behind the harbor, toward the Fortezza and Rimondi Fountain) run noticeably cheaper than the harborfront row.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>83°F</b> day / <b>70°F</b> night in late June.</p></div>
+          <div class="kv"><span>Cost</span><p>Fortezza entrance ~$4–6 adult / reduced child rate. Old Town free to wander; backstreet tavernas (behind the harbor, toward the Fortezza and Rimondi Fountain) run noticeably cheaper than the harborfront row.</p></div><div class="kv climate"><span>June weather</span><p><b>83°F</b> day / <b>70°F</b> night in late June.</p></div>
           <div class="callout save"><b>Save</b> Eat 2–3 streets back from the harbor for the same food at a lower price — locals' advice, not just a guidebook line.</div>
           <div class="callout splurge"><b>Splurge</b> A harborfront dinner at least once for the Fortezza-at-sunset view — touristy, but a genuinely nice moment this late in the trip.</div>
           <div class="resto">
@@ -1494,19 +1445,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://en.wikipedia.org/wiki/Fortezza_of_Rethymno" target="_blank" rel="noreferrer"><b>Walk the ramparts only</b> &#8617;</a> — Skip the Fortezza's interior museum stops and just wander the walls for the view if the 8-year-old is templed-out after the Acropolis.</p>
+            <p><a href="https://en.wikipedia.org/wiki/Fortezza_of_Rethymno" target="_blank" rel="noreferrer"><b>Walk the ramparts only</b> ↩</a> — Skip the Fortezza's interior museum stops and just wander the walls for the view if the 8-year-old is templed-out after the Acropolis.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://rethymno.guide/gastronomy" target="_blank" rel="noreferrer">Rethymno gastronomy guide ↗</a>
-            <a href="https://creteinsider.com/restaurants-in-rethymnon-crete/" target="_blank" rel="noreferrer">Restaurants in Rethymnon ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://rethymno.guide/gastronomy" target="_blank" rel="noreferrer">Rethymno gastronomy guide ↗</a><a href="https://creteinsider.com/restaurants-in-rethymnon-crete/" target="_blank" rel="noreferrer">Restaurants in Rethymnon ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=35.3695,24.4825&z=15&output=embed" title="Map of Rethymno Fortezza & Old Town"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=35.3695,24.4825" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day10">
       <div class="day-head">
         <div class="day-badge">10</div>
@@ -1519,13 +1466,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Rethymno Beach</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Rethymno%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=rethymno" target="_blank" rel="noreferrer">IG · Rethymno</a><a class="xf" href="https://www.flickr.com/search/?text=Rethymno%20Beach&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Rethymno%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=rethymno" target="_blank" rel="noreferrer">IG · Rethymno</a><a class="xf" href="https://www.flickr.com/search/?text=Rethymno%20Beach&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c11" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Rethymno_beach-Crete.jpg/1280px-Rethymno_beach-Crete.jpg" alt="Rethymno Beach" loading="lazy"><figcaption><strong>Rethymno Beach</strong><span>Georgios Karabelas · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/people-swimming-at-the-beach-during-daytime-luna6ge6EK0" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1562267699-ecc4b90e44da?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Swimming at Rethymno Beach" loading="lazy"></a><figcaption><strong>Swimming at Rethymno Beach</strong><span>Branko Besevic · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/aerial-view-of-white-boat-on-sea-shore-during-daytime-7-PrXflJnMQ" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1627884844688-63c92436e140?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Rethymno Beach from Above" loading="lazy"></a><figcaption><strong>Rethymno Beach from Above</strong><span>Evangelos Mpikakis · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c11" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Rethymno_beach-Crete.jpg/1280px-Rethymno_beach-Crete.jpg" alt="Rethymno Beach" loading="lazy"><figcaption><strong>Rethymno Beach</strong><span>Georgios Karabelas · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/people-swimming-at-the-beach-during-daytime-luna6ge6EK0" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1562267699-ecc4b90e44da?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Swimming at Rethymno Beach" loading="lazy"></a><figcaption><strong>Swimming at Rethymno Beach</strong><span>Branko Besevic · Unsplash</span></figcaption></figure><figure><a href="https://unsplash.com/photos/aerial-view-of-white-boat-on-sea-shore-during-daytime-7-PrXflJnMQ" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1627884844688-63c92436e140?fm=jpg&q=80&w=1600&auto=format&fit=crop" alt="Rethymno Beach from Above" loading="lazy"></a><figcaption><strong>Rethymno Beach from Above</strong><span>Evangelos Mpikakis · Unsplash</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Free beach access, sunbed/umbrella rental ~$8–12 pp. Beach bars and snack kiosks along the promenade.</p></div>
-          <div class="kv climate"><span>June weather</span><p><b>84°F</b> day. Sea <b>~72–73°F</b> (22–23°C) — calm, gently shelving, easy for an 8-year-old.</p></div>
+          <div class="kv"><span>Cost</span><p>Free beach access, sunbed/umbrella rental ~$8–12 pp. Beach bars and snack kiosks along the promenade.</p></div><div class="kv climate"><span>June weather</span><p><b>84°F</b> day. Sea <b>~72–73°F</b> (22–23°C) — calm, gently shelving, easy for an 8-year-old.</p></div>
           <div class="callout save"><b>Save</b> Skip the sunbed rental and bring your own towels — the beach is wide enough that crowding isn't the issue umbrellas solve for.</div>
           <div class="callout splurge"><b>Splurge</b> A half-day out to Bali or Panormo beach (30–40 min drive) for a change of scenery — wind-protected coves, more scenic than the town beach.</div>
           <div class="resto">
@@ -1534,19 +1479,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.familycantravel.com/family-friendly-beaches-on-crete/" target="_blank" rel="noreferrer"><b>Bali or Panormo Beach</b> &#8617;</a> — Wind-protected north-coast coves a short drive away, more scenic than the town beach if you want a change of pace.</p>
+            <p><a href="https://www.familycantravel.com/family-friendly-beaches-on-crete/" target="_blank" rel="noreferrer"><b>Bali or Panormo Beach</b> ↩</a> — Wind-protected north-coast coves a short drive away, more scenic than the town beach if you want a change of pace.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.kidslovegreece.com/our_top_selections/the-best-beaches-in-crete-for-toddlers-and-young-kids/" target="_blank" rel="noreferrer">Best Crete beaches for young kids ↗</a>
-            <a href="https://www.thetinybook.com/beaches-children-crete/" target="_blank" rel="noreferrer">Safest beaches for kids in Crete ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.kidslovegreece.com/our_top_selections/the-best-beaches-in-crete-for-toddlers-and-young-kids/" target="_blank" rel="noreferrer">Best Crete beaches for young kids ↗</a><a href="https://www.thetinybook.com/beaches-children-crete/" target="_blank" rel="noreferrer">Safest beaches for kids in Crete ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=35.3667,24.4870&z=14&output=embed" title="Map of Rethymno Beach"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=35.3667,24.4870" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c4" id="day11">
       <div class="day-head">
         <div class="day-badge">11</div>
@@ -1556,7 +1497,7 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Sleep</span><strong>Rethymno · night 3 of 3 (last night)</strong></div><div><span>Plan</span><strong>Unscheduled — pool, a last Old Town wander, pack for tomorrow's flight</strong></div></div>
         <p class="note">A deliberately open day before a long travel day tomorrow — the only genuinely unscheduled day of the trip. Use it as a pool day, a rerun of a favorite spot, or just rest before three flights home.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#127958;&#65038; Flex day — no fixed plan, use it however the family needs</div></div>
+      <div class="spots-wrap"><div class="travel-note">🏖︎ Flex day — no fixed plan, use it however the family needs</div></div>
     </article><article class="day c0" id="day12">
       <div class="day-head">
         <div class="day-badge">12</div>
@@ -1566,10 +1507,9 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Plan</span><strong>Drop rental car at Chania airport, CHQ → ATH → LIS → PIT</strong></div></div>
         <p class="note">The reverse of the opening travel day — three flights, but westbound gains hours, so the family lands home the same evening. Monday is one of only five days TAP's new Athens–Lisbon leg operates (Mon/Thu/Fri/Sat/Sun, not Tue/Wed) — confirm this before locking the Chania–Athens domestic leg. This is the 7th and final PTO day of the trip.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
-    </article>
-    </div>
-  </section>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
+    </article></div>
+    </section>
 
   <section id="budget" class="divider">
     <div class="section-label">
@@ -1718,4 +1658,4 @@ document.querySelectorAll('.carousel').forEach(function(c){
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-</body></html>
+<script>/*scrollspy*/(function(){var nav=document.querySelector("nav");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:"smooth"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:"smooth"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>

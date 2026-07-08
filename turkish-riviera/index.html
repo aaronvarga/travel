@@ -686,6 +686,7 @@ nav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;paddi
 nav::-webkit-scrollbar{display:none}
 nav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}
 nav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 40px;max-width:760px}
 .section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
@@ -819,7 +820,8 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}
 .spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}
 .spot-name{margin:0;font-size:1.22rem;font-weight:600}
-.explore{display:flex;gap:6px;flex:0 0 auto}
+.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.explore::-webkit-scrollbar{display:none}
 .explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}
 .explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .explore .xg{background:#4285F4}
@@ -1070,41 +1072,38 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="itinerary" class="divider">
-    <div class="section-label">
+      <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
-      <p>Swipe each carousel for photos. Every stop carries its cost, a &#128176; money-saving tip, an &#10024; splurge, picky-kid restaurants, an alternative, blog links, and a map — tap &ldquo;Open in Google Maps&rdquo; to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
+      <p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, an alternative, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
     </div>
-    <div class="days">
-      <article class="day c0" id="day0">
+      <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
         <div class="day-title"><p class="eyebrow">Thu · Jun 10</p><h3>Depart Pittsburgh after work</h3><p class="feel">Overnight flight</p><p class="daycost">Est. $80-$140 · airport meals</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Overnight flight toward Antalya</strong></div><div><span>Plan</span><strong>PIT -> gateway -> AYT</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Overnight flight toward Antalya</strong></div><div><span>Plan</span><strong>PIT -&gt; gateway -&gt; AYT</strong></div></div>
         <p class="note">Leave Thursday evening so Friday can be the arrival day without burning a full extra workday before the trip starts.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c1" id="day1">
       <div class="day-head">
         <div class="day-badge">1</div>
         <div class="day-title"><p class="eyebrow">Fri · Jun 11</p><h3>Arrive Antalya and ease into Kaleici</h3><p class="feel">Old harbor · pool · early dinner</p><p class="daycost">Est. $150-$320</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Antalya</strong></div><div><span>Drive</span><strong>AYT -> hotel 25-45 min</strong></div><div><span>PTO</span><strong>Day 1</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Antalya</strong></div><div><span>Drive</span><strong>AYT -&gt; hotel 25-45 min</strong></div><div><span>PTO</span><strong>Day 1</strong></div></div>
         <p class="note">Pick up the car only if the hotel parking plan is clear. Otherwise transfer into Kaleici and collect the car the next morning.</p>
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Kaleici Old Harbor + Mermerli Beach</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Kaleici%20Old%20Harbor%20%2B%20Mermerli%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kaleici" target="_blank" rel="noreferrer">IG · Kaleici</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mermerli" target="_blank" rel="noreferrer">IG · Mermerli</a><a class="xf" href="https://www.flickr.com/search/?text=Kaleici%20Old%20Harbor%20%2B%20Mermerli%20Beach&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Kaleici%20Old%20Harbor%20%2B%20Mermerli%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kaleici" target="_blank" rel="noreferrer">IG · Kaleici</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=mermerli" target="_blank" rel="noreferrer">IG · Mermerli</a><a class="xf" href="https://www.flickr.com/search/?text=Kaleici%20Old%20Harbor%20%2B%20Mermerli%20Beach&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/19501903/pexels-photo-19501903.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaleici Old Harbor + Mermerli Beach" loading="lazy"><figcaption><strong>Kaleici Old Harbor + Mermerli Beach</strong><span>Fatih Aydogdu · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/28221476/pexels-photo-28221476.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/28221476/pexels-photo-28221476.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaleici Old Harbor + Mermerli Beach" loading="lazy"></a><figcaption><strong>Kaleici Old Harbor + Mermerli Beach</strong><span>Funda Izgi · Pexels License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1654162148082-3c23ee8f96d8?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1654162148082-3c23ee8f96d8?w=1200&q=80&auto=format&fit=crop" alt="Kaleici Old Harbor + Mermerli Beach" loading="lazy"></a><figcaption><strong>Kaleici Old Harbor + Mermerli Beach</strong><span>Igor Sporynin · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/19501903/pexels-photo-19501903.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaleici Old Harbor + Mermerli Beach" loading="lazy"><figcaption><strong>Kaleici Old Harbor + Mermerli Beach</strong><span>Fatih Aydogdu · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/28221476/pexels-photo-28221476.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/28221476/pexels-photo-28221476.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaleici Old Harbor + Mermerli Beach" loading="lazy"></a><figcaption><strong>Kaleici Old Harbor + Mermerli Beach</strong><span>Funda Izgi · Pexels License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1654162148082-3c23ee8f96d8?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1654162148082-3c23ee8f96d8?w=1200&q=80&auto=format&fit=crop" alt="Kaleici Old Harbor + Mermerli Beach" loading="lazy"></a><figcaption><strong>Kaleici Old Harbor + Mermerli Beach</strong><span>Igor Sporynin · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Old town wandering and harbor viewpoints are free. Mermerli Beach is paid/private-style; budget $25-$60 family depending loungers/drinks.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> Antalya often runs around <b>86 F day / 66 F night</b>; sea is commonly <b>77-79 F</b>. Start slow after the overnight flight and use the hotel pool if jet lag wins.</p></div>
+          <div class="kv"><span>Cost</span><p>Old town wandering and harbor viewpoints are free. Mermerli Beach is paid/private-style; budget $25-$60 family depending loungers/drinks.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> Antalya often runs around <b>86 F day / 66 F night</b>; sea is commonly <b>77-79 F</b>. Start slow after the overnight flight and use the hotel pool if jet lag wins.</p></div>
           <div class="callout save"><b>Save</b> Make arrival day free: old harbor, Hadrian's Gate, sunset viewpoint, and a simple pizzeria dinner.</div>
           <div class="callout splurge"><b>Splurge</b> Use Mermerli Beach or a Konyaalti beach club on the first full day if the family needs loungers, shade, showers, and easy snacks.</div>
           <div class="resto">
@@ -1113,19 +1112,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://antalyatouristinformation.com/things-to-do/beach/konyaalti/" target="_blank" rel="noreferrer"><b>Konyaalti Beach</b> &#8617;</a> — better if the family wants a wider public beach, mountain backdrop, and easier parking than Kaleici.</p>
+            <p><a href="https://antalyatouristinformation.com/things-to-do/beach/konyaalti/" target="_blank" rel="noreferrer"><b>Konyaalti Beach</b> ↩</a> — better if the family wants a wider public beach, mountain backdrop, and easier parking than Kaleici.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.turkishairlines.com/en-us/flights/flights-to-antalya/" target="_blank" rel="noreferrer">Turkish Airlines Antalya airport notes ↗</a>
-            <a href="https://antalyatouristinformation.com/things-to-do/old-town/kaleici/" target="_blank" rel="noreferrer">Kaleici visitor guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.turkishairlines.com/en-us/flights/flights-to-antalya/" target="_blank" rel="noreferrer">Turkish Airlines Antalya airport notes ↗</a><a href="https://antalyatouristinformation.com/things-to-do/old-town/kaleici/" target="_blank" rel="noreferrer">Kaleici visitor guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.8841,30.704&z=14&output=embed" title="Map of Kaleici Old Harbor + Mermerli Beach"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.8841,30.704" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day2">
       <div class="day-head">
         <div class="day-badge">2</div>
@@ -1138,13 +1133,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Perge + Aspendos Roman Ruins</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Perge%20%2B%20Aspendos%20Roman%20Ruins" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=perge" target="_blank" rel="noreferrer">IG · Perge</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=aspendos" target="_blank" rel="noreferrer">IG · Aspendos</a><a class="xf" href="https://www.flickr.com/search/?text=Perge%20%2B%20Aspendos%20Roman%20Ruins&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Perge%20%2B%20Aspendos%20Roman%20Ruins" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=perge" target="_blank" rel="noreferrer">IG · Perge</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=aspendos" target="_blank" rel="noreferrer">IG · Aspendos</a><a class="xf" href="https://www.flickr.com/search/?text=Perge%20%2B%20Aspendos%20Roman%20Ruins&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1753955100468-0ab5dc18779f?w=1200&q=80&auto=format&fit=crop" alt="Perge + Aspendos Roman Ruins" loading="lazy"><figcaption><strong>Perge + Aspendos Roman Ruins</strong><span>Engin Akyurt · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1752071743795-4e19ccda789e?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1752071743795-4e19ccda789e?w=1200&q=80&auto=format&fit=crop" alt="Perge + Aspendos Roman Ruins" loading="lazy"></a><figcaption><strong>Perge + Aspendos Roman Ruins</strong><span>Georgii Eletskikh · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1591814416053-53edf5ac5cf5?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1591814416053-53edf5ac5cf5?w=1200&q=80&auto=format&fit=crop" alt="Perge + Aspendos Roman Ruins" loading="lazy"></a><figcaption><strong>Perge + Aspendos Roman Ruins</strong><span>Mick Haupt · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1753955100468-0ab5dc18779f?w=1200&q=80&auto=format&fit=crop" alt="Perge + Aspendos Roman Ruins" loading="lazy"><figcaption><strong>Perge + Aspendos Roman Ruins</strong><span>Engin Akyurt · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1752071743795-4e19ccda789e?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1752071743795-4e19ccda789e?w=1200&q=80&auto=format&fit=crop" alt="Perge + Aspendos Roman Ruins" loading="lazy"></a><figcaption><strong>Perge + Aspendos Roman Ruins</strong><span>Georgii Eletskikh · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1591814416053-53edf5ac5cf5?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1591814416053-53edf5ac5cf5?w=1200&q=80&auto=format&fit=crop" alt="Perge + Aspendos Roman Ruins" loading="lazy"></a><figcaption><strong>Perge + Aspendos Roman Ruins</strong><span>Mick Haupt · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Plan roughly $90-$140 family if doing both Perge and Aspendos with foreign-visitor pricing; guided day tours often run around $90+ per adult, so self-drive is the saver.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> hot, exposed ruins. Go early, cap it at two major stops, and return to pool/sea by mid-afternoon.</p></div>
+          <div class="kv"><span>Cost</span><p>Plan roughly $90-$140 family if doing both Perge and Aspendos with foreign-visitor pricing; guided day tours often run around $90+ per adult, so self-drive is the saver.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> hot, exposed ruins. Go early, cap it at two major stops, and return to pool/sea by mid-afternoon.</p></div>
           <div class="callout save"><b>Save</b> Self-drive and choose either Perge or Aspendos if heat is high; do not pay for a full tour unless you want narration and zero driving.</div>
           <div class="callout splurge"><b>Splurge</b> Hire a licensed guide for a half day if the family will actually listen; otherwise spend on shade, drinks, and a better pool hotel.</div>
           <div class="resto">
@@ -1153,19 +1146,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://whichmuseum.com/museum/antalya-museum-24282/tickets-prices" target="_blank" rel="noreferrer"><b>Antalya Museum</b> &#8617;</a> — air-conditioned substitute with Perge sculptures when the ruins day is too hot.</p>
+            <p><a href="https://whichmuseum.com/museum/antalya-museum-24282/tickets-prices" target="_blank" rel="noreferrer"><b>Antalya Museum</b> ↩</a> — air-conditioned substitute with Perge sculptures when the ruins day is too hot.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.passportandpixels.com/aspendos-ancient-city-theatre-turkey/" target="_blank" rel="noreferrer">Aspendos practical guide ↗</a>
-            <a href="https://www.tripadvisor.com/Attraction_Review-g297962-d548022-Reviews-Perge_Antik_Kenti-Antalya_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer">Perge current visitor reports ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.passportandpixels.com/aspendos-ancient-city-theatre-turkey/" target="_blank" rel="noreferrer">Aspendos practical guide ↗</a><a href="https://www.tripadvisor.com/Attraction_Review-g297962-d548022-Reviews-Perge_Antik_Kenti-Antalya_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer">Perge current visitor reports ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.958,30.852&z=14&output=embed" title="Map of Perge + Aspendos Roman Ruins"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.958,30.852" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day3">
       <div class="day-head">
         <div class="day-badge">3</div>
@@ -1178,13 +1167,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Termessos Mountain Ruins or Konyaalti Pool Day</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Termessos%20Mountain%20Ruins%20or%20Konyaalti%20Pool%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=termessos" target="_blank" rel="noreferrer">IG · Termessos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=konyaalti" target="_blank" rel="noreferrer">IG · Konyaalti</a><a class="xf" href="https://www.flickr.com/search/?text=Termessos%20Mountain%20Ruins%20or%20Konyaalti%20Pool%20Day&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Termessos%20Mountain%20Ruins%20or%20Konyaalti%20Pool%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=termessos" target="_blank" rel="noreferrer">IG · Termessos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=konyaalti" target="_blank" rel="noreferrer">IG · Konyaalti</a><a class="xf" href="https://www.flickr.com/search/?text=Termessos%20Mountain%20Ruins%20or%20Konyaalti%20Pool%20Day&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/10864609/pexels-photo-10864609.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Termessos Mountain Ruins or Konyaalti Pool Day" loading="lazy"><figcaption><strong>Termessos Mountain Ruins or Konyaalti Pool Day</strong><span>Egemen Dagistanli · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/19074192/pexels-photo-19074192.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/19074192/pexels-photo-19074192.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Termessos Mountain Ruins or Konyaalti Pool Day" loading="lazy"></a><figcaption><strong>Termessos Mountain Ruins or Konyaalti Pool Day</strong><span>Pexels contributor · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/34131694/pexels-photo-34131694.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/34131694/pexels-photo-34131694.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Termessos Mountain Ruins or Konyaalti Pool Day" loading="lazy"></a><figcaption><strong>Termessos Mountain Ruins or Konyaalti Pool Day</strong><span>Aysegul Aytoren · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c3" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/10864609/pexels-photo-10864609.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Termessos Mountain Ruins or Konyaalti Pool Day" loading="lazy"><figcaption><strong>Termessos Mountain Ruins or Konyaalti Pool Day</strong><span>Egemen Dagistanli · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/19074192/pexels-photo-19074192.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/19074192/pexels-photo-19074192.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Termessos Mountain Ruins or Konyaalti Pool Day" loading="lazy"></a><figcaption><strong>Termessos Mountain Ruins or Konyaalti Pool Day</strong><span>Pexels contributor · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/34131694/pexels-photo-34131694.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/34131694/pexels-photo-34131694.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Termessos Mountain Ruins or Konyaalti Pool Day" loading="lazy"></a><figcaption><strong>Termessos Mountain Ruins or Konyaalti Pool Day</strong><span>Aysegul Aytoren · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Termessos itself is a low-cash-entry ruin, but the family cost is the rental car, fuel, snacks, and energy. Budget $30-$80 plus lunch.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> cooler than the coast but still an uphill, rocky walk. Wear real shoes; skip it if jet lag or heat is ugly.</p></div>
+          <div class="kv"><span>Cost</span><p>Termessos itself is a low-cash-entry ruin, but the family cost is the rental car, fuel, snacks, and energy. Budget $30-$80 plus lunch.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> cooler than the coast but still an uphill, rocky walk. Wear real shoes; skip it if jet lag or heat is ugly.</p></div>
           <div class="callout save"><b>Save</b> Use this as a free/cheap nature-history morning, then finish at Konyaalti instead of stacking another paid attraction.</div>
           <div class="callout splurge"><b>Splurge</b> Swap to a guided Termessos/Karain/Duden day only if nobody wants to drive switchbacks.</div>
           <div class="resto">
@@ -1193,19 +1180,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://antalyatouristinformation.com/things-to-do/waterfall/lower-dueden-waterfall/" target="_blank" rel="noreferrer"><b>Duden Waterfalls</b> &#8617;</a> — easier, shorter, and better for a low-energy day with dramatic cliffside water.</p>
+            <p><a href="https://antalyatouristinformation.com/things-to-do/waterfall/lower-dueden-waterfall/" target="_blank" rel="noreferrer"><b>Duden Waterfalls</b> ↩</a> — easier, shorter, and better for a low-energy day with dramatic cliffside water.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.johnzada.com/blog/a-short-guide-to-visiting-termessos-turkey/" target="_blank" rel="noreferrer">Termessos hiking guide ↗</a>
-            <a href="https://www.getyourguide.com/en-gb/termessos-ruins-l190553/" target="_blank" rel="noreferrer">Termessos tour price signals ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.johnzada.com/blog/a-short-guide-to-visiting-termessos-turkey/" target="_blank" rel="noreferrer">Termessos hiking guide ↗</a><a href="https://www.getyourguide.com/en-gb/termessos-ruins-l190553/" target="_blank" rel="noreferrer">Termessos tour price signals ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=37.0137,30.5118&z=14&output=embed" title="Map of Termessos Mountain Ruins or Konyaalti Pool Day"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=37.0137,30.5118" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day4">
       <div class="day-head">
         <div class="day-badge">4</div>
@@ -1218,34 +1201,28 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Myra/Demre Coast Stop</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Myra/Demre%20Coast%20Stop" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=myra" target="_blank" rel="noreferrer">IG · Myra</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=demre" target="_blank" rel="noreferrer">IG · Demre</a><a class="xf" href="https://www.flickr.com/search/?text=Myra/Demre%20Coast%20Stop&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Myra/Demre%20Coast%20Stop" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=myra" target="_blank" rel="noreferrer">IG · Myra</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=demre" target="_blank" rel="noreferrer">IG · Demre</a><a class="xf" href="https://www.flickr.com/search/?text=Myra/Demre%20Coast%20Stop&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c4" data-n="1"><div class="track"><figure><img src="https://images.pexels.com/photos/18966326/pexels-photo-18966326.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Myra/Demre Coast Stop" loading="lazy"><figcaption><strong>Myra/Demre Coast Stop</strong><span>Seyhmus Yakut · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 1</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c4" data-n="1"><div class="track"><figure><img src="https://images.pexels.com/photos/18966326/pexels-photo-18966326.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Myra/Demre Coast Stop" loading="lazy"><figcaption><strong>Myra/Demre Coast Stop</strong><span>Seyhmus Yakut · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 1</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Treat Myra/Demre as an optional transfer-day stop. Budget $40-$120 family for parking, snacks, and any current Myra entry fees; skip it if the drive is running long or the heat is already high.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> exposed and hot by midday. This works only as a short morning/lunch stop on the Antalya-to-Kas drive, not as a full ruins day.</p></div>
+          <div class="kv"><span>Cost</span><p>Treat Myra/Demre as an optional transfer-day stop. Budget $40-$120 family for parking, snacks, and any current Myra entry fees; skip it if the drive is running long or the heat is already high.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> exposed and hot by midday. This works only as a short morning/lunch stop on the Antalya-to-Kas drive, not as a full ruins day.</p></div>
           <div class="callout save"><b>Save</b> Use Demre/Myra as a quick leg-stretcher and lunch stop rather than booking another guided ruins tour.</div>
           <div class="callout splurge"><b>Splurge</b> Add St. Nicholas Church or a short Demre boat detour only if the transfer day is moving easily.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
+            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&amp;Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/maps/dir/Antalya/Ka%C5%9F,+Antalya,+T%C3%BCrkiye" target="_blank" rel="noreferrer"><b>Straight drive to Kas</b> &#8617;</a> — the better choice if anyone is tired, carsick, or ready for the pool.</p>
+            <p><a href="https://www.google.com/maps/dir/Antalya/Ka%C5%9F,+Antalya,+T%C3%BCrkiye" target="_blank" rel="noreferrer"><b>Straight drive to Kas</b> ↩</a> — the better choice if anyone is tired, carsick, or ready for the pool.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.tripadvisor.com/Attraction_Review-g297966-d295158-Reviews-Myra_Antik_Kenti-Demre_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer">Myra visitor reports ↗</a>
-            <a href="https://www.turkeysforlife.com/2024/10/myra-ancient-city-demre-turkey.html" target="_blank" rel="noreferrer">Myra/Demre guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.tripadvisor.com/Attraction_Review-g297966-d295158-Reviews-Myra_Antik_Kenti-Demre_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer">Myra visitor reports ↗</a><a href="https://www.turkeysforlife.com/2024/10/myra-ancient-city-demre-turkey.html" target="_blank" rel="noreferrer">Myra/Demre guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.2444,29.985&z=14&output=embed" title="Map of Myra/Demre Coast Stop"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.2444,29.985" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day5">
       <div class="day-head">
         <div class="day-badge">5</div>
@@ -1258,34 +1235,28 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Kaputas Beach + Patara Sand</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Kaputas%20Beach%20%2B%20Patara%20Sand" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kaputas" target="_blank" rel="noreferrer">IG · Kaputas</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=patara" target="_blank" rel="noreferrer">IG · Patara</a><a class="xf" href="https://www.flickr.com/search/?text=Kaputas%20Beach%20%2B%20Patara%20Sand&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Kaputas%20Beach%20%2B%20Patara%20Sand" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kaputas" target="_blank" rel="noreferrer">IG · Kaputas</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=patara" target="_blank" rel="noreferrer">IG · Patara</a><a class="xf" href="https://www.flickr.com/search/?text=Kaputas%20Beach%20%2B%20Patara%20Sand&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1672950301630-b9f735d8350a?w=1920&q=80&auto=format&fit=crop" alt="Kaputas Beach + Patara Sand" loading="lazy"><figcaption><strong>Kaputas Beach + Patara Sand</strong><span>Aleksandr Kuzmenko · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/36681729/pexels-photo-36681729.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/36681729/pexels-photo-36681729.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaputas Beach + Patara Sand" loading="lazy"></a><figcaption><strong>Kaputas Beach + Patara Sand</strong><span>Ruhsen Toygun · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/14816156/pexels-photo-14816156.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/14816156/pexels-photo-14816156.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaputas Beach + Patara Sand" loading="lazy"></a><figcaption><strong>Kaputas Beach + Patara Sand</strong><span>Sami TURK · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1672950301630-b9f735d8350a?w=1920&q=80&auto=format&fit=crop" alt="Kaputas Beach + Patara Sand" loading="lazy"><figcaption><strong>Kaputas Beach + Patara Sand</strong><span>Aleksandr Kuzmenko · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/36681729/pexels-photo-36681729.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/36681729/pexels-photo-36681729.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaputas Beach + Patara Sand" loading="lazy"></a><figcaption><strong>Kaputas Beach + Patara Sand</strong><span>Ruhsen Toygun · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/14816156/pexels-photo-14816156.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/14816156/pexels-photo-14816156.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kaputas Beach + Patara Sand" loading="lazy"></a><figcaption><strong>Kaputas Beach + Patara Sand</strong><span>Sami TURK · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Kaputas is low-cost/free-ish depending current municipal rules; recent reports show small entry or lounger/umbrella fees. Patara can run up to about EUR15 pp when bundled with ancient-site access. Budget $70-$180 family depending loungers and whether Patara ruins are included.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> Kas sea averages around <b>24 C / 75 F</b>. Kaputas can have waves; Patara is wider and windier but better for long sand walks.</p></div>
+          <div class="kv"><span>Cost</span><p>Kaputas is low-cost/free-ish depending current municipal rules; recent reports show small entry or lounger/umbrella fees. Patara can run up to about EUR15 pp when bundled with ancient-site access. Budget $70-$180 family depending loungers and whether Patara ruins are included.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> Kas sea averages around <b>24 C / 75 F</b>. Kaputas can have waves; Patara is wider and windier but better for long sand walks.</p></div>
           <div class="callout save"><b>Save</b> Arrive at Kaputas before 9:30, bring towels and snacks, and skip paid loungers if you only need a two-hour swim.</div>
           <div class="callout splurge"><b>Splurge</b> Pay for Patara ancient city + beach if the family wants a sand-and-ruins day instead of another cove stop.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
+            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&amp;Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.turkeysforlife.com/2025/08/limanagzi-bay-kas-beaches.html" target="_blank" rel="noreferrer"><b>Limanagzi Bay</b> &#8617;</a> — car-free bay reached by short water taxi from Kas, calmer than Kaputas when road parking is ugly.</p>
+            <p><a href="https://www.turkeysforlife.com/2025/08/limanagzi-bay-kas-beaches.html" target="_blank" rel="noreferrer"><b>Limanagzi Bay</b> ↩</a> — car-free bay reached by short water taxi from Kas, calmer than Kaputas when road parking is ugly.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://hoponworld.com/kaputas-beach-turkey/" target="_blank" rel="noreferrer">Kaputas fee and timing tips ↗</a>
-            <a href="https://www.visitkalkan.online/useful-information/visit-patara" target="_blank" rel="noreferrer">Patara current foreigner fee notes ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://hoponworld.com/kaputas-beach-turkey/" target="_blank" rel="noreferrer">Kaputas fee and timing tips ↗</a><a href="https://www.visitkalkan.online/useful-information/visit-patara" target="_blank" rel="noreferrer">Patara current foreigner fee notes ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.2286,29.4508&z=14&output=embed" title="Map of Kaputas Beach + Patara Sand"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.2286,29.4508" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day6">
       <div class="day-head">
         <div class="day-badge">6</div>
@@ -1298,34 +1269,28 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Kekova Sunken City Boat Day</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Kekova%20Sunken%20City%20Boat%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kekova" target="_blank" rel="noreferrer">IG · Kekova</a><a class="xf" href="https://www.flickr.com/search/?text=Kekova%20Sunken%20City%20Boat%20Day&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Kekova%20Sunken%20City%20Boat%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kekova" target="_blank" rel="noreferrer">IG · Kekova</a><a class="xf" href="https://www.flickr.com/search/?text=Kekova%20Sunken%20City%20Boat%20Day&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c6" data-n="2"><div class="track"><figure><img src="https://images.unsplash.com/photo-1535916707207-35f97e715e1c?w=1200&q=80&auto=format&fit=crop" alt="Kekova Sunken City Boat Day" loading="lazy"><figcaption><strong>Kekova Sunken City Boat Day</strong><span>Emre · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1602435709052-d5dc2e4f7f43?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1602435709052-d5dc2e4f7f43?w=1200&q=80&auto=format&fit=crop" alt="Kekova Sunken City Boat Day" loading="lazy"></a><figcaption><strong>Kekova Sunken City Boat Day</strong><span>Murat ONER · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 2</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c6" data-n="2"><div class="track"><figure><img src="https://images.unsplash.com/photo-1535916707207-35f97e715e1c?w=1200&q=80&auto=format&fit=crop" alt="Kekova Sunken City Boat Day" loading="lazy"><figcaption><strong>Kekova Sunken City Boat Day</strong><span>Emre · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1602435709052-d5dc2e4f7f43?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1602435709052-d5dc2e4f7f43?w=1200&q=80&auto=format&fit=crop" alt="Kekova Sunken City Boat Day" loading="lazy"></a><figcaption><strong>Kekova Sunken City Boat Day</strong><span>Murat ONER · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 2</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Shared Kas/Kekova boat trips commonly start around <b>EUR40 pp</b>; private boats can run <b>EUR630-900+</b>. For this family, plan $180-$330 shared or $700-$1,000 private.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> prime boat weather, but sun exposure is the risk. Bring hats, rash guards, and cash for drinks.</p></div>
+          <div class="kv"><span>Cost</span><p>Shared Kas/Kekova boat trips commonly start around <b>EUR40 pp</b>; private boats can run <b>EUR630-900+</b>. For this family, plan $180-$330 shared or $700-$1,000 private.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> prime boat weather, but sun exposure is the risk. Bring hats, rash guards, and cash for drinks.</p></div>
           <div class="callout save"><b>Save</b> Use a shared boat from Kas or Ucagiz rather than a private family boat unless this is the trip's signature splurge.</div>
           <div class="callout splurge"><b>Splurge</b> Private Kekova boat is the best high-end spend on this itinerary if you want shade, pacing control, and no loud-party boat.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
+            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&amp;Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.tripadvisor.com/Attractions-g297965-Activities-c55-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Greek island Meis / Kastellorizo ferry</b> &#8617;</a> — passport-dependent day trip if the family wants a Greek island stamp instead of a second Turkish boat day.</p>
+            <p><a href="https://www.tripadvisor.com/Attractions-g297965-Activities-c55-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Greek island Meis / Kastellorizo ferry</b> ↩</a> — passport-dependent day trip if the family wants a Greek island stamp instead of a second Turkish boat day.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://kekovatourkey.com/product-category/kekova-boat-tours/" target="_blank" rel="noreferrer">Kekova operator price menu ↗</a>
-            <a href="https://www.tripadvisor.com/Attractions-g1057713-Activities-c55-Kekova_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer">Kekova boat tour price checks ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://kekovatourkey.com/product-category/kekova-boat-tours/" target="_blank" rel="noreferrer">Kekova operator price menu ↗</a><a href="https://www.tripadvisor.com/Attractions-g1057713-Activities-c55-Kekova_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer">Kekova boat tour price checks ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.1882,29.8583&z=14&output=embed" title="Map of Kekova Sunken City Boat Day"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.1882,29.8583" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day7">
       <div class="day-head">
         <div class="day-badge">7</div>
@@ -1338,34 +1303,28 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Kas Harbor, Antiphellos Theater + Limanagzi</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Kas%20Harbor%2C%20Antiphellos%20Theater%20%2B%20Limanagzi" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kas" target="_blank" rel="noreferrer">IG · Kas</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=antiphellos" target="_blank" rel="noreferrer">IG · Antiphellos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=limanagzi" target="_blank" rel="noreferrer">IG · Limanagzi</a><a class="xf" href="https://www.flickr.com/search/?text=Kas%20Harbor%2C%20Antiphellos%20Theater%20%2B%20Limanagzi&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Kas%20Harbor%2C%20Antiphellos%20Theater%20%2B%20Limanagzi" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kas" target="_blank" rel="noreferrer">IG · Kas</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=antiphellos" target="_blank" rel="noreferrer">IG · Antiphellos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=limanagzi" target="_blank" rel="noreferrer">IG · Limanagzi</a><a class="xf" href="https://www.flickr.com/search/?text=Kas%20Harbor%2C%20Antiphellos%20Theater%20%2B%20Limanagzi&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/17063308/pexels-photo-17063308.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kas Harbor, Antiphellos Theater + Limanagzi" loading="lazy"><figcaption><strong>Kas Harbor, Antiphellos Theater + Limanagzi</strong><span>Arthur Shuraev · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/18961668/pexels-photo-18961668.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/18961668/pexels-photo-18961668.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kas Harbor, Antiphellos Theater + Limanagzi" loading="lazy"></a><figcaption><strong>Kas Harbor, Antiphellos Theater + Limanagzi</strong><span>Ahmet Cigsar · Pexels License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1660675587832-4dc3ae3147a4?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1660675587832-4dc3ae3147a4?w=1200&q=80&auto=format&fit=crop" alt="Kas Harbor, Antiphellos Theater + Limanagzi" loading="lazy"></a><figcaption><strong>Kas Harbor, Antiphellos Theater + Limanagzi</strong><span>Etienne Dayer · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/17063308/pexels-photo-17063308.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kas Harbor, Antiphellos Theater + Limanagzi" loading="lazy"><figcaption><strong>Kas Harbor, Antiphellos Theater + Limanagzi</strong><span>Arthur Shuraev · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/18961668/pexels-photo-18961668.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/18961668/pexels-photo-18961668.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kas Harbor, Antiphellos Theater + Limanagzi" loading="lazy"></a><figcaption><strong>Kas Harbor, Antiphellos Theater + Limanagzi</strong><span>Ahmet Cigsar · Pexels License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1660675587832-4dc3ae3147a4?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1660675587832-4dc3ae3147a4?w=1200&q=80&auto=format&fit=crop" alt="Kas Harbor, Antiphellos Theater + Limanagzi" loading="lazy"></a><figcaption><strong>Kas Harbor, Antiphellos Theater + Limanagzi</strong><span>Etienne Dayer · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Kas theater and harbor wandering are free. Limanagzi water taxis/beach clubs are pay-as-you-go; budget $60-$180 family for boat rides, loungers, drinks, and lunch.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> hot afternoons, lovely evenings. Use the town after 5pm and make the middle of the day water or pool time.</p></div>
+          <div class="kv"><span>Cost</span><p>Kas theater and harbor wandering are free. Limanagzi water taxis/beach clubs are pay-as-you-go; budget $60-$180 family for boat rides, loungers, drinks, and lunch.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> hot afternoons, lovely evenings. Use the town after 5pm and make the middle of the day water or pool time.</p></div>
           <div class="callout save"><b>Save</b> Do the free theater-at-sunset walk and supermarket picnic instead of another ticketed excursion.</div>
           <div class="callout splurge"><b>Splurge</b> Book a low-key Limanagzi or island-hopping lunch boat if everyone wants one more swim day without a long drive.</div>
           <div class="resto">
             <p class="mini-h">Family &amp; picky-kid eats</p>
-            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
+            <ul><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d2253935-Reviews-SpaghettiCi-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>SpaghettiCi</b></a> — Italian/pizza in Kas; pasta and pizza are the picky-kid anchor</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d1771729-Reviews-Cafe_Corner_Restaurant-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Cafe Corner</b></a> — broad international menu with burgers, pasta, chicken and Turkish mains</li><li><a href="https://www.tripadvisor.com/Restaurant_Review-g297965-d19228119-Reviews-Hold_Bite-Kas_Turkish_Mediterranean_Coast.html" target="_blank" rel="noreferrer"><b>Hold&amp;Bite</b></a> — fast-casual burgers/fries/sandwiches for post-beach low-effort meals</li></ul>
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.bucketlistbums.com/single-post/kasturkey/" target="_blank" rel="noreferrer"><b>Kalkan harbor evening</b> &#8617;</a> — more polished dinner scene if the family chooses Kalkan as the base instead of Kas.</p>
+            <p><a href="https://www.bucketlistbums.com/single-post/kasturkey/" target="_blank" rel="noreferrer"><b>Kalkan harbor evening</b> ↩</a> — more polished dinner scene if the family chooses Kalkan as the base instead of Kas.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.myfreerangefamily.com/things-to-do-kas/" target="_blank" rel="noreferrer">Kas family-friendly things to do ↗</a>
-            <a href="https://www.adayachtsailing.com/en/blog/where-is-kas-limanagzi-bay-and-how-to-get-there" target="_blank" rel="noreferrer">Limanagzi access guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.myfreerangefamily.com/things-to-do-kas/" target="_blank" rel="noreferrer">Kas family-friendly things to do ↗</a><a href="https://www.adayachtsailing.com/en/blog/where-is-kas-limanagzi-bay-and-how-to-get-there" target="_blank" rel="noreferrer">Limanagzi access guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.2018,29.637&z=14&output=embed" title="Map of Kas Harbor, Antiphellos Theater + Limanagzi"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.2018,29.637" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day8">
       <div class="day-head">
         <div class="day-badge">8</div>
@@ -1378,13 +1337,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Saklikent Gorge + Tlos Transfer Day</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Saklikent%20Gorge%20%2B%20Tlos%20Transfer%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=saklikent" target="_blank" rel="noreferrer">IG · Saklikent</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=tlos" target="_blank" rel="noreferrer">IG · Tlos</a><a class="xf" href="https://www.flickr.com/search/?text=Saklikent%20Gorge%20%2B%20Tlos%20Transfer%20Day&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Saklikent%20Gorge%20%2B%20Tlos%20Transfer%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=saklikent" target="_blank" rel="noreferrer">IG · Saklikent</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=tlos" target="_blank" rel="noreferrer">IG · Tlos</a><a class="xf" href="https://www.flickr.com/search/?text=Saklikent%20Gorge%20%2B%20Tlos%20Transfer%20Day&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Saklikent_gorge_rock.JPG/1280px-Saklikent_gorge_rock.JPG" alt="Saklikent Gorge + Tlos Transfer Day" loading="lazy"><figcaption><strong>Saklikent Gorge + Tlos Transfer Day</strong><span>Jedyooo · CC BY-SA 2.5</span></figcaption></figure><figure><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Angel_in_the_gorge_Saklikent_-_panoramio.jpg/1280px-Angel_in_the_gorge_Saklikent_-_panoramio.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Angel_in_the_gorge_Saklikent_-_panoramio.jpg/1280px-Angel_in_the_gorge_Saklikent_-_panoramio.jpg" alt="Saklikent Gorge + Tlos Transfer Day" loading="lazy"></a><figcaption><strong>Saklikent Gorge + Tlos Transfer Day</strong><span>angelius1979 · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1698304685474-51e00e5bb4c2?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1698304685474-51e00e5bb4c2?w=1200&q=80&auto=format&fit=crop" alt="Saklikent Gorge + Tlos Transfer Day" loading="lazy"></a><figcaption><strong>Saklikent Gorge + Tlos Transfer Day</strong><span>Onur KAYACI · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Saklikent_gorge_rock.JPG/1280px-Saklikent_gorge_rock.JPG" alt="Saklikent Gorge + Tlos Transfer Day" loading="lazy"><figcaption><strong>Saklikent Gorge + Tlos Transfer Day</strong><span>Jedyooo · CC BY-SA 2.5</span></figcaption></figure><figure><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Angel_in_the_gorge_Saklikent_-_panoramio.jpg/1280px-Angel_in_the_gorge_Saklikent_-_panoramio.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Angel_in_the_gorge_Saklikent_-_panoramio.jpg/1280px-Angel_in_the_gorge_Saklikent_-_panoramio.jpg" alt="Saklikent Gorge + Tlos Transfer Day" loading="lazy"></a><figcaption><strong>Saklikent Gorge + Tlos Transfer Day</strong><span>angelius1979 · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1698304685474-51e00e5bb4c2?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1698304685474-51e00e5bb4c2?w=1200&q=80&auto=format&fit=crop" alt="Saklikent Gorge + Tlos Transfer Day" loading="lazy"></a><figcaption><strong>Saklikent Gorge + Tlos Transfer Day</strong><span>Onur KAYACI · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>2026 local guides list Saklikent entry around <b>250 TL adults / 125 TL students</b>; add shoe rental, parking, lunch platforms, or tubing. Budget $60-$180 family depending extras.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> hot outside, icy snowmelt water inside the gorge. Wear old sneakers/water shoes and expect wet legs.</p></div>
+          <div class="kv"><span>Cost</span><p>2026 local guides list Saklikent entry around <b>250 TL adults / 125 TL students</b>; add shoe rental, parking, lunch platforms, or tubing. Budget $60-$180 family depending extras.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> hot outside, icy snowmelt water inside the gorge. Wear old sneakers/water shoes and expect wet legs.</p></div>
           <div class="callout save"><b>Save</b> Bring old shoes and dry clothes; shoe rentals and impulse snacks add up.</div>
           <div class="callout splurge"><b>Splurge</b> Add tubing/rafting only if the 8-year-old is confident in cold, moving water.</div>
           <div class="resto">
@@ -1393,19 +1350,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.turkeysforlife.com/kayakoy-village-fethiye-ghost-town.html" target="_blank" rel="noreferrer"><b>Kayakoy Ghost Village</b> &#8617;</a> — shorter, drier history stop if the gorge sounds too physical on transfer day.</p>
+            <p><a href="https://www.turkeysforlife.com/kayakoy-village-fethiye-ghost-town.html" target="_blank" rel="noreferrer"><b>Kayakoy Ghost Village</b> ↩</a> — shorter, drier history stop if the gorge sounds too physical on transfer day.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.fethiyetours.com/best-of-fethiye/saklikent-gorge/" target="_blank" rel="noreferrer">2026 Saklikent fee and footwear guide ↗</a>
-            <a href="https://explorelycia.com/blog/saklikent-gorge-guide" target="_blank" rel="noreferrer">Saklikent practical tips ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.fethiyetours.com/best-of-fethiye/saklikent-gorge/" target="_blank" rel="noreferrer">2026 Saklikent fee and footwear guide ↗</a><a href="https://explorelycia.com/blog/saklikent-gorge-guide" target="_blank" rel="noreferrer">Saklikent practical tips ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.4739,29.4027&z=14&output=embed" title="Map of Saklikent Gorge + Tlos Transfer Day"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.4739,29.4027" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day9">
       <div class="day-head">
         <div class="day-badge">9</div>
@@ -1418,13 +1371,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Oludeniz Blue Lagoon + Kayakoy</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Oludeniz%20Blue%20Lagoon%20%2B%20Kayakoy" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=oludeniz" target="_blank" rel="noreferrer">IG · Oludeniz</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=bluelagoon" target="_blank" rel="noreferrer">IG · Blue Lagoon</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kayakoy" target="_blank" rel="noreferrer">IG · Kayakoy</a><a class="xf" href="https://www.flickr.com/search/?text=Oludeniz%20Blue%20Lagoon%20%2B%20Kayakoy&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Oludeniz%20Blue%20Lagoon%20%2B%20Kayakoy" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=oludeniz" target="_blank" rel="noreferrer">IG · Oludeniz</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=bluelagoon" target="_blank" rel="noreferrer">IG · Blue Lagoon</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=kayakoy" target="_blank" rel="noreferrer">IG · Kayakoy</a><a class="xf" href="https://www.flickr.com/search/?text=Oludeniz%20Blue%20Lagoon%20%2B%20Kayakoy&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/37426500/pexels-photo-37426500.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Oludeniz Blue Lagoon + Kayakoy" loading="lazy"><figcaption><strong>Oludeniz Blue Lagoon + Kayakoy</strong><span>Dudu Karaca · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/18754091/pexels-photo-18754091.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/18754091/pexels-photo-18754091.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Oludeniz Blue Lagoon + Kayakoy" loading="lazy"></a><figcaption><strong>Oludeniz Blue Lagoon + Kayakoy</strong><span>Yusuf Cap · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/5892261/pexels-photo-5892261.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/5892261/pexels-photo-5892261.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Oludeniz Blue Lagoon + Kayakoy" loading="lazy"></a><figcaption><strong>Oludeniz Blue Lagoon + Kayakoy</strong><span>Cemgazi Yoldas · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/37426500/pexels-photo-37426500.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Oludeniz Blue Lagoon + Kayakoy" loading="lazy"><figcaption><strong>Oludeniz Blue Lagoon + Kayakoy</strong><span>Dudu Karaca · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/18754091/pexels-photo-18754091.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/18754091/pexels-photo-18754091.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Oludeniz Blue Lagoon + Kayakoy" loading="lazy"></a><figcaption><strong>Oludeniz Blue Lagoon + Kayakoy</strong><span>Yusuf Cap · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/5892261/pexels-photo-5892261.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/5892261/pexels-photo-5892261.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Oludeniz Blue Lagoon + Kayakoy" loading="lazy"></a><figcaption><strong>Oludeniz Blue Lagoon + Kayakoy</strong><span>Cemgazi Yoldas · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Blue Lagoon walk-in entry is commonly reported around <b>100-150 TL pp</b> in 2026, with parking around 500-600 TL and lounger sets extra. Kayakoy is about <b>EUR3 pp</b>. Budget $60-$180 family.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> warm air, comfortable sea, and intense sun. Go early or late; the lagoon gets crowded fast.</p></div>
+          <div class="kv"><span>Cost</span><p>Blue Lagoon walk-in entry is commonly reported around <b>100-150 TL pp</b> in 2026, with parking around 500-600 TL and lounger sets extra. Kayakoy is about <b>EUR3 pp</b>. Budget $60-$180 family.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> warm air, comfortable sea, and intense sun. Go early or late; the lagoon gets crowded fast.</p></div>
           <div class="callout save"><b>Save</b> Use free Belcekiz public beach first, then pay for the lagoon only if the family wants calmer water and shade.</div>
           <div class="callout splurge"><b>Splurge</b> Paragliding from Babadag is the famous Oludeniz splurge, but only for willing older kid/adults and only with a very reputable operator.</div>
           <div class="resto">
@@ -1433,19 +1384,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.fethiye-tours.com/fethiye-area-info/about-oludeniz/" target="_blank" rel="noreferrer"><b>Kidrak Beach</b> &#8617;</a> — quieter paid beach nearby if Blue Lagoon crowds are annoying.</p>
+            <p><a href="https://www.fethiye-tours.com/fethiye-area-info/about-oludeniz/" target="_blank" rel="noreferrer"><b>Kidrak Beach</b> ↩</a> — quieter paid beach nearby if Blue Lagoon crowds are annoying.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://myturkeyadventure.com/blog/oludeniz-beach-entry-fee-2026-blue-lagoon-cost-facilities" target="_blank" rel="noreferrer">2026 Blue Lagoon cost guide ↗</a>
-            <a href="https://www.turkeysforlife.com/kayakoy-village-fethiye-ghost-town.html" target="_blank" rel="noreferrer">Kayakoy fee and visit guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://myturkeyadventure.com/blog/oludeniz-beach-entry-fee-2026-blue-lagoon-cost-facilities" target="_blank" rel="noreferrer">2026 Blue Lagoon cost guide ↗</a><a href="https://www.turkeysforlife.com/kayakoy-village-fethiye-ghost-town.html" target="_blank" rel="noreferrer">Kayakoy fee and visit guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.5507,29.1153&z=14&output=embed" title="Map of Oludeniz Blue Lagoon + Kayakoy"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.5507,29.1153" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day10">
       <div class="day-head">
         <div class="day-badge">10</div>
@@ -1458,13 +1405,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Fethiye 12 Islands or Butterfly Valley Boat Day</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Fethiye%2012%20Islands%20or%20Butterfly%20Valley%20Boat%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=fethiye" target="_blank" rel="noreferrer">IG · Fethiye</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=12islands" target="_blank" rel="noreferrer">IG · 12 Islands</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=butterflyvalley" target="_blank" rel="noreferrer">IG · Butterfly Valley</a><a class="xf" href="https://www.flickr.com/search/?text=Fethiye%2012%20Islands%20or%20Butterfly%20Valley%20Boat%20Day&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Fethiye%2012%20Islands%20or%20Butterfly%20Valley%20Boat%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=fethiye" target="_blank" rel="noreferrer">IG · Fethiye</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=12islands" target="_blank" rel="noreferrer">IG · 12 Islands</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=butterflyvalley" target="_blank" rel="noreferrer">IG · Butterfly Valley</a><a class="xf" href="https://www.flickr.com/search/?text=Fethiye%2012%20Islands%20or%20Butterfly%20Valley%20Boat%20Day&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1691336428132-00f31cd4fbb8?w=1200&q=80&auto=format&fit=crop" alt="Fethiye 12 Islands or Butterfly Valley Boat Day" loading="lazy"><figcaption><strong>Fethiye 12 Islands or Butterfly Valley Boat Day</strong><span>Sara Rostenne · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/18754090/pexels-photo-18754090.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/18754090/pexels-photo-18754090.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye 12 Islands or Butterfly Valley Boat Day" loading="lazy"></a><figcaption><strong>Fethiye 12 Islands or Butterfly Valley Boat Day</strong><span>Yusuf Cap · Pexels License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1626009740542-691a70fd230f?w=1920&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1626009740542-691a70fd230f?w=1920&q=80&auto=format&fit=crop" alt="Fethiye 12 Islands or Butterfly Valley Boat Day" loading="lazy"></a><figcaption><strong>Fethiye 12 Islands or Butterfly Valley Boat Day</strong><span>Julia Muzaleva · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1691336428132-00f31cd4fbb8?w=1200&q=80&auto=format&fit=crop" alt="Fethiye 12 Islands or Butterfly Valley Boat Day" loading="lazy"><figcaption><strong>Fethiye 12 Islands or Butterfly Valley Boat Day</strong><span>Sara Rostenne · Unsplash License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/18754090/pexels-photo-18754090.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/18754090/pexels-photo-18754090.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye 12 Islands or Butterfly Valley Boat Day" loading="lazy"></a><figcaption><strong>Fethiye 12 Islands or Butterfly Valley Boat Day</strong><span>Yusuf Cap · Pexels License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1626009740542-691a70fd230f?w=1920&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1626009740542-691a70fd230f?w=1920&q=80&auto=format&fit=crop" alt="Fethiye 12 Islands or Butterfly Valley Boat Day" loading="lazy"></a><figcaption><strong>Fethiye 12 Islands or Butterfly Valley Boat Day</strong><span>Julia Muzaleva · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Fethiye 12 Islands trips are often <b>EUR25-30 adult</b> with lunch; Oludeniz/Butterfly Valley routes commonly run higher, around $50-$75 pp on resellers. Budget $120-$320 family.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> excellent swim weather. The issue is sun and boat style, not water temperature.</p></div>
+          <div class="kv"><span>Cost</span><p>Fethiye 12 Islands trips are often <b>EUR25-30 adult</b> with lunch; Oludeniz/Butterfly Valley routes commonly run higher, around $50-$75 pp on resellers. Budget $120-$320 family.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> excellent swim weather. The issue is sun and boat style, not water temperature.</p></div>
           <div class="callout save"><b>Save</b> Choose the 12 Islands tour from Fethiye harbor for calmer family swimming and lower cost.</div>
           <div class="callout splurge"><b>Splurge</b> Choose a smaller no-loud-music Butterfly Valley boat or private speedboat if scenery beats price.</div>
           <div class="resto">
@@ -1473,19 +1418,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.turkeysforlife.com/2019/06/dalyan-things-do-see.html" target="_blank" rel="noreferrer"><b>Dalyan and Iztuzu Turtle Beach</b> &#8617;</a> — river, rock tombs, turtles, and sand if the family wants variety instead of another sea boat.</p>
+            <p><a href="https://www.turkeysforlife.com/2019/06/dalyan-things-do-see.html" target="_blank" rel="noreferrer"><b>Dalyan and Iztuzu Turtle Beach</b> ↩</a> — river, rock tombs, turtles, and sand if the family wants variety instead of another sea boat.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://bookfromlocals.com/turkey/fethiye/fethiye-12-islands-boat-trip/" target="_blank" rel="noreferrer">12 Islands 2026 price guide ↗</a>
-            <a href="https://www.fethiyetours.com/best-of-fethiye/12-islands-vs-oludeniz-boat-trip/" target="_blank" rel="noreferrer">12 Islands vs Oludeniz route choice ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://bookfromlocals.com/turkey/fethiye/fethiye-12-islands-boat-trip/" target="_blank" rel="noreferrer">12 Islands 2026 price guide ↗</a><a href="https://www.fethiyetours.com/best-of-fethiye/12-islands-vs-oludeniz-boat-trip/" target="_blank" rel="noreferrer">12 Islands vs Oludeniz route choice ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.6594,29.1263&z=14&output=embed" title="Map of Fethiye 12 Islands or Butterfly Valley Boat Day"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.6594,29.1263" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day11">
       <div class="day-head">
         <div class="day-badge">11</div>
@@ -1498,13 +1439,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Dalyan River + Iztuzu Turtle Beach</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Dalyan%20River%20%2B%20Iztuzu%20Turtle%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=dalyan" target="_blank" rel="noreferrer">IG · Dalyan</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=iztuzu" target="_blank" rel="noreferrer">IG · Iztuzu</a><a class="xf" href="https://www.flickr.com/search/?text=Dalyan%20River%20%2B%20Iztuzu%20Turtle%20Beach&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Dalyan%20River%20%2B%20Iztuzu%20Turtle%20Beach" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=dalyan" target="_blank" rel="noreferrer">IG · Dalyan</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=iztuzu" target="_blank" rel="noreferrer">IG · Iztuzu</a><a class="xf" href="https://www.flickr.com/search/?text=Dalyan%20River%20%2B%20Iztuzu%20Turtle%20Beach&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c11" data-n="1"><div class="track"><figure><img src="https://images.unsplash.com/photo-1721544610269-0a2d61853984?w=1200&q=80&auto=format&fit=crop" alt="Dalyan River + Iztuzu Turtle Beach" loading="lazy"><figcaption><strong>Dalyan River + Iztuzu Turtle Beach</strong><span>Hilmi Can Taskiran · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 1</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c11" data-n="1"><div class="track"><figure><img src="https://images.unsplash.com/photo-1721544610269-0a2d61853984?w=1200&q=80&auto=format&fit=crop" alt="Dalyan River + Iztuzu Turtle Beach" loading="lazy"><figcaption><strong>Dalyan River + Iztuzu Turtle Beach</strong><span>Hilmi Can Taskiran · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 1</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Iztuzu beach itself is often free or symbolic-entry, with loungers/umbrellas extra; classic Dalyan river cruises with rock tombs, mud baths, and Iztuzu commonly run about $35-$50 pp from Dalyan. Budget $140-$420 family depending self-drive versus tour.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> hot, sunny, and exposed on the river and beach. It is best as a morning-to-midafternoon day with hats, water, and a willingness to skip mud baths if the family is done.</p></div>
+          <div class="kv"><span>Cost</span><p>Iztuzu beach itself is often free or symbolic-entry, with loungers/umbrellas extra; classic Dalyan river cruises with rock tombs, mud baths, and Iztuzu commonly run about $35-$50 pp from Dalyan. Budget $140-$420 family depending self-drive versus tour.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> hot, sunny, and exposed on the river and beach. It is best as a morning-to-midafternoon day with hats, water, and a willingness to skip mud baths if the family is done.</p></div>
           <div class="callout save"><b>Save</b> Self-drive to Dalyan or Iztuzu and use the beach plus tomb viewpoints instead of buying a full-day excursion.</div>
           <div class="callout splurge"><b>Splurge</b> Book a Dalyan riverboat with lunch and mud baths if the family wants a no-planning nature/history day.</div>
           <div class="resto">
@@ -1513,19 +1452,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.turkeysforlife.com/2011/03/fethiye-turkey-holiday.html" target="_blank" rel="noreferrer"><b>Fethiye pool and harbor day</b> &#8617;</a> — the lower-effort choice if two straight water/boat days have already been enough.</p>
+            <p><a href="https://www.turkeysforlife.com/2011/03/fethiye-turkey-holiday.html" target="_blank" rel="noreferrer"><b>Fethiye pool and harbor day</b> ↩</a> — the lower-effort choice if two straight water/boat days have already been enough.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.tripadvisor.com/Attraction_Review-g311315-d2513280-Reviews-Iztuzu_PlajI-Dalyan_Mugla_Province_Turkish_Aegean_Coast.html" target="_blank" rel="noreferrer">Iztuzu current visitor reports ↗</a>
-            <a href="https://www.viator.com/tours/Marmaris/Dalyan-Classic-Boat-Trip-From-Dalyan/d4300-6250P106" target="_blank" rel="noreferrer">Dalyan cruise price signal ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.tripadvisor.com/Attraction_Review-g311315-d2513280-Reviews-Iztuzu_PlajI-Dalyan_Mugla_Province_Turkish_Aegean_Coast.html" target="_blank" rel="noreferrer">Iztuzu current visitor reports ↗</a><a href="https://www.viator.com/tours/Marmaris/Dalyan-Classic-Boat-Trip-From-Dalyan/d4300-6250P106" target="_blank" rel="noreferrer">Dalyan cruise price signal ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.8346,28.642&z=14&output=embed" title="Map of Dalyan River + Iztuzu Turtle Beach"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.8346,28.642" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day12">
       <div class="day-head">
         <div class="day-badge">12</div>
@@ -1538,13 +1473,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Fethiye Harbor, Calis-Style Beach + Final Pool Day</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Fethiye%20Harbor%2C%20Calis-Style%20Beach%20%2B%20Final%20Pool%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=fethiye" target="_blank" rel="noreferrer">IG · Fethiye</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=calis" target="_blank" rel="noreferrer">IG · Calis</a><a class="xf" href="https://www.flickr.com/search/?text=Fethiye%20Harbor%2C%20Calis-Style%20Beach%20%2B%20Final%20Pool%20Day&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Fethiye%20Harbor%2C%20Calis-Style%20Beach%20%2B%20Final%20Pool%20Day" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=fethiye" target="_blank" rel="noreferrer">IG · Fethiye</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=calis" target="_blank" rel="noreferrer">IG · Calis</a><a class="xf" href="https://www.flickr.com/search/?text=Fethiye%20Harbor%2C%20Calis-Style%20Beach%20%2B%20Final%20Pool%20Day&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c12" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/12113750/pexels-photo-12113750.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye Harbor, Calis-Style Beach + Final Pool Day" loading="lazy"><figcaption><strong>Fethiye Harbor, Calis-Style Beach + Final Pool Day</strong><span>Torie Roman · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/30697433/pexels-photo-30697433.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/30697433/pexels-photo-30697433.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye Harbor, Calis-Style Beach + Final Pool Day" loading="lazy"></a><figcaption><strong>Fethiye Harbor, Calis-Style Beach + Final Pool Day</strong><span>Olga Sonmez · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/6033960/pexels-photo-6033960.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/6033960/pexels-photo-6033960.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye Harbor, Calis-Style Beach + Final Pool Day" loading="lazy"></a><figcaption><strong>Fethiye Harbor, Calis-Style Beach + Final Pool Day</strong><span>Meruyert Gonullu · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c12" data-n="3"><div class="track"><figure><img src="https://images.pexels.com/photos/12113750/pexels-photo-12113750.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye Harbor, Calis-Style Beach + Final Pool Day" loading="lazy"><figcaption><strong>Fethiye Harbor, Calis-Style Beach + Final Pool Day</strong><span>Torie Roman · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/30697433/pexels-photo-30697433.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/30697433/pexels-photo-30697433.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye Harbor, Calis-Style Beach + Final Pool Day" loading="lazy"></a><figcaption><strong>Fethiye Harbor, Calis-Style Beach + Final Pool Day</strong><span>Olga Sonmez · Pexels License</span></figcaption></figure><figure><a href="https://images.pexels.com/photos/6033960/pexels-photo-6033960.jpeg?auto=compress&cs=tinysrgb&w=1200" target="_blank" rel="noreferrer"><img src="https://images.pexels.com/photos/6033960/pexels-photo-6033960.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Fethiye Harbor, Calis-Style Beach + Final Pool Day" loading="lazy"></a><figcaption><strong>Fethiye Harbor, Calis-Style Beach + Final Pool Day</strong><span>Meruyert Gonullu · Pexels License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Keep this low-commitment: harbor wandering and hotel pool are free; beach loungers, snacks, and a simple final dinner make it a $120-$260 family day.</p></div>
-          <div class="kv climate"><span>Weather</span><p><b>June:</b> hot, bright, and easy for one last swim. Avoid a long excursion so packing and the Dalaman departure stay calm.</p></div>
+          <div class="kv"><span>Cost</span><p>Keep this low-commitment: harbor wandering and hotel pool are free; beach loungers, snacks, and a simple final dinner make it a $120-$260 family day.</p></div><div class="kv climate"><span>Weather</span><p><b>June:</b> hot, bright, and easy for one last swim. Avoid a long excursion so packing and the Dalaman departure stay calm.</p></div>
           <div class="callout save"><b>Save</b> Use the hotel pool, Fethiye harbor, or a free beach stretch instead of another paid boat or beach club.</div>
           <div class="callout splurge"><b>Splurge</b> Do one sunset drink/dessert stop or a nicer final dinner if the flight-day packing is already handled.</div>
           <div class="resto">
@@ -1553,32 +1486,27 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=Oludeniz+Blue+Lagoon" target="_blank" rel="noreferrer"><b>Repeat the family favorite</b> &#8617;</a> — go back to the lagoon or best pool/beach from earlier in the Fethiye stay.</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Oludeniz+Blue+Lagoon" target="_blank" rel="noreferrer"><b>Repeat the family favorite</b> ↩</a> — go back to the lagoon or best pool/beach from earlier in the Fethiye stay.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.turkeysforlife.com/2011/03/fethiye-turkey-holiday.html" target="_blank" rel="noreferrer">Fethiye area guide ↗</a>
-            <a href="https://www.google.com/search?q=Calis+Beach+Fethiye+family+guide" target="_blank" rel="noreferrer">Calis Beach planning search ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.turkeysforlife.com/2011/03/fethiye-turkey-holiday.html" target="_blank" rel="noreferrer">Fethiye area guide ↗</a><a href="https://www.google.com/search?q=Calis+Beach+Fethiye+family+guide" target="_blank" rel="noreferrer">Calis Beach planning search ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=36.6594,29.1263&z=14&output=embed" title="Map of Fethiye Harbor, Calis-Style Beach + Final Pool Day"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=36.6594,29.1263" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c0" id="day13">
       <div class="day-head">
         <div class="day-badge">13</div>
         <div class="day-title"><p class="eyebrow">Wed · Jun 23</p><h3>Fly Dalaman to Pittsburgh</h3><p class="feel">Return day</p><p class="daycost">Est. $90-$180 · meals/fuel</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Route</span><strong>DLM -> gateway -> PIT</strong></div><div><span>Drive</span><strong>Fethiye -> DLM 45-60 min</strong></div><div><span>PTO</span><strong>Day 8</strong></div></div>
+        <div class="facts"><div><span>Route</span><strong>DLM -&gt; gateway -&gt; PIT</strong></div><div><span>Drive</span><strong>Fethiye -&gt; DLM 45-60 min</strong></div><div><span>PTO</span><strong>Day 8</strong></div></div>
         <p class="note">Return from Dalaman, not Antalya. Build a generous airport buffer because international summer check-in lines can be slow.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
-    </article>
-    </div>
-  </section>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
+    </article></div>
+    </section>
 
   <section id="budget" class="divider">
     <div class="section-label">
@@ -1728,4 +1656,4 @@ document.querySelectorAll('.carousel').forEach(function(c){
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-</body></html>
+<script>/*scrollspy*/(function(){var nav=document.querySelector("nav");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:"smooth"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:"smooth"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>

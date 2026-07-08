@@ -686,6 +686,7 @@ nav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;paddi
 nav::-webkit-scrollbar{display:none}
 nav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}
 nav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 40px;max-width:760px}
 .section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
@@ -819,7 +820,8 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}
 .spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}
 .spot-name{margin:0;font-size:1.22rem;font-weight:600}
-.explore{display:flex;gap:6px;flex:0 0 auto}
+.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.explore::-webkit-scrollbar{display:none}
 .explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}
 .explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}
 .explore .xg{background:#4285F4}
@@ -1094,13 +1096,12 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="itinerary" class="divider">
-    <div class="section-label">
+      <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
-      <p>Swipe each carousel for photos. Every stop carries its cost, a &#128176; money-saving tip, an &#10024; splurge, picky-kid restaurants, an alternative, blog links, and a map — tap &ldquo;Open in Google Maps&rdquo; to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
+      <p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, an alternative, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
     </div>
-    <div class="days">
-      <article class="day c0" id="day0">
+      <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
         <div class="day-title"><p class="eyebrow">Thu · Jun 10</p><h3>Depart Pittsburgh after work</h3><p class="feel">Travel day</p><p class="daycost">Est. ~$60 · airport meals</p></div>
@@ -1109,7 +1110,7 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Sleep</span><strong>Overnight, in transit toward Brindisi</strong></div><div><span>Plan</span><strong>PIT → European hub → BDS</strong></div></div>
         <p class="note">No PTO needed for an evening departure after a full workday.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c1" id="day1">
       <div class="day-head">
         <div class="day-badge">1</div>
@@ -1119,11 +1120,11 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Arrive</span><strong>BDS, one connection</strong></div><div><span>Drive</span><strong>~1h to Gallipoli</strong></div></div>
         <p class="note">Pick up the rental car at the airport, not a city branch — better automatic-transmission odds. Keep tonight light: check in, a short old-town walk, an early dinner.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c1" id="day2">
       <div class="day-head">
         <div class="day-badge">2</div>
-        <div class="day-title"><p class="eyebrow">Sat · Jun 12</p><h3>Gallipoli & Punta Prosciutto beach day</h3><p class="feel">Beach</p><p class="daycost">Est. ~$110 · lido + lunch</p></div>
+        <div class="day-title"><p class="eyebrow">Sat · Jun 12</p><h3>Gallipoli &amp; Punta Prosciutto beach day</h3><p class="feel">Beach</p><p class="daycost">Est. ~$110 · lido + lunch</p></div>
       </div>
       <div class="logistics">
         <div class="facts"><div><span>Morning</span><strong>Baia Verde or Spiaggia della Purità</strong></div><div><span>Afternoon</span><strong>25 min to Punta Prosciutto/Porto Cesareo</strong></div></div>
@@ -1132,13 +1133,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Gallipoli</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Gallipoli" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=gallipoli" target="_blank" rel="noreferrer">IG · Gallipoli</a><a class="xf" href="https://www.flickr.com/search/?text=Gallipoli&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Gallipoli" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=gallipoli" target="_blank" rel="noreferrer">IG · Gallipoli</a><a class="xf" href="https://www.flickr.com/search/?text=Gallipoli&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Gallipoli_-_Spiaggia_della_Purit%C3%A0.jpg/1280px-Gallipoli_-_Spiaggia_della_Purit%C3%A0.jpg" alt="Gallipoli" loading="lazy"><figcaption><strong>Gallipoli</strong><span>Benjamin Smith · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Gallipoli_Citt%C3%A0_Vecchia.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gallipoli_Citt%C3%A0_Vecchia.jpg/1280px-Gallipoli_Citt%C3%A0_Vecchia.jpg" alt="Gallipoli" loading="lazy"></a><figcaption><strong>Gallipoli</strong><span>Colar · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Castello_di_Gallipoli.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Castello_di_Gallipoli.jpg/1280px-Castello_di_Gallipoli.jpg" alt="Gallipoli" loading="lazy"></a><figcaption><strong>Gallipoli</strong><span>Lupiae · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c1" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Gallipoli_-_Spiaggia_della_Purit%C3%A0.jpg/1280px-Gallipoli_-_Spiaggia_della_Purit%C3%A0.jpg" alt="Gallipoli" loading="lazy"><figcaption><strong>Gallipoli</strong><span>Benjamin Smith · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Gallipoli_Citt%C3%A0_Vecchia.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gallipoli_Citt%C3%A0_Vecchia.jpg/1280px-Gallipoli_Citt%C3%A0_Vecchia.jpg" alt="Gallipoli" loading="lazy"></a><figcaption><strong>Gallipoli</strong><span>Colar · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Castello_di_Gallipoli.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Castello_di_Gallipoli.jpg/1280px-Castello_di_Gallipoli.jpg" alt="Gallipoli" loading="lazy"></a><figcaption><strong>Gallipoli</strong><span>Lupiae · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Beach clubs on Baia Verde run €20-40/day for umbrella + 2 sunbeds (peaks near €40 in August); the free public beach in the old town costs nothing.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>75°F</b> day / <b>61°F</b> night. Sea warms from ~70°F early June to <b>~73°F</b> by month's end — comfortable, not warm yet.</p></div>
+          <div class="kv"><span>Cost</span><p>Beach clubs on Baia Verde run €20-40/day for umbrella + 2 sunbeds (peaks near €40 in August); the free public beach in the old town costs nothing.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>75°F</b> day / <b>61°F</b> night. Sea warms from ~70°F early June to <b>~73°F</b> by month's end — comfortable, not warm yet.</p></div>
           <div class="callout save"><b>Save</b> Skip the paid lidos for Spiaggia della Purità, the free public beach tucked below the old town's walls — no rental fee, no parking cost.</div>
           <div class="callout splurge"><b>Splurge</b> Half-day boat trip to the sea caves and coves near Punta Pizzo/Santa Maria di Leuca, ~€30-45/person, with swim stops unreachable on foot.</div>
           <div class="resto">
@@ -1147,28 +1146,22 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Punta+della+Suina+beach+Gallipoli" target="_blank" rel="noreferrer"><b>Punta della Suina</b> &#8617;</a> — pine-forest beach 4km south, nicknamed the "Caribbean of the Ionian," quieter than Baia Verde with both free and lido sections.</p>
+            <p><a href="https://www.google.com/search?q=Punta+della+Suina+beach+Gallipoli" target="_blank" rel="noreferrer"><b>Punta della Suina</b> ↩</a> — pine-forest beach 4km south, nicknamed the "Caribbean of the Ionian," quieter than Baia Verde with both free and lido sections.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.lavitaroma.com/blog/salento-guide-gallipoli" target="_blank" rel="noreferrer">Salento guide: Gallipoli ↗</a>
-            <a href="https://www.thewomtravel.com/italy/puglia/best-beaches-gallipoli.html" target="_blank" rel="noreferrer">Best beaches near Gallipoli ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.lavitaroma.com/blog/salento-guide-gallipoli" target="_blank" rel="noreferrer">Salento guide: Gallipoli ↗</a><a href="https://www.thewomtravel.com/italy/puglia/best-beaches-gallipoli.html" target="_blank" rel="noreferrer">Best beaches near Gallipoli ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=40.0559,17.9926&z=14&output=embed" title="Map of Gallipoli"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=40.0559,17.9926" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section><section class="spot">
+      </div></section><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Punta Prosciutto & Porto Cesareo</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Punta%20Prosciutto%20%26%20Porto%20Cesareo" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=puntaprosciutto" target="_blank" rel="noreferrer">IG · Punta Prosciutto</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=portocesareo" target="_blank" rel="noreferrer">IG · Porto Cesareo</a><a class="xf" href="https://www.flickr.com/search/?text=Punta%20Prosciutto%20%26%20Porto%20Cesareo&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Punta Prosciutto &amp; Porto Cesareo</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Punta%20Prosciutto%20%26%20Porto%20Cesareo" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=puntaprosciutto" target="_blank" rel="noreferrer">IG · Punta Prosciutto</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=portocesareo" target="_blank" rel="noreferrer">IG · Porto Cesareo</a><a class="xf" href="https://www.flickr.com/search/?text=Punta%20Prosciutto%20%26%20Porto%20Cesareo&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Spiaggia_di_Punta_Prosciutto.JPG/1280px-Spiaggia_di_Punta_Prosciutto.JPG" alt="Punta Prosciutto & Porto Cesareo" loading="lazy"><figcaption><strong>Punta Prosciutto & Porto Cesareo</strong><span>Hydruntum · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Cesareo_4.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Porto_Cesareo_4.jpg/1280px-Porto_Cesareo_4.jpg" alt="Punta Prosciutto & Porto Cesareo" loading="lazy"></a><figcaption><strong>Punta Prosciutto & Porto Cesareo</strong><span>Paolo Damiano Dolce · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Cesareo_1.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Porto_Cesareo_1.jpg/1280px-Porto_Cesareo_1.jpg" alt="Punta Prosciutto & Porto Cesareo" loading="lazy"></a><figcaption><strong>Punta Prosciutto & Porto Cesareo</strong><span>Paolo Damiano Dolce · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c2" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Spiaggia_di_Punta_Prosciutto.JPG/1280px-Spiaggia_di_Punta_Prosciutto.JPG" alt="Punta Prosciutto & Porto Cesareo" loading="lazy"><figcaption><strong>Punta Prosciutto &amp; Porto Cesareo</strong><span>Hydruntum · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Cesareo_4.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Porto_Cesareo_4.jpg/1280px-Porto_Cesareo_4.jpg" alt="Punta Prosciutto & Porto Cesareo" loading="lazy"></a><figcaption><strong>Punta Prosciutto &amp; Porto Cesareo</strong><span>Paolo Damiano Dolce · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Porto_Cesareo_1.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Porto_Cesareo_1.jpg/1280px-Porto_Cesareo_1.jpg" alt="Punta Prosciutto & Porto Cesareo" loading="lazy"></a><figcaption><strong>Punta Prosciutto &amp; Porto Cesareo</strong><span>Paolo Damiano Dolce · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Lido sunbed + umbrella ~€15-20/day in June (rising to €40-50 in peak Jul/Aug); long free public stretches exist, e.g. near Riva degli Angeli.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>78°F</b> day / <b>70°F</b> night. Sea <b>~72°F</b> — the shallow, gently-sloping sandbar warms faster than deeper coves.</p></div>
+          <div class="kv"><span>Cost</span><p>Lido sunbed + umbrella ~€15-20/day in June (rising to €40-50 in peak Jul/Aug); long free public stretches exist, e.g. near Riva degli Angeli.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>78°F</b> day / <b>70°F</b> night. Sea <b>~72°F</b> — the shallow, gently-sloping sandbar warms faster than deeper coves.</p></div>
           <div class="callout save"><b>Save</b> Use the free beach stretch south of the equipped lidos near Riva degli Angeli — same white sand and turquoise water, no rental fee.</div>
           <div class="callout splurge"><b>Splurge</b> Samanà Beach, a beach club inside the marine reserve known for exceptionally clear water — front-row sunbeds ~€30-70/day.</div>
           <div class="resto">
@@ -1177,19 +1170,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Torre+Lapillo+beach+Salento" target="_blank" rel="noreferrer"><b>Torre Lapillo</b> &#8617;</a> — the beach immediately between Porto Cesareo and Punta Prosciutto — same fine sand and clear water, with more restaurants and services nearby.</p>
+            <p><a href="https://www.google.com/search?q=Torre+Lapillo+beach+Salento" target="_blank" rel="noreferrer"><b>Torre Lapillo</b> ↩</a> — the beach immediately between Porto Cesareo and Punta Prosciutto — same fine sand and clear water, with more restaurants and services nearby.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.beautifulpuglia.com/punta-prosciutto-beach/" target="_blank" rel="noreferrer">Punta Prosciutto guide ↗</a>
-            <a href="https://www.hdsalento.com/en/punta-prosciutto-salento-beach-beaches-useful-information-2024/" target="_blank" rel="noreferrer">Punta Prosciutto practical info ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.beautifulpuglia.com/punta-prosciutto-beach/" target="_blank" rel="noreferrer">Punta Prosciutto guide ↗</a><a href="https://www.hdsalento.com/en/punta-prosciutto-salento-beach-beaches-useful-information-2024/" target="_blank" rel="noreferrer">Punta Prosciutto practical info ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=40.2951,17.7712&z=14&output=embed" title="Map of Punta Prosciutto & Porto Cesareo"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=40.2951,17.7712" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day3">
       <div class="day-head">
         <div class="day-badge">3</div>
@@ -1202,13 +1191,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Pescoluse (Le Maldive del Salento)</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Pescoluse%20Le%20Maldive%20del%20Salento" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=pescoluse" target="_blank" rel="noreferrer">IG · Pescoluse</a><a class="xf" href="https://www.flickr.com/search/?text=Pescoluse%20Le%20Maldive%20del%20Salento&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Pescoluse%20Le%20Maldive%20del%20Salento" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=pescoluse" target="_blank" rel="noreferrer">IG · Pescoluse</a><a class="xf" href="https://www.flickr.com/search/?text=Pescoluse%20Le%20Maldive%20del%20Salento&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c3" data-n="1"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mare-Pescoluse.jpg/1280px-Mare-Pescoluse.jpg" alt="Pescoluse shallow turquoise beach" loading="lazy"><figcaption><strong>Pescoluse</strong><span>Udbazza · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 1</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c3" data-n="1"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Mare-Pescoluse.jpg/1280px-Mare-Pescoluse.jpg" alt="Pescoluse shallow turquoise beach" loading="lazy"><figcaption><strong>Pescoluse</strong><span>Udbazza · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 1</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Beach access is free; budget ~€20-40 for a lido umbrella/loungers if you want shade and bathrooms, plus a casual lunch. Parking is usually the only unavoidable extra.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>~80°F</b> day / <b>~68°F</b> night. Sea <b>~72°F</b> — shallow sand and clear water make this one of the easiest kid swims in Salento.</p></div>
+          <div class="kv"><span>Cost</span><p>Beach access is free; budget ~€20-40 for a lido umbrella/loungers if you want shade and bathrooms, plus a casual lunch. Parking is usually the only unavoidable extra.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>~80°F</b> day / <b>~68°F</b> night. Sea <b>~72°F</b> — shallow sand and clear water make this one of the easiest kid swims in Salento.</p></div>
           <div class="callout save"><b>Save</b> Bring towels and use the free beach, then keep lunch simple with focaccia, fruit, and cold drinks from town.</div>
           <div class="callout splurge"><b>Splurge</b> Book a front-row umbrella at a lido so the day has shade, bathrooms, and no logistics beyond swimming and lunch.</div>
           <div class="resto">
@@ -1217,19 +1204,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Nard%C3%B2+old+town+Salento" target="_blank" rel="noreferrer"><b>Nardò</b> &#8617;</a> — about 25 minutes from Gallipoli, an authentic baroque old town with real local life and far fewer day-trippers.</p>
+            <p><a href="https://www.google.com/search?q=Nard%C3%B2+old+town+Salento" target="_blank" rel="noreferrer"><b>Nardò</b> ↩</a> — about 25 minutes from Gallipoli, an authentic baroque old town with real local life and far fewer day-trippers.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://visit.puglia.it/en/pescoluse" target="_blank" rel="noreferrer">Pescoluse beach guide ↗</a>
-            <a href="https://www.hdsalento.com/en/maldives-of-salento-where-are-they-located-beach-clubs-beaches-guide-2023/" target="_blank" rel="noreferrer">Maldive del Salento guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://visit.puglia.it/en/pescoluse" target="_blank" rel="noreferrer">Pescoluse beach guide ↗</a><a href="https://www.hdsalento.com/en/maldives-of-salento-where-are-they-located-beach-clubs-beaches-guide-2023/" target="_blank" rel="noreferrer">Maldive del Salento guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.8075,18.3300&z=14&output=embed" title="Map of Pescoluse"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.8075,18.3300" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c1" id="day4">
       <div class="day-head">
         <div class="day-badge">4</div>
@@ -1242,13 +1225,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Otranto</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Otranto" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=otranto" target="_blank" rel="noreferrer">IG · Otranto</a><a class="xf" href="https://www.flickr.com/search/?text=Otranto&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Otranto" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=otranto" target="_blank" rel="noreferrer">IG · Otranto</a><a class="xf" href="https://www.flickr.com/search/?text=Otranto&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Castle_of_Otranto_01.jpg/1280px-Castle_of_Otranto_01.jpg" alt="Otranto" loading="lazy"><figcaption><strong>Otranto</strong><span>Bernard Gagnon · CC0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Otranto_habour_and_old_town.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Otranto_habour_and_old_town.JPG/1280px-Otranto_habour_and_old_town.JPG" alt="Otranto" loading="lazy"></a><figcaption><strong>Otranto</strong><span>Cosal · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Baia_dei_Turchi.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baia_dei_Turchi.jpg/1280px-Baia_dei_Turchi.jpg" alt="Otranto" loading="lazy"></a><figcaption><strong>Otranto</strong><span>Bultro · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c4" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Castle_of_Otranto_01.jpg/1280px-Castle_of_Otranto_01.jpg" alt="Otranto" loading="lazy"><figcaption><strong>Otranto</strong><span>Bernard Gagnon · CC0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Otranto_habour_and_old_town.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Otranto_habour_and_old_town.JPG/1280px-Otranto_habour_and_old_town.JPG" alt="Otranto" loading="lazy"></a><figcaption><strong>Otranto</strong><span>Cosal · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Baia_dei_Turchi.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Baia_dei_Turchi.jpg/1280px-Baia_dei_Turchi.jpg" alt="Otranto" loading="lazy"></a><figcaption><strong>Otranto</strong><span>Bultro · CC BY-SA 4.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Castello Aragonese: €3 adult / €2 ages 6-14. Cathedral (mosaic floor) is free. Lido sunbeds ~€20-30/day for two; free rocky bathing spots exist south of the old town.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Sea <b>~68°F</b> — start of comfortable swimming season. Air estimated <b>~78°F</b> day / ~66°F night (regional figure, not independently confirmed for Otranto specifically).</p></div>
+          <div class="kv"><span>Cost</span><p>Castello Aragonese: €3 adult / €2 ages 6-14. Cathedral (mosaic floor) is free. Lido sunbeds ~€20-30/day for two; free rocky bathing spots exist south of the old town.</p></div><div class="kv climate"><span>Weather</span><p>Sea <b>~68°F</b> — start of comfortable swimming season. Air estimated <b>~78°F</b> day / ~66°F night (regional figure, not independently confirmed for Otranto specifically).</p></div>
           <div class="callout save"><b>Save</b> Walk 10-15 minutes south along the seafront to Spiaggia dei Gradoni (Baia del Turco), a free rocky bathing spot with ladders into clear water.</div>
           <div class="callout splurge"><b>Splurge</b> Half-day boat excursion from the harbor up the coast to Baia dei Turchi and the sea caves of the Riviera degli Haethey, ~€35-85/person.</div>
           <div class="resto">
@@ -1257,19 +1238,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Torre+dell%27Orso+beach+Due+Sorelle" target="_blank" rel="noreferrer"><b>Torre dell'Orso</b> &#8617;</a> — a golden-sand bay 20 minutes north framed by pine forest, famous for the "Due Sorelle" sea stacks just offshore.</p>
+            <p><a href="https://www.google.com/search?q=Torre+dell%27Orso+beach+Due+Sorelle" target="_blank" rel="noreferrer"><b>Torre dell'Orso</b> ↩</a> — a golden-sand bay 20 minutes north framed by pine forest, famous for the "Due Sorelle" sea stacks just offshore.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.ourescapeclause.com/things-to-do-in-otranto-italy/" target="_blank" rel="noreferrer">Things to do in Otranto ↗</a>
-            <a href="https://www.alongdustyroads.com/posts/things-to-do-otranto-puglia-italy" target="_blank" rel="noreferrer">Otranto travel guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.ourescapeclause.com/things-to-do-in-otranto-italy/" target="_blank" rel="noreferrer">Things to do in Otranto ↗</a><a href="https://www.alongdustyroads.com/posts/things-to-do-otranto-puglia-italy" target="_blank" rel="noreferrer">Otranto travel guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=40.1479,18.4868&z=14&output=embed" title="Map of Otranto"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=40.1479,18.4868" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day5">
       <div class="day-head">
         <div class="day-badge">5</div>
@@ -1279,11 +1256,11 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Drive</span><strong>~4h23m / 290km</strong></div><div><span>Route</span><strong>Inland via the A2 — avoid the coastal SS106</strong></div></div>
         <p class="note">The longest drive of the trip. Route inland rather than trusting GPS onto the Calabria coastal road, and plan a real rest stop partway.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c2" id="day6">
       <div class="day-head">
         <div class="day-badge">6</div>
-        <div class="day-title"><p class="eyebrow">Wed · Jun 16</p><h3>Maratea town & the Christ statue</h3><p class="feel">Hilltop town + views</p><p class="daycost">Est. ~$70 · shuttle + lunch</p></div>
+        <div class="day-title"><p class="eyebrow">Wed · Jun 16</p><h3>Maratea town &amp; the Christ statue</h3><p class="feel">Hilltop town + views</p><p class="daycost">Est. ~$70 · shuttle + lunch</p></div>
       </div>
       <div class="logistics">
         <div class="facts"><div><span>Morning</span><strong>Cristo Redentore overlook via the summer shuttle</strong></div><div><span>Afternoon</span><strong>Wander the historic Borgo</strong></div></div>
@@ -1291,14 +1268,12 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Maratea Town & Cristo Redentore</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Maratea%20Town%20%26%20Cristo%20Redentore" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=maratea" target="_blank" rel="noreferrer">IG · Maratea</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cristoredentore" target="_blank" rel="noreferrer">IG · Cristo Redentore</a><a class="xf" href="https://www.flickr.com/search/?text=Maratea%20Town%20%26%20Cristo%20Redentore&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Maratea Town &amp; Cristo Redentore</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Maratea%20Town%20%26%20Cristo%20Redentore" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=maratea" target="_blank" rel="noreferrer">IG · Maratea</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=cristoredentore" target="_blank" rel="noreferrer">IG · Cristo Redentore</a><a class="xf" href="https://www.flickr.com/search/?text=Maratea%20Town%20%26%20Cristo%20Redentore&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Maratea_-_Cristo_Redentore.jpg/1280px-Maratea_-_Cristo_Redentore.jpg" alt="Maratea Town & Cristo Redentore" loading="lazy"><figcaption><strong>Maratea Town & Cristo Redentore</strong><span>Benjamin Smith · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1689933884682-78c889593718?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1689933884682-78c889593718?w=1200&q=80&auto=format&fit=crop" alt="Maratea Town & Cristo Redentore" loading="lazy"></a><figcaption><strong>Maratea Town & Cristo Redentore</strong><span>Anastasia · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1691515509371-8b9172429b0d?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1691515509371-8b9172429b0d?w=1200&q=80&auto=format&fit=crop" alt="Maratea Town & Cristo Redentore" loading="lazy"></a><figcaption><strong>Maratea Town & Cristo Redentore</strong><span>Cristian Negraia · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c5" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Maratea_-_Cristo_Redentore.jpg/1280px-Maratea_-_Cristo_Redentore.jpg" alt="Maratea Town & Cristo Redentore" loading="lazy"><figcaption><strong>Maratea Town &amp; Cristo Redentore</strong><span>Benjamin Smith · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1689933884682-78c889593718?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1689933884682-78c889593718?w=1200&q=80&auto=format&fit=crop" alt="Maratea Town & Cristo Redentore" loading="lazy"></a><figcaption><strong>Maratea Town &amp; Cristo Redentore</strong><span>Anastasia · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1691515509371-8b9172429b0d?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1691515509371-8b9172429b0d?w=1200&q=80&auto=format&fit=crop" alt="Maratea Town & Cristo Redentore" loading="lazy"></a><figcaption><strong>Maratea Town &amp; Cristo Redentore</strong><span>Cristian Negraia · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Viewing the Christ statue is free; summer shuttle from the parking lot up to the basilica runs ~€1-2/person plus ~€2-5 parking (estimated, ballpark).</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>~74°F</b> day / <b>~68°F</b> night, can spike to 93°F. Sea <b>~72°F</b> (interpolated from May/August readings, not a direct June figure).</p></div>
+          <div class="kv"><span>Cost</span><p>Viewing the Christ statue is free; summer shuttle from the parking lot up to the basilica runs ~€1-2/person plus ~€2-5 parking (estimated, ballpark).</p></div><div class="kv climate"><span>Weather</span><p>Air <b>~74°F</b> day / <b>~68°F</b> night, can spike to 93°F. Sea <b>~72°F</b> (interpolated from May/August readings, not a direct June figure).</p></div>
           <div class="callout save"><b>Save</b> Arrive before 9am or visit off-peak hours when the summit road is open to cars — skips the ~€2/person shuttle and parking fee entirely.</div>
           <div class="callout splurge"><b>Splurge</b> A private 2-hour guided walking tour of the historic Borgo, Basilica, and statue area — around $336 for the whole group, not per person.</div>
           <div class="resto">
@@ -1307,23 +1282,19 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Diamante+Calabria+murals" target="_blank" rel="noreferrer"><b>Diamante, Calabria</b> &#8617;</a> — "the town of murals," ~45 min south — a livelier, flatter promenade town if the steep old-town lanes feel like too much with a tired 8-year-old.</p>
+            <p><a href="https://www.google.com/search?q=Diamante+Calabria+murals" target="_blank" rel="noreferrer"><b>Diamante, Calabria</b> ↩</a> — "the town of murals," ~45 min south — a livelier, flatter promenade town if the steep old-town lanes feel like too much with a tired 8-year-old.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.theroadreel.com/maratea-italy-things-to-do/" target="_blank" rel="noreferrer">Things to do in Maratea ↗</a>
-            <a href="https://roamandthrive.com/maratea-italy-things-to-do/" target="_blank" rel="noreferrer">Maratea travel guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.theroadreel.com/maratea-italy-things-to-do/" target="_blank" rel="noreferrer">Things to do in Maratea ↗</a><a href="https://roamandthrive.com/maratea-italy-things-to-do/" target="_blank" rel="noreferrer">Maratea travel guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.9958,15.7183&z=14&output=embed" title="Map of Maratea Town & Cristo Redentore"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.9958,15.7183" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c2" id="day7">
       <div class="day-head">
         <div class="day-badge">7</div>
-        <div class="day-title"><p class="eyebrow">Thu · Jun 17</p><h3>Maratea beaches & sea caves</h3><p class="feel">Coves + grotto</p><p class="daycost">Est. ~$100 · cave ticket + lunch</p></div>
+        <div class="day-title"><p class="eyebrow">Thu · Jun 17</p><h3>Maratea beaches &amp; sea caves</h3><p class="feel">Coves + grotto</p><p class="daycost">Est. ~$100 · cave ticket + lunch</p></div>
       </div>
       <div class="logistics">
         <div class="facts"><div><span>Morning</span><strong>Cala Jannita or the harbor coves</strong></div><div><span>Afternoon</span><strong>Grotta delle Meraviglie on foot</strong></div></div>
@@ -1331,14 +1302,12 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Maratea Beaches & Sea Caves</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Maratea%20Beaches%20%26%20Sea%20Caves" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=maratea" target="_blank" rel="noreferrer">IG · Maratea</a><a class="xf" href="https://www.flickr.com/search/?text=Maratea%20Beaches%20%26%20Sea%20Caves&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Maratea Beaches &amp; Sea Caves</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Maratea%20Beaches%20%26%20Sea%20Caves" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=maratea" target="_blank" rel="noreferrer">IG · Maratea</a><a class="xf" href="https://www.flickr.com/search/?text=Maratea%20Beaches%20%26%20Sea%20Caves&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1781627674183-fd789590b29a?w=1200&q=80&auto=format&fit=crop" alt="Maratea Beaches & Sea Caves" loading="lazy"><figcaption><strong>Maratea Beaches & Sea Caves</strong><span>Emilio Filippelli · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1601151531852-8e1a2bfe2023?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601151531852-8e1a2bfe2023?w=1200&q=80&auto=format&fit=crop" alt="Maratea Beaches & Sea Caves" loading="lazy"></a><figcaption><strong>Maratea Beaches & Sea Caves</strong><span>Gabriella Clare Marino · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1601152399452-135fc9e6cc9c?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601152399452-135fc9e6cc9c?w=1200&q=80&auto=format&fit=crop" alt="Maratea Beaches & Sea Caves" loading="lazy"></a><figcaption><strong>Maratea Beaches & Sea Caves</strong><span>Gabriella Clare Marino · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c6" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1781627674183-fd789590b29a?w=1200&q=80&auto=format&fit=crop" alt="Maratea Beaches & Sea Caves" loading="lazy"><figcaption><strong>Maratea Beaches &amp; Sea Caves</strong><span>Emilio Filippelli · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1601151531852-8e1a2bfe2023?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601151531852-8e1a2bfe2023?w=1200&q=80&auto=format&fit=crop" alt="Maratea Beaches & Sea Caves" loading="lazy"></a><figcaption><strong>Maratea Beaches &amp; Sea Caves</strong><span>Gabriella Clare Marino · Unsplash License</span></figcaption></figure><figure><a href="https://images.unsplash.com/photo-1601152399452-135fc9e6cc9c?w=1200&q=80&auto=format&fit=crop" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1601152399452-135fc9e6cc9c?w=1200&q=80&auto=format&fit=crop" alt="Maratea Beaches & Sea Caves" loading="lazy"></a><figcaption><strong>Maratea Beaches &amp; Sea Caves</strong><span>Gabriella Clare Marino · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Grotta delle Meraviglie (walk-in show cave): €5/adult, free under 6. Private half-day boat charter for grottoes/swim stops: from €120 for the whole boat.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>~74°F</b> day. Sea <b>~72°F</b> — same interpolated estimate as Maratea town, this is one small coastline.</p></div>
+          <div class="kv"><span>Cost</span><p>Grotta delle Meraviglie (walk-in show cave): €5/adult, free under 6. Private half-day boat charter for grottoes/swim stops: from €120 for the whole boat.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>~74°F</b> day. Sea <b>~72°F</b> — same interpolated estimate as Maratea town, this is one small coastline.</p></div>
           <div class="callout save"><b>Save</b> Walk into the Grotta delle Meraviglie (€5/person) instead of a paid boat tour — a family of 4 sees a real sea cave for ~€15-20 total.</div>
           <div class="callout splurge"><b>Splurge</b> Private half-day boat charter along the coast (Freedome or similar) — from €120 for the boat, covering multiple grottoes and Cristo-from-the-sea views.</div>
           <div class="resto">
@@ -1347,19 +1316,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Arcomagno+cove+Praia+a+Mare" target="_blank" rel="noreferrer"><b>Arcomagno cove, Praia a Mare</b> &#8617;</a> — a natural sea-arch cove ~25-30 min south in Calabria — swim or walk directly into it, no boat needed, and sandier than Maratea's rocky coves.</p>
+            <p><a href="https://www.google.com/search?q=Arcomagno+cove+Praia+a+Mare" target="_blank" rel="noreferrer"><b>Arcomagno cove, Praia a Mare</b> ↩</a> — a natural sea-arch cove ~25-30 min south in Calabria — swim or walk directly into it, no boat needed, and sandier than Maratea's rocky coves.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.savoringitaly.com/maratea-italy/" target="_blank" rel="noreferrer">Maratea local guide ↗</a>
-            <a href="https://mapandfamily.com/maratea-italy/" target="_blank" rel="noreferrer">Maratea family-travel guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.savoringitaly.com/maratea-italy/" target="_blank" rel="noreferrer">Maratea local guide ↗</a><a href="https://mapandfamily.com/maratea-italy/" target="_blank" rel="noreferrer">Maratea family-travel guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=39.98845,15.70829&z=14&output=embed" title="Map of Maratea Beaches & Sea Caves"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=39.98845,15.70829" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day8">
       <div class="day-head">
         <div class="day-badge">8</div>
@@ -1369,7 +1334,7 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Drive</span><strong>~2h28m / 200km via the A2 → A3</strong></div><div><span>Note</span><strong>Juneteenth — observed today, confirm with your employer</strong></div></div>
         <p class="note">If your employer observes Juneteenth on the Friday before, today's drive costs a holiday, not a PTO day. Arrive Sorrento early afternoon, settle in, an easy first evening.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article><article class="day c3" id="day9">
       <div class="day-head">
         <div class="day-badge">9</div>
@@ -1382,13 +1347,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Ischia</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Ischia%20Sant%27Angelo%20Maronti%20Castello%20Aragonese" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ischia" target="_blank" rel="noreferrer">IG · Ischia</a><a class="xf" href="https://www.flickr.com/search/?text=Ischia%20Sant%27Angelo%20Maronti&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Ischia%20Sant%27Angelo%20Maronti%20Castello%20Aragonese" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ischia" target="_blank" rel="noreferrer">IG · Ischia</a><a class="xf" href="https://www.flickr.com/search/?text=Ischia%20Sant%27Angelo%20Maronti&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><a href="https://commons.wikimedia.org/wiki/File:Sant%27angelo_ischia.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sant%27angelo_ischia.jpg/1280px-Sant%27angelo_ischia.jpg" alt="Sant'Angelo, Ischia" loading="lazy"></a><figcaption><strong>Sant'Angelo</strong><span>Ulli Purwin · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Maronti_Beach_Ischia.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Maronti_Beach_Ischia.JPG" alt="Maronti Beach, Ischia" loading="lazy"></a><figcaption><strong>Maronti Beach</strong><span>Grauesel · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Aragonese_Castle_Island_of_Ischia_(53929679155).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Aragonese_Castle_Island_of_Ischia_%2853929679155%29.jpg/1280px-Aragonese_Castle_Island_of_Ischia_%2853929679155%29.jpg" alt="Castello Aragonese, Ischia" loading="lazy"></a><figcaption><strong>Castello Aragonese</strong><span>Steve Jurvetson · CC BY 2.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c7" data-n="3"><div class="track"><figure><a href="https://commons.wikimedia.org/wiki/File:Sant%27angelo_ischia.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sant%27angelo_ischia.jpg/1280px-Sant%27angelo_ischia.jpg" alt="Sant'Angelo, Ischia" loading="lazy"></a><figcaption><strong>Sant'Angelo</strong><span>Ulli Purwin · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Maronti_Beach_Ischia.JPG" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Maronti_Beach_Ischia.JPG" alt="Maronti Beach, Ischia" loading="lazy"></a><figcaption><strong>Maronti Beach</strong><span>Grauesel · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Aragonese_Castle_Island_of_Ischia_(53929679155).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Aragonese_Castle_Island_of_Ischia_%2853929679155%29.jpg/1280px-Aragonese_Castle_Island_of_Ischia_%2853929679155%29.jpg" alt="Castello Aragonese, Ischia" loading="lazy"></a><figcaption><strong>Castello Aragonese</strong><span>Steve Jurvetson · CC BY 2.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Direct seasonal ferry from Sorrento is roughly €24-30 adult one-way, with child fare around €18; family round trip is roughly €200-240 before luggage/fees. Add island bus/taxi money or a short boat taxi if Sant'Angelo/Maronti is the focus.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>~76°F</b> day / <b>~69°F</b> night. Sea <b>~73°F</b>; beaches and thermal pools make this easier than a line-based sightseeing day.</p></div>
+          <div class="kv"><span>Cost</span><p>Direct seasonal ferry from Sorrento is roughly €24-30 adult one-way, with child fare around €18; family round trip is roughly €200-240 before luggage/fees. Add island bus/taxi money or a short boat taxi if Sant'Angelo/Maronti is the focus.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>~76°F</b> day / <b>~69°F</b> night. Sea <b>~73°F</b>; beaches and thermal pools make this easier than a line-based sightseeing day.</p></div>
           <div class="callout save"><b>Save</b> Choose one side of the island: Ischia Porto/Ponte plus Castello Aragonese, or Sant'Angelo plus Maronti. Trying both ends by taxi burns money and time.</div>
           <div class="callout splurge"><b>Splurge</b> Poseidon Gardens at Citara, or a private taxi/driver between Ischia Porto and Sant'Angelo/Maronti if ferry times leave enough day.</div>
           <div class="resto">
@@ -1397,23 +1360,19 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Nerano+Marina+del+Cantone+from+Sorrento" target="_blank" rel="noreferrer"><b>Nerano / Marina del Cantone</b> &#8617;</a> — no-ferry beach lunch day on the Sorrento Peninsula if the Ischia timetable is awkward.</p>
+            <p><a href="https://www.google.com/search?q=Nerano+Marina+del+Cantone+from+Sorrento" target="_blank" rel="noreferrer"><b>Nerano / Marina del Cantone</b> ↩</a> — no-ferry beach lunch day on the Sorrento Peninsula if the Ischia timetable is awkward.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.ischiainsider.com/en/e/family-friendly-ischia-for-kids" target="_blank" rel="noreferrer">Family-friendly Ischia ↗</a>
-            <a href="https://www.ischiainsider.com/en/e/sant-angelo-and-serrara-fontana" target="_blank" rel="noreferrer">Sant'Angelo + Maronti guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.ischiainsider.com/en/e/family-friendly-ischia-for-kids" target="_blank" rel="noreferrer">Family-friendly Ischia ↗</a><a href="https://www.ischiainsider.com/en/e/sant-angelo-and-serrara-fontana" target="_blank" rel="noreferrer">Sant'Angelo + Maronti guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=40.7298,13.9062&z=12&output=embed" title="Map of Ischia"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=40.7298,13.9062" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day10">
       <div class="day-head">
         <div class="day-badge">10</div>
-        <div class="day-title"><p class="eyebrow">Sun · Jun 20</p><h3>Amalfi, Ravello & Atrani</h3><p class="feel">Coastal towns by boat</p><p class="daycost">Est. ~$400 · shared boat tour + lunch</p></div>
+        <div class="day-title"><p class="eyebrow">Sun · Jun 20</p><h3>Amalfi, Ravello &amp; Atrani</h3><p class="feel">Coastal towns by boat</p><p class="daycost">Est. ~$400 · shared boat tour + lunch</p></div>
       </div>
       <div class="logistics">
         <div class="facts"><div><span>Transport</span><strong>Shared boat to Amalfi, not rental car or SITA bus</strong></div><div><span>Focus</span><strong>Amalfi Duomo, Ravello's cliff-top gardens, tiny Atrani</strong></div></div>
@@ -1421,14 +1380,12 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
-        <div><h4 class="spot-name">Amalfi, Ravello & Atrani</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Amalfi%2C%20Ravello%20%26%20Atrani" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=amalfi" target="_blank" rel="noreferrer">IG · Amalfi</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ravello" target="_blank" rel="noreferrer">IG · Ravello</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=atrani" target="_blank" rel="noreferrer">IG · Atrani</a><a class="xf" href="https://www.flickr.com/search/?text=Amalfi%2C%20Ravello%20%26%20Atrani&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div><h4 class="spot-name">Amalfi, Ravello &amp; Atrani</h4></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Amalfi%2C%20Ravello%20%26%20Atrani" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=amalfi" target="_blank" rel="noreferrer">IG · Amalfi</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=ravello" target="_blank" rel="noreferrer">IG · Ravello</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=atrani" target="_blank" rel="noreferrer">IG · Atrani</a><a class="xf" href="https://www.flickr.com/search/?text=Amalfi%2C%20Ravello%20%26%20Atrani&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1612698093158-e07ac200d44e?w=1200&q=80&auto=format&fit=crop" alt="Amalfi, Ravello & Atrani" loading="lazy"><figcaption><strong>Amalfi, Ravello & Atrani</strong><span>Tom Podmore · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Atrani_%28Costiera_Amalfitana%2C_23-8-2011%29.jpg/1280px-Atrani_%28Costiera_Amalfitana%2C_23-8-2011%29.jpg" alt="Amalfi, Ravello & Atrani" loading="lazy"></a><figcaption><strong>Amalfi, Ravello & Atrani</strong><span>Paolo Costa Baldi · CC BY 3.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/tFbFYkZ1gYI" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1716313471151-13140f64ffad?w=1200&q=80&auto=format&fit=crop" alt="Amalfi, Ravello & Atrani" loading="lazy"></a><figcaption><strong>Amalfi, Ravello & Atrani</strong><span>Nella N · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c8" data-n="3"><div class="track"><figure><img src="https://images.unsplash.com/photo-1612698093158-e07ac200d44e?w=1200&q=80&auto=format&fit=crop" alt="Amalfi, Ravello & Atrani" loading="lazy"><figcaption><strong>Amalfi, Ravello &amp; Atrani</strong><span>Tom Podmore · Unsplash License</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Atrani_%28Costiera_Amalfitana%2C_23-8-2011%29.jpg/1280px-Atrani_%28Costiera_Amalfitana%2C_23-8-2011%29.jpg" alt="Amalfi, Ravello & Atrani" loading="lazy"></a><figcaption><strong>Amalfi, Ravello &amp; Atrani</strong><span>Paolo Costa Baldi · CC BY 3.0</span></figcaption></figure><figure><a href="https://unsplash.com/photos/tFbFYkZ1gYI" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1716313471151-13140f64ffad?w=1200&q=80&auto=format&fit=crop" alt="Amalfi, Ravello & Atrani" loading="lazy"></a><figcaption><strong>Amalfi, Ravello &amp; Atrani</strong><span>Nella N · Unsplash License</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Amalfi Cathedral ~€4 adult. Villa Rufolo (Ravello) €8 adult / €6 kids 5-12. Villa Cimbrone ~€10 adult. Atrani is free to wander. Family-of-4 estimate for the two villas + Duomo: ~€60-75.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>~76°F</b> day, up to 81°F. Sea <b>~73°F</b>.</p></div>
+          <div class="kv"><span>Cost</span><p>Amalfi Cathedral ~€4 adult. Villa Rufolo (Ravello) €8 adult / €6 kids 5-12. Villa Cimbrone ~€10 adult. Atrani is free to wander. Family-of-4 estimate for the two villas + Duomo: ~€60-75.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>~76°F</b> day, up to 81°F. Sea <b>~73°F</b>.</p></div>
           <div class="callout save"><b>Save</b> Skip Amalfi's paid beach club for the free public stretch, or duck one cove over to Atrani's small free beach — a quieter, gratis alternative to Amalfi's crowded, mostly-paid waterfront.</div>
           <div class="callout splurge"><b>Splurge</b> Il Flauto di Pan at Villa Cimbrone (Michelin-starred) — ~€150/person a la carte, a genuine special-occasion dinner with the Terrace of Infinity view.</div>
           <div class="resto">
@@ -1437,19 +1394,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Minori+beach+Amalfi+Coast" target="_blank" rel="noreferrer"><b>Minori</b> &#8617;</a> — a coastal town below Ravello with an actual sandy beach and lower prices — trades cliff-top gardens for sand.</p>
+            <p><a href="https://www.google.com/search?q=Minori+beach+Amalfi+Coast" target="_blank" rel="noreferrer"><b>Minori</b> ↩</a> — a coastal town below Ravello with an actual sandy beach and lower prices — trades cliff-top gardens for sand.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.familycantravel.com/amalfi-coast-with-kids/" target="_blank" rel="noreferrer">Amalfi Coast with kids ↗</a>
-            <a href="https://mamalovesitaly.com/visiting-amalfi-coast-with-kids/" target="_blank" rel="noreferrer">Visiting the Amalfi Coast with kids ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.familycantravel.com/amalfi-coast-with-kids/" target="_blank" rel="noreferrer">Amalfi Coast with kids ↗</a><a href="https://mamalovesitaly.com/visiting-amalfi-coast-with-kids/" target="_blank" rel="noreferrer">Visiting the Amalfi Coast with kids ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=40.634,14.6027&z=14&output=embed" title="Map of Amalfi, Ravello & Atrani"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=40.634,14.6027" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day11">
       <div class="day-head">
         <div class="day-badge">11</div>
@@ -1462,13 +1415,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Procida</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Procida%20Marina%20Corricella%20Terra%20Murata" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=procida" target="_blank" rel="noreferrer">IG · Procida</a><a class="xf" href="https://www.flickr.com/search/?text=Procida%20Marina%20Corricella&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Procida%20Marina%20Corricella%20Terra%20Murata" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=procida" target="_blank" rel="noreferrer">IG · Procida</a><a class="xf" href="https://www.flickr.com/search/?text=Procida%20Marina%20Corricella&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Corricella_2016%2C_Procida_%282%29.jpg/1280px-Corricella_2016%2C_Procida_%282%29.jpg" alt="Marina Corricella on Procida" loading="lazy"><figcaption><strong>Marina Corricella</strong><span>Ekrem Canli · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Terra_Murata_(Procida),_2016.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Terra_Murata_%28Procida%29%2C_2016.jpg/1280px-Terra_Murata_%28Procida%29%2C_2016.jpg" alt="Terra Murata on Procida" loading="lazy"></a><figcaption><strong>Terra Murata</strong><span>Ekrem Canli · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Procida2.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Procida2.jpg/1280px-Procida2.jpg" alt="Procida island view" loading="lazy"></a><figcaption><strong>Procida</strong><span>Jamiethearcher · Public domain</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c9" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Corricella_2016%2C_Procida_%282%29.jpg/1280px-Corricella_2016%2C_Procida_%282%29.jpg" alt="Marina Corricella on Procida" loading="lazy"><figcaption><strong>Marina Corricella</strong><span>Ekrem Canli · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Terra_Murata_(Procida),_2016.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Terra_Murata_%28Procida%29%2C_2016.jpg/1280px-Terra_Murata_%28Procida%29%2C_2016.jpg" alt="Terra Murata on Procida" loading="lazy"></a><figcaption><strong>Terra Murata</strong><span>Ekrem Canli · CC BY-SA 4.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Procida2.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Procida2.jpg/1280px-Procida2.jpg" alt="Procida island view" loading="lazy"></a><figcaption><strong>Procida</strong><span>Jamiethearcher · Public domain</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Naples→Procida ferries/hydrofoils usually start around €20 one-way; seasonal Sorrento direct sailings, if useful, are often ~€24-30 one-way. The island itself is free to wander.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>~80°F</b> day / <b>~69°F</b> night. Sea <b>~72°F</b> — beachable, especially for a short Chiaia or Chiaiolella swim after the old town walk.</p></div>
+          <div class="kv"><span>Cost</span><p>Naples→Procida ferries/hydrofoils usually start around €20 one-way; seasonal Sorrento direct sailings, if useful, are often ~€24-30 one-way. The island itself is free to wander.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>~80°F</b> day / <b>~69°F</b> night. Sea <b>~72°F</b> — beachable, especially for a short Chiaia or Chiaiolella swim after the old town walk.</p></div>
           <div class="callout save"><b>Save</b> Walk Marina Corricella and Terra Murata for free, then picnic or split lemon granita and pastries instead of a full waterfront lunch.</div>
           <div class="callout splurge"><b>Splurge</b> Small boat loop around Procida at sunset if return ferries line up — the pastel harbor looks best from the water.</div>
           <div class="resto">
@@ -1477,19 +1428,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Naples+historic+center+family+day+trip+from+Sorrento" target="_blank" rel="noreferrer"><b>Naples historic center</b> &#8617;</a> — gritty, lived-in, and deeply authentic if ferry timing makes Procida too awkward.</p>
+            <p><a href="https://www.google.com/search?q=Naples+historic+center+family+day+trip+from+Sorrento" target="_blank" rel="noreferrer"><b>Naples historic center</b> ↩</a> — gritty, lived-in, and deeply authentic if ferry timing makes Procida too awkward.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://www.alongdustyroads.com/posts/things-to-do-in-procida-italy" target="_blank" rel="noreferrer">Things to do in Procida ↗</a>
-            <a href="https://www.neverendingvoyage.com/procida-travel-guide/" target="_blank" rel="noreferrer">Procida travel guide ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://www.alongdustyroads.com/posts/things-to-do-in-procida-italy" target="_blank" rel="noreferrer">Things to do in Procida ↗</a><a href="https://www.neverendingvoyage.com/procida-travel-guide/" target="_blank" rel="noreferrer">Procida travel guide ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=40.7599,14.0189&z=14&output=embed" title="Map of Procida"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=40.7599,14.0189" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c3" id="day12">
       <div class="day-head">
         <div class="day-badge">12</div>
@@ -1502,13 +1449,11 @@ footer a{color:var(--muted)}
       <div class="spots-wrap"><section class="spot">
       <div class="spot-head">
         <div><h4 class="spot-name">Sorrento</h4></div>
-        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&q=Sorrento" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=sorrento" target="_blank" rel="noreferrer">IG · Sorrento</a><a class="xf" href="https://www.flickr.com/search/?text=Sorrento&sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
+        <div class="explore"><a class="xg" href="https://www.google.com/search?tbm=isch&amp;q=Sorrento" target="_blank" rel="noreferrer">Photos</a><a class="xi" href="https://www.instagram.com/explore/search/keyword/?q=sorrento" target="_blank" rel="noreferrer">IG · Sorrento</a><a class="xf" href="https://www.flickr.com/search/?text=Sorrento&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a></div>
       </div>
-      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coast_of_Sorrento_-_Campania_-_Italy_-_July_12th_2013_-_01.jpg/1280px-Coast_of_Sorrento_-_Campania_-_Italy_-_July_12th_2013_-_01.jpg" alt="Sorrento" loading="lazy"><figcaption><strong>Sorrento</strong><span>Norbert Nagel · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:View_of_Marina_Grande_from_SS145_at_golden_hour,_Sorrento,_2010.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/View_of_Marina_Grande_from_SS145_at_golden_hour%2C_Sorrento%2C_2010.jpg/1280px-View_of_Marina_Grande_from_SS145_at_golden_hour%2C_Sorrento%2C_2010.jpg" alt="Sorrento" loading="lazy"></a><figcaption><strong>Sorrento</strong><span>DimiTalen · CC0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Entrance_to_the_Lemon_Grove.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Entrance_to_the_Lemon_Grove.jpg/1280px-Entrance_to_the_Lemon_Grove.jpg" alt="Sorrento" loading="lazy"></a><figcaption><strong>Sorrento</strong><span>Elizabeth B. Thomsen · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">&#8249;</button><button class="nav next" aria-label="Next">&#8250;</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div>
-      <div class="spot-grid">
+      <div class="carousel" id="c10" data-n="3"><div class="track"><figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coast_of_Sorrento_-_Campania_-_Italy_-_July_12th_2013_-_01.jpg/1280px-Coast_of_Sorrento_-_Campania_-_Italy_-_July_12th_2013_-_01.jpg" alt="Sorrento" loading="lazy"><figcaption><strong>Sorrento</strong><span>Norbert Nagel · CC BY-SA 3.0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:View_of_Marina_Grande_from_SS145_at_golden_hour,_Sorrento,_2010.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/View_of_Marina_Grande_from_SS145_at_golden_hour%2C_Sorrento%2C_2010.jpg/1280px-View_of_Marina_Grande_from_SS145_at_golden_hour%2C_Sorrento%2C_2010.jpg" alt="Sorrento" loading="lazy"></a><figcaption><strong>Sorrento</strong><span>DimiTalen · CC0</span></figcaption></figure><figure><a href="https://commons.wikimedia.org/wiki/File:Entrance_to_the_Lemon_Grove.jpg" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Entrance_to_the_Lemon_Grove.jpg/1280px-Entrance_to_the_Lemon_Grove.jpg" alt="Sorrento" loading="lazy"></a><figcaption><strong>Sorrento</strong><span>Elizabeth B. Thomsen · CC BY-SA 3.0</span></figcaption></figure></div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / 3</div><div class="dots"><button class="dot" data-i="0" aria-label="Photo 1"></button><button class="dot" data-i="1" aria-label="Photo 2"></button><button class="dot" data-i="2" aria-label="Photo 3"></button></div></div><div class="spot-grid">
         <div class="spot-info">
-          <div class="kv"><span>Cost</span><p>Town is free to walk. Basic sunbed rental at Marina Grande/Piccola ~€10-12; premium beach clubs run ~€54/person. Lemon-grove/limoncello tours ~€25-55/adult.</p></div>
-          <div class="kv climate"><span>Weather</span><p>Air <b>~76°F</b> day / <b>~69°F</b> night. Sea <b>~73°F</b> — warmest water of the trip alongside Ischia and the Amalfi Coast.</p></div>
+          <div class="kv"><span>Cost</span><p>Town is free to walk. Basic sunbed rental at Marina Grande/Piccola ~€10-12; premium beach clubs run ~€54/person. Lemon-grove/limoncello tours ~€25-55/adult.</p></div><div class="kv climate"><span>Weather</span><p>Air <b>~76°F</b> day / <b>~69°F</b> night. Sea <b>~73°F</b> — warmest water of the trip alongside Ischia and the Amalfi Coast.</p></div>
           <div class="callout save"><b>Save</b> Basic sunbed rental at Marina Grande/Piccola (~€10-12) instead of a premium club like Peter's Beach (~€54/person) — saves ~€40+/person/day.</div>
           <div class="callout splurge"><b>Splurge</b> Sunset aperitivo at Vista Skybar (Hotel Mediterraneo) — 360° views over the Bay of Naples and Vesuvius, €40/person minimum spend.</div>
           <div class="resto">
@@ -1517,19 +1462,15 @@ footer a{color:var(--muted)}
           </div>
           <div class="altbox">
             <p class="mini-h">Also awesome instead</p>
-            <p><a href="https://www.google.com/search?q=Sant%27Agnello+Sorrento" target="_blank" rel="noreferrer"><b>Sant'Agnello</b> &#8617;</a> — a quieter, cheaper town immediately next door — its own train station, calmer evenings, an easy walk to Sorrento's restaurants.</p>
+            <p><a href="https://www.google.com/search?q=Sant%27Agnello+Sorrento" target="_blank" rel="noreferrer"><b>Sant'Agnello</b> ↩</a> — a quieter, cheaper town immediately next door — its own train station, calmer evenings, an easy walk to Sorrento's restaurants.</p>
           </div>
-          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>
-            <a href="https://wanderandluxe.com.au/sorrento-with-kids/" target="_blank" rel="noreferrer">Sorrento with kids ↗</a>
-            <a href="https://www.cityunscripted.com/travel-magazine/sorrento-with-kids" target="_blank" rel="noreferrer">What to do in Sorrento with kids ↗</a>
-          </div>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p><a href="https://wanderandluxe.com.au/sorrento-with-kids/" target="_blank" rel="noreferrer">Sorrento with kids ↗</a><a href="https://www.cityunscripted.com/travel-magazine/sorrento-with-kids" target="_blank" rel="noreferrer">What to do in Sorrento with kids ↗</a></div>
         </div>
         <div class="spot-map">
           <div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=40.6238,14.381&z=14&output=embed" title="Map of Sorrento"></iframe></div>
           <a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&query=40.6238,14.381" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a>
         </div>
-      </div>
-    </section></div>
+      </div></section></div>
     </article><article class="day c0" id="day13">
       <div class="day-head">
         <div class="day-badge">13</div>
@@ -1539,10 +1480,9 @@ footer a{color:var(--muted)}
         <div class="facts"><div><span>Drive</span><strong>~1h — budget 1.5h for narrow coastal-town traffic</strong></div><div><span>Fly</span><strong>NAP → European hub → PIT</strong></div></div>
         <p class="note">Home the evening the Pittsburgh blackout begins — don't book a tight connection today.</p>
       </div>
-      <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day — no stops</div></div>
-    </article>
-    </div>
-  </section>
+      <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
+    </article></div>
+    </section>
 
   <section id="budget" class="divider">
     <div class="section-label">
@@ -1692,4 +1632,4 @@ document.querySelectorAll('.carousel').forEach(function(c){
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-</body></html>
+<script>/*scrollspy*/(function(){var nav=document.querySelector("nav");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:"smooth"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:"smooth"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
