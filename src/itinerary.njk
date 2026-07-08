@@ -60,9 +60,25 @@ permalink: "/locations/{{ trip.slug }}/index.html"
       <div class="{{ it.daysClass }}">{% for d in it.days %}{{ day(d) }}{% endfor %}</div>
     </section>
 {%- endmacro -%}
+
+{%- macro todo(td) -%}
+<section id="todo" class="divider pretrip-todo">
+      <style>.pretrip-todo .todo-grid{display:grid;gap:12px}.pretrip-todo .todo-block{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c1);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.pretrip-todo .todo-block.hot{border-left-color:#c0392b}.pretrip-todo .todo-block.watch{border-left-color:var(--gold)}.pretrip-todo .todo-block.done{border-left-color:var(--c3)}.pretrip-todo .todo-when{grid-row:1/4;align-self:start;display:inline-block;margin:0;padding:4px 10px;border-radius:999px;background:rgba(31,111,120,.1);color:var(--c1);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-align:center}.pretrip-todo .todo-block.hot .todo-when{background:rgba(192,57,43,.1);color:#a23625}.pretrip-todo .todo-block.watch .todo-when{background:rgba(217,164,65,.16);color:#8a641e}.pretrip-todo .todo-block.done .todo-when{background:rgba(63,125,78,.12);color:var(--c3)}.pretrip-todo h3{grid-column:2;margin:0;font-size:1.12rem;font-weight:600;line-height:1.18}.pretrip-todo .todo-note{grid-column:2;margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}.pretrip-todo ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px}.pretrip-todo li{position:relative;padding-left:16px;color:var(--muted);font-size:.88rem;line-height:1.45}.pretrip-todo li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}.pretrip-todo li b{color:var(--ink)}.pretrip-todo .todo-callout{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:12px;background:var(--card);box-shadow:0 10px 28px rgba(30,32,28,.08);color:var(--muted);font-size:.9rem;line-height:1.55}.pretrip-todo .todo-callout b{color:var(--ink)}@media(max-width:720px){.pretrip-todo .todo-block{grid-template-columns:1fr;padding:16px}.pretrip-todo .todo-when{grid-row:auto;justify-self:start;text-align:left}.pretrip-todo h3,.pretrip-todo .todo-note,.pretrip-todo ul{grid-column:1}}</style>
+      <div class="section-label">{{ td.labelHtml | safe }}</div>
+      <div class="todo-grid">{% for block in td.blocks %}
+        <article class="todo-block{% if block.tone %} {{ block.tone }}{% endif %}">
+          <p class="todo-when">{{ block.when | safe }}</p>
+          <h3>{{ block.title | safe }}</h3>
+          {%- if block.note %}<p class="todo-note">{{ block.note | safe }}</p>{% endif %}
+          <ul>{% for item in block.items %}<li>{{ item | safe }}</li>{% endfor %}</ul>
+        </article>{% endfor %}
+      </div>
+      {% if td.callout %}<div class="todo-callout">{{ td.callout | safe }}</div>{% endif %}
+    </section>
+{%- endmacro -%}
 {%- for part in trip.main.parts -%}
 {%- if part.t == "raw" -%}{{ part.html | safe }}
-{%- elif part.t == "itinerary" -%}{{ itinerary(trip.main.itinerary) }}
+{%- elif part.t == "itinerary" -%}{{ itinerary(trip.main.itinerary) }}{% if trip.main.preDepartureTodos %}{{ todo(trip.main.preDepartureTodos) }}{% endif %}
 {%- elif part.t == "photoGuide" -%}{{ trip.photoGuide.html | safe }}
 {%- elif part.t == "foodGuide" -%}{{ trip.foodGuide.html | safe }}
 {%- elif part.t == "lib" -%}<script>{{ chrome.leafletLibs[part.key] | safe }}</script>

@@ -725,18 +725,19 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}
 .ocard p{margin:0;color:var(--muted);font-size:.92rem}
 /* TRIP MAP */
-.hc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-.hc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}
-.hc.actnow{border-top-color:#c0392b}
-.hc.watch{border-top-color:var(--gold)}
-.hc.good{border-top-color:var(--c3)}
-.hc-tag{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:10px;color:#fff}
+.hc-grid{display:grid;gap:12px}
+.hc{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--muted);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}
+.hc.actnow{border-left-color:#c0392b}
+.hc.watch{border-left-color:var(--gold)}
+.hc.good{border-left-color:var(--c3)}
+.hc-tag{grid-row:1/3;align-self:start;justify-self:stretch;display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:0;color:#fff;text-align:center}
 .hc.actnow .hc-tag{background:#c0392b}
 .hc.watch .hc-tag{background:var(--gold)}
 .hc.good .hc-tag{background:var(--c3)}
-.hc h4{margin:0 0 8px;font-size:1.15rem;font-weight:600;line-height:1.15}
-.hc p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.hc h4{grid-column:2;margin:0;font-size:1.15rem;font-weight:600;line-height:1.15}
+.hc p{grid-column:2;margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
 .hc p b{color:var(--ink)}
+@media(max-width:720px){.hc{grid-template-columns:1fr;padding:16px}.hc-tag{grid-row:auto;justify-self:start}.hc h4,.hc p{grid-column:1}}
 
 /* TRAVEL TIPS */
 .tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}
@@ -1575,8 +1576,13 @@ footer a{color:var(--muted)}
       <div class="todo-grid">
         <article class="todo-block hot">
           <p class="todo-when">Jul 10-19, 2026</p>
-          <h3>Book the Hawaii air plan</h3><p class="todo-note">Jun 5 outbound inventory starts opening around Jul 10; the Jun 14 red-eye return opens around Jul 19.</p>
-          <ul><li><b>Book PIT to HNL and KOA to PIT as an open-jaw.</b> Compare United, Delta, American, Alaska/Hawaiian partners, and any Southwest positioning only if the total day still works.</li><li><b>Book HNL to KOA for Wed Jun 9</b> after the long-haul is fixed; morning/midday is better than burning a whole beach day.</li><li><b>Pay attention to baggage rules across carriers</b> so the inter-island leg does not surprise you.</li><li><b>Save seat assignments and record locators immediately</b> because long domestic travel days are easier with seats settled early.</li></ul>
+          <h3>Flight inventory opens: start tracking, do not auto-buy</h3><p class="todo-note">These dates are when most major-airline seats should become searchable, not when domestic cash fares are expected to be cheapest.</p>
+          <ul><li><b>Map the protected route options for PIT to Honolulu plus Kona to PIT.</b> Record good connection cities, bad connection traps, baggage rules, and whether the itinerary is truly protected on one ticket.</li><li><b>Set Google Flights alerts for the exact dates plus nearby gateways.</b> Track the full family-of-4 price, not just one-seat teaser fares.</li><li><b>Check award tickets or refundable fares when the schedule opens.</b> Early booking can make sense for award space, refundable fares, or a genuinely below-target cash fare.</li><li><b>Set a buy threshold now.</b> Decide the fare where convenience, protection, and seat selection justify buying before the statistical cheap window.</li></ul>
+        </article>
+        <article class="todo-block watch">
+          <p class="todo-when">Apr 14-May 15, 2027</p>
+          <h3>Target cash-flight buy window</h3><p class="todo-note">For domestic cash fares, Google's historical low range is about 21-52 days out, while Expedia's 2026 data is even closer. For this family Hawaii open-jaw, use the earlier side of that range so seats and routing do not get ugly.</p>
+          <ul><li><b>Run twice-weekly fare checks for PIT-HNL and KOA-PIT.</b> Buy when the open-jaw is under target with sane West Coast connections and seats together.</li><li><b>Do not buy in July 2026 unless the fare is refundable, award space is excellent, or the cash fare is clearly below the route target.</b></li><li><b>Keep HNL-KOA inter-island separate.</b> Lock the morning/midday island hop once the long-haul flights are set and the schedule is stable.</li><li><b>After purchase, keep tracking prices</b> and use airline credits/rebooking if a non-basic-economy fare drops.</li></ul>
         </article>
         <article class="todo-block">
           <p class="todo-when">By Aug 9, 2026</p>

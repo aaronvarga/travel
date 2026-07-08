@@ -723,18 +723,19 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}
 .ocard p{margin:0;color:var(--muted);font-size:.92rem}
 /* TRIP MAP */
-.hc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-.hc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}
-.hc.actnow{border-top-color:#c0392b}
-.hc.watch{border-top-color:var(--gold)}
-.hc.good{border-top-color:var(--c3)}
-.hc-tag{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:10px;color:#fff}
+.hc-grid{display:grid;gap:12px}
+.hc{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--muted);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}
+.hc.actnow{border-left-color:#c0392b}
+.hc.watch{border-left-color:var(--gold)}
+.hc.good{border-left-color:var(--c3)}
+.hc-tag{grid-row:1/3;align-self:start;justify-self:stretch;display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:0;color:#fff;text-align:center}
 .hc.actnow .hc-tag{background:#c0392b}
 .hc.watch .hc-tag{background:var(--gold)}
 .hc.good .hc-tag{background:var(--c3)}
-.hc h4{margin:0 0 8px;font-size:1.15rem;font-weight:600;line-height:1.15}
-.hc p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.hc h4{grid-column:2;margin:0;font-size:1.15rem;font-weight:600;line-height:1.15}
+.hc p{grid-column:2;margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
 .hc p b{color:var(--ink)}
+@media(max-width:720px){.hc{grid-template-columns:1fr;padding:16px}.hc-tag{grid-row:auto;justify-self:start}.hc h4,.hc p{grid-column:1}}
 
 /* TRAVEL TIPS */
 .tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}
@@ -1749,8 +1750,13 @@ footer a{color:var(--muted)}
       <div class="todo-grid">
         <article class="todo-block hot">
           <p class="todo-when">Jul 13-26, 2026</p>
-          <h3>Book flights without removing the buffer</h3><p class="todo-note">Jun 8 outbound inventory starts opening around Jul 13; the Jun 21 Catania return opens around Jul 26.</p>
-          <ul><li><b>Book PIT to Funchal and Catania to PIT first.</b> Prefer protected routings into FNC and a clean CTA return via Dublin, Frankfurt/Munich, Rome, or another strong hub.</li><li><b>Book FNC to Lisbon for Mon Jun 14</b> and keep the Lisbon insurance night.</li><li><b>Track LIS to Palermo for Tue Jun 15 as soon as summer 2027 low-cost schedules load.</b> Book early if nonstop competition is still thin.</li><li><b>Do not combine FNC to LIS to PMO on one same-day chain</b> unless every segment is protected and the buffer is generous.</li></ul>
+          <h3>Flight inventory opens: start tracking, do not auto-buy</h3><p class="todo-note">These dates are when most major-airline seats should become searchable, not when cash fares are expected to be cheapest.</p>
+          <ul><li><b>Map the protected route options for PIT to Funchal plus Catania to PIT.</b> Record good connection cities, bad connection traps, baggage rules, and whether the itinerary is truly protected on one ticket.</li><li><b>Set Google Flights alerts for the exact dates plus nearby gateways.</b> Track the full family-of-4 price, not just one-seat teaser fares.</li><li><b>Check award tickets or refundable fares when the schedule opens.</b> Early booking can make sense for award space, refundable fares, or a genuinely below-target cash fare.</li><li><b>Set a buy threshold now.</b> Decide the fare where convenience, protection, and seat selection justify buying before the statistical cheap window.</li></ul>
+        </article>
+        <article class="todo-block watch">
+          <p class="todo-when">Jan 8-Mar 10, 2027</p>
+          <h3>Target cash-flight buy window</h3><p class="todo-note">For Europe, use this as the serious cash-buy window: Google data points to about 94 days out for Europe, with risk rising inside 50 days; other fare guidance clusters around 3-5 months or 2-8 months for international coach.</p>
+          <ul><li><b>Run weekly fare checks for PIT-FNC and CTA-PIT.</b> Buy when the protected itinerary is under target and preserves the Lisbon insurance night.</li><li><b>Track FNC-LIS and LIS-PMO separately.</b> The Palermo hop may need earlier action if nonstop competition remains thin.</li><li><b>Do not wait past Apr 19, 2027 without a specific reason.</b> That is about 50 days before departure, where Google's Europe data says prices usually start becoming less forgiving.</li><li><b>After purchase, keep tracking prices</b> and use airline credits/rebooking if a non-basic-economy fare drops.</li></ul>
         </article>
         <article class="todo-block">
           <p class="todo-when">By Aug 15, 2026</p>
