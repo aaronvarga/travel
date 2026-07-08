@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "extract": "node tools/extract.mjs",
-    "build": "node tools/extract.mjs && eleventy",
-    "serve": "eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./node_modules/@11ty/eleventy/cmd.cjs",
+    "serve": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "import": "node tools/extract.mjs",
+    "alltrails": "node tools/apply-alltrails.mjs"
   },
   "repository": {
     "type": "git",
