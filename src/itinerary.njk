@@ -78,7 +78,8 @@ permalink: "/locations/{{ trip.slug }}/index.html"
 {%- endmacro -%}
 {%- for part in trip.main.parts -%}
 {%- if part.t == "raw" -%}{{ part.html | safe }}
-{%- elif part.t == "itinerary" -%}{{ itinerary(trip.main.itinerary) }}{% if trip.main.preDepartureTodos %}{{ todo(trip.main.preDepartureTodos) }}{% endif %}
+{%- elif part.t == "itinerary" -%}{{ itinerary(trip.main.itinerary) }}
+{%- elif part.t == "todo" -%}{% if trip.main.preDepartureTodos %}{{ todo(trip.main.preDepartureTodos) }}{% endif %}
 {%- elif part.t == "photoGuide" -%}{{ trip.photoGuide.html | safe }}
 {%- elif part.t == "foodGuide" -%}{{ trip.foodGuide.html | safe }}
 {%- elif part.t == "lib" -%}<script>{{ chrome.leafletLibs[part.key] | safe }}</script>
