@@ -1,41 +1,65 @@
-// Rewrites each spot's Flickr (.xf) explore link to search the SAME tag as the
-// spot's primary (first) Instagram (.xi) link, instead of the full spot name.
-// Also collapses any accidental multiple .xf buttons down to a single one.
+// Rewrites every Flickr search link to search the SAME tag as its nearest
+// preceding Instagram (/explore/tags/<tag>/) link in the same HTML string —
+// covering structured spot .exploreHtml AND raw guide/intro HTML blobs.
+// Idempotent: converts flickr ?text=... or ?tags=... to ?tags=<igTag>.
 import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = resolve(ROOT, 'src/_data');
-const IG = /class="xi"\s+href="https:\/\/www\.instagram\.com\/explore\/tags\/([^/"]+)\//;
-const XF = /<a class="xf"[^>]*>.*?<\/a>/g;
+const IG_TAG = /instagram\.com\/explore\/tags\/([^/"]+)\//g;
+// any <a ...href="https://www.flickr.com/search/?text=...|tags=..." ...>Flickr</a>
+const FLICKR = /(<a\b[^>]*href=")https:\/\/www\.flickr\.com\/search\/\?[^"]*("[^>]*>\s*Flickr\s*<\/a>)/g;
 
-let changed = 0; const samples = [];
-for (const slug of readdirSync(DATA).filter(d => existsSync(resolve(DATA, d, 'main.json')))) {
-  const file = resolve(DATA, slug, 'main.json');
-  const d = JSON.parse(readFileSync(file, 'utf8'));
-  let dirty = false;
-  const walk = o => {
-    if (Array.isArray(o)) return o.forEach(walk);
-    if (o && typeof o === 'object') {
-      if (typeof o.exploreHtml === 'string' && o.exploreHtml.includes('class="xf"')) {
-        const m = o.exploreHtml.match(IG);
-        if (m) {
-          const tag = m[1];
-          const flickr = `<a class="xf" href="https://www.flickr.com/search/?tags=${tag}&amp;sort=interestingness-desc" target="_blank" rel="noreferrer">Flickr</a>`;
-          let seen = false;
-          const next = o.exploreHtml.replace(XF, () => (seen ? '' : (seen = true, flickr)));
-          if (next !== o.exploreHtml) {
-            o.exploreHtml = next; dirty = true; changed++;
-            if (samples.length < 4) samples.push(`${slug} | ${o.name} | tag=${tag}`);
-          }
-        }
-      }
-      Object.values(o).forEach(walk);
-    }
-  };
-  walk(d);
-  if (dirty) writeFileSync(file, JSON.stringify(d, null, 2));
+let retagged = 0, orphan = 0; const samples = [];
+
+function transform(html) {
+  // Precompute IG tag positions in this string.
+  const igs = [];
+  let m;
+  IG_TAG.lastIndex = 0;
+  while ((m = IG_TAG.exec(html)) !== null) igs.push({ idx: m.index, tag: m[1] });
+  if (!igs.length) return html;
+
+  let segStart = 0; // each row ends with its Flickr link; PRIMARY IG = first IG in the row
+  return html.replace(FLICKR, (full, pre, post, offset) => {
+    // first IG tag in this row's segment (after the previous Flickr, before this one)
+    const tag = (igs.find(g => g.idx >= segStart && g.idx < offset) || {}).tag || null;
+    segStart = offset + full.length;
+    if (!tag) { orphan++; return full; }
+    const href = `https://www.flickr.com/search/?tags=${tag}&amp;sort=interestingness-desc`;
+    retagged++;
+    if (samples.length < 5) samples.push(`tag=${tag}`);
+    return pre + href + post;
+  });
 }
-console.log(samples.join('\n'));
-console.log(`\nflickr links retagged: ${changed}`);
+
+function walk(o) {
+  if (Array.isArray(o)) { let d = false; o.forEach(v => { if (walk(v)) d = true; }); return d; }
+  if (o && typeof o === 'object') {
+    let dirty = false;
+    for (const k of Object.keys(o)) {
+      const v = o[k];
+      if (typeof v === 'string' && v.includes('flickr.com/search')) {
+        const next = transform(v);
+        if (next !== v) { o[k] = next; dirty = true; }
+      } else if (v && typeof v === 'object') {
+        if (walk(v)) dirty = true;
+      }
+    }
+    return dirty;
+  }
+  return false;
+}
+
+for (const slug of readdirSync(DATA).filter(d => existsSync(resolve(DATA, d)))) {
+  for (const name of ['main.json', 'photoGuide.json', 'foodGuide.json']) {
+    const file = resolve(DATA, slug, name);
+    if (!existsSync(file)) continue;
+    const d = JSON.parse(readFileSync(file, 'utf8'));
+    if (walk(d)) writeFileSync(file, JSON.stringify(d, null, 2));
+  }
+}
+console.log(samples.join('  '));
+console.log(`\nflickr links retagged: ${retagged} | orphan (no preceding IG, left as-is): ${orphan}`);
