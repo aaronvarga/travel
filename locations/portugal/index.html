@@ -798,6 +798,23 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .mapbtns button:hover{background:var(--ink);color:#fff}
 .mapbtns button .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
 #tripmap{height:460px;border-radius:14px;z-index:1}
+
+/* CAROUSEL */
+.carousel{position:relative;overflow:hidden;background:#e7e1d4}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.track figure{margin:0;flex:0 0 100%;scroll-snap-align:center;position:relative}
+.track img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#e7e1d4}
+.track figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:.74rem;line-height:1.3;background:linear-gradient(180deg,transparent,rgba(0,0,0,.68))}
+.track figcaption strong{display:block;font-weight:700}
+.track figcaption span{color:rgba(255,255,255,.82);font-size:.66rem}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.86);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:.15s;z-index:2}
+.nav:hover{background:#fff;transform:translateY(-50%) scale(1.08)}
+.nav.prev{left:12px}.nav.next{right:12px}
+.counter{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;z-index:2}
+.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;flex-wrap:wrap;padding:0 40px}
+.dots .dot{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer;padding:0;transition:.15s}
+.dots .dot.on{background:#fff;width:20px;border-radius:999px}
 </style></head><body>
 <section class="preview">
   <div class="pv-pane">
@@ -4650,28 +4667,33 @@ document.querySelectorAll('.carousel').forEach(function(c){
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
 <script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
-<style media="print">
-  /* Phase 7 — print/PDF degradation for itineraries. */
-  @page { margin: 14mm; }
-  .site-nav, .site-nav-menu { display: none !important; }
-  /* Carousels: reveal every photo, stacked; drop interactive chrome. */
-  .carousel { height: auto !important; overflow: visible !important; }
-  .carousel .track { display: block !important; transform: none !important; overflow: visible !important; width: auto !important; }
-  .carousel figure { display: block !important; width: 100% !important; break-inside: avoid; margin: 0 0 8px !important; }
-  .carousel figure img { max-height: 320px; width: auto !important; max-width: 100% !important; object-fit: contain !important; }
-  .carousel .nav, .carousel .counter, .carousel .dots { display: none !important; }
-  /* Maps: drop interactive controls; keep the loaded tile snapshot; the Google
-     Maps link remains as a printed fallback reference. */
-  .leaflet-control-container, .mapbtns, .leaflet-control-zoom { display: none !important; }
-  .mapstage, .mapwrap { break-inside: avoid; }
-  [class$="-map-embed"], .mapstage { max-height: 360px !important; }
-  a.gmap, .gmap-btn { text-decoration: underline; }
-  /* Keep logical blocks intact across page breaks. */
-  .day, .spot, .pcard, .todo-block, .winner-card, .hc, section { break-inside: avoid; }
-  section { page-break-inside: avoid; }
-  details { display: block !important; }
-  details:not([open]) > *:not(summary) { display: revert !important; }
-  a[href] { color: inherit; }
+<style>
+  /* Phase 7 — print/PDF degradation for itineraries. Scoped with @media print
+     (NOT just a media="print" attribute): this <style> is emitted after </html>
+     and reparented into the body, where the media attribute is not reliably
+     honored — the @media block guarantees these rules never touch the screen. */
+  @media print {
+    @page { margin: 14mm; }
+    .site-nav, .site-nav-menu { display: none !important; }
+    /* Carousels: reveal every photo, stacked; drop interactive chrome. */
+    .carousel { height: auto !important; overflow: visible !important; }
+    .carousel .track { display: block !important; transform: none !important; overflow: visible !important; width: auto !important; }
+    .carousel figure { display: block !important; width: 100% !important; break-inside: avoid; margin: 0 0 8px !important; }
+    .carousel figure img { max-height: 320px; width: auto !important; max-width: 100% !important; object-fit: contain !important; }
+    .carousel .nav, .carousel .counter, .carousel .dots { display: none !important; }
+    /* Maps: drop interactive controls; keep the loaded tile snapshot; the Google
+       Maps link remains as a printed fallback reference. */
+    .leaflet-control-container, .mapbtns, .leaflet-control-zoom { display: none !important; }
+    .mapstage, .mapwrap { break-inside: avoid; }
+    [class$="-map-embed"], .mapstage { max-height: 360px !important; }
+    a.gmap, .gmap-btn { text-decoration: underline; }
+    /* Keep logical blocks intact across page breaks. */
+    .day, .spot, .pcard, .todo-block, .winner-card, .hc, section { break-inside: avoid; }
+    section { page-break-inside: avoid; }
+    details { display: block !important; }
+    details:not([open]) > *:not(summary) { display: revert !important; }
+    a[href] { color: inherit; }
+  }
 </style>
 <script>
   /* Force-load lazy images and open <details> before printing so nothing is

@@ -6,7 +6,7 @@
  *   on demand as the user visits pages (no bulk pre-warming).
  * Cache names are versioned; bump VERSION on release to invalidate. */
 'use strict';
-const VERSION = 'tp-v1';
+const VERSION = 'tp-v2';
 const SHELL = VERSION + '-shell';
 const TILES = VERSION + '-tiles';
 const IMGS = VERSION + '-imgs';
@@ -45,14 +45,31 @@ self.addEventListener('fetch', (e) => {
   let url;
   try { url = new URL(req.url); } catch (_) { return; }
 
+  const isDoc = req.mode === 'navigate' ||
+    (req.headers.get('accept') || '').includes('text/html');
+
   if (url.hostname === 'tiles.openfreemap.org') {
     e.respondWith(cacheFirst(req, TILES, 500));
   } else if (url.hostname === 'images.unsplash.com' || url.hostname.endsWith('staticflickr.com')) {
     e.respondWith(cacheFirst(req, IMGS, 250));
+  } else if (url.origin === self.location.origin && isDoc) {
+    // HTML pages: network-first so an online visitor always gets the fresh,
+    // complete document; cache is only a fallback when offline. Prevents a
+    // stale or partially-cached page from ever shadowing the live site.
+    e.respondWith(networkFirst(req, SHELL));
   } else if (url.origin === self.location.origin) {
     e.respondWith(staleWhileRevalidate(req, SHELL));
   }
 });
+
+function networkFirst(req, cacheName) {
+  return fetch(req)
+    .then((res) => {
+      if (res && res.ok) caches.open(cacheName).then((c) => c.put(req, res.clone()));
+      return res;
+    })
+    .catch(() => caches.open(cacheName).then((c) => c.match(req)));
+}
 
 function cacheFirst(req, cacheName, max) {
   return caches.open(cacheName).then((cache) =>
