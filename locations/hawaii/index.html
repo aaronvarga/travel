@@ -1004,13 +1004,13 @@ footer a{color:var(--muted)}
     <div class="site-nav-links">
       <a href="../../index.html" class="nav-home">← All Trips</a>
       <a href="#overview">Overview</a>
+      <a href="#stays">Where We Stay</a>
+      <a href="#calendar">Calendar</a>
       <a href="#itinerary">Day by Day</a>
       <a href="#map">Trip Map</a>
+      <a href="#getting-around">Getting Around</a>
       <a href="#health-check">Health-Check</a>
       <a href="#timing">Best Time to Go</a>
-      <a href="#stays">Where We Stay</a>
-      <a href="#getting-around">Getting Around</a>
-      <a href="#calendar">Calendar</a>
       <a href="#todo">To-Do</a>
       <a href="#budget">Budget</a>
       <a href="#tips">Travel Tips</a>
@@ -1034,7 +1034,162 @@ footer a{color:var(--muted)}
     </div>
   </section>
 
-  <section id="itinerary" class="divider">
+  <section id="stays" class="divider">
+    <div class="section-label"><p class="eyebrow">Where We Are Staying</p><h2>Three home bases</h2><p>Each base is chosen for family logistics, kitchen access where it matters, and minimizing paid parking friction.</p></div>
+    <div class="bases">
+      <div class="base b1"><div class="band"></div><img class="bimg" src="https://images.unsplash.com/photo-1698094276348-c542aa9c5609?w=1200&q=80&auto=format&fit=crop" alt="Waikiki / Honolulu"><div class="bbody"><span class="nights">4 nights &middot; Jun 5&ndash;8</span><h4>Waikiki / Honolulu</h4><p class="dates">Oahu logistics base</p><p>Stay walkable to beach, food, and transit. Do not keep a car here full-time; parking alone can add $180&ndash;280 over four nights.</p><p class="book"><b>Book:</b> Budget aparthotel/studio with a full kitchen and 2 queen beds &mdash; skip the ocean view and resort tower. Honest band: ~$190&ndash;300/night before resort/cleaning/parking fees.</p></div></div><div class="base b2"><div class="band"></div><img class="bimg" src="https://images.unsplash.com/photo-1588652269774-cf644359ef24?w=1200&q=80&auto=format&fit=crop" alt="Kailua-Kona"><div class="bbody"><span class="nights">3 nights &middot; Jun 9&ndash;11</span><h4>Kailua-Kona</h4><p class="dates">Snorkel &amp; beach base</p><p>Condo with kitchen beats hotel + all restaurant meals here. Kona is the water base and the easiest place to reset laundry and snacks.</p><p class="book"><b>Book:</b> 1BR condo with AC, parking, and kitchen &mdash; skip the ocean view and cleaning-fee-heavy resort units. Honest family band: ~$190&ndash;330/night all-in.</p></div></div><div class="base b3"><div class="band"></div><img class="bimg" src="https://images.unsplash.com/photo-1761589951732-2795cd6ecdbf?w=1200&q=80&auto=format&fit=crop" alt="Volcano Village"><div class="bbody"><span class="nights">2 nights &middot; Jun 12&ndash;13</span><h4>Volcano Village</h4><p class="dates">National park base</p><p>Cooler, wetter, quieter, and much closer to the park than Kona. This avoids a 4-hour round-trip Volcanoes day from the coast.</p><p class="book"><b>Book:</b> Cottage/lodge with heat or good blankets, kitchen basics, and washer if possible. Honest band: ~$200&ndash;320/night.</p></div></div>
+    </div>
+  </section>
+
+  <section id="calendar" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">Week at a Glance</p>
+      <h2>Calendar</h2>
+      <p>The same 10 days as colored time blocks, coded by <b>activity</b> so a color means the same thing on every itinerary. Coarse by design (a car pickup plus its drive is one block). <b>Block times are schematic, not real flight times</b> &mdash; they show sequence and rough time-of-day snapped to a 2-hour grid, since 2027 schedules are not published yet. When real flights are booked, set each block to departure minus a check-in buffer.</p>
+    </div>
+
+    <style>
+      .cal-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+      .cal-legend span{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:700;color:var(--ink)}
+      .cal-legend i{width:16px;height:16px;border-radius:5px;display:inline-block}
+      .lg-air{background:#3d4d74}.lg-car{background:var(--gold)}
+      .lg-hike{background:var(--c3)}.lg-water{background:var(--c1)}.lg-town{background:var(--c2)}.lg-rest{background:#8a857c}
+      .cal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+      .cal-week{min-width:780px;margin:0 0 22px}
+      .cal-wklabel{font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+      .cal-hd{display:grid;grid-template-columns:repeat(8,1fr);gap:0}
+      .cal-hd .dh{padding:6px 4px;text-align:center;border-bottom:2px solid var(--line)}
+      .cal-hd .dh .dow{display:block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+      .cal-hd .dh .dnum{display:block;font-size:1.02rem;font-weight:800;color:var(--ink);line-height:1.1}
+      .cal-hd .dh.off{opacity:.4}
+      .cal-hd .dh.trip{background:rgba(31,111,120,.06)}
+      .cal-hd .dh.trip .dnum{color:var(--c1)}
+      .cal-hd .gut{border-bottom:2px solid var(--line)}
+      .cal-bd{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(9,32px);position:relative;
+        background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px),
+          repeating-linear-gradient(to right,transparent 0 calc(12.5% - 1px),var(--line) calc(12.5% - 1px) 12.5%)}
+      .cal-bd .tl{grid-column:1;font-size:.62rem;font-weight:700;color:var(--muted);padding:2px 4px 0 4px;text-align:right}
+      .ev{margin:2px;border-radius:6px;padding:3px 6px;font-size:.68rem;line-height:1.14;font-weight:700;color:#fff;overflow:hidden;
+        position:relative;z-index:2;box-shadow:0 1px 3px rgba(30,32,28,.2);display:flex;align-items:flex-start}
+      .ev.sm{font-size:.62rem;align-items:center}
+      .ev.air{background:#3d4d74}
+      .ev.car{background:var(--gold);color:#3a2f12;box-shadow:0 1px 2px rgba(120,90,20,.28)}
+      .ev.hike{background:var(--c3)}.ev.water{background:var(--c1)}.ev.town{background:var(--c2)}
+      .ev.rest{background:#8a857c}
+      @media(max-width:640px){.cal-week{min-width:720px}}
+    /*TYPEMAP-CSS*/
+.tripmap-wrap .mapstage{position:relative}
+.tripmap-wrap .mapstage #tripmap{min-height:520px;border-radius:16px;overflow:hidden}
+.layers-btn{position:absolute;z-index:600;right:14px;top:14px;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(31,111,120,.22);border-radius:999px;background:rgba(255,253,248,.94);color:var(--ink);font-weight:850;font-size:.86rem;line-height:1;padding:10px 14px;box-shadow:0 14px 32px -18px rgba(0,0,0,.45);cursor:pointer;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.layers-btn:hover{background:#fff}
+.layers-btn .lbi{color:var(--c1);font-size:1rem;line-height:1}
+.layers-panel{position:absolute;z-index:620;right:14px;top:14px;width:min(360px,calc(100% - 28px));max-height:calc(100% - 28px);overflow:auto;border:1px solid rgba(31,111,120,.18);border-radius:18px;background:rgba(255,253,248,.95);box-shadow:0 22px 70px -32px rgba(0,0,0,.55);padding:18px 20px 20px;color:var(--ink);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.layers-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.layers-top strong{font-size:1.08rem;line-height:1.1}
+.layers-x{width:36px;height:36px;border:0;border-radius:50%;background:rgba(31,111,120,.1);color:var(--muted);font-size:1.7rem;line-height:1;cursor:pointer}
+.layers-x:hover{background:rgba(31,111,120,.16);color:var(--ink)}
+.layers-acts{display:flex;align-items:center;gap:10px;margin:14px 0 16px;padding-bottom:14px;border-bottom:1px solid rgba(31,111,120,.16)}
+.layers-acts button{border:0;background:transparent;color:#3e50dc;font-weight:900;font-size:.92rem;line-height:1;cursor:pointer;padding:0}
+.layers-acts .dot{color:rgba(31,111,120,.32);font-weight:900}
+.layers-head{margin:18px 0 8px;color:var(--ink);font-size:.78rem;line-height:1;font-weight:950;letter-spacing:.06em;text-transform:uppercase}
+.layers-head:first-child{margin-top:0}
+.layers-list{display:grid;gap:2px}
+.lrow{display:grid;grid-template-columns:38px minmax(0,1fr) 34px;align-items:center;gap:14px;min-height:54px;color:var(--ink);cursor:pointer}
+.lsw{width:30px;height:30px;border-radius:50% 50% 50% 0;display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px -10px rgba(0,0,0,.8);transform:rotate(-45deg)}
+.lsw span{display:block;transform:rotate(45deg);font-size:.86rem;line-height:1}
+.ltxt{font-size:1rem;line-height:1.2;font-weight:650}
+.lrow input{appearance:none;-webkit-appearance:none;width:30px;height:30px;margin:0;border:3px solid #737c81;border-radius:7px;background:transparent;cursor:pointer;position:relative}
+.lrow input:checked{border-color:var(--c1);background:var(--c1)}
+.lrow input:checked::after{content:"";position:absolute;left:8px;top:3px;width:8px;height:15px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.pin2{width:26px;height:26px;border-radius:50% 50% 50% 0;display:grid;place-items:center;border:2px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-45deg)}
+.pin2 span{display:block;transform:rotate(45deg);font-size:13px;line-height:1}
+.pop-ty{display:inline-block;margin-top:3px;color:#66615b;font-size:.82rem}
+@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}</style>
+
+    <div class="cal-legend">
+      <span><i class="lg-air"></i>✈️ Air travel</span>
+      <span><i class="lg-car"></i>🚗 Car &amp; transfers</span>
+      <span><i class="lg-hike"></i>🥾 Hike &amp; nature</span>
+      <span><i class="lg-water"></i>🏖️ Beach &amp; water</span>
+      <span><i class="lg-town"></i>🏛️ Town, culture &amp; food</span>
+      <span><i class="lg-rest"></i>🛏️ Arrival / buffer / rest</span>
+    </div>
+
+    <div class="cal-scroll">
+
+      <div class="cal-week">
+        <p class="cal-wklabel">Week 1 &middot; May 30&ndash;Jun 5</p>
+        <div class="cal-hd">
+          <div class="gut"></div>
+          <div class="dh off"><span class="dow">Sun</span><span class="dnum">30</span></div>
+          <div class="dh off"><span class="dow">Mon</span><span class="dnum">31</span></div>
+          <div class="dh off"><span class="dow">Tue</span><span class="dnum">1</span></div>
+          <div class="dh off"><span class="dow">Wed</span><span class="dnum">2</span></div>
+          <div class="dh off"><span class="dow">Thu</span><span class="dnum">3</span></div>
+          <div class="dh off"><span class="dow">Fri</span><span class="dnum">4</span></div>
+          <div class="dh trip"><span class="dow">Sat</span><span class="dnum">5</span></div>
+        </div>
+        <div class="cal-bd">
+          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
+          <div class="ev air" style="grid-column:8;grid-row:3/7">✈️ PIT → Honolulu</div>
+          <div class="ev rest" style="grid-column:8;grid-row:7/9">🛏️ Waikiki — landing, beach</div>
+        </div>
+      </div>
+
+      <div class="cal-week">
+        <p class="cal-wklabel">Week 2 &middot; Jun 6&ndash;12</p>
+        <div class="cal-hd">
+          <div class="gut"></div>
+          <div class="dh trip"><span class="dow">Sun</span><span class="dnum">6</span></div>
+          <div class="dh trip"><span class="dow">Mon</span><span class="dnum">7</span></div>
+          <div class="dh trip"><span class="dow">Tue</span><span class="dnum">8</span></div>
+          <div class="dh trip"><span class="dow">Wed</span><span class="dnum">9</span></div>
+          <div class="dh trip"><span class="dow">Thu</span><span class="dnum">10</span></div>
+          <div class="dh trip"><span class="dow">Fri</span><span class="dnum">11</span></div>
+          <div class="dh trip"><span class="dow">Sat</span><span class="dnum">12</span></div>
+        </div>
+        <div class="cal-bd">
+          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
+          <div class="ev water" style="grid-column:2;grid-row:2/8">🏖️ Hanauma Bay snorkel + Waikiki</div>
+          <div class="ev town" style="grid-column:3;grid-row:2/7">🏛️ Pearl Harbor + Honolulu food</div>
+          <div class="ev car sm" style="grid-column:4;grid-row:2/3">🚗 One-day rental</div>
+          <div class="ev water" style="grid-column:4;grid-row:3/8">🏖️ North Shore loop</div>
+          <div class="ev car sm" style="grid-column:5;grid-row:2/3">🚗 Drive to HNL airport</div>
+          <div class="ev air sm" style="grid-column:5;grid-row:3/4">✈️ Inter-island HNL → KOA</div>
+          <div class="ev car sm" style="grid-column:5;grid-row:4/5">🚗 Kona car pickup</div>
+          <div class="ev rest" style="grid-column:5;grid-row:5/8">🛏️ Kona — reset, beach</div>
+          <div class="ev water" style="grid-column:6;grid-row:2/7">🏖️ Kealakekua / Two Step snorkel</div>
+          <div class="ev water" style="grid-column:7;grid-row:3/9">🏖️ Hapuna Beach + Mauna Kea sunset</div>
+          <div class="ev car" style="grid-column:8;grid-row:2/5">🚗 Kona → Volcano (black sand)</div>
+          <div class="ev water" style="grid-column:8;grid-row:5/8">🏖️ Punaluʻu + Volcano village</div>
+        </div>
+      </div>
+
+      <div class="cal-week">
+        <p class="cal-wklabel">Week 3 &middot; Jun 13&ndash;19</p>
+        <div class="cal-hd">
+          <div class="gut"></div>
+          <div class="dh trip"><span class="dow">Sun</span><span class="dnum">13</span></div>
+          <div class="dh trip"><span class="dow">Mon</span><span class="dnum">14</span></div>
+          <div class="dh off"><span class="dow">Tue</span><span class="dnum">15</span></div>
+          <div class="dh off"><span class="dow">Wed</span><span class="dnum">16</span></div>
+          <div class="dh off"><span class="dow">Thu</span><span class="dnum">17</span></div>
+          <div class="dh off"><span class="dow">Fri</span><span class="dnum">18</span></div>
+          <div class="dh off"><span class="dow">Sat</span><span class="dnum">19</span></div>
+        </div>
+        <div class="cal-bd">
+          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
+          <div class="ev hike" style="grid-column:2;grid-row:2/8">🥾 Hawaiʻi Volcanoes National Park</div>
+          <div class="ev hike" style="grid-column:3;grid-row:2/4">🥾 Hilo waterfalls</div>
+          <div class="ev car sm" style="grid-column:3;grid-row:4/5">🚗 Drive to KOA airport</div>
+          <div class="ev air" style="grid-column:3;grid-row:5/9">✈️ KOA → PIT red-eye home</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<section id="itinerary" class="divider">
       <style>.spot-head .spot-name{display:inline;vertical-align:middle}a.at-badge{display:inline-flex;align-items:center;gap:.3em;margin-left:.5em;padding:.16em .6em;font-size:.6rem;font-weight:700;line-height:1;letter-spacing:.03em;text-transform:uppercase;vertical-align:middle;border-radius:999px;background:#428813;color:#fff;text-decoration:none;white-space:nowrap}a.at-badge:hover{background:#356e0f}.explore a.at-xg{background:#428813;color:#fff}.altbox summary.mini-h{cursor:pointer;margin:0;color:var(--c1)}.altbox[open] summary.mini-h{margin-bottom:8px}.altbox .alt-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}.altbox .alt-list li{font-size:.86rem;color:var(--muted);line-height:1.45;padding-left:14px;position:relative}.altbox .alt-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}.altbox .alt-list a{text-decoration:none}.altbox .alt-list .explore{margin-top:6px}.altbox .alt-list .explore a{color:#fff}.altbox .alt-list b{color:var(--ink)}</style>
       <div class="section-label"><p class="eyebrow">The Itinerary</p><h2>Day by day</h2><p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, backup / if-time ideas, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only unless noted.</p></div>
       <div class="days"><article class="day c1" id="day0">
@@ -1415,6 +1570,13 @@ footer a{color:var(--muted)}
       </div></div>
   </section>
 
+  <section id="getting-around" class="divider">
+    <div class="section-label"><p class="eyebrow">Getting Around</p><h2>Flights, one island hop, and two rental-car decisions</h2><p>Hawaii is domestic, but it does not behave like a normal short domestic trip from Pittsburgh. Every PIT route requires a connection and a full travel day.</p></div>
+    <div class="plan-grid">
+      <div class="pcard"><h4><span class="dot"></span>PIT &harr; Hawaii Flights</h4><div class="prow"><span>Outbound</span><strong>PIT &rarr; West Coast &rarr; HNL, ~10&ndash;12 hrs total</strong></div><div class="prow"><span>Return</span><strong>KOA &rarr; mainland red-eye &rarr; PIT next day</strong></div><div class="prow"><span>Cap-fit fare band</span><strong>~$3,600&ndash;4,400 total</strong></div><div class="prow"><span>PTO reality</span><strong>Arrival day after red-eye likely counts as PTO</strong></div><div class="tip">Book open-jaw into HNL and home from KOA if the fare gap is reasonable; airfare above ~$1,100pp leaves very little cap room.</div></div><div class="pcard"><h4><span class="dot"></span>Inter-island Flight</h4><div class="prow"><span>Route</span><strong>HNL &rarr; KOA</strong></div><div class="prow"><span>Flight time</span><strong>~45&ndash;60 minutes</strong></div><div class="prow"><span>Current fare band</span><strong>~$75&ndash;150pp booked ahead</strong></div><div class="prow"><span>Family total</span><strong>~$300&ndash;600 before bags/extras</strong></div><div class="tip">This is the only island hop. Adding Maui or Kauai would add another airport day and another car/lodging reset.</div></div><div class="pcard"><h4><span class="dot"></span>Oahu Car Strategy</h4><div class="prow"><span>Waikiki parking</span><strong>~$45&ndash;70/night</strong></div><div class="prow"><span>Plan</span><strong>No full-time car; one North Shore day rental</strong></div><div class="prow"><span>Hanauma/Pearl</span><strong>Use rideshare, shuttle, or tour logistics</strong></div><div class="prow"><span>Ground budget</span><strong>Keep all rentals/parking/fuel near $1.1k&ndash;1.4k</strong></div><div class="tip">This is the biggest Oahu money saver that does not reduce the trip quality.</div></div><div class="pcard"><h4><span class="dot"></span>Big Island Rental</h4><div class="prow"><span>Vehicle</span><strong>Economy/compact is enough for the paved route</strong></div><div class="prow"><span>Duration</span><strong>KOA pickup Jun 9 &rarr; KOA drop Jun 14</strong></div><div class="prow"><span>Total ground target</span><strong>~$1,100&ndash;1,400 with Oahu day rental, fuel, parking</strong></div><div class="prow"><span>Restrictions</span><strong>No off-road; Mauna Kea summit usually prohibited</strong></div><div class="tip">Saddle Road and Chain of Craters are paved; Green Sand Beach and Mauna Kea summit are where rental contracts become a problem.</div></div>
+    </div>
+  </section>
+
   <section id="health-check" class="divider">
     <div class="section-label">
       <p class="eyebrow">Plan Health-Check</p>
@@ -1439,175 +1601,13 @@ footer a{color:var(--muted)}
     <div class="verdict-box"><h4>Overall verdict</h4><p><b>Use Sat Jun 5 &rarr; Tue Jun 15, 2027.</b> It is not as PTO-efficient as Portugal/Greece because the eastbound Hawaii red-eye consumes an arrival PTO day, but it is the cleanest domestic math: 9 hotel nights plus the return red-eye, 7 PTO days, no Thursday-night fake advantage, and enough time for a two-island route without rushing. Length verdict: <b>just right but lean</b>; 8 hotel nights is rushed and 10 hotel nights starts crowding the $15k cap.</p></div>
   </section>
 
-  <section id="stays" class="divider">
-    <div class="section-label"><p class="eyebrow">Where We Are Staying</p><h2>Three home bases</h2><p>Each base is chosen for family logistics, kitchen access where it matters, and minimizing paid parking friction.</p></div>
-    <div class="bases">
-      <div class="base b1"><div class="band"></div><img class="bimg" src="https://images.unsplash.com/photo-1698094276348-c542aa9c5609?w=1200&q=80&auto=format&fit=crop" alt="Waikiki / Honolulu"><div class="bbody"><span class="nights">4 nights &middot; Jun 5&ndash;8</span><h4>Waikiki / Honolulu</h4><p class="dates">Oahu logistics base</p><p>Stay walkable to beach, food, and transit. Do not keep a car here full-time; parking alone can add $180&ndash;280 over four nights.</p><p class="book"><b>Book:</b> Budget aparthotel/studio with a full kitchen and 2 queen beds &mdash; skip the ocean view and resort tower. Honest band: ~$190&ndash;300/night before resort/cleaning/parking fees.</p></div></div><div class="base b2"><div class="band"></div><img class="bimg" src="https://images.unsplash.com/photo-1588652269774-cf644359ef24?w=1200&q=80&auto=format&fit=crop" alt="Kailua-Kona"><div class="bbody"><span class="nights">3 nights &middot; Jun 9&ndash;11</span><h4>Kailua-Kona</h4><p class="dates">Snorkel &amp; beach base</p><p>Condo with kitchen beats hotel + all restaurant meals here. Kona is the water base and the easiest place to reset laundry and snacks.</p><p class="book"><b>Book:</b> 1BR condo with AC, parking, and kitchen &mdash; skip the ocean view and cleaning-fee-heavy resort units. Honest family band: ~$190&ndash;330/night all-in.</p></div></div><div class="base b3"><div class="band"></div><img class="bimg" src="https://images.unsplash.com/photo-1761589951732-2795cd6ecdbf?w=1200&q=80&auto=format&fit=crop" alt="Volcano Village"><div class="bbody"><span class="nights">2 nights &middot; Jun 12&ndash;13</span><h4>Volcano Village</h4><p class="dates">National park base</p><p>Cooler, wetter, quieter, and much closer to the park than Kona. This avoids a 4-hour round-trip Volcanoes day from the coast.</p><p class="book"><b>Book:</b> Cottage/lodge with heat or good blankets, kitchen basics, and washer if possible. Honest band: ~$200&ndash;320/night.</p></div></div>
-    </div>
-  </section>
-
-  <section id="getting-around" class="divider">
-    <div class="section-label"><p class="eyebrow">Getting Around</p><h2>Flights, one island hop, and two rental-car decisions</h2><p>Hawaii is domestic, but it does not behave like a normal short domestic trip from Pittsburgh. Every PIT route requires a connection and a full travel day.</p></div>
-    <div class="plan-grid">
-      <div class="pcard"><h4><span class="dot"></span>PIT &harr; Hawaii Flights</h4><div class="prow"><span>Outbound</span><strong>PIT &rarr; West Coast &rarr; HNL, ~10&ndash;12 hrs total</strong></div><div class="prow"><span>Return</span><strong>KOA &rarr; mainland red-eye &rarr; PIT next day</strong></div><div class="prow"><span>Cap-fit fare band</span><strong>~$3,600&ndash;4,400 total</strong></div><div class="prow"><span>PTO reality</span><strong>Arrival day after red-eye likely counts as PTO</strong></div><div class="tip">Book open-jaw into HNL and home from KOA if the fare gap is reasonable; airfare above ~$1,100pp leaves very little cap room.</div></div><div class="pcard"><h4><span class="dot"></span>Inter-island Flight</h4><div class="prow"><span>Route</span><strong>HNL &rarr; KOA</strong></div><div class="prow"><span>Flight time</span><strong>~45&ndash;60 minutes</strong></div><div class="prow"><span>Current fare band</span><strong>~$75&ndash;150pp booked ahead</strong></div><div class="prow"><span>Family total</span><strong>~$300&ndash;600 before bags/extras</strong></div><div class="tip">This is the only island hop. Adding Maui or Kauai would add another airport day and another car/lodging reset.</div></div><div class="pcard"><h4><span class="dot"></span>Oahu Car Strategy</h4><div class="prow"><span>Waikiki parking</span><strong>~$45&ndash;70/night</strong></div><div class="prow"><span>Plan</span><strong>No full-time car; one North Shore day rental</strong></div><div class="prow"><span>Hanauma/Pearl</span><strong>Use rideshare, shuttle, or tour logistics</strong></div><div class="prow"><span>Ground budget</span><strong>Keep all rentals/parking/fuel near $1.1k&ndash;1.4k</strong></div><div class="tip">This is the biggest Oahu money saver that does not reduce the trip quality.</div></div><div class="pcard"><h4><span class="dot"></span>Big Island Rental</h4><div class="prow"><span>Vehicle</span><strong>Economy/compact is enough for the paved route</strong></div><div class="prow"><span>Duration</span><strong>KOA pickup Jun 9 &rarr; KOA drop Jun 14</strong></div><div class="prow"><span>Total ground target</span><strong>~$1,100&ndash;1,400 with Oahu day rental, fuel, parking</strong></div><div class="prow"><span>Restrictions</span><strong>No off-road; Mauna Kea summit usually prohibited</strong></div><div class="tip">Saddle Road and Chain of Craters are paved; Green Sand Beach and Mauna Kea summit are where rental contracts become a problem.</div></div>
-    </div>
-  </section>
-
-  <section id="calendar" class="divider">
-    <div class="section-label">
-      <p class="eyebrow">Week at a Glance</p>
-      <h2>Calendar</h2>
-      <p>The same 10 days as colored time blocks, coded by <b>activity</b> so a color means the same thing on every itinerary. Coarse by design (a car pickup plus its drive is one block). <b>Block times are schematic, not real flight times</b> &mdash; they show sequence and rough time-of-day snapped to a 2-hour grid, since 2027 schedules are not published yet. When real flights are booked, set each block to departure minus a check-in buffer.</p>
-    </div>
-
-    <style>
-      .cal-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
-      .cal-legend span{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:700;color:var(--ink)}
-      .cal-legend i{width:16px;height:16px;border-radius:5px;display:inline-block}
-      .lg-air{background:#3d4d74}.lg-car{background:var(--gold)}
-      .lg-hike{background:var(--c3)}.lg-water{background:var(--c1)}.lg-town{background:var(--c2)}.lg-rest{background:#8a857c}
-      .cal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
-      .cal-week{min-width:780px;margin:0 0 22px}
-      .cal-wklabel{font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
-      .cal-hd{display:grid;grid-template-columns:repeat(8,1fr);gap:0}
-      .cal-hd .dh{padding:6px 4px;text-align:center;border-bottom:2px solid var(--line)}
-      .cal-hd .dh .dow{display:block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-      .cal-hd .dh .dnum{display:block;font-size:1.02rem;font-weight:800;color:var(--ink);line-height:1.1}
-      .cal-hd .dh.off{opacity:.4}
-      .cal-hd .dh.trip{background:rgba(31,111,120,.06)}
-      .cal-hd .dh.trip .dnum{color:var(--c1)}
-      .cal-hd .gut{border-bottom:2px solid var(--line)}
-      .cal-bd{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(9,32px);position:relative;
-        background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px),
-          repeating-linear-gradient(to right,transparent 0 calc(12.5% - 1px),var(--line) calc(12.5% - 1px) 12.5%)}
-      .cal-bd .tl{grid-column:1;font-size:.62rem;font-weight:700;color:var(--muted);padding:2px 4px 0 4px;text-align:right}
-      .ev{margin:2px;border-radius:6px;padding:3px 6px;font-size:.68rem;line-height:1.14;font-weight:700;color:#fff;overflow:hidden;
-        position:relative;z-index:2;box-shadow:0 1px 3px rgba(30,32,28,.2);display:flex;align-items:flex-start}
-      .ev.sm{font-size:.62rem;align-items:center}
-      .ev.air{background:#3d4d74}
-      .ev.car{background:var(--gold);color:#3a2f12;box-shadow:0 1px 2px rgba(120,90,20,.28)}
-      .ev.hike{background:var(--c3)}.ev.water{background:var(--c1)}.ev.town{background:var(--c2)}
-      .ev.rest{background:#8a857c}
-      @media(max-width:640px){.cal-week{min-width:720px}}
-    /*TYPEMAP-CSS*/
-.tripmap-wrap .mapstage{position:relative}
-.tripmap-wrap .mapstage #tripmap{min-height:520px;border-radius:16px;overflow:hidden}
-.layers-btn{position:absolute;z-index:600;right:14px;top:14px;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(31,111,120,.22);border-radius:999px;background:rgba(255,253,248,.94);color:var(--ink);font-weight:850;font-size:.86rem;line-height:1;padding:10px 14px;box-shadow:0 14px 32px -18px rgba(0,0,0,.45);cursor:pointer;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
-.layers-btn:hover{background:#fff}
-.layers-btn .lbi{color:var(--c1);font-size:1rem;line-height:1}
-.layers-panel{position:absolute;z-index:620;right:14px;top:14px;width:min(360px,calc(100% - 28px));max-height:calc(100% - 28px);overflow:auto;border:1px solid rgba(31,111,120,.18);border-radius:18px;background:rgba(255,253,248,.95);box-shadow:0 22px 70px -32px rgba(0,0,0,.55);padding:18px 20px 20px;color:var(--ink);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
-.layers-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.layers-top strong{font-size:1.08rem;line-height:1.1}
-.layers-x{width:36px;height:36px;border:0;border-radius:50%;background:rgba(31,111,120,.1);color:var(--muted);font-size:1.7rem;line-height:1;cursor:pointer}
-.layers-x:hover{background:rgba(31,111,120,.16);color:var(--ink)}
-.layers-acts{display:flex;align-items:center;gap:10px;margin:14px 0 16px;padding-bottom:14px;border-bottom:1px solid rgba(31,111,120,.16)}
-.layers-acts button{border:0;background:transparent;color:#3e50dc;font-weight:900;font-size:.92rem;line-height:1;cursor:pointer;padding:0}
-.layers-acts .dot{color:rgba(31,111,120,.32);font-weight:900}
-.layers-head{margin:18px 0 8px;color:var(--ink);font-size:.78rem;line-height:1;font-weight:950;letter-spacing:.06em;text-transform:uppercase}
-.layers-head:first-child{margin-top:0}
-.layers-list{display:grid;gap:2px}
-.lrow{display:grid;grid-template-columns:38px minmax(0,1fr) 34px;align-items:center;gap:14px;min-height:54px;color:var(--ink);cursor:pointer}
-.lsw{width:30px;height:30px;border-radius:50% 50% 50% 0;display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px -10px rgba(0,0,0,.8);transform:rotate(-45deg)}
-.lsw span{display:block;transform:rotate(45deg);font-size:.86rem;line-height:1}
-.ltxt{font-size:1rem;line-height:1.2;font-weight:650}
-.lrow input{appearance:none;-webkit-appearance:none;width:30px;height:30px;margin:0;border:3px solid #737c81;border-radius:7px;background:transparent;cursor:pointer;position:relative}
-.lrow input:checked{border-color:var(--c1);background:var(--c1)}
-.lrow input:checked::after{content:"";position:absolute;left:8px;top:3px;width:8px;height:15px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg)}
-.pin2{width:26px;height:26px;border-radius:50% 50% 50% 0;display:grid;place-items:center;border:2px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-45deg)}
-.pin2 span{display:block;transform:rotate(45deg);font-size:13px;line-height:1}
-.pop-ty{display:inline-block;margin-top:3px;color:#66615b;font-size:.82rem}
-@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}</style>
-
-    <div class="cal-legend">
-      <span><i class="lg-air"></i>✈️ Air travel</span>
-      <span><i class="lg-car"></i>🚗 Car &amp; transfers</span>
-      <span><i class="lg-hike"></i>🥾 Hike &amp; nature</span>
-      <span><i class="lg-water"></i>🏖️ Beach &amp; water</span>
-      <span><i class="lg-town"></i>🏛️ Town, culture &amp; food</span>
-      <span><i class="lg-rest"></i>🛏️ Arrival / buffer / rest</span>
-    </div>
-
-    <div class="cal-scroll">
-
-      <div class="cal-week">
-        <p class="cal-wklabel">Week 1 &middot; May 30&ndash;Jun 5</p>
-        <div class="cal-hd">
-          <div class="gut"></div>
-          <div class="dh off"><span class="dow">Sun</span><span class="dnum">30</span></div>
-          <div class="dh off"><span class="dow">Mon</span><span class="dnum">31</span></div>
-          <div class="dh off"><span class="dow">Tue</span><span class="dnum">1</span></div>
-          <div class="dh off"><span class="dow">Wed</span><span class="dnum">2</span></div>
-          <div class="dh off"><span class="dow">Thu</span><span class="dnum">3</span></div>
-          <div class="dh off"><span class="dow">Fri</span><span class="dnum">4</span></div>
-          <div class="dh trip"><span class="dow">Sat</span><span class="dnum">5</span></div>
-        </div>
-        <div class="cal-bd">
-          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
-          <div class="ev air" style="grid-column:8;grid-row:3/7">✈️ PIT → Honolulu</div>
-          <div class="ev rest" style="grid-column:8;grid-row:7/9">🛏️ Waikiki — landing, beach</div>
-        </div>
-      </div>
-
-      <div class="cal-week">
-        <p class="cal-wklabel">Week 2 &middot; Jun 6&ndash;12</p>
-        <div class="cal-hd">
-          <div class="gut"></div>
-          <div class="dh trip"><span class="dow">Sun</span><span class="dnum">6</span></div>
-          <div class="dh trip"><span class="dow">Mon</span><span class="dnum">7</span></div>
-          <div class="dh trip"><span class="dow">Tue</span><span class="dnum">8</span></div>
-          <div class="dh trip"><span class="dow">Wed</span><span class="dnum">9</span></div>
-          <div class="dh trip"><span class="dow">Thu</span><span class="dnum">10</span></div>
-          <div class="dh trip"><span class="dow">Fri</span><span class="dnum">11</span></div>
-          <div class="dh trip"><span class="dow">Sat</span><span class="dnum">12</span></div>
-        </div>
-        <div class="cal-bd">
-          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
-          <div class="ev water" style="grid-column:2;grid-row:2/8">🏖️ Hanauma Bay snorkel + Waikiki</div>
-          <div class="ev town" style="grid-column:3;grid-row:2/7">🏛️ Pearl Harbor + Honolulu food</div>
-          <div class="ev car sm" style="grid-column:4;grid-row:2/3">🚗 One-day rental</div>
-          <div class="ev water" style="grid-column:4;grid-row:3/8">🏖️ North Shore loop</div>
-          <div class="ev car sm" style="grid-column:5;grid-row:2/3">🚗 Drive to HNL airport</div>
-          <div class="ev air sm" style="grid-column:5;grid-row:3/4">✈️ Inter-island HNL → KOA</div>
-          <div class="ev car sm" style="grid-column:5;grid-row:4/5">🚗 Kona car pickup</div>
-          <div class="ev rest" style="grid-column:5;grid-row:5/8">🛏️ Kona — reset, beach</div>
-          <div class="ev water" style="grid-column:6;grid-row:2/7">🏖️ Kealakekua / Two Step snorkel</div>
-          <div class="ev water" style="grid-column:7;grid-row:3/9">🏖️ Hapuna Beach + Mauna Kea sunset</div>
-          <div class="ev car" style="grid-column:8;grid-row:2/5">🚗 Kona → Volcano (black sand)</div>
-          <div class="ev water" style="grid-column:8;grid-row:5/8">🏖️ Punaluʻu + Volcano village</div>
-        </div>
-      </div>
-
-      <div class="cal-week">
-        <p class="cal-wklabel">Week 3 &middot; Jun 13&ndash;19</p>
-        <div class="cal-hd">
-          <div class="gut"></div>
-          <div class="dh trip"><span class="dow">Sun</span><span class="dnum">13</span></div>
-          <div class="dh trip"><span class="dow">Mon</span><span class="dnum">14</span></div>
-          <div class="dh off"><span class="dow">Tue</span><span class="dnum">15</span></div>
-          <div class="dh off"><span class="dow">Wed</span><span class="dnum">16</span></div>
-          <div class="dh off"><span class="dow">Thu</span><span class="dnum">17</span></div>
-          <div class="dh off"><span class="dow">Fri</span><span class="dnum">18</span></div>
-          <div class="dh off"><span class="dow">Sat</span><span class="dnum">19</span></div>
-        </div>
-        <div class="cal-bd">
-          <div class="tl" style="grid-row:1">6a</div><div class="tl" style="grid-row:2">8a</div><div class="tl" style="grid-row:3">10a</div><div class="tl" style="grid-row:4">12p</div><div class="tl" style="grid-row:5">2p</div><div class="tl" style="grid-row:6">4p</div><div class="tl" style="grid-row:7">6p</div><div class="tl" style="grid-row:8">8p</div><div class="tl" style="grid-row:9">10p</div>
-          <div class="ev hike" style="grid-column:2;grid-row:2/8">🥾 Hawaiʻi Volcanoes National Park</div>
-          <div class="ev hike" style="grid-column:3;grid-row:2/4">🥾 Hilo waterfalls</div>
-          <div class="ev car sm" style="grid-column:3;grid-row:4/5">🚗 Drive to KOA airport</div>
-          <div class="ev air" style="grid-column:3;grid-row:5/9">✈️ KOA → PIT red-eye home</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="todo" class="divider pretrip-todo">
+<section id="todo" class="divider pretrip-todo">
       <style>.pretrip-todo .todo-grid{display:grid;gap:12px}.pretrip-todo .todo-block{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c1);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.pretrip-todo .todo-block.hot{border-left-color:#c0392b}.pretrip-todo .todo-block.watch{border-left-color:var(--gold)}.pretrip-todo .todo-block.done{border-left-color:var(--c3)}.pretrip-todo .todo-when{grid-row:1/4;align-self:start;display:inline-block;margin:0;padding:4px 10px;border-radius:999px;background:rgba(31,111,120,.1);color:var(--c1);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-align:center}.pretrip-todo .todo-block.hot .todo-when{background:rgba(192,57,43,.1);color:#a23625}.pretrip-todo .todo-block.watch .todo-when{background:rgba(217,164,65,.16);color:#8a641e}.pretrip-todo .todo-block.done .todo-when{background:rgba(63,125,78,.12);color:var(--c3)}.pretrip-todo h3{grid-column:2;margin:0;font-size:1.12rem;font-weight:600;line-height:1.18}.pretrip-todo .todo-note{grid-column:2;margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}.pretrip-todo ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px}.pretrip-todo li{position:relative;padding-left:16px;color:var(--muted);font-size:.88rem;line-height:1.45}.pretrip-todo li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}.pretrip-todo li b{color:var(--ink)}.pretrip-todo .todo-callout{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:12px;background:var(--card);box-shadow:0 10px 28px rgba(30,32,28,.08);color:var(--muted);font-size:.9rem;line-height:1.55}.pretrip-todo .todo-callout b{color:var(--ink)}@media(max-width:720px){.pretrip-todo .todo-block{grid-template-columns:1fr;padding:16px}.pretrip-todo .todo-when{grid-row:auto;justify-self:start;text-align:left}.pretrip-todo h3,.pretrip-todo .todo-note,.pretrip-todo ul{grid-column:1}}</style>
       <div class="section-label">
       <p class="eyebrow">Pre-Departure To-Do</p>
       <h2>What to book before leaving</h2>
       <p>Exact planning timeline for the Jun 5-14, 2027 Hawaii itinerary. This route is domestic, but the timed reservations are unforgiving: Pearl Harbor releases weeks ahead and Hanauma Bay releases only two days ahead.</p>
-    </div>
+</div>
       <div class="todo-grid">
         <article class="todo-block hot">
           <p class="todo-when">Jul 10-19, 2026</p>
@@ -1646,9 +1646,7 @@ footer a{color:var(--muted)}
         </article>
       </div>
       <div class="todo-callout"><b>Do not forget:</b> Hanauma Bay cannot be solved months ahead. Set the Jun 4, 2027 alarm now, and have payment/autofill ready before the 7:00am HST release.</div>
-    </section>
-
-  <section id="budget" class="divider">
+    </section><section id="budget" class="divider">
     <div class="section-label"><p class="eyebrow">The Money</p><h2>Budget, savers &amp; splurges</h2><p>Verified 2026 prices where 2027 is not bookable yet. Family of 4, USD.</p></div>
     <div class="budget-scroll"><table class="budget-tbl"><tr><th>Line item</th><th>Estimate (family of 4)</th></tr><tr><td>Flights &mdash; PIT&rarr;HNL / KOA&rarr;PIT</td><td>$3,600&ndash;4,400</td></tr><tr><td>Inter-island HNL&rarr;KOA</td><td>$300&ndash;600</td></tr><tr><td>Oahu day rental + Big Island rental + parking/fuel</td><td>$1,100&ndash;1,400</td></tr><tr><td>Waikiki lodging, 4 nights (practical family stay, no luxury/ocean-view baseline)</td><td>$1,400&ndash;2,300</td></tr><tr><td>Kona condo, 3 nights (practical family condo, kitchen/parking prioritized)</td><td>$900&ndash;1,500</td></tr><tr><td>Volcano cottage/lodge, 2 nights</td><td>$600&ndash;1,000</td></tr><tr><td>Food &mdash; groceries + casual restaurants, 10 travel days</td><td>$1,600&ndash;2,200</td></tr><tr><td>Hanauma Bay + Pearl Harbor fees/logistics</td><td>$180&ndash;280</td></tr><tr><td>North Shore / Waimea Valley day</td><td>$180&ndash;260</td></tr><tr><td>One major paid splurge &mdash; Kealakekua snorkel or luau, not both</td><td>$420&ndash;650</td></tr><tr><td>State/National Park fees + incidentals</td><td>$320&ndash;510</td></tr><tr><td><b>All-in total, family of 4</b></td><td><b>$10,600&ndash;14,400</b></td></tr></table></div>
     <div class="twocol"><div class="listcard save-list"><h4>Save money</h4><ul><li>Do not keep a car in Waikiki; rent only for the North Shore day, and book economy/compact class on both islands instead of a midsize.</li><li>Skip ocean-view condos/hotels; a budget aparthotel-tier studio with a kitchen (Waikiki) and a non-ocean-view 1BR (Kona) cuts the biggest cost driver without losing the kitchen access that keeps food costs down.</li><li>Use condos/kitchens in Kona and Waikiki for breakfast, snacks, and several dinners.</li><li>Limit island-hopping to one HNL&rarr;KOA flight.</li><li>Book the afternoon Kealakekua snorkel departure instead of a morning tour; it runs roughly $50&ndash;130pp less at operators like Fair Wind.</li><li>Use H&#257;puna, Waikiki, and Punalu&#699;u as low-cost beach/nature anchors.</li><li>Stop at the Mauna Kea Visitor Information Station instead of booking a summit tour by default.</li><li>Use plate-lunch spots and food courts instead of resort restaurants most nights.</li></ul></div><div class="listcard splurge-list"><h4>Worth the splurge</h4><ul><li>Kealakekua/Captain Cook afternoon snorkel boat &mdash; best paid water day for this family, even at the value departure time.</li><li>One Waikiki or Kona ocean-view night if the nightly premium is reasonable &mdash; the baseline budget above assumes no ocean view.</li><li>Volcano House meal if crater visibility is good.</li><li>A guided snorkel option at Hanauma if either kid is nervous in open water.</li><li>A smaller condo with parking included can beat a cheaper hotel once fees are counted.</li></ul></div></div>
@@ -1688,7 +1686,7 @@ footer a{color:var(--muted)}
     <div class="status"><div class="scol settled"><h4>Settled</h4><div class="row"><b>Route shape</b><span>Oahu + Big Island, one island hop, no Maui/Kauai add-on.</span></div><div class="row"><b>Timing</b><span>Early June beats July and late August for the summer window.</span></div><div class="row"><b>Length verdict</b><span>Just right but lean: 9 hotel nights plus the return red-eye; 8 nights is rushed, 10 starts crowding the cap.</span></div><div class="row"><b>PTO logic</b><span>No Thursday evening departure; it saves no real PTO for Hawaii.</span></div><div class="row"><b>Family balance</b><span>Water/beach remains the biggest share without losing Volcanoes NP.</span></div><div class="row"><b>Budget tier</b><span>Cap-fit only with practical lodging, one major paid splurge, limited Oahu car use, and KOA open-jaw return flights.</span></div></div><div class="scol open"><h4>Open</h4><div class="row"><b>Exact flights</b><span>Confirm PIT-HNL and KOA-PIT open-jaw fares once June 2027 schedules are fully loaded.</span></div><div class="row"><b>Waikiki lodging</b><span>Choose hotel vs condo based on total fees, not nightly headline rate.</span></div><div class="row"><b>Snorkel/luau choice</b><span>Pick one major paid splurge unless airfare and lodging come in below the midrange.</span></div><div class="row"><b>Volcano status</b><span>Check NPS/USGS immediately before travel for eruption/closure/vog conditions.</span></div></div></div>
   </section>
   <footer>Built from the same single-page itinerary structure as the Costa Rica source. Images are fetched from Wikimedia Commons and embedded as base64; map links open in Google Maps.</footer>
-  <section id="photo-guide" class="divider">
+<section id="photo-guide" class="divider">
     <div class="section-label">
       <p class="eyebrow">For The Photographer</p>
       <h2>Photographer Guide</h2>
@@ -2182,10 +2180,7 @@ footer a{color:var(--muted)}
   document.querySelectorAll('#photo-guide .pg-map-embed iframe[data-src]').forEach(function(f){io.observe(f);});
 })();
 </script>
-  </section>
-  <!--PG:END-->
-  <!--FG:START-->
-  <section id="food-guide" class="divider">
+  </section><section id="food-guide" class="divider">
     <div class="section-label">
       <p class="eyebrow">For The Family Table</p>
       <h2>Restaurants, Coffee &amp; Drinks Guide</h2>
@@ -2500,7 +2495,10 @@ footer a{color:var(--muted)}
         </section>
       </div>
     </details>
-  </section><!--GL-LOADER--><link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V" crossorigin="anonymous"><script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" integrity="sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj" crossorigin="anonymous"></script><script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.22/leaflet-maplibre-gl.js" integrity="sha384-4CB9Vtol9LN6lGgBCvmPLbUEZwilrqIvPieSRurgAXAB7FVJaLS9n8WyAIA5wjQ+" crossorigin="anonymous"></script><!--/GL-LOADER-->
+  </section>
+  <!--PG:END-->
+  <!--FG:START-->
+<!--GL-LOADER--><link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V" crossorigin="anonymous"><script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" integrity="sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj" crossorigin="anonymous"></script><script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.22/leaflet-maplibre-gl.js" integrity="sha384-4CB9Vtol9LN6lGgBCvmPLbUEZwilrqIvPieSRurgAXAB7FVJaLS9n8WyAIA5wjQ+" crossorigin="anonymous"></script><!--/GL-LOADER-->
   <!--FG:END-->
 </main>
 <script>/* @preserve
