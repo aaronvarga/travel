@@ -682,11 +682,35 @@ header .lead{max-width:640px;margin:0 0 26px;font-size:clamp(1.05rem,2.1vw,1.3re
 .hero-meta b{font-family:"Fraunces",serif;font-size:1.5rem;line-height:1}
 .hero-meta span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}
 /* NAV */
-nav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;padding:11px clamp(16px,5vw,80px);background:rgba(246,241,231,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);scrollbar-width:none}
-nav::-webkit-scrollbar{display:none}
-nav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}
-nav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
-nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+section[id],article[id]{scroll-margin-top:84px}
+.site-nav{z-index:500;--nav-bg:#17130f;--nav-panel:#211c16;--nav-panel-2:#2a231b;--nav-line:rgba(246,241,231,.16);--nav-text:#f6f1e7;--nav-muted:rgba(246,241,231,.62);--nav-active:#5f9aa3;--nav-active-ink:#061517;--nav-shadow:0 18px 42px rgba(12,10,8,.28)}
+.site-nav summary{list-style:none}
+.site-nav summary::-webkit-details-marker{display:none}
+.site-nav a{color:var(--nav-text);font-weight:800;text-decoration:none;line-height:1.2;transition:background .15s,color .15s,border-color .15s,box-shadow .15s}
+.site-nav a.active{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active);box-shadow:0 8px 22px rgba(95,154,163,.22)}
+@media(min-width:960px){
+  body{padding-left:clamp(210px,17vw,248px)}
+  section[id],article[id]{scroll-margin-top:24px}
+  .site-nav{position:fixed;inset:0 auto 0 0;width:clamp(210px,17vw,248px);display:block;padding:18px 14px;background:linear-gradient(180deg,rgba(33,28,22,.98),rgba(18,15,12,.97));border-right:1px solid var(--nav-line);backdrop-filter:blur(16px);box-shadow:14px 0 42px rgba(12,10,8,.26);overflow:hidden;color:var(--nav-text)}
+  .site-nav-menu{height:100%;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:10px 10px 13px;border-bottom:1px solid var(--nav-line);color:var(--nav-muted);font-size:.7rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;cursor:default}
+  .site-nav summary::after{content:"";width:26px;height:2px;background:var(--nav-line)}
+  .site-nav-links{flex:1 1 auto;display:grid;align-content:start;gap:6px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;min-height:0;max-height:calc(100vh - 92px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(246,241,231,.26) transparent}
+  .site-nav a{display:flex;align-items:center;min-height:36px;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:transparent;font-size:.82rem}
+  .site-nav a:hover{background:rgba(246,241,231,.1);color:#fff;border-color:var(--nav-line)}
+  .site-nav a.nav-home{margin-bottom:6px;background:rgba(42,83,89,.42);color:var(--nav-active);border-color:rgba(95,154,163,.48)}
+}
+@media(max-width:959px){
+  .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
+  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
+  .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
+  .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
+  .site-nav-menu[open] summary::after{content:"-"}
+  .site-nav-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin-top:8px;max-height:min(70vh,480px);overflow:auto;padding:8px;border:1px solid var(--nav-line);border-radius:12px;background:linear-gradient(180deg,var(--nav-panel),var(--nav-bg));box-shadow:0 18px 42px rgba(12,10,8,.34)}
+  .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
+  .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
+}
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 40px;max-width:760px}
 .section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
@@ -973,12 +997,29 @@ footer a{color:var(--muted)}
   </div>
 </section>
 
-<nav>
-  <a href="../../index.html" class="nav-home" style="background:var(--ink);color:#fff;border-color:var(--ink);font-weight:800">← All Trips</a>
-  <a href="#overview">Overview</a><a href="#health-check">Health-Check</a><a href="#timing">Best Time</a><a href="#map">Trip Map</a><a href="#stays">Where We Stay</a><a href="#getting-around">Getting Around</a><a href="#air-travel">Air Travel</a><a href="#calendar">Calendar</a><a href="#itinerary">Day by Day</a><a href="#budget">Budget</a><a href="#tips">Travel Tips</a><a href="#social">What People Say</a><a href="#status">Settled & Open</a>
-
-
-<a href="#photo-guide">Photo Guide</a><a href="#food-guide">Food Guide</a>
+<nav class="site-nav" aria-label="Page sections">
+  <details class="site-nav-menu">
+    <summary><span>Sections</span></summary>
+    <div class="site-nav-links">
+      <a href="../../index.html" class="nav-home">← All Trips</a>
+      <a href="#overview">Overview</a>
+      <a href="#health-check">Health-Check</a>
+      <a href="#timing">Best Time</a>
+      <a href="#map">Trip Map</a>
+      <a href="#stays">Where We Stay</a>
+      <a href="#getting-around">Getting Around</a>
+      <a href="#air-travel">Air Travel</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#itinerary">Day by Day</a>
+      <a href="#todo">To-Do</a>
+      <a href="#budget">Budget</a>
+      <a href="#tips">Travel Tips</a>
+      <a href="#social">What People Say</a>
+      <a href="#status">Settled & Open</a>
+      <a href="#photo-guide">Photo Guide</a>
+      <a href="#food-guide">Food Guide</a>
+    </div>
+  </details>
 </nav>
 <main>
   <section id="overview">
@@ -1233,7 +1274,7 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="itinerary" class="divider">
-      <style>.spot-head .spot-name{display:inline;vertical-align:middle}a.at-badge{display:inline-flex;align-items:center;gap:.3em;margin-left:.5em;padding:.16em .6em;font-size:.6rem;font-weight:700;line-height:1;letter-spacing:.03em;text-transform:uppercase;vertical-align:middle;border-radius:999px;background:#428813;color:#fff;text-decoration:none;white-space:nowrap}a.at-badge:hover{background:#356e0f}.explore a.at-xg{background:#428813;color:#fff}.altbox summary.mini-h{cursor:pointer;margin:0;color:var(--c1)}.altbox[open] summary.mini-h{margin-bottom:8px}.altbox .alt-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}.altbox .alt-list li{font-size:.86rem;color:var(--muted);line-height:1.45;padding-left:14px;position:relative}.altbox .alt-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}</style>
+      <style>.spot-head .spot-name{display:inline;vertical-align:middle}a.at-badge{display:inline-flex;align-items:center;gap:.3em;margin-left:.5em;padding:.16em .6em;font-size:.6rem;font-weight:700;line-height:1;letter-spacing:.03em;text-transform:uppercase;vertical-align:middle;border-radius:999px;background:#428813;color:#fff;text-decoration:none;white-space:nowrap}a.at-badge:hover{background:#356e0f}.explore a.at-xg{background:#428813;color:#fff}.altbox summary.mini-h{cursor:pointer;margin:0;color:var(--c1)}.altbox[open] summary.mini-h{margin-bottom:8px}.altbox .alt-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}.altbox .alt-list li{font-size:.86rem;color:var(--muted);line-height:1.45;padding-left:14px;position:relative}.altbox .alt-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}.altbox .alt-list a{text-decoration:none}.altbox .alt-list .explore{margin-top:6px}.altbox .alt-list .explore a{color:#fff}.altbox .alt-list b{color:var(--ink)}</style>
       <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
@@ -1668,6 +1709,46 @@ footer a{color:var(--muted)}
       </div>
       <div class="spots-wrap"><div class="travel-note">✈︎ Travel day — no stops</div></div>
     </article></div>
+    </section><section id="todo" class="divider pretrip-todo">
+      <style>.pretrip-todo .todo-grid{display:grid;gap:12px}.pretrip-todo .todo-block{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c1);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.pretrip-todo .todo-block.hot{border-left-color:#c0392b}.pretrip-todo .todo-block.watch{border-left-color:var(--gold)}.pretrip-todo .todo-block.done{border-left-color:var(--c3)}.pretrip-todo .todo-when{grid-row:1/4;align-self:start;display:inline-block;margin:0;padding:4px 10px;border-radius:999px;background:rgba(31,111,120,.1);color:var(--c1);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-align:center}.pretrip-todo .todo-block.hot .todo-when{background:rgba(192,57,43,.1);color:#a23625}.pretrip-todo .todo-block.watch .todo-when{background:rgba(217,164,65,.16);color:#8a641e}.pretrip-todo .todo-block.done .todo-when{background:rgba(63,125,78,.12);color:var(--c3)}.pretrip-todo h3{grid-column:2;margin:0;font-size:1.12rem;font-weight:600;line-height:1.18}.pretrip-todo .todo-note{grid-column:2;margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}.pretrip-todo ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px}.pretrip-todo li{position:relative;padding-left:16px;color:var(--muted);font-size:.88rem;line-height:1.45}.pretrip-todo li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}.pretrip-todo li b{color:var(--ink)}.pretrip-todo .todo-callout{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:12px;background:var(--card);box-shadow:0 10px 28px rgba(30,32,28,.08);color:var(--muted);font-size:.9rem;line-height:1.55}.pretrip-todo .todo-callout b{color:var(--ink)}@media(max-width:720px){.pretrip-todo .todo-block{grid-template-columns:1fr;padding:16px}.pretrip-todo .todo-when{grid-row:auto;justify-self:start;text-align:left}.pretrip-todo h3,.pretrip-todo .todo-note,.pretrip-todo ul{grid-column:1}}</style>
+      <div class="section-label">
+      <p class="eyebrow">Pre-Departure To-Do</p>
+      <h2>What to book before leaving</h2>
+      <p>Exact planning timeline for the Jun 8-21, 2027 Portugal + Sicily itinerary. The fragile piece is the Lisbon-to-Palermo leg, so book the air and Sicily car with more margin than the calendar makes it look like you need.</p>
+    </div>
+      <div class="todo-grid">
+        <article class="todo-block hot">
+          <p class="todo-when">Jul 13-26, 2026</p>
+          <h3>Book long-haul and Sicily air</h3><p class="todo-note">Jun 8 outbound inventory starts opening around Jul 13; the Jun 21 Catania return opens around Jul 26.</p>
+          <ul><li><b>Book PIT to Lisbon and Catania to PIT as the main open-jaw.</b> Aer Lingus via Dublin is the Pittsburgh-specific first check; Star and Delta/ITA are backups.</li><li><b>Track LIS to Palermo for Mon Jun 14 as soon as summer 2027 low-cost schedules load.</b> Do not wait if easyJet is still the only nonstop.</li><li><b>Build a protected backup plan through Rome or another hub</b> in case the Palermo nonstop schedule changes.</li><li><b>Save all airline record locators and fare rules</b> in one trip folder immediately after purchase.</li></ul>
+        </article>
+        <article class="todo-block">
+          <p class="todo-when">By Aug 15, 2026</p>
+          <h3>Book lodging by base</h3>
+          <ul><li><b>Book Cascais for Jun 9-13</b> with parking or a deliberate no-car/train plan.</li><li><b>Book Cefalu for Jun 14-16</b> near beach/old town with parking or train-station practicality.</li><li><b>Book Taormina coast or Giardini-Naxos for Jun 17-20</b> with parking, pool/beach access, and easy CTA exit.</li><li><b>Calendar cancellation reviews</b> for Feb 15, Apr 15, and May 15.</li></ul>
+        </article>
+        <article class="todo-block">
+          <p class="todo-when">By Sep 15, 2026</p>
+          <h3>Reserve cars and transfer choices</h3>
+          <ul><li><b>Decide Portugal transport</b>: Cascais train/taxis plus targeted day rental, or a full car only if parking is painless.</li><li><b>Reserve Sicily car pickup at PMO and drop at CTA</b> with full insurance, automatic if needed, and enough luggage space.</li><li><b>Save ZTL/parking notes</b> for Cefalu, Palermo, Taormina, and Catania airport.</li><li><b>Reserve PIT parking or a ride plan</b> for the Tue Jun 8 departure.</li></ul>
+        </article>
+        <article class="todo-block watch">
+          <p class="todo-when">Mar 1-Apr 15, 2027</p>
+          <h3>Timed tickets, tours, and restaurant anchors</h3>
+          <ul><li><b>Mar 1:</b> book Quinta da Regaleira/Pena for Thu Jun 10 and Jeronimos/Belem timed tickets for Fri Jun 11 if those stay in the plan.</li><li><b>Mar 15:</b> book or shortlist Palermo/Mondello transport for Wed Jun 16 so you do not fight parking cold.</li><li><b>Apr 1:</b> book Etna guide/cable-car decision for Fri Jun 18 only if the forecast/refund terms are acceptable.</li><li><b>Apr 15:</b> book Ancient Theatre / Taormina dinner anchors for Sat Jun 19 and Sun Jun 20.</li></ul>
+        </article>
+        <article class="todo-block">
+          <p class="todo-when">Jan 15-Apr 15, 2027</p>
+          <h3>Documents, insurance, money, and phones</h3>
+          <ul><li><b>Check all passports by Jan 15.</b> Target validity through at least Dec 21, 2027 for a clean buffer.</li><li><b>Check ETIAS status by Feb 1</b> and apply through the official EU site once it is live for 2027.</li><li><b>Buy travel insurance by Jan 31</b> with missed-connection coverage for the Lisbon-to-Palermo risk.</li><li><b>Get International Driving Permits by Apr 15</b> for all possible Italy drivers.</li><li><b>Set up eSIM/international roaming, credit-card travel notices, toll/parking apps, and backup payment cards.</b></li></ul>
+        </article>
+        <article class="todo-block done">
+          <p class="todo-when">May 18-Jun 7, 2027</p>
+          <h3>Final two-week run-up</h3>
+          <ul><li><b>May 18:</b> reconfirm flight times, easyJet baggage, PMO/CTA car hours, lodging parking, and ferry/boat/tour refund rules.</li><li><b>May 25:</b> download offline maps for Lisbon/Cascais, Cefalu, Palermo, Taormina, and Catania airport.</li><li><b>Jun 1:</b> check Etna activity/closures and beach weather; keep one Sicily swim day flexible.</li><li><b>Jun 7:</b> pack passports, IDPs, meds, adapters, swimsuits in carry-ons, water shoes, motion-sickness meds, and printed parking/ticket confirmations.</li></ul>
+        </article>
+      </div>
+      <div class="todo-callout"><b>Do not forget:</b> Sicily parking and ZTL rules are a real planning item, not an arrival-day detail. Save parking lots before leaving home.</div>
     </section>
 
   <section id="budget" class="divider">
@@ -2844,4 +2925,4 @@ document.querySelectorAll('.carousel').forEach(function(c){
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-<script>/*scrollspy*/(function(){var nav=document.querySelector("nav");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:"smooth"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:"smooth"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
+<script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>

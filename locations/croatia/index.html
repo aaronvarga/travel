@@ -683,11 +683,35 @@ header .lead{max-width:640px;margin:0 0 26px;font-size:clamp(1.05rem,2.1vw,1.3re
 .hero-meta b{font-family:"Fraunces",serif;font-size:1.5rem;line-height:1}
 .hero-meta span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}
 /* NAV */
-nav{position:sticky;top:0;z-index:400;display:flex;gap:8px;overflow-x:auto;padding:11px clamp(16px,5vw,80px);background:rgba(246,241,231,.92);border-bottom:1px solid var(--line);backdrop-filter:blur(14px);scrollbar-width:none}
-nav::-webkit-scrollbar{display:none}
-nav a{flex:0 0 auto;padding:7px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;font-size:.84rem;text-decoration:none;transition:.15s}
-nav a:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
-nav a.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+section[id],article[id]{scroll-margin-top:84px}
+.site-nav{z-index:500;--nav-bg:#17130f;--nav-panel:#211c16;--nav-panel-2:#2a231b;--nav-line:rgba(246,241,231,.16);--nav-text:#f6f1e7;--nav-muted:rgba(246,241,231,.62);--nav-active:#5f9aa3;--nav-active-ink:#061517;--nav-shadow:0 18px 42px rgba(12,10,8,.28)}
+.site-nav summary{list-style:none}
+.site-nav summary::-webkit-details-marker{display:none}
+.site-nav a{color:var(--nav-text);font-weight:800;text-decoration:none;line-height:1.2;transition:background .15s,color .15s,border-color .15s,box-shadow .15s}
+.site-nav a.active{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active);box-shadow:0 8px 22px rgba(95,154,163,.22)}
+@media(min-width:960px){
+  body{padding-left:clamp(210px,17vw,248px)}
+  section[id],article[id]{scroll-margin-top:24px}
+  .site-nav{position:fixed;inset:0 auto 0 0;width:clamp(210px,17vw,248px);display:block;padding:18px 14px;background:linear-gradient(180deg,rgba(33,28,22,.98),rgba(18,15,12,.97));border-right:1px solid var(--nav-line);backdrop-filter:blur(16px);box-shadow:14px 0 42px rgba(12,10,8,.26);overflow:hidden;color:var(--nav-text)}
+  .site-nav-menu{height:100%;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:10px 10px 13px;border-bottom:1px solid var(--nav-line);color:var(--nav-muted);font-size:.7rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;cursor:default}
+  .site-nav summary::after{content:"";width:26px;height:2px;background:var(--nav-line)}
+  .site-nav-links{flex:1 1 auto;display:grid;align-content:start;gap:6px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;min-height:0;max-height:calc(100vh - 92px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(246,241,231,.26) transparent}
+  .site-nav a{display:flex;align-items:center;min-height:36px;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:transparent;font-size:.82rem}
+  .site-nav a:hover{background:rgba(246,241,231,.1);color:#fff;border-color:var(--nav-line)}
+  .site-nav a.nav-home{margin-bottom:6px;background:rgba(42,83,89,.42);color:var(--nav-active);border-color:rgba(95,154,163,.48)}
+}
+@media(max-width:959px){
+  .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
+  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
+  .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
+  .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
+  .site-nav-menu[open] summary::after{content:"-"}
+  .site-nav-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin-top:8px;max-height:min(70vh,480px);overflow:auto;padding:8px;border:1px solid var(--nav-line);border-radius:12px;background:linear-gradient(180deg,var(--nav-panel),var(--nav-bg));box-shadow:0 18px 42px rgba(12,10,8,.34)}
+  .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
+  .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
+}
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 40px;max-width:760px}
 .section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
@@ -932,19 +956,25 @@ footer a{color:var(--muted)}
     </div>
   </div>
 </header>
-<nav>
-  <a href="../../index.html" class="nav-home" style="background:var(--ink);color:#fff;border-color:var(--ink);font-weight:800">← All Trips</a>
-  <a href="#overview">Overview</a>
-  <a href="#health-check">Health-Check</a>
-  <a href="#timing">Week Later?</a>
-  <a href="#map">Trip Map</a>
-  <a href="#stays">Where We Stay</a>
-  <a href="#getting-around">Getting Around</a>
-  <a href="#itinerary">Day by Day</a>
-  <a href="#budget">Budget</a>
-  <a href="#tips">Travel Tips</a>
-  <a href="#status">Settled &amp; Open</a>
+<nav class="site-nav" aria-label="Page sections">
+  <details class="site-nav-menu">
+    <summary><span>Sections</span></summary>
+    <div class="site-nav-links">
+      <a href="../../index.html" class="nav-home">← All Trips</a>
+      <a href="#overview">Overview</a>
+      <a href="#health-check">Health-Check</a>
+      <a href="#timing">Week Later?</a>
+      <a href="#map">Trip Map</a>
+      <a href="#stays">Where We Stay</a>
+      <a href="#getting-around">Getting Around</a>
+      <a href="#itinerary">Day by Day</a>
+      <a href="#budget">Budget</a>
+      <a href="#tips">Travel Tips</a>
+      <a href="#status">Settled &amp; Open</a>
+    </div>
+  </details>
 </nav>
+
 <main>
   <section id="overview">
     <div class="section-label">
@@ -1760,4 +1790,4 @@ document.querySelectorAll('.carousel').forEach(function(c){
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
 </script>
-<script>/*scrollspy*/(function(){var nav=document.querySelector("nav");if(!nav)return;var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});var lo=a.offsetLeft,w=a.offsetWidth,nl=nav.scrollLeft,nw=nav.clientWidth;if(lo<nl+40)nav.scrollTo({left:lo-40,behavior:"smooth"});else if(lo+w>nl+nw-40)nav.scrollTo({left:lo+w-nw+40,behavior:"smooth"});}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
+<script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
