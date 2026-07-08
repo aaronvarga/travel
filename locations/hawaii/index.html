@@ -1059,8 +1059,16 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="map" class="divider">
-    <div class="section-label"><p class="eyebrow">The Whole Trip, Mapped</p><h2>Every stop on one map</h2><p>Tap a region to fly there; click any pin for its name and a one-tap link into Google Maps. Colors match the day cards below.</p></div>
-    <div class="tripmap-wrap"><div class="mapbtns"><button data-region="oahu"><span class="sw" style="background:#1f6f78"></span>Oahu</button><button data-region="kona"><span class="sw" style="background:#c25a3a"></span>Kona / Kohala</button><button data-region="volcano"><span class="sw" style="background:#3f7d4e"></span>Volcano / Hilo</button><button data-region="all">Whole trip</button></div><div id="tripmap"></div></div>
+    <div class="section-label"><p class="eyebrow">The Whole Trip, Mapped</p><h2>Every stop on one map</h2><p>Open <b>Map layers</b> to show or hide flights, lodging, transit, hikes, beaches, towns, attractions, and restaurants. Tap a region to fly there, then click any pin for Google Maps.</p></div>
+    <div class="tripmap-wrap"><div class="mapbtns"><button data-region="oahu"><span class="sw" style="background:#1f6f78"></span>Oahu</button><button data-region="kona"><span class="sw" style="background:#c25a3a"></span>Kona / Kohala</button><button data-region="volcano"><span class="sw" style="background:#3f7d4e"></span>Volcano / Hilo</button><button data-region="all">Whole trip</button></div><div class="mapstage">
+        <button class="layers-btn" aria-expanded="false" aria-label="Map layers"><span class="lbi">▧</span> Layers</button>
+        <div class="layers-panel" hidden>
+          <div class="layers-top"><strong>Map layers</strong><button class="layers-x" aria-label="Close">×</button></div>
+          <div class="layers-acts"><button data-all="1">Select all</button><span class="dot">·</span><button data-all="0">Deselect all</button></div>
+          <div class="layers-list"></div>
+        </div>
+        <div id="tripmap"></div>
+      </div></div>
   </section>
 
   <section id="stays" class="divider">
@@ -1113,7 +1121,34 @@ footer a{color:var(--muted)}
       .ev.hike{background:var(--c3)}.ev.water{background:var(--c1)}.ev.town{background:var(--c2)}
       .ev.rest{background:#8a857c}
       @media(max-width:640px){.cal-week{min-width:720px}}
-    </style>
+    /*TYPEMAP-CSS*/
+.tripmap-wrap .mapstage{position:relative}
+.tripmap-wrap .mapstage #tripmap{min-height:520px;border-radius:16px;overflow:hidden}
+.layers-btn{position:absolute;z-index:600;right:14px;top:14px;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(31,111,120,.22);border-radius:999px;background:rgba(255,253,248,.94);color:var(--ink);font-weight:850;font-size:.86rem;line-height:1;padding:10px 14px;box-shadow:0 14px 32px -18px rgba(0,0,0,.45);cursor:pointer;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.layers-btn:hover{background:#fff}
+.layers-btn .lbi{color:var(--c1);font-size:1rem;line-height:1}
+.layers-panel{position:absolute;z-index:620;right:14px;top:14px;width:min(360px,calc(100% - 28px));max-height:calc(100% - 28px);overflow:auto;border:1px solid rgba(31,111,120,.18);border-radius:18px;background:rgba(255,253,248,.95);box-shadow:0 22px 70px -32px rgba(0,0,0,.55);padding:18px 20px 20px;color:var(--ink);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.layers-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.layers-top strong{font-size:1.08rem;line-height:1.1}
+.layers-x{width:36px;height:36px;border:0;border-radius:50%;background:rgba(31,111,120,.1);color:var(--muted);font-size:1.7rem;line-height:1;cursor:pointer}
+.layers-x:hover{background:rgba(31,111,120,.16);color:var(--ink)}
+.layers-acts{display:flex;align-items:center;gap:10px;margin:14px 0 16px;padding-bottom:14px;border-bottom:1px solid rgba(31,111,120,.16)}
+.layers-acts button{border:0;background:transparent;color:#3e50dc;font-weight:900;font-size:.92rem;line-height:1;cursor:pointer;padding:0}
+.layers-acts .dot{color:rgba(31,111,120,.32);font-weight:900}
+.layers-head{margin:18px 0 8px;color:var(--ink);font-size:.78rem;line-height:1;font-weight:950;letter-spacing:.06em;text-transform:uppercase}
+.layers-head:first-child{margin-top:0}
+.layers-list{display:grid;gap:2px}
+.lrow{display:grid;grid-template-columns:38px minmax(0,1fr) 34px;align-items:center;gap:14px;min-height:54px;color:var(--ink);cursor:pointer}
+.lsw{width:30px;height:30px;border-radius:50% 50% 50% 0;display:grid;place-items:center;color:#fff;box-shadow:0 8px 18px -10px rgba(0,0,0,.8);transform:rotate(-45deg)}
+.lsw span{display:block;transform:rotate(45deg);font-size:.86rem;line-height:1}
+.ltxt{font-size:1rem;line-height:1.2;font-weight:650}
+.lrow input{appearance:none;-webkit-appearance:none;width:30px;height:30px;margin:0;border:3px solid #737c81;border-radius:7px;background:transparent;cursor:pointer;position:relative}
+.lrow input:checked{border-color:var(--c1);background:var(--c1)}
+.lrow input:checked::after{content:"";position:absolute;left:8px;top:3px;width:8px;height:15px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.pin2{width:26px;height:26px;border-radius:50% 50% 50% 0;display:grid;place-items:center;border:2px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-45deg)}
+.pin2 span{display:block;transform:rotate(45deg);font-size:13px;line-height:1}
+.pop-ty{display:inline-block;margin-top:3px;color:#66615b;font-size:.82rem}
+@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}</style>
 
     <div class="cal-legend">
       <span><i class="lg-air"></i>✈️ Air travel</span>
@@ -1579,11 +1614,6 @@ footer a{color:var(--muted)}
           <h3>Flight inventory opens: start tracking, do not auto-buy</h3><p class="todo-note">These dates are when most major-airline seats should become searchable, not when domestic cash fares are expected to be cheapest.</p>
           <ul><li><b>Map the protected route options for PIT to Honolulu plus Kona to PIT.</b> Record good connection cities, bad connection traps, baggage rules, and whether the itinerary is truly protected on one ticket.</li><li><b>Set Google Flights alerts for the exact dates plus nearby gateways.</b> Track the full family-of-4 price, not just one-seat teaser fares.</li><li><b>Check award tickets or refundable fares when the schedule opens.</b> Early booking can make sense for award space, refundable fares, or a genuinely below-target cash fare.</li><li><b>Set a buy threshold now.</b> Decide the fare where convenience, protection, and seat selection justify buying before the statistical cheap window.</li></ul>
         </article>
-        <article class="todo-block watch">
-          <p class="todo-when">Apr 14-May 15, 2027</p>
-          <h3>Target cash-flight buy window</h3><p class="todo-note">For domestic cash fares, Google's historical low range is about 21-52 days out, while Expedia's 2026 data is even closer. For this family Hawaii open-jaw, use the earlier side of that range so seats and routing do not get ugly.</p>
-          <ul><li><b>Run twice-weekly fare checks for PIT-HNL and KOA-PIT.</b> Buy when the open-jaw is under target with sane West Coast connections and seats together.</li><li><b>Do not buy in July 2026 unless the fare is refundable, award space is excellent, or the cash fare is clearly below the route target.</b></li><li><b>Keep HNL-KOA inter-island separate.</b> Lock the morning/midday island hop once the long-haul flights are set and the schedule is stable.</li><li><b>After purchase, keep tracking prices</b> and use airline credits/rebooking if a non-basic-economy fare drops.</li></ul>
-        </article>
         <article class="todo-block">
           <p class="todo-when">By Aug 9, 2026</p>
           <h3>Book lodging before fees creep up</h3>
@@ -1599,15 +1629,20 @@ footer a{color:var(--muted)}
           <h3>Book paid activities and make the one-splurge call</h3>
           <ul><li><b>Dec 7:</b> book or hold the Kealakekua/Captain Cook afternoon snorkel for Thu Jun 10 if that is the chosen splurge.</li><li><b>Jan 15:</b> decide snorkel vs luau; do not carry both in the baseline budget unless flights/lodging came in low.</li><li><b>Feb 1:</b> reserve any Volcano Village dinner or guided stargazing option that has a real cancellation policy.</li><li><b>Feb 15:</b> buy reef-safe mineral sunscreen, rash guards, and water shoes before resort prices become the fallback.</li></ul>
         </article>
+        <article class="todo-block">
+          <p class="todo-when">Jan 15-May 29, 2027</p>
+          <h3>IDs, insurance, weather, and forgotten basics</h3>
+          <ul><li><b>Jan 15:</b> confirm adult IDs are REAL ID-compliant or plan to use passports for domestic flights.</li><li><b>Jan 31:</b> buy travel insurance if the nonrefundable flight/lodging exposure is high enough to matter.</li><li><b>May 15:</b> check NPS/USGS volcano alerts, vog forecasts, and any Hawaii Volcanoes NP closures.</li><li><b>May 22:</b> refill prescriptions, confirm pet/house/mail coverage, and check airline baggage dimensions.</li><li><b>May 29:</b> pack swimsuits in carry-ons, reef-safe sunscreen, rash guards, water shoes, rain shells for Volcano, warm layers for Mauna Kea VIS, motion-sickness meds, and reusable water bottles.</li></ul>
+        </article>
         <article class="todo-block hot">
           <p class="todo-when">Apr 12-Jun 4, 2027</p>
           <h3>Timed Hawaii reservations</h3>
           <ul><li><b>Apr 12 at 3:00pm HST / 9:00pm ET:</b> book Pearl Harbor USS Arizona tickets for Mon Jun 7 as soon as the 56-day window opens.</li><li><b>May 7:</b> reserve Diamond Head for Sun Jun 6 only if it replaces or precedes Hanauma; non-resident slots can be reserved up to 30 days out.</li><li><b>Jun 4 at 7:00am HST / 1:00pm ET:</b> book Hanauma Bay for Sun Jun 6 the moment the two-day window opens.</li><li><b>Jun 4-5:</b> download every timed ticket, QR code, and parking confirmation for offline access.</li></ul>
         </article>
-        <article class="todo-block">
-          <p class="todo-when">Jan 15-May 29, 2027</p>
-          <h3>IDs, insurance, weather, and forgotten basics</h3>
-          <ul><li><b>Jan 15:</b> confirm adult IDs are REAL ID-compliant or plan to use passports for domestic flights.</li><li><b>Jan 31:</b> buy travel insurance if the nonrefundable flight/lodging exposure is high enough to matter.</li><li><b>May 15:</b> check NPS/USGS volcano alerts, vog forecasts, and any Hawaii Volcanoes NP closures.</li><li><b>May 22:</b> refill prescriptions, confirm pet/house/mail coverage, and check airline baggage dimensions.</li><li><b>May 29:</b> pack swimsuits in carry-ons, reef-safe sunscreen, rash guards, water shoes, rain shells for Volcano, warm layers for Mauna Kea VIS, motion-sickness meds, and reusable water bottles.</li></ul>
+        <article class="todo-block watch">
+          <p class="todo-when">Apr 14-May 15, 2027</p>
+          <h3>Target cash-flight buy window</h3><p class="todo-note">For domestic cash fares, Google's historical low range is about 21-52 days out, while Expedia's 2026 data is even closer. For this family Hawaii open-jaw, use the earlier side of that range so seats and routing do not get ugly.</p>
+          <ul><li><b>Run twice-weekly fare checks for PIT-HNL and KOA-PIT.</b> Buy when the open-jaw is under target with sane West Coast connections and seats together.</li><li><b>Do not buy in July 2026 unless the fare is refundable, award space is excellent, or the cash fare is clearly below the route target.</b></li><li><b>Keep HNL-KOA inter-island separate.</b> Lock the morning/midday island hop once the long-haul flights are set and the schedule is stable.</li><li><b>After purchase, keep tracking prices</b> and use airline credits/rebooking if a non-basic-economy fare drops.</li></ul>
         </article>
       </div>
       <div class="todo-callout"><b>Do not forget:</b> Hanauma Bay cannot be solved months ahead. Set the Jun 4, 2027 alarm now, and have payment/autofill ready before the 7:00am HST release.</div>
@@ -2465,7 +2500,7 @@ footer a{color:var(--muted)}
         </section>
       </div>
     </details>
-  </section>
+  </section><!--GL-LOADER--><link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V" crossorigin="anonymous"><script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js" integrity="sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj" crossorigin="anonymous"></script><script src="https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.22/leaflet-maplibre-gl.js" integrity="sha384-4CB9Vtol9LN6lGgBCvmPLbUEZwilrqIvPieSRurgAXAB7FVJaLS9n8WyAIA5wjQ+" crossorigin="anonymous"></script><!--/GL-LOADER-->
   <!--FG:END-->
 </main>
 <script>/* @preserve
@@ -2473,7 +2508,7 @@ footer a{color:var(--muted)}
  * (c) 2010-2023 Vladimir Agafonkin, (c) 2010-2011 CloudMade
  */
 //# sourceMappingURL=leaflet.js.map</script>
-<script>window.__MAP_POINTS__=[{"n":"Waikiki base","lat":21.2767,"lng":-157.8257,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.2767,-157.8257"},{"n":"Hanauma Bay","lat":21.269,"lng":-157.6938,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.269,-157.6938"},{"n":"Pearl Harbor","lat":21.365,"lng":-157.95,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.365,-157.95"},{"n":"North Shore / Haleiwa","lat":21.592,"lng":-158.1034,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.592,-158.1034"},{"n":"Kailua-Kona base","lat":19.639,"lng":-155.9969,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.639,-155.9969"},{"n":"Kealakekua Bay","lat":19.4845,"lng":-155.9276,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.4845,-155.9276"},{"n":"Hapuna Beach","lat":19.993,"lng":-155.8246,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.993,-155.8246"},{"n":"Mauna Kea VIS","lat":19.7582,"lng":-155.4569,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.7582,-155.4569"},{"n":"Punalu&#699;u Black Sand Beach","lat":19.1362,"lng":-155.504,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.1362,-155.504"},{"n":"Volcano Village base","lat":19.4308,"lng":-155.2378,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.4308,-155.2378"},{"n":"Hawai&#699;i Volcanoes NP","lat":19.4194,"lng":-155.2885,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.4194,-155.2885"},{"n":"Rainbow Falls / Hilo","lat":19.7193,"lng":-155.109,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.7193,-155.109"}];window.__MAP_COLORS__={"oahu":"#1f6f78","kona":"#c25a3a","volcano":"#3f7d4e"};</script><script>// ---- carousels ----
+<script>window.__MAP_POINTS__=[{"n":"Waikiki base","lat":21.2767,"lng":-157.8257,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.2767,-157.8257","t":"hotel"},{"n":"Hanauma Bay","lat":21.269,"lng":-157.6938,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.269,-157.6938","t":"beach"},{"n":"Pearl Harbor","lat":21.365,"lng":-157.95,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.365,-157.95","t":"town"},{"n":"North Shore / Haleiwa","lat":21.592,"lng":-158.1034,"r":"oahu","g":"https://www.google.com/maps/search/?api=1&query=21.592,-158.1034","t":"beach"},{"n":"Kailua-Kona base","lat":19.639,"lng":-155.9969,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.639,-155.9969","t":"hotel"},{"n":"Kealakekua Bay","lat":19.4845,"lng":-155.9276,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.4845,-155.9276","t":"beach"},{"n":"Hapuna Beach","lat":19.993,"lng":-155.8246,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.993,-155.8246","t":"beach"},{"n":"Mauna Kea VIS","lat":19.7582,"lng":-155.4569,"r":"kona","g":"https://www.google.com/maps/search/?api=1&query=19.7582,-155.4569","t":"hike"},{"n":"Punalu&#699;u Black Sand Beach","lat":19.1362,"lng":-155.504,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.1362,-155.504","t":"beach"},{"n":"Volcano Village base","lat":19.4308,"lng":-155.2378,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.4308,-155.2378","t":"hotel"},{"n":"Hawai&#699;i Volcanoes NP","lat":19.4194,"lng":-155.2885,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.4194,-155.2885","t":"hike"},{"n":"Rainbow Falls / Hilo","lat":19.7193,"lng":-155.109,"r":"volcano","g":"https://www.google.com/maps/search/?api=1&query=19.7193,-155.109","t":"hike"},{"n":"Marugame Udon Waikiki","lat":21.279487,"lng":-157.8260414,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.279487,-157.8260414"},{"n":"Cheeseburger Waikiki","lat":21.2859723,"lng":-157.833447,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.2859723,-157.833447"},{"n":"Musubi Cafe Iyasume","lat":21.2776339,"lng":-157.7870017,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.2776339,-157.7870017"},{"n":"Koko Head Cafe","lat":21.2815985,"lng":-157.7995746,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.2815985,-157.7995746"},{"n":"Restaurant 604","lat":21.3703124,"lng":-157.9366539,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.3703124,-157.9366539"},{"n":"Liliha Bakery Pearl City","lat":21.3966589,"lng":-157.9774975,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.3966589,-157.9774975"},{"n":"Giovanni's Shrimp Truck","lat":21.5807046,"lng":-158.1045858,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.5807046,-158.1045858"},{"n":"Seven Brothers Haleiwa","lat":21.5884752,"lng":-158.103352,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.5884752,-158.103352"},{"n":"Ted's Bakery","lat":21.6774381,"lng":-158.0363873,"r":"oahu","t":"food","g":"https://www.google.com/maps/search/?api=1&query=21.6774381,-158.0363873"},{"n":"Broke Da Mouth Grindz","lat":19.6486108,"lng":-156.0003695,"r":"kona","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.6486108,-156.0003695"},{"n":"Umekes Fish Market Bar & Grill","lat":19.6440116,"lng":-155.9990675,"r":"kona","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.6440116,-155.9990675"},{"n":"Kona Brewing Co.","lat":19.6430545,"lng":-155.9975314,"r":"kona","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.6430545,-155.9975314"},{"n":"The Coffee Shack","lat":19.4752983,"lng":-155.8923114,"r":"kona","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.4752983,-155.8923114"},{"n":"Kona Grill House","lat":19.5187059,"lng":-155.922928,"r":"kona","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.5187059,-155.922928"},{"n":"Hana Hou Restaurant","lat":19.0600144,"lng":-155.58596,"r":"volcano","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.0600144,-155.58596"},{"n":"Shaka Restaurant","lat":19.0600174,"lng":-155.5879381,"r":"volcano","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.0600174,-155.5879381"},{"n":"Thai Thai Bistro","lat":19.4293088,"lng":-155.2333034,"r":"volcano","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.4293088,-155.2333034"},{"n":"The Rim at Volcano House","lat":19.4284843,"lng":-155.2583056,"r":"volcano","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.4284843,-155.2583056"},{"n":"Cafe 100","lat":19.7144103,"lng":-155.0771326,"r":"volcano","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.7144103,-155.0771326"},{"n":"Kozmic Cones","lat":19.7239878,"lng":-155.0906023,"r":"volcano","t":"food","g":"https://www.google.com/maps/search/?api=1&query=19.7239878,-155.0906023"}];window.__MAP_COLORS__={"oahu":"#1f6f78","kona":"#c25a3a","volcano":"#3f7d4e"};window.__MAP_TYPES__={"flight":{"label":"Flights","color":"#2f93d1","emoji":"✈️"},"hotel":{"label":"Hotels and lodging","color":"#7144aa","emoji":"🏨"},"rental":{"label":"Rental cars","color":"#2fa7a5","emoji":"🚗"},"transit":{"label":"Transit","color":"#18a765","emoji":"↔️"},"hike":{"label":"Hikes & trails","color":"#3f7d4e","emoji":"🥾"},"beach":{"label":"Beaches & swim","color":"#1f8aa8","emoji":"🏖️"},"view":{"label":"Viewpoints","color":"#c25a3a","emoji":"👁️"},"town":{"label":"Towns & villages","color":"#0b6a43","emoji":"🏘️"},"sight":{"label":"Attractions & POI","color":"#8a5cb0","emoji":"⭐"},"food":{"label":"Restaurants","color":"#d64550","emoji":"🍴"}};window.__MAP_TYPE_GROUPS__=[{"label":"Overview","types":["flight","hotel","rental","transit"]},{"label":"Places","types":["hike","beach","view","town","sight","food"]}];</script><script>// ---- carousels ----
 document.querySelectorAll('.carousel').forEach(function(c){
   var track=c.querySelector('.track'), cur=c.querySelector('.cur'),
       dots=[].slice.call(c.querySelectorAll('.dot')), n=+c.dataset.n;
@@ -2488,29 +2523,108 @@ document.querySelectorAll('.carousel').forEach(function(c){
   sync();
 });
 
-// ---- trip map (Leaflet) ----
+// ---- trip map (Leaflet, Wanderlog-style layer filtering) ----
 (function(){
   var el=document.getElementById('tripmap');
   if(!el||typeof L==='undefined')return;
-  var pts=window.__MAP_POINTS__||[], colors=window.__MAP_COLORS__||{};
-  var map=L.map('tripmap',{scrollWheelZoom:false}).setView([20.6,-156.5],7);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-    maxZoom:19, attribution:'&copy; OpenStreetMap'}).addTo(map);
-  var groups={oahu:[],kona:[],volcano:[]};
+  var pts=window.__MAP_POINTS__||[], rColors=window.__MAP_COLORS__||{}, TYPES=window.__MAP_TYPES__||{}, GROUPS=window.__MAP_TYPE_GROUPS__||[];
+  var map=L.map('tripmap',{scrollWheelZoom:false,zoomSnap:0.25,zoomDelta:0.5}).setView([20,0],2);
+  var enField=['coalesce',['get','name:en'],['get','name:latin'],['get','name']];
+  function englishify(mm){
+    try{
+      (mm.getStyle().layers||[]).forEach(function(l){
+        if(l.type==='symbol'&&l.layout&&('text-field' in l.layout)){
+          mm.setLayoutProperty(l.id,'text-field',enField);
+        }
+      });
+    }catch(e){}
+  }
+  if(L.maplibreGL){
+    var gl=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/liberty',attribution:'&copy; OpenFreeMap &copy; OpenMapTiles &copy; OpenStreetMap'}).addTo(map);
+    var mm=gl.getMaplibreMap();
+    mm.on('styledata',function(){englishify(mm);});
+  }else{
+    L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors, Wikimedia'}).addTo(map);
+  }
+  el.addEventListener('wheel',function(e){
+    if(e.ctrlKey||e.metaKey){
+      e.preventDefault();
+      var z=map.getZoom()-e.deltaY*0.02;
+      map.setZoomAround(map.mouseEventToContainerPoint(e),Math.max(map.getMinZoom(),Math.min(map.getMaxZoom(),z)));
+    }
+  },{passive:false});
+  function esc(s){
+    return String(s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});
+  }
+  var active={}, regions={}, counts={};
+  Object.keys(TYPES).forEach(function(k){active[k]=true;counts[k]=0;});
+  pts.forEach(function(p){if(!p.t||!TYPES[p.t])p.t='sight';counts[p.t]=(counts[p.t]||0)+1;});
+  function buildLayerRows(){
+    var list=document.querySelector('.layers-list');
+    if(!list)return;
+    list.innerHTML='';
+    GROUPS.forEach(function(group){
+      var keys=(group.types||[]).filter(function(k){return TYPES[k]&&counts[k];});
+      if(!keys.length)return;
+      var head=document.createElement('p');
+      head.className='layers-head';
+      head.textContent=group.label;
+      list.appendChild(head);
+      keys.forEach(function(k){
+        var ty=TYPES[k];
+        list.insertAdjacentHTML('beforeend','<label class="lrow"><span class="lsw" style="background:'+esc(ty.color)+'"><span>'+esc(ty.emoji)+'</span></span><span class="ltxt">'+esc(ty.label)+'</span><input type="checkbox" data-type="'+esc(k)+'" checked autocomplete="off"></label>');
+      });
+    });
+  }
+  buildLayerRows();
   pts.forEach(function(p){
-    var col=colors[p.r]||'#c25a3a';
-    var m=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',
-      html:'<div class="pin" style="background:'+col+'"></div>',iconSize:[16,16],iconAnchor:[8,8]})}).addTo(map);
-    m.bindPopup('<b>'+p.n+'</b><br><a href="'+p.g+'" target="_blank" rel="noreferrer">Open in Google Maps &#8599;</a>');
-    if(groups[p.r])groups[p.r].push([p.lat,p.lng]);
+    var ty=TYPES[p.t]||TYPES.sight||{color:'#c25a3a',emoji:'📍',label:'Place'};
+    p._m=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:'<div class="pin2" style="background:'+ty.color+'"><span>'+ty.emoji+'</span></div>',iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-12]})});
+    p._m.bindPopup('<b>'+esc(p.n)+'</b><br><span class="pop-ty">'+esc(ty.emoji)+' '+esc(ty.label)+'</span><br><a href="'+esc(p.g)+'" target="_blank" rel="noreferrer">Open in Google Maps &#8599;</a>');
+    (regions[p.r]=regions[p.r]||[]).push([p.lat,p.lng]);
   });
+  function render(){
+    pts.forEach(function(p){
+      if(active[p.t])p._m.addTo(map);else map.removeLayer(p._m);
+    });
+  }
   function fit(region){
-    var arr=region==='all'?pts.map(function(p){return [p.lat,p.lng];}):groups[region];
-    if(arr&&arr.length)map.flyToBounds(L.latLngBounds(arr).pad(0.25),{maxZoom:region==='all'?8:12});
+    var arr=region==='all'?pts.map(function(p){return [p.lat,p.lng];}):regions[region];
+    if(arr&&arr.length)map.flyToBounds(L.latLngBounds(arr).pad(0.22),{maxZoom:region==='all'?7:12});
+  }
+  function showAllLayers(){
+    Object.keys(TYPES).forEach(function(k){active[k]=true;});
+    document.querySelectorAll('.layers-list input[type=checkbox]').forEach(function(box){box.checked=true;});
+    render();
   }
   document.querySelectorAll('.mapbtns button').forEach(function(b){
-    b.addEventListener('click',function(){fit(b.dataset.region);});
+    b.addEventListener('click',function(){
+      if(b.dataset.region==='all')showAllLayers();
+      fit(b.dataset.region);
+    });
   });
+  var panel=document.querySelector('.layers-panel'), lbtn=document.querySelector('.layers-btn');
+  if(lbtn&&panel){
+    lbtn.addEventListener('click',function(){
+      var opening=panel.hasAttribute('hidden');
+      if(opening)panel.removeAttribute('hidden');else panel.setAttribute('hidden','');
+      lbtn.setAttribute('aria-expanded',opening?'true':'false');
+    });
+    var xb=panel.querySelector('.layers-x');
+    if(xb)xb.addEventListener('click',function(){panel.setAttribute('hidden','');lbtn.setAttribute('aria-expanded','false');});
+  }
+  var boxes=[].slice.call(document.querySelectorAll('.layers-list input[type=checkbox]'));
+  boxes.forEach(function(box){
+    box.addEventListener('change',function(){active[box.dataset.type]=box.checked;render();});
+  });
+  document.querySelectorAll('.layers-acts button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var on=b.dataset.all==='1';
+      boxes.forEach(function(box){box.checked=on;active[box.dataset.type]=on;});
+      render();
+    });
+  });
+  render();
   fit('all');
   setTimeout(function(){map.invalidateSize();},300);
 })();
