@@ -1,0 +1,914 @@
+{
+  "axes": [
+    {
+      "id": "budget",
+      "label": "Budget",
+      "weightDefault": 2
+    },
+    {
+      "id": "weather",
+      "label": "Weather",
+      "weightDefault": 1
+    },
+    {
+      "id": "swim",
+      "label": "Swim",
+      "weightDefault": 1
+    },
+    {
+      "id": "variety",
+      "label": "Variety",
+      "weightDefault": 1
+    },
+    {
+      "id": "ease",
+      "label": "Ease",
+      "weightDefault": 1
+    },
+    {
+      "id": "food",
+      "label": "Food",
+      "weightDefault": 1
+    },
+    {
+      "id": "risk",
+      "label": "Risk",
+      "weightDefault": 1
+    },
+    {
+      "id": "pto",
+      "label": "PTO",
+      "weightDefault": 1
+    }
+  ],
+  "budgetTargets": {
+    "targetUsd": 12000,
+    "capUsd": 15000
+  },
+  "trips": [
+    {
+      "slug": "balkans",
+      "title": "Balkan Coast Road Trip - July 2027",
+      "displayName": "Balkan Coast Road Trip",
+      "blurb": "Most adventurous",
+      "recommended": false,
+      "axes": {
+        "budget": 2,
+        "weather": 3,
+        "swim": 5,
+        "variety": 5,
+        "ease": 1,
+        "food": 3,
+        "risk": 2,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 10600,
+        "ceilUsd": 16800,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          76,
+          79
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 23,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/balkans/index.html"
+    },
+    {
+      "slug": "california-pacific-coast",
+      "title": "California Pacific Coast Road Trip - June 2027",
+      "displayName": "California Pacific Coast",
+      "blurb": "Best domestic road trip",
+      "recommended": false,
+      "axes": {
+        "budget": 3,
+        "weather": 4,
+        "swim": 2,
+        "variety": 5,
+        "ease": 4,
+        "food": 4,
+        "risk": 2,
+        "pto": 4
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 9600,
+        "ceilUsd": 14300,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 7,
+        "nights": 11
+      },
+      "facets": {
+        "continent": "north-america",
+        "maxConnections": 1,
+        "swimTempF": [
+          64,
+          66
+        ],
+        "noPassport": true,
+        "singleTicket": true,
+        "hasSwim": false
+      },
+      "totalBaked": 27,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/california-pacific-coast/index.html"
+    },
+    {
+      "slug": "croatia",
+      "title": "Croatia · Split · Hvar · Korčula — June 2027",
+      "displayName": "Croatia",
+      "blurb": "Best proven Europe value",
+      "recommended": false,
+      "axes": {
+        "budget": 4,
+        "weather": 5,
+        "swim": 4,
+        "variety": 3,
+        "ease": 3,
+        "food": 3,
+        "risk": 3,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 8600,
+        "ceilUsd": 12800,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          71,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 29,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/croatia/index.html"
+    },
+    {
+      "slug": "greece-via-lisbon",
+      "title": "Greece via Lisbon · Crete — June 2027",
+      "displayName": "Greece via Lisbon",
+      "blurb": "Iconic contender",
+      "recommended": false,
+      "axes": {
+        "budget": 3,
+        "weather": 5,
+        "swim": 4,
+        "variety": 4,
+        "ease": 3,
+        "food": 3,
+        "risk": 3,
+        "pto": 4
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 9300,
+        "ceilUsd": 14700,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 7,
+        "nights": 11
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 28,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/greece-via-lisbon/index.html"
+    },
+    {
+      "slug": "hawaii",
+      "title": "Hawaii · Oahu · Big Island — June 2027",
+      "displayName": "Hawaii",
+      "blurb": "Best pure score",
+      "recommended": true,
+      "axes": {
+        "budget": 4,
+        "weather": 4,
+        "swim": 5,
+        "variety": 5,
+        "ease": 4,
+        "food": 4,
+        "risk": 3,
+        "pto": 4
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 10600,
+        "ceilUsd": 14400,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 7,
+        "nights": 9
+      },
+      "facets": {
+        "continent": "pacific",
+        "maxConnections": 2,
+        "swimTempF": [
+          78,
+          80
+        ],
+        "noPassport": true,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 33,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/hawaii/index.html"
+    },
+    {
+      "slug": "italy-salento-amalfi",
+      "title": "Salento, Maratea & the Amalfi Coast — June 2027",
+      "displayName": "Italy: Salento-Amalfi",
+      "blurb": "Best Italy stretch",
+      "recommended": false,
+      "axes": {
+        "budget": 2,
+        "weather": 5,
+        "swim": 4,
+        "variety": 5,
+        "ease": 3,
+        "food": 5,
+        "risk": 2,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 13200,
+        "ceilUsd": 16400,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          68,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 28,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/italy-salento-amalfi/index.html"
+    },
+    {
+      "slug": "madeira-crete",
+      "title": "Madeira + Crete Family Itinerary - June 2027",
+      "displayName": "Madeira + Crete",
+      "blurb": "Best-fit hybrid: hiking + warm water",
+      "recommended": true,
+      "axes": {
+        "budget": 3,
+        "weather": 5,
+        "swim": 4,
+        "variety": 5,
+        "ease": 2,
+        "food": 4,
+        "risk": 2,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 11600,
+        "ceilUsd": 14900,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 3,
+        "swimTempF": [
+          73,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 28,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/madeira-crete/index.html"
+    },
+    {
+      "slug": "madeira-sicily",
+      "title": "Madeira + Sicily Hybrid - June 2027",
+      "displayName": "Madeira + Sicily",
+      "blurb": "Italy-bias hiking hybrid",
+      "recommended": true,
+      "axes": {
+        "budget": 2,
+        "weather": 5,
+        "swim": 4,
+        "variety": 5,
+        "ease": 2,
+        "food": 5,
+        "risk": 1,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 12300,
+        "ceilUsd": 15500,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 3,
+        "swimTempF": [
+          72,
+          75
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 26,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/madeira-sicily/index.html"
+    },
+    {
+      "slug": "portugal",
+      "title": "Portugal · Algarve · Madeira — June 2027",
+      "displayName": "Portugal Algarve & Madeira",
+      "blurb": "Value fallback",
+      "recommended": true,
+      "axes": {
+        "budget": 5,
+        "weather": 4,
+        "swim": 2,
+        "variety": 4,
+        "ease": 4,
+        "food": 4,
+        "risk": 3,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 7500,
+        "ceilUsd": 11700,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 1,
+        "swimTempF": [
+          63,
+          70
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": false
+      },
+      "totalBaked": 31,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/portugal/index.html"
+    },
+    {
+      "slug": "portugal-crete",
+      "title": "Portugal + Crete Family Itinerary - June 2027",
+      "displayName": "Portugal + Crete",
+      "blurb": "Recommended pick",
+      "recommended": true,
+      "axes": {
+        "budget": 3,
+        "weather": 5,
+        "swim": 4,
+        "variety": 4,
+        "ease": 3,
+        "food": 4,
+        "risk": 3,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 10800,
+        "ceilUsd": 14800,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          73,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 29,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/portugal-crete/index.html"
+    },
+    {
+      "slug": "portugal-sicily",
+      "title": "Portugal + Sicily Hybrid - June 2027",
+      "displayName": "Portugal + Sicily",
+      "blurb": "Mainland Italy hybrid",
+      "recommended": true,
+      "axes": {
+        "budget": 2,
+        "weather": 5,
+        "swim": 4,
+        "variety": 5,
+        "ease": 2,
+        "food": 5,
+        "risk": 2,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 12400,
+        "ceilUsd": 14700,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          75
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 27,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/portugal-sicily/index.html"
+    },
+    {
+      "slug": "sardinia-corsica",
+      "title": "Sardinia + Corsica — June 2027",
+      "displayName": "Sardinia & Corsica",
+      "blurb": "Best Italian-island swim",
+      "recommended": false,
+      "axes": {
+        "budget": 3,
+        "weather": 5,
+        "swim": 5,
+        "variety": 4,
+        "ease": 2,
+        "food": 4,
+        "risk": 2,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 10700,
+        "ceilUsd": 14900,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          75
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 28,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/sardinia-corsica/index.html"
+    },
+    {
+      "slug": "sicily-malta",
+      "title": "Sicily · Malta — Jun 10-23, 2027",
+      "displayName": "Sicily & Malta",
+      "blurb": "Food + variety stretch",
+      "recommended": false,
+      "axes": {
+        "budget": 2,
+        "weather": 4,
+        "swim": 5,
+        "variety": 5,
+        "ease": 2,
+        "food": 5,
+        "risk": 2,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 10400,
+        "ceilUsd": 15800,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          75
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 27,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/sicily-malta/index.html"
+    },
+    {
+      "slug": "southern-france",
+      "title": "Southern France · Riviera · Provence · Lavender — June 2027",
+      "displayName": "Southern France",
+      "blurb": "Shortest Europe route",
+      "recommended": false,
+      "axes": {
+        "budget": 2,
+        "weather": 4,
+        "swim": 3,
+        "variety": 3,
+        "ease": 4,
+        "food": 4,
+        "risk": 3,
+        "pto": 5
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 9600,
+        "ceilUsd": 14200,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 6,
+        "nights": 8
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 1,
+        "swimTempF": [
+          70,
+          70
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 25,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/southern-france/index.html"
+    },
+    {
+      "slug": "spain",
+      "title": "Spain · Andalusia · Costa del Sol — June 2027",
+      "displayName": "Spain",
+      "blurb": "Best architecture",
+      "recommended": false,
+      "axes": {
+        "budget": 3,
+        "weather": 3,
+        "swim": 3,
+        "variety": 4,
+        "ease": 4,
+        "food": 4,
+        "risk": 3,
+        "pto": 2
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 8800,
+        "ceilUsd": 14800,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 9,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 1,
+        "swimTempF": [
+          68,
+          72
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 27,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/spain/index.html"
+    },
+    {
+      "slug": "turkish-riviera",
+      "title": "Turkish Riviera Family Itinerary - June 2027",
+      "displayName": "Turkish Riviera",
+      "blurb": "Warm-water Europe wild card",
+      "recommended": false,
+      "axes": {
+        "budget": 2,
+        "weather": 5,
+        "swim": 5,
+        "variety": 4,
+        "ease": 3,
+        "food": 4,
+        "risk": 2,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "pto": 1
+      },
+      "budget": {
+        "floorUsd": 10200,
+        "ceilUsd": 15900,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          75,
+          79
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 27,
+      "completeness": {
+        "complete": 11,
+        "total": 17
+      },
+      "href": "locations/turkish-riviera/index.html"
+    }
+  ]
+}
