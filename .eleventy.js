@@ -6,7 +6,9 @@
  * every <slug>/index.html from src/_data/<slug>/*.json (+ shared src/_data/chrome.json),
  * produced by tools/extract.mjs.
  */
-module.exports = function () {
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({ 'index.html': 'index.html' });
+
   return {
     dir: { input: 'src', output: '_site', includes: '_includes', data: '_data' },
     htmlTemplateEngine: 'njk',
