@@ -1,0 +1,59 @@
+{
+  "_comment": "Shared packing list, rendered by the `packing` macro in src/itinerary.njk. Each trip's main.json picks `packingTags` from `modifiers`; base always shows. Trip-specific extras go in main.json `overrides.packing`.",
+  "base": [
+    "Passports / IDs + 2 photocopies stored separately (see the Entry &amp; Documents section)",
+    "Debit + 2 credit cards (call issuers re: travel); some local cash on arrival",
+    "Phone chargers, a multi-port USB brick, and a power bank for long transit days",
+    "Refillable water bottles for the whole family",
+    "Kids' comfort items, tablets pre-loaded with downloads for flights/drives",
+    "Small first-aid kit: pain/fever meds (adult + kids), band-aids, motion-sickness tabs, any prescriptions in original bottles",
+    "Sunscreen (SPF 50), after-sun, insect repellent",
+    "Light day pack + a foldable tote for beach/market runs",
+    "Copies of bookings (flights, lodging, car, tickets) saved offline"
+  ],
+  "modifiers": {
+    "beach": {
+      "label": "Beach & water days",
+      "items": [
+        "Swimsuits (2 each), quick-dry towels, rash guards for the kids",
+        "Water shoes — many Mediterranean beaches are pebble/rock",
+        "Goggles + a mesh bag for wet gear",
+        "Dry bag for phones/keys on boat days"
+      ]
+    },
+    "hiking": {
+      "label": "Hiking & levada days",
+      "items": [
+        "Broken-in trail shoes / light hikers for everyone",
+        "Daypack with rain shell — mountain weather turns fast",
+        "Headlamp (Madeira levada tunnels are dark and wet)",
+        "Trekking layers; blister plasters"
+      ]
+    },
+    "heat": {
+      "label": "Hot-weather (June sun)",
+      "items": [
+        "Sun hats and UV sunglasses for all",
+        "Light, breathable long sleeves for midday sun protection",
+        "Electrolyte tabs — easy to under-hydrate with kids in the heat",
+        "Plan indoor/shade breaks 1–4pm"
+      ]
+    },
+    "rain": {
+      "label": "Rain / changeable weather",
+      "items": [
+        "Packable rain jackets over umbrellas (wind)",
+        "A spare set of dry clothes in the day pack",
+        "Ziplocs to protect electronics"
+      ]
+    },
+    "domestic": {
+      "label": "US domestic notes",
+      "items": [
+        "No adapters needed; standard US plugs",
+        "Reef-safe sunscreen (required in Hawaii)",
+        "TSA-friendly liquids; REAL ID to fly"
+      ]
+    }
+  }
+}
