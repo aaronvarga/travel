@@ -184,3 +184,13 @@ permalink: "/locations/{{ trip.slug }}/index.html"
     }
   })();
 </script>
+<script>
+  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      var p = location.pathname, i = p.indexOf('/locations/');
+      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
+      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+    });
+  }
+</script>
