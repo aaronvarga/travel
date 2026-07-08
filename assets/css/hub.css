@@ -1,0 +1,77 @@
+/* hub.css — styling for the interactive comparison-hub features layered onto
+ * index.html: re-weight sliders, faceted filters, compare drawer, meters.
+ * Reuses the page's CSS custom properties (--line, --card, --ink, --c1, etc.). */
+
+/* ---- shared panel chrome ------------------------------------------------- */
+.weight-panel,
+.filter-bar,
+.compare-bar {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+.hub-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.hub-panel-head h3 {
+  margin: 0;
+  font-family: "Fraunces", "Spectral", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink, #193c45);
+}
+.hub-panel-head p { margin: 0; font-size: .8rem; color: #5f675f; }
+.hub-btn {
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #334649;
+  border-radius: 999px;
+  padding: 6px 13px;
+  transition: background .15s ease, border-color .15s ease;
+}
+.hub-btn:hover { background: #f2f7f4; border-color: #cfe0d6; }
+.hub-btn:disabled { opacity: .45; cursor: default; }
+
+/* ---- Feature 1: re-weight sliders --------------------------------------- */
+.weight-panel { padding: 16px 18px; }
+.weight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px 22px;
+}
+.weight-axis { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; align-items: center; }
+.weight-axis label { font-size: .82rem; font-weight: 700; color: #334649; }
+.weight-axis .wv {
+  font-variant-numeric: tabular-nums;
+  font-size: .78rem;
+  font-weight: 800;
+  color: var(--c1, #1f6f78);
+  min-width: 2.4em;
+  text-align: right;
+}
+.weight-axis input[type="range"] { grid-column: 1 / -1; width: 100%; accent-color: var(--c1, #1f6f78); margin: 2px 0 0; }
+.weight-axis.off label,
+.weight-axis.off .wv { color: #9aa39c; }
+.weight-panel .custom-flag {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #8a641e;
+  background: rgba(217, 164, 65, .16);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+.weight-panel .custom-flag[hidden] { display: none; }
+.compare-table .tot-max { font-size: .72rem; font-weight: 600; color: #7c8a86; }
