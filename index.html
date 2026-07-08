@@ -831,6 +831,7 @@ footer a{color:var(--muted)}
 <script src="assets/js/weights.js"></script>
 <script src="assets/js/filters.js"></script>
 <script src="assets/js/compare.js"></script>
+<script src="assets/js/meter.js"></script>
 <script src="assets/js/urlstate.js"></script>
 <script>
 function setPriority(key){
@@ -878,28 +879,5 @@ document.querySelectorAll('.trip-photo img').forEach(img => {
 setPriority('balanced');
 </script>
 <script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script>
-<style>.sl-complete{margin-top:2px;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#2f6b52;background:#e6efe8;border:1px solid #cfe4d6;border-radius:999px;padding:3px 9px;align-self:flex-start}.sl-complete.warn{color:#a23625;background:#f8e7e3;border-color:#eccabf}</style>
-<script>
-/* completeness meter + recommended-badge gate, sourced from the section linter */
-(function(){
-  fetch('assets/section-status.json').then(function(r){return r.ok?r.json():null;}).then(function(status){
-    if(!status)return;
-    document.querySelectorAll('.sl-card').forEach(function(card){
-      var m=(card.getAttribute('href')||'').match(/locations\/([^/]+)\//);
-      if(!m)return;
-      var st=status[m[1]];
-      if(!st||!st.recommended)return; /* meter is the thoroughness promise on recommended trips only */
-      var complete=st.complete>=st.total;
-      if(!complete)card.classList.remove('top'); /* gate: an incomplete recommended trip loses the top treatment */
-      var body=card.querySelector('.sl-body');
-      if(body){
-        var chip=document.createElement('div');
-        chip.className='sl-complete'+(complete?'':' warn');
-        chip.textContent=(complete?'✓ ':'')+st.complete+'/'+st.total+' planning sections';
-        body.appendChild(chip);
-      }
-    });
-  }).catch(function(){});
-})();
-</script></body>
+</body>
 </html>

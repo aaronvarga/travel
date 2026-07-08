@@ -134,3 +134,21 @@
   font-size: 1rem; font-weight: 900; line-height: 1; padding: 0 2px;
 }
 .cmp-remove:hover { color: #8d3f2b; }
+
+/* ---- Feature 4: completeness meter + gated Recommended badge ------------- */
+.sl-meter { margin-top: 10px; display: grid; gap: 5px; }
+.sl-meter-label {
+  font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: #7c8a86;
+}
+.sl-meter.done .sl-meter-label { color: #2f6b52; }
+.sl-meter-bar { height: 6px; border-radius: 999px; background: #ece7dd; overflow: hidden; }
+.sl-meter-fill { display: block; height: 100%; border-radius: 999px; background: #d5a24b; transition: width .3s ease; }
+.sl-meter.done .sl-meter-fill { background: #2f8f65; }
+.sl-rec-badge {
+  align-self: flex-start;
+  font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: #14573a; background: #e6efe8; border: 1px solid #cfe4d6;
+  border-radius: 999px; padding: 3px 10px; margin-bottom: 8px;
+}
+.sl-rec-badge.pending { color: #a23625; background: #f8e7e3; border-color: #eccabf; }
