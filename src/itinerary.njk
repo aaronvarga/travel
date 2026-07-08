@@ -27,10 +27,10 @@ permalink: "/locations/{{ trip.slug }}/index.html"
             <p class="mini-h">Family &amp; picky-kid eats</p>
             <ul>{{ s.restoHtml | safe }}</ul>
           </div>
-          <div class="altbox">
-            <p class="mini-h">Also awesome instead</p>
+          <details class="altbox">
+            <summary class="mini-h">Also awesome instead / if you have time</summary>
             {{ s.altboxHtml | safe }}
-          </div>
+          </details>
           <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>{{ s.bloglinksHtml | safe }}</div>
         </div>
         {{ s.spotMapHtml | safe }}
@@ -55,7 +55,7 @@ permalink: "/locations/{{ trip.slug }}/index.html"
 
 {%- macro itinerary(it) -%}
 <section id="itinerary" class="{{ it.className }}">
-      <style>.spot-head .spot-name{display:inline;vertical-align:middle}a.at-badge{display:inline-flex;align-items:center;gap:.3em;margin-left:.5em;padding:.16em .6em;font-size:.6rem;font-weight:700;line-height:1;letter-spacing:.03em;text-transform:uppercase;vertical-align:middle;border-radius:999px;background:#428813;color:#fff;text-decoration:none;white-space:nowrap}a.at-badge:hover{background:#356e0f}.explore a.at-xg{background:#428813;color:#fff}</style>
+      <style>.spot-head .spot-name{display:inline;vertical-align:middle}a.at-badge{display:inline-flex;align-items:center;gap:.3em;margin-left:.5em;padding:.16em .6em;font-size:.6rem;font-weight:700;line-height:1;letter-spacing:.03em;text-transform:uppercase;vertical-align:middle;border-radius:999px;background:#428813;color:#fff;text-decoration:none;white-space:nowrap}a.at-badge:hover{background:#356e0f}.explore a.at-xg{background:#428813;color:#fff}.altbox summary.mini-h{cursor:pointer;margin:0;color:var(--c1)}.altbox[open] summary.mini-h{margin-bottom:8px}.altbox .alt-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}.altbox .alt-list li{font-size:.86rem;color:var(--muted);line-height:1.45;padding-left:14px;position:relative}.altbox .alt-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}</style>
       <div class="section-label">{{ it.labelHtml | safe }}</div>
       <div class="{{ it.daysClass }}">{% for d in it.days %}{{ day(d) }}{% endfor %}</div>
     </section>
