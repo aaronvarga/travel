@@ -171,12 +171,22 @@ a.at-badge:hover{background:#356e0f}
 .guide-card h3{margin:0 0 8px;font-size:1.25rem;font-weight:600}
 .guide-card p,.guide-card li{color:var(--muted);font-size:.9rem}
 .guide-card ul{margin:0;padding-left:18px}
+.tip-stack{display:grid;gap:14px}
+.insider-tip{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow);display:grid;grid-template-columns:minmax(92px,.2fr) 1fr;gap:14px;align-items:start}
+.tip-tag{font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--c1);border-radius:999px;padding:6px 9px;text-align:center}
+.insider-tip:nth-child(2n) .tip-tag{background:var(--c2)}
+.insider-tip:nth-child(3n) .tip-tag{background:var(--c4)}
+.insider-tip h3{margin:0 0 5px;font-size:1.05rem}
+.insider-tip p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.55}
+.insider-tip a{font-weight:700;text-decoration:none}
 .source-list{columns:2;column-gap:34px}
 .source-list li{break-inside:avoid;color:var(--muted);font-size:.9rem;margin-bottom:8px}
 footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 @media(max-width:860px){
   header{min-height:80vh}
   .spot-grid{grid-template-columns:1fr}
+  .insider-tip{grid-template-columns:1fr;gap:8px}
+  .tip-tag{justify-self:start}
   .day-head{gap:14px;padding:18px 16px 4px}
   .day-info{padding:4px 16px 10px}
   .spots-wrap{padding:6px 12px 18px}
@@ -218,6 +228,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
       <a href="#day5">Tue &middot; Home</a>
       <a href="#photo-guide">Photo guide</a>
       <a href="#food-guide">Food guide</a>
+      <a href="#insider-tips">Insider tips</a>
       <a href="#sources">Sources</a>
     </div>
   </details>
@@ -252,7 +263,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
         <p>One night for Pike Place, Overlook Walk, waterfront, dinner, cocktails, and the classic Kerry Park skyline frame.</p>
       </article>
     </div>
-    <p class="notice"><b>No planning chores:</b> this version avoids todos and booking decisions. It is meant to be a viewable trip guide.</p>
+    <p class="notice"><b>Guide mode:</b> arrangements are already handled; this page is only the viewable day-by-day trip guide.</p>
   </section>
 
   <section id="itinerary" class="divider">
@@ -360,9 +371,10 @@ footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
                 <div class="kv climate"><span>Best light</span><p>Reflection Lakes from first color through sunrise. Myrtle Falls works later if the mountain remains visible; Narada is better under cloud.</p></div>
                 <div class="callout save"><b>Photo</b> Start low and wide for the lake reflection, then switch to 70-200mm details if wind breaks the mirror.</div>
                 <div class="callout splurge"><b>Trail</b> Do the full Skyline loop only if the summit is showing. If not, use Myrtle Falls, Nisqually Vista, and Narada/Christine Falls as the better return.</div>
+                <div class="callout save"><b>Insider tip</b> Paradise parking can fill by late morning even without timed entry. If the main lot is gone, use the signed overflow at the picnic area or Paradise Valley Road and keep the hike choice flexible.</div>
                 <div class="resto"><p class="mini-h">Food plan</p><ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Mountain%20Goat%20Coffee%20Company%20Packwood" target="_blank" rel="noreferrer"><b>Mountain Goat Coffee</b></a> &mdash; coffee and pastry support before the park if timing allows.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Nachos%20Mexican%20Restaurant%20Packwood" target="_blank" rel="noreferrer"><b>Nachos Mexican Restaurant</b></a> &mdash; good Saturday post-Paradise dinner fit.</li><li><b>Pack lunch</b> &mdash; do not build the day around Paradise food lines.</li></ul></div>
-                <details class="altbox"><summary class="mini-h">Also awesome instead / if you have time</summary><ul class="alt-list"><li><a href="https://www.nps.gov/places/myrtle-falls.htm" target="_blank" rel="noreferrer"><b>Myrtle Falls</b> ↗</a> &mdash; short, classic Rainier waterfall frame if Skyline is too much.</li><li><a href="https://www.nps.gov/mora/planyourvisit/bench-and-snow-lakes-trail.htm" target="_blank" rel="noreferrer"><b>Bench and Snow Lakes</b> ↗</a> &mdash; compact two-hour lake trail away from the Paradise crush.</li><li><a href="https://www.nps.gov/places/christine-falls.htm" target="_blank" rel="noreferrer"><b>Christine Falls</b> ↗</a> &mdash; cloud-day waterfall stop on the drive corridor.</li></ul></details>
-                <div class="bloglinks"><p class="mini-h">Useful links</p><a href="https://www.nps.gov/mora/planyourvisit/skyline-trail.htm" target="_blank" rel="noreferrer">NPS Skyline Trail</a><a href="https://www.nps.gov/mora/learn/photosmultimedia/webcams.htm" target="_blank" rel="noreferrer">NPS webcams</a></div>
+                <details class="altbox"><summary class="mini-h">Also awesome instead / if you have time</summary><ul class="alt-list"><li><a href="https://www.nps.gov/places/myrtle-falls.htm" target="_blank" rel="noreferrer"><b>Myrtle Falls</b> ↗</a> &mdash; short, classic Rainier waterfall frame if Skyline is too much.</li><li><a href="https://www.nps.gov/mora/planyourvisit/bench-and-snow-lakes-trail.htm" target="_blank" rel="noreferrer"><b>Bench and Snow Lakes</b> ↗</a> &mdash; compact two-hour lake trail away from the Paradise crush.</li><li><a href="https://www.nps.gov/places/christine-falls.htm" target="_blank" rel="noreferrer"><b>Christine Falls</b> ↗</a> &mdash; cloud-day waterfall stop on the drive corridor.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ricksecker%20Point%20Mount%20Rainier" target="_blank" rel="noreferrer"><b>Ricksecker Point</b> ↗</a> &mdash; low-effort pullout for a Rainier reveal when the road light is working.</li><li><a href="https://www.nps.gov/places/box-canyon.htm" target="_blank" rel="noreferrer"><b>Box Canyon</b> ↗</a> &mdash; short, graphic canyon stop if mountain views disappear.</li></ul></details>
+                <div class="bloglinks"><p class="mini-h">Useful links</p><a href="https://www.nps.gov/mora/planyourvisit/skyline-trail.htm" target="_blank" rel="noreferrer">NPS Skyline Trail</a><a href="https://www.nps.gov/mora/planyourvisit/congestion.htm" target="_blank" rel="noreferrer">NPS congestion tips</a><a href="https://www.nps.gov/mora/learn/photosmultimedia/webcams.htm" target="_blank" rel="noreferrer">NPS webcams</a></div>
               </div>
               <div class="spot-map"><div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Reflection%20Lakes%20Mount%20Rainier&z=13&output=embed" title="Map of Reflection Lakes Mount Rainier"></iframe></div><a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Reflection%20Lakes%20Mount%20Rainier" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a></div>
             </div>
@@ -413,11 +425,11 @@ footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
               <div class="spot-info">
                 <div class="kv"><span>Access</span><p>Sunrise is the highest vehicle-accessible area in the park at 6,400 feet. Check road status and webcams before committing to the long east-side day.</p></div>
                 <div class="kv climate"><span>Best light</span><p>Tipsoo is a dawn/early morning subject. Fremont is late afternoon to sunset only if the sky is clear enough to reward the walk out.</p></div>
-                <div class="callout save"><b>Photo</b> Hike Naches clockwise so Rainier reveals itself through the strongest part of the loop.</div>
-                <div class="callout splurge"><b>Trail</b> Fremont is the best big-view hike of the trip, but not into a cloud bank. Bring layers and headlamps if staying late.</div>
+                <div class="callout save"><b>Photo</b> Hike Naches clockwise so Rainier reveals itself through the strongest part of the loop. It is the best short-energy answer if the day is already full.</div>
+                <div class="callout splurge"><b>Trail</b> Fremont is the best big-view hike of the trip, but not into a cloud bank. Check cloud elevation, moonrise, and webcams first; bring layers, headlamps, and red-light mode if staying late.</div>
                 <div class="resto"><p class="mini-h">Food plan</p><ul><li><b>Pack lunch</b> &mdash; Sunrise services are seasonal and should not control the day.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=White%20Pass%20Taqueria%20Packwood" target="_blank" rel="noreferrer"><b>White Pass Taqueria</b></a> &mdash; easiest Sunday-night landing after the east side.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cruiser's%20Pizza%20Packwood" target="_blank" rel="noreferrer"><b>Cruiser's Pizza</b></a> &mdash; simplest cabin recovery meal.</li></ul></div>
-                <details class="altbox"><summary class="mini-h">Cloud plan</summary><ul class="alt-list"><li><a href="https://www.nps.gov/thingstodo/hike-to-silver-falls.htm" target="_blank" rel="noreferrer"><b>Silver Falls / Ohanapecosh</b> ↗</a> &mdash; forest and turquoise water work better when the mountain is hidden.</li><li><a href="https://www.nps.gov/mora/planyourvisit/road-status.htm" target="_blank" rel="noreferrer"><b>NPS road status</b> ↗</a> &mdash; check before crossing between Cayuse/Chinook/Sunrise zones.</li></ul></details>
-                <div class="bloglinks"><p class="mini-h">Useful links</p><a href="https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm" target="_blank" rel="noreferrer">NPS Naches Peak Loop</a><a href="https://www.nps.gov/mora/planyourvisit/mount-fremont-lookout.htm" target="_blank" rel="noreferrer">NPS Mount Fremont</a></div>
+                <details class="altbox"><summary class="mini-h">Cloud plan</summary><ul class="alt-list"><li><a href="https://www.nps.gov/thingstodo/hike-to-silver-falls.htm" target="_blank" rel="noreferrer"><b>Silver Falls / Ohanapecosh</b> ↗</a> &mdash; forest and turquoise water work better when the mountain is hidden.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Skyscraper%20Pass%20Mount%20Rainier" target="_blank" rel="noreferrer"><b>Wonderland toward Skyscraper</b> ↗</a> &mdash; from Sunrise, this direction tends to lose crowds faster than the headline overlooks.</li><li><a href="https://www.nps.gov/mora/planyourvisit/road-status.htm" target="_blank" rel="noreferrer"><b>NPS road status</b> ↗</a> &mdash; check before crossing between Cayuse/Chinook/Sunrise zones.</li></ul></details>
+                <div class="bloglinks"><p class="mini-h">Useful links</p><a href="https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm" target="_blank" rel="noreferrer">NPS Naches Peak Loop</a><a href="https://www.nps.gov/mora/planyourvisit/mount-fremont-lookout.htm" target="_blank" rel="noreferrer">NPS Mount Fremont</a><a href="https://www.wta.org/go-outside/seasonal-hikes/regional/mount-rainier-hikes" target="_blank" rel="noreferrer">WTA Rainier hike notes</a></div>
               </div>
               <div class="spot-map"><div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Tipsoo%20Lake%20Mount%20Rainier&z=13&output=embed" title="Map of Tipsoo Lake Mount Rainier"></iframe></div><a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Tipsoo%20Lake%20Mount%20Rainier" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a></div>
             </div>
@@ -496,12 +508,12 @@ footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
             </div>
             <div class="spot-grid">
               <div class="spot-info">
-                <div class="kv"><span>Route</span><p>Park once downtown, then keep the evening walkable: Pike Place, Post Alley, Overlook Walk, waterfront, dinner, and Kerry Park for blue hour.</p></div>
+                <div class="kv"><span>Route</span><p>Park once downtown, then keep the evening walkable: Pike Place lower levels, Sanitary Market, Post Alley, Overlook Walk, waterfront, dinner, and Kerry Park for blue hour.</p></div>
                 <div class="kv climate"><span>Best light</span><p>Kerry Park after sunset if Rainier is visible. If clouds win, shoot Pike Place neon, Post Alley, ferries, and the new waterfront lines.</p></div>
                 <div class="callout save"><b>Photo</b> Use 70-200mm at Kerry to compress Rainier behind the skyline. Use 24-70mm for market and waterfront texture.</div>
-                <div class="callout splurge"><b>Food</b> Le Pichet or Cafe Campagne are the cleanest Monday dinner fits; Zig Zag is the cocktail move below the Market.</div>
-                <div class="resto"><p class="mini-h">Seattle dinner + drinks</p><ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Pichet%20Seattle" target="_blank" rel="noreferrer"><b>Le Pichet</b></a> &mdash; small French bistro near Pike Place.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Campagne%20Seattle" target="_blank" rel="noreferrer"><b>Cafe Campagne</b></a> &mdash; Post Alley French backup if Le Pichet is full or holiday-odd.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Zig%20Zag%20Cafe%20Seattle" target="_blank" rel="noreferrer"><b>Zig Zag Cafe</b></a> &mdash; classic post-dinner cocktail stop on the Hill Climb.</li></ul></div>
-                <div class="bloglinks"><p class="mini-h">Useful links</p><a href="https://www.pikeplacemarket.org/about-pike-place-market/plan-your-visit/" target="_blank" rel="noreferrer">Pike Place visitor page</a><a href="https://www.pikeplacemarket.org/overlook/" target="_blank" rel="noreferrer">Overlook Walk</a><a href="https://www.seattle.gov/parks/parks/kerry-park" target="_blank" rel="noreferrer">Kerry Park</a></div>
+                <div class="callout splurge"><b>Food</b> Skip the original Starbucks line. If you need a quick market hit before dinner, locals point toward Ghost Alley, Mee Sum, Daily Dozen, MarketSpice, or the lower-level shops.</div>
+                <div class="resto"><p class="mini-h">Seattle dinner + drinks</p><ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Le%20Pichet%20Seattle" target="_blank" rel="noreferrer"><b>Le Pichet</b></a> &mdash; small French bistro near Pike Place.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe%20Campagne%20Seattle" target="_blank" rel="noreferrer"><b>Cafe Campagne</b></a> &mdash; Post Alley French backup if Le Pichet is full or holiday-odd.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Ghost%20Alley%20Espresso%20Seattle" target="_blank" rel="noreferrer"><b>Ghost Alley Espresso</b></a> &mdash; better market coffee move than standing in the famous Starbucks line.</li><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Zig%20Zag%20Cafe%20Seattle" target="_blank" rel="noreferrer"><b>Zig Zag Cafe</b></a> &mdash; classic post-dinner cocktail stop on the Hill Climb.</li></ul></div>
+                <div class="bloglinks"><p class="mini-h">Useful links</p><a href="https://www.pikeplacemarket.org/about-pike-place-market/plan-your-visit/" target="_blank" rel="noreferrer">Pike Place visitor page</a><a href="https://www.pikeplacemarket.org/map/" target="_blank" rel="noreferrer">Pike Place map</a><a href="https://www.pikeplacemarket.org/overlook/" target="_blank" rel="noreferrer">Overlook Walk</a><a href="https://www.seattle.gov/parks/parks/kerry-park" target="_blank" rel="noreferrer">Kerry Park</a></div>
               </div>
               <div class="spot-map"><div class="mapwrap"><iframe class="gmap" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Pike%20Place%20Market%20Seattle&z=14&output=embed" title="Map of Pike Place Market Seattle"></iframe></div><a class="gmap-btn" href="https://www.google.com/maps/search/?api=1&amp;query=Pike%20Place%20Market%20Seattle" target="_blank" rel="noreferrer">&#128205; Open in Google Maps &#8617;</a></div>
             </div>
@@ -585,8 +597,50 @@ footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
       <p>Packwood is for casual mountain food. Seattle gets one proper dinner and one cocktail stop near the Market.</p>
     </div>
     <div class="guide-grid">
-      <article class="guide-card food"><h3>Packwood anchors</h3><ul><li><b>Mountain Goat Coffee:</b> breakfast/coffee before park days.</li><li><b>Packwood Brewing:</b> first-night hang and patio beer.</li><li><b>White Pass Taqueria:</b> easiest post-Sunrise dinner.</li><li><b>Cruiser's Pizza:</b> cabin takeout fallback.</li><li><b>Nachos:</b> best Saturday fit; not the Monday transfer meal.</li></ul></article>
-      <article class="guide-card food"><h3>Seattle anchors</h3><ul><li><b>Le Pichet:</b> preferred Monday dinner near Pike Place.</li><li><b>Cafe Campagne:</b> reliable Post Alley backup.</li><li><b>Matt's in the Market:</b> occasion meal if it lines up.</li><li><b>Zig Zag Cafe:</b> cocktail stop below the Market.</li><li><b>Anchorhead Coffee:</b> Tuesday morning target.</li></ul></article>
+      <article class="guide-card food"><h3>Packwood anchors</h3><ul><li><b>Mountain Goat Coffee:</b> breakfast/coffee before park days.</li><li><b>Zest Sri Thai:</b> strongest recent Reddit food rec in Packwood.</li><li><b>Packwood Brewing:</b> first-night hang, patio beer, and well-liked nachos.</li><li><b>White Pass Taqueria:</b> easiest post-Sunrise dinner.</li><li><b>Cruiser's Pizza:</b> cabin takeout fallback.</li></ul></article>
+      <article class="guide-card food"><h3>Seattle anchors</h3><ul><li><b>Le Pichet:</b> preferred Monday dinner near Pike Place.</li><li><b>Cafe Campagne:</b> reliable Post Alley backup.</li><li><b>Matt's in the Market:</b> occasion meal if it lines up.</li><li><b>Ghost Alley / Mee Sum / Daily Dozen:</b> better market graze than the original Starbucks line.</li><li><b>Zig Zag Cafe:</b> cocktail stop below the Market.</li></ul></article>
+    </div>
+  </section>
+
+  <section id="insider-tips" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">Reddit + Local Research</p>
+      <h2>Insider tips worth adding</h2>
+      <p>These are the practical extras that were not explicit in the first pass: crowd pivots, photo timing checks, and food/market moves locals repeat.</p>
+    </div>
+    <div class="tip-stack">
+      <article class="insider-tip">
+        <div class="tip-tag">Access</div>
+        <div><h3>Offline everything before the park gate</h3><p>NPS recommends downloading the park section of the NPS app for offline use, and Reddit trip reports repeat the same point: cell service is thin, fees are cashless, and passes should be ready on the phone before you lose signal.</p></div>
+      </article>
+      <article class="insider-tip">
+        <div class="tip-tag">Paradise</div>
+        <div><h3>Have a parking fallback, not just a trail fallback</h3><p>Paradise and Sunrise lots can fill by late morning. For Paradise, use the signed overflow at the Picnic Area or Paradise Valley Road, then choose between full Skyline, Myrtle Falls, Nisqually Vista, or Narada/Christine based on the mountain.</p></div>
+      </article>
+      <article class="insider-tip">
+        <div class="tip-tag">Pullouts</div>
+        <div><h3>String together small stops when Rainier hides</h3><p>Ricksecker Point, Narada Falls, Christine Falls, Box Canyon, and Reflection Lakes are easy pressure-release stops. They keep the day photo-rich without forcing a long hike through low cloud.</p></div>
+      </article>
+      <article class="insider-tip">
+        <div class="tip-tag">Skyline</div>
+        <div><h3>Late Skyline works only with a real cutoff</h3><p>Reddit hikers like clockwise Skyline and the Golden Gate shortcut for trimming distance, but September sunset is earlier than peak summer. If the mountain disappears or the clock gets tight, take the short Paradise loop version and save energy for the next dawn.</p></div>
+      </article>
+      <article class="insider-tip">
+        <div class="tip-tag">Fremont</div>
+        <div><h3>Check moon and cloud elevation before a sunset push</h3><p>For Fremont, a clear summit forecast is not enough. Look at cloud layers by elevation, moonrise/moon phase, and the Sunrise webcam; a bright moon can help the hike out but weakens Milky Way chances.</p></div>
+      </article>
+      <article class="insider-tip">
+        <div class="tip-tag">Sunrise</div>
+        <div><h3>Lose crowds by walking away from the headline view</h3><p>Naches is the efficient scenic loop. If Sunrise is crowded and you still want quiet, Reddit hikers point toward the Wonderland Trail in the Skyscraper direction as a faster way to thin out people.</p></div>
+      </article>
+      <article class="insider-tip">
+        <div class="tip-tag">Packwood</div>
+        <div><h3>Upgrade the Packwood food board</h3><p>Recent Mt. Rainier Reddit food recs call out Zest Sri Thai as a standout, Mountain Goat for coffee and baked goods, and Packwood Brewing for patio food and nachos. Keep Cruiser's Pizza as the easy cabin fallback.</p></div>
+      </article>
+      <article class="insider-tip">
+        <div class="tip-tag">Market</div>
+        <div><h3>Do Pike Place like a local, not a line</h3><p>Go early, explore the lower levels and Sanitary Market, use the official Market map, and treat Overlook Walk as part of the route. Skip the original Starbucks queue; Ghost Alley Espresso, Mee Sum, Daily Dozen, MarketSpice, and Pasta Casalinga are better uses of limited time.</p></div>
+      </article>
     </div>
   </section>
 
@@ -600,9 +654,15 @@ footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
       <li><a href="https://my.tripsy.app/i/1034523?code=1ba045db40ec7563291278ce158a2121" target="_blank" rel="noreferrer">Tripsy shared itinerary</a> &mdash; confirmed travel frame.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/fees.htm" target="_blank" rel="noreferrer">NPS fees and timed-entry status</a> &mdash; 2026 park access note.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/road-status.htm" target="_blank" rel="noreferrer">NPS road status</a> and <a href="https://www.nps.gov/mora/learn/photosmultimedia/webcams.htm" target="_blank" rel="noreferrer">NPS webcams</a> &mdash; live park checks.</li>
+      <li><a href="https://www.nps.gov/mora/planyourvisit/congestion.htm" target="_blank" rel="noreferrer">NPS congestion guidance</a> &mdash; Paradise/Sunrise parking, offline app, and crowd timing.</li>
       <li><a href="https://www.nps.gov/places/reflection-lakes.htm" target="_blank" rel="noreferrer">Reflection Lakes</a>, <a href="https://www.nps.gov/mora/planyourvisit/skyline-trail.htm" target="_blank" rel="noreferrer">Skyline Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm" target="_blank" rel="noreferrer">Naches Peak Loop</a>, and <a href="https://www.nps.gov/mora/planyourvisit/mount-fremont-lookout.htm" target="_blank" rel="noreferrer">Mount Fremont</a>.</li>
       <li><a href="https://www.nps.gov/thingstodo/hike-to-silver-falls.htm" target="_blank" rel="noreferrer">Silver Falls</a> and <a href="https://www.nps.gov/places/grove-of-the-patriarchs-trailhead.htm" target="_blank" rel="noreferrer">Grove of the Patriarchs closure</a>.</li>
-      <li><a href="https://www.pikeplacemarket.org/about-pike-place-market/plan-your-visit/" target="_blank" rel="noreferrer">Pike Place Market</a>, <a href="https://www.pikeplacemarket.org/overlook/" target="_blank" rel="noreferrer">Overlook Walk</a>, and <a href="https://www.seattle.gov/parks/parks/kerry-park" target="_blank" rel="noreferrer">Kerry Park</a>.</li>
+      <li><a href="https://www.wta.org/go-outside/seasonal-hikes/regional/mount-rainier-hikes" target="_blank" rel="noreferrer">WTA Mount Rainier seasonal hikes</a> &mdash; Naches and Ohanapecosh timing notes.</li>
+      <li><a href="https://www.reddit.com/r/Washington/comments/156afvo/recommendations_mt_rainier/" target="_blank" rel="noreferrer">Reddit Rainier recommendations</a>, <a href="https://www.reddit.com/r/nationalparks/comments/1t6q9kh/day_trip_short_trails_1_to_2_hours_for_mt_rainier/" target="_blank" rel="noreferrer">short-trail ideas</a>, and <a href="https://www.reddit.com/r/PNWhiking/comments/1qpjjsd/insight_on_rainier_trails/" target="_blank" rel="noreferrer">Sunrise trail crowd notes</a>.</li>
+      <li><a href="https://www.reddit.com/r/PNWhiking/comments/1ld34ig/best_rainier_hikes_to_do_in_the_late/" target="_blank" rel="noreferrer">Reddit late-day Rainier hike notes</a>, <a href="https://www.reddit.com/r/PNWhiking/comments/vwv58y/tips_for_sunset_hike_at_mt_fremont_fire_lookout/" target="_blank" rel="noreferrer">Fremont sunset/stars tips</a>, and <a href="https://www.reddit.com/r/PNWhiking/comments/165ks3f/mount_fremont_for_sunset_hike_with_cloud/" target="_blank" rel="noreferrer">Fremont cloud/inversion tips</a>.</li>
+      <li><a href="https://www.pikeplacemarket.org/about-pike-place-market/plan-your-visit/" target="_blank" rel="noreferrer">Pike Place Market</a>, <a href="https://www.pikeplacemarket.org/map/" target="_blank" rel="noreferrer">official Market map</a>, <a href="https://www.pikeplacemarket.org/overlook/" target="_blank" rel="noreferrer">Overlook Walk</a>, and <a href="https://www.seattle.gov/parks/parks/kerry-park" target="_blank" rel="noreferrer">Kerry Park</a>.</li>
+      <li><a href="https://www.reddit.com/r/AskSeattle/comments/1n6k7ya/seattle_natives_in_pike_place_market_what_are_the/" target="_blank" rel="noreferrer">Reddit Pike Place local picks</a> and <a href="https://www.reddit.com/r/AskSeattle/comments/1fwwuzm/pike_place/" target="_blank" rel="noreferrer">Pike Place timing/route tips</a>.</li>
+      <li><a href="https://www.reddit.com/r/MtRainier/comments/1u455uu/foodrestaurant_recs_in_around_mt_rainier_packwood/" target="_blank" rel="noreferrer">Reddit Packwood food thread</a> &mdash; Zest Sri Thai, Mountain Goat, and Packwood Brewing notes.</li>
       <li><a href="https://www.packwoodbrewingco.com/" target="_blank" rel="noreferrer">Packwood Brewing</a>, <a href="https://visitrainier.com/mountain-goat-coffee-company/" target="_blank" rel="noreferrer">Mountain Goat Coffee</a>, <a href="https://cruiserspizza.com/" target="_blank" rel="noreferrer">Cruiser's Pizza</a>, and <a href="https://visitrainier.com/nachos-restaurant/" target="_blank" rel="noreferrer">Nachos</a>.</li>
       <li><a href="https://www.lepichetseattle.com/" target="_blank" rel="noreferrer">Le Pichet</a>, <a href="https://cafecampagne.com/" target="_blank" rel="noreferrer">Cafe Campagne</a>, <a href="https://zigzagseattle.com/" target="_blank" rel="noreferrer">Zig Zag Cafe</a>, and <a href="https://anchorheadcoffee.com/" target="_blank" rel="noreferrer">Anchorhead Coffee</a>.</li>
     </ul>
