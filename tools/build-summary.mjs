@@ -18,6 +18,16 @@ const manifest = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'scorecard.
 
 const status = fs.existsSync(statusPath) ? JSON.parse(fs.readFileSync(statusPath, 'utf8')) : {};
 
+// directory slug -> scoreboard data-trip token used in index.html markup
+const TOKEN = {
+  portugal: 'portugal', 'portugal-crete': 'portugal-crete', 'madeira-crete': 'madeira-crete',
+  'portugal-sicily': 'portugal-sicily', 'madeira-sicily': 'madeira-sicily', hawaii: 'hawaii',
+  croatia: 'croatia', 'italy-salento-amalfi': 'italy', 'sardinia-corsica': 'sardinia',
+  'greece-via-lisbon': 'greece', 'turkish-riviera': 'turkey', 'sicily-malta': 'sicily',
+  spain: 'spain', 'california-pacific-coast': 'california', 'southern-france': 'southernfrance',
+  balkans: 'balkans',
+};
+
 const slugs = fs
   .readdirSync(dataDir, { withFileTypes: true })
   .filter((d) => d.isDirectory() && fs.existsSync(path.join(dataDir, d.name, 'main.json')))
@@ -34,8 +44,10 @@ for (const slug of slugs) {
   const st = status[slug];
   if (!st) problems.push(`${slug}: no entry in section-status.json`);
 
+  if (!TOKEN[slug]) problems.push(`${slug}: no scoreboard token mapping`);
   trips.push({
     slug,
+    token: TOKEN[slug],
     title: main.title,
     displayName: sc.displayName,
     blurb: sc.blurb,
