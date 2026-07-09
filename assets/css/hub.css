@@ -41,6 +41,8 @@
   transition: background .15s ease, border-color .15s ease;
 }
 .hub-btn:hover { background: #f2f7f4; border-color: #cfe0d6; }
+.hub-btn:active:not(:disabled) { transform: translateY(1px); }
+.hub-btn:focus-visible { outline: 2px solid transparent; box-shadow: 0 0 0 3px rgba(31, 111, 120, .35); border-color: var(--c1, #1f6f78); }
 .hub-btn:disabled { opacity: .45; cursor: default; }
 
 /* ---- Feature 1: re-weight sliders --------------------------------------- */
@@ -61,6 +63,7 @@
   text-align: right;
 }
 .weight-axis input[type="range"] { grid-column: 1 / -1; width: 100%; accent-color: var(--c1, #1f6f78); margin: 2px 0 0; }
+.weight-axis input[type="range"]:focus-visible { outline: 2px solid var(--c1, #1f6f78); outline-offset: 4px; border-radius: 999px; }
 .weight-axis.off label,
 .weight-axis.off .wv { color: #9aa39c; }
 .weight-panel .custom-flag {
@@ -93,9 +96,14 @@
   padding: 7px 13px; cursor: pointer; user-select: none;
 }
 .filter-toggle:hover { border-color: #cfe0d6; }
+/* A selected facet reads as a filled "chip" so active filters are obvious at a
+ * glance — a light teal tint + teal ring keeps the checkbox legible. */
+.filter-toggle:has(input:checked) { background: #e7f2ef; border-color: var(--c1, #1f6f78); color: #14494f; box-shadow: inset 0 0 0 1px var(--c1, #1f6f78); }
+.filter-toggle:has(input:focus-visible) { outline: 2px solid transparent; box-shadow: 0 0 0 3px rgba(31, 111, 120, .35); }
 .filter-toggle input { accent-color: var(--c1, #1f6f78); margin: 0; }
 .filter-budget { display: inline-flex; align-items: center; gap: 10px; font-size: .82rem; font-weight: 700; color: #334649; }
 .filter-budget input[type="range"] { accent-color: var(--c1, #1f6f78); width: 160px; }
+.filter-budget input[type="range"]:focus-visible { outline: 2px solid var(--c1, #1f6f78); outline-offset: 4px; border-radius: 999px; }
 
 /* ---- Feature 2: compare ------------------------------------------------- */
 .cmp-toggle {
@@ -110,6 +118,8 @@
 }
 .cmp-toggle:hover { border-color: #cfe0d6; }
 .cmp-toggle.on { background: var(--c1, #1f6f78); color: #fff; border-color: var(--c1, #1f6f78); }
+.cmp-toggle:active:not(:disabled) { transform: translateY(1px); }
+.cmp-toggle:focus-visible { outline: 2px solid transparent; box-shadow: 0 0 0 3px rgba(31, 111, 120, .35); }
 .cmp-toggle:disabled { opacity: .4; cursor: default; }
 .cmp-card-toggle {
   position: absolute; top: 10px; right: 10px; z-index: 3;
@@ -118,7 +128,33 @@
 }
 .cmp-row-toggle { display: inline-block; margin-top: 6px; font-size: .68rem; padding: 3px 9px; }
 
-.compare-bar { padding: 16px 18px; }
+/* Fixed bottom drawer: appears the moment a trip is selected, wherever you
+ * are on the page — no scrolling to find the comparison. */
+.compare-bar {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+  z-index: 80;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 10px 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, .25);
+  animation: cmp-slide-up .18s ease-out;
+}
+.compare-bar .hub-panel-head { margin-bottom: 0; }
+.compare-bar .cmp-actions { display: inline-flex; gap: 8px; align-items: center; }
+.compare-bar .cmp-hint { margin-top: 4px; }
+.compare-bar.expanded {
+  padding: 16px 18px;
+  max-height: min(62vh, 560px);
+  overflow-y: auto;
+}
+.compare-bar.expanded .hub-panel-head { margin-bottom: 10px; }
+@keyframes cmp-slide-up {
+  from { transform: translateY(14px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
 .cmp-hint { margin: 0; font-size: .84rem; color: #5f675f; }
 .cmp-scroll { overflow-x: auto; }
 .cmp-table { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 420px; }
@@ -134,6 +170,7 @@
   font-size: 1rem; font-weight: 900; line-height: 1; padding: 0 2px;
 }
 .cmp-remove:hover { color: #8d3f2b; }
+.cmp-remove:focus-visible { outline: 2px solid transparent; box-shadow: 0 0 0 3px rgba(184, 93, 66, .35); border-radius: 6px; }
 
 /* ---- Feature 4: completeness meter + gated Recommended badge ------------- */
 .sl-meter { margin-top: 10px; display: grid; gap: 5px; }
@@ -152,6 +189,15 @@
   border-radius: 999px; padding: 3px 10px; margin-bottom: 8px;
 }
 .sl-rec-badge.pending { color: #a23625; background: #f8e7e3; border-color: #eccabf; }
+
+/* ---- Motion preference --------------------------------------------------- */
+/* Respect a reduced-motion request: no drawer slide-in, no press/hover motion,
+ * no animated meter fill. State still changes instantly; only motion is cut. */
+@media (prefers-reduced-motion: reduce) {
+  .compare-bar { animation: none; }
+  .hub-btn, .cmp-toggle, .filter-toggle, .sl-meter-fill { transition: none; }
+  .hub-btn:active:not(:disabled), .cmp-toggle:active:not(:disabled) { transform: none; }
+}
 
 /* ---- Phase 7: print rules for the comparison hub ------------------------ */
 @media print {

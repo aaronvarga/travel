@@ -7,7 +7,7 @@
   const state = {
     weights: null,      // { budget:2, weather:1, ... } — null until board loads defaults
     filters: {},        // { europe:true, maxConn:1, underUsd:11000, hasSwim:true }
-    selected: [],       // array of slugs chosen for compare (max 3)
+    selected: [],       // array of slugs chosen for compare (max 5)
   };
 
   function get() { return state; }

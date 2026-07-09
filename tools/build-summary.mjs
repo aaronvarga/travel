@@ -52,6 +52,7 @@ for (const slug of slugs) {
     displayName: sc.displayName,
     blurb: sc.blurb,
     recommended: main.recommended === true,
+    excluded: typeof main.excluded === 'string' ? main.excluded : null,
     axes: sc.axes,
     weightDefaults: sc.weightDefaults,
     budget: sc.budget,

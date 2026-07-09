@@ -73,30 +73,30 @@
   },
   "greece-via-lisbon": {
     "recommended": false,
-    "complete": 11,
+    "complete": 17,
     "total": 17,
     "sections": {
       "overview": true,
       "stays": true,
-      "calendar": false,
+      "calendar": true,
       "map": true,
-      "air-travel": false,
+      "air-travel": true,
       "getting-around": true,
-      "entry": false,
+      "entry": true,
       "health-check": true,
       "timing": true,
-      "todo": false,
+      "todo": true,
       "budget": true,
       "totals": true,
       "tips": true,
-      "packing": false,
-      "social": false,
+      "packing": true,
+      "social": true,
       "balance": true,
       "status": true
     }
   },
   "hawaii": {
-    "recommended": true,
+    "recommended": false,
     "complete": 17,
     "total": 17,
     "sections": {
@@ -168,7 +168,7 @@
     }
   },
   "madeira-sicily": {
-    "recommended": true,
+    "recommended": false,
     "complete": 17,
     "total": 17,
     "sections": {
@@ -240,7 +240,7 @@
     }
   },
   "portugal-sicily": {
-    "recommended": true,
+    "recommended": false,
     "complete": 17,
     "total": 17,
     "sections": {
@@ -264,25 +264,25 @@
     }
   },
   "sardinia-corsica": {
-    "recommended": false,
-    "complete": 11,
+    "recommended": true,
+    "complete": 17,
     "total": 17,
     "sections": {
       "overview": true,
       "stays": true,
-      "calendar": false,
+      "calendar": true,
       "map": true,
-      "air-travel": false,
+      "air-travel": true,
       "getting-around": true,
-      "entry": false,
+      "entry": true,
       "health-check": true,
       "timing": true,
-      "todo": false,
+      "todo": true,
       "budget": true,
       "totals": true,
       "tips": true,
-      "packing": false,
-      "social": false,
+      "packing": true,
+      "social": true,
       "balance": true,
       "status": true
     }

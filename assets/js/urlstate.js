@@ -6,8 +6,8 @@
 (function () {
   'use strict';
   const V = 'v1';
-  const AXES = ['budget', 'weather', 'swim', 'variety', 'ease', 'food', 'risk', 'pto'];
-  const DEFAULT_W = { budget: 2, weather: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, pto: 1 };
+  const AXES = ['budget', 'weather', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty', 'pto'];
+  const DEFAULT_W = { budget: 2, weather: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, nights: 1, novelty: 1, pto: 0 };
 
   // ---- parse URL -> patch --------------------------------------------------
   function parse() {
@@ -33,7 +33,7 @@
     if (Object.keys(filters).length) patch.filters = filters;
 
     const c = q.get('c');
-    if (c) patch.selected = c.split(',').filter(Boolean).slice(0, 3);
+    if (c) patch.selected = c.split(',').filter(Boolean).slice(0, 5);
 
     return patch;
   }

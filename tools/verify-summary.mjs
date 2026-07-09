@@ -14,8 +14,8 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const summary = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'trips-summary.json'), 'utf8'));
 
-// Original /40 = budget*2 + weather + swim + variety + ease + food + risk (no pto).
-const SCORED_40 = ['weather', 'swim', 'variety', 'ease', 'food', 'risk'];
+// /50 = budget*2 + weather + swim + variety + ease + food + risk + nights + novelty (no pto).
+const SCORED_40 = ['weather', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty'];
 
 const bad = [];
 for (const t of summary.trips) {
@@ -28,4 +28,4 @@ if (bad.length) {
   for (const b of bad) console.error(`  ${b}`);
   process.exit(1);
 }
-console.log(`✓ all ${summary.trips.length} scorecards match baked /40 totals`);
+console.log(`✓ all ${summary.trips.length} scorecards match baked /50 totals`);
