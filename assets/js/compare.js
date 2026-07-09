@@ -1,10 +1,10 @@
-/* compare.js — Feature 2: side-by-side compare (2-3 trips).
- * Adds compare toggles to shortlist cards + scoreboard rows (cap 3) and renders
+/* compare.js — Feature 2: side-by-side compare (2-5 trips).
+ * Adds compare toggles to shortlist cards + scoreboard rows (cap 5) and renders
  * a column-per-trip diff drawer in #compare-bar with best-value highlighting.
  * Selection lives in Store.selected (serialized to the URL by urlstate.js). */
 (function () {
   'use strict';
-  const MAX = 3;
+  const MAX = 5;
 
   const Compare = (window.Compare = {
     toggle(slug) {
@@ -70,27 +70,47 @@
     });
 
     if (!bar) return;
-    if (sel.length < 2) {
+    if (sel.length === 0) {
       bar.hidden = true;
       bar.replaceChildren();
-      if (sel.length === 1) {
-        bar.hidden = false;
-        const hint = el('p', 'cmp-hint', 'Pick 1-2 more trips to compare side by side.');
-        bar.append(headBar(sel), hint);
-      }
       return;
     }
+    // Docked bar stays compact; the comparison table only renders when the
+    // user expands it, so selecting trips is never intrusive.
     bar.hidden = false;
-    bar.replaceChildren(headBar(sel), buildTable(B, sel));
+    const showTable = expanded && sel.length >= 2;
+    bar.classList.toggle('expanded', showTable);
+    if (showTable) {
+      bar.replaceChildren(headBar(B, sel), buildTable(B, sel));
+    } else if (sel.length === 1) {
+      const name = B.bySlug[sel[0]].displayName;
+      const hint = el('p', 'cmp-hint', name + ' selected — pick at least 1 more trip (up to 5 total) to unlock the side-by-side comparison.');
+      bar.replaceChildren(headBar(B, sel), hint);
+    } else {
+      bar.replaceChildren(headBar(B, sel));
+    }
   }
 
-  function headBar(sel) {
+  let expanded = false;
+
+  function headBar(B, sel) {
     const head = el('div', 'hub-panel-head');
-    head.appendChild(el('h3', null, 'Compare ' + sel.length + ' trips'));
+    const title = sel.length === 1
+      ? '1 trip selected'
+      : 'Comparing: ' + sel.map((s) => B.bySlug[s].displayName).join(' vs ');
+    head.appendChild(el('h3', null, title));
+    const right = el('div', 'cmp-actions');
+    if (sel.length >= 2) {
+      const tog = el('button', 'hub-btn cmp-expand', expanded ? 'Hide comparison ▾' : 'Show comparison ▴');
+      tog.type = 'button';
+      tog.addEventListener('click', () => { expanded = !expanded; Store.touch({ reason: 'compare-expand' }); });
+      right.appendChild(tog);
+    }
     const clear = el('button', 'hub-btn', 'Clear');
     clear.type = 'button';
-    clear.addEventListener('click', () => Compare.clear());
-    head.appendChild(clear);
+    clear.addEventListener('click', () => { expanded = false; Compare.clear(); });
+    right.appendChild(clear);
+    head.appendChild(right);
     return head;
   }
 

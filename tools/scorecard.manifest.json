@@ -8,8 +8,17 @@
     { "id": "ease",    "label": "Ease",    "weightDefault": 1 },
     { "id": "food",    "label": "Food",    "weightDefault": 1 },
     { "id": "risk",    "label": "Risk",    "weightDefault": 1 },
-    { "id": "pto",     "label": "PTO",     "weightDefault": 1 }
+    { "id": "nights",  "label": "Nights",  "weightDefault": 1 },
+    { "id": "novelty", "label": "Novelty", "weightDefault": 1 },
+    { "id": "pto",     "label": "PTO",     "weightDefault": 0 }
   ],
+  "nightsRubric": {
+    "_comment": "Hotel nights away - more vacation for the same trip overhead. 12+ -> 5, 11 -> 4, 10 -> 3, 9 -> 2, <=8 -> 1.",
+    "12": 5, "11": 4, "10": 3, "9": 2, "8": 1
+  },
+  "noveltyRubric": {
+    "_comment": "Route overlap vs places already visited (California, Maui, Polignano a Mare, Monopoli, Alberobello, Matera, Ostuni, Locorotondo, Bari, Split, Dubrovnik, Hvar, Santorini, Mykonos, Rhodes, Positano, Capri, Naples). 5 = new country/region, no overlap; 4 = mostly new but familiar destination type or one visited gateway; 3 = destination visited before, new islands/towns; 2 = route includes visited places/region; 1 = mostly repeats visited places."
+  },
   "ptoRubric": {
     "_comment": "Fewer PTO days burned = higher score. Keyed by PTO days.",
     "6": 5, "7": 4, "8": 3, "9": 2, "10": 1

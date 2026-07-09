@@ -36,9 +36,19 @@
       "weightDefault": 1
     },
     {
+      "id": "nights",
+      "label": "Nights",
+      "weightDefault": 1
+    },
+    {
+      "id": "novelty",
+      "label": "Novelty",
+      "weightDefault": 1
+    },
+    {
       "id": "pto",
       "label": "PTO",
-      "weightDefault": 1
+      "weightDefault": 0
     }
   ],
   "budgetTargets": {
@@ -53,14 +63,17 @@
       "displayName": "Balkan Coast Road Trip",
       "blurb": "Most adventurous",
       "recommended": false,
+      "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 3,
         "swim": 5,
         "variety": 5,
         "ease": 1,
         "food": 3,
         "risk": 2,
+        "nights": 5,
+        "novelty": 4,
         "pto": 3
       },
       "weightDefaults": {
@@ -71,7 +84,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 10600,
@@ -94,7 +109,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 23,
+      "totalBaked": 30,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -104,10 +119,11 @@
     {
       "slug": "california-pacific-coast",
       "token": "california",
-      "title": "California Pacific Coast Road Trip - June 2027",
+      "title": "California Pacific Coast Road Trip - July 2027",
       "displayName": "California Pacific Coast",
       "blurb": "Best domestic road trip",
       "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 3,
         "weather": 4,
@@ -116,6 +132,8 @@
         "ease": 4,
         "food": 4,
         "risk": 2,
+        "nights": 5,
+        "novelty": 1,
         "pto": 4
       },
       "weightDefaults": {
@@ -126,7 +144,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 9600,
@@ -136,20 +156,20 @@
       },
       "pto": {
         "days": 7,
-        "nights": 11
+        "nights": 12
       },
       "facets": {
         "continent": "north-america",
         "maxConnections": 1,
         "swimTempF": [
-          64,
-          66
+          66,
+          68
         ],
         "noPassport": true,
         "singleTicket": true,
         "hasSwim": false
       },
-      "totalBaked": 27,
+      "totalBaked": 33,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -163,6 +183,7 @@
       "displayName": "Croatia",
       "blurb": "Best proven Europe value",
       "recommended": false,
+      "excluded": "Repeats the 2026 Croatia trip (Split/Hvar/Korcula) — excluded from the recommendation by family decision",
       "axes": {
         "budget": 4,
         "weather": 5,
@@ -171,6 +192,8 @@
         "ease": 3,
         "food": 3,
         "risk": 3,
+        "nights": 5,
+        "novelty": 1,
         "pto": 3
       },
       "weightDefaults": {
@@ -181,7 +204,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 8600,
@@ -204,7 +229,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 29,
+      "totalBaked": 35,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -218,6 +243,7 @@
       "displayName": "Greece via Lisbon",
       "blurb": "Iconic contender",
       "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 3,
         "weather": 5,
@@ -226,6 +252,8 @@
         "ease": 3,
         "food": 3,
         "risk": 3,
+        "nights": 4,
+        "novelty": 4,
         "pto": 4
       },
       "weightDefaults": {
@@ -236,7 +264,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 9300,
@@ -259,9 +289,9 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 28,
+      "totalBaked": 36,
       "completeness": {
-        "complete": 11,
+        "complete": 17,
         "total": 17
       },
       "href": "locations/greece-via-lisbon/index.html"
@@ -272,7 +302,8 @@
       "title": "Hawaii · Oahu · Big Island — June 2027",
       "displayName": "Hawaii",
       "blurb": "Best pure score",
-      "recommended": true,
+      "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 4,
         "weather": 4,
@@ -328,14 +359,17 @@
       "displayName": "Italy: Salento-Amalfi",
       "blurb": "Best Italy stretch",
       "recommended": false,
+      "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 5,
         "swim": 4,
         "variety": 5,
         "ease": 3,
         "food": 5,
         "risk": 2,
+        "nights": 5,
+        "novelty": 2,
         "pto": 3
       },
       "weightDefaults": {
@@ -346,7 +380,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 13200,
@@ -369,7 +405,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 28,
+      "totalBaked": 33,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -383,6 +419,7 @@
       "displayName": "Madeira + Crete",
       "blurb": "Best-fit hybrid: hiking + warm water",
       "recommended": true,
+      "excluded": null,
       "axes": {
         "budget": 3,
         "weather": 5,
@@ -391,6 +428,8 @@
         "ease": 2,
         "food": 4,
         "risk": 2,
+        "nights": 5,
+        "novelty": 5,
         "pto": 3
       },
       "weightDefaults": {
@@ -401,7 +440,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 11600,
@@ -424,7 +465,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 28,
+      "totalBaked": 38,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -437,7 +478,8 @@
       "title": "Madeira + Sicily Hybrid - June 2027",
       "displayName": "Madeira + Sicily",
       "blurb": "Italy-bias hiking hybrid",
-      "recommended": true,
+      "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 2,
         "weather": 5,
@@ -493,6 +535,7 @@
       "displayName": "Portugal Algarve & Madeira",
       "blurb": "Value fallback",
       "recommended": true,
+      "excluded": null,
       "axes": {
         "budget": 5,
         "weather": 4,
@@ -501,6 +544,8 @@
         "ease": 4,
         "food": 4,
         "risk": 3,
+        "nights": 5,
+        "novelty": 5,
         "pto": 3
       },
       "weightDefaults": {
@@ -511,7 +556,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 7500,
@@ -534,7 +581,7 @@
         "singleTicket": true,
         "hasSwim": false
       },
-      "totalBaked": 31,
+      "totalBaked": 41,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -548,6 +595,7 @@
       "displayName": "Portugal + Crete",
       "blurb": "Recommended pick",
       "recommended": true,
+      "excluded": null,
       "axes": {
         "budget": 3,
         "weather": 5,
@@ -602,7 +650,8 @@
       "title": "Portugal + Sicily Hybrid - June 2027",
       "displayName": "Portugal + Sicily",
       "blurb": "Mainland Italy hybrid",
-      "recommended": true,
+      "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 2,
         "weather": 5,
@@ -611,6 +660,8 @@
         "ease": 2,
         "food": 5,
         "risk": 2,
+        "nights": 5,
+        "novelty": 5,
         "pto": 3
       },
       "weightDefaults": {
@@ -621,7 +672,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 12400,
@@ -644,7 +697,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 27,
+      "totalBaked": 37,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -657,7 +710,8 @@
       "title": "Sardinia + Corsica — June 2027",
       "displayName": "Sardinia & Corsica",
       "blurb": "Best Italian-island swim",
-      "recommended": false,
+      "recommended": true,
+      "excluded": null,
       "axes": {
         "budget": 3,
         "weather": 5,
@@ -701,7 +755,7 @@
       },
       "totalBaked": 28,
       "completeness": {
-        "complete": 11,
+        "complete": 17,
         "total": 17
       },
       "href": "locations/sardinia-corsica/index.html"
@@ -713,6 +767,7 @@
       "displayName": "Sicily & Malta",
       "blurb": "Food + variety stretch",
       "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 2,
         "weather": 4,
@@ -721,6 +776,8 @@
         "ease": 2,
         "food": 5,
         "risk": 2,
+        "nights": 5,
+        "novelty": 5,
         "pto": 3
       },
       "weightDefaults": {
@@ -731,7 +788,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 10400,
@@ -754,7 +813,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 27,
+      "totalBaked": 37,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -768,6 +827,7 @@
       "displayName": "Southern France",
       "blurb": "Shortest Europe route",
       "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 2,
         "weather": 4,
@@ -823,6 +883,7 @@
       "displayName": "Spain",
       "blurb": "Best architecture",
       "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 3,
         "weather": 3,
@@ -831,6 +892,8 @@
         "ease": 4,
         "food": 4,
         "risk": 3,
+        "nights": 5,
+        "novelty": 5,
         "pto": 2
       },
       "weightDefaults": {
@@ -841,7 +904,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 8800,
@@ -864,7 +929,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 27,
+      "totalBaked": 37,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -878,6 +943,7 @@
       "displayName": "Turkish Riviera",
       "blurb": "Warm-water Europe wild card",
       "recommended": false,
+      "excluded": null,
       "axes": {
         "budget": 2,
         "weather": 5,
@@ -886,6 +952,8 @@
         "ease": 3,
         "food": 4,
         "risk": 2,
+        "nights": 5,
+        "novelty": 5,
         "pto": 3
       },
       "weightDefaults": {
@@ -896,7 +964,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 10200,
@@ -919,7 +989,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 27,
+      "totalBaked": 37,
       "completeness": {
         "complete": 11,
         "total": 17

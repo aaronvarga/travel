@@ -83,10 +83,22 @@
     const visible = B.trips.filter((t) => B.matches(t, filters));
     const visibleSlugs = new Set(visible.map((t) => t.slug));
 
-    // Sort scoreboard rows by weighted total (desc), tiebreak by budget floor (asc).
+    // Sort scoreboard rows by weighted total (desc). Ties break on hard data:
+    // cap-clean bands (ceil <= capUsd) before cap-breaching ones, then fewer
+    // PTO days, then lower budget ceiling, then lower floor.
     const ordered = visible.slice().sort((a, b) => {
+      // Explicitly excluded trips (family decision, e.g. a repeat) sink below
+      // every ranked trip regardless of score; their data stays visible.
+      const ex = (t) => (t.excluded ? 1 : 0);
+      if (ex(a) !== ex(b)) return ex(a) - ex(b);
       const d = B.total(b, weights) - B.total(a, weights);
-      return d !== 0 ? d : a.budget.floorUsd - b.budget.floorUsd;
+      if (d !== 0) return d;
+      const cap = B.budgetTargets.capUsd || 15000;
+      const clean = (t) => (t.budget.ceilUsd <= cap ? 0 : 1);
+      return (clean(a) - clean(b)) ||
+        ((a.pto?.days ?? 99) - (b.pto?.days ?? 99)) ||
+        (a.budget.ceilUsd - b.budget.ceilUsd) ||
+        (a.budget.floorUsd - b.budget.floorUsd);
     });
 
     // Compare-selection state applies to every row/card regardless of order or

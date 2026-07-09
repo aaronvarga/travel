@@ -84,6 +84,35 @@
       { "label": "Italy ZTL guide", "url": "https://ztl-italia.com/guide" }
     ]
   },
+  "france": {
+    "name": "France (Corsica)",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.",
+    "etias": {
+      "status": "Expected to launch late 2026 (repeatedly delayed — not yet confirmed).",
+      "fee": "€20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).",
+      "note": "ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180.",
+    "idp": "Strongly recommended — a US license is valid for short stays, but carry an IDP as an official translation; some rental agencies require it. Get one from AAA before you go.",
+    "driving": "Rental fleet is mostly manual — book an automatic early. Corsica's roads are narrow, steep and winding; drive unhurried. Min age ~21; under-25 surcharge ~€5–25/day.",
+    "tolls": "No toll motorways on Corsica — the island has no autoroute network, only toll-free N/D roads. (Mainland France uses péage autoroutes, paid by card or a Bip&Go tag.)",
+    "ztl": "",
+    "money": {
+      "cards": "Cards accepted in hotels, restaurants and shops.",
+      "cash": "Carry €100–150 — village cafés, small beaches and markets can be cash-only.",
+      "tipping": "Service is included (service compris); round up or leave 5–10% for good service."
+    },
+    "water": "Tap water is safe throughout Corsica and mainland France.",
+    "emergency": "112 (EU-wide). Also SAMU medical 15.",
+    "esim": "Holafly or Airalo Eurolink work well; buy before departure.",
+    "sources": [
+      { "label": "US State Dept — Schengen passport rules", "url": "https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "France.fr — renting a car and driving in France", "url": "https://www.france.fr/en/article/renting-car-and-driving-france/" },
+      { "label": "France toll roads guide", "url": "https://tollguru.com/france-toll" }
+    ]
+  },
   "usa": {
     "name": "USA (Hawaii)",
     "domestic": true,
