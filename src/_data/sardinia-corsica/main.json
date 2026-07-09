@@ -1074,87 +1074,72 @@
     "totalBaked": 34
   },
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Planning timeline for the Jun 10&ndash;23, 2027 Sardinia + Corsica itinerary. The order that matters: lock the open-jaw flights, then Bonifacio lodging and the Corsica ferry, then the automatic Sardinia car and the Gulf of Orosei boat &mdash; the pieces that sell out or price up first.</p>\n",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Jul 12-25, 2026",
+        "when": "Now-Jul 2026",
+        "tone": "watch",
+        "title": "Track, do not panic-buy",
+        "note": "Inventory opening is a search-alert trigger, not a cash-fare deadline.",
+        "items": [
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Track the open-jaw and Corfu-free exit alternatives</b>; do not buy until car/ferry constraints are understood."
+        ]
+      },
+      {
+        "when": "Aug-Nov 2026",
+        "tone": "watch",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
+        "items": [
+          "<b>Hold refundable Bonifacio and Sardinia family stays</b> first; Bonifacio walkable rooms and Ogliastra beach bases are the tight inventory.",
+          "<b>Keep cancellation buffers</b> until the Corsica ferry and car plan are settled."
+        ]
+      },
+      {
+        "when": "Dec 2026-Feb 2027",
+        "tone": "watch",
+        "title": "Cars, ferries, and route anchors",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
+        "items": [
+          "<b>Verify rental-car rules before villas</b>; some contracts forbid taking an Italian rental into France/Corsica, so the default remains park-and-walk or separate transport.",
+          "<b>Book the Sardinia-Corsica ferry early if taking a vehicle</b>; for foot passengers, confirm schedule once 2027 sailings load (<a href=\"https://www.corsica-ferries.co.uk/\" target=\"_blank\" rel=\"noreferrer\">Corsica Ferries</a>)."
+        ]
+      },
+      {
+        "when": "Jan-Mar 2027",
         "tone": "hot",
-        "title": "Flight inventory opens: track the open-jaw, do not auto-buy",
-        "note": "These dates are roughly when most major-airline seats become searchable, not when cash fares are cheapest.",
+        "title": "Buy flights in the real window",
+        "note": "For peak-summer Europe, this is the practical cash-buy window: <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> puts U.S.-Europe fares near 94 days out, while <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> gives 2-8 months for international trips and says to shift earlier for peak periods.",
         "items": [
-          "<b>Map the open-jaw options for PIT&rarr;Olbia/Alghero in and Cagliari&rarr;PIT out.</b> Record which European hub (Rome, Munich, Frankfurt, Paris) gives the cleanest single-ticket routing and note the connection traps.",
-          "<b>Set Google Flights alerts for the exact Jun 10 / Jun 23 dates plus nearby gateways.</b> Track the full family-of-4 price, not one-seat teaser fares.",
-          "<b>Confirm the itinerary is protected on one ticket.</b> With kids, through-checked bags and missed-connection cover matter more than a small saving from stitching two one-ways.",
-          "<b>Set a buy threshold now</b> around the $608&ndash;701 pp / $3,200&ndash;4,600 family band so you recognise a good fare when it appears."
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
         ]
       },
       {
-        "when": "By Aug 15, 2026",
-        "title": "Lock lodging — Bonifacio is the tight one",
+        "when": "72 hours to 2 days out",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
         "items": [
-          "<b>Book Bonifacio for Jun 14-15 first.</b> Corsica&#39;s citadel town has limited family rooms and prices hard in mid-June &mdash; this is the scarcest lodging on the whole trip, so grab it before anything else.",
-          "<b>Book Alghero for Jun 11-13</b> just outside the ZTL, with parking and easy old-town / beach access.",
-          "<b>Book the Ogliastra base for Jun 16-19</b> (Santa Maria Navarrese / Baunei area) close to the Orosei boat departure and the Goloritz&egrave; trailhead.",
-          "<b>Book Cagliari for Jun 20-22</b> near Poetto or the old town, and save every cancellation deadline to the calendar."
+          "<b>Cala Goloritze reservations open 72 hours before visit</b> and are capped, so set the exact reminder (<a href=\"https://www.costadibaunei.it/en/cala-goloritze/\" target=\"_blank\" rel=\"noreferrer\">Costa di Baunei</a>).",
+          "<b>La Pelosa access is controlled in season</b>; standard places can open early, with most places released 2 days before at 09:00 (<a href=\"https://spiaggialapelosa.it/en/\" target=\"_blank\" rel=\"noreferrer\">La Pelosa</a>).",
+          "<b>Book Gulf of Orosei boat days 30-60 days out</b> and keep a wind backup."
         ]
       },
       {
-        "when": "By Sep 15, 2026",
-        "title": "Reserve the car, the Corsica ferry, and airport logistics",
-        "items": [
-          "<b>Reserve the automatic Sardinia rental</b> for OLB/AHO pickup Jun 11 and Cagliari drop Jun 23; automatics are scarce in Sardinia, so lock it early and confirm the one-way drop fee.",
-          "<b>Get the cross-border clause in writing.</b> Most contracts forbid taking the car to Corsica &mdash; plan Bonifacio as a foot-passenger day and book the Santa Teresa&harr;Bonifacio ferry accordingly.",
-          "<b>Book Pittsburgh airport parking or a ride</b> for the Thu Jun 10 after-work departure.",
-          "<b>Add child booster seats</b> to the rental or pack travel boosters instead of hoping the counter has the right sizes."
-        ]
-      },
-      {
-        "when": "Jan 10-Mar 12, 2027",
-        "tone": "watch",
-        "title": "Target cash-flight buy window",
-        "note": "For Europe this is the serious cash-buy window: fare data clusters around ~3 months out, with risk rising inside ~50 days.",
-        "items": [
-          "<b>Run weekly fare checks for the full open-jaw.</b> Buy when a protected itinerary lands in or under the target band, not just because the calendar opened.",
-          "<b>Keep the routing-quality filter on.</b> One protected ticket with sane connections and seats together beats a fragile cheap fare.",
-          "<b>Do not drift past mid-April without a reason</b> &mdash; roughly 50 days out is where Europe fares usually stop being forgiving.",
-          "<b>After purchase, keep tracking</b> and use airline credit/rebooking if a non-basic fare drops."
-        ]
-      },
-      {
-        "when": "Jan 15-Mar 15, 2027",
-        "tone": "watch",
-        "title": "Book the activities that bottleneck the trip",
-        "items": [
-          "<b>Book the Gulf of Orosei boat for Fri Jun 18</b> &mdash; the premium day. Choose a small-group or private charter over the big cattle boat, and pre-pay to hold it.",
-          "<b>Reserve Cala Goloritz&egrave; access for Thu Jun 17</b> under whatever permit/cap system is live for 2027, with a weather swap plan.",
-          "<b>Pre-book La Pelosa timed tickets</b> for the Jun 13 north-coast beach day as soon as the summer window opens.",
-          "<b>Confirm ferry sailings and any Bonifacio beach/taxi plan</b> for Jun 14-16 before mid-June crowds lock them up."
-        ]
-      },
-      {
-        "when": "Jan 15-Apr 15, 2027",
-        "title": "Documents, insurance, money, and phones",
-        "items": [
-          "<b>Check all passports by Jan 15.</b> Target validity well past the trip; Schengen wants at least 3 months beyond departure.",
-          "<b>Check ETIAS on the official EU site by Feb 1</b> and apply once it is live for 2027 &mdash; it covers both Italy and France (Corsica).",
-          "<b>Buy travel insurance by Jan 31</b> to keep any pre-existing-condition waiver window tied to the first deposit; confirm boats and hikes are covered.",
-          "<b>Get International Driving Permits by Apr 15</b> for every adult who may drive &mdash; strongly recommended for Italy and required-in-practice on the France/Corsica side.",
-          "<b>Set up eSIMs, card travel notices, and a no-foreign-fee card with a PIN.</b>"
-        ]
-      },
-      {
-        "when": "May 20-Jun 7, 2027",
+        "when": "Final month",
         "tone": "done",
-        "title": "Final two-week run-up",
+        "title": "Final checks",
         "items": [
-          "<b>May 20:</b> reconfirm flights, seats, baggage, the one-way car pickup hours, ferry times, and late-arrival instructions for each base.",
-          "<b>May 27:</b> download offline maps for northwest Sardinia, Bonifacio, Ogliastra, and Cagliari; save tickets, ferry, and boat confirmations to Apple Wallet/files.",
-          "<b>Jun 1:</b> check Orosei / ferry weather patterns, screenshot every confirmation, and make the household / pet / mail plan.",
-          "<b>Jun 7:</b> pack passports, IDPs, meds, chargers, adapters, reef/water shoes, swimsuits and one change of clothes per person in carry-ons, plus motion-sickness meds for the boat day."
+          "<b>Passports:</b> Schengen requires validity 3+ months after planned EU departure and issue within the last 10 years (<a href=\"https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm\" target=\"_blank\" rel=\"noreferrer\">EU</a>); renew before winter if anyone is close.",
+          "<b>ETIAS:</b> no July 2026 action; the U.S. State Dept. says ETIAS is planned for late 2026, so apply only after the official system launches (<a href=\"https://travel.state.gov/en/international-travel/planning/guidance/europe.html\" target=\"_blank\" rel=\"noreferrer\">State Dept.</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Re-check ferry strikes, mistral/wind, and beach access rules</b> during the final week."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> this trip has two real pinch points &mdash; scarce Bonifacio lodging with a cross-border car rule that forces the ferry as a foot passenger, and the premium Gulf of Orosei boat day. Lock both early and keep one Ogliastra day flexible until the sea forecast is known."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> puts international trips in a 2-8 month window, and <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget."
   },
   "parts": [
     {

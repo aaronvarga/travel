@@ -1122,60 +1122,71 @@
     }
   ],
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Exact planning sequence for the Jun 8-21, 2027 Iceland route. Timed lagoons and boats sell out in summer, so tracking and booking are separate decisions.</p>\n    ",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Jul-Sep 2026",
-        "tone": "hot",
-        "title": "Confirm the nonstop and start tracking fares",
-        "note": "The seasonal PIT-KEF nonstop is the whole logistics advantage — verify it, then buy when the family total is right.",
-        "items": [
-          "<b>Confirm Icelandair still runs the PIT-KEF summer nonstop for 2027</b> and watch the family-of-4 total (target ~$2.6k).",
-          "<b>Hold a one-stop backup</b> via BOS/EWR/JFK/IAD in case the seasonal route is cut. (PLAY is no longer a US option.)",
-          "<b>Set the airfare gate:</b> buy under ~$3.6k family including seats and bags."
-        ]
-      },
-      {
-        "when": "By Oct 2026",
-        "title": "Hold refundable lodging in all four bases",
-        "items": [
-          "<b>Reykjavík:</b> 2-night downtown apartment with a kitchen.",
-          "<b>South Coast:</b> 4-night Hvolsvöllur/Vík family room (books out early).",
-          "<b>Höfn/southeast:</b> 3 nights near Jökulsárlón or in Höfn.",
-          "<b>Back west:</b> 3 nights (Reykjavík then Keflavík — not Grindavík)."
-        ]
-      },
-      {
-        "when": "Winter 2026-27",
+        "when": "Now-Jul 2026",
         "tone": "watch",
-        "title": "Car, documents, and the big-ticket activities",
+        "title": "Track, do not panic-buy",
+        "note": "Inventory opening is a search-alert trigger, not a cash-fare deadline.",
         "items": [
-          "<b>Reserve one SUV, KEF to KEF,</b> with Gravel (GP) + Sand/Ash (SAAP) insurance.",
-          "<b>Book the Sólheimajökull glacier walk</b> (Tröll age-8 tour) and confirm the shoe-size minimum.",
-          "<b>Check passports, ETIAS status, travel insurance, IDPs,</b> and buy an eSIM."
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Verify the seasonal PIT-KEF/nonstop advantage</b> and set alerts; buy early only if that specific nonstop is both live and fairly priced."
         ]
       },
       {
-        "when": "60-30 days out",
-        "title": "Lock the timed slots",
+        "when": "Aug-Nov 2026",
+        "tone": "watch",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
         "items": [
-          "<b>Book the Blue Lagoon</b> (earliest slot on fly-home day) and the Jökulsárlón amphibian boat.",
-          "<b>Reserve the Secret Lagoon slot</b> and the Reykjavík whale/puffin boat.",
-          "<b>Pre-book any Höfn langoustine dinner</b> (Humarhöfnin takes reservations; Pakkhús does not)."
+          "<b>Hold refundable rural lodging</b> for the South Coast/glacier-lagoon sequence first; remote family rooms are the scarce resource.",
+          "<b>Keep flexible cancellation</b> until flights and the exact road sequence are final."
         ]
       },
       {
-        "when": "Final 2 weeks",
+        "when": "Dec 2026-Feb 2027",
+        "tone": "watch",
+        "title": "Cars, ferries, and route anchors",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
+        "items": [
+          "<b>Reserve a cancellable automatic/SUV</b> after flights are credible; Iceland summer fleets are limited and vehicle type matters.",
+          "<b>Do not overpay for specialty insurance blindly</b>; compare rental terms with card/travel coverage before pickup."
+        ]
+      },
+      {
+        "when": "Dec 2026-Mar 2027",
+        "tone": "hot",
+        "title": "Buy flights in the real window",
+        "note": "The general Europe window still applies, but a seasonal nonstop or small-market routing can justify buying earlier once the schedule and fare are acceptable.",
+        "items": [
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
+        ]
+      },
+      {
+        "when": "60-90 days out",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
+        "items": [
+          "<b>Book Blue Lagoon/Sky Lagoon and glacier/boat tours 60-90 days out</b>; no universal official release window was found, but peak-season operator capacity is finite.",
+          "<b>Keep weather-flexible backups</b> for glacier lagoon boats and high-wind driving days."
+        ]
+      },
+      {
+        "when": "Final month",
         "tone": "done",
-        "title": "Operational checks",
+        "title": "Final checks",
         "items": [
-          "<b>Check volcanic + road status</b> on vedur.is and safetravel.is; install the 112 Iceland app.",
-          "<b>Download offline maps</b> for the whole Route 1 corridor and Reykjanes.",
-          "<b>Pack layers, waterproofs, swimsuits, sturdy boots, sunglasses, an eye mask</b> (midnight sun), and printed confirmations."
+          "<b>Passports:</b> Schengen requires validity 3+ months after planned EU departure and issue within the last 10 years (<a href=\"https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm\" target=\"_blank\" rel=\"noreferrer\">EU</a>); renew before winter if anyone is close.",
+          "<b>ETIAS:</b> no July 2026 action; the U.S. State Dept. says ETIAS is planned for late 2026, so apply only after the official system launches (<a href=\"https://travel.state.gov/en/international-travel/planning/guidance/europe.html\" target=\"_blank\" rel=\"noreferrer\">State Dept.</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Re-check road.is/weather alerts, F-road closures, and tour status</b> during the final week."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> the whole plan hinges on the nonstop and the timed slots. Confirm the flight first, book the lagoons and boats early, and keep a fallback soak in case the Blue Lagoon closes for volcanic activity."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> puts international trips in a 2-8 month window, and <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget."
   },
   "scorecard": {
     "displayName": "Iceland",

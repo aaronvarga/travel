@@ -806,90 +806,72 @@
     }
   ],
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Exact planning timeline for the Jun 5-14, 2027 Hawaii itinerary. This route is domestic, but the timed reservations are unforgiving: Pearl Harbor releases weeks ahead and Hanauma Bay releases only two days ahead.</p>\n",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Jul 10-19, 2026",
-        "tone": "hot",
-        "title": "Flight inventory opens: start tracking, do not auto-buy",
-        "note": "These dates are when most major-airline seats should become searchable, not when domestic cash fares are expected to be cheapest.",
-        "items": [
-          "<b>Map the protected route options for PIT to Honolulu plus Kona to PIT.</b> Record good connection cities, bad connection traps, baggage rules, and whether the itinerary is truly protected on one ticket.",
-          "<b>Set Google Flights alerts for the exact dates plus nearby gateways.</b> Track the full family-of-4 price, not just one-seat teaser fares.",
-          "<b>Check award tickets or refundable fares when the schedule opens.</b> Early booking can make sense for award space, refundable fares, or a genuinely below-target cash fare.",
-          "<b>Set a buy threshold now.</b> Decide the fare where convenience, protection, and seat selection justify buying before the statistical cheap window."
-        ]
-      },
-      {
-        "when": "By Aug 9, 2026",
-        "tone": "",
-        "title": "Book lodging before fees creep up",
-        "items": [
-          "<b>Book Waikiki for Jun 5-8</b> with total resort/parking fees visible; kitchen or breakfast access matters.",
-          "<b>Book Kona for Jun 9-11</b> with parking, laundry, and a kitchen or easy grocery access.",
-          "<b>Book Volcano Village for Jun 12-13</b> with heat/dehumidifier clarity and easy night-driving logistics.",
-          "<b>Calendar cancellation reviews</b> for Dec 15, Mar 15, and May 1."
-        ]
-      },
-      {
-        "when": "By Sep 8, 2026",
-        "tone": "",
-        "title": "Reserve cars and local transportation",
-        "items": [
-          "<b>Reserve a one-day Oahu car for Tue Jun 8</b> for the North Shore loop; do not pay Waikiki parking for the whole stay unless the math proves it.",
-          "<b>Reserve the Big Island car for Jun 9-14</b> with KOA pickup/drop, full insurance, and enough trunk space.",
-          "<b>Confirm Waikiki airport transfer plan</b> for Jun 5 arrival and HNL return for the inter-island flight.",
-          "<b>Reserve PIT parking or a ride plan</b> for the Sat Jun 5 departure."
-        ]
-      },
-      {
-        "when": "Dec 7, 2026-Feb 15, 2027",
+        "when": "Now-Jul 2026",
         "tone": "watch",
-        "title": "Book paid activities and make the one-splurge call",
+        "title": "Track, do not panic-buy",
+        "note": "The right action now is visibility, not locking cash fares or prepaid cars.",
         "items": [
-          "<b>Dec 7:</b> book or hold the Kealakekua/Captain Cook afternoon snorkel for Thu Jun 10 if that is the chosen splurge.",
-          "<b>Jan 15:</b> decide snorkel vs luau; do not carry both in the baseline budget unless flights/lodging came in low.",
-          "<b>Feb 1:</b> reserve any Volcano Village dinner or guided stargazing option that has a real cancellation policy.",
-          "<b>Feb 15:</b> buy reef-safe mineral sunscreen, rash guards, and water shoes before resort prices become the fallback."
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Track East Coast/Midwest-Hawaii routing now</b>, but do not buy cash tickets just because the calendar opened."
         ]
       },
       {
-        "when": "Jan 15-May 29, 2027",
-        "tone": "",
-        "title": "IDs, insurance, weather, and forgotten basics",
-        "items": [
-          "<b>Jan 15:</b> confirm adult IDs are REAL ID-compliant or plan to use passports for domestic flights.",
-          "<b>Jan 31:</b> buy travel insurance if the nonrefundable flight/lodging exposure is high enough to matter.",
-          "<b>May 15:</b> check NPS/USGS volcano alerts, vog forecasts, and any Hawaii Volcanoes NP closures.",
-          "<b>May 22:</b> refill prescriptions, confirm pet/house/mail coverage, and check airline baggage dimensions.",
-          "<b>May 29:</b> pack swimsuits in carry-ons, reef-safe sunscreen, rash guards, water shoes, rain shells for Volcano, warm layers for Mauna Kea VIS, motion-sickness meds, and reusable water bottles."
-        ]
-      },
-      {
-        "when": "Apr 12-Jun 4, 2027",
-        "tone": "hot",
-        "title": "Timed Hawaii reservations",
-        "items": [
-          "<b>Apr 12 at 3:00pm HST / 9:00pm ET:</b> book Pearl Harbor USS Arizona tickets for Mon Jun 7 as soon as the 56-day window opens.",
-          "<b>May 7:</b> reserve Diamond Head for Sun Jun 6 only if it replaces or precedes Hanauma; non-resident slots can be reserved up to 30 days out.",
-          "<b>Jun 4 at 7:00am HST / 1:00pm ET:</b> book Hanauma Bay for Sun Jun 6 the moment the two-day window opens.",
-          "<b>Jun 4-5:</b> download every timed ticket, QR code, and parking confirmation for offline access."
-        ]
-      },
-      {
-        "when": "Apr 14-May 15, 2027",
+        "when": "Aug-Nov 2026",
         "tone": "watch",
-        "title": "Target cash-flight buy window",
-        "note": "For domestic cash fares, Google's historical low range is about 21-52 days out, while Expedia's 2026 data is even closer. For this family Hawaii open-jaw, use the earlier side of that range so seats and routing do not get ugly.",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
         "items": [
-          "<b>Run twice-weekly fare checks for PIT-HNL and KOA-PIT.</b> Buy when the open-jaw is under target with sane West Coast connections and seats together.",
-          "<b>Do not buy in July 2026 unless the fare is refundable, award space is excellent, or the cash fare is clearly below the route target.</b>",
-          "<b>Keep HNL-KOA inter-island separate.</b> Lock the morning/midday island hop once the long-haul flights are set and the schedule is stable.",
-          "<b>After purchase, keep tracking prices</b> and use airline credits/rebooking if a non-basic-economy fare drops."
+          "<b>Hold refundable family condos/suites</b> on Oahu and the Big Island once calendars load; Hawaii family inventory and legal short-term-rental supply are the real early risk.",
+          "<b>Do not prepay</b> unless the rate is meaningfully better and the cancellation terms are clear."
+        ]
+      },
+      {
+        "when": "Jan-Mar 2027",
+        "tone": "watch",
+        "title": "Cars and inter-island logistics",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
+        "items": [
+          "<b>Reserve cancellable cars</b> once flights are likely; re-shop monthly because ordinary rentals can move closer in.",
+          "<b>Lock inter-island logistics</b> only after the main flights are purchased."
+        ]
+      },
+      {
+        "when": "Mar-May 2027",
+        "tone": "hot",
+        "title": "Buy flights in the real window",
+        "note": "Hawaii is domestic pricing but scarce from many East/Midwest routings; use the early side of the 1-3 month window rather than waiting until the final few weeks.",
+        "items": [
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
+        ]
+      },
+      {
+        "when": "60 days to 2 days out",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
+        "items": [
+          "<b>Haleakala sunrise releases 60 days and 2 days ahead at 07:00 HST</b> (<a href=\"https://www.recreation.gov/ticket/facility/253731\" target=\"_blank\" rel=\"noreferrer\">Recreation.gov</a>).",
+          "<b>USS Arizona releases 8-week and 24-hour tickets daily at 15:00 HST</b> (<a href=\"https://www.nps.gov/valr/uss-arizona-memorial-programs.htm\" target=\"_blank\" rel=\"noreferrer\">NPS</a>).",
+          "<b>Diamond Head and Waianapanapa open up to 30 days ahead</b>; Hanauma Bay opens 2 days ahead at 07:00 HST (<a href=\"https://gostateparks.hawaii.gov/diamondhead\" target=\"_blank\" rel=\"noreferrer\">Diamond Head</a>, <a href=\"https://gostateparks.hawaii.gov/waianapanapa\" target=\"_blank\" rel=\"noreferrer\">Waianapanapa</a>, <a href=\"https://www.honolulu.gov/dpr/hanauma-bay-nature-preserve/\" target=\"_blank\" rel=\"noreferrer\">Hanauma Bay</a>)."
+        ]
+      },
+      {
+        "when": "Final month",
+        "tone": "done",
+        "title": "Final checks",
+        "items": [
+          "<b>REAL ID check:</b> every traveler 18+ should have a REAL ID-compliant license or passport for domestic flights; TSA enforcement began in 2025 (<a href=\"https://www.tsa.gov/realid\" target=\"_blank\" rel=\"noreferrer\">TSA</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Offline kit:</b> download confirmations, maps, rental contracts, gate codes, and backup contact numbers.",
+          "<b>Confirm reef-safe sunscreen rules, surf/current reports, and volcano/park alerts</b> before beach and park days."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> Hanauma Bay cannot be solved months ahead. Set the Jun 4, 2027 alarm now, and have payment/autofill ready before the 7:00am HST release."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> U.S. summer cash fares usually improve much closer in. <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> shows July/August domestic lows around 13-43 days out, <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> uses 1-3 months as the domestic window, and <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day domestic bookings were the most expensive category in its 2026 data. For family trips, start alerts earlier and buy on the early side of the window when schedule quality matters."
   },
   "scorecard": {
     "displayName": "Hawaii",

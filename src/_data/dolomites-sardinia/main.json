@@ -1128,59 +1128,72 @@
     }
   ],
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Exact planning sequence for the Jun 27-Jul 11, 2027 route. Transatlantic inventory opens in late 2026; tracking and buying are separate decisions.</p>\n    ",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Late 2026",
-        "tone": "hot",
-        "title": "Transatlantic inventory opens: track, then buy",
-        "note": "Buy the open-jaw once the routing and total family price work; aim for the low band by December.",
+        "when": "Now-Jul 2026",
+        "tone": "watch",
+        "title": "Track, do not panic-buy",
+        "note": "Inventory opening is a search-alert trigger, not a cash-fare deadline.",
         "items": [
-          "<b>Track PIT -> VCE / OLB -> PIT as a family-of-4 open-jaw.</b> Watch connections via JFK, EWR, PHL, MUC, CDG, and FCO.",
-          "<b>Set the airfare gate.</b> Target ~$5.4k family, high case ~$7k including seats and bags.",
-          "<b>Book the VCE -> OLB Volotea hop</b> once dates are firm, and pre-buy 2-4 checked bags online."
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Track Venice/Milan/Bologna plus Sardinia exit options</b>; the protected air chain matters more than buying the first fare."
+        ]
+      },
+      {
+        "when": "Sep-Dec 2026",
+        "tone": "watch",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
+        "items": [
+          "<b>Hold refundable Dolomites family lodging</b> near the exact hiking base first; July mountain rooms with parking and kid-friendly layouts go early.",
+          "<b>Hold refundable Sardinia beach lodging</b> once the island airports and sequence are credible."
         ]
       },
       {
         "when": "Jan-Feb 2027",
-        "title": "Hold refundable lodging, apartments first",
-        "items": [
-          "<b>Venice:</b> 2 nights Cannaregio/Dorsoduro apartment with AC (or Mestre for value).",
-          "<b>San Vito di Cadore:</b> 5 nights, apartment with kitchen and parking, plate cleared for Cortina’s ZTL.",
-          "<b>Cannigione + Cala Gonone:</b> 3 nights each, water-near apartments with kitchens."
-        ]
-      },
-      {
-        "when": "Spring 2027",
         "tone": "watch",
-        "title": "Cars, documents, and the timed-slot sites",
+        "title": "Cars, ferries, and route anchors",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
         "items": [
-          "<b>Reserve two rental cars</b> (Mestre/VCE and Olbia); get an IDP from AAA.",
-          "<b>Book the Tre Cime toll slot (auronzo.info) and Lago di Braies car reservation (prags.bz).</b>",
-          "<b>Reserve the Seceda cableway timed slot</b> and check passports, ETIAS, and travel insurance."
+          "<b>Reserve cancellable automatic cars</b> for both mainland and Sardinia if needed; re-shop after flights are bought.",
+          "<b>Confirm any domestic Italy flight/ferry bridge</b> before making either base nonrefundable."
         ]
       },
       {
-        "when": "60-30 days out",
-        "title": "Turn the plan into bookings",
+        "when": "Jan-Apr 2027",
+        "tone": "hot",
+        "title": "Buy flights in the real window",
+        "note": "For peak-summer Europe, this is the practical cash-buy window: <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> puts U.S.-Europe fares near 94 days out, while <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> gives 2-8 months for international trips and says to shift earlier for peak periods.",
         "items": [
-          "<b>Book the La Maddalena and Gulf of Orosei boat days</b> — peak July sells out.",
-          "<b>Grab the La Pelosa access ticket</b> in its release wave (~2 weeks and 48h out).",
-          "<b>Decide La Pelosa vs a second Costa Smeralda day, and the Su Gorropu plan.</b>"
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
         ]
       },
       {
-        "when": "Final 2 weeks",
+        "when": "72 days to 72 hours out",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
+        "items": [
+          "<b>Tre Cime shuttle/road access requires online reservation/payment in the summer system</b>; watch 2027 release timing (<a href=\"https://www.drei-zinnen.bz/en/ticket\" target=\"_blank\" rel=\"noreferrer\">Drei Zinnen</a>).",
+          "<b>Lago di Braies summer access uses online day-stay/parking controls after the unrestricted early-season period</b>; check the 2027 dates (<a href=\"https://www.pragsparking.com/en\" target=\"_blank\" rel=\"noreferrer\">Prags Parking</a>).",
+          "<b>Cala Goloritze opens 72 hours before visit</b> and caps access, so set the reminder after the Sardinia day is fixed (<a href=\"https://www.costadibaunei.it/en/cala-goloritze/\" target=\"_blank\" rel=\"noreferrer\">Costa di Baunei</a>)."
+        ]
+      },
+      {
+        "when": "Final month",
         "tone": "done",
-        "title": "Operational checks",
+        "title": "Final checks",
         "items": [
-          "<b>Download offline maps</b> for Venice, the Dolomites, Sardinia, and the trailheads.",
-          "<b>Reconfirm flight times, car counters, ZTL registration, and mountain weather.</b>",
-          "<b>Pack layers, sun gear, trail shoes, swimsuits, euro cash, and printed confirmations.</b>"
+          "<b>Passports:</b> Schengen requires validity 3+ months after planned EU departure and issue within the last 10 years (<a href=\"https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm\" target=\"_blank\" rel=\"noreferrer\">EU</a>); renew before winter if anyone is close.",
+          "<b>ETIAS:</b> no July 2026 action; the U.S. State Dept. says ETIAS is planned for late 2026, so apply only after the official system launches (<a href=\"https://travel.state.gov/en/international-travel/planning/guidance/europe.html\" target=\"_blank\" rel=\"noreferrer\">State Dept.</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Re-check Dolomites trail/snow conditions and Sardinia beach access rules</b> during the final two weeks."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> the plan works because the open-jaw and the VCE->OLB hop kill the backtracking. Book the flights early — they are the budget swing — and register the Cortina plate the day you book lodging."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> puts international trips in a 2-8 month window, and <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget."
   },
   "scorecard": {
     "displayName": "Venice, Dolomites & Sardinia",

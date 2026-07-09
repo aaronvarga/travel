@@ -1931,90 +1931,72 @@
     }
   ],
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Exact planning timeline for the Jun 10-23, 2027 Portugal, Algarve, and Madeira itinerary. This one is simpler than the hybrids, but the rental-car chain and Madeira trail/flight pieces still need dates on the calendar.</p>\n",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Jul 15-28, 2026",
+        "when": "Now-Jul 2026",
+        "tone": "watch",
+        "title": "Track, do not panic-buy",
+        "note": "Inventory opening is a search-alert trigger, not a cash-fare deadline.",
+        "items": [
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Track Portugal open-jaw and Madeira add-on options</b>; the right move now is alerts plus routing validation."
+        ]
+      },
+      {
+        "when": "Sep-Nov 2026",
+        "tone": "watch",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
+        "items": [
+          "<b>Hold refundable Algarve/Madeira family bases</b> with pool/AC/parking; ordinary Lisbon/Porto hotel inventory can wait longer.",
+          "<b>Keep cancellation buffers</b> until flights and island hops are firm."
+        ]
+      },
+      {
+        "when": "Dec 2026-Feb 2027",
+        "tone": "watch",
+        "title": "Cars, ferries, and route anchors",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
+        "items": [
+          "<b>Reserve cancellable cars</b> for Algarve/Madeira if driving; re-shop after airfare purchase.",
+          "<b>Confirm pickup/drop and toll-transponder rules</b> before finalizing."
+        ]
+      },
+      {
+        "when": "Jan-Mar 2027",
         "tone": "hot",
-        "title": "Flight inventory opens: start tracking, do not auto-buy",
-        "note": "These dates are when most major-airline seats should become searchable, not when cash fares are expected to be cheapest.",
+        "title": "Buy flights in the real window",
+        "note": "For peak-summer Europe, this is the practical cash-buy window: <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> puts U.S.-Europe fares near 94 days out, while <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> gives 2-8 months for international trips and says to shift earlier for peak periods.",
         "items": [
-          "<b>Map the protected route options for PIT to Lisbon plus Funchal to PIT.</b> Record good connection cities, bad connection traps, baggage rules, and whether the itinerary is truly protected on one ticket.",
-          "<b>Set Google Flights alerts for the exact dates plus nearby gateways.</b> Track the full family-of-4 price, not just one-seat teaser fares.",
-          "<b>Check award tickets or refundable fares when the schedule opens.</b> Early booking can make sense for award space, refundable fares, or a genuinely below-target cash fare.",
-          "<b>Set a buy threshold now.</b> Decide the fare where convenience, protection, and seat selection justify buying before the statistical cheap window."
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
         ]
       },
       {
-        "when": "By Aug 21, 2026",
-        "tone": "",
-        "title": "Book lodging before family rooms thin out",
+        "when": "60-90 days out",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
         "items": [
-          "<b>Book Cascais for Jun 11-12</b> with parking or a clear no-car plan.",
-          "<b>Book Carvoeiro for Jun 13-17</b> with pool, parking, washer, and fast access to beaches/boats.",
-          "<b>Book Ponta do Sol or a nearby Madeira base for Jun 18-22</b> with reliable parking and road access.",
-          "<b>Add cancellation reminders</b> for Feb 15, Apr 15, and May 15."
+          "<b>Madeira classified PR hikes require online payment/reservation before hiking</b>; same-day works only if slots remain (<a href=\"https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/faq-s-taxas-percursos-pedestres-classificados/frequently-asked-questions-fees-classified-walking-routes.html\" target=\"_blank\" rel=\"noreferrer\">IFCN</a>).",
+          "<b>Book Algarve cave/boat days 60-90 days out</b> with a wind backup.",
+          "<b>Reserve only true must-have restaurants or tours 30-60 days out</b>."
         ]
       },
       {
-        "when": "By Sep 18, 2026",
-        "tone": "",
-        "title": "Reserve the transportation chain",
-        "items": [
-          "<b>Reserve mainland car pickup at LIS and drop at FAO</b>; include Via Verde/toll transponder, automatic if needed, booster seats, and trunk space.",
-          "<b>Reserve Madeira car pickup/drop at FNC</b> with full insurance and a car small enough for steep village roads.",
-          "<b>Confirm lodging parking rules in writing</b> before free-cancellation deadlines pass.",
-          "<b>Reserve PIT parking or a ride plan</b> for the Thu Jun 10 departure."
-        ]
-      },
-      {
-        "when": "Jan 10-Mar 12, 2027",
-        "tone": "watch",
-        "title": "Target cash-flight buy window",
-        "note": "For Europe, use this as the serious cash-buy window: Google data points to about 94 days out for Europe, with risk rising inside 50 days; other fare guidance clusters around 3-5 months or 2-8 months for international coach.",
-        "items": [
-          "<b>Run weekly fare checks for the PIT-LIS / FNC-PIT open-jaw.</b> Buy when the protected itinerary lands under target, not simply because seats opened.",
-          "<b>Keep the Faro-to-Madeira leg coordinated but separate in the decision.</b> Do not lock a weak long-haul fare just to solve the internal flight early.",
-          "<b>Do not wait past Apr 21, 2027 without a specific reason.</b> That is about 50 days before departure, where Google's Europe data says prices usually start becoming less forgiving.",
-          "<b>After purchase, keep tracking prices</b> and use airline credits/rebooking if a non-basic-economy fare drops."
-        ]
-      },
-      {
-        "when": "Jan 15-Mar 31, 2027",
-        "tone": "watch",
-        "title": "Book paid activities and timed entries",
-        "items": [
-          "<b>Mar 1:</b> book Sintra/Regaleira or Pena timed entry for Sat Jun 12.",
-          "<b>Mar 15:</b> book Ponta da Piedade or Benagil boat choices for the Algarve days, with a wind/sea-state backup.",
-          "<b>Mar 31:</b> buy or calendar Slide & Splash tickets for Wed Jun 16 if that stays the kid-first day.",
-          "<b>Jan 15:</b> check Madeira SIMplifica rules for PR trails so the May permit window does not surprise you."
-        ]
-      },
-      {
-        "when": "Jan 15-May 22, 2027",
-        "tone": "",
-        "title": "Documents, permits, and money details",
-        "items": [
-          "<b>Check all passports by Jan 15.</b> Target validity through at least Dec 23, 2027 for a clean buffer.",
-          "<b>Check ETIAS status by Feb 1</b> and apply through the official EU site once it is live for 2027.",
-          "<b>Get International Driving Permits by Apr 15</b> for all possible drivers.",
-          "<b>May 20-22:</b> book Madeira PR8 / Ribeiro Frio-Balcoes permits or guided alternatives if the portal uses short booking windows.",
-          "<b>Set up eSIM/international roaming, credit-card travel notices, and backup payment cards with PINs.</b>"
-        ]
-      },
-      {
-        "when": "May 20-Jun 9, 2027",
+        "when": "Final month",
         "tone": "done",
-        "title": "Final two-week run-up",
+        "title": "Final checks",
         "items": [
-          "<b>May 20:</b> reconfirm flight times, car pickup/drop hours, hotel parking, ferry/boat conditions, and Madeira trail status.",
-          "<b>May 27:</b> download offline maps for Lisbon/Cascais, Algarve, and Madeira; save all tickets offline.",
-          "<b>Jun 3:</b> make the household/pet/mail plan and refill prescriptions.",
-          "<b>Jun 9:</b> pack passports, IDPs, meds, adapters, beach shoes, trail layers, motion-sickness meds, and a swimsuit/change of clothes in carry-ons."
+          "<b>Passports:</b> Schengen requires validity 3+ months after planned EU departure and issue within the last 10 years (<a href=\"https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm\" target=\"_blank\" rel=\"noreferrer\">EU</a>); renew before winter if anyone is close.",
+          "<b>ETIAS:</b> no July 2026 action; the U.S. State Dept. says ETIAS is planned for late 2026, so apply only after the official system launches (<a href=\"https://travel.state.gov/en/international-travel/planning/guidance/europe.html\" target=\"_blank\" rel=\"noreferrer\">State Dept.</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Re-check Madeira trail closures, Algarve sea conditions, and toll/car rules</b> before departure."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> the mainland car should include toll handling, and the Madeira lodging must have realistic parking. Those two small details can turn simple days into friction."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> puts international trips in a 2-8 month window, and <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget."
   },
   "scorecard": {
     "displayName": "Portugal Algarve & Madeira",

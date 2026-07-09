@@ -260,6 +260,17 @@ main>section>h2+p{margin:0 0 30px;color:var(--muted);max-width:760px;font-size:1
 .budget-tbl td:last-child,.budget-tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
 .budget-tbl tr:last-child td{border-bottom:0;font-weight:700}
 .budget-scroll{overflow-x:auto}
+.matrix-tbl{table-layout:fixed}
+.matrix-tbl th,.matrix-tbl td{white-space:normal;vertical-align:top;word-break:normal;overflow-wrap:anywhere}
+.matrix-tbl td:last-child,.matrix-tbl th:last-child{text-align:left;white-space:normal;font-variant-numeric:normal}
+.hc-list{list-style:none;padding:0;margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.hc-list li{padding:13px 18px;border-bottom:1px solid var(--line);border-left:4px solid var(--muted);line-height:1.5;font-size:.92rem}
+.hc-list li:last-child{border-bottom:0}
+.hc-list li.act{border-left-color:#c0392b}
+.hc-list li.head{border-left-color:var(--gold)}
+.hc-list li.solid{border-left-color:var(--c3)}
+.hc-list li.fixed{border-left-color:var(--c1)}
+.hc-list strong{font-family:"Fraunces",serif;font-weight:600}
 .length-table{table-layout:fixed}
 .length-table th:first-child,.length-table td:first-child{width:18%}
 .length-table th:nth-child(2),.length-table td:nth-child(2){width:24%}
@@ -456,7 +467,7 @@ footer a{color:var(--muted)}
   <div class="hero-inner">
     <p class="eyebrow">Family Travel Decision Dashboard</p>
     <h1>Epic Family Vacation: 21-Trip Comparison</h1>
-    <p class="lead">A data-first reevaluation of 21 finished itineraries (16 ranked, 5 excluded by family decision): every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps and weather, PTO math), on ten axes including <b>nights away</b> (12 nights beats 9) and <b>novelty</b> (scored against the places already visited: California, Maui, northern Puglia/Matera, Split/Hvar/Dubrovnik, Santorini/Mykonos/Rhodes, Positano/Capri/Naples). This pass also corrects June water temps: the Mediterranean runs only 70&ndash;73&deg;F in June (swim 3), not the warmer late-summer numbers assumed before &mdash; genuine warm-water swimming stays with <b>Turkey's sea</b> (~77&deg;F) and <b>Hawaii</b> (~79&deg;F), while Turkey's brutal June air heat (Antalya 87&ndash;95&deg;F) crashes it to <b>#16/last</b>. The Portugal/Italy preference stays retired as a thumb on the scale &mdash; novelty expresses the honest version of it instead. <b>Madeira + Mallorca</b> is the new #1 at 39/50, the only hybrid that stays under the $15k cap end to end. <b>Portugal</b> and <b>Iceland</b> tie for the runner-up score at 38 (Iceland rising to #3); <b>Portugal + Sicily</b>, <b>Portugal + Crete</b>, and <b>Greece via Lisbon</b> tie just behind at 37. <b>Hawaii</b> sits at #13 (9 hotel nights, been-there Maui, cap-breaching budget); <b>Albania</b>, <b>Croatia</b>, <b>Southern France</b>, <b>California</b>, and the <b>Balkans</b> are excluded by family decision.</p>
+    <p class="lead">A data-first ranking of 21 finished itineraries (16 ranked, 5 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The Portugal/Italy preference is retired from the scoring; novelty carries the honest version instead. The numbers, at a glance:</p>
     <div class="hero-kicker">
       <span>Top score: Madeira + Mallorca (39/50)</span>
       <span>38-point tie: Portugal, Iceland (now #3)</span>
@@ -483,7 +494,6 @@ footer a{color:var(--muted)}
       <a href="#winners">Category Winners</a>
       <a href="#matrix">Full Matrix</a>
       <a href="#risks">Risks</a>
-      <a href="#files">Files</a>
     </div>
   </details>
 </nav>
@@ -841,7 +851,7 @@ footer a{color:var(--muted)}
   <section id="matrix">
     <p class="eyebrow">Full Comparison</p>
     <h2>The practical call</h2>
-    <div class="budget-scroll"><table class="budget-tbl"><tr><th>Option</th><th>Best reason to choose it</th><th>Reason to hesitate</th><th>Decision</th></tr>
+    <div class="budget-scroll"><table class="budget-tbl matrix-tbl"><colgroup><col style="width:13%"><col style="width:29%"><col style="width:27%"><col style="width:31%"></colgroup><tr><th>Option</th><th>Best reason to choose it</th><th>Reason to hesitate</th><th>Decision</th></tr>
       <tr><td><b>Madeira + Mallorca</b></td><td>Four nights of world-class ridge hiking (Arieiro-Ruivo, 25 Fontes, Sao Lourenco), then a sandy Mediterranean swim in Mallorca (Playa de Muro, Alcudia, Formentor).</td><td>Six-stop chain including a Lisbon buffer night; FNC wind risk on the Madeira leg.</td><td><b>#1 on the data (39/50): the only hybrid that stays under the $15k cap end to end.</b></td></tr>
       <tr><td><b>Portugal</b></td><td>Family favorite, best budget fit, three calm bases, Madeira and Algarve scenery, and the simplest air (all TAP).</td><td>Coolest water on the board and Faro-Funchal schedule constraint; a corrected airfare estimate (~$3.2k-4.6k, not the earlier $2.3k-3.5k) dropped the budget score from 5 to 3.</td><td><b>#2 on the data (38/50), tied with Iceland: top budget fit. Pick it if you accept the cold water.</b></td></tr>
       <tr><td><b>Madeira + Crete</b></td><td>Four nights of world-class ridge hiking (Arieiro-Ruivo, 25 Fontes, Porto Moniz), then Crete's 73-74&deg;F sea (swim 4, the warmest a Madeira hybrid gets).</td><td>Five-leg outbound chain, FNC wind risk (the Lisbon buffer night is mandatory insurance), Chania/Rethymno each lose a night vs the mainland version, and the budget now runs ~$12.2k-16.1k &mdash; breaching the cap.</td><td><b>33/50, novelty 4; book on one protected ticket with the airfare gate held, but Madeira + Mallorca now does the same hiking week cap-clean.</b></td></tr>
@@ -862,50 +872,23 @@ footer a{color:var(--muted)}
       <tr><td><b>California Pacific Coast</b></td><td>Best mainland no-passport road trip, under the hard cap at 12 nights.</td><td>Cold water outside San Diego and weaker fit with the Portugal/Italy preference.</td><td><b>Excluded by family decision; kept for reference.</b></td></tr>
       <tr><td><b>Balkans</b></td><td>Most adventurous and water-rich route, now fixed to Jul 1-14, 2027.</td><td>July peak pricing, cross-border car rules, long drives, ferry timing, and family-friction risk.</td><td><b>Excluded by family decision; kept for reference.</b></td></tr>
     </table></div>
+    <p class="source-note">Comparison basis: the current 21-plan dashboard set (16 ranked, 5 excluded by family decision), with visible date windows normalized to Jun 6-Aug 15, 2027 and the Jun 23-26 Pittsburgh blackout. The five hybrids form a Madeira/mainland opener &times; Crete/Sicily/Mallorca swim leg (Mallorca only pairs with Madeira), scored on the same rubric &mdash; the Portugal/Italy preference is retired from the ranking; novelty expresses the honest version of it. All budgets remain from source itinerary research (2026 proxies, not 2027 quotes) and need exact airfare, lodging, rental-car rules, and timed entries refreshed at booking. Every hybrid is flight-gated: one protected ticket through Lisbon, the FNC buffer night for Madeira variants, the easyJet Lisbon-Palermo nonstop for Sicily (Ryanair exited that route Nov 2024; Catania still carries a seasonal Delta JFK nonstop, Apr&ndash;Oct), and the LIS-ATH-CHQ chain for Crete. Transatlantic bookends assume Pittsburgh's 2026 nonstops (Aer Lingus/Dublin, BA/Heathrow, United/Newark) plus US-hub connections; the board now ranks Madeira + Mallorca first on the combined data (cap-clean hiking + warm swim), with Portugal and Iceland tied for the runner-up score at 38, and Portugal + Sicily, Portugal + Crete, and Greece via Lisbon tied just behind at 37.</p>
   </section>
 
   <section id="risks">
     <p class="eyebrow">Plan Health-Check</p>
     <h2>Risks worth keeping visible</h2>
-    <div class="risk-grid">
-      <div class="hc fixed"><h3>The bias is retired</h3><p>The Portugal/Italy preference no longer touches the ranking &mdash; under the old order it was worth up to ten rank positions (Madeira + Sicily sat #5 despite the board's worst risk score). Hearts still say Portugal/Italy; the data says <b>Madeira + Mallorca</b> first, then Portugal and Iceland tied for the runner-up score at 38, with Portugal + Sicily, Portugal + Crete, and Greece via Lisbon tied just behind at 37 &mdash; all still June-Med swim 3, since genuine warm water only shows up at Turkey's sea and Hawaii.</p></div>
-      <div class="hc solid"><h3>Hybrids resolve the core tension</h3><p>All five hybrids keep a Portugal opener and hand the swimming to warm water elsewhere. Madeira openers buy epic hiking at the cost of extra flight legs and FNC wind risk; mainland openers stay calm and cheap. Crete and Sicily legs feed the Italy/Greece bias but press the cap; the newest hybrid, Madeira + Mallorca, is the only one that keeps the Madeira hiking week and stays cap-clean.</p></div>
-      <div class="hc head"><h3>Madeira runs on gates and buffers</h3><p>Every Madeira variant only works as designed: one protected ticket, the Lisbon buffer night before the onward hop (FNC wind delays peak in summer), and a hard family-airfare gate. The Sicily variants also ride a thinned-out air map: Ryanair exited Lisbon&ndash;Palermo in Nov 2024, leaving an easyJet monopoly with no low-cost floor &mdash; though Catania does carry a seasonal Delta JFK nonstop (Apr&ndash;Oct), so the fragile leg is the Lisbon&ndash;Palermo fare, not the US connection.</p></div>
-      <div class="hc act"><h3>Italy drifted expensive</h3><p>The Salento-Maratea-Amalfi file now reads ~$13.2k-16.4k realistic, with a cap-fit trim around ~$12.4k-14.8k. It is a stretch finalist, not a budget-safe pick.</p></div>
-      <div class="hc act"><h3>Hawaii's own rollup breaches the cap</h3><p>The scoreboard used to say $10.6k&ndash;14.4k; Hawaii's line-item budget table sums to ~$11k&ndash;15.8k with insurance. Combined with only 9 hotel nights and a been-there Maui factor, it now sits #13 even before quotes land.</p></div>
-      <div class="hc head"><h3>Turkey's heat crashes it to last</h3><p>The Turkish Riviera has the warmest non-Hawaii sea on the board (~77&deg;F) &mdash; but June air is brutal, with Antalya running 87&ndash;95&deg;F. That drops the Weather score to 3 and sinks the trip to #16/last at 32/50, tied on score with Madeira + Sicily but losing the tie-break. Airfare risk (planning band reaches ~$15.9k) is a secondary concern next to the heat.</p></div>
-      <div class="hc fixed"><h3>Croatia is excluded outright</h3><p>Croatia scores 35/50 at the best warm-water price, but the family did Croatia in 2026 and this route repeats Split/Hvar/Korčula. Excluded from the recommendation by explicit decision; the row stays on the scoreboard for reference.</p></div>
-      <div class="hc act"><h3>Blackout drives the date math</h3><p>Jun 23-26 is now protected across the dashboard. Most Europe plans use Jun 9-22; Balkans and California move into early July to avoid the Pittsburgh conflict cleanly.</p></div>
-      <div class="hc head"><h3>Complexity still matters</h3><p>Sardinia/Corsica, Sicily/Malta, Greece via Lisbon, and the Balkans all offer major variety, but each adds either ferry, cross-border, flight-chain, or four-base friction. Balkans also picked up July peak-pricing risk.</p></div>
-    </div>
-  </section>
-
-  <section id="files">
-    <p class="eyebrow">Reviewed Files</p>
-    <h2>Open the source plans</h2>
-    <div class="file-list">
-      <a href="locations/madeira-mallorca/index.html">Madeira + Mallorca <small>HTML</small></a>
-      <a href="locations/portugal/index.html">Portugal <small>HTML</small></a>
-      <a href="locations/madeira-crete/index.html">Madeira + Crete <small>HTML</small></a>
-      <a href="locations/portugal-crete/index.html">Portugal + Crete <small>HTML</small></a>
-      <a href="locations/madeira-sicily/index.html">Madeira + Sicily <small>HTML</small></a>
-      <a href="locations/portugal-sicily/index.html">Portugal + Sicily <small>HTML</small></a>
-      <a href="locations/hawaii/index.html">Hawaii <small>HTML</small></a>
-      <a href="locations/italy-salento-amalfi/index.html">Italy Salento-Amalfi <small>HTML</small></a>
-      <a href="locations/turkish-riviera/index.html">Turkish Riviera <small>HTML</small></a>
-      <a href="locations/sardinia-corsica/index.html">Sardinia &amp; Corsica <small>HTML</small></a>
-      <a href="locations/canary-islands/index.html">Canary Islands <small>HTML</small></a>
-      <a href="locations/croatia/index.html">Croatia <small>HTML</small></a>
-      <a href="locations/greece-via-lisbon/index.html">Greece via Lisbon <small>HTML</small></a>
-      <a href="locations/sicily-malta/index.html">Sicily &amp; Malta <small>HTML</small></a>
-      <a href="locations/spain/index.html">Spain <small>HTML</small></a>
-      <a href="locations/southern-france/index.html">Southern France <small>HTML</small></a>
-      <a href="locations/california-pacific-coast/index.html">California Pacific Coast <small>HTML</small></a>
-      <a href="locations/balkans/index.html">Balkan Coast Road Trip <small>HTML</small></a>
-      <a href="locations/iceland/index.html">Iceland <small>HTML</small></a>
-      <a href="locations/albania/index.html">Albania <small>HTML</small></a>
-    </div>
-    <p class="source-note">Comparison basis: the current 21-plan dashboard set (16 ranked, 5 excluded by family decision), with visible date windows normalized to Jun 6-Aug 15, 2027 and the Jun 23-26 Pittsburgh blackout. The five hybrids form a Madeira/mainland opener &times; Crete/Sicily/Mallorca swim leg (Mallorca only pairs with Madeira), scored on the same rubric &mdash; the Portugal/Italy preference is retired from the ranking; novelty expresses the honest version of it. All budgets remain from source itinerary research (2026 proxies, not 2027 quotes) and need exact airfare, lodging, rental-car rules, and timed entries refreshed at booking. Every hybrid is flight-gated: one protected ticket through Lisbon, the FNC buffer night for Madeira variants, the easyJet Lisbon-Palermo nonstop for Sicily (Ryanair exited that route Nov 2024; Catania still carries a seasonal Delta JFK nonstop, Apr&ndash;Oct), and the LIS-ATH-CHQ chain for Crete. Transatlantic bookends assume Pittsburgh's 2026 nonstops (Aer Lingus/Dublin, BA/Heathrow, United/Newark) plus US-hub connections; the board now ranks Madeira + Mallorca first on the combined data (cap-clean hiking + warm swim), with Portugal and Iceland tied for the runner-up score at 38, and Portugal + Sicily, Portugal + Crete, and Greece via Lisbon tied just behind at 37.</p>
+    <ul class="hc-list">
+      <li class="fixed"><strong>The bias is retired.</strong> The Portugal/Italy preference no longer touches the ranking &mdash; under the old order it was worth up to ten rank positions (Madeira + Sicily sat #5 despite the board's worst risk score). Hearts still say Portugal/Italy; the data says <b>Madeira + Mallorca</b> first, then Portugal and Iceland tied for the runner-up score at 38, with Portugal + Sicily, Portugal + Crete, and Greece via Lisbon tied just behind at 37 &mdash; all still June-Med swim 3, since genuine warm water only shows up at Turkey's sea and Hawaii.</li>
+      <li class="solid"><strong>Hybrids resolve the core tension.</strong> All five hybrids keep a Portugal opener and hand the swimming to warm water elsewhere. Madeira openers buy epic hiking at the cost of extra flight legs and FNC wind risk; mainland openers stay calm and cheap. Crete and Sicily legs feed the Italy/Greece bias but press the cap; the newest hybrid, Madeira + Mallorca, is the only one that keeps the Madeira hiking week and stays cap-clean.</li>
+      <li class="head"><strong>Madeira runs on gates and buffers.</strong> Every Madeira variant only works as designed: one protected ticket, the Lisbon buffer night before the onward hop (FNC wind delays peak in summer), and a hard family-airfare gate. The Sicily variants also ride a thinned-out air map: Ryanair exited Lisbon&ndash;Palermo in Nov 2024, leaving an easyJet monopoly with no low-cost floor &mdash; though Catania does carry a seasonal Delta JFK nonstop (Apr&ndash;Oct), so the fragile leg is the Lisbon&ndash;Palermo fare, not the US connection.</li>
+      <li class="act"><strong>Italy drifted expensive.</strong> The Salento-Maratea-Amalfi file now reads ~$13.2k-16.4k realistic, with a cap-fit trim around ~$12.4k-14.8k. It is a stretch finalist, not a budget-safe pick.</li>
+      <li class="act"><strong>Hawaii's own rollup breaches the cap.</strong> The scoreboard used to say $10.6k&ndash;14.4k; Hawaii's line-item budget table sums to ~$11k&ndash;15.8k with insurance. Combined with only 9 hotel nights and a been-there Maui factor, it now sits #13 even before quotes land.</li>
+      <li class="head"><strong>Turkey's heat crashes it to last.</strong> The Turkish Riviera has the warmest non-Hawaii sea on the board (~77&deg;F) &mdash; but June air is brutal, with Antalya running 87&ndash;95&deg;F. That drops the Weather score to 3 and sinks the trip to #16/last at 32/50, tied on score with Madeira + Sicily but losing the tie-break. Airfare risk (planning band reaches ~$15.9k) is a secondary concern next to the heat.</li>
+      <li class="fixed"><strong>Croatia is excluded outright.</strong> Croatia scores 35/50 at the best warm-water price, but the family did Croatia in 2026 and this route repeats Split/Hvar/Korčula. Excluded from the recommendation by explicit decision; the row stays on the scoreboard for reference.</li>
+      <li class="act"><strong>Blackout drives the date math.</strong> Jun 23-26 is now protected across the dashboard. Most Europe plans use Jun 9-22; Balkans and California move into early July to avoid the Pittsburgh conflict cleanly.</li>
+      <li class="head"><strong>Complexity still matters.</strong> Sardinia/Corsica, Sicily/Malta, Greece via Lisbon, and the Balkans all offer major variety, but each adds either ferry, cross-border, flight-chain, or four-base friction. Balkans also picked up July peak-pricing risk.</li>
+    </ul>
   </section>
 
   <section id="considered">

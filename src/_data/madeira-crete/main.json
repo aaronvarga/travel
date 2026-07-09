@@ -1294,92 +1294,72 @@
     }
   ],
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Exact planning timeline for the Jun 8-22, 2027 Madeira + Crete itinerary. This version needs earlier discipline because Funchal wind risk, Madeira trail permits, and Crete boat days all stack on the same trip.</p>\n",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Jul 13-26, 2026",
+        "when": "Now-Jul 2026",
+        "tone": "watch",
+        "title": "Track, do not panic-buy",
+        "note": "Inventory opening is a search-alert trigger, not a cash-fare deadline.",
+        "items": [
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Track Madeira plus Crete open-jaw chains</b>; the two-island air bridge is the fragile piece to monitor."
+        ]
+      },
+      {
+        "when": "Sep-Nov 2026",
+        "tone": "watch",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
+        "items": [
+          "<b>Hold refundable Madeira and Crete bases</b> with AC, parking, and pool/beach access; do not prepay this early.",
+          "<b>Protect the transition night</b> with cancellable lodging until the flight chain is firm."
+        ]
+      },
+      {
+        "when": "Dec 2026-Feb 2027",
+        "tone": "watch",
+        "title": "Cars, ferries, and route anchors",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
+        "items": [
+          "<b>Reserve cancellable automatics</b> on both islands after the base sequence is likely.",
+          "<b>Confirm Madeira airport and Crete arrival/departure logistics</b> before making lodging nonrefundable."
+        ]
+      },
+      {
+        "when": "Jan-Mar 2027",
         "tone": "hot",
-        "title": "Flight inventory opens: start tracking, do not auto-buy",
-        "note": "These dates are when most major-airline seats should become searchable, not when cash fares are expected to be cheapest.",
+        "title": "Buy flights in the real window",
+        "note": "For peak-summer Europe, this is the practical cash-buy window: <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> puts U.S.-Europe fares near 94 days out, while <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> gives 2-8 months for international trips and says to shift earlier for peak periods.",
         "items": [
-          "<b>Map the protected route options for PIT to Funchal plus Crete/Athens to PIT.</b> Record good connection cities, bad connection traps, baggage rules, and whether the itinerary is truly protected on one ticket.",
-          "<b>Set Google Flights alerts for the exact dates plus nearby gateways.</b> Track the full family-of-4 price, not just one-seat teaser fares.",
-          "<b>Check award tickets or refundable fares when the schedule opens.</b> Early booking can make sense for award space, refundable fares, or a genuinely below-target cash fare.",
-          "<b>Set a buy threshold now.</b> Decide the fare where convenience, protection, and seat selection justify buying before the statistical cheap window."
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
         ]
       },
       {
-        "when": "By Aug 15, 2026",
-        "tone": "",
-        "title": "Book the three-base lodging plan",
+        "when": "60-90 days out",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
         "items": [
-          "<b>Book Funchal for Jun 9-12</b> with parking and quick road access, not deep old-town parking pain.",
-          "<b>Book Lisbon airport-area lodging for Jun 13</b> because this is wind insurance, not sightseeing lodging.",
-          "<b>Book Chania for Jun 14-19 and Rethymno for Jun 20-21</b> with parking, laundry, and cancellation flexibility.",
-          "<b>Add cancellation reminders</b> for Feb 15, Apr 15, and May 15."
+          "<b>Madeira classified PR hikes require online payment/reservation before hiking</b>; same-day works only if slots remain (<a href=\"https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/faq-s-taxas-percursos-pedestres-classificados/frequently-asked-questions-fees-classified-walking-routes.html\" target=\"_blank\" rel=\"noreferrer\">IFCN</a>).",
+          "<b>Samaria Gorge requires a date-specific official ticket</b>; buy through NECCA once the day is fixed (<a href=\"https://samaria-tickets.necca.gov.gr/checkout\" target=\"_blank\" rel=\"noreferrer\">NECCA</a>).",
+          "<b>Book Crete boat/transfer days 60-90 days out</b> and keep one wind backup day."
         ]
       },
       {
-        "when": "By Sep 15, 2026",
-        "tone": "",
-        "title": "Reserve cars and transfers",
-        "items": [
-          "<b>Reserve a Madeira rental car</b> for FNC pickup/drop with an automatic if needed, strong brakes, full insurance, and hotel parking confirmed.",
-          "<b>Reserve the Crete rental car</b> for CHQ pickup and CHQ/HER return once the return airport is final.",
-          "<b>Decide whether to hire a transfer/guide for PR1 sunrise</b> if mountain-road driving before dawn feels like the wrong kind of adventure.",
-          "<b>Reserve PIT parking or a ride plan</b> for the Tue Jun 8 evening departure."
-        ]
-      },
-      {
-        "when": "Jan 8-Mar 10, 2027",
-        "tone": "watch",
-        "title": "Target cash-flight buy window",
-        "note": "For Europe, use this as the serious cash-buy window: Google data points to about 94 days out for Europe, with risk rising inside 50 days; other fare guidance clusters around 3-5 months or 2-8 months for international coach.",
-        "items": [
-          "<b>Run weekly fare checks for PIT-FNC and Crete-PIT.</b> Buy when a protected itinerary is under target and preserves the Lisbon buffer logic.",
-          "<b>Do not overpay in July just because Funchal inventory appeared.</b> Buy early only for excellent award space, a refundable fare, or an unusually good cash fare.",
-          "<b>Do not wait past Apr 19, 2027 without a specific reason.</b> That is about 50 days before departure, where Google's Europe data says prices usually start becoming less forgiving.",
-          "<b>After purchase, keep tracking prices</b> and use airline credits/rebooking if a non-basic-economy fare drops."
-        ]
-      },
-      {
-        "when": "Jan 15-Apr 15, 2027",
-        "tone": "",
-        "title": "Documents, insurance, money, and phones",
-        "items": [
-          "<b>Check all passports by Jan 15.</b> Target validity through at least Dec 21, 2027 for a clean buffer.",
-          "<b>Check ETIAS status by Feb 1</b> and apply through the official EU site once it is live for 2027.",
-          "<b>Buy travel insurance by Jan 31</b> and make sure it covers flight delays, missed connections, and Madeira weather disruption.",
-          "<b>Get International Driving Permits by Apr 15</b> for all possible drivers.",
-          "<b>Set up eSIM/international roaming, credit-card travel notices, and no-foreign-fee payment cards.</b>"
-        ]
-      },
-      {
-        "when": "Jan 15-May 13, 2027",
-        "tone": "watch",
-        "title": "Trail permits, boats, and hard-to-move activities",
-        "items": [
-          "<b>Jan 15:</b> create/check the Madeira SIMplifica account and confirm the 2027 PR trail reservation rules.",
-          "<b>Mar 15:</b> reserve the Balos Lagoon boat for Wed Jun 16, with Elafonissi/Falasarna as the wind swap.",
-          "<b>Apr 15:</b> decide whether Samaria is full-descent or lazy-way so the Chania stay, ferry/bus plan, and kid heat limit are aligned.",
-          "<b>May 10:</b> book PR1 Arieiro/Ruivo access for Thu Jun 10 as soon as the relevant window allows; morning slots go first.",
-          "<b>May 11-13:</b> book PR6/25 Fontes and PR8 Sao Lourenco permits or guided alternatives for the planned Madeira dates.",
-          "<b>May 15:</b> make one Rethymno last-dinner reservation for Mon Jun 21."
-        ]
-      },
-      {
-        "when": "May 18-Jun 7, 2027",
+        "when": "Final month",
         "tone": "done",
-        "title": "Final two-week run-up",
+        "title": "Final checks",
         "items": [
-          "<b>May 18:</b> reconfirm flight times, FNC car pickup, trail status, hotel parking, and Crete car pickup hours.",
-          "<b>May 25:</b> download offline maps for Madeira, Lisbon airport area, Chania, and Rethymno.",
-          "<b>Jun 1:</b> check Madeira webcams/weather patterns and keep the Arieiro retry logic alive.",
-          "<b>Jun 7:</b> pack passports, IDPs, trail shoes, layers, headlamps, swimsuits in carry-ons, motion-sickness meds, adapters, and printed trail/boat confirmations."
+          "<b>Passports:</b> Schengen requires validity 3+ months after planned EU departure and issue within the last 10 years (<a href=\"https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm\" target=\"_blank\" rel=\"noreferrer\">EU</a>); renew before winter if anyone is close.",
+          "<b>ETIAS:</b> no July 2026 action; the U.S. State Dept. says ETIAS is planned for late 2026, so apply only after the official system launches (<a href=\"https://travel.state.gov/en/international-travel/planning/guidance/europe.html\" target=\"_blank\" rel=\"noreferrer\">State Dept.</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Re-check Madeira trail closures and Crete wind/heat</b> before committing to hike days."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> this route now has the biggest scenery payload and the biggest logistics stack. The Lisbon buffer still protects Madeira wind risk; Samaria adds a second hard timing chain via early bus, long hike, ferry, and return bus."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> puts international trips in a 2-8 month window, and <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget."
   },
   "scorecard": {
     "displayName": "Madeira + Crete",

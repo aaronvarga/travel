@@ -1027,89 +1027,71 @@
     "heat"
   ],
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Exact planning timeline for the Jun 9–22, 2027 Lisbon-stopover + Crete itinerary. The critical move is to lock the protected TAP through-fare first, then lodging, then the Crete car and the wind-sensitive Balos boat before the best family-size options disappear.</p>\n",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Jul 2026",
+        "when": "Now-Jul 2026",
+        "tone": "watch",
+        "title": "Track, do not panic-buy",
+        "note": "Inventory opening is a search-alert trigger, not a cash-fare deadline.",
+        "items": [
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Track the low-frequency Lisbon-Athens/Crete chain</b>; schedule confirmation is the July 2026 task, not immediate purchase."
+        ]
+      },
+      {
+        "when": "Sep-Nov 2026",
+        "tone": "watch",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
+        "items": [
+          "<b>Hold refundable Lisbon and Crete bases</b> after the air chain looks realistic; prioritize family rooms with AC and easy transfers.",
+          "<b>Keep cancellation buffers</b> around any overnight connection."
+        ]
+      },
+      {
+        "when": "Dec 2026-Feb 2027",
+        "tone": "watch",
+        "title": "Cars, ferries, and route anchors",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
+        "items": [
+          "<b>Reserve a cancellable Crete automatic</b> once the Crete base and arrival airport are settled.",
+          "<b>Pre-map transfer contingencies</b> for late arrivals or missed connections through Lisbon/Athens."
+        ]
+      },
+      {
+        "when": "Jan-Mar 2027",
         "tone": "hot",
-        "title": "Flight inventory opens: track the protected chain, do not auto-buy",
-        "note": "These dates are when most seats become searchable, not when cash fares are cheapest. The chain here has one fragile link — the new low-frequency LIS–ATH route — so schedule confirmation matters as much as price.",
+        "title": "Buy flights in the real window",
+        "note": "For peak-summer Europe, this is the practical cash-buy window: <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> puts U.S.-Europe fares near 94 days out, while <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> gives 2-8 months for international trips and says to shift earlier for peak periods.",
         "items": [
-          "<b>Map the TAP through-fare (PIT → gateway → Lisbon → Athens) plus the separate ATH↔CHQ domestic.</b> Record good connection cities, baggage rules, and confirm the itinerary is truly protected on one ticket.",
-          "<b>Confirm the new LIS–ATH route is scheduled on your Sun Jun 13 / Mon Jun 21, 2027 dates.</b> It launched Jul 2026 at only 5×/week with no track record — this is the single biggest downstream risk.",
-          "<b>Set Google Flights alerts for the exact dates plus nearby gateways.</b> Track the full family-of-4 price, not one-seat teaser fares.",
-          "<b>Set a buy threshold now.</b> Decide the fare where protection, seat selection, and the free Lisbon stopover justify buying before the statistical cheap window."
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
         ]
       },
       {
-        "when": "By Aug 2026",
-        "tone": "",
-        "title": "Lock lodging with cancellation buffers",
+        "when": "60-90 days out",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
         "items": [
-          "<b>Book Cascais/Estoril for Jun 10–11</b> near the train and waterfront so the jet-lagged first days work without heroic driving.",
-          "<b>Book one Athens night for Jun 12</b> near the metro/airport link as a buffer between the TAP arrival and the morning Crete hop.",
-          "<b>Book Chania for Jun 13–18</b> with parking, laundry, and easy beach/old-town access.",
-          "<b>Book Rethymno for Jun 19–21</b> with parking and walkable dinner options, and save every cancellation deadline in the calendar."
+          "<b>Samaria Gorge requires a date-specific official ticket</b>; buy through NECCA once the hike day is fixed (<a href=\"https://samaria-tickets.necca.gov.gr/checkout\" target=\"_blank\" rel=\"noreferrer\">NECCA</a>).",
+          "<b>Book Balos/Elafonissi-style boat or transfer days 60-90 days out</b>; these are commercial-capacity bottlenecks, not 11-month tasks.",
+          "<b>Hold one beach backup day</b> for wind or heat."
         ]
       },
       {
-        "when": "By Sep 2026",
-        "tone": "",
-        "title": "Reserve the car, transfers, and airport logistics",
-        "items": [
-          "<b>Reserve the Crete rental car</b> for CHQ pickup and CHQ drop-off (~10 days); include full insurance, an automatic if needed, and enough trunk space for four with bags.",
-          "<b>Decide Lisbon/Athens ground transport</b>: airport transfer or the Cascais-line train, plus how you get to LIS and to the Athens hotel without a rental.",
-          "<b>Book Pittsburgh airport parking or a ride plan</b> for the Wed Jun 9 after-work evening departure.",
-          "<b>Add child booster seats or pack travel boosters</b> instead of hoping the Crete counter has the right size."
-        ]
-      },
-      {
-        "when": "Jan–Mar 2027",
-        "tone": "watch",
-        "title": "Target cash-flight buy window",
-        "note": "For Europe, this is the serious cash-buy window: Google data points to about 94 days out, with risk rising inside ~50 days of the Jun 9 departure.",
-        "items": [
-          "<b>Run weekly fare checks on the full PIT–LIS–ATH through-fare.</b> Buy when a protected itinerary lands under the trip target, not just because the calendar opened.",
-          "<b>Re-confirm the LIS–ATH leg is still flying your dates before you buy.</b> If TAP has thinned or dropped the route, sort the reroute before committing the transatlantic legs.",
-          "<b>Don't wait past ~Apr 20, 2027 without a specific reason.</b> That's roughly 50 days before departure, where Europe fares usually stop being forgiving.",
-          "<b>Buy the ATH↔CHQ domestic separately</b> once the through-fare is ticketed, leaving a comfortable Athens layover."
-        ]
-      },
-      {
-        "when": "Jan–Mar 2027",
-        "tone": "watch",
-        "title": "Book the activities that can bottleneck the trip",
-        "items": [
-          "<b>Reserve the Balos Lagoon boat for Tue Jun 15</b> from Kissamos, directly with an operator, with a wind/weather swap plan for Elafonissi or Falasarna.",
-          "<b>Sort the Imbros Gorge plan for Wed Jun 16</b> so the Komitades-to-Imbros return ride is arranged before the hike, not after.",
-          "<b>Decide the Samaria Gorge commitment for Fri Jun 18</b>: full 16 km descent only if heat and legs look good; otherwise use the Agia Roumeli lazy-way plan to the Iron Gates.",
-          "<b>Keep Sat Jun 19 as the Omalos/Lefka Ori transfer day</b>, with Kallergi Refuge approach only if the family still has energy.",
-          "<b>Shortlist one Rethymno last-dinner reservation</b> for Mon Jun 21 before cruise-season tables tighten."
-        ]
-      },
-      {
-        "when": "Jan–Apr 2027",
-        "tone": "",
-        "title": "Documents, insurance, money, and phones",
-        "items": [
-          "<b>Check all passports by Jan 2027.</b> For Europe, target validity well past the trip (through at least late Dec 2027) even though Schengen generally requires 3 months beyond departure.",
-          "<b>Check ETIAS status on the official EU site</b> and apply as soon as the program is live for 2027 travel to both Portugal and Greece.",
-          "<b>Buy travel insurance early</b> if using any pre-existing-condition waiver window tied to the initial trip deposit; confirm boat trips and gorge hikes are covered.",
-          "<b>Get International Driving Permits</b> for every adult who may drive in Crete, and set up eSIM/roaming plus a no-foreign-fee card with a PIN."
-        ]
-      },
-      {
-        "when": "May–Jun 2027",
+        "when": "Final month",
         "tone": "done",
-        "title": "Final two-week run-up",
+        "title": "Final checks",
         "items": [
-          "<b>Reconfirm</b> flight times, seat assignments, baggage rules, the Crete car pickup hours, and hotel late-arrival instructions — and re-check the LIS–ATH leg one last time.",
-          "<b>Download offline Google Maps</b> for Lisbon, western Crete, and Rethymno; save all tickets to Apple Wallet/files.",
-          "<b>Check the Balos wind forecast</b> as the date nears and pre-decide the swap so a windy Tue Jun 15 doesn't waste the day.",
-          "<b>Pack</b> passports, IDPs, meds, chargers, adapters, swimsuits in carry-ons, motion-sickness meds, reef shoes, and one full change of clothes per person for the overnight flight."
+          "<b>Passports:</b> Schengen requires validity 3+ months after planned EU departure and issue within the last 10 years (<a href=\"https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm\" target=\"_blank\" rel=\"noreferrer\">EU</a>); renew before winter if anyone is close.",
+          "<b>ETIAS:</b> no July 2026 action; the U.S. State Dept. says ETIAS is planned for late 2026, so apply only after the official system launches (<a href=\"https://travel.state.gov/en/international-travel/planning/guidance/europe.html\" target=\"_blank\" rel=\"noreferrer\">State Dept.</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Re-check ferry/boat wind conditions</b> before the Crete coast days."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> this plan now has three real risk points — the protected LIS-to-Crete air chain, Balos wind/boat conditions, and Samaria heat/ferry timing. Confirm the Athens leg before buying, keep one beach day wind-flexible, and treat Samaria as weather-dependent rather than mandatory."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> puts international trips in a 2-8 month window, and <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget."
   }
 }

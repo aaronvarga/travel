@@ -1018,59 +1018,72 @@
     }
   ],
   "preDepartureTodos": {
-    "labelHtml": "\n      <p class=\"eyebrow\">Pre-Departure To-Do</p>\n      <h2>What to book before leaving</h2>\n      <p>Exact planning sequence for the Jun 8-22, 2027 Canary Islands route. Inventory opens before prices necessarily become attractive, so tracking and buying are separate decisions.</p>\n    ",
+    "labelHtml": "<p class=\"eyebrow\">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p>",
     "blocks": [
       {
-        "when": "Jul-Aug 2026",
-        "tone": "hot",
-        "title": "Flight inventory opens: start tracking, do not auto-buy",
-        "note": "Use these dates to map options and set fare alerts; buy only when the protected routing and total price work.",
-        "items": [
-          "<b>Track PIT -> Tenerife and Tenerife -> PIT as family-of-4 totals.</b> Watch DUB, LHR, KEF, MAD, and other clean Europe hubs.",
-          "<b>Set the airfare gate.</b> Target ~$4.4k family, high case ~$5.9k including seats/bags.",
-          "<b>Check whether a one-ticket open-jaw can include the inter-island hop.</b> If not, keep generous buffers and buy inter-island separately."
-        ]
-      },
-      {
-        "when": "By Sep 2026",
-        "title": "Hold refundable lodging",
-        "items": [
-          "<b>Tenerife north:</b> 6 nights Puerto de la Cruz apartment/aparthotel first; La Laguna / Santa Cruz if flight or Anaga access wins.",
-          "<b>La Palma west:</b> 5 nights Los Llanos / El Paso / Tazacorte apartment with washer and parking.",
-          "<b>Tenerife buffer:</b> 1 refundable airport/La Laguna night for Jun 20."
-        ]
-      },
-      {
-        "when": "Winter 2026-27",
+        "when": "Now-Jul 2026",
         "tone": "watch",
-        "title": "Cars, documents, and hike logistics",
+        "title": "Track, do not panic-buy",
+        "note": "Inventory opening is a search-alert trigger, not a cash-fare deadline.",
         "items": [
-          "<b>Reserve separate rental cars</b> for Tenerife and La Palma; automatic if needed.",
-          "<b>Check passports, ETIAS status, travel insurance, and IDPs.</b>",
-          "<b>Track Teide, Masca, Caldera, Los Tilos, Ruta, and Roque access updates.</b>"
+          "<b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.",
+          "<b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.",
+          "<b>Track both Tenerife-only and Tenerife/La Palma open-jaw options</b>; island-hopping convenience can be worth more than a small fare dip."
         ]
       },
       {
-        "when": "60-30 days out",
-        "title": "Turn the trail plan into bookings",
+        "when": "Sep-Nov 2026",
+        "tone": "watch",
+        "title": "Hold scarce refundable stays",
+        "note": "This is about protecting scarce family inventory, not chasing prepaid discounts.",
         "items": [
-          "<b>Book Teide cable car</b> once the mountain day is stable.",
-          "<b>Decide Masca full trail vs viewpoint version</b> honestly based on kid fitness.",
-          "<b>Reserve Caldera taxi/parking and Roque visitor center or observatory tour</b> if choosing those upgrades."
+          "<b>Hold refundable family stays</b> near the preferred beach/weather side first; June is easier than August but best pools and two-bedroom layouts still thin out.",
+          "<b>Keep a weather-split backup</b> between north/green scenery and south/sunnier beaches."
         ]
       },
       {
-        "when": "Final 2 weeks",
+        "when": "Dec 2026-Feb 2027",
+        "tone": "watch",
+        "title": "Cars, ferries, and route anchors",
+        "note": "Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.",
+        "items": [
+          "<b>Reserve cancellable automatics</b> on each island if driving; steep roads and limited fleets make car type matter.",
+          "<b>Do not prepay inter-island legs</b> until the flight gateway and exact island sequence are final."
+        ]
+      },
+      {
+        "when": "Jan-Mar 2027",
+        "tone": "hot",
+        "title": "Buy flights in the real window",
+        "note": "For peak-summer Europe, this is the practical cash-buy window: <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> puts U.S.-Europe fares near 94 days out, while <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> gives 2-8 months for international trips and says to shift earlier for peak periods.",
+        "items": [
+          "<b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats."
+        ]
+      },
+      {
+        "when": "56 days to final week",
+        "tone": "hot",
+        "title": "Timed tickets and tours",
+        "note": "These are the tasks with real external release windows or limited capacity.",
+        "items": [
+          "<b>Teide summit/PNT 10 places release Mondays at 07:00 Canary time with 56 days visible</b>; set the exact Monday reminder (<a href=\"https://www.tenerifeon.es/en/routes/hiking/pnt-10-telesforo-bravo\" target=\"_blank\" rel=\"noreferrer\">Tenerife ON</a>).",
+          "<b>Teide cable car uses assigned online sessions</b>; book after the summit/trail decision and arrive 20 minutes early (<a href=\"https://www.volcanoteide.com/en/volcano_teide/teide_cable_car/teide_cable_car\" target=\"_blank\" rel=\"noreferrer\">Volcano Teide</a>).",
+          "<b>Book whale/boat days 30-60 days out</b> with a weather-flexible backup day."
+        ]
+      },
+      {
+        "when": "Final month",
         "tone": "done",
-        "title": "Operational checks",
+        "title": "Final checks",
         "items": [
-          "<b>Download offline maps</b> for Tenerife, La Palma, trailheads, and airport areas.",
-          "<b>Reconfirm inter-island flight times, car counters, lodging parking, and mountain weather.</b>",
-          "<b>Pack layers, sun gear, trail shoes, swimsuits, snacks, motion-sickness meds, and printed confirmations.</b>"
+          "<b>Passports:</b> Schengen requires validity 3+ months after planned EU departure and issue within the last 10 years (<a href=\"https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/index_en.htm\" target=\"_blank\" rel=\"noreferrer\">EU</a>); renew before winter if anyone is close.",
+          "<b>ETIAS:</b> no July 2026 action; the U.S. State Dept. says ETIAS is planned for late 2026, so apply only after the official system launches (<a href=\"https://travel.state.gov/en/international-travel/planning/guidance/europe.html\" target=\"_blank\" rel=\"noreferrer\">State Dept.</a>).",
+          "<b>Insurance:</b> compare family medical/trip coverage after the first meaningful deposit; waiver timing is policy-specific, so do not wait until final payment if coverage matters.",
+          "<b>Re-check calima, wind, and trail status</b> the week of Teide and La Palma hiking."
         ]
       }
     ],
-    "callout": "<b>Do not forget:</b> the plan works because Tenerife absorbs the air-routing complexity. Keep the La Palma nature block, but return to Tenerife before the long-haul unless SPC routing is genuinely clean."
+    "callout": "<b>Why this no longer says \"act now\" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href=\"https://www.expedia.com/newsroom/expedia-2026-air-hacks/\" target=\"_blank\" rel=\"noreferrer\">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href=\"https://www.going.com/guides/the-best-time-to-book-a-cheap-flight\" target=\"_blank\" rel=\"noreferrer\">Going</a> puts international trips in a 2-8 month window, and <a href=\"https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/\" target=\"_blank\" rel=\"noreferrer\">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget."
   },
   "scorecard": {
     "displayName": "Canary Islands",

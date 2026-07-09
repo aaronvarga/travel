@@ -1035,6 +1035,7 @@ footer a{color:var(--muted)}
       <a href="#getting-around">Getting Around</a>
       <a href="#health-check">Health-Check</a>
       <a href="#timing">Best Time</a>
+      <a href="#todo">To-Do</a>
       <a href="#budget">Budget</a>
       <a href="#tips">Travel Tips</a>
       <a href="#status">Settled & Open</a>
@@ -1630,7 +1631,43 @@ footer a{color:var(--muted)}
 </section>
 
 
-  <section id="budget" class="divider">
+  <section id="todo" class="divider pretrip-todo">
+      <style>.pretrip-todo .todo-grid{display:grid;gap:12px}.pretrip-todo .todo-block{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c1);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.pretrip-todo .todo-block.hot{border-left-color:#c0392b}.pretrip-todo .todo-block.watch{border-left-color:var(--gold)}.pretrip-todo .todo-block.done{border-left-color:var(--c3)}.pretrip-todo .todo-when{grid-row:1/4;align-self:start;display:inline-block;margin:0;padding:4px 10px;border-radius:999px;background:rgba(31,111,120,.1);color:var(--c1);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-align:center}.pretrip-todo .todo-block.hot .todo-when{background:rgba(192,57,43,.1);color:#a23625}.pretrip-todo .todo-block.watch .todo-when{background:rgba(217,164,65,.16);color:#8a641e}.pretrip-todo .todo-block.done .todo-when{background:rgba(63,125,78,.12);color:var(--c3)}.pretrip-todo h3{grid-column:2;margin:0;font-size:1.12rem;font-weight:600;line-height:1.18}.pretrip-todo .todo-note{grid-column:2;margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}.pretrip-todo ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px}.pretrip-todo li{position:relative;padding-left:16px;color:var(--muted);font-size:.88rem;line-height:1.45}.pretrip-todo li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}.pretrip-todo li b{color:var(--ink)}.pretrip-todo .todo-callout{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:12px;background:var(--card);box-shadow:0 10px 28px rgba(30,32,28,.08);color:var(--muted);font-size:.9rem;line-height:1.55}.pretrip-todo .todo-callout b{color:var(--ink)}@media(max-width:720px){.pretrip-todo .todo-block{grid-template-columns:1fr;padding:16px}.pretrip-todo .todo-when{grid-row:auto;justify-self:start;text-align:left}.pretrip-todo h3,.pretrip-todo .todo-note,.pretrip-todo ul{grid-column:1}}</style>
+      <div class="section-label"><p class="eyebrow">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p></div>
+      <div class="todo-grid">
+        <article class="todo-block watch">
+          <p class="todo-when">Now-Jul 2026</p>
+          <h3>Track, do not panic-buy</h3><p class="todo-note">Inventory opening is a search-alert trigger, not a cash-fare deadline.</p>
+          <ul><li><b>Set fare alerts</b> for the protected routing plus one acceptable fallback airport/routing.</li><li><b>Do not buy cash airfare just because seats opened</b>; only grab award space or a fare already inside the trip budget with good flight times.</li><li><b>Track Antalya/Dalaman/Istanbul routings</b> and decide whether the trip needs an open-jaw or a simpler round trip.</li></ul>
+        </article>
+        <article class="todo-block watch">
+          <p class="todo-when">Sep-Nov 2026</p>
+          <h3>Hold scarce refundable stays</h3><p class="todo-note">This is about protecting scarce family inventory, not chasing prepaid discounts.</p>
+          <ul><li><b>Hold refundable family lodging</b> in the exact beach/harbor bases after the route is chosen; prioritize pool, AC, shade, and walkability.</li><li><b>Avoid nonrefundable resort rates</b> until flights are bought.</li></ul>
+        </article>
+        <article class="todo-block watch">
+          <p class="todo-when">Dec 2026-Feb 2027</p>
+          <h3>Cars, transfers, and route anchors</h3><p class="todo-note">Use cancellable/pay-later terms where possible, then re-shop after flights are purchased.</p>
+          <ul><li><b>Reserve a cancellable car or transfer chain</b> once flight gateways are likely.</li><li><b>Confirm boat-day pickup points</b> before locking remote lodging.</li></ul>
+        </article>
+        <article class="todo-block hot">
+          <p class="todo-when">Jan-Mar 2027</p>
+          <h3>Buy flights in the real window</h3><p class="todo-note">For peak-summer Europe, this is the practical cash-buy window: <a href="https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/" target="_blank" rel="noreferrer">Google Flights</a> puts U.S.-Europe fares near 94 days out, while <a href="https://www.going.com/guides/the-best-time-to-book-a-cheap-flight" target="_blank" rel="noreferrer">Going</a> gives 2-8 months for international trips and says to shift earlier for peak periods.</p>
+          <ul><li><b>Buy when the total family fare and schedule both work</b>; waiting for a theoretical bottom is not worth bad layovers or split seats.</li></ul>
+        </article>
+        <article class="todo-block hot">
+          <p class="todo-when">60-90 days out</p>
+          <h3>Timed tickets and tours</h3><p class="todo-note">These are the tasks with real external release windows or limited capacity.</p>
+          <ul><li><b>Book boat days and marquee ruins/guided tours 60-90 days out</b> if they are must-do.</li><li><b>Reserve only true must-have restaurants or resort experiences 30-60 days out</b>.</li><li><b>Keep one heat/wind backup day</b> for the coast.</li></ul>
+        </article>
+        <article class="todo-block done">
+          <p class="todo-when">Final month</p>
+          <h3>Final checks</h3>
+          <ul><li><b>Passports:</b> check validity and renew early if any passport is close; routine U.S. passport processing is currently 4-6 weeks before mailing time (<a href="https://travel.state.gov/en/passports/apply/help/processing-time.html" target="_blank" rel="noreferrer">U.S. State Dept.</a>).</li><li><b>Entry rules:</b> re-check Turkey visa/passport requirements before ticketing and again 60 days out; rules can change and depend on passport nationality.</li><li><b>Driving and money:</b> confirm card coverage, toll tags, and one-way/drop rules before finalizing a car.</li><li><b>Re-check entry rules, heat forecasts, and boat conditions</b> before departure.</li></ul>
+        </article>
+      </div>
+      <div class="todo-callout"><b>Why this no longer says "act now" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href="https://www.expedia.com/newsroom/expedia-2026-air-hacks/" target="_blank" rel="noreferrer">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href="https://www.going.com/guides/the-best-time-to-book-a-cheap-flight" target="_blank" rel="noreferrer">Going</a> puts international trips in a 2-8 month window, and <a href="https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/" target="_blank" rel="noreferrer">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget.</div>
+    </section><section id="budget" class="divider">
     <div class="section-label">
       <p class="eyebrow">The Money</p>
       <h2>Budget, savers &amp; splurges</h2>
