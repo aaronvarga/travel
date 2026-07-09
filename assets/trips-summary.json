@@ -57,13 +57,73 @@
   },
   "trips": [
     {
+      "slug": "albania",
+      "token": "albania",
+      "title": "Albania · Accursed Mountains to the Riviera — June 2027",
+      "displayName": "Albania",
+      "blurb": "Alpine epic + a warm swim",
+      "recommended": false,
+      "excluded": "Excluded by family decision",
+      "axes": {
+        "budget": 5,
+        "weather": 4,
+        "swim": 5,
+        "variety": 5,
+        "ease": 3,
+        "food": 4,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 9715,
+        "ceilUsd": 14230,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 9,
+        "nights": 13
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          75
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 44,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/albania/index.html"
+    },
+    {
       "slug": "balkans",
       "token": "balkans",
       "title": "Balkan Coast Road Trip - July 2027",
       "displayName": "Balkan Coast Road Trip",
       "blurb": "Most adventurous",
       "recommended": false,
-      "excluded": null,
+      "excluded": "Excluded by family decision",
       "axes": {
         "budget": 1,
         "weather": 3,
@@ -123,7 +183,7 @@
       "displayName": "California Pacific Coast",
       "blurb": "Best domestic road trip",
       "recommended": false,
-      "excluded": null,
+      "excluded": "Excluded by family decision",
       "axes": {
         "budget": 3,
         "weather": 4,
@@ -175,6 +235,66 @@
         "total": 17
       },
       "href": "locations/california-pacific-coast/index.html"
+    },
+    {
+      "slug": "canary-islands",
+      "token": "canary-islands",
+      "title": "Canary Islands · Tenerife to La Palma — June 2027",
+      "displayName": "Canary Islands",
+      "blurb": "Madeira twin, easier flights",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 2,
+        "weather": 4,
+        "swim": 3,
+        "variety": 5,
+        "ease": 2,
+        "food": 3,
+        "risk": 2,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 11800,
+        "ceilUsd": 14690,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 3,
+        "swimTempF": [
+          70,
+          72
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 33,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/canary-islands/index.html"
     },
     {
       "slug": "croatia",
@@ -237,24 +357,24 @@
       "href": "locations/croatia/index.html"
     },
     {
-      "slug": "greece-via-lisbon",
-      "token": "greece",
-      "title": "Greece via Lisbon · Crete — June 2027",
-      "displayName": "Greece via Lisbon",
-      "blurb": "Iconic contender",
+      "slug": "dolomites-sardinia",
+      "token": "dolomites-sardinia",
+      "title": "Venice, the Dolomites & Sardinia — June 2027",
+      "displayName": "Venice, Dolomites & Sardinia",
+      "blurb": "Alpine hiking + Sardinian beaches",
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 3,
-        "weather": 5,
-        "swim": 4,
-        "variety": 4,
+        "budget": 1,
+        "weather": 4,
+        "swim": 3,
+        "variety": 5,
         "ease": 3,
-        "food": 3,
+        "food": 4,
         "risk": 3,
-        "nights": 4,
-        "novelty": 4,
-        "pto": 4
+        "nights": 5,
+        "novelty": 5,
+        "pto": 3
       },
       "weightDefaults": {
         "budget": 2,
@@ -269,14 +389,74 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 9300,
-        "ceilUsd": 14700,
+        "floorUsd": 14000,
+        "ceilUsd": 15500,
         "targetUsd": 12000,
         "capUsd": 15000
       },
       "pto": {
-        "days": 7,
-        "nights": 11
+        "days": 9,
+        "nights": 13
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          74,
+          77
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 34,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/dolomites-sardinia/index.html"
+    },
+    {
+      "slug": "greece-via-lisbon",
+      "token": "greece",
+      "title": "Greece via Lisbon · Crete — June 2027",
+      "displayName": "Greece via Lisbon",
+      "blurb": "Iconic contender",
+      "recommended": false,
+      "excluded": null,
+      "axes": {
+        "budget": 1,
+        "weather": 5,
+        "swim": 4,
+        "variety": 5,
+        "ease": 4,
+        "food": 4,
+        "risk": 4,
+        "nights": 5,
+        "novelty": 4,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 9900,
+        "ceilUsd": 15600,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
       },
       "facets": {
         "continent": "europe",
@@ -289,7 +469,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 36,
+      "totalBaked": 37,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -305,13 +485,15 @@
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 4,
+        "budget": 1,
         "weather": 4,
         "swim": 5,
         "variety": 5,
         "ease": 4,
         "food": 4,
-        "risk": 3,
+        "risk": 4,
+        "nights": 2,
+        "novelty": 3,
         "pto": 4
       },
       "weightDefaults": {
@@ -322,11 +504,13 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
-        "floorUsd": 10600,
-        "ceilUsd": 14400,
+        "floorUsd": 11000,
+        "ceilUsd": 15800,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -353,6 +537,66 @@
       "href": "locations/hawaii/index.html"
     },
     {
+      "slug": "iceland",
+      "token": "iceland",
+      "title": "Iceland · Reykjavík, South Coast & Glacier Lagoons — June 2027",
+      "displayName": "Iceland",
+      "blurb": "Photographs like nowhere else",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 3,
+        "weather": 2,
+        "swim": 3,
+        "variety": 5,
+        "ease": 5,
+        "food": 3,
+        "risk": 4,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 4
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 11420,
+        "ceilUsd": 14720,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 0,
+        "swimTempF": [
+          100,
+          104
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 38,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/iceland/index.html"
+    },
+    {
       "slug": "italy-salento-amalfi",
       "token": "italy",
       "title": "Salento, Maratea & the Amalfi Coast — June 2027",
@@ -367,7 +611,7 @@
         "variety": 5,
         "ease": 3,
         "food": 5,
-        "risk": 2,
+        "risk": 3,
         "nights": 5,
         "novelty": 2,
         "pto": 3
@@ -405,7 +649,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 33,
+      "totalBaked": 34,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -421,13 +665,73 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 1,
         "weather": 5,
         "swim": 4,
         "variety": 5,
         "ease": 2,
         "food": 4,
         "risk": 2,
+        "nights": 5,
+        "novelty": 4,
+        "pto": 2
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 12200,
+        "ceilUsd": 16100,
+        "targetUsd": 12000,
+        "capUsd": 15000
+      },
+      "pto": {
+        "days": 9,
+        "nights": 13
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 3,
+        "swimTempF": [
+          73,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": true,
+        "hasSwim": true
+      },
+      "totalBaked": 33,
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/madeira-crete/index.html"
+    },
+    {
+      "slug": "madeira-mallorca",
+      "token": "madeira-mallorca",
+      "title": "Madeira + Mallorca Family Itinerary - June 2027",
+      "displayName": "Madeira + Mallorca",
+      "blurb": "Hiking + sandy Mediterranean swim",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 3,
+        "weather": 5,
+        "swim": 3,
+        "variety": 5,
+        "ease": 3,
+        "food": 4,
+        "risk": 3,
         "nights": 5,
         "novelty": 5,
         "pto": 3
@@ -445,8 +749,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11600,
-        "ceilUsd": 14900,
+        "floorUsd": 11800,
+        "ceilUsd": 14800,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -456,21 +760,21 @@
       },
       "facets": {
         "continent": "europe",
-        "maxConnections": 3,
+        "maxConnections": 2,
         "swimTempF": [
-          73,
-          74
+          72,
+          75
         ],
         "noPassport": false,
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 38,
+      "totalBaked": 39,
       "completeness": {
         "complete": 17,
         "total": 17
       },
-      "href": "locations/madeira-crete/index.html"
+      "href": "locations/madeira-mallorca/index.html"
     },
     {
       "slug": "madeira-sicily",
@@ -481,13 +785,15 @@
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 5,
-        "swim": 4,
+        "swim": 3,
         "variety": 5,
-        "ease": 2,
+        "ease": 1,
         "food": 5,
         "risk": 1,
+        "nights": 5,
+        "novelty": 5,
         "pto": 3
       },
       "weightDefaults": {
@@ -498,7 +804,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 12300,
@@ -521,7 +829,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 26,
+      "totalBaked": 32,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -537,13 +845,13 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 5,
+        "budget": 3,
         "weather": 4,
         "swim": 2,
         "variety": 4,
         "ease": 4,
         "food": 4,
-        "risk": 3,
+        "risk": 4,
         "nights": 5,
         "novelty": 5,
         "pto": 3
@@ -581,7 +889,7 @@
         "singleTicket": true,
         "hasSwim": false
       },
-      "totalBaked": 41,
+      "totalBaked": 38,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -597,13 +905,15 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 2,
         "weather": 5,
         "swim": 4,
-        "variety": 4,
+        "variety": 5,
         "ease": 3,
         "food": 4,
         "risk": 3,
+        "nights": 5,
+        "novelty": 4,
         "pto": 3
       },
       "weightDefaults": {
@@ -617,8 +927,8 @@
         "pto": 1
       },
       "budget": {
-        "floorUsd": 10800,
-        "ceilUsd": 14800,
+        "floorUsd": 11100,
+        "ceilUsd": 15200,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -637,7 +947,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 29,
+      "totalBaked": 37,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -655,11 +965,11 @@
       "axes": {
         "budget": 2,
         "weather": 5,
-        "swim": 4,
+        "swim": 3,
         "variety": 5,
         "ease": 2,
         "food": 5,
-        "risk": 2,
+        "risk": 3,
         "nights": 5,
         "novelty": 5,
         "pto": 3
@@ -713,13 +1023,15 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 2,
         "weather": 5,
-        "swim": 5,
+        "swim": 3,
         "variety": 4,
         "ease": 2,
         "food": 4,
         "risk": 2,
+        "nights": 5,
+        "novelty": 5,
         "pto": 3
       },
       "weightDefaults": {
@@ -730,11 +1042,13 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 10700,
-        "ceilUsd": 14900,
+        "ceilUsd": 15500,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -753,7 +1067,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 28,
+      "totalBaked": 34,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -769,13 +1083,13 @@
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 2,
-        "weather": 4,
-        "swim": 5,
+        "budget": 1,
+        "weather": 5,
+        "swim": 3,
         "variety": 5,
-        "ease": 2,
+        "ease": 3,
         "food": 5,
-        "risk": 2,
+        "risk": 3,
         "nights": 5,
         "novelty": 5,
         "pto": 3
@@ -813,7 +1127,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 36,
       "completeness": {
         "complete": 17,
         "total": 17
@@ -827,15 +1141,17 @@
       "displayName": "Southern France",
       "blurb": "Shortest Europe route",
       "recommended": false,
-      "excluded": null,
+      "excluded": "Excluded by family decision",
       "axes": {
-        "budget": 2,
+        "budget": 3,
         "weather": 4,
         "swim": 3,
         "variety": 3,
         "ease": 4,
         "food": 4,
         "risk": 3,
+        "nights": 1,
+        "novelty": 5,
         "pto": 5
       },
       "weightDefaults": {
@@ -846,7 +1162,9 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
         "floorUsd": 9600,
@@ -869,7 +1187,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 25,
+      "totalBaked": 33,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -885,13 +1203,13 @@
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 2,
         "weather": 3,
         "swim": 3,
         "variety": 4,
-        "ease": 4,
+        "ease": 3,
         "food": 4,
-        "risk": 3,
+        "risk": 4,
         "nights": 5,
         "novelty": 5,
         "pto": 2
@@ -929,7 +1247,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 35,
       "completeness": {
         "complete": 11,
         "total": 17
@@ -945,11 +1263,11 @@
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 2,
-        "weather": 5,
+        "budget": 1,
+        "weather": 3,
         "swim": 5,
         "variety": 4,
-        "ease": 3,
+        "ease": 2,
         "food": 4,
         "risk": 2,
         "nights": 5,
@@ -989,7 +1307,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 32,
       "completeness": {
         "complete": 11,
         "total": 17

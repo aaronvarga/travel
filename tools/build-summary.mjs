@@ -17,21 +17,25 @@ const outPath = path.join(root, 'assets', 'trips-summary.json');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'scorecard.manifest.json'), 'utf8'));
 
 const status = fs.existsSync(statusPath) ? JSON.parse(fs.readFileSync(statusPath, 'utf8')) : {};
+const ignoredSlugs = new Set(['smoketest']);
 
 // directory slug -> scoreboard data-trip token used in index.html markup
 const TOKEN = {
   portugal: 'portugal', 'portugal-crete': 'portugal-crete', 'madeira-crete': 'madeira-crete',
-  'portugal-sicily': 'portugal-sicily', 'madeira-sicily': 'madeira-sicily', hawaii: 'hawaii',
+  'portugal-sicily': 'portugal-sicily', 'madeira-sicily': 'madeira-sicily',
+  'madeira-mallorca': 'madeira-mallorca', 'canary-islands': 'canary-islands', hawaii: 'hawaii',
   croatia: 'croatia', 'italy-salento-amalfi': 'italy', 'sardinia-corsica': 'sardinia',
   'greece-via-lisbon': 'greece', 'turkish-riviera': 'turkey', 'sicily-malta': 'sicily',
   spain: 'spain', 'california-pacific-coast': 'california', 'southern-france': 'southernfrance',
-  balkans: 'balkans',
+  balkans: 'balkans', 'dolomites-sardinia': 'dolomites-sardinia', albania: 'albania',
+  iceland: 'iceland',
 };
 
 const slugs = fs
   .readdirSync(dataDir, { withFileTypes: true })
   .filter((d) => d.isDirectory() && fs.existsSync(path.join(dataDir, d.name, 'main.json')))
   .map((d) => d.name)
+  .filter((name) => !ignoredSlugs.has(name))
   .sort();
 
 const trips = [];
@@ -66,6 +70,7 @@ for (const slug of slugs) {
 
 // Every status slug must have a scorecard trip too.
 for (const slug of Object.keys(status)) {
+  if (ignoredSlugs.has(slug)) continue;
   if (!trips.find((t) => t.slug === slug)) problems.push(`${slug}: in section-status.json but no scorecard trip`);
 }
 

@@ -25,11 +25,13 @@ const outPath = path.join(root, 'assets', 'section-status.json');
 
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 const required = manifest.sections.filter((s) => s.required).map((s) => s.id);
+const ignoredSlugs = new Set(['smoketest']);
 
 const slugs = fs
   .readdirSync(dataDir, { withFileTypes: true })
   .filter((d) => d.isDirectory() && fs.existsSync(path.join(dataDir, d.name, 'main.json')))
   .map((d) => d.name)
+  .filter((name) => !ignoredSlugs.has(name))
   .sort();
 
 const ANCHOR_RE = /<section[^>]*\bid="([^"]+)"/g;

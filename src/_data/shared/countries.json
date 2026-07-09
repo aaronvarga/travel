@@ -1,5 +1,33 @@
 {
   "_comment": "Shared entry/documents/logistics data, rendered by the `entry` macro in src/itinerary.njk, filtered per trip by main.json `countries: [...]`. Regulatory facts verified July 2025 with sources listed per country. ETIAS date/fee are VOLATILE — wording is hedged; re-check the official EU link before travel.",
+  "albania": {
+    "name": "Albania",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond arrival is the stated rule; carry ≥6 months to be safe. Albania is NOT in the Schengen Area, so time here does not count against the Schengen 90/180 clock.",
+    "etias": {
+      "status": "Not applicable — Albania is outside the EU/Schengen zone, so no ETIAS is required to enter Albania.",
+      "fee": "None for Albania.",
+      "note": "ETIAS only ever applies to the Schengen side of this trip (the Corfu, Greece buffer night). If ETIAS is live by Jun 2027 you'd need one €20 authorization for the Greece leg; if it hasn't launched, no action. Confirm on the official EU site close to departure."
+    },
+    "visa": "None for US citizens — visa-free, and unusually generous: up to 1 year of stay per entry under a US–Albania bilateral agreement (far beyond the 90 days you'll use).",
+    "idp": "Your US license is accepted for non-resident stays, but carry a 1949-Geneva-Convention IDP (AAA, ~$20) — car-rental desks and police checkpoints routinely ask for it.",
+    "driving": "Drive on the right. Rentals skew manual — book an automatic early and expect a premium. Min age ~21 (under-25 surcharge common). Mountain roads (SH21 to Theth) are now mostly paved but narrow with steep drop-offs; the SH8 Riviera coast road is winding. Defensive driving essential — local habits are aggressive.",
+    "tolls": "One tolled stretch (the Rrëshen–Kalimash 'Nation's Highway' tunnel road toward Kosovo, not on this route). Otherwise effectively toll-free; pay the tunnel toll in cash/card if you ever take it.",
+    "ztl": "",
+    "money": {
+      "cards": "Cards accepted in city hotels/restaurants and larger coastal spots; mountain guesthouses, small cafés, ferries, and parking are frequently CASH ONLY.",
+      "cash": "Currency is the Albanian lek (ALL); ~90–100 lek per USD. Euros are sometimes taken on the coast but at a poor rate — use lek. Withdraw lek from ATMs (choose 'without conversion' to dodge DCC fees); carry cash for Theth.",
+      "tipping": "Not obligatory; rounding up or ~5–10% in cash is appreciated for good service."
+    },
+    "water": "Tap water is chlorinated in cities but locals largely drink bottled; in Theth and rural areas stick to bottled or filtered. Bottled water is very cheap.",
+    "emergency": "112 (unified EU-style emergency number, works nationwide). Also 129 police / 127 ambulance / 128 fire.",
+    "esim": "Airalo or Holafly Albania eSIMs work well; buy before departure. Coverage is good on the coast and in Tirana, patchy deep in the Theth valley.",
+    "sources": [
+      { "label": "US State Dept — Albania travel info", "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Albania.html" },
+      { "label": "U.S. Embassy Tirana — Entering & Residing", "url": "https://al.usembassy.gov/entering-and-residing/" },
+      { "label": "Albania MFA — visa regime for foreigners", "url": "https://punetejashtme.gov.al/en/regjimi-i-vizave-per-te-huajt/" }
+    ]
+  },
   "portugal": {
     "name": "Portugal (incl. Madeira)",
     "domestic": false,
@@ -109,6 +137,34 @@
       { "label": "Visit Malta — official", "url": "https://www.visitmalta.com" }
     ]
   },
+  "spain": {
+    "name": "Spain (incl. Mallorca)",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.",
+    "etias": {
+      "status": "Expected to launch late 2026 (re-check before June 2027).",
+      "fee": "€20; under-18s and over-70s exempt.",
+      "note": "ETIAS is a pre-travel authorization for visa-free US visitors to Schengen countries. If launch slips again before June 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180.",
+    "idp": "Recommended with a US license for rentals; carry passport, license, IDP, and rental paperwork together.",
+    "driving": "Right-side driving. Mallorca roads are generally easy, but Tramuntana and Formentor routes are narrow and seasonal access rules can change.",
+    "tolls": "No island toll-road system like mainland Portugal; budget for parking, blue-zone meters, and possible beach/natural-park lots.",
+    "ztl": "Avoid driving into old-town Palma, Valldemossa, Soller, and Alcudia cores unless lodging confirms access and parking.",
+    "money": {
+      "cards": "Cards widely accepted in hotels, restaurants, supermarkets, and activity desks.",
+      "cash": "Carry €50–100 for beach parking, small cafes, market snacks, and tips.",
+      "tipping": "Not required; rounding up or 5–10% for strong service is appreciated."
+    },
+    "water": "Tap water is safe; bottled water may taste better because island tap water can be hard or desalinated.",
+    "emergency": "112 (EU-wide, free, mobile or landline).",
+    "esim": "Airalo Eurolink, Holafly Europe, or a carrier roaming pass should cover Spain and Portugal on one plan.",
+    "sources": [
+      { "label": "US State Dept — Spain", "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Spain.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "DGT Spain — traffic authority", "url": "https://www.dgt.es/en/" }
+    ]
+  },
   "france": {
     "name": "France (Corsica)",
     "domestic": false,
@@ -136,6 +192,34 @@
       { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
       { "label": "France.fr — renting a car and driving in France", "url": "https://www.france.fr/en/article/renting-car-and-driving-france/" },
       { "label": "France toll roads guide", "url": "https://tollguru.com/france-toll" }
+    ]
+  },
+  "iceland": {
+    "name": "Iceland",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned Schengen departure, and issued within the last 10 years. Iceland is in the Schengen Area, so time here counts against the 90/180 clock.",
+    "etias": {
+      "status": "Expected to launch late 2026 (repeatedly delayed — not yet confirmed). Applies to Iceland as a Schengen state.",
+      "fee": "€20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).",
+      "note": "ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180.",
+    "idp": "A US license is accepted for short stays; an IDP is recommended (cheap translation) and some rental insurers ask for it. Carry passport, license, IDP, and rental paperwork together.",
+    "driving": "Drive on the right; rentals default to automatic (still book early for June). Min age ~20 (under-25 surcharge common). The SW/South route needs no F-roads or 4x4, but roads are windy, gravel shoulders are loose, and single-lane bridges (einbreið brú) require yielding. Headlights must be ON 24/7 (midnight sun makes this easy to forget). Off-road/off-track driving is illegal and heavily fined. Hold the car door against the wind — wind damage is the #1 rental claim, and gravel/sand-ash (SAAP/GP) insurance is worth it on the south coast.",
+    "tolls": "Effectively toll-free on this route. The Hvalfjörður tunnel (near Reykjavík) is now free; the only toll road is Vaðlaheiðargöng in the north (not on this itinerary, paid online within 3 hours if used).",
+    "ztl": "",
+    "money": {
+      "cards": "Iceland is nearly cashless — contactless cards work everywhere, including gas pumps, parking, and remote guesthouses. A card with a PIN is essential for unattended fuel pumps.",
+      "cash": "You barely need any. Currency is the Icelandic króna (ISK), ~135–140 ISK per USD. Skip the currency exchange; a fee-free card covers everything.",
+      "tipping": "Not expected or customary — service is included. Rounding up for exceptional service is welcome but never required."
+    },
+    "water": "Tap water is glacial, free, and among the best on Earth — always drink from the tap, never buy bottled. Cold tap is odourless; HOT tap water is geothermal and smells faintly of sulfur (rotten-egg) — that's normal and harmless, just use cold for drinking.",
+    "emergency": "112 (single number for all emergencies; the 112 Iceland app can send your GPS location to rescue teams — install it).",
+    "esim": "Airalo, Nova, or Síminn eSIMs work well; buy before departure. Coverage is strong along the whole SW/South ring-road corridor; expect dead zones only in the highlands (not on this route).",
+    "sources": [
+      { "label": "US State Dept — Iceland", "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Iceland.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "SafeTravel.is — official Iceland road & safety alerts", "url": "https://safetravel.is/" }
     ]
   },
   "usa": {

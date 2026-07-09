@@ -10,9 +10,11 @@ const path = require('path');
 
 module.exports = function () {
   const dir = __dirname; // src/_data
+  const ignored = new Set(['smoketest']);
   const slugs = fs.readdirSync(dir, { withFileTypes: true })
     .filter((d) => d.isDirectory())
     .map((d) => d.name)
+    .filter((name) => !ignored.has(name))
     .filter((name) => fs.existsSync(path.join(dir, name, 'main.json')))
     .sort();
 
