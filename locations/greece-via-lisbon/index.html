@@ -713,9 +713,9 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
-.section-label{text-align:center;margin:0 auto 40px;max-width:760px}
-.section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
-.section-label p{margin:0;color:var(--muted)}
+.section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
+.section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
+.section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
 .divider{margin:78px 0 40px}
 /* OVERVIEW */
 .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}
@@ -724,18 +724,20 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}
 .ocard p{margin:0;color:var(--muted);font-size:.92rem}
 /* TRIP MAP */
-.hc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-.hc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}
-.hc.actnow{border-top-color:#c0392b}
-.hc.watch{border-top-color:var(--gold)}
-.hc.good{border-top-color:var(--c3)}
-.hc-tag{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:10px;color:#fff}
+.hc-grid{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.hc{display:grid;grid-template-columns:132px minmax(190px,285px) minmax(0,1fr);gap:16px;align-items:start;margin:0;padding:18px 22px;border:0;border-left:5px solid var(--muted);border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}
+.hc:last-child{border-bottom:0}
+.hc.actnow{border-left-color:#c0392b}
+.hc.watch{border-left-color:var(--gold)}
+.hc.good{border-left-color:var(--c3)}
+.hc-tag{display:inline-flex;align-items:center;justify-content:center;width:max-content;max-width:100%;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:1px 0 0;color:#fff;text-align:center;white-space:nowrap}
 .hc.actnow .hc-tag{background:#c0392b}
 .hc.watch .hc-tag{background:var(--gold)}
 .hc.good .hc-tag{background:var(--c3)}
-.hc h4{margin:0 0 8px;font-size:1.15rem;font-weight:600;line-height:1.15}
-.hc p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.hc h4{margin:0;font-size:1.08rem;font-weight:600;line-height:1.16}
+.hc p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.48}
 .hc p b{color:var(--ink)}
+@media(max-width:860px){.hc{grid-template-columns:1fr;gap:8px;padding:16px 18px}.hc-tag{margin:0}.hc h4{font-size:1.05rem}}
 
 /* TRAVEL TIPS */
 .tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}
@@ -1018,7 +1020,7 @@ footer a{color:var(--muted)}
 
     <div class="section-label">
       <p class="eyebrow">The Plan at a Glance</p>
-      <h2>Rebuilt around Crete — now mountain-and-sea complete</h2>
+      <h2>Crete carries the trip</h2>
       <p>Santorini is gone (already visited), Naxos is gone too (see Health-Check for why), and Athens is no longer a sightseeing base. Crete now does the full substitution job: warm lagoons and town beaches, plus Samaria, Imbros, and the Omalos/Lefka Ori high country for the dramatic non-beach scenery originally pulling Madeira into the conversation — without an Atlantic mid-trip flight. Every stop below has a map pin, price, a picky-kid restaurant pick, an alternative, and travel-blog links.</p>
     </div>
     <div class="overview">
@@ -1029,7 +1031,7 @@ footer a{color:var(--muted)}
   <section id="why-this-trip" class="divider">
     <div class="section-label">
       <p class="eyebrow">Why This Trip</p>
-      <h2>Crete does the beach and mountain work</h2>
+      <h2>Crete: beaches + mountains</h2>
       <p>Pick Greece via Lisbon if you want a free-feeling Lisbon opener, then Crete as the main event: Chania, Balos, Elafonissi, Imbros, Samaria, Omalos, and Rethymno.</p>
     </div>
     <div class="decision-brief" style="padding:18px 20px;border:1px solid var(--line);border-left:6px solid var(--c2);border-radius:12px;background:var(--paper);box-shadow:0 10px 28px rgba(30,32,28,.06)">
@@ -1057,7 +1059,7 @@ footer a{color:var(--muted)}
   <section id="kids-favorites" class="divider">
     <div class="section-label">
       <p class="eyebrow">Kids&rsquo; Favorites</p>
-      <h2>The moments most likely to win the trip for them</h2>
+      <h2>Kid-favorite moments</h2>
       <p>Not every excellent stop makes this list. These are the clearest kid-facing payoffs from the full itinerary.</p>
     </div>
     <div class="kids-favorites" style="padding:4px 0 0">
@@ -1699,7 +1701,7 @@ footer a{color:var(--muted)}
     <section id="air-travel" class="divider">
     <div class="section-label">
       <p class="eyebrow">Air Travel</p>
-      <h2>One protected through-fare to Lisbon and Athens, then a reliable domestic hop to Crete</h2>
+      <h2>Protected Crete routing</h2>
       <p>This trip rides a single TAP through-ticket from Pittsburgh &mdash; PIT to a European gateway, a free Lisbon stopover, then onward to Athens &mdash; and buys the short Athens&ndash;Chania leg separately on a frequent, well-established Greek carrier. It is a round trip through Lisbon, not an open-jaw: the way home retraces CHQ &rarr; ATH &rarr; LIS &rarr; PIT. Bands below are 2025&ndash;2026 data as a 2027 proxy &mdash; re-quote once 2027 schedules load.</p>
     </div>
     <div class="plan-grid">
@@ -1726,7 +1728,7 @@ footer a{color:var(--muted)}
     <section id="getting-around" class="divider">
     <div class="section-label">
       <p class="eyebrow">Getting Around</p>
-      <h2>TAP stopover, a short hop, one flight to Crete</h2>
+      <h2>TAP stopover to Crete</h2>
       <p>One through-fare with a free Lisbon stopover, a new short TAP hop through Athens, one 45-minute domestic flight to Crete, and a single rental car for both Crete bases. No inter-island ferries this time. Price bands are 2025–2026 data — 2027 fares aren't bookable yet.</p>
     </div>
     <div class="plan-grid">
@@ -1777,7 +1779,7 @@ footer a{color:var(--muted)}
       <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
       <div class="section-label">
         <p class="eyebrow">Entry &amp; Documents</p>
-        <h2>Passports, ETIAS, and the essentials before you go</h2>
+        <h2>Passports and essentials</h2>
         <p>Documents, driving, money, health, and connectivity for this trip. Time-sensitive items (especially <b>ETIAS</b>) can change — re-check the linked official sources close to departure.</p>
       </div>
       <div class="plan-grid"><div class="pcard">
@@ -1867,7 +1869,7 @@ footer a{color:var(--muted)}
   <section id="timing" class="divider">
     <div class="section-label">
       <p class="eyebrow">Timing Check</p>
-      <h2>What changed after adding the epic Crete hiking day</h2>
+      <h2>After the Crete hike swap</h2>
       <p>The hiking-loaded version keeps the same Wed Jun 9 departure, adds one Crete night for Samaria and Omalos, and now returns Tue Jun 22 before the Jun 23-26 Pittsburgh blackout.</p>
     </div>
 
@@ -2013,7 +2015,7 @@ footer a{color:var(--muted)}
     </section><section id="social" class="divider">
     <div class="section-label">
       <p class="eyebrow">What People Are Saying</p>
-      <h2>Insider notes from people who've actually gone</h2>
+      <h2>Insider field notes</h2>
       <p>Crowd-sourced from Reddit, TripAdvisor forums, and local-run blogs &mdash; the off-the-beaten-path stuff guidebooks skip. Reconfirm access rules and prices when 2027 inventory opens.</p>
     </div>
 

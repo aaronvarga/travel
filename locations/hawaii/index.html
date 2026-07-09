@@ -714,9 +714,9 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
-.section-label{text-align:center;margin:0 auto 40px;max-width:760px}
-.section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
-.section-label p{margin:0;color:var(--muted)}
+.section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
+.section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
+.section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
 .divider{margin:78px 0 40px}
 /* OVERVIEW */
 .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}
@@ -725,19 +725,20 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}
 .ocard p{margin:0;color:var(--muted);font-size:.92rem}
 /* TRIP MAP */
-.hc-grid{display:grid;gap:12px}
-.hc{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--muted);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}
+.hc-grid{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.hc{display:grid;grid-template-columns:132px minmax(190px,285px) minmax(0,1fr);gap:16px;align-items:start;margin:0;padding:18px 22px;border:0;border-left:5px solid var(--muted);border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}
+.hc:last-child{border-bottom:0}
 .hc.actnow{border-left-color:#c0392b}
 .hc.watch{border-left-color:var(--gold)}
 .hc.good{border-left-color:var(--c3)}
-.hc-tag{grid-row:1/3;align-self:start;justify-self:stretch;display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:0;color:#fff;text-align:center}
+.hc-tag{display:inline-flex;align-items:center;justify-content:center;width:max-content;max-width:100%;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:1px 0 0;color:#fff;text-align:center;white-space:nowrap}
 .hc.actnow .hc-tag{background:#c0392b}
 .hc.watch .hc-tag{background:var(--gold)}
 .hc.good .hc-tag{background:var(--c3)}
-.hc h4{grid-column:2;margin:0;font-size:1.15rem;font-weight:600;line-height:1.15}
-.hc p{grid-column:2;margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.hc h4{margin:0;font-size:1.08rem;font-weight:600;line-height:1.16}
+.hc p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.48}
 .hc p b{color:var(--ink)}
-@media(max-width:720px){.hc{grid-template-columns:1fr;padding:16px}.hc-tag{grid-row:auto;justify-self:start}.hc h4,.hc p{grid-column:1}}
+@media(max-width:860px){.hc{grid-template-columns:1fr;gap:8px;padding:16px 18px}.hc-tag{margin:0}.hc h4{font-size:1.05rem}}
 
 /* TRAVEL TIPS */
 .tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}
@@ -1028,7 +1029,7 @@ footer a{color:var(--muted)}
   <section id="overview">
     <div class="section-label">
       <p class="eyebrow">The Plan at a Glance</p>
-      <h2>Oahu logistics first, Big Island nature second</h2>
+      <h2>Oahu first, Big Island second</h2>
       <p>This keeps the prior itinerary format but changes the Hawaii answer: two islands beat a single-island deep dive for this family, but only if the split is limited to one inter-island flight. Oahu covers easy logistics, Waikiki, Hanauma Bay, Pearl Harbor, and North Shore food; the Big Island covers Kona snorkeling, black-sand beaches, Mauna Kea high country, and Hawai&#699;i Volcanoes National Park.</p>
     </div>
     <div class="overview">
@@ -1039,7 +1040,7 @@ footer a{color:var(--muted)}
   <section id="why-this-trip" class="divider">
     <div class="section-label">
       <p class="eyebrow">Why This Trip</p>
-      <h2>The warmest, easiest swim trip</h2>
+      <h2>Warmest, easiest swim trip</h2>
       <p>Pick Hawaii if the goal is domestic logistics, no passports, and the clearest kid-swim payoff: Oahu for Waikiki/Hanauma/North Shore, Big Island for Kona, Mauna Kea, and Volcanoes NP.</p>
     </div>
     <div class="decision-brief" style="padding:18px 20px;border:1px solid var(--line);border-left:6px solid var(--c2);border-radius:12px;background:var(--paper);box-shadow:0 10px 28px rgba(30,32,28,.06)">
@@ -1067,7 +1068,7 @@ footer a{color:var(--muted)}
   <section id="kids-favorites" class="divider">
     <div class="section-label">
       <p class="eyebrow">Kids&rsquo; Favorites</p>
-      <h2>The moments most likely to win the trip for them</h2>
+      <h2>Kid-favorite moments</h2>
       <p>Not every excellent stop makes this list. These are the clearest kid-facing payoffs from the full itinerary.</p>
     </div>
     <div class="kids-favorites" style="padding:4px 0 0">
@@ -1616,8 +1617,8 @@ footer a{color:var(--muted)}
       </div></div>
   </section>
 
-  <section id="air-travel" class="divider"><div class="section-label"><p class="eyebrow">Air Travel</p><h2>No nonstop from Pittsburgh &mdash; one West Coast connection each way</h2><p>Pittsburgh has no nonstop to Hawaii; every routing connects a West Coast or hub gateway (SEA, LAX, SFO, DEN, PHX). Plan ~13&ndash;16 hours of travel each way including the layover, with a red-eye on the return. Schedules and fares below are 2026 as a 2027 proxy &mdash; re-quote ~11 months out.</p></div><div class="plan-grid"><div class="pcard"><h4><span class="dot"></span>Investigate first</h4><div class="prow"><span>In / out</span><strong>Honolulu (HNL) in &middot; Kona (KOA) out &mdash; open-jaw to avoid backtracking</strong></div><div class="prow"><span>Option A</span><strong>United via SFO or DEN: PIT&rarr;SFO&rarr;HNL in, KOA&rarr;DEN&rarr;PIT out</strong></div><div class="prow"><span>Option B</span><strong>American via LAX/PHX, or Alaska/Delta via SEA</strong></div><div class="tip">Book a single through-ticket so a missed West Coast connection is the airline&rsquo;s problem, not yours. Aim for a morning PIT departure to land mid/late afternoon Hawaii time; the return is usually an overnight red-eye &mdash; pack to sleep on the plane.</div></div><div class="pcard"><h4><span class="dot"></span>Inter-island</h4><div class="prow"><span>Hop</span><strong>HNL &rarr; KOA on Hawaiian or Southwest (~50 min)</strong></div><div class="prow"><span>Cadence</span><strong>Frequent daily; cheap booked early</strong></div><div class="tip">Treat the inter-island hop as a scheduled leg with a real buffer &mdash; don&rsquo;t stack it tight against the mainland arrival.</div></div><div class="pcard"><h4><span class="dot"></span>Watch</h4><div class="prow"><span>Time zone</span><strong>Hawaii is 6 h behind Pittsburgh &mdash; jet lag hits kids hard</strong></div><div class="prow"><span>Return</span><strong>The eastbound red-eye is brutal; keep the first day home light</strong></div><div class="tip">Westbound is the easy direction (early bedtimes, early wakeups). Coming home is the hard one &mdash; build in a recovery day.</div></div></div></section><section id="getting-around" class="divider">
-    <div class="section-label"><p class="eyebrow">Getting Around</p><h2>Flights, one island hop, and two rental-car decisions</h2><p>Hawaii is domestic, but it does not behave like a normal short domestic trip from Pittsburgh. Every PIT route requires a connection and a full travel day.</p></div>
+  <section id="air-travel" class="divider"><div class="section-label"><p class="eyebrow">Air Travel</p><h2>One connection each way</h2><p>Pittsburgh has no nonstop to Hawaii; every routing connects a West Coast or hub gateway (SEA, LAX, SFO, DEN, PHX). Plan ~13&ndash;16 hours of travel each way including the layover, with a red-eye on the return. Schedules and fares below are 2026 as a 2027 proxy &mdash; re-quote ~11 months out.</p></div><div class="plan-grid"><div class="pcard"><h4><span class="dot"></span>Investigate first</h4><div class="prow"><span>In / out</span><strong>Honolulu (HNL) in &middot; Kona (KOA) out &mdash; open-jaw to avoid backtracking</strong></div><div class="prow"><span>Option A</span><strong>United via SFO or DEN: PIT&rarr;SFO&rarr;HNL in, KOA&rarr;DEN&rarr;PIT out</strong></div><div class="prow"><span>Option B</span><strong>American via LAX/PHX, or Alaska/Delta via SEA</strong></div><div class="tip">Book a single through-ticket so a missed West Coast connection is the airline&rsquo;s problem, not yours. Aim for a morning PIT departure to land mid/late afternoon Hawaii time; the return is usually an overnight red-eye &mdash; pack to sleep on the plane.</div></div><div class="pcard"><h4><span class="dot"></span>Inter-island</h4><div class="prow"><span>Hop</span><strong>HNL &rarr; KOA on Hawaiian or Southwest (~50 min)</strong></div><div class="prow"><span>Cadence</span><strong>Frequent daily; cheap booked early</strong></div><div class="tip">Treat the inter-island hop as a scheduled leg with a real buffer &mdash; don&rsquo;t stack it tight against the mainland arrival.</div></div><div class="pcard"><h4><span class="dot"></span>Watch</h4><div class="prow"><span>Time zone</span><strong>Hawaii is 6 h behind Pittsburgh &mdash; jet lag hits kids hard</strong></div><div class="prow"><span>Return</span><strong>The eastbound red-eye is brutal; keep the first day home light</strong></div><div class="tip">Westbound is the easy direction (early bedtimes, early wakeups). Coming home is the hard one &mdash; build in a recovery day.</div></div></div></section><section id="getting-around" class="divider">
+    <div class="section-label"><p class="eyebrow">Getting Around</p><h2>Flights, hop, car choices</h2><p>Hawaii is domestic, but it does not behave like a normal short domestic trip from Pittsburgh. Every PIT route requires a connection and a full travel day.</p></div>
     <div class="plan-grid">
       <div class="pcard"><h4><span class="dot"></span>PIT &harr; Hawaii Flights</h4><div class="prow"><span>Outbound</span><strong>PIT &rarr; West Coast &rarr; HNL, ~10&ndash;12 hrs total</strong></div><div class="prow"><span>Return</span><strong>KOA &rarr; mainland red-eye &rarr; PIT next day</strong></div><div class="prow"><span>Cap-fit fare band</span><strong>~$3,600&ndash;4,400 total</strong></div><div class="prow"><span>PTO reality</span><strong>Arrival day after red-eye likely counts as PTO</strong></div><div class="tip">Book open-jaw into HNL and home from KOA if the fare gap is reasonable; airfare above ~$1,100pp leaves very little cap room.</div></div><div class="pcard"><h4><span class="dot"></span>Inter-island Flight</h4><div class="prow"><span>Route</span><strong>HNL &rarr; KOA</strong></div><div class="prow"><span>Flight time</span><strong>~45&ndash;60 minutes</strong></div><div class="prow"><span>Current fare band</span><strong>~$75&ndash;150pp booked ahead</strong></div><div class="prow"><span>Family total</span><strong>~$300&ndash;600 before bags/extras</strong></div><div class="tip">This is the only island hop. Adding Maui or Kauai would add another airport day and another car/lodging reset.</div></div><div class="pcard"><h4><span class="dot"></span>Oahu Car Strategy</h4><div class="prow"><span>Waikiki parking</span><strong>~$45&ndash;70/night</strong></div><div class="prow"><span>Plan</span><strong>No full-time car; one North Shore day rental</strong></div><div class="prow"><span>Hanauma/Pearl</span><strong>Use rideshare, shuttle, or tour logistics</strong></div><div class="prow"><span>Ground budget</span><strong>Keep all rentals/parking/fuel near $1.1k&ndash;1.4k</strong></div><div class="tip">This is the biggest Oahu money saver that does not reduce the trip quality.</div></div><div class="pcard"><h4><span class="dot"></span>Big Island Rental</h4><div class="prow"><span>Vehicle</span><strong>Economy/compact is enough for the paved route</strong></div><div class="prow"><span>Duration</span><strong>KOA pickup Jun 9 &rarr; KOA drop Jun 14</strong></div><div class="prow"><span>Total ground target</span><strong>~$1,100&ndash;1,400 with Oahu day rental, fuel, parking</strong></div><div class="prow"><span>Restrictions</span><strong>No off-road; Mauna Kea summit usually prohibited</strong></div><div class="tip">Saddle Road and Chain of Craters are paved; Green Sand Beach and Mauna Kea summit are where rental contracts become a problem.</div></div>
     </div>
@@ -1627,7 +1628,7 @@ footer a{color:var(--muted)}
       <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
       <div class="section-label">
         <p class="eyebrow">Entry &amp; Documents</p>
-        <h2>Passports, ETIAS, and the essentials before you go</h2>
+        <h2>Passports and essentials</h2>
         <p>Documents, driving, money, health, and connectivity for this trip. Time-sensitive items (especially <b>ETIAS</b>) can change — re-check the linked official sources close to departure.</p>
       </div>
       <div class="plan-grid"><div class="pcard">
@@ -1666,7 +1667,7 @@ footer a{color:var(--muted)}
   <section id="timing" class="divider">
     <div class="section-label">
       <p class="eyebrow">Best Time to Go</p>
-      <h2>We scanned late May through early September</h2>
+      <h2>Summer timing scan</h2>
       <p>Hawaii does not have Costa Rica's hard rainy-season swing, so the decision is about airfare/crowds, ocean safety, vog, hurricane season, and PTO geometry. Summer 2027 flights are not fully bookable yet as of July 2026, so fare bands use current 2026 low-fare calendars and seasonal Hawaii pricing guidance.</p>
     </div>
     <div class="timing-compare">
@@ -1744,7 +1745,7 @@ footer a{color:var(--muted)}
     </section><section id="social" class="divider">
     <div class="section-label">
       <p class="eyebrow">What People Are Saying</p>
-      <h2>Insider notes from people who've actually gone</h2>
+      <h2>Insider field notes</h2>
       <p>Crowd-sourced from Reddit, local guides, and official sources (NPS, USGS, Hawaii DLNR, Recreation.gov; July 2026) — the off-the-beaten-path stuff and the bookings that vanish in minutes. Reconfirm release times and eruption status closer to travel.</p>
     </div>
 
@@ -1766,7 +1767,7 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="status" class="divider">
-    <div class="section-label"><p class="eyebrow">Settled &amp; Open</p><h2>What is decided, what still needs a call</h2><p>The route is intentionally opinionated, but the booking details still need live fare and lodging checks once the 2027 window opens.</p></div>
+    <div class="section-label"><p class="eyebrow">Settled &amp; Open</p><h2>Decided vs open calls</h2><p>The route is intentionally opinionated, but the booking details still need live fare and lodging checks once the 2027 window opens.</p></div>
     <div class="status"><div class="scol settled"><h4>Settled</h4><div class="row"><b>Route shape</b><span>Oahu + Big Island, one island hop, no Maui/Kauai add-on.</span></div><div class="row"><b>Timing</b><span>Early June beats July and late August for the summer window.</span></div><div class="row"><b>Length verdict</b><span>Just right but lean: 9 hotel nights plus the return red-eye; 8 nights is rushed, 10 starts crowding the cap.</span></div><div class="row"><b>PTO logic</b><span>No Thursday evening departure; it saves no real PTO for Hawaii.</span></div><div class="row"><b>Family balance</b><span>Water/beach remains the biggest share without losing Volcanoes NP.</span></div><div class="row"><b>Budget tier</b><span>Cap-fit only with practical lodging, one major paid splurge, limited Oahu car use, and KOA open-jaw return flights.</span></div></div><div class="scol open"><h4>Open</h4><div class="row"><b>Exact flights</b><span>Confirm PIT-HNL and KOA-PIT open-jaw fares once June 2027 schedules are fully loaded.</span></div><div class="row"><b>Waikiki lodging</b><span>Choose hotel vs condo based on total fees, not nightly headline rate.</span></div><div class="row"><b>Snorkel/luau choice</b><span>Pick one major paid splurge unless airfare and lodging come in below the midrange.</span></div><div class="row"><b>Volcano status</b><span>Check NPS/USGS immediately before travel for eruption/closure/vog conditions.</span></div></div></div>
   </section>
   <footer>Built from the same single-page itinerary structure as the Costa Rica source. Images are fetched from Wikimedia Commons and embedded as base64; map links open in Google Maps.</footer>

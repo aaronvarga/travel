@@ -712,9 +712,9 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
-.section-label{text-align:center;margin:0 auto 40px;max-width:760px}
-.section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
-.section-label p{margin:0;color:var(--muted)}
+.section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
+.section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
+.section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
 .divider{margin:78px 0 40px}
 /* OVERVIEW */
 .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}
@@ -723,19 +723,20 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}
 .ocard p{margin:0;color:var(--muted);font-size:.92rem}
 /* TRIP MAP */
-.hc-grid{display:grid;gap:12px}
-.hc{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--muted);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}
+.hc-grid{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.hc{display:grid;grid-template-columns:132px minmax(190px,285px) minmax(0,1fr);gap:16px;align-items:start;margin:0;padding:18px 22px;border:0;border-left:5px solid var(--muted);border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}
+.hc:last-child{border-bottom:0}
 .hc.actnow{border-left-color:#c0392b}
 .hc.watch{border-left-color:var(--gold)}
 .hc.good{border-left-color:var(--c3)}
-.hc-tag{grid-row:1/3;align-self:start;justify-self:stretch;display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:0;color:#fff;text-align:center}
+.hc-tag{display:inline-flex;align-items:center;justify-content:center;width:max-content;max-width:100%;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:1px 0 0;color:#fff;text-align:center;white-space:nowrap}
 .hc.actnow .hc-tag{background:#c0392b}
 .hc.watch .hc-tag{background:var(--gold)}
 .hc.good .hc-tag{background:var(--c3)}
-.hc h4{grid-column:2;margin:0;font-size:1.15rem;font-weight:600;line-height:1.15}
-.hc p{grid-column:2;margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.hc h4{margin:0;font-size:1.08rem;font-weight:600;line-height:1.16}
+.hc p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.48}
 .hc p b{color:var(--ink)}
-@media(max-width:720px){.hc{grid-template-columns:1fr;padding:16px}.hc-tag{grid-row:auto;justify-self:start}.hc h4,.hc p{grid-column:1}}
+@media(max-width:860px){.hc{grid-template-columns:1fr;gap:8px;padding:16px 18px}.hc-tag{margin:0}.hc h4{font-size:1.05rem}}
 
 /* TRAVEL TIPS */
 .tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}
@@ -1023,7 +1024,7 @@ footer a{color:var(--muted)}
   <section id="overview">
     <div class="section-label">
       <p class="eyebrow">The Plan at a Glance</p>
-      <h2>Madeira does the epic hiking; Mallorca does the sandy warm-water recovery</h2>
+      <h2>Madeira hikes, Mallorca beach</h2>
       <p>This is the Madeira + Crete concept with the swim island swapped to Spain: keep the United/TAP Madeira access, keep the Lisbon wind buffer, then use Mallorca's shallow family beaches and frequent Lisbon-Palma service instead of another Greek island chain.</p>
     </div>
     <div class="overview">
@@ -1036,7 +1037,7 @@ footer a{color:var(--muted)}
   <section id="why-this-trip" class="divider">
     <div class="section-label">
       <p class="eyebrow">Why This Trip</p>
-      <h2>Mountain drama, then sandy Mediterranean ease</h2>
+      <h2>Mountains, then Mallorca</h2>
       <p>Pick Madeira + Mallorca if you want a cleaner island handoff than Crete and a more classic sandy-beach finish after Madeira ridge, levada, lava-pool, and cliff days.</p>
     </div>
     <div class="decision-brief" style="padding:18px 20px;border:1px solid var(--line);border-left:6px solid var(--c2);border-radius:12px;background:var(--paper);box-shadow:0 10px 28px rgba(30,32,28,.06)">
@@ -1064,7 +1065,7 @@ footer a{color:var(--muted)}
   <section id="kids-favorites" class="divider">
     <div class="section-label">
       <p class="eyebrow">Kids&rsquo; Favorites</p>
-      <h2>The moments most likely to win the trip for them</h2>
+      <h2>Kid-favorite moments</h2>
       <p>Not every excellent stop makes this list. These are the clearest kid-facing payoffs from the full itinerary.</p>
     </div>
     <div class="kids-favorites" style="padding:4px 0 0">
@@ -1080,7 +1081,7 @@ footer a{color:var(--muted)}
   <section id="stays" class="divider">
     <div class="section-label">
       <p class="eyebrow">Where We Stay</p>
-      <h2>Four bases, but only two real vacation modes</h2>
+      <h2>Four bases, two modes</h2>
       <p>The Lisbon night is insurance, not a touring base. Palma is a soft landing. Playa de Muro / Alcudia is where the trip finally stops moving.</p>
     </div>
     <div class="plan-grid">
@@ -1094,7 +1095,7 @@ footer a{color:var(--muted)}
   <section id="calendar" class="divider">
     <div class="section-label">
       <p class="eyebrow">Calendar</p>
-      <h2>Jun 8-21 protects the Jun 23-26 blackout</h2>
+      <h2>Jun 8-21 protects blackout</h2>
       <p>Tuesday departure aligns with the current United EWR-FNC eastbound pattern. Friday Juneteenth observed becomes a beach day, and Monday Jun 21 returns home before the Pittsburgh commitment.</p>
     </div>
     <div class="budget-scroll"><table class="cost-table"><thead><tr><th>Date</th><th>Night</th><th>Base</th><th>Purpose</th></tr></thead><tbody><tr><td>Tue Jun 8</td><td>Red-eye</td><td>PIT/EWR -> FNC</td><td>After-work departure</td></tr><tr><td>Wed Jun 9-Sun Jun 13</td><td>5</td><td>Funchal</td><td>Madeira hiking/scenery block</td></tr><tr><td>Mon Jun 14</td><td>1</td><td>Lisbon airport / Oriente</td><td>FNC wind buffer</td></tr><tr><td>Tue Jun 15-Wed Jun 16</td><td>2</td><td>Palma</td><td>Arrival, old town, Tramuntana option</td></tr><tr><td>Thu Jun 17-Sun Jun 20</td><td>4</td><td>Playa de Muro / Alcudia</td><td>Warm-water beach base</td></tr><tr><td>Mon Jun 21</td><td>Home</td><td>PMI -> PIT</td><td>Home before Jun 23 blackout</td></tr></tbody></table></div>
@@ -1632,7 +1633,7 @@ footer a{color:var(--muted)}
   <section id="air-travel" class="divider">
     <div class="section-label">
       <p class="eyebrow">Air Travel</p>
-      <h2>Keep it protected: United into Funchal, TAP through Lisbon to Mallorca</h2>
+      <h2>Keep the routing protected</h2>
       <p>Live check: United's EWR-FNC route exists in the current published ecosystem and AFAR reports the seasonal eastbound pattern as Tue/Thu/Sat. FNC-PMI has no nonstop; TAP sells Funchal-Palma through Lisbon, and LIS-PMI has TAP, easyJet, and Vueling direct service.</p>
     </div>
     <div class="plan-grid">
@@ -1645,7 +1646,7 @@ footer a{color:var(--muted)}
   <section id="getting-around" class="divider">
     <div class="section-label">
       <p class="eyebrow">Getting Around</p>
-      <h2>Two rental cars, one buffer night, no self-transfer heroics</h2>
+      <h2>Two cars, no heroics</h2>
       <p>The shape is simple once the flights are protected: car on Madeira, sleep in Lisbon, car on Mallorca, then fly home from Palma.</p>
     </div>
     <div class="plan-grid">
@@ -1658,7 +1659,7 @@ footer a{color:var(--muted)}
       <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
       <div class="section-label">
         <p class="eyebrow">Entry &amp; Documents</p>
-        <h2>Passports, ETIAS, and the essentials before you go</h2>
+        <h2>Passports and essentials</h2>
         <p>Documents, driving, money, health, and connectivity for this trip. Time-sensitive items (especially <b>ETIAS</b>) can change — re-check the linked official sources close to departure.</p>
       </div>
       <div class="plan-grid"><div class="pcard">
@@ -1717,7 +1718,7 @@ footer a{color:var(--muted)}
   <section id="timing" class="divider">
     <div class="section-label">
       <p class="eyebrow">Best Time</p>
-      <h2>Why Jun 8-21 wins inside the Jun 6-Aug 15 window</h2>
+      <h2>Why Jun 8-21 wins</h2>
       <p>It uses the Tuesday Madeira departure, turns Juneteenth observed into a beach day, and gets home before the Jun 23-26 Pittsburgh blackout.</p>
     </div>
     <div class="budget-scroll"><table class="cost-table"><thead><tr><th>Window</th><th>PTO</th><th>Water</th><th>Budget</th><th>Verdict</th></tr></thead><tbody><tr><td>Jun 8-21</td><td>8</td><td>Mallorca ~72-75 F</td><td>Best clean-cap shot</td><td><b>Use this</b></td></tr><tr><td>Jun 15-28</td><td>8</td><td>Warmer</td><td>Conflicts with Jun 23-26 blackout</td><td>Invalid</td></tr><tr><td>Jun 29-Jul 12</td><td>8</td><td>Warmer</td><td>July lodging/airfare higher</td><td>Backup only if June quotes fail</td></tr><tr><td>Aug 2-15</td><td>9</td><td>Warmest</td><td>Highest peak pressure</td><td>Avoid for this budget</td></tr></tbody></table></div>
@@ -1798,7 +1799,7 @@ footer a{color:var(--muted)}
     </section><section id="social" class="divider">
     <div class="section-label">
       <p class="eyebrow">What People Are Saying</p>
-      <h2>Insider notes from people who've actually gone</h2>
+      <h2>Insider field notes</h2>
       <p>Research signals from official tourism/activity pages, flight-route databases, travel forums, and family-hotel/search pages. Reconfirm all schedules, fees, and access rules close to booking.</p>
     </div>
     <div class="plan-grid">
@@ -1820,7 +1821,7 @@ footer a{color:var(--muted)}
   <section id="status" class="divider">
     <div class="section-label">
       <p class="eyebrow">Settled &amp; Still Open</p>
-      <h2>What is decided, and what needs re-quoting</h2>
+      <h2>Decided vs re-quote</h2>
       <p>This page is structurally complete and marked recommended for section completeness, but the dashboard hub has not been hand-re-ranked.</p>
     </div>
     <div class="status-grid">

@@ -714,9 +714,9 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
 main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
-.section-label{text-align:center;margin:0 auto 40px;max-width:760px}
-.section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
-.section-label p{margin:0;color:var(--muted)}
+.section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
+.section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
+.section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
 .divider{margin:78px 0 40px}
 /* OVERVIEW */
 .overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}
@@ -725,19 +725,20 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}
 .ocard p{margin:0;color:var(--muted);font-size:.92rem}
 /* TRIP MAP */
-.hc-grid{display:grid;gap:12px}
-.hc{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--muted);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}
+.hc-grid{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+.hc{display:grid;grid-template-columns:132px minmax(190px,285px) minmax(0,1fr);gap:16px;align-items:start;margin:0;padding:18px 22px;border:0;border-left:5px solid var(--muted);border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}
+.hc:last-child{border-bottom:0}
 .hc.actnow{border-left-color:#c0392b}
 .hc.watch{border-left-color:var(--gold)}
 .hc.good{border-left-color:var(--c3)}
-.hc-tag{grid-row:1/3;align-self:start;justify-self:stretch;display:block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:0;color:#fff;text-align:center}
+.hc-tag{display:inline-flex;align-items:center;justify-content:center;width:max-content;max-width:100%;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:1px 0 0;color:#fff;text-align:center;white-space:nowrap}
 .hc.actnow .hc-tag{background:#c0392b}
 .hc.watch .hc-tag{background:var(--gold)}
 .hc.good .hc-tag{background:var(--c3)}
-.hc h4{grid-column:2;margin:0;font-size:1.15rem;font-weight:600;line-height:1.15}
-.hc p{grid-column:2;margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.hc h4{margin:0;font-size:1.08rem;font-weight:600;line-height:1.16}
+.hc p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.48}
 .hc p b{color:var(--ink)}
-@media(max-width:720px){.hc{grid-template-columns:1fr;padding:16px}.hc-tag{grid-row:auto;justify-self:start}.hc h4,.hc p{grid-column:1}}
+@media(max-width:860px){.hc{grid-template-columns:1fr;gap:8px;padding:16px 18px}.hc-tag{margin:0}.hc h4{font-size:1.05rem}}
 
 /* TRAVEL TIPS */
 .tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}
@@ -1023,7 +1024,7 @@ footer a{color:var(--muted)}
   <section id="overview">
     <div class="section-label">
       <p class="eyebrow">The Plan at a Glance</p>
-      <h2>Madeira's ecological idea, easier Canary Islands logistics</h2>
+      <h2>Madeira ecology, easier hub</h2>
       <p>This is the <b>Macaronesian Laurisilva + volcano epic</b> option: Tenerife for Teide, Anaga, Masca, and beach recovery; La Palma for Caldera de Taburiente, Los Tilos, Ruta de los Volcanes, and Roque de los Muchachos. The route is deliberately built to end before the <b>Jun 23-26 Pittsburgh blackout</b>.</p>
     </div>
     <div class="overview">
@@ -1036,7 +1037,7 @@ footer a{color:var(--muted)}
   <section id="why-this-trip" class="divider">
     <div class="section-label">
       <p class="eyebrow">Why This Trip</p>
-      <h2>Madeira-style ecology with a stronger island system</h2>
+      <h2>Madeira-style island ecology</h2>
       <p>Pick the Canaries if the appeal is weird island landscapes: Teide, Anaga, black sand, La Palma caldera country, Los Tilos, volcano ridges, and ocean towns.</p>
     </div>
     <div class="decision-brief" style="padding:18px 20px;border:1px solid var(--line);border-left:6px solid var(--c2);border-radius:12px;background:var(--paper);box-shadow:0 10px 28px rgba(30,32,28,.06)">
@@ -1064,7 +1065,7 @@ footer a{color:var(--muted)}
   <section id="kids-favorites" class="divider">
     <div class="section-label">
       <p class="eyebrow">Kids&rsquo; Favorites</p>
-      <h2>The moments most likely to win the trip for them</h2>
+      <h2>Kid-favorite moments</h2>
       <p>Not every excellent stop makes this list. These are the clearest kid-facing payoffs from the full itinerary.</p>
     </div>
     <div class="kids-favorites" style="padding:4px 0 0">
@@ -1080,7 +1081,7 @@ footer a{color:var(--muted)}
   <section id="stays" class="divider">
     <div class="section-label">
       <p class="eyebrow">Where We Stay</p>
-      <h2>Three sleeps, but only two real bases</h2>
+      <h2>Three sleeps, two bases</h2>
       <p>Tenerife north keeps the nature days efficient; La Palma west keeps Caldera and volcano access realistic. The final Tenerife night is flight insurance, not a vacation base.</p>
     </div>
     <div class="plan-grid">
@@ -1093,7 +1094,7 @@ footer a{color:var(--muted)}
   <section id="calendar" class="divider">
     <div class="section-label">
       <p class="eyebrow">Calendar</p>
-      <h2>Jun 8-22 fits the window and misses the blackout</h2>
+      <h2>Jun 8-22 fits cleanly</h2>
       <p>Dates are inside the Jun 6-Aug 15, 2027 planning window and avoid travel on the untouchable Jun 23-26 Pittsburgh blackout.</p>
     </div>
     <div class="budget-scroll"><table class="budget-tbl"><tr><th>Date</th><th>Night</th><th>Base</th><th>Purpose</th></tr><tr><td>Tue Jun 8</td><td>Red-eye</td><td>PIT -> Tenerife</td><td>After-work departure</td></tr><tr><td>Wed Jun 9-Mon Jun 14</td><td>6</td><td>Tenerife north</td><td>Teide, Anaga, Masca, beaches</td></tr><tr><td>Tue Jun 15-Sat Jun 19</td><td>5</td><td>La Palma west</td><td>Caldera, Los Tilos, Ruta segment, Roque</td></tr><tr><td>Sun Jun 20</td><td>1</td><td>Tenerife airport / La Laguna</td><td>Reposition buffer</td></tr><tr><td>Mon-Tue Jun 21-22</td><td>Home</td><td>Tenerife -> PIT</td><td>Arrive before blackout</td></tr></table></div>
@@ -1534,7 +1535,7 @@ footer a{color:var(--muted)}
   <section id="air-travel" class="divider">
     <div class="section-label">
       <p class="eyebrow">Air Travel</p>
-      <h2>Tenerife is the hub; La Palma is the nature add-on</h2>
+      <h2>Tenerife hub, La Palma nature</h2>
       <p>Research status: 2027 schedules are not fully reliable yet, so current 2026/live route and fare signals are used as planning proxies. The route should be re-quoted as protected tickets once inventory opens.</p>
     </div>
     <div class="plan-grid">
@@ -1548,7 +1549,7 @@ footer a{color:var(--muted)}
   <section id="getting-around" class="divider">
     <div class="section-label">
       <p class="eyebrow">Getting Around</p>
-      <h2>Rent cars separately; fly the inter-island hop</h2>
+      <h2>Separate cars, one hop</h2>
       <p>Do not ferry one rental car unless the agency gives written permission and the fare math beats two airport rentals. Separate rentals keep the route cleaner.</p>
     </div>
     <div class="plan-grid">
@@ -1560,7 +1561,7 @@ footer a{color:var(--muted)}
       <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
       <div class="section-label">
         <p class="eyebrow">Entry &amp; Documents</p>
-        <h2>Passports, ETIAS, and the essentials before you go</h2>
+        <h2>Passports and essentials</h2>
         <p>Documents, driving, money, health, and connectivity for this trip. Time-sensitive items (especially <b>ETIAS</b>) can change — re-check the linked official sources close to departure.</p>
       </div>
       <div class="plan-grid"><div class="pcard">
@@ -1604,7 +1605,7 @@ footer a{color:var(--muted)}
   <section id="timing" class="divider">
     <div class="section-label">
       <p class="eyebrow">Best Time</p>
-      <h2>Why early June wins for this constraint set</h2>
+      <h2>Why early June wins</h2>
       <p>It gives 12 hotel nights, uses Juneteenth observed as a no-PTO active day if the employer observes it, and returns before the blackout.</p>
     </div>
     <div class="budget-scroll"><table class="budget-tbl"><tr><th>Window</th><th>Nights</th><th>PTO</th><th>Blackout fit</th><th>Verdict</th></tr><tr><td>Jun 8-22</td><td>12 hotel nights</td><td>8-9 days</td><td>Home before Jun 23</td><td><b>Use this</b></td></tr><tr><td>Jun 15-29</td><td>12+</td><td>8-9 days</td><td><b>Invalid</b> - away during Jun 23-26</td><td>Reject</td></tr><tr><td>Jun 27-Jul 10</td><td>12+</td><td>9 days</td><td>Valid</td><td>Backup if early June flights fail</td></tr><tr><td>Aug 1-14</td><td>12+</td><td>9-10 days</td><td>Valid</td><td>Hotter, pricier, more peak-season pressure</td></tr></table></div>
@@ -1726,7 +1727,7 @@ footer a{color:var(--muted)}
   </section>
 
   <section id="status" class="divider">
-    <div class="section-label"><p class="eyebrow">Settled &amp; Open</p><h2>What is decided, what still needs a call</h2><p>The route is opinionated, but 2027 schedules and lodging prices still need live re-quotes before booking.</p></div>
+    <div class="section-label"><p class="eyebrow">Settled &amp; Open</p><h2>Decided vs open calls</h2><p>The route is opinionated, but 2027 schedules and lodging prices still need live re-quotes before booking.</p></div>
     <div class="status"><div class="scol settled"><h4>Settled</h4>
       <div class="row"><b>Slug</b><span>canary-islands</span></div>
       <div class="row"><b>Route</b><span>Tenerife 6 nights -> La Palma 5 nights -> Tenerife airport buffer 1 night.</span></div>
