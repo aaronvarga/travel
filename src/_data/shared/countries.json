@@ -84,6 +84,31 @@
       { "label": "Italy ZTL guide", "url": "https://ztl-italia.com/guide" }
     ]
   },
+  "malta": {
+    "name": "Malta",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years (Malta is in the Schengen area).",
+    "etias": {
+      "status": "Expected to launch late 2026 (repeatedly delayed — not yet confirmed). Applies to Malta as a Schengen state.",
+      "fee": "€20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).",
+      "note": "One ETIAS authorization covers the whole Schengen area, so the same approval used for Italy also admits you to Malta — no separate application. Confirm on the official EU site close to departure; if it isn't live for Jun 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180 (shared Schengen allowance with Italy).",
+    "idp": "Recommended, not legally required for US licenses. Get one from AAA; some rental insurers ask for it.",
+    "driving": "Malta drives on the LEFT — cars are right-hand-drive. Roads are narrow, hilly and signage is patchy; drivers are assertive and roundabouts are constant. If you can avoid a car on the main islands (taxis/ferries/buses cover most of it), do. Rentals are cheap (~€25–40/day) but nerve-wracking for first-time left-side drivers.",
+    "money": {
+      "cards": "Cards accepted almost everywhere; contactless is standard.",
+      "cash": "Carry €50–100 for the Gozo/Comino boats, village kiosks and market stalls."
+    },
+    "water": "Tap water is safe but heavily desalinated and tastes of minerals — most visitors (and locals) drink bottled; bring a filter bottle if you dislike the taste.",
+    "emergency": "112 (EU-wide).",
+    "esim": "Same Holafly/Airalo Eurolink eSIM used for Italy covers Malta — no new plan needed. English is an official language, so support is easy.",
+    "sources": [
+      { "label": "US State Dept — Schengen passport rules", "url": "https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "Visit Malta — official", "url": "https://www.visitmalta.com" }
+    ]
+  },
   "france": {
     "name": "France (Corsica)",
     "domestic": false,
