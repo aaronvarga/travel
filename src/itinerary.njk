@@ -76,12 +76,126 @@ permalink: "/locations/{{ trip.slug }}/index.html"
       {% if td.callout %}<div class="todo-callout">{{ td.callout | safe }}</div>{% endif %}
     </section>
 {%- endmacro -%}
+
+{%- macro entry(main, countries) -%}
+<section id="entry" class="divider">
+      <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
+      <div class="section-label">
+        <p class="eyebrow">Entry &amp; Documents</p>
+        <h2>Passports, ETIAS, and the essentials before you go</h2>
+        <p>Documents, driving, money, health, and connectivity for this trip. Time-sensitive items (especially <b>ETIAS</b>) can change — re-check the linked official sources close to departure.</p>
+      </div>
+      <div class="plan-grid">
+      {%- for slug in main.countries -%}{%- set c = countries[slug] -%}{%- if c -%}
+        <div class="pcard">
+          <h4><span class="dot"></span>{{ c.name | safe }}</h4>
+          {% if c.passportRule %}<div class="prow"><span>Passport</span><strong>{{ c.passportRule | safe }}</strong></div>{% endif %}
+          {% if c.etias and c.etias.status %}<div class="prow"><span>ETIAS</span><strong>{{ c.etias.status | safe }}{% if c.etias.fee %} — {{ c.etias.fee | safe }}{% endif %}</strong></div>{% endif %}
+          {% if c.visa %}<div class="prow"><span>Visa</span><strong>{{ c.visa | safe }}</strong></div>{% endif %}
+          {% if c.idp %}<div class="prow"><span>Driving permit</span><strong>{{ c.idp | safe }}</strong></div>{% endif %}
+          {% if c.driving %}<div class="prow"><span>Rental cars</span><strong>{{ c.driving | safe }}</strong></div>{% endif %}
+          {% if c.tolls %}<div class="prow"><span>Tolls</span><strong>{{ c.tolls | safe }}</strong></div>{% endif %}
+          {% if c.ztl %}<div class="prow"><span>ZTL warning</span><strong>{{ c.ztl | safe }}</strong></div>{% endif %}
+          {% if c.money %}<div class="prow"><span>Money</span><strong>{{ c.money.cards | safe }} {{ c.money.cash | safe }}</strong></div><div class="prow"><span>Tipping</span><strong>{{ c.money.tipping | safe }}</strong></div>{% endif %}
+          {% if c.water %}<div class="prow"><span>Tap water</span><strong>{{ c.water | safe }}</strong></div>{% endif %}
+          {% if c.emergency %}<div class="prow"><span>Emergency</span><strong>{{ c.emergency | safe }}</strong></div>{% endif %}
+          {% if c.esim %}<div class="prow"><span>Connectivity</span><strong>{{ c.esim | safe }}</strong></div>{% endif %}
+          {% if c.etias and c.etias.note %}<div class="tip">{{ c.etias.note | safe }}</div>{% endif %}
+          {% if c.sources %}<p class="sources">Sources: {% for s in c.sources %}<a href="{{ s.url | safe }}" target="_blank" rel="noreferrer">{{ s.label | safe }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+        </div>
+      {%- endif -%}{%- endfor -%}
+        <div class="pcard">
+          <h4><span class="dot"></span>Travel insurance</h4>
+          <div class="prow"><span>Recommend</span><strong>Family travel-medical + trip-cancellation policy</strong></div>
+          <div class="prow"><span>Coverage</span><strong>Medical/evacuation, trip interruption, baggage; check that activities (boats, hikes) are included</strong></div>
+          <div class="tip">Buy within ~14 days of the first trip deposit to keep pre-existing-condition waivers available. Carry the policy number and the insurer's 24-hour assistance line offline.</div>
+        </div>
+      </div>
+    </section>
+{%- endmacro -%}
+
+{%- macro packing(main, packing) -%}
+<section id="packing" class="divider">
+      <style>#packing .pack-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:7px}#packing .pack-list li{position:relative;padding-left:16px;font-size:.86rem;color:var(--muted);line-height:1.45}#packing .pack-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}#packing .pack-list li b{color:var(--ink)}</style>
+      <div class="section-label">
+        <p class="eyebrow">Packing</p>
+        <h2>What to bring</h2>
+        <p>A family baseline that holds for every trip, plus items tuned to this route's conditions.</p>
+      </div>
+      <div class="plan-grid">
+        <div class="pcard"><h4><span class="dot"></span>Family baseline</h4><ul class="pack-list">{% for i in packing.base %}<li>{{ i | safe }}</li>{% endfor %}</ul></div>
+        {%- for tag in main.packingTags -%}{%- set mod = packing.modifiers[tag] -%}{%- if mod -%}
+        <div class="pcard"><h4><span class="dot"></span>{{ mod.label | safe }}</h4><ul class="pack-list">{% for i in mod.items %}<li>{{ i | safe }}</li>{% endfor %}</ul></div>
+        {%- endif -%}{%- endfor -%}
+        {%- if main.overrides and main.overrides.packing -%}
+        <div class="pcard"><h4><span class="dot"></span>This trip specifically</h4><ul class="pack-list">{% for i in main.overrides.packing %}<li>{{ i | safe }}</li>{% endfor %}</ul></div>
+        {%- endif -%}
+      </div>
+    </section>
+{%- endmacro -%}
 {%- for part in trip.main.parts -%}
 {%- if part.t == "raw" -%}{{ part.html | safe }}
 {%- elif part.t == "itinerary" -%}{{ itinerary(trip.main.itinerary) }}
 {%- elif part.t == "todo" -%}{% if trip.main.preDepartureTodos %}{{ todo(trip.main.preDepartureTodos) }}{% endif %}
+{%- elif part.t == "entry" -%}{{ entry(trip.main, shared.countries) }}
+{%- elif part.t == "packing" -%}{{ packing(trip.main, shared.packing) }}
 {%- elif part.t == "photoGuide" -%}{{ trip.photoGuide.html | safe }}
 {%- elif part.t == "foodGuide" -%}{{ trip.foodGuide.html | safe }}
 {%- elif part.t == "lib" -%}<script>{{ chrome.leafletLibs[part.key] | safe }}</script>
 {%- endif -%}
 {%- endfor -%}
+<style>
+  /* Phase 7 — print/PDF degradation for itineraries. Scoped with @media print
+     (NOT just a media="print" attribute): this <style> is emitted after </html>
+     and reparented into the body, where the media attribute is not reliably
+     honored — the @media block guarantees these rules never touch the screen. */
+  @media print {
+    @page { margin: 14mm; }
+    .site-nav, .site-nav-menu { display: none !important; }
+    /* Carousels: reveal every photo, stacked; drop interactive chrome. */
+    .carousel { height: auto !important; overflow: visible !important; }
+    .carousel .track { display: block !important; transform: none !important; overflow: visible !important; width: auto !important; }
+    .carousel figure { display: block !important; width: 100% !important; break-inside: avoid; margin: 0 0 8px !important; }
+    .carousel figure img { max-height: 320px; width: auto !important; max-width: 100% !important; object-fit: contain !important; }
+    .carousel .nav, .carousel .counter, .carousel .dots { display: none !important; }
+    /* Maps: drop interactive controls; keep the loaded tile snapshot; the Google
+       Maps link remains as a printed fallback reference. */
+    .leaflet-control-container, .mapbtns, .leaflet-control-zoom { display: none !important; }
+    .mapstage, .mapwrap { break-inside: avoid; }
+    [class$="-map-embed"], .mapstage { max-height: 360px !important; }
+    a.gmap, .gmap-btn { text-decoration: underline; }
+    /* Keep logical blocks intact across page breaks. */
+    .day, .spot, .pcard, .todo-block, .winner-card, .hc, section { break-inside: avoid; }
+    section { page-break-inside: avoid; }
+    details { display: block !important; }
+    details:not([open]) > *:not(summary) { display: revert !important; }
+    a[href] { color: inherit; }
+  }
+</style>
+<script>
+  /* Force-load lazy images and open <details> before printing so nothing is
+     blank or collapsed in the PDF. */
+  (function () {
+    function prep() {
+      document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
+        img.loading = 'eager';
+        if (img.dataset && img.dataset.src && !img.src) img.src = img.dataset.src;
+      });
+      document.querySelectorAll('details').forEach(function (d) { d.open = true; });
+    }
+    window.addEventListener('beforeprint', prep);
+    if (window.matchMedia) {
+      try { window.matchMedia('print').addEventListener('change', function (e) { if (e.matches) prep(); }); } catch (e) {}
+    }
+  })();
+</script>
+<script>
+  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      var p = location.pathname, i = p.indexOf('/locations/');
+      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
+      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+    });
+  }
+</script>

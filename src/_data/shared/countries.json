@@ -1,0 +1,109 @@
+{
+  "_comment": "Shared entry/documents/logistics data, rendered by the `entry` macro in src/itinerary.njk, filtered per trip by main.json `countries: [...]`. Regulatory facts verified July 2025 with sources listed per country. ETIAS date/fee are VOLATILE — wording is hedged; re-check the official EU link before travel.",
+  "portugal": {
+    "name": "Portugal (incl. Madeira)",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.",
+    "etias": {
+      "status": "Expected to launch late 2026 (repeatedly delayed — not yet confirmed).",
+      "fee": "€20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).",
+      "note": "ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180.",
+    "idp": "Recommended, not legally required. Get one from AAA before you go; some rental insurers ask for it.",
+    "driving": "Rental fleet is mostly manual — book an automatic early and expect a premium. Min age ~21; under-25 surcharge ~€6–15/day.",
+    "tolls": "Electronic tolls (Via Verde). Rentals usually include a transponder (~€1–2/day + tolls); confirm toll handling when booking.",
+    "ztl": "",
+    "money": {
+      "cards": "Cards widely accepted in hotels/restaurants/shops.",
+      "cash": "Carry €50–100 — small cafés and family spots may be cash/Multibanco only.",
+      "tipping": "Not expected; 5–10% appreciated for good service (cash)."
+    },
+    "water": "Safe in Lisbon and most cities. Algarve tap can taste earthy (hard water) — bottled if sensitive.",
+    "emergency": "112 (EU-wide, free, mobile or landline).",
+    "esim": "Holafly or Airalo Eurolink work well; buy before departure.",
+    "sources": [
+      { "label": "US State Dept — Schengen passport rules", "url": "https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "Via Verde visitors", "url": "https://visitors.viaverde.pt/en/home" }
+    ]
+  },
+  "greece": {
+    "name": "Greece (Crete)",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.",
+    "etias": {
+      "status": "Expected to launch late 2026 (repeatedly delayed — not yet confirmed).",
+      "fee": "€20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).",
+      "note": "ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180.",
+    "idp": "Strongly recommended — Greek insurers may require both a US license and an IDP. Get one from AAA before you go.",
+    "driving": "Rental fleet is mostly manual — book an automatic early. Min age ~21; under-25 surcharge ~€6–15/day.",
+    "tolls": "Motorway tolls (GRITS network). Pay cash (EUR) at booths or use a rental e-pass transponder.",
+    "ztl": "",
+    "money": {
+      "cards": "Cards accepted in cities, hotels and tourist tavernas.",
+      "cash": "Carry €100–200 — remote villages and some island spots are cash-only in practice.",
+      "tipping": "10–15% for good restaurant service; round up casual bills (cash)."
+    },
+    "water": "Athens/mainland excellent; Crete tap is safe but very hard (chalky). Some smaller islands need bottled.",
+    "emergency": "112 (EU-wide). Also ambulance 166.",
+    "esim": "Holafly or Airalo Eurolink work well; buy before departure.",
+    "sources": [
+      { "label": "US State Dept — Schengen passport rules", "url": "https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "Greece motorway tolls", "url": "https://tollguru.com/greece-motorway-tolls" }
+    ]
+  },
+  "italy": {
+    "name": "Italy (Sicily)",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.",
+    "etias": {
+      "status": "Expected to launch late 2026 (repeatedly delayed — not yet confirmed).",
+      "fee": "€20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).",
+      "note": "ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180.",
+    "idp": "Strongly recommended and widely expected; helps with insurance. Get one from AAA before you go.",
+    "driving": "Rental fleet is mostly manual — book an automatic early. Min age ~21; under-25 surcharge ~€5–25/day.",
+    "tolls": "Autostrada tolls — pay by card at booths (avoid Telepass-only lanes), or rent a Telepass device (~€5–8/day + tolls).",
+    "ztl": "ZTL limited-traffic zones cover historic centers and are camera-enforced (€80+ fines by mail). If your lodging is inside one, register your plate with the host; otherwise park outside and walk.",
+    "money": {
+      "cards": "Cards accepted in hotels/restaurants/shops.",
+      "cash": "Carry €100–150 — trattorias, markets and rural spots may be cash-only.",
+      "tipping": "Optional; round up or 5–10% for good service."
+    },
+    "water": "Safe throughout Italy incl. Sicily; can be hard/chalky but fine to drink.",
+    "emergency": "112 (EU-wide). Also ambulance 118.",
+    "esim": "Holafly or Airalo Eurolink work well; buy before departure.",
+    "sources": [
+      { "label": "US State Dept — Schengen passport rules", "url": "https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "Italy ZTL guide", "url": "https://ztl-italia.com/guide" }
+    ]
+  },
+  "usa": {
+    "name": "USA (Hawaii)",
+    "domestic": true,
+    "passportRule": "N/A — domestic. A valid government photo ID (REAL ID) is required to fly; passports optional.",
+    "etias": { "status": "N/A — domestic.", "fee": "", "note": "" },
+    "visa": "N/A — domestic.",
+    "idp": "N/A — US license valid in all states.",
+    "driving": "US rentals default to automatic. Min age typically 21 (varies by company/state).",
+    "tolls": "Minimal on the islands; rental toll programs charge any tolls to the card on file.",
+    "ztl": "",
+    "money": {
+      "cards": "Cards accepted everywhere.",
+      "cash": "Not essential.",
+      "tipping": "Standard US: 15–20% restaurants, 10% bars."
+    },
+    "water": "Tap water safe throughout Hawaii (EPA standards).",
+    "emergency": "911.",
+    "esim": "Not needed — use your normal US cell plan.",
+    "sources": [
+      { "label": "TSA — REAL ID", "url": "https://www.tsa.gov/travel/security-screening/identification" }
+    ]
+  }
+}

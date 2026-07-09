@@ -1,0 +1,26 @@
+{
+  "_comment": "Canonical scorecard contract consumed by tools/seed-scorecard.mjs, tools/build-summary.mjs and the client (assets/js/*). Each trip's src/_data/<slug>/main.json carries a `scorecard` block matching this shape. Axis scores are 1-5. Budget is weighted x2 by default. PTO was promoted from unscored text to a real 1-5 axis via ptoRubric.",
+  "axes": [
+    { "id": "budget",  "label": "Budget",  "weightDefault": 2 },
+    { "id": "weather", "label": "Weather", "weightDefault": 1 },
+    { "id": "swim",    "label": "Swim",    "weightDefault": 1 },
+    { "id": "variety", "label": "Variety", "weightDefault": 1 },
+    { "id": "ease",    "label": "Ease",    "weightDefault": 1 },
+    { "id": "food",    "label": "Food",    "weightDefault": 1 },
+    { "id": "risk",    "label": "Risk",    "weightDefault": 1 },
+    { "id": "pto",     "label": "PTO",     "weightDefault": 1 }
+  ],
+  "ptoRubric": {
+    "_comment": "Fewer PTO days burned = higher score. Keyed by PTO days.",
+    "6": 5, "7": 4, "8": 3, "9": 2, "10": 1
+  },
+  "budgetTargets": { "targetUsd": 12000, "capUsd": 15000 },
+  "facetDefs": {
+    "continent": ["europe", "north-america", "pacific"],
+    "maxConnections": "worst-case outbound connection count (0 = nonstop)",
+    "hasSwim": "true when swim axis >= 3",
+    "swimTempF": "[low, high] sea temperature in Fahrenheit",
+    "noPassport": "US-domestic, no passport needed",
+    "singleTicket": "bookable on one protected through-ticket"
+  }
+}

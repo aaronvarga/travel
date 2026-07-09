@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "extract": "node tools/extract.mjs",
-    "build": "node ./node_modules/@11ty/eleventy/cmd.cjs",
+    "lint": "node tools/lint-sections.mjs",
+    "summary": "node tools/build-summary.mjs",
+    "verify-summary": "node tools/verify-summary.mjs",
+    "build": "node tools/lint-sections.mjs && node tools/build-summary.mjs && node tools/verify-summary.mjs && node ./node_modules/@11ty/eleventy/cmd.cjs",
     "serve": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
     "import": "node tools/extract.mjs",

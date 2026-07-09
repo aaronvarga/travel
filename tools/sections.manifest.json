@@ -1,0 +1,22 @@
+{
+  "_comment": "Canonical section contract. Each id maps to a <section id> anchor in a rendered itinerary page. A trip with `recommended: true` in its main.json MUST contain every required section; tools/lint-sections.mjs enforces this and emits assets/section-status.json.",
+  "sections": [
+    { "id": "overview", "label": "Overview", "required": true },
+    { "id": "stays", "label": "Where We Stay", "required": true },
+    { "id": "calendar", "label": "Calendar", "required": true },
+    { "id": "map", "label": "Trip Map", "required": true },
+    { "id": "air-travel", "label": "Air Travel", "required": true },
+    { "id": "getting-around", "label": "Getting Around", "required": true },
+    { "id": "entry", "label": "Entry & Documents", "required": true },
+    { "id": "health-check", "label": "Health-Check", "required": true },
+    { "id": "timing", "label": "Best Time", "required": true },
+    { "id": "todo", "label": "To-Do", "required": true },
+    { "id": "budget", "label": "Budget", "required": true },
+    { "id": "totals", "label": "Total Trip Cost", "required": true },
+    { "id": "tips", "label": "Travel Tips", "required": true },
+    { "id": "packing", "label": "Packing", "required": true },
+    { "id": "social", "label": "What People Say", "required": true },
+    { "id": "balance", "label": "Day Math", "required": true },
+    { "id": "status", "label": "Settled & Open", "required": true }
+  ]
+}

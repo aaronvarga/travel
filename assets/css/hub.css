@@ -1,0 +1,169 @@
+/* hub.css — styling for the interactive comparison-hub features layered onto
+ * index.html: re-weight sliders, faceted filters, compare drawer, meters.
+ * Reuses the page's CSS custom properties (--line, --card, --ink, --c1, etc.). */
+
+/* ---- shared panel chrome ------------------------------------------------- */
+.weight-panel,
+.filter-bar,
+.compare-bar {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  margin-bottom: 14px;
+}
+.hub-panel-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.hub-panel-head h3 {
+  margin: 0;
+  font-family: "Fraunces", "Spectral", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink, #193c45);
+}
+.hub-panel-head p { margin: 0; font-size: .8rem; color: #5f675f; }
+.hub-btn {
+  font: inherit;
+  font-size: .78rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #334649;
+  border-radius: 999px;
+  padding: 6px 13px;
+  transition: background .15s ease, border-color .15s ease;
+}
+.hub-btn:hover { background: #f2f7f4; border-color: #cfe0d6; }
+.hub-btn:disabled { opacity: .45; cursor: default; }
+
+/* ---- Feature 1: re-weight sliders --------------------------------------- */
+.weight-panel { padding: 16px 18px; }
+.weight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px 22px;
+}
+.weight-axis { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; align-items: center; }
+.weight-axis label { font-size: .82rem; font-weight: 700; color: #334649; }
+.weight-axis .wv {
+  font-variant-numeric: tabular-nums;
+  font-size: .78rem;
+  font-weight: 800;
+  color: var(--c1, #1f6f78);
+  min-width: 2.4em;
+  text-align: right;
+}
+.weight-axis input[type="range"] { grid-column: 1 / -1; width: 100%; accent-color: var(--c1, #1f6f78); margin: 2px 0 0; }
+.weight-axis.off label,
+.weight-axis.off .wv { color: #9aa39c; }
+.weight-panel .custom-flag {
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #8a641e;
+  background: rgba(217, 164, 65, .16);
+  border-radius: 999px;
+  padding: 3px 9px;
+}
+.weight-panel .custom-flag[hidden] { display: none; }
+.compare-table .tot-max { font-size: .72rem; font-weight: 600; color: #7c8a86; }
+
+/* ---- Feature 3: sticky faceted filters ---------------------------------- */
+.filter-bar {
+  padding: 14px 18px;
+  position: sticky;
+  top: 8px;
+  z-index: 30;
+}
+.filter-count { font-size: .8rem; font-weight: 800; color: var(--c1, #1f6f78); font-variant-numeric: tabular-nums; }
+.filter-count.is-empty { color: #b85d42; }
+.filter-controls { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; }
+.filter-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: .82rem; font-weight: 700; color: #334649;
+  border: 1px solid var(--line); background: #fff; border-radius: 999px;
+  padding: 7px 13px; cursor: pointer; user-select: none;
+}
+.filter-toggle:hover { border-color: #cfe0d6; }
+.filter-toggle input { accent-color: var(--c1, #1f6f78); margin: 0; }
+.filter-budget { display: inline-flex; align-items: center; gap: 10px; font-size: .82rem; font-weight: 700; color: #334649; }
+.filter-budget input[type="range"] { accent-color: var(--c1, #1f6f78); width: 160px; }
+
+/* ---- Feature 2: compare ------------------------------------------------- */
+.cmp-toggle {
+  font: inherit;
+  cursor: pointer;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, .92);
+  color: #334649;
+  font-weight: 800;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.cmp-toggle:hover { border-color: #cfe0d6; }
+.cmp-toggle.on { background: var(--c1, #1f6f78); color: #fff; border-color: var(--c1, #1f6f78); }
+.cmp-toggle:disabled { opacity: .4; cursor: default; }
+.cmp-card-toggle {
+  position: absolute; top: 10px; right: 10px; z-index: 3;
+  font-size: .72rem; padding: 5px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .18);
+}
+.cmp-row-toggle { display: inline-block; margin-top: 6px; font-size: .68rem; padding: 3px 9px; }
+
+.compare-bar { padding: 16px 18px; }
+.cmp-hint { margin: 0; font-size: .84rem; color: #5f675f; }
+.cmp-scroll { overflow-x: auto; }
+.cmp-table { width: 100%; border-collapse: collapse; font-size: .84rem; min-width: 420px; }
+.cmp-table th, .cmp-table td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+.cmp-table thead th { font-family: "Fraunces", "Spectral", serif; font-weight: 600; color: var(--ink, #193c45); }
+.cmp-table tbody th { font-weight: 700; color: #4f5d5e; white-space: nowrap; }
+.cmp-table td { font-variant-numeric: tabular-nums; }
+.cmp-table tr.cmp-strong td, .cmp-table tr.cmp-strong th { font-size: .95rem; font-weight: 800; }
+.cmp-table td.cmp-best { background: #eef9f2; color: #14573a; font-weight: 800; box-shadow: inset 3px 0 0 #2f8f65; }
+.cmp-name { display: inline-block; margin-right: 6px; }
+.cmp-remove {
+  border: 0; background: none; cursor: pointer; color: #b85d42;
+  font-size: 1rem; font-weight: 900; line-height: 1; padding: 0 2px;
+}
+.cmp-remove:hover { color: #8d3f2b; }
+
+/* ---- Feature 4: completeness meter + gated Recommended badge ------------- */
+.sl-meter { margin-top: 10px; display: grid; gap: 5px; }
+.sl-meter-label {
+  font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: #7c8a86;
+}
+.sl-meter.done .sl-meter-label { color: #2f6b52; }
+.sl-meter-bar { height: 6px; border-radius: 999px; background: #ece7dd; overflow: hidden; }
+.sl-meter-fill { display: block; height: 100%; border-radius: 999px; background: #d5a24b; transition: width .3s ease; }
+.sl-meter.done .sl-meter-fill { background: #2f8f65; }
+.sl-rec-badge {
+  align-self: flex-start;
+  font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+  color: #14573a; background: #e6efe8; border: 1px solid #cfe4d6;
+  border-radius: 999px; padding: 3px 10px; margin-bottom: 8px;
+}
+.sl-rec-badge.pending { color: #a23625; background: #f8e7e3; border-color: #eccabf; }
+
+/* ---- Phase 7: print rules for the comparison hub ------------------------ */
+@media print {
+  @page { margin: 12mm; }
+  .site-nav, .site-nav-menu { display: none !important; }
+  /* Interactive controls have no meaning on paper. */
+  #weight-panel, #filter-bar, #compare-bar, .cmp-toggle { display: none !important; }
+  /* Un-clip the scoreboard so every row prints. */
+  .matrix-wrap { overflow: visible !important; box-shadow: none !important; border: 0 !important; }
+  .compare-table { font-size: 10px; }
+  .compare-table tr { break-inside: avoid; }
+  .sl-grid { display: block !important; }
+  .sl-card { break-inside: avoid; box-shadow: none !important; margin-bottom: 10px; }
+  section { break-inside: avoid; }
+}
