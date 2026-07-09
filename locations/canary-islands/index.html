@@ -1159,7 +1159,40 @@ footer a{color:var(--muted)}
     </div>
     <div class="budget-scroll"><table class="budget-tbl"><tr><th>Date</th><th>Night</th><th>Base</th><th>Purpose</th></tr><tr><td>Tue Jun 8</td><td>Red-eye</td><td>PIT -> Tenerife</td><td>After-work departure</td></tr><tr><td>Wed Jun 9-Mon Jun 14</td><td>6</td><td>Tenerife north</td><td>Teide, Anaga, Masca, beaches</td></tr><tr><td>Tue Jun 15-Sat Jun 19</td><td>5</td><td>La Palma west</td><td>Caldera, Los Tilos, Ruta segment, Roque</td></tr><tr><td>Sun Jun 20</td><td>1</td><td>Tenerife airport / La Laguna</td><td>Reposition buffer</td></tr><tr><td>Mon-Tue Jun 21-22</td><td>Home</td><td>Tenerife -> PIT</td><td>Arrive before blackout</td></tr></table></div>
   </section><section id="itinerary" class="divider">
-      <style>.spot-head .spot-name{display:inline;vertical-align:middle}a.at-badge{display:inline-flex;align-items:center;gap:.3em;margin-left:.5em;padding:.16em .6em;font-size:.6rem;font-weight:700;line-height:1;letter-spacing:.03em;text-transform:uppercase;vertical-align:middle;border-radius:999px;background:#428813;color:#fff;text-decoration:none;white-space:nowrap}a.at-badge:hover{background:#356e0f}.explore a.at-xg{background:#428813;color:#fff}.altbox summary.mini-h{cursor:pointer;margin:0;color:var(--c1)}.altbox[open] summary.mini-h{margin-bottom:8px}.altbox .alt-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}.altbox .alt-list li{font-size:.86rem;color:var(--muted);line-height:1.45;padding-left:14px;position:relative}.altbox .alt-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}.altbox .alt-list a{text-decoration:none}.altbox .alt-list .explore{margin-top:6px}.altbox .alt-list .explore a{color:#fff}.altbox .alt-list b{color:var(--ink)}</style>
+      <style>
+        .spot-head .spot-name{display:inline;vertical-align:middle}a.at-badge{display:inline-flex;align-items:center;gap:.3em;margin-left:.5em;padding:.16em .6em;font-size:.6rem;font-weight:700;line-height:1;letter-spacing:.03em;text-transform:uppercase;vertical-align:middle;border-radius:999px;background:#428813;color:#fff;text-decoration:none;white-space:nowrap}a.at-badge:hover{background:#356e0f}.explore a.at-xg{background:#428813;color:#fff}.altbox summary.mini-h{cursor:pointer;margin:0;color:var(--c1)}.altbox[open] summary.mini-h{margin-bottom:8px}.altbox .alt-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}.altbox .alt-list li{font-size:.86rem;color:var(--muted);line-height:1.45;padding-left:14px;position:relative}.altbox .alt-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}.altbox .alt-list a{text-decoration:none}.altbox .alt-list .explore{margin-top:6px}.altbox .alt-list .explore a{color:#fff}.altbox .alt-list b{color:var(--ink)}
+        .day-dock{position:fixed;z-index:480;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));width:min(680px,calc(100vw - 24px));padding:9px 0 10px;border:0;background:transparent;box-shadow:none;opacity:0;visibility:hidden;pointer-events:none;transform:translate(-50%,18px);transition:opacity .1s ease,transform .14s cubic-bezier(.2,.8,.2,1),visibility 0s linear .14s;color:#f6f1e7}
+        .day-dock.is-visible{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);transition-delay:0s}
+        .day-dock-caption{min-height:34px;padding:0 6px 7px;overflow:hidden;text-align:center;text-shadow:0 2px 8px rgba(0,0,0,.92);white-space:nowrap;text-overflow:ellipsis}
+        .day-dock-caption span{display:block;color:rgba(246,241,231,.62);font-size:.62rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+        .day-dock-caption strong{display:block;overflow:hidden;color:#fff;font-family:"Fraunces","Georgia",serif;font-size:.9rem;font-weight:600;line-height:1.2;text-overflow:ellipsis}
+        .day-dock-track{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:3px 4px 5px;scrollbar-width:none;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+        .day-dock-track::-webkit-scrollbar{display:none}
+        .day-dock-item{position:relative;display:block;flex:0 0 auto;width:var(--dock-size,40px);height:var(--dock-size,40px);border:1px solid rgba(255,255,255,.3);border-radius:12px;background:#2a231b;color:#fff;box-shadow:0 5px 14px rgba(0,0,0,.24);overflow:visible;text-decoration:none;transition:width .07s linear,height .07s linear,border-color .07s ease,box-shadow .07s ease;isolation:isolate}
+        .day-dock-item:hover,.day-dock-item:focus-visible,.day-dock-item[aria-current="step"]{border-color:rgba(255,255,255,.88);box-shadow:0 8px 22px rgba(0,0,0,.36),0 0 0 2px rgba(95,154,163,.62)}
+        .day-dock-item:focus-visible{outline:2px solid #fff;outline-offset:3px}
+        .day-dock-thumb{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;border-radius:11px;background:radial-gradient(circle at 28% 22%,rgba(95,154,163,.92),rgba(31,66,72,.98) 72%);background-position:center;background-size:cover}
+        .day-dock-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(8,14,18,.72));pointer-events:none}
+        .day-dock-item.has-photo .day-dock-fallback{display:none}
+        .day-dock-fallback{position:relative;z-index:1;width:46%;height:46%;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+        .day-dock-number{position:absolute;z-index:2;right:3px;bottom:3px;display:grid;place-items:center;min-width:18px;height:18px;padding:0 4px;border:1px solid rgba(255,255,255,.48);border-radius:999px;background:rgba(17,14,11,.82);color:#fff;font-size:.59rem;font-weight:900;line-height:1}
+        .day-dock-tooltip{display:none}
+        @media(min-width:1180px){
+          .day-dock{left:auto;right:clamp(10px,1.5vw,24px);bottom:auto;top:50%;width:auto;max-height:calc(100vh - 28px);padding:8px 0;transform:translate(22px,-50%)}
+          .day-dock.is-visible{transform:translate(0,-50%)}
+          .day-dock-caption{display:none}
+          .day-dock-track{flex-direction:column;align-items:flex-end;gap:5px;max-height:calc(100vh - 44px);padding:4px;overflow:visible}
+          .day-dock-tooltip{position:absolute;right:calc(100% + 13px);top:50%;display:block;width:270px;padding:10px 12px;border:1px solid rgba(246,241,231,.18);border-radius:11px;background:rgba(23,19,15,.96);box-shadow:0 12px 32px rgba(12,10,8,.32);opacity:0;visibility:hidden;pointer-events:none;transform:translate(9px,-50%);transition:opacity .07s ease,transform .1s ease,visibility 0s linear .1s;text-align:left}
+          .day-dock-tooltip::after{content:"";position:absolute;left:100%;top:50%;border:6px solid transparent;border-left-color:rgba(23,19,15,.96);transform:translateY(-50%)}
+          .day-dock-item:hover .day-dock-tooltip,.day-dock-item:focus-visible .day-dock-tooltip{opacity:1;visibility:visible;transform:translate(0,-50%);transition-delay:0s}
+          .day-dock-tooltip span,.day-dock-tooltip small{display:block;color:rgba(246,241,231,.62);font-size:.62rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+          .day-dock-tooltip strong{display:block;margin:2px 0;color:#fff;font-family:"Fraunces","Georgia",serif;font-size:.92rem;font-weight:600;line-height:1.2}
+          .day-dock-tooltip small{overflow:hidden;font-weight:700;letter-spacing:.02em;text-overflow:ellipsis;text-transform:none;white-space:nowrap}
+        }
+        html.day-dock-fast-scroll{scroll-behavior:auto!important}
+        @media(prefers-reduced-motion:reduce){.day-dock,.day-dock-item,.day-dock-tooltip{transition:none!important}.day-dock-track{scroll-behavior:auto}}
+        @media print{.day-dock{display:none!important}}
+      </style>
       <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
@@ -2045,4 +2078,195 @@ document.querySelectorAll('.carousel').forEach(function(c){
       navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
     });
   }
+</script>
+<script>
+  /* Responsive day navigator: a scroll-driven vertical dock on wide screens
+     and a compact, swipeable strip on smaller screens. */
+  (function () {
+    var section = document.getElementById('itinerary');
+    if (!section) return;
+
+    var dock = section.querySelector('.day-dock');
+    if (!dock) return;
+
+    var track = dock.querySelector('.day-dock-track');
+    var captionMeta = dock.querySelector('.day-dock-caption span');
+    var captionTitle = dock.querySelector('.day-dock-caption strong');
+    var items = [].slice.call(dock.querySelectorAll('.day-dock-item')).map(function (item) {
+      var day = document.getElementById(item.getAttribute('data-day-id'));
+      return day ? { item: item, day: day } : null;
+    }).filter(Boolean);
+    if (!items.length) return;
+
+    var reducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var desktopQuery = window.matchMedia ? window.matchMedia('(min-width: 1180px)') : { matches: false };
+    var visible = false;
+    var ticking = false;
+    var activeIndex = -1;
+    var scrollAnimationFrame = 0;
+
+    function fallbackKind(text) {
+      if (/ferry|boat|sail|ship|cross.+sea/.test(text)) return 'ship';
+      if (/fly|flight|airport|overnight|pittsburgh|\bpit\b/.test(text)) return 'plane';
+      if (/drive|driving|rental car|road trip|transfer/.test(text)) return 'car';
+      return 'map';
+    }
+
+    function prepareItem(entry) {
+      var item = entry.item;
+      var thumb = item.querySelector('.day-dock-thumb');
+      var tooltip = item.querySelector('.day-dock-tooltip');
+      var image = entry.day.querySelector('.carousel img');
+      item.setAttribute('aria-label', 'Jump to ' + tooltip.querySelector('span').textContent + ': ' + tooltip.querySelector('strong').textContent);
+      if (image && image.getAttribute('src')) {
+        var source = new URL(image.getAttribute('src'), document.baseURI).href;
+        thumb.style.backgroundImage = 'url(' + JSON.stringify(source) + ')';
+        item.classList.add('has-photo');
+      } else {
+        var use = item.querySelector('.day-dock-fallback use');
+        use.setAttribute('href', '#day-dock-icon-' + fallbackKind(entry.day.textContent.toLowerCase()));
+      }
+    }
+
+    function showCaption(item) {
+      var tooltip = item.querySelector('.day-dock-tooltip');
+      captionMeta.textContent = tooltip.querySelector('span').textContent;
+      captionTitle.textContent = tooltip.querySelector('strong').textContent;
+    }
+
+    function scrollTrackTo(item) {
+      if (desktopQuery.matches) return;
+      var left = item.offsetLeft + item.offsetWidth / 2 - track.clientWidth / 2;
+      track.scrollTo({ left: Math.max(0, left), behavior: 'auto' });
+    }
+
+    function stopFastScroll() {
+      if (scrollAnimationFrame) window.cancelAnimationFrame(scrollAnimationFrame);
+      scrollAnimationFrame = 0;
+      document.documentElement.classList.remove('day-dock-fast-scroll');
+    }
+
+    function fastScrollTo(entry, event) {
+      event.preventDefault();
+      stopFastScroll();
+
+      var root = document.documentElement;
+      var wideNav = window.matchMedia && window.matchMedia('(min-width: 960px)').matches;
+      var start = window.scrollY || window.pageYOffset;
+      var end = start + entry.day.getBoundingClientRect().top - (wideNav ? 24 : 84);
+      var duration = reducedMotion ? 0 : 220;
+      var hash = entry.item.getAttribute('href');
+      root.classList.add('day-dock-fast-scroll');
+      if (window.history && window.history.pushState) window.history.pushState(null, '', hash);
+
+      if (!duration) {
+        window.scrollTo(0, end);
+        root.classList.remove('day-dock-fast-scroll');
+        return;
+      }
+
+      var started = window.performance.now();
+      function step(now) {
+        var progress = Math.min(1, (now - started) / duration);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        window.scrollTo(0, start + (end - start) * eased);
+        if (progress < 1) scrollAnimationFrame = window.requestAnimationFrame(step);
+        else stopFastScroll();
+      }
+      scrollAnimationFrame = window.requestAnimationFrame(step);
+    }
+
+    function setActive(index) {
+      if (index === activeIndex) return;
+      activeIndex = index;
+      items.forEach(function (entry, itemIndex) {
+        if (itemIndex === index) entry.item.setAttribute('aria-current', 'step');
+        else entry.item.removeAttribute('aria-current');
+      });
+      showCaption(items[index].item);
+      window.requestAnimationFrame(function () { scrollTrackTo(items[index].item); });
+    }
+
+    function scrollPosition() {
+      var anchor = window.innerHeight * .45;
+      var firstTop = items[0].day.getBoundingClientRect().top;
+      if (anchor <= firstTop) return 0;
+
+      for (var index = 0; index < items.length - 1; index += 1) {
+        var nextTop = items[index + 1].day.getBoundingClientRect().top;
+        if (anchor < nextTop) {
+          var transition = Math.min(260, window.innerHeight * .28);
+          var start = nextTop - transition;
+          var progress = Math.max(0, Math.min(1, (anchor - start) / transition));
+          return index + progress;
+        }
+      }
+      return items.length - 1;
+    }
+
+    function update() {
+      ticking = false;
+      if (!visible) return;
+
+      var position = scrollPosition();
+      var baseSize = desktopQuery.matches
+        ? Math.max(24, Math.min(40, (window.innerHeight - 110) / (items.length + 1.4)))
+        : 40;
+
+      items.forEach(function (entry, index) {
+        var distance = Math.abs(index - position);
+        var influence = Math.max(0, 1 - distance / 2.4);
+        var scale = reducedMotion
+          ? (Math.round(position) === index ? 1.14 : 1)
+          : 1 + .68 * influence * influence;
+        entry.item.style.setProperty('--dock-size', (baseSize * scale).toFixed(1) + 'px');
+        entry.item.style.zIndex = String(Math.round(scale * 100));
+      });
+      setActive(Math.max(0, Math.min(items.length - 1, Math.round(position))));
+    }
+
+    function requestUpdate() {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(update);
+    }
+
+    function setVisible(isVisible) {
+      visible = isVisible;
+      dock.classList.toggle('is-visible', isVisible);
+      if (isVisible) requestUpdate();
+    }
+
+    items.forEach(function (entry) {
+      prepareItem(entry);
+      entry.item.addEventListener('click', function (event) { fastScrollTo(entry, event); });
+      entry.item.addEventListener('focus', function () {
+        if (!desktopQuery.matches) showCaption(entry.item);
+      });
+      entry.item.addEventListener('blur', function () {
+        if (!desktopQuery.matches && activeIndex >= 0) showCaption(items[activeIndex].item);
+      });
+    });
+
+    dock.hidden = false;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        setVisible(entries[0].isIntersecting);
+      }, { threshold: 0 }).observe(section);
+    } else {
+      var checkVisibility = function () {
+        var rect = section.getBoundingClientRect();
+        setVisible(rect.bottom > 0 && rect.top < window.innerHeight);
+      };
+      window.addEventListener('scroll', checkVisibility, { passive: true });
+      checkVisibility();
+    }
+
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+    window.addEventListener('wheel', stopFastScroll, { passive: true });
+    window.addEventListener('touchstart', stopFastScroll, { passive: true });
+    if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', requestUpdate);
+    else if (desktopQuery.addListener) desktopQuery.addListener(requestUpdate);
+  })();
 </script>
