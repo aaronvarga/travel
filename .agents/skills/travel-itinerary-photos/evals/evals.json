@@ -1,0 +1,29 @@
+{
+  "skill_name": "travel-itinerary-photos",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The photos on the turkish-riviera trip page look amateur — half of them are Wikimedia snapshots. Upgrade them to professional, self-hosted shots and make sure the home-page card gets a good one too.",
+      "expected_output": "Runs inventory on turkish-riviera, sources pro photos via Google Images discovery, self-hosts under assets/img/turkish-riviera/, applies via a plan (carousels + hero + base cards + indexCard), verify.mjs clean, builds + browser-checks. index.html card swapped to a local root-relative image.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Can you swap out the pexels and unsplash images on the spain itinerary for better ones? They're fine but kind of boring, I want the wow factor.",
+      "expected_output": "Inventories spain, replaces remote carousel/hero/base-card images with knockout self-hosted photos, updates the spain home card, verify clean, build + browser check. Emphasis on the quality rubric (contact sheets, reject dull shots), not just localizing.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "A bunch of the trip cards on the homepage still point at remote unsplash urls even though the trip pages themselves are localized. Fix the greece-via-lisbon one and make its carousels pro too.",
+      "expected_output": "Recognizes the home-page .sl-card surface in index.html specifically, inventories greece-via-lisbon, upgrades carousels + updates the index.html card (root-relative local path), verify includes the home-card gate.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "Build me a brand-new itinerary for the Amalfi Coast for our June 2027 family trip.",
+      "expected_output": "Should NOT trigger this skill — this is a new-trip build, which is the travel-itinerary builder's job. This skill is for upgrading photos on an EXISTING trip only.",
+      "files": []
+    }
+  ]
+}

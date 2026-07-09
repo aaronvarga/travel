@@ -1,0 +1,40 @@
+{
+  "skill_name": "travel-itinerary",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Add a Japan family trip for June 2027 to the trip site — same format as the other itineraries.",
+      "expected_output": "A src/_data/japan/main.json (built via a tools/create-japan.mjs using scripts/itinerary-helpers.mjs, cloning a current template trip) that renders through `npm run build` into locations/japan/ with all 17 required sections plus the preview hero and why-this-trip, a real well-balanced route with researched 2026/2027 prices, restaurants, and flights, an auto activity-block calendar, and a hero carousel of genuinely striking (non-generic, non-Wikimedia) Unsplash/Pexels photos. recommended:false, no scorecard.",
+      "files": [],
+      "expectations": [
+        "src/_data/japan/main.json exists, valid JSON, pretty-printed (indent 2)",
+        "Renders via `npm run build` with no eleventy/lint errors; locations/japan/index.html produced",
+        "All 17 required section ids present (overview, stays, calendar, map, air-travel, getting-around, entry, health-check, timing, todo, budget, totals, tips, packing, social, balance, status) plus preview hero and why-this-trip",
+        "Typed itinerary has >=8 days and >=6 spots, each spot with the full field set (images, cost, climate, save/splurge, restos, spotMap)",
+        "Hero .pvcar carousel aggregates multiple real photos captioned per day",
+        "All photo URLs are Unsplash or Pexels (no commons.wikimedia.org, no plus.unsplash.com / premium_photo); verify_images.py passes",
+        "Calendar renders as the .cal-* activity-block grid with events positioned by day column and time row",
+        "Map data (__MAP_POINTS__/__MAP_COLORS__) reflects the trip's real stops, not the template's",
+        "countries[] entries exist in shared/countries.json (entry section not blank)",
+        "Budget/totals contain real dollar-range figures for a family of 4, not placeholders",
+        "No template destination content leaks (e.g. clones hawaii but says nothing about Hawaii)"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Build a Slovenia + Croatian coast itinerary for our family in June 2027 and add it to the site.",
+      "expected_output": "Same as eval 1 but for a less heavily photographed multi-country route — stress-tests whether the research and 'wow' photo sourcing hold up off the most popular destinations, and whether the multi-country entry section (two countries in shared/countries.json) renders correctly.",
+      "files": [],
+      "expectations": [
+        "src/_data/<slug>/main.json exists, valid JSON, renders via `npm run build`",
+        "All 17 required sections + preview + why-this-trip present",
+        "countries[] has both countries and both render in the entry section (added to shared/countries.json if missing)",
+        "Hero and stop photos are all striking Unsplash/Pexels shots (no Wikimedia, no dull snapshots), verify_images.py passes",
+        "Route is genuinely well-balanced across 2-4 bases with real transfer times stated in the overview",
+        "Real researched flight/lodging/ticket ranges, uncertainty flagged where not confirmed",
+        "Auto activity-block calendar spans the trip dates and misses the Jun 23-26 Pittsburgh blackout",
+        "recommended:false and no scorecard (unranked new trip); build-summary not broken"
+      ]
+    }
+  ]
+}
