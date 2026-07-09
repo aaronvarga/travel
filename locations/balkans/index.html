@@ -702,7 +702,7 @@ section[id],article[id]{scroll-margin-top:84px}
 }
 @media(max-width:959px){
   .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
-  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav-menu{max-width:1320px;margin:0 auto}
   .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
   .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
   .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
@@ -711,7 +711,7 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
-main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
+main{max-width:1320px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
 .section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
 .section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
@@ -933,7 +933,7 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .scol .row:last-child{border-bottom:0}
 .scol .row b{display:block;margin-bottom:2px}
 .scol .row span{color:var(--muted)}
-footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
+footer{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
 @media(max-width:860px){
  header{min-height:80vh}
@@ -979,7 +979,64 @@ footer a{color:var(--muted)}
 .pin2{width:26px;height:26px;border-radius:50% 50% 50% 0;display:grid;place-items:center;border:2px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-45deg)}
 .pin2 span{display:block;transform:rotate(45deg);font-size:13px;line-height:1}
 .pop-ty{display:inline-block;margin-top:3px;color:#66615b;font-size:.82rem}
-@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}</style></head><body><header>
+@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
+</style></head><body><header>
   <div class="hero-inner">
     <span class="kicker">Family Trip · Jul 1-14, 2027</span>
     <h1>Balkan Coast<br>Road Trip</h1>
@@ -1725,15 +1782,15 @@ footer a{color:var(--muted)}
     </div>
     <div class="budget-scroll">
       <table class="budget-tbl">
-        <tr><th>Line item</th><th>Estimate (family of 4)</th></tr>
-        <tr><td>Open-jaw flights, PIT -> DBV/TIA and CFU -> PIT</td><td>$3,800-$5,400</td></tr><tr><td>Mostar lodging, 3 nights</td><td>$270-$450</td></tr><tr><td>Kotor lodging, 3 nights</td><td>$525-$900</td></tr><tr><td>Ksamil/Saranda lodging, 3 nights</td><td>$450-$900</td></tr><tr><td>Corfu lodging, 3 nights</td><td>$750-$1,250</td></tr><tr><td>Balkan rental car, insurance, cross-border, one-way</td><td>$1,600-$2,800</td></tr><tr><td>Corfu local car/taxis/airport transfers</td><td>$250-$600</td></tr><tr><td>Saranda-Corfu ferry, family foot passengers</td><td>$125-$160</td></tr><tr><td>Activities, tickets, parking, beach sets, boats</td><td>$1,050-$1,750</td></tr><tr><td>Food, snacks, groceries, water</td><td>$1,750-$2,550</td></tr>
-      </table>
+        <tbody><tr><th>Line item</th><th>Estimate (family of 4)</th></tr>
+        <tr><td>Open-jaw flights, PIT -&gt; DBV/TIA and CFU -&gt; PIT</td><td>$3,800-$5,400</td></tr><tr><td>Mostar lodging, 3 nights</td><td>$270-$450</td></tr><tr><td>Kotor lodging, 3 nights</td><td>$525-$900</td></tr><tr><td>Ksamil/Saranda lodging, 3 nights</td><td>$450-$900</td></tr><tr><td>Corfu lodging, 3 nights</td><td>$750-$1,250</td></tr><tr><td>Balkan rental car, insurance, cross-border, one-way</td><td>$1,600-$2,800</td></tr><tr><td>Corfu local car/taxis/airport transfers</td><td>$250-$600</td></tr><tr><td>Saranda-Corfu ferry, family foot passengers</td><td>$125-$160</td></tr><tr><td>Activities, tickets, parking, beach sets, boats</td><td>$1,050-$1,750</td></tr><tr><td>Food, snacks, groceries, water</td><td>$1,750-$2,550</td></tr>
+      </tbody></table>
     </div>
     <div class="twocol">
       <div class="listcard save-list">
         <h4>Save money</h4>
         <ul>
-          <li><b>Fly into Dubrovnik if fares are close.</b> It saves 4+ arrival-day driving hours versus Tirana.</li><li><b>Use quote gates.</b> Do not green-light this route unless flights are <=$4.8k family, the Balkan car is <=$2.4k all-in, and lodging is not pricing at the top of every range.</li><li><b>Stay outside Kotor Old Town.</b> Parking and family apartments are easier in Dobrota/Prcanj.</li><li><b>Use one beach per day.</b> Beach-hopping in Ksamil/Corfu turns into duplicate parking and lounger fees.</li><li><b>Book the ferry as foot passengers.</b> Dropping the car before Corfu avoids the most complex rental rule.</li><li><b>Keep Corfu car-light.</b> Rent only for west-coast beach days if lodging is near town or a beach bus/taxi route.</li><li><b>Use picnic lunches at Kravica/Ksamil.</b> Restaurant spend climbs fast around swim spots.</li>
+          <li><b>Fly into Dubrovnik if fares are close.</b> It saves 4+ arrival-day driving hours versus Tirana.</li><li><b>Use quote gates.</b> Do not green-light this route unless flights are &lt;=$4.8k family, the Balkan car is &lt;=$2.4k all-in, and lodging is not pricing at the top of every range.</li><li><b>Stay outside Kotor Old Town.</b> Parking and family apartments are easier in Dobrota/Prcanj.</li><li><b>Use one beach per day.</b> Beach-hopping in Ksamil/Corfu turns into duplicate parking and lounger fees.</li><li><b>Book the ferry as foot passengers.</b> Dropping the car before Corfu avoids the most complex rental rule.</li><li><b>Keep Corfu car-light.</b> Rent only for west-coast beach days if lodging is near town or a beach bus/taxi route.</li><li><b>Use picnic lunches at Kravica/Ksamil.</b> Restaurant spend climbs fast around swim spots.</li>
         </ul>
       </div>
       <div class="listcard splurge-list">
@@ -1753,10 +1810,10 @@ footer a{color:var(--muted)}
     </div>
     <div class="budget-scroll">
       <table class="budget-tbl grand">
-        <tr><th>Category</th><th>Estimate (family of 4)</th></tr>
+        <tbody><tr><th>Category</th><th>Estimate (family of 4)</th></tr>
         <tr><td>Flights</td><td>$3,800-$5,400</td></tr><tr><td>Lodging</td><td>$1,995-$3,500</td></tr><tr><td>Cars, ferry, local transport</td><td>$1,975-$3,560</td></tr><tr><td>Food</td><td>$1,750-$2,550</td></tr><tr><td>Activities and beach/boat costs</td><td>$1,050-$1,750</td></tr>
         <tr class="total"><td>Grand total — family of 4</td><td>~$10.6k-$16.8k</td></tr>
-      </table>
+      </tbody></table>
     </div>
     <p class="rate-note">Per-day blocks in the itinerary cover food + activities only. Lodging, flights, rental cars, and docs sit in the totals above, not the daily numbers — don't double-count. Re-check every price closer to booking. A Jun 9-22 version may price lower, but it leaves only one day of delay cushion before the Pittsburgh blackout.</p>
   </section>
@@ -1775,9 +1832,7 @@ footer a{color:var(--muted)}
       </ol>
     </div>
 
-    <div class="tips-grid">
-      <div class="tipcard"><h4>Documents</h4><p class="sub">Avoid border surprises</p><ul><li class="flag"><b>Passports.</b> Required for every border and the Saranda-Corfu ferry.</li><li class="flag"><b>IDP.</b> Bring one even if some agencies do not ask; it is cheap insurance.</li><li class="flag"><b>Rental paperwork.</b> Carry written country permissions and green-card/insurance proof.</li></ul></div><div class="tipcard t2"><h4>Car Strategy</h4><p class="sub">The make-or-break logistics</p><ul><li class="flag"><b>Get it in writing.</b> Croatia, Bosnia, Montenegro, Albania, one-way drop, and ferry prohibition should all be explicit.</li><li><b>Photograph the car.</b> Do a full video at pickup and drop-off, including wheels and underside edges.</li><li class="flag"><b>Do not ferry the car.</b> Plan the Balkan car to end before Corfu.</li></ul></div><div class="tipcard t3"><h4>Money</h4><p class="sub">Small cash still matters</p><ul><li><b>Currencies.</b> EUR for Montenegro/Greece/ferry, KM for Bosnia, ALL for Albania.</li><li><b>Cards.</b> Good at hotels and many restaurants, less reliable for parking, small tickets, beach sets.</li><li><b>ATMs.</b> Use bank ATMs and decline dynamic currency conversion.</li></ul></div><div class="tipcard t4"><h4>Heat + Swim</h4><p class="sub">Make the day survivable</p><ul><li><b>Early starts.</b> Fortress, Butrint, and Porto Timoni are morning activities.</li><li><b>Water shoes.</b> Useful for Kravica, bay ladders, Ksamil rocks, and Corfu coves.</li><li><b>Shade tax.</b> Lounger sets can be worth it when the alternative is four overheated people.</li></ul></div><div class="tipcard"><h4>Food</h4><p class="sub">Picky-kid fail-safes</p><ul><li><b>Pizza/pasta anchors.</b> Every base has at least one researched plain-food option.</li><li class="flag"><b>Road snacks.</b> The Kotor-Ksamil day needs grocery snacks before departure.</li><li><b>Late dinners.</b> Balkan/Greek summer dinners run later; feed kids something plain before scenic dinners if needed.</li></ul></div><div class="tipcard t2"><h4>Ferry + Time</h4><p class="sub">The Corfu crossing has one hidden trap</p><ul><li class="flag"><b>Time zone.</b> Greece is one hour ahead of Albania in summer.</li><li class="flag"><b>Passport control.</b> Arrive early and do not stack a tight airport plan after the ferry.</li><li><b>Tickets.</b> Book online when possible, but keep cash/card flexibility at Saranda port.</li></ul></div>
-    </div>
+    <ul class="field-notes-list tips-list"><li class="field-note"><div class="field-note-head"><h4>Documents</h4><p class="sub">Avoid border surprises</p></div><div class="note-body"><ul><li class="flag"><b>Passports.</b> Required for every border and the Saranda-Corfu ferry.</li><li class="flag"><b>IDP.</b> Bring one even if some agencies do not ask; it is cheap insurance.</li><li class="flag"><b>Rental paperwork.</b> Carry written country permissions and green-card/insurance proof.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Car Strategy</h4><p class="sub">The make-or-break logistics</p></div><div class="note-body"><ul><li class="flag"><b>Get it in writing.</b> Croatia, Bosnia, Montenegro, Albania, one-way drop, and ferry prohibition should all be explicit.</li><li><b>Photograph the car.</b> Do a full video at pickup and drop-off, including wheels and underside edges.</li><li class="flag"><b>Do not ferry the car.</b> Plan the Balkan car to end before Corfu.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Money</h4><p class="sub">Small cash still matters</p></div><div class="note-body"><ul><li><b>Currencies.</b> EUR for Montenegro/Greece/ferry, KM for Bosnia, ALL for Albania.</li><li><b>Cards.</b> Good at hotels and many restaurants, less reliable for parking, small tickets, beach sets.</li><li><b>ATMs.</b> Use bank ATMs and decline dynamic currency conversion.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Heat + Swim</h4><p class="sub">Make the day survivable</p></div><div class="note-body"><ul><li><b>Early starts.</b> Fortress, Butrint, and Porto Timoni are morning activities.</li><li><b>Water shoes.</b> Useful for Kravica, bay ladders, Ksamil rocks, and Corfu coves.</li><li><b>Shade tax.</b> Lounger sets can be worth it when the alternative is four overheated people.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Food</h4><p class="sub">Picky-kid fail-safes</p></div><div class="note-body"><ul><li><b>Pizza/pasta anchors.</b> Every base has at least one researched plain-food option.</li><li class="flag"><b>Road snacks.</b> The Kotor-Ksamil day needs grocery snacks before departure.</li><li><b>Late dinners.</b> Balkan/Greek summer dinners run later; feed kids something plain before scenic dinners if needed.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Ferry + Time</h4><p class="sub">The Corfu crossing has one hidden trap</p></div><div class="note-body"><ul><li class="flag"><b>Time zone.</b> Greece is one hour ahead of Albania in summer.</li><li class="flag"><b>Passport control.</b> Arrive early and do not stack a tight airport plan after the ferry.</li><li><b>Tickets.</b> Book online when possible, but keep cash/card flexibility at Saranda port.</li></ul></div></li></ul>
   </section>
 
   <section id="balance" class="divider">
@@ -1939,6 +1994,63 @@ document.querySelectorAll('.carousel').forEach(function(c){
 #backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}
 #backToTop:hover{background:rgba(26,23,18,1)}
 @media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}
+
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
 </style>
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();

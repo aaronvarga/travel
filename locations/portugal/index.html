@@ -702,7 +702,7 @@ section[id],article[id]{scroll-margin-top:84px}
 }
 @media(max-width:959px){
   .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
-  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav-menu{max-width:1320px;margin:0 auto}
   .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
   .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
   .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
@@ -711,7 +711,7 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
-main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
+main{max-width:1320px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
 .section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
 .section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
@@ -933,7 +933,7 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .scol .row:last-child{border-bottom:0}
 .scol .row b{display:block;margin-bottom:2px}
 .scol .row span{color:var(--muted)}
-footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
+footer{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
 @media(max-width:860px){
  header{min-height:80vh}
@@ -972,6 +972,63 @@ footer a{color:var(--muted)}
 .pvcar .cap-desc{font-size:.83rem;line-height:1.42;color:rgba(255,255,255,.9);max-width:64ch;font-weight:400}
 .pvcar .counter{font-size:.78rem;padding:5px 12px}
 @media(max-width:820px){.preview{grid-template-columns:1fr;min-height:auto}.pvcar .track img{height:56vh}.pv-pane{padding:26px 20px}}
+
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
 </style></head><body>
 <section class="preview">
   <div class="pv-pane">
@@ -2402,7 +2459,7 @@ footer a{color:var(--muted)}
     </div>
     <div class="budget-scroll">
       <table class="budget-tbl">
-        <tr><th>Line item</th><th>Estimate (family of 4)</th></tr>
+        <tbody><tr><th>Line item</th><th>Estimate (family of 4)</th></tr>
         <tr><td>Flights — PIT↔Lisbon / Madeira, open-jaw</td><td>$2,300–3,500</td></tr>
         <tr><td>Internal flight FAO → FNC (TAP direct)</td><td>$400–775</td></tr>
         <tr><td>Rental car — mainland, auto SUV, 1 wk + one-way</td><td>$450–825</td></tr>
@@ -2415,7 +2472,7 @@ footer a{color:var(--muted)}
         <tr><td>Porto Moniz $3.50 · Cabo Girão $5.50/ad (kids free) · PR8/PR11 $5/ad</td><td>~$35–50</td></tr>
         <tr><td>Lodging (3 bases, 12 nights) — not researched here</td><td>your call</td></tr>
         <tr><td>Activities + attractions subtotal</td><td>~$475–600</td></tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="twocol">
       <div class="listcard save-list">
@@ -2453,7 +2510,7 @@ footer a{color:var(--muted)}
     </div>
     <div class="budget-scroll">
       <table class="budget-tbl grand">
-        <tr><th>Category</th><th>Estimate (family of 4)</th></tr>
+        <tbody><tr><th>Category</th><th>Estimate (family of 4)</th></tr>
         <tr><td>Flights — international, open-jaw (PIT↔Lisbon / Madeira)</td><td>$2,300–3,500</td></tr>
         <tr><td>Internal flight — Faro → Funchal (×4)</td><td>$390–785</td></tr>
         <tr><td>Rental cars — both islands + one-way drop + tolls</td><td>$650–1,250</td></tr>
@@ -2461,7 +2518,7 @@ footer a{color:var(--muted)}
         <tr><td>Lodging — 12 nights, 3 bases <i>(rough — not researched)</i></td><td>$2,200–3,500</td></tr>
         <tr><td>Food + activities — sum of the daily blocks above</td><td>$1,700–2,300</td></tr>
         <tr class="total"><td>Grand total — family of 4</td><td>~$7,500–11,700</td></tr>
-      </table>
+      </tbody></table>
     </div>
     <p class="rate-note">Per-day blocks cover food + activities only. Lodging, flights, the rental car, ETIAS/IDP and Fast&nbsp;Track sit in the totals above, not in the daily numbers — so don't double-count. Length verdict: <b>12 nights is just right</b>; trimming nights would not save enough to beat the fixed flight/internal-flight costs and would make Madeira feel too short. Re-check every 2027 price ~3 months out.</p>
   </section>
@@ -2487,74 +2544,38 @@ footer a{color:var(--muted)}
       </ol>
     </div>
 
-    <div class="tips-grid">
-      <div class="tipcard">
-        <h4>Before you go — documents</h4>
-        <p class="sub">Months ahead · don't leave to the airport</p>
-        <ul>
+    <ul class="field-notes-list tips-list"><li class="field-note"><div class="field-note-head"><h4>Before you go — documents</h4><p class="sub">Months ahead · don't leave to the airport</p></div><div class="note-body"><ul>
           <li class="flag"><b>ETIAS is very likely required by June 2027.</b> The EU authorization launches Q4 2026 with a ~6-month grace period, so plan on needing it. <b>$20/adult; free for both kids but each still needs their own.</b> Valid 3 years. Apply once the <i>official</i> portal opens — it isn't yet, so any site taking ETIAS applications today is a scam. Approval is usually instant but can take up to 30 days.</li>
           <li><b>EES biometric borders are live.</b> At your first EU entry (Lisbon) all four get a face photo; adults + the 13-yr-old also give fingerprints (under-12s exempt). No more passport stamps — but <b>expect longer immigration lines on arrival</b>, so build in buffer.</li><li class="flag"><b>No Global Entry equivalent exists for Portugal/EU entry.</b> The EU’s planned “Registered Traveller Programme” was scrapped in 2016 — ETIAS/EES are pre-authorization + biometric registration, <i>not</i> an expedited lane. Lisbon has e-gates (RAPID4ALL) confirmed for US passport holders; <b>Faro/Funchal coverage for US citizens is unconfirmed</b> — don’t count on it. ANA Fast Track speeds up <i>security only</i>, never immigration. The one prep option: pre-register biometrics up to 72h ahead via the free EU “Travel to Europe” app.</li>
           <li><b>Check passports now.</b> Must be valid ≥3 months beyond your June-2027 departure, issued within 10 years, with 2 blank pages. <b>Kids' passports are only valid 5 years</b> — the most common trip-killer.</li>
           <li><b>Get an International Driving Permit from AAA (~$20)</b> before you fly — Portugal officially requires it alongside your US license, and you can't get one there. Two passport photos, valid one year.</li>
-        </ul>
-      </div>
-
-      <div class="tipcard t2">
-        <h4>Flights &amp; airports</h4>
-        <p class="sub">Booking + day-of</p>
-        <ul>
+        </ul></div></li><li class="field-note"><div class="field-note-head"><h4>Flights &amp; airports</h4><p class="sub">Booking + day-of</p></div><div class="note-body"><ul>
           <li class="flag"><b>Pay to seat all four together at booking.</b> TAP doesn't guarantee families sit together and the app can split you — assign every seat when you buy.</li>
           <li><b>ANA Fast Track security (~$11/person)</b> is worth it at busy Lisbon in summer; skip it at quiet Funchal. Long layover? The ANA Lounge day pass at LIS is ~$30.</li>
           <li><b>Give connections room:</b> 2–3 hours at a European gateway with kids + checked bags on one ticket; <b>3–4 hours if you're self-connecting on separate tickets</b> (you re-claim bags, clear immigration, re-check, re-screen).</li>
           <li><b>Funchal is one of Europe's windiest airports</b> — crosswinds routinely divert flights to Porto Santo. Don't book a tight same-day connection off your Funchal departure; keep the exit end flexible.</li>
-        </ul>
-      </div>
-
-      <div class="tipcard t3">
-        <h4>Arrival day — go private</h4>
-        <p class="sub">Skip the rental counter on no sleep</p>
-        <ul>
+        </ul></div></li><li class="field-note"><div class="field-note-head"><h4>Arrival day — go private</h4><p class="sub">Skip the rental counter on no sleep</p></div><div class="note-body"><ul>
           <li><b>Pre-book a private transfer for the arrival day</b> and pick up the rental car on Day 2 in town. Jet-lagged with two kids + luggage, you skip the counter queue and driving on unfamiliar roads exhausted.</li>
           <li><b>Lisbon airport → Cascais ≈ $65–110.</b> Often cheaper and cleaner than a metered airport taxi (~$75–85 + luggage/toll add-ons).</li>
           <li><b>Funchal airport → Ponta do Sol ≈ $50–65</b> (~37 min on the VR1 expressway).</li>
-        </ul>
-      </div>
-
-      <div class="tipcard t4">
-        <h4>Rental cars &amp; driving</h4>
-        <p class="sub">The counter + the road</p>
-        <ul>
+        </ul></div></li><li class="field-note"><div class="field-note-head"><h4>Rental cars &amp; driving</h4><p class="sub">The counter + the road</p></div><div class="note-body"><ul>
           <li><b>Take the rental's own Via Verde toll transponder</b> at the counter — <i>not</i> Easytoll (that's for foreign-plated cars). It auto-pays every electronic toll. The Algarve A22 is toll-free since 2025; you mainly pay the A2 south from Lisbon.</li>
           <li class="flag"><b>Your 8-year-old legally needs a booster seat</b> (Portugal: under 12 <i>and</i> under 135 cm, ≈4′5″) — fines $130–650 per child. <b>Bring one packable backless booster</b> rather than renting twice across two cars and risking a no-show.</li>
           <li><b>Decline the counter "Super CDW" (~$30–45/day).</b> Book base CDW + a cheap standalone excess policy, and confirm it covers <b>tires, glass and undercarriage</b> — exactly the damage Portugal's potholes and Madeira's steep driveways cause. Bring a credit card for the $1,100–2,700 hold.</li>
           <li><b>Don't drive into central Lisbon</b> — camera-enforced low-emission zone (fines to $130) plus parking misery. Use the car only when leaving town.</li>
           <li><b>Madeira: pay for an automatic with real power</b> (≥~90 hp) — cheap manuals struggle on the grades. Load a parking app (Telpark / iParque) and keep coins for blue-zone meters, and <b>fill the tank before the north/west</b> — stations are sparse out there.</li>
-        </ul>
-      </div>
-
-      <div class="tipcard">
-        <h4>Hikes &amp; timed tickets</h4>
-        <p class="sub">Book ahead — several sell out</p>
-        <ul>
+        </ul></div></li><li class="field-note"><div class="field-note-head"><h4>Hikes &amp; timed tickets</h4><p class="sub">Book ahead — several sell out</p></div><div class="note-body"><ul>
           <li class="flag"><b>Madeira PR trails need a paid, timed SIMplifica reservation</b> ($5/person; PR1 $12). Kids ≤12 are free but <b>still need a booked slot</b>. Save the emailed <b>QR code</b> — there's no signal in the mountains. Book as soon as your dates are firm.</li>
           <li><b>PR1 (Pico do Arieiro → Pico Ruivo) reopened April 2026, now one-way;</b> sunrise slots are the most contested on the island. Only hike it in a clear forecast, and weigh the pre-dawn wake-up + exposed midday heat for the 8-year-old.</li>
           <li><b>Pena Palace (Sintra) sells out same-day</b> — strict timed entry; book it <i>before</i> Regaleira. Buy Regaleira on the official site only (regaleira.pt).</li>
           <li><b>Benagil boat/kayak and Madeira whale tours: book 2–4 weeks out for June</b> — the small boats fill first.</li>
           <li><b>Slide &amp; Splash:</b> buy online the night before (10% off, valid any date; the discount isn't sold day-of). <b>Reserve small restaurants</b> (e.g. Mama Mia, Carvoeiro) a few days ahead.</li>
-        </ul>
-      </div>
-
-      <div class="tipcard t2">
-        <h4>Smart timing &amp; packing</h4>
-        <p class="sub">Free, but decisive</p>
-        <ul>
+        </ul></div></li><li class="field-note"><div class="field-note-head"><h4>Smart timing &amp; packing</h4><p class="sub">Free, but decisive</p></div><div class="note-body"><ul>
           <li><b>Arrive before 9am</b> at Praia da Marinha (only ~32 parking spots; police close the access road when it's full until ~3pm), Adraga, and Seixal.</li>
           <li><b>Carry coins.</b> Many parking meters and some beach facilities (toilets/showers) are coin-only.</li>
           <li><b>Pack water shoes</b> for the lava pools (Porto Moniz) and rocky coves, and a <b>windbreaker</b> — exposed clifftops and PR8 get genuinely cold and windy even in June.</li>
           <li><b>Get an eSIM</b> (Airalo/Holafly) before you land — you'll want data for maps, parking apps, and the SIMplifica trail QR codes on arrival. Strong sun on ridges and boats: hats + sunscreen.</li>
-        </ul>
-      </div>
-    </div>
+        </ul></div></li></ul>
   </section>
 
   <section id="packing" class="divider">
@@ -2573,9 +2594,7 @@ footer a{color:var(--muted)}
       <p>Crowd-sourced from Reddit, TripAdvisor forums, and local-run blogs (July 2026) — the off-the-beaten-path stuff guidebooks skip. Reconfirm access rules, tides, and prices closer to travel.</p>
     </div>
 
-    <div class="tips-grid">
-      <div class="tipcard"><h4>Algarve caves &amp; cove beaches</h4><p class="sub">The famous ones changed the rules</p><ul><li class="flag"><b>Benagil is boat-only now.</b> Swimming and self-kayaking into the cave are banned; take an early guided boat/SUP (before ~9am) for the best light inside and the calmest water.</li><li><b>Marinha &amp; Vale Covo run on the tide.</b> Come to Marinha before 9am at low tide (high tide pushes waves to the cliff base); Vale Covo, just east of Carvoeiro, only opens up at low tide down broken cliff stairs — near-empty, no facilities, water shoes.</li><li><b>Praia do Carvalho's secret door.</b> Reached through a 15-m hand-carved tunnel in the cliff (spot the fossils in the rock) — long white sand, calm water, and deserted because the entrance is so obscure.</li></ul></div><div class="tipcard t2"><h4>Carvoeiro on foot</h4><p class="sub">Where the crowd isn't</p><ul><li class="flag"><b>Algar Seco: go left, go early.</b> Everyone piles into the A Boneca cave; the trails to the <i>left</i> of the tunnel lead to quiet pools and rock formations. Before 10am or after 4pm; if the main lot's full, the uphill Rua das Flores lot usually isn't.</li><li><b>Seven Hanging Valleys isn't the "easy" family walk guides claim.</b> Loose rock, unfenced cliff edges, and open sinkholes make it a real hazard for kids under ~10 or anyone with vertigo — 5.7 km each way.</li><li><b>Calm water for the little ones.</b> The dramatic cliff beaches aren't the shallow-and-sheltered kind; Carvoeiro's own town beach, plus Burgau and Praia da Luz to the west, slope in gently with June lifeguards.</li></ul></div><div class="tipcard t3"><h4>Where locals actually eat</h4><p class="sub">Skip the waterfront markup</p><ul><li class="flag"><b>Cross the river to Ferragudo.</b> Locals lunch at <i>Toc Toc</i> and <i>Zé Morgadinho</i> for the dish of the day; grilled sardines are best at <i>lunch</i> (caught overnight), not dinner.</li><li><b>Cascais percebes walk.</b> Flat 20-min stroll from the marina to the Boca do Inferno cliffs (free); roadside marisqueiras toward Guincho serve percebes (goose barnacles) most tourists never try.</li><li><b>Mercado da Vila before 9am.</b> Cascais' covered market (Wed &amp; Sat) is best early for cheese, bread, and pastries — provisions for a picnic — before the 11am–1pm tourist rush.</li></ul></div><div class="tipcard t4"><h4>Madeira: sun &amp; poncha</h4><p class="sub">Chase the microclimate</p><ul><li class="flag"><b>Ponta do Sol earns its name.</b> Madeira's warmest, sunniest town — mountain-sheltered from the northern cloud — so it's often bright here (20–25°C in June) when Funchal is grey. Bank your beach/pool days for it.</li><li><b>Monte toboggan: cash and 9am.</b> Take a taxi up to Monte and ride the wicker sled early — waits hit two hours after 10am, and the drivers often take cash only.</li><li><b>Drink real poncha.</b> Skip the sweet passion-fruit tourist versions; ask for <i>poncha regional</i> (sugarcane rum, lemon, honey) at old-school spots like <i>Taberna da Poncha</i> or the hillside <i>A Venda do André</i>.</li></ul></div>
-    </div>
+    <ul class="field-notes-list"><li class="field-note"><div class="field-note-head"><h4>Algarve caves &amp; cove beaches</h4><p class="sub">The famous ones changed the rules</p></div><div class="note-body"><ul><li class="flag"><b>Benagil is boat-only now.</b> Swimming and self-kayaking into the cave are banned; take an early guided boat/SUP (before ~9am) for the best light inside and the calmest water.</li><li><b>Marinha &amp; Vale Covo run on the tide.</b> Come to Marinha before 9am at low tide (high tide pushes waves to the cliff base); Vale Covo, just east of Carvoeiro, only opens up at low tide down broken cliff stairs — near-empty, no facilities, water shoes.</li><li><b>Praia do Carvalho's secret door.</b> Reached through a 15-m hand-carved tunnel in the cliff (spot the fossils in the rock) — long white sand, calm water, and deserted because the entrance is so obscure.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Carvoeiro on foot</h4><p class="sub">Where the crowd isn't</p></div><div class="note-body"><ul><li class="flag"><b>Algar Seco: go left, go early.</b> Everyone piles into the A Boneca cave; the trails to the <i>left</i> of the tunnel lead to quiet pools and rock formations. Before 10am or after 4pm; if the main lot's full, the uphill Rua das Flores lot usually isn't.</li><li><b>Seven Hanging Valleys isn't the "easy" family walk guides claim.</b> Loose rock, unfenced cliff edges, and open sinkholes make it a real hazard for kids under ~10 or anyone with vertigo — 5.7 km each way.</li><li><b>Calm water for the little ones.</b> The dramatic cliff beaches aren't the shallow-and-sheltered kind; Carvoeiro's own town beach, plus Burgau and Praia da Luz to the west, slope in gently with June lifeguards.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Where locals actually eat</h4><p class="sub">Skip the waterfront markup</p></div><div class="note-body"><ul><li class="flag"><b>Cross the river to Ferragudo.</b> Locals lunch at <i>Toc Toc</i> and <i>Zé Morgadinho</i> for the dish of the day; grilled sardines are best at <i>lunch</i> (caught overnight), not dinner.</li><li><b>Cascais percebes walk.</b> Flat 20-min stroll from the marina to the Boca do Inferno cliffs (free); roadside marisqueiras toward Guincho serve percebes (goose barnacles) most tourists never try.</li><li><b>Mercado da Vila before 9am.</b> Cascais' covered market (Wed &amp; Sat) is best early for cheese, bread, and pastries — provisions for a picnic — before the 11am–1pm tourist rush.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Madeira: sun &amp; poncha</h4><p class="sub">Chase the microclimate</p></div><div class="note-body"><ul><li class="flag"><b>Ponta do Sol earns its name.</b> Madeira's warmest, sunniest town — mountain-sheltered from the northern cloud — so it's often bright here (20–25°C in June) when Funchal is grey. Bank your beach/pool days for it.</li><li><b>Monte toboggan: cash and 9am.</b> Take a taxi up to Monte and ride the wicker sled early — waits hit two hours after 10am, and the drivers often take cash only.</li><li><b>Drink real poncha.</b> Skip the sweet passion-fruit tourist versions; ask for <i>poncha regional</i> (sugarcane rum, lemon, honey) at old-school spots like <i>Taberna da Poncha</i> or the hillside <i>A Venda do André</i>.</li></ul></div></li></ul>
   </section>
 
   <section id="balance" class="divider">
@@ -4858,6 +4877,63 @@ document.querySelectorAll('.carousel').forEach(function(c){
 #backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}
 #backToTop:hover{background:rgba(26,23,18,1)}
 @media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}
+
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
 </style>
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();

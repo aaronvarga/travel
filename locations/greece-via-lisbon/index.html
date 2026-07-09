@@ -703,7 +703,7 @@ section[id],article[id]{scroll-margin-top:84px}
 }
 @media(max-width:959px){
   .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
-  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav-menu{max-width:1320px;margin:0 auto}
   .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
   .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
   .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
@@ -712,7 +712,7 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
-main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
+main{max-width:1320px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
 .section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
 .section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
@@ -934,7 +934,7 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .scol .row:last-child{border-bottom:0}
 .scol .row b{display:block;margin-bottom:2px}
 .scol .row span{color:var(--muted)}
-footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
+footer{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
 @media(max-width:860px){
  header{min-height:80vh}
@@ -978,7 +978,64 @@ footer a{color:var(--muted)}
 .pin2{width:26px;height:26px;border-radius:50% 50% 50% 0;display:grid;place-items:center;border:2px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-45deg)}
 .pin2 span{display:block;transform:rotate(45deg);font-size:13px;line-height:1}
 .pop-ty{display:inline-block;margin-top:3px;color:#66615b;font-size:.82rem}
-@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}</style></head><body><header>
+@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
+</style></head><body><header>
   <div class="hero-inner">
     <span class="kicker">Family Trip · June 2027</span>
     <h1>Greece, by way<br>of Lisbon</h1>
@@ -1150,7 +1207,64 @@ footer a{color:var(--muted)}
       .ev.car{background:var(--gold);color:#3a2f12;box-shadow:0 1px 2px rgba(120,90,20,.28)}
       .ev.hike{background:var(--c3)}.ev.water{background:var(--c1)}.ev.town{background:var(--c2)}
       .ev.rest{background:#8a857c}
-      @media(max-width:640px){.cal-week{min-width:720px}}</style>
+      @media(max-width:640px){.cal-week{min-width:720px}}
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
+</style>
 
     <div class="cal-legend">
       <span><i class="lg-air"></i>✈️ Air travel</span>
@@ -1775,7 +1889,64 @@ footer a{color:var(--muted)}
 .pin2{width:26px;height:26px;border-radius:50% 50% 50% 0;display:grid;place-items:center;border:2px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-45deg)}
 .pin2 span{display:block;transform:rotate(45deg);font-size:13px;line-height:1}
 .pop-ty{display:inline-block;margin-top:3px;color:#66615b;font-size:.82rem}
-@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}</style><section id="entry" class="divider">
+@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
+</style><section id="entry" class="divider">
       <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
       <div class="section-label">
         <p class="eyebrow">Entry &amp; Documents</p>
@@ -1939,9 +2110,9 @@ footer a{color:var(--muted)}
     </div>
     <div class="budget-scroll">
       <table class="budget-tbl">
-        <tr><th>Line item</th><th>Estimate (family of 4)</th></tr>
+        <tbody><tr><th>Line item</th><th>Estimate (family of 4)</th></tr>
         <tr><td>Flights — PIT→Lisbon / ATH→PIT plus Crete domestic hops</td><td>$5,200–8,200</td></tr><tr><td>Domestic flight — Athens↔Chania, both legs</td><td>$450–800</td></tr><tr><td>Rental car — Crete (Chania + Rethymno), ~10 days</td><td>$500–850</td></tr><tr><td>Food — casual meals, groceries, gyros/souvlaki/pizza/pasta</td><td>$1,200–1,900</td></tr><tr><td>Athens gateway/buffer costs if required</td><td>$120–250</td></tr><tr><td>Balos Lagoon boat tour (family)</td><td>$110–150</td></tr><tr><td>Imbros + Samaria + Omalos — entrances, ferry/bus/taxis (family)</td><td>$300–520</td></tr><tr><td>Beach sunbeds/parking — Elafonissi &amp; Rethymno (several days)</td><td>$40–100</td></tr><tr><td>Lodging — 3 vacation bases + Athens gateway buffer</td><td>$1,850–3,000</td></tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="twocol">
       <div class="listcard save-list">
@@ -1953,7 +2124,7 @@ footer a{color:var(--muted)}
       <div class="listcard splurge-list">
         <h4>Worth the splurge</h4>
         <ul>
-          <li><b>Private licensed Acropolis guide</b> (~$250–350 for the group) — turns dense history into something an 8 & 13-year-old actually follow, and keeps the single Athens morning efficient.</li><li><b>The Gramvousa island stop</b> on the Balos boat tour — a short walk to Venetian castle ruins most operators include.</li><li><b>Lunch at an Elafonissi beachfront taverna</b> rather than packing food — a rare case where staying put beats a picnic.</li><li><b>A harborfront dinner in Rethymno</b> for the Fortezza-at-sunset view — worth it once, this late in the trip.</li><li><b>A guided Imbros Gorge hike</b> (~$40–60 pp) if you'd rather have someone else handle pacing and water stops for an 8-year-old.</li>
+          <li><b>Private licensed Acropolis guide</b> (~$250–350 for the group) — turns dense history into something an 8 &amp; 13-year-old actually follow, and keeps the single Athens morning efficient.</li><li><b>The Gramvousa island stop</b> on the Balos boat tour — a short walk to Venetian castle ruins most operators include.</li><li><b>Lunch at an Elafonissi beachfront taverna</b> rather than packing food — a rare case where staying put beats a picnic.</li><li><b>A harborfront dinner in Rethymno</b> for the Fortezza-at-sunset view — worth it once, this late in the trip.</li><li><b>A guided Imbros Gorge hike</b> (~$40–60 pp) if you'd rather have someone else handle pacing and water stops for an 8-year-old.</li>
         </ul>
       </div>
     </div>
@@ -1967,10 +2138,10 @@ footer a{color:var(--muted)}
     </div>
     <div class="budget-scroll">
       <table class="budget-tbl grand">
-        <tr><th>Category</th><th>Estimate (family of 4)</th></tr>
-        <tr><td>Flights — international + intra-Europe hop, family of 4</td><td>$5,200–8,200</td></tr><tr><td>Domestic flight — Athens ↔ Chania</td><td>$450–800</td></tr><tr><td>Rental car — Crete, ~10 days</td><td>$500–850</td></tr><tr><td>Docs & extras — ETIAS, eSIM, Fast Track, transfers</td><td>$250–350</td></tr><tr><td>Lodging — 3 vacation bases + Athens gateway buffer</td><td>$1,850–3,000</td></tr><tr><td>Food + activities — sum of daily blocks above</td><td>$2,500–3,700</td></tr>
+        <tbody><tr><th>Category</th><th>Estimate (family of 4)</th></tr>
+        <tr><td>Flights — international + intra-Europe hop, family of 4</td><td>$5,200–8,200</td></tr><tr><td>Domestic flight — Athens ↔ Chania</td><td>$450–800</td></tr><tr><td>Rental car — Crete, ~10 days</td><td>$500–850</td></tr><tr><td>Docs &amp; extras — ETIAS, eSIM, Fast Track, transfers</td><td>$250–350</td></tr><tr><td>Lodging — 3 vacation bases + Athens gateway buffer</td><td>$1,850–3,000</td></tr><tr><td>Food + activities — sum of daily blocks above</td><td>$2,500–3,700</td></tr>
         <tr class="total"><td>Grand total — family of 4</td><td>~$9,900–15,600</td></tr>
-      </table>
+      </tbody></table>
     </div>
     <p class="rate-note">Per-day blocks in the itinerary cover food + activities only. Lodging, flights, rental car, and docs sit in the totals above, not the daily numbers — don't double-count. Length verdict: <b>12 hotel nights is the new hiking-loaded version</b>; it costs one extra PTO day but keeps the Jun 23 blackout untouched. Keep Athens as a flight gateway or one-night return buffer unless Acropolis is a must. Re-check every 2027 price ~3 months out.</p>
   </section>
@@ -1989,9 +2160,7 @@ footer a{color:var(--muted)}
       </ol>
     </div>
 
-    <div class="tips-grid">
-      <div class="tipcard"><h4>Before you go — documents</h4><p class="sub">Months ahead · don't leave to the airport</p><ul><li class="flag"><b>ETIAS is very likely required by June 2027.</b> The EU authorization launches Q4 2026 with a ~6-month grace period. $20/adult, free for both kids but each still needs one. Apply only once the official portal opens.</li><li><b>EES biometric borders are live at your first EU entry (Lisbon).</b> Face photo for all four; adults + the 13-year-old also give fingerprints. Build in buffer for longer arrival lines.</li><li><b>Greek ID checks for discounted museum/site tickets are strict.</b> Original physical ID required for child/EU discounts — a photo on a phone is often rejected at the gate.</li><li><b>Check passports now.</b> Valid ≥3 months beyond departure, issued within 10 years, 2 blank pages. Kids' passports are only valid 5 years — the most common trip-killer.</li></ul></div><div class="tipcard t2"><h4>Flights & the TAP stopover</h4><p class="sub">Booking + day-of</p><ul><li class="flag"><b>Test-book the LIS–ATH segment as soon as 2027 loads.</b> This is a brand-new route (5x/week, launched Jul 2026) — confirm both directions exist on your dates before locking the Athens–Chania hop or Crete lodging.</li><li><b>Pay to seat all four together at booking.</b> TAP doesn't guarantee families sit together — assign every seat when you buy, both the transatlantic and the LIS–ATH segments.</li><li><b>Give the Lisbon connection real room.</b> 2–3 hours minimum on one through-ticket with checked bags and kids; more if you're self-connecting on separate tickets.</li><li><b>Book Athens–Chania as a separate ticket, with a generous layover.</b> Aegean/Sky Express run frequent service, but leave 3+ hours after the LIS–ATH landing since bags likely need re-checking on the separate ticket.</li></ul></div><div class="tipcard t3"><h4>Arrival days — go easy</h4><p class="sub">Two redeye-adjacent landings, not one</p><ul><li><b>Pre-book a private transfer for both arrival days (Lisbon and Chania).</b> Jet-lagged with two kids and luggage, skip the rental/taxi queue on unfamiliar roads.</li><li><b>Lisbon airport → Cascais ≈ $65–110.</b> Often cheaper and less hassle than a metered taxi plus luggage/toll add-ons.</li><li><b>Athens airport → Koukaki/Plaka ≈ $35–50 by taxi, or the X95 express bus ≈ $6.50 pp.</b> The metro also runs from the airport but involves stairs with luggage — you only need this once, for the single Athens night.</li></ul></div><div class="tipcard t4"><h4>Crete driving & day trips</h4><p class="sub">Book ahead, drive gently</p><ul><li class="flag"><b>Book the Balos boat and reserve an Imbros Gorge return taxi 4–6 weeks out for June.</b> Both are popular family activities and sell out on short notice in peak season.</li><li><b>Rent an automatic, not the cheapest manual.</b> Crete's mountain and gorge-access roads are narrow and steep in spots. Fill the tank before Elafonissi or Imbros — stations thin out fast outside Chania and Rethymno.</li><li><b>Bring an International Driving Permit from AAA (~$20).</b> Greece officially requires it alongside a US license.</li><li><b>Chania to Rethymno is one easy 40-minute drive</b> — no need to return the car and re-rent; keep the same car for both bases.</li></ul></div><div class="tipcard"><h4>Timed tickets & heat management</h4><p class="sub">Book ahead — several sell out or bake you alive</p><ul><li class="flag"><b>Acropolis: book the 8am slot 1–3 weeks ahead via hhticket.gr.</b> Daily cap is 20,000 visitors; early morning and late-afternoon slots go first — and with only one Athens night, there's no backup slot.</li><li class="flag"><b>Book the Balos boat and the Imbros return-taxi in advance, not on arrival.</b> Both fill up in June and there's no fallback day built into the schedule for either.</li><li><b>Go to Elafonissi by 10am.</b> Crete's most photographed beach fills its car park by midday in high season.</li><li><b>Imbros Gorge closes Nov–Apr for flash-flood risk</b> — a non-issue in June, but confirm current trail status before you drive out, since conditions can occasionally close it after storms.</li></ul></div><div class="tipcard t2"><h4>Smart packing</h4><p class="sub">Free, but decisive</p><ul><li><b>Sturdy, well-fitting shoes for Imbros Gorge.</b> The riverbed path has loose pebbles that get slippery — trail sandals or sneakers, not flip-flops.</li><li><b>Get an eSIM (Airalo/Holafly) before you land.</b> You'll want data for maps on winding Crete roads, the Balos/Imbros bookings, and the Acropolis timed-entry QR code.</li><li><b>Pack a lightweight layer for evenings.</b> Both Lisbon and Crete's old towns get breezy after sunset even in June.</li><li><b>Sun hats and reef-safe sunscreen for the boat tour and beach days.</b> Balos and Elafonissi both have long stretches with zero shade.</li></ul></div>
-    </div>
+    <ul class="field-notes-list tips-list"><li class="field-note"><div class="field-note-head"><h4>Before you go — documents</h4><p class="sub">Months ahead · don't leave to the airport</p></div><div class="note-body"><ul><li class="flag"><b>ETIAS is very likely required by June 2027.</b> The EU authorization launches Q4 2026 with a ~6-month grace period. $20/adult, free for both kids but each still needs one. Apply only once the official portal opens.</li><li><b>EES biometric borders are live at your first EU entry (Lisbon).</b> Face photo for all four; adults + the 13-year-old also give fingerprints. Build in buffer for longer arrival lines.</li><li><b>Greek ID checks for discounted museum/site tickets are strict.</b> Original physical ID required for child/EU discounts — a photo on a phone is often rejected at the gate.</li><li><b>Check passports now.</b> Valid ≥3 months beyond departure, issued within 10 years, 2 blank pages. Kids' passports are only valid 5 years — the most common trip-killer.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Flights &amp; the TAP stopover</h4><p class="sub">Booking + day-of</p></div><div class="note-body"><ul><li class="flag"><b>Test-book the LIS–ATH segment as soon as 2027 loads.</b> This is a brand-new route (5x/week, launched Jul 2026) — confirm both directions exist on your dates before locking the Athens–Chania hop or Crete lodging.</li><li><b>Pay to seat all four together at booking.</b> TAP doesn't guarantee families sit together — assign every seat when you buy, both the transatlantic and the LIS–ATH segments.</li><li><b>Give the Lisbon connection real room.</b> 2–3 hours minimum on one through-ticket with checked bags and kids; more if you're self-connecting on separate tickets.</li><li><b>Book Athens–Chania as a separate ticket, with a generous layover.</b> Aegean/Sky Express run frequent service, but leave 3+ hours after the LIS–ATH landing since bags likely need re-checking on the separate ticket.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Arrival days — go easy</h4><p class="sub">Two redeye-adjacent landings, not one</p></div><div class="note-body"><ul><li><b>Pre-book a private transfer for both arrival days (Lisbon and Chania).</b> Jet-lagged with two kids and luggage, skip the rental/taxi queue on unfamiliar roads.</li><li><b>Lisbon airport → Cascais ≈ $65–110.</b> Often cheaper and less hassle than a metered taxi plus luggage/toll add-ons.</li><li><b>Athens airport → Koukaki/Plaka ≈ $35–50 by taxi, or the X95 express bus ≈ $6.50 pp.</b> The metro also runs from the airport but involves stairs with luggage — you only need this once, for the single Athens night.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Crete driving &amp; day trips</h4><p class="sub">Book ahead, drive gently</p></div><div class="note-body"><ul><li class="flag"><b>Book the Balos boat and reserve an Imbros Gorge return taxi 4–6 weeks out for June.</b> Both are popular family activities and sell out on short notice in peak season.</li><li><b>Rent an automatic, not the cheapest manual.</b> Crete's mountain and gorge-access roads are narrow and steep in spots. Fill the tank before Elafonissi or Imbros — stations thin out fast outside Chania and Rethymno.</li><li><b>Bring an International Driving Permit from AAA (~$20).</b> Greece officially requires it alongside a US license.</li><li><b>Chania to Rethymno is one easy 40-minute drive</b> — no need to return the car and re-rent; keep the same car for both bases.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Timed tickets &amp; heat management</h4><p class="sub">Book ahead — several sell out or bake you alive</p></div><div class="note-body"><ul><li class="flag"><b>Acropolis: book the 8am slot 1–3 weeks ahead via hhticket.gr.</b> Daily cap is 20,000 visitors; early morning and late-afternoon slots go first — and with only one Athens night, there's no backup slot.</li><li class="flag"><b>Book the Balos boat and the Imbros return-taxi in advance, not on arrival.</b> Both fill up in June and there's no fallback day built into the schedule for either.</li><li><b>Go to Elafonissi by 10am.</b> Crete's most photographed beach fills its car park by midday in high season.</li><li><b>Imbros Gorge closes Nov–Apr for flash-flood risk</b> — a non-issue in June, but confirm current trail status before you drive out, since conditions can occasionally close it after storms.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Smart packing</h4><p class="sub">Free, but decisive</p></div><div class="note-body"><ul><li><b>Sturdy, well-fitting shoes for Imbros Gorge.</b> The riverbed path has loose pebbles that get slippery — trail sandals or sneakers, not flip-flops.</li><li><b>Get an eSIM (Airalo/Holafly) before you land.</b> You'll want data for maps on winding Crete roads, the Balos/Imbros bookings, and the Acropolis timed-entry QR code.</li><li><b>Pack a lightweight layer for evenings.</b> Both Lisbon and Crete's old towns get breezy after sunset even in June.</li><li><b>Sun hats and reef-safe sunscreen for the boat tour and beach days.</b> Balos and Elafonissi both have long stretches with zero shade.</li></ul></div></li></ul>
   </section>
 
   <section id="packing" class="divider">
@@ -2007,12 +2176,10 @@ footer a{color:var(--muted)}
     <div class="section-label">
       <p class="eyebrow">What People Are Saying</p>
       <h2>Insider field notes</h2>
-      <p>Crowd-sourced from Reddit, TripAdvisor forums, and local-run blogs &mdash; the off-the-beaten-path stuff guidebooks skip. Reconfirm access rules and prices when 2027 inventory opens.</p>
+      <p>Crowd-sourced from Reddit, TripAdvisor forums, and local-run blogs — the off-the-beaten-path stuff guidebooks skip. Reconfirm access rules and prices when 2027 inventory opens.</p>
     </div>
 
-    <div class="tips-grid">
-      <div class="tipcard"><h4>Lisbon &amp; Cascais on a stopover</h4><p class="sub">One day, don't overreach</p><ul><li class="flag"><b>Treat the free stopover as decompression, not a sprint.</b> After an overnight red-eye, most families who tried to "do all of Lisbon" the first day regretted it &mdash; base in Cascais, nap, walk the seafront, then give Lisbon proper a single relaxed day (Belém + a tram or Alfama, not both plus Sintra).</li><li><b>The Cascais line train is the move.</b> ~40 min from Cais do Sodré, runs along the coast, and a Cascais-line pass beats point-to-point fares after a couple of round trips.</li><li><b>Pastel de Belém has a takeaway line that moves.</b> Skip the sit-down queue, grab a box warm, eat them in the Jerónimos gardens.</li></ul></div><div class="tipcard t2"><h4>Chania &amp; the Venetian harbour</h4><p class="sub">Walk one street back</p><ul><li class="flag"><b>Leave the harbour-front for dinner.</b> The waterfront is premium price / mediocre food; step into Splantzia &mdash; locals fill <i>Avli ton Thavmaton</i> (arrive early), <i>Tamam</i>, and the wood-oven spots a block off the water.</li><li><b>Carriers, not strollers.</b> Chania's cobbled pedestrian alleys make a stroller near-useless &mdash; the 8-year-old walks, the load rides on you.</li><li><b>Do the old town at dusk.</b> Day heat + cruise crowds thin out after 6pm; the lighthouse walk and harbour light are worth the later dinner.</li></ul></div><div class="tipcard t3"><h4>Balos &amp; Elafonissi lagoons</h4><p class="sub">The turquoise ones fill by 10</p><ul><li class="flag"><b>Watch the wind for Balos.</b> The boat day lives and dies on the meltemi &mdash; keep a swap plan (Elafonissi or Falasarna) and book the Kissamos boat directly rather than a hotel-desk markup.</li><li><b>Elafonissi before 9am or after 3pm.</b> Tour buses clear ~3&ndash;4pm; morning or late-afternoon means calm water and open parking. Use the official €5 lot, not the roadside "helpers."</li><li><b>Reef shoes for both.</b> Shallow, sharp-ish patches and hot sand &mdash; the kids will thank you.</li></ul></div><div class="tipcard t4"><h4>Imbros Gorge with kids</h4><p class="sub">Save the little legs</p><ul><li class="flag"><b>Dawn start, downhill direction.</b> Hike the ~8 km early to beat the heat; it's a gentle descent, not a climb, which is what makes it work for an 8-year-old.</li><li><b>Pay the ~€5 shuttle/taxi back up.</b> Cheaper and saner than re-climbing 600+ m of elevation in the afternoon sun.</li><li><b>Reward at the bottom.</b> A south-coast swim and a taverna lunch at the exit turns "a hike" into the kids' favourite day.</li></ul></div><div class="tipcard"><h4>Rethymno &amp; not getting fleeced</h4><p class="sub">Small stuff that adds up</p><ul><li class="flag"><b>Rethymno's quiet beaches.</b> Skip the packed old-town strip for Koumbes (west of the fort) or the long sandy stretch east &mdash; same sea, fewer people, easier parking.</li><li><b>Bread &amp; water charges are illegal.</b> Greek law since 2013 &mdash; refuse if a taverna slips them onto the bill.</li><li><b>Insist on the taxi meter.</b> "Meter's broken" = inflated fare; know the airport-to-centre baseline before you get in.</li></ul></div>
-    </div>
+    <ul class="field-notes-list"><li class="field-note"><div class="field-note-head"><h4>Lisbon &amp; Cascais on a stopover</h4><p class="sub">One day, don't overreach</p></div><div class="note-body"><ul><li class="flag"><b>Treat the free stopover as decompression, not a sprint.</b> After an overnight red-eye, most families who tried to "do all of Lisbon" the first day regretted it — base in Cascais, nap, walk the seafront, then give Lisbon proper a single relaxed day (Belém + a tram or Alfama, not both plus Sintra).</li><li><b>The Cascais line train is the move.</b> ~40 min from Cais do Sodré, runs along the coast, and a Cascais-line pass beats point-to-point fares after a couple of round trips.</li><li><b>Pastel de Belém has a takeaway line that moves.</b> Skip the sit-down queue, grab a box warm, eat them in the Jerónimos gardens.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Chania &amp; the Venetian harbour</h4><p class="sub">Walk one street back</p></div><div class="note-body"><ul><li class="flag"><b>Leave the harbour-front for dinner.</b> The waterfront is premium price / mediocre food; step into Splantzia — locals fill <i>Avli ton Thavmaton</i> (arrive early), <i>Tamam</i>, and the wood-oven spots a block off the water.</li><li><b>Carriers, not strollers.</b> Chania's cobbled pedestrian alleys make a stroller near-useless — the 8-year-old walks, the load rides on you.</li><li><b>Do the old town at dusk.</b> Day heat + cruise crowds thin out after 6pm; the lighthouse walk and harbour light are worth the later dinner.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Balos &amp; Elafonissi lagoons</h4><p class="sub">The turquoise ones fill by 10</p></div><div class="note-body"><ul><li class="flag"><b>Watch the wind for Balos.</b> The boat day lives and dies on the meltemi — keep a swap plan (Elafonissi or Falasarna) and book the Kissamos boat directly rather than a hotel-desk markup.</li><li><b>Elafonissi before 9am or after 3pm.</b> Tour buses clear ~3–4pm; morning or late-afternoon means calm water and open parking. Use the official €5 lot, not the roadside "helpers."</li><li><b>Reef shoes for both.</b> Shallow, sharp-ish patches and hot sand — the kids will thank you.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Imbros Gorge with kids</h4><p class="sub">Save the little legs</p></div><div class="note-body"><ul><li class="flag"><b>Dawn start, downhill direction.</b> Hike the ~8 km early to beat the heat; it's a gentle descent, not a climb, which is what makes it work for an 8-year-old.</li><li><b>Pay the ~€5 shuttle/taxi back up.</b> Cheaper and saner than re-climbing 600+ m of elevation in the afternoon sun.</li><li><b>Reward at the bottom.</b> A south-coast swim and a taverna lunch at the exit turns "a hike" into the kids' favourite day.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Rethymno &amp; not getting fleeced</h4><p class="sub">Small stuff that adds up</p></div><div class="note-body"><ul><li class="flag"><b>Rethymno's quiet beaches.</b> Skip the packed old-town strip for Koumbes (west of the fort) or the long sandy stretch east — same sea, fewer people, easier parking.</li><li><b>Bread &amp; water charges are illegal.</b> Greek law since 2013 — refuse if a taverna slips them onto the bill.</li><li><b>Insist on the taxi meter.</b> "Meter's broken" = inflated fare; know the airport-to-centre baseline before you get in.</li></ul></div></li></ul>
   </section>
     <section id="balance" class="divider">
     <div class="section-label">
@@ -2022,7 +2189,7 @@ footer a{color:var(--muted)}
     </div>
     <div class="bar"><i style="width:30%;background:var(--c1)"></i><i style="width:30%;background:var(--c2)"></i><i style="width:30%;background:var(--c3)"></i><i style="width:10%;background:var(--gold)"></i></div>
     <div class="balance">
-      <div class="bcard k1"><div class="pct">30%</div><h4>Beach · Water · Lagoons</h4><p>Cascais beach, Balos Lagoon, Elafonissi, Rethymno beach.</p></div><div class="bcard k2"><div class="pct">30%</div><h4>Cool Towns & Food</h4><p>Cascais, Belém, Plaka, Chania Old Town, Rethymno Fortezza.</p></div><div class="bcard k3"><div class="pct">30%</div><h4>Hiking & History</h4><p>The Acropolis, Imbros, Samaria, and Omalos/Lefka Ori high country.</p></div><div class="bcard k4"><div class="pct">10%</div><h4>Transfer & Logistics</h4><p>Two arrival days, one domestic flight, one Crete base move, and departure.</p></div>
+      <div class="bcard k1"><div class="pct">30%</div><h4>Beach · Water · Lagoons</h4><p>Cascais beach, Balos Lagoon, Elafonissi, Rethymno beach.</p></div><div class="bcard k2"><div class="pct">30%</div><h4>Cool Towns &amp; Food</h4><p>Cascais, Belém, Plaka, Chania Old Town, Rethymno Fortezza.</p></div><div class="bcard k3"><div class="pct">30%</div><h4>Hiking &amp; History</h4><p>The Acropolis, Imbros, Samaria, and Omalos/Lefka Ori high country.</p></div><div class="bcard k4"><div class="pct">10%</div><h4>Transfer &amp; Logistics</h4><p>Two arrival days, one domestic flight, one Crete base move, and departure.</p></div>
     </div>
   </section>
 
@@ -2173,6 +2340,63 @@ document.querySelectorAll('.carousel').forEach(function(c){
 #backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}
 #backToTop:hover{background:rgba(26,23,18,1)}
 @media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}
+
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
 </style>
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();

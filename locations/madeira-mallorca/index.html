@@ -702,7 +702,7 @@ section[id],article[id]{scroll-margin-top:84px}
 }
 @media(max-width:959px){
   .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
-  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav-menu{max-width:1320px;margin:0 auto}
   .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
   .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
   .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
@@ -711,7 +711,7 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
-main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
+main{max-width:1320px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
 .section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
 .section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
@@ -933,7 +933,7 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .scol .row:last-child{border-bottom:0}
 .scol .row b{display:block;margin-bottom:2px}
 .scol .row span{color:var(--muted)}
-footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
+footer{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
 @media(max-width:860px){
  header{min-height:80vh}
@@ -977,6 +977,63 @@ footer a{color:var(--muted)}
 .pvcar .cap-desc{font-size:.83rem;line-height:1.42;color:rgba(255,255,255,.9);max-width:64ch;font-weight:400}
 .pvcar .counter{font-size:.78rem;padding:5px 12px}
 @media(max-width:820px){.preview{grid-template-columns:1fr;min-height:auto}.pvcar .track img{height:56vh}.pv-pane{padding:26px 20px}}
+
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
 </style></head><body><section class="preview">
   <div class="pv-pane">
     <span class="pv-kicker">Family Trip &middot; Jun 8&ndash;21, 2027</span>
@@ -1721,7 +1778,7 @@ footer a{color:var(--muted)}
       <h2>Why Jun 8-21 wins</h2>
       <p>It uses the Tuesday Madeira departure, turns Juneteenth observed into a beach day, and gets home before the Jun 23-26 Pittsburgh blackout.</p>
     </div>
-    <div class="budget-scroll"><table class="cost-table"><thead><tr><th>Window</th><th>PTO</th><th>Water</th><th>Budget</th><th>Verdict</th></tr></thead><tbody><tr><td>Jun 8-21</td><td>8</td><td>Mallorca ~72-75 F</td><td>Best clean-cap shot</td><td><b>Use this</b></td></tr><tr><td>Jun 15-28</td><td>8</td><td>Warmer</td><td>Conflicts with Jun 23-26 blackout</td><td>Invalid</td></tr><tr><td>Jun 29-Jul 12</td><td>8</td><td>Warmer</td><td>July lodging/airfare higher</td><td>Backup only if June quotes fail</td></tr><tr><td>Aug 2-15</td><td>9</td><td>Warmest</td><td>Highest peak pressure</td><td>Avoid for this budget</td></tr></tbody></table></div>
+    <div class="budget-scroll"><table class="cost-table budget-tbl"><thead><tr><th>Window</th><th>PTO</th><th>Water</th><th>Budget</th><th>Verdict</th></tr></thead><tbody><tr><td>Jun 8-21</td><td>8</td><td>Mallorca ~72-75 F</td><td>Best clean-cap shot</td><td><b>Use this</b></td></tr><tr><td>Jun 15-28</td><td>8</td><td>Warmer</td><td>Conflicts with Jun 23-26 blackout</td><td>Invalid</td></tr><tr><td>Jun 29-Jul 12</td><td>8</td><td>Warmer</td><td>July lodging/airfare higher</td><td>Backup only if June quotes fail</td></tr><tr><td>Aug 2-15</td><td>9</td><td>Warmest</td><td>Highest peak pressure</td><td>Avoid for this budget</td></tr></tbody></table></div>
   </section>
 <section id="todo" class="divider pretrip-todo">
       <style>.pretrip-todo .todo-grid{display:grid;gap:12px}.pretrip-todo .todo-block{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c1);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.pretrip-todo .todo-block.hot{border-left-color:#c0392b}.pretrip-todo .todo-block.watch{border-left-color:var(--gold)}.pretrip-todo .todo-block.done{border-left-color:var(--c3)}.pretrip-todo .todo-when{grid-row:1/4;align-self:start;display:inline-block;margin:0;padding:4px 10px;border-radius:999px;background:rgba(31,111,120,.1);color:var(--c1);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-align:center}.pretrip-todo .todo-block.hot .todo-when{background:rgba(192,57,43,.1);color:#a23625}.pretrip-todo .todo-block.watch .todo-when{background:rgba(217,164,65,.16);color:#8a641e}.pretrip-todo .todo-block.done .todo-when{background:rgba(63,125,78,.12);color:var(--c3)}.pretrip-todo h3{grid-column:2;margin:0;font-size:1.12rem;font-weight:600;line-height:1.18}.pretrip-todo .todo-note{grid-column:2;margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}.pretrip-todo ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px}.pretrip-todo li{position:relative;padding-left:16px;color:var(--muted);font-size:.88rem;line-height:1.45}.pretrip-todo li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}.pretrip-todo li b{color:var(--ink)}.pretrip-todo .todo-callout{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:12px;background:var(--card);box-shadow:0 10px 28px rgba(30,32,28,.08);color:var(--muted);font-size:.9rem;line-height:1.55}.pretrip-todo .todo-callout b{color:var(--ink)}@media(max-width:720px){.pretrip-todo .todo-block{grid-template-columns:1fr;padding:16px}.pretrip-todo .todo-when{grid-row:auto;justify-self:start;text-align:left}.pretrip-todo h3,.pretrip-todo .todo-note,.pretrip-todo ul{grid-column:1}}</style>
@@ -1765,7 +1822,7 @@ footer a{color:var(--muted)}
       <h2>Budget, savers &amp; splurges</h2>
       <p>Clean-cap plan using July 2026 route/activity/lodging signals. These are gates, not blank-check ranges: airfare must stay under $6.4k family, and Mallorca lodging must stay apartment-first.</p>
     </div>
-    <div class="budget-scroll"><table class="cost-table"><thead><tr><th>Line item</th><th>Estimate (family of 4)</th></tr></thead><tbody><tr><td>Flights, seats, bags · PIT/FNC/LIS/PMI/PIT gated</td><td>$5,400-$6,400</td></tr><tr><td>Funchal lodging · 5 nights</td><td>$800-$1,100</td></tr><tr><td>Lisbon buffer hotel · 1 night</td><td>$140-$220</td></tr><tr><td>Palma lodging · 2 nights</td><td>$400-$620</td></tr><tr><td>Playa de Muro / Alcudia lodging · 4 nights</td><td>$960-$1,210</td></tr><tr><td>Two rental cars, fuel, parking, transfers</td><td>$900-$1,300</td></tr><tr><td>Food, groceries, casual dinners · 13 days</td><td>$1,850-$2,250</td></tr><tr><td>Activities · Madeira trails/cable car/toboggan + Soller/Drach/beach shade</td><td>$800-$1,100</td></tr><tr><td>Insurance, fees, misc buffer</td><td>$550-$600</td></tr></tbody></table></div>
+    <div class="budget-scroll"><table class="cost-table budget-tbl"><thead><tr><th>Line item</th><th>Estimate (family of 4)</th></tr></thead><tbody><tr><td>Flights, seats, bags · PIT/FNC/LIS/PMI/PIT gated</td><td>$5,400-$6,400</td></tr><tr><td>Funchal lodging · 5 nights</td><td>$800-$1,100</td></tr><tr><td>Lisbon buffer hotel · 1 night</td><td>$140-$220</td></tr><tr><td>Palma lodging · 2 nights</td><td>$400-$620</td></tr><tr><td>Playa de Muro / Alcudia lodging · 4 nights</td><td>$960-$1,210</td></tr><tr><td>Two rental cars, fuel, parking, transfers</td><td>$900-$1,300</td></tr><tr><td>Food, groceries, casual dinners · 13 days</td><td>$1,850-$2,250</td></tr><tr><td>Activities · Madeira trails/cable car/toboggan + Soller/Drach/beach shade</td><td>$800-$1,100</td></tr><tr><td>Insurance, fees, misc buffer</td><td>$550-$600</td></tr></tbody></table></div>
     <div class="plan-grid">
       <div class="pcard"><h4><span class="dot"></span>Save money</h4><ul><li><b>Enforce the $6.4k airfare gate.</b> If the multi-city quote is higher, Madeira + Mallorca stops being a clean-cap contender.</li><li><b>Apartment-first on Mallorca.</b> The beach base must be near sand but not a full-service resort.</li><li><b>Pick one Mallorca paid splurge.</b> Soller train, Drach caves, or a boat/beach-club day; stacking all three is how the ceiling breaks.</li><li><b>Book Madeira trails direct.</b> SIMplifica fees keep PR1/PR6/PR8 cheap, with the 8-year-old still free where age exemptions apply.</li></ul></div>
       <div class="pcard"><h4><span class="dot"></span>Worth the splurge</h4><ul><li><b>Monte toboggan.</b> EUR40 per two-person basket is still the most memorable Madeira kid spend.</li><li><b>One beach shade day.</b> Mallorca sun plus an 8-year-old justifies loungers when the day is water-heavy.</li><li><b>Drach caves.</b> Weather-proof, timed, and different from every other beach day.</li><li><b>Palma dinner.</b> One good tapas/pizza night before grocery-mode begins.</li></ul></div>
@@ -1778,7 +1835,7 @@ footer a{color:var(--muted)}
       <h2>Total trip cost</h2>
       <p>USD, family of four. The grand-total ceiling is deliberately below the $15k hard cap; if any gated category moves up, score budget down before ranking it.</p>
     </div>
-    <div class="budget-scroll"><table class="cost-table"><thead><tr><th>Category</th><th>Estimate</th></tr></thead><tbody><tr><td>Transportation · flights, cars, fuel, transfers</td><td>$6,300-$7,700</td></tr><tr><td>Lodging · 12 hotel/apartment nights</td><td>$2,300-$3,150</td></tr><tr><td>Food and groceries</td><td>$1,850-$2,250</td></tr><tr><td>Activities and paid beach logistics</td><td>$800-$1,100</td></tr><tr><td>Insurance / fees / misc</td><td>$550-$600</td></tr><tr><td><b>Grand total — family of 4</b></td><td><b>~$11.8k-$14.8k gated</b></td></tr></tbody></table></div>
+    <div class="budget-scroll"><table class="cost-table budget-tbl grand"><thead><tr><th>Category</th><th>Estimate</th></tr></thead><tbody><tr><td>Transportation · flights, cars, fuel, transfers</td><td>$6,300-$7,700</td></tr><tr><td>Lodging · 12 hotel/apartment nights</td><td>$2,300-$3,150</td></tr><tr><td>Food and groceries</td><td>$1,850-$2,250</td></tr><tr><td>Activities and paid beach logistics</td><td>$800-$1,100</td></tr><tr><td>Insurance / fees / misc</td><td>$550-$600</td></tr><tr class="total"><td><b>Grand total — family of 4</b></td><td><b>~$11.8k-$14.8k gated</b></td></tr></tbody></table></div>
     <p class="note">Per-day blocks in the itinerary cover food + activities only. Lodging, flights, rental cars, and docs sit in the totals above, not the daily numbers — do not double-count.</p>
   </section>
 
@@ -1788,10 +1845,7 @@ footer a{color:var(--muted)}
       <h2>The stuff nobody tells you</h2>
       <p>Operational rules that keep this from turning into a pretty but fragile itinerary.</p>
     </div>
-    <div class="plan-grid">
-      <div class="pcard"><h4><span class="dot"></span>Book in roughly this order</h4><ol><li>Multi-city protected airfare; this is the go/no-go gate.</li><li>Refundable apartments in Funchal, Palma, and Playa de Muro/Alcudia.</li><li>Automatic rental cars on both islands.</li><li>SIMplifica Madeira trail slots when the 2027 dates open.</li><li>Drach / Soller / boat decisions only after flights and lodging are inside cap.</li></ol></div>
-      <div class="pcard"><h4><span class="dot"></span>Rules that protect the trip</h4><ul><li><b>Lisbon buffer is not optional.</b> FNC wind is the one operational hazard Madeira brings.</li><li><b>Do not chase every Mallorca cala.</b> The north beach base is there to reduce driving.</li><li><b>Return Monday Jun 21.</b> No extension can touch Jun 23-26.</li><li><b>Use shade aggressively.</b> Mallorca beach days fail when the kids overheat before lunch.</li></ul></div>
-    </div>
+    <ul class="field-notes-list tips-list"><li class="field-note"><div class="field-note-head"><h4>Book in roughly this order</h4></div><div class="note-body"><ol><li>Multi-city protected airfare; this is the go/no-go gate.</li><li>Refundable apartments in Funchal, Palma, and Playa de Muro/Alcudia.</li><li>Automatic rental cars on both islands.</li><li>SIMplifica Madeira trail slots when the 2027 dates open.</li><li>Drach / Soller / boat decisions only after flights and lodging are inside cap.</li></ol></div></li><li class="field-note"><div class="field-note-head"><h4>Rules that protect the trip</h4></div><div class="note-body"><ul><li><b>Lisbon buffer is not optional.</b> FNC wind is the one operational hazard Madeira brings.</li><li><b>Do not chase every Mallorca cala.</b> The north beach base is there to reduce driving.</li><li><b>Return Monday Jun 21.</b> No extension can touch Jun 23-26.</li><li><b>Use shade aggressively.</b> Mallorca beach days fail when the kids overheat before lunch.</li></ul></div></li></ul>
   </section>
 <section id="packing" class="divider">
       <style>#packing .pack-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:7px}#packing .pack-list li{position:relative;padding-left:16px;font-size:.86rem;color:var(--muted);line-height:1.45}#packing .pack-list li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--c1)}#packing .pack-list li b{color:var(--ink)}</style>
@@ -1808,11 +1862,7 @@ footer a{color:var(--muted)}
       <h2>Insider field notes</h2>
       <p>Research signals from official tourism/activity pages, flight-route databases, travel forums, and family-hotel/search pages. Reconfirm all schedules, fees, and access rules close to booking.</p>
     </div>
-    <div class="plan-grid">
-      <div class="pcard"><h4><span class="dot"></span>Madeira consensus</h4><p>The payoff is scenery: Arieiro, levadas, Fanal, Sao Lourenco, and Porto Moniz. The tradeoff is cool Atlantic water and airport wind, which is exactly why Mallorca and Lisbon are in the design.</p></div>
-      <div class="pcard"><h4><span class="dot"></span>Mallorca consensus</h4><p>For families, Playa de Muro and Alcudia are the practical beach answer: shallow water, sand, food, groceries, and enough infrastructure to avoid heroic logistics.</p></div>
-      <div class="pcard"><h4><span class="dot"></span>Crowd warning</h4><p>Palma, Soller, Formentor, Drach, and famous calas get busy fast. Go early, choose one anchor per day, and let the apartment/beach base absorb the rest.</p></div>
-    </div>
+    <ul class="field-notes-list"><li class="field-note"><div class="field-note-head"><h4>Madeira consensus</h4></div><div class="note-body"><p>The payoff is scenery: Arieiro, levadas, Fanal, Sao Lourenco, and Porto Moniz. The tradeoff is cool Atlantic water and airport wind, which is exactly why Mallorca and Lisbon are in the design.</p></div></li><li class="field-note"><div class="field-note-head"><h4>Mallorca consensus</h4></div><div class="note-body"><p>For families, Playa de Muro and Alcudia are the practical beach answer: shallow water, sand, food, groceries, and enough infrastructure to avoid heroic logistics.</p></div></li><li class="field-note"><div class="field-note-head"><h4>Crowd warning</h4></div><div class="note-body"><p>Palma, Soller, Formentor, Drach, and famous calas get busy fast. Go early, choose one anchor per day, and let the apartment/beach base absorb the rest.</p></div></li></ul>
   </section>
 
   <section id="balance" class="divider">
@@ -1821,7 +1871,7 @@ footer a{color:var(--muted)}
       <h2>What the days add up to</h2>
       <p>The shape is active first, water later: do not move beach days forward and do not steal the final swim for another town checklist.</p>
     </div>
-    <div class="budget-scroll"><table class="cost-table"><thead><tr><th>Mode</th><th>Days</th><th>Notes</th></tr></thead><tbody><tr><td>Travel / buffer</td><td>3</td><td>Outbound red-eye, Lisbon buffer, homebound Monday</td></tr><tr><td>Madeira hiking/scenery</td><td>5</td><td>Arieiro, levada, west loop, Sao Lourenco, Funchal soft landing</td></tr><tr><td>Mallorca city/mountain</td><td>2</td><td>Palma + optional Soller/Tramuntana</td></tr><tr><td>Mallorca beach/cala</td><td>4</td><td>Playa de Muro base, Formentor, Drach/Mondrago</td></tr><tr><td>PTO</td><td>8 days</td><td>Juneteenth observed helps; Jun 23-26 blackout untouched</td></tr></tbody></table></div>
+    <div class="budget-scroll"><table class="cost-table budget-tbl"><thead><tr><th>Mode</th><th>Days</th><th>Notes</th></tr></thead><tbody><tr><td>Travel / buffer</td><td>3</td><td>Outbound red-eye, Lisbon buffer, homebound Monday</td></tr><tr><td>Madeira hiking/scenery</td><td>5</td><td>Arieiro, levada, west loop, Sao Lourenco, Funchal soft landing</td></tr><tr><td>Mallorca city/mountain</td><td>2</td><td>Palma + optional Soller/Tramuntana</td></tr><tr><td>Mallorca beach/cala</td><td>4</td><td>Playa de Muro base, Formentor, Drach/Mondrago</td></tr><tr><td>PTO</td><td>8 days</td><td>Juneteenth observed helps; Jun 23-26 blackout untouched</td></tr></tbody></table></div>
   </section>
 
   <section id="status" class="divider">
@@ -1968,6 +2018,63 @@ document.querySelectorAll('.carousel').forEach(function(c){
 #backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}
 #backToTop:hover{background:rgba(26,23,18,1)}
 @media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}
+
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
 </style>
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();

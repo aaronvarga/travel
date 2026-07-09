@@ -703,7 +703,7 @@ section[id],article[id]{scroll-margin-top:84px}
 }
 @media(max-width:959px){
   .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
-  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav-menu{max-width:1320px;margin:0 auto}
   .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
   .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
   .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
@@ -712,7 +712,7 @@ section[id],article[id]{scroll-margin-top:84px}
   .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
   .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
 }
-main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
+main{max-width:1320px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}
 .section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}
 .section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}
@@ -934,7 +934,7 @@ main{max-width:1180px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
 .scol .row:last-child{border-bottom:0}
 .scol .row b{display:block;margin-bottom:2px}
 .scol .row span{color:var(--muted)}
-footer{max-width:1180px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
+footer{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
 @media(max-width:860px){
  header{min-height:80vh}
@@ -972,7 +972,64 @@ footer a{color:var(--muted)}
 .pin2{width:26px;height:26px;border-radius:50% 50% 50% 0;display:grid;place-items:center;border:2px solid #fff;box-shadow:0 6px 14px rgba(0,0,0,.28);transform:rotate(-45deg)}
 .pin2 span{display:block;transform:rotate(45deg);font-size:13px;line-height:1}
 .pop-ty{display:inline-block;margin-top:3px;color:#66615b;font-size:.82rem}
-@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}</style></head><body><header>
+@media(max-width:680px){.tripmap-wrap .mapstage #tripmap{min-height:470px}.layers-btn{right:10px;top:10px}.layers-panel{right:8px;top:8px;width:calc(100% - 16px);padding:16px}.ltxt{font-size:.95rem}.lrow{grid-template-columns:36px minmax(0,1fr) 32px}}
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
+</style></head><body><header>
   <div class="hero-inner">
     <span class="kicker">Family Trip · June 2027</span>
     <h1>Croatia, Split<br>Hvar &amp; Korčula</h1>
@@ -1780,7 +1837,7 @@ footer a{color:var(--muted)}
       <p>Same 12 nights, max 9 PTO days, no being away over the Jun 23–26 blackout unless returning Jun 23 is acceptable.</p>
     </div>
     <div class="budget-scroll"><table class="budget-tbl">
-      <tr><th>Window</th><th>PTO</th><th>Weather / water</th><th>Prices &amp; crowds</th><th>Decision</th></tr>
+      <tbody><tr><th>Window</th><th>PTO</th><th>Weather / water</th><th>Prices &amp; crowds</th><th>Decision</th></tr>
       <tr><td><b>Jun 8–21</b></td><td>8</td><td>Cheapest-feeling weather: warm days, water around 70–72°F early.</td><td>Lowest crowds/prices of the viable set; lavender weaker.</td><td>Best budget/crowd play, but colder swims.</td></tr>
       <tr><td><b>Jun 9–22</b></td><td>8</td><td>Nearly the same as current, with one less blackout-day risk.</td><td>Still pre-peak. Good lodging odds. Avoids traveling on Jun 23.</td><td><b>Best if Jun 23 must be fully protected.</b></td></tr>
       <tr><td><b>Jun 10–23</b></td><td>8</td><td>Mid-June Split, late-mid June Hvar/Korčula; sea ~71–74°F.</td><td>Better than July pricing, but final return touches Jun 23.</td><td><b>Best if returning on Jun 23 is acceptable.</b></td></tr>
@@ -1789,7 +1846,7 @@ footer a{color:var(--muted)}
       <tr><td><b>Jul 1–14 / Jul 2–15</b></td><td>8</td><td>Warmer, drier, more reliable beach weather.</td><td>More crowds, hotter old towns, and more lodging pressure than Jun 28–Jul 11.</td><td>Good beach version, weaker crowd/cost value.</td></tr>
       <tr><td><b>Mid/late July</b></td><td>9</td><td>Hotter and reliably swimmable; water is excellent.</td><td>Peak family travel, ferry/boat pressure, higher lodging, and harder dinner reservations.</td><td>Allowed by PTO, but worse value.</td></tr>
       <tr><td><b>Aug 2–15</b></td><td>9</td><td>Warmest water and hottest cities.</td><td>Peak European holiday season, plus Aug 5 and Aug 15 Croatian holidays add congestion.</td><td>Warmest, but not the best family-planning choice.</td></tr>
-    </table></div>
+    </tbody></table></div>
     <div class="twocol">
       <div class="listcard pro-list"><h4>Best overall answer</h4><ul><li><span><b>Jun 28–Jul 11</b> is the strongest all-factor window: 8 PTO, no blackout conflict, warmer water, better lavender, and still before the worst late-July/August pressure.</span></li><li><span><b>Jun 9–22</b> is the cleanest June answer if blackout protection matters literally.</span></li><li><span><b>Jun 10–23</b> is the best version of the corrected plan if arriving home on Jun 23 satisfies the obligation.</span></li></ul></div>
       <div class="listcard con-list"><h4>Why not peak July/August?</h4><ul><li><span>The PTO cap allows some later windows, but the experience gets worse: hotter old towns, more expensive lodging, and more ferry/boat pressure.</span></li><li><span>Korčula Old Town heat, cruise-ship day-trippers, restaurant reservations and beach shade costs all get less forgiving.</span></li><li><span>August adds Croatian holiday congestion without adding a US PTO advantage.</span></li></ul></div>
@@ -1834,21 +1891,14 @@ footer a{color:var(--muted)}
       <div class="todo-callout"><b>Why this no longer says "act now" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href="https://www.expedia.com/newsroom/expedia-2026-air-hacks/" target="_blank" rel="noreferrer">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href="https://www.going.com/guides/the-best-time-to-book-a-cheap-flight" target="_blank" rel="noreferrer">Going</a> puts international trips in a 2-8 month window, and <a href="https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/" target="_blank" rel="noreferrer">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget.</div>
     </section><section id="budget" class="divider">
     <div class="section-label"><p class="eyebrow">The Money</p><h2>Budget, savers &amp; splurges</h2><p>Family of 4, US dollars, June 2027. 2027 flights/lodging are not fully bookable yet; attractions/ferries use 2026-public price anchors. Corrected dates sit earlier than peak July, so lodging is estimated slightly below the old late-June band.</p></div>
-    <div class="budget-scroll"><table class="budget-tbl"><tr><th>Line item</th><th>Estimate (family of 4)</th></tr><tr><td>Flights — PIT→Split / Dubrovnik→PIT open-jaw</td><td>$3,600–4,800</td></tr><tr><td>Ferries — Split→Hvar + Hvar→Korčula</td><td>$200–290</td></tr><tr><td>Rental car — Split day trips, automatic, 2 days + fuel/parking</td><td>$325–625</td></tr><tr><td>Transfers/local buses/boats (incl. Korčula→DBV exit)</td><td>$200–350</td></tr><tr><td>Krka National Park family day</td><td>$115–160</td></tr><tr><td>Korčula &amp; Pelješac walls — Marco Polo House + Ston (incl. private day-tour transfer)</td><td>$200–330</td></tr><tr><td>Beach/boat days — Pakleni, Lumbarda, Mljet</td><td>$340–660</td></tr><tr><td>Food — ~$90–150/day × 12</td><td>$1,050–1,750</td></tr><tr><td>Lodging — 12 nights, 3 bases, standard AC/washer apartments (no pool)</td><td>$2,100–3,100</td></tr><tr><td>Activities + food subtotal</td><td>~$1,705–2,900</td></tr></table></div>
+    <div class="budget-scroll"><table class="budget-tbl"><tbody><tr><th>Line item</th><th>Estimate (family of 4)</th></tr><tr><td>Flights — PIT→Split / Dubrovnik→PIT open-jaw</td><td>$3,600–4,800</td></tr><tr><td>Ferries — Split→Hvar + Hvar→Korčula</td><td>$200–290</td></tr><tr><td>Rental car — Split day trips, automatic, 2 days + fuel/parking</td><td>$325–625</td></tr><tr><td>Transfers/local buses/boats (incl. Korčula→DBV exit)</td><td>$200–350</td></tr><tr><td>Krka National Park family day</td><td>$115–160</td></tr><tr><td>Korčula &amp; Pelješac walls — Marco Polo House + Ston (incl. private day-tour transfer)</td><td>$200–330</td></tr><tr><td>Beach/boat days — Pakleni, Lumbarda, Mljet</td><td>$340–660</td></tr><tr><td>Food — ~$90–150/day × 12</td><td>$1,050–1,750</td></tr><tr><td>Lodging — 12 nights, 3 bases, standard AC/washer apartments (no pool)</td><td>$2,100–3,100</td></tr><tr><td>Activities + food subtotal</td><td>~$1,705–2,900</td></tr></tbody></table></div>
     <div class="twocol"><div class="listcard save-list"><h4>Save money</h4><ul><li>Keep the car <b>only for Split day trips</b>; do not pay island ferry/car parking costs.</li><li>Book <b>open-jaw flights</b> into SPU and home from DBV; the Korčula leg keeps that routing valid without a Dubrovnik stay.</li><li>Use the <b>public bus/ferry to Ston</b> instead of a private driver if the family doesn't mind ~5 hours of round-trip transit for a big single-day saving.</li><li>Use scheduled water taxis/public ferries for Pakleni before jumping to private boats.</li><li>Self-cater breakfasts and beach lunches from Konzum/Tommy bakeries.</li><li>Use Krka’s cheaper late-entry window if you only need Skradinski buk and golden-hour boardwalks.</li><li>Book <b>standard AC/washer apartments over pool villas</b> in Split, Hvar and Korčula — this alone is the single biggest lever under the $15k cap, and Korčula runs cheaper than Dubrovnik did for a comparable unit.</li><li>Skip bike/kayak rentals on Mljet; the park entry and lakeshore walk already deliver the payoff.</li></ul></div><div class="listcard splurge-list"><h4>Worth the splurge</h4><ul><li><b>Private arrival transfer in Split</b> after the overnight flight.</li><li><b>Skippered Pakleni Islands half-day</b> if seas are calm and budget allows.</li><li><b>Hvar local driver</b> for Dubovica + lavender villages, avoiding narrow-road stress.</li><li><b>Private Pelješac driver</b> for the Ston/oyster day instead of the public bus — it buys back roughly 4 hours of transit time.</li><li><b>Lodging with AC, washer and quiet bedrooms</b> over prettier but stair-heavy old-town addresses.</li></ul></div></div>
   </section>
-  <section id="totals" class="divider"><div class="section-label"><p class="eyebrow">Bottom Line</p><h2>Total trip cost</h2><p>Flights use the known PIT→Split fare reality; lodging is a planning band, not a quote.</p></div><div class="budget-scroll"><table class="budget-tbl grand"><tr><th>Category</th><th>Estimate (family of 4)</th></tr><tr><td>Flights</td><td>$3,600–4,800</td></tr><tr><td>Ferries, transfers, rental car</td><td>$700–1,300</td></tr><tr><td>Lodging</td><td>$2,100–3,100</td></tr><tr><td>Food + activities</td><td>$1,705–2,900</td></tr><tr><td>Docs/extras/eSIM/buffer</td><td>$300–700</td></tr><tr class="total"><td>Grand total — family of 4</td><td>~$8,600–12,800</td></tr></table></div><p class="rate-note">Per-day blocks exclude flights, lodging, rental car and core transfers so they are not double-counted. Length verdict: <b>12 nights is just right</b>; shortening saves too little after the transatlantic flights and makes the Split/Hvar/Korčula sequence worse. Keep standard AC/washer apartments, scheduled catamarans, and Krka late-entry savings as the cap-fit levers. Re-check 2027 schedules/prices ~3 months out.</p></section>
+  <section id="totals" class="divider"><div class="section-label"><p class="eyebrow">Bottom Line</p><h2>Total trip cost</h2><p>Flights use the known PIT→Split fare reality; lodging is a planning band, not a quote.</p></div><div class="budget-scroll"><table class="budget-tbl grand"><tbody><tr><th>Category</th><th>Estimate (family of 4)</th></tr><tr><td>Flights</td><td>$3,600–4,800</td></tr><tr><td>Ferries, transfers, rental car</td><td>$700–1,300</td></tr><tr><td>Lodging</td><td>$2,100–3,100</td></tr><tr><td>Food + activities</td><td>$1,705–2,900</td></tr><tr><td>Docs/extras/eSIM/buffer</td><td>$300–700</td></tr><tr class="total"><td>Grand total — family of 4</td><td>~$8,600–12,800</td></tr></tbody></table></div><p class="rate-note">Per-day blocks exclude flights, lodging, rental car and core transfers so they are not double-counted. Length verdict: <b>12 nights is just right</b>; shortening saves too little after the transatlantic flights and makes the Split/Hvar/Korčula sequence worse. Keep standard AC/washer apartments, scheduled catamarans, and Krka late-entry savings as the cap-fit levers. Re-check 2027 schedules/prices ~3 months out.</p></section>
   <section id="tips" class="divider">
     <div class="section-label"><p class="eyebrow">Travel Tips</p><h2>The stuff nobody tells you</h2><p>Non-obvious logistics for Croatia with kids — researched July 2026. Anything tied to 2027 schedules is flagged to re-check.</p></div>
     <div class="tips-order"><p class="mini-h">Book in roughly this order — exact target dates (trip departs Thu Jun 10, 2027)</p><ol><li>Open-jaw flights <span>· when 2027 fares load</span></li><li>Split/Hvar/Korčula lodging <span>· by Jan 2027</span></li><li>Hvar and Korčula ferries <span>· when 2027 schedules post</span></li><li>Split rental car <span>· by Mar 2027</span></li><li>Krka tickets / boat extras <span>· by May 2027</span></li><li>Ston walls / Pelješac day + Korčula→DBV transfer <span>· week of trip</span></li><li>Mljet boat day <span>· 2–4 weeks out</span></li><li>Restaurants <span>· by Jun 5, 2027</span></li></ol></div>
-    <div class="tips-grid">
-      <div class="tipcard"><h4>Before you go — documents</h4><p class="sub">Months ahead · Schengen rules</p><ul><li class="flag"><b>ETIAS is expected to be operating by June 2027.</b> Official EU guidance says ETIAS starts in Q4 2026 with transitional/grace periods. Use only the official portal once live.</li><li><b>EES biometric borders are fully operational as of April 10, 2026.</b> Expect first-entry face/fingerprint registration; under-12s do not give fingerprints.</li><li><b>Check passports now.</b> Croatia is Schengen: passports need validity beyond the trip and kids’ passports expire faster.</li><li><b>Bring proof of parent/child relationship</b> and notarized consent if one parent is not traveling.</li></ul></div>
-      <div class="tipcard t2"><h4>Flights &amp; airports</h4><p class="sub">Booking + day-of</p><ul><li class="flag"><b>No direct PIT→Split.</b> Prioritize one-ticket routings with enough gateway buffer over chasing a tiny fare savings.</li><li><b>Pay for seats together</b> on transatlantic legs; do not rely on airport assignment with kids.</li><li><b>Use DBV for the return</b> so you do not waste the last day crossing back to Split.</li><li><b>Keep transfer days light.</b> Catamarans and summer winds can shift exact timing.</li></ul></div>
-      <div class="tipcard t3"><h4>Arrival day — go private</h4><p class="sub">Skip friction on no sleep</p><ul><li><b>Pre-book SPU→Split transfer</b> if arriving after a long connection; the bus is cheaper but less forgiving.</li><li><b>Do not pick up the rental on arrival.</b> Split old town and jet lag are a bad combo.</li><li><b>Choose lodging for luggage access.</b> Old-town charm with stairs is not charming with four bags.</li></ul></div>
-      <div class="tipcard t4"><h4>Rental cars &amp; ferries</h4><p class="sub">Keep wheels limited</p><ul><li><b>Rent only in Split for Krka/Trogir/Klis.</b> Return before Hvar.</li><li class="flag"><b>Child restraints matter.</b> For an 8-year-old, bring a packable booster if height/fit is borderline; rental seats are inconsistent.</li><li><b>Ask rental agencies about ferry permission</b> only if you change plans and take a car to an island.</li><li><b>Korčula is not a car base either.</b> Old Town is pedestrianized; use the private driver/tour for the Pelješac day instead of self-driving across the bridge.</li></ul></div>
-      <div class="tipcard"><h4>Parks &amp; timed tickets</h4><p class="sub">Rules changed in ways families notice</p><ul><li class="flag"><b>Krka: swimming only in marked zones</b> at Roški slap, Stinice and Pisak, Jun 1–Sep 30; not below Skradinski buk.</li><li><b>Plitvice: no swimming.</b> It is a world-class boardwalk/hiking day, not the answer to the kid-swimming brief.</li><li><b>Mljet: pay the 2026 high-season rate.</b> €25 adult/€8 child (7–18), a return boat to Sveta Marija islet is included.</li><li><b>Book the Mljet boat and Pelješac driver 2–4 weeks ahead</b> but keep weather flexibility.</li></ul></div>
-      <div class="tipcard t2"><h4>Smart packing</h4><p class="sub">Small things that matter</p><ul><li><b>Pack water shoes</b> for rocky Adriatic beaches, Lokrum and Hvar coves.</li><li><b>Bring reef-safe sunscreen, hats and lightweight coverups.</b> Shade can be expensive.</li><li><b>Carry some cash</b> for beach bars, taxis, lockers and small island vendors.</li><li><b>Download offline maps and ferry PDFs</b> before crossing islands.</li></ul></div>
-    </div>
+    <ul class="field-notes-list tips-list"><li class="field-note"><div class="field-note-head"><h4>Before you go — documents</h4><p class="sub">Months ahead · Schengen rules</p></div><div class="note-body"><ul><li class="flag"><b>ETIAS is expected to be operating by June 2027.</b> Official EU guidance says ETIAS starts in Q4 2026 with transitional/grace periods. Use only the official portal once live.</li><li><b>EES biometric borders are fully operational as of April 10, 2026.</b> Expect first-entry face/fingerprint registration; under-12s do not give fingerprints.</li><li><b>Check passports now.</b> Croatia is Schengen: passports need validity beyond the trip and kids’ passports expire faster.</li><li><b>Bring proof of parent/child relationship</b> and notarized consent if one parent is not traveling.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Flights &amp; airports</h4><p class="sub">Booking + day-of</p></div><div class="note-body"><ul><li class="flag"><b>No direct PIT→Split.</b> Prioritize one-ticket routings with enough gateway buffer over chasing a tiny fare savings.</li><li><b>Pay for seats together</b> on transatlantic legs; do not rely on airport assignment with kids.</li><li><b>Use DBV for the return</b> so you do not waste the last day crossing back to Split.</li><li><b>Keep transfer days light.</b> Catamarans and summer winds can shift exact timing.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Arrival day — go private</h4><p class="sub">Skip friction on no sleep</p></div><div class="note-body"><ul><li><b>Pre-book SPU→Split transfer</b> if arriving after a long connection; the bus is cheaper but less forgiving.</li><li><b>Do not pick up the rental on arrival.</b> Split old town and jet lag are a bad combo.</li><li><b>Choose lodging for luggage access.</b> Old-town charm with stairs is not charming with four bags.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Rental cars &amp; ferries</h4><p class="sub">Keep wheels limited</p></div><div class="note-body"><ul><li><b>Rent only in Split for Krka/Trogir/Klis.</b> Return before Hvar.</li><li class="flag"><b>Child restraints matter.</b> For an 8-year-old, bring a packable booster if height/fit is borderline; rental seats are inconsistent.</li><li><b>Ask rental agencies about ferry permission</b> only if you change plans and take a car to an island.</li><li><b>Korčula is not a car base either.</b> Old Town is pedestrianized; use the private driver/tour for the Pelješac day instead of self-driving across the bridge.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Parks &amp; timed tickets</h4><p class="sub">Rules changed in ways families notice</p></div><div class="note-body"><ul><li class="flag"><b>Krka: swimming only in marked zones</b> at Roški slap, Stinice and Pisak, Jun 1–Sep 30; not below Skradinski buk.</li><li><b>Plitvice: no swimming.</b> It is a world-class boardwalk/hiking day, not the answer to the kid-swimming brief.</li><li><b>Mljet: pay the 2026 high-season rate.</b> €25 adult/€8 child (7–18), a return boat to Sveta Marija islet is included.</li><li><b>Book the Mljet boat and Pelješac driver 2–4 weeks ahead</b> but keep weather flexibility.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Smart packing</h4><p class="sub">Small things that matter</p></div><div class="note-body"><ul><li><b>Pack water shoes</b> for rocky Adriatic beaches, Lokrum and Hvar coves.</li><li><b>Bring reef-safe sunscreen, hats and lightweight coverups.</b> Shade can be expensive.</li><li><b>Carry some cash</b> for beach bars, taxis, lockers and small island vendors.</li><li><b>Download offline maps and ferry PDFs</b> before crossing islands.</li></ul></div></li></ul>
   </section>
   <section id="balance" class="divider"><div class="section-label"><p class="eyebrow">Trip Balance</p><h2>What the days add up to</h2><p>The target: beach-biased, but never beach-only.</p></div><div class="bar"><i style="width:45%;background:var(--c1)"></i><i style="width:30%;background:var(--c2)"></i><i style="width:25%;background:var(--c3)"></i></div><div class="balance"><div class="bcard k1"><div class="pct">45%</div><h4>Beach · Water · Boats</h4><p>Bačvice, Hvar beaches, Pakleni, Vela Pržina (Lumbarda), Mljet salt lakes and hotel/apartment pool time.</p></div><div class="bcard k2"><div class="pct">30%</div><h4>Cool Towns &amp; Food</h4><p>Split, Trogir, Hvar Town, Stari Grad, Korčula Old Town, Ston and Mali Ston oysters, harbor dinners and gelato walks.</p></div><div class="bcard k3"><div class="pct">25%</div><h4>Nature · Hikes · Viewpoints</h4><p>Marjan, Krka, Klis, Fortica, lavender villages, Pelješac vineyards, Mljet National Park and Plitvice optional nature.</p></div><div class="bcard k4"><div class="pct">5–8%</div><h4>Transfer &amp; Logistics</h4><p>Arrival, Split day-trip car, two ferries, local transfers and departure.</p></div></div></section>
   <section id="status" class="divider"><div class="section-label"><p class="eyebrow">Decisions</p><h2>Settled &amp; still open</h2></div><div class="status"><div class="scol settled"><h4>Settled</h4><div class="row"><b>Destination</b><span>Croatia: Split + Hvar + Korčula (no Dubrovnik stay — already visited)</span></div><div class="row"><b>Length &amp; split</b><span>12 nights — 4 Split + 3 Hvar + 5 Korčula</span></div><div class="row"><b>Rental strategy</b><span>Short mainland rental only; no Hvar/Korčula car</span></div><div class="row"><b>Return airport</b><span>Fly home from Dubrovnik / DBV via the Pelješac Bridge, no Dubrovnik overnight</span></div><div class="row"><b>Avoid</b><span>One-night Plitvice detour, car on Hvar or Korčula, lodging deep inside stair-heavy Old Town</span></div></div><div class="scol open"><h4>Still Open</h4><div class="row"><b>Exact flights</b><span>2027 schedules/fares not final; PIT→SPU and a reliable June 23 return are the fragile pieces.</span></div><div class="row"><b>Date choice</b><span>Jun 10–23 uses 8 PTO days; Jun 9–22 is safer if June 23 must be fully protected.</span></div><div class="row"><b>Hvar lodging</b><span>Walkable harbor convenience vs quieter beach-side apartment.</span></div><div class="row"><b>Ston/Pelješac logistics</b><span>Private driver (faster, ~$150–280 family) vs public bus/ferry (cheaper, ~5 hrs round trip) — pick once 2027 tour pricing is confirmed.</span></div><div class="row"><b>Plitvice</b><span>Only add if the family accepts an inland no-swim hiking detour.</span></div></div></div></section>
@@ -1987,6 +2037,63 @@ document.querySelectorAll('.carousel').forEach(function(c){
 #backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}
 #backToTop:hover{background:rgba(26,23,18,1)}
 @media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}
+
+
+
+
+
+/* SECTION POLISH 2026-07 */
+.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}
+.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
+.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;letter-spacing:0}
+.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}
+.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}
+.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+#budget .pcard h4{font-size:1.12rem}
+#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}
+#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}
+#budget .pcard li::before{content:"";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+#budget .pcard li b{color:var(--ink)}
+#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}
+#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}
+#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}
+#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}
+#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}
+#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}
+#balance .budget-scroll{max-width:none;margin-inline:0}
+.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}
+.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}
+.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.status-col .row:last-child{border-bottom:0}
+.status-col .row b{display:block;color:var(--ink);line-height:1.25}
+.status-col .row span{display:block;color:var(--muted);line-height:1.45}
+.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}
+.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}
+.field-note:last-child{border-bottom:0}
+.field-note h4{margin:0;font-size:1.02rem;font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:850;line-height:1.25}
+.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}
+.field-note .note-body{min-width:0}
+.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}
+.field-note li::before{content:"";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}
+.field-note b{color:var(--ink)}
+#tips .tips-list{max-width:none}
+@media(max-width:860px){
+  #budget .plan-grid,.status-grid{grid-template-columns:1fr}
+  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}
+  .status-col .row{grid-template-columns:1fr;gap:3px}
+}
+@media(max-width:620px){
+  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}
+  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}
+}
 </style>
 <script>
 (function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
