@@ -483,7 +483,7 @@ const days = [
   day('day0', 'c0', '0', 'Tue &middot; Jun 8', 'Depart Pittsburgh after work', 'Overnight nonstop to Keflavík', 'Est. $90 &middot; airport meals', [
     fact('Sleep', 'Overnight flight'),
     fact('Route', 'Icelandair PIT &rarr; KEF nonstop (seasonal), ~5h50m'),
-    fact('Constraint', 'Home before the Jun 23-26 Pittsburgh blackout'),
+    fact('Constraint', 'In Pittsburgh all day Jun 24-26; Jun 23 return is allowed'),
   ], 'Icelandair\'s Pittsburgh nonstop is a redeye (dep ~20:25, arr KEF ~06:15) &mdash; one transatlantic flight, one carrier, no mid-trip flights at all. That single clean ticket is a big reason Iceland beats the island-hop trips on logistics.', [], 'Travel day &mdash; after-work redeye to Iceland.'),
 
   day('day1', 'c1', '1', 'Wed &middot; Jun 9', 'Land Keflavík, ease into Reykjavík', 'First geothermal soak, groceries, early night', 'Est. $120 &middot; pool, groceries, dinner', [
@@ -561,8 +561,8 @@ const days = [
   day('day13', 'c0', '13', 'Mon &middot; Jun 21', 'Fly Keflavík &rarr; Pittsburgh', 'Home before the blackout', 'Est. $90 &middot; airport meals', [
     fact('Sleep', 'Home Mon Jun 21'),
     fact('Route', 'Icelandair KEF &rarr; PIT nonstop, lands same day'),
-    fact('Blackout', 'Home two days before Wed Jun 23'),
-  ], 'The westbound nonstop is a daytime flight that lands in Pittsburgh the same calendar day &mdash; home Monday Jun 21, a clear two days before the untouchable Jun 23-26 blackout.', [], 'Travel day &mdash; nonstop home, arrives PIT the same day.'),
+    fact('Schedule', 'Home Mon Jun 21'),
+  ], 'The westbound nonstop is a daytime flight that lands in Pittsburgh the same calendar day &mdash; home Monday Jun 21, ahead of the preferred Jun 23 return and the required full Pittsburgh days Jun 24-26.', [], 'Travel day &mdash; nonstop home, arrives PIT the same day.'),
 ];
 
 // ---------------------------------------------------------------------------
@@ -719,7 +719,7 @@ const healthTiming = `<section id="health-check" class="divider">
     </div>
     <div class="hc-grid">
       <div class="hc good"><span class="hc-tag">Solid</span><h4>Logistics are the cleanest on the board</h4><p>One nonstop each way, one rental car, a fully paved route with no F-roads and no mid-trip flights. Nothing here can strand the family between legs.</p></div>
-      <div class="hc good"><span class="hc-tag">Solid</span><h4>The blackout is protected</h4><p>Depart Tue Jun 8, fly home Mon Jun 21 (lands same day). There is no travel on Jun 23-26.</p></div>
+      <div class="hc good"><span class="hc-tag">Solid</span><h4>The Pittsburgh dates are protected</h4><p>Depart Tue Jun 8, fly home Mon Jun 21 (lands same day), ahead of the preferred Jun 23 return and the required full days in Pittsburgh on Jun 24-26.</p></div>
       <div class="hc actnow"><span class="hc-tag">Fixed</span><h4>Sky Lagoon can\'t be the family soak</h4><p>Sky Lagoon bans under-12s, so the 8-year-old can\'t enter. The plan routes the whole-family soaks through <b>all-ages</b> water instead &mdash; Laugardalslaug, Secret Lagoon, Hoffell, and the Blue Lagoon &mdash; with Sky Lagoon left as a teens/adults option.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Blue Lagoon can close on short notice</h4><p>The Reykjanes/Sundhnúkur system has erupted repeatedly since 2023 and the Blue Lagoon has closed for evacuations and air quality. Book it but keep Sky Lagoon or a city pool as a fallback, and check status within 48h via vedur.is.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Reynisfjara sneaker waves are lethal</h4><p>Real fatalities, including a 9-year-old in Aug 2025. Brief the kids firmly, stay on dry sand, obey the warning lights, and never turn your back to the ocean.</p></div>
@@ -735,11 +735,11 @@ const healthTiming = `<section id="health-check" class="divider">
     </div>
     ${table(['Window', 'Nights', 'PTO', 'Blackout fit', 'Verdict'], [
       ['Jun 8-21', '12 hotel nights', '~8 days', 'Home Jun 21, before Jun 23', '<b>Use this</b>'],
-      ['Jun 15-28', '12+', '~8-9 days', '<b>Invalid</b> — away during Jun 23-26', 'Reject'],
+      ['Jun 15-28', '12+', '~8-9 days', '<b>Invalid</b> — away during Jun 24-26', 'Reject'],
       ['Jun 27-Jul 10', '12+', '~9 days', 'Valid', 'Backup if June nonstop pricing fails'],
       ['Jul / Aug', '12+', '~9-10 days', 'Valid', 'Peak crowds and prices; longer daylight fading'],
     ])}
-    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math (recomputed for 2027)</h4><p>Departing Tue Jun 8 after work and flying home Mon Jun 21, the working days needing PTO are Jun 9-11 (Wed-Fri), Jun 14-17 (Mon-Thu) and Jun 21 (Mon) &mdash; with <b>Fri Jun 18 covered by Juneteenth (observed)</b> and both weekends free. That\'s <b>~8 PTO days for 12 nights</b>. The hard rule is the calendar, not PTO: home before Jun 23.</p></div>
+    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math (recomputed for 2027)</h4><p>Departing Tue Jun 8 after work and flying home Mon Jun 21, the working days needing PTO are Jun 9-11 (Wed-Fri), Jun 14-17 (Mon-Thu) and Jun 21 (Mon) &mdash; with <b>Fri Jun 18 covered by Juneteenth (observed)</b> and both weekends free. That\'s <b>~8 PTO days for 12 nights</b>. The calendar rule allows a Jun 23 return and requires full days in Pittsburgh Jun 24-26; this plan is home two days earlier.</p></div>
   </section>`;
 
 // ---------------------------------------------------------------------------
@@ -842,7 +842,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
     <div class="status"><div class="scol settled"><h4>Settled</h4>
       <div class="row"><b>Slug</b><span>iceland</span></div>
       <div class="row"><b>Route</b><span>Reykjavík 2 nights &rarr; South Coast 4 &rarr; Höfn/southeast 3 &rarr; back west 3. SW/South corridor only, no Ring Road.</span></div>
-      <div class="row"><b>Dates</b><span>Depart Tue Jun 8, 2027; home Mon Jun 21; no travel during Jun 23-26 blackout.</span></div>
+      <div class="row"><b>Dates</b><span>Depart Tue Jun 8, 2027; home Mon Jun 21, ahead of the preferred Jun 23 return and required Pittsburgh days Jun 24-26.</span></div>
       <div class="row"><b>Swim identity</b><span>Geothermal lagoons and hot pots as the recurring warm-water thread; sea is photograph-only.</span></div>
       <div class="row"><b>Budget verdict</b><span>$11,420 target / $14,720 high case, under both the $12k target and the $15k hard cap.</span></div>
     </div><div class="scol open"><h4>Open</h4>
@@ -937,7 +937,7 @@ const scorecard = H.assertBaked({
   displayName: 'Iceland',
   blurb: 'Photographs like nowhere else',
   axes: {
-    budget: 4,
+    budget: 3,
     weather: 2,
     swim: 3,
     variety: 5,
@@ -946,7 +946,7 @@ const scorecard = H.assertBaked({
     risk: 3,
     nights: 5,
     novelty: 5,
-    pto: 4,
+    pto: 3,
   },
   weightDefaults: {
     budget: 2, weather: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, nights: 1, novelty: 1, pto: 0,
@@ -956,12 +956,14 @@ const scorecard = H.assertBaked({
   facets: {
     continent: 'europe',
     maxConnections: 0,
-    swimTempF: [100, 104],
+    swimTempF: [50, 52],
+    heatedSwimTempF: [100, 104],
+    swimType: 'geothermal',
     noPassport: false,
     singleTicket: true,
     hasSwim: true,
   },
-  totalBaked: 38,
+  totalBaked: 36,
 });
 
 // ---------------------------------------------------------------------------

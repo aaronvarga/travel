@@ -548,7 +548,7 @@ const days = [
     fact('Sleep', 'Overnight flight toward Venice'),
     fact('Route target', 'PIT -> US/EU hub -> VCE'),
     fact('PTO', '$0 &mdash; Sunday departure'),
-  ], 'Flying out Sunday evening burns zero PTO to get there and clears the untouchable Jun 23&ndash;26 Pittsburgh blackout with a day to spare. One connection, then the Atlantic.', [], 'Travel day - position toward Venice.'),
+  ], 'Flying out Sunday evening burns zero PTO to get there and starts after the required full Pittsburgh days of Jun 24&ndash;26. One connection, then the Atlantic.', [], 'Travel day - position toward Venice.'),
 
   day('day1', 'c1', '1', 'Mon &middot; Jun 28', 'Land in Venice &mdash; canals, not museums', 'Easy arrival', 'Est. $180 &middot; passes, lunch, gelato, dinner', [
     fact('Sleep', 'Venice &middot; night 1 of 2'),
@@ -678,7 +678,7 @@ const preview = `<section class="preview">
 </section>`;
 
 const overview = `<section id="overview">
-    ${sectionLabel('The Plan at a Glance', 'Canals, then peaks, then the beach payoff', 'Fly into Venice, drive the Dolomites, hop to Sardinia, fly home from Olbia &mdash; a clean open-jaw that never re-crosses its own path. The route is built to start <b>after</b> the untouchable Jun 23&ndash;26 Pittsburgh blackout.')}
+    ${sectionLabel('The Plan at a Glance', 'Canals, then peaks, then the beach payoff', 'Fly into Venice, drive the Dolomites, hop to Sardinia, fly home from Olbia &mdash; a clean open-jaw that never re-crosses its own path. The route starts <b>after</b> the required full Pittsburgh days of Jun 24&ndash;26.')}
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>PIT -> Venice -> Dolomites -> Sardinia -> PIT</h4><p><b>2 nights Venice</b>, <b>5 nights the Dolomites</b>, then <b>3 + 3 nights Sardinia</b>. In through VCE, home from OLB.</p></div>
       <div class="ocard"><p class="eyebrow">Why the Dolomites</p><h4>The epic-hiking variety a Madeira leg would carry</h4><p>Jagged limestone spires that glow rose-gold at sunrise, cable cars that put an 8-year-old on a 2,300m ridge, and rifugio lunches &mdash; the one leg built entirely around real alpine payoff, bracketing the beach.</p></div>
@@ -707,7 +707,7 @@ const overview = `<section id="overview">
 
 const calendar = calendarGrid({
   window: [2027, 6, 27, 7, 11],
-  intro: 'The Jun 27&ndash;Jul 11, 2027 plan as colored activity blocks. It starts after the untouchable Jun 23&ndash;26 Pittsburgh blackout and books both travel days onto weekends. <b>Block times are schematic</b>, snapped to a 2-hour grid to show sequence, not real flight times.',
+  intro: 'The Jun 27&ndash;Jul 11, 2027 plan as colored activity blocks. It starts after the required full Pittsburgh days of Jun 24&ndash;26 and books both travel days onto weekends. <b>Block times are schematic</b>, snapped to a 2-hour grid to show sequence, not real flight times.',
   tripDays: [
     { date: [6, 27], blocks: [{ act: 'air', start: 18, end: 22, label: 'Fly PIT ->' }] },
     { date: [6, 28], blocks: [{ act: 'air', start: 8, end: 12, label: 'Land VCE' }, { act: 'town', start: 14, end: 18, label: 'Grand Canal' }] },
@@ -772,7 +772,7 @@ const healthTiming = `<section id="health-check" class="divider">
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Cortina ZTL cameras fine rental cars by mail</h4><p>A wrong turn into the limited-traffic zone is an <b>&euro;80-300 fine plus a rental admin fee</b> that arrives months later. Have the hotel register your plate the moment lodging is booked.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Flights are the budget gate</h4><p>Transatlantic airfare is the swing line. The ~$14.5k target assumes an open-jaw booked by December 2026; late peak-summer fares or private boats push it against the $15k cap.</p></div>
       <div class="hc good"><span class="hc-tag">Solid</span><h4>13 nights for about 9 PTO days</h4><p>July 4, 2027 is a Sunday, so the federal holiday is <b>observed Monday July 5, mid-trip</b>. Depart Sunday, return Sunday: both travel days land on weekends, and the holiday absorbs one workday.</p></div>
-      <div class="hc good"><span class="hc-tag">Solid</span><h4>The blackout is fully clear</h4><p>The untouchable Jun 23-26 window is honored by starting after it: the trip sits June 28-July 11, entirely outside the blackout, with warmer Sardinian water than the earlier legal window.</p></div>
+      <div class="hc good"><span class="hc-tag">Solid</span><h4>The Pittsburgh dates are fully clear</h4><p>The trip departs Jun 27, after the required full days in Pittsburgh on Jun 24-26, and uses warmer Sardinian water than the earlier viable window.</p></div>
     </div>
   </section>
 
@@ -781,7 +781,7 @@ const healthTiming = `<section id="health-check" class="divider">
     ${table(['Window', 'Nights', 'PTO', 'Blackout fit', 'Verdict'], [
       ['<b>Jun 27-Jul 11</b>', '13 nights', '~9 days', 'Starts after Jun 26', '<b>Use this</b>'],
       ['Jun 9-22', '13 nights', '~9 days', 'Home before Jun 23', 'Backup — midweek return, cooler sea'],
-      ['Jun 15-28', '13+', '9', '<b>Invalid</b> — away during Jun 23-26', 'Reject'],
+      ['Jun 15-28', '13+', '9', '<b>Invalid</b> — away during Jun 24-26', 'Reject'],
       ['Aug 1-14', '13+', '9-10', 'Valid', 'Hotter, pricier, peak-season crowds'],
     ])}
     <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math</h4><p>Both legal windows cost about the same PTO because both slot a federal holiday mid-trip. The June 27 window wins on details: <b>both travel days fall on a weekend</b> (depart Sunday evening, land home Sunday), so no PTO is burned traveling. Away weekdays are Mon Jun 28 through Fri Jul 9, minus the <b>Monday July 5 holiday</b> = <b>9 PTO days for 13 nights abroad</b>. It also puts Sardinia in early July, when the sea has had two more weeks to warm.</p></div>
@@ -867,7 +867,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
     <div class="status"><div class="scol settled"><h4>Settled</h4>
       <div class="row"><b>Slug</b><span>dolomites-sardinia</span></div>
       <div class="row"><b>Route</b><span>Venice 2 nights -> Dolomites 5 nights -> Sardinia 3 + 3 nights, one open-jaw.</span></div>
-      <div class="row"><b>Dates</b><span>Depart Sun Jun 27, 2027; home Sun Jul 11; no travel during the Jun 23-26 blackout.</span></div>
+      <div class="row"><b>Dates</b><span>Depart Sun Jun 27, 2027, after the required full Pittsburgh days Jun 24-26; home Sun Jul 11.</span></div>
       <div class="row"><b>PTO</b><span>~9 days — the observed July 4th holiday is absorbed mid-trip and both travel days are weekends.</span></div>
       <div class="row"><b>Budget verdict</b><span>~$14,000 target / $15,500 high; hugs the $15k cap, with airfare the swing.</span></div>
     </div><div class="scol open"><h4>Open</h4>
@@ -946,12 +946,12 @@ const scripts = template.parts[12].html
 const scorecard = {
   displayName: 'Venice, Dolomites & Sardinia',
   blurb: 'Alpine hiking + Sardinian beaches',
-  axes: { budget: 2, weather: 5, swim: 5, variety: 5, ease: 2, food: 4, risk: 2, nights: 5, novelty: 5, pto: 3 },
+  axes: { budget: 1, weather: 4, swim: 3, variety: 5, ease: 3, food: 4, risk: 3, nights: 5, novelty: 5, pto: 2 },
   weightDefaults: { budget: 2, weather: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, nights: 1, novelty: 1, pto: 0 },
-  budget: { floorUsd: 14000, ceilUsd: 15500, targetUsd: 12000, capUsd: 15000 },
+  budget: { floorUsd: 13200, ceilUsd: 18890, targetUsd: 12000, capUsd: 15000 },
   pto: { days: 9, nights: 13 },
   facets: { continent: 'europe', maxConnections: 2, swimTempF: [74, 77], noPassport: false, singleTicket: false, hasSwim: true },
-  totalBaked: 37,
+  totalBaked: 34,
 };
 
 const data = {

@@ -12,6 +12,18 @@
     { "id": "novelty", "label": "Novelty", "weightDefault": 1 },
     { "id": "pto",     "label": "PTO",     "weightDefault": 0 }
   ],
+  "axisRubrics": {
+    "budget": "Use the reconciled all-in family planning band. 5 = entire band at or below $12k; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below $15k with a reconciled, high-confidence estimate; 2 = cap-clean but above target, or within $500 of the cap with a material unitemized or low-confidence contingency; 1 = credible high case above $15k. A score never overrides the $15k booking cap.",
+    "weather": "Outdoor comfort for the actual dates, excluding water temperature: 5 = reliably comfortable for nearly every headline day; 4 = mostly comfortable with manageable heat/rain/wind; 3 = recurring midday or weather management; 2 = material disruption exposure; 1 = climate conflicts with the core itinerary.",
+    "swim": "Usable family swim days, water type, access and safety: 5 = frequent warm, high-quality natural swimming; 4 = frequent comfortable swimming around 72-75F; 3 = usable but cool, limited, or primarily heated/geothermal; 2 = cold water or only occasional swimming; 1 = no meaningful family swim.",
+    "variety": "Distinct, balanced trip modes that are actually scheduled: 5 = strong water, town/culture and nature payoffs; 4 = three modes with one lighter; 3 = two strong modes; 2 = repetitive; 1 = one-note.",
+    "ease": "Deterministic logistics load only: connections, bases, one-night stops, internal flights/ferries, self-transfers and long mandatory drives. Do not include disruption uncertainty here.",
+    "food": "Destination food appeal plus plain-food, grocery and kitchen coverage for picky children in every base and remote day.",
+    "risk": "Uncertain disruption and safety only: unpublished/thin schedules, unprotected tickets, weather closures, critical single points of failure, advisories and realistic mitigations. Do not double-count ordinary transfer load.",
+    "nights": "Derived only from hotel nights using nightsRubric.",
+    "novelty": "Derived from overlap with the documented visited-place list and previously experienced trip types; destination affinity is not hidden in this score.",
+    "pto": "Derived only from PTO days using ptoRubric; displayed and available for custom weighting but weight 0 by default."
+  },
   "nightsRubric": {
     "_comment": "Hotel nights away - more vacation for the same trip overhead. 12+ -> 5, 11 -> 4, 10 -> 3, 9 -> 2, <=8 -> 1.",
     "12": 5, "11": 4, "10": 3, "9": 2, "8": 1

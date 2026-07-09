@@ -127,6 +127,16 @@
     Object.entries(B.cards).forEach(([slug, a]) => {
       a.style.display = visibleSlugs.has(slug) ? '' : 'none';
       a.classList.toggle('is-compared', selected.includes(slug));
+      const score = a.querySelector('.sl-score');
+      if (score) {
+        const total = B.total(B.bySlug[slug], weights);
+        const max = B.maxTotal(weights);
+        const value = score.querySelector('b');
+        const scale = score.querySelector(':scope > span');
+        if (value) value.textContent = total;
+        if (scale) scale.firstChild.textContent = '/' + max;
+        score.setAttribute('aria-label', 'Rated ' + total + ' out of ' + max);
+      }
     });
 
     // Update the scoreboard total header to reflect the live max.

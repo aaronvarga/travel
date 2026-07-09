@@ -74,7 +74,7 @@
         "risk": 3,
         "nights": 5,
         "novelty": 5,
-        "pto": 3
+        "pto": 2
       },
       "weightDefaults": {
         "budget": 2,
@@ -110,6 +110,12 @@
         "hasSwim": true
       },
       "totalBaked": 44,
+      "travelWindow": [
+        "2027-06-07",
+        "2027-06-22"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -170,6 +176,12 @@
         "hasSwim": true
       },
       "totalBaked": 30,
+      "travelWindow": [
+        "2027-07-01",
+        "2027-07-14"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 12,
         "total": 17
@@ -185,7 +197,7 @@
       "recommended": false,
       "excluded": "Excluded by family decision",
       "axes": {
-        "budget": 3,
+        "budget": 1,
         "weather": 4,
         "swim": 2,
         "variety": 5,
@@ -209,8 +221,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 9600,
-        "ceilUsd": 14300,
+        "floorUsd": 9275,
+        "ceilUsd": 16200,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -229,7 +241,13 @@
         "singleTicket": true,
         "hasSwim": false
       },
-      "totalBaked": 33,
+      "totalBaked": 29,
+      "travelWindow": [
+        "2027-07-01",
+        "2027-07-13"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 12,
         "total": 17
@@ -241,11 +259,11 @@
       "token": "canary-islands",
       "title": "Canary Islands · Tenerife to La Palma — June 2027",
       "displayName": "Canary Islands",
-      "blurb": "Madeira twin, easier flights",
+      "blurb": "Madeira ecological twin, harder air",
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 4,
         "swim": 3,
         "variety": 5,
@@ -269,8 +287,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11800,
-        "ceilUsd": 14690,
+        "floorUsd": 12420,
+        "ceilUsd": 16690,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -289,7 +307,13 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 33,
+      "totalBaked": 31,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-22"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -350,6 +374,12 @@
         "hasSwim": true
       },
       "totalBaked": 35,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 12,
         "total": 17
@@ -374,7 +404,7 @@
         "risk": 3,
         "nights": 5,
         "novelty": 5,
-        "pto": 3
+        "pto": 2
       },
       "weightDefaults": {
         "budget": 2,
@@ -389,8 +419,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 14000,
-        "ceilUsd": 15500,
+        "floorUsd": 13200,
+        "ceilUsd": 18890,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -410,6 +440,12 @@
         "hasSwim": true
       },
       "totalBaked": 34,
+      "travelWindow": [
+        "2027-06-27",
+        "2027-07-11"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -429,9 +465,9 @@
         "weather": 5,
         "swim": 4,
         "variety": 5,
-        "ease": 4,
+        "ease": 2,
         "food": 4,
-        "risk": 4,
+        "risk": 2,
         "nights": 5,
         "novelty": 4,
         "pto": 3
@@ -449,8 +485,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 9900,
-        "ceilUsd": 15600,
+        "floorUsd": 10750,
+        "ceilUsd": 16900,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -466,10 +502,16 @@
           74
         ],
         "noPassport": false,
-        "singleTicket": true,
+        "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 33,
+      "travelWindow": [
+        "2027-06-09",
+        "2027-06-22"
+      ],
+      "routeReadiness": "reroute-required",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -481,7 +523,7 @@
       "token": "hawaii",
       "title": "Hawaii · Oahu · Big Island — June 2027",
       "displayName": "Hawaii",
-      "blurb": "Best pure score",
+      "blurb": "Warm-water domestic benchmark",
       "recommended": false,
       "excluded": null,
       "axes": {
@@ -489,7 +531,7 @@
         "weather": 4,
         "swim": 5,
         "variety": 5,
-        "ease": 4,
+        "ease": 3,
         "food": 4,
         "risk": 4,
         "nights": 2,
@@ -529,7 +571,13 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 33,
+      "totalBaked": 32,
+      "travelWindow": [
+        "2027-06-05",
+        "2027-06-15"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -549,12 +597,12 @@
         "weather": 2,
         "swim": 3,
         "variety": 5,
-        "ease": 5,
+        "ease": 4,
         "food": 3,
-        "risk": 4,
+        "risk": 3,
         "nights": 5,
         "novelty": 5,
-        "pto": 4
+        "pto": 3
       },
       "weightDefaults": {
         "budget": 2,
@@ -582,14 +630,25 @@
         "continent": "europe",
         "maxConnections": 0,
         "swimTempF": [
+          50,
+          52
+        ],
+        "heatedSwimTempF": [
           100,
           104
         ],
+        "swimType": "geothermal",
         "noPassport": false,
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 38,
+      "totalBaked": 36,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-21"
+      ],
+      "routeReadiness": "exact-2027-schedule-required",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -650,6 +709,12 @@
         "hasSwim": true
       },
       "totalBaked": 34,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 12,
         "total": 17
@@ -666,7 +731,7 @@
       "excluded": null,
       "axes": {
         "budget": 1,
-        "weather": 5,
+        "weather": 4,
         "swim": 4,
         "variety": 5,
         "ease": 2,
@@ -689,8 +754,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12200,
-        "ceilUsd": 16100,
+        "floorUsd": 12100,
+        "ceilUsd": 16800,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -709,7 +774,13 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 33,
+      "totalBaked": 32,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-22"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -726,8 +797,8 @@
       "excluded": null,
       "axes": {
         "budget": 3,
-        "weather": 5,
-        "swim": 3,
+        "weather": 4,
+        "swim": 4,
         "variety": 5,
         "ease": 3,
         "food": 4,
@@ -770,6 +841,12 @@
         "hasSwim": true
       },
       "totalBaked": 39,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-21"
+      ],
+      "routeReadiness": "exact-2027-schedule-required",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -786,7 +863,7 @@
       "excluded": null,
       "axes": {
         "budget": 1,
-        "weather": 5,
+        "weather": 4,
         "swim": 3,
         "variety": 5,
         "ease": 1,
@@ -829,7 +906,13 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 32,
+      "totalBaked": 31,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-21"
+      ],
+      "routeReadiness": "exact-2027-schedule-required",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -845,13 +928,13 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 5,
         "weather": 4,
         "swim": 2,
         "variety": 4,
         "ease": 4,
         "food": 4,
-        "risk": 4,
+        "risk": 3,
         "nights": 5,
         "novelty": 5,
         "pto": 3
@@ -889,7 +972,13 @@
         "singleTicket": true,
         "hasSwim": false
       },
-      "totalBaked": 38,
+      "totalBaked": 41,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -905,7 +994,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 5,
         "swim": 4,
         "variety": 5,
@@ -924,11 +1013,13 @@
         "ease": 1,
         "food": 1,
         "risk": 1,
-        "pto": 1
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
       },
       "budget": {
-        "floorUsd": 11100,
-        "ceilUsd": 15200,
+        "floorUsd": 11200,
+        "ceilUsd": 15400,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -947,7 +1038,13 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 35,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-21"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -1008,6 +1105,12 @@
         "hasSwim": true
       },
       "totalBaked": 37,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-21"
+      ],
+      "routeReadiness": "exact-2027-schedule-required",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -1023,7 +1126,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 5,
         "swim": 3,
         "variety": 4,
@@ -1047,8 +1150,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 10700,
-        "ceilUsd": 15500,
+        "floorUsd": 10680,
+        "ceilUsd": 16800,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -1067,7 +1170,13 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 34,
+      "totalBaked": 32,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -1087,7 +1196,7 @@
         "weather": 5,
         "swim": 3,
         "variety": 5,
-        "ease": 3,
+        "ease": 2,
         "food": 5,
         "risk": 3,
         "nights": 5,
@@ -1127,7 +1236,13 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 36,
+      "totalBaked": 35,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -1188,6 +1303,12 @@
         "hasSwim": true
       },
       "totalBaked": 33,
+      "travelWindow": [
+        "2027-06-14",
+        "2027-06-23"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 12,
         "total": 17
@@ -1209,7 +1330,7 @@
         "variety": 4,
         "ease": 3,
         "food": 4,
-        "risk": 4,
+        "risk": 3,
         "nights": 5,
         "novelty": 5,
         "pto": 2
@@ -1247,7 +1368,13 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 35,
+      "totalBaked": 34,
+      "travelWindow": [
+        "2027-06-03",
+        "2027-06-16"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "cap-clean",
       "completeness": {
         "complete": 12,
         "total": 17
@@ -1267,7 +1394,7 @@
         "weather": 3,
         "swim": 5,
         "variety": 4,
-        "ease": 2,
+        "ease": 3,
         "food": 4,
         "risk": 2,
         "nights": 5,
@@ -1287,8 +1414,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 10200,
-        "ceilUsd": 15900,
+        "floorUsd": 10000,
+        "ceilUsd": 17400,
         "targetUsd": 12000,
         "capUsd": 15000
       },
@@ -1307,7 +1434,13 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 32,
+      "totalBaked": 33,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "planning-proxy",
+      "budgetStatus": "quote-gated",
       "completeness": {
         "complete": 12,
         "total": 17

@@ -1043,7 +1043,7 @@ footer a{color:var(--muted)}
   <div class="hero-inner">
     <span class="kicker">Family Trip · Jul 1-14, 2027</span>
     <h1>Balkan Coast<br>Road Trip</h1>
-    <p class="lead">A corrected 12-hotel-night, four-base version of the big Balkan loop inside the required 2027 window: depart after work Thu Jul 1, use the observed July 5 holiday, avoid the Jun 23-26 Pittsburgh blackout entirely, and fly home Wed Jul 14. The route stays mostly linear from Dubrovnik/Mostar down to Corfu, but July peak pricing means this is now quote-gated against the $15k hard cap.</p>
+    <p class="lead">A corrected 12-hotel-night, four-base version of the big Balkan loop inside the required 2027 window: depart after work Thu Jul 1, use the observed July 5 holiday, avoid the Jun 24-26 Pittsburgh blackout entirely, and fly home Wed Jul 14. The route stays mostly linear from Dubrovnik/Mostar down to Corfu, but July peak pricing means this is now quote-gated against the $15k hard cap.</p>
     <div class="hero-meta">
       <div><b>12</b><span>Hotel nights</span></div><div><b>4</b><span>Home bases</span></div><div><b>10</b><span>Stops mapped</span></div><div><b>Jul 1-14</b><span>2027</span></div>
     </div>
@@ -1213,6 +1213,73 @@ footer a{color:var(--muted)}
       <h2>Day by day</h2>
       <p>Swipe each carousel for photos. Every stop carries its cost, a 💰 money-saving tip, an ✨ splurge, picky-kid restaurants, backup / if-time ideas, blog links, and a map — tap “Open in Google Maps” to navigate. Each day also shows an <b>estimated per-day cost</b> — food + activities only (excludes lodging, flights, and the rental car).</p>
 </div>
+      <nav class="day-dock" aria-label="Jump to an itinerary day" hidden>
+        <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+          <symbol id="day-dock-icon-plane" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></symbol>
+          <symbol id="day-dock-icon-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.65 5H8.4a2 2 0 0 0-1.9 1.26L5 10 3 8m4 6h.01M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2m14-2v2"/></g></symbol>
+          <symbol id="day-dock-icon-ship" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 10.19V14m0-12v3m7 8V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.19-3.64a2 2 0 0 0-1.62 0L3 14a11.6 11.6 0 0 0 2.81 7.76"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></g></symbol>
+          <symbol id="day-dock-icon-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></g></symbol>
+        </svg>
+        <div class="day-dock-caption" aria-hidden="true"><span></span><strong></strong></div>
+        <div class="day-dock-track">
+          <a class="day-dock-item" href="#day0" data-day-id="day0" aria-label="Jump to day 0">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">0</span></span>
+            <span class="day-dock-tooltip"><span>Thu · Jul 1 · Day 0</span><strong>Depart Pittsburgh after work</strong><small>Overnight travel</small></span>
+          </a>
+          <a class="day-dock-item" href="#day1" data-day-id="day1" aria-label="Jump to day 1">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">1</span></span>
+            <span class="day-dock-tooltip"><span>Fri · Jul 2 · Day 1</span><strong>Land, pick up car, drive to Mostar</strong><small>Arrival + soft landing</small></span>
+          </a>
+          <a class="day-dock-item" href="#day2" data-day-id="day2" aria-label="Jump to day 2">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">2</span></span>
+            <span class="day-dock-tooltip"><span>Sat · Jul 3 · Day 2</span><strong>Mostar old town, bridge views, Neretva edges</strong><small>Town day with water breaks</small></span>
+          </a>
+          <a class="day-dock-item" href="#day3" data-day-id="day3" aria-label="Jump to day 3">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">3</span></span>
+            <span class="day-dock-tooltip"><span>Sun · Jul 4 · Day 3</span><strong>Blagaj cliff spring and Kravica swim</strong><small>Nature + swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day4" data-day-id="day4" aria-label="Jump to day 4">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">4</span></span>
+            <span class="day-dock-tooltip"><span>Mon · Jul 5 · Day 4</span><strong>Drive to the Bay of Kotor</strong><small>Transfer + bay arrival</small></span>
+          </a>
+          <a class="day-dock-item" href="#day5" data-day-id="day5" aria-label="Jump to day 5">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">5</span></span>
+            <span class="day-dock-tooltip"><span>Tue · Jul 6 · Day 5</span><strong>Kotor walls early, bay swim later</strong><small>Town + active climb + swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day6" data-day-id="day6" aria-label="Jump to day 6">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">6</span></span>
+            <span class="day-dock-tooltip"><span>Wed · Jul 7 · Day 6</span><strong>Perast, Our Lady of the Rocks, Budva/Sveti Stefan</strong><small>Postcard Montenegro</small></span>
+          </a>
+          <a class="day-dock-item" href="#day7" data-day-id="day7" aria-label="Jump to day 7">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">7</span></span>
+            <span class="day-dock-tooltip"><span>Thu · Jul 8 · Day 7</span><strong>Long drive to Ksamil</strong><small>Big transfer day</small></span>
+          </a>
+          <a class="day-dock-item" href="#day8" data-day-id="day8" aria-label="Jump to day 8">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">8</span></span>
+            <span class="day-dock-tooltip"><span>Fri · Jul 9 · Day 8</span><strong>Ksamil beach reset</strong><small>Water day</small></span>
+          </a>
+          <a class="day-dock-item" href="#day9" data-day-id="day9" aria-label="Jump to day 9">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">9</span></span>
+            <span class="day-dock-tooltip"><span>Sat · Jul 10 · Day 9</span><strong>Butrint early, Blue Eye or beach later</strong><small>Ruins + nature + swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day10" data-day-id="day10" aria-label="Jump to day 10">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">10</span></span>
+            <span class="day-dock-tooltip"><span>Sun · Jul 11 · Day 10</span><strong>Return car, ferry Saranda to Corfu</strong><small>Boat transfer + island arrival</small></span>
+          </a>
+          <a class="day-dock-item" href="#day11" data-day-id="day11" aria-label="Jump to day 11">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">11</span></span>
+            <span class="day-dock-tooltip"><span>Mon · Jul 12 · Day 11</span><strong>Beach-and-boat day in Paleokastritsa</strong><small>Swim day</small></span>
+          </a>
+          <a class="day-dock-item" href="#day12" data-day-id="day12" aria-label="Jump to day 12">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">12</span></span>
+            <span class="day-dock-tooltip"><span>Tue · Jul 13 · Day 12</span><strong>Porto Timoni or Glyfada</strong><small>West-coast beach day</small></span>
+          </a>
+          <a class="day-dock-item" href="#day13" data-day-id="day13" aria-label="Jump to day 13">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">13</span></span>
+            <span class="day-dock-tooltip"><span>Wed · Jul 14 · Day 13</span><strong>Fly Corfu to Pittsburgh</strong><small>Travel home</small></span>
+          </a>
+        </div>
+      </nav>
       <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
@@ -1751,10 +1818,10 @@ footer a{color:var(--muted)}
     <div class="section-label">
       <p class="eyebrow">Plan Health-Check</p>
       <h2>What to lock, watch, and expect</h2>
-      <p>Research updated July 2026 for a family of 4, with kids treated as roughly 14 and 9 in trip year 2027. The dates now stay inside Jun 6-Aug 15, 2027 and keep the family in Pittsburgh for the full Jun 23-26 blackout.</p>
+      <p>Research updated July 2026 for a family of 4, with kids treated as roughly 14 and 9 in trip year 2027. The dates now stay inside Jun 6-Aug 15, 2027 and keep the family in Pittsburgh for the full Jun 24-26 blackout.</p>
     </div>
     <div class="hc-grid">
-      <div class="hc actnow"><span class="hc-tag">Book first</span><h4>Flights and car need quote-level confirmation</h4><p>July 2027 air calendars are not fully live yet, so current summer fare signals put the open-jaw pattern at roughly <b>$950-$1,350 per person</b>. Treat the cap-fit version as valid only if flights stay at or below about <b>$4.8k family</b>, the Balkan rental car stays at or below about <b>$2.4k all-in</b>, and lodging lands near the middle of the ranges below.</p></div><div class="hc actnow"><span class="hc-tag">Critical</span><h4>The Balkan rental car probably stops in Albania</h4><p>Do <b>not</b> assume a Croatia rental can enter Bosnia, Montenegro, Albania, and then go to Corfu. Get written cross-border approval and plan to return the car before the Saranda-Corfu ferry.</p></div><div class="hc watch"><span class="hc-tag">Long day</span><h4>Kotor to Ksamil is the hard transfer</h4><p>Expect <b>7.5-8 hours</b> before stops and borders. The plan keeps it as one long day to preserve four bases, but Gjirokaster or Shkoder is the pressure-release valve if needed.</p></div><div class="hc good"><span class="hc-tag">PTO win</span><h4>July 5 observed holiday makes the window work</h4><p>Depart after work Thu Jul 1, land Fri Jul 2, use <b>Mon Jul 5</b> as the observed Independence Day holiday, and return Wed Jul 14. That keeps the trip to about <b>8 PTO days</b> without touching the Jun 23-26 blackout.</p></div><div class="hc watch"><span class="hc-tag">Now fixed</span><h4>Length verdict: 12 hotel nights stays right</h4><p>The route breathes better at 13 hotel nights, but 12 is the defensible budget version. July peak demand raises the high-end estimate, so the trip now fits the cap only with disciplined flight, car, and lodging quotes.</p></div><div class="hc good"><span class="hc-tag">Water fit</span><h4>July gives better swimming than June</h4><p>July averages are swim-friendly: Bay of Kotor is usually around <b>77-79 F</b>, Ksamil around <b>76-78 F</b>, and Corfu/Ionian water typically upper 70s.</p></div><div class="hc watch"><span class="hc-tag">Cash + docs</span><h4>Borders, parking, and small tickets are not fully card-first</h4><p>Carry passports, IDP, rental paperwork, green-card/insurance proof, and enough EUR/KM/ALL cash for small tickets, parking, beach sets, and ferry-port friction.</p></div>
+      <div class="hc actnow"><span class="hc-tag">Book first</span><h4>Flights and car need quote-level confirmation</h4><p>July 2027 air calendars are not fully live yet, so current summer fare signals put the open-jaw pattern at roughly <b>$950-$1,350 per person</b>. Treat the cap-fit version as valid only if flights stay at or below about <b>$4.8k family</b>, the Balkan rental car stays at or below about <b>$2.4k all-in</b>, and lodging lands near the middle of the ranges below.</p></div><div class="hc actnow"><span class="hc-tag">Critical</span><h4>The Balkan rental car probably stops in Albania</h4><p>Do <b>not</b> assume a Croatia rental can enter Bosnia, Montenegro, Albania, and then go to Corfu. Get written cross-border approval and plan to return the car before the Saranda-Corfu ferry.</p></div><div class="hc watch"><span class="hc-tag">Long day</span><h4>Kotor to Ksamil is the hard transfer</h4><p>Expect <b>7.5-8 hours</b> before stops and borders. The plan keeps it as one long day to preserve four bases, but Gjirokaster or Shkoder is the pressure-release valve if needed.</p></div><div class="hc good"><span class="hc-tag">PTO win</span><h4>July 5 observed holiday makes the window work</h4><p>Depart after work Thu Jul 1, land Fri Jul 2, use <b>Mon Jul 5</b> as the observed Independence Day holiday, and return Wed Jul 14. That keeps the trip to about <b>8 PTO days</b> without touching the Jun 24-26 blackout.</p></div><div class="hc watch"><span class="hc-tag">Now fixed</span><h4>Length verdict: 12 hotel nights stays right</h4><p>The route breathes better at 13 hotel nights, but 12 is the defensible budget version. July peak demand raises the high-end estimate, so the trip now fits the cap only with disciplined flight, car, and lodging quotes.</p></div><div class="hc good"><span class="hc-tag">Water fit</span><h4>July gives better swimming than June</h4><p>July averages are swim-friendly: Bay of Kotor is usually around <b>77-79 F</b>, Ksamil around <b>76-78 F</b>, and Corfu/Ionian water typically upper 70s.</p></div><div class="hc watch"><span class="hc-tag">Cash + docs</span><h4>Borders, parking, and small tickets are not fully card-first</h4><p>Carry passports, IDP, rental paperwork, green-card/insurance proof, and enough EUR/KM/ALL cash for small tickets, parking, beach sets, and ferry-port friction.</p></div>
     </div>
   </section>
 
@@ -1763,10 +1830,10 @@ footer a{color:var(--muted)}
   <div class="section-label">
     <p class="eyebrow">Best Time to Go</p>
     <h2>Why Jul 1-14 fits</h2>
-    <p>The required window is Jun 6-Aug 15, 2027, with a hard blackout in Pittsburgh from Jun 23-26. July 1-14 avoids the blackout by a full week, uses the observed Independence Day holiday, and keeps the route at 12 hotel nights.</p>
+    <p>The required window is Jun 6-Aug 15, 2027, with a hard blackout in Pittsburgh from Jun 24-26. July 1-14 avoids the blackout by a full week, uses the observed Independence Day holiday, and keeps the route at 12 hotel nights.</p>
   </div>
   <div class="timing-compare">
-    <div class="tcard"><span>Possible but tight</span><h4>Jun 9-22</h4><p>Lower heat and likely lower lodging pressure, but a return delay could spill directly into the Jun 23 Pittsburgh blackout. That is too thin for an international multi-leg trip.</p></div>
+    <div class="tcard"><span>Possible but tight</span><h4>Jun 9-22</h4><p>Lower heat and likely lower lodging pressure, but a return delay could spill into the required full Pittsburgh day on Jun 24. That is too thin for an international multi-leg trip.</p></div>
     <div class="tcard best"><span>Recommended</span><h4>Jul 1-14</h4><p>Clean blackout separation, one observed federal holiday, warm water, and the same linear route. The tradeoff is hotter days and peak-season price pressure.</p></div>
     <div class="tcard"><span>Later option</span><h4>Jul 30-Aug 12</h4><p>Still inside the allowed window and warmest water, but no holiday help, hotter conditions, and stronger August crowd pressure in Ksamil and Corfu.</p></div>
   </div>
@@ -1887,7 +1954,7 @@ footer a{color:var(--muted)}
     <div class="section-label"><p class="eyebrow">Decisions</p><h2>Settled &amp; still open</h2></div>
     <div class="status">
       <div class="scol settled"><h4>Settled</h4>
-        <div class="row"><b>Route</b><span>Mostar -> Kotor -> Ksamil -> Corfu, ending at CFU.</span></div><div class="row"><b>Dates</b><span>Jul 1-14, 2027, using the observed Independence Day holiday and avoiding Jun 23-26.</span></div><div class="row"><b>Length</b><span>12 hotel nights plus outbound overnight flight.</span></div><div class="row"><b>Bases</b><span>Four bases; no Sarajevo, Durmitor, or eastern loop in the core plan.</span></div><div class="row"><b>Activity mix</b><span>Water-biased without becoming beach-only.</span></div>
+        <div class="row"><b>Route</b><span>Mostar -> Kotor -> Ksamil -> Corfu, ending at CFU.</span></div><div class="row"><b>Dates</b><span>Jul 1-14, 2027, using the observed Independence Day holiday and avoiding Jun 24-26.</span></div><div class="row"><b>Length</b><span>12 hotel nights plus outbound overnight flight.</span></div><div class="row"><b>Bases</b><span>Four bases; no Sarajevo, Durmitor, or eastern loop in the core plan.</span></div><div class="row"><b>Activity mix</b><span>Water-biased without becoming beach-only.</span></div>
       </div>
       <div class="scol open"><h4>Still Open</h4>
         <div class="row"><b>Flights</b><span>Live DBV/TIA open-jaw pricing decides the arrival airport once July 2027 dates are bookable.</span></div><div class="row"><b>Rental car</b><span>Cross-border + Albania drop quote must be confirmed in writing.</span></div><div class="row"><b>Ferry</b><span>Exact July 2027 departure time should be booked live once schedules publish.</span></div><div class="row"><b>Kotor-Ksamil drive</b><span>Keep the option to insert Gjirokaster if the long transfer feels too aggressive.</span></div><div class="row"><b>Corfu lodging</b><span>Choose town/airport convenience vs west-coast beach access.</span></div>
@@ -2096,6 +2163,34 @@ document.querySelectorAll('.carousel').forEach(function(c){
 </script>
 <script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
 <style>
+  /* Keep itinerary heroes cinematic without making visitors scroll a full
+     viewport before reaching the plan. Covers both current and legacy heroes. */
+  body > header {
+    min-height: clamp(500px, 64vh, 680px);
+    min-height: clamp(500px, 64svh, 680px);
+  }
+  body > .preview {
+    min-height: clamp(500px, 64vh, 680px);
+    min-height: clamp(500px, 64svh, 680px);
+  }
+  body > .preview .pvcar .track img {
+    height: clamp(500px, 64vh, 680px);
+    height: clamp(500px, 64svh, 680px);
+  }
+  @media (max-width: 820px) {
+    body > header {
+      min-height: clamp(460px, 62vh, 560px);
+      min-height: clamp(460px, 62svh, 560px);
+    }
+    body > .preview { min-height: auto; }
+    body > .preview .pv-pane { gap: 12px; padding-block: 22px; }
+    body > .preview .pvcar .track img {
+      height: clamp(280px, 40vh, 380px);
+      height: clamp(280px, 40svh, 380px);
+    }
+  }
+</style>
+<style>
   /* Phase 7 — print/PDF degradation for itineraries. Scoped with @media print
      (NOT just a media="print" attribute): this <style> is emitted after </html>
      and reparented into the body, where the media attribute is not reliably
@@ -2123,6 +2218,253 @@ document.querySelectorAll('.carousel').forEach(function(c){
     a[href] { color: inherit; }
   }
 </style>
+<style>
+  .preview,
+  .pvcar { position: relative; }
+  .trip-gallery-trigger {
+    position: absolute;
+    z-index: 4;
+    right: clamp(18px, 4vw, 56px);
+    bottom: clamp(18px, 6vh, 58px);
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 44px;
+    padding: 11px 16px;
+    border: 1px solid #17130f;
+    border-radius: 999px;
+    background: #fffdf8;
+    color: #17130f;
+    box-shadow: 0 16px 36px rgba(0,0,0,.34);
+    font: 900 .82rem/1 "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .trip-gallery-trigger svg { width: 18px; height: 18px; flex: 0 0 auto; }
+  .trip-gallery-trigger:hover { background: #f6f1e7; }
+  .trip-gallery-trigger:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 3px; }
+  .trip-gallery-dialog {
+    width: min(1360px, calc(100vw - 28px));
+    max-width: none;
+    height: min(900px, calc(100dvh - 28px));
+    max-height: none;
+    padding: 0;
+    border: 1px solid rgba(246,241,231,.2);
+    border-radius: 18px;
+    background: #17130f;
+    color: #f6f1e7;
+    box-shadow: 0 36px 120px rgba(0,0,0,.58);
+    overflow: hidden;
+  }
+  .trip-gallery-dialog::backdrop { background: rgba(12,10,8,.82); backdrop-filter: blur(6px); }
+  .trip-gallery-shell { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+  .trip-gallery-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 15px clamp(14px, 2.6vw, 26px);
+    border-bottom: 1px solid rgba(246,241,231,.14);
+    background: rgba(23,19,15,.98);
+  }
+  .trip-gallery-head h2 {
+    margin: 0;
+    color: #fff;
+    font-family: "Fraunces", "Georgia", serif;
+    font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+    font-weight: 650;
+    letter-spacing: 0;
+  }
+  .trip-gallery-count {
+    margin: 2px 0 0;
+    color: rgba(246,241,231,.66);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .trip-gallery-close,
+  .trip-gallery-viewer-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(246,241,231,.24);
+    border-radius: 999px;
+    background: rgba(246,241,231,.1);
+    color: #fff;
+    font-size: 1.45rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .trip-gallery-close:hover,
+  .trip-gallery-viewer-btn:hover { background: rgba(246,241,231,.2); }
+  .trip-gallery-close:focus-visible,
+  .trip-gallery-viewer-btn:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 2px; }
+  .trip-gallery-scroll {
+    min-height: 0;
+    overflow: auto;
+    padding: clamp(12px, 2vw, 22px);
+    background: #211c16;
+  }
+  .trip-gallery-board {
+    column-count: 4;
+    column-gap: clamp(10px, 1.5vw, 16px);
+  }
+  .trip-gallery-tile {
+    display: block;
+    width: 100%;
+    break-inside: avoid;
+    margin: 0 0 clamp(10px, 1.5vw, 16px);
+    padding: 0;
+    border: 1px solid rgba(246,241,231,.14);
+    border-radius: 12px;
+    background: #2a231b;
+    color: #fff;
+    box-shadow: 0 16px 30px rgba(0,0,0,.22);
+    overflow: hidden;
+    cursor: zoom-in;
+    text-align: left;
+  }
+  .trip-gallery-tile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #3a3128;
+  }
+  .trip-gallery-tile span {
+    display: block;
+    padding: 9px 10px 10px;
+    color: rgba(246,241,231,.84);
+    font-size: .78rem;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+  .trip-gallery-tile:hover { border-color: rgba(246,241,231,.36); }
+  .trip-gallery-tile:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 3px; }
+  .trip-gallery-viewer {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: none;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    background: rgba(12,10,8,.98);
+  }
+  .trip-gallery-dialog.is-viewing .trip-gallery-viewer { display: grid; }
+  .trip-gallery-viewer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px clamp(12px, 2vw, 20px);
+  }
+  .trip-gallery-viewer-count {
+    color: rgba(246,241,231,.68);
+    font-size: .78rem;
+    font-weight: 900;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .trip-gallery-stage {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr) 58px;
+    align-items: center;
+    gap: 8px;
+    padding: 0 clamp(8px, 2vw, 20px);
+    touch-action: pan-y;
+  }
+  .trip-gallery-frame {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .trip-gallery-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 24px 80px rgba(0,0,0,.45);
+    user-select: none;
+  }
+  .trip-gallery-caption {
+    min-height: 58px;
+    padding: 10px clamp(16px, 3vw, 34px) 18px;
+    color: rgba(246,241,231,.84);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .trip-gallery-empty {
+    padding: 28px;
+    color: rgba(246,241,231,.72);
+    font-weight: 800;
+  }
+  @media (max-width: 980px) {
+    .trip-gallery-board { column-count: 3; }
+    .trip-gallery-trigger { right: 18px; bottom: 18px; }
+  }
+  @media (max-width: 680px) {
+    .trip-gallery-dialog {
+      width: 100vw;
+      height: 100dvh;
+      border: 0;
+      border-radius: 0;
+    }
+    .trip-gallery-board { column-count: 2; }
+    .trip-gallery-head { align-items: flex-start; }
+    .trip-gallery-trigger {
+      left: 18px;
+      right: auto;
+      bottom: calc(18px + env(safe-area-inset-bottom));
+      min-height: 42px;
+      padding: 10px 14px;
+      font-size: .76rem;
+    }
+    .trip-gallery-stage {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
+    .trip-gallery-stage .trip-gallery-viewer-btn { display: none; }
+  }
+  @media print {
+    .trip-gallery-trigger,
+    .trip-gallery-dialog { display: none !important; }
+  }
+</style>
+<dialog class="trip-gallery-dialog" id="tripGalleryDialog" aria-label="Trip photo gallery">
+  <div class="trip-gallery-shell">
+    <div class="trip-gallery-head">
+      <div>
+        <h2>Photo Gallery</h2>
+        <p class="trip-gallery-count">Photos</p>
+      </div>
+      <button class="trip-gallery-close" type="button" aria-label="Close gallery">&times;</button>
+    </div>
+    <div class="trip-gallery-scroll">
+      <div class="trip-gallery-board" id="tripGalleryBoard"></div>
+      <p class="trip-gallery-empty" hidden>No gallery photos found.</p>
+    </div>
+    <div class="trip-gallery-viewer" aria-live="polite">
+      <div class="trip-gallery-viewer-top">
+        <button class="trip-gallery-viewer-btn trip-gallery-viewer-back" type="button" aria-label="Back to gallery">&times;</button>
+        <div class="trip-gallery-viewer-count"></div>
+        <button class="trip-gallery-viewer-btn trip-gallery-viewer-close" type="button" aria-label="Close gallery">&times;</button>
+      </div>
+      <div class="trip-gallery-stage">
+        <button class="trip-gallery-viewer-btn trip-gallery-prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <div class="trip-gallery-frame"><img alt=""></div>
+        <button class="trip-gallery-viewer-btn trip-gallery-next" type="button" aria-label="Next photo">&#8250;</button>
+      </div>
+      <div class="trip-gallery-caption"></div>
+    </div>
+  </div>
+</dialog>
 <script>
   /* Force-load lazy images and open <details> before printing so nothing is
      blank or collapsed in the PDF. */
@@ -2141,14 +2483,197 @@ document.querySelectorAll('.carousel').forEach(function(c){
   })();
 </script>
 <script>
-  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      var p = location.pathname, i = p.indexOf('/locations/');
-      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
-      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+  /* Trip-wide photo gallery: gathers the rendered carousel photos into one
+     masonry board, then lets the user browse the set with keys or swipes. */
+  (function () {
+    var dialog = document.getElementById('tripGalleryDialog');
+    var board = document.getElementById('tripGalleryBoard');
+    if (!dialog || !board) return;
+
+    var closeButton = dialog.querySelector('.trip-gallery-close');
+    var empty = dialog.querySelector('.trip-gallery-empty');
+    var countLabel = dialog.querySelector('.trip-gallery-count');
+    var viewerCount = dialog.querySelector('.trip-gallery-viewer-count');
+    var viewerImage = dialog.querySelector('.trip-gallery-frame img');
+    var viewerCaption = dialog.querySelector('.trip-gallery-caption');
+    var viewerBack = dialog.querySelector('.trip-gallery-viewer-back');
+    var viewerClose = dialog.querySelector('.trip-gallery-viewer-close');
+    var prevButton = dialog.querySelector('.trip-gallery-prev');
+    var nextButton = dialog.querySelector('.trip-gallery-next');
+    var trigger;
+    var photos = [];
+    var activeIndex = -1;
+    var lastFocus = null;
+    var touchStartX = 0;
+    var touchStartY = 0;
+
+    function absoluteUrl(value) {
+      try { return new URL(value, document.baseURI).href; } catch (e) { return value || ''; }
+    }
+
+    function cleanText(value) {
+      return String(value || '').replace(/\s+/g, ' ').trim();
+    }
+
+    function figureCaption(figure, image) {
+      var strong = figure.querySelector('figcaption strong');
+      var span = figure.querySelector('figcaption span');
+      var title = cleanText(strong && strong.textContent);
+      var credit = cleanText(span && span.textContent);
+      var alt = cleanText(image.getAttribute('alt'));
+      if (title && credit) return title + ' - ' + credit;
+      return title || alt || credit || 'Trip photo';
+    }
+
+    function collectPhotos() {
+      var seen = Object.create(null);
+      var list = [];
+      document.querySelectorAll('.carousel figure').forEach(function (figure) {
+        var image = figure.querySelector('img[src]');
+        if (!image) return;
+        var link = figure.querySelector('a[href]');
+        var src = absoluteUrl(image.getAttribute('src'));
+        var full = absoluteUrl(link ? link.getAttribute('href') : image.getAttribute('src'));
+        var key = full.split('#')[0];
+        if (!key || seen[key]) return;
+        seen[key] = true;
+        list.push({
+          src: src,
+          full: full,
+          alt: cleanText(image.getAttribute('alt')) || 'Trip photo',
+          caption: figureCaption(figure, image)
+        });
+      });
+      return list;
+    }
+
+    function buildBoard() {
+      photos = collectPhotos();
+      board.textContent = '';
+      empty.hidden = photos.length > 0;
+      countLabel.textContent = photos.length + (photos.length === 1 ? ' photo' : ' photos');
+      photos.forEach(function (photo, index) {
+        var tile = document.createElement('button');
+        var image = document.createElement('img');
+        var caption = document.createElement('span');
+        tile.type = 'button';
+        tile.className = 'trip-gallery-tile';
+        tile.setAttribute('aria-label', 'Open photo ' + (index + 1) + ': ' + photo.caption);
+        image.src = photo.src;
+        image.alt = photo.alt;
+        image.loading = 'lazy';
+        caption.textContent = photo.caption;
+        tile.appendChild(image);
+        tile.appendChild(caption);
+        tile.addEventListener('click', function () { openViewer(index); });
+        board.appendChild(tile);
+      });
+      if (trigger) {
+        trigger.hidden = !photos.length;
+        trigger.setAttribute('aria-label', 'View gallery, ' + photos.length + ' photos');
+      }
+    }
+
+    function installTrigger() {
+      var hero = document.querySelector('.preview .pvcar, body > header, header, body > .preview, .preview');
+      if (!hero || trigger) return;
+      trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'trip-gallery-trigger';
+      trigger.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></g></svg><span>View gallery</span>';
+      trigger.addEventListener('click', openDialog);
+      hero.appendChild(trigger);
+    }
+
+    function openDialog() {
+      lastFocus = document.activeElement;
+      buildBoard();
+      document.documentElement.classList.add('trip-gallery-open');
+      if (dialog.showModal) dialog.showModal();
+      else dialog.setAttribute('open', '');
+      dialog.classList.remove('is-viewing');
+      window.setTimeout(function () {
+        var first = board.querySelector('.trip-gallery-tile');
+        (first || closeButton).focus();
+      }, 0);
+    }
+
+    function closeDialog() {
+      dialog.classList.remove('is-viewing');
+      viewerImage.removeAttribute('src');
+      if (dialog.close && dialog.open) dialog.close();
+      else dialog.removeAttribute('open');
+      document.documentElement.classList.remove('trip-gallery-open');
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    function openViewer(index) {
+      if (!photos.length) return;
+      activeIndex = Math.max(0, Math.min(photos.length - 1, index));
+      dialog.classList.add('is-viewing');
+      renderViewer();
+    }
+
+    function closeViewer() {
+      dialog.classList.remove('is-viewing');
+      var tile = board.querySelectorAll('.trip-gallery-tile')[activeIndex];
+      if (tile) tile.focus();
+    }
+
+    function renderViewer() {
+      var photo = photos[activeIndex];
+      viewerImage.src = photo.full;
+      viewerImage.alt = photo.alt;
+      viewerCaption.textContent = photo.caption;
+      viewerCount.textContent = (activeIndex + 1) + ' / ' + photos.length;
+    }
+
+    function step(delta) {
+      if (!photos.length || activeIndex < 0) return;
+      activeIndex = (activeIndex + delta + photos.length) % photos.length;
+      renderViewer();
+    }
+
+    installTrigger();
+    buildBoard();
+
+    closeButton.addEventListener('click', closeDialog);
+    viewerClose.addEventListener('click', closeDialog);
+    viewerBack.addEventListener('click', closeViewer);
+    prevButton.addEventListener('click', function () { step(-1); });
+    nextButton.addEventListener('click', function () { step(1); });
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) closeDialog();
     });
-  }
+    dialog.addEventListener('cancel', function (event) {
+      if (dialog.classList.contains('is-viewing')) {
+        event.preventDefault();
+        closeViewer();
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (!dialog.open) return;
+      if (event.key === 'ArrowLeft') { event.preventDefault(); step(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); step(1); }
+      if (event.key === 'Escape' && !dialog.classList.contains('is-viewing')) closeDialog();
+    });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('touchstart', function (event) {
+      if (!event.touches || event.touches.length !== 1) return;
+      touchStartX = event.touches[0].clientX;
+      touchStartY = event.touches[0].clientY;
+    }, { passive: true });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('touchend', function (event) {
+      if (!event.changedTouches || event.changedTouches.length !== 1) return;
+      var dx = event.changedTouches[0].clientX - touchStartX;
+      var dy = event.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > 46 && Math.abs(dx) > Math.abs(dy) * 1.4) step(dx < 0 ? 1 : -1);
+    }, { passive: true });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('wheel', function (event) {
+      if (!dialog.classList.contains('is-viewing') || Math.abs(event.deltaX) < 28) return;
+      event.preventDefault();
+      step(event.deltaX > 0 ? 1 : -1);
+    }, { passive: false });
+  })();
 </script>
 <script>
   /* Responsive day navigator: a scroll-driven vertical dock on wide screens
@@ -2340,4 +2865,14 @@ document.querySelectorAll('.carousel').forEach(function(c){
     if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', requestUpdate);
     else if (desktopQuery.addListener) desktopQuery.addListener(requestUpdate);
   })();
+</script>
+<script>
+  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      var p = location.pathname, i = p.indexOf('/locations/');
+      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
+      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+    });
+  }
 </script>

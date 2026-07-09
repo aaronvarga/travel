@@ -23,7 +23,8 @@
     headRight.style.gap = '10px';
     headRight.style.alignItems = 'center';
     headRight.append(flag, reset);
-    head.append(el('p', null, 'Drag to re-rank all 16 trips. 0 = ignore, 3 = triple weight.'), headRight);
+    const rankedCount = B.trips.filter((t) => !t.excluded).length;
+    head.append(el('p', null, 'Drag to re-rank all ' + rankedCount + ' active plans. Excluded references stay below them. 0 = ignore, 3 = triple weight.'), headRight);
 
     const grid = el('div', 'weight-grid');
     const inputs = {};

@@ -54,8 +54,9 @@
       cbSwim.set(!!f.hasSwim);
       budRange.value = f.underUsd != null ? f.underUsd : CAP;
       budLabel.textContent = f.underUsd != null ? 'Max budget: $' + (f.underUsd / 1000) + 'k' : 'Max budget: Any';
-      const n = B.trips.filter((t) => B.matches(t, f)).length;
-      count.textContent = n + ' of ' + B.trips.length + ' trips';
+      const ranked = B.trips.filter((t) => !t.excluded);
+      const n = ranked.filter((t) => B.matches(t, f)).length;
+      count.textContent = n + ' of ' + ranked.length + ' ranked plans';
       count.classList.toggle('is-empty', n === 0);
       clear.disabled = !Object.keys(f).length;
     }

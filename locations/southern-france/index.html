@@ -1141,6 +1141,57 @@ footer a{color:var(--muted)}
         @media print{.day-dock{display:none!important}}
       </style>
       <div class="section-label"><p class="eyebrow">The Itinerary</p><h2>Day by day</h2><p>Swipe each carousel for photos. Every stop carries its cost, June weather, a 💰 save tip, an ✨ splurge, picky-kid restaurants, backup / if-time ideas, blog links, and a map. Per-day costs are food + activities only.</p></div>
+      <nav class="day-dock" aria-label="Jump to an itinerary day" hidden>
+        <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+          <symbol id="day-dock-icon-plane" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></symbol>
+          <symbol id="day-dock-icon-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.65 5H8.4a2 2 0 0 0-1.9 1.26L5 10 3 8m4 6h.01M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2m14-2v2"/></g></symbol>
+          <symbol id="day-dock-icon-ship" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 10.19V14m0-12v3m7 8V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.19-3.64a2 2 0 0 0-1.62 0L3 14a11.6 11.6 0 0 0 2.81 7.76"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></g></symbol>
+          <symbol id="day-dock-icon-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></g></symbol>
+        </svg>
+        <div class="day-dock-caption" aria-hidden="true"><span></span><strong></strong></div>
+        <div class="day-dock-track">
+          <a class="day-dock-item" href="#day0" data-day-id="day0" aria-label="Jump to day 0">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">0</span></span>
+            <span class="day-dock-tooltip"><span>Mon · Jun 14 · Day 0</span><strong>Depart Pittsburgh after work</strong><small>Travel day</small></span>
+          </a>
+          <a class="day-dock-item" href="#day1" data-day-id="day1" aria-label="Jump to day 1">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">1</span></span>
+            <span class="day-dock-tooltip"><span>Tue · Jun 15 · Day 1</span><strong>Arrive Nice → easy beach evening</strong><small>Arrival + reset</small></span>
+          </a>
+          <a class="day-dock-item" href="#day2" data-day-id="day2" aria-label="Jump to day 2">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">2</span></span>
+            <span class="day-dock-tooltip"><span>Wed · Jun 16 · Day 2</span><strong>Eze + Villefranche-sur-Mer</strong><small>Village + swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day3" data-day-id="day3" aria-label="Jump to day 3">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">3</span></span>
+            <span class="day-dock-tooltip"><span>Thu · Jun 17 · Day 3</span><strong>Antibes and Juan-les-Pins</strong><small>Sand beach + old town</small></span>
+          </a>
+          <a class="day-dock-item" href="#day4" data-day-id="day4" aria-label="Jump to day 4">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">4</span></span>
+            <span class="day-dock-tooltip"><span>Fri · Jun 18 · Day 4</span><strong>Drive Nice → Cassis</strong><small>Transfer + cliff view</small></span>
+          </a>
+          <a class="day-dock-item" href="#day5" data-day-id="day5" aria-label="Jump to day 5">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">5</span></span>
+            <span class="day-dock-tooltip"><span>Sat · Jun 19 · Day 5</span><strong>Cassis Calanques boat</strong><small>Boat + swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day6" data-day-id="day6" aria-label="Jump to day 6">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">6</span></span>
+            <span class="day-dock-tooltip"><span>Sun · Jun 20 · Day 6</span><strong>Drive to Aix-en-Provence</strong><small>Market town reset</small></span>
+          </a>
+          <a class="day-dock-item" href="#day7" data-day-id="day7" aria-label="Jump to day 7">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">7</span></span>
+            <span class="day-dock-tooltip"><span>Mon · Jun 21 · Day 7</span><strong>Valensole lavender + Lac de Sainte-Croix</strong><small>Lavender + lake swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day8" data-day-id="day8" aria-label="Jump to day 8">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">8</span></span>
+            <span class="day-dock-tooltip"><span>Tue · Jun 22 · Day 8</span><strong>Avignon + Pont du Gard</strong><small>Roman history + river swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day9" data-day-id="day9" aria-label="Jump to day 9">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">9</span></span>
+            <span class="day-dock-tooltip"><span>Wed · Jun 23 · Day 9</span><strong>Drive to MRS, fly home</strong><small>Return day</small></span>
+          </a>
+        </div>
+      </nav>
       <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
@@ -1462,7 +1513,7 @@ footer a{color:var(--muted)}
         <div id="tripmap"></div>
       </div></div></section>
 <section id="getting-around" class="divider"><div class="section-label"><p class="eyebrow">Getting Around</p><h2>Train first, car second</h2><p>Use public transit while based in Nice, then pick up an automatic rental car for Provence and drop it at Marseille Provence Airport.</p></div><div class="plan-grid"><div class="pcard"><h4><span class="dot"></span>Flights &middot; PIT to NCE / MRS to PIT</h4><div class="prow"><span>Nonstop?</span><strong>No PIT&ndash;Nice or PIT&ndash;Marseille nonstop</strong></div><div class="prow"><span>Typical routing</span><strong>US hub + CDG/AMS/LHR/FRA</strong></div><div class="prow"><span>Transit time</span><strong>~12&ndash;19 hrs each way</strong></div><div class="prow"><span>Family fare band</span><strong>~$3,400&ndash;5,600</strong></div><div class="tip">The PTO works because Monday night absorbs the first leg, not because the routing is short.</div></div><div class="pcard"><h4><span class="dot"></span>Rental Car &middot; automatic</h4><div class="prow"><span>Pickup/drop</span><strong>Nice &rarr; Marseille Provence Airport</strong></div><div class="prow"><span>Automatic premium</span><strong>Often &euro;5&ndash;15/day more</strong></div><div class="prow"><span>Rental total</span><strong>~$600&ndash;1,050</strong></div><div class="prow"><span>One-way fee</span><strong>Confirm within-France drop fee</strong></div><div class="tip">Book the exact automatic class early and screenshot the confirmation.</div></div><div class="pcard"><h4><span class="dot"></span>Fuel, tolls &amp; parking</h4><div class="prow"><span>Route driving</span><strong>~550&ndash;650 km</strong></div><div class="prow"><span>Tolls</span><strong>~&euro;30&ndash;50 total</strong></div><div class="prow"><span>Fuel</span><strong>~&euro;90&ndash;135</strong></div><div class="prow"><span>Old-town parking</span><strong>&euro;20&ndash;40/day possible</strong></div><div class="tip">Lodging with parking can beat a cheaper room outside the center.</div></div><div class="pcard"><h4><span class="dot"></span>ZFE / Crit'Air</h4><div class="prow"><span>Nice/Marseille</span><strong>Low-emission zones affect visitors</strong></div><div class="prow"><span>Rental cars</span><strong>Modern French rentals should qualify</strong></div><div class="prow"><span>Action</span><strong>Confirm sticker/status at pickup</strong></div><div class="prow"><span>Route strategy</span><strong>Avoid central Marseille</strong></div><div class="tip">With a French rental, verify the car already has what it needs before entering a ZFE.</div></div></div></section><section id="health-check" class="divider"><div class="section-label"><p class="eyebrow">Plan Health-Check</p><h2>What to lock, watch, and expect</h2><p>A critical review of the plan against your family and June constraints &mdash; researched July 2026. Kids assumed 13 and 8 in June 2027.</p></div><div class="hc-grid"><div class="hc actnow"><span class="hc-tag">Act now</span><h4>Cassis calanques are the real bookable/weather constraint</h4><p>Standard Cassis boats sell 3/5/8/9-calanque circuits and run <b>weather permitting</b>. From Jun 1&ndash;Sep 30, land access can close daily for fire danger; check the park status the prior evening.</p></div><div class="hc watch"><span class="hc-tag">Heads-up</span><h4>No PIT nonstop to Nice or Marseille</h4><p>Current flight data shows <b>no direct PIT&ndash;NCE or PIT&ndash;MRS service</b>. Plan on one or two connections through EWR/JFK/ATL/PHL plus CDG/AMS/LHR/FRA, or seasonal Icelandair-style routing.</p></div><div class="hc watch"><span class="hc-tag">Heads-up</span><h4>Picky eating gets harder inland</h4><p>Nice, Antibes, Aix, and Avignon are fine. Cassis is pricier, and Valensole needs a backup because rural menus and hours are less forgiving.</p></div><div class="hc watch"><span class="hc-tag">Heads-up</span><h4>Lavender is likely, not guaranteed peak</h4><p>Valensole usually starts in mid-June and builds into late June/early July; Sault blooms later. Jun 21 is close to the sweet spot but still weather-dependent.</p></div><div class="hc good"><span class="hc-tag">Solid &mdash; keep it</span><h4>PTO math still works</h4><p><b>Depart Monday evening Jun 14 and return Wednesday Jun 23.</b> Juneteenth is observed Friday Jun 18, 2027, so PTO used is Jun 15&ndash;17 and Jun 21&ndash;23: <b>6 PTO days for 8 nights</b>.</p></div><div class="hc good"><span class="hc-tag">Now fixed</span><h4>Parking/ZFE friction is handled</h4><p>The route delays the car until leaving Nice, avoids central Marseille, calls out garage costs, and assumes a modern French rental with Crit'Air eligibility. Confirm at pickup.</p></div></div></section>
-<section id="timing" class="divider"><div class="section-label"><p class="eyebrow">Best Time to Go</p><h2>June is the sweet spot</h2><p>For Provence and the Riviera, June is not a rain gamble. The real variables are lavender timing, July/August crowd and lodging surges, Mediterranean water temperature, Mistral wind, and fire-risk days.</p></div><div class="timing-compare"><div class="tcard best"><span class="tlabel">Recommended — base plan</span><h4>Mon Jun 14 → Wed Jun 23, 2027</h4><div class="trow"><span>Depart</span><strong>Mon evening, after work</strong></div><div class="trow"><span>Nights away</span><strong>8</strong></div><div class="trow"><span>PTO days used</span><strong>6</strong></div><div class="trow"><span>Lavender odds</span><strong>Good, not peak-guaranteed</strong></div><div class="trow"><span>Crowds</span><strong>Before worst peak</strong></div></div><div class="tcard"><span class="tlabel">Earlier June</span><h4>Thu Jun 3 → Sat Jun 12</h4><div class="trow"><span>Weather</span><strong>Excellent</strong></div><div class="trow"><span>Water</span><strong class="bad">Cooler</strong></div><div class="trow"><span>Lavender</span><strong class="bad">Too early for Valensole peak</strong></div><div class="trow"><span>Crowds</span><strong>Lower</strong></div><div class="trow"><span>PTO</span><strong>6 days (no Juneteenth boost)</strong></div></div><div class="tcard later"><span class="tlabel">Lavender peak chase</span><h4>Thu Jul 1 → Sat Jul 10</h4><div class="trow"><span>Lavender</span><strong>Best Valensole odds</strong></div><div class="trow"><span>Water</span><strong>Warmer</strong></div><div class="trow"><span>Prices</span><strong class="bad">Rising sharply</strong></div><div class="trow"><span>Crowds</span><strong class="bad">Peak ramp</strong></div><div class="trow"><span>PTO</span><strong>6 days (no Juneteenth boost)</strong></div></div><div class="tcard"><span class="tlabel">August beach weather</span><h4>Thu Aug 5 → Sat Aug 14</h4><div class="trow"><span>Water</span><strong>Warmest</strong></div><div class="trow"><span>Lavender</span><strong class="bad">Valensole harvested</strong></div><div class="trow"><span>Prices</span><strong class="bad">Highest</strong></div><div class="trow"><span>Crowds</span><strong class="bad">Highest</strong></div><div class="trow"><span>Heat/fire risk</span><strong class="bad">Higher</strong></div></div></div><div class="verdict-box" style="border-left-color:var(--c3);margin-top:0;margin-bottom:22px"><h4>Why the base plan wins</h4><p>Jun 14–23 clears the Jun 23–26 Pittsburgh blackout entirely (home the evening of Jun 23), still captures part of the Juneteenth PTO advantage, avoids the worst July/August lodging surge, gives swimmable Mediterranean water, and lands early enough in the window for decent Valensole lavender color in most years — now over 3 bases and 8 nights instead of 4 bases and 12.</p></div><div class="twocol"><div class="listcard pro-list"><h4>Pros of the base plan</h4><ul><li><span>Solid nights/PTO ratio: 8 nights for 6 PTO days (1.33x) — a bit higher than the original Jun 17–26 draft, the tradeoff for clearing the Pittsburgh blackout instead of returning home on its first day.</span></li><li><span>Riviera water is usually swimmable by late June.</span></li><li><span>Cheaper and less crowded than July/August.</span></li></ul></div><div class="listcard con-list"><h4>Cons / open risks</h4><ul><li><span>Lavender timing can vary by micro-region and weather.</span></li><li><span>Mistral wind can disrupt beach/boat plans.</span></li><li><span>Calanques fire-risk status is a daily decision.</span></li></ul></div></div></section>
+<section id="timing" class="divider"><div class="section-label"><p class="eyebrow">Best Time to Go</p><h2>June is the sweet spot</h2><p>For Provence and the Riviera, June is not a rain gamble. The real variables are lavender timing, July/August crowd and lodging surges, Mediterranean water temperature, Mistral wind, and fire-risk days.</p></div><div class="timing-compare"><div class="tcard best"><span class="tlabel">Recommended — base plan</span><h4>Mon Jun 14 → Wed Jun 23, 2027</h4><div class="trow"><span>Depart</span><strong>Mon evening, after work</strong></div><div class="trow"><span>Nights away</span><strong>8</strong></div><div class="trow"><span>PTO days used</span><strong>6</strong></div><div class="trow"><span>Lavender odds</span><strong>Good, not peak-guaranteed</strong></div><div class="trow"><span>Crowds</span><strong>Before worst peak</strong></div></div><div class="tcard"><span class="tlabel">Earlier June</span><h4>Thu Jun 3 → Sat Jun 12</h4><div class="trow"><span>Weather</span><strong>Excellent</strong></div><div class="trow"><span>Water</span><strong class="bad">Cooler</strong></div><div class="trow"><span>Lavender</span><strong class="bad">Too early for Valensole peak</strong></div><div class="trow"><span>Crowds</span><strong>Lower</strong></div><div class="trow"><span>PTO</span><strong>6 days (no Juneteenth boost)</strong></div></div><div class="tcard later"><span class="tlabel">Lavender peak chase</span><h4>Thu Jul 1 → Sat Jul 10</h4><div class="trow"><span>Lavender</span><strong>Best Valensole odds</strong></div><div class="trow"><span>Water</span><strong>Warmer</strong></div><div class="trow"><span>Prices</span><strong class="bad">Rising sharply</strong></div><div class="trow"><span>Crowds</span><strong class="bad">Peak ramp</strong></div><div class="trow"><span>PTO</span><strong>6 days (no Juneteenth boost)</strong></div></div><div class="tcard"><span class="tlabel">August beach weather</span><h4>Thu Aug 5 → Sat Aug 14</h4><div class="trow"><span>Water</span><strong>Warmest</strong></div><div class="trow"><span>Lavender</span><strong class="bad">Valensole harvested</strong></div><div class="trow"><span>Prices</span><strong class="bad">Highest</strong></div><div class="trow"><span>Crowds</span><strong class="bad">Highest</strong></div><div class="trow"><span>Heat/fire risk</span><strong class="bad">Higher</strong></div></div></div><div class="verdict-box" style="border-left-color:var(--c3);margin-top:0;margin-bottom:22px"><h4>Why the base plan wins</h4><p>Jun 14–23 clears the Jun 24–26 Pittsburgh blackout entirely (home the evening of Jun 23), still captures part of the Juneteenth PTO advantage, avoids the worst July/August lodging surge, gives swimmable Mediterranean water, and lands early enough in the window for decent Valensole lavender color in most years — now over 3 bases and 8 nights instead of 4 bases and 12.</p></div><div class="twocol"><div class="listcard pro-list"><h4>Pros of the base plan</h4><ul><li><span>Solid nights/PTO ratio: 8 nights for 6 PTO days (1.33x) — a bit higher than the original Jun 17–26 draft, the tradeoff for clearing the Pittsburgh blackout instead of returning home on its first day.</span></li><li><span>Riviera water is usually swimmable by late June.</span></li><li><span>Cheaper and less crowded than July/August.</span></li></ul></div><div class="listcard con-list"><h4>Cons / open risks</h4><ul><li><span>Lavender timing can vary by micro-region and weather.</span></li><li><span>Mistral wind can disrupt beach/boat plans.</span></li><li><span>Calanques fire-risk status is a daily decision.</span></li></ul></div></div></section>
 <section id="todo" class="divider pretrip-todo">
       <style>.pretrip-todo .todo-grid{display:grid;gap:12px}.pretrip-todo .todo-block{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c1);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.pretrip-todo .todo-block.hot{border-left-color:#c0392b}.pretrip-todo .todo-block.watch{border-left-color:var(--gold)}.pretrip-todo .todo-block.done{border-left-color:var(--c3)}.pretrip-todo .todo-when{grid-row:1/4;align-self:start;display:inline-block;margin:0;padding:4px 10px;border-radius:999px;background:rgba(31,111,120,.1);color:var(--c1);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-align:center}.pretrip-todo .todo-block.hot .todo-when{background:rgba(192,57,43,.1);color:#a23625}.pretrip-todo .todo-block.watch .todo-when{background:rgba(217,164,65,.16);color:#8a641e}.pretrip-todo .todo-block.done .todo-when{background:rgba(63,125,78,.12);color:var(--c3)}.pretrip-todo h3{grid-column:2;margin:0;font-size:1.12rem;font-weight:600;line-height:1.18}.pretrip-todo .todo-note{grid-column:2;margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}.pretrip-todo ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px}.pretrip-todo li{position:relative;padding-left:16px;color:var(--muted);font-size:.88rem;line-height:1.45}.pretrip-todo li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}.pretrip-todo li b{color:var(--ink)}.pretrip-todo .todo-callout{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:12px;background:var(--card);box-shadow:0 10px 28px rgba(30,32,28,.08);color:var(--muted);font-size:.9rem;line-height:1.55}.pretrip-todo .todo-callout b{color:var(--ink)}@media(max-width:720px){.pretrip-todo .todo-block{grid-template-columns:1fr;padding:16px}.pretrip-todo .todo-when{grid-row:auto;justify-self:start;text-align:left}.pretrip-todo h3,.pretrip-todo .todo-note,.pretrip-todo ul{grid-column:1}}</style>
       <div class="section-label"><p class="eyebrow">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p></div>
@@ -1698,6 +1749,34 @@ document.querySelectorAll('.carousel').forEach(function(c){
 </script>
 <script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
 <style>
+  /* Keep itinerary heroes cinematic without making visitors scroll a full
+     viewport before reaching the plan. Covers both current and legacy heroes. */
+  body > header {
+    min-height: clamp(500px, 64vh, 680px);
+    min-height: clamp(500px, 64svh, 680px);
+  }
+  body > .preview {
+    min-height: clamp(500px, 64vh, 680px);
+    min-height: clamp(500px, 64svh, 680px);
+  }
+  body > .preview .pvcar .track img {
+    height: clamp(500px, 64vh, 680px);
+    height: clamp(500px, 64svh, 680px);
+  }
+  @media (max-width: 820px) {
+    body > header {
+      min-height: clamp(460px, 62vh, 560px);
+      min-height: clamp(460px, 62svh, 560px);
+    }
+    body > .preview { min-height: auto; }
+    body > .preview .pv-pane { gap: 12px; padding-block: 22px; }
+    body > .preview .pvcar .track img {
+      height: clamp(280px, 40vh, 380px);
+      height: clamp(280px, 40svh, 380px);
+    }
+  }
+</style>
+<style>
   /* Phase 7 — print/PDF degradation for itineraries. Scoped with @media print
      (NOT just a media="print" attribute): this <style> is emitted after </html>
      and reparented into the body, where the media attribute is not reliably
@@ -1725,6 +1804,253 @@ document.querySelectorAll('.carousel').forEach(function(c){
     a[href] { color: inherit; }
   }
 </style>
+<style>
+  .preview,
+  .pvcar { position: relative; }
+  .trip-gallery-trigger {
+    position: absolute;
+    z-index: 4;
+    right: clamp(18px, 4vw, 56px);
+    bottom: clamp(18px, 6vh, 58px);
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 44px;
+    padding: 11px 16px;
+    border: 1px solid #17130f;
+    border-radius: 999px;
+    background: #fffdf8;
+    color: #17130f;
+    box-shadow: 0 16px 36px rgba(0,0,0,.34);
+    font: 900 .82rem/1 "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .trip-gallery-trigger svg { width: 18px; height: 18px; flex: 0 0 auto; }
+  .trip-gallery-trigger:hover { background: #f6f1e7; }
+  .trip-gallery-trigger:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 3px; }
+  .trip-gallery-dialog {
+    width: min(1360px, calc(100vw - 28px));
+    max-width: none;
+    height: min(900px, calc(100dvh - 28px));
+    max-height: none;
+    padding: 0;
+    border: 1px solid rgba(246,241,231,.2);
+    border-radius: 18px;
+    background: #17130f;
+    color: #f6f1e7;
+    box-shadow: 0 36px 120px rgba(0,0,0,.58);
+    overflow: hidden;
+  }
+  .trip-gallery-dialog::backdrop { background: rgba(12,10,8,.82); backdrop-filter: blur(6px); }
+  .trip-gallery-shell { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+  .trip-gallery-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 15px clamp(14px, 2.6vw, 26px);
+    border-bottom: 1px solid rgba(246,241,231,.14);
+    background: rgba(23,19,15,.98);
+  }
+  .trip-gallery-head h2 {
+    margin: 0;
+    color: #fff;
+    font-family: "Fraunces", "Georgia", serif;
+    font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+    font-weight: 650;
+    letter-spacing: 0;
+  }
+  .trip-gallery-count {
+    margin: 2px 0 0;
+    color: rgba(246,241,231,.66);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .trip-gallery-close,
+  .trip-gallery-viewer-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(246,241,231,.24);
+    border-radius: 999px;
+    background: rgba(246,241,231,.1);
+    color: #fff;
+    font-size: 1.45rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .trip-gallery-close:hover,
+  .trip-gallery-viewer-btn:hover { background: rgba(246,241,231,.2); }
+  .trip-gallery-close:focus-visible,
+  .trip-gallery-viewer-btn:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 2px; }
+  .trip-gallery-scroll {
+    min-height: 0;
+    overflow: auto;
+    padding: clamp(12px, 2vw, 22px);
+    background: #211c16;
+  }
+  .trip-gallery-board {
+    column-count: 4;
+    column-gap: clamp(10px, 1.5vw, 16px);
+  }
+  .trip-gallery-tile {
+    display: block;
+    width: 100%;
+    break-inside: avoid;
+    margin: 0 0 clamp(10px, 1.5vw, 16px);
+    padding: 0;
+    border: 1px solid rgba(246,241,231,.14);
+    border-radius: 12px;
+    background: #2a231b;
+    color: #fff;
+    box-shadow: 0 16px 30px rgba(0,0,0,.22);
+    overflow: hidden;
+    cursor: zoom-in;
+    text-align: left;
+  }
+  .trip-gallery-tile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #3a3128;
+  }
+  .trip-gallery-tile span {
+    display: block;
+    padding: 9px 10px 10px;
+    color: rgba(246,241,231,.84);
+    font-size: .78rem;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+  .trip-gallery-tile:hover { border-color: rgba(246,241,231,.36); }
+  .trip-gallery-tile:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 3px; }
+  .trip-gallery-viewer {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: none;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    background: rgba(12,10,8,.98);
+  }
+  .trip-gallery-dialog.is-viewing .trip-gallery-viewer { display: grid; }
+  .trip-gallery-viewer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px clamp(12px, 2vw, 20px);
+  }
+  .trip-gallery-viewer-count {
+    color: rgba(246,241,231,.68);
+    font-size: .78rem;
+    font-weight: 900;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .trip-gallery-stage {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr) 58px;
+    align-items: center;
+    gap: 8px;
+    padding: 0 clamp(8px, 2vw, 20px);
+    touch-action: pan-y;
+  }
+  .trip-gallery-frame {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .trip-gallery-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 24px 80px rgba(0,0,0,.45);
+    user-select: none;
+  }
+  .trip-gallery-caption {
+    min-height: 58px;
+    padding: 10px clamp(16px, 3vw, 34px) 18px;
+    color: rgba(246,241,231,.84);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .trip-gallery-empty {
+    padding: 28px;
+    color: rgba(246,241,231,.72);
+    font-weight: 800;
+  }
+  @media (max-width: 980px) {
+    .trip-gallery-board { column-count: 3; }
+    .trip-gallery-trigger { right: 18px; bottom: 18px; }
+  }
+  @media (max-width: 680px) {
+    .trip-gallery-dialog {
+      width: 100vw;
+      height: 100dvh;
+      border: 0;
+      border-radius: 0;
+    }
+    .trip-gallery-board { column-count: 2; }
+    .trip-gallery-head { align-items: flex-start; }
+    .trip-gallery-trigger {
+      left: 18px;
+      right: auto;
+      bottom: calc(18px + env(safe-area-inset-bottom));
+      min-height: 42px;
+      padding: 10px 14px;
+      font-size: .76rem;
+    }
+    .trip-gallery-stage {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
+    .trip-gallery-stage .trip-gallery-viewer-btn { display: none; }
+  }
+  @media print {
+    .trip-gallery-trigger,
+    .trip-gallery-dialog { display: none !important; }
+  }
+</style>
+<dialog class="trip-gallery-dialog" id="tripGalleryDialog" aria-label="Trip photo gallery">
+  <div class="trip-gallery-shell">
+    <div class="trip-gallery-head">
+      <div>
+        <h2>Photo Gallery</h2>
+        <p class="trip-gallery-count">Photos</p>
+      </div>
+      <button class="trip-gallery-close" type="button" aria-label="Close gallery">&times;</button>
+    </div>
+    <div class="trip-gallery-scroll">
+      <div class="trip-gallery-board" id="tripGalleryBoard"></div>
+      <p class="trip-gallery-empty" hidden>No gallery photos found.</p>
+    </div>
+    <div class="trip-gallery-viewer" aria-live="polite">
+      <div class="trip-gallery-viewer-top">
+        <button class="trip-gallery-viewer-btn trip-gallery-viewer-back" type="button" aria-label="Back to gallery">&times;</button>
+        <div class="trip-gallery-viewer-count"></div>
+        <button class="trip-gallery-viewer-btn trip-gallery-viewer-close" type="button" aria-label="Close gallery">&times;</button>
+      </div>
+      <div class="trip-gallery-stage">
+        <button class="trip-gallery-viewer-btn trip-gallery-prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <div class="trip-gallery-frame"><img alt=""></div>
+        <button class="trip-gallery-viewer-btn trip-gallery-next" type="button" aria-label="Next photo">&#8250;</button>
+      </div>
+      <div class="trip-gallery-caption"></div>
+    </div>
+  </div>
+</dialog>
 <script>
   /* Force-load lazy images and open <details> before printing so nothing is
      blank or collapsed in the PDF. */
@@ -1743,14 +2069,197 @@ document.querySelectorAll('.carousel').forEach(function(c){
   })();
 </script>
 <script>
-  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      var p = location.pathname, i = p.indexOf('/locations/');
-      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
-      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+  /* Trip-wide photo gallery: gathers the rendered carousel photos into one
+     masonry board, then lets the user browse the set with keys or swipes. */
+  (function () {
+    var dialog = document.getElementById('tripGalleryDialog');
+    var board = document.getElementById('tripGalleryBoard');
+    if (!dialog || !board) return;
+
+    var closeButton = dialog.querySelector('.trip-gallery-close');
+    var empty = dialog.querySelector('.trip-gallery-empty');
+    var countLabel = dialog.querySelector('.trip-gallery-count');
+    var viewerCount = dialog.querySelector('.trip-gallery-viewer-count');
+    var viewerImage = dialog.querySelector('.trip-gallery-frame img');
+    var viewerCaption = dialog.querySelector('.trip-gallery-caption');
+    var viewerBack = dialog.querySelector('.trip-gallery-viewer-back');
+    var viewerClose = dialog.querySelector('.trip-gallery-viewer-close');
+    var prevButton = dialog.querySelector('.trip-gallery-prev');
+    var nextButton = dialog.querySelector('.trip-gallery-next');
+    var trigger;
+    var photos = [];
+    var activeIndex = -1;
+    var lastFocus = null;
+    var touchStartX = 0;
+    var touchStartY = 0;
+
+    function absoluteUrl(value) {
+      try { return new URL(value, document.baseURI).href; } catch (e) { return value || ''; }
+    }
+
+    function cleanText(value) {
+      return String(value || '').replace(/\s+/g, ' ').trim();
+    }
+
+    function figureCaption(figure, image) {
+      var strong = figure.querySelector('figcaption strong');
+      var span = figure.querySelector('figcaption span');
+      var title = cleanText(strong && strong.textContent);
+      var credit = cleanText(span && span.textContent);
+      var alt = cleanText(image.getAttribute('alt'));
+      if (title && credit) return title + ' - ' + credit;
+      return title || alt || credit || 'Trip photo';
+    }
+
+    function collectPhotos() {
+      var seen = Object.create(null);
+      var list = [];
+      document.querySelectorAll('.carousel figure').forEach(function (figure) {
+        var image = figure.querySelector('img[src]');
+        if (!image) return;
+        var link = figure.querySelector('a[href]');
+        var src = absoluteUrl(image.getAttribute('src'));
+        var full = absoluteUrl(link ? link.getAttribute('href') : image.getAttribute('src'));
+        var key = full.split('#')[0];
+        if (!key || seen[key]) return;
+        seen[key] = true;
+        list.push({
+          src: src,
+          full: full,
+          alt: cleanText(image.getAttribute('alt')) || 'Trip photo',
+          caption: figureCaption(figure, image)
+        });
+      });
+      return list;
+    }
+
+    function buildBoard() {
+      photos = collectPhotos();
+      board.textContent = '';
+      empty.hidden = photos.length > 0;
+      countLabel.textContent = photos.length + (photos.length === 1 ? ' photo' : ' photos');
+      photos.forEach(function (photo, index) {
+        var tile = document.createElement('button');
+        var image = document.createElement('img');
+        var caption = document.createElement('span');
+        tile.type = 'button';
+        tile.className = 'trip-gallery-tile';
+        tile.setAttribute('aria-label', 'Open photo ' + (index + 1) + ': ' + photo.caption);
+        image.src = photo.src;
+        image.alt = photo.alt;
+        image.loading = 'lazy';
+        caption.textContent = photo.caption;
+        tile.appendChild(image);
+        tile.appendChild(caption);
+        tile.addEventListener('click', function () { openViewer(index); });
+        board.appendChild(tile);
+      });
+      if (trigger) {
+        trigger.hidden = !photos.length;
+        trigger.setAttribute('aria-label', 'View gallery, ' + photos.length + ' photos');
+      }
+    }
+
+    function installTrigger() {
+      var hero = document.querySelector('.preview .pvcar, body > header, header, body > .preview, .preview');
+      if (!hero || trigger) return;
+      trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'trip-gallery-trigger';
+      trigger.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></g></svg><span>View gallery</span>';
+      trigger.addEventListener('click', openDialog);
+      hero.appendChild(trigger);
+    }
+
+    function openDialog() {
+      lastFocus = document.activeElement;
+      buildBoard();
+      document.documentElement.classList.add('trip-gallery-open');
+      if (dialog.showModal) dialog.showModal();
+      else dialog.setAttribute('open', '');
+      dialog.classList.remove('is-viewing');
+      window.setTimeout(function () {
+        var first = board.querySelector('.trip-gallery-tile');
+        (first || closeButton).focus();
+      }, 0);
+    }
+
+    function closeDialog() {
+      dialog.classList.remove('is-viewing');
+      viewerImage.removeAttribute('src');
+      if (dialog.close && dialog.open) dialog.close();
+      else dialog.removeAttribute('open');
+      document.documentElement.classList.remove('trip-gallery-open');
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    function openViewer(index) {
+      if (!photos.length) return;
+      activeIndex = Math.max(0, Math.min(photos.length - 1, index));
+      dialog.classList.add('is-viewing');
+      renderViewer();
+    }
+
+    function closeViewer() {
+      dialog.classList.remove('is-viewing');
+      var tile = board.querySelectorAll('.trip-gallery-tile')[activeIndex];
+      if (tile) tile.focus();
+    }
+
+    function renderViewer() {
+      var photo = photos[activeIndex];
+      viewerImage.src = photo.full;
+      viewerImage.alt = photo.alt;
+      viewerCaption.textContent = photo.caption;
+      viewerCount.textContent = (activeIndex + 1) + ' / ' + photos.length;
+    }
+
+    function step(delta) {
+      if (!photos.length || activeIndex < 0) return;
+      activeIndex = (activeIndex + delta + photos.length) % photos.length;
+      renderViewer();
+    }
+
+    installTrigger();
+    buildBoard();
+
+    closeButton.addEventListener('click', closeDialog);
+    viewerClose.addEventListener('click', closeDialog);
+    viewerBack.addEventListener('click', closeViewer);
+    prevButton.addEventListener('click', function () { step(-1); });
+    nextButton.addEventListener('click', function () { step(1); });
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) closeDialog();
     });
-  }
+    dialog.addEventListener('cancel', function (event) {
+      if (dialog.classList.contains('is-viewing')) {
+        event.preventDefault();
+        closeViewer();
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (!dialog.open) return;
+      if (event.key === 'ArrowLeft') { event.preventDefault(); step(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); step(1); }
+      if (event.key === 'Escape' && !dialog.classList.contains('is-viewing')) closeDialog();
+    });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('touchstart', function (event) {
+      if (!event.touches || event.touches.length !== 1) return;
+      touchStartX = event.touches[0].clientX;
+      touchStartY = event.touches[0].clientY;
+    }, { passive: true });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('touchend', function (event) {
+      if (!event.changedTouches || event.changedTouches.length !== 1) return;
+      var dx = event.changedTouches[0].clientX - touchStartX;
+      var dy = event.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > 46 && Math.abs(dx) > Math.abs(dy) * 1.4) step(dx < 0 ? 1 : -1);
+    }, { passive: true });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('wheel', function (event) {
+      if (!dialog.classList.contains('is-viewing') || Math.abs(event.deltaX) < 28) return;
+      event.preventDefault();
+      step(event.deltaX > 0 ? 1 : -1);
+    }, { passive: false });
+  })();
 </script>
 <script>
   /* Responsive day navigator: a scroll-driven vertical dock on wide screens
@@ -1942,4 +2451,14 @@ document.querySelectorAll('.carousel').forEach(function(c){
     if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', requestUpdate);
     else if (desktopQuery.addListener) desktopQuery.addListener(requestUpdate);
   })();
+</script>
+<script>
+  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      var p = location.pathname, i = p.indexOf('/locations/');
+      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
+      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+    });
+  }
 </script>

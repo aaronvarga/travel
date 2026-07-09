@@ -415,7 +415,7 @@ const days = [
   day('day0', 'c0', '0', 'Tue &middot; Jun 8', 'Depart Pittsburgh after work', 'Overnight to Tenerife', 'Est. $90 &middot; airport meals', [
     fact('Sleep', 'Overnight flight'),
     fact('Route target', 'PIT -> DUB/LHR/KEF/EWR -> TFS or TFN'),
-    fact('Constraint', 'No travel during Jun 23-26 Pittsburgh blackout'),
+    fact('Constraint', 'In Pittsburgh all day Jun 24-26; Jun 23 return is allowed'),
   ], 'This early-June plan is chosen because it gets the family home by Tue Jun 22 while still hitting 12 hotel nights.', [], 'Travel day - position toward Tenerife.'),
 
   day('day1', 'c1', '1', 'Wed &middot; Jun 9', 'Arrive Tenerife, settle north', 'Puerto de la Cruz soft landing', 'Est. $180 &middot; groceries, dinner, local walk', [
@@ -493,8 +493,8 @@ const days = [
   day('day13', 'c0', '13', 'Mon-Tue &middot; Jun 21-22', 'Fly Tenerife -> Pittsburgh', 'Home before blackout', 'Est. $110 &middot; airport meals', [
     fact('Sleep', 'Home Tue Jun 22'),
     fact('Route target', 'TFS/TFN -> DUB/LHR/KEF/Europe hub -> PIT'),
-    fact('Blackout', 'Home before Wed Jun 23'),
-  ], 'The trip ends before the untouchable Jun 23-26 Pittsburgh blackout. If a late Monday transatlantic arrives Tuesday, the calendar still works.', [], 'Travel day - leave Tenerife Monday Jun 21, arrive Pittsburgh by Tuesday Jun 22.'),
+    fact('Schedule', 'Home by Tue Jun 22'),
+  ], 'The trip ends before the preferred Jun 23 return date. If a late Monday transatlantic arrives Tuesday, the required full days in Pittsburgh on Jun 24-26 remain protected.', [], 'Travel day - leave Tenerife Monday Jun 21, arrive Pittsburgh by Tuesday Jun 22.'),
 ];
 
 const previewImages = [
@@ -543,7 +543,7 @@ const overview = `<section id="overview">
     <div class="section-label">
       <p class="eyebrow">The Plan at a Glance</p>
       <h2>Madeira's ecological idea, easier Canary Islands logistics</h2>
-      <p>This is the <b>Macaronesian Laurisilva + volcano epic</b> option: Tenerife for Teide, Anaga, Masca, and beach recovery; La Palma for Caldera de Taburiente, Los Tilos, Ruta de los Volcanes, and Roque de los Muchachos. The route is deliberately built to end before the <b>Jun 23-26 Pittsburgh blackout</b>.</p>
+      <p>This is the <b>Macaronesian Laurisilva + volcano epic</b> option: Tenerife for Teide, Anaga, Masca, and beach recovery; La Palma for Caldera de Taburiente, Los Tilos, Ruta de los Volcanes, and Roque de los Muchachos. The route gets home before the preferred Jun 23 return date and protects the required full days in Pittsburgh on <b>Jun 24-26</b>.</p>
     </div>
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>PIT -> Tenerife -> La Palma -> Tenerife -> PIT</h4><p><b>6 nights Tenerife</b>, <b>5 nights La Palma</b>, then <b>1 Tenerife airport buffer</b>. Home by Tue Jun 22.</p></div>
@@ -581,8 +581,8 @@ const overview = `<section id="overview">
   <section id="calendar" class="divider">
     <div class="section-label">
       <p class="eyebrow">Calendar</p>
-      <h2>Jun 8-22 fits the window and misses the blackout</h2>
-      <p>Dates are inside the Jun 6-Aug 15, 2027 planning window and avoid travel on the untouchable Jun 23-26 Pittsburgh blackout.</p>
+      <h2>Jun 8-22 fits the window and protects the Pittsburgh dates</h2>
+      <p>Dates are inside the Jun 6-Aug 15, 2027 planning window, return before the preferred Jun 23 date, and keep the family in Pittsburgh all day Jun 24-26.</p>
     </div>
     ${table(['Date', 'Night', 'Base', 'Purpose'], [
       ['Tue Jun 8', 'Red-eye', 'PIT -> Tenerife', 'After-work departure'],
@@ -650,7 +650,7 @@ const healthTiming = `<section id="health-check" class="divider">
     </div>
     <div class="hc-grid">
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The concept is coherent</h4><p>Tenerife and La Palma are a true Madeira-twin pair: Laurisilva, volcanic national parks, black sand, high ridges, and Atlantic island towns, but with a stronger Tenerife air gateway.</p></div>
-      <div class="hc good"><span class="hc-tag">Solid</span><h4>The blackout is protected</h4><p>Depart Tue Jun 8, fly home Mon Jun 21, and arrive by Tue Jun 22. There is no travel on Jun 23-26.</p></div>
+      <div class="hc good"><span class="hc-tag">Solid</span><h4>The Pittsburgh dates are protected</h4><p>Depart Tue Jun 8, fly home Mon Jun 21, and arrive by Tue Jun 22. That is ahead of the preferred Jun 23 return and the required full days in Pittsburgh on Jun 24-26.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>La Palma hikes must be scaled</h4><p>Caldera and Ruta de los Volcanes are serious if done full-length. The page uses partial/family versions by default, with the full routes as conscious upgrades.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Flights are the budget gate</h4><p>The priced target assumes transatlantic fares near $1,000-$1,150 per person. If the protected family fare climbs above ~$5.9k, this becomes a cap-stress trip.</p></div>
       <div class="hc actnow"><span class="hc-tag">Act now later</span><h4>Bookable inventory timing matters</h4><p>Use July-August 2026 to start tracking, not blindly buying. Buy when protected routing, baggage, seats, and total family price are all inside the gate.</p></div>
@@ -666,11 +666,11 @@ const healthTiming = `<section id="health-check" class="divider">
     </div>
     ${table(['Window', 'Nights', 'PTO', 'Blackout fit', 'Verdict'], [
       ['Jun 8-22', '12 hotel nights', '8-9 days', 'Home before Jun 23', '<b>Use this</b>'],
-      ['Jun 15-29', '12+', '8-9 days', '<b>Invalid</b> - away during Jun 23-26', 'Reject'],
+      ['Jun 15-29', '12+', '8-9 days', '<b>Invalid</b> - away during Jun 24-26', 'Reject'],
       ['Jun 27-Jul 10', '12+', '9 days', 'Valid', 'Backup if early June flights fail'],
       ['Aug 1-14', '12+', '9-10 days', 'Valid', 'Hotter, pricier, more peak-season pressure'],
     ])}
-    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math</h4><p>If Friday Jun 18 is observed for Juneteenth, likely PTO is Jun 9-11, Jun 14-17, and Jun 21-22 if both travel/recovery days are counted: <b>8-9 PTO days</b> depending employer policy and whether Tue Jun 22 is a recovery day. The hard rule is calendar, not PTO: home by Jun 22.</p></div>
+    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math</h4><p>If Friday Jun 18 is observed for Juneteenth, likely PTO is Jun 9-11, Jun 14-17, and Jun 21-22 if both travel/recovery days are counted: <b>8-9 PTO days</b> depending employer policy and whether Tue Jun 22 is a recovery day. The calendar rule allows a Jun 23 return and requires full days in Pittsburgh Jun 24-26; this plan is home a day earlier.</p></div>
   </section>`;
 
 const budgetTips = `<section id="budget" class="divider">
@@ -770,7 +770,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
     <div class="status"><div class="scol settled"><h4>Settled</h4>
       <div class="row"><b>Slug</b><span>canary-islands</span></div>
       <div class="row"><b>Route</b><span>Tenerife 6 nights -> La Palma 5 nights -> Tenerife airport buffer 1 night.</span></div>
-      <div class="row"><b>Dates</b><span>Depart Tue Jun 8, 2027; arrive home by Tue Jun 22; no travel during Jun 23-26 blackout.</span></div>
+      <div class="row"><b>Dates</b><span>Depart Tue Jun 8, 2027; arrive home by Tue Jun 22, ahead of the preferred Jun 23 return and required Pittsburgh days Jun 24-26.</span></div>
       <div class="row"><b>La Palma decision</b><span>Keep it for Caldera, Los Tilos, Ruta de los Volcanes, and Roque; use Tenerife reposition instead of defaulting to Gran Canaria.</span></div>
       <div class="row"><b>Budget verdict</b><span>$12,420 target / $14,690 high case, below the $15k hard cap if airfare and lodging gates hold.</span></div>
     </div><div class="scol open"><h4>Open</h4>
@@ -845,13 +845,13 @@ const scorecard = {
   displayName: 'Canary Islands',
   blurb: 'Madeira twin, easier flights',
   axes: {
-    budget: 3,
-    weather: 5,
-    swim: 4,
+    budget: 1,
+    weather: 4,
+    swim: 3,
     variety: 5,
-    ease: 4,
+    ease: 2,
     food: 3,
-    risk: 3,
+    risk: 2,
     nights: 5,
     novelty: 5,
     pto: 3,
@@ -869,8 +869,8 @@ const scorecard = {
     pto: 0,
   },
   budget: {
-    floorUsd: 11800,
-    ceilUsd: 14690,
+    floorUsd: 12420,
+    ceilUsd: 16690,
     targetUsd: 12000,
     capUsd: 15000,
   },
@@ -880,13 +880,13 @@ const scorecard = {
   },
   facets: {
     continent: 'europe',
-    maxConnections: 2,
+    maxConnections: 3,
     swimTempF: [70, 72],
     noPassport: false,
     singleTicket: true,
     hasSwim: true,
   },
-  totalBaked: 40,
+  totalBaked: 31,
 };
 
 let scripts = template.parts[12].html

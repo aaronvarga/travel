@@ -422,7 +422,7 @@ const days = [
   travelDay('day0', '0', 'Mon &middot; Jun 7', 'Depart Pittsburgh after work', 'Overnight to Tirana via one European hub', 'Est. $90 &middot; airport meals', [
     fact('Sleep', 'Overnight flight'),
     fact('Route target', 'PIT -> VIE / MUC / LHR / IST -> TIA'),
-    fact('Constraint', 'No travel during the Jun 23-26 Pittsburgh blackout'),
+    fact('Constraint', 'In Pittsburgh all day Jun 24-26; Jun 23 return is allowed'),
   ], 'This early-June plan gets the family home by Tue Jun 22 while banking 13 hotel nights. Book it as one open-jaw multi-city ticket: into Tirana, home out of Corfu.'),
 
   day('day1', 'c5', '1', 'Tue &middot; Jun 8', 'Arrive Tirana, soft landing', 'Bunk’Art 2, Skanderbeg Square, bazaar dinner', 'Est. $110 &middot; museum, dinner, walk', [
@@ -506,8 +506,8 @@ const days = [
   travelDay('day14', '14', 'Mon-Tue &middot; Jun 21-22', 'Fly Corfu -> Pittsburgh', 'Home before the blackout', 'Est. $110 &middot; airport meals', [
     fact('Sleep', 'Home by Tue Jun 22'),
     fact('Route target', 'CFU -> VIE / MUC -> PIT'),
-    fact('Blackout', 'Home before Wed Jun 23'),
-  ], 'The trip ends before the untouchable Jun 23-26 Pittsburgh blackout. A Monday departure from Corfu connects through a European hub and arrives Monday or Tuesday.'),
+    fact('Schedule', 'Home by Tue Jun 22'),
+  ], 'The trip arrives before the preferred Jun 23 return date, leaving a buffer before the required full days in Pittsburgh on Jun 24-26. A Monday departure from Corfu connects through a European hub and arrives Monday or Tuesday.'),
 ];
 
 // ---------------------------------------------------------------------------
@@ -541,7 +541,7 @@ const overview = `<section id="overview">
     <div class="section-label">
       <p class="eyebrow">The Plan at a Glance</p>
       <h2>Madeira’s hiking idea, dialed up — with a real swim payoff</h2>
-      <p>This is the <b>alpine-epic + warm-water</b> option: the Theth valley of the <b>Accursed Mountains</b> for dramatically different scenery and serious hiking, then the <b>Albanian Riviera</b> at Ksamil for turquoise, swimmable Ionian water. It is built to end before the <b>Jun 23-26 Pittsburgh blackout</b>.</p>
+      <p>This is the <b>alpine-epic + warm-water</b> option: the Theth valley of the <b>Accursed Mountains</b> for dramatically different scenery and serious hiking, then the <b>Albanian Riviera</b> at Ksamil for turquoise, swimmable Ionian water. It gets home before the preferred Jun 23 return date and protects the required full days in Pittsburgh on <b>Jun 24-26</b>.</p>
     </div>
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>PIT -> Tirana -> Theth -> Ksamil -> Corfu -> PIT</h4><p><b>1 night Tirana</b>, <b>5 nights Theth</b>, <b>6 nights Ksamil</b>, then <b>1 Corfu airport buffer</b>. Open-jaw: fly into Tirana, home out of Corfu. Home by Tue Jun 22.</p></div>
@@ -579,7 +579,7 @@ const overview = `<section id="overview">
 
 const calendar = calendarGrid({
   window: [2027, 6, 7, 6, 21],
-  intro: 'The Jun 7-22, 2027 plan as colored time blocks, coded by <b>activity</b>. It sits inside the Jun 6-Aug 15 window and ends before the untouchable Jun 23-26 Pittsburgh blackout; Juneteenth (observed Fri Jun 18) lands mid-trip as a free active day. <b>Block times are schematic</b> &mdash; they show sequence and rough time-of-day, not real flight or ferry times.',
+  intro: 'The Jun 7-22, 2027 plan as colored time blocks, coded by <b>activity</b>. It sits inside the Jun 6-Aug 15 window and gets home before the preferred Jun 23 return date; the required full Pittsburgh days are Jun 24-26. Juneteenth (observed Fri Jun 18) lands mid-trip as a free active day. <b>Block times are schematic</b> &mdash; they show sequence and rough time-of-day, not real flight or ferry times.',
   tripDays: [
     { date: [6, 7], blocks: [{ act: 'air', start: 20, end: 23, label: 'Fly PIT &rarr; hub' }] },
     { date: [6, 8], blocks: [{ act: 'air', start: 8, end: 11, label: 'Land Tirana' }, { act: 'town', start: 16, end: 20, label: 'Bunk&rsquo;Art 2 + bazaar' }] },
@@ -662,7 +662,7 @@ const healthTiming = `<section id="health-check" class="divider">
     </div>
     <div class="hc-grid">
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The concept is coherent</h4><p>Theth delivers the alpine epic and dramatically different scenery; Ksamil delivers the warm-water swim. It is a genuine Madeira upgrade, not a lateral move.</p></div>
-      <div class="hc good"><span class="hc-tag">Solid</span><h4>The blackout is protected</h4><p>Depart Mon Jun 7, ferry to Corfu Jun 20, fly home Jun 21, arrive by Jun 22. No travel on Jun 23-26.</p></div>
+      <div class="hc good"><span class="hc-tag">Solid</span><h4>The Pittsburgh dates are protected</h4><p>Depart Mon Jun 7, ferry to Corfu Jun 20, fly home Jun 21, arrive by Jun 22. That is ahead of the preferred Jun 23 return and the required full days in Pittsburgh on Jun 24-26.</p></div>
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The budget has huge headroom</h4><p>Even the high case (~$13.9k) clears the $15k cap, and the target (~$9.7k) is well under $12k. Albania is cheap; airfare is the only big line.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>The Valbona pass vs an 8-year-old</h4><p>The full crossing is 7-9 hr over a 1,800 m col — a real stretch for the 8-year-old. Default to the out-and-back; treat the full crossing as a guided, mule-assisted upgrade.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Early-June snow on the col</h4><p>The Valbona pass is snow-closed until roughly early-to-mid June; Jun 9-13 is usually walkable but at the boundary. Verify with the guesthouse a few days out and keep a Grunas/Koman fallback.</p></div>
@@ -678,11 +678,11 @@ const healthTiming = `<section id="health-check" class="divider">
     </div>
     ${table(['Window', 'Nights', 'PTO', 'Blackout fit', 'Verdict'], [
       ['Jun 7-22', '13 hotel nights', '~9 days', 'Home before Jun 23', '<b>Use this</b>'],
-      ['Jun 15-29', '13+', '~9 days', '<b>Invalid</b> - away during Jun 23-26', 'Reject'],
+      ['Jun 15-29', '13+', '~9 days', '<b>Invalid</b> - away during Jun 24-26', 'Reject'],
       ['Jun 27-Jul 10', '13+', '~9 days', 'Valid', 'Backup; warmer sea but the pass is fully open'],
       ['Aug 1-14', '13+', '~10 days', 'Valid', 'Hotter, busier Riviera, higher prices'],
     ])}
-    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math</h4><p>Departing Mon Jun 7 after work costs no PTO that day. Weekdays needing PTO: Jun 8-11 and Jun 14-17 (eight days), with <b>Fri Jun 18 free if the employer observes Juneteenth</b>, plus Jun 21-22 for travel/recovery: about <b>9 PTO days</b>. The hard rule is the calendar, not PTO: home by Jun 22.</p></div>
+    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math</h4><p>Departing Mon Jun 7 after work costs no PTO that day. Weekdays needing PTO: Jun 8-11 and Jun 14-17 (eight days), with <b>Fri Jun 18 free if the employer observes Juneteenth</b>, plus Jun 21-22 for travel/recovery: about <b>9 PTO days</b>. The calendar rule allows a Jun 23 return and requires full days in Pittsburgh Jun 24-26; this plan is home a day earlier.</p></div>
   </section>`;
 
 // ---------------------------------------------------------------------------
@@ -789,7 +789,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
     <div class="status"><div class="scol settled"><h4>Settled</h4>
       <div class="row"><b>Slug</b><span>albania</span></div>
       <div class="row"><b>Route</b><span>Tirana 1 night -> Theth 5 nights -> Ksamil 6 nights -> Corfu airport buffer 1 night.</span></div>
-      <div class="row"><b>Dates</b><span>Depart Mon Jun 7, 2027; arrive home by Tue Jun 22; no travel during Jun 23-26 blackout.</span></div>
+      <div class="row"><b>Dates</b><span>Depart Mon Jun 7, 2027; arrive home by Tue Jun 22, ahead of the preferred Jun 23 return and required Pittsburgh days Jun 24-26.</span></div>
       <div class="row"><b>Air strategy</b><span>Open-jaw: into Tirana, home out of Corfu, one rental car, 30-min Sarande-Corfu ferry as the exit.</span></div>
       <div class="row"><b>Budget verdict</b><span>~$9,715 target / ~$14,230 high case — well under the $12k target and the $15k cap.</span></div>
     </div><div class="scol open"><h4>Open</h4>
@@ -885,7 +885,7 @@ let scripts = T.parts[12].html
 const scorecard = assertBaked({
   displayName: 'Albania',
   blurb: 'Alpine epic + a warm swim',
-  axes: { budget: 5, weather: 4, swim: 5, variety: 5, ease: 3, food: 4, risk: 3, nights: 5, novelty: 5, pto: 3 },
+  axes: { budget: 5, weather: 4, swim: 5, variety: 5, ease: 3, food: 4, risk: 3, nights: 5, novelty: 5, pto: 2 },
   weightDefaults: { budget: 2, weather: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, nights: 1, novelty: 1, pto: 0 },
   budget: { floorUsd: 9715, ceilUsd: 14230, targetUsd: 12000, capUsd: 15000 },
   pto: { days: 9, nights: 13 },

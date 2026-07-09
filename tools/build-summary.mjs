@@ -15,6 +15,7 @@ const dataDir = path.join(root, 'src', '_data');
 const statusPath = path.join(root, 'assets', 'section-status.json');
 const outPath = path.join(root, 'assets', 'trips-summary.json');
 const manifest = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'scorecard.manifest.json'), 'utf8'));
+const decisionProfile = JSON.parse(fs.readFileSync(path.join(dataDir, 'decisionProfile.json'), 'utf8'));
 
 const status = fs.existsSync(statusPath) ? JSON.parse(fs.readFileSync(statusPath, 'utf8')) : {};
 const ignoredSlugs = new Set(['smoketest']);
@@ -63,6 +64,11 @@ for (const slug of slugs) {
     pto: sc.pto,
     facets: sc.facets,
     totalBaked: sc.totalBaked,
+    travelWindow: decisionProfile.tripWindows[slug],
+    routeReadiness: decisionProfile.routeReadiness[slug] || 'planning-proxy',
+    budgetStatus: sc.budget.ceilUsd <= sc.budget.capUsd
+      ? 'cap-clean'
+      : sc.budget.floorUsd <= sc.budget.capUsd ? 'quote-gated' : 'over-cap',
     completeness: st ? { complete: st.complete, total: st.total } : null,
     href: `locations/${slug}/index.html`,
   });

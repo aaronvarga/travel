@@ -1083,7 +1083,7 @@ footer a{color:var(--muted)}
     <div class="section-label">
       <p class="eyebrow">The Plan at a Glance</p>
       <h2>Bigger hikes, warmer water</h2>
-      <p>This is the <b>alpine-epic + warm-water</b> option: the Theth valley of the <b>Accursed Mountains</b> for dramatically different scenery and serious hiking, then the <b>Albanian Riviera</b> at Ksamil for turquoise, swimmable Ionian water. It is built to end before the <b>Jun 23-26 Pittsburgh blackout</b>.</p>
+      <p>This is the <b>alpine-epic + warm-water</b> option: the Theth valley of the <b>Accursed Mountains</b> for dramatically different scenery and serious hiking, then the <b>Albanian Riviera</b> at Ksamil for turquoise, swimmable Ionian water. It is built to end before the <b>Jun 24-26 Pittsburgh blackout</b>.</p>
     </div>
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>PIT -> Tirana -> Theth -> Ksamil -> Corfu -> PIT</h4><p><b>1 night Tirana</b>, <b>5 nights Theth</b>, <b>6 nights Ksamil</b>, then <b>1 Corfu airport buffer</b>. Open-jaw: fly into Tirana, home out of Corfu. Home by Tue Jun 22.</p></div>
@@ -1113,7 +1113,7 @@ footer a{color:var(--muted)}
           <ul style="margin:0;padding-left:18px;color:var(--muted);line-height:1.55;font-size:.94rem">
           <li>The full Valbona pass is a 7-9 hr mountain day; with an 8-year-old, this needs a guide, mule/taxi fallback, or a shorter out-and-back plan.</li>
           <li>The Theth road, cash-only guesthouses, patchy signal, and long drive to the Riviera make this more rugged than the Mediterranean island trips.</li>
-          <li>Nine PTO days is heavier than the easiest options, even though the route gets 13 nights and keeps travel clear of Jun 23-26.</li>
+          <li>Nine PTO days is heavier than the easiest options, even though the route gets 13 nights and keeps travel clear of Jun 24-26.</li>
           </ul>
         </div>
       </div>
@@ -1152,7 +1152,7 @@ footer a{color:var(--muted)}
     <div class="section-label">
       <p class="eyebrow">Week at a Glance</p>
       <h2>Calendar</h2>
-      <p>The Jun 7-22, 2027 plan as colored time blocks, coded by <b>activity</b>. It sits inside the Jun 6-Aug 15 window and ends before the untouchable Jun 23-26 Pittsburgh blackout; Juneteenth (observed Fri Jun 18) lands mid-trip as a free active day. <b>Block times are schematic</b> &mdash; they show sequence and rough time-of-day, not real flight or ferry times.</p>
+      <p>The Jun 7-22, 2027 plan as colored time blocks, coded by <b>activity</b>. It sits inside the Jun 6-Aug 15 window and ends before the required full Pittsburgh days Jun 24-26; Juneteenth (observed Fri Jun 18) lands mid-trip as a free active day. <b>Block times are schematic</b> &mdash; they show sequence and rough time-of-day, not real flight or ferry times.</p>
     </div>
     <style>
       .cal-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
@@ -1249,13 +1249,84 @@ footer a{color:var(--muted)}
       <h2>Day by day</h2>
       <p>Swipe each carousel for photos. Every stop carries its cost, a money-saving tip, a splurge, picky-kid restaurants, backup / if-time ideas, blog links, and a map. Daily costs are food + activities only, not flights, lodging, or the car.</p>
 </div>
+      <nav class="day-dock" aria-label="Jump to an itinerary day" hidden>
+        <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+          <symbol id="day-dock-icon-plane" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></symbol>
+          <symbol id="day-dock-icon-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.65 5H8.4a2 2 0 0 0-1.9 1.26L5 10 3 8m4 6h.01M17 14h.01"/><rect width="18" height="8" x="3" y="10" rx="2"/><path d="M5 18v2m14-2v2"/></g></symbol>
+          <symbol id="day-dock-icon-ship" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 10.19V14m0-12v3m7 8V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.19-3.64a2 2 0 0 0-1.62 0L3 14a11.6 11.6 0 0 0 2.81 7.76"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></g></symbol>
+          <symbol id="day-dock-icon-map" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></g></symbol>
+        </svg>
+        <div class="day-dock-caption" aria-hidden="true"><span></span><strong></strong></div>
+        <div class="day-dock-track">
+          <a class="day-dock-item" href="#day0" data-day-id="day0" aria-label="Jump to day 0">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">0</span></span>
+            <span class="day-dock-tooltip"><span>Mon &middot; Jun 7 · Day 0</span><strong>Depart Pittsburgh after work</strong><small>Overnight to Tirana via one European hub</small></span>
+          </a>
+          <a class="day-dock-item" href="#day1" data-day-id="day1" aria-label="Jump to day 1">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">1</span></span>
+            <span class="day-dock-tooltip"><span>Tue &middot; Jun 8 · Day 1</span><strong>Arrive Tirana, soft landing</strong><small>Bunk’Art 2, Skanderbeg Square, bazaar dinner</small></span>
+          </a>
+          <a class="day-dock-item" href="#day2" data-day-id="day2" aria-label="Jump to day 2">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">2</span></span>
+            <span class="day-dock-tooltip"><span>Wed &middot; Jun 9 · Day 2</span><strong>Drive north to the Alps</strong><small>Tirana -> Shkoder -> Theth</small></span>
+          </a>
+          <a class="day-dock-item" href="#day3" data-day-id="day3" aria-label="Jump to day 3">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">3</span></span>
+            <span class="day-dock-tooltip"><span>Thu &middot; Jun 10 · Day 3</span><strong>Theth on foot</strong><small>Grunas Waterfall + church + kulla towers</small></span>
+          </a>
+          <a class="day-dock-item" href="#day4" data-day-id="day4" aria-label="Jump to day 4">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">4</span></span>
+            <span class="day-dock-tooltip"><span>Fri &middot; Jun 11 · Day 4</span><strong>Blue Eye of Theth</strong><small>Turquoise glacial spring, kid-friendly</small></span>
+          </a>
+          <a class="day-dock-item" href="#day5" data-day-id="day5" aria-label="Jump to day 5">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">5</span></span>
+            <span class="day-dock-tooltip"><span>Sat &middot; Jun 12 · Day 5</span><strong>Valbona Pass day</strong><small>The epic — full crossing or turn-back</small></span>
+          </a>
+          <a class="day-dock-item" href="#day6" data-day-id="day6" aria-label="Jump to day 6">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">6</span></span>
+            <span class="day-dock-tooltip"><span>Sun &middot; Jun 13 · Day 6</span><strong>Koman Lake ferry</strong><small>Fjord-canyon boat + Shala River swim</small></span>
+          </a>
+          <a class="day-dock-item" href="#day7" data-day-id="day7" aria-label="Jump to day 7">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">7</span></span>
+            <span class="day-dock-tooltip"><span>Mon &middot; Jun 14 · Day 7</span><strong>The big drive to the Riviera</strong><small>Theth -> Llogara -> Ksamil</small></span>
+          </a>
+          <a class="day-dock-item" href="#day8" data-day-id="day8" aria-label="Jump to day 8">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">8</span></span>
+            <span class="day-dock-tooltip"><span>Tue &middot; Jun 15 · Day 8</span><strong>Ksamil beaches & islets</strong><small>The Caribbean-clear swim payoff</small></span>
+          </a>
+          <a class="day-dock-item" href="#day9" data-day-id="day9" aria-label="Jump to day 9">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">9</span></span>
+            <span class="day-dock-tooltip"><span>Wed &middot; Jun 16 · Day 9</span><strong>Butrint, then the beach</strong><small>UNESCO ruins morning + Ksamil afternoon</small></span>
+          </a>
+          <a class="day-dock-item" href="#day10" data-day-id="day10" aria-label="Jump to day 10">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">10</span></span>
+            <span class="day-dock-tooltip"><span>Thu &middot; Jun 17 · Day 10</span><strong>The wild north coast</strong><small>Himare, Gjipe & Porto Palermo</small></span>
+          </a>
+          <a class="day-dock-item" href="#day11" data-day-id="day11" aria-label="Jump to day 11">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">11</span></span>
+            <span class="day-dock-tooltip"><span>Fri &middot; Jun 18 · Day 11</span><strong>Blue Eye + boat day</strong><small>Juneteenth observed: a no-PTO water day</small></span>
+          </a>
+          <a class="day-dock-item" href="#day12" data-day-id="day12" aria-label="Jump to day 12">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">12</span></span>
+            <span class="day-dock-tooltip"><span>Sat &middot; Jun 19 · Day 12</span><strong>Flex beach day</strong><small>Islets, Mirror Beach, or one more boat</small></span>
+          </a>
+          <a class="day-dock-item" href="#day13" data-day-id="day13" aria-label="Jump to day 13">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">13</span></span>
+            <span class="day-dock-tooltip"><span>Sun &middot; Jun 20 · Day 13</span><strong>Ferry to Corfu</strong><small>Drop the car in Sarande, cross to Greece</small></span>
+          </a>
+          <a class="day-dock-item" href="#day14" data-day-id="day14" aria-label="Jump to day 14">
+            <span class="day-dock-thumb" aria-hidden="true"><svg class="day-dock-fallback" viewBox="0 0 24 24"><use href="#day-dock-icon-map"></use></svg><span class="day-dock-number">14</span></span>
+            <span class="day-dock-tooltip"><span>Mon-Tue &middot; Jun 21-22 · Day 14</span><strong>Fly Corfu -> Pittsburgh</strong><small>Home before the blackout</small></span>
+          </a>
+        </div>
+      </nav>
       <div class="days"><article class="day c0" id="day0">
       <div class="day-head">
         <div class="day-badge">0</div>
         <div class="day-title"><p class="eyebrow">Mon &middot; Jun 7</p><h3>Depart Pittsburgh after work</h3><p class="feel">Overnight to Tirana via one European hub</p><p class="daycost">Est. $90 &middot; airport meals</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Overnight flight</strong></div><div><span>Route target</span><strong>PIT -> VIE / MUC / LHR / IST -> TIA</strong></div><div><span>Constraint</span><strong>No travel during the Jun 23-26 Pittsburgh blackout</strong></div></div>
+        <div class="facts"><div><span>Sleep</span><strong>Overnight flight</strong></div><div><span>Route target</span><strong>PIT -> VIE / MUC / LHR / IST -> TIA</strong></div><div><span>Constraint</span><strong>In Pittsburgh all day Jun 24-26; Jun 23 return is allowed</strong></div></div>
         <p class="note">This early-June plan gets the family home by Tue Jun 22 while banking 13 hotel nights. Book it as one open-jaw multi-city ticket: into Tirana, home out of Corfu.</p>
       </div>
       <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day &mdash; no stops</div></div>
@@ -1635,8 +1706,8 @@ footer a{color:var(--muted)}
         <div class="day-title"><p class="eyebrow">Mon-Tue &middot; Jun 21-22</p><h3>Fly Corfu -> Pittsburgh</h3><p class="feel">Home before the blackout</p><p class="daycost">Est. $110 &middot; airport meals</p></div>
       </div>
       <div class="logistics">
-        <div class="facts"><div><span>Sleep</span><strong>Home by Tue Jun 22</strong></div><div><span>Route target</span><strong>CFU -> VIE / MUC -> PIT</strong></div><div><span>Blackout</span><strong>Home before Wed Jun 23</strong></div></div>
-        <p class="note">The trip ends before the untouchable Jun 23-26 Pittsburgh blackout. A Monday departure from Corfu connects through a European hub and arrives Monday or Tuesday.</p>
+        <div class="facts"><div><span>Sleep</span><strong>Home by Tue Jun 22</strong></div><div><span>Route target</span><strong>CFU -> VIE / MUC -> PIT</strong></div><div><span>Blackout</span><strong>Home by Tue Jun 22</strong></div></div>
+        <p class="note">The trip ends before the required full Pittsburgh days Jun 24-26. A Monday departure from Corfu connects through a European hub and arrives Monday or Tuesday.</p>
       </div>
       <div class="spots-wrap"><div class="travel-note">&#9992;&#65038; Travel day &mdash; no stops</div></div>
     </article></div>
@@ -1739,7 +1810,7 @@ footer a{color:var(--muted)}
     </div>
     <div class="hc-grid">
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The concept is coherent</h4><p>Theth delivers the alpine epic and dramatically different scenery; Ksamil delivers the warm-water swim. It is a genuine Madeira upgrade, not a lateral move.</p></div>
-      <div class="hc good"><span class="hc-tag">Solid</span><h4>The blackout is protected</h4><p>Depart Mon Jun 7, ferry to Corfu Jun 20, fly home Jun 21, arrive by Jun 22. No travel on Jun 23-26.</p></div>
+      <div class="hc good"><span class="hc-tag">Solid</span><h4>The Pittsburgh dates are protected</h4><p>Depart Mon Jun 7, ferry to Corfu Jun 20, fly home Jun 21, arrive by Jun 22. No travel on Jun 24-26.</p></div>
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The budget has huge headroom</h4><p>Even the high case (~$13.9k) clears the $15k cap, and the target (~$9.7k) is well under $12k. Albania is cheap; airfare is the only big line.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>The Valbona pass vs an 8-year-old</h4><p>The full crossing is 7-9 hr over a 1,800 m col — a real stretch for the 8-year-old. Default to the out-and-back; treat the full crossing as a guided, mule-assisted upgrade.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Early-June snow on the col</h4><p>The Valbona pass is snow-closed until roughly early-to-mid June; Jun 9-13 is usually walkable but at the boundary. Verify with the guesthouse a few days out and keep a Grunas/Koman fallback.</p></div>
@@ -1753,8 +1824,8 @@ footer a{color:var(--muted)}
       <h2>Why this June window wins</h2>
       <p>It gives 13 hotel nights, uses Juneteenth (observed Fri Jun 18) as a no-PTO active day, opens the Valbona pass, and warms the Ionian — all before the blackout.</p>
     </div>
-    <div class="budget-scroll"><table class="budget-tbl"><tbody><tr><th>Window</th><th>Nights</th><th>PTO</th><th>Blackout fit</th><th>Verdict</th></tr><tr><td>Jun 7-22</td><td>13 hotel nights</td><td>~9 days</td><td>Home before Jun 23</td><td><b>Use this</b></td></tr><tr><td>Jun 15-29</td><td>13+</td><td>~9 days</td><td><b>Invalid</b> - away during Jun 23-26</td><td>Reject</td></tr><tr><td>Jun 27-Jul 10</td><td>13+</td><td>~9 days</td><td>Valid</td><td>Backup; warmer sea but the pass is fully open</td></tr><tr><td>Aug 1-14</td><td>13+</td><td>~10 days</td><td>Valid</td><td>Hotter, busier Riviera, higher prices</td></tr></tbody></table></div>
-    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math</h4><p>Departing Mon Jun 7 after work costs no PTO that day. Weekdays needing PTO: Jun 8-11 and Jun 14-17 (eight days), with <b>Fri Jun 18 free if the employer observes Juneteenth</b>, plus Jun 21-22 for travel/recovery: about <b>9 PTO days</b>. The hard rule is the calendar, not PTO: home by Jun 22.</p></div>
+    <div class="budget-scroll"><table class="budget-tbl"><tbody><tr><th>Window</th><th>Nights</th><th>PTO</th><th>Blackout fit</th><th>Verdict</th></tr><tr><td>Jun 7-22</td><td>13 hotel nights</td><td>~9 days</td><td>Home before Jun 23</td><td><b>Use this</b></td></tr><tr><td>Jun 15-29</td><td>13+</td><td>~9 days</td><td><b>Invalid</b> - away during Jun 24-26</td><td>Reject</td></tr><tr><td>Jun 27-Jul 10</td><td>13+</td><td>~9 days</td><td>Valid</td><td>Backup; warmer sea but the pass is fully open</td></tr><tr><td>Aug 1-14</td><td>13+</td><td>~10 days</td><td>Valid</td><td>Hotter, busier Riviera, higher prices</td></tr></tbody></table></div>
+    <div class="verdict-box" style="border-left-color:var(--c3);margin-top:18px"><h4>PTO math</h4><p>Departing Mon Jun 7 after work costs no PTO that day. Weekdays needing PTO: Jun 8-11 and Jun 14-17 (eight days), with <b>Fri Jun 18 free if the employer observes Juneteenth</b>, plus Jun 21-22 for travel/recovery: about <b>9 PTO days</b>. The calendar rule allows a Jun 23 return and requires full days in Pittsburgh Jun 24-26; this plan is home a day earlier.</p></div>
   </section><section id="todo" class="divider pretrip-todo">
       <style>.pretrip-todo .todo-grid{display:grid;gap:12px}.pretrip-todo .todo-block{display:grid;grid-template-columns:minmax(150px,220px) minmax(0,1fr);column-gap:22px;row-gap:6px;width:100%;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c1);border-radius:12px;padding:16px 18px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.pretrip-todo .todo-block.hot{border-left-color:#c0392b}.pretrip-todo .todo-block.watch{border-left-color:var(--gold)}.pretrip-todo .todo-block.done{border-left-color:var(--c3)}.pretrip-todo .todo-when{grid-row:1/4;align-self:start;display:inline-block;margin:0;padding:4px 10px;border-radius:999px;background:rgba(31,111,120,.1);color:var(--c1);font-size:.72rem;font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-align:center}.pretrip-todo .todo-block.hot .todo-when{background:rgba(192,57,43,.1);color:#a23625}.pretrip-todo .todo-block.watch .todo-when{background:rgba(217,164,65,.16);color:#8a641e}.pretrip-todo .todo-block.done .todo-when{background:rgba(63,125,78,.12);color:var(--c3)}.pretrip-todo h3{grid-column:2;margin:0;font-size:1.12rem;font-weight:600;line-height:1.18}.pretrip-todo .todo-note{grid-column:2;margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}.pretrip-todo ul{grid-column:2;margin:4px 0 0;padding:0;list-style:none;display:grid;gap:8px}.pretrip-todo li{position:relative;padding-left:16px;color:var(--muted);font-size:.88rem;line-height:1.45}.pretrip-todo li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}.pretrip-todo li b{color:var(--ink)}.pretrip-todo .todo-callout{margin-top:18px;padding:16px 18px;border:1px solid var(--line);border-left:5px solid var(--c2);border-radius:12px;background:var(--card);box-shadow:0 10px 28px rgba(30,32,28,.08);color:var(--muted);font-size:.9rem;line-height:1.55}.pretrip-todo .todo-callout b{color:var(--ink)}@media(max-width:720px){.pretrip-todo .todo-block{grid-template-columns:1fr;padding:16px}.pretrip-todo .todo-when{grid-row:auto;justify-self:start;text-align:left}.pretrip-todo h3,.pretrip-todo .todo-note,.pretrip-todo ul{grid-column:1}}</style>
       <div class="section-label"><p class="eyebrow">Pre-Departure To-Do</p><h2>What to do when</h2><p>Updated July 2026: deadlines separate <b>tracking</b>, <b>refundable holds</b>, and <b>real booking windows</b> so the list does not create false urgency a year out.</p></div>
@@ -1868,7 +1939,7 @@ footer a{color:var(--muted)}
     <div class="status"><div class="scol settled"><h4>Settled</h4>
       <div class="row"><b>Slug</b><span>albania</span></div>
       <div class="row"><b>Route</b><span>Tirana 1 night -> Theth 5 nights -> Ksamil 6 nights -> Corfu airport buffer 1 night.</span></div>
-      <div class="row"><b>Dates</b><span>Depart Mon Jun 7, 2027; arrive home by Tue Jun 22; no travel during Jun 23-26 blackout.</span></div>
+      <div class="row"><b>Dates</b><span>Depart Mon Jun 7, 2027; arrive home by Tue Jun 22; no travel during Jun 24-26 blackout.</span></div>
       <div class="row"><b>Air strategy</b><span>Open-jaw: into Tirana, home out of Corfu, one rental car, 30-min Sarande-Corfu ferry as the exit.</span></div>
       <div class="row"><b>Budget verdict</b><span>~$9,715 target / ~$14,230 high case — well under the $12k target and the $15k cap.</span></div>
     </div><div class="scol open"><h4>Open</h4>
@@ -2077,6 +2148,34 @@ document.querySelectorAll('.carousel').forEach(function(c){
 </script>
 <script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>
 <style>
+  /* Keep itinerary heroes cinematic without making visitors scroll a full
+     viewport before reaching the plan. Covers both current and legacy heroes. */
+  body > header {
+    min-height: clamp(500px, 64vh, 680px);
+    min-height: clamp(500px, 64svh, 680px);
+  }
+  body > .preview {
+    min-height: clamp(500px, 64vh, 680px);
+    min-height: clamp(500px, 64svh, 680px);
+  }
+  body > .preview .pvcar .track img {
+    height: clamp(500px, 64vh, 680px);
+    height: clamp(500px, 64svh, 680px);
+  }
+  @media (max-width: 820px) {
+    body > header {
+      min-height: clamp(460px, 62vh, 560px);
+      min-height: clamp(460px, 62svh, 560px);
+    }
+    body > .preview { min-height: auto; }
+    body > .preview .pv-pane { gap: 12px; padding-block: 22px; }
+    body > .preview .pvcar .track img {
+      height: clamp(280px, 40vh, 380px);
+      height: clamp(280px, 40svh, 380px);
+    }
+  }
+</style>
+<style>
   /* Phase 7 — print/PDF degradation for itineraries. Scoped with @media print
      (NOT just a media="print" attribute): this <style> is emitted after </html>
      and reparented into the body, where the media attribute is not reliably
@@ -2104,6 +2203,253 @@ document.querySelectorAll('.carousel').forEach(function(c){
     a[href] { color: inherit; }
   }
 </style>
+<style>
+  .preview,
+  .pvcar { position: relative; }
+  .trip-gallery-trigger {
+    position: absolute;
+    z-index: 4;
+    right: clamp(18px, 4vw, 56px);
+    bottom: clamp(18px, 6vh, 58px);
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    min-height: 44px;
+    padding: 11px 16px;
+    border: 1px solid #17130f;
+    border-radius: 999px;
+    background: #fffdf8;
+    color: #17130f;
+    box-shadow: 0 16px 36px rgba(0,0,0,.34);
+    font: 900 .82rem/1 "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .trip-gallery-trigger svg { width: 18px; height: 18px; flex: 0 0 auto; }
+  .trip-gallery-trigger:hover { background: #f6f1e7; }
+  .trip-gallery-trigger:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 3px; }
+  .trip-gallery-dialog {
+    width: min(1360px, calc(100vw - 28px));
+    max-width: none;
+    height: min(900px, calc(100dvh - 28px));
+    max-height: none;
+    padding: 0;
+    border: 1px solid rgba(246,241,231,.2);
+    border-radius: 18px;
+    background: #17130f;
+    color: #f6f1e7;
+    box-shadow: 0 36px 120px rgba(0,0,0,.58);
+    overflow: hidden;
+  }
+  .trip-gallery-dialog::backdrop { background: rgba(12,10,8,.82); backdrop-filter: blur(6px); }
+  .trip-gallery-shell { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr); }
+  .trip-gallery-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 15px clamp(14px, 2.6vw, 26px);
+    border-bottom: 1px solid rgba(246,241,231,.14);
+    background: rgba(23,19,15,.98);
+  }
+  .trip-gallery-head h2 {
+    margin: 0;
+    color: #fff;
+    font-family: "Fraunces", "Georgia", serif;
+    font-size: clamp(1.2rem, 2.4vw, 1.8rem);
+    font-weight: 650;
+    letter-spacing: 0;
+  }
+  .trip-gallery-count {
+    margin: 2px 0 0;
+    color: rgba(246,241,231,.66);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .trip-gallery-close,
+  .trip-gallery-viewer-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(246,241,231,.24);
+    border-radius: 999px;
+    background: rgba(246,241,231,.1);
+    color: #fff;
+    font-size: 1.45rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .trip-gallery-close:hover,
+  .trip-gallery-viewer-btn:hover { background: rgba(246,241,231,.2); }
+  .trip-gallery-close:focus-visible,
+  .trip-gallery-viewer-btn:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 2px; }
+  .trip-gallery-scroll {
+    min-height: 0;
+    overflow: auto;
+    padding: clamp(12px, 2vw, 22px);
+    background: #211c16;
+  }
+  .trip-gallery-board {
+    column-count: 4;
+    column-gap: clamp(10px, 1.5vw, 16px);
+  }
+  .trip-gallery-tile {
+    display: block;
+    width: 100%;
+    break-inside: avoid;
+    margin: 0 0 clamp(10px, 1.5vw, 16px);
+    padding: 0;
+    border: 1px solid rgba(246,241,231,.14);
+    border-radius: 12px;
+    background: #2a231b;
+    color: #fff;
+    box-shadow: 0 16px 30px rgba(0,0,0,.22);
+    overflow: hidden;
+    cursor: zoom-in;
+    text-align: left;
+  }
+  .trip-gallery-tile img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #3a3128;
+  }
+  .trip-gallery-tile span {
+    display: block;
+    padding: 9px 10px 10px;
+    color: rgba(246,241,231,.84);
+    font-size: .78rem;
+    font-weight: 800;
+    line-height: 1.25;
+  }
+  .trip-gallery-tile:hover { border-color: rgba(246,241,231,.36); }
+  .trip-gallery-tile:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 3px; }
+  .trip-gallery-viewer {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: none;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    background: rgba(12,10,8,.98);
+  }
+  .trip-gallery-dialog.is-viewing .trip-gallery-viewer { display: grid; }
+  .trip-gallery-viewer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px clamp(12px, 2vw, 20px);
+  }
+  .trip-gallery-viewer-count {
+    color: rgba(246,241,231,.68);
+    font-size: .78rem;
+    font-weight: 900;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+  }
+  .trip-gallery-stage {
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr) 58px;
+    align-items: center;
+    gap: 8px;
+    padding: 0 clamp(8px, 2vw, 20px);
+    touch-action: pan-y;
+  }
+  .trip-gallery-frame {
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+  .trip-gallery-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 24px 80px rgba(0,0,0,.45);
+    user-select: none;
+  }
+  .trip-gallery-caption {
+    min-height: 58px;
+    padding: 10px clamp(16px, 3vw, 34px) 18px;
+    color: rgba(246,241,231,.84);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .trip-gallery-empty {
+    padding: 28px;
+    color: rgba(246,241,231,.72);
+    font-weight: 800;
+  }
+  @media (max-width: 980px) {
+    .trip-gallery-board { column-count: 3; }
+    .trip-gallery-trigger { right: 18px; bottom: 18px; }
+  }
+  @media (max-width: 680px) {
+    .trip-gallery-dialog {
+      width: 100vw;
+      height: 100dvh;
+      border: 0;
+      border-radius: 0;
+    }
+    .trip-gallery-board { column-count: 2; }
+    .trip-gallery-head { align-items: flex-start; }
+    .trip-gallery-trigger {
+      left: 18px;
+      right: auto;
+      bottom: calc(18px + env(safe-area-inset-bottom));
+      min-height: 42px;
+      padding: 10px 14px;
+      font-size: .76rem;
+    }
+    .trip-gallery-stage {
+      grid-template-columns: 1fr;
+      padding: 0 10px;
+    }
+    .trip-gallery-stage .trip-gallery-viewer-btn { display: none; }
+  }
+  @media print {
+    .trip-gallery-trigger,
+    .trip-gallery-dialog { display: none !important; }
+  }
+</style>
+<dialog class="trip-gallery-dialog" id="tripGalleryDialog" aria-label="Trip photo gallery">
+  <div class="trip-gallery-shell">
+    <div class="trip-gallery-head">
+      <div>
+        <h2>Photo Gallery</h2>
+        <p class="trip-gallery-count">Photos</p>
+      </div>
+      <button class="trip-gallery-close" type="button" aria-label="Close gallery">&times;</button>
+    </div>
+    <div class="trip-gallery-scroll">
+      <div class="trip-gallery-board" id="tripGalleryBoard"></div>
+      <p class="trip-gallery-empty" hidden>No gallery photos found.</p>
+    </div>
+    <div class="trip-gallery-viewer" aria-live="polite">
+      <div class="trip-gallery-viewer-top">
+        <button class="trip-gallery-viewer-btn trip-gallery-viewer-back" type="button" aria-label="Back to gallery">&times;</button>
+        <div class="trip-gallery-viewer-count"></div>
+        <button class="trip-gallery-viewer-btn trip-gallery-viewer-close" type="button" aria-label="Close gallery">&times;</button>
+      </div>
+      <div class="trip-gallery-stage">
+        <button class="trip-gallery-viewer-btn trip-gallery-prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <div class="trip-gallery-frame"><img alt=""></div>
+        <button class="trip-gallery-viewer-btn trip-gallery-next" type="button" aria-label="Next photo">&#8250;</button>
+      </div>
+      <div class="trip-gallery-caption"></div>
+    </div>
+  </div>
+</dialog>
 <script>
   /* Force-load lazy images and open <details> before printing so nothing is
      blank or collapsed in the PDF. */
@@ -2122,14 +2468,197 @@ document.querySelectorAll('.carousel').forEach(function(c){
   })();
 </script>
 <script>
-  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      var p = location.pathname, i = p.indexOf('/locations/');
-      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
-      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+  /* Trip-wide photo gallery: gathers the rendered carousel photos into one
+     masonry board, then lets the user browse the set with keys or swipes. */
+  (function () {
+    var dialog = document.getElementById('tripGalleryDialog');
+    var board = document.getElementById('tripGalleryBoard');
+    if (!dialog || !board) return;
+
+    var closeButton = dialog.querySelector('.trip-gallery-close');
+    var empty = dialog.querySelector('.trip-gallery-empty');
+    var countLabel = dialog.querySelector('.trip-gallery-count');
+    var viewerCount = dialog.querySelector('.trip-gallery-viewer-count');
+    var viewerImage = dialog.querySelector('.trip-gallery-frame img');
+    var viewerCaption = dialog.querySelector('.trip-gallery-caption');
+    var viewerBack = dialog.querySelector('.trip-gallery-viewer-back');
+    var viewerClose = dialog.querySelector('.trip-gallery-viewer-close');
+    var prevButton = dialog.querySelector('.trip-gallery-prev');
+    var nextButton = dialog.querySelector('.trip-gallery-next');
+    var trigger;
+    var photos = [];
+    var activeIndex = -1;
+    var lastFocus = null;
+    var touchStartX = 0;
+    var touchStartY = 0;
+
+    function absoluteUrl(value) {
+      try { return new URL(value, document.baseURI).href; } catch (e) { return value || ''; }
+    }
+
+    function cleanText(value) {
+      return String(value || '').replace(/\s+/g, ' ').trim();
+    }
+
+    function figureCaption(figure, image) {
+      var strong = figure.querySelector('figcaption strong');
+      var span = figure.querySelector('figcaption span');
+      var title = cleanText(strong && strong.textContent);
+      var credit = cleanText(span && span.textContent);
+      var alt = cleanText(image.getAttribute('alt'));
+      if (title && credit) return title + ' - ' + credit;
+      return title || alt || credit || 'Trip photo';
+    }
+
+    function collectPhotos() {
+      var seen = Object.create(null);
+      var list = [];
+      document.querySelectorAll('.carousel figure').forEach(function (figure) {
+        var image = figure.querySelector('img[src]');
+        if (!image) return;
+        var link = figure.querySelector('a[href]');
+        var src = absoluteUrl(image.getAttribute('src'));
+        var full = absoluteUrl(link ? link.getAttribute('href') : image.getAttribute('src'));
+        var key = full.split('#')[0];
+        if (!key || seen[key]) return;
+        seen[key] = true;
+        list.push({
+          src: src,
+          full: full,
+          alt: cleanText(image.getAttribute('alt')) || 'Trip photo',
+          caption: figureCaption(figure, image)
+        });
+      });
+      return list;
+    }
+
+    function buildBoard() {
+      photos = collectPhotos();
+      board.textContent = '';
+      empty.hidden = photos.length > 0;
+      countLabel.textContent = photos.length + (photos.length === 1 ? ' photo' : ' photos');
+      photos.forEach(function (photo, index) {
+        var tile = document.createElement('button');
+        var image = document.createElement('img');
+        var caption = document.createElement('span');
+        tile.type = 'button';
+        tile.className = 'trip-gallery-tile';
+        tile.setAttribute('aria-label', 'Open photo ' + (index + 1) + ': ' + photo.caption);
+        image.src = photo.src;
+        image.alt = photo.alt;
+        image.loading = 'lazy';
+        caption.textContent = photo.caption;
+        tile.appendChild(image);
+        tile.appendChild(caption);
+        tile.addEventListener('click', function () { openViewer(index); });
+        board.appendChild(tile);
+      });
+      if (trigger) {
+        trigger.hidden = !photos.length;
+        trigger.setAttribute('aria-label', 'View gallery, ' + photos.length + ' photos');
+      }
+    }
+
+    function installTrigger() {
+      var hero = document.querySelector('.preview .pvcar, body > header, header, body > .preview, .preview');
+      if (!hero || trigger) return;
+      trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'trip-gallery-trigger';
+      trigger.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></g></svg><span>View gallery</span>';
+      trigger.addEventListener('click', openDialog);
+      hero.appendChild(trigger);
+    }
+
+    function openDialog() {
+      lastFocus = document.activeElement;
+      buildBoard();
+      document.documentElement.classList.add('trip-gallery-open');
+      if (dialog.showModal) dialog.showModal();
+      else dialog.setAttribute('open', '');
+      dialog.classList.remove('is-viewing');
+      window.setTimeout(function () {
+        var first = board.querySelector('.trip-gallery-tile');
+        (first || closeButton).focus();
+      }, 0);
+    }
+
+    function closeDialog() {
+      dialog.classList.remove('is-viewing');
+      viewerImage.removeAttribute('src');
+      if (dialog.close && dialog.open) dialog.close();
+      else dialog.removeAttribute('open');
+      document.documentElement.classList.remove('trip-gallery-open');
+      if (lastFocus && lastFocus.focus) lastFocus.focus();
+    }
+
+    function openViewer(index) {
+      if (!photos.length) return;
+      activeIndex = Math.max(0, Math.min(photos.length - 1, index));
+      dialog.classList.add('is-viewing');
+      renderViewer();
+    }
+
+    function closeViewer() {
+      dialog.classList.remove('is-viewing');
+      var tile = board.querySelectorAll('.trip-gallery-tile')[activeIndex];
+      if (tile) tile.focus();
+    }
+
+    function renderViewer() {
+      var photo = photos[activeIndex];
+      viewerImage.src = photo.full;
+      viewerImage.alt = photo.alt;
+      viewerCaption.textContent = photo.caption;
+      viewerCount.textContent = (activeIndex + 1) + ' / ' + photos.length;
+    }
+
+    function step(delta) {
+      if (!photos.length || activeIndex < 0) return;
+      activeIndex = (activeIndex + delta + photos.length) % photos.length;
+      renderViewer();
+    }
+
+    installTrigger();
+    buildBoard();
+
+    closeButton.addEventListener('click', closeDialog);
+    viewerClose.addEventListener('click', closeDialog);
+    viewerBack.addEventListener('click', closeViewer);
+    prevButton.addEventListener('click', function () { step(-1); });
+    nextButton.addEventListener('click', function () { step(1); });
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) closeDialog();
     });
-  }
+    dialog.addEventListener('cancel', function (event) {
+      if (dialog.classList.contains('is-viewing')) {
+        event.preventDefault();
+        closeViewer();
+      }
+    });
+    document.addEventListener('keydown', function (event) {
+      if (!dialog.open) return;
+      if (event.key === 'ArrowLeft') { event.preventDefault(); step(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); step(1); }
+      if (event.key === 'Escape' && !dialog.classList.contains('is-viewing')) closeDialog();
+    });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('touchstart', function (event) {
+      if (!event.touches || event.touches.length !== 1) return;
+      touchStartX = event.touches[0].clientX;
+      touchStartY = event.touches[0].clientY;
+    }, { passive: true });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('touchend', function (event) {
+      if (!event.changedTouches || event.changedTouches.length !== 1) return;
+      var dx = event.changedTouches[0].clientX - touchStartX;
+      var dy = event.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > 46 && Math.abs(dx) > Math.abs(dy) * 1.4) step(dx < 0 ? 1 : -1);
+    }, { passive: true });
+    dialog.querySelector('.trip-gallery-stage').addEventListener('wheel', function (event) {
+      if (!dialog.classList.contains('is-viewing') || Math.abs(event.deltaX) < 28) return;
+      event.preventDefault();
+      step(event.deltaX > 0 ? 1 : -1);
+    }, { passive: false });
+  })();
 </script>
 <script>
   /* Responsive day navigator: a scroll-driven vertical dock on wide screens
@@ -2321,4 +2850,14 @@ document.querySelectorAll('.carousel').forEach(function(c){
     if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', requestUpdate);
     else if (desktopQuery.addListener) desktopQuery.addListener(requestUpdate);
   })();
+</script>
+<script>
+  /* Phase 8 — register the offline service worker (root scope) for on-trip use. */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      var p = location.pathname, i = p.indexOf('/locations/');
+      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
+      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+    });
+  }
 </script>
