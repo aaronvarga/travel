@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "slug": "madeira-sicily",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 12300,
+        "expectedUsd": null,
+        "highUsd": 15500,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The checked-in itinerary remains the immutable comparison baseline.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Madeira + Sicily; variant canonical; route-specific savings/tradeoffs require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "A shorter plan should be added only after route-specific savings and lost experiences are reconciled."
+}

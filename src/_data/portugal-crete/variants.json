@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "slug": "portugal-crete",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 11200,
+        "expectedUsd": null,
+        "highUsd": 15400,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The canonical baseline uses five Portugal nights (Jun 9-13) and seven Crete nights (Chania 4 + Rethymno 3), preserving 12 hotel nights and the Jun 21 return.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Portugal + Crete; variant canonical; route-specific savings/tradeoffs require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "A shorter plan should be added only after route-specific savings and lost experiences are reconciled."
+}

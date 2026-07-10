@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "slug": "madeira-crete",
+  "reviewedAt": "2026-07-09",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 1,
+      "rationale": "The reconciled 5-line-item family budget is $12,100–$16,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "confidence": "medium",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "Current-proxy climatology for Madeira + Crete and 2027-06-08 → 2027-06-22 spans approximately 64–84°F; this is not a 2027 forecast.",
+      "confidence": "medium",
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "swim": {
+      "score": 4,
+      "rationale": "The current-proxy swim range for Madeira + Crete is approximately 73–74°F; access, safety, and exact conditions remain trip-date dependent.",
+      "confidence": "medium",
+      "evidence": [
+        "swim-conditions"
+      ]
+    },
+    "variety": {
+      "score": 5,
+      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "ease": {
+      "score": 2,
+      "rationale": "The canonical route carries 25.9 air hours, 18.1 ground hours, 3 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
+      "confidence": "medium",
+      "evidence": [
+        "operational-load"
+      ]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
+      "confidence": "medium",
+      "evidence": [
+        "family-food-coverage"
+      ]
+    },
+    "risk": {
+      "score": 2,
+      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
+      "confidence": "medium",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 5,
+      "rationale": "13 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    },
+    "novelty": {
+      "score": 4,
+      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 4/5 under that rubric.",
+      "confidence": "high",
+      "evidence": [
+        "visited-overlap"
+      ]
+    },
+    "pto": {
+      "score": 2,
+      "rationale": "9 PTO days derives a 2/5 slider score and has zero default weight.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "lowUsd": 12100,
+        "expectedUsd": null,
+        "highUsd": 16800,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 5,
+        "arithmetic": "12000–16800 line-item sum; tolerance 150"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "value": {
+        "depart": "2027-06-08",
+        "return": "2027-06-22",
+        "hotelNights": 13,
+        "ptoDays": 9
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows[madeira-crete], routeReadiness[madeira-crete] and family constraints"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "copernicus-climate",
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "temperatureF": [
+          64,
+          84
+        ],
+        "route": "Madeira + Crete",
+        "dateWindow": "2027-06-08 → 2027-06-22"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "copernicus-climate": "ERA5 monthly means; Madeira + Crete; June planning climatology for route Madeira + Crete; not a live 2027 forecast",
+        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "noaa-oisst",
+        "eea-bathing-water",
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "temperatureF": [
+          73,
+          74
+        ],
+        "hasSwim": true,
+        "route": "Madeira + Crete",
+        "dateWindow": "2027-06-08 → 2027-06-22"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "noaa-oisst": "NOAA OISST coastal proxy for Madeira + Crete; swim locations in route Madeira + Crete; seasonal planning range only",
+        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Madeira + Crete; latest published season, not a 2027 guarantee",
+        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 5,
+        "hotelNights": 13
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "bts-ontime"
+      ],
+      "value": {
+        "easeScore": 2,
+        "maxConnections": 3,
+        "singleTicket": true,
+        "airHours": 25.9,
+        "groundHours": 18.1
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "bts-ontime": "BTS historical airport/carrier performance proxy for Madeira + Crete; not a 2027 schedule confirmation"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "state-travel",
+        "cdc-travel"
+      ],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 3,
+        "route": "Madeira + Crete",
+        "dateWindow": "2027-06-08 → 2027-06-22"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "state-travel": "U.S. State Department country advisory review for Madeira + Crete; recheck before booking and departure",
+        "cdc-travel": "CDC Travelers' Health destination guidance for Madeira + Crete; recheck before departure"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 4
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows[madeira-crete], routeReadiness[madeira-crete] and family constraints",
+        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for madeira-crete"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 25.9,
+    "groundHours": 18.1,
+    "timeZones": null,
+    "baseMoves": null,
+    "longestTransferHours": null,
+    "highOutputDayStreak": null,
+    "fallbackDays": null,
+    "childActivityFit": {
+      "age13": "unknown",
+      "age8": "unknown"
+    },
+    "lodgingComfort": {
+      "airConditioning": "unknown",
+      "kitchen": "unknown",
+      "laundry": "unknown",
+      "realBeds": "unknown"
+    },
+    "waterSafety": "unknown",
+    "crowdingPressure": "unknown",
+    "medicalAccess": "unknown"
+  },
+  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "confidenceBasis": [
+    "internal-derived itinerary tables",
+    "current-proxy climate/route data",
+    "current-proxy"
+  ]
+}

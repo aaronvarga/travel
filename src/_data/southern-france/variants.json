@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "southern-france",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night Riviera + Provence plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 13350,
+        "expectedUsd": 16050,
+        "highUsd": 19100,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Five car-free Nice nights, three Cassis nights and four Aix nights; June 18 PTO depends on employer holiday observance.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "Southern France canonical route, #stays, #itinerary, #budget and #totals"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "No shorter variant is promoted: removing a base or recovery day would recreate the compressed pacing this upgrade was designed to fix."
+}

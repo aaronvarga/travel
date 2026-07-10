@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "slug": "italy-salento-amalfi",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 11400,
+        "expectedUsd": null,
+        "highUsd": 16300,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The checked-in itinerary remains the immutable comparison baseline.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Italy: Salento-Amalfi; variant canonical; route-specific savings/tradeoffs require re-price"
+      }
+    },
+    {
+      "id": "preference-fit-11n",
+      "label": "11-night lower-cost trim",
+      "canonical": false,
+      "status": "documented-needs-live-quotes",
+      "nights": 11,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 12400,
+        "expectedUsd": null,
+        "highUsd": 14800,
+        "distribution": "quote-dependent planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "axisOverrides": {
+        "budget": 2,
+        "nights": 4
+      },
+      "evidenceRefs": [
+        "preference-fit-11n-budget"
+      ],
+      "removedExperiences": [
+        "One Sorrento/Campania night; the exact day to remove remains open"
+      ],
+      "notes": "This is the itinerary's documented lower-cost option, not a replacement for the 12-night canonical plan. Re-price the complete route before using it.",
+      "confidence": "low",
+      "claimType": "quote-dependent",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Italy: Salento-Amalfi; variant preference-fit-11n; route-specific savings/tradeoffs require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "one-provisional-variant",
+  "alternateNotes": "The 11-night Italy trim is documented but remains quote-dependent."
+}

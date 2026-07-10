@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "slug": "spain",
+  "reviewedAt": "2026-07-09",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 2,
+      "rationale": "The reconciled 5-line-item family budget is $8,800–$14,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "confidence": "medium",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 3,
+      "rationale": "Current-proxy climatology for Spain and 2027-06-03 → 2027-06-16 spans approximately 66–94°F; this is not a 2027 forecast.",
+      "confidence": "medium",
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "swim": {
+      "score": 3,
+      "rationale": "The current-proxy swim range for Spain is approximately 68–72°F; access, safety, and exact conditions remain trip-date dependent.",
+      "confidence": "medium",
+      "evidence": [
+        "swim-conditions"
+      ]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "ease": {
+      "score": 3,
+      "rationale": "The canonical route carries 22 air hours, 12 ground hours, 1 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
+      "confidence": "medium",
+      "evidence": [
+        "operational-load"
+      ]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
+      "confidence": "medium",
+      "evidence": [
+        "family-food-coverage"
+      ]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
+      "confidence": "medium",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 5,
+      "rationale": "12 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 5/5 under that rubric.",
+      "confidence": "high",
+      "evidence": [
+        "visited-overlap"
+      ]
+    },
+    "pto": {
+      "score": 2,
+      "rationale": "9 PTO days derives a 2/5 slider score and has zero default weight.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "lowUsd": 8800,
+        "expectedUsd": null,
+        "highUsd": 14800,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 5,
+        "arithmetic": "8800–14800 line-item sum; tolerance 150"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "value": {
+        "depart": "2027-06-03",
+        "return": "2027-06-16",
+        "hotelNights": 12,
+        "ptoDays": 9
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows[spain], routeReadiness[spain] and family constraints"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "copernicus-climate",
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 3,
+        "temperatureF": [
+          66,
+          94
+        ],
+        "route": "Spain",
+        "dateWindow": "2027-06-03 → 2027-06-16"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "copernicus-climate": "ERA5 monthly means; Spain; June planning climatology for route Spain; not a live 2027 forecast",
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "noaa-oisst",
+        "eea-bathing-water",
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 3,
+        "temperatureF": [
+          68,
+          72
+        ],
+        "hasSwim": true,
+        "route": "Spain",
+        "dateWindow": "2027-06-03 → 2027-06-16"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "noaa-oisst": "NOAA OISST coastal proxy for Spain; swim locations in route Spain; seasonal planning range only",
+        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Spain; latest published season, not a 2027 guarantee",
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "hotelNights": 12
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "bts-ontime"
+      ],
+      "value": {
+        "easeScore": 3,
+        "maxConnections": 1,
+        "singleTicket": true,
+        "airHours": 22,
+        "groundHours": 12
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "bts-ontime": "BTS historical airport/carrier performance proxy for Spain; not a 2027 schedule confirmation"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "state-travel",
+        "cdc-travel"
+      ],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "route": "Spain",
+        "dateWindow": "2027-06-03 → 2027-06-16"
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "state-travel": "U.S. State Department country advisory review for Spain; recheck before booking and departure",
+        "cdc-travel": "CDC Travelers' Health destination guidance for Spain; recheck before departure"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5
+      },
+      "verifiedAt": "2026-07-09",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows[spain], routeReadiness[spain] and family constraints",
+        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for spain"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 22,
+    "groundHours": 12,
+    "timeZones": null,
+    "baseMoves": null,
+    "longestTransferHours": null,
+    "highOutputDayStreak": null,
+    "fallbackDays": null,
+    "childActivityFit": {
+      "age13": "unknown",
+      "age8": "unknown"
+    },
+    "lodgingComfort": {
+      "airConditioning": "unknown",
+      "kitchen": "unknown",
+      "laundry": "unknown",
+      "realBeds": "unknown"
+    },
+    "waterSafety": "unknown",
+    "crowdingPressure": "unknown",
+    "medicalAccess": "unknown"
+  },
+  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "confidenceBasis": [
+    "internal-derived itinerary tables",
+    "current-proxy climate/route data",
+    "current-proxy"
+  ]
+}

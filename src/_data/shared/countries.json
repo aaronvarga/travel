@@ -194,6 +194,35 @@
       { "label": "France toll roads guide", "url": "https://tollguru.com/france-toll" }
     ]
   },
+  "france-mainland": {
+    "name": "France",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned Schengen departure, and issued within the last 10 years.",
+    "etias": {
+      "status": "Expected to launch in the last quarter of 2026, but the exact start date remains subject to the official EU rollout.",
+      "fee": "€20 under the current rule; travelers under 18 and over 70 are fee-exempt.",
+      "note": "ETIAS is a pre-travel authorization for visa-exempt visitors, including US citizens. Confirm the live requirement and use only the official EU application channel before June 2027."
+    },
+    "visa": "None for US citizens for tourist stays up to 90 days in any 180-day Schengen period.",
+    "idp": "Carry the original US license plus an International Driving Permit or official French translation. Confirm the rental company's document rules before pickup.",
+    "driving": "Drive on the right. Automatic family cars are scarcer than manuals, so reserve early with cancellable terms. Keep the rental contract, license, IDP/translation and passport available.",
+    "tolls": "Mainland autoroutes use péage tolls. Most accept major cards; budget separately for the Nice–Cassis and Provence motorway legs and avoid unplanned old-town driving.",
+    "ztl": "France uses low-emission zones in several cities. Check the official Crit'Air requirements for the exact rental plate and 2027 route; do not assume a foreign/rental vehicle is exempt.",
+    "money": {
+      "cards": "Cards and contactless payments are widely accepted in hotels, restaurants, tolls and larger shops.",
+      "cash": "Carry roughly €100–150 for markets, small cafés, parking or equipment rentals that do not accept your card.",
+      "tipping": "Service is included (service compris); rounding up or leaving about 5–10% for notably good service is optional."
+    },
+    "water": "Tap water is safe throughout mainland France unless a local notice says otherwise.",
+    "emergency": "112 (EU-wide). Also 15 for SAMU medical emergencies, 17 police and 18 fire/rescue.",
+    "esim": "A Europe eSIM or your carrier's roaming plan is sufficient; download offline maps before the Verdon drive.",
+    "sources": [
+      { "label": "US State Dept — France", "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/France.html" },
+      { "label": "EU — ETIAS official", "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" },
+      { "label": "France.fr — renting a car and driving", "url": "https://www.france.fr/en/article/renting-car-and-driving-france/" },
+      { "label": "France — Crit'Air official", "url": "https://www.certificat-air.gouv.fr/" }
+    ]
+  },
   "iceland": {
     "name": "Iceland",
     "domestic": false,

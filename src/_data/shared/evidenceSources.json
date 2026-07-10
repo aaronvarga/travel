@@ -1,0 +1,213 @@
+{
+  "internal-itinerary": {
+    "label": "Canonical itinerary and reconciled trip tables",
+    "tier": "internal-derived",
+    "path": "src/_data/<slug>/main.json"
+  },
+  "decision-profile": {
+    "label": "Canonical family decision profile",
+    "tier": "internal-derived",
+    "path": "src/_data/decisionProfile.json"
+  },
+  "scorecard-contract": {
+    "label": "Scorecard rubric contract",
+    "tier": "internal-derived",
+    "path": "tools/scorecard.manifest.json"
+  },
+  "copernicus-climate": {
+    "label": "Copernicus ERA5 monthly reanalysis",
+    "tier": "historical-dataset",
+    "url": "https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-monthly-means?tab=overview",
+    "publisher": "Copernicus Climate Change Service",
+    "scope": "Historical monthly reanalysis; route/date locator required."
+  },
+  "noaa-climate": {
+    "label": "NOAA Climate Data Online",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/cdo-web/",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Historical climate observations; station/variable/date locator required."
+  },
+  "noaa-oisst": {
+    "label": "NOAA Optimum Interpolation Sea Surface Temperature",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Global gridded SST record; coastal-location/date locator required."
+  },
+  "eea-bathing-water": {
+    "label": "European Environment Agency bathing-water assessments",
+    "tier": "official",
+    "url": "https://www.eea.europa.eu/en/analysis/publications/european-bathing-water-quality-in-2025",
+    "publisher": "European Environment Agency",
+    "scope": "Annual monitored bathing-water assessment; country/site locator required."
+  },
+  "state-travel": {
+    "label": "U.S. Department of State travel advisories",
+    "tier": "official",
+    "url": "https://travel.state.gov/en/international-travel/travel-advisories.html",
+    "publisher": "U.S. Department of State",
+    "scope": "Country-level advisory; country/review-date locator required."
+  },
+  "cdc-travel": {
+    "label": "CDC Travelers' Health destinations",
+    "tier": "official",
+    "url": "https://wwwnc.cdc.gov/travel/destinations/list",
+    "publisher": "Centers for Disease Control and Prevention",
+    "scope": "Destination health guidance; country/destination locator required."
+  },
+  "eu-etias": {
+    "label": "Official European Union ETIAS guidance",
+    "tier": "official",
+    "url": "https://travel-europe.europa.eu/etias_en",
+    "publisher": "European Union",
+    "scope": "Entry-system status; nationality/date/country locator required."
+  },
+  "bts-ontime": {
+    "label": "U.S. DOT Bureau of Transportation Statistics on-time data",
+    "tier": "official",
+    "url": "https://www.transtats.bts.gov/ontime/",
+    "publisher": "U.S. Department of Transportation",
+    "scope": "Historical carrier/airport performance; route/date locator required."
+  },
+  "eurostat-tourism": {
+    "label": "Eurostat tourism statistics",
+    "tier": "official",
+    "url": "https://ec.europa.eu/eurostat/web/tourism",
+    "publisher": "Eurostat",
+    "scope": "Regional tourism statistics; geography/date/table locator required."
+  },
+  "visit-portugal-algarve": {
+    "label": "Visit Portugal: Algarve beaches",
+    "tier": "official",
+    "url": "https://www.visitportugal.com/en/destinos/algarve/73807",
+    "publisher": "Turismo de Portugal",
+    "scope": "Destination guidance for Algarve beaches, Ponta da Piedade, and Praia da Marinha; not a live sea-state or 2027 booking source."
+  },
+  "lis-pmo-schedule-proxy": {
+    "label": "LIS–PMO current schedule proxy",
+    "tier": "secondary",
+    "url": "https://www.flightsfrom.com/LIS-PMO",
+    "publisher": "FlightsFrom",
+    "scope": "Current route-frequency snapshot only; it cannot confirm June 2027 operation, availability, price, or a protected connection."
+  },
+  "cefalu-rocca": {
+    "label": "Comune di Cefalù: Rocca di Cefalù",
+    "tier": "official",
+    "url": "https://comune.cefalu.pa.it/vivere-il-comune/luoghi/rocca-di-cefalu/",
+    "publisher": "Comune di Cefalù",
+    "scope": "Current access rules, hours, and prices for La Rocca; recheck before 2027 travel."
+  },
+  "etna-funivia": {
+    "label": "Funivia dell’Etna",
+    "tier": "operator",
+    "url": "https://www.funiviaetna.com/en/2500m/",
+    "publisher": "Funivia dell’Etna",
+    "scope": "Current cable-car product/starting-price signal; weather, volcanic conditions, opening, and 2027 pricing can change."
+  },
+  "taormina-park": {
+    "label": "Naxos–Taormina Archaeological Park",
+    "tier": "official",
+    "url": "https://parchiarcheologici.regione.sicilia.it/naxos-taormina/biglietti/teatro-antico-di-taormina-2/",
+    "publisher": "Regione Siciliana",
+    "scope": "Official Ancient Theatre ticket/release page; recheck the actual 2027 date, opening hours, and tariff."
+  },
+  "cannes-lions-2027": {
+    "label": "Cannes Lions 2027 official dates",
+    "tier": "official",
+    "url": "https://www.canneslions.com/?event_id=70",
+    "publisher": "Cannes Lions",
+    "scope": "Official event dates for June 21–25, 2027; not a quantified hotel-price or traffic forecast."
+  },
+  "sncf-nice-menton": {
+    "label": "SNCF Connect Nice–Menton timetable",
+    "tier": "operator",
+    "url": "https://www.sncf-connect.com/en-en/train/timetables/nice/menton",
+    "publisher": "SNCF Connect",
+    "scope": "Current direct regional-rail pattern and stops; exact June 2027 timetable is not yet confirmed."
+  },
+  "lignes-azur-82": {
+    "label": "Lignes d’Azur route 82",
+    "tier": "operator",
+    "url": "https://www.lignesdazur.com/sites/default/files/2024-08/ligne_82.pdf",
+    "publisher": "Lignes d’Azur",
+    "scope": "Current bus route to Èze Village; exact 2027 timetable and stop pattern require recheck."
+  },
+  "nice-beaches": {
+    "label": "Explore Nice Côte d’Azur beach guidance",
+    "tier": "official",
+    "url": "https://www.explorenicecotedazur.com/en/explore/towns-villages/coastal-area/nice/what-to-do-in-nice/",
+    "publisher": "Office de Tourisme Métropolitain Nice Côte d’Azur",
+    "scope": "Official destination description of Nice and its pebble shore; not a live beach-condition report."
+  },
+  "antibes-beaches": {
+    "label": "Antibes Juan-les-Pins official beach guide",
+    "tier": "official",
+    "url": "https://www.antibesjuanlespins.com/en/discover/the-must-sees/the-beaches",
+    "publisher": "Office de Tourisme et des Congrès d’Antibes Juan-les-Pins",
+    "scope": "Official beach-surface and family-access descriptions; seasonal services and 2027 prices require recheck."
+  },
+  "meteo-france-nice": {
+    "label": "Météo-France Nice climate normals",
+    "tier": "official",
+    "url": "https://meteofrance.com/climat/france/france/provence-alpes-cote-d-azur/NICE",
+    "publisher": "Météo-France",
+    "scope": "Historical 1991–2020 climate normals for Nice; not a June 2027 forecast."
+  },
+  "google-flights-pit-nce": {
+    "label": "Google Flights PIT–Nice fare and routing snapshot",
+    "tier": "observed-quote",
+    "url": "https://www.google.com/travel/flights/flights-from-pittsburgh-to-nice.html?gl=US&hl=en-US",
+    "publisher": "Google Flights",
+    "scope": "Current observed June fare/routing proxy; cannot confirm June 2027 open-jaw inventory, price, or protection."
+  },
+  "calanques-land-rules": {
+    "label": "Calanques National Park land-access rules",
+    "tier": "official",
+    "url": "https://www.calanques-parcnational.fr/en/regulations-land",
+    "publisher": "Parc national des Calanques",
+    "scope": "Official June–September fire-access decision process; daily status must be checked during travel."
+  },
+  "cassis-parking": {
+    "label": "Cassis municipal transport and parking",
+    "tier": "official",
+    "url": "https://www.cassis.fr/gerer-mon-quotidien/transports-et-stationnements",
+    "publisher": "Ville de Cassis",
+    "scope": "Current Gorguettes parking/shuttle guidance; 2027 operating details require recheck."
+  },
+  "cassis-calanques-boats": {
+    "label": "Cassis Calanques boat circuits",
+    "tier": "operator",
+    "url": "https://www.visite-calanques-cassis.com/en/circuits/2-4-visit-the-5-calanques.html",
+    "publisher": "Groupement des Bateliers Cassidains",
+    "scope": "Current five-calanque circuit duration and price; sailing, availability, and 2027 pricing are not guaranteed."
+  },
+  "provence-lavender-route": {
+    "label": "Provence Guide lavender route",
+    "tier": "official",
+    "url": "https://pro.provenceguide.com/wp/itineraire/la-route-de-la-lavande/",
+    "publisher": "Vaucluse Provence Attractivité",
+    "scope": "Regional seasonal bloom guidance; exact 2027 field-level bloom timing cannot be guaranteed."
+  },
+  "verdon-lakes": {
+    "label": "Verdon Tourisme lake guidance",
+    "tier": "official",
+    "url": "https://www.verdontourisme.com/en/preparer-mon-sejour/discover-verdon/discover-destination/lacs-de-castillon-et-sainte-croix/",
+    "publisher": "Verdon Tourisme",
+    "scope": "Official lake activities and wind restrictions; live operating and safety conditions require recheck."
+  },
+  "avignon-palace": {
+    "label": "Avignon Tourisme Palais des Papes ticket page",
+    "tier": "official",
+    "url": "https://avignon-tourisme.com/en/offres/popespalace-avignon-en-4143543/",
+    "publisher": "Avignon Tourisme",
+    "scope": "Current ticket products and family pricing; 2027 tariff and hours require recheck."
+  },
+  "pont-du-gard-prices": {
+    "label": "Pont du Gard official prices and ticketing",
+    "tier": "official",
+    "url": "https://pontdugard.fr/en/FAQ/tarifs-et-billetterie",
+    "publisher": "EPCC Pont du Gard",
+    "scope": "Current admission and parking terms; 2027 prices and river conditions require recheck."
+  }
+}
