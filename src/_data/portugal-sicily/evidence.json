@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-sicily",
-  "reviewedAt": "2026-07-09",
-  "overallConfidence": "low",
+  "reviewedAt": "2026-07-10",
+  "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 2,
@@ -13,8 +13,8 @@
       ]
     },
     "weather": {
-      "score": 5,
-      "rationale": "Current-proxy climatology for Portugal + Sicily and 2027-06-08 → 2027-06-21 spans approximately 64–86°F; this is not a 2027 forecast.",
+      "score": 4,
+      "rationale": "The route is mostly comfortable, with manageable heat planning on exposed Sicily ruins, coast, and Etna days (4/5); historical normals are not a June 2027 forecast.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,7 +22,7 @@
     },
     "swim": {
       "score": 3,
-      "rationale": "The current-proxy swim range for Portugal + Sicily is approximately 72–75°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "The route combines cool Cascais Atlantic water with warmer Sicily water, supporting Swim 3/5, but no stored site-level SST extract reproduces the asserted 64–75°F range; confidence remains medium.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Three documented bases schedule Atlantic coast/Sicily beach time, Lisbon/Palermo/Cefalù/Taormina culture, and Sintra/Etna nature. The 5/5 variety score is a direct itinerary derivation.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 2,
-      "rationale": "The canonical route carries 23 air hours, 4.8 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Three bases, two moves, an internal flight, and airport transfers create high deterministic load (2/5); schedule and ticket-protection uncertainty is scored only under Risk.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 5,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current first-party store pages independently document grocery/plain-food fallback coverage in Cascais, Cefalu, and Giardini Naxos for the Taormina-coast base. That supports Food 5/5; store hours and stock still need a pre-trip recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "Route status is exact-2027-schedule-required; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "low",
+      "score": 2,
+      "rationale": "The separate-ticket LIS–PMO hinge and current operating-day mismatch create material unresolved exposure (2/5) until the exact Monday 2027-06-14 transfer is confirmed or redesigned.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -102,7 +102,7 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "12500–14700 line-item sum; tolerance 150"
+        "arithmetic": "6,600–7,450 transportation + 2,650–3,150 lodging + 2,100–2,450 food + 750–1,100 activities + 350–500 misc = 12,450–14,650; displayed band rounds outward to 12,400–14,700"
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2026-12-31",
@@ -138,22 +138,28 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
+        "ipma-lisbon-normal",
         "copernicus-climate",
         "internal-itinerary"
       ],
       "value": {
-        "score": 5,
+        "score": 4,
         "temperatureF": [
-          64,
+          61,
           86
         ],
+        "stationNormalF": {
+          "lisbonMeanLow": 62,
+          "lisbonMeanHigh": 79
+        },
         "route": "Portugal + Sicily",
         "dateWindow": "2027-06-08 → 2027-06-21"
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Portugal + Sicily; June planning climatology for route Portugal + Sicily; not a live 2027 forecast",
+        "ipma-lisbon-normal": "Lisboa/Instituto Geofísico station 535, 1991–2020 normal, June TN 16.8°C and TX 26.1°C; historical normal, not a 2027 forecast",
+        "copernicus-climate": "ERA5 monthly means for coastal grid cells near Cascais (38.70,-9.42), Cefalù (38.04,14.02), and Taormina (37.85,15.29), June climatology only",
         "internal-itinerary": "Portugal + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -171,9 +177,19 @@
       "value": {
         "score": 3,
         "temperatureF": [
-          72,
+          64,
           75
         ],
+        "siteRangesF": {
+          "Cascais": [
+            64,
+            67
+          ],
+          "CefaluTaormina": [
+            72,
+            75
+          ]
+        },
         "hasSwim": true,
         "route": "Portugal + Sicily",
         "dateWindow": "2027-06-08 → 2027-06-21"
@@ -181,8 +197,8 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Portugal + Sicily; swim locations in route Portugal + Sicily; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Portugal + Sicily; latest published season, not a 2027 guarantee",
+        "noaa-oisst": "NOAA OISST v2.1 June coastal climatology, grid cells nearest Cascais (38.70,-9.42), Cefalù (38.04,14.02), and Taormina/Isola Bella (37.85,15.29); historical SST, not day-specific surf temperature",
+        "eea-bathing-water": "2025 European assessment for Portugal and Italy; use the site-level viewer for the exact 2027 beach and recheck flags/closures day-of",
         "internal-itinerary": "Portugal + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -197,7 +213,14 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 3,
+        "baseMoves": 2,
+        "modes": [
+          "water",
+          "town/culture",
+          "nature/hikes"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": null,
@@ -209,24 +232,27 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
-        "bts-ontime"
+        "easyjet-lis-pmo"
       ],
       "value": {
         "easeScore": 2,
         "maxConnections": 2,
         "singleTicket": false,
         "airHours": 23,
-        "groundHours": 4.8
+        "groundHours": 4.8,
+        "baseMoves": 2,
+        "longestTransferHours": 7,
+        "criticalTransfer": "Cascais → LIS → PMO → Cefalù on a separate easyJet ticket"
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Portugal + Sicily; not a 2027 schedule confirmation"
+        "internal-itinerary": "#air-travel and #getting-around: three bases, separate LIS–PMO ticket, Sicily car west-to-east, and published transfer components",
+        "easyjet-lis-pmo": "Operator timetable checked 2026-07-10: August 2026 flight 7687 operates Tuesday/Friday with a 4-hour local-clock block (3-hour elapsed after time-zone change); no June 2027 timetable shown"
       },
       "claimType": "proxy"
     },
@@ -234,18 +260,28 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "continente-cascais",
+        "conad-cefalu",
+        "deco-giardini-naxos"
       ],
       "value": {
         "score": 5,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "basesWithIndependentGroceryCoverage": 3,
+        "bases": [
+          "Cascais",
+          "Cefalu",
+          "Taormina coast / Giardini Naxos"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "continente-cascais": "Official Cascais store page: Estrada Nacional 9 118; bakery, takeaway, meat, fruit, grocery and fish departments",
+        "conad-cefalu": "Official Cefalu store page: Contrada Gallizza, 90015 Cefalu",
+        "deco-giardini-naxos": "Official Gruppo Arena store page: Supermercati Deco, Via Naxos 157, Giardini Naxos"
       },
       "claimType": "proxy"
     },
@@ -253,8 +289,9 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "low",
+      "confidence": "high",
       "sourceRefs": [
+        "easyjet-lis-pmo",
         "internal-itinerary",
         "state-travel",
         "cdc-travel"
@@ -263,14 +300,17 @@
         "status": "exact-2027-schedule-required",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Portugal + Sicily",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "route": "LIS → PMO on a separate ticket",
+        "dateWindow": "2027-06-14",
+        "currentOperatorPattern": "Tuesday/Friday in the checked August 2026 timetable",
+        "requiredWeekday": "Monday"
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Portugal + Sicily; recheck before booking and departure",
+        "easyjet-lis-pmo": "Official easyJet timetable checked 2026-07-10 shows no Monday service in the displayed August 2026 pattern and does not publish June 2027; this proves the current plan needs exact-date verification or a one-stop fallback",
+        "internal-itinerary": "#air-travel requires a Monday 2027-06-14 LIS–PMO handoff and explicitly treats it as the route hinge",
+        "state-travel": "Portugal Level 1 (issued 2025-12-23) and Italy Level 2 (issued 2025-05-23), both reviewed 2026-07-10; recheck before booking/departure",
         "cdc-travel": "CDC Travelers' Health destination guidance for Portugal + Sicily; recheck before departure"
       },
       "claimType": "proxy"
@@ -299,29 +339,34 @@
   "metrics": {
     "airHours": 23,
     "groundHours": 4.8,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 2,
+    "baseMoves": 2,
+    "longestTransferHours": 7,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 4,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required filter in every base",
+      "kitchen": "required for plain-food fallback",
+      "laundry": "preferred in Cefalù or Taormina-coast base",
+      "realBeds": "required filter; not yet property-verified"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Use monitored beaches and day-of flags; Cascais surf and Sicily boat/pebble access remain condition-dependent.",
+    "crowdingPressure": "High at Sintra, Cefalù, and Taormina; early starts and Giardini-Naxos/Letojanni lodging are documented mitigations.",
+    "medicalAccess": "Urban/coastal bases are near services, but exact hospitals, insurance acceptance, and evacuation coverage remain unverified.",
+    "childActivityNotes": {
+      "age13": "fits documented beach, town, Etna, and boat days; family preferences still incomplete",
+      "age8": "fits with lower-Etna, beach, pool, and short-hike fallbacks; mobility/swim comfort unknown"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Stable claims now use station-level IPMA normals, coordinate-level OISST/ERA5 locators, EEA bathing-water context, and easyJet's operator timetable. The budget remains a planning model, restaurants/lodging are not booked, and the Monday June 14, 2027 LIS–PMO hinge is not confirmed.",
   "confidenceBasis": [
     "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "exact-2027-schedule-required"
+    "official historical climate and bathing-water datasets",
+    "official easyJet current timetable",
+    "exact-2027-schedule-required for 2027-06-14"
   ]
 }

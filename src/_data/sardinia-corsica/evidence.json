@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "sardinia-corsica",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -13,8 +13,8 @@
       ]
     },
     "weather": {
-      "score": 5,
-      "rationale": "Current-proxy climatology for Sardinia & Corsica and 2027-06-10 → 2027-06-23 spans approximately 63–84°F; this is not a 2027 forecast.",
+      "score": 4,
+      "rationale": "The route is mostly comfortable, with manageable wind and inland/exposed-day heat planning (4/5); historical conditions are not a June 2027 forecast.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,7 +22,7 @@
     },
     "swim": {
       "score": 3,
-      "rationale": "The current-proxy swim range for Sardinia & Corsica is approximately 72–75°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "OISST history supports roughly 72–75°F mid-June water at the scheduled north/east/south Sardinia and Bonifacio sites. That is usable and scenic but not consistently warm, supporting 3/5.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 4,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Four bases cover coves/boats, Alghero/Bonifacio/Cagliari towns, and cliff/coastal hiking; one mode is lighter, supporting 4/5.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 2,
-      "rationale": "The canonical route carries 21.3 air hours, 10.1 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Four bases, three moves, one-way Sardinia driving, and a foot-passenger round trip to Corsica create high deterministic load; Ease 2/5 is supported.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current first-party store pages independently document grocery/plain-food fallback coverage in Alghero, Bonifacio, Cala Gonone for the Ogliastra base, and Cagliari. That supports Food 4/5; store hours and stock still need a pre-trip recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "score": 3,
+      "rationale": "The canonical foot-passenger ferry strategy, multiple daily current sailings, parked rental car, and Sardinia fallback reduce the ferry risk to manageable uncertainty with mitigations (3/5); exact 2027 sailings still require verification.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -142,7 +142,7 @@
         "internal-itinerary"
       ],
       "value": {
-        "score": 5,
+        "score": 4,
         "temperatureF": [
           63,
           84
@@ -153,7 +153,7 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Sardinia & Corsica; June planning climatology for route Sardinia & Corsica; not a live 2027 forecast",
+        "copernicus-climate": "ERA5 June monthly means near Alghero (40.56,8.32), Bonifacio (41.39,9.16), Santa Maria Navarrese (39.99,9.69), and Cagliari (39.22,9.12); not a forecast",
         "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -166,6 +166,7 @@
       "sourceRefs": [
         "noaa-oisst",
         "eea-bathing-water",
+        "sardinia-goloritze",
         "internal-itinerary"
       ],
       "value": {
@@ -181,8 +182,9 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Sardinia & Corsica; swim locations in route Sardinia & Corsica; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Sardinia & Corsica; latest published season, not a 2027 guarantee",
+        "noaa-oisst": "OISST v2.1 June climatology for coastal cells nearest Alghero/La Pelosa, Bonifacio, Ogliastra, and Cagliari/Villasimius",
+        "eea-bathing-water": "2025 Italy and France assessment; recheck exact 2027 sites and day-of flags",
+        "sardinia-goloritze": "Official SardegnaTurismo access page: 3.5 km route with 470 m vertical and no motorboat mooring within 300 m; current access rules require recheck",
         "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -197,7 +199,14 @@
       ],
       "value": {
         "score": 4,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 4,
+        "baseMoves": 3,
+        "modes": [
+          "water",
+          "town/culture",
+          "nature/hikes"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": null,
@@ -209,24 +218,25 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 2,
         "maxConnections": 2,
         "singleTicket": false,
         "airHours": 21.3,
-        "groundHours": 10.1
+        "groundHours": 10.1,
+        "bases": 4,
+        "baseMoves": 3,
+        "longestTransferHours": 5.5
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Sardinia & Corsica; not a 2027 schedule confirmation"
+        "internal-itinerary": "#overview and #getting-around: Alghero, Bonifacio, Ogliastra, Cagliari; foot-passenger ferry strategy and one-way Sardinia car"
       },
       "claimType": "proxy"
     },
@@ -234,43 +244,58 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "conad-alghero",
+        "spar-bonifacio",
+        "conad-tortoli",
+        "conad-cagliari"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "basesWithIndependentGroceryCoverage": 4,
+        "bases": [
+          "Alghero",
+          "Bonifacio",
+          "Ogliastra / Tortoli corridor",
+          "Cagliari"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "conad-alghero": "Official Alghero store page: Via Mazzini; bakery, gastronomy, produce and meat departments",
+        "spar-bonifacio": "First-party Bonifacio store site: Route Santa Manza; daily groceries, produce, meat and home delivery; June hours posted",
+        "conad-tortoli": "Official Tortoli store page: Via Campidano at Via Tirso; gastronomy, bakery, produce and meat departments",
+        "conad-cagliari": "Official Cagliari store page: Via dei Valenzani 21"
       },
       "claimType": "proxy"
     },
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
       "sourceRefs": [
+        "moby-stg-bonifacio",
         "internal-itinerary",
         "state-travel",
         "cdc-travel"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "exact-2027-schedule-required",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Sardinia & Corsica",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "route": "Santa Teresa Gallura ↔ Bonifacio as foot passengers; Sardinia rental car remains parked",
+        "dateWindow": "June 2027 exact ferry dates unpublished"
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Sardinia & Corsica; recheck before booking and departure",
+        "moby-stg-bonifacio": "Official Moby route page checked 2026-07-10: multiple daily sailings, 50-minute crossing, 2026 terms; 2027 timetable not published",
+        "internal-itinerary": "#health-check defaults to foot passengers because rental agreements may prohibit taking an Italian car into Corsica",
+        "state-travel": "Italy and France Level 2 advisories reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Sardinia & Corsica; recheck before departure"
       },
       "claimType": "proxy"
@@ -299,29 +324,34 @@
   "metrics": {
     "airHours": 21.3,
     "groundHours": 10.1,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 5.5,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 4,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in all bases",
+      "kitchen": "preferred for plain-food coverage",
+      "laundry": "preferred in Ogliastra",
+      "realBeds": "required; property selection pending"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Check beach flags, wind and boat conditions daily; Cala Goloritzé prohibits motorboats within 300 m of shore.",
+    "crowdingPressure": "High at La Pelosa, Bonifacio and regulated Baunei coves; timed/permit access and early starts are required.",
+    "medicalAccess": "Remote Ogliastra days need insurance and evacuation planning; exact facilities remain unverified.",
+    "childActivityNotes": {
+      "age13": "fits boats, coves, towns, and moderate hikes; preferences remain incomplete",
+      "age8": "fits with boat/beach alternatives; Cala Goloritzé's uphill return needs fitness/heat check"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Stable claims use coordinate-level climate/SST data, Moby's official current ferry operation, and official Sardinia/Baunei access rules. Budget, lodging, car contract permission, and exact 2027 sailings remain open.",
   "confidenceBasis": [
     "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "official historical climate and bathing-water datasets",
+    "official 2026 ferry and regulated-access evidence",
+    "exact 2027 timetable and rental terms remain open"
   ]
 }

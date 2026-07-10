@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "albania",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 5,
-      "rationale": "The reconciled 5-line-item family budget is $9,715–$14,230 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "score": 2,
+      "rationale": "The $9,715–$14,230 planning band crosses the $12,000 target and stays within the $15,000 preference, but airfare, automatic one-way car, and lodging remain unquoted planning proxies; the confidence-aware rubric therefore scores 2/5.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,50 +14,52 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Albania and 2027-06-07 → 2027-06-22 spans approximately 60–84°F; this is not a 2027 forecast.",
+      "rationale": "The broad 60–84°F route range is a coarse Copernicus planning proxy across alpine Theth and coastal Ksamil, not a station-level or 2027 forecast. Mountain rain/snow and warmer coast conditions must be checked separately.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
-      "score": 5,
-      "rationale": "The current-proxy swim range for Albania is approximately 72–75°F; access, safety, and exact conditions remain trip-date dependent.",
+      "score": 4,
+      "rationale": "Frequent family swimming in the claimed 72–75°F Ionian range fits the rubric’s comfortable-water level (4/5), not the warmer-water 5/5 threshold; exact site conditions remain date-dependent.",
       "confidence": "medium",
       "evidence": [
-        "swim-conditions"
+        "swim-conditions",
+        "ksamil-family-water"
       ]
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The route explicitly balances five alpine nights, six Ksamil beach nights, Tirana/Butrint culture and a Corfu exit buffer; all three trip modes are substantial.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
       ]
     },
     "ease": {
-      "score": 3,
-      "rationale": "The canonical route carries 21 air hours, 20.7 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "score": 2,
+      "rationale": "Four sleeping bases, mountain access, an 8–9-hour Theth–Ksamil reposition, a Sarandë car drop, international ferry, and Corfu return create high deterministic load (2/5).",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current operator evidence verifies broad supermarkets in Tirana and Corfu, an active Ksamil supermarket listing backed by the national chain's current product scope, and family-style daily meals at Bujtina Polia in Theth. Plain-food coverage is robust today; the exact booked guesthouse, lodging kitchens and June 2027 operations remain rechecks.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "score": 2,
+      "rationale": "Alpine conditions plus unresolved car, ferry, and flight gates create material exposure (2/5), while the canonical Valbona plan remains the family out-and-back rather than an incompatible full crossing.",
+      "confidence": "high",
       "evidence": [
-        "route-readiness"
+        "route-readiness",
+        "valbona-conditions"
       ]
     },
     "nights": {
@@ -126,7 +128,7 @@
         "ptoDays": 9
       },
       "verifiedAt": "2026-07-09",
-      "expiresAt": null,
+      "expiresAt": "2027-06-22",
       "sourceLocators": {
         "decision-profile": "decisionProfile.json tripWindows[albania], routeReadiness[albania] and family constraints"
       },
@@ -169,7 +171,7 @@
         "internal-itinerary"
       ],
       "value": {
-        "score": 5,
+        "score": 4,
         "temperatureF": [
           72,
           75
@@ -197,9 +199,21 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 13
+        "hotelNights": 13,
+        "bases": 4,
+        "basePattern": [
+          "Tirana 1",
+          "Theth 5",
+          "Ksamil 6",
+          "Corfu 1"
+        ],
+        "modes": [
+          "alpine hiking",
+          "Ionian swimming",
+          "towns/archaeology"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "internal-itinerary": "Albania; canonical 2027-06-07 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -209,42 +223,61 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
-        "bts-ontime"
+        "albania-state-driving"
       ],
       "value": {
-        "easeScore": 3,
+        "easeScore": 2,
         "maxConnections": 2,
         "singleTicket": true,
         "airHours": 21,
-        "groundHours": 20.7
+        "groundHours": 20.7,
+        "baseMoves": 3,
+        "longestTransferHours": 9,
+        "internationalFerries": 1,
+        "oneWayRentalDrop": "Saranda",
+        "oneNightStops": 2
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2027-02-01",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-06-22",
       "sourceLocators": {
-        "internal-itinerary": "Albania; canonical 2027-06-07 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Albania; not a 2027 schedule confirmation"
+        "internal-itinerary": "Albania #getting-around and day-by-day route: Tirana→Theth, Theth→Ksamil 8–9 hours, Saranda car drop/ferry, Corfu buffer",
+        "albania-state-driving": "U.S. State country information: rural road quality varies, reckless driving is common, and the fatality rate is higher than in many European countries; official 1949-convention IDPs are accepted"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
+        "albania-bujtina-polia",
+        "albania-big-market-ksamil",
+        "albania-big-market-network",
+        "greece-ab-corfu",
         "internal-itinerary"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "verifiedBases": [
+          "Tirana",
+          "Theth",
+          "Ksamil",
+          "Corfu"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
+        "albania-bujtina-polia": "Official Theth guesthouse/operator page: breakfast-included rooms, daily homemade Albanian food, local ingredients and family-style dining; April-November operation",
+        "albania-big-market-ksamil": "Current local business listing for Big Market on SH81 in Ksamil with daily hours and contact number",
+        "albania-big-market-network": "Official operator states 175+ sales points and 30,000+ products, with fruit/vegetable, meat/fish, bakery, dairy and pantry categories",
+        "greece-ab-corfu": "Official AB Vassilopoulos Corfu operator page, 1st km Corfu-Lefkimmi National Road; full supermarket and broad assortment",
         "internal-itinerary": "Albania; canonical 2027-06-07 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -253,25 +286,84 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
+        "finikas-saranda-corfu",
+        "albania-state-driving",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "eu-etias"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 2,
-        "route": "Albania",
-        "dateWindow": "2027-06-07 → 2027-06-22"
+        "route": "PIT → TIA; Albania one-way drive; Saranda → Corfu ferry; CFU → PIT",
+        "dateWindow": "2027-06-07 → 2027-06-22",
+        "confirmed2027": false,
+        "bookingGates": [
+          "protected open-jaw TIA/CFU air itinerary",
+          "written one-way automatic rental quote to Saranda",
+          "June 20, 2027 Saranda/Corfu ferry",
+          "Valbona and Koman day redesign/conditions",
+          "ETIAS status for the Corfu exit"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Albania; canonical 2027-06-07 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Albania; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Albania; recheck before departure"
+        "internal-itinerary": "Albania #air-travel, #getting-around, #status and day-by-day routing",
+        "finikas-saranda-corfu": "Finikas 2026 operator timetable shows daily seasonal Saranda/Corfu service and 30-minute hydrofoil/50-minute car-ferry products; June 20, 2027 operation is not published",
+        "albania-state-driving": "Current official driving and IDP cautions for Albania",
+        "state-travel": "Albania advisory is Level 2 as of the cited current page; recheck before booking and departure",
+        "cdc-travel": "Albania destination health guidance to recheck before departure",
+        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "valbona-conditions",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "albania-akzm-valbona-conditions",
+        "internal-itinerary"
+      ],
+      "value": {
+        "plannedDate": "2027-06-12",
+        "canonicalDefault": "out-and-back from Theth to meadows/first viewpoint",
+        "fullCrossingStatus": "not compatible with the booked Theth bed without an added return/overnight plan",
+        "officialProxy": "AKZM reported remaining snow, avalanche-area winter routing and local-guide recommendations for May 27–June 3, 2026",
+        "requiredRecheck": "local guide/guesthouse conditions immediately before travel"
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-06-01",
+      "sourceLocators": {
+        "albania-akzm-valbona-conditions": "AKZM 2026 request register entries 43, 51, 53, 54, 59 and 63: late-May/June 3 passability, remaining snow, avalanche exposure and guide recommendation",
+        "internal-itinerary": "Albania Day 5 books Theth night 4 of 5 while presenting a full one-way crossing as an upgrade; only the out-and-back is internally compatible"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "ksamil-family-water",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "albania-tourism-ksamil"
+      ],
+      "value": {
+        "site": "Ksamil",
+        "officialDescription": "small sheltered beaches/islands and family-suitable water access",
+        "temperatureClaim": "not supplied by this source",
+        "planningEffect": "supports frequent access, not a June 2027 temperature or safety guarantee"
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "albania-tourism-ksamil": "Albanian National Tourism Agency Ksamil Beach and family-beach guidance; recheck crowding, concessions and conditions for 2027"
       },
       "claimType": "proxy"
     },
@@ -299,29 +391,34 @@
   "metrics": {
     "airHours": 21,
     "groundHours": 20.7,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 9,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "alternative-required"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in Tirana, Ksamil and Corfu; Theth mountain lodging differs",
+      "kitchen": "strongly preferred at the six-night Ksamil base",
+      "laundry": "preferred at Ksamil",
+      "realBeds": "required for four; guesthouse room configuration is unverified"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Ksamil access is family-suitable in official tourism guidance, but every beach/boat and the Shala swim still needs day-of supervision and conditions checks.",
+    "crowdingPressure": "High at Ksamil in summer and material on Koman/Shala boats; early starts and the six-night coast base create flexibility.",
+    "medicalAccess": "Remote in Theth and on alpine/Koman days; State notes limited assistance in some remote areas. Family medical constraints, evacuation coverage and insurance network remain unresolved.",
+    "childActivityNotes": {
+      "age13": "fits with guide/conditions gate for alpine days",
+      "age8": "conditional: default Valbona out-and-back only; full crossing requires demonstrated endurance, guide and a redesigned overnight/return"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Scores use the canonical itinerary/budget, official Albanian road/trail/tourism evidence and a current ferry-operator proxy. Coarse climate/SST values and every June 2027 fare, rental, sailing and condition remain explicitly provisional.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "internal-derived itinerary and budget tables",
+    "official AKZM trail-condition and State Department driving evidence",
+    "official Albanian tourism access evidence and 2026 ferry-operator proxy",
+    "station-specific climate/SST and independent food/store evidence still incomplete"
   ]
 }

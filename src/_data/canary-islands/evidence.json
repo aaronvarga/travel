@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "canary-islands",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 5-line-item family budget is $12,420–$16,690 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The five categories reconcile exactly to $12,420–$16,690. The entire band is above target and the high case is $1,690 above the preferred maximum; long-haul airfare is not quoted.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,15 +14,15 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Canary Islands and 2027-06-08 → 2027-06-22 spans approximately 66–80°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "rationale": "Official AEMET June normals show a strong microclimate split: Tenerife Norte about 57–72°F and 11 mm rain, Tenerife Sur about 66–78°F and effectively 0 mm. Teide and La Palma high elevations remain much colder/windier than coastal normals.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
       "score": 3,
-      "rationale": "The current-proxy swim range for Canary Islands is approximately 70–72°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "Historical planning estimates place Atlantic water around 70–72°F. Official guides identify calm family water at Las Teresitas and sheltered pools on La Palma, but the temperature range was not independently extracted from the underlying SST dataset in this audit.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Tenerife and La Palma strongly schedule volcanoes, laurel forest, beaches/pools, towns, and astronomy across two islands.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,31 +38,31 @@
     },
     "ease": {
       "score": 2,
-      "rationale": "The canonical route carries 20.3 air hours, 16.3 ground hours, 3 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Three lodging sleeps, two base moves, two island rental cars, one inter-island flight, a Tenerife reposition night, and up to three long-haul connections create high load.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 3,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "HiperDino's current operator locator independently confirms full supermarkets at Puerto de la Cruz, Los Llanos, Santa Cruz/La Laguna, and near the Tenerife airport corridors. Remote mountain/forest days still require packed food, supporting a bounded 3/5 with high confidence.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 2,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "The itinerary sensibly returns to Tenerife before the long-haul flight, but depends on two airport systems, an inter-island hop, two car inventories, and an unpublished June 2027 protected PIT–Tenerife routing.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 5,
-      "rationale": "12 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -70,7 +70,7 @@
     },
     "novelty": {
       "score": 5,
-      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 5/5 under that rubric.",
+      "rationale": "Tenerife and La Palma do not overlap the documented visited-place list, deriving 5/5.",
       "confidence": "high",
       "evidence": [
         "visited-overlap"
@@ -78,7 +78,7 @@
     },
     "pto": {
       "score": 3,
-      "rationale": "8 PTO days derives a 3/5 slider score and has zero default weight.",
+      "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -102,12 +102,12 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "12400–16700 line-item sum; tolerance 150"
+        "arithmetic": "5020/6720 + 2450/3160 + 1130/1520 + 3320/4190 + 500/1100 = 12420/16690"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Canary Islands; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "canary-islands/main.json #totals target/high columns; exact category reconciliation"
       },
       "claimType": "proxy"
     },
@@ -125,10 +125,10 @@
         "hotelNights": 12,
         "ptoDays": 8
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[canary-islands], routeReadiness[canary-islands] and family constraints"
+        "decision-profile": "decisionProfile.json tripWindows.canary-islands and required Pittsburgh dates June 24–26"
       },
       "claimType": "confirmed"
     },
@@ -136,25 +136,35 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "copernicus-climate",
-        "internal-itinerary"
+        "aemet-tenerife-north-normal",
+        "aemet-tenerife-south-normal"
       ],
       "value": {
         "score": 4,
-        "temperatureF": [
-          66,
-          80
-        ],
-        "route": "Canary Islands",
-        "dateWindow": "2027-06-08 → 2027-06-22"
+        "juneMeanDailyLowHighF": {
+          "TenerifeNorth": [
+            57,
+            72
+          ],
+          "TenerifeSouth": [
+            66,
+            78
+          ]
+        },
+        "juneRainMm": {
+          "TenerifeNorth": 11,
+          "TenerifeSouth": 0
+        },
+        "highElevationExcluded": true,
+        "forecast": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Canary Islands; June planning climatology for route Canary Islands; not a live 2027 forecast",
-        "internal-itinerary": "Canary Islands; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "aemet-tenerife-north-normal": "Station C447A June mean min 14.0°C, mean max 22.2°C, rainfall 11 mm",
+        "aemet-tenerife-south-normal": "Station C429I June mean min 18.8°C, mean max 25.4°C, rainfall 0 mm"
       },
       "claimType": "proxy"
     },
@@ -165,8 +175,8 @@
       "confidence": "medium",
       "sourceRefs": [
         "noaa-oisst",
-        "eea-bathing-water",
-        "internal-itinerary"
+        "tenerife-las-teresitas",
+        "la-palma-family-swimming"
       ],
       "value": {
         "score": 3,
@@ -175,15 +185,19 @@
           72
         ],
         "hasSwim": true,
-        "route": "Canary Islands",
-        "dateWindow": "2027-06-08 → 2027-06-22"
+        "shelteredSites": [
+          "Las Teresitas",
+          "Charco Azul",
+          "La Fajana",
+          "Los Cancajos"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Canary Islands; swim locations in route Canary Islands; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Canary Islands; latest published season, not a 2027 guarantee",
-        "internal-itinerary": "Canary Islands; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "noaa-oisst": "Intended June coastal SST extraction at Tenerife 28.4N 16.6W and La Palma 28.68N 17.8W was not independently rerun in this audit; retain planning range only",
+        "tenerife-las-teresitas": "Official Tenerife guide identifies breakwater-protected calm family water and services",
+        "la-palma-family-swimming": "Official La Palma guide identifies natural pools with calm child areas and distinguishes open-ocean exposure"
       },
       "claimType": "proxy"
     },
@@ -197,81 +211,122 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "lodgingSleeps": 3,
+        "baseNames": [
+          "Tenerife north",
+          "La Palma west",
+          "Tenerife airport buffer"
+        ],
+        "nightSplit": [
+          6,
+          5,
+          1
+        ],
+        "scheduledModes": [
+          "volcano/high mountain",
+          "laurel forest",
+          "water",
+          "town/culture",
+          "astronomy"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "Canary Islands; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "canary-islands/main.json itinerary day1–day12 and lodging heading Three sleeps, two bases"
       },
       "claimType": "derived"
     },
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 2,
         "maxConnections": 3,
-        "singleTicket": true,
-        "airHours": 20.3,
-        "groundHours": 16.3
+        "singleTicketAssumption": true,
+        "lodgingSleeps": 3,
+        "baseMoves": 2,
+        "interIslandFlights": 2,
+        "rentalCars": 2,
+        "airHoursPlanningEstimate": 20.3,
+        "groundHoursPlanningEstimate": 16.3,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Canary Islands; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Canary Islands; not a 2027 schedule confirmation"
+        "internal-itinerary": "canary-islands/main.json day7 TFN→SPC, day12 SPC→Tenerife reposition, and #getting-around"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "hiperdino-canary-stores"
       ],
       "value": {
         "score": 3,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "coveredBases": [
+          "Tenerife north",
+          "La Palma west"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "groceries",
+          "packed lunch"
+        ],
+        "weakZones": [
+          "Teide",
+          "Anaga",
+          "Los Tilos",
+          "airport buffer"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Canary Islands; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "canary-islands/main.json restaurant entries; rural Teide, Anaga, and La Palma days explicitly require packed food while both main bases list pizza/pasta fallback",
+        "hiperdino-canary-stores": "Operator locator reviewed 2026-07-10: HiperDino Picasso/Piedra Redonda in Puerto de la Cruz; HiperDino Los Llanos in Los Llanos de Aridane; Tenerife branches at Santa Cruz/La Laguna and Amarilla Golf near the airport corridor"
       },
       "claimType": "proxy"
     },
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "binter-canary-network-2026",
+        "internal-itinerary"
       ],
       "value": {
-        "status": "current-proxy",
-        "singleTicket": true,
+        "status": "exact-2027-schedule-required",
+        "singleTicketAssumption": true,
         "maxConnections": 3,
-        "route": "Canary Islands",
-        "dateWindow": "2027-06-08 → 2027-06-22"
+        "interIslandRoute": "TFN–SPC",
+        "longHaulRoute": "PIT–Tenerife via European hub",
+        "june2027ProtectedTicketVerified": false,
+        "returnBuffer": "one Tenerife night",
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Canary Islands; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Canary Islands; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Canary Islands; recheck before departure"
+        "binter-canary-network-2026": "Binter 2026 press kit documents dense service among Tenerife and La Palma; exact 2027 dates/fare absent",
+        "internal-itinerary": "canary-islands/main.json air section requires Tenerife reposition and prohibits a fragile direct SPC long-haul chain"
       },
       "claimType": "proxy"
     },
@@ -285,13 +340,14 @@
         "scorecard-contract"
       ],
       "value": {
-        "score": 5
+        "score": 5,
+        "overlap": []
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[canary-islands], routeReadiness[canary-islands] and family constraints",
-        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for canary-islands"
+        "decision-profile": "decisionProfile.json family trip context",
+        "scorecard-contract": "scorecard.manifest.json visited list contains neither Tenerife nor La Palma"
       },
       "claimType": "derived"
     }
@@ -299,29 +355,33 @@
   "metrics": {
     "airHours": 20.3,
     "groundHours": 16.3,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 2,
+    "longestTransferHours": 9,
+    "highOutputDayStreak": 4,
+    "fallbackDays": 2,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "unknown until property selection",
+      "kitchen": "planned in both main bases but unconfirmed",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Use Las Teresitas or protected pools for family swims; open Atlantic beaches require live flag/swell checks.",
+    "crowdingPressure": "Teide permits/cable car, Anaga parking, and major trailheads require advance timing; La Palma is generally lower pressure.",
+    "medicalAccess": "Unknown against incomplete family medical profile; Teide, Caldera, Los Tilos, and volcano-ridge days are remote.",
+    "childActivityNotes": {
+      "age13": "strong for volcanoes, forest, astronomy, and swimming",
+      "age8": "supported by scaled trail segments and calm-water sites; summit ambitions need restraint"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Official AEMET normals, official family-water guidance, current Binter network evidence, and deterministic itinerary derivation; SST and prices remain planning proxies.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "high-confidence climate, route-gate, and logistics claims",
+    "high-confidence base-specific grocery coverage",
+    "medium-confidence SST and budget claims"
   ]
 }

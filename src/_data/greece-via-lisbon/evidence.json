@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "slug": "greece-via-lisbon",
-  "reviewedAt": "2026-07-09",
-  "overallConfidence": "low",
+  "reviewedAt": "2026-07-10",
+  "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
@@ -13,8 +13,8 @@
       ]
     },
     "weather": {
-      "score": 5,
-      "rationale": "Current-proxy climatology for Greece via Lisbon and 2027-06-09 → 2027-06-22 spans approximately 68–88°F; this is not a 2027 forecast.",
+      "score": 4,
+      "rationale": "The route is mostly comfortable, with manageable heat planning for Athens, exposed coast, and Crete gorge days (4/5); historical conditions are not a June 2027 forecast.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,7 +22,7 @@
     },
     "swim": {
       "score": 4,
-      "rationale": "The current-proxy swim range for Greece via Lisbon is approximately 72–74°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "The 72–74°F range is plausible for Balos, Elafonissi, and Rethymno in mid-June and supports Swim 4/5, but the record lacks a reproducible site-level SST extract; confidence remains medium.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Four bases/gateways schedule Lisbon and Venetian towns, Crete beaches, and multiple White Mountains gorge days; Variety 5/5 is directly derived.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 2,
-      "rationale": "The canonical route carries 28.3 air hours, 15.5 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Four hotel bases/gateways, multiple separate air legs, a Crete rental car, and long trailhead transfers create high deterministic load; Ease 2/5 is supported.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current first-party store pages independently document grocery/plain-food fallback coverage in Cascais, Athens, Chania, and Rethymno. That supports Food 4/5; store hours and stock still need a pre-trip recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "Route status is reroute-required; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "low",
+      "score": 1,
+      "rationale": "The return route is not supported as written on the required Tuesday 2027-06-22 date, creating a critical unresolved routing failure (1/5) until the itinerary is rebuilt.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -142,7 +142,7 @@
         "internal-itinerary"
       ],
       "value": {
-        "score": 5,
+        "score": 4,
         "temperatureF": [
           68,
           88
@@ -153,7 +153,7 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Greece via Lisbon; June planning climatology for route Greece via Lisbon; not a live 2027 forecast",
+        "copernicus-climate": "ERA5 product proposed for Lisbon, Chania, Omalos and Rethymno; no reproducible route extract is stored yet, so the range remains medium-confidence",
         "internal-itinerary": "Greece via Lisbon; canonical 2027-06-09 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -181,8 +181,8 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Greece via Lisbon; swim locations in route Greece via Lisbon; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Greece via Lisbon; latest published season, not a 2027 guarantee",
+        "noaa-oisst": "OISST product proposed for Balos (35.58,23.59), Elafonissi (35.27,23.54), and Rethymno (35.37,24.48); no stored extract yet",
+        "eea-bathing-water": "2025 Greece assessment; recheck exact scheduled beaches and day-of flags in 2027",
         "internal-itinerary": "Greece via Lisbon; canonical 2027-06-09 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -197,7 +197,14 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 4,
+        "baseMoves": 3,
+        "modes": [
+          "water",
+          "town/culture",
+          "nature/hikes"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": null,
@@ -209,24 +216,25 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 2,
         "maxConnections": 2,
         "singleTicket": false,
         "airHours": 28.3,
-        "groundHours": 15.5
+        "groundHours": 15.5,
+        "bases": 4,
+        "baseMoves": 3,
+        "longestTransferHours": 8
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Greece via Lisbon; canonical 2027-06-09 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Greece via Lisbon; not a 2027 schedule confirmation"
+        "internal-itinerary": "#overview, #air-travel and #getting-around: Lisbon/Cascais, Athens gateway, Chania, Rethymno, separate domestic legs, and Crete car/trailhead transfers"
       },
       "claimType": "proxy"
     },
@@ -234,18 +242,31 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "continente-cascais",
+        "lidl-athens",
+        "lidl-chania",
+        "lidl-rethymno"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "basesWithIndependentGroceryCoverage": 4,
+        "bases": [
+          "Cascais",
+          "Athens",
+          "Chania",
+          "Rethymno"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Greece via Lisbon; canonical 2027-06-09 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "continente-cascais": "Official Cascais store page: Estrada Nacional 9 118; bakery, takeaway, meat, fruit, grocery and fish departments",
+        "lidl-athens": "Official Lidl Athens locator lists nine stores; Ilia Iliou 49 page documents bakery, produce, dairy, meat and groceries",
+        "lidl-chania": "Official Lidl Chania locator lists three stores; Agion Apostolon page documents bakery, produce, dairy, meat, groceries and ready foods",
+        "lidl-rethymno": "Official Lidl Rethymno locator lists two stores; Atsipopoulo page documents bakery, produce, dairy, meat and groceries"
       },
       "claimType": "proxy"
     },
@@ -253,8 +274,9 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "reroute-required",
-      "confidence": "low",
+      "confidence": "high",
       "sourceRefs": [
+        "aegean-ath-lis",
         "internal-itinerary",
         "state-travel",
         "cdc-travel"
@@ -263,14 +285,16 @@
         "status": "reroute-required",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Greece via Lisbon",
-        "dateWindow": "2027-06-09 → 2027-06-22"
+        "route": "Crete → ATH → LIS → PIT return as written",
+        "dateWindow": "2027-06-22",
+        "requiredAction": "rebuild return via a published ATH–LIS date or another protected hub"
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Greece via Lisbon; canonical 2027-06-09 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Greece via Lisbon; recheck before booking and departure",
+        "aegean-ath-lis": "AEGEAN official fare calendar checked 2026-07-10 sells ATH–LIS on selected dates through April 2027 but does not publish or confirm 2027-06-22",
+        "internal-itinerary": "#decisions explicitly says the current Tuesday ATH–LIS proxy does not operate and the return must be rebuilt",
+        "state-travel": "Greece and Portugal Level 1 advisories reviewed 2026-07-10; Greece also flags summer heat/wildfire exposure",
         "cdc-travel": "CDC Travelers' Health destination guidance for Greece via Lisbon; recheck before departure"
       },
       "claimType": "proxy"
@@ -299,29 +323,34 @@
   "metrics": {
     "airHours": 28.3,
     "groundHours": 15.5,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 2,
+    "baseMoves": 3,
+    "longestTransferHours": 8,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 4,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in Lisbon, Athens, Chania, and Rethymno",
+      "kitchen": "preferred in Crete bases",
+      "laundry": "preferred in Chania",
+      "realBeds": "required; properties not selected"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Check beach flags, boat conditions and gorge closures daily; Balos access must match wind and mobility.",
+    "crowdingPressure": "High at Balos, Elafonissi and Chania old town; early starts and flexible beach order are needed.",
+    "medicalAccess": "Chania/Rethymno have services, but remote gorge evacuation and insurance coverage remain unverified.",
+    "childActivityNotes": {
+      "age13": "fits beaches, towns and gorge options; preferences remain incomplete",
+      "age8": "Imbros and lazy-way Samaria are documented alternatives; full Samaria depends on hiking/heat tolerance"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "AEGEAN's official fare calendar and the itinerary strongly establish that the current return is not ready; they do not establish a bookable June 22, 2027 replacement. Climate/SST remain medium pending stored site-level extracts.",
   "confidenceBasis": [
     "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "reroute-required"
+    "official airline evidence for the route gate",
+    "medium-confidence climate/SST proxies",
+    "reroute-required for the exact return"
   ]
 }

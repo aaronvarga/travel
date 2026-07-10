@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-sicily",
-  "reviewedAt": "2026-07-09",
-  "overallConfidence": "low",
+  "reviewedAt": "2026-07-10",
+  "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 5-line-item family budget is $12,300–$15,500 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "Five category rollups total $12,300–$15,550, consistent with the rounded $12,300–$15,500 band. The whole band is above target and the high case exceeds the preferred maximum; flight prices remain gated proxies.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,7 +14,7 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Madeira + Sicily and 2027-06-08 → 2027-06-21 spans approximately 64–84°F; this is not a 2027 forecast.",
+      "rationale": "Funchal official June normals are about 65–75°F with little rain; coastal Sicily is warm/dry but the Sicily grid-cell range was not independently regenerated in this audit.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,7 +22,7 @@
     },
     "swim": {
       "score": 3,
-      "rationale": "The current-proxy swim range for Madeira + Sicily is approximately 72–75°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "Sicily schedules repeated Cefalù, Mondello, Isola Bella, and Giardini Naxos swimming. The 72–75°F range was not independently re-extracted from OISST; if verified, it would align more naturally with the rubric's 4/5 band.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Four lodging sleeps strongly cover Madeira hiking, Sicilian beaches, Palermo/Cefalù culture and food, and Etna nature.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,31 +38,31 @@
     },
     "ease": {
       "score": 1,
-      "rationale": "The canonical route carries 24.2 air hours, 12.4 ground hours, 3 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Four lodging sleeps, three base moves, two rental cars, two internal flights, and up to three connections are high load. However, the unprotected-ticket uncertainty belongs in Risk, so the deterministic rubric more plausibly supports 2/5 than 1/5.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 5,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current operator evidence independently covers groceries in Funchal/Lisbon and Cefalù plus plain pizza/fries in Taormina and delivery/takeaway pizza in Giardini Naxos. Combined with Sicily/Madeira food appeal, this strongly supports 5/5; recheck each business for 2027.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 1,
-      "rationale": "Route status is exact-2027-schedule-required; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "low",
+      "rationale": "Madeira wind exposure plus a separate-ticket, less-than-daily LIS–PMO dependency and no same-day recovery option form a critical single point of failure. Exact June 2027 operation is mandatory before booking.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 5,
-      "rationale": "12 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -70,7 +70,7 @@
     },
     "novelty": {
       "score": 5,
-      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 5/5 under that rubric.",
+      "rationale": "Madeira and Sicily's planned regions do not repeat exact places in the documented visited list; 5/5 derives under the current rubric.",
       "confidence": "high",
       "evidence": [
         "visited-overlap"
@@ -78,7 +78,7 @@
     },
     "pto": {
       "score": 3,
-      "rationale": "8 PTO days derives a 3/5 slider score and has zero default weight.",
+      "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -92,7 +92,8 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "easyjet-lis-pmo"
       ],
       "value": {
         "lowUsd": 12300,
@@ -102,12 +103,13 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "12300–15600 line-item sum; tolerance 150"
+        "arithmetic": "6900–8200 + 2350–3300 + 2100–2450 + 600–1100 + 350–500 = 12300–15550; displayed 12300–15500"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-sicily/main.json #totals; five categories and explicit flight gate",
+        "easyjet-lis-pmo": "Operator timetable observed 2026-07-10 showed August 2026 one-way examples around €149–€258 per passenger before optional bags; not June 2027 or the full flight stack"
       },
       "claimType": "proxy"
     },
@@ -125,10 +127,10 @@
         "hotelNights": 12,
         "ptoDays": 8
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[madeira-sicily], routeReadiness[madeira-sicily] and family constraints"
+        "decision-profile": "decisionProfile.json tripWindows.madeira-sicily and required Pittsburgh dates June 24–26"
       },
       "claimType": "confirmed"
     },
@@ -138,23 +140,27 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "copernicus-climate",
-        "internal-itinerary"
+        "ipma-funchal-normal-1991-2020",
+        "copernicus-climate"
       ],
       "value": {
         "score": 4,
         "temperatureF": [
-          64,
+          65,
           84
         ],
-        "route": "Madeira + Sicily",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "funchalJuneMeanLowHighF": [
+          65,
+          75
+        ],
+        "sicilyCoastalJunePlanningHighF": 84,
+        "forecast": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Madeira + Sicily; June planning climatology for route Madeira + Sicily; not a live 2027 forecast",
-        "internal-itinerary": "Madeira + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "ipma-funchal-normal-1991-2020": "Station 522 June TN 18.2°C, TX 23.7°C, precipitation 7.8 mm",
+        "copernicus-climate": "ERA5 monthly means for coastal Palermo/Cefalù and Catania/Taormina grid cells, June historical climatology, not forecast"
       },
       "claimType": "proxy"
     },
@@ -166,7 +172,7 @@
       "sourceRefs": [
         "noaa-oisst",
         "eea-bathing-water",
-        "internal-itinerary"
+        "visit-sicily-sea"
       ],
       "value": {
         "score": 3,
@@ -175,15 +181,19 @@
           75
         ],
         "hasSwim": true,
-        "route": "Madeira + Sicily",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "sites": [
+          "Cefalù",
+          "Mondello",
+          "Isola Bella",
+          "Giardini Naxos"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Madeira + Sicily; swim locations in route Madeira + Sicily; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Madeira + Sicily; latest published season, not a 2027 guarantee",
-        "internal-itinerary": "Madeira + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "noaa-oisst": "June 15–20 historical SST proxy at Cefalù 38.04N 14.02E and Taormina 37.85N 15.29E",
+        "eea-bathing-water": "Latest Italy bathing-water assessment; selected 2027 sites require recheck",
+        "visit-sicily-sea": "Official Sicily guide identifies Cefalù sandy coast and Taormina/Giardini Naxos eastern beaches"
       },
       "claimType": "proxy"
     },
@@ -197,55 +207,99 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "lodgingSleeps": 4,
+        "baseNames": [
+          "Funchal",
+          "Lisbon buffer",
+          "Cefalù",
+          "Taormina coast"
+        ],
+        "nightSplit": [
+          5,
+          1,
+          3,
+          3
+        ],
+        "scheduledModes": [
+          "hiking/nature",
+          "beaches",
+          "town/culture",
+          "food"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-sicily/main.json itinerary day1–day12 and lodging heading Four bases, two trip modes"
       },
       "claimType": "derived"
     },
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 1,
         "maxConnections": 3,
         "singleTicket": false,
-        "airHours": 24.2,
-        "groundHours": 12.4
+        "lodgingSleeps": 4,
+        "baseMoves": 3,
+        "internalFlights": 2,
+        "rentalCars": 2,
+        "airHoursPlanningEstimate": 24.2,
+        "groundHoursPlanningEstimate": 12.4
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Madeira + Sicily; not a 2027 schedule confirmation"
+        "internal-itinerary": "madeira-sicily/main.json day6 FNC→LIS, day7 LIS→PMO→Cefalù, day10 Cefalù→Taormina coast, and #getting-around"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "continente-portugal-stores",
+        "conad-cefalu",
+        "vecchia-taormina-menu",
+        "ottospikki-giardini-naxos"
       ],
       "value": {
         "score": 5,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "coveredSleeps": [
+          "Funchal",
+          "Lisbon",
+          "Cefalù",
+          "Taormina coast"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "grills",
+          "bakeries",
+          "groceries"
+        ],
+        "lodgingKitchenConfirmed": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-sicily/main.json day-by-day restaurant entries name pizza, pasta, burgers, grills, bakeries, and groceries across all four sleeps",
+        "continente-portugal-stores": "Operator locator reviewed 2026-07-10: multiple Funchal branches including MadeiraShopping/São Martinho and multiple central Lisbon branches",
+        "vecchia-taormina-menu": "Current Taormina operator menu reviewed 2026-07-10 includes simple pizza, Baby VIP tomato/mozzarella/fries, plain fries, bread, and salads",
+        "ottospikki-giardini-naxos": "Current operator site reviewed 2026-07-10 confirms takeaway and pizza delivery service in Giardini Naxos and Trappitello",
+        "conad-cefalu": "Conad Contrada Gallizza, Cefalù operator page reviewed 2026-07-10: open daily, produce, meat, cheese/deli, and accessible grocery departments"
       },
       "claimType": "proxy"
     },
@@ -253,25 +307,26 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "low",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "easyjet-lis-pmo",
+        "ana-madeira-wind-operations",
+        "internal-itinerary"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
         "singleTicket": false,
         "maxConnections": 3,
-        "route": "Madeira + Sicily",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "criticalLeg": "LIS–PMO less-than-daily easyJet",
+        "june2027Verified": false,
+        "mandatoryBuffer": "Lisbon"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Madeira + Sicily; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Madeira + Sicily; recheck before departure"
+        "easyjet-lis-pmo": "Operator August 2026 timetable observed Tuesday/Friday service; exact June 2027 dates absent",
+        "ana-madeira-wind-operations": "Official historical example of wind disruption at Madeira Airport",
+        "internal-itinerary": "madeira-sicily/main.json air section calls LIS–PMO an easyJet monopoly and keeps a Lisbon buffer"
       },
       "claimType": "proxy"
     },
@@ -285,13 +340,14 @@
         "scorecard-contract"
       ],
       "value": {
-        "score": 5
+        "score": 5,
+        "exactPlaceOverlap": []
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[madeira-sicily], routeReadiness[madeira-sicily] and family constraints",
-        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for madeira-sicily"
+        "decision-profile": "decisionProfile.json family trip context",
+        "scorecard-contract": "scorecard.manifest.json visited list includes southern Italy places but not Sicily or Madeira"
       },
       "claimType": "derived"
     }
@@ -299,29 +355,33 @@
   "metrics": {
     "airHours": 24.2,
     "groundHours": 12.4,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 2,
+    "baseMoves": 3,
+    "longestTransferHours": 8.5,
+    "highOutputDayStreak": 4,
+    "fallbackDays": 1,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "unknown until property selection",
+      "kitchen": "planned apartment-first but unconfirmed",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Madeira pools and Sicilian pebble/exposed beaches require day-of sea-state and lifeguard checks.",
+    "crowdingPressure": "Madeira PR slots, Cefalù, Palermo, Taormina, and Etna require advance timing.",
+    "medicalAccess": "Unknown against incomplete family medical profile; ridge and Etna days are principal remote exposures.",
+    "childActivityNotes": {
+      "age13": "strong for hiking, Etna, towns, and beaches",
+      "age8": "supported with ridge turnaround and coast alternatives"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Official climate/trail/wind and destination evidence, historical SST, current airline timetable proxy, and deterministic itinerary derivation.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "exact-2027-schedule-required"
+    "high-confidence exact-schedule gate and deterministic load",
+    "high-confidence base-specific grocery and plain-menu coverage",
+    "medium-confidence budget, lodging, climate grid, and non-reproduced SST"
   ]
 }

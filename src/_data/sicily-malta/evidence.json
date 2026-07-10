@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "sicily-malta",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -13,8 +13,8 @@
       ]
     },
     "weather": {
-      "score": 5,
-      "rationale": "Current-proxy climatology for Sicily & Malta and 2027-06-10 → 2027-06-23 spans approximately 68–86°F; this is not a 2027 forecast.",
+      "score": 4,
+      "rationale": "The route is mostly comfortable, with manageable heat planning on exposed ruins, Etna, Ortigia, and Malta days (4/5); historical conditions do not guarantee June 2027 weather.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,7 +22,7 @@
     },
     "swim": {
       "score": 3,
-      "rationale": "The current-proxy swim range for Sicily & Malta is approximately 72–75°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "OISST coastal history supports roughly 72–75°F water across Cefalù, east Sicily, Siracusa, and Malta in mid-June. That is usable but not reliably warm, matching 3/5.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Four bases explicitly schedule beaches/boats, historic towns, Etna, and Gozo/Comino nature; 5/5 is a direct itinerary derivation.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 2,
-      "rationale": "The canonical route carries 25.4 air hours, 17.7 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Four bases, three hotel moves, a Sicily rental car, and a separate CTA–MLA flight create high deterministic logistics load; this supports Ease 2/5.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 5,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current first-party store pages independently document grocery/plain-food fallback coverage in Cefalu, Giardini Naxos, Siracusa, and Sliema. That supports Food 5/5; store hours and stock still need a pre-trip recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "Ryanair currently sells CTA–MLA, but June 20, 2027 is not published and the leg is separate from the transatlantic ticket. The evidence strongly supports a current-proxy, recheck-required route rather than a confirmed 2027 itinerary.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -142,7 +142,7 @@
         "internal-itinerary"
       ],
       "value": {
-        "score": 5,
+        "score": 4,
         "temperatureF": [
           68,
           86
@@ -153,7 +153,7 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Sicily & Malta; June planning climatology for route Sicily & Malta; not a live 2027 forecast",
+        "copernicus-climate": "ERA5 June monthly means at Cefalù (38.04,14.02), Taormina (37.85,15.29), Siracusa (37.08,15.29), and Malta (35.90,14.51); historical planning proxy, not a forecast",
         "internal-itinerary": "Sicily & Malta; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -166,6 +166,7 @@
       "sourceRefs": [
         "noaa-oisst",
         "eea-bathing-water",
+        "malta-blue-lagoon",
         "internal-itinerary"
       ],
       "value": {
@@ -181,8 +182,9 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Sicily & Malta; swim locations in route Sicily & Malta; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Sicily & Malta; latest published season, not a 2027 guarantee",
+        "noaa-oisst": "OISST v2.1 June climatology for coastal cells nearest Cefalù, Isola Bella/Taormina, Fontane Bianche/Siracusa, and Comino; historical SST only",
+        "eea-bathing-water": "2025 Italy and Malta assessment; exact 2027 beaches and day-of notices must still be checked",
+        "malta-blue-lagoon": "Transport Malta Local Notice 59/2026 designates the Blue Lagoon swimmer zone and requires vessels to stay at least 5 m outside it; live conditions still govern",
         "internal-itinerary": "Sicily & Malta; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -197,7 +199,14 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 4,
+        "baseMoves": 3,
+        "modes": [
+          "water",
+          "town/culture",
+          "nature/hikes"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": null,
@@ -209,24 +218,25 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 2,
         "maxConnections": 2,
         "singleTicket": false,
         "airHours": 25.4,
-        "groundHours": 17.7
+        "groundHours": 17.7,
+        "bases": 4,
+        "baseMoves": 3,
+        "longestTransferHours": 4.5
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Sicily & Malta; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Sicily & Malta; not a 2027 schedule confirmation"
+        "internal-itinerary": "#overview, #air-travel and #getting-around: four 3-night bases, Sicily car, separate CTA–MLA hop, and Malta no-car logistics"
       },
       "claimType": "proxy"
     },
@@ -234,43 +244,58 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "conad-cefalu",
+        "deco-giardini-naxos",
+        "conad-siracusa",
+        "welbees-sliema"
       ],
       "value": {
         "score": 5,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "basesWithIndependentGroceryCoverage": 4,
+        "bases": [
+          "Cefalu",
+          "Taormina / Giardini Naxos",
+          "Siracusa / Ortigia",
+          "Valletta / Sliema"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Sicily & Malta; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "conad-cefalu": "Official Cefalu store page: Contrada Gallizza, 90015 Cefalu",
+        "deco-giardini-naxos": "Official Gruppo Arena store page: Supermercati Deco, Via Naxos 157, Giardini Naxos",
+        "conad-siracusa": "Official Siracusa store page: Viale Santa Panagia 238; gastronomy, deli, produce and meat departments",
+        "welbees-sliema": "Official Welbee's locator: High Street, Sliema SLM1549; official catalog covers bakery, chilled, cupboard, frozen and produce"
       },
       "claimType": "proxy"
     },
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
       "sourceRefs": [
+        "ryanair-cta-mla",
         "internal-itinerary",
         "state-travel",
         "cdc-travel"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "exact-2027-schedule-required",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Sicily & Malta",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "route": "CTA → MLA on a separate ticket",
+        "dateWindow": "2027-06-20"
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Sicily & Malta; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Sicily & Malta; recheck before booking and departure",
+        "ryanair-cta-mla": "Official Ryanair route page checked 2026-07-10 sells CTA–MLA on current dates; it does not confirm 2027-06-20",
+        "internal-itinerary": "#air-travel and #decisions require CTA–MLA on 2027-06-20 after the Sicily car drop",
+        "state-travel": "Italy Level 2 and Malta Level 1 advisories reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Sicily & Malta; recheck before departure"
       },
       "claimType": "proxy"
@@ -299,29 +324,34 @@
   "metrics": {
     "airHours": 25.4,
     "groundHours": 17.7,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 4.5,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 4,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in all four bases",
+      "kitchen": "preferred for plain-food coverage",
+      "laundry": "preferred in Ortigia or Malta",
+      "realBeds": "required; property selection pending"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Use monitored beaches and day-of boat/flag checks; Blue Lagoon has a designated swimmer zone but conditions remain live.",
+    "crowdingPressure": "High at Taormina and Comino; timed access/early starts are required mitigations.",
+    "medicalAccess": "Urban bases have services, but exact facilities, insurance acceptance, and evacuation cover are not audited.",
+    "childActivityNotes": {
+      "age13": "fits documented Etna, towns, boats, and swim days; preferences remain incomplete",
+      "age8": "fits with lower-Etna, beach, and shorter Gozo alternatives; swim/mobility comfort unknown"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Stable claims use coordinate-level ERA5/OISST, EEA bathing-water context, Ryanair's official current CTA–MLA route, and Transport Malta's Blue Lagoon controls. Budget, lodging, and the exact June 20, 2027 flight remain unconfirmed.",
   "confidenceBasis": [
     "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "official historical climate and bathing-water datasets",
+    "official current operator route evidence",
+    "exact 2027 date remains unconfirmed"
   ]
 }

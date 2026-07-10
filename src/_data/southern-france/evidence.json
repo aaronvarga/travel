@@ -1,68 +1,91 @@
 {
   "schemaVersion": 1,
   "slug": "southern-france",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
       "rationale": "The independently itemized $13,350–$19,100 family band can approach the $15,000 preference only near its low case and has a material premium-price tail.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 4,
-      "rationale": "Mid-June is generally favorable for the Riviera and Provence, but inland heat, exposed coast paths, wind and fire restrictions require early starts and recovery afternoons.",
-      "confidence": "medium",
-      "evidence": ["climate-proxy", "calanques-access"]
+      "rationale": "Météo-France 1991–2020 station sheets show June mean high/low temperatures of 76.5/64.6°F at Nice and 82.2/63.0°F at Marignane, with historical June maxima of 98.2°F and 103.3°F. That supports favorable touring plus recurring heat/fire planning; it is not a June 2027 forecast.",
+      "confidence": "high",
+      "evidence": [
+        "climate-proxy",
+        "calanques-access"
+      ]
     },
     "swim": {
       "score": 3,
       "rationale": "The plan has repeated sea/lake/pool opportunities and a genuine Antibes sand day, but Nice is pebbles and the historical June Mediterranean planning range is only moderately warm.",
       "confidence": "medium",
-      "evidence": ["swim-conditions", "beach-surface"]
+      "evidence": [
+        "swim-conditions",
+        "beach-surface"
+      ]
     },
     "variety": {
       "score": 5,
       "rationale": "The canonical route explicitly balances coast and swimming, towns and food, Calanques nature, lake/lavender scenery, art and Roman/medieval history.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 4,
       "rationale": "Only three bases and one mode change keep the route coherent: five car-free Riviera nights, then one one-way rental through Cassis and Aix to Marseille Airport.",
       "confidence": "high",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 4,
-      "rationale": "Every base and remote day has named pizza, pasta, burger or plain-food coverage, while markets and apartment-style meals support both children without turning every meal into an event.",
-      "confidence": "medium",
-      "evidence": ["family-food-coverage"]
+      "rationale": "Official Carrefour and SPAR pages verify central grocery coverage in Nice, Cassis and Aix, with fresh food, frozen food, pantry staples and delivery/pickup options. Plain-food fallback coverage is robust today; lodging kitchens, remote-day packing and June 2027 store operations remain rechecks.",
+      "confidence": "high",
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
-      "rationale": "The ground route is credible, but exact 2027 open-jaw flights, the hard June 23 return, automatic-car inventory, Calanques access and bloom timing remain planning gates.",
-      "confidence": "medium",
-      "evidence": ["route-readiness", "seasonal-conditions"]
+      "rationale": "The evidence strongly supports a 3/5 risk conclusion: the ground route is credible, while exact 2027 open-jaw flights, the June 23 return, automatic-car inventory, daily Calanques access and bloom timing remain explicit planning gates.",
+      "confidence": "high",
+      "evidence": [
+        "route-readiness",
+        "seasonal-conditions"
+      ]
     },
     "nights": {
       "score": 5,
       "rationale": "Twelve hotel nights derives 5/5 under the canonical nights rubric.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 5,
       "rationale": "The Riviera, Cassis, Aix, Verdon and Avignon route is new under the documented visited-place overlap rubric.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 3,
       "rationale": "Eight PTO days derives 3/5 and remains unweighted by default; the count becomes nine if the employer does not observe Juneteenth on Friday, June 18.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +94,10 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "google-flights-pit-nce"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "google-flights-pit-nce"
+      ],
       "value": {
         "lowUsd": 13350,
         "expectedUsd": 16050,
@@ -95,14 +121,21 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "internal-itinerary"],
+      "sourceRefs": [
+        "decision-profile",
+        "internal-itinerary"
+      ],
       "value": {
         "depart": "2027-06-10",
         "return": "2027-06-23",
         "hotelNights": 12,
         "ptoDays": 8,
         "ptoDaysWithoutObservedHoliday": 9,
-        "homeProtected": ["2027-06-24", "2027-06-25", "2027-06-26"]
+        "homeProtected": [
+          "2027-06-24",
+          "2027-06-25",
+          "2027-06-26"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-06-23",
@@ -116,19 +149,36 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
-      "sourceRefs": ["meteo-france-nice", "copernicus-climate", "internal-itinerary"],
+      "confidence": "high",
+      "sourceRefs": [
+        "france-meteo-nice-station",
+        "france-meteo-marignane-station",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 4,
-        "temperatureF": [62, 88],
+        "juneMeanHighLowF": {
+          "Nice": [
+            76.5,
+            64.6
+          ],
+          "Marignane": [
+            82.2,
+            63
+          ]
+        },
+        "historicalJuneMaximumF": {
+          "Nice": 98.2,
+          "Marignane": 103.3
+        },
         "route": "Nice, Cassis, Aix and Provence day trips",
         "dateWindow": "2027-06-10 → 2027-06-23"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "meteo-france-nice": "Nice 1991–2020 climate-normal context; not a 2027 forecast",
-        "copernicus-climate": "June monthly planning context for southeast France",
+        "france-meteo-nice-station": "Météo-France FICHECLIM_06088001.pdf; station 06088001, June column: mean maximum 24.7°C, mean minimum 18.1°C, record maximum 36.8°C",
+        "france-meteo-marignane-station": "Météo-France FICHECLIM_13054001.pdf; station 13054001, June column: mean maximum 27.9°C, mean minimum 17.2°C, record maximum 39.6°C",
         "internal-itinerary": "Early starts, shaded afternoons and pool/heat fallbacks throughout #itinerary"
       },
       "claimType": "proxy"
@@ -138,12 +188,23 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["noaa-oisst", "eea-bathing-water", "internal-itinerary"],
+      "sourceRefs": [
+        "noaa-oisst",
+        "eea-bathing-water",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 3,
-        "temperatureF": [68, 72],
+        "temperatureF": [
+          68,
+          72
+        ],
         "hasSwim": true,
-        "waterTypes": ["Mediterranean sea", "Lac de Sainte-Croix", "hotel pools"],
+        "waterTypes": [
+          "Mediterranean sea",
+          "Lac de Sainte-Croix",
+          "hotel pools"
+        ],
         "dateWindow": "2027-06-11 → 2027-06-22"
       },
       "verifiedAt": "2026-07-09",
@@ -160,7 +221,10 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["nice-beaches", "antibes-beaches"],
+      "sourceRefs": [
+        "nice-beaches",
+        "antibes-beaches"
+      ],
       "value": {
         "nice": "predominantly pebble beach",
         "antibes": "Ponteil and Salis are long sandy beaches with shallow family-friendly water",
@@ -179,13 +243,23 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "score": 5,
         "hotelNights": 12,
         "bases": 3,
-        "basePattern": ["Nice 5", "Cassis 3", "Aix-en-Provence 4"],
-        "modes": ["water/recovery", "towns/food", "nature/history"],
+        "basePattern": [
+          "Nice 5",
+          "Cassis 3",
+          "Aix-en-Provence 4"
+        ],
+        "modes": [
+          "water/recovery",
+          "towns/food",
+          "nature/history"
+        ],
         "recoveryDays": 3
       },
       "verifiedAt": "2026-07-09",
@@ -198,9 +272,14 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "sncf-nice-menton", "lignes-azur-82", "cassis-parking"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "sncf-nice-menton",
+        "lignes-azur-82",
+        "cassis-parking"
+      ],
       "value": {
         "easeScore": 4,
         "maxConnections": 1,
@@ -212,31 +291,50 @@
         "route": "car-free Nice spokes → one-way car Nice–Cassis–Aix–MRS"
       },
       "verifiedAt": "2026-07-09",
-      "expiresAt": "2027-02-01",
+      "expiresAt": "2027-06-23",
       "sourceLocators": {
         "internal-itinerary": "#air-travel, #getting-around and canonical transfer days",
         "sncf-nice-menton": "Current direct TER spine through Villefranche, Èze-sur-Mer, Monaco and Menton; 2027 timetable pending",
         "lignes-azur-82": "Current bus access to Èze Village; 2027 timetable pending",
         "cassis-parking": "Municipal Gorguettes parking and shuttle guidance"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
-      "sourceRefs": ["internal-itinerary"],
+      "confidence": "high",
+      "sourceRefs": [
+        "france-carrefour-nice",
+        "france-spar-cassis",
+        "france-carrefour-aix",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 4,
         "plainFoodRequired": true,
         "basesWithNamedFallbacks": 3,
+        "verifiedBases": [
+          "Nice",
+          "Cassis",
+          "Aix-en-Provence"
+        ],
         "remoteDaysWithNamedFallbacks": 3,
-        "coverage": ["pizza", "pasta", "burgers", "steak-frites", "picnic/groceries"]
+        "coverage": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "steak-frites",
+          "picnic/groceries"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
+        "france-carrefour-nice": "Official Nice supermarket directory plus Carrefour Market Nice Gambetta, 9 Bd Gambetta; fresh groceries and delivery",
+        "france-spar-cassis": "Official SPAR operator page, 10 Rue de l'Arène, Cassis; current daily hours",
+        "france-carrefour-aix": "Official Carrefour City Aix-en-Provence Saez page, 275 Rue Jean Pierre Saez; groceries, salad bar, pickup and delivery",
         "internal-itinerary": "Named restaurant links and plain-food guidance in every spot card; menus/hours must be rechecked"
       },
       "claimType": "proxy"
@@ -245,8 +343,13 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "medium",
-      "sourceRefs": ["google-flights-pit-nce", "internal-itinerary", "state-travel", "cdc-travel"],
+      "confidence": "high",
+      "sourceRefs": [
+        "google-flights-pit-nce",
+        "internal-itinerary",
+        "state-travel",
+        "cdc-travel"
+      ],
       "value": {
         "status": "exact-2027-schedule-required",
         "singleTicket": true,
@@ -270,7 +373,10 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["calanques-land-rules", "cassis-calanques-boats"],
+      "sourceRefs": [
+        "calanques-land-rules",
+        "cassis-calanques-boats"
+      ],
       "value": {
         "landDecisionSeason": "June 1 → September 30",
         "redStatus": "land access closed",
@@ -289,8 +395,13 @@
       "id": "seasonal-conditions",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
-      "sourceRefs": ["provence-lavender-route", "verdon-lakes", "cannes-lions-2027", "internal-itinerary"],
+      "confidence": "high",
+      "sourceRefs": [
+        "provence-lavender-route",
+        "verdon-lakes",
+        "cannes-lions-2027",
+        "internal-itinerary"
+      ],
       "value": {
         "cannesLions": "2027-06-21 → 2027-06-25",
         "leaveRiviera": "2027-06-16",
@@ -313,7 +424,12 @@
       "category": "price",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["avignon-palace", "pont-du-gard-prices", "cassis-calanques-boats", "internal-itinerary"],
+      "sourceRefs": [
+        "avignon-palace",
+        "pont-du-gard-prices",
+        "cassis-calanques-boats",
+        "internal-itinerary"
+      ],
       "value": {
         "avignonFamily": "€53 current family Palais+Pont product",
         "pontDuGard": "€8 adult, under-18 free, plus €9 parking under current terms",
@@ -334,8 +450,13 @@
       "category": "novelty",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "scorecard-contract"],
-      "value": { "score": 5 },
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5
+      },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-06-23",
       "sourceLocators": {
@@ -353,13 +474,22 @@
     "longestTransferHours": 3.5,
     "highOutputDayStreak": 2,
     "fallbackDays": 6,
-    "childActivityFit": { "age13": "fits", "age8": "fits" },
-    "lodgingComfort": { "airConditioning": "required", "pool": "strongly preferred in every base", "parking": "required in Cassis and Aix", "realBeds": "required" },
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "lodgingComfort": {
+      "airConditioning": "required",
+      "pool": "strongly preferred in every base",
+      "parking": "required in Cassis and Aix",
+      "realBeds": "required"
+    },
     "waterSafety": "Check beach/river flags, sea state and operator rules day-of; water shoes recommended.",
     "crowdingPressure": "high on the Riviera and in Cassis, mitigated by early transit starts, June 16 Riviera exit and recovery days.",
-    "medicalAccess": "Not independently audited; verify insurance, prescriptions and local care access before departure."
+    "medicalAccess": "Nice, Marseille and Avignon provide urban access, but insurance network, prescriptions and family-specific medical constraints remain unresolved.",
+    "childActivityNotes": {}
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current official/operator material, historical climate/SST proxies and current routing/fare observations. No proxy confirms a June 2027 schedule, quote, bloom or daily condition.",
+  "evidenceBasis": "Scores combine canonical derivations with current official/operator material, historical climate/SST proxies and routing/fare observations. High confidence describes bounded conclusions (including that a 2027 schedule is still required), not a June 2027 forecast, quote, bloom or timetable guarantee.",
   "confidenceBasis": [
     "independently reconciled eight-line budget",
     "official transit, destination, event, park and attraction sources",

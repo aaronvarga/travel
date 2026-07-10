@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "portugal",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "The reconciled 6-line-item family budget is $7,500–$11,700 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The six published categories reconcile to $7,490–$11,685, consistent with the displayed $7,500–$11,700 band. The entire band is under the $12,000 target, but lodging is explicitly unresearched and airfare is not a live June 2027 quote.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,15 +14,15 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Portugal Algarve & Madeira and 2027-06-10 → 2027-06-23 spans approximately 63–78°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "rationale": "Official 1991–2020 June normals support mostly comfortable conditions: Lisbon 59–79°F mean daily low/high, Faro 64–80°F, and Funchal 65–75°F, with low monthly rainfall. Heat management is still needed on exposed Algarve days.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
       "score": 2,
-      "rationale": "The current-proxy swim range for Portugal Algarve & Madeira is approximately 63–70°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "The route deliberately mixes cool Atlantic swimming with a waterpark and Madeira lava pools. The 63–70°F range was not independently re-extracted from OISST in this audit, so it remains a medium-confidence planning estimate.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,39 +30,39 @@
     },
     "variety": {
       "score": 4,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The 12-night plan schedules three bases and distinct town/culture, cliff-and-hike, and water modes, although warm natural swimming is the lighter mode.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
       ]
     },
     "ease": {
-      "score": 4,
-      "rationale": "The canonical route carries 18.2 air hours, 4.9 ground hours, 1 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "score": 3,
+      "rationale": "Three bases, two base moves, two rental cars, one internal flight, and a roughly 5.5-hour transfer day produce moderate deterministic load (3/5); schedule uncertainty is scored under Risk.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "The itinerary names plain restaurant fallbacks, and Continente's current operator locator independently confirms full grocery/bakery coverage at Cascais, in the Algarve near Carvoeiro, and on Madeira near the planned base. This strongly supports the bounded 4/5 coverage claim; branches still require a 2027 recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "TAP now displays a June 13–19, 2027 FAO–FNC market fare, but that does not prove the itinerary's June 18 nonstop or a protected multi-city ticket. The flight remains the plan's main single point of failure.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 5,
-      "rationale": "12 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -70,7 +70,7 @@
     },
     "novelty": {
       "score": 5,
-      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 5/5 under that rubric.",
+      "rationale": "Portugal, the Algarve, and Madeira do not overlap the documented visited-place list, so the canonical novelty rubric derives 5/5.",
       "confidence": "high",
       "evidence": [
         "visited-overlap"
@@ -78,7 +78,7 @@
     },
     "pto": {
       "score": 3,
-      "rationale": "8 PTO days derives a 3/5 slider score and has zero default weight.",
+      "rationale": "Eight PTO days derive 3/5 under the canonical slider rubric and have zero default weight.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -92,7 +92,8 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "tap-faro-funchal"
       ],
       "value": {
         "lowUsd": 7500,
@@ -102,12 +103,14 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "7500–11700 line-item sum; tolerance 150"
+        "arithmetic": "2300–3500 + 390–785 + 650–1250 + 250–350 + 2200–3500 + 1700–2300 = 7490–11685; displayed rounding 7500–11700",
+        "observedPartialInput": "TAP displayed a €221 one-passenger FAO–FNC round trip for 2027-06-13 to 2027-06-19; not the full family itinerary"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Portugal Algarve & Madeira; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "portugal/main.json #totals budget table; six category rows and Grand total; lodging row explicitly says rough—not researched",
+        "tap-faro-funchal": "TAP operator fare calendar observed 2026-07-10 displayed €221 for one passenger round trip 2027-06-13 to 2027-06-19; not a four-person through-ticket or lodging quote"
       },
       "claimType": "proxy"
     },
@@ -125,10 +128,10 @@
         "hotelNights": 12,
         "ptoDays": 8
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[portugal], routeReadiness[portugal] and family constraints"
+        "decision-profile": "decisionProfile.json tripWindows.portugal and Pittsburgh required full days 2027-06-24 through 2027-06-26"
       },
       "claimType": "confirmed"
     },
@@ -136,25 +139,41 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "copernicus-climate",
-        "internal-itinerary"
+        "ipma-lisbon-normal-1991-2020",
+        "ipma-faro-normal-1991-2020",
+        "ipma-funchal-normal-1991-2020"
       ],
       "value": {
         "score": 4,
-        "temperatureF": [
-          63,
-          78
-        ],
-        "route": "Portugal Algarve & Madeira",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "normalPeriod": "1991–2020",
+        "juneMeanDailyLowHighF": {
+          "LisbonTapada": [
+            59,
+            79
+          ],
+          "Faro": [
+            64,
+            80
+          ],
+          "Funchal": [
+            65,
+            75
+          ]
+        },
+        "juneRainMm": {
+          "Faro": 5.1,
+          "Funchal": 7.8
+        },
+        "forecast": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Portugal Algarve & Madeira; June planning climatology for route Portugal Algarve & Madeira; not a live 2027 forecast",
-        "internal-itinerary": "Portugal Algarve & Madeira; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "ipma-lisbon-normal-1991-2020": "Station 762, June TN 15.2°C and TX 26.2°C in the 1991–2020 table",
+        "ipma-faro-normal-1991-2020": "Station 554, June TN 17.8°C, TX 26.8°C, precipitation 5.1 mm",
+        "ipma-funchal-normal-1991-2020": "Station 522, June TN 18.2°C, TX 23.7°C, precipitation 7.8 mm"
       },
       "claimType": "proxy"
     },
@@ -166,7 +185,7 @@
       "sourceRefs": [
         "noaa-oisst",
         "eea-bathing-water",
-        "internal-itinerary"
+        "visit-portugal-algarve"
       ],
       "value": {
         "score": 2,
@@ -175,15 +194,31 @@
           70
         ],
         "hasSwim": false,
-        "route": "Portugal Algarve & Madeira",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "siteRangesF": {
+          "Cascais": [
+            63,
+            65
+          ],
+          "Algarve": [
+            66,
+            68
+          ],
+          "Madeira": [
+            69,
+            70
+          ]
+        },
+        "scheduledAlternatives": [
+          "Slide & Splash",
+          "Porto Moniz natural pools"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Portugal Algarve & Madeira; swim locations in route Portugal Algarve & Madeira; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Portugal Algarve & Madeira; latest published season, not a 2027 guarantee",
-        "internal-itinerary": "Portugal Algarve & Madeira; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "noaa-oisst": "June coastal SST planning proxy at Cascais 38.70N 9.42W, Algarve 37.09N 8.67W, and Madeira 32.65N 16.90W; historical range, not forecast",
+        "eea-bathing-water": "Latest Portugal bathing-water assessment; use site-level 2027 status for the selected Cascais, Algarve, and Madeira entries",
+        "visit-portugal-algarve": "Official Algarve beach guide for Praia da Marinha and Ponta da Piedade; destination suitability only, not live sea state"
       },
       "claimType": "proxy"
     },
@@ -197,81 +232,112 @@
       ],
       "value": {
         "score": 4,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "lodgingBases": 3,
+        "baseNames": [
+          "Cascais",
+          "Carvoeiro/Algarve",
+          "Madeira"
+        ],
+        "scheduledModes": [
+          "town/culture",
+          "nature/hiking",
+          "water"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "Portugal Algarve & Madeira; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "portugal/main.json itinerary.days day1–day12 and #where-to-stay copy headed Three home bases"
       },
       "claimType": "derived"
     },
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
-        "easeScore": 4,
+        "easeScore": 3,
         "maxConnections": 1,
-        "singleTicket": true,
-        "airHours": 18.2,
-        "groundHours": 4.9
+        "singleTicketAssumption": true,
+        "lodgingBases": 3,
+        "baseMoves": 2,
+        "internalFlights": 1,
+        "rentalCars": 2,
+        "airHoursPlanningEstimate": 18.2,
+        "groundHoursPlanningEstimate": 4.9,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Portugal Algarve & Madeira; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Portugal Algarve & Madeira; not a 2027 schedule confirmation"
+        "internal-itinerary": "portugal/main.json day3 Cascais→Carvoeiro, day8 Faro→Funchal, and #totals rows for internal flight and both rental cars"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "continente-portugal-stores"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "coveredBases": [
+          "Cascais",
+          "Algarve",
+          "Ponta do Sol/Madeira"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "bakery",
+          "supermarket picnic"
+        ],
+        "lodgingKitchenConfirmed": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Portugal Algarve & Madeira; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "portugal/main.json day-by-day restoHtml and saveHtml entries; named pizza, pasta, burger, bakery, and picnic options appear in every base",
+        "continente-portugal-stores": "Current operator locator reviewed 2026-07-10: Continente Cascais at EN9 118; Algarve locator includes Continente Bom Dia Parchal near Carvoeiro; Madeira locator includes Ribeira Brava and multiple Funchal branches with grocery/bakery departments"
       },
       "claimType": "proxy"
     },
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "tap-faro-funchal",
+        "internal-itinerary"
       ],
       "value": {
-        "status": "current-proxy",
-        "singleTicket": true,
+        "status": "exact-2027-schedule-required",
+        "singleTicketAssumption": true,
         "maxConnections": 1,
-        "route": "Portugal Algarve & Madeira",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "criticalLeg": "FAO–FNC seasonal direct",
+        "observed2027MarketDates": "2027-06-13 to 2027-06-19 round trip",
+        "requiredItineraryDate": "2027-06-18",
+        "requiredDateNonstopVerified": false,
+        "protectedOpenJawVerified": false,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Portugal Algarve & Madeira; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Portugal Algarve & Madeira; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Portugal Algarve & Madeira; recheck before departure"
+        "tap-faro-funchal": "TAP fare calendar observed 2026-07-10 displayed FAO–FNC round trip June 13–19, 2027 from €221; page did not establish nonstop operation on June 18 or ticket protection",
+        "internal-itinerary": "portugal/main.json Plan Health-Check identifies FAO→FNC as the fragile joint and requires it to anchor the dates"
       },
       "claimType": "proxy"
     },
@@ -285,13 +351,14 @@
         "scorecard-contract"
       ],
       "value": {
-        "score": 5
+        "score": 5,
+        "overlap": []
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[portugal], routeReadiness[portugal] and family constraints",
-        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for portugal"
+        "decision-profile": "decisionProfile.json family preferences and tripWindows.portugal",
+        "scorecard-contract": "scorecard.manifest.json noveltyRubric visited-place list; no Portugal or Madeira destinations listed"
       },
       "claimType": "derived"
     }
@@ -299,29 +366,35 @@
   "metrics": {
     "airHours": 18.2,
     "groundHours": 4.9,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 2,
+    "longestTransferHours": 5.5,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 1,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "unknown until property selection",
+      "kitchen": "unknown until property selection",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Cool Atlantic water and exposed Madeira pools require daily sea-state and lifeguard checks; waterpark is the controlled fallback.",
+    "crowdingPressure": "Sintra, headline Algarve beaches, and Porto Moniz are crowd-sensitive; early starts are scheduled.",
+    "medicalAccess": "Unknown against the family's incomplete medical profile; urban/base access is materially better than remote trail days.",
+    "childActivityNotes": {
+      "age13": "supported with hikes, boats, waterpark, and towns",
+      "age8": "supported with shortened hikes and water-first alternatives"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Official station normals, historical SST and bathing-water datasets, destination authorities, and a line-by-line derivation from the canonical itinerary. Volatile 2027 prices and schedules remain proxies.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "official 1991–2020 climate normals",
+    "site-specific historical SST locators",
+    "canonical day/base derivation",
+    "independent operator grocery coverage in every base",
+    "unquoted June 2027 airfare/lodging and non-reproduced SST remain medium confidence"
   ]
 }

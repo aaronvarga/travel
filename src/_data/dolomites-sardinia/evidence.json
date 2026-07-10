@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "dolomites-sardinia",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -14,7 +14,7 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Venice, Dolomites & Sardinia and 2027-06-27 → 2027-07-11 spans approximately 57–90°F; this is not a 2027 forecast.",
+      "rationale": "ERA5 route history supports a real alpine-to-Mediterranean spread: cool/wet mountain exposure and hot Sardinia afternoons. That recurring management matches Weather 4/5.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,7 +22,7 @@
     },
     "swim": {
       "score": 3,
-      "rationale": "The current-proxy swim range for Venice, Dolomites & Sardinia is approximately 74–77°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "OISST history supports roughly 74–77°F Sardinia water in early July; swimming is frequent on the island leg but absent from most of the Venice/Dolomites half, supporting 3/5.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Four bases explicitly deliver Venice culture, assisted alpine hiking, and two Sardinia water/coast modes; Variety 5/5 is directly supported.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "The canonical route carries 22.4 air hours, 12.5 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Four bases, three moves, two rental-car systems, and a separate VCE–OLB flight create moderate deterministic load; Ease 3/5 is supported.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current first-party store pages independently document grocery/plain-food fallback coverage in Venice, San Vito di Cadore, Cannigione, and Cala Gonone. That supports Food 4/5; store hours and stock still need a pre-trip recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "Volotea currently sells nonstop VCE–OLB and the 2026 lift season covers the analogous dates, but neither the July 2027 flight nor lift calendar is published. Current-proxy is the high-confidence conclusion.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -153,7 +153,7 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Venice, Dolomites & Sardinia; June planning climatology for route Venice, Dolomites & Sardinia; not a live 2027 forecast",
+        "copernicus-climate": "ERA5 June/July monthly means near Venice (45.44,12.32), Val Gardena (46.56,11.72), Olbia/La Maddalena (40.92,9.50), and Ogliastra (39.99,9.69); historical proxy",
         "internal-itinerary": "Venice, Dolomites & Sardinia; canonical 2027-06-27 → 2027-07-11; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -181,8 +181,8 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Venice, Dolomites & Sardinia; swim locations in route Venice, Dolomites & Sardinia; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Venice, Dolomites & Sardinia; latest published season, not a 2027 guarantee",
+        "noaa-oisst": "OISST v2.1 June 27–July 11 climatology for coastal cells nearest La Maddalena/Olbia and Ogliastra",
+        "eea-bathing-water": "2025 Italy assessment; recheck exact Sardinia sites and day-of flags in 2027",
         "internal-itinerary": "Venice, Dolomites & Sardinia; canonical 2027-06-27 → 2027-07-11; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -197,7 +197,14 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 13
+        "hotelNights": 13,
+        "bases": 4,
+        "baseMoves": 3,
+        "modes": [
+          "water",
+          "town/culture",
+          "nature/hikes"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": null,
@@ -209,24 +216,25 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 3,
         "maxConnections": 2,
         "singleTicket": false,
         "airHours": 22.4,
-        "groundHours": 12.5
+        "groundHours": 12.5,
+        "bases": 4,
+        "baseMoves": 3,
+        "longestTransferHours": 6
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Venice, Dolomites & Sardinia; canonical 2027-06-27 → 2027-07-11; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Venice, Dolomites & Sardinia; not a 2027 schedule confirmation"
+        "internal-itinerary": "#overview and #getting-around: 2 Venice + 5 Dolomites + 3/3 Sardinia nights, separate island flight, and two car systems"
       },
       "claimType": "proxy"
     },
@@ -234,43 +242,64 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "despar-venice",
+        "coop-san-vito",
+        "crai-cannigione",
+        "crai-cala-gonone"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "basesWithIndependentGroceryCoverage": 4,
+        "bases": [
+          "Venice",
+          "San Vito di Cadore",
+          "Cannigione",
+          "Cala Gonone"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Venice, Dolomites & Sardinia; canonical 2027-06-27 → 2027-07-11; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "despar-venice": "Official Despar locator: Sestiere San Marco 3988, Venice; current daily hours",
+        "coop-san-vito": "First-party Cooperativa di San Vito site: Corso Italia 64 and Via A. De Lotto 12; grocery ordering and local delivery documented",
+        "crai-cannigione": "Official CRAI locator: Via Nazionale 55, Cannigione; current daily hours",
+        "crai-cala-gonone": "Official CRAI locator: Via Vasco de Gama 11, Cala Gonone; bakery, produce, deli, meat and gastronomy departments"
       },
       "claimType": "proxy"
     },
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
       "sourceRefs": [
+        "volotea-vce-olb",
+        "dolomiti-lifts-2026",
         "internal-itinerary",
         "state-travel",
         "cdc-travel"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "exact-2027-schedule-required",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Venice, Dolomites & Sardinia",
-        "dateWindow": "2027-06-27 → 2027-07-11"
+        "route": "PIT → VCE; Dolomites; VCE → OLB on separate ticket; OLB → PIT",
+        "dateWindow": "2027-06-27 → 2027-07-11",
+        "gates": [
+          "exact VCE–OLB date/time",
+          "2027 mountain lift calendar"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Venice, Dolomites & Sardinia; canonical 2027-06-27 → 2027-07-11; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Venice, Dolomites & Sardinia; recheck before booking and departure",
+        "volotea-vce-olb": "Official Volotea route page checked 2026-07-10 markets nonstop Venice–Olbia; July 2027 timetable not published",
+        "dolomiti-lifts-2026": "Official 2026 Val Gardena lift calendar shows key lifts open through analogous dates; 2027 dates remain unpublished and weather-dependent",
+        "internal-itinerary": "#air-travel and #decisions require VCE–OLB between the Dolomites and Sardinia legs",
+        "state-travel": "Italy Level 2 advisory reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Venice, Dolomites & Sardinia; recheck before departure"
       },
       "claimType": "proxy"
@@ -299,29 +328,34 @@
   "metrics": {
     "airHours": 22.4,
     "groundHours": 12.5,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 6,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in Venice and Sardinia; verify mountain lodging",
+      "kitchen": "preferred on Sardinia",
+      "laundry": "preferred at the Dolomites or first Sardinia base",
+      "realBeds": "required; properties not selected"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Check beach flags, wind, and boat conditions daily; mountain weather and lift status require separate live checks.",
+    "crowdingPressure": "High in Venice and signature Sardinia coves; timed entries/early starts are needed.",
+    "medicalAccess": "Mountain and boat days increase remoteness; exact facilities and evacuation coverage remain unverified.",
+    "childActivityNotes": {
+      "age13": "fits assisted alpine hikes, towns, and island water days; preferences remain incomplete",
+      "age8": "fits lift-assisted routes and beach/boat alternatives; altitude and hiking tolerance unknown"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Stable claims use coordinate-level climate/SST history, Volotea's current nonstop route, and official 2026 Dolomites lift calendars. Budget, exact 2027 VCE–OLB service, lift dates, and lodging remain open.",
   "confidenceBasis": [
     "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "official historical climate and bathing-water datasets",
+    "official current operator route and lift evidence",
+    "exact 2027 flight and lift calendars remain open"
   ]
 }

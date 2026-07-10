@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "iceland",
-  "reviewedAt": "2026-07-09",
-  "overallConfidence": "low",
+  "reviewedAt": "2026-07-10",
+  "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 3,
-      "rationale": "The reconciled 5-line-item family budget is $11,420–$14,720 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The five category targets reconcile exactly to $11,420–$14,720. The band fits the preferred maximum, but flights, lodging, and vehicle inventory remain unquoted June 2027 proxies, so 3/5 is conditional on later high-confidence reconciliation.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,7 +14,7 @@
     },
     "weather": {
       "score": 2,
-      "rationale": "Current-proxy climatology for Iceland and 2027-06-08 → 2027-06-21 spans approximately 45–58°F; this is not a 2027 forecast.",
+      "rationale": "The South Coast plan is intrinsically exposed to cool, wet, and windy conditions even in June. The 45–58°F planning range was not independently regenerated from a station-normal table in this audit, so the adverse classification is credible but remains medium confidence.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,47 +22,47 @@
     },
     "swim": {
       "score": 3,
-      "rationale": "The current-proxy swim range for Iceland is approximately 50–52°F; access, safety, and exact conditions remain trip-date dependent.",
-      "confidence": "medium",
+      "rationale": "The score is correctly based on geothermal swimming, not 50–52°F ocean water. Reykjavík officially lists 82–90°F family pools and 100–111°F hot tubs, and the itinerary schedules several heated soaks.",
+      "confidence": "high",
       "evidence": [
         "swim-conditions"
       ]
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The itinerary strongly schedules waterfalls, glacier walking, black beaches, lagoons, geothermal pools, city/harbor, and volcanic landscapes.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
       ]
     },
     "ease": {
-      "score": 4,
-      "rationale": "The canonical route carries 12.3 air hours, 13.5 ground hours, 0 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "score": 3,
+      "rationale": "One car and no planned mid-trip flight help, but four lodging bases, three moves, and the long Höfn-to-west reposition create moderate deterministic load (3/5).",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 3,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current Bónus/Krónan operator locators and the official Vatnajökull regional guide independently confirm discount groceries in Reykjavík, Vík, Höfn, and Reykjanes/Keflavík. Remote days still require packed food, strongly supporting the bounded 3/5 rather than a higher score.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is exact-2027-schedule-required; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "low",
+      "rationale": "Exact June 2027 PIT–KEF nonstop operation is unverified, but a one-stop backup exists. South Coast wind/road conditions, Reynisfjara sneaker waves, and Reykjanes volcanic change are real and require daily official checks.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 5,
-      "rationale": "12 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -70,7 +70,7 @@
     },
     "novelty": {
       "score": 5,
-      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 5/5 under that rubric.",
+      "rationale": "Iceland does not overlap the documented visited-place list, deriving 5/5.",
       "confidence": "high",
       "evidence": [
         "visited-overlap"
@@ -78,7 +78,7 @@
     },
     "pto": {
       "score": 3,
-      "rationale": "8 PTO days derives a 3/5 slider score and has zero default weight.",
+      "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -102,12 +102,12 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "11400–14700 line-item sum; tolerance 150"
+        "arithmetic": "2600/3600 + 3200/3900 + 1570/1920 + 3550/4300 + 500/1000 = 11420/14720"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Iceland; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "iceland/main.json #totals target/high columns; exact category reconciliation"
       },
       "claimType": "proxy"
     },
@@ -125,10 +125,10 @@
         "hotelNights": 12,
         "ptoDays": 8
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[iceland], routeReadiness[iceland] and family constraints"
+        "decision-profile": "decisionProfile.json tripWindows.iceland and required Pittsburgh dates June 24–26"
       },
       "claimType": "confirmed"
     },
@@ -138,7 +138,7 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "copernicus-climate",
+        "imo-iceland-climate-data",
         "internal-itinerary"
       ],
       "value": {
@@ -147,14 +147,15 @@
           45,
           58
         ],
-        "route": "Iceland",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "routeRegion": "Reykjavík and South Coast to Höfn",
+        "forecast": false,
+        "stationExtractionReproduced": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Iceland; June planning climatology for route Iceland; not a live 2027 forecast",
-        "internal-itinerary": "Iceland; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "imo-iceland-climate-data": "IMO climatological data portal reviewed for Reykjavík/South Coast historical observations; exact 45–58°F range was not rerun from a defined baseline",
+        "internal-itinerary": "iceland/main.json canonical June 8–21 plan and weather-management prose"
       },
       "claimType": "proxy"
     },
@@ -162,28 +163,36 @@
       "id": "swim-conditions",
       "category": "swim",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "noaa-oisst",
-        "eea-bathing-water",
+        "reykjavik-laugardalslaug",
         "internal-itinerary"
       ],
       "value": {
         "score": 3,
-        "temperatureF": [
+        "naturalSeaTemperatureF": [
           50,
           52
         ],
-        "hasSwim": true,
-        "route": "Iceland",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "swimType": "geothermal",
+        "mainPoolF": 82,
+        "childPoolF": 84,
+        "wadingPoolF": 90,
+        "hotTubsF": [
+          100,
+          111
+        ],
+        "scheduledSoaks": 4,
+        "temperatureF": [
+          50,
+          52
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Iceland; swim locations in route Iceland; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Iceland; latest published season, not a 2027 guarantee",
-        "internal-itinerary": "Iceland; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "reykjavik-laugardalslaug": "City specifications: main pool 28°C, children's 29°C, wading 32°C, hot tubs 38–44°C; slides and child facilities listed",
+        "internal-itinerary": "iceland/main.json schedules Laugardalslaug, Secret Lagoon, Hoffell tubs, and Blue Lagoon; ocean is not treated as family swimming"
       },
       "claimType": "proxy"
     },
@@ -197,55 +206,95 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "lodgingBases": 4,
+        "baseNames": [
+          "Reykjavík arrival",
+          "South Coast/Vík",
+          "Höfn",
+          "Reykjavík/KEF finale"
+        ],
+        "scheduledModes": [
+          "waterfalls/glaciers",
+          "geothermal swim",
+          "city/harbor",
+          "black beaches",
+          "volcanic landscapes"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "Iceland; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "iceland/main.json itinerary day1–day12 and lodging heading Four bases, minimal backtracking"
       },
       "claimType": "derived"
     },
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
-        "easeScore": 4,
-        "maxConnections": 0,
+        "easeScore": 3,
+        "maxConnectionsCanonical": 0,
+        "singleTicketAssumption": true,
+        "lodgingBases": 4,
+        "baseMoves": 3,
+        "midTripFlights": 0,
+        "rentalCars": 1,
+        "longReturnDrive": true,
+        "airHoursPlanningEstimate": 12.3,
+        "groundHoursPlanningEstimate": 13.5,
         "singleTicket": true,
-        "airHours": 12.3,
-        "groundHours": 13.5
+        "maxConnections": 1
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Iceland; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Iceland; not a 2027 schedule confirmation"
+        "internal-itinerary": "iceland/main.json days 3, 7, and 10 base progression; #getting-around says one car, paved route, no F-roads"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "bonus-iceland-stores",
+        "kronan-iceland-stores",
+        "visit-vatnajokull-stores"
       ],
       "value": {
         "score": 3,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "coveredBases": [
+          "Reykjavík",
+          "Vík/South Coast",
+          "Höfn",
+          "Keflavík"
+        ],
+        "fallbackTypes": [
+          "burgers",
+          "pizza",
+          "hot dogs",
+          "supermarkets",
+          "packed picnic"
+        ],
+        "remoteDayConstraint": true,
+        "lodgingKitchenConfirmed": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Iceland; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "iceland/main.json day-by-day food entries name burgers, pizza, Bónus/Krónan, and packed-food plans in every base and remote corridor",
+        "bonus-iceland-stores": "Operator English locator reviewed 2026-07-10 lists 33 stores with Reykjavík branches and Reykjanes/Keflavík-area branches and current hours",
+        "kronan-iceland-stores": "Operator locator reviewed 2026-07-10 lists Reykjavík branches and Krónan Vík at Austurvegur 20, open daily 09:00–21:00",
+        "visit-vatnajokull-stores": "Official regional guide reviewed 2026-07-10 identifies Nettó discount grocery at Litlabrú 1 in Höfn"
       },
       "claimType": "proxy"
     },
@@ -253,25 +302,33 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "low",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "flypittsburgh-icelandair-2026",
+        "flypittsburgh-nonstop-destinations",
+        "safetravel-iceland",
+        "safetravel-reynisfjara",
+        "internal-itinerary"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
+        "singleTicketAssumption": true,
+        "maxConnectionsCanonical": 0,
+        "currentProxy": "seasonal PIT–KEF nonstop up to four weekly",
+        "june2027NonstopVerified": false,
+        "backup": "one-stop via US gateway",
+        "dailySafetyChecksRequired": true,
         "singleTicket": true,
-        "maxConnections": 0,
-        "route": "Iceland",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "maxConnections": 1
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Iceland; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Iceland; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Iceland; recheck before departure"
+        "flypittsburgh-icelandair-2026": "PIT official announcement confirms Icelandair service for summer 2026 only",
+        "flypittsburgh-nonstop-destinations": "PIT current route list shows Reykjavík seasonal, up to four weekly; no exact 2027 date",
+        "safetravel-iceland": "ICE-SAR official live conditions emphasize rapid weather/road changes and current Reykjanes alerts",
+        "safetravel-reynisfjara": "Official warning protocol documents sneaker waves, falling rock, three hazard levels, and possible short-notice closure",
+        "internal-itinerary": "iceland/main.json health check says verify summer 2027 nonstop and hold one-stop backup"
       },
       "claimType": "proxy"
     },
@@ -285,13 +342,14 @@
         "scorecard-contract"
       ],
       "value": {
-        "score": 5
+        "score": 5,
+        "overlap": []
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[iceland], routeReadiness[iceland] and family constraints",
-        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for iceland"
+        "decision-profile": "decisionProfile.json family trip context",
+        "scorecard-contract": "scorecard.manifest.json visited list contains no Iceland locations"
       },
       "claimType": "derived"
     }
@@ -299,29 +357,33 @@
   "metrics": {
     "airHours": 12.3,
     "groundHours": 13.5,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 5.5,
+    "highOutputDayStreak": 5,
+    "fallbackDays": 2,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "generally not a climate requirement but property unknown",
+      "kitchen": "budget depends on kitchens but property unknown",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Family swimming is heated/geothermal; Reynisfjara is viewing-only with strict warning-light compliance.",
+    "crowdingPressure": "Golden Circle, South Coast icons, lagoon reservations, and limited southeast lodging are advance-booking pressure points.",
+    "medicalAccess": "Unknown against incomplete family medical profile; glacier, Skaftafell, Jökulsárlón, and long east-coast drives are remote.",
+    "childActivityNotes": {
+      "age13": "strong for glacier walk, boats, pools, and dramatic landscapes",
+      "age8": "strong if operator age limits are met and long-drive/rest fallbacks are used"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Official city pool specifications, official PIT route status, official Iceland safety guidance, canonical logistics, and internally reconciled costs. Climate station extraction and 2027 prices/schedule remain unresolved.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "exact-2027-schedule-required"
+    "high-confidence geothermal swim, route-gate, safety, and deterministic load",
+    "high-confidence grocery coverage in Reykjavík, Vík, Höfn, and Reykjanes",
+    "medium-confidence climate range, lodging, and budget"
   ]
 }

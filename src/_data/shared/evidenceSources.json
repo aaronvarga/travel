@@ -59,9 +59,16 @@
   "eu-etias": {
     "label": "Official European Union ETIAS guidance",
     "tier": "official",
-    "url": "https://travel-europe.europa.eu/etias_en",
+    "url": "https://travel-europe.europa.eu/en/etias",
     "publisher": "European Union",
-    "scope": "Entry-system status; nationality/date/country locator required."
+    "scope": "Official launch status and requirements. As of July 10, 2026, ETIAS is scheduled for the last quarter of 2026 but the exact launch date has not been announced; recheck before booking and departure."
+  },
+  "eu-ees": {
+    "label": "Official European Union Entry/Exit System guidance",
+    "tier": "official",
+    "url": "https://travel-europe.europa.eu/en/ees",
+    "publisher": "European Union",
+    "scope": "Official biometric border-process guidance. EES has been fully operational across participating countries since April 10, 2026; airport implementation details and queues remain trip-date dependent."
   },
   "bts-ontime": {
     "label": "U.S. DOT Bureau of Transportation Statistics on-time data",
@@ -209,5 +216,866 @@
     "url": "https://pontdugard.fr/en/FAQ/tarifs-et-billetterie",
     "publisher": "EPCC Pont du Gard",
     "scope": "Current admission and parking terms; 2027 prices and river conditions require recheck."
+  },
+  "ipma-lisbon-normal-1991-2020": {
+    "label": "IPMA Lisbon/Tapada 1991–2020 climate normal",
+    "tier": "official",
+    "url": "https://www.ipma.pt/bin/file.data/climate-normal/cn_91-20_LISBOA_TAPADA.pdf",
+    "publisher": "Instituto Português do Mar e da Atmosfera",
+    "scope": "Station 762 historical climate normal; supports June planning, not a June 2027 forecast."
+  },
+  "ipma-faro-normal-1991-2020": {
+    "label": "IPMA Faro 1991–2020 climate normal",
+    "tier": "official",
+    "url": "https://www.ipma.pt/bin/file.data/climate-normal/cn_91-20_FARO.pdf",
+    "publisher": "Instituto Português do Mar e da Atmosfera",
+    "scope": "Station 554 historical climate normal; supports June planning, not a June 2027 forecast."
+  },
+  "ipma-funchal-normal-1991-2020": {
+    "label": "IPMA Funchal 1991–2020 climate normal",
+    "tier": "official",
+    "url": "https://www.ipma.pt/opencms/bin/file.data/climate-normal/cn_91-20_FUNCHAL.pdf",
+    "publisher": "Instituto Português do Mar e da Atmosfera",
+    "scope": "Station 522 historical climate normal; supports June planning, not a June 2027 forecast or mountain conditions."
+  },
+  "aemet-palma-puerto-normal": {
+    "label": "AEMET Palma Puerto standard climate values",
+    "tier": "official",
+    "url": "https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=B228",
+    "publisher": "Agencia Estatal de Meteorología",
+    "scope": "Historical monthly station normals for coastal Palma; not a June 2027 forecast."
+  },
+  "aemet-tenerife-north-normal": {
+    "label": "AEMET Tenerife Norte standard climate values",
+    "tier": "official",
+    "url": "https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=C447A",
+    "publisher": "Agencia Estatal de Meteorología",
+    "scope": "Historical monthly station normals for Tenerife Norte; not a June 2027 forecast."
+  },
+  "aemet-tenerife-south-normal": {
+    "label": "AEMET Tenerife Sur standard climate values",
+    "tier": "official",
+    "url": "https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=C429I",
+    "publisher": "Agencia Estatal de Meteorología",
+    "scope": "Historical monthly station normals for Tenerife Sur; not a June 2027 forecast."
+  },
+  "meteo-heraklion-climate": {
+    "label": "National Observatory of Athens Heraklion climatic data",
+    "tier": "historical-dataset",
+    "url": "https://www.meteo.gr/ClimaticData/CD_Heraclion.htm",
+    "publisher": "National Observatory of Athens / meteo.gr",
+    "scope": "Historical monthly climate table for Heraklion; it is not a Chania microclimate or a June 2027 forecast."
+  },
+  "imo-iceland-climate-data": {
+    "label": "Icelandic Meteorological Office climatological data",
+    "tier": "official",
+    "url": "https://en.vedur.is/climatology/data/",
+    "publisher": "Icelandic Meteorological Office",
+    "scope": "Historical observations and normals; station and period must be specified and no 2027 weather is guaranteed."
+  },
+  "visit-madeira-hiking": {
+    "label": "Visit Madeira official trail status and reservations",
+    "tier": "official",
+    "url": "https://www.visitmadeira.com/en/what-to-do/nature-seekers/activities/hiking/",
+    "publisher": "Madeira Promotion Bureau / IFCN",
+    "scope": "Current PR-trail status, mandatory reservation process, and 2026 fee; status and price must be rechecked for 2027."
+  },
+  "ana-madeira-wind-operations": {
+    "label": "ANA Madeira Airport wind disruption notice",
+    "tier": "official",
+    "url": "https://en.newsroom.ana.pt/news/back-to-normal-operation-812f-614cf.html",
+    "publisher": "ANA Aeroportos de Portugal",
+    "scope": "Official example confirming strong wind can disrupt Madeira Airport; it does not quantify present-day probability or predict 2027 operations."
+  },
+  "aegean-lisbon-athens": {
+    "label": "AEGEAN Lisbon–Athens booking calendar",
+    "tier": "operator",
+    "url": "https://flights.aegeanair.com/en/flights-from-lisbon-to-athens",
+    "publisher": "AEGEAN Airlines",
+    "scope": "Operator evidence that LIS–ATH is sold in the current schedule window; it does not confirm June 2027 inventory, price, or an onward protected CHQ connection."
+  },
+  "aegean-athens-crete": {
+    "label": "AEGEAN domestic Greece route calendar",
+    "tier": "operator",
+    "url": "https://flights.aegeanair.com/en/",
+    "publisher": "AEGEAN Airlines",
+    "scope": "Operator evidence for current ATH–CHQ/HER service; exact June 2027 frequencies, fares, and connection protection require a live quote."
+  },
+  "easyjet-lis-pmo": {
+    "label": "easyJet Lisbon–Palermo operator timetable",
+    "tier": "operator",
+    "url": "https://stafftravel.easyjet.com/en/cheap-flights/Lisbon/Palermo-Sicily",
+    "publisher": "easyJet",
+    "scope": "Official current timetable/route evidence. The checked August 2026 display showed flight 7687 on Tuesday and Friday; it does not confirm any June 2027 date, availability, fare, or protected connection."
+  },
+  "continente-portugal-stores": {
+    "label": "Continente Portugal store locator",
+    "tier": "operator",
+    "url": "https://feed.continente.pt/lojas",
+    "publisher": "Modelo Continente Hipermercados",
+    "scope": "Current branch addresses, hours, and departments for Portugal and Madeira; individual branches and hours require a 2027 recheck."
+  },
+  "sklavenitis-crete-stores": {
+    "label": "Sklavenitis Greece store locator",
+    "tier": "operator",
+    "url": "https://www.sklavenitis.gr/about/katastimata",
+    "publisher": "Sklavenitis",
+    "scope": "Current supermarket branches including Chania and Rethymno; branch operation and hours require a 2027 recheck."
+  },
+  "eroski-mallorca-stores": {
+    "label": "EROSKI Mallorca store locator",
+    "tier": "operator",
+    "url": "https://www.eroski.es/tiendas/buscador-de-tiendas/baleares/",
+    "publisher": "EROSKI",
+    "scope": "Current Palma and Alcúdia branch addresses and hours; branch operation and seasonal hours require a 2027 recheck."
+  },
+  "vecchia-taormina-menu": {
+    "label": "Vecchia Taormina pizzeria menu",
+    "tier": "operator",
+    "url": "https://www.pizzeriavecchiataormina.eu/menu",
+    "publisher": "Pizzeria Vecchia Taormina",
+    "scope": "Current operator menu with plain pizza, fries, bread, and salads; business operation and menu require a 2027 recheck."
+  },
+  "ottospikki-giardini-naxos": {
+    "label": "Ottospikki Giardini Naxos pizzeria",
+    "tier": "operator",
+    "url": "https://www.ottospikki.it/",
+    "publisher": "Ottospikki",
+    "scope": "Current takeaway/delivery pizza operator serving Giardini Naxos; operation, delivery area, and menu require a 2027 recheck."
+  },
+  "hiperdino-canary-stores": {
+    "label": "HiperDino Canary Islands store locator",
+    "tier": "operator",
+    "url": "https://www.hiperdino.es/c9504/tiendas/index/result/",
+    "publisher": "DinoSol Supermercados",
+    "scope": "Current Tenerife and La Palma branch addresses and hours; branch operation, hours, and delivery require a 2027 recheck."
+  },
+  "bonus-iceland-stores": {
+    "label": "Bónus Iceland store locator",
+    "tier": "operator",
+    "url": "https://bonus.is/english/",
+    "publisher": "Bónus",
+    "scope": "Current Iceland branch locations and opening hours, including Reykjavík and Reykjanes; recheck branches and hours for 2027."
+  },
+  "kronan-iceland-stores": {
+    "label": "Krónan Iceland store locator",
+    "tier": "operator",
+    "url": "https://kronan.is/verslanir",
+    "publisher": "Krónan",
+    "scope": "Current Iceland branch locations and hours, including Reykjavík and Vík; recheck branches and hours for 2027."
+  },
+  "visit-vatnajokull-stores": {
+    "label": "Visit Vatnajökull Höfn store guide",
+    "tier": "official",
+    "url": "https://visitvatnajokull.is/information/stores/",
+    "publisher": "Visit Vatnajökull",
+    "scope": "Regional official guide identifying the Nettó discount grocery in Höfn; branch operation and hours require a 2027 recheck."
+  },
+  "flypittsburgh-icelandair-2026": {
+    "label": "PIT Airport Icelandair 2026 service announcement",
+    "tier": "official",
+    "url": "https://flypittsburgh.com/news-article/icelandair-to-continue-pittsburgh-service-in-2026-with-changes/",
+    "publisher": "Pittsburgh International Airport",
+    "scope": "Confirms seasonal PIT–KEF service for 2026 only; June 2027 operating days and fares remain a booking gate."
+  },
+  "flypittsburgh-nonstop-destinations": {
+    "label": "PIT Airport nonstop destinations",
+    "tier": "official",
+    "url": "https://flypittsburgh.com/pittsburgh-international-airport/flights/destinations/",
+    "publisher": "Pittsburgh International Airport",
+    "scope": "Current airport route list and indicative seasonal frequency; it does not certify a specific June 2027 flight."
+  },
+  "binter-canary-network-2026": {
+    "label": "Binter 2026 network press kit",
+    "tier": "operator",
+    "url": "https://www.bintercanarias.com/assets/documents/press-kit/binter_press_kit_es.pdf",
+    "publisher": "Binter Canarias",
+    "scope": "Current inter-island network and frequency context; specific TFN–SPC dates, fares, and 2027 operation require live verification."
+  },
+  "tap-lisbon-palma": {
+    "label": "TAP Lisbon–Palma route announcement",
+    "tier": "operator",
+    "url": "https://www.tapairportugal.com/en/media/press-releases/Press-Release-974",
+    "publisher": "TAP Air Portugal",
+    "scope": "Operator evidence that TAP inaugurated LIS–PMI seasonal service; it does not confirm exact June 2027 operating dates, fares, or through-ticket protection."
+  },
+  "tap-faro-funchal": {
+    "label": "TAP Faro–Funchal booking calendar",
+    "tier": "operator",
+    "url": "https://www.flytap.com/en_pt/flights-from-faro-to-funchal",
+    "publisher": "TAP Air Portugal",
+    "scope": "Operator fare-calendar evidence for the FAO–FNC market, including a June 13–19, 2027 round-trip signal observed July 10, 2026; it does not prove a nonstop on June 18 or a protected PIT/open-jaw itinerary."
+  },
+  "balearics-playa-de-muro": {
+    "label": "Balearic Islands official Playa de Muro guide",
+    "tier": "official",
+    "url": "https://www.illesbalears.travel/en/mallorca/beach-muro",
+    "publisher": "Agència d’Estratègia Turística de les Illes Balears",
+    "scope": "Beach depth, wave exposure, services, and family suitability; not a live water-quality, lifeguard, sea-state, or temperature report."
+  },
+  "tenerife-las-teresitas": {
+    "label": "Tenerife official Las Teresitas guide",
+    "tier": "official",
+    "url": "https://www.webtenerife.com/que-visitar/playas/las-teresitas/",
+    "publisher": "Turismo de Tenerife",
+    "scope": "Beach layout and family-use context; live surf, water quality, and services must be checked on the day."
+  },
+  "la-palma-family-swimming": {
+    "label": "La Palma official family swimming guide",
+    "tier": "official",
+    "url": "https://visitlapalma.es/en/experiences/the-best-places-to-take-a-dip-in-la-palma/",
+    "publisher": "Cabildo Insular de La Palma",
+    "scope": "Identifies sheltered natural pools and family areas; live swell, closures, water quality, and services require same-day checks."
+  },
+  "visit-greece-crete": {
+    "label": "Greek National Tourism Organisation Crete guide",
+    "tier": "official",
+    "url": "https://www.visitgreece.gr/islands/crete/",
+    "publisher": "Greek National Tourism Organisation",
+    "scope": "Official destination and beach context; not a live sea-state, lifeguard, or water-temperature source."
+  },
+  "visit-sicily-sea": {
+    "label": "Visit Sicily official sea and beaches guide",
+    "tier": "official",
+    "url": "https://www.visitsicily.info/en/hp-2-2/",
+    "publisher": "Regione Siciliana",
+    "scope": "Official beach character for Cefalù, Taormina, and Giardini Naxos; not a live sea-state, water-quality, or temperature report."
+  },
+  "reykjavik-laugardalslaug": {
+    "label": "City of Reykjavík Laugardalslaug pool specifications",
+    "tier": "official",
+    "url": "https://reykjavik.is/en/laugardalslaug-pool/about-laugardalslaug-pool",
+    "publisher": "City of Reykjavík",
+    "scope": "Current pool facilities and stated water temperatures; hours, closures, and 2027 prices require recheck."
+  },
+  "safetravel-iceland": {
+    "label": "SafeTravel Iceland travel conditions",
+    "tier": "official",
+    "url": "https://safetravel.is/",
+    "publisher": "ICE-SAR",
+    "scope": "Official live safety and travel-condition guidance; alerts are ephemeral and must be checked each travel day."
+  },
+  "safetravel-reynisfjara": {
+    "label": "SafeTravel Reynisfjara black-beach safety",
+    "tier": "official",
+    "url": "https://safetravel.is/travel-conditions/blackbeach-safety/",
+    "publisher": "ICE-SAR",
+    "scope": "Official sneaker-wave hazards and warning-light protocol; live status and closures must be checked on arrival."
+  },
+  "ipma-lisbon-normal": {
+    "label": "IPMA Lisbon 1991–2020 climate normal",
+    "tier": "official",
+    "url": "https://www.ipma.pt/bin/file.data/climate-normal/cn_91-20_LISBOA_GEOFISICO.pdf",
+    "publisher": "Instituto Português do Mar e da Atmosfera",
+    "scope": "Official station 535 normal: June mean minimum 16.8°C and mean maximum 26.1°C; not a 2027 forecast or a proxy for Sicily/Crete."
+  },
+  "ryanair-cta-mla": {
+    "label": "Ryanair Catania–Malta route",
+    "tier": "operator",
+    "url": "https://www.ryanair.com/flights/ie/en/flights-from-catania-to-malta",
+    "publisher": "Ryanair",
+    "scope": "Official current route/fare page; does not confirm operation, time, baggage price, or availability on June 20, 2027."
+  },
+  "malta-blue-lagoon": {
+    "label": "Transport Malta Blue Lagoon swimmer zone",
+    "tier": "official",
+    "url": "https://www.transport.gov.mt/include/filestreaming.asp?fileid=11476",
+    "publisher": "Transport Malta",
+    "scope": "Local Notice to Mariners 59/2026 designates the Blue Lagoon swimmer zone and a five-metre vessel clearance; access-management, weather, and 2027 rules require recheck."
+  },
+  "moby-stg-bonifacio": {
+    "label": "Moby Santa Teresa Gallura–Bonifacio ferry",
+    "tier": "operator",
+    "url": "https://agency.moby.it/rotte/traghetti-corsica/santa-teresa-bonifacio-santa-teresa/",
+    "publisher": "Moby",
+    "scope": "Official 2026 route page states multiple daily sailings and a 50-minute crossing; it does not confirm 2027 dates, fares, sea conditions, or rental-car permission."
+  },
+  "sardinia-goloritze": {
+    "label": "SardegnaTurismo Cala Goloritzé access guidance",
+    "tier": "official",
+    "url": "https://www.sardegnaturismo.it/en/explore/cala-goloritze",
+    "publisher": "Regione Autonoma della Sardegna",
+    "scope": "Official destination/access guidance: approximately 3.5 km and 470 m vertical on foot; motorboats may not moor within 300 m. Booking and live access rules require recheck."
+  },
+  "volotea-vce-olb": {
+    "label": "Volotea Venice–Olbia nonstop route",
+    "tier": "operator",
+    "url": "https://www.volotea.com/en/direct-flights/departure-venice/arrival-olbia/",
+    "publisher": "Volotea",
+    "scope": "Official current nonstop-route page; does not confirm the required July 2027 date, time, fare, baggage price, or protection."
+  },
+  "dolomiti-lifts-2026": {
+    "label": "Dolomiti Superski Val Gardena summer lift calendar",
+    "tier": "operator",
+    "url": "https://www.dolomitisuperski.com/en/widgets/Val-gardena/lifts",
+    "publisher": "Dolomiti Superski",
+    "scope": "Official 2026 lift dates and hours, including Ortisei–Alpe di Siusi, Seceda-area, and Dantercepies services; 2027 dates and weather-dependent operation are unconfirmed."
+  },
+  "aegean-ath-lis": {
+    "label": "AEGEAN Athens–Lisbon fare calendar",
+    "tier": "operator",
+    "url": "https://flights.aegeanair.com/en/flights-from-athens-to-lisbon",
+    "publisher": "AEGEAN Airlines",
+    "scope": "Official route/fare calendar showed selected dates through April 2027 when checked; it does not confirm June 22, 2027 or a protected connection to Pittsburgh."
+  },
+  "aci-driving-italy": {
+    "label": "ACI driving in Italy for non-EU licence holders",
+    "tier": "official",
+    "url": "https://www.aci.it/fileadmin/cds/art-135.php",
+    "publisher": "Automobile Club d'Italia",
+    "scope": "Italian Highway Code Article 135: a non-EU licence must be accompanied by an international driving permit or official Italian translation; recheck before 2027 travel."
+  },
+  "turkey-mgm-antalya": {
+    "label": "Türkiye MGM Antalya official climate statistics",
+    "tier": "official",
+    "url": "https://mgm.gov.tr/veridegerlendirme/il-ve-ilceler-istatistik.aspx/Ankara?m=ANTALYA",
+    "publisher": "Turkish State Meteorological Service",
+    "scope": "Official 1930–2025 long-period Antalya statistics; June mean 25.4°C and average maximum 30.8°C. Not a 2027 forecast and not a direct proxy for every coast/mountain microclimate."
+  },
+  "turkey-mfa-visa": {
+    "label": "Türkiye MFA visa regime for U.S. passport holders",
+    "tier": "official",
+    "url": "https://www.mfa.gov.tr/yabancilarin-tabi-oldugu-vize-rejimi.tr.mfa",
+    "publisher": "Republic of Türkiye Ministry of Foreign Affairs",
+    "scope": "Current rule: ordinary U.S. passport holders are visa-exempt for tourist travel up to 90 days in any 180-day period; recheck before 2027 travel."
+  },
+  "continente-cascais": {
+    "label": "Continente Cascais official store page",
+    "tier": "operator",
+    "url": "https://feed.continente.pt/lojas/continente-cascais",
+    "publisher": "Continente",
+    "scope": "Current first-party locator for Estrada Nacional 9 118, Cascais; documents hours and bakery, takeaway, meat, fruit, grocery and fish departments. Recheck hours and stock before travel."
+  },
+  "lidl-lagoa-algarve": {
+    "label": "Lidl Lagoa official store page",
+    "tier": "operator",
+    "url": "https://www.lidl.pt/s/pt-PT/pesquisa-de-loja/lagoa/rua-foz-do-arade-5/",
+    "publisher": "Lidl Portugal",
+    "scope": "Current first-party locator for Rua Foz do Arade 5, Lagoa, supporting the Carvoeiro base; documents hours and food services. Recheck hours and stock before travel."
+  },
+  "conad-cefalu": {
+    "label": "Conad Cefalu official store page",
+    "tier": "operator",
+    "url": "https://www.conad.it/ricerca-negozi/conad-contrada-gallizza-snc-90015-cefalu--006403",
+    "publisher": "Conad",
+    "scope": "Current first-party locator for Contrada Gallizza, Cefalu. Supports grocery/plain-food fallback coverage; recheck hours and stock before travel."
+  },
+  "deco-giardini-naxos": {
+    "label": "Supermercati Deco Giardini Naxos official store page",
+    "tier": "operator",
+    "url": "https://supermercatideco.gruppoarena.it/punti-vendita/supermercati-deco-me-36/",
+    "publisher": "Gruppo Arena / Supermercati Deco",
+    "scope": "Current first-party locator for Via Naxos 157, Giardini Naxos, supporting the Taormina-coast base. Recheck hours and stock before travel."
+  },
+  "conad-siracusa": {
+    "label": "Conad Siracusa official store page",
+    "tier": "operator",
+    "url": "https://www.conad.it/ricerca-negozi/conad-viale-santa-panagia-238-96100-siracusa--010669",
+    "publisher": "Conad",
+    "scope": "Current first-party locator for Viale Santa Panagia 238, Siracusa; documents gastronomy, deli, produce and meat departments. Recheck hours and stock before travel."
+  },
+  "welbees-sliema": {
+    "label": "Welbee's Sliema official store locator",
+    "tier": "operator",
+    "url": "https://welbees.mt/store-locator",
+    "publisher": "Welbee's",
+    "scope": "Current first-party locator for High Street, Sliema SLM1549; the official catalog covers bakery, chilled, cupboard, frozen and produce. Recheck hours and stock before travel."
+  },
+  "conad-alghero": {
+    "label": "Conad Alghero official store page",
+    "tier": "operator",
+    "url": "https://www.conad.it/ricerca-negozi/conad-via-mazzini-snc-07041-alghero--007003",
+    "publisher": "Conad",
+    "scope": "Current first-party locator for Via Mazzini, Alghero; documents bakery, gastronomy, produce and meat departments. Recheck hours and stock before travel."
+  },
+  "spar-bonifacio": {
+    "label": "SPAR Bonifacio first-party store site",
+    "tier": "operator",
+    "url": "https://www.spar-bonifacio.fr/",
+    "publisher": "SPAR Bonifacio",
+    "scope": "Current first-party page for Route Santa Manza, Bonifacio; documents daily groceries, produce, meat, delivery and seasonal hours. Recheck hours and stock before travel."
+  },
+  "conad-tortoli": {
+    "label": "Conad Tortoli official store page",
+    "tier": "operator",
+    "url": "https://www.conad.it/ricerca-negozi/conad-via-campidano-ang-via-tirso-snc-08048-tortoli--006510",
+    "publisher": "Conad",
+    "scope": "Current first-party locator for Via Campidano at Via Tirso, Tortoli, supporting the Ogliastra base; documents gastronomy, bakery, produce and meat departments. Recheck hours and stock before travel."
+  },
+  "conad-cagliari": {
+    "label": "Conad Cagliari official store page",
+    "tier": "operator",
+    "url": "https://www.conad.it/ricerca-negozi/conad-superstore-via-dei-valenzani-21-09131-cagliari--002488",
+    "publisher": "Conad",
+    "scope": "Current first-party locator for Via dei Valenzani 21, Cagliari. Supports grocery/plain-food fallback coverage; recheck hours and stock before travel."
+  },
+  "despar-venice": {
+    "label": "Despar Venice official store page",
+    "tier": "operator",
+    "url": "https://www.despar.it/it/punto-vendita-despar/942/venezia/",
+    "publisher": "Despar Italia",
+    "scope": "Current first-party locator for Sestiere San Marco 3988, Venice; documents daily opening hours. Recheck hours and stock before travel."
+  },
+  "coop-san-vito": {
+    "label": "Cooperativa di San Vito di Cadore first-party store site",
+    "tier": "operator",
+    "url": "https://www.coopsanvito.it/contacts",
+    "publisher": "Cooperativa di San Vito di Cadore",
+    "scope": "Current first-party page lists San Vito stores at Corso Italia 64 and Via A. De Lotto 12; the operator also documents grocery ordering and local delivery. Recheck hours and stock before travel."
+  },
+  "crai-cannigione": {
+    "label": "CRAI Cannigione official store page",
+    "tier": "operator",
+    "url": "https://crai.it/negozi-e-volantini/6502-crai-cannigione",
+    "publisher": "CRAI",
+    "scope": "Current first-party locator for Via Nazionale 55, Cannigione; documents daily hours. Recheck hours and stock before travel."
+  },
+  "crai-cala-gonone": {
+    "label": "CRAI Cala Gonone official store page",
+    "tier": "operator",
+    "url": "https://crai.it/negozi-e-volantini/1832-crai-dorgali-calagonone",
+    "publisher": "CRAI",
+    "scope": "Current first-party locator for Via Vasco de Gama 11, Cala Gonone; documents bakery, produce, deli, meat and gastronomy departments. Recheck hours and stock before travel."
+  },
+  "lidl-athens": {
+    "label": "Lidl Athens official store locator",
+    "tier": "operator",
+    "url": "https://www.lidl-hellas.gr/s/el-GR/anazitisi-katastimaton/athens/",
+    "publisher": "Lidl Hellas",
+    "scope": "Current first-party locator lists nine Athens stores; individual pages document bakery, produce, dairy, meat and groceries. Recheck the selected hotel's nearest branch, hours and stock before travel."
+  },
+  "lidl-chania": {
+    "label": "Lidl Chania official store locator",
+    "tier": "operator",
+    "url": "https://www.lidl-hellas.gr/s/el-GR/anazitisi-katastimaton/chania/",
+    "publisher": "Lidl Hellas",
+    "scope": "Current first-party locator lists three Chania stores; individual pages document bakery, produce, dairy, meat, groceries and ready foods. Recheck hours and stock before travel."
+  },
+  "lidl-rethymno": {
+    "label": "Lidl Rethymno official store locator",
+    "tier": "operator",
+    "url": "https://www.lidl-hellas.gr/s/el-GR/anazitisi-katastimaton/rethymno/",
+    "publisher": "Lidl Hellas",
+    "scope": "Current first-party locator lists two Rethymno stores; individual pages document bakery, produce, dairy, meat and groceries. Recheck hours and stock before travel."
+  },
+  "conad-gallipoli": {
+    "label": "Conad Gallipoli official store page",
+    "tier": "operator",
+    "url": "https://www.conad.it/ricerca-negozi/conad-superstore-ss-101-sannicola-gallipoli-km-28800-73017-sannicola--009560",
+    "publisher": "Conad",
+    "scope": "Current first-party locator for SS 101 Sannicola-Gallipoli km 28.8, supporting the Gallipoli base. Recheck hours and stock before travel."
+  },
+  "velardi-maratea": {
+    "label": "Supermercati Velardi Maratea first-party store site",
+    "tier": "operator",
+    "url": "https://www.supermercativelardi.it/",
+    "publisher": "Supermercati Velardi",
+    "scope": "Current first-party page lists two Maratea stores and bakery, grocery, deli, produce and meat departments. Recheck hours and stock before travel."
+  },
+  "conad-sorrento": {
+    "label": "Conad Sorrento official store page",
+    "tier": "operator",
+    "url": "https://www.conad.it/ricerca-negozi/conad-city-via-capo-10-80067-sorrento--007015",
+    "publisher": "Conad",
+    "scope": "Current first-party locator for Via Capo 10, Sorrento; documents deli, produce and meat departments. Recheck hours and stock before travel."
+  },
+  "hawaii-noaa-honolulu-normals": {
+    "label": "NOAA NCEI Honolulu 1991–2020 monthly normals",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&endDate=9996-12-31&format=pdf&startDate=0001-01-01&stations=USW00022521",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Station USW00022521 monthly normals; June temperature row used, not a 2027 forecast."
+  },
+  "hawaii-noaa-kona-normals": {
+    "label": "NOAA NCEI Kailua-Kona 1991–2020 monthly normals",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataTypes=MLY-TMAX-NORMAL%2CMLY-TMIN-NORMAL%2CMLY-TAVG-NORMAL%2CMLY-PRCP-NORMAL&dataset=normals-monthly-1991-2020&format=pdf&stations=USW00021510",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Station USW00021510 monthly normals; June temperature row used, not a 2027 forecast."
+  },
+  "hawaii-volcanoes-weather": {
+    "label": "Hawaiʻi Volcanoes National Park weather and climate",
+    "tier": "official",
+    "url": "https://www.nps.gov/havo/planyourvisit/weather.htm",
+    "publisher": "U.S. National Park Service",
+    "scope": "Elevation-related Kīlauea summit weather guidance; not a trip-date forecast."
+  },
+  "noaa-coastal-water-temperature": {
+    "label": "NOAA NCEI Coastal Water Temperature monthly averages",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/access/coastal-water-temperature-guide/all_table.html",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Historical station-specific monthly means; exact station and month locator required."
+  },
+  "hawaii-ocean-safety": {
+    "label": "Hawaii Ocean Safety lifeguarded beaches and hazard ratings",
+    "tier": "official",
+    "url": "https://oceansafety.hawaii.gov/list-of-lifeguarded-beaches/",
+    "publisher": "Hawaii Department of Health",
+    "scope": "Current lifeguard coverage and hazard-rating guidance; day-of conditions still required."
+  },
+  "hawaii-volcanoes-directions": {
+    "label": "Hawaiʻi Volcanoes National Park directions and transportation",
+    "tier": "official",
+    "url": "https://www.nps.gov/havo/planyourvisit/directions.htm",
+    "publisher": "U.S. National Park Service",
+    "scope": "Current drive-time, inter-island carrier and in-park transport constraints."
+  },
+  "uss-arizona-programs": {
+    "label": "USS Arizona Memorial official reservation program",
+    "tier": "official",
+    "url": "https://www.nps.gov/perl/uss-arizona-memorial-programs.htm",
+    "publisher": "U.S. National Park Service",
+    "scope": "Current release windows, fee and operating caveats; recheck for 2027."
+  },
+  "hanauma-reservations": {
+    "label": "Hanauma Bay Nature Preserve official visitor guidance",
+    "tier": "official",
+    "url": "https://www.honolulu.gov/dpr/hanauma-bay-nature-preserve/",
+    "publisher": "City and County of Honolulu",
+    "scope": "Current reservation/operating rules; recheck release timing and closed days for 2027."
+  },
+  "hawaii-volcanoes-conditions": {
+    "label": "Hawaiʻi Volcanoes National Park alerts and conditions",
+    "tier": "official",
+    "url": "https://www.nps.gov/havo/planyourvisit/conditions.htm",
+    "publisher": "U.S. National Park Service",
+    "scope": "Live eruption, vog, construction, parking and closure status; must be checked near travel."
+  },
+  "california-noaa-san-diego-normals": {
+    "label": "NOAA NCEI San Diego 1991–2020 monthly normals",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&endDate=9996-12-31&format=pdf&startDate=0001-01-01&stations=USW00023188",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Station USW00023188 July temperature row; not a 2027 forecast."
+  },
+  "california-noaa-san-francisco-normals": {
+    "label": "NOAA NCEI San Francisco downtown 1991–2020 monthly normals",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&endDate=9996-12-31&format=pdf&startDate=0001-01-01&stations=USW00023272",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Station USW00023272 July temperature row; not a 2027 forecast."
+  },
+  "caltrans-highway-1": {
+    "label": "Caltrans Highway 1 current road conditions",
+    "tier": "official",
+    "url": "https://roads.dot.ca.gov/?roadnumber=Highway+1&submit=Search",
+    "publisher": "California Department of Transportation",
+    "scope": "Live SR-1 restrictions; must be rechecked immediately before the Big Sur transfer."
+  },
+  "caltrans-regents-slide": {
+    "label": "Caltrans Regent's Slide reopening and continuing-risk notice",
+    "tier": "official",
+    "url": "https://dot.ca.gov/caltrans-near-me/district-5/d5-news/d5-news-1-14-26",
+    "publisher": "California Department of Transportation",
+    "scope": "January 2026 reopening plus warning that debris/weather work can cause later closures."
+  },
+  "point-lobos-official": {
+    "label": "Point Lobos State Natural Reserve visitor information",
+    "tier": "official",
+    "url": "https://www.parks.ca.gov/?page_id=571",
+    "publisher": "California State Parks",
+    "scope": "Current hours, fees, vehicle rules and capacity context; recheck for 2027."
+  },
+  "spain-aemet-seville": {
+    "label": "AEMET Sevilla Aeropuerto climate normals",
+    "tier": "official",
+    "url": "https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5783",
+    "publisher": "Agencia Estatal de Meteorología",
+    "scope": "1981–2010 station normals; June temperature/precipitation row, not a 2027 forecast."
+  },
+  "spain-aemet-granada": {
+    "label": "AEMET Granada Base Aérea climate normals",
+    "tier": "official",
+    "url": "https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5514",
+    "publisher": "Agencia Estatal de Meteorología",
+    "scope": "1981–2010 station normals; June temperature/precipitation row, not a 2027 forecast."
+  },
+  "spain-aemet-malaga": {
+    "label": "AEMET Málaga Aeropuerto climate normals",
+    "tier": "official",
+    "url": "https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?k=and&l=6155A",
+    "publisher": "Agencia Estatal de Meteorología",
+    "scope": "1981–2010 station normals; June temperature/precipitation row, not a 2027 forecast."
+  },
+  "spain-renfe-madrid-seville": {
+    "label": "Renfe Madrid–Seville current direct-train pattern",
+    "tier": "operator",
+    "url": "https://www.renfe.com/es/en/inspirate/rutas/madrid-sevilla",
+    "publisher": "Renfe",
+    "scope": "Current operator journey pattern only; exact June 2027 timetable and flight connection are unconfirmed."
+  },
+  "spain-alhambra-tickets": {
+    "label": "Alhambra official tickets and timed-entry rules",
+    "tier": "official",
+    "url": "https://tickets.alhambra-patronato.es/en/",
+    "publisher": "Patronato de la Alhambra y Generalife",
+    "scope": "Current named-ticket, ID, Nasrid timing and price rules; 2027 tariff/availability require recheck."
+  },
+  "albania-state-driving": {
+    "label": "U.S. State Department Albania country information",
+    "tier": "official",
+    "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Albania.html",
+    "publisher": "U.S. Department of State",
+    "scope": "Current advisory, road-safety, remote-assistance and IDP guidance; recheck before travel."
+  },
+  "finikas-saranda-corfu": {
+    "label": "Finikas Lines Saranda–Corfu 2026 timetable",
+    "tier": "operator",
+    "url": "https://finikas-lines.com/lines/",
+    "publisher": "Finikas Lines",
+    "scope": "2026 seasonal operator timetable and vessel-duration proxy; no June/July 2027 confirmation."
+  },
+  "albania-akzm-valbona-conditions": {
+    "label": "AKZM Valbona Pass 2026 trail-condition responses",
+    "tier": "official",
+    "url": "https://akzm.gov.al/regjistri-i-kerkesave-dhe-pergjigjeve-2026/",
+    "publisher": "Agjencia Kombëtare e Zonave të Mbrojtura",
+    "scope": "Entries 43, 51, 53, 54, 59 and 63 document late-May/early-June snow, avalanche exposure and guide recommendations; 2027 needs a new live check."
+  },
+  "albania-tourism-ksamil": {
+    "label": "Albanian National Tourism Agency Ksamil guidance",
+    "tier": "official",
+    "url": "https://akt.gov.al/en/tourist_areas/Ksamil-beach/",
+    "publisher": "Agjencia Kombëtare e Turizmit",
+    "scope": "Official access/family-suitability description; not a water-temperature, crowd or safety guarantee."
+  },
+  "croatia-rental-albania-restrictions": {
+    "label": "Croatia Rent cross-border terms",
+    "tier": "operator",
+    "url": "https://croatiarent.hr/en/uvjeti-poslovanja",
+    "publisher": "Croatia Rent",
+    "scope": "Current supplier explicitly prohibits Albania; policies vary by supplier and written approval remains mandatory."
+  },
+  "hertz-croatia-terms": {
+    "label": "Hertz Croatia cross-border and one-way terms",
+    "tier": "operator",
+    "url": "https://www.hertz.hr/en/car-rental/support-center/general-terms-conditions/",
+    "publisher": "Hertz Croatia",
+    "scope": "Foreign use and international one-way are request/availability dependent; no Saranda drop is confirmed."
+  },
+  "enterprise-croatia-cross-border": {
+    "label": "Enterprise Croatia cross-border policy",
+    "tier": "operator",
+    "url": "https://www.enterprise.hr/en/car-hire-locations/hr/zagreb-jankomir-jhh2.html",
+    "publisher": "Enterprise Croatia",
+    "scope": "Lists Albania cross-border fee/authorization and selected international one-way branches; no route-specific drop confirmation."
+  },
+  "bosnia-state-driving": {
+    "label": "U.S. State Department Bosnia and Herzegovina country information",
+    "tier": "official",
+    "url": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/BosniaandHerzegovina.html",
+    "publisher": "U.S. Department of State",
+    "scope": "Current road-safety, IDP and advisory guidance; recheck before travel."
+  },
+  "croatia-dhmz-split-climate": {
+    "label": "DHMZ Split-Marjan long-term climate values",
+    "tier": "official",
+    "url": "https://meteo.hr/klima_e.php?Grad=split_marjan&param=k1&section=klima_podaci",
+    "publisher": "Croatian Meteorological and Hydrological Service",
+    "scope": "1948–2024 station series; June mean and absolute extremes, not a 2027 forecast."
+  },
+  "jadrolinija-split-hvar-2026": {
+    "label": "Jadrolinija Split–Hvar 2026 timetable",
+    "tier": "operator",
+    "url": "https://www.jadrolinija.hr/en/travel/split-hvar",
+    "publisher": "Jadrolinija",
+    "scope": "Current direct passenger-service pattern and 2026 timetable; June 2027 is unconfirmed."
+  },
+  "tp-line-hvar-korcula-2026": {
+    "label": "TP Line Hvar–Korčula 2026 timetable",
+    "tier": "operator",
+    "url": "https://www.tp-line.hr/files/cjenici/651-Split-Hvar-Korcula-26-HR.pdf",
+    "publisher": "TP Line",
+    "scope": "2026 seasonal timetable beginning June 15; June 18, 2027 operation is unconfirmed."
+  },
+  "croatia-dhmz-marine": {
+    "label": "DHMZ Adriatic marine observations and forecasts",
+    "tier": "official",
+    "url": "https://www.meteo.hr/prognoze_e.php?el=jadran_e&param=jadran&section=prognoze_specp",
+    "publisher": "Croatian Meteorological and Hydrological Service",
+    "scope": "Live marine conditions and forecast; must be checked for each sailing and boat day."
+  },
+  "croatia-krka-rules": {
+    "label": "Krka National Park official visitor rules",
+    "tier": "official",
+    "url": "https://www.npkrka.hr/wp-content/uploads/NPKrka_iBrosura_2025_EN.pdf",
+    "publisher": "Krka National Park",
+    "scope": "Current designated swimming zones/season and visitor operations; recheck for 2027."
+  },
+  "croatia-mljet-official": {
+    "label": "Mljet National Park official visitor and price information",
+    "tier": "official",
+    "url": "https://np-mljet.hr/price-list/?lang=en",
+    "publisher": "Mljet National Park",
+    "scope": "Current opening/transport/price information; 2027 hours, boats and tariff are unconfirmed."
+  },
+  "hawaii-waikiki-market": {
+    "label": "Waikiki Market current operating and grocery notice",
+    "tier": "operator",
+    "url": "https://jp.foodland.com/news/waikiki-market-reopening-postponed",
+    "publisher": "Foodland / Waikiki Market",
+    "scope": "June 17, 2026 operator notice confirming fresh food, packaged deli, bread, sandwiches and groceries remain available during deli renovation."
+  },
+  "hawaii-foodland-ala-moana": {
+    "label": "Foodland Farms Ala Moana store information",
+    "tier": "operator",
+    "url": "https://foodland.com/about-foodland-farms-ala-moana/",
+    "publisher": "Foodland Super Market",
+    "scope": "Current Honolulu full-service supermarket address, hours, prepared food, pizza and take-home grocery assortment."
+  },
+  "hawaii-foodland-kona": {
+    "label": "Sack N Save Kona store information",
+    "tier": "operator",
+    "url": "https://foodland.com/stores/sack-n-save-kona-kona/",
+    "publisher": "Foodland Super Market",
+    "scope": "Current Kailua-Kona supermarket address and daily operating hours."
+  },
+  "hawaii-kilauea-general-store": {
+    "label": "Kīlauea General Store operator profile",
+    "tier": "operator",
+    "url": "https://www.kilaueagifts.com/about",
+    "publisher": "Kilauea Gifts Company",
+    "scope": "Current Volcano Village operator description of grocery displays, family-affordable prepared food and pizza."
+  },
+  "california-vons-san-diego": {
+    "label": "Vons San Diego official store directory",
+    "tier": "operator",
+    "url": "https://local.vons.com/ca/san-diego.html",
+    "publisher": "Vons",
+    "scope": "Current directory of 22 San Diego supermarkets and available grocery services."
+  },
+  "california-vons-santa-barbara": {
+    "label": "Vons Santa Barbara Cliff Drive store",
+    "tier": "operator",
+    "url": "https://local.vons.com/ca/santa-barbara/2010-cliff-dr.html",
+    "publisher": "Vons",
+    "scope": "Current Santa Barbara store address, hours, produce, deli, bakery and grocery services."
+  },
+  "california-safeway-monterey": {
+    "label": "Safeway Monterey-area Canyon Del Rey store",
+    "tier": "operator",
+    "url": "https://local.safeway.com/safeway/ca/del-rey-oaks/815-canyon-del-rey-blvd.html",
+    "publisher": "Safeway",
+    "scope": "Current Monterey-area supermarket address and produce, bakery, deli and grocery assortment."
+  },
+  "california-safeway-san-francisco": {
+    "label": "Safeway San Francisco official store directory",
+    "tier": "operator",
+    "url": "https://local.safeway.com/safeway/ca/san-francisco.html",
+    "publisher": "Safeway",
+    "scope": "Current directory of 13 San Francisco supermarkets, including prepared-meal and deli services."
+  },
+  "france-meteo-nice-station": {
+    "label": "Météo-France Nice station 1991–2020 climate sheet",
+    "tier": "official",
+    "url": "https://donneespubliques.meteofrance.fr/FichesClim/FICHECLIM_06088001.pdf",
+    "publisher": "Météo-France",
+    "scope": "Station 06088001 monthly normals and records; exact June column, not a 2027 forecast."
+  },
+  "france-meteo-marignane-station": {
+    "label": "Météo-France Marignane station 1991–2020 climate sheet",
+    "tier": "official",
+    "url": "https://donneespubliques.meteofrance.fr/FichesClim/FICHECLIM_13054001.pdf",
+    "publisher": "Météo-France",
+    "scope": "Station 13054001 monthly normals and records representing the western Provence route; exact June column, not a 2027 forecast."
+  },
+  "france-carrefour-nice": {
+    "label": "Carrefour Nice official supermarket directory",
+    "tier": "operator",
+    "url": "https://www.carrefour.fr/magasin/type/supermarche/nice-06088",
+    "publisher": "Carrefour France",
+    "scope": "Current Nice supermarket addresses and hours, including central Market branches."
+  },
+  "france-spar-cassis": {
+    "label": "SPAR Cassis official store page",
+    "tier": "operator",
+    "url": "https://spar.casino.fr/stores/tz025/cassis-10-rue-de-l-arene",
+    "publisher": "SPAR France",
+    "scope": "Current Cassis grocery address and daily operating hours."
+  },
+  "france-carrefour-aix": {
+    "label": "Carrefour City Aix-en-Provence Saez store",
+    "tier": "operator",
+    "url": "https://www.carrefour.fr/magasin/city-aix-en-provence-saez",
+    "publisher": "Carrefour France",
+    "scope": "Current Aix grocery address, hours, salad bar, pickup and delivery services."
+  },
+  "spain-carrefour-seville": {
+    "label": "Carrefour Seville official store directory",
+    "tier": "operator",
+    "url": "https://www.carrefour.es/tiendas-carrefour/andalucia/sevilla/",
+    "publisher": "Carrefour España",
+    "scope": "Current Seville directory with central City, Express and Market branches and broad food assortment."
+  },
+  "spain-carrefour-granada": {
+    "label": "Carrefour Market Granada store",
+    "tier": "operator",
+    "url": "https://www.carrefour.es/tiendas-carrefour/supermercados/carrefour-market/granada_-_s.aspx",
+    "publisher": "Carrefour España",
+    "scope": "Current central Granada supermarket address, hours, fresh food and intolerance-friendly assortment."
+  },
+  "spain-carrefour-nerja": {
+    "label": "Carrefour Market Antonio Ferrandis Nerja store",
+    "tier": "operator",
+    "url": "https://www.carrefour.es/tiendas-carrefour/supermercados/carrefour-market/antonio-ferrandis-nerja-s.aspx",
+    "publisher": "Carrefour España",
+    "scope": "Current Nerja supermarket address, hours and broad grocery assortment."
+  },
+  "albania-bujtina-polia": {
+    "label": "Bujtina Polia Theth official rooms and dining",
+    "tier": "operator",
+    "url": "https://bujtinapolia.com/",
+    "publisher": "Bujtina Polia",
+    "scope": "Current Theth guesthouse page with breakfast-included rooms, homemade meals, family-style dining and April–November operation."
+  },
+  "albania-big-market-ksamil": {
+    "label": "Big Market Ksamil current business listing",
+    "tier": "secondary",
+    "url": "https://www.visitsaranda.net/business/big-market-ksamil/",
+    "publisher": "Visit Saranda",
+    "scope": "Current exact Ksamil branch address, daily hours and contact; paired with the chain's official assortment source."
+  },
+  "albania-big-market-network": {
+    "label": "Big Market Albania network and assortment",
+    "tier": "operator",
+    "url": "https://bigmarket.al/markets/index",
+    "publisher": "Big Market Albania",
+    "scope": "Current operator statement of 175+ sales points, 30,000+ products and grocery categories."
+  },
+  "greece-ab-corfu": {
+    "label": "AB Vassilopoulos Corfu official store page",
+    "tier": "operator",
+    "url": "https://www.ab.gr/el/kerkyra",
+    "publisher": "AB Vassilopoulos",
+    "scope": "Current full-supermarket location at the 1st km of the Corfu–Lefkimmi National Road and broad grocery assortment."
+  },
+  "montenegro-idea-kotor": {
+    "label": "IDEA Kotor official store information",
+    "tier": "operator",
+    "url": "https://www.idea.co.me/O-Idei/Novosti/Novo-radno-vrijeme-IDEA-prodavnica",
+    "publisher": "IDEA Montenegro",
+    "scope": "Operator page identifying IDEA Kotor at Šuranj bb; current network site states more than 30,000 items."
+  },
+  "bosnia-bingo-mostar": {
+    "label": "Bingo Mostar official 2026 store-hours list",
+    "tier": "operator",
+    "url": "https://www.bingotuzla.ba/wp-content/uploads/2026/04/Radno-vrijeme-1.maj_-1.pdf",
+    "publisher": "Bingo Tuzla",
+    "scope": "Official 2026 operator list identifying TC Mostar at Put M-17 br. 5; 2027 hours require recheck."
+  },
+  "croatia-studenac-base-stores": {
+    "label": "Studenac selected-store operator list",
+    "tier": "operator",
+    "url": "https://www.studenac.hr/documents/Odabrane%20trgovine%20s%20Moj%20Studenac%20cijenama.pdf",
+    "publisher": "Studenac",
+    "scope": "Current exact grocery branch addresses in Split, Hvar and Korčula."
+  },
+  "croatia-tommy-assortment": {
+    "label": "Tommy stores and current grocery assortment",
+    "tier": "operator",
+    "url": "https://www.tommy.hr/prodavaonice",
+    "publisher": "Tommy",
+    "scope": "Current operator catalog covering pantry staples, dairy, frozen pizza, prepared meals, breakfast and children's food."
   }
 }

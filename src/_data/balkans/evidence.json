@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "balkans",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 5-line-item family budget is $10,600–$16,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The five-category rollup reconciles to $10,600–$16,800. The high case exceeds the $15,000 preference and the $1,600–$2,800 cross-border-car line has no qualifying quote, so 1/5 is strongly supported.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The 14-day route has substantial water/boat days, Mostar/Kotor/Corfu town culture and Kravica/Butrint/Blue Eye/coastal nature across four countries.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 1,
-      "rationale": "The canonical route carries 30 air hours, 17.6 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Ease 1 is directly supported by four bases, three international land borders, a 7.5–8-hour Kotor–Ksamil drive before stops, an unproven international one-way rental, a car drop, a ferry/time-zone change and up to two air connections.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 3,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current operator evidence verifies full grocery coverage in Kotor, Mostar and Corfu, plus an active Ksamil supermarket backed by the national chain's current food assortment. Plain-food fallback coverage is robust today across all four countries; July 2027 operations and exact lodging kitchens remain rechecks.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 2,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "Risk 2 is strongly supported: several Croatian operators explicitly bar Albania, international one-way availability is request-only, no Dubrovnik–Saranda quote exists, three land borders and the long Kotor–Ksamil transfer are exposed, and the 2027 ferry/air schedules remain unpublished.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -197,9 +197,22 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 4,
+        "basePattern": [
+          "Mostar 3",
+          "Kotor 3",
+          "Ksamil/Saranda 3",
+          "Corfu 3"
+        ],
+        "countries": 4,
+        "modes": [
+          "water/beaches/boats",
+          "old towns/food",
+          "nature/archaeology"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "internal-itinerary": "Balkan Coast Road Trip; canonical 2027-07-01 → 2027-07-14; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -209,24 +222,27 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 1,
         "maxConnections": 2,
         "singleTicket": false,
         "airHours": 30,
-        "groundHours": 17.6
+        "groundHours": 17.6,
+        "baseMoves": 3,
+        "landBorders": 3,
+        "internationalFerries": 1,
+        "longestTransferHours": 8,
+        "oneNightStops": 0
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Balkan Coast Road Trip; canonical 2027-07-01 → 2027-07-14; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Balkan Coast Road Trip; not a 2027 schedule confirmation"
+        "internal-itinerary": "Balkans day-by-day and #getting-around: DBV→Mostar→Kotor→Ksamil, 435–453 km Kotor/Ksamil day, Saranda car drop, ferry and Corfu base"
       },
       "claimType": "proxy"
     },
@@ -234,17 +250,33 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
+        "montenegro-idea-kotor",
+        "bosnia-bingo-mostar",
+        "albania-big-market-ksamil",
+        "albania-big-market-network",
+        "greece-ab-corfu",
         "internal-itinerary"
       ],
       "value": {
         "score": 3,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "verifiedBases": [
+          "Kotor",
+          "Mostar",
+          "Ksamil/Saranda",
+          "Corfu"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
+        "montenegro-idea-kotor": "Official IDEA operator pages identify the Kotor supermarket at Šuranj bb and current network assortment of more than 30,000 items",
+        "bosnia-bingo-mostar": "Official 2026 Bingo operating-hours PDF identifies TC Mostar, Put M-17 br. 5",
+        "albania-big-market-ksamil": "Current local business listing for Big Market on SH81 in Ksamil with daily hours and contact number",
+        "albania-big-market-network": "Official operator states 175+ sales points and 30,000+ products, with fruit/vegetable, meat/fish, bakery, dairy and pantry categories",
+        "greece-ab-corfu": "Official AB Vassilopoulos Corfu operator page, 1st km Corfu-Lefkimmi National Road; full supermarket and broad assortment",
         "internal-itinerary": "Balkan Coast Road Trip; canonical 2027-07-01 → 2027-07-14; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -253,25 +285,43 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
+        "croatia-rental-albania-restrictions",
+        "hertz-croatia-terms",
+        "enterprise-croatia-cross-border",
+        "finikas-saranda-corfu",
+        "bosnia-state-driving",
+        "albania-state-driving",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "eu-etias"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Balkan Coast Road Trip",
-        "dateWindow": "2027-07-01 → 2027-07-14"
+        "route": "PIT → DBV; Croatia/Bosnia/Montenegro/Albania drive; Saranda → Corfu ferry; CFU → PIT",
+        "dateWindow": "2027-07-01 → 2027-07-14",
+        "confirmed2027": false,
+        "blockingGate": "written quote naming Croatia, Bosnia, Montenegro and Albania plus an accepted international one-way drop before Corfu",
+        "fallback": "redesign with separate rentals/private transfers if no compliant through-car quote exists",
+        "ferryGate": "exact July 11, 2027 Saranda–Corfu sailing after car return"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Balkan Coast Road Trip; canonical 2027-07-01 → 2027-07-14; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Balkan Coast Road Trip; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Balkan Coast Road Trip; recheck before departure"
+        "internal-itinerary": "Balkans #getting-around, #tips and #status explicitly identify the cross-border one-way car as the make-or-break gate",
+        "croatia-rental-albania-restrictions": "Croatia Rent's current published terms prohibit taking its vehicles into Albania; other suppliers differ, so a named supplier and written approval/drop quote are mandatory",
+        "hertz-croatia-terms": "Hertz Croatia permits foreign use only on written request and says international one-way rentals are availability/quote dependent; it does not confirm Saranda return",
+        "enterprise-croatia-cross-border": "Enterprise Croatia lists Albania as fee-authorized cross-border travel but international one-way is limited to selected branches; no Saranda branch/drop is confirmed",
+        "finikas-saranda-corfu": "Finikas 2026 operator schedule confirms a current daily seasonal ferry pattern only, not July 11, 2027",
+        "bosnia-state-driving": "State country information warns of narrow/curvy intercity roads, limited lighting and possible landslide/incident closures",
+        "albania-state-driving": "State country information documents variable rural roads and elevated driving risk",
+        "state-travel": "Country advisories for Bosnia and Herzegovina, Montenegro, Albania and Greece require recheck",
+        "cdc-travel": "Destination health guidance for all four countries requires recheck",
+        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact date later; July 2027 Greece entry action remains a recheck"
       },
       "claimType": "proxy"
     },
@@ -299,29 +349,34 @@
   "metrics": {
     "airHours": 30,
     "groundHours": 17.6,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 2,
+    "baseMoves": 3,
+    "longestTransferHours": 8,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 4,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "alternative-required"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in all four July bases",
+      "kitchen": "strongly preferred in Kotor, Ksamil and Corfu",
+      "laundry": "required in at least one middle/late base",
+      "realBeds": "required for four; not verified until lodging is booked"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Kravica, bay ladders, Ksamil and Corfu coves need site/sea-state checks, water shoes and direct supervision; no single water condition applies across the route.",
+    "crowdingPressure": "High in July at Kotor, Ksamil and Corfu; early starts and one-beach-per-day pacing are necessary.",
+    "medicalAccess": "Urban access exists in Mostar/Kotor/Saranda/Corfu, but border days and remote coves reduce response simplicity; family constraints and insurance network remain unresolved.",
+    "childActivityNotes": {
+      "age13": "fits the activity mix; long border/drive days remain a material burden",
+      "age8": "activities fit with water supervision, but the 7.5–8-hour Kotor/Ksamil transfer before stops is poor family fit"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Scores use the canonical itinerary/budget, current operator ferry evidence, official country driving guidance and direct rental-company terms. Coarse climate/SST values and all July 2027 air, car, ferry and lodging inventory remain provisional.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "internal-derived itinerary and budget tables",
+    "direct Croatian rental-company cross-border/one-way terms",
+    "official country driving guidance and current ferry-operator proxy",
+    "no qualifying Dubrovnik-to-Saranda one-way-car quote yet"
   ]
 }

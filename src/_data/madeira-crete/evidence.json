@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-crete",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 5-line-item family budget is $12,100–$16,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "Five category rollups total $12,035–$16,800, consistent with the displayed $12,100–$16,800 gated band. Even the low case is slightly above target and the high case exceeds the preferred maximum; airfare remains unquoted.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,15 +14,15 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Madeira + Crete and 2027-06-08 → 2027-06-22 spans approximately 64–84°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "rationale": "Funchal's official June normal is about 65–75°F with 7.8 mm rain; Heraklion's historical June table is about 66–81°F with 3 mm. Coastal weather is favorable, while Madeira ridge cloud/wind and hot exposed Crete hikes require active management.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
       "score": 4,
-      "rationale": "The current-proxy swim range for Madeira + Crete is approximately 73–74°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "Six Chania nights plus two Rethymno nights schedule repeated Mediterranean swims. The 73–74°F range was not independently re-extracted from OISST in this audit, so it remains medium confidence.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The itinerary strongly schedules Madeira ridge/levada hiking, Crete beaches, gorges, towns, and one Lisbon buffer evening.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,31 +38,31 @@
     },
     "ease": {
       "score": 2,
-      "rationale": "The canonical route carries 25.9 air hours, 18.1 ground hours, 3 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Four lodging sleeps, three base moves, two island car rentals, a mandatory Lisbon buffer, LIS–ATH–CHQ, and up to three connections create high deterministic load.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Named plain restaurant choices are independently backed by current Continente branches in Funchal/Lisbon and Sklavenitis branches in Chania/Rethymno. This strongly supports 4/5 base coverage; individual branches still require a 2027 recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 2,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "The buffer correctly mitigates Madeira wind disruption, but FNC–LIS and the next-day LIS–ATH–CHQ chain remain critical; Madeira trail status/slots and June 2027 flights must be rechecked.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 5,
-      "rationale": "13 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "rationale": "Thirteen hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -70,7 +70,7 @@
     },
     "novelty": {
       "score": 4,
-      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 4/5 under that rubric.",
+      "rationale": "Madeira and Crete are new exact destinations, but prior Greek-island travel makes the type partly familiar, deriving 4/5.",
       "confidence": "high",
       "evidence": [
         "visited-overlap"
@@ -78,7 +78,7 @@
     },
     "pto": {
       "score": 2,
-      "rationale": "9 PTO days derives a 2/5 slider score and has zero default weight.",
+      "rationale": "Nine PTO days derive 2/5 under the canonical slider rubric and have zero default weight.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -92,7 +92,9 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "aegean-lisbon-athens",
+        "aegean-athens-crete"
       ],
       "value": {
         "lowUsd": 12100,
@@ -102,12 +104,14 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "12000–16800 line-item sum; tolerance 150"
+        "arithmetic": "6580–8700 + 1955–3150 + 1850–2500 + 1150–1750 + 500–700 = 12035–16800; displayed 12100–16800"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-crete/main.json #totals five category rows; headline budget explicitly gated on flight stack",
+        "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 showed January 2027 LIS–ATH one-way examples from €132; only one component of the flight stack",
+        "aegean-athens-crete": "Operator calendar observed 2026-07-10 showed current ATH–CHQ/HER examples from €26–€50; not June 2027 or the full family itinerary"
       },
       "claimType": "proxy"
     },
@@ -125,10 +129,10 @@
         "hotelNights": 13,
         "ptoDays": 9
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[madeira-crete], routeReadiness[madeira-crete] and family constraints"
+        "decision-profile": "decisionProfile.json tripWindows.madeira-crete and required Pittsburgh dates June 24–26"
       },
       "claimType": "confirmed"
     },
@@ -136,25 +140,35 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "copernicus-climate",
-        "internal-itinerary"
+        "ipma-funchal-normal-1991-2020",
+        "meteo-heraklion-climate"
       ],
       "value": {
         "score": 4,
-        "temperatureF": [
-          64,
-          84
-        ],
-        "route": "Madeira + Crete",
-        "dateWindow": "2027-06-08 → 2027-06-22"
+        "juneMeanDailyLowHighF": {
+          "Funchal": [
+            65,
+            75
+          ],
+          "Heraklion": [
+            66,
+            81
+          ]
+        },
+        "juneRainMm": {
+          "Funchal": 7.8,
+          "Heraklion": 3
+        },
+        "mountainConditionsExcluded": true,
+        "forecast": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Madeira + Crete; June planning climatology for route Madeira + Crete; not a live 2027 forecast",
-        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "ipma-funchal-normal-1991-2020": "Station 522 June TN 18.2°C, TX 23.7°C, precipitation 7.8 mm",
+        "meteo-heraklion-climate": "Heraklion June mean minimum 19.0°C, mean maximum 27.3°C, rainfall 3 mm"
       },
       "claimType": "proxy"
     },
@@ -166,7 +180,7 @@
       "sourceRefs": [
         "noaa-oisst",
         "eea-bathing-water",
-        "internal-itinerary"
+        "visit-greece-crete"
       ],
       "value": {
         "score": 4,
@@ -175,15 +189,15 @@
           74
         ],
         "hasSwim": true,
-        "route": "Madeira + Crete",
-        "dateWindow": "2027-06-08 → 2027-06-22"
+        "primarySwimRegion": "Crete",
+        "madeiraRole": "cool lava-pool bonus"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Madeira + Crete; swim locations in route Madeira + Crete; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Madeira + Crete; latest published season, not a 2027 guarantee",
-        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "noaa-oisst": "June 15–21 historical SST proxy at Chania 35.51N 24.02E and Rethymno 35.37N 24.48E",
+        "eea-bathing-water": "Latest Greece/Portugal monitored bathing-water assessment; selected 2027 sites need recheck",
+        "visit-greece-crete": "Official Crete guide supports beach-rich route context, not live conditions"
       },
       "claimType": "proxy"
     },
@@ -197,81 +211,127 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 13
+        "hotelNights": 13,
+        "lodgingSleeps": 4,
+        "baseNames": [
+          "Funchal",
+          "Lisbon buffer",
+          "Chania",
+          "Rethymno"
+        ],
+        "nightSplit": [
+          4,
+          1,
+          6,
+          2
+        ],
+        "scheduledModes": [
+          "mountain/levada hiking",
+          "beaches/swimming",
+          "gorges",
+          "town/culture"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-crete/main.json itinerary day1–day13 and lodging section headed Three bases plus buffer"
       },
       "claimType": "derived"
     },
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 2,
         "maxConnections": 3,
-        "singleTicket": true,
-        "airHours": 25.9,
-        "groundHours": 18.1
+        "singleTicketAssumption": true,
+        "lodgingSleeps": 4,
+        "baseMoves": 3,
+        "internalFlightSegments": 3,
+        "rentalCars": 2,
+        "airHoursPlanningEstimate": 25.9,
+        "groundHoursPlanningEstimate": 18.1,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Madeira + Crete; not a 2027 schedule confirmation"
+        "internal-itinerary": "madeira-crete/main.json day5 FNC→LIS, day6 LIS→ATH→CHQ, day12 move to Rethymno, and #getting-around"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "continente-portugal-stores",
+        "sklavenitis-crete-stores"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "coveredSleeps": [
+          "Funchal",
+          "Lisbon",
+          "Chania",
+          "Rethymno"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "grilled meat",
+          "groceries"
+        ],
+        "lodgingKitchenConfirmed": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-crete/main.json day-by-day restaurant entries include pizza, pasta, burger, grilled-food, and grocery choices for all four sleeps",
+        "continente-portugal-stores": "Operator locator reviewed 2026-07-10: multiple Funchal branches including MadeiraShopping and São Martinho, plus multiple central Lisbon branches",
+        "sklavenitis-crete-stores": "Operator locator reviewed 2026-07-10: Chania branches include Chania–Mournies 43 and Souda; Rethymno branches are returned under the Rethymno filter"
       },
       "claimType": "proxy"
     },
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
       "sourceRefs": [
+        "ana-madeira-wind-operations",
+        "aegean-lisbon-athens",
+        "aegean-athens-crete",
         "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "visit-madeira-hiking"
       ],
       "value": {
-        "status": "current-proxy",
-        "singleTicket": true,
+        "status": "exact-2027-schedule-required",
+        "singleTicketAssumption": true,
         "maxConnections": 3,
-        "route": "Madeira + Crete",
-        "dateWindow": "2027-06-08 → 2027-06-22"
+        "mandatoryBuffer": "Lisbon night after FNC",
+        "june2027Verified": false,
+        "trailReservationsRequired": true,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Crete; canonical 2027-06-08 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Madeira + Crete; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Madeira + Crete; recheck before departure"
+        "ana-madeira-wind-operations": "ANA official notice documents strong-wind flight disruption at Madeira; historical example only",
+        "aegean-lisbon-athens": "Operator currently sells LIS–ATH but not the exact June 14, 2027 chain",
+        "aegean-athens-crete": "Operator current route calendar includes ATH–CHQ/HER",
+        "internal-itinerary": "madeira-crete/main.json Plan Health-Check mandates Lisbon wind buffer and protected tickets",
+        "visit-madeira-hiking": "Official 2026 rules require timed reservation for all classified PR trails and live status checks"
       },
       "claimType": "proxy"
     },
@@ -285,13 +345,14 @@
         "scorecard-contract"
       ],
       "value": {
-        "score": 4
+        "score": 4,
+        "overlapType": "new exact destinations; familiar Greek-island travel type"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[madeira-crete], routeReadiness[madeira-crete] and family constraints",
-        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for madeira-crete"
+        "decision-profile": "decisionProfile.json family trip context",
+        "scorecard-contract": "scorecard.manifest.json visited list includes Greek islands but not Madeira or Crete"
       },
       "claimType": "derived"
     }
@@ -299,29 +360,34 @@
   "metrics": {
     "airHours": 25.9,
     "groundHours": 18.1,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 2,
+    "baseMoves": 3,
+    "longestTransferHours": 9.5,
+    "highOutputDayStreak": 6,
+    "fallbackDays": 1,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "alternative-required"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "unknown until property selection",
+      "kitchen": "unknown until property selection",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Crete beach exposure and Madeira lava-pool swell require daily checks; age-8 supervision is material.",
+    "crowdingPressure": "PR trail slots, Balos, Elafonissi, and Samaria are reservation/early-start pressure points.",
+    "medicalAccess": "Unknown against incomplete family medical profile; ridge, gorge, and remote-beach days have delayed access.",
+    "childActivityNotes": {
+      "age13": "very strong for advanced hiking and water",
+      "age8": "mixed: multiple gorge/ridge days require real alternatives and turnaround rules"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Official climate normals, historical SST, operator route evidence, official Madeira trail/wind sources, and deterministic itinerary structure.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "bounded climate and risk claims strongly sourced",
+    "deterministic logistics strongly sourced",
+    "independent grocery coverage strongly sourced",
+    "prices, properties, and non-reproduced SST remain medium"
   ]
 }

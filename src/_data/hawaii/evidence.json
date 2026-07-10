@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "hawaii",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 5-line-item family budget is $11,000–$15,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The eight-line canonical rollup reconciles to $11,000–$15,800 including insurance/miscellaneous; the lower itemized table excludes that insurance line. Because the high case exceeds the $15,000 preference and no June 2027 quotes exist, the rubric supports 1/5.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,23 +14,23 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Hawaii and 2027-06-05 → 2027-06-15 spans approximately 70–84°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "rationale": "NOAA 1991–2020 June normals are 86.9/73.8°F at Honolulu and 85.2/74.0°F at Kona; the Kīlauea summit is commonly 12–15°F cooler than sea level. That supports warm beach days plus a cooler Volcano layer, not a 2027 forecast.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
       "score": 5,
-      "rationale": "The current-proxy swim range for Hawaii is approximately 78–80°F; access, safety, and exact conditions remain trip-date dependent.",
-      "confidence": "medium",
+      "rationale": "NOAA's coastal guide reports June monthly means of 79.8°F at Honolulu, 80.5°F at Kawaihae and 78.2°F at Hilo. The route schedules repeated natural-water days, while official Hawaii guidance requires lifeguarded beaches and day-of hazard checks.",
+      "confidence": "high",
       "evidence": [
         "swim-conditions"
       ]
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The ten-day plan explicitly schedules five water/beach days, Honolulu/Pearl Harbor culture, and two volcano/landscape days across Oahu, Kona and Volcano Village.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "The canonical route carries 22.8 air hours, 7.4 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "The deterministic load is three bases, two base moves, one inter-island flight, two separate rental periods and a return red-eye; mainland legs may require up to two connections. Current carriers serve Kona inter-island, but June 2027 times are not confirmed.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current operator pages verify full-service or broad grocery coverage in Waikiki/Honolulu, Kailua-Kona and Volcano Village, including prepared food, pizza and pantry staples. That makes plain-food fallback coverage robust today; exact lodging kitchens and June 2027 store operations remain rechecks.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 4,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "The domestic route is structurally credible, but June 2027 mainland and inter-island schedules are not confirmed. The material operational risks are ocean conditions, timed Hanauma/USS Arizona access, eruption/vog conditions and park closures, all with official day-of mitigations.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -101,10 +101,10 @@
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 5,
-        "arithmetic": "11000–15800 line-item sum; tolerance 150"
+        "lineItemCount": 8,
+        "arithmetic": "5,000–6,400 transportation + 2,900–4,800 lodging + 1,600–2,200 food + 1,100–1,700 activities + 400–700 insurance/misc = 11,000–15,800"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -125,7 +125,7 @@
         "hotelNights": 9,
         "ptoDays": 7
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "decision-profile": "decisionProfile.json tripWindows[hawaii], routeReadiness[hawaii] and family constraints"
@@ -136,24 +136,28 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "noaa-climate",
+        "hawaii-noaa-honolulu-normals",
+        "hawaii-noaa-kona-normals",
+        "hawaii-volcanoes-weather",
         "internal-itinerary"
       ],
       "value": {
         "score": 4,
         "temperatureF": [
-          70,
-          84
+          59,
+          87
         ],
         "route": "Hawaii",
         "dateWindow": "2027-06-05 → 2027-06-15"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "noaa-climate": "NOAA climate normals/proxy; Hawaii; June planning window 2027-06-05 → 2027-06-15; not a live forecast",
+        "hawaii-noaa-honolulu-normals": "NCEI station USW00022521, 1991–2020 monthly normals, June: daily maximum 86.9°F, minimum 73.8°F, mean 80.3°F",
+        "hawaii-noaa-kona-normals": "NCEI station USW00021510, 1991–2020 monthly normals, June: daily maximum 85.2°F, minimum 74.0°F, mean 79.6°F",
+        "hawaii-volcanoes-weather": "NPS Weather and Climate: Kīlauea summit near 4,000 ft can be 12–15°F cooler than sea level and rainy/chilly in any month",
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -162,25 +166,27 @@
       "id": "swim-conditions",
       "category": "swim",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "noaa-oisst",
+        "noaa-coastal-water-temperature",
+        "hawaii-ocean-safety",
         "internal-itinerary"
       ],
       "value": {
         "score": 5,
         "temperatureF": [
           78,
-          80
+          81
         ],
         "hasSwim": true,
         "route": "Hawaii",
         "dateWindow": "2027-06-05 → 2027-06-15"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Hawaii; swim locations in route Hawaii; seasonal planning range only",
+        "noaa-coastal-water-temperature": "NCEI Coastal Water Temperature Guide monthly means: June Honolulu 79.8°F, Kawaihae 80.5°F, Hilo 78.2°F; historical means, not day-of conditions",
+        "hawaii-ocean-safety": "Hawaii Department of Health Ocean Safety list includes lifeguarded Waikiki, Hanauma Bay, Waimea Bay, Hāpuna and Punaluʻu; hazard rating and conditions must be checked on the visit day",
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -195,9 +201,20 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 9
+        "hotelNights": 9,
+        "bases": 3,
+        "basePattern": [
+          "Waikiki 4",
+          "Kailua-Kona 3",
+          "Volcano Village 2"
+        ],
+        "modes": [
+          "water/beaches",
+          "town/culture",
+          "volcano/nature"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -207,42 +224,70 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
-        "bts-ontime"
+        "hawaii-volcanoes-directions"
       ],
       "value": {
         "easeScore": 3,
         "maxConnections": 2,
         "singleTicket": true,
         "airHours": 22.8,
-        "groundHours": 7.4
+        "groundHours": 7.4,
+        "baseMoves": 2,
+        "rentalPeriods": 2,
+        "interIslandFlights": 1,
+        "returnRedEye": true
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Hawaii; not a 2027 schedule confirmation"
+        "hawaii-volcanoes-directions": "NPS directions page: Kona is 95 miles/2–2.5 hours from the park; Hawaiian and Southwest currently serve Kona inter-island; no public transport operates within the park"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
+        "hawaii-waikiki-market",
+        "hawaii-foodland-ala-moana",
+        "hawaii-foodland-kona",
+        "hawaii-kilauea-general-store",
         "internal-itinerary"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "basesWithNamedFallbacks": 3,
+        "verifiedBases": [
+          "Waikiki/Honolulu",
+          "Kailua-Kona",
+          "Volcano Village"
+        ],
+        "kitchenDependentBases": [
+          "Waikiki",
+          "Kailua-Kona"
+        ],
+        "coverage": [
+          "burgers",
+          "noodles",
+          "pizza",
+          "grocery/self-catering"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
+        "hawaii-waikiki-market": "2380 Kuhio Ave; official June 17, 2026 operating notice confirms fresh food, drinks, packaged deli, sandwiches, bread and other groceries remain available during deli renovation",
+        "hawaii-foodland-ala-moana": "1450 Ala Moana Blvd; full-service supermarket with prepared, take-home-and-cook, pizza and grocery departments",
+        "hawaii-foodland-kona": "Sack N Save Kona, 75-5595 Palani Rd; official current store page and daily hours",
+        "hawaii-kilauea-general-store": "Official operator page describes modern grocery displays, checkout stations, family-affordable restaurant food and thick-crust pizza in Volcano Village",
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -251,25 +296,35 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "uss-arizona-programs",
+        "hanauma-reservations",
+        "hawaii-volcanoes-conditions"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 2,
-        "route": "Hawaii",
-        "dateWindow": "2027-06-05 → 2027-06-15"
+        "route": "PIT → HNL; HNL → KOA; KOA → PIT",
+        "dateWindow": "2027-06-05 → 2027-06-15",
+        "confirmed2027": false,
+        "bookingGates": [
+          "protected PIT/HNL and KOA/PIT fares",
+          "HNL/KOA schedule",
+          "Hanauma two-day reservation",
+          "USS Arizona timed reservation",
+          "volcano, vog and closure check"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Hawaii; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Hawaii; recheck before departure"
+        "uss-arizona-programs": "NPS current rule: free reservations release daily at 3 pm HST in 8-week and 24-hour windows; $1 Recreation.gov fee; programs remain weather/repair dependent",
+        "hanauma-reservations": "City and County of Honolulu reservation system/audit: online inventory opens two days ahead at 7:00 am HST; operating rules must be rechecked for 2027",
+        "hawaii-volcanoes-conditions": "NPS Alerts & Conditions: eruption, volcanic gas, construction, parking and temporary area closures require a current check"
       },
       "claimType": "proxy"
     },
@@ -285,7 +340,7 @@
       "value": {
         "score": 3
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "decision-profile": "decisionProfile.json tripWindows[hawaii], routeReadiness[hawaii] and family constraints",
@@ -297,29 +352,34 @@
   "metrics": {
     "airHours": 22.8,
     "groundHours": 7.4,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 2,
+    "longestTransferHours": 4.5,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in Waikiki and Kona; not assumed until lodging is booked",
+      "kitchen": "required in Waikiki and Kona for the budget strategy",
+      "laundry": "strongly preferred in at least one base",
+      "realBeds": "required for four; not verified until lodging is booked"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Material. Use the official hazard rating, lifeguarded beaches and direct adult supervision; Hanauma outer reef and unguarded Two Step are not automatic child swims.",
+    "crowdingPressure": "High at Hanauma, Pearl Harbor and Hawaiʻi Volcanoes during summer/eruptions; timed reservations, early starts and alternate beaches are built in.",
+    "medicalAccess": "Oahu has urban care; Volcano Village and park days are rural. Family medical constraints and travel-insurance network remain unresolved.",
+    "childActivityNotes": {
+      "age13": "fits; snorkeling and hiking depend on demonstrated swim/hike comfort",
+      "age8": "fits with inner-reef/lifeguarded water, short hikes and direct adult supervision"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Scores use exact itinerary derivations, NOAA station normals and coastal-water means, and current official park/ocean rules. None of those historical/current sources is a June 2027 forecast, fare or schedule.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "internal-derived itinerary and budget tables",
+    "NOAA 1991–2020 station normals and coastal-water monthly means",
+    "official NPS and Hawaii ocean-safety operating rules",
+    "June 2027 air, lodging and activity inventory remains unquoted"
   ]
 }

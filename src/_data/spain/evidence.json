@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "spain",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 2,
-      "rationale": "The reconciled 5-line-item family budget is $8,800–$14,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The canonical five-category rollup is $8,800–$14,800 and reconciles with its detailed lines. The band stays within the $15,000 preference, but airfare/lodging are unquoted and the high case is only $200 below it, so the rubric's low-confidence contingency rule supports 2/5.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,8 +14,8 @@
     },
     "weather": {
       "score": 3,
-      "rationale": "Current-proxy climatology for Spain and 2027-06-03 → 2027-06-16 spans approximately 66–94°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "rationale": "AEMET June normals show average daily maxima of 90.0°F in Seville, 87.8°F in Granada and 82.6°F in Málaga, with 56.5–64.4°F average minima. Inland heat management is a recurring requirement even though the coast is milder; this is not a 2027 forecast.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 4,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The 14-day plan schedules Seville/Córdoba/Granada history, six Nerja/Torrox coast nights, caves/kayaking and white-village/nature days; coast is strongest and nature is lighter than the culture block.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,24 +38,24 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "The canonical route carries 22 air hours, 12 ground hours, 1 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "The deterministic load is three bases and two moves: arrival at MAD plus a current-proxy direct AVE to Seville, then a one-way Seville–Granada–Málaga rental. One en-route Córdoba day and no one-night stops keep it at 3/5.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Official Carrefour pages verify central supermarkets or convenience groceries in Seville, Granada and Nerja, including fresh, frozen, packaged and intolerance-friendly food. Plain-food coverage is robust today; exact apartment kitchens and June 2027 store operations remain rechecks.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "The route pattern is credible, but June 2027 open-jaw flights and arrival-day rail timing are unconfirmed. The Alhambra requires named, timed Nasrid access and official guidance recommends advance purchase; inland heat and the Maro sea state need live fallbacks.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -136,24 +136,28 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "copernicus-climate",
+        "spain-aemet-seville",
+        "spain-aemet-granada",
+        "spain-aemet-malaga",
         "internal-itinerary"
       ],
       "value": {
         "score": 3,
         "temperatureF": [
-          66,
-          94
+          56,
+          90
         ],
         "route": "Spain",
         "dateWindow": "2027-06-03 → 2027-06-16"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Spain; June planning climatology for route Spain; not a live 2027 forecast",
+        "spain-aemet-seville": "AEMET Sevilla Aeropuerto 1981–2010 normal, June: 32.2°C average daily maximum, 18.0°C minimum, 10 mm precipitation",
+        "spain-aemet-granada": "AEMET Granada Base Aérea 1981–2010 normal, June: 30.2°C average daily maximum, 14.7°C minimum, 11 mm precipitation",
+        "spain-aemet-malaga": "AEMET Málaga Aeropuerto 1981–2010 normal, June: 28.1°C average daily maximum, 18.0°C minimum, 6 mm precipitation",
         "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -197,9 +201,20 @@
       ],
       "value": {
         "score": 4,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 3,
+        "basePattern": [
+          "Seville 3",
+          "Granada 3",
+          "Nerja/Torrox 6"
+        ],
+        "modes": [
+          "culture/history",
+          "coast/swimming",
+          "caves/cliffs/white villages"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -209,24 +224,28 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
-        "bts-ontime"
+        "spain-renfe-madrid-seville"
       ],
       "value": {
         "easeScore": 3,
         "maxConnections": 1,
         "singleTicket": true,
         "airHours": 22,
-        "groundHours": 12
+        "groundHours": 12,
+        "baseMoves": 2,
+        "railSegments": 1,
+        "rentalPeriodDays": 9,
+        "oneNightStops": 0
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Spain; not a 2027 schedule confirmation"
+        "internal-itinerary": "Spain day-by-day route and #getting-around: MAD→Seville rail, Seville rental pickup, Córdoba en route, Granada and Nerja/Torrox bases, AGP drop",
+        "spain-renfe-madrid-seville": "Renfe's official route page confirms current direct AVE/Avlo/Long Distance service from Madrid Atocha to Sevilla Santa Justa; exact June 4, 2027 departure after the inbound flight is not published"
       },
       "claimType": "proxy"
     },
@@ -234,17 +253,28 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
+        "spain-carrefour-seville",
+        "spain-carrefour-granada",
+        "spain-carrefour-nerja",
         "internal-itinerary"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "verifiedBases": [
+          "Seville",
+          "Granada",
+          "Nerja/Torrox"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
+        "spain-carrefour-seville": "Official Seville directory lists central Carrefour City/Express and Market branches; product scope includes fresh, frozen and packaged foods",
+        "spain-carrefour-granada": "Carrefour Market Granada, Avenida Constitución 24; official current address, hours, fresh food and intolerance-friendly assortment",
+        "spain-carrefour-nerja": "Carrefour Market Antonio Ferrandis, Calle Antonio Ferrandis Chanquete s/n, Nerja; official current address, hours and broad food assortment",
         "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -253,25 +283,38 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
+        "spain-renfe-madrid-seville",
+        "spain-alhambra-tickets",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "eu-etias"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 1,
-        "route": "Spain",
-        "dateWindow": "2027-06-03 → 2027-06-16"
+        "route": "PIT → MAD; MAD → Seville rail; Seville → Granada → Nerja rental; AGP → PIT",
+        "dateWindow": "2027-06-03 → 2027-06-16",
+        "confirmed2027": false,
+        "bookingGates": [
+          "protected PIT/MAD and AGP/PIT open-jaw itinerary",
+          "arrival-day MAD/Seville train with recovery margin",
+          "named Alhambra General tickets with exact Nasrid time",
+          "ETIAS official launch/status recheck"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Spain; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Spain; recheck before departure"
+        "internal-itinerary": "Spain #air-travel, #getting-around, day-by-day route and explicit heat/activity fallbacks",
+        "spain-renfe-madrid-seville": "Current direct-train pattern is an operator proxy only; June 4, 2027 train must be paired to the actual flight after schedules publish",
+        "spain-alhambra-tickets": "Official Alhambra system: named tickets, original ID, punctual access at the printed Nasrid time; current General price €22.27 and 2027 tariff subject to change",
+        "state-travel": "Spain advisory review required before booking and departure",
+        "cdc-travel": "Spain destination health guidance to recheck before departure",
+        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 traveler action remains a recheck, not a confirmed current requirement"
       },
       "claimType": "proxy"
     },
@@ -287,7 +330,7 @@
       "value": {
         "score": 5
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "decision-profile": "decisionProfile.json tripWindows[spain], routeReadiness[spain] and family constraints",
@@ -299,29 +342,34 @@
   "metrics": {
     "airHours": 22,
     "groundHours": 12,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 2,
+    "longestTransferHours": 5,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in all three bases",
+      "kitchen": "required at the six-night Nerja/Torrox base for the budget/food strategy",
+      "laundry": "strongly preferred at the coast base",
+      "realBeds": "required for four; not verified until lodging is booked"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Maro kayaking/snorkeling is sea-state and swim-comfort dependent; beach/pool alternatives are explicit.",
+    "crowdingPressure": "High at Alhambra, Alcázar and coast attractions; first slots and six-night coast flexibility mitigate it.",
+    "medicalAccess": "Seville, Granada and Málaga/Nerja have regional access, but family medical constraints and insurance network remain unresolved.",
+    "childActivityNotes": {
+      "age13": "fits; culture days need heat pacing and the kayak depends on swim comfort",
+      "age8": "fits with early monument slots, AC/pool afternoons and a non-kayak coast fallback"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Scores use the canonical itinerary/budget, AEMET station normals and current official Renfe/Alhambra rules. June 2027 flights, arrival-day rail, lodging and sea conditions remain explicitly unconfirmed.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "internal-derived itinerary and budget tables",
+    "AEMET station-specific June normals",
+    "official current Renfe, Alhambra and EU operating/regulatory evidence",
+    "June 2027 airfare, lodging, exact train and sea-state remain open"
   ]
 }

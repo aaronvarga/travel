@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "california-pacific-coast",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 5-line-item family budget is $9,275–$16,200 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The five-category rollup is approximately $9,300–$16,200 and reconciles with the detailed lines. Its lodging and one-way-car tails put the high case above the $15,000 preference, so the rubric supports 1/5; no July 2027 quotes are claimed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,48 +14,48 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for California Pacific Coast and 2027-07-01 → 2027-07-13 spans approximately 58–75°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "rationale": "NOAA 1991–2020 July normals bracket the route: San Diego 75.3/66.1°F and downtown San Francisco 66.3/54.4°F, with a cool marine coast between them. This supports comfortable touring but real fog/layering, not a July 2027 forecast.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
       "score": 2,
-      "rationale": "The current-proxy swim range for California Pacific Coast is approximately 66–68°F; access, safety, and exact conditions remain trip-date dependent.",
-      "confidence": "medium",
+      "rationale": "NOAA July monthly means are about 67.6°F at La Jolla but only 58.4°F at Monterey and 59.6°F at San Francisco. Natural swimming is therefore a San Diego-only, cool-water opportunity; the later coast is scenery/wildlife, not family swimming.",
+      "confidence": "high",
       "evidence": [
         "swim-conditions"
       ]
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "The 13-day route schedules San Diego beach/pool time, four major family attractions, Big Sur/Point Lobos wildlife and coastal scenery, and four distinct town/city bases.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
       ]
     },
     "ease": {
-      "score": 4,
-      "rationale": "The canonical route carries 11 air hours, 13.7 ground hours, 1 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "score": 3,
+      "rationale": "Four bases, three moves, and the long Santa Barbara–Hearst–Big Sur–Monterey transfer create moderate deterministic load (3/5).",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Official Vons and Safeway pages verify full supermarkets with produce, bakery, deli, pantry staples and prepared-food services in San Diego, Santa Barbara, Monterey and San Francisco. Plain-food coverage is robust today; exact lodging kitchens and July 2027 store hours remain rechecks.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 2,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "The open-jaw domestic flight/road shape is credible, but July 2027 fares and the one-way car are unquoted. Caltrans reopened through Big Sur in 2026 yet documents repeated slide closures and ongoing controls, so Highway 1 remains a mandatory live gate; Independence Day weekend also raises crowd pressure.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -104,7 +104,7 @@
         "lineItemCount": 5,
         "arithmetic": "9300–16200 line-item sum; tolerance 150"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -125,7 +125,7 @@
         "hotelNights": 12,
         "ptoDays": 7
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "decision-profile": "decisionProfile.json tripWindows[california-pacific-coast], routeReadiness[california-pacific-coast] and family constraints"
@@ -136,24 +136,26 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "noaa-climate",
+        "california-noaa-san-diego-normals",
+        "california-noaa-san-francisco-normals",
         "internal-itinerary"
       ],
       "value": {
         "score": 4,
         "temperatureF": [
-          58,
+          54,
           75
         ],
         "route": "California Pacific Coast",
         "dateWindow": "2027-07-01 → 2027-07-13"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "noaa-climate": "NOAA climate normals/proxy; California Pacific Coast; June planning window 2027-07-01 → 2027-07-13; not a live forecast",
+        "california-noaa-san-diego-normals": "NCEI station USW00023188, 1991–2020 monthly normals, July: daily maximum 75.3°F, minimum 66.1°F, mean 70.7°F",
+        "california-noaa-san-francisco-normals": "NCEI station USW00023272, 1991–2020 monthly normals, July: daily maximum 66.3°F, minimum 54.4°F, mean 60.3°F",
         "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -162,25 +164,25 @@
       "id": "swim-conditions",
       "category": "swim",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "noaa-oisst",
+        "noaa-coastal-water-temperature",
         "internal-itinerary"
       ],
       "value": {
         "score": 2,
         "temperatureF": [
-          66,
+          58,
           68
         ],
         "hasSwim": false,
         "route": "California Pacific Coast",
         "dateWindow": "2027-07-01 → 2027-07-13"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for California Pacific Coast; swim locations in route California Pacific Coast; seasonal planning range only",
+        "noaa-coastal-water-temperature": "NCEI monthly averages for July: La Jolla 67.6°F, Monterey 58.4°F, San Francisco 59.6°F; historical coastal means, not day-of beach conditions",
         "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -195,9 +197,21 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 4,
+        "basePattern": [
+          "San Diego 4",
+          "Santa Barbara 2",
+          "Monterey/Carmel 3",
+          "San Francisco 3"
+        ],
+        "modes": [
+          "water/beach",
+          "towns/attractions",
+          "coastal nature/wildlife"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -207,24 +221,25 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
-        "easeScore": 4,
+        "easeScore": 3,
         "maxConnections": 1,
         "singleTicket": true,
         "airHours": 11,
-        "groundHours": 13.7
+        "groundHours": 13.7,
+        "baseMoves": 3,
+        "longTransferDays": 1,
+        "rentalDropBeforeSanFrancisco": true
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for California Pacific Coast; not a 2027 schedule confirmation"
+        "internal-itinerary": "California Pacific Coast day-by-day route: four bases, one-way SAN→SFO car, Santa Barbara→Hearst→Big Sur→Monterey transfer, car dropped before San Francisco"
       },
       "claimType": "proxy"
     },
@@ -232,17 +247,31 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
+        "california-vons-san-diego",
+        "california-vons-santa-barbara",
+        "california-safeway-monterey",
+        "california-safeway-san-francisco",
         "internal-itinerary"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "verifiedBases": [
+          "San Diego",
+          "Santa Barbara",
+          "Monterey/Carmel",
+          "San Francisco"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
+        "california-vons-san-diego": "Official San Diego city locator lists 22 Vons supermarkets and grocery services",
+        "california-vons-santa-barbara": "2010 Cliff Dr official store page; produce, bakery, deli, pantry groceries, pickup and delivery",
+        "california-safeway-monterey": "815 Canyon Del Rey Blvd, Del Rey Oaks; official store page serving the Monterey area with produce, bakery, deli and grocery essentials",
+        "california-safeway-san-francisco": "Official San Francisco locator lists 13 Safeway supermarkets, including Marina and central-city branches with ReadyMeals/deli services",
         "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -251,25 +280,30 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "caltrans-highway-1",
+        "caltrans-regents-slide",
+        "point-lobos-official"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 1,
-        "route": "California Pacific Coast",
-        "dateWindow": "2027-07-01 → 2027-07-13"
+        "route": "PIT → SAN; Highway 1 south-to-north; SFO → PIT",
+        "dateWindow": "2027-07-01 → 2027-07-13",
+        "confirmed2027": false,
+        "mandatoryGate": "Caltrans Highway 1 status before the Santa Barbara–Monterey transfer",
+        "crowdWindow": "Independence Day weekend in San Diego"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for California Pacific Coast; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for California Pacific Coast; recheck before departure"
+        "internal-itinerary": "California Pacific Coast canonical route and current open booking gates",
+        "caltrans-highway-1": "Caltrans current SR-1 road-information page; live controls and closures must be checked immediately before the Big Sur day",
+        "caltrans-regents-slide": "Caltrans: full Big Sur route reopened in January 2026 after nearly three years, but subsequent storms caused temporary closure and ongoing controls",
+        "point-lobos-official": "California State Parks current rules: 8am–7pm, $10 vehicle entry, approximately 150 in-reserve spaces; hours/fees/capacity can change before 2027"
       },
       "claimType": "proxy"
     },
@@ -285,7 +319,7 @@
       "value": {
         "score": 1
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "decision-profile": "decisionProfile.json tripWindows[california-pacific-coast], routeReadiness[california-pacific-coast] and family constraints",
@@ -297,29 +331,34 @@
   "metrics": {
     "airHours": 11,
     "groundHours": 13.7,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 7,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "strongly preferred in San Diego; less material on the central/northern coast",
+      "kitchen": "helpful but not assumed in the current budget",
+      "laundry": "preferred once mid-route",
+      "realBeds": "required for four; not verified until lodging is booked"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "San Diego ocean days require lifeguard and surf/current checks; Monterey and San Francisco water is too cold for routine family swimming.",
+    "crowdingPressure": "High over the July 4 weekend and at Point Lobos/Big Sur; use early starts, reservations where offered and a US-101 inland fallback.",
+    "medicalAccess": "Urban and regional care is broadly available, but family-specific medical needs and insurance network remain unresolved.",
+    "childActivityNotes": {
+      "age13": "fits; major attractions, wildlife and coastal hikes are age-appropriate",
+      "age8": "fits with short trails and pool/beach supervision; cold-water tolerance is unresolved"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Scores use the canonical route/budget, exact NOAA station and water-temperature locators, and current Caltrans/State Parks rules. July 2027 air, lodging and one-way-car prices remain planning bands.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "internal-derived itinerary and budget tables",
+    "NOAA 1991–2020 station normals and coastal-water means",
+    "official Caltrans and California State Parks operating evidence",
+    "July 2027 flight, car and lodging inventory remains unquoted"
   ]
 }

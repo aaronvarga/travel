@@ -8,6 +8,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const scoreManifest = require('../../tools/scorecard.manifest.json');
 
 module.exports = function () {
   const dir = __dirname; // src/_data
@@ -25,7 +26,12 @@ module.exports = function () {
     const trip = { slug, main: readJson('main.json') };
     if (fs.existsSync(path.join(base, 'photoGuide.json'))) trip.photoGuide = readJson('photoGuide.json');
     if (fs.existsSync(path.join(base, 'foodGuide.json'))) trip.foodGuide = readJson('foodGuide.json');
-    if (fs.existsSync(path.join(base, 'evidence.json'))) trip.evidence = readJson('evidence.json');
+    if (fs.existsSync(path.join(base, 'evidence.json'))) {
+      trip.evidence = readJson('evidence.json');
+      trip.evidence.limitingAxes = scoreManifest.axes
+        .filter((axis) => axis.weightDefault > 0 && trip.evidence.axes?.[axis.id]?.confidence === trip.evidence.overallConfidence)
+        .map((axis) => axis.label);
+    }
     if (fs.existsSync(path.join(base, 'variants.json'))) trip.variants = readJson('variants.json');
     return trip;
   });

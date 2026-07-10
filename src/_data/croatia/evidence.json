@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
   "slug": "croatia",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 4,
-      "rationale": "The reconciled 5-line-item family budget is $8,400–$12,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The five-category rollup reconciles to $8,400–$12,800 and the entire band is below $13,500, matching Budget 4. Flights/lodging are planning bands, while attraction/ferry anchors are current 2026 proxies.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
       ]
     },
     "weather": {
-      "score": 5,
-      "rationale": "Current-proxy climatology for Croatia and 2027-06-10 → 2027-06-23 spans approximately 66–84°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "score": 4,
+      "rationale": "Split-area June normals support mostly comfortable conditions, with manageable sun and heat planning on exposed island, park, and old-town days (4/5); this is not a June 2027 forecast.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
@@ -29,8 +29,8 @@
       ]
     },
     "variety": {
-      "score": 3,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "score": 4,
+      "rationale": "Water and boat days plus towns and history are strong, while Krka, Marjan, Pelješac, and Mljet provide a real but lighter third nature mode (4/5).",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,26 +38,27 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "The canonical route carries 28 air hours, 8 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "The deterministic load is three bases, two passenger-catamaran moves, a two-day mainland rental and a ferry/private-transfer exit from Korčula to DBV. That supports Ease 3; June 2027 sailing times are a risk gate, not extra ease burden.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 3,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Studenac's current operator list identifies multiple grocery branches in Split, Hvar and Korčula, and Tommy's current catalog includes pantry staples, dairy, frozen pizza, prepared meals and children's food. Plain-food coverage is robust today; exact lodging kitchens and June 2027 branch operations remain rechecks.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "Current 2026 operator schedules support Split→Hvar and daily Hvar→Korčula patterns around the planned dates, but June 2027 sailings and the June 23 DBV flight/transfer are unconfirmed. Wind cancellations and the final airport transfer justify Risk 3.",
+      "confidence": "high",
       "evidence": [
-        "route-readiness"
+        "route-readiness",
+        "park-operations"
       ]
     },
     "nights": {
@@ -136,13 +137,13 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "copernicus-climate",
+        "croatia-dhmz-split-climate",
         "internal-itinerary"
       ],
       "value": {
-        "score": 5,
+        "score": 4,
         "temperatureF": [
           66,
           84
@@ -150,10 +151,10 @@
         "route": "Croatia",
         "dateWindow": "2027-06-10 → 2027-06-23"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Croatia; June planning climatology for route Croatia; not a live 2027 forecast",
+        "croatia-dhmz-split-climate": "DHMZ Split-Marjan 1948–2024 series: June mean 23.4°C; June absolute maximum 38.5°C and minimum 9.1°C; the itinerary's 66–84°F band is a planning band, not the recorded full range",
         "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -196,10 +197,21 @@
         "internal-itinerary"
       ],
       "value": {
-        "score": 3,
-        "hotelNights": 12
+        "score": 4,
+        "hotelNights": 12,
+        "bases": 3,
+        "basePattern": [
+          "Split 4",
+          "Hvar 3",
+          "Korčula 5"
+        ],
+        "modes": [
+          "water/beaches/boats",
+          "historic towns/food",
+          "parks/hikes/island nature"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
         "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
@@ -209,24 +221,26 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 3,
         "maxConnections": 2,
         "singleTicket": true,
         "airHours": 28,
-        "groundHours": 8
+        "groundHours": 8,
+        "baseMoves": 2,
+        "passengerCatamarans": 2,
+        "mainlandRentalDays": 2,
+        "longestTransferHours": 3
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Croatia; not a 2027 schedule confirmation"
+        "internal-itinerary": "Croatia day-by-day and #getting-around: four Split nights, three Hvar, five Korčula, short mainland rental, two catamarans and private Korčula→DBV exit"
       },
       "claimType": "proxy"
     },
@@ -234,17 +248,26 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
+        "croatia-studenac-base-stores",
+        "croatia-tommy-assortment",
         "internal-itinerary"
       ],
       "value": {
         "score": 3,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "verifiedBases": [
+          "Split",
+          "Hvar",
+          "Korčula"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
+        "croatia-studenac-base-stores": "Official selected-store list includes Split branches (for example Bana Jelačića 1 and Sinjska 5), Hvar branches (Trg svetog Stjepana 19 and others), and Korčula branches (Put sv. Antuna 2 and others)",
+        "croatia-tommy-assortment": "Official current catalog/store site lists pasta, rice, frozen pizza, prepared meals, dairy, breakfast foods, children's food and other plain-food categories",
         "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -253,25 +276,69 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
+        "jadrolinija-split-hvar-2026",
+        "tp-line-hvar-korcula-2026",
+        "croatia-dhmz-marine",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "eu-etias"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 2,
-        "route": "Croatia",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "route": "PIT → SPU; Split → Hvar → Korčula; Korčula → DBV → PIT",
+        "dateWindow": "2027-06-10 → 2027-06-23",
+        "confirmed2027": false,
+        "currentOperatorProxy": [
+          "Jadrolinija direct Split/Hvar 2026",
+          "TP Line Hvar/Korčula service operating from June 15 in 2026"
+        ],
+        "bookingGates": [
+          "protected PIT/SPU and DBV/PIT itinerary returning June 23",
+          "June 15 and June 18, 2027 passenger sailings",
+          "weather-flexible boat days",
+          "private Korčula/DBV transfer with flight margin",
+          "ETIAS status"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
-        "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Croatia; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Croatia; recheck before departure"
+        "internal-itinerary": "Croatia #air-travel, #getting-around, #status and exact island-transfer/departure days",
+        "jadrolinija-split-hvar-2026": "Jadrolinija official line 641/current page: direct Split–Hvar passenger service and 2026 seasonal timetable; not a June 2027 confirmation",
+        "tp-line-hvar-korcula-2026": "TP Line official 2026 Hvar–Korčula schedule operates daily in a season beginning June 15; the itinerary's June 18, 2027 sailing must be rechecked",
+        "croatia-dhmz-marine": "DHMZ marine observations demonstrate live sea/wind variability; operator disruption notices and the marine forecast must be checked for each sailing/boat day",
+        "state-travel": "Croatia advisory review required before booking/departure",
+        "cdc-travel": "Croatia destination health guidance to recheck before departure",
+        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "park-operations",
+      "category": "reservation",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "croatia-krka-rules",
+        "croatia-mljet-official",
+        "internal-itinerary"
+      ],
+      "value": {
+        "krka": "swimming is not allowed at Skradinski buk; current rules allow it only in marked areas at Roški slap, Stinice and Pisak, seasonally and at the swimmer's risk",
+        "mljet": "official park is open daily in the 2026 season with June summer hours; exact 2027 hours, boats and tariff are unconfirmed",
+        "planningEffect": "Krka is a boardwalk/history day unless the route explicitly reaches an allowed swim zone; keep Mljet weather/sailing flexible"
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "croatia-krka-rules": "Official NP Krka visitor brochure/rules: swimming only in designated Roški slap area June 1–September 30; Croatian regulation also identifies Stinice and Pisak marked zones",
+        "croatia-mljet-official": "Mljet National Park official 2026 opening/price pages; June summer opening and included park transport are current proxies only",
+        "internal-itinerary": "Croatia Days 3 and 12: Krka/Skradin and Mljet/Pomena day plans"
       },
       "claimType": "proxy"
     },
@@ -299,29 +366,34 @@
   "metrics": {
     "airHours": 28,
     "groundHours": 8,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 2,
+    "longestTransferHours": 3,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in all three bases",
+      "kitchen": "strongly preferred for the food/budget strategy",
+      "laundry": "required in at least one island base",
+      "realBeds": "required for four; not verified until lodging is booked"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Rocky Adriatic entries require water shoes and sea-state checks; Krka swimming is restricted to designated zones, not Skradinski buk.",
+    "crowdingPressure": "High in Split/Hvar and on popular boat/park days; early starts, five Korčula nights and weather-flex days mitigate it.",
+    "medicalAccess": "Split has urban access; Hvar, Korčula, Mljet and boat days are less direct. Family medical constraints and insurance/evacuation coverage remain unresolved.",
+    "childActivityNotes": {
+      "age13": "fits; boat days remain weather dependent",
+      "age8": "fits with water shoes, direct swim supervision and shorter park/wall options"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Scores use the canonical itinerary/budget, DHMZ climate/marine evidence, current ferry-operator timetables and official park rules. June 2027 air, ferry, lodging and daily marine conditions remain explicitly unconfirmed.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "internal-derived itinerary and budget tables",
+    "DHMZ site-specific climate and live marine evidence",
+    "official 2026 ferry timetables and national-park rules",
+    "independent food/store audit and June 2027 schedules remain incomplete"
   ]
 }

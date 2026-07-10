@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "italy-salento-amalfi",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -13,8 +13,8 @@
       ]
     },
     "weather": {
-      "score": 5,
-      "rationale": "Current-proxy climatology for Italy: Salento-Amalfi and 2027-06-10 → 2027-06-23 spans approximately 68–90°F; this is not a 2027 forecast.",
+      "score": 4,
+      "rationale": "The route is mostly comfortable, with manageable midday heat on exposed Salento, Maratea, and Campania days (4/5); historical conditions are not a June 2027 forecast.",
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
@@ -22,7 +22,7 @@
     },
     "swim": {
       "score": 4,
-      "rationale": "The current-proxy swim range for Italy: Salento-Amalfi is approximately 68–74°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "The 68–74°F range is plausible across Salento, Maratea and Campania in mid-June and supports frequent swimming, but no reproducible site-level SST extract is stored; confidence remains medium.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Three bases explicitly schedule Salento/Maratea/Ischia water, towns and food, and coastal/island nature; Variety 5/5 is directly derived.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,16 +38,16 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "The canonical route carries 23 air hours, 18.3 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Three bases and two hotel moves are simple, but the mandatory Gallipoli–Maratea drive, one-way car, island ferries, and open-jaw airports create moderate deterministic load; Ease 3/5 is supported.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 5,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current first-party store pages independently document grocery/plain-food fallback coverage in Gallipoli, Maratea, and Sorrento. That supports Food 5/5; store hours and stock still need a pre-trip recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
@@ -165,7 +165,7 @@
         "internal-itinerary"
       ],
       "value": {
-        "score": 5,
+        "score": 4,
         "temperatureF": [
           68,
           90
@@ -176,7 +176,7 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Italy: Salento-Amalfi; June planning climatology for route Italy: Salento-Amalfi; not a live 2027 forecast",
+        "copernicus-climate": "ERA5 product proposed for Gallipoli, Maratea and Sorrento; no reproducible route extract is stored yet, so this remains medium-confidence",
         "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -204,8 +204,8 @@
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Italy: Salento-Amalfi; swim locations in route Italy: Salento-Amalfi; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Italy: Salento-Amalfi; latest published season, not a 2027 guarantee",
+        "noaa-oisst": "OISST product proposed for Gallipoli/Pescoluse, Maratea, Sorrento and Ischia; no stored site-level extract yet",
+        "eea-bathing-water": "2025 Italy assessment; recheck exact scheduled beaches and day-of flags in 2027",
         "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
       },
       "claimType": "proxy"
@@ -220,7 +220,14 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "bases": 3,
+        "baseMoves": 2,
+        "modes": [
+          "water",
+          "town/culture",
+          "nature/hikes"
+        ]
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": null,
@@ -232,24 +239,25 @@
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 3,
         "maxConnections": 2,
         "singleTicket": true,
         "airHours": 23,
-        "groundHours": 18.3
+        "groundHours": 18.3,
+        "bases": 3,
+        "baseMoves": 2,
+        "longestTransferHours": 5
       },
       "verifiedAt": "2026-07-09",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Italy: Salento-Amalfi; not a 2027 schedule confirmation"
+        "internal-itinerary": "#overview and #getting-around: Gallipoli, Maratea and Sorrento bases; one-way BDS–NAP car and island day trips"
       },
       "claimType": "proxy"
     },
@@ -257,18 +265,28 @@
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "conad-gallipoli",
+        "velardi-maratea",
+        "conad-sorrento"
       ],
       "value": {
         "score": 5,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "basesWithIndependentGroceryCoverage": 3,
+        "bases": [
+          "Gallipoli",
+          "Maratea",
+          "Sorrento"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "conad-gallipoli": "Official Conad Superstore page: SS 101 Sannicola-Gallipoli km 28.8, serving the Gallipoli base",
+        "velardi-maratea": "First-party Supermercati Velardi site lists two Maratea stores and bakery, grocery, deli, produce and meat departments",
+        "conad-sorrento": "Official Conad City page: Via Capo 10, Sorrento; deli, produce and meat departments"
       },
       "claimType": "proxy"
     },
@@ -293,8 +311,27 @@
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Italy: Salento-Amalfi; recheck before booking and departure",
+        "state-travel": "Italy Level 2 advisory reviewed 2026-07-10; recheck before booking/departure",
         "cdc-travel": "CDC Travelers' Health destination guidance for Italy: Salento-Amalfi; recheck before departure"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "italy-driving-documents",
+      "category": "regulation",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "aci-driving-italy"
+      ],
+      "value": {
+        "nonEuLicenseRequirement": "valid national license plus an IDP or certified Italian translation",
+        "recheckFor2027": true
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "aci-driving-italy": "ACI Art. 135 and current visiting-motorist guide: non-EU licenses require an IDP or certified Italian translation alongside the national license"
       },
       "claimType": "proxy"
     },
@@ -322,29 +359,34 @@
   "metrics": {
     "airHours": 23,
     "groundHours": 18.3,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 1,
+    "baseMoves": 2,
+    "longestTransferHours": 5,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "required in all three bases",
+      "kitchen": "preferred for plain-food coverage",
+      "laundry": "preferred in Maratea or Sorrento",
+      "realBeds": "required; properties not selected"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Check flags and ferry/boat conditions daily; island and Amalfi travel needs a motion-sickness fallback.",
+    "crowdingPressure": "High in Sorrento/Amalfi/Ischia; early ferries and non-car coast access are required mitigations.",
+    "medicalAccess": "Three established bases have services, but exact facilities and insurance acceptance remain unverified.",
+    "childActivityNotes": {
+      "age13": "fits beaches, islands and towns; preferences remain incomplete",
+      "age8": "fits with boat/beach and short-town alternatives; motion-sickness and heat tolerance unknown"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "The base/move burden and visited overlap are well derived, and official Italian guidance confirms the IDP-or-certified-translation requirement. Budget, exact flights/ferries, lodging, and site-level climate/SST extracts remain open.",
   "confidenceBasis": [
     "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "deterministic itinerary structure and operational load",
+    "official Italian driving-document rule",
+    "medium-confidence budget, climate, swim and route proxies"
   ]
 }

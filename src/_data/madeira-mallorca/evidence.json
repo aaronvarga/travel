@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-mallorca",
-  "reviewedAt": "2026-07-09",
-  "overallConfidence": "low",
+  "reviewedAt": "2026-07-10",
+  "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 3,
-      "rationale": "The reconciled 5-line-item family budget is $11,800–$14,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "score": 2,
+      "rationale": "The $11,800–$14,800 planning band remains within the $15,000 preference, but its high case is only $200 below it and major flight, lodging, and car lines are not complete dated 2027 quotes; the confidence-aware rubric therefore scores 2/5.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -14,15 +14,15 @@
     },
     "weather": {
       "score": 4,
-      "rationale": "Current-proxy climatology for Madeira + Mallorca and 2027-06-08 → 2027-06-21 spans approximately 64–82°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "rationale": "Official June normals are 65–75°F in Funchal and 66–80°F at coastal Palma, with low rain. Madeira ridge cloud/wind and Mallorca midday heat prevent a near-guaranteed 5/5.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
       "score": 4,
-      "rationale": "The current-proxy swim range for Madeira + Mallorca is approximately 72–75°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "Mallorca supplies four north-coast nights and the official Playa de Muro guide confirms calm, shallow, serviced family water. The 72–75°F range was not independently re-extracted from OISST, so the axis remains medium confidence.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Four lodging sleeps schedule Madeira hiking/nature, Palma culture, Tramuntana scenery, caves, and repeated Mallorca beach time.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,31 +38,31 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "The canonical route carries 22.2 air hours, 12.5 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "Four lodging sleeps, three base moves, two rental cars, FNC–LIS plus LIS–PMI, and an insurance night create moderate logistics; the one-island Mallorca road portion is comparatively simple.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "Current Continente and EROSKI operator locators independently confirm full grocery coverage in Funchal, Lisbon, Palma, and Alcúdia, alongside named plain restaurant choices. This strongly supports 4/5 fallback coverage, subject to 2027 branch checks.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is exact-2027-schedule-required; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "low",
+      "rationale": "The Lisbon buffer mitigates Madeira wind risk and LIS–PMI has a current operator route, but the itinerary explicitly depends on exact June 2027 FNC and PMI operating days plus a protected homebound ticket.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 5,
-      "rationale": "12 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -70,7 +70,7 @@
     },
     "novelty": {
       "score": 5,
-      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 5/5 under that rubric.",
+      "rationale": "Madeira and Mallorca do not overlap the documented visited-place list, deriving 5/5.",
       "confidence": "high",
       "evidence": [
         "visited-overlap"
@@ -78,7 +78,7 @@
     },
     "pto": {
       "score": 3,
-      "rationale": "8 PTO days derives a 3/5 slider score and has zero default weight.",
+      "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -102,12 +102,12 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "11800–14800 line-item sum; tolerance 150"
+        "arithmetic": "6300–7700 + 2300–3150 + 1850–2250 + 800–1100 + 550–600 = 11800–14800"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Mallorca; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-mallorca/main.json #totals; five categories reconcile exactly; airfare and apartment-first gates are explicit"
       },
       "claimType": "proxy"
     },
@@ -125,10 +125,10 @@
         "hotelNights": 12,
         "ptoDays": 8
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[madeira-mallorca], routeReadiness[madeira-mallorca] and family constraints"
+        "decision-profile": "decisionProfile.json tripWindows.madeira-mallorca and required Pittsburgh dates June 24–26"
       },
       "claimType": "confirmed"
     },
@@ -136,25 +136,34 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "copernicus-climate",
-        "internal-itinerary"
+        "ipma-funchal-normal-1991-2020",
+        "aemet-palma-puerto-normal"
       ],
       "value": {
         "score": 4,
-        "temperatureF": [
-          64,
-          82
-        ],
-        "route": "Madeira + Mallorca",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "juneMeanDailyLowHighF": {
+          "Funchal": [
+            65,
+            75
+          ],
+          "PalmaPuerto": [
+            66,
+            80
+          ]
+        },
+        "juneRainMm": {
+          "Funchal": 7.8,
+          "PalmaPuerto": 11
+        },
+        "forecast": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Madeira + Mallorca; June planning climatology for route Madeira + Mallorca; not a live 2027 forecast",
-        "internal-itinerary": "Madeira + Mallorca; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "ipma-funchal-normal-1991-2020": "Station 522 June TN 18.2°C, TX 23.7°C, precipitation 7.8 mm",
+        "aemet-palma-puerto-normal": "Station B228 June mean min 18.9°C, mean max 26.5°C, rainfall 11 mm"
       },
       "claimType": "proxy"
     },
@@ -166,7 +175,7 @@
       "sourceRefs": [
         "noaa-oisst",
         "eea-bathing-water",
-        "internal-itinerary"
+        "balearics-playa-de-muro"
       ],
       "value": {
         "score": 4,
@@ -175,15 +184,15 @@
           75
         ],
         "hasSwim": true,
-        "route": "Madeira + Mallorca",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "primarySite": "Playa de Muro/Alcúdia",
+        "familyAccess": "calm, shallow, serviced sections"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Madeira + Mallorca; swim locations in route Madeira + Mallorca; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Madeira + Mallorca; latest published season, not a 2027 guarantee",
-        "internal-itinerary": "Madeira + Mallorca; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "noaa-oisst": "June 15–21 historical SST planning proxy at Playa de Muro 39.81N 3.12E; not a forecast",
+        "eea-bathing-water": "Latest Spain bathing-water assessment; selected Mallorca sites require 2027 recheck",
+        "balearics-playa-de-muro": "Official guide: 5.2 km beach, little wave, fine sand, little depth, family-suitable and serviced outside Es Comú"
       },
       "claimType": "proxy"
     },
@@ -197,55 +206,95 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "lodgingSleeps": 4,
+        "baseNames": [
+          "Funchal",
+          "Lisbon buffer",
+          "Palma",
+          "Playa de Muro/Alcúdia"
+        ],
+        "nightSplit": [
+          5,
+          1,
+          2,
+          4
+        ],
+        "scheduledModes": [
+          "hiking/nature",
+          "town/culture",
+          "beaches",
+          "caves/mountains"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Mallorca; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-mallorca/main.json itinerary day1–day12 and lodging heading Four bases, two modes"
       },
       "claimType": "derived"
     },
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 3,
         "maxConnections": 2,
-        "singleTicket": true,
-        "airHours": 22.2,
-        "groundHours": 12.5
+        "singleTicketAssumption": true,
+        "lodgingSleeps": 4,
+        "baseMoves": 3,
+        "internalFlightSegments": 2,
+        "rentalCars": 2,
+        "airHoursPlanningEstimate": 22.2,
+        "groundHoursPlanningEstimate": 10.9,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Mallorca; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Madeira + Mallorca; not a 2027 schedule confirmation"
+        "internal-itinerary": "madeira-mallorca/main.json day6 FNC→LIS, day7 LIS→PMI, day9 Palma→Playa de Muro, and #getting-around"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "continente-portugal-stores",
+        "eroski-mallorca-stores"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "coveredSleeps": [
+          "Funchal",
+          "Lisbon",
+          "Palma",
+          "Playa de Muro/Alcúdia"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "grills",
+          "groceries"
+        ],
+        "lodgingKitchenConfirmed": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Mallorca; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "madeira-mallorca/main.json day-by-day restaurant entries name pizza, pasta, burger, grill, and grocery fallbacks across all four sleeps",
+        "continente-portugal-stores": "Operator locator reviewed 2026-07-10: multiple Funchal branches including MadeiraShopping/São Martinho and multiple central Lisbon branches",
+        "eroski-mallorca-stores": "Operator locator reviewed 2026-07-10: Palma has 53 listed branches including Intermodal at Plaça Espanya; Alcúdia has five branches including Avinguda Tucan and Alcúdia Pueblo"
       },
       "claimType": "proxy"
     },
@@ -253,25 +302,32 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "low",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "tap-lisbon-palma",
+        "ana-madeira-wind-operations",
+        "internal-itinerary"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
-        "singleTicket": true,
+        "singleTicketAssumption": true,
         "maxConnections": 2,
-        "route": "Madeira + Mallorca",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "criticalLegs": [
+          "PIT–FNC routing",
+          "FNC–LIS",
+          "LIS–PMI",
+          "PMI–PIT"
+        ],
+        "june2027Verified": false,
+        "mandatoryBuffer": "Lisbon",
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Madeira + Mallorca; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Madeira + Mallorca; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Madeira + Mallorca; recheck before departure"
+        "tap-lisbon-palma": "TAP operator announcement confirms seasonal LIS–PMI route exists, not exact June 2027 days",
+        "ana-madeira-wind-operations": "Official ANA historical notice confirms strong winds can disrupt Madeira operations",
+        "internal-itinerary": "madeira-mallorca/main.json Air Travel and Plan Health-Check explicitly require exact 2027 operating days and protected quote"
       },
       "claimType": "proxy"
     },
@@ -285,43 +341,48 @@
         "scorecard-contract"
       ],
       "value": {
-        "score": 5
+        "score": 5,
+        "overlap": []
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[madeira-mallorca], routeReadiness[madeira-mallorca] and family constraints",
-        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for madeira-mallorca"
+        "decision-profile": "decisionProfile.json trip context",
+        "scorecard-contract": "scorecard.manifest.json visited list contains neither Madeira nor Mallorca"
       },
       "claimType": "derived"
     }
   ],
   "metrics": {
     "airHours": 22.2,
-    "groundHours": 12.5,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "groundHours": 10.9,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 7.5,
+    "highOutputDayStreak": 4,
+    "fallbackDays": 1,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "unknown until property selection",
+      "kitchen": "planned apartment-first but unconfirmed",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Playa de Muro is the strongest bounded family-water site; Madeira pools and exposed calas still need live sea-state checks.",
+    "crowdingPressure": "PR trail slots, Palma, Sóller, Formentor, and Drach require timing/reservations.",
+    "medicalAccess": "Unknown against incomplete family medical profile; Madeira trail days are the principal remote-access exposure.",
+    "childActivityNotes": {
+      "age13": "strong across hikes, mountains, caves, and beaches",
+      "age8": "strong with ridge turnaround and tired-day cave/beach choice"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Official climate normals and beach guidance, historical SST, operator route evidence, and deterministic itinerary structure.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "exact-2027-schedule-required"
+    "high-confidence bounded climate and exact-schedule gate",
+    "high-confidence independent grocery coverage in every sleep",
+    "medium-confidence unquoted budget, property inventory, and non-reproduced SST"
   ]
 }

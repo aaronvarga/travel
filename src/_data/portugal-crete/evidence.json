@@ -1,28 +1,28 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-crete",
-  "reviewedAt": "2026-07-09",
+  "reviewedAt": "2026-07-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 5-line-item family budget is $11,200–$15,400 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The five category rollups reconcile exactly to $11,175–$15,425, matching the rounded $11,200–$15,400 band. The high case exceeds the $15,000 preferred maximum and flights are the dominant unquoted input.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
       ]
     },
     "weather": {
-      "score": 5,
-      "rationale": "Current-proxy climatology for Portugal + Crete and 2027-06-08 → 2027-06-21 spans approximately 63–84°F; this is not a 2027 forecast.",
-      "confidence": "medium",
+      "score": 4,
+      "rationale": "Official June normals support mostly comfortable conditions, with manageable heat and wind on exposed Crete gorge and coast days (4/5); this is not a June 2027 forecast.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy"
       ]
     },
     "swim": {
       "score": 4,
-      "rationale": "The current-proxy swim range for Portugal + Crete is approximately 73–74°F; access, safety, and exact conditions remain trip-date dependent.",
+      "rationale": "The seven Crete nights schedule repeated beach and lagoon days. The 73–74°F range was not independently re-extracted from OISST in this audit, so it remains a medium-confidence planning estimate.",
       "confidence": "medium",
       "evidence": [
         "swim-conditions"
@@ -30,7 +30,7 @@
     },
     "variety": {
       "score": 5,
-      "rationale": "The canonical route has about 1 named route segments and explicitly schedules water, town/culture, and nature modes; this is an itinerary derivation.",
+      "rationale": "Three bases across Portugal and Crete explicitly schedule town/culture, beaches/boats, and cliffs/gorges, with all three modes substantial.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -38,31 +38,31 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "The canonical route carries 27.6 air hours, 18.8 ground hours, 2 maximum connections, and 1 named route segments; the burden is derived, not a promise.",
-      "confidence": "medium",
+      "rationale": "The route has three lodging bases, two base moves, a LIS–ATH–CHQ transfer day, a Crete rental car, and one long gorge/base-transfer day. That is moderate rather than simple logistics.",
+      "confidence": "high",
       "evidence": [
         "operational-load"
       ]
     },
     "food": {
       "score": 4,
-      "rationale": "Plain-food coverage is derived from the itinerary and family requirement; restaurant availability is not independently audited and should be rechecked by base.",
-      "confidence": "medium",
+      "rationale": "The canonical days enumerate plain restaurant choices, while current Continente and Sklavenitis operator locators independently confirm full supermarkets in Cascais, Chania, and Rethymno. This strongly supports 4/5 fallback coverage, subject to a 2027 branch recheck.",
+      "confidence": "high",
       "evidence": [
         "family-food-coverage"
       ]
     },
     "risk": {
       "score": 3,
-      "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "rationale": "Current operator pages support LIS–ATH and ATH–CHQ/HER service as a routing proxy, but the June 14, 2027 protected connection and the return ticket to PIT are not yet verified. The plan correctly forbids separate tight tickets.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 5,
-      "rationale": "12 hotel nights derives a 5/5 score from the canonical nights rubric.",
+      "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -70,7 +70,7 @@
     },
     "novelty": {
       "score": 4,
-      "rationale": "Novelty is derived from the documented visited-place overlap list; this route scores 4/5 under that rubric.",
+      "rationale": "Portugal and Crete are new regions, but the documented visited list includes several Greek islands, so the rubric's familiar-destination-type deduction supports 4/5.",
       "confidence": "high",
       "evidence": [
         "visited-overlap"
@@ -78,7 +78,7 @@
     },
     "pto": {
       "score": 3,
-      "rationale": "8 PTO days derives a 3/5 slider score and has zero default weight.",
+      "rationale": "Eight PTO days derive 3/5 under the canonical slider rubric and have zero default weight.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -92,7 +92,9 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "aegean-lisbon-athens",
+        "aegean-athens-crete"
       ],
       "value": {
         "lowUsd": 11200,
@@ -102,12 +104,14 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "11200–15400 line-item sum; tolerance 150"
+        "arithmetic": "5850–7500 + 2075–3325 + 1650–2250 + 1100–1650 + 500–700 = 11175–15425; displayed 11200–15400"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Crete; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "portugal-crete/main.json #totals; five category rows and rounded Grand total",
+        "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 showed January 2027 LIS–ATH one-way examples from €132; not June 2027 or the full family stack",
+        "aegean-athens-crete": "Operator calendar observed 2026-07-10 showed current ATH–CHQ/HER one-way examples from €26–€50; not June 2027 or a protected full itinerary"
       },
       "claimType": "proxy"
     },
@@ -125,10 +129,10 @@
         "hotelNights": 12,
         "ptoDays": 8
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[portugal-crete], routeReadiness[portugal-crete] and family constraints"
+        "decision-profile": "decisionProfile.json tripWindows.portugal-crete and required Pittsburgh dates June 24–26"
       },
       "claimType": "confirmed"
     },
@@ -136,25 +140,34 @@
       "id": "climate-proxy",
       "category": "climate",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "copernicus-climate",
-        "internal-itinerary"
+        "ipma-lisbon-normal-1991-2020",
+        "meteo-heraklion-climate"
       ],
       "value": {
-        "score": 5,
-        "temperatureF": [
-          63,
-          84
-        ],
-        "route": "Portugal + Crete",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "score": 4,
+        "normalPeriod": "historical station normals",
+        "juneMeanDailyLowHighF": {
+          "LisbonTapada": [
+            59,
+            79
+          ],
+          "Heraklion": [
+            66,
+            81
+          ]
+        },
+        "juneRainMm": {
+          "Heraklion": 3
+        },
+        "forecast": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "copernicus-climate": "ERA5 monthly means; Portugal + Crete; June planning climatology for route Portugal + Crete; not a live 2027 forecast",
-        "internal-itinerary": "Portugal + Crete; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "ipma-lisbon-normal-1991-2020": "Station 762 June TN 15.2°C and TX 26.2°C, 1991–2020 normal",
+        "meteo-heraklion-climate": "Heraklion monthly table June mean 24.3°C, mean max 27.3°C, mean min 19.0°C, rainfall 3 mm"
       },
       "claimType": "proxy"
     },
@@ -166,7 +179,7 @@
       "sourceRefs": [
         "noaa-oisst",
         "eea-bathing-water",
-        "internal-itinerary"
+        "visit-greece-crete"
       ],
       "value": {
         "score": 4,
@@ -175,15 +188,20 @@
           74
         ],
         "hasSwim": true,
-        "route": "Portugal + Crete",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "sites": [
+          "Stavros",
+          "Balos",
+          "Elafonissi/Falasarna",
+          "Preveli",
+          "Rethymno beach"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-05-15",
       "sourceLocators": {
-        "noaa-oisst": "NOAA OISST coastal proxy for Portugal + Crete; swim locations in route Portugal + Crete; seasonal planning range only",
-        "eea-bathing-water": "EEA monitored bathing-water assessment; European bathing locations in Portugal + Crete; latest published season, not a 2027 guarantee",
-        "internal-itinerary": "Portugal + Crete; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "noaa-oisst": "June 15–21 historical coastal SST proxy at Chania 35.51N 24.02E and Rethymno 35.37N 24.48E; not a forecast",
+        "eea-bathing-water": "Latest Greece bathing-water assessment; selected 2027 beach entries require site-level recheck",
+        "visit-greece-crete": "Official Crete destination page identifying beaches and shores; no live sea-state claim"
       },
       "claimType": "proxy"
     },
@@ -197,81 +215,120 @@
       ],
       "value": {
         "score": 5,
-        "hotelNights": 12
+        "hotelNights": 12,
+        "lodgingBases": 3,
+        "baseNames": [
+          "Cascais",
+          "Chania",
+          "Rethymno"
+        ],
+        "nightSplit": [
+          5,
+          4,
+          3
+        ],
+        "scheduledModes": [
+          "town/culture",
+          "nature/gorges",
+          "water"
+        ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Crete; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "portugal-crete/main.json itinerary day1–day12 and headings Five Portugal nights, seven Crete nights / Three bases"
       },
       "claimType": "derived"
     },
     {
       "id": "operational-load",
       "category": "logistics",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "derived",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "bts-ontime"
+        "internal-itinerary"
       ],
       "value": {
         "easeScore": 3,
         "maxConnections": 2,
-        "singleTicket": true,
-        "airHours": 27.6,
-        "groundHours": 18.8
+        "singleTicketAssumption": true,
+        "lodgingBases": 3,
+        "baseMoves": 2,
+        "internalFlightSegments": 2,
+        "rentalCars": 1,
+        "airHoursPlanningEstimate": 27.6,
+        "groundHoursPlanningEstimate": 18.8,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-02-01",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Crete; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "bts-ontime": "BTS historical airport/carrier performance proxy for Portugal + Crete; not a 2027 schedule confirmation"
+        "internal-itinerary": "portugal-crete/main.json day6 LIS→ATH→CHQ, day10 Chania→Imbros→Rethymno, and #getting-around"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "family-food-coverage",
       "category": "food",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "continente-portugal-stores",
+        "sklavenitis-crete-stores"
       ],
       "value": {
         "score": 4,
-        "plainFoodRequired": true
+        "plainFoodRequired": true,
+        "coveredBases": [
+          "Cascais",
+          "Chania",
+          "Rethymno"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "grilled meat",
+          "gyro",
+          "bakery",
+          "groceries"
+        ],
+        "lodgingKitchenConfirmed": false
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Crete; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "portugal-crete/main.json day-by-day restoHtml; named pizza, pasta, grilled-meat, gyro, bakery, and grocery choices appear in each base",
+        "continente-portugal-stores": "Continente Cascais operator page reviewed 2026-07-10: EN9 118, 08:00–23:00, bakery, grocery, produce, and takeaway departments",
+        "sklavenitis-crete-stores": "Sklavenitis operator locator reviewed 2026-07-10: Chania branches include Chania–Mournies 43 and Souda; locator also returns Rethymno supermarket branches"
       },
       "claimType": "proxy"
     },
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary",
-        "state-travel",
-        "cdc-travel"
+        "aegean-lisbon-athens",
+        "aegean-athens-crete",
+        "internal-itinerary"
       ],
       "value": {
-        "status": "current-proxy",
-        "singleTicket": true,
+        "status": "exact-2027-schedule-required",
+        "singleTicketAssumption": true,
         "maxConnections": 2,
-        "route": "Portugal + Crete",
-        "dateWindow": "2027-06-08 → 2027-06-21"
+        "criticalChain": "LIS–ATH–CHQ",
+        "june2027Verified": false,
+        "separateTightTicketsAllowed": false,
+        "singleTicket": false
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-10-31",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Crete; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "state-travel": "U.S. State Department country advisory review for Portugal + Crete; recheck before booking and departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Portugal + Crete; recheck before departure"
+        "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 sells LIS–ATH into January 2027, not June 2027",
+        "aegean-athens-crete": "Operator route calendar observed 2026-07-10 shows ATH–CHQ and ATH–HER current service",
+        "internal-itinerary": "portugal-crete/main.json air-travel and Plan Health-Check require one protected LIS–ATH–CHQ itinerary"
       },
       "claimType": "proxy"
     },
@@ -285,13 +342,14 @@
         "scorecard-contract"
       ],
       "value": {
-        "score": 4
+        "score": 4,
+        "overlapType": "familiar Greek-island travel type; no exact planned-place repeat"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows[portugal-crete], routeReadiness[portugal-crete] and family constraints",
-        "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for portugal-crete"
+        "decision-profile": "decisionProfile.json family trip and visited-place context",
+        "scorecard-contract": "scorecard.manifest.json noveltyRubric includes Santorini, Mykonos, and Rhodes but not Crete or Portugal"
       },
       "claimType": "derived"
     }
@@ -299,29 +357,34 @@
   "metrics": {
     "airHours": 27.6,
     "groundHours": 18.8,
-    "timeZones": null,
-    "baseMoves": null,
-    "longestTransferHours": null,
-    "highOutputDayStreak": null,
-    "fallbackDays": null,
+    "timeZones": 2,
+    "baseMoves": 2,
+    "longestTransferHours": 9.5,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 1,
     "childActivityFit": {
-      "age13": "unknown",
-      "age8": "unknown"
+      "age13": "fits",
+      "age8": "fits"
     },
     "lodgingComfort": {
-      "airConditioning": "unknown",
-      "kitchen": "unknown",
-      "laundry": "unknown",
-      "realBeds": "unknown"
+      "airConditioning": "unknown until property selection",
+      "kitchen": "unknown until property selection",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
     },
-    "waterSafety": "unknown",
-    "crowdingPressure": "unknown",
-    "medicalAccess": "unknown"
+    "waterSafety": "Balos boat conditions, Seitan Limania access, and south-coast surf require day-of checks and age-8 supervision.",
+    "crowdingPressure": "Sintra, Balos, and Elafonissi are headline crowd points; early departures are operationally important.",
+    "medicalAccess": "Unknown against incomplete family medical profile; remote gorge/beach days are the principal access gap.",
+    "childActivityNotes": {
+      "age13": "strong for gorges, boats, beaches, and towns",
+      "age8": "supported by Imbros/short alternatives; exposed beaches and long drives require judgment"
+    }
   },
-  "evidenceBasis": "Scores combine canonical itinerary derivations with current-proxy datasets. A proxy is not a 2027 quote or schedule confirmation; every volatile claim carries a date window and recheck date.",
+  "evidenceBasis": "Official/historical station climate, site-specific SST proxies, current airline-operator route evidence, and deterministic base/transfer derivations. No June 2027 fare or protected itinerary has been verified.",
   "confidenceBasis": [
-    "internal-derived itinerary tables",
-    "current-proxy climate/route data",
-    "current-proxy"
+    "high-confidence bounded climate claim",
+    "high-confidence deterministic logistics",
+    "high-confidence independent grocery coverage in every base",
+    "medium-confidence budget and non-reproduced SST"
   ]
 }
