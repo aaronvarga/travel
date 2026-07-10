@@ -85,6 +85,7 @@ module.exports = function (eleventyConfig) {
     if (!this.page.outputPath?.endsWith('.html')) return content;
     const $ = load(content, { decodeEntities: false });
     const slug = this.page.url?.match(/^\/locations\/([^/]+)\//)?.[1]
+      || this.page.outputPath?.match(/[\\/]locations[\\/]([^\\/]+)[\\/]index\.html$/)?.[1]
       || $('[data-trip-slug]').first().attr('data-trip-slug');
     const travelWindow = slug && decisionProfile.tripWindows[slug];
     const compactWindow = formatCompactTravelWindow(travelWindow);
