@@ -126,16 +126,32 @@
       { label: 'Weighted total', num: (t) => B.total(t), val: (t) => String(B.total(t)), better: 'max', strong: true },
       ...axisRows,
       { label: 'Budget ceiling', num: (t) => t.budget.ceilUsd, val: (t) => '$' + (t.budget.floorUsd / 1000) + '–' + (t.budget.ceilUsd / 1000) + 'k', better: 'min' },
+      { label: 'Budget preference', num: () => null, val: (t) => budgetLabel(RecommendationEngine.budgetStatus(t.budget, B.preferences()), B.preferences()), better: null },
+      { label: 'Booking readiness', num: () => null, val: (t) => t.readiness?.label || 'Unknown', better: null },
+      { label: 'Evidence confidence', num: (t) => t.evidence?.confidence?.value ?? null, val: (t) => t.evidence?.confidence?.label || 'Unknown', better: 'max' },
       { label: 'PTO days', num: (t) => t.pto.days, val: (t) => t.pto.days + ' PTO / ' + t.pto.nights + 'n', better: 'min' },
       { label: 'Continent', num: () => null, val: (t) => t.facets.continent, better: null },
       { label: 'Connections', num: (t) => t.facets.maxConnections, val: (t) => '≤' + t.facets.maxConnections, better: 'min' },
+      { label: 'Flight time', num: (t) => t.metrics?.airHours ?? null, val: (t) => t.metrics?.airHours != null ? t.metrics.airHours + 'h' : 'Unknown', better: 'min' },
+      { label: 'Ground time', num: (t) => t.metrics?.groundHours ?? null, val: (t) => t.metrics?.groundHours != null ? t.metrics.groundHours + 'h' : 'Unknown', better: 'min' },
+      { label: 'Age 8 activity fit', num: () => null, val: (t) => t.metrics?.childActivityFit?.age8 || 'unknown', better: null },
       { label: 'Swim temp', num: (t) => t.facets.swimTempF[1], val: (t) => t.facets.swimTempF.join('–') + '°F', better: 'max' },
-      { label: 'Sections', num: (t) => (t.completeness ? t.completeness.complete : null), val: (t) => (t.completeness ? t.completeness.complete + '/' + t.completeness.total : '—'), better: 'max' },
+      { label: 'Planning sections', num: () => null, val: (t) => (t.completeness ? t.completeness.complete + '/' + t.completeness.total : '—'), better: null },
     ];
   }
 
+  function budgetLabel(status, preferences) {
+    const preferred = '$' + ((preferences?.preferredMaxUsd || 15000) / 1000).toLocaleString() + 'k';
+    return ({
+      'target-fit': 'At/below target',
+      'within-preference': `Within ${preferred} preference`,
+      'crosses-preference': `Range crosses ${preferred}`,
+      'likely-over-preference': `Likely above ${preferred}`,
+    })[status] || 'Unknown';
+  }
+
   function buildTable(B, sel) {
-    const trips = sel.map((s) => B.bySlug[s]);
+    const trips = sel.map((s) => B.currentBySlug[s] || B.bySlug[s]);
     const wrap = el('div', 'cmp-scroll');
     const table = el('table', 'cmp-table');
 

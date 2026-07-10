@@ -28,6 +28,7 @@
     const cbEurope = toggle('Europe only', (on) => patch({ europe: on || undefined }));
     const cbConn = toggle('≤1 connection', (on) => patch({ maxConn: on ? 1 : undefined }));
     const cbSwim = toggle('Has swim', (on) => patch({ hasSwim: on || undefined }));
+    const cbReroute = toggle('Hide reroute-required', (on) => patch({ hideReroute: on || undefined }));
 
     // budget slider
     const budWrap = el('label', 'filter-budget');
@@ -41,7 +42,7 @@
     });
     budWrap.append(budLabel, budRange);
 
-    controls.append(cbEurope.node, cbConn.node, cbSwim.node, budWrap);
+    controls.append(cbEurope.node, cbConn.node, cbSwim.node, cbReroute.node, budWrap);
     clear.addEventListener('click', () => Store.set({ filters: {} }));
 
     bar.append(head, controls);
@@ -52,9 +53,11 @@
       cbEurope.set(!!f.europe);
       cbConn.set(f.maxConn === 1);
       cbSwim.set(!!f.hasSwim);
+      cbReroute.set(!!f.hideReroute);
       budRange.value = f.underUsd != null ? f.underUsd : CAP;
       budLabel.textContent = f.underUsd != null ? 'Max budget: $' + (f.underUsd / 1000) + 'k' : 'Max budget: Any';
-      const ranked = B.trips.filter((t) => !t.excluded);
+      const activeTrips = B.trips.map((trip) => B.currentBySlug[trip.slug] || trip);
+      const ranked = activeTrips.filter((t) => !t.excluded);
       const n = ranked.filter((t) => B.matches(t, f)).length;
       count.textContent = n + ' of ' + ranked.length + ' ranked plans';
       count.classList.toggle('is-empty', n === 0);

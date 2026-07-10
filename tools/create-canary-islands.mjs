@@ -548,7 +548,7 @@ const overview = `<section id="overview">
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>PIT -> Tenerife -> La Palma -> Tenerife -> PIT</h4><p><b>6 nights Tenerife</b>, <b>5 nights La Palma</b>, then <b>1 Tenerife airport buffer</b>. Home by Tue Jun 22.</p></div>
       <div class="ocard"><p class="eyebrow">Why it beats Madeira on flights</p><h4>Tenerife is a major hub; Funchal is a funnel</h4><p>Tenerife South has broad direct European service and Tenerife North has frequent inter-island hops. Madeira/Funchal is excellent, but US routings more often funnel through Lisbon and its weather-sensitive airport.</p></div>
-      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target: ~$12,420; high case ~$14,690</h4><p>Under the $15k hard cap if economy airfare stays near $1,000-$1,150 per person and lodging stays apartment-first.</p></div>
+      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target: ~$12,420; high case ~$14,690</h4><p>Under the $15k strong preference if economy airfare stays near $1,000-$1,150 per person and lodging stays apartment-first.</p></div>
     </div>
   </section>
 
@@ -701,7 +701,7 @@ const budgetTips = `<section id="budget" class="divider">
     <div class="section-label">
       <p class="eyebrow">Bottom Line</p>
       <h2>Total trip cost</h2>
-      <p>This route can hit the $12k target only with disciplined airfare and apartment choices. It still has a credible high case below the $15k hard cap.</p>
+      <p>This route can hit the $12k target only with disciplined airfare and apartment choices. It still has a credible high case below the $15k strong preference.</p>
     </div>
     ${table(['Category', 'Estimate'], [
       ['Flights and inter-island hops', '$5,020 target / $6,720 high'],
@@ -772,7 +772,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
       <div class="row"><b>Route</b><span>Tenerife 6 nights -> La Palma 5 nights -> Tenerife airport buffer 1 night.</span></div>
       <div class="row"><b>Dates</b><span>Depart Tue Jun 8, 2027; arrive home by Tue Jun 22, ahead of the preferred Jun 23 return and required Pittsburgh days Jun 24-26.</span></div>
       <div class="row"><b>La Palma decision</b><span>Keep it for Caldera, Los Tilos, Ruta de los Volcanes, and Roque; use Tenerife reposition instead of defaulting to Gran Canaria.</span></div>
-      <div class="row"><b>Budget verdict</b><span>$12,420 target / $14,690 high case, below the $15k hard cap if airfare and lodging gates hold.</span></div>
+      <div class="row"><b>Budget verdict</b><span>$12,420 target / $14,690 high case, below the $15k strong preference if airfare and lodging gates hold.</span></div>
     </div><div class="scol open"><h4>Open</h4>
       <div class="row"><b>Exact airports</b><span>TFS vs TFN inbound depends on the best protected Europe connection.</span></div>
       <div class="row"><b>Homebound routing</b><span>If SPC-Europe-PIT is clean and protected, it can replace the Tenerife buffer; otherwise keep the buffer.</span></div>

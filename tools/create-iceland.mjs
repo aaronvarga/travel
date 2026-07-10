@@ -602,7 +602,7 @@ const overview = `<section id="overview">
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>KEF &rarr; Reykjavík &rarr; South Coast &rarr; Höfn &rarr; back west</h4><p><b>2 nights Reykjavík</b>, <b>4 nights South Coast</b> (Hvolsvöllur/Vík), <b>3 nights Höfn/southeast</b>, then <b>3 nights back west</b> near the airport. Home Mon Jun 21.</p></div>
       <div class="ocard"><p class="eyebrow">The swim is different on purpose</p><h4>Warm geothermal, never the sea</h4><p>The recurring "water" thread is <b>geothermal lagoons and hot pots</b> at 38-40&deg;C: Laugardalslaug, the Secret Lagoon, Hoffell\'s farm tubs, and the Blue Lagoon. The ocean is a frigid 50&deg;F you only photograph &mdash; the warm soak is the novel feature, not a downgrade.</p></div>
-      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target ~$11,420; high case ~$14,720</h4><p>Under the $12k target and the $15k hard cap. Cheap nonstop airfare offsets Iceland\'s high on-ground costs &mdash; lodging and food are the pressure points.</p></div>
+      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target ~$11,420; high case ~$14,720</h4><p>Under the $12k target and the $15k strong preference. Cheap nonstop airfare offsets Iceland\'s high on-ground costs &mdash; lodging and food are the pressure points.</p></div>
       <div class="ocard"><p class="eyebrow">Logistics</p><h4>One nonstop each way, no mid-trip flights</h4><p>Icelandair flies <b>PIT&ndash;KEF nonstop</b> (seasonal). A single ticket, a single carrier, and a paved route needing no 4x4 &mdash; none of the mid-trip-flight fragility of the island trips.</p></div>
     </div>
   </section>
@@ -723,7 +723,7 @@ const healthTiming = `<section id="health-check" class="divider">
       <div class="hc actnow"><span class="hc-tag">Fixed</span><h4>Sky Lagoon can\'t be the family soak</h4><p>Sky Lagoon bans under-12s, so the 8-year-old can\'t enter. The plan routes the whole-family soaks through <b>all-ages</b> water instead &mdash; Laugardalslaug, Secret Lagoon, Hoffell, and the Blue Lagoon &mdash; with Sky Lagoon left as a teens/adults option.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Blue Lagoon can close on short notice</h4><p>The Reykjanes/Sundhnúkur system has erupted repeatedly since 2023 and the Blue Lagoon has closed for evacuations and air quality. Book it but keep Sky Lagoon or a city pool as a fallback, and check status within 48h via vedur.is.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Reynisfjara sneaker waves are lethal</h4><p>Real fatalities, including a 9-year-old in Aug 2025. Brief the kids firmly, stay on dry sand, obey the warning lights, and never turn your back to the ocean.</p></div>
-      <div class="hc watch"><span class="hc-tag">Watch</span><h4>On-ground costs, not airfare, drive the budget</h4><p>Flights are cheap; lodging and food are the pressure points. Apartments with kitchens keep the priced target near $11.4k and the high case under the $15k cap.</p></div>
+      <div class="hc watch"><span class="hc-tag">Watch</span><h4>On-ground costs, not airfare, drive the budget</h4><p>Flights are cheap; lodging and food are the pressure points. Apartments with kitchens keep the priced target near $11.4k and the high case under the $15k preferred maximum.</p></div>
     </div>
   </section>
 
@@ -770,7 +770,7 @@ const budgetTips = `<section id="budget" class="divider">
     <div class="section-label">
       <p class="eyebrow">Bottom Line</p>
       <h2>Total trip cost</h2>
-      <p>Cheap nonstop airfare is what makes an otherwise-expensive country land under target. Discipline on lodging and food keeps the high case under the $15k hard cap.</p>
+      <p>Cheap nonstop airfare is what makes an otherwise-expensive country land under target. Discipline on lodging and food keeps the high case under the $15k strong preference.</p>
     </div>
     ${table(['Category', 'Estimate'], [
       ['Flights (nonstop, family of 4)', '$2,600 target / $3,600 high'],
@@ -780,7 +780,7 @@ const budgetTips = `<section id="budget" class="divider">
       ['Insurance, eSIM, fees, buffer', '$500 target / $1,000 high'],
       ['<b>Grand total — family of 4</b>', '<b>$11,420 target / $14,720 high</b>'],
     ])}
-    <p class="rate-note">Per-day itinerary costs cover food + activities only. Lodging, flights, the rental car, and insurance sit in the totals above, not the daily numbers. Lands under the $12k target and the $15k hard cap.</p>
+    <p class="rate-note">Per-day itinerary costs cover food + activities only. Lodging, flights, the rental car, and insurance sit in the totals above, not the daily numbers. Lands under the $12k target and the $15k strong preference.</p>
   </section>
 
   <section id="tips" class="divider">
@@ -844,7 +844,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
       <div class="row"><b>Route</b><span>Reykjavík 2 nights &rarr; South Coast 4 &rarr; Höfn/southeast 3 &rarr; back west 3. SW/South corridor only, no Ring Road.</span></div>
       <div class="row"><b>Dates</b><span>Depart Tue Jun 8, 2027; home Mon Jun 21, ahead of the preferred Jun 23 return and required Pittsburgh days Jun 24-26.</span></div>
       <div class="row"><b>Swim identity</b><span>Geothermal lagoons and hot pots as the recurring warm-water thread; sea is photograph-only.</span></div>
-      <div class="row"><b>Budget verdict</b><span>$11,420 target / $14,720 high case, under both the $12k target and the $15k hard cap.</span></div>
+      <div class="row"><b>Budget verdict</b><span>$11,420 target / $14,720 high case, under both the $12k target and the $15k strong preference.</span></div>
     </div><div class="scol open"><h4>Open</h4>
       <div class="row"><b>Nonstop confirmation</b><span>Verify the seasonal Icelandair PIT-KEF nonstop still runs summer 2027; hold a one-stop backup.</span></div>
       <div class="row"><b>Blue Lagoon status</b><span>Reykjanes volcanic activity can close it — confirm within 48h and keep a fallback soak.</span></div>

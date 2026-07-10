@@ -9,8 +9,8 @@
 (function () {
   'use strict';
   const B = (window.Board = {
-    loaded: false, axesDefs: [], budgetTargets: {}, trips: [],
-    byToken: {}, bySlug: {}, rows: {}, cards: {},
+    loaded: false, axesDefs: [], budgetTargets: {}, evidenceSources: {}, trips: [],
+    byToken: {}, bySlug: {}, currentBySlug: {}, rows: {}, cards: {},
   });
 
   fetch('assets/trips-summary.json')
@@ -25,6 +25,7 @@
   function init(data) {
     B.axesDefs = data.axes;
     B.budgetTargets = data.budgetTargets;
+    B.evidenceSources = data.evidenceSources || {};
     B.trips = data.trips;
     data.trips.forEach((t) => { B.byToken[t.token] = t; B.bySlug[t.slug] = t; });
 
@@ -49,18 +50,45 @@
       const t = m && B.bySlug[m[1]];
       if (t) { B.cards[t.slug] = a; a.dataset.slug = t.slug; a.dataset.trip = t.token; }
     });
+
+    // Click-to-sort headers. Toggles direction on repeat clicks; numeric
+    // columns default to descending, the Trip name column to ascending.
+    document.querySelectorAll('.compare-table thead th[data-sort]').forEach((th) => {
+      th.addEventListener('click', () => {
+        const key = th.getAttribute('data-sort');
+        const cur = Store.get().sort;
+        const dir = (cur && cur.key === key)
+          ? (cur.dir === 'asc' ? 'desc' : 'asc')
+          : (key === 'trip' ? 'asc' : 'desc');
+        Store.set({ sort: { key, dir } });
+      });
+    });
+  }
+
+  // Value a row sorts on for a given column key (weighted total handled inline).
+  function sortVal(t, key) {
+    if (key === 'trip') return (t.displayName || t.title || '').toLowerCase();
+    if (key === 'pto') return t.pto?.days ?? 999;
+    if (key === 'travel') {
+      const tr = B.rows[t.slug];
+      return tr ? (Number(tr.dataset.plane || 0) + Number(tr.dataset.car || 0)) : 0;
+    }
+    return t.axes[key] ?? 0;
   }
 
   // ---- scoring -------------------------------------------------------------
   B.total = function (t, weights) {
-    const w = weights || Store.get().weights || {};
-    let s = 0;
-    for (const a of B.axesDefs) s += (t.axes[a.id] || 0) * (w[a.id] || 0);
-    return s;
+    return RecommendationEngine.total(t, B.axesDefs, weights || Store.get().weights || {});
   };
   B.maxTotal = function (weights) {
     const w = weights || Store.get().weights || {};
     return B.axesDefs.reduce((s, a) => s + 5 * (w[a.id] || 0), 0);
+  };
+  B.preferences = function (state) {
+    const current = state || Store.get();
+    return Object.assign({}, B.budgetTargets, {
+      preferredMaxUsd: current.preferredMaxUsd || B.budgetTargets.preferredMaxUsd,
+    });
   };
 
   // ---- filtering -----------------------------------------------------------
@@ -70,6 +98,7 @@
     if (f.maxConn != null && t.facets.maxConnections > f.maxConn) return false;
     if (f.underUsd != null && t.budget.ceilUsd > f.underUsd) return false;
     if (f.hasSwim && !t.facets.hasSwim) return false;
+    if (f.hideReroute && t.routeReadiness === 'reroute-required') return false;
     return true;
   };
 
@@ -80,25 +109,34 @@
     const filters = state.filters || {};
     const selected = state.selected || [];
 
-    const visible = B.trips.filter((t) => B.matches(t, filters));
+    const views = B.trips.map((trip) => {
+      const variantId = state.variants?.[trip.slug];
+      const variant = trip.variants?.find((item) => item.id === variantId);
+      return RecommendationEngine.applyVariant(trip, variant, B.axesDefs);
+    });
+    B.currentBySlug = Object.fromEntries(views.map((trip) => [trip.slug, trip]));
+    const visible = views.filter((t) => B.matches(t, filters));
     const visibleSlugs = new Set(visible.map((t) => t.slug));
 
-    // Sort scoreboard rows by weighted total (desc). Ties break on hard data:
-    // cap-clean bands (ceil <= capUsd) before cap-breaching ones, then fewer
-    // PTO days, then lower budget ceiling, then lower floor.
+    // Sort scoreboard rows by weighted total (desc). With Budget enabled, ties
+    // prefer bands within the family's preferred maximum; cost never hides or
+    // excludes a trip. Remaining ties use PTO days, ceiling, then floor.
+    const sort = state.sort || null;
     const ordered = visible.slice().sort((a, b) => {
       // Explicitly excluded trips (family decision, e.g. a repeat) sink below
       // every ranked trip regardless of score; their data stays visible.
       const ex = (t) => (t.excluded ? 1 : 0);
       if (ex(a) !== ex(b)) return ex(a) - ex(b);
-      const d = B.total(b, weights) - B.total(a, weights);
-      if (d !== 0) return d;
-      const cap = B.budgetTargets.capUsd || 15000;
-      const clean = (t) => (t.budget.ceilUsd <= cap ? 0 : 1);
-      return (clean(a) - clean(b)) ||
-        ((a.pto?.days ?? 99) - (b.pto?.days ?? 99)) ||
-        (a.budget.ceilUsd - b.budget.ceilUsd) ||
-        (a.budget.floorUsd - b.budget.floorUsd);
+      // Explicit column sort (user clicked a header) overrides the default
+      // weighted-total order for every column except Total itself.
+      if (sort && sort.key && sort.key !== 'total') {
+        const ka = sortVal(a, sort.key), kb = sortVal(b, sort.key);
+        const d = (typeof ka === 'string') ? ka.localeCompare(kb) : ka - kb;
+        if (d !== 0) return sort.dir === 'asc' ? d : -d;
+      }
+      const dt = B.total(b, weights) - B.total(a, weights);
+      if (dt !== 0) return (sort && sort.key === 'total' && sort.dir === 'asc') ? -dt : dt;
+      return RecommendationEngine.compareDefault(a, b, B.axesDefs, weights, B.preferences(state));
     });
 
     // Compare-selection state applies to every row/card regardless of order or
@@ -129,7 +167,7 @@
       a.classList.toggle('is-compared', selected.includes(slug));
       const score = a.querySelector('.sl-score');
       if (score) {
-        const total = B.total(B.bySlug[slug], weights);
+        const total = B.total(B.currentBySlug[slug] || B.bySlug[slug], weights);
         const max = B.maxTotal(weights);
         const value = score.querySelector('b');
         const scale = score.querySelector(':scope > span');
@@ -149,7 +187,15 @@
       th.appendChild(max);
     }
 
-    document.dispatchEvent(new CustomEvent('board:render', { detail: { ordered, visible } }));
+    // Reflect active sort column/direction in the header arrows.
+    document.querySelectorAll('.compare-table thead th[data-sort]').forEach((th) => {
+      th.classList.remove('sort-asc', 'sort-desc');
+      if (sort && sort.key === th.getAttribute('data-sort')) {
+        th.classList.add(sort.dir === 'asc' ? 'sort-asc' : 'sort-desc');
+      }
+    });
+
+    document.dispatchEvent(new CustomEvent('board:render', { detail: { ordered, visible, state } }));
   }
 
   B.render = () => render(Store.get(), { reason: 'manual' });

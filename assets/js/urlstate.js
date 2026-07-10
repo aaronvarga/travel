@@ -5,14 +5,14 @@
  * serialized, so an untouched page keeps a clean URL. */
 (function () {
   'use strict';
-  const V = 'v1';
+  const V = 'v2';
   const AXES = ['budget', 'weather', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty', 'pto'];
   const DEFAULT_W = { budget: 2, weather: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, nights: 1, novelty: 1, pto: 0 };
 
   // ---- parse URL -> patch --------------------------------------------------
   function parse() {
     const q = new URLSearchParams(location.search);
-    if (q.get('v') !== V) return {}; // ignore unknown/absent schema versions
+    if (!['v1', V].includes(q.get('v'))) return {}; // ignore unknown/absent schema versions
     const patch = {};
 
     const w = q.get('w');
@@ -26,6 +26,7 @@
     const filters = {};
     if (q.get('eu') === '1') filters.europe = true;
     if (q.get('sw') === '1') filters.hasSwim = true;
+    if (q.get('hr') === '1') filters.hideReroute = true;
     const mc = q.get('mc');
     if (mc != null && /^\d+$/.test(mc)) filters.maxConn = parseInt(mc, 10);
     const bud = q.get('bud');
@@ -34,6 +35,14 @@
 
     const c = q.get('c');
     if (c) patch.selected = c.split(',').filter(Boolean).slice(0, 5);
+    const preferredMax = q.get('pm');
+    if (preferredMax && /^\d+$/.test(preferredMax)) patch.preferredMaxUsd = parseInt(preferredMax, 10);
+    const scenario = q.get('sc');
+    if (scenario) patch.scenario = scenario;
+    const variants = q.get('vr');
+    if (variants) {
+      patch.variants = Object.fromEntries(variants.split(';').map((item) => item.split(':')).filter((item) => item.length === 2));
+    }
 
     return patch;
   }
@@ -48,10 +57,15 @@
     const f = state.filters || {};
     if (f.europe) q.set('eu', '1');
     if (f.hasSwim) q.set('sw', '1');
+    if (f.hideReroute) q.set('hr', '1');
     if (f.maxConn != null) q.set('mc', String(f.maxConn));
     if (f.underUsd != null) q.set('bud', String(f.underUsd));
     const sel = state.selected || [];
     if (sel.length) q.set('c', sel.join(','));
+    if (state.preferredMaxUsd && state.preferredMaxUsd !== 15000) q.set('pm', String(state.preferredMaxUsd));
+    if (state.scenario && state.scenario !== 'default') q.set('sc', state.scenario);
+    const variants = Object.entries(state.variants || {}).filter(([, id]) => id && id !== 'canonical');
+    if (variants.length) q.set('vr', variants.map(([slug, id]) => `${slug}:${id}`).join(';'));
 
     if ([...q.keys()].length) q.set('v', V);
     return q.toString();

@@ -13,7 +13,7 @@
     { "id": "pto",     "label": "PTO",     "weightDefault": 0 }
   ],
   "axisRubrics": {
-    "budget": "Use the reconciled all-in family planning band. 5 = entire band at or below $12k; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below $15k with a reconciled, high-confidence estimate; 2 = cap-clean but above target, or within $500 of the cap with a material unitemized or low-confidence contingency; 1 = credible high case above $15k. A score never overrides the $15k booking cap.",
+    "budget": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
     "weather": "Outdoor comfort for the actual dates, excluding water temperature: 5 = reliably comfortable for nearly every headline day; 4 = mostly comfortable with manageable heat/rain/wind; 3 = recurring midday or weather management; 2 = material disruption exposure; 1 = climate conflicts with the core itinerary.",
     "swim": "Usable family swim days, water type, access and safety: 5 = frequent warm, high-quality natural swimming; 4 = frequent comfortable swimming around 72-75F; 3 = usable but cool, limited, or primarily heated/geothermal; 2 = cold water or only occasional swimming; 1 = no meaningful family swim.",
     "variety": "Distinct, balanced trip modes that are actually scheduled: 5 = strong water, town/culture and nature payoffs; 4 = three modes with one lighter; 3 = two strong modes; 2 = repetitive; 1 = one-note.",
@@ -35,7 +35,7 @@
     "_comment": "Fewer PTO days burned = higher score. Keyed by PTO days.",
     "6": 5, "7": 4, "8": 3, "9": 2, "10": 1
   },
-  "budgetTargets": { "targetUsd": 12000, "capUsd": 15000 },
+  "budgetTargets": { "targetUsd": 12000, "preferredMaxUsd": 15000, "hardMaxUsd": null },
   "facetDefs": {
     "continent": ["europe", "north-america", "pacific"],
     "maxConnections": "worst-case outbound connection count (0 = nonstop)",

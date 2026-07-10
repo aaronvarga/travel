@@ -8,6 +8,9 @@
     weights: null,      // { budget:2, weather:1, ... } — null until board loads defaults
     filters: {},        // { europe:true, maxConn:1, underUsd:11000, hasSwim:true }
     selected: [],       // array of slugs chosen for compare (max 5)
+    scenario: 'default',
+    preferredMaxUsd: 15000,
+    variants: {},       // { slug: variantId }
   };
 
   function get() { return state; }

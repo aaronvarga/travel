@@ -546,7 +546,7 @@ const overview = `<section id="overview">
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>PIT -> Tirana -> Theth -> Ksamil -> Corfu -> PIT</h4><p><b>1 night Tirana</b>, <b>5 nights Theth</b>, <b>6 nights Ksamil</b>, then <b>1 Corfu airport buffer</b>. Open-jaw: fly into Tirana, home out of Corfu. Home by Tue Jun 22.</p></div>
       <div class="ocard"><p class="eyebrow">Why it beats Madeira</p><h4>No island-hop flight trap</h4><p>Madeira’s weakness was the Atlantic-island air funnel with no direct hops to Mediterranean islands. Albania puts mountains <b>and</b> coast on one continuous road network, one rental car, and swaps the risky inter-island flight for a 30-minute Sarande–Corfu ferry.</p></div>
-      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target: ~$9,700; high case ~$13,900</h4><p>Comfortably under the $12k target and well under the $15k hard cap. Albania is genuinely cheap; the transatlantic airfare is the only big line, and even the high case clears the cap.</p></div>
+      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target: ~$9,700; high case ~$13,900</h4><p>Comfortably under the $12k target and well under the $15k strong preference. Albania is genuinely cheap; the transatlantic airfare is the only big line, and even the high case clears the cap.</p></div>
     </div>
   </section>
 
@@ -663,7 +663,7 @@ const healthTiming = `<section id="health-check" class="divider">
     <div class="hc-grid">
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The concept is coherent</h4><p>Theth delivers the alpine epic and dramatically different scenery; Ksamil delivers the warm-water swim. It is a genuine Madeira upgrade, not a lateral move.</p></div>
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The Pittsburgh dates are protected</h4><p>Depart Mon Jun 7, ferry to Corfu Jun 20, fly home Jun 21, arrive by Jun 22. That is ahead of the preferred Jun 23 return and the required full days in Pittsburgh on Jun 24-26.</p></div>
-      <div class="hc good"><span class="hc-tag">Solid</span><h4>The budget has huge headroom</h4><p>Even the high case (~$13.9k) clears the $15k cap, and the target (~$9.7k) is well under $12k. Albania is cheap; airfare is the only big line.</p></div>
+      <div class="hc good"><span class="hc-tag">Solid</span><h4>The budget has huge headroom</h4><p>Even the high case (~$13.9k) clears the $15k preferred maximum, and the target (~$9.7k) is well under $12k. Albania is cheap; airfare is the only big line.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>The Valbona pass vs an 8-year-old</h4><p>The full crossing is 7-9 hr over a 1,800 m col — a real stretch for the 8-year-old. Default to the out-and-back; treat the full crossing as a guided, mule-assisted upgrade.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Early-June snow on the col</h4><p>The Valbona pass is snow-closed until roughly early-to-mid June; Jun 9-13 is usually walkable but at the boundary. Verify with the guesthouse a few days out and keep a Grunas/Koman fallback.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>The Theth -> Ksamil drive is long</h4><p>~415 km, a realistic 8-9 hr. Plan it as one deliberate scenic day (early start, Llogara tunnel when tired) or split it with a Berat/Vlore night.</p></div>
@@ -717,7 +717,7 @@ const budgetTips = `<section id="budget" class="divider">
     <div class="section-label">
       <p class="eyebrow">Bottom Line</p>
       <h2>Total trip cost</h2>
-      <p>This route clears the $12k target with real room to spare, and even the high case stays under the $15k hard cap. The value is the headline: a two-week mountains-and-coast trip for a family of four near $9.7k.</p>
+      <p>This route clears the $12k target with real room to spare, and even the high case stays under the $15k strong preference. The value is the headline: a two-week mountains-and-coast trip for a family of four near $9.7k.</p>
     </div>
     ${table(['Category', 'Estimate'], [
       ['Flights + Corfu ferry', '$5,330 target / $7,780 high'],
@@ -791,7 +791,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
       <div class="row"><b>Route</b><span>Tirana 1 night -> Theth 5 nights -> Ksamil 6 nights -> Corfu airport buffer 1 night.</span></div>
       <div class="row"><b>Dates</b><span>Depart Mon Jun 7, 2027; arrive home by Tue Jun 22, ahead of the preferred Jun 23 return and required Pittsburgh days Jun 24-26.</span></div>
       <div class="row"><b>Air strategy</b><span>Open-jaw: into Tirana, home out of Corfu, one rental car, 30-min Sarande-Corfu ferry as the exit.</span></div>
-      <div class="row"><b>Budget verdict</b><span>~$9,715 target / ~$14,230 high case — well under the $12k target and the $15k cap.</span></div>
+      <div class="row"><b>Budget verdict</b><span>~$9,715 target / ~$14,230 high case — well under the $12k target and the $15k preferred maximum.</span></div>
     </div><div class="scol open"><h4>Open</h4>
       <div class="row"><b>Valbona pass</b><span>Full crossing vs out-and-back depends on the 8-year-old’s readiness and current-season snow on the col.</span></div>
       <div class="row"><b>Big drive</b><span>Do Theth -> Ksamil in one deliberate day, or split it with a Berat/Vlore night?</span></div>

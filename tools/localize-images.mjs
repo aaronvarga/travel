@@ -2,7 +2,8 @@
 // Download every remote itinerary image into assets/img/<slug>/ and rewrite the
 // trip JSON to reference the local copy. Run per-slug: node tools/localize-images.mjs <slug>
 // Idempotent: already-local paths are skipped; re-downloads only missing files.
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, renameSync, unlinkSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { join } from 'node:path';
 
@@ -52,11 +53,14 @@ for (const url of urls) {
     localFs = join(outDir, file);
     const buf = Buffer.from(await res.arrayBuffer());
     if (buf.length < 1000) throw new Error(`too small (${buf.length}b)`);
-    writeFileSync(localFs, buf);
+    const partial = `${localFs}.part`;
+    writeFileSync(partial, buf);
+    renameSync(partial, localFs);
     downloaded++;
     map.set(url, `../../${localFs.replaceAll('\\', '/')}`);
     process.stdout.write('.');
   } catch (e) {
+    try { unlinkSync(`${localFs}.part`); } catch (_) {}
     failed.push(`${url} -> ${e.message}`);
     process.stdout.write('x');
   }
@@ -74,3 +78,4 @@ JSON.parse(text);
 
 console.log(`${slug}: ${downloaded} downloaded, ${reused} reused, ${failed.length} failed, ${map.size}/${urls.length} localized`);
 if (failed.length) { console.log('FAILED:'); failed.forEach(f => console.log('  ' + f)); }
+if (!failed.length) execFileSync(process.execPath, ['tools/optimize-images.mjs'], { stdio: 'inherit' });

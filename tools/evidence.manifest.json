@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "confidenceLevels": ["high", "medium", "low", "unknown"],
+  "sourceTiers": ["official", "operator", "observed-quote", "historical-dataset", "secondary", "anecdotal", "internal-derived"],
+  "proxyStatuses": ["confirmed", "current-proxy", "exact-2027-schedule-required", "reroute-required", "derived", "unknown"],
+  "routeReadiness": ["confirmed", "current-proxy", "exact-2027-schedule-required", "reroute-required", "unknown"],
+  "requiredAxes": ["budget", "weather", "swim", "variety", "ease", "food", "risk", "nights", "novelty", "pto"],
+  "requiredFactCategories": ["budget", "dates", "climate", "swim", "itinerary", "logistics", "food", "route", "novelty"],
+  "volatileCategories": ["budget", "climate", "swim", "route", "logistics", "food", "regulation", "price", "reservation", "advisory"],
+  "metricUnits": {
+    "airHours": "hours",
+    "groundHours": "hours",
+    "timeZones": "count",
+    "baseMoves": "count",
+    "longestTransferHours": "hours",
+    "highOutputDayStreak": "days",
+    "fallbackDays": "days"
+  }
+}

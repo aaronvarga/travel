@@ -20,7 +20,8 @@
   },
   "budget": {
     "targetUsd": 12000,
-    "bookingCapUsd": 15000
+    "preferredMaxUsd": 15000,
+    "hardMaxUsd": null
   },
   "needs": [
     "plain-food fallback in every base",
@@ -39,6 +40,20 @@
     "medical constraints",
     "dietary constraints beyond picky-eater needs"
   ],
+  "familyProfile": {
+    "status": "incomplete",
+    "privacy": "sensitive answers stay in local browser storage and are never shared in URLs",
+    "answers": {
+      "mobility": null,
+      "medical": null,
+      "dietary": null,
+      "swimComfort": null,
+      "hikingComfort": null,
+      "earlyStartTolerance": null,
+      "motionSickness": null,
+      "sleepAndJetLag": null
+    }
+  },
   "tripWindows": {
     "albania": ["2027-06-07", "2027-06-22"],
     "balkans": ["2027-07-01", "2027-07-14"],
@@ -56,9 +71,10 @@
     "portugal": ["2027-06-10", "2027-06-23"],
     "portugal-crete": ["2027-06-08", "2027-06-21"],
     "portugal-sicily": ["2027-06-08", "2027-06-21"],
+    "portugal-algarve-sicily": ["2027-06-10", "2027-06-23"],
     "sardinia-corsica": ["2027-06-10", "2027-06-23"],
     "sicily-malta": ["2027-06-10", "2027-06-23"],
-    "southern-france": ["2027-06-14", "2027-06-23"],
+    "southern-france": ["2027-06-10", "2027-06-23"],
     "spain": ["2027-06-03", "2027-06-16"],
     "turkish-riviera": ["2027-06-10", "2027-06-23"]
   },
@@ -67,6 +83,8 @@
     "iceland": "exact-2027-schedule-required",
     "madeira-mallorca": "exact-2027-schedule-required",
     "madeira-sicily": "exact-2027-schedule-required",
-    "portugal-sicily": "exact-2027-schedule-required"
+    "portugal-sicily": "exact-2027-schedule-required",
+    "portugal-algarve-sicily": "exact-2027-schedule-required",
+    "southern-france": "exact-2027-schedule-required"
   }
 }

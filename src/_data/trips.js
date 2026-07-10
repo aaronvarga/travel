@@ -3,7 +3,8 @@
  * Reads the per-trip sidecar files written by tools/extract.mjs:
  *   src/_data/<slug>/main.json   (required)
  *   src/_data/<slug>/photoGuide.json / foodGuide.json (optional)
- * Returns an array of { slug, main, photoGuide?, foodGuide? }.
+ *   src/_data/<slug>/evidence.json / variants.json (recommendation sidecars)
+ * Returns an array of { slug, main, photoGuide?, foodGuide?, evidence?, variants? }.
  */
 const fs = require('fs');
 const path = require('path');
@@ -24,6 +25,8 @@ module.exports = function () {
     const trip = { slug, main: readJson('main.json') };
     if (fs.existsSync(path.join(base, 'photoGuide.json'))) trip.photoGuide = readJson('photoGuide.json');
     if (fs.existsSync(path.join(base, 'foodGuide.json'))) trip.foodGuide = readJson('foodGuide.json');
+    if (fs.existsSync(path.join(base, 'evidence.json'))) trip.evidence = readJson('evidence.json');
+    if (fs.existsSync(path.join(base, 'variants.json'))) trip.variants = readJson('variants.json');
     return trip;
   });
 };

@@ -34,6 +34,12 @@
       fill.style.width = Math.round((c / total) * 100) + '%';
       bar.appendChild(fill);
       meter.append(head, bar);
+      const freshness = document.createElement('small');
+      freshness.className = 'sl-evidence-freshness';
+      freshness.textContent = t.evidence
+        ? `${t.evidence.overallConfidence} evidence · reviewed ${t.evidence.reviewedAt}`
+        : 'evidence not yet structured';
+      meter.appendChild(freshness);
       body.appendChild(meter);
     });
   });

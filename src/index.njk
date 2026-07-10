@@ -1,0 +1,985 @@
+---
+permalink: "/index.html"
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Family Trip Decision Dashboard - 21-Trip Comparison</title>
+<style>
+:root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;
+ --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;
+ --save:#3f7d4e;--splurge:#a9862b;--shadow:0 18px 46px rgba(30,32,28,.14)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font:16px/1.55 "Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Fraunces","Georgia",serif;letter-spacing:-.01em}
+a{color:var(--c1)}
+.eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+/* HERO */
+header{position:relative;isolation:isolate;min-height:90vh;display:grid;align-items:end;padding:40px clamp(20px,5vw,80px) 54px;color:#fff;overflow:hidden;background:linear-gradient(90deg,#17130f 0%,#17130f 42%,#3b2419 72%,#6c3f25 100%)}
+header::before{content:"";position:absolute;top:0;right:-5vw;bottom:0;width:min(62vw,1010px);background:url("assets/family-cartoon.png") center / cover no-repeat;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.06) 13%,rgba(0,0,0,.42) 25%,#000 42%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.06) 13%,rgba(0,0,0,.42) 25%,#000 42%)}
+header::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,16,12,.99) 0%,rgba(18,16,12,.96) 40%,rgba(18,16,12,.74) 56%,rgba(18,16,12,.24) 74%,rgba(18,16,12,.46) 100%),linear-gradient(180deg,rgba(10,20,24,.03),rgba(10,18,22,.18) 45%,rgba(8,14,18,.84));z-index:0}
+.hero-inner{max-width:700px}
+.hero-inner{position:relative;z-index:1}
+header .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}
+h1{max-width:660px;margin:0 0 16px;font-size:clamp(2.55rem,4.85vw,4.35rem);line-height:.95;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+header .lead{max-width:620px;margin:0 0 24px;font-size:clamp(1rem,1.35vw,1.08rem);color:rgba(255,255,255,.94);line-height:1.48}
+.hero-meta{display:flex;flex-wrap:wrap;gap:26px}
+.hero-meta div{display:flex;flex-direction:column}
+.hero-meta b{font-family:"Fraunces",serif;font-size:1.5rem;line-height:1}
+.hero-meta span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}
+/* NAV */
+section[id],article[id]{scroll-margin-top:84px}
+.site-nav{z-index:500;--nav-bg:#17130f;--nav-panel:#211c16;--nav-panel-2:#2a231b;--nav-line:rgba(246,241,231,.16);--nav-text:#f6f1e7;--nav-muted:rgba(246,241,231,.62);--nav-active:#5f9aa3;--nav-active-ink:#061517;--nav-shadow:0 18px 42px rgba(12,10,8,.28)}
+.site-nav summary{list-style:none}
+.site-nav summary::-webkit-details-marker{display:none}
+.site-nav a{color:var(--nav-text);font-weight:800;text-decoration:none;line-height:1.2;transition:background .15s,color .15s,border-color .15s,box-shadow .15s}
+.site-nav a.active{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active);box-shadow:0 8px 22px rgba(95,154,163,.22)}
+@media(min-width:960px){
+  body{padding-left:clamp(210px,17vw,248px)}
+  section[id],article[id]{scroll-margin-top:24px}
+  .site-nav{position:fixed;inset:0 auto 0 0;width:clamp(210px,17vw,248px);display:block;padding:18px 14px;background:linear-gradient(180deg,rgba(33,28,22,.98),rgba(18,15,12,.97));border-right:1px solid var(--nav-line);backdrop-filter:blur(16px);box-shadow:14px 0 42px rgba(12,10,8,.26);overflow:hidden;color:var(--nav-text)}
+  .site-nav-menu{height:100%;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:10px 10px 13px;border-bottom:1px solid var(--nav-line);color:var(--nav-muted);font-size:.7rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;cursor:default}
+  .site-nav summary::after{content:"";width:26px;height:2px;background:var(--nav-line)}
+  .site-nav-links{flex:1 1 auto;display:grid;align-content:start;gap:6px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;min-height:0;max-height:calc(100vh - 92px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(246,241,231,.26) transparent}
+  .site-nav a{display:flex;align-items:center;min-height:36px;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:transparent;font-size:.82rem}
+  .site-nav a:hover{background:rgba(246,241,231,.1);color:#fff;border-color:var(--nav-line)}
+  .site-nav a.nav-home{margin-bottom:6px;background:rgba(42,83,89,.42);color:var(--nav-active);border-color:rgba(95,154,163,.48)}
+}
+@media(max-width:959px){
+  .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}
+  .site-nav-menu{max-width:1180px;margin:0 auto}
+  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}
+  .site-nav summary::after{content:"+";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}
+  .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}
+  .site-nav-menu[open] summary::after{content:"-"}
+  .site-nav-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin-top:8px;max-height:min(70vh,480px);overflow:auto;padding:8px;border:1px solid var(--nav-line);border-radius:12px;background:linear-gradient(180deg,var(--nav-panel),var(--nav-bg));box-shadow:0 18px 42px rgba(12,10,8,.34)}
+  .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}
+  .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}
+}
+main{max-width:1360px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}
+.section-label{text-align:center;margin:0 auto 40px;max-width:760px}
+.section-label h2{margin:.2em 0 .3em;font-size:clamp(1.9rem,4.4vw,3rem);font-weight:600}
+.section-label p{margin:0;color:var(--muted)}
+.divider{margin:78px 0 40px}
+main>section{padding-top:52px;margin-top:4px;border-top:1px solid var(--line)}
+main>section:first-of-type{border-top:0;padding-top:0;margin-top:0}
+main>section>.eyebrow{margin-bottom:6px}
+main>section>h2{margin:0 0 14px;max-width:820px}
+main>section>h2+p{margin:0 0 30px;color:var(--muted);max-width:760px;font-size:1rem}
+/* OVERVIEW */
+.overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}
+.ocard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:5px}
+.ocard b{font-family:"Fraunces","Georgia",serif;font-size:1.9rem;line-height:1.05;font-weight:600;color:var(--ink)}
+.ocard span{color:var(--muted);font-size:.9rem;line-height:1.4}
+.ocard .eyebrow{color:var(--c1)}
+.ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}
+.ocard p{margin:0;color:var(--muted);font-size:.92rem}
+/* TRIP MAP */
+.hc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.hc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}
+.hc.act{border-top-color:#c0392b}
+.hc.head{border-top-color:var(--gold)}
+.hc.solid{border-top-color:var(--c3)}
+.hc.fixed{border-top-color:var(--c1)}
+.hc-tag{display:inline-block;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:10px;color:#fff}
+.hc.act .hc-tag{background:#c0392b}
+.hc.head .hc-tag{background:var(--gold)}
+.hc.solid .hc-tag{background:var(--c3)}
+.hc.fixed .hc-tag{background:var(--c1)}
+.hc h4{margin:0 0 8px;font-size:1.15rem;font-weight:600;line-height:1.15}
+.hc p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.hc p b{color:var(--ink)}
+
+/* TRAVEL TIPS */
+.tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}
+.tips-order p.mini-h{margin:0 0 12px}
+.tips-order ol{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;counter-reset:step}
+.tips-order li{counter-increment:step;position:relative;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 30px;font-size:.82rem;font-weight:600}
+.tips-order li::before{content:counter(step);position:absolute;left:6px;top:50%;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:var(--c1);color:#fff;font-size:.68rem;font-weight:800;display:grid;place-items:center}
+.tips-order li span{color:var(--muted);font-weight:600}
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}
+.tipcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--c1)}
+.tipcard.t2{border-top-color:var(--c2)}.tipcard.t3{border-top-color:var(--gold)}.tipcard.t4{border-top-color:var(--c3)}
+.tipcard h4{margin:0 0 4px;font-size:1.2rem;font-weight:600}
+.tipcard .sub{margin:0 0 12px;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.tipcard ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}
+.tipcard li{font-size:.88rem;color:var(--muted);line-height:1.5;padding-left:16px;position:relative}
+.tipcard li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.tipcard li b{color:var(--ink)}
+.tipcard li.flag::before{background:#c0392b;width:8px;height:8px;top:7px}
+.tipcard li.flag b{color:#b5361f}
+
+.daycost{display:inline-block;margin:8px 0 0;font-size:.76rem;font-weight:700;color:var(--c2);background:rgba(194,90,58,.1);border:1px solid rgba(194,90,58,.28);border-radius:999px;padding:3px 11px}
+.budget-tbl.grand tr.total td{background:var(--ink);color:#fff;font-size:1.05rem;font-weight:800}
+.rate-note{margin:12px 2px 0;font-size:.78rem;color:var(--muted);line-height:1.5}
+
+.kv.climate{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
+.kv.climate span{color:var(--c1)}
+
+/* TIMING COMPARE */
+.timing-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:22px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}
+.tcard.now{border-top-color:var(--c1)}
+.tcard.later{border-top-color:var(--c2)}
+.tcard.best{border-top-color:var(--c3)}
+.tcard.best .tlabel{background:var(--c3)}
+.tcard .tlabel{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px;color:#fff}
+.tcard.now .tlabel{background:var(--c1)}
+.tcard.later .tlabel{background:var(--c2)}
+.tcard h4{margin:0 0 12px;font-size:1.25rem;font-weight:600}
+.tcard .trow{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.88rem}
+.tcard .trow:last-child{border-bottom:0}
+.tcard .trow span{color:var(--muted)}
+.tcard .trow strong{text-align:right}
+.tcard .trow strong.bad{color:#b5361f}
+.listcard.pro-list{border-top:4px solid var(--c3)}
+.listcard.con-list{border-top:4px solid #c0392b}
+.listcard.pro-list li::before{content:"✓";position:static;width:auto;height:auto;border-radius:0;background:none;color:var(--c3);font-weight:800;margin-right:6px}
+.listcard.con-list li::before{content:"✗";position:static;width:auto;height:auto;border-radius:0;background:none;color:#c0392b;font-weight:800;margin-right:6px}
+.listcard.pro-list li,.listcard.con-list li{padding-left:0;display:flex;gap:2px}
+.listcard.pro-list li>span,.listcard.con-list li>span{flex:1}
+.verdict-box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ink);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin-top:20px}
+.verdict-box h4{margin:0 0 8px;font-size:1.1rem;font-weight:800}
+.verdict-box p{margin:0 0 10px;font-size:.92rem;color:var(--muted);line-height:1.55}
+.verdict-box p:last-child{margin-bottom:0}
+.verdict-box .aside{font-size:.82rem;font-style:italic;border-top:1px dashed var(--line);padding-top:10px;margin-top:12px}
+
+.tripmap-wrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow)}
+.mapbtns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.mapbtns button{border:1px solid var(--line);background:var(--paper);color:var(--ink);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;cursor:pointer;transition:.15s}
+.mapbtns button:hover{background:var(--ink);color:#fff}
+.mapbtns button .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+#tripmap{height:460px;border-radius:14px;z-index:1}
+.leaflet-popup-content{font:14px/1.4 "Inter",sans-serif}
+.leaflet-popup-content b{font-family:"Fraunces",serif}
+.pin{width:16px;height:16px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.5)}
+/* BASES */
+.bases{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.base{position:relative;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.base .band{height:6px}
+.base.b1 .band{background:var(--c1)}.base.b2 .band{background:var(--c2)}.base.b3 .band{background:var(--c3)}
+.base .bimg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.base .bbody{padding:18px 20px 22px}
+.base .nights{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.06em;color:#fff;margin-bottom:10px}
+.base.b1 .nights{background:var(--c1)}.base.b2 .nights{background:var(--c2)}.base.b3 .nights{background:var(--c3)}
+.base h4{margin:0 0 4px;font-size:1.55rem;font-weight:600}
+.base .dates{margin:0 0 10px;color:var(--muted);font-size:.85rem;font-weight:600}
+.base p{margin:0;color:var(--muted);font-size:.9rem}
+.base .book{margin:12px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink)}
+.base .book b{color:var(--c2)}
+/* PLAN GRID */
+.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+.pcard h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:10px}
+.pcard h4 .dot{width:10px;height:10px;border-radius:50%;background:var(--gold)}
+.prow{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.prow:last-of-type{border-bottom:0}
+.prow span{color:var(--muted)}.prow strong{text-align:right}
+.pcard .tip{margin:12px 0 0;padding:10px 12px;background:rgba(217,164,65,.12);border-radius:10px;font-size:.82rem;color:#8a6a1e}
+/* DAYS */
+.days{display:grid;gap:26px}
+.day{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border-left:6px solid var(--c1)}
+.day.c1{border-left-color:var(--c1)}.day.c2{border-left-color:var(--c2)}.day.c3{border-left-color:var(--c3)}.day.c0{border-left-color:var(--muted)}
+.day-head{display:flex;gap:18px;align-items:center;padding:20px 24px 6px}
+.day-badge{flex:0 0 auto;width:58px;height:58px;border-radius:14px;display:grid;place-items:center;font-family:"Fraunces",serif;font-weight:600;font-size:1.15rem;color:#fff;line-height:1;text-align:center}
+.day.c1 .day-badge{background:var(--c1)}.day.c2 .day-badge{background:var(--c2)}.day.c3 .day-badge{background:var(--c3)}.day.c0 .day-badge{background:var(--muted)}
+.day-title h3{margin:2px 0 4px;font-size:1.4rem;font-weight:600;line-height:1.05}
+.day-title .feel{margin:0;color:var(--c2);font-size:.82rem;font-weight:700}
+.logistics{padding:4px 24px 12px}
+.facts{display:grid;margin:6px 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.facts div{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:9px 13px;border-bottom:1px solid var(--line);font-size:.86rem}
+.facts div:last-child{border-bottom:0}
+.facts span{color:var(--muted);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}
+.facts strong{font-weight:600}
+.note{margin:0;color:var(--ink);font-size:.94rem;line-height:1.55}
+/* SPOTS */
+.spots-wrap{display:grid;gap:20px;padding:6px 24px 24px}
+.travel-note{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px;font-weight:600}
+.spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}
+.spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}
+.spot-name{margin:0;font-size:1.22rem;font-weight:600}
+.explore{display:flex;gap:6px;flex:0 0 auto}
+.explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}
+.explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.explore .xg{background:#4285F4}
+.explore .xi{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}
+.explore .xf{background:#0063dc}
+/* CAROUSEL */
+.carousel{position:relative;overflow:hidden;background:#e7e1d4}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.track figure{margin:0;flex:0 0 100%;scroll-snap-align:center;position:relative}
+.track img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#e7e1d4}
+.track figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:.74rem;line-height:1.3;background:linear-gradient(180deg,transparent,rgba(0,0,0,.68))}
+.track figcaption strong{display:block;font-weight:700}
+.track figcaption span{color:rgba(255,255,255,.82);font-size:.66rem}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.86);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:.15s;z-index:2}
+.nav:hover{background:#fff;transform:translateY(-50%) scale(1.08)}
+.nav.prev{left:12px}.nav.next{right:12px}
+.counter{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;z-index:2}
+.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;flex-wrap:wrap;padding:0 40px}
+.dots .dot{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer;padding:0;transition:.15s}
+.dots .dot.on{background:#fff;width:20px;border-radius:999px}
+/* SPOT GRID */
+.spot-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px;padding:16px}
+.mini-h{margin:0 0 6px;font-weight:800;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.kv{margin-bottom:12px}
+.kv span{font-weight:800;font-size:.78rem;color:var(--ink)}
+.kv p{margin:4px 0 0;font-size:.9rem;color:var(--muted)}
+.callout{border-radius:10px;padding:10px 12px;font-size:.86rem;margin-bottom:10px;line-height:1.45}
+.callout b{font-weight:800}
+.callout.save{background:rgba(63,125,78,.1);border-left:3px solid var(--save)}
+.callout.save b{color:var(--save)}
+.callout.splurge{background:rgba(217,164,65,.14);border-left:3px solid var(--splurge)}
+.callout.splurge b{color:var(--splurge)}
+.resto{margin:14px 0 4px}
+.resto ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.resto li{font-size:.85rem;color:var(--muted);line-height:1.4;padding-left:14px;position:relative}
+.resto li::before{content:"";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.resto li a{text-decoration:none}.resto li b{color:var(--ink)}
+.altbox{margin:14px 0 4px;padding:12px;background:rgba(31,111,120,.07);border-radius:10px}
+.altbox p:last-child{margin:0;font-size:.86rem;color:var(--muted);line-height:1.45}
+.altbox a{text-decoration:none}
+.bloglinks{margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.bloglinks a{font-size:.83rem;text-decoration:none;color:var(--c1);font-weight:600}
+.bloglinks a:hover{text-decoration:underline}
+.spot-map{display:flex;flex-direction:column}
+.mapwrap{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);flex:1;min-height:240px}
+.gmap{width:100%;height:100%;min-height:240px;border:0;display:block}
+.gmap-btn{margin-top:10px;text-align:center;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:10px;border-radius:10px;transition:.15s}
+.gmap-btn:hover{background:var(--c1)}
+/* BUDGET */
+.budget-tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}
+.budget-tbl th,.budget-tbl td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
+.budget-tbl th{background:rgba(31,111,120,.08);font-family:"Fraunces",serif;font-weight:600}
+.budget-tbl td:last-child,.budget-tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.budget-tbl tr:last-child td{border-bottom:0;font-weight:700}
+.budget-scroll{overflow-x:auto}
+.matrix-tbl{table-layout:fixed}
+.matrix-tbl th,.matrix-tbl td{white-space:normal;vertical-align:top;word-break:normal;overflow-wrap:anywhere}
+.matrix-tbl td:last-child,.matrix-tbl th:last-child{text-align:left;white-space:normal;font-variant-numeric:normal}
+.hc-list{list-style:none;padding:0;margin:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+.hc-list li{padding:13px 18px;border-bottom:1px solid var(--line);border-left:4px solid var(--muted);line-height:1.5;font-size:.92rem}
+.hc-list li:last-child{border-bottom:0}
+.hc-list li.act{border-left-color:#c0392b}
+.hc-list li.head{border-left-color:var(--gold)}
+.hc-list li.solid{border-left-color:var(--c3)}
+.hc-list li.fixed{border-left-color:var(--c1)}
+.hc-list strong{font-family:"Fraunces",serif;font-weight:600}
+.length-table{table-layout:fixed}
+.length-table th:first-child,.length-table td:first-child{width:18%}
+.length-table th:nth-child(2),.length-table td:nth-child(2){width:24%}
+.length-table th:last-child,.length-table td:last-child{width:58%;text-align:left;font-variant-numeric:normal;white-space:normal}
+.length-table td{vertical-align:middle;overflow-wrap:break-word}
+@media (max-width:700px){
+  .length-table,.length-table tbody,.length-table tr,.length-table th,.length-table td{display:block;width:100%}
+  .length-table th:first-child,.length-table td:first-child,
+  .length-table th:nth-child(2),.length-table td:nth-child(2),
+  .length-table th:last-child,.length-table td:last-child{width:100%}
+  .length-table tr:first-child{display:none}
+  .length-table tr{padding:14px 16px;border-bottom:1px solid var(--line)}
+  .length-table td{padding:0;border-bottom:0}
+  .length-table td+td{margin-top:7px}
+  .length-table td:nth-child(2){font-weight:700;color:var(--ink)}
+}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}
+.listcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}
+.listcard h4{margin:0 0 12px;font-size:1.2rem;font-weight:600}
+.listcard.save-list{border-top:4px solid var(--save)}
+.listcard.splurge-list{border-top:4px solid var(--splurge)}
+.listcard ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.listcard li{font-size:.88rem;color:var(--muted);line-height:1.45;padding-left:22px;position:relative}
+.save-list li::before{content:"💰";position:absolute;left:0;top:0}
+.splurge-list li::before{content:"✨";position:absolute;left:0;top:0}
+.listcard li b{color:var(--ink)}
+/* BALANCE */
+.bar{height:10px;border-radius:999px;background:rgba(26,23,18,.08);overflow:hidden;margin:14px 0 24px;display:flex}
+.bar i{height:100%;display:block}
+.balance{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.bcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.bcard .pct{font-family:"Fraunces",serif;font-size:2.4rem;font-weight:600;line-height:1}
+.bcard.k1 .pct{color:var(--c1)}.bcard.k2 .pct{color:var(--c2)}.bcard.k3 .pct{color:var(--c3)}.bcard.k4 .pct{color:var(--muted)}
+.bcard h4{margin:6px 0;font-family:"Inter",sans-serif;font-size:.95rem;font-weight:800}
+.bcard p{margin:0;color:var(--muted);font-size:.84rem}
+/* STATUS */
+.status{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.scol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+.scol h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:8px}
+.scol.settled h4::before{content:"✓";color:var(--c3);font-weight:800}
+.scol.open h4::before{content:"○";color:var(--c2);font-weight:800}
+.scol .row{padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.scol .row:last-child{border-bottom:0}
+.scol .row b{display:block;margin-bottom:2px}
+.scol .row span{color:var(--muted)}
+footer{max-width:1360px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
+footer a{color:var(--muted)}
+@media(max-width:860px){
+ header{min-height:80vh}
+ h1{font-size:clamp(2.15rem,9.4vw,2.65rem);line-height:.94;overflow-wrap:anywhere}
+ header .lead{max-width:100%;font-size:1rem}
+ .plan-grid,.status,.twocol{grid-template-columns:1fr}
+ .spot-grid{grid-template-columns:1fr}
+ .day-head{gap:14px;padding:18px 16px 4px}
+ .logistics{padding:4px 16px 10px}
+ .spots-wrap{padding:6px 12px 18px}
+ #tripmap{height:380px}
+}
+
+/* ===== TRIP SHORTLIST (redesigned cards) ===== */
+#trips.shortlist{font-family:'Source Sans 3',system-ui,sans-serif;background:#efe8da;border-radius:22px;padding:40px clamp(20px,3vw,44px) 46px;border-top:0;margin-top:40px}
+.sl-head{margin:0 0 26px;max-width:820px}
+.sl-head .sl-eyebrow{margin:0 0 8px;color:#c04a2f;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.sl-head h2{font-family:'Spectral',Georgia,serif;font-weight:700;color:#1c2620;font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.05;margin:0 0 12px;letter-spacing:-.01em}
+.sl-head p{margin:0;color:#5b625a;font-size:1rem;line-height:1.5}
+.sl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.sl-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(40,50,40,.05),0 6px 16px rgba(40,50,40,.06);display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:transform .15s ease,box-shadow .15s ease}
+.sl-card:hover{transform:translateY(-3px);box-shadow:0 4px 10px rgba(40,50,40,.09),0 16px 34px rgba(40,50,40,.14)}
+.sl-card.top{border:1.5px solid #c04a2f}
+.sl-photo{position:relative;height:130px;background:#d8d2c4}
+.sl-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.madeira-stairway-card .sl-photo img{object-position:center 60%}
+.sl-rank{position:absolute;top:9px;left:9px;width:28px;height:28px;border-radius:999px;background:#1a4a3c;color:#fff;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.3);z-index:2}
+.sl-card.top .sl-rank{background:#c04a2f}
+.sl-body{padding:13px 15px 15px;display:flex;flex-direction:column;gap:7px;flex:1}
+.sl-meta{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+.sl-dates{font-weight:700;font-size:11px;letter-spacing:.06em;color:#2f6b52;text-transform:uppercase}
+.sl-pto{font-weight:700;font-size:11px;letter-spacing:.06em;color:#8a8f85;text-transform:uppercase;white-space:nowrap;text-align:right}
+.sl-score{display:inline-flex;align-items:center;gap:4px;min-width:68px;padding:4px 9px 4px 10px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:#1a4a3c;color:#fff;box-shadow:0 2px 7px rgba(26,74,60,.24);font-variant-numeric:tabular-nums;line-height:1}
+.sl-score b{font-family:'Spectral',Georgia,serif;font-size:21px;font-weight:700;letter-spacing:-.04em}
+.sl-score>span{display:flex;flex-direction:column;gap:1px;color:rgba(255,255,255,.9);font-size:9px;font-weight:700}
+.sl-score small{color:rgba(255,255,255,.68);font-size:7px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.sl-card.top .sl-score{background:#c04a2f;box-shadow:0 2px 7px rgba(192,74,47,.26)}
+.sl-excluded-head+.sl-grid .sl-score{background:#625f57;box-shadow:0 2px 7px rgba(54,52,47,.2)}
+.sl-titlerow{display:flex;align-items:baseline;gap:9px}
+.sl-titlerow h3{font-family:'Spectral',Georgia,serif;font-weight:700;font-size:20px;line-height:1.15;margin:0;color:#1c2620;flex:1}
+.sl-nights{display:inline-flex;align-items:center;gap:4px;background:#eef3ee;border:1px solid #dbe6dd;border-radius:999px;padding:3px 9px;white-space:nowrap}
+.sl-nights b{display:inline-flex;align-items:center;font-family:'Spectral',Georgia,serif;font-weight:700;font-size:14px;color:#1a4a3c;line-height:1}
+.sl-nights i{display:inline-flex;align-items:center;font-style:normal;font-size:9.5px;font-weight:600;letter-spacing:.04em;color:#5b7a6b;line-height:1;text-transform:uppercase}
+.sl-nights .sl-away{display:inline-flex;align-items:center;font-style:normal;font-size:8.5px;font-weight:700;letter-spacing:.02em;color:#9c6b43;background:#f6eee3;border:1px solid #e8d6c0;border-radius:999px;padding:2px 5px;margin-left:1px;text-transform:uppercase;line-height:1}
+.sl-desc{margin:0;font-size:12.5px;line-height:1.5;color:#5b625a}
+.sl-div{height:1px;background:#ece5d7;margin:1px 0}
+.sl-logi{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:5px 12px;font-size:11px;line-height:1.35;color:#4a5149}
+.sl-logi .lbl{color:#a29a88;font-weight:600;text-transform:uppercase;letter-spacing:.04em;font-size:9px}
+.sl-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:1px}
+.sl-tags span{font-size:10px;font-weight:600;color:#2f6b52;background:#e6efe8;border-radius:5px;padding:2px 7px}
+.sl-tags .warn{color:#b0601c;background:#f6e6d3}
+.sl-tags .bad{color:#b1372a;background:#f6ddd8}
+.sl-excluded-head{margin:8px 0 22px;padding-top:26px;border-top:1px dashed #d8d0bd;max-width:820px}
+.sl-excluded-head .sl-eyebrow{margin:0 0 8px;color:#8a8377;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.sl-excluded-head h3{font-family:'Spectral',Georgia,serif;font-weight:700;color:#1c2620;font-size:clamp(1.3rem,3vw,1.7rem);line-height:1.15;margin:0 0 8px}
+.sl-excluded-head p{margin:0;color:#5b625a;font-size:.92rem;line-height:1.5}
+</style>
+<style>
+.decision-hero{background:linear-gradient(90deg,#17130f 0%,#17130f 42%,#3b2419 72%,#6c3f25 100%)}
+.decision-hero h1{max-width:980px}
+.hero-kicker{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.hero-kicker span,.trip-tags span{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.12);border-radius:999px;padding:8px 11px;font-size:.82rem;font-weight:800;color:#fff}
+.trip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+.trip-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;height:100%;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+.trip-card[data-trip="portugal"]{border-color:#2f8f65;border-top:6px solid #2f8f65;box-shadow:0 18px 44px rgba(47,143,101,.22)}
+.trip-card[data-trip="portugal"] .rank{background:#2f8f65;color:#fff}
+.trip-card[data-trip="portugal"] .trip-tags span{background:#e7f6ed;color:#14573a;border-color:#aad9bd}
+.trip-card[data-trip="portugal"] .trip-topline span{color:#236b4d}
+.trip-card[data-trip="portugal-sicily"],.trip-card[data-trip="portugal-crete"]{border-color:#5aa9c2;border-top:6px solid #2f8f65;box-shadow:0 18px 44px rgba(47,143,101,.16)}
+.trip-card[data-trip="portugal-sicily"] .rank,.trip-card[data-trip="portugal-crete"] .rank{background:#2f8f65;color:#fff}
+.trip-card.is-picked{border-color:#c25a3a;border-top:6px solid #c25a3a;box-shadow:0 18px 44px rgba(194,90,58,.28);transform:translateY(-2px)}
+.trip-card.is-picked .rank{background:#c25a3a;color:#fff}
+.trip-photo{height:126px;position:relative;background:linear-gradient(135deg,#d6d0c3,#eee8dc);overflow:hidden}
+.trip-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.trip-photo.img-failed:before{content:"Photo unavailable";position:absolute;inset:0;display:grid;place-items:center;color:#5f675f;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem}
+.trip-photo.img-failed img{display:none}
+.trip-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.22))}
+.rank{position:absolute;top:10px;left:10px;max-width:calc(100% - 20px);background:rgba(255,255,255,.92);color:#15353a;border-radius:999px;padding:5px 9px;font-weight:900;font-size:.66rem;line-height:1.1;letter-spacing:.06em;text-transform:uppercase}
+.trip-body{padding:11px 12px 12px;display:flex;flex-direction:column;gap:6px;flex:1}
+.trip-topline{display:flex;flex-wrap:wrap;gap:5px;color:var(--muted);font-size:.63rem;text-transform:uppercase;font-weight:900;letter-spacing:.06em;line-height:1.1}
+.trip-topline span{display:inline-flex;align-items:center;border:1px solid #dbe3df;background:#f7faf8;border-radius:999px;padding:4px 7px;color:#526364}
+.trip-body h3{margin:0;font-size:1.06rem;line-height:1.08;color:#193c45}
+.trip-body p{margin:0;color:#4f5d5e;font-size:.8rem;line-height:1.35}
+.trip-tags{display:flex;flex-wrap:wrap;gap:5px}
+.trip-tags span{color:#255b5d;border-color:#d4dedb;background:#edf5f2}
+.trip-tags span{padding:4px 7px;font-size:.66rem;line-height:1.1}
+.trip-facts{display:flex;flex-wrap:wrap;gap:4px;margin:0}
+.trip-facts div{min-width:0;border:1px solid var(--line);border-radius:999px;padding:3px 6px;background:#faf8f2;display:flex;align-items:baseline;gap:4px;max-width:100%}
+.trip-facts dt{font-size:.55rem;text-transform:uppercase;color:var(--muted);font-weight:900;letter-spacing:.06em;white-space:nowrap}
+.trip-facts dt::after{content:":"}
+.trip-facts dd{margin:0;font-size:.66rem;line-height:1.18;font-weight:800;color:#263b3d;white-space:normal;overflow:visible;max-width:260px}
+.trip-warning{border-left:3px solid #d8a451;background:#fff8e6;border-radius:9px;padding:8px 9px;color:#5c4a1e;font-size:.72rem;line-height:1.35;overflow:visible}
+.trip-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:0 11px;border-radius:999px;border:1px solid #cfd9d5;background:#fff;color:#255b5d;text-decoration:none;font-weight:900;font-size:.75rem}
+.btn.primary{background:#255b5d;color:#fff;border-color:#255b5d}
+.btn.disabled{background:#ebe6da;color:#7a7468;border-color:#ddd4c4}
+.decision-table{width:100%;border-collapse:collapse}
+.decision-table th{text-align:left;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:10px 14px;border-bottom:1px solid var(--line)}
+.decision-table td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:#4f5d5e;line-height:1.5}
+.decision-table td:nth-child(1){white-space:nowrap;color:#193c45}
+.decision-table td:nth-child(2){white-space:nowrap;font-weight:850;color:#193c45}
+.decision-table td:nth-child(3){font-weight:850;color:#193c45}
+.decision-table .ru-why{font-weight:500;color:var(--muted)}
+.decision-row{cursor:pointer;transition:background .15s}
+.decision-row:hover{background:#f7f4ea}
+.decision-row.on{background:#eef6f0}
+.decision-row.on td:nth-child(2){color:#c25a3a}
+.score-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 14px}
+.score-legend span{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 11px;color:#334649;font-weight:900;font-size:.82rem}
+.score-legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+.score-legend .good i{background:#2f8f65}.score-legend .mixed i{background:#d5a24b}.score-legend .weak i{background:#b85d42}
+.score-chip{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:22px;padding:0 7px;border-radius:6px;font-weight:800;font-size:.85rem;line-height:1;color:#fff;font-variant-numeric:tabular-nums}
+.score-chip.good{background:#2f8f65}.score-chip.mixed{background:#d5a24b}.score-chip.weak{background:#b85d42}
+.travel-cell{white-space:nowrap;font-weight:800;color:#3d4a4c;font-size:.8rem;font-variant-numeric:tabular-nums}
+.travel-cell .tt-sep{color:var(--muted);margin:0 4px;font-weight:600}
+.ease-travel{display:block;margin-top:5px;white-space:nowrap;font-weight:800;color:#3d4a4c;font-size:.72rem;font-variant-numeric:tabular-nums}
+.ease-travel .tt-sep{color:var(--muted);margin:0 3px;font-weight:600}
+.travel-cell .tt-na{color:#8b8375;font-weight:850}
+.score-good{background:#f1faf5;box-shadow:inset 5px 0 0 #2f8f65}
+.score-mixed{background:#fff8ea;box-shadow:inset 5px 0 0 #d5a24b}
+.score-weak{background:#fff2ed;box-shadow:inset 5px 0 0 #b85d42}
+.compare-table.scoreboard td,.compare-table.scoreboard thead th:not(:first-child){text-align:center}
+.compare-table.scoreboard .travel-cell,.compare-table.scoreboard .pto-cell{text-align:center}
+.wx-cell{white-space:nowrap;font-weight:800;color:#3d4a4c;font-size:.8rem;font-variant-numeric:tabular-nums;display:block;margin-bottom:4px}
+.pto-cell .wx-cell{margin-bottom:0}
+.compare-table thead th[data-sort]{cursor:pointer;user-select:none;white-space:nowrap}
+.compare-table thead th[data-sort]:hover{background:#efe6d3}
+.compare-table thead th.sort-asc::after{content:" \25B2";font-size:.7em;opacity:.85}
+.compare-table thead th.sort-desc::after{content:" \25BC";font-size:.7em;opacity:.85}
+.na{color:#8b8375;font-weight:850}
+.winner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.winner-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 8px 24px rgba(36,54,57,.07)}
+.winner-card h3{margin:0 0 6px;color:#193c45}
+.winner-card b{color:#2f8f65}
+.winner-card p{margin:0;color:#4f5d5e;line-height:1.5}
+.matrix-wrap{overflow:auto;border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);background:#fff}
+.compare-table{width:100%;border-collapse:collapse}
+.compare-table th,.compare-table td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+.compare-table thead th{background:#f5efe3;color:#193c45;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+.compare-table tbody th span{display:block;color:#193c45}
+.compare-table tbody th small{display:block;color:var(--muted);font-weight:800;margin-top:4px}
+.compare-table tr.is-picked th,.compare-table tr.is-picked td{background:#eef9f2}
+.compare-table tr.is-picked th{box-shadow:inset 6px 0 0 #2f8f65}
+.compare-table tr.is-picked td:last-child{background:#e7f6ed;color:#14573a}
+.risk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.file-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.file-list a,.file-list span{display:flex;justify-content:space-between;gap:12px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:14px;padding:12px 14px;color:#255b5d;text-decoration:none;font-weight:900}
+.file-list small{color:var(--muted);font-weight:800}
+.source-note{font-size:.85rem;color:var(--muted);line-height:1.5}
+.rubric-note{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;font-size:.86rem;color:#4f5d5e;line-height:1.6;margin-bottom:18px}
+.rubric-note b{color:#193c45}
+@media (max-width:980px){.trip-grid,.risk-grid{grid-template-columns:1fr 1fr}.decision-console,.winner-grid,.file-list{grid-template-columns:1fr}}
+@media (max-width:640px){.trip-grid,.risk-grid{grid-template-columns:1fr}.trip-photo{height:132px}.hero-kicker{max-width:100%}.hero-kicker span{flex:1 1 100%;min-width:0;max-width:100%;white-space:normal;overflow-wrap:anywhere;font-size:.76rem;line-height:1.25}.winner-callout h3{font-size:1.45rem}}
+</style>
+<link rel="stylesheet" href="assets/css/hub.css">
+</head>
+<body>
+<header class="decision-hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Family Travel Decision Dashboard</p>
+    <h1>Epic Family Vacation: 21-Trip Comparison</h1>
+    <p class="lead">A data-first ranking of 22 finished itineraries (13 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The Portugal/Italy preference is retired from the scoring; novelty carries the honest version instead. The numbers, at a glance:</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Page sections">
+  <details class="site-nav-menu">
+    <summary><span>Sections</span></summary>
+    <div class="site-nav-links">
+      <a href="#trips">Trips</a>
+      <a href="#decision">Quick Decision</a>
+      <a href="#scoreboard">Scoreboard</a>
+      <a href="#length">Length Verdicts</a>
+      <a href="#winners">Category Winners</a>
+      <a href="#matrix">Full Matrix</a>
+      <a href="#risks">Risks</a>
+    </div>
+  </details>
+</nav>
+
+<main>
+  <section id="overview">
+    <p class="eyebrow">The Plan at a Glance</p>
+    <div class="overview">
+      <div class="ocard"><b>22</b><span>complete trip plans reviewed (13 ranked, 9 excluded)</span></div>
+      <div class="ocard"><b>$7.5k</b><span>lowest all-in floor: Portugal</span></div>
+      <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland &times; Crete/Sicily/Mallorca grid</span></div>
+      <div class="ocard"><b>Jun 24-26</b><span>Full days in Pittsburgh protected</span></div>
+    </div>
+  </section>
+
+  <section id="trips" class="shortlist">
+    <div class="sl-head">
+      <p class="sl-eyebrow">Trip Shortlist</p>
+      <h2>Thirteen ranked ways to spend the same two weeks</h2>
+      <p>Ranked by the scoreboard — pure data, no preference thumb on the scale; the top score is outlined in red. Tap any card for the full day-by-day itinerary. Nights pill = hotel (bed) nights; the <b>+1</b> chip is the red-eye/travel night away.</p>
+    </div>
+    {% include "hub/cards.njk" %}
+    {% if false %}
+    <div class="sl-grid">
+      <a class="sl-card top" href="locations/portugal/index.html">
+        <div class="sl-photo"><img src="assets/img/portugal/google_cascais_boca_01.jpg" alt="Boca do Inferno sea arch and Cascais cliffs in bright Atlantic light." loading="lazy"><div class="sl-rank">#1</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 10–23</span><span class="sl-score" aria-label="Rated 41 out of 50"><b>41</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Portugal Algarve &amp; Madeira</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">The new #1 at 41/50: the only plan whose reconciled family range stays entirely under the $12k target, with 12 nights and simple three-base geography. The tradeoffs are cool 63–70°F Atlantic water and an exact-date Faro–Funchal flight that must be proven before booking.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Cascais → Carvoeiro → Ponta do Sol</div><div><span class="lbl">Budget</span><br>$7.5k–11.7k</div><div><span class="lbl">Swim</span><br>Atlantic 63–70°F</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span>#1 overall, 41/50</span><span>Best value</span><span>Simplest air</span><span class="warn">Coldest water</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/madeira-mallorca/index.html">
+        <div class="sl-photo"><img src="assets/img/madeira-mallorca/google_funchal_cable_car_01.jpg" alt="Funchal cable car rising over the city and bay." loading="lazy"><div class="sl-rank">#2</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 8–21</span><span class="sl-score" aria-label="Rated 39 out of 50"><b>39</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Madeira + Mallorca</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#2 at 39/50: Madeira supplies the ridge and levada scenery; Mallorca supplies shallow sandy Mediterranean swimming. The score now treats Mallorca swim as 4/5 and Madeira weather as 4/5. Exact 2027 EWR–FNC dates and through-ticket protection remain quote gates.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Funchal → Lisbon (1n) → Palma → Playa de Muro</div><div><span class="lbl">Budget</span><br>$11.8k–14.8k</div><div><span class="lbl">Swim</span><br>Med 72–75°F</div><div><span class="lbl">Bases</span><br>3 + buffer night</div></div>
+          <div class="sl-tags"><span>Top hybrid score, 39/50</span><span>Within-preference</span><span>Hiking + Med swim</span><span class="warn">FNC wind risk</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/portugal-sicily/index.html">
+        <div class="sl-photo"><img src="assets/img/portugal-sicily/google_cascais_boca_01.jpg" alt="Boca do Inferno sea arch with Atlantic water surging through the cliffs." loading="lazy"><div class="sl-rank">#3</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 8–21</span><span class="sl-score" aria-label="Rated 37 out of 50"><b>37</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Portugal + Sicily</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#3 at 37/50: a within-preference Portugal and Sicily combination with excellent food, variety, and novelty. The current plan cannot assume a Lisbon–Palermo nonstop on its chosen weekday; exact 2027 service or a protected one-stop is required.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Cascais → Cefalù → Ortigia → Taormina</div><div><span class="lbl">Budget</span><br>$12.4k–14.7k</div><div><span class="lbl">Swim</span><br>Sicily 72–75°F</div><div><span class="lbl">Bases</span><br>4 bases</div></div>
+          <div class="sl-tags"><span>Portugal + Italy</span><span>#3 overall, 37/50</span><span class="warn">Near preferred maximum</span><span class="warn">LIS-Palermo monopoly</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/iceland/index.html">
+        <div class="sl-photo"><img src="assets/img/iceland/google_vestrahorn_sunrise_qa_01.jpg" alt="Vestrahorn reflected in wet black sand at sunrise on Iceland’s Stokksnes coast" loading="lazy"><div class="sl-rank">#4</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 8–21</span><span class="sl-score" aria-label="Rated 36 out of 50"><b>36</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Iceland: South Coast &amp; Glacier Lagoons</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#4 at 36/50: the strongest visual contrast on the board, with geothermal bathing rather than sea swimming. Four bases, the long east-to-west return drive, volcanic/weather disruption, and unconfirmed exact 2027 nonstop days keep Ease and Risk below their previous optimistic scores.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Reykjavík → South Coast → Jökulsárlón → Reykjanes</div><div><span class="lbl">Budget</span><br>$11.4k–14.7k</div><div><span class="lbl">Swim</span><br>Geothermal 100–104°F</div><div><span class="lbl">Bases</span><br>4 bases</div></div>
+          <div class="sl-tags"><span>Now #4, 36/50</span><span>Novel geothermal swim</span><span>Novelty 5/5</span><span class="warn">Cool, wet weather</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/portugal-crete/index.html">
+        <div class="sl-photo"><img src="assets/img/portugal-crete/google_balos_lagoon_qa_01.jpg" alt="Balos Lagoon seen from above with turquoise shallows and Gramvousa beyond" loading="lazy"><div class="sl-rank">#5</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 8–21</span><span class="sl-score" aria-label="Rated 35 out of 50"><b>35</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Portugal + Crete</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#5 at 35/50: five Portugal nights now make Lisbon and the Sintra coast a real half of the trip, while seven Crete nights still deliver warmer water and one family-sized gorge. The $11.2k–15.4k range remains quote-gated, and the Jun 14 connection must book as one protected itinerary.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Cascais → Athens → Chania → Rethymno</div><div><span class="lbl">Budget</span><br>$11.2k–15.4k</div><div><span class="lbl">Swim</span><br>Crete 73–74°F</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span>Best warm-water fix</span><span>Fixes cold water</span><span>Lowest hybrid cost</span><span class="warn">Crosses $15k preference at high end</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/sicily-malta/index.html">
+        <div class="sl-photo"><img src="assets/img/sicily-malta/google_cefalu_larocca_beach_01.jpg" alt="Cefalu old town and beach at the foot of La Rocca." loading="lazy"><div class="sl-rank">#6</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 10–23</span><span class="sl-score" aria-label="Rated 35 out of 50"><b>35</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Sicily &amp; Malta</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#6 at 35/50: excellent food and variety across Cefalù, Etna, Taormina, Ortigia, and Malta. Four bases, an internal air handoff, Malta boat logistics, Etna/CTA disruption, and a $15.8k high case make it conditional.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Cefalù → Taormina → Ortigia → Malta</div><div><span class="lbl">Budget</span><br>$10.4k–15.8k</div><div><span class="lbl">Swim</span><br>72–75°F Med</div><div><span class="lbl">Bases</span><br>4 bases</div></div>
+          <div class="sl-tags"><span>Best food</span><span>Italy-family</span><span class="bad">Above preferred max unless quotes fall</span><span class="warn">4 bases</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/spain/index.html">
+        <div class="sl-photo"><img src="assets/img/spain/google_plaza_espana_01.jpg" alt="Plaza de Espana in Seville with its sweeping brick arcade." loading="lazy"><div class="sl-rank">#7</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 3–16</span><span class="sl-score" aria-label="Rated 34 out of 50"><b>34</b><span>/50<small>rating</small></span></span><span class="sl-pto">9 PTO</span></div>
+          <div class="sl-titlerow"><h3>Spain</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#7 at 34/50: the best architecture and history package, with Seville, Córdoba, Granada, and six coast nights. June inland heat, nine PTO days on the current dates, a separate train ticket, and required Spanish driving paperwork are the main costs.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Seville → Granada → Nerja</div><div><span class="lbl">Budget</span><br>$8.8k–14.8k</div><div><span class="lbl">Swim</span><br>68–72°F Med</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span>Best history</span><span>No internal flights</span><span class="warn">9 PTO cost</span><span class="warn">Not the favorite</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/italy-salento-amalfi/index.html">
+        <div class="sl-photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Amalfi_Coast%2C_Italy_Panoramic.jpg/1280px-Amalfi_Coast%2C_Italy_Panoramic.jpg" alt="Amalfi Coast panorama" loading="lazy"><div class="sl-rank">#8</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 10–23</span><span class="sl-score" aria-label="Rated 34 out of 50"><b>34</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Italy: Salento &amp; Amalfi</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#8 at 34/50: strong food, coast, and town variety, but low novelty in the Naples/Amalfi zone and a $16.4k high case. The claimed one-night preference-fit trim is not sufficient by itself; the whole quote must reconcile below $15k.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>BDS → Gallipoli → Maratea → Sorrento</div><div><span class="lbl">Budget</span><br>$13.2k–16.4k</div><div><span class="lbl">Swim</span><br>~68–74°F seas</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span>Best food</span><span>Great variety</span><span class="bad">Exceeds preferred maximum</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/dolomites-sardinia/index.html">
+        <div class="sl-photo"><img src="https://images.pexels.com/photos/23962079/pexels-photo-23962079.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cala Goloritzé pinnacle cove, Gulf of Orosei" loading="lazy"><div class="sl-rank">#9</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 27–Jul 11</span><span class="sl-score" aria-label="Rated 34 out of 50"><b>34</b><span>/50<small>rating</small></span></span><span class="sl-pto">9 PTO</span></div>
+          <div class="sl-titlerow"><h3>Venice, Dolomites &amp; Sardinia</h3><span class="sl-nights"><b>13</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#9 at 34/50: the only true alpine-plus-beach plan, pairing Dolomite hiking with Sardinian coves. Its category rows total about $13.2k–18.9k, so airfare, lodging, cars, and boats must be reworked into a documented preference-fit version.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Venice → Dolomites → N. Sardinia → E. Sardinia</div><div><span class="lbl">Budget</span><br>$13.2k–18.9k</div><div><span class="lbl">Swim</span><br>74–77°F Med</div><div><span class="lbl">Bases</span><br>4 bases</div></div>
+          <div class="sl-tags"><span>Alpine + beach</span><span>Falls to #9, 34/50</span><span>13 nights</span><span class="bad">Stress case ~$18.9k</span><span class="warn">4 bases, 2 flights</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/greece-via-lisbon/index.html">
+        <div class="sl-photo"><img src="assets/img/greece-via-lisbon/google_cascais_bay_aerial_01.jpg" alt="Santa Marta lighthouse and Cascais harbor at soft evening light." loading="lazy"><div class="sl-rank">#10</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 10–23</span><span class="sl-score" aria-label="Rated 33 out of 50"><b>33</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Greece via Lisbon</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#10 at 33/50: an iconic Crete plan with excellent variety, but the published proxy does not support its Tuesday ATH–LIS return and the whole trip is not on one protected ticket. It needs a reroute before it is recommendation-ready.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Lisbon → Chania → Rethymno → Athens</div><div><span class="lbl">Budget</span><br>$10.75k–16.9k</div><div><span class="lbl">Swim</span><br>72–74°F Aegean</div><div><span class="lbl">Bases</span><br>3 + gateway</div></div>
+          <div class="sl-tags"><span>Most iconic</span><span>Now #10, 33/50</span><span class="warn">Multi-leg flight chain</span><span class="warn">Crosses $15k preference at high end</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/hawaii/index.html">
+        <div class="sl-photo"><img src="assets/img/hawaii/google_waikiki_diamond_head_02.jpg" alt="Waikiki Beach and Diamond Head seen from above in clear turquoise water." loading="lazy"><div class="sl-rank">#11</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 5–15</span><span class="sl-score" aria-label="Rated 32 out of 50"><b>32</b><span>/50<small>rating</small></span></span><span class="sl-pto">7 PTO</span></div>
+          <div class="sl-titlerow"><h3>Hawaii</h3><span class="sl-nights"><b>9</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#11 at 32/50: genuinely warm water, snorkeling, volcanoes, and no passport. It delivers only nine hotel nights, requires an island hop and two car strategies, and its canonical $11.0k–15.8k total crosses the preferred maximum.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Oahu → Big Island</div><div><span class="lbl">Budget</span><br>$11.0k–15.8k</div><div><span class="lbl">Swim</span><br>Pacific 78–80°F</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span>Genuinely warm water</span><span>No passport</span><span class="bad">High end crosses the preferred maximum</span><span class="warn">Shortest trip</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/sardinia-corsica/index.html">
+        <div class="sl-photo"><img src="assets/img/sardinia-corsica/google_alghero_bastioni_01.jpg" alt="Alghero sea walls at sunset." loading="lazy"><div class="sl-rank">#12</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 10–23</span><span class="sl-score" aria-label="Rated 32 out of 50"><b>32</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Sardinia &amp; Corsica</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#12 at 32/50: dramatic coves, Alghero, Bonifacio, and Ogliastra hiking. The reconciled range is roughly $10.7k–16.8k; cross-border rental permission and ferry strategy are quote-specific rather than blanket prohibitions.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Alghero → Bonifacio → Ogliastra → Cagliari</div><div><span class="lbl">Budget</span><br>$10.7k–15.6k</div><div><span class="lbl">Swim</span><br>72–75°F Med</div><div><span class="lbl">Bases</span><br>4 bases</div></div>
+          <div class="sl-tags"><span>Dramatic coastline</span><span>Italy-family</span><span class="bad">Stress case ~$16.8k</span><span class="warn">Ferry car rules</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/madeira-crete/index.html">
+        <div class="sl-photo"><img src="https://images.unsplash.com/photo-1713528193632-e711dd2b99b8?w=1200&q=80&auto=format&fit=crop" alt="Pico do Arieiro above a sea of clouds, Madeira" loading="lazy"><div class="sl-rank">#13</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 8–22</span><span class="sl-score" aria-label="Rated 32 out of 50"><b>32</b><span>/50<small>rating</small></span></span><span class="sl-pto">9 PTO</span></div>
+          <div class="sl-titlerow"><h3>Madeira + Crete</h3><span class="sl-nights"><b>13</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#13 at 32/50: the most hiking-heavy hybrid, with warm Crete water after Madeira. A $16.8k high case, multiple flight legs, FNC weather exposure, and three consecutive strenuous Crete days make recovery alternatives mandatory.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Funchal → Lisbon (1n) → Chania → Rethymno</div><div><span class="lbl">Budget</span><br>$12.1k–16.8k</div><div><span class="lbl">Swim</span><br>Crete 73–74°F</div><div><span class="lbl">Bases</span><br>3 + buffer night</div></div>
+          <div class="sl-tags"><span>Epic hiking</span><span>Portugal + Greece</span><span class="bad">Exceeds preferred maximum</span><span class="warn">FNC wind risk</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/madeira-sicily/index.html">
+        <div class="sl-photo"><img src="https://images.unsplash.com/photo-1746523812328-74b97419f828?w=1200&q=80&auto=format&fit=crop" alt="Stairway to Heaven ridge above the clouds, Pico do Arieiro, Madeira" loading="lazy"><div class="sl-rank">#14</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 8–21</span><span class="sl-score" aria-label="Rated 31 out of 50"><b>31</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Madeira + Sicily</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">#14 at 31/50: a compelling hiking-and-Italy concept whose June Lisbon–Palermo hinge is not supported by the current timetable proxy. It stays conditional until exact 2027 service or a priced one-stop is available.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Funchal → Lisbon (1n) → Cefalù → Taormina</div><div><span class="lbl">Budget</span><br>$12.3k–15.5k</div><div><span class="lbl">Swim</span><br>Sicily 72–75°F</div><div><span class="lbl">Bases</span><br>4 stops, 2 cars</div></div>
+          <div class="sl-tags"><span>Epic hiking</span><span>Portugal + Italy</span><span class="bad">High end exceeds preference</span><span class="warn">Wind + Sicily air risk</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="sl-excluded-head">
+      <p class="sl-eyebrow">Excluded &mdash; kept for reference</p>
+      <h3>Seven trips that score well but are ruled out by family decision</h3>
+      <p>Albania, Balkans, California, Canary Islands, Croatia, Southern France, and Turkish Riviera remain visible for context but are excluded from the ranking by family decision; none are competing for the pick.</p>
+    </div>
+    <div class="sl-grid">
+      <a class="sl-card" href="locations/turkish-riviera/index.html">
+        <div class="sl-photo"><img src="https://images.unsplash.com/photo-1686465602845-868cebea024a?w=1200&q=80&auto=format&fit=crop" alt="Oludeniz Blue Lagoon on the Turkish Riviera" loading="lazy"></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 10–23</span><span class="sl-score" aria-label="Rated 33 out of 50"><b>33</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Turkish Riviera</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">Excluded by family decision. At 33/50: the warmest non-Hawaii sea on the board with only three bases and one car. Heat, the scoped Turkey advisory, long-haul airfare, and a reconciled high case near $17.4k keep it quote-gated.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Antalya → Kaş/Kalkan → Fethiye</div><div><span class="lbl">Budget</span><br>$10.0k–17.4k</div><div><span class="lbl">Swim</span><br>75–79°F coast</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span class="bad">Excluded &mdash; family decision</span><span>Warmest non-Hawaii sea</span><span class="warn">Antalya 87–95°F</span><span class="warn">Airfare-gated</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/canary-islands/index.html">
+        <div class="sl-photo"><img src="https://images.unsplash.com/photo-1668544017988-a7e2ce13dea8?w=1200&q=80&auto=format&fit=crop" alt="Mount Teide volcano, Tenerife" loading="lazy"></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 8–22</span><span class="sl-score" aria-label="Rated 31 out of 50"><b>31</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Canary Islands</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">Excluded by family decision. At 31/50: exceptional volcano and laurel-forest variety, but not an easier Pittsburgh trip once the La Palma hop and connections are counted. Its category rows reconcile to $12.42k–16.69k, not the prior within-preference figure.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Puerto de la Cruz → La Palma → Tenerife (buffer)</div><div><span class="lbl">Budget</span><br>$12.42k–16.69k</div><div><span class="lbl">Swim</span><br>Atlantic 70–72°F</div><div><span class="lbl">Bases</span><br>2 + buffer night</div></div>
+          <div class="sl-tags"><span class="bad">Excluded &mdash; family decision</span><span>Novelty 5/5</span><span class="warn">3 connections (Madrid)</span><span class="warn">Lower ease score</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/albania/index.html">
+        <div class="sl-photo"><img src="https://images.unsplash.com/photo-1648046143698-1204e59eb43b?w=1200&q=80&auto=format&fit=crop" alt="Ksamil islets and turquoise water, Albania" loading="lazy"><div class="sl-rank">EX</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 7–22</span><span class="sl-score" aria-label="Rated 44 out of 50"><b>44</b><span>/50<small>rating</small></span></span><span class="sl-pto">9 PTO</span></div>
+          <div class="sl-titlerow"><h3>Albania: Alps &amp; Riviera</h3><span class="sl-nights"><b>13</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">The Madeira replacement done properly: the Theth valley of the Accursed Mountains for the alpine epic, then Ksamil for genuinely warm, turquoise Ionian swimming &mdash; all on one country's roads, no island-hop flight, out via a 30-minute Corfu ferry. Scores highest on the board at 44/50 (cheapest floor, top swim and novelty) &mdash; excluded from the ranking by family decision, kept here for reference.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Tirana → Theth → Ksamil → Corfu</div><div><span class="lbl">Budget</span><br>$9.7k–14.2k</div><div><span class="lbl">Swim</span><br>Ionian 72–75°F</div><div><span class="lbl">Bases</span><br>3 bases + buffer</div></div>
+          <div class="sl-tags"><span class="bad">Excluded &mdash; family decision</span><span>Highest score, 44/50</span><span>Novelty 5/5</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/croatia/index.html">
+        <div class="sl-photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Ol_City_of_Korcula_%28Unsplash%29.jpg/1280px-Ol_City_of_Korcula_%28Unsplash%29.jpg" alt="Korcula&#x27;s walled old town from the water" loading="lazy"><div class="sl-rank">EX</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 9–22</span><span class="sl-score" aria-label="Rated 35 out of 50"><b>35</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Croatia</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">Scores 35/50 — but novelty is 1/5 and the exclusion stands: we did Croatia in 2026, and Split, Hvar, and Korčula would repeat a lot. Kept here for reference.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Split → Hvar → Korčula</div><div><span class="lbl">Budget</span><br>$8.6k–12.8k</div><div><span class="lbl">Swim</span><br>71–74°F Adriatic</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span class="bad">Excluded &mdash; 2026 repeat</span><span>Novelty 1/5</span><span>Best value Europe</span><span>Island towns</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/southern-france/index.html">
+        <div class="sl-photo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Calanque_d%27En_Vau-Cassis.jpg/1280px-Calanque_d%27En_Vau-Cassis.jpg" alt="Calanque d&#x27;En Vau near Cassis" loading="lazy"><div class="sl-rank">EX</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jun 14–23</span><span class="sl-score" aria-label="Rated 33 out of 50"><b>33</b><span>/50<small>rating</small></span></span><span class="sl-pto">6 PTO</span></div>
+          <div class="sl-titlerow"><h3>Southern France</h3><span class="sl-nights"><b>8</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">Legitimate short-trip pick: Riviera, Cassis, Aix, Avignon/Pont du Gard, zero internal flights, three easy bases. Excluded by family decision &mdash; kept here for reference.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Nice → Cassis → Aix-en-Provence</div><div><span class="lbl">Budget</span><br>$9.6k–14.2k</div><div><span class="lbl">Swim</span><br>~70°F Med</div><div><span class="lbl">Bases</span><br>3 bases</div></div>
+          <div class="sl-tags"><span class="bad">Excluded &mdash; family decision</span><span>Shortest Europe</span><span>No flights</span><span class="warn">Less variety</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/california-pacific-coast/index.html">
+        <div class="sl-photo"><img src="https://images.unsplash.com/photo-1543357480-aa52c53a422a?w=1200&q=80&auto=format&fit=crop" alt="California Pacific Coast" loading="lazy"><div class="sl-rank">EX</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jul 1–13</span><span class="sl-score" aria-label="Rated 29 out of 50"><b>29</b><span>/50<small>rating</small></span></span><span class="sl-pto">7 PTO</span></div>
+          <div class="sl-titlerow"><h3>California Pacific Coast</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">Best no-passport road trip: San Diego, Santa Barbara, Big Sur, Monterey/Carmel, San Francisco, and major sights &mdash; but cold water, and we've done California before (novelty 1). Excluded by family decision &mdash; kept here for reference.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>SAN → Santa Barbara → Monterey → SFO</div><div><span class="lbl">Budget</span><br>$9.3k–16.2k</div><div><span class="lbl">Swim</span><br>66–68°F SoCal; colder N</div><div><span class="lbl">Bases</span><br>4 bases</div></div>
+          <div class="sl-tags"><span class="bad">Excluded &mdash; family decision</span><span>Domestic</span><span>No passport</span><span class="bad">Cold water</span></div>
+        </div>
+      </a>
+      <a class="sl-card" href="locations/balkans/index.html">
+        <div class="sl-photo"><img src="https://images.unsplash.com/photo-1614122027743-50a9e6e8002f?w=1200&q=80&auto=format&fit=crop" alt="Bay of Kotor" loading="lazy"><div class="sl-rank">EX</div></div>
+        <div class="sl-body">
+          <div class="sl-meta"><span class="sl-dates">Jul 1–14</span><span class="sl-score" aria-label="Rated 30 out of 50"><b>30</b><span>/50<small>rating</small></span></span><span class="sl-pto">8 PTO</span></div>
+          <div class="sl-titlerow"><h3>Balkan Coast Road Trip</h3><span class="sl-nights"><b>12</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+          <p class="sl-desc">Highest-adventure route: Mostar, Blagaj, Kravica, Kotor, Perast, Ksamil, Blue Eye, and Corfu in one July arc. Excluded by family decision &mdash; kept here for reference.</p>
+          <div class="sl-div"></div>
+          <div class="sl-logi"><div><span class="lbl">Route</span><br>Dubrovnik → Mostar → Kotor → Ksamil → Corfu</div><div><span class="lbl">Budget</span><br>$10.6k–16.8k</div><div><span class="lbl">Swim</span><br>Bay/Ionian ~76–79°F</div><div><span class="lbl">Bases</span><br>4 bases</div></div>
+          <div class="sl-tags"><span class="bad">Excluded &mdash; family decision</span><span>Most adventurous</span><span class="warn">Logistics-heavy</span></div>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+  </section>
+
+  <section id="decision">
+    <p class="eyebrow">Decision Console</p>
+    <h2>Choose the priority</h2>
+    <p>The default ranking uses Budget at double weight plus Weather, Swim, Variety, Ease, Food, Risk, Nights, and Novelty; PTO is displayed and available for custom weighting. <b>Portugal</b> leads at 41/50 because its reconciled range stays below the $12k target. <b>Madeira + Mallorca</b> is the top hybrid at 39, followed by <b>Portugal + Sicily</b> at 37 and <b>Iceland</b> at 36. Scores remain provisional where exact 2027 schedules or preference-fit quotes are still unverified. <b>Albania</b>, <b>Balkans</b>, <b>California</b>, <b>Canary Islands</b>, <b>Croatia</b>, <b>Southern France</b>, and <b>Turkish Riviera</b> are excluded by family decision. Click a row to highlight that trip in the scoreboard.</p>
+    <div class="matrix-wrap">
+      <table class="decision-table"><thead><tr><th>If you're optimizing for&hellip;</th><th>Winner</th><th>Runner-up</th><th>Why</th></tr></thead><tbody>
+        <tr class="decision-row on" data-priority="balanced" data-trip="portugal"><td><b>Best Overall On The Data</b></td><td>Portugal</td><td>Madeira + Mallorca</td><td>Portugal leads at 41/50 because its reconciled $7.5k&ndash;11.7k range stays below the $12k target while preserving 12 nights and three bases. Madeira + Mallorca is the #2 hybrid at 39/50 with warmer water, stronger contrast, and an $11.8k&ndash;14.8k within-preference band.</td></tr>
+        <tr class="decision-row" data-priority="hiking" data-trip="madeira-mallorca"><td><b>Best Epic Scenery + Hiking</b></td><td>Madeira + Mallorca</td><td>Madeira + Crete</td><td>Madeira's Arieiro&ndash;Ruivo ridge, levadas, and Porto Moniz are the strongest scenery/hiking week on the board; among the Madeira hybrids, Mallorca is the only version whose audited high case stays under the $15k preferred maximum. Madeira + Crete keeps the same hiking week but reaches $16.8k.</td></tr>
+        <tr class="decision-row" data-priority="bestofboth" data-trip="portugal-crete"><td><b>Best of Both, Calmest Version</b></td><td>Portugal + Crete</td><td>Portugal + Sicily</td><td>The mainland openers are the low-drama hybrids: no FNC wind risk, fewer legs, lower floors. Crete wins on cost/simplicity (3 bases, 8 PTO); Sicily wins on the full Cefalu&ndash;Ortigia&ndash;Taormina sweep but carries fragile air.</td></tr>
+        <tr class="decision-row" data-priority="pure" data-trip="hawaii"><td><b>Best Warm Water Overall</b></td><td>Hawaii</td><td>Turkish Riviera</td><td>Hawaii's 78&ndash;80&deg;F Pacific and Turkey's 75&ndash;79&deg;F sea are the only two genuinely warm swims on the board (swim 5) &mdash; every June Med trip sits at 70&ndash;74&deg;F (swim 3&ndash;4). Hawaii's own budget rollup ($11k&ndash;15.8k) crosses the preferred maximum at the high end; Turkey's brutal June air heat (Antalya 87&ndash;95&deg;F) keeps its overall score at #11 despite the warm sea.</td></tr>
+        <tr class="decision-row" data-priority="value" data-trip="portugal"><td><b>Best Value</b></td><td>Portugal</td><td>Spain</td><td>Portugal is the cheapest complete ranked route ($7.5k&ndash;11.7k) and the only full band below target. Spain's $8.8k&ndash;14.8k band is the next within-preference value case, though its unitemized contingency and nine PTO days keep it well behind Portugal.</td></tr>
+        <tr class="decision-row" data-priority="europe" data-trip="sardinia"><td><b>Best Europe If Novelty Matters</b></td><td>Sardinia &amp; Corsica</td><td>Sicily &amp; Malta</td><td>Both are 5/5-novelty Italy-family routes at ordinary June Mediterranean temperatures (72&ndash;75&deg;F, swim 3); Sardinia/Corsica pairs that with dramatic limestone coves but reaches $16.8k. Sicily &amp; Malta adds Etna and Malta lagoons with a $15.8k high case. Salento-Amalfi is less novel because Capri and the Puglia towns repeat prior travel.</td></tr>
+        <tr class="decision-row" data-priority="warm-europe" data-trip="turkey"><td><b>Best Warm-Water Europe-Style Trip</b></td><td>Turkish Riviera</td><td>Portugal + Crete</td><td>Turkey has the warmest non-Hawaii sea on the board (75&ndash;79&deg;F, swim 5), but June heat, long-haul airfare, the scoped advisory, and a ~$17.4k high case hold it to #11. Portugal + Crete is the calmer runner-up, with Crete's 73&ndash;74&deg;F sea and a lower planning high.</td></tr>
+        <tr class="decision-row" data-priority="italy" data-trip="italy"><td><b>Best Italy Option</b></td><td>Italy: Salento-Amalfi</td><td>Sardinia &amp; Corsica</td><td>Salento/Maratea/Amalfi has the strongest food and route variety, plus the warmer swim (Amalfi/Capri, swim 4 vs Sardinia/Corsica's swim 3); Sardinia/Corsica counters with dramatic limestone coves and a short Corsica ferry.</td></tr>
+        <tr class="decision-row" data-priority="swim" data-trip="hawaii"><td><b>Best Swim Overall</b></td><td>Hawaii</td><td>Turkish Riviera</td><td>Hawaii's 78-80&deg;F Pacific water ties Turkey's sea as the only two swim-5 water temps on the board; Hawaii wins on overall fit since Turkey's brutal June heat keeps it at #11.</td></tr>
+        <tr class="decision-row" data-priority="food" data-trip="italy"><td><b>Best Picky-Eater Food</b></td><td>Italy: Salento-Amalfi</td><td>Sicily &amp; Malta</td><td>Sicily/Malta is extremely safe for plain food, but the simpler three-base route nudges Italy ahead; both cross the preferred maximum without clean quotes.</td></tr>
+        <tr class="decision-row" data-priority="history" data-trip="spain"><td><b>Best Architecture &amp; History</b></td><td>Spain</td><td>Italy: Salento-Amalfi</td><td>Spain still concentrates the strongest Alhambra/Mezquita/Alcazar package; Italy counters with Herculaneum, Lecce, Amalfi, and Capri.</td></tr>
+        <tr class="decision-row" data-priority="domestic" data-trip="california"><td><b>Best Domestic Road Trip</b></td><td>California Pacific Coast</td><td>Hawaii</td><td>California would win if passport-free mainland driving is the brief, but it is excluded by family decision (kept here for reference). Hawaii is the closest ranked no-passport alternative, though it's a beach trip, not a road trip.</td></tr>
+        <tr class="decision-row" data-priority="adventure" data-trip="turkey"><td><b>Most Adventurous</b></td><td>Turkish Riviera</td><td>Balkans</td><td>Balkans has the biggest frontier feel but is excluded by family decision (kept here for reference); Turkey is the closest ranked adventure-lite alternative with a cleaner three-base route.</td></tr>
+      </tbody></table>
+    </div>
+  </section>
+
+  <section id="scoreboard">
+    <p class="eyebrow">Scoreboard</p>
+    <h2>Fast read on the tradeoffs</h2>
+    <div class="rubric-note"><b>How these scores work:</b> Budget is weighted <b>double</b> against your $12k target / $15k strongly preferred maximum; Weather, Swim, Variety, Ease, Food, Risk, <b>Nights</b>, and <b>Novelty</b> are each rated 1-5 once. Total is out of 50 (PTO is tracked as data but not part of the default total). <b>Nights</b> rewards trip length: 12+ nights &rarr; 5, 11 &rarr; 4, 10 &rarr; 3, 9 &rarr; 2, 8 or fewer &rarr; 1 &mdash; more vacation for the same overhead. <b>Novelty</b> scores route overlap against the places already visited (California, Maui, Polignano a Mare, Monopoli, Alberobello, Matera, Ostuni, Locorotondo, Bari, Split, Dubrovnik, Hvar, Santorini, Mykonos, Rhodes, Positano, Capri, Naples): 5 = genuinely new, 1 = mostly repeats. Card order follows this table; default ties prefer a range within the budget preference, then fewer PTO days, then lower budget ceiling and floor. Cost never removes an itinerary. One explicit exception: <b>Croatia is excluded by family decision (2026 repeat)</b> &mdash; its score stays visible, but it sits unranked at the bottom. Date labels use valid 2027 windows.</div>
+    <div class="score-legend"><span class="good"><i></i>Green = preferred / strong</span><span class="mixed"><i></i>Amber = workable tradeoff</span><span class="weak"><i></i>Rust = weak fit</span></div>
+    <div id="scenario-panel" class="scenario-panel" hidden></div>
+    <div id="filter-bar" class="filter-bar" hidden></div>
+    <div id="weight-panel" class="weight-panel" hidden></div>
+    <div id="compare-bar" class="compare-bar" hidden></div>
+    <div class="matrix-wrap"><table class="compare-table scoreboard"><thead><tr><th data-sort="trip">Trip</th><th data-sort="budget">Budget (&times;2)</th><th data-sort="weather">Weather</th><th data-sort="swim">Swim</th><th data-sort="variety">Variety</th><th data-sort="ease">Ease</th><th data-sort="food">Food</th><th data-sort="risk">Risk</th><th data-sort="nights">Nights</th><th data-sort="novelty">Novelty</th><th data-sort="pto">PTO</th><th data-sort="total">Total /50</th></tr></thead><tbody>
+{% include "hub/scoreboard.njk" %}
+</tbody></table></div>
+  </section>
+
+  <section id="length">
+    <p class="eyebrow">Length Verdicts</p>
+    <h2>Where the days are doing real work</h2>
+    <div class="budget-scroll"><table class="budget-tbl length-table"><tr><th>Trip</th><th>Length verdict</th><th>Why it matters</th></tr>
+      <tr><td><b>Portugal</b></td><td>12 nights is right.</td><td>Three bases stay calm; the cold-water issue does not improve enough by cutting or stretching the route.</td></tr>
+      <tr><td><b>Madeira + Crete</b></td><td>13 nights away / 12 hotel nights is right.</td><td>Four Funchal nights buy two weather shots at a clear Arieiro summit; the Lisbon buffer night is wind insurance, not a base; Chania 5 + Rethymno 2 is the honest squeeze it costs.</td></tr>
+      <tr><td><b>Madeira + Sicily</b></td><td>13 nights away / 12 hotel nights, and it is maxed out.</td><td>Five Funchal nights plus the Tuesday LIS-PMO hinge force Sicily down to six nights and two bases; there is no room left to re-add Ortigia without breaking the budget or the calendar.</td></tr>
+      <tr><td><b>Portugal + Crete</b></td><td>13 nights away / 12 hotel nights is right.</td><td>Five Portugal + seven Crete nights is the honest balance: Cascais 5, Chania 4, Rethymno 3. It keeps the signature Crete water days and one realistic gorge without reducing Portugal to a stopover.</td></tr>
+      <tr><td><b>Portugal + Sicily</b></td><td>12 hotel nights is right, but it is the busiest 12.</td><td>Five Portugal + seven Sicily nights across three bases is the max before transfer days start crowding out beach days; do not add a fourth base.</td></tr>
+      <tr><td><b>Hawaii</b></td><td>9 hotel nights plus red-eye is tight but efficient.</td><td>One more hotel night improves comfort but pushes harder against the preferred maximum.</td></tr>
+      <tr><td><b>Italy: Salento-Amalfi</b></td><td>12 nights is experientially right; 11 nights is the preference-fit trim.</td><td>The Sorrento/Campania leg is the budget pressure point.</td></tr>
+      <tr><td><b>Turkish Riviera</b></td><td>12 nights is right.</td><td>Antalya wants 3, Kas/Kalkan wants 4, and Fethiye/Oludeniz wants 5 to avoid rushing the best water days.</td></tr>
+      <tr><td><b>Croatia</b></td><td>12 nights is still right.</td><td>The issue is not length; it is whether repeating Croatia right after last year's trip is worth it.</td></tr>
+      <tr><td><b>Southern France</b></td><td>8 nights is the correct short version.</td><td>Expanding it weakens the budget case without solving swim-water limitations.</td></tr>
+      <tr><td><b>Balkans</b></td><td>12 hotel nights is the defensible version.</td><td>The July 1-14 correction preserves the route, but price discipline now matters more than length.</td></tr>
+    </table></div>
+  </section>
+
+  <section id="winners">
+    <p class="eyebrow">Category Winners</p>
+    <h2>What wins each decision</h2>
+    <div class="winner-grid">
+      <article class="winner-card"><h3>Overall recommendation</h3><p><b>Portugal</b> leads at 41/50: the strongest budget headroom, 12 nights, three bases, and high novelty. It remains conditional on proving the exact Faro&ndash;Funchal date and accepting cool Atlantic swimming. <b>Madeira + Mallorca</b> is the top hybrid at 39/50, subject to exact 2027 air and through-ticket verification.</p></article>
+      <article class="winner-card"><h3>Best of both worlds</h3><p><b>Madeira + Mallorca</b> is now the cleanest answer: Madeira hiking plus a warm swim, no Crete/Sicily leg needed, and within-preference. <b>Portugal + Crete</b> is the calmer, mainland-opener alternative if the Madeira ridge week isn't a must-have. <b>Madeira + Crete</b> adds the Stairway to Heaven week but now crosses the preferred maximum.</p></article>
+      <article class="winner-card"><h3>Epic scenery + hiking</h3><p><b>Madeira + Mallorca</b> &mdash; the same Arieiro-above-the-clouds, 25 Fontes, Porto Moniz week, paired with a Mediterranean swim that keeps the whole trip under the $15k preferred maximum. <b>Madeira + Crete</b> and <b>Madeira + Sicily</b> offer the same hiking but both now cross the preferred maximum.</p></article>
+      <article class="winner-card"><h3>Pure score</h3><p><b>Portugal</b> at 41/50, then <b>Madeira + Mallorca</b> at 39 and <b>Portugal + Sicily</b> at 37. <b>Hawaii</b> is #12 at 32/50: its $11k&ndash;15.8k range crosses the preferred maximum and it delivers only nine hotel nights.</p></article>
+      <article class="winner-card"><h3>Best Italy route</h3><p><b>Italy: Salento-Amalfi</b> because it has the best food/variety stretch, even after the budget drift made it a preference-fit trim decision.</p></article>
+      <article class="winner-card"><h3>Warm-water Europe</h3><p><b>Turkish Riviera</b> has the warmest non-Hawaii sea on the board (75&ndash;79&deg;F) and a clean three-base AYT-to-DLM route. It ranks #11 at 33/50 because heat, long-haul airfare, the scoped advisory, and a ~$17.4k high case offset the swim advantage.</p></article>
+      <article class="winner-card"><h3>Best Europe value</h3><p><b>Croatia</b> wins value on paper ($8.6k&ndash;12.8k) but is excluded &mdash; 2026 repeat, novelty 1/5. <b>Greece via Lisbon</b> ($9.9k&ndash;15.6k) has the next-lowest floor, though its ceiling now also crosses the preferred maximum.</p></article>
+      <article class="winner-card"><h3>Best food</h3><p><b>Italy: Salento-Amalfi</b> edges Sicily/Malta once route simplicity and family preference are considered.</p></article>
+      <article class="winner-card"><h3>Best domestic</h3><p><b>California Pacific Coast</b> would be the pick for passport-free mainland driving, but it is excluded by family decision (kept for reference); no ranked trip fills the road-trip niche.</p></article>
+      <article class="winner-card"><h3>Most adventurous</h3><p><b>Balkans</b> has the biggest adventure arc but is excluded by family decision (kept for reference); <b>Turkish Riviera</b> is the cleanest ranked adventure-lite alternative.</p></article>
+    </div>
+  </section>
+
+  <section id="matrix">
+    <p class="eyebrow">Full Comparison</p>
+    <h2>The practical call</h2>
+    <div class="budget-scroll"><table class="budget-tbl matrix-tbl"><colgroup><col style="width:13%"><col style="width:29%"><col style="width:27%"><col style="width:31%"></colgroup><tr><th>Option</th><th>Best reason to choose it</th><th>Reason to hesitate</th><th>Decision</th></tr>
+      <tr><td><b>Madeira + Mallorca</b></td><td>Four nights of world-class ridge hiking (Arieiro-Ruivo, 25 Fontes, Sao Lourenco), then a sandy Mediterranean swim in Mallorca (Playa de Muro, Alcudia, Formentor).</td><td>Six-stop chain including a Lisbon buffer night; FNC wind risk and exact 2027 operating days still need verification.</td><td><b>#2 at 39/50: the highest-scoring hybrid, with an $11.8k-14.8k within-preference band.</b></td></tr>
+      <tr><td><b>Portugal</b></td><td>Best budget fit, three calm bases, Madeira and Algarve scenery, and the simplest flight family.</td><td>Cool Atlantic water and an exact-date Faro-Funchal fare/schedule gate.</td><td><b>#1 at 41/50: the only plan whose full $7.5k-11.7k audited band stays under the $12k target.</b></td></tr>
+      <tr><td><b>Madeira + Crete</b></td><td>Madeira ridge hiking, then Crete's 73-74&deg;F sea, the warmest water among the Madeira hybrids.</td><td>Long flight chain, FNC wind exposure, and a $12.1k-16.8k band above the preferred maximum at the high end.</td><td><b>#13 at 32/50: strong scenery and water, but weaker value and logistics than Mallorca.</b></td></tr>
+      <tr><td><b>Madeira + Sicily</b></td><td>Five Madeira nights for better summit odds, then Cefalu, Taormina, Isola Bella, and Etna.</td><td>The $12.3k-15.5k high case crosses the preferred maximum, FNC adds weather risk, and the exact June Lisbon-Palermo handoff remains unproven.</td><td><b>#14 at 31/50: only if Madeira hiking plus Etna clearly beats the easier hybrids.</b></td></tr>
+      <tr><td><b>Portugal + Sicily</b></td><td>The mainland Italy hybrid: Cascais/Sintra opener, then the full Cefalu-Ortigia-Taormina-Etna sweep at 72-75&deg;F.</td><td>Four bases; the current Friday Lisbon-Palermo pattern is not proof of the exact June 2027 flight, and Taormina lodging pressures the $14.7k ceiling.</td><td><b>#3 at 37/50: the best full-Sicily version, conditional on the handoff quote.</b></td></tr>
+      <tr><td><b>Iceland</b></td><td>Waterfalls, glacier walks, black-sand beaches, Jokulsarlon icebergs, and warm geothermal pools; the sea itself is not a family swim.</td><td>Cool, wet weather and a $14.7k ceiling leave little room; the exact 2027 nonstop pattern must be quoted before booking.</td><td><b>#4 at 36/50: the strongest non-Mediterranean scenery option.</b></td></tr>
+      <tr><td><b>Portugal + Crete</b></td><td>Fixes Portugal's cold water at only three bases: Balos, Elafonissi, Chania, Rethymno, and Imbros.</td><td>The protected-ticket chain needs exact-date proof and the $11.2k-15.4k band crosses the preferred maximum at the high end.</td><td><b>#5 at 35/50: the warm-water Portugal alternative, conditional on airfare.</b></td></tr>
+      <tr><td><b>Hawaii</b></td><td>No passport, the warmest water, snorkeling, volcano landscapes, and history.</td><td>Only nine hotel nights, a long PIT haul, red-eye recovery, and an $11.0k-15.8k band.</td><td><b>#12 at 32/50: choose it when warm water outweighs trip length and cost risk.</b></td></tr>
+      <tr><td><b>Italy: Salento-Amalfi</b></td><td>Food, beaches, Maratea, Capri, Amalfi/Ravello, Procida, and only three bases.</td><td>The $13.2k-16.4k band crosses the preferred maximum; the preference-fit version depends on clean flights, car, and Sorrento lodging.</td><td><b>#8 at 34/50: the best pure-Italy stretch if quotes cooperate.</b></td></tr>
+      <tr><td><b>Dolomites + Sardinia</b></td><td>The strongest mountain-and-sea contrast: Dolomite hiking followed by Sardinian coves.</td><td>Nine PTO days, complex north-to-island logistics, and the board's highest credible ceiling at $18.9k.</td><td><b>#9 at 34/50: a scenery-first stretch, not a budget-safe recommendation.</b></td></tr>
+      <tr><td><b>Turkish Riviera</b></td><td>The warmest non-Hawaii sea on the board (75-79&deg;F), plus Antalya ruins, Kas/Kalkan coves, Kekova, Saklikent, and Oludeniz.</td><td>June heat, long PIT logistics, and a $10.0k-17.4k band with substantial overage risk.</td><td><b>#11 at 33/50: the warm-water wild card when heat is an acceptable tradeoff.</b></td></tr>
+      <tr><td><b>Sardinia &amp; Corsica</b></td><td>Dramatic limestone coastline and clear coves at ordinary June Mediterranean temperatures (72-75&deg;F).</td><td>Four bases, ferry/cross-border car rules, and a $10.7k-16.8k planning band.</td><td><b>#13 at 32/50: choose it for coastline, not simplicity or assured warm water.</b></td></tr>
+      <tr><td><b>Canary Islands</b></td><td>Madeira's ecological twin: Macaronesian laurel forest and Teide's volcanic desert on Tenerife, then La Palma's Caldera de Taburiente.</td><td>Connectivity is the tradeoff, not the upgrade &mdash; Pittsburgh to Tenerife/La Palma typically runs three connections via Madrid, versus Madeira's single-stop United EWR-FNC nonstop.</td><td><b>#16 at 31/50: choose it for the ecological novelty, not for easier flights.</b></td></tr>
+      <tr><td><b>Croatia</b></td><td>Best proven Europe value and a route you already know works.</td><td>You just did Croatia last year, and Italy/Turkey offer more novelty this time.</td><td><b>Excluded by decision: cheap and warm, but novelty 1/5 &mdash; it repeats the 2026 trip.</b></td></tr>
+      <tr><td><b>Greece via Lisbon</b></td><td>Lisbon plus Athens and Crete delivers iconic history, old towns, hiking, and warmer water.</td><td>The $10.8k-16.9k band crosses the preferred maximum, and the current published proxy has no Tuesday Athens-Lisbon return; the route needs a reroute.</td><td><b>#10 at 33/50: do not book the current flight sketch.</b></td></tr>
+      <tr><td><b>Sicily &amp; Malta</b></td><td>Food-and-variety route with beaches, Etna, Ortigia, and Malta lagoons.</td><td>Four-base complexity and a $10.4k-15.8k band above the preferred maximum at the high end.</td><td><b>#6 at 35/50: compelling, but less route-simple than the higher hybrids.</b></td></tr>
+      <tr><td><b>Spain</b></td><td>Best architecture/history option with a train-plus-drive route and a within-preference $8.8k-14.8k band.</td><td>Heat, timed Alhambra booking, nine PTO days, and a low-confidence contingency near the preferred maximum.</td><td><b>#7 at 34/50: the culture-forward value option.</b></td></tr>
+      <tr><td><b>Southern France</b></td><td>Shortest Europe option with zero internal flights.</td><td>Reduced variety and only moderate swim-water fit.</td><td><b>Excluded by family decision; kept for reference.</b></td></tr>
+      <tr><td><b>California Pacific Coast</b></td><td>Best mainland no-passport road trip with 12 hotel nights.</td><td>Cold water outside San Diego, a long road-trip load, and a $16.2k credible high case above the preferred maximum.</td><td><b>Excluded by family decision; kept for reference.</b></td></tr>
+      <tr><td><b>Balkans</b></td><td>Most adventurous and water-rich route, now fixed to Jul 1-14, 2027.</td><td>July peak pricing, cross-border car rules, long drives, ferry timing, and family-friction risk.</td><td><b>Excluded by family decision; kept for reference.</b></td></tr>
+    </table></div>
+    <p class="source-note">Comparison basis: 22 plans (13 ranked, 9 excluded by family decision) across an early-June-to-August planning range. Jun 6 is the nominal start, with Spain (Jun 3) and Hawaii (Jun 5) retained as explicit early-departure options. A Jun 23 return to Pittsburgh is acceptable and preferred, including an evening arrival; the only hard calendar rule is that the family must be in Pittsburgh all day Jun 24-26. Budgets are planning bands, not booking quotes, and several high cases exceed the $15k preferred maximum. Exact 2027 seasonal schedules remain verification gates, especially Greece's return, the Lisbon-Palermo handoffs, and Madeira nonstop patterns. Portugal + Algarve + Sicily is the scenery-first, higher-mobility alternative to Portugal + Sicily: it preserves Sicily’s payoff but adds an Algarve rental/backtrack and a critical schedule gate.</p>
+  </section>
+
+  <section id="risks">
+    <p class="eyebrow">Plan Health-Check</p>
+    <h2>Risks worth keeping visible</h2>
+    <ul class="hc-list">
+      <li class="fixed"><strong>The bias is retired.</strong> The Portugal/Italy preference no longer touches the ranking &mdash; under the old order it was worth up to ten rank positions (Madeira + Sicily sat #5 despite the board's worst risk score). Hearts still say Portugal/Italy; the data says <b>Portugal</b> first at 41, Madeira + Mallorca second at 39, Portugal + Sicily third at 37, and Iceland fourth at 36 &mdash; all still June-Med swim 3, since genuine warm water only shows up at Turkey's sea and Hawaii.</li>
+      <li class="solid"><strong>Hybrids resolve the core tension.</strong> All five hybrids keep a Portugal opener and hand the swimming to warm water elsewhere. Madeira openers buy epic hiking at the cost of extra flight legs and FNC wind risk; mainland openers stay calm and cheap. Crete and Sicily legs feed the Italy/Greece bias but press the preferred maximum; the newest hybrid, Madeira + Mallorca, is the only one that keeps the Madeira hiking week and stays within-preference.</li>
+      <li class="head"><strong>Madeira runs on gates and buffers.</strong> Every Madeira variant only works as designed: one protected ticket, the Lisbon buffer night before the onward hop (FNC wind delays peak in summer), and a hard family-airfare gate. The Sicily variants also ride a thinned-out air map: Ryanair exited Lisbon&ndash;Palermo in Nov 2024, leaving an easyJet monopoly with no low-cost floor &mdash; though Catania does carry a seasonal Delta JFK nonstop (Apr&ndash;Oct), so the fragile leg is the Lisbon&ndash;Palermo fare, not the US connection.</li>
+      <li class="act"><strong>Italy drifted expensive.</strong> The Salento-Maratea-Amalfi file now reads ~$13.2k-16.4k realistic, with a preference-fit trim around ~$12.4k-14.8k. It is a stretch finalist, not a budget-safe pick.</li>
+      <li class="act"><strong>Hawaii's own rollup crosses the preferred maximum.</strong> The scoreboard used to say $10.6k&ndash;14.4k; Hawaii's line-item budget table sums to ~$11k&ndash;15.8k with insurance. Combined with only 9 hotel nights and a been-there Maui factor, it now sits #12 even before quotes land.</li>
+      <li class="head"><strong>Turkey is a warm-water wild card, not the automatic winner.</strong> The Turkish Riviera has the warmest non-Hawaii sea on the board, but June heat, long-haul airfare, the scoped advisory, and a reconciled high case near $17.4k hold it to #11 at 33/50.</li>
+      <li class="fixed"><strong>Croatia is excluded outright.</strong> Croatia scores 35/50 at the best warm-water price, but the family did Croatia in 2026 and this route repeats Split/Hvar/Korčula. Excluded from the recommendation by explicit decision; the row stays on the scoreboard for reference.</li>
+      <li class="act"><strong>The Pittsburgh commitment drives the date math.</strong> Returning on Jun 23 is valid and preferred; every plan must keep the family in Pittsburgh for the full days Jun 24-26. Some plans still use Jun 9-22 for schedule or price reasons, while Balkans and California move into early July.</li>
+      <li class="head"><strong>Complexity still matters.</strong> Sardinia/Corsica, Sicily/Malta, Greece via Lisbon, and the Balkans all offer major variety, but each adds either ferry, cross-border, flight-chain, or four-base friction. Balkans also picked up July peak-pricing risk.</li>
+    </ul>
+  </section>
+
+  <section id="considered">
+    <p class="eyebrow">Options Considered</p>
+    <h2>The "Madeira-variety" exploration &mdash; combos we weighed</h2>
+    <details class="considered-box">
+      <summary>Every epic-hiking / swim-variety combo we discussed, and why most weren't built</summary>
+      <p class="considered-intro">Sparked by Madeira's mid-trip flight friction plus wanting a leg with epic hiking and dramatically different scenery <em>and</em> good swimming &mdash; while staying novel against the Mediterranean-beach board and our recent Mexico trip. Captured here so we don't lose the thread.</p>
+
+      <h3 class="considered-h">Built / in progress</h3>
+      <ul class="considered-list">
+        <li><strong>Canary Islands</strong> (Tenerife + La Palma) &mdash; <span class="st st-go">built, ranked #16 (31/50)</span> Madeira's ecological twin (Macaronesian laurel forest + Teide volcano) &mdash; but flight connectivity is the tradeoff, not the upgrade: Pittsburgh to Tenerife/La Palma typically runs three connections via Madrid, versus Madeira's single-stop United EWR&ndash;FNC nonstop.</li>
+        <li><strong>Albania</strong> (Accursed Mountains: Theth/Valbona + the Riviera: Ksamil) &mdash; <span class="st st-go">built, scores highest (44/50), excluded by family decision</span> The best <em>warm-sea + novel</em> pick: alpine drama + Caribbean-clear swimming, cheap, one-country ground transport, no island-hop trap.</li>
+        <li><strong>Madeira + Mallorca</strong> &mdash; <span class="st st-go">built, top hybrid #2 (39/50)</span> The Madeira ridge-hiking week paired with a sandy Mediterranean swim in Mallorca instead of a second Atlantic or Greek leg &mdash; the only Madeira hybrid whose audited high case stays within the preferred maximum.</li>
+        <li><strong>Dolomites + Venice + Sardinia</strong> &mdash; <span class="st st-go">built, ranked #9 (34/50)</span> Best pure epic-hiking (Tre Cime, Seceda) with a Venice opener and an epic-beach Sardinia finale. Landlocked hiking half = the variety.</li>
+        <li><strong>Iceland</strong> (Reykjavík + Golden Circle + South Coast + Jökuls&aacute;rl&oacute;n) &mdash; <span class="st st-go">built, #4 on the data (36/50)</span> The most novel-looking option &mdash; nothing like the Med board or Mexico. Swim = warm geothermal lagoons, not the (cold) sea.</li>
+      </ul>
+
+      <h3 class="considered-h">Prompts drafted, not yet built</h3>
+      <ul class="considered-list">
+        <li><strong>Crete &mdash; add epic hiking</strong> (Samaria Gorge, Imbros, Lefka Ori) &mdash; <span class="st st-draft">prompt ready</span> Not a new trip &mdash; an enhancement to the existing Crete legs so Crete alone carries the Madeira mountain-vs-sea variety with zero Atlantic flight.</li>
+      </ul>
+
+      <h3 class="considered-h">Considered, set aside</h3>
+      <ul class="considered-list">
+        <li><strong>Costa Rica</strong> (Arenal + Monteverde + Manuel Antonio) &mdash; <span class="st st-no">off the table</span> A complete plan already existed, but it photographs like Yucat&aacute;n/Riviera Maya &mdash; no novelty right after a Mexico trip. The look is structural (beach + jungle), so a rebuild wouldn't fix it.</li>
+        <li><strong>Slovenia</strong> (Julian Alps + So&ccaron;a + Bled) &mdash; <span class="st st-no">not built</span> Genuinely novel emerald-alpine look and cheap, but the swim is turquoise river/glacial lakes, not warm sea.</li>
+        <li><strong>Swiss Bernese Oberland</strong> (Lauterbrunnen + glacial lakes) &mdash; <span class="st st-no">not built</span> Epic and unique, but pushes hard past the $15k preferred maximum &mdash; the likely budget-breaker.</li>
+        <li><strong>Greek mainland</strong> (Zagori/Vikos + Pelion) &mdash; <span class="st st-no">not built</span> Deepest-gorge + stone-village hiking is novel, but it's still Greece (we have Crete) and the Aegean beaches read Med.</li>
+        <li><strong>Montenegro</strong> (Durmitor + Bay of Kotor) &mdash; <span class="st st-no">not built</span> Epic canyon + warm sea, but likely overlaps the existing Balkans road-trip and the coast looks Med.</li>
+        <li><strong>Azores</strong> &mdash; <span class="st st-no">rejected</span> Same via-Lisbon Atlantic bottleneck as Madeira &mdash; doesn't fix the connectivity problem that started all this.</li>
+      </ul>
+
+      <p class="considered-note">Also noted along the way: <strong>Corsica</strong> (already on the board inside Sardinia + Corsica) and <strong>Crete</strong> are the closest "Madeira mountain-vs-sea substitute you may already own." The recurring tension: Albania took the best warm-sea-and-novel slot, so what's left trades warm ocean (Iceland/Slovenia/Switzerland = lagoon/river/lake swim) or partly echoes the Med board (Greece/Montenegro).</p>
+    </details>
+  </section>
+</main>
+
+<style>
+#considered .considered-box{border:1px solid rgba(128,128,128,.28);border-radius:12px;padding:0 1.25rem;margin-top:1rem;background:rgba(128,128,128,.04)}
+#considered .considered-box>summary{cursor:pointer;font-weight:600;padding:1rem 0;list-style:none}
+#considered .considered-box>summary::-webkit-details-marker{display:none}
+#considered .considered-box>summary::before{content:"\25B8";display:inline-block;margin-right:.6rem;transition:transform .15s ease}
+#considered .considered-box[open]>summary::before{transform:rotate(90deg)}
+#considered .considered-intro{opacity:.85;margin:.25rem 0 1rem}
+#considered .considered-h{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;opacity:.7;margin:1.25rem 0 .5rem}
+#considered .considered-list{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+#considered .considered-list li{padding:.7rem .9rem;border:1px solid rgba(128,128,128,.2);border-radius:9px;line-height:1.45}
+#considered .st{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:.1rem .5rem;border-radius:999px;margin-right:.45rem;vertical-align:middle}
+#considered .st-go{background:rgba(38,166,91,.16);color:#1e874a}
+#considered .st-draft{background:rgba(214,158,26,.18);color:#a9791a}
+#considered .st-no{background:rgba(128,128,128,.16);color:#6b6b6b}
+#considered .considered-note{margin-top:1.25rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,.2);opacity:.85;font-size:.92rem}
+@media (prefers-color-scheme:dark){ #considered .st-go{color:#5bd58c}#considered .st-draft{color:#e6bd57}#considered .st-no{color:#a0a0a0}}
+</style>
+
+<script src="assets/js/store.js"></script>
+<script src="assets/js/recommendation-engine.js"></script>
+<script src="assets/js/board.js"></script>
+<script src="assets/js/weights.js"></script>
+<script src="assets/js/scenarios.js"></script>
+<script src="assets/js/evidence.js"></script>
+<script src="assets/js/filters.js"></script>
+<script src="assets/js/compare.js"></script>
+<script src="assets/js/meter.js"></script>
+<script src="assets/js/urlstate.js"></script>
+<dialog id="evidence-dialog" class="evidence-dialog" aria-label="Evidence & rationale"><div class="evidence-dialog-content"></div></dialog>
+<script>
+/* Phase 8 — register the offline service worker at the site root so its scope
+   covers the hub + every itinerary page (works under a GitHub Pages subpath). */
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    var p = location.pathname, i = p.indexOf('/locations/');
+    var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
+    navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
+  });
+}
+</script>
+<script>
+function setPriority(key){
+  document.querySelectorAll('.decision-row').forEach(r => r.classList.toggle('on', r.dataset.priority === key));
+  const trip = document.querySelector('.decision-row[data-priority="' + key + '"]')?.dataset.trip;
+  document.querySelectorAll('[data-trip]').forEach(el => el.classList.toggle('is-picked', el.dataset.trip === trip));
+}
+document.querySelectorAll('.decision-row').forEach(r => r.addEventListener('click', () => setPriority(r.dataset.priority)));
+document.querySelectorAll('.compare-table td .rating').forEach(r => {
+  const n = +((r.getAttribute('aria-label') || '').match(/\d+/)?.[0] || 0);
+  const tier = n >= 5 ? 'good' : n >= 3 ? 'mixed' : 'weak';
+  const b = r.nextElementSibling;
+  const td = r.closest('td');
+  if (td) td.classList.add('score-' + tier);
+  const chip = document.createElement('span');
+  chip.className = 'score-chip ' + tier;
+  chip.textContent = n || '–';
+  chip.setAttribute('aria-label', n + ' out of 5');
+  r.replaceWith(chip);
+  if (b && b.tagName === 'B') b.remove();
+});
+document.querySelectorAll('.trip-photo img').forEach(img => {
+  if (img.complete && img.naturalWidth === 0) img.closest('.trip-photo')?.classList.add('img-failed');
+  img.addEventListener('error', () => img.closest('.trip-photo')?.classList.add('img-failed'), { once: true });
+});
+setPriority('balanced');
+</script>
+<script>/*site nav*/(function(){var nav=document.querySelector(".site-nav");if(!nav)return;var menu=nav.querySelector(".site-nav-menu"),summary=nav.querySelector("summary"),box=nav.querySelector(".site-nav-links"),mq=window.matchMedia("(min-width:960px)");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener("change",sync);else mq.addListener(sync);if(summary)summary.addEventListener("click",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^="#"]'));links.forEach(function(a){a.addEventListener("click",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute("href").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:"smooth"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:"smooth"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle("active",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:"-50% 0px -50% 0px",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script>
+</body>
+</html>

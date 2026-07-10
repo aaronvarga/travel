@@ -11,6 +11,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from 'cheerio';
+import { compareDefault } from './lib/recommendation-engine.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const summary = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'trips-summary.json'), 'utf8'));
@@ -24,7 +25,8 @@ for (const t of summary.trips) {
   if (computed !== t.totalBaked) bad.push(`${t.slug}: computed ${computed} != baked ${t.totalBaked}`);
 }
 
-const indexHtml = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
+const indexTarget = process.argv.includes('--site') ? path.join(root, '_site', 'index.html') : path.join(root, 'index.html');
+const indexHtml = fs.readFileSync(indexTarget, 'utf8');
 const $ = load(indexHtml);
 const active = summary.trips
   .filter((trip) => !trip.excluded)
@@ -71,12 +73,6 @@ if (bad.length) {
 console.log(`✓ all ${summary.trips.length} scorecards match baked /50 totals`);
 
 function defaultTripSort(a, b) {
-  const score = b.totalBaked - a.totalBaked;
-  if (score) return score;
-  const cap = summary.budgetTargets.capUsd || 15000;
-  const capClean = Number(a.budget.ceilUsd > cap) - Number(b.budget.ceilUsd > cap);
-  return capClean ||
-    (a.pto.days - b.pto.days) ||
-    (a.budget.ceilUsd - b.budget.ceilUsd) ||
-    (a.budget.floorUsd - b.budget.floorUsd);
+  const weights = Object.fromEntries(summary.axes.map((axis) => [axis.id, axis.weightDefault]));
+  return compareDefault(a, b, summary.axes, weights, summary.budgetTargets);
 }

@@ -1,6 +1,6 @@
 ---
 name: travel-itinerary
-description: Build a complete, repo-native family travel itinerary as a src/_data/<slug>/main.json page for the TravelPlanner Eleventy site — the photo-first hero, PTO/Health-Check analysis, an interactive map, day-by-day cards with photo carousels, an auto activity-block calendar, real researched prices/routes/restaurants, entry docs, packing, pre-departure to-dos, budget, and travel tips, in the exact current visual format of the existing trips (Portugal, Hawaii, Sicily-Malta, Sardinia-Corsica, Canary Islands). Use this skill whenever the user asks to plan a trip, build an itinerary, add a new destination to the comparison, or says things like "build me an itinerary for X", "plan our trip to X", "add X to the trip site", "make a travel doc for X", or names any destination in a family-vacation-planning context — even if they don't mention HTML, JSON, main.json, or the other trips explicitly. Also use it to update/extend a trip previously built this way (new dates, added stop, re-priced budget, better photos).
+description: Build or update a complete, evidence-backed family itinerary for the TravelPlanner Eleventy site. A trip is a repo-native `src/_data/<slug>/` record: `main.json` for the page and scorecard, `evidence.json` for sourced claims and freshness, and `variants.json` for the immutable canonical plan. Use this skill whenever the user asks to plan a trip, build an itinerary, add a destination to the comparison, or update an existing trip's dates, route, price, evidence, or photos.
 ---
 
 # Travel Itinerary Builder
@@ -12,14 +12,17 @@ the two things that actually vary and that the user judges hardest: the **resear
 (real prices, routes, restaurants) and the **photos** (real "wow" shots — see §3,
 this is what the user reacts to first).
 
-Output is a repo-native page: `src/_data/<slug>/main.json`, rendered by
-`src/itinerary.njk` into `locations/<slug>/`. Read `references/main_json_schema.md`
-for the full field/section contract, and build with `scripts/itinerary-helpers.mjs`.
+Output is a repo-native trip record: `src/_data/<slug>/main.json`,
+`evidence.json`, and `variants.json`, rendered by `src/itinerary.njk` into
+`locations/<slug>/`. Read `references/main_json_schema.md` for the page contract,
+then read the checked-in `CLAUDE.md`, `tools/evidence.manifest.json`, and a current
+trip's three data files before writing. Build page structure with
+`scripts/itinerary-helpers.mjs`; use the repo validators as the schema authority.
 
 ## Defaults (use unless the user says otherwise)
 
 - Family of 4, kids 13 & 8 (adjust for the trip year)
-- 11–13 nights, Jun 2027, inside the **Jun 6–Aug 15 2027** window
+- 11–13 nights, Jun 2027; Jun 6–Aug 15 is a nominal planning window, not a hard boundary
 - A return to Pittsburgh on **Jun 23 is acceptable and preferred**, including an evening arrival
 - The family must be in Pittsburgh for the full days **Jun 24–26** — never be traveling or away on those dates
 - Origin: Pittsburgh (PIT)
@@ -44,19 +47,25 @@ saves a PTO day — recompute the actual day-of-week for **this** trip year; don
 a prior trip's calendar. When it lands, it belongs in Health-Check + the "Week Later?"
 (`timing`) section. Don't force it if the dates don't line up.
 
-### 2. Research, in parallel
+### 2. Research, with explicit evidence status
 
 Real research, not placeholder-filling — every price, ticket rule, restaurant, and
-climate figure is something you actually looked up. Spawn one subagent per base/region
-(plus one for flights/getting-around) so it happens in parallel and doesn't fill your
-context. Ask each to report honest confidence flags ("current 2026 data" vs.
-"estimated") rather than one confident-sounding number.
+climate figure is something you actually looked up. Parallelize by base/region and
+flights/getting-around when the active workflow permits it. Every research result must
+carry an honest status: direct/current, historical proxy, derived from the itinerary,
+or unknown — never a confident-sounding estimate presented as a quote.
 
 Every stop needs real numbers for: entry/ticket cost (and timed-entry rules), a
 June air + water/pool temp, 2–3 real restaurants with picky-kid options, a lodging
 band per base, and — the thing users call out hardest — real currently-priced
 flights/ferries/trains, never stale or invented. If you can't find a real range, say
 so and flag it; that beats a confident guess.
+
+For volatile facts (prices, schedules, routes, advisories, reservations, and seasonal
+conditions), retain the primary source URL, a precise locator/what it supports,
+`verifiedAt`, and a realistic `expiresAt` recheck date. A current schedule is only a
+proxy for 2027 service: never call it confirmed or bookable until the exact travel
+date is verified.
 
 ### 3. Source "wow" photos — this makes or breaks the doc
 
@@ -74,8 +83,8 @@ castle" is the failure mode — reach for the one that makes the reader want to 
 - Looks **shot by a photographer**, not a tourist or a municipal tourism board. If it reads like a Wikipedia infobox or a hotel-brochure plate, it's the wrong photo.
 - No date-stamps, watermarks, people mugging at the camera, parking lots, crowds, or scaffolding in frame.
 
-**Sources — Unsplash and Pexels only.** Both are free, professionally curated, and
-hotlinkable. **Do not use Wikimedia/Commons** for hero or stop photos — those read
+**Sources — Unsplash and Pexels only.** Both are free and professionally curated.
+**Do not use Wikimedia/Commons** for hero or stop photos — those read
 as amateur/infobox snapshots and cheapen the whole doc. (`wiki()` exists in the
 helpers strictly as an absolute last resort and should stay unused on a good build.)
 
@@ -89,14 +98,16 @@ harbor at sunset, the trail's payoff view. A stunning shot of the *area* beats a
 literal shot of the *exact spot* every time. Fewer great photos beat more mediocre
 ones — land 2 knockouts rather than pad to 3 with a weak one.
 
-**Do this via subagents too** — one per base/region, each briefed with this rubric so
-they come back with knockouts, not tourism-board filler. Then:
+When parallel research is available, brief one worker per base/region with this rubric
+so the shortlist contains knockouts, not tourism-board filler. Then:
 - Verify every surviving URL with `python3 scripts/verify_images.py` (host-agnostic reachability; rejects `plus.unsplash.com`/`premium_photo`). It proves the URL *resolves* — it can't judge quality; that call is yours, by eye, against the rubric above.
 - **Credits:** each image carries `credit` = `"Photographer Name · Unsplash License"` or `"Photographer Name · Pexels License"`. Grab the photographer name from the search result.
 
 Aim for ~3 images per stop, and a hero carousel that aggregates the trip's very best
 shots (captioned per day). The first hero image is the single most striking shot in
-the whole trip.
+the whole trip. Store approved assets in the repo's image input path and run
+`node tools/optimize-images.mjs`; the deploy uses the generated bounded responsive
+derivatives, not a new final hotlink.
 
 ### 4. Write `tools/create-<slug>.mjs`
 
@@ -122,15 +133,42 @@ Write real prose in every field — no placeholders, no generic filler. Reuse th
 structural judgment calls from existing trips (a travel/transition day is colored by
 the *destination* base you sleep in, not the one you leave; "Also awesome instead"
 alternates are genuinely comparable, not afterthoughts). Set `recommended:false` and
-**omit `scorecard`** for a new trip — it renders as an unranked page; ranking is a
-separate promotion step (§6).
+create the complete scorecard from the outset. The current summary pipeline requires a
+scorecard for every trip in `src/_data/`; exploratory work belongs outside that tree
+until it is ready for deliberate hub integration.
+
+### 4.5 Add the recommendation record before building
+
+Every trip must have these three synchronized records:
+
+- `main.json`: a scorecard with an itemized low/high budget and `totalBaked` derived
+  from Budget ×2 plus the 8 scored axes. Use the shared $12k target and $15k strongly
+  preferred maximum; neither is a hard cap. Add `excluded: "<reason>"` only when the
+  family explicitly wants a reference-only trip.
+- `evidence.json`: evidence for every score axis; all required fact categories;
+  rationale, confidence, source IDs, source locators, and freshness dates for volatile
+  claims. The score in each axis record must exactly match `main.json`.
+- `variants.json`: a `canonicalId` pointing to an immutable canonical variant whose
+  nights, PTO, and budget match the scorecard. Add an alternative only when it is
+  evidence-backed and explicitly useful; the site currently does not present
+  trip-length selectors by default.
+
+Use `src/_data/shared/evidenceSources.json` for shared sources, add the trip's date
+window and route-readiness status to `decisionProfile.json`, and run
+`node tools/enrich-evidence.mjs` only after reviewing its changes. A route status of
+`current-proxy` renders as “Not ready to book”; it is not a booking recommendation.
+
+The `#totals` grand-total table must reconcile to the scorecard planning band. Do not
+handwave food, activities, or contingency as “included above”; make the line-item
+arithmetic auditable.
 
 ### 5. Build and verify
 
 ```bash
 node tools/create-<slug>.mjs                 # writes src/_data/<slug>/main.json
-npm run build                                # lint-sections → build-summary → verify-summary → eleventy
-cp -R _site/locations/ locations/            # GitHub Pages serves root HTML, not _site/
+npm run build                                # includes evidence, budget, image, summary, and site gates
+npm test                                     # regression suite
+npm run sync                                 # synchronizes deployable root index.html and locations/
 ```
 
 Then **actually look at it** — `python3 -m http.server` in the output dir and drive it
@@ -144,14 +182,14 @@ collision, a placeholder image) — don't skip it.
 > before building; don't clobber unrelated work. `npm run build` regenerates
 > `assets/section-status.json` and `assets/trips-summary.json`.
 
-### 6. (Optional) Promote to ranked — hub integration
+### 6. Deliberate hub integration
 
-A new trip renders fine unranked. To put it on the decision dashboard, it's a separate,
-deliberate step (the scoring is a settled family decision — see repo `CLAUDE.md`, don't
-relitigate): add a `scorecard` (with `H.assertBaked(scorecard)` verifying
-`totalBaked = budget×2 + the 8 axes`), then add its scoreboard `<tr data-trip>` row and
-ranked `.sl-card` in `index.html` in the correct sorted position, and update any prose
-citing counts/ranks. Flag this to the user rather than guessing the axis scores.
+Hub integration is deliberate (the scoring is a settled family decision — see repo
+`CLAUDE.md`, don't relitigate). Add the slug/token mapping and scoreboard row required
+by `tools/build-summary.mjs`, update `decisionProfile.json`, and adjust any count or
+rank prose. Do **not** hand-author a shortlist card: cards are generated from the
+canonical summary and automatically place `excluded` trips in the reference section.
+Flag uncertain axis scores or an exclusion choice to the user rather than guessing.
 
 ## Reusable assets (don't reinvent these)
 
@@ -159,12 +197,25 @@ citing counts/ranks. Flag this to the user rather than guessing the axis scores.
 - `scripts/verify_images.py` — host-agnostic URL reachability + paid-tier rejection for photo candidates.
 - `scripts/wikimedia_search.py` — absolute last-resort only; a good build never needs it (see §3).
 - `references/main_json_schema.md` — the field/section/part contract.
+- `tools/evidence.manifest.json` + `src/_data/shared/evidenceSources.json` — evidence
+  and source contracts.
+- `tools/reconcile-budgets.mjs`, `tools/validate-evidence.mjs`, and
+  `tools/optimize-images.mjs` — required quality gates; run through `npm run build`.
 
 ## Things that have bitten past attempts
 
 - **Dull photos cheapen the whole doc.** The most common complaint isn't a broken image — it's a *boring* one. Unsplash/Pexels only, apply the "wow" rubric by eye, and re-subject to a photogenic nearby view before ever settling for a flat literal shot. No Wikimedia. Fewer great photos beat more mediocre ones.
 - **Don't invent flight/ferry prices.** Every doc that shipped a placeholder number got called out. Give a real current range or flag the uncertainty.
+- **A plausible 2026 schedule is not a 2027 booking.** Record it as a current proxy,
+  attach a recheck date, and let the readiness label say “Not ready to book.”
+- **Budget prose is not budget arithmetic.** Itemize low/high categories and let the
+  strict reconciliation gate catch a mismatch before it reaches the scorecard.
+- **Never create a trip without evidence and canonical variants.** The evidence gate
+  checks every axis, required fact category, source locator, confidence, freshness, and
+  canonical-variant match.
 - **PTO math is easy to get subtly wrong.** Recompute the actual day-of-week for every date in *this* trip year.
 - **Missing shared data renders blank.** If a country isn't in `shared/countries.json`, its `entry` card is empty — add it. Same for `packingTags` not in `shared/packing.json`.
-- **A stray `scorecard` breaks the build.** `build-summary` demands a hub scoreboard row for any trip with a scorecard — omit it until you promote the trip (§6).
+- **A new data slug is hub work, not a private draft.** The summary pipeline expects a
+  scorecard, token mapping, decision-profile window, evidence, variants, and any
+  required scoreboard integration; keep drafts outside `src/_data` until ready.
 - **Keep main.json pretty-printed (indent 2).** Edit later via targeted string replacement, not full rewrites.

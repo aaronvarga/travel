@@ -682,7 +682,7 @@ const overview = `<section id="overview">
     <div class="overview">
       <div class="ocard"><p class="eyebrow">Route</p><h4>PIT -> Venice -> Dolomites -> Sardinia -> PIT</h4><p><b>2 nights Venice</b>, <b>5 nights the Dolomites</b>, then <b>3 + 3 nights Sardinia</b>. In through VCE, home from OLB.</p></div>
       <div class="ocard"><p class="eyebrow">Why the Dolomites</p><h4>The epic-hiking variety a Madeira leg would carry</h4><p>Jagged limestone spires that glow rose-gold at sunrise, cable cars that put an 8-year-old on a 2,300m ridge, and rifugio lunches &mdash; the one leg built entirely around real alpine payoff, bracketing the beach.</p></div>
-      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target ~$14.5k; hugs the $15k cap</h4><p>Transatlantic airfare is the swing line. Book the open-jaw by December 2026 and self-cater breakfasts and it lands near $14k; late fares or private boats push it toward the cap.</p></div>
+      <div class="ocard"><p class="eyebrow">Budget</p><h4>Priced target ~$14.5k; hugs the $15k preferred maximum</h4><p>Transatlantic airfare is the swing line. Book the open-jaw by December 2026 and self-cater breakfasts and it lands near $14k; late fares or private boats push it toward the cap.</p></div>
     </div>
   </section>
 
@@ -770,7 +770,7 @@ const healthTiming = `<section id="health-check" class="divider">
       <div class="hc actnow"><span class="hc-tag">Act now</span><h4>Two Dolomite sites need advance online slots</h4><p>The <b>Tre Cime toll road (&euro;40/car)</b> requires a pre-booked timed slot at auronzo.info, and <b>Lago di Braies closes its valley to private cars 9am-4pm from July 1</b> (reserve at prags.bz). Both fall on our dates.</p></div>
       <div class="hc actnow"><span class="hc-tag">Act now</span><h4>Lodging fills 6 months out</h4><p>Cortina-area apartments and Costa Smeralda / Cala Gonone villas sell out early for the first week of July. Reserve all four bases by roughly January-February 2027, apartments first.</p></div>
       <div class="hc watch"><span class="hc-tag">Watch</span><h4>Cortina ZTL cameras fine rental cars by mail</h4><p>A wrong turn into the limited-traffic zone is an <b>&euro;80-300 fine plus a rental admin fee</b> that arrives months later. Have the hotel register your plate the moment lodging is booked.</p></div>
-      <div class="hc watch"><span class="hc-tag">Watch</span><h4>Flights are the budget gate</h4><p>Transatlantic airfare is the swing line. The ~$14.5k target assumes an open-jaw booked by December 2026; late peak-summer fares or private boats push it against the $15k cap.</p></div>
+      <div class="hc watch"><span class="hc-tag">Watch</span><h4>Flights are the budget gate</h4><p>Transatlantic airfare is the swing line. The ~$14.5k target assumes an open-jaw booked by December 2026; late peak-summer fares or private boats push it against the $15k preferred maximum.</p></div>
       <div class="hc good"><span class="hc-tag">Solid</span><h4>13 nights for about 9 PTO days</h4><p>July 4, 2027 is a Sunday, so the federal holiday is <b>observed Monday July 5, mid-trip</b>. Depart Sunday, return Sunday: both travel days land on weekends, and the holiday absorbs one workday.</p></div>
       <div class="hc good"><span class="hc-tag">Solid</span><h4>The Pittsburgh dates are fully clear</h4><p>The trip departs Jun 27, after the required full days in Pittsburgh on Jun 24-26, and uses warmer Sardinian water than the earlier viable window.</p></div>
     </div>
@@ -810,7 +810,7 @@ const budgetTips = `<section id="budget" class="divider">
   </section>
 
   <section id="totals" class="divider">
-    ${sectionLabel('Bottom Line', 'Total trip cost', 'In USD for the family of four. The trip hugs the $15k cap: it lands near $14k if you book flights by December 2026 and self-cater breakfasts, and breaches the cap only if summer airfare runs hot or you splurge on private boats.')}
+    ${sectionLabel('Bottom Line', 'Total trip cost', 'In USD for the family of four. The trip hugs the $15k preferred maximum: it lands near $14k if you book flights by December 2026 and self-cater breakfasts, and breaches the cap only if summer airfare runs hot or you splurge on private boats.')}
     ${table(['Category', 'Estimate (family of 4)'], [
       ['Flights (transatlantic + island hop)', '$5,850-$7,780'],
       ['Lodging (13 nights, 4 bases)', '$2,750-$4,260'],
@@ -869,7 +869,7 @@ const socialBalanceStatus = `<section id="social" class="divider">
       <div class="row"><b>Route</b><span>Venice 2 nights -> Dolomites 5 nights -> Sardinia 3 + 3 nights, one open-jaw.</span></div>
       <div class="row"><b>Dates</b><span>Depart Sun Jun 27, 2027, after the required full Pittsburgh days Jun 24-26; home Sun Jul 11.</span></div>
       <div class="row"><b>PTO</b><span>~9 days — the observed July 4th holiday is absorbed mid-trip and both travel days are weekends.</span></div>
-      <div class="row"><b>Budget verdict</b><span>~$14,000 target / $15,500 high; hugs the $15k cap, with airfare the swing.</span></div>
+      <div class="row"><b>Budget verdict</b><span>~$14,000 target / $15,500 high; hugs the $15k preferred maximum, with airfare the swing.</span></div>
     </div><div class="scol open"><h4>Open</h4>
       <div class="row"><b>Exact flights</b><span>2027 transatlantic fares release ~late 2026; price the open-jaw then.</span></div>
       <div class="row"><b>Lodging choices</b><span>Apartment vs hotel per base; center-Venice vs value-Mestre.</span></div>

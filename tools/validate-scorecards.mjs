@@ -53,13 +53,14 @@ for (const { slug, main } of trips) {
   }
 
   const budget = sc.budget || {};
-  if (![budget.floorUsd, budget.ceilUsd, budget.targetUsd, budget.capUsd].every(Number.isFinite)) {
+  if (![budget.floorUsd, budget.ceilUsd, budget.targetUsd, budget.preferredMaxUsd].every(Number.isFinite)) {
     issue(slug, 'budget fields must be numeric');
   } else {
     if (budget.floorUsd > budget.ceilUsd) issue(slug, 'budget floor exceeds ceiling');
-    if (budget.targetUsd !== profile.budget.targetUsd || budget.capUsd !== profile.budget.bookingCapUsd) {
-      issue(slug, 'budget target/cap do not match decisionProfile.json');
+    if (budget.targetUsd !== profile.budget.targetUsd || budget.preferredMaxUsd !== profile.budget.preferredMaxUsd) {
+      issue(slug, 'budget target/preferred maximum do not match decisionProfile.json');
     }
+    if (budget.hardMaxUsd != null) issue(slug, 'trip scorecards must not define a hard budget maximum');
   }
 
   const window = profile.tripWindows[slug];
@@ -75,8 +76,8 @@ for (const { slug, main } of trips) {
 }
 
 const excluded = trips.filter(({ main }) => typeof main.excluded === 'string');
-if (trips.length !== 21) issue('all', `expected 21 trips, found ${trips.length}`);
-if (excluded.length !== 5) issue('all', `expected 5 excluded trips, found ${excluded.length}`);
+if (trips.length !== 22) issue('all', `expected 22 trips, found ${trips.length}`);
+if (excluded.length !== 9) issue('all', `expected 9 excluded trips, found ${excluded.length}`);
 
 if (problems.length) {
   console.error('Scorecard validation failed:');

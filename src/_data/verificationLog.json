@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "events": [
+    {
+      "date": "2026-07-09",
+      "scope": "all",
+      "type": "recommendation-model",
+      "summary": "$15,000 changed from mandatory-ceiling language to a strongly preferred maximum; all existing itineraries remain visible."
+    },
+    {
+      "date": "2026-07-09",
+      "scope": "all",
+      "type": "evidence",
+      "summary": "Structured axis rationale, source classes, proxy status, freshness, and confidence were added for every trip."
+    },
+    {
+      "date": "2026-07-09",
+      "scope": "italy-salento-amalfi",
+      "type": "variant",
+      "summary": "Added an 11-night, quote-dependent lower-cost alternative while preserving the 12-night canonical plan."
+    }
+  ]
+}

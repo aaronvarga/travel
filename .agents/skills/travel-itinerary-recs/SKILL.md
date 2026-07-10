@@ -29,8 +29,8 @@ scorecards and the tie-break rules, then make every surface match what you deriv
 
 The repo already encodes the decisions — don't relitigate them, reconcile against them.
 
-- `src/_data/decisionProfile.json` — **the canonical family profile**: party, budget target ($12k) / cap
-  ($15k), the Pittsburgh commitment (preferred return 2027-06-23, evening OK; **required full days
+- `src/_data/decisionProfile.json` — **the canonical family profile**: party, budget target ($12k) / strongly
+  preferred maximum ($15k; not an exclusion gate), the Pittsburgh commitment (preferred return 2027-06-23, evening OK; **required full days
   2027-06-24/25/26**), per-trip `tripWindows`, and `routeReadiness` gates. Treat this file as the source of
   truth for constraints; if the user states a new constraint, update this file, don't hardcode it elsewhere.
 - `tools/scorecard.manifest.json` — the axis contract: axis ids, labels, `weightDefault`s, per-axis rubrics,
@@ -55,12 +55,12 @@ Total is **/50**: `Budget×2 + Weather + Swim + Variety + Ease + Food + Risk + N
 - `facets.hasSwim` must equal `swim >= 3`. `facets.swimTempF` is an ordered ambient/sea range (28–90°F);
   `heatedSwimTempF` (pools/geothermal) is separate and must not be conflated with sea temperature.
 - **Budget score reflects confidence, not just the midpoint.** A reconciled, itemized estimate comfortably
-  under target earns a high score; an unitemized, low-confidence contingency near the cap is penalized even at
-  the same nominal number. The budget score **never overrides the $15k cap** — a high-case breach stays
-  visible and conditional, it is not silently excluded or scored away.
+  under target earns a high score; an unitemized, low-confidence contingency near the preferred maximum is
+  penalized even at the same nominal number. A high case above $15k stays visible and strongly cautioned;
+  budget alone never excludes an itinerary because quotes, trip length, or the family budget can change.
 
 ### Tie-breaks (in order)
-cap-cleanliness → PTO days → budget ceiling → budget floor. Encoded in `assets/js/board.js`. The static card
+within-preference band when Budget is weighted → PTO days → budget ceiling → budget floor. Encoded in `assets/js/board.js`. The static card
 order, scoreboard row order, and rank badges must reproduce this exact sort at default weights. To verify,
 simulate the sort: `(excluded, -weightedTotal, capBreach, ptoDays, ceil, floor)` and diff against the card
 `href`s and `<tr data-trip>` order in `index.html`.
@@ -119,7 +119,10 @@ A single axis edit ripples. After changing any score, update **all** of:
 ## Build and verify
 
 ```bash
-npm run build   # lint-sections -> validate-scorecards -> build-summary -> verify-summary -> eleventy
+npm test
+npm run build   # validators -> summary/rank/images -> eleventy -> parity/performance audits
+npm run sync
+npm run sync:check
 ```
 
 If `npm run` misbehaves, run the chain directly (note validate-scorecards is now part of the gate):
@@ -129,11 +132,7 @@ node tools/lint-sections.mjs && node tools/validate-scorecards.mjs && node tools
   && node tools/verify-summary.mjs && node ./node_modules/@11ty/eleventy/cmd.cjs
 ```
 
-**Then copy generated pages to the repo root** — GitHub Pages serves root HTML, not `_site/`:
-
-```bash
-cp -R _site/locations/ locations/
-```
+GitHub Pages serves root HTML, not `_site/`; use the safe sync commands above rather than copying directories manually.
 
 Verify: `validate-scorecards` prints `21 scorecards (16 ranked, 5 excluded)`; `verify-summary` confirms the
 static row/card/rank order equals the engine sort; `git diff --check` is clean. Then **verify in-browser**,
@@ -154,7 +153,6 @@ images/cards.
   depart Jun 3 and Jun 5), and route-readiness gates. June 23 return is **preferred but optional**; only
   Jun 24–26 in Pittsburgh is mandatory.
 - **`recommended: true` ≠ endorsement** — it's a section-completeness flag.
-- **Static HTML drifts from generated data** — always re-derive the order and re-diff prose, cards, rows, and
-  rank badges; don't assume they moved together.
-- **Preserve concurrent asset/photo work** and refresh `locations/` with `cp -R _site/locations/ locations/`
-  before verifying.
+- **Generated output can drift from source** — always run `npm run sync:check`; never hand-edit root
+  `index.html` or `locations/`.
+- **Preserve concurrent asset/photo work** and publish only through `npm run sync` after the full build passes.
