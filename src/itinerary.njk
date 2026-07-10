@@ -49,7 +49,7 @@ permalink: "/locations/{{ trip.slug }}/index.html"
         <div class="facts">{% for f in d.facts %}<div><span>{{ f.label | safe }}</span><strong>{{ f.valueHtml | safe }}</strong></div>{% endfor %}</div>
         <p class="note">{{ d.note | safe }}</p>
       </div>
-      <div class="spots-wrap">{% if d.travelNote %}<div class="travel-note">{{ d.travelNote | safe }}</div>{% else %}{% for s in d.spots %}{{ spot(s) }}{% endfor %}{% endif %}</div>
+      <div class="spots-wrap">{% if d.travelNote %}<div class="travel-note">{{ d.travelNote | safe }}</div>{% endif %}{% for s in d.spots %}{{ spot(s) }}{% endfor %}</div>
     </article>
 {%- endmacro -%}
 

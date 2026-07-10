@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-10T15:57:37.393Z",
+  "generatedAt": "2026-07-10T18:09:40.438Z",
   "trips": [
     {
       "slug": "albania",
@@ -693,6 +693,59 @@
           "text": "$350-$500",
           "lowUsd": 350,
           "highUsd": 500
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "maui-kauai",
+      "canonical": {
+        "lowUsd": 14600,
+        "highUsd": 21600
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 14600,
+        "sumHighUsd": 21600,
+        "displayedLowUsd": 14600,
+        "displayedHighUsd": 21600,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation",
+          "text": "$4,650–6,600",
+          "lowUsd": 4650,
+          "highUsd": 6600
+        },
+        {
+          "label": "Lodging · 12 nights",
+          "text": "$5,350–8,200",
+          "lowUsd": 5350,
+          "highUsd": 8200
+        },
+        {
+          "label": "Food + groceries",
+          "text": "$2,400–3,200",
+          "lowUsd": 2400,
+          "highUsd": 3200
+        },
+        {
+          "label": "Activities + reservations",
+          "text": "$1,500–2,500",
+          "lowUsd": 1500,
+          "highUsd": 2500
+        },
+        {
+          "label": "Insurance / fees / contingency",
+          "text": "$700–1,100",
+          "lowUsd": 700,
+          "highUsd": 1100
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

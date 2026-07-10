@@ -10,9 +10,9 @@ const defaults = Object.fromEntries(summary.axes.map((axis) => [axis.id, axis.we
 
 test('default appeal order keeps all active and reference trips visible', () => {
   const ordered = [...summary.trips].sort((a, b) => compareDefault(a, b, summary.axes, defaults, summary.budgetTargets));
-  assert.equal(ordered.length, 22);
+  assert.equal(ordered.length, 23);
   assert.deepEqual(ordered.slice(0, 4).map((trip) => trip.slug), ['portugal', 'madeira-mallorca', 'portugal-sicily', 'iceland']);
-  assert.equal(ordered.filter((trip) => !trip.excluded).length, 13);
+  assert.equal(ordered.filter((trip) => !trip.excluded).length, 14);
   assert.equal(ordered.filter((trip) => trip.excluded).length, 9);
 });
 
