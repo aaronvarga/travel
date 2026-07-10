@@ -184,6 +184,14 @@ a.at-badge:hover{background:#356e0f}
 .guide-card h3{margin:0 0 8px;font-size:1.25rem;font-weight:600}
 .guide-card p,.guide-card li{color:var(--muted);font-size:.9rem}
 .guide-card ul{margin:0;padding-left:18px}
+.pack-wrap{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:var(--card);box-shadow:var(--shadow)}
+.pack-head{display:flex;align-items:center;gap:15px;padding:20px clamp(18px,3vw,28px);background:#173c38;color:#fff}
+.pack-icon{flex:0 0 auto;width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(255,255,255,.14);font-size:1.35rem}
+.pack-head h3{margin:0;color:#fff;font-size:clamp(1.1rem,2vw,1.4rem);line-height:1.1;font-weight:700}.pack-head p{margin:4px 0 0;color:#cfe3dc;font-size:.82rem;line-height:1.35}
+.pack-climate{margin:18px 18px 0;padding:13px 15px;border:1px solid rgba(31,111,120,.2);border-left:5px solid var(--c1);border-radius:11px;background:rgba(31,111,120,.07);color:#304f50;font-size:.84rem;line-height:1.5}.pack-climate a{font-weight:800}
+.pack-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:18px}.pack-card{padding:16px;border:1px solid var(--line);border-radius:13px;background:#faf6ee;border-top:4px solid var(--c1)}.pack-card:nth-child(2){border-top-color:var(--c2)}.pack-card:nth-child(3){border-top-color:var(--c3)}.pack-card:nth-child(4){border-top-color:var(--c4)}
+.pack-card .pack-time{display:block;margin-bottom:5px;color:var(--muted);font-size:.65rem;font-weight:900;letter-spacing:.07em;text-transform:uppercase}.pack-card h4{margin:0 0 7px;font-size:1rem;line-height:1.15}.pack-temp{display:inline-flex;align-items:center;margin:0 0 10px;padding:5px 8px;border-radius:8px;background:rgba(31,111,120,.1);color:#245d63;font-size:.7rem;font-weight:900;line-height:1.25}.pack-card:nth-child(2) .pack-temp{background:rgba(194,90,58,.1);color:#8a422d}.pack-card:nth-child(3) .pack-temp{background:rgba(63,125,78,.11);color:#376b42}.pack-card:nth-child(4) .pack-temp{background:rgba(58,110,165,.1);color:#315e8c}.pack-card p{margin:0;color:var(--muted);font-size:.82rem;line-height:1.5}.pack-card b{color:var(--ink)}
+.pack-kit{margin:0 18px 18px;padding:15px 17px;border-radius:12px;background:#1e2522;color:#fff}.pack-kit h4{margin:0 0 8px;color:#fff;font-size:1rem}.pack-kit p{margin:0;color:rgba(255,255,255,.76);font-size:.82rem;line-height:1.55}.pack-kit b{color:#fff}.pack-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}.pack-links a{padding:6px 10px;border:1px solid rgba(255,255,255,.18);border-radius:999px;color:#fff;font-size:.7rem;font-weight:850;text-decoration:none}.pack-links a:hover{background:#fff;color:var(--ink)}
 .tip-stack{display:grid;gap:14px}
 .insider-tip{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;box-shadow:var(--shadow);display:grid;grid-template-columns:minmax(92px,.2fr) 1fr;gap:14px;align-items:start}
 .tip-tag{font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#fff;background:var(--c1);border-radius:999px;padding:6px 9px;text-align:center}
@@ -246,6 +254,7 @@ footer{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;col
   .facts div{grid-template-columns:1fr;gap:2px}
   .pv-stats{grid-template-columns:1fr 1fr}.pv-split .seg span{font-size:.54rem}
   .trip-gallery-grid{columns:1}
+  .pack-grid{grid-template-columns:1fr;padding:12px}.pack-climate{margin:12px 12px 0}.pack-kit{margin:0 12px 12px}
 }
 </style>
 <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" integrity="sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V" crossorigin="anonymous">
@@ -990,6 +999,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <a href="#recommended-trails">Recommended trails</a>
       <a href="#trail-guide">Full Trail Guide</a>
       <a href="#photo-guide">Photo guide</a>
+      <a href="#packing">What to pack</a>
       <a href="#food-guide">Food guide</a>
       <a href="#insider-tips">Insider tips</a>
       <a href="#sources">Sources</a>
@@ -1365,7 +1375,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     <div class="section-label">
       <p class="eyebrow">The Itinerary</p>
       <h2>Day by day</h2>
-      <p>Each day follows the same TravelPlanner pattern: a day card, fast facts, one or more photo spots, swipeable images, live inspiration links, food picks, and an embedded Google map.</p>
+      <p>Each hiking day starts with its exact sunrise and sunset, scheduled trail window, and an elevation-adjusted historical temperature range. Those weather numbers are planning guidance—not a forecast—so replace them with the hourly outlook 48 hours before hiking.</p>
     </div>
     <div class="days">
       <article class="day c1" id="day1">
@@ -1382,6 +1392,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
             <div><span>Sleep</span><strong>Packwood cabin &middot; night 1 of 3</strong></div>
             <div><span>Anchor</span><strong>SEA arrival 10:25 AM, car pickup 11:00 AM, cabin check-in 4:00 PM</strong></div>
             <div><span>Hike</span><strong>Pinnacle Saddle: 2.5 mi / 1,050 ft &middot; only if on trail by 3:15 PM</strong></div>
+            <div><span>Sun</span><strong>Sunrise 6:30 AM &middot; sunset 7:40 PM &middot; hike 3:15&ndash;5:45 PM</strong></div>
+            <div><span>Weather</span><strong>Expected hike-time air: 48&ndash;58°F &middot; saddle may feel colder in wind</strong></div>
             <div><span>Food</span><strong>Car lunch + Packwood Brewing, White Pass Taqueria, or Cruiser's Pizza after check-in</strong></div>
           </div>
           <p class="note">Arrival day was underused. If AS341 and the rental pickup stay close to schedule, Pinnacle Saddle is the trip's best short-effort mountain reveal. If navigation puts you at the trailhead after 3:15 PM, skip it without debate and go straight to Packwood.</p>
@@ -1426,7 +1438,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
           <div class="facts">
             <div><span>Sleep</span><strong>Packwood cabin &middot; night 2 of 3</strong></div>
             <div><span>Hike</span><strong>Full Skyline loop: about 5.5 mi / 1,700 ft / 4&ndash;5 hours</strong></div>
-            <div><span>Light</span><strong>Reflection Lakes blue hour 6:00 AM; sunrise 6:31; Skyline start about 7:30</strong></div>
+            <div><span>Sun</span><strong>Sunrise 6:31 AM &middot; sunset 7:38 PM &middot; Reflection Lakes from 5:50; Skyline about 7:30&ndash;12:30</strong></div>
+            <div><span>Weather</span><strong>Expected hike-time air: 38&ndash;55°F &middot; coldest at dawn and on the upper loop</strong></div>
           </div>
           <p class="note">Start with the mirror-lake frame, then commit to the full Skyline loop while the summit is most likely clear. The goal is Panorama Point, Nisqually Glacier, alpine terrain, and the scale of the mountain &mdash; Myrtle Falls is only one foreground along the way.</p>
         </div>
@@ -1473,7 +1486,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
           <div class="facts">
             <div><span>Sleep</span><strong>Packwood cabin &middot; night 3 of 3</strong></div>
             <div><span>Hike</span><strong>4.7 mi / 900 ft to First; 7 mi / 1,150 ft to Second</strong></div>
-            <div><span>Light</span><strong>Start about 3:00 PM; sunset 7:36 PM; headlamp return</strong></div>
+            <div><span>Sun</span><strong>Sunrise 6:33 AM &middot; sunset 7:36 PM &middot; hike about 3:00&ndash;8:30 PM</strong></div>
+            <div><span>Weather</span><strong>Expected hike-time air: 38&ndash;55°F &middot; exposed wind after sunset can feel near 30&ndash;40°F</strong></div>
           </div>
           <p class="note">This is the priority hike, not the bonus after another hike. Keep the morning flexible, reach Sunrise with time to eat and assess the sky, then climb via Sunrise Rim. Second Burroughs is the target; First is the smart cutoff if wind, visibility, or timing changes.</p>
         </div>
@@ -1518,7 +1532,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
           <div class="facts">
             <div><span>Sleep</span><strong>Downtown Seattle &middot; night 1 of 1</strong></div>
             <div><span>Anchor</span><strong>Check out before dawn; Naches 6:45&ndash;8:45 AM; Seattle before noon</strong></div>
-            <div><span>Light</span><strong>Rainier sunrise 6:34 AM; Seattle sunset 7:37 PM, blue hour to 8:08 PM</strong></div>
+            <div><span>Sun</span><strong>Rainier sunrise 6:34 AM / sunset 7:34 PM &middot; Seattle sunset 7:37 PM, blue hour to 8:08</strong></div>
+            <div><span>Weather</span><strong>Tipsoo 5:50&ndash;8:45 AM: expected 38&ndash;48°F &middot; warming quickly after sunrise</strong></div>
           </div>
           <p class="note">This is the cleanest way to add another epic trail without sacrificing Seattle. Check out with luggage, hike Naches clockwise before the Labor Day crowd arrives, then continue north instead of backtracking to Packwood.</p>
         </div>
@@ -1967,6 +1982,25 @@ svg.leaflet-image-layer.leaflet-interactive path {
   </section>
   <!--PG:END-->
 
+  <section id="packing" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">Weather-Smart Packing</p>
+      <h2>What to wear for each light window</h2>
+      <p>Pack for the exposed alpine hours, not the temperature at the cabin. The same day can move from a mild Packwood afternoon to wind, near-dawn chill, or a cold post-sunset walk above 7,000 feet.</p>
+    </div>
+    <div class="pack-wrap">
+      <div class="pack-head"><span class="pack-icon" aria-hidden="true">☁</span><div><h3>September layer plan</h3><p>Four outfit presets for the actual schedule, plus one shared trail kit</p></div></div>
+      <p class="pack-climate"><b>Historical baseline—not a forecast:</b> NPS climate records put September at <b>57°F / 39°F at Paradise (5,400 ft)</b> versus <b>72°F / 43°F at lower Ohanapecosh</b>. Sunrise begins at 6,400 feet and Burroughs climbs higher into open wind, so the sunset route needs substantially more insulation than Packwood suggests. The block-by-block badges are conservative planning ranges derived from those monthly highs/lows, the scheduled hour, and each route's elevation/exposure; replace them with the hourly forecast 48 hours before hiking. Rain and wet cold are possible in any month. <a href="https://home.nps.gov/mora/planyourvisit/weather.htm" target="_blank" rel="noreferrer">NPS climate table ↗</a></p>
+      <div class="pack-grid">
+        <article class="pack-card"><span class="pack-time">Saturday · 5:50 AM–12:30 PM</span><h4>Reflection Lakes + Skyline</h4><span class="pack-temp">Expected air: 38–55°F · coldest at dawn and above Panorama Point</span><p><b>Start:</b> wicking tee or thin merino base, light fleece, waterproof shell, full-length hiking pants, wool/synthetic socks, beanie, and light gloves. <b>Pack:</b> a compressible insulated jacket. Expect to shed the fleece as the climb and sun warm up; keep the shell accessible for cloud, wind, or drizzle.</p></article>
+        <article class="pack-card"><span class="pack-time">Sunday · 3:00–8:30 PM</span><h4>Burroughs sunset</h4><span class="pack-temp">Expected air: 38–55°F · exposed wind after sunset can feel near 30–40°F</span><p><b>Wear:</b> wicking base, hiking pants, and grippy trail footwear. <b>Carry even if Packwood is warm:</b> midweight fleece, hooded puffy, waterproof wind shell, warm hat, and real gloves. Put layers on <em>before</em> stopping at Second Burroughs. Each person carries a headlamp; add thin thermal bottoms if the trip-week forecast shows near-freezing temperatures or strong wind.</p></article>
+        <article class="pack-card"><span class="pack-time">Monday · 5:50–8:45 AM</span><h4>Tipsoo dawn + Naches Peak</h4><span class="pack-temp">Expected air: 38–48°F · warming quickly after the 6:34 AM sunrise</span><p><b>Start:</b> wicking base, fleece, shell, hiking pants, beanie, and light gloves—the Paradise historical low is 39°F before accounting for wind. This is a shorter, lower-exposure outing than Burroughs, so the puffy can stay in the daypack unless the forecast turns cold. Strip a layer once the sun reaches the loop.</p></article>
+        <article class="pack-card"><span class="pack-time">Friday afternoon + Seattle</span><h4>Pinnacle, Packwood + city</h4><span class="pack-temp">Pinnacle 3:15–5:45 PM: 48–58°F · Packwood/Seattle: roughly 55–72°F</span><p><b>Pinnacle:</b> hiking pants, breathable base, fleece in the pack, and shell immediately available; the saddle is windy even when the trailhead feels pleasant. <b>Packwood/Seattle:</b> normal early-fall clothes, comfortable walking shoes, and one light fleece or rain shell. Do not use the warmer low-elevation afternoon as the packing baseline for the alpine hikes.</p></article>
+      </div>
+      <div class="pack-kit"><h4>The shared trail kit</h4><p><b>Footwear:</b> broken-in trail runners with aggressive tread for dry conditions and confident ankles; choose waterproof lightweight hiking boots if rain, lingering snow, or ankle support is a concern—skip smooth everyday sneakers. <b>Carry every hike:</b> 18–25 L daypack, rain shell, extra warm layer, water, calories, offline map, small first-aid kit, emergency blanket, sunscreen, sunglasses, and trekking poles. <b>Sunset/pre-dawn additions:</b> two headlamps with spare power, warm hat, gloves, lens cloth, and dry socks in the car. Microspikes are a trip-week conditions decision, not a default September requirement.</p><div class="pack-links"><a href="https://www.nps.gov/mora/planyourvisit/hiking-safety.htm" target="_blank" rel="noreferrer">NPS footwear + hiking safety ↗</a><a href="https://www.nps.gov/mora/planyourvisit/wilderness-guidelines-and-regulations.htm" target="_blank" rel="noreferrer">NPS Ten Essentials ↗</a><a href="https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm" target="_blank" rel="noreferrer">Live trail conditions ↗</a></div></div>
+    </div>
+  </section>
+
   <!--FG:START-->
   <section id="food-guide" class="divider">
     <div class="section-label">
@@ -2254,13 +2288,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <p>Links behind the itinerary and the pages worth opening from the road for conditions, hours, and access.</p>
     </div>
     <div class="source-shell">
-      <div class="source-head"><span class="source-icon" aria-hidden="true">↗</span><div><h3>Evidence library</h3><p>24 verified planning, trail, photography, dining, and live-condition references</p></div></div>
+      <div class="source-head"><span class="source-icon" aria-hidden="true">↗</span><div><h3>Evidence library</h3><p>26 planning, trail, weather, photography, dining, and live-condition references</p></div></div>
       <ul class="source-list">
       <li><a href="https://my.tripsy.app/i/1034523?code=1ba045db40ec7563291278ce158a2121" target="_blank" rel="noreferrer">Tripsy shared itinerary</a> &mdash; confirmed travel frame.</li>
       <li><a href="https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm" target="_blank" rel="noreferrer">NPS 2026 timed-entry announcement</a> &mdash; no timed-entry reservation in 2026; an entrance pass is still required.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/road-status.htm" target="_blank" rel="noreferrer">NPS road status</a> and <a href="https://www.nps.gov/mora/learn/photosmultimedia/webcams.htm" target="_blank" rel="noreferrer">NPS webcams</a> &mdash; live park checks.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/hours.htm" target="_blank" rel="noreferrer">NPS 2026 operating hours</a> &mdash; Sunrise has limited services; bring water, food, and supplies.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/congestion.htm" target="_blank" rel="noreferrer">NPS congestion guidance</a> &mdash; Paradise/Sunrise parking, offline app, and crowd timing.</li>
+      <li><a href="https://home.nps.gov/mora/planyourvisit/weather.htm" target="_blank" rel="noreferrer">NPS Mount Rainier weather and climate table</a> &mdash; historical September temperature baseline for Paradise and lower-elevation Ohanapecosh.</li>
+      <li><a href="https://www.nps.gov/mora/planyourvisit/hiking-safety.htm" target="_blank" rel="noreferrer">NPS hiking safety</a> and <a href="https://www.nps.gov/mora/planyourvisit/wilderness-guidelines-and-regulations.htm" target="_blank" rel="noreferrer">Ten Essentials guidance</a> &mdash; footwear, extra warm clothing, rain protection, headlamps, food, water, and emergency gear.</li>
       <li><a href="https://www.nps.gov/thingstodo/hike-to-burroughs-mountain.htm" target="_blank" rel="noreferrer">Burroughs Mountain</a>, <a href="https://www.nps.gov/mora/planyourvisit/pinacle-peak.htm" target="_blank" rel="noreferrer">Pinnacle Peak Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/skyline-trail.htm" target="_blank" rel="noreferrer">Skyline Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm" target="_blank" rel="noreferrer">Naches Peak Loop</a>, and <a href="https://www.nps.gov/mora/planyourvisit/mount-fremont-lookout.htm" target="_blank" rel="noreferrer">Mount Fremont</a> &mdash; official routes and statistics.</li>
       <li><a href="https://www.wta.org/get-involved/go-hiking/hikes/burroughs-mountain" target="_blank" rel="noreferrer">WTA Burroughs</a>, <a href="https://www.wta.org/go-hiking/hikes/pinnacle-saddle" target="_blank" rel="noreferrer">WTA Pinnacle Saddle</a>, and <a href="https://www.wta.org/go-outside/seasonal-hikes/regional/mount-rainier-hikes" target="_blank" rel="noreferrer">WTA Rainier shortlist</a> &mdash; route context and recent hiker reports.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/day-hiking-at-mount-rainier.htm" target="_blank" rel="noreferrer">NPS Rainier day-hiking table</a>, <a href="https://www.nps.gov/thingstodo/hike-emmons-moraine-trail.htm" target="_blank" rel="noreferrer">NPS Emmons Moraine</a>, and <a href="https://www.nps.gov/mora/planyourvisit/upload/2020-Sunrise-Area-Trails_access.pdf" target="_blank" rel="noreferrer">NPS Sunrise trail map</a> &mdash; official Dege, Silver Forest, and Emmons distances.</li>
