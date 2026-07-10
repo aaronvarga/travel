@@ -6,7 +6,7 @@
  *   on demand as the user visits pages (no bulk pre-warming).
  * Cache names are versioned; bump VERSION on release to invalidate. */
 'use strict';
-const VERSION = 'tp-v5';
+const VERSION = 'tp-v9';
 const SHELL = VERSION + '-shell';
 const TILES = VERSION + '-tiles';
 const IMGS = VERSION + '-imgs';
@@ -16,18 +16,19 @@ const imageAccess = new Map();
 const CORE = [
   'index.html',
   'assets/css/hub.css',
-  'assets/css/itinerary.css',
+  'assets/css/itinerary.css?v=20260710-travel-frame-all',
   'assets/js/store.js',
   'assets/js/recommendation-engine.js',
   'assets/js/board.js',
+  'assets/js/display-date.js?v=20260710-dates',
   'assets/js/weights.js',
   'assets/js/scenarios.js',
-  'assets/js/evidence.js',
+  'assets/js/evidence.js?v=20260710-dates',
   'assets/js/filters.js',
   'assets/js/compare.js',
-  'assets/js/meter.js',
+  'assets/js/meter.js?v=20260710-dates',
   'assets/js/urlstate.js',
-  'assets/js/itinerary.js',
+  'assets/js/itinerary.js?v=20260710-gallery-full',
   'assets/trips-summary.json',
   'assets/rank-analysis.json',
   'assets/section-status.json',

@@ -8,6 +8,9 @@
  */
 const { readFileSync } = require('node:fs');
 const { load } = require('cheerio');
+const { formatDisplayDates, formatCompactTravelWindow } = require('./tools/lib/display-date.cjs');
+const { syncHeroCarousel } = require('./tools/lib/hero-carousel.cjs');
+const decisionProfile = require('./src/_data/decisionProfile.json');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'assets/css': 'assets/css' });
@@ -25,6 +28,14 @@ module.exports = function (eleventyConfig) {
     return `$${amount.toFixed(digits).replace(/\.0+$/, '')}k`;
   });
   eleventyConfig.addFilter('roundHours', (value) => Math.round(Number(value)));
+  eleventyConfig.addFilter('displayDate', formatDisplayDates);
+
+  eleventyConfig.addTransform('all-trip-photos-in-hero', function (content) {
+    if (!this.page.outputPath?.includes('/locations/') || !this.page.outputPath.endsWith('.html')) return content;
+    const $ = load(content, { decodeEntities: false });
+    syncHeroCarousel($);
+    return $.html();
+  });
 
   eleventyConfig.addTransform('responsive-local-images', function (content) {
     if (!this.page.outputPath?.endsWith('.html')) return content;
@@ -68,6 +79,36 @@ module.exports = function (eleventyConfig) {
       html = html.split(source).join(replacement);
     }
     return html;
+  });
+
+  eleventyConfig.addTransform('display-dates', function (content) {
+    if (!this.page.outputPath?.endsWith('.html')) return content;
+    const $ = load(content, { decodeEntities: false });
+    const slug = this.page.url?.match(/^\/locations\/([^/]+)\//)?.[1]
+      || $('[data-trip-slug]').first().attr('data-trip-slug');
+    const travelWindow = slug && decisionProfile.tripWindows[slug];
+    const compactWindow = formatCompactTravelWindow(travelWindow);
+    const stats = $('.pv-stats,.hero-meta').first();
+    if (compactWindow && stats.length) {
+      let block = stats.find('> div').filter((_, element) => /^\d{4}(?:\s+travel frame)?$/i.test($(element).find('span').last().text().trim())).first();
+      if (!block.length) block = $('<div></div>').appendTo(stats);
+      block.attr('data-travel-frame', '');
+      let range = block.find('b').first();
+      if (!range.length) range = $('<b></b>').prependTo(block);
+      range.attr('data-preserve-date', '').text(compactWindow);
+      let label = block.find('span').last();
+      if (!label.length) label = $('<span></span>').appendTo(block);
+      label.text('Travel frame');
+      stats.addClass('has-travel-frame');
+    }
+    $('body').find('*').addBack().contents().each((_, node) => {
+      if (node.type !== 'text') return;
+      const parentTag = node.parent?.name?.toLowerCase();
+      if (['script', 'style', 'template', 'noscript'].includes(parentTag)) return;
+      if ($(node.parent).closest('[data-preserve-date]').length) return;
+      node.data = formatDisplayDates(node.data);
+    });
+    return $.html();
   });
 
   return {

@@ -56,10 +56,50 @@
       return title || alt || credit || 'Trip photo';
     }
 
+    function photoKey(image) {
+      var link = image.closest('figure') && image.closest('figure').querySelector('a[href]');
+      return absoluteUrl(link ? link.getAttribute('href') : image.getAttribute('src')).split(/[?#]/)[0];
+    }
+
+    function photoDays() {
+      var days = Object.create(null);
+      var dayRecords = [];
+      document.querySelectorAll('#itinerary .day').forEach(function (day, index) {
+        var badge = cleanText(day.querySelector('.day-badge') && day.querySelector('.day-badge').textContent) || String(index + 1);
+        dayRecords.push({ badge: badge, text: cleanText(day.textContent).toLowerCase() });
+        day.querySelectorAll('.carousel img[src]').forEach(function (image) { days[photoKey(image)] = badge; });
+      });
+      document.querySelectorAll('#food-guide .fg-hub').forEach(function (hub) {
+        var text = cleanText(hub.querySelector('.fg-hub-days') && hub.querySelector('.fg-hub-days').textContent);
+        var match = text.match(/Days?\s+(\d+)(?:\s*[-–—]\s*(\d+))?/i);
+        if (!match) return;
+        var badge = match[2] ? match[1] + '-' + match[2] : match[1];
+        hub.querySelectorAll('img[src]').forEach(function (image) { if (!days[photoKey(image)]) days[photoKey(image)] = badge; });
+      });
+      document.querySelectorAll('.base').forEach(function (base) {
+        var title = cleanText(base.querySelector('h4') && base.querySelector('h4').textContent).toLowerCase();
+        var record = title && dayRecords.find(function (day) { return day.text.includes(title); });
+        if (!record && title) {
+          var keyword = title.split(/\s|\//).find(function (word) { return word.length >= 4; });
+          record = keyword && dayRecords.find(function (day) { return day.text.includes(keyword); });
+        }
+        base.querySelectorAll('img[src]').forEach(function (image) { if (!days[photoKey(image)]) days[photoKey(image)] = record ? record.badge : '0'; });
+      });
+      document.querySelectorAll('.pvcar figure').forEach(function (figure) {
+        var image = figure.querySelector('img[src]');
+        if (!image || days[photoKey(image)]) return;
+        var cap = cleanText(figure.querySelector('.cap-day') && figure.querySelector('.cap-day').textContent);
+        var match = cap.match(/Day\s+(\d+(?:\s*[-–—]\s*\d+)?)/i);
+        if (match) days[photoKey(image)] = match[1].replace(/\s*[–—]\s*/g, '-');
+      });
+      return days;
+    }
+
     function collectPhotos() {
       var seen = Object.create(null);
       var list = [];
-      document.querySelectorAll('.carousel figure').forEach(function (figure) {
+      var days = photoDays();
+      document.querySelectorAll('#itinerary .carousel figure, .pvcar figure').forEach(function (figure) {
         var image = figure.querySelector('img[src]');
         if (!image) return;
         var link = figure.querySelector('a[href]');
@@ -68,11 +108,13 @@
         var key = full.split('#')[0];
         if (!key || seen[key]) return;
         seen[key] = true;
+        var caption = figureCaption(figure, image);
+        var day = days[key] || '0';
         list.push({
           src: src,
           full: full,
           alt: cleanText(image.getAttribute('alt')) || 'Trip photo',
-          caption: figureCaption(figure, image)
+          caption: 'Day ' + day + ': ' + caption
         });
       });
       return list;

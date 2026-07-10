@@ -194,9 +194,9 @@ permalink: "/locations/{{ trip.slug }}/index.html"
 {%- endfor -%}
 {%- if trip.evidence -%}{% include "itinerary/readiness.njk" %}{% include "itinerary/evidence.njk" %}{%- endif -%}
 {%- if trip.variants -%}{% include "itinerary/variants.njk" %}{%- endif -%}
-<link rel="stylesheet" href="../../assets/css/itinerary.css">
-<script src="../../assets/js/itinerary.js" defer></script>
-<dialog class="trip-gallery-dialog" id="tripGalleryDialog" aria-label="Trip photo gallery">
+<link rel="stylesheet" href="../../assets/css/itinerary.css?v=20260710-travel-frame-all">
+<script src="../../assets/js/itinerary.js?v=20260710-gallery-full" defer></script>
+<dialog class="trip-gallery-dialog" id="tripGalleryDialog" data-trip-slug="{{ trip.slug }}" aria-label="Trip photo gallery">
   <div class="trip-gallery-shell">
     <div class="trip-gallery-head">
       <div>

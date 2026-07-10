@@ -1,27 +1,34 @@
 <div class="sl-grid">
-  {% for trip in hub.activeTrips %}
+  {%- for trip in hub.activeTrips %}
     <a class="sl-card{% if trip.appealRank == 1 %} top{% endif %}{% if trip.slug == 'madeira-mallorca' %} madeira-stairway-card{% endif %}" href="locations/{{ trip.slug }}/index.html">
       <div class="sl-photo"><img src="{{ trip.heroImage }}" alt="{{ trip.cardImageAlt }}" loading="lazy"><div class="sl-rank">#{{ trip.appealRank }}</div></div>
       <div class="sl-body">
-        <div class="sl-meta"><span class="sl-dates">{{ trip.travelWindow[0] }}–{{ trip.travelWindow[1] }}</span><span class="sl-score" aria-label="Rated {{ trip.totalBaked }} out of 50"><b>{{ trip.totalBaked }}</b><span>/50<small>rating</small></span></span><span class="sl-pto">{{ trip.pto.days }} PTO</span></div>
+        <div class="sl-meta"><span class="sl-dates">{{ trip.travelWindow[0] | displayDate }}–{{ trip.travelWindow[1] | displayDate }}</span><span class="sl-score" aria-label="Rated {{ trip.totalBaked }} out of 50"><b>{{ trip.totalBaked }}</b><span>/50<small>rating</small></span></span><span class="sl-pto">{{ trip.pto.days }} PTO</span></div>
         <div class="sl-titlerow"><h3>{{ trip.displayName }}</h3><span class="sl-nights"><b>{{ trip.pto.nights }}</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
         <p class="sl-desc">Canonical scorecard: {{ trip.totalBaked }}/50. {{ trip.blurb }}</p>
         <div class="sl-div"></div>
-        <div class="sl-logi"><div><span class="lbl">Budget</span><br>${{ (trip.budget.floorUsd / 1000) | round(1) }}k–${{ (trip.budget.ceilUsd / 1000) | round(1) }}k</div><div><span class="lbl">Evidence</span><br>{{ trip.completeness.complete }}/{{ trip.completeness.total }} complete</div><div><span class="lbl">Readiness</span><br>{{ trip.readiness.label }}</div></div>
+        <div class="sl-logi"><div><span class="lbl">Budget</span><br>{% if trip.budget.ceilUsd <= 12000 %}<span class="sl-budget-pill target-fit" title="At or below the $12k target">{% elif trip.budget.ceilUsd <= 15000 %}<span class="sl-budget-pill within-preference" title="Within the $15k preference">{% else %}<span class="sl-budget-pill over-preference" title="Range crosses or exceeds the $15k preference">{% endif %}${{ (trip.budget.floorUsd / 1000) | round(1) }}k–${{ (trip.budget.ceilUsd / 1000) | round(1) }}k</span></div><div><span class="lbl">Evidence</span><br>{{ trip.completeness.complete }}/{{ trip.completeness.total }} complete</div></div>
         <div class="sl-tags"><span>{{ trip.totalBaked }}/50</span><span>{{ trip.completeness.complete }}/{{ trip.completeness.total }} evidence</span>{% if trip.budget.ceilUsd <= trip.budget.preferredMaxUsd %}<span>Within ${{ (trip.budget.preferredMaxUsd / 1000) | round(0) }}k preference</span>{% endif %}</div>
+        <div class="sl-readiness"><span class="lbl">Readiness</span><span>{{ trip.readiness.label }}</span></div>
       </div>
     </a>
-  {% endfor %}
+  {%- endfor %}
 </div>
 <div class="sl-excluded-head">
   <p class="sl-eyebrow">Excluded — kept for reference</p>
   <h3>Trips retained outside the ranking</h3>
 </div>
 <div class="sl-grid">
-  {% for trip in hub.excludedTrips %}
+  {%- for trip in hub.excludedTrips %}
     <a class="sl-card" href="locations/{{ trip.slug }}/index.html">
       <div class="sl-photo"><img src="{{ trip.heroImage }}" alt="{{ trip.cardImageAlt }}" loading="lazy"><div class="sl-rank">EX</div></div>
-      <div class="sl-body"><div class="sl-meta"><span class="sl-dates">{{ trip.travelWindow[0] }}–{{ trip.travelWindow[1] }}</span><span class="sl-score"><b>{{ trip.totalBaked }}</b><span>/50</span></span></div><div class="sl-titlerow"><h3>{{ trip.displayName }}</h3><span class="sl-nights"><b>{{ trip.pto.nights }}</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div><p class="sl-desc">Excluded by family decision; canonical score {{ trip.totalBaked }}/50 remains visible for comparison.</p><div class="sl-logi"><div><span class="lbl">Budget</span><br>${{ (trip.budget.floorUsd / 1000) | round(1) }}k–${{ (trip.budget.ceilUsd / 1000) | round(1) }}k</div><div><span class="lbl">Evidence</span><br>{{ trip.completeness.complete }}/{{ trip.completeness.total }} complete</div></div></div>
+      <div class="sl-body">
+        <div class="sl-meta"><span class="sl-dates">{{ trip.travelWindow[0] | displayDate }}–{{ trip.travelWindow[1] | displayDate }}</span><span class="sl-score"><b>{{ trip.totalBaked }}</b><span>/50</span></span></div>
+        <div class="sl-titlerow"><h3>{{ trip.displayName }}</h3><span class="sl-nights"><b>{{ trip.pto.nights }}</b><i>nights</i><span class="sl-away" title="+1 night in transit (red-eye/travel)">+1</span></span></div>
+        <p class="sl-desc">Excluded by family decision; canonical score {{ trip.totalBaked }}/50 remains visible for comparison.</p>
+        <div class="sl-logi"><div><span class="lbl">Budget</span><br>{% if trip.budget.ceilUsd <= 12000 %}<span class="sl-budget-pill target-fit" title="At or below the $12k target">{% elif trip.budget.ceilUsd <= 15000 %}<span class="sl-budget-pill within-preference" title="Within the $15k preference">{% else %}<span class="sl-budget-pill over-preference" title="Range crosses or exceeds the $15k preference">{% endif %}${{ (trip.budget.floorUsd / 1000) | round(1) }}k–${{ (trip.budget.ceilUsd / 1000) | round(1) }}k</span></div><div><span class="lbl">Evidence</span><br>{{ trip.completeness.complete }}/{{ trip.completeness.total }} complete</div></div>
+        <div class="sl-tags"></div>
+      </div>
     </a>
-  {% endfor %}
+  {%- endfor %}
 </div>

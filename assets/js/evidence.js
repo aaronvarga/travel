@@ -42,7 +42,10 @@
       status.append(badge('budget-badge ' + budgetStatus, budgetLabel(budgetStatus, preferences)));
       status.append(badge('confidence-badge ' + trip.evidence.overallConfidence, `${capitalize(trip.evidence.overallConfidence)} confidence`));
       body.appendChild(status);
-      body.appendChild(el('p', 'evidence-note', `Last evidence review: ${trip.evidence.reviewedAt}. Appeal score, booking readiness and confidence are separate; uncertainty does not silently lower the /50 score.`));
+      body.appendChild(el('p', 'evidence-note', `Last evidence review: ${DisplayDate.format(trip.evidence.reviewedAt)}. Overall confidence is the weakest supported score axis. Appeal, booking readiness and evidence strength remain separate; a well-supported reroute warning can still have high evidence confidence.`));
+      if (trip.evidence.overallConfidence !== 'high' && trip.evidence.limitingAxes?.length) {
+        body.appendChild(el('p', 'evidence-note', `Confidence is currently limited by: ${trip.evidence.limitingAxes.map(capitalize).join(', ')}.`));
+      }
 
       const axes = el('div', 'evidence-axes');
       B.axesDefs.forEach((axis) => {
@@ -58,7 +61,7 @@
       facts.appendChild(el('summary', null, `Inspect ${trip.evidence.facts.length} supporting facts and sources`));
       trip.evidence.facts.forEach((fact) => {
         const item = el('div', 'evidence-fact');
-        item.append(el('strong', null, fact.id.replaceAll('-', ' ')), el('span', null, `${fact.proxyStatus} · ${fact.confidence} confidence · verified ${fact.verifiedAt}${fact.expiresAt ? ' · recheck by ' + fact.expiresAt : ''}`));
+        item.append(el('strong', null, fact.id.replaceAll('-', ' ')), el('span', null, `${fact.proxyStatus} · ${fact.confidence} confidence · verified ${DisplayDate.format(fact.verifiedAt)}${fact.expiresAt ? ' · recheck by ' + DisplayDate.format(fact.expiresAt) : ''}`));
         const links = el('span', 'evidence-links');
         (fact.sourceRefs || []).forEach((sourceId) => {
           const source = B.evidenceSources?.[sourceId];
@@ -70,7 +73,7 @@
           if (!source?.url) return;
           const link = el('a', null, source.label || source.url); link.href = source.url; link.target = '_blank'; link.rel = 'noreferrer'; links.appendChild(link);
         });
-        const locator = fact.sourceLocators ? Object.values(fact.sourceLocators).join(' · ') : '';
+        const locator = fact.sourceLocators ? DisplayDate.format(Object.values(fact.sourceLocators).join(' · ')) : '';
         if (locator) item.appendChild(el('small', 'evidence-locator', locator));
         item.appendChild(links); facts.appendChild(item);
       });

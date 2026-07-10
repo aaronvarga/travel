@@ -33,6 +33,18 @@
     }
   }
 
+/* Cinematic hero: a soft tinted glow radiating from the top-left of the copy
+   pane (tinted per-trip via --c1 over the --ink base), plus a gradient seam so
+   the pane dissolves into the carousel instead of meeting it at a hard edge.
+   Applies to every current (.preview) itinerary hero at once. */
+  body > .preview {
+    background:
+      radial-gradient(150% 135% at 3% -10%,
+        color-mix(in srgb, var(--c1) 34%, var(--ink)) 0%,
+        transparent 58%),
+      var(--ink);
+  }
+
 /* Responsive image generation adds intrinsic width/height attributes. Keep
    lodging-card headers on the intended landscape crop instead of allowing the
    source image height to stretch each card independently. */
@@ -99,6 +111,24 @@
 
 .preview,
   .pvcar { position: relative; }
+.pv-stats.has-travel-frame { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)) !important; }
+
+/* Legacy itinerary pages used a single CSS background instead of the shared
+ * preview carousel. The build now promotes that background plus every unique
+ * trip photo into the same carousel contract used by newer pages. */
+body > header.legacy-trip-hero { isolation: isolate; }
+body > header.legacy-trip-hero::before { display: none; }
+body > header.legacy-trip-hero .hero-inner { position: relative; z-index: 2; }
+body > header.legacy-trip-hero .legacy-pvcar { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+body > header.legacy-trip-hero .legacy-pvcar::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg,rgba(10,20,24,.12),rgba(10,18,22,.34) 45%,rgba(8,14,18,.88)); }
+body > header.legacy-trip-hero .legacy-pvcar .track { display: flex; width: 100%; height: 100%; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; }
+body > header.legacy-trip-hero .legacy-pvcar .track::-webkit-scrollbar { display: none; }
+body > header.legacy-trip-hero .legacy-pvcar figure { position: relative; flex: 0 0 100%; width: 100%; height: 100%; margin: 0; scroll-snap-align: start; }
+body > header.legacy-trip-hero .legacy-pvcar img { display: block; width: 100%; height: 100%; object-fit: cover; }
+body > header.legacy-trip-hero .legacy-pvcar figcaption { display: none; }
+body > header.legacy-trip-hero .legacy-pvcar .nav,
+body > header.legacy-trip-hero .legacy-pvcar .counter,
+body > header.legacy-trip-hero .legacy-pvcar .dots { z-index: 3; }
   .trip-gallery-trigger {
     position: absolute;
     z-index: 4;
@@ -123,13 +153,17 @@
   .trip-gallery-trigger:hover { background: #f6f1e7; }
   .trip-gallery-trigger:focus-visible { outline: 3px solid #5f9aa3; outline-offset: 3px; }
   .trip-gallery-dialog {
-    width: min(1360px, calc(100vw - 28px));
+    position: fixed;
+    inset: 0;
+    width: 100vw;
     max-width: none;
-    height: min(900px, calc(100dvh - 28px));
+    height: 100vh;
+    height: 100dvh;
     max-height: none;
+    margin: 0;
     padding: 0;
-    border: 1px solid rgba(246,241,231,.2);
-    border-radius: 18px;
+    border: 0;
+    border-radius: 0;
     background: #17130f;
     color: #f6f1e7;
     box-shadow: 0 36px 120px rgba(0,0,0,.58);
@@ -288,12 +322,6 @@
     .trip-gallery-trigger { right: 18px; bottom: 18px; }
   }
   @media (max-width: 680px) {
-    .trip-gallery-dialog {
-      width: 100vw;
-      height: 100dvh;
-      border: 0;
-      border-radius: 0;
-    }
     .trip-gallery-board { column-count: 2; }
     .trip-gallery-head { align-items: flex-start; }
     .trip-gallery-trigger {

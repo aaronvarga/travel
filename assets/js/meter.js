@@ -37,7 +37,7 @@
       const freshness = document.createElement('small');
       freshness.className = 'sl-evidence-freshness';
       freshness.textContent = t.evidence
-        ? `${t.evidence.overallConfidence} evidence · reviewed ${t.evidence.reviewedAt}`
+        ? `${t.evidence.overallConfidence} evidence · reviewed ${DisplayDate.format(t.evidence.reviewedAt)}`
         : 'evidence not yet structured';
       meter.appendChild(freshness);
       body.appendChild(meter);
