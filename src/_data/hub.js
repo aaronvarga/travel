@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const Engine = require('../../assets/js/recommendation-engine.js');
 const cardImages = require('./card-images.js');
+const cardSummaries = require('./card-summaries.js');
 
 module.exports = function () {
   const root = path.resolve(__dirname, '../..');
@@ -19,11 +20,16 @@ module.exports = function () {
       if (!cardImage.path.startsWith('assets/img/') || !fs.existsSync(path.join(root, cardImage.path))) {
         throw new Error(`${trip.slug}: card image is not a present self-hosted asset (${cardImage.path})`);
       }
+      const cardSummary = cardSummaries[trip.slug];
+      if (typeof cardSummary !== 'string' || cardSummary.length < 90 || cardSummary.length > 240 || !cardSummary.endsWith('.')) {
+        throw new Error(`${trip.slug}: missing a complete one-sentence card summary`);
+      }
       return {
       ...trip,
       appealRank: trip.excluded ? null : index + 1,
       heroImage: cardImage.path,
       cardImageAlt: cardImage.alt,
+      cardSummary,
       display: {
         weatherTempF: trip.evidence?.facts?.find((fact) => fact.id === 'climate-proxy')?.value?.temperatureF || null,
         swimTempF: trip.facets.swimTempF,
