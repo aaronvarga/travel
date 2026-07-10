@@ -1077,5 +1077,145 @@
     "url": "https://www.tommy.hr/prodavaonice",
     "publisher": "Tommy",
     "scope": "Current operator catalog covering pantry staples, dairy, frozen pizza, prepared meals, breakfast and children's food."
+  },
+  "maui-noaa-kahului-normals": {
+    "label": "NOAA 1991–2020 Kahului monthly normals",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00022516&startDate=2026-06-01&endDate=2026-06-30&format=json&includeAttributes=false&includeStationName=true",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Station USW00022516 June normals for Kahului; regional historical baseline, not a beach-specific June 2027 forecast."
+  },
+  "kauai-noaa-lihue-summary": {
+    "label": "NOAA Lihue annual climate summary",
+    "tier": "official",
+    "url": "https://www.ncei.noaa.gov/pub/access/cebrequests/2023lcdannual/01202313LIH.pdf",
+    "publisher": "NOAA National Centers for Environmental Information",
+    "scope": "Lihue station monthly climate summary used as a historical Kauai planning baseline; not a 2027 forecast."
+  },
+  "kauai-pacioos-hanalei": {
+    "label": "PacIOOS Hanalei nearshore buoy",
+    "tier": "official",
+    "url": "https://www.pacioos.hawaii.edu/water/buoy-hanalei/",
+    "publisher": "Pacific Islands Ocean Observing System",
+    "scope": "Live Hanalei water observations corroborate warm conditions but do not establish a full June climatology or future safety."
+  },
+  "hawaii-dbedt-vacation-rentals-2026-05": {
+    "label": "Hawaii DBEDT May 2026 vacation-rental performance",
+    "tier": "official",
+    "url": "https://files.hawaii.gov/dbedt/economic/tourism/vacation-rental/hawaii-vacation-rental-performance-2026-05.pdf",
+    "publisher": "Hawaii Department of Business, Economic Development and Tourism",
+    "scope": "Official regional ADR benchmark for Wailea/Kihei and Kauai; not an exact property quote and excludes itinerary-specific taxes and fees."
+  },
+  "southwest-pit-ogg": {
+    "label": "Southwest Pittsburgh to Kahului route page",
+    "tier": "operator",
+    "url": "https://www.southwest.com/en/flights/flights-from-pittsburgh-to-kahului",
+    "publisher": "Southwest Airlines",
+    "scope": "Current route availability signal only; exact June 10, 2027 itinerary, protection, price and connection times are unconfirmed."
+  },
+  "google-flights-pit-lih": {
+    "label": "Google Flights Pittsburgh to Kauai route snapshot",
+    "tier": "observed-quote",
+    "url": "https://www.google.com/travel/flights/flights-from-pittsburgh-to-kauai.html?gl=US&hl=en-US",
+    "publisher": "Google Flights",
+    "scope": "Observed historical June fare and journey-time proxy; not an exact June 2027 quote or protected open-jaw itinerary."
+  },
+  "southwest-ogg-lih": {
+    "label": "Southwest Kahului to Lihue route page",
+    "tier": "operator",
+    "url": "https://www.southwest.com/en/flights/flights-from-kahului-to-lihue",
+    "publisher": "Southwest Airlines",
+    "scope": "Current nonstop frequency, duration and fare snapshot; June 15, 2027 schedule and price are not confirmed."
+  },
+  "maui-haleakala-fees": {
+    "label": "Haleakala National Park fees and reservations",
+    "tier": "official",
+    "url": "https://www.nps.gov/hale/planyourvisit/fees.htm",
+    "publisher": "National Park Service",
+    "scope": "Current vehicle fee and sunrise timed-entry rules; 2027 price and operations require recheck."
+  },
+  "maui-haleakala-sunrise": {
+    "label": "Haleakala sunrise planning guidance",
+    "tier": "official",
+    "url": "https://www.nps.gov/hale/planyourvisit/sunrise.htm",
+    "publisher": "National Park Service",
+    "scope": "Current summit weather, road, service and reservation guidance supporting a sunset-first family plan."
+  },
+  "maui-hana-official": {
+    "label": "GoHawaii Hana and Hana Highway guidance",
+    "tier": "official",
+    "url": "https://www.gohawaii.com/islands/maui/regions/east-maui/Hana",
+    "publisher": "Hawaii Tourism Authority",
+    "scope": "Official route distance, drive-time, curves, bridges and visitor code; actual 2027 road and weather conditions remain day-specific."
+  },
+  "maui-waianapanapa": {
+    "label": "Waianapanapa State Park rules and fees",
+    "tier": "official",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/maui/waianapanapa-state-park/",
+    "publisher": "Hawaii Division of State Parks",
+    "scope": "Current nonresident entry, parking and reservation requirement; release timing, closures and 2027 prices require recheck."
+  },
+  "maui-malolo-snorkel": {
+    "label": "Malolo Molokini or Coral Gardens snorkel product",
+    "tier": "operator",
+    "url": "https://molokinimaui.com/tours/snorkel/",
+    "publisher": "Malolo Molokini Snorkeling Tours",
+    "scope": "Current product, age pricing and alternate-site language; sailing, destination and 2027 price remain conditions-dependent."
+  },
+  "kauai-waimea-canyon": {
+    "label": "Waimea Canyon State Park",
+    "tier": "official",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/waimea-canyon-state-park/",
+    "publisher": "Hawaii Division of State Parks",
+    "scope": "Current access, entry and parking information; specific road, lookout and trail availability requires a current check."
+  },
+  "kauai-kokee": {
+    "label": "Kokee State Park",
+    "tier": "official",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/kokee-state-park/",
+    "publisher": "Hawaii Division of State Parks",
+    "scope": "Current access, fees and park notices; construction, lots, trails and 2027 operations remain variable."
+  },
+  "kauai-napali-capt-andys": {
+    "label": "Capt Andy's Na Pali Star Snorkel BBQ Sail",
+    "tier": "operator",
+    "url": "https://www.napali.com/star/snorkel/",
+    "publisher": "Capt Andy's Sailing Adventures",
+    "scope": "Current age prices, duration, departure point and weather substitution language; 2027 availability and price are not confirmed."
+  },
+  "kauai-haena-state-park": {
+    "label": "Haena State Park access",
+    "tier": "official",
+    "url": "https://dlnr.hawaii.gov/dsp/parks/kauai/haena-state-park/",
+    "publisher": "Hawaii Division of State Parks",
+    "scope": "Current visitor limits, reservation requirement and trail boundary rules; weather closures and 2027 operations require recheck."
+  },
+  "kauai-gohaena": {
+    "label": "Go Haena shuttle and reservation FAQ",
+    "tier": "operator",
+    "url": "https://gohaena.com/info-faqs/",
+    "publisher": "Go Haena",
+    "scope": "Current reservation release timing, shuttle inclusion and age pricing; inventory and 2027 rules remain unconfirmed."
+  },
+  "kauai-ocean-safety": {
+    "label": "Kauai Ocean Safety Bureau",
+    "tier": "official",
+    "url": "https://www.kauai.gov/Government/Departments-Agencies/Fire-Department/Ocean-Safety-Bureau",
+    "publisher": "County of Kauai",
+    "scope": "Official lifeguard and ocean-safety guidance; live beach hazards and closures must be checked each day."
+  },
+  "maui-family-menus": {
+    "label": "Verified Kīhei and Wailea family menus",
+    "tier": "operator",
+    "url": "https://menus.mbcrestaurants.com/menu/mbcrestaurants-kihei",
+    "publisher": "Maui Brewing Company",
+    "scope": "Current pizza, burger, chicken and keiki prices; paired itinerary links provide additional plain-food fallbacks and all menus require 2027 recheck."
+  },
+  "kauai-family-menus": {
+    "label": "Verified Poipu and Hanalei family menus",
+    "tier": "operator",
+    "url": "https://hanaleiburger.com/",
+    "publisher": "Hanalei Burger",
+    "scope": "Current burger, grilled-cheese and fries pricing; paired itinerary links provide Poipu pizza, hot-dog and chicken alternatives."
   }
 }

@@ -38,6 +38,10 @@ module.exports = {
     path: 'assets/img/hawaii/google_kilauea_lava_flow_02.jpg',
     alt: 'Glowing lava flowing across black volcanic rock on Hawaiʻi Island',
   },
+  'maui-kauai': {
+    path: 'assets/img/maui-kauai/google_napali_pro_01.jpg',
+    alt: 'An aerial view of turquoise water and a hidden beach beneath Kauai’s cathedral-like Nā Pali cliffs',
+  },
   iceland: {
     path: 'assets/img/iceland/google_vestrahorn_sunrise_qa_01.jpg',
     alt: 'Vestrahorn’s jagged peaks reflected at sunrise on Iceland’s black-sand coast',

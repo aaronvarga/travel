@@ -28,6 +28,7 @@ const TOKEN = {
   'portugal-sicily': 'portugal-sicily', 'madeira-sicily': 'madeira-sicily',
   'portugal-algarve-sicily': 'portugal-algarve-sicily',
   'madeira-mallorca': 'madeira-mallorca', 'canary-islands': 'canary-islands', hawaii: 'hawaii',
+  'maui-kauai': 'maui-kauai',
   croatia: 'croatia', 'italy-salento-amalfi': 'italy', 'sardinia-corsica': 'sardinia',
   'greece-via-lisbon': 'greece', 'turkish-riviera': 'turkey', 'sicily-malta': 'sicily',
   spain: 'spain', 'california-pacific-coast': 'california', 'southern-france': 'southernfrance',

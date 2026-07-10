@@ -1,0 +1,334 @@
+{
+  "schemaVersion": 1,
+  "slug": "maui-kauai",
+  "reviewedAt": "2026-07-10",
+  "overallConfidence": "medium",
+  "evidenceBasis": "The score uses an internally reconciled 12-night route, official NOAA climate and water observations, current state/federal park rules, current operator pricing, official lodging-market ADRs and observed air-route/fare proxies. Exact June 2027 air, rooms, cars, boats and reservations remain explicitly unconfirmed.",
+  "confidenceBasis": [
+    "station-specific NOAA normals for Kahului and Lihue plus NOAA/PacIOOS water observations",
+    "official NPS, Hawaii State Parks, county ocean-safety and federal refuge rules",
+    "current airline, snorkel, sail, shuttle and restaurant operator pages",
+    "official regional lodging ADRs rather than exact June 2027 property quotes"
+  ],
+  "axes": {
+    "budget": {
+      "score": 1,
+      "rationale": "The nine-line budget reconciles to $14,600–$21,600. Its low edge barely fits the $15,000 preference and the high case is materially above it; exact June 2027 quotes are unavailable, so the canonical rubric supports 1/5.",
+      "confidence": "medium",
+      "evidence": ["budget-band"]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "NOAA June normals support hot, dry South Maui and warm Kauai touring, while Haleakala summit cold, windward-Hana rain and North Shore runoff prevent a near-guaranteed 5/5 conclusion.",
+      "confidence": "high",
+      "evidence": ["climate-proxy"]
+    },
+    "swim": {
+      "score": 5,
+      "rationale": "NOAA's Kahului June coastal mean is 78.8°F and the route repeatedly uses lifeguarded or operator-managed water days. Daily hazard, runoff and boat decisions remain mandatory but the underlying warm-water access fits 5/5.",
+      "confidence": "high",
+      "evidence": ["swim-conditions"]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "The route strongly balances warm-water days and major landscapes, with smaller-town and food experiences in Kīhei, Upcountry, Hāna, Kōloa, Kīlauea and Hanalei. Culture/town depth is lighter than the existing Oahu plus Big Island route, supporting 4/5.",
+      "confidence": "high",
+      "evidence": ["itinerary-structure"]
+    },
+    "ease": {
+      "score": 3,
+      "rationale": "Three bases, two base moves, one inter-island flight, two rental periods, a red-eye and the long Haleakala/Hana days create moderate deterministic load. Splitting Kauai south/north removes the worst repeated cross-island drives.",
+      "confidence": "high",
+      "evidence": ["operational-load"]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Current operator menus verify pizza, burgers, chicken, grilled cheese, fries and pasta in every base, while kitchens and groceries reduce restaurant dependence. Remote park/boat days still require packed food, so the fit is strong rather than exceptional.",
+      "confidence": "high",
+      "evidence": ["family-food-coverage"]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "The route is structurally feasible, but June 2027 air remains unpublished and Hāʻena inventory, Nā Pali seas, Hāna roads, summit conditions and North Shore runoff are material single-day gates. Explicit buffers and alternatives keep the risk manageable at 3/5.",
+      "confidence": "high",
+      "evidence": ["route-readiness", "reservation-conditions"]
+    },
+    "nights": {
+      "score": 5,
+      "rationale": "Twelve hotel nights derives 5/5 under the canonical nights rubric.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    },
+    "novelty": {
+      "score": 2,
+      "rationale": "Maui is explicitly on the visited-place list and is a material five-night repeat; Kauai is new. That matches the rubric's route-includes-visited-place level of 2/5.",
+      "confidence": "high",
+      "evidence": ["visited-overlap"]
+    },
+    "pto": {
+      "score": 2,
+      "rationale": "Nine PTO days derives 2/5 and has zero default weight. It becomes ten if the employer does not observe Juneteenth on Friday, June 18, 2027.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary", "hawaii-dbedt-vacation-rentals-2026-05", "google-flights-pit-lih", "southwest-ogg-lih", "kauai-napali-capt-andys"],
+      "value": {
+        "lowUsd": 14600,
+        "expectedUsd": 17950,
+        "highUsd": 21600,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 9,
+        "arithmetic": "3,200–4,400 mainland air + 250–500 inter-island + 1,200–1,700 cars/fuel/parking + 2,250–3,200 Kihei lodging + 1,800–2,800 Poipu lodging + 1,300–2,200 Princeville lodging + 2,400–3,200 food + 1,500–2,500 activities + 700–1,100 insurance/misc = 14,600–21,600"
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "Maui + Kauai #budget and #totals; nine line items and five-category grand-total rollup",
+        "hawaii-dbedt-vacation-rentals-2026-05": "May 2026 report page 3: Wailea/Kihei ADR $506.98 and Kauai ADR $592.64; regional benchmark only",
+        "google-flights-pit-lih": "Route snapshot: no nonstop, fastest connecting journey about 11h45 and historical June typical fare $640–850 per traveler",
+        "southwest-ogg-lih": "Current route page: approximately 59-minute flight, daily nonstop pattern and observed $62–154 one-way fare range",
+        "kauai-napali-capt-andys": "Star Snorkel BBQ Sail: $260 adult age 13+, $240 child age 3–12; family subtotal $1,020 before tax/fees"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile", "internal-itinerary"],
+      "value": {
+        "depart": "2027-06-10",
+        "return": "2027-06-23",
+        "hotelNights": 12,
+        "ptoDays": 9,
+        "ptoDaysWithoutObservedHoliday": 10,
+        "homeProtected": ["2027-06-24", "2027-06-25", "2027-06-26"]
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows[maui-kauai] plus preferred June 23 return and required June 24–26 Pittsburgh days",
+        "internal-itinerary": "Day-by-day schedule: 12 hotel nights June 10–21, June 22 red-eye, June 23 Pittsburgh arrival"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["maui-noaa-kahului-normals", "kauai-noaa-lihue-summary", "maui-haleakala-sunrise", "internal-itinerary"],
+      "value": {
+        "score": 4,
+        "temperatureF": [30, 88],
+        "juneMeanHighLowF": {"Kahului": [88.3, 70.3], "Lihue": [82.9, 72.3]},
+        "route": "Kihei, Haleakala, Hana, Poipu, Waimea/Kokee and Hanalei",
+        "dateWindow": "2027-06-10 → 2027-06-23"
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "maui-noaa-kahului-normals": "NCEI station USW00022516, 1991–2020 monthly normals, June daily maximum 88.3°F, minimum 70.3°F and precipitation 0.17 inch",
+        "kauai-noaa-lihue-summary": "NOAA/NCEI Lihue climate summary, June normal maximum 82.9°F, minimum 72.3°F and mean 77.8°F",
+        "maui-haleakala-sunrise": "NPS Plan for the Experience: summit dawn/dusk regularly wet, windy and below freezing; no food, clothing or gas in park",
+        "internal-itinerary": "Haleakala layers, Hana rain/road fallback and North Shore runoff alternatives are encoded throughout #itinerary"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["noaa-coastal-water-temperature", "kauai-pacioos-hanalei", "hawaii-ocean-safety", "kauai-ocean-safety", "internal-itinerary"],
+      "value": {
+        "score": 5,
+        "temperatureF": [78, 80],
+        "hasSwim": true,
+        "historicalJuneF": {"KahuluiHarbor": 78.8},
+        "waterTypes": ["Pacific beaches", "operator-managed snorkel", "hotel pools"],
+        "dateWindow": "2027-06-10 → 2027-06-22"
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "noaa-coastal-water-temperature": "NCEI Coastal Water Temperature Guide, Hawaiian Island Coast table, Kahului Harbor June monthly mean 78.8°F",
+        "kauai-pacioos-hanalei": "Hanalei nearshore buoy live observation was about 79°F during the July 10, 2026 research snapshot; corroboration, not June climatology",
+        "hawaii-ocean-safety": "State ocean-safety system provides live hazard ratings and lifeguarded Maui/Kauai beach guidance; every swim is day-dependent",
+        "kauai-ocean-safety": "County Ocean Safety Bureau beach and lifeguard guidance plus runoff/surf warnings for Kauai shore days",
+        "internal-itinerary": "Repeated Kamaole, operator snorkel, Poipu, Kee and Hanalei water days with pool and land fallbacks"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary"],
+      "value": {
+        "score": 4,
+        "hotelNights": 12,
+        "bases": 3,
+        "basePattern": ["Kihei 5", "Poipu 4", "Princeville/Hanalei 3"],
+        "modes": ["warm water and recovery", "small towns and food", "volcanoes, canyons and coastal hiking"],
+        "balancePercent": {"water": 45, "towns": 25, "nature": 30},
+        "recoveryDays": 2
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "Maui + Kauai #overview, #stays, #calendar, #itinerary and #balance"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "southwest-pit-ogg", "southwest-ogg-lih", "maui-hana-official"],
+      "value": {
+        "easeScore": 3,
+        "maxConnections": 2,
+        "singleTicket": true,
+        "airHours": 26,
+        "groundHours": 19.5,
+        "baseMoves": 2,
+        "rentalPeriods": 2,
+        "interIslandFlights": 1,
+        "returnRedEye": true,
+        "longestGroundDayHours": 12
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "#calendar and #getting-around: three bases, OGG-LIH hop, two rental periods, June 22 red-eye and route-specific drive estimates",
+        "southwest-pit-ogg": "Current operator route page demonstrates connecting PIT-OGG service; exact same-day June 10, 2027 arrival is not published",
+        "southwest-ogg-lih": "Current operator route page shows direct Kahului-Lihue service averaging about 59 minutes",
+        "maui-hana-official": "Official Hana page: 52 miles from Kahului, 2–4 hours before stops, 620 curves and 59 bridges"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["maui-family-menus", "kauai-family-menus", "internal-itinerary"],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true,
+        "verifiedBases": ["Kihei/Wailea", "Poipu/Koloa", "Princeville/Hanalei"],
+        "coverage": ["pizza", "burgers", "chicken tenders", "grilled cheese", "fries", "pasta", "grocery/self-catering"]
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "maui-family-menus": "Maui Brewing Kīhei live menu: cheese pizza $19, cheeseburger $18 and keiki chicken fingers/grilled cheese/pizza $11; itinerary also links Monkeypod and Cafe Olei",
+        "kauai-family-menus": "Hanalei Burger current menu: burger $10, cheeseburger $12, grilled cheese $8 and fries $6; itinerary also links Poipu and Hanalei pizza/chicken fallbacks",
+        "internal-itinerary": "Every spot includes two or three named plain-food fallbacks and all three bases prioritize kitchens"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "southwest-pit-ogg", "google-flights-pit-lih", "southwest-ogg-lih"],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 2,
+        "route": "PIT → OGG; OGG → LIH; LIH → PIT",
+        "dateWindow": "2027-06-10 → 2027-06-23",
+        "confirmed2027": false,
+        "bookingGates": ["same-day June 10 PIT-OGG arrival", "direct June 15 OGG-LIH timing", "protected June 22 LIH departure arriving PIT June 23", "three exact lodging totals", "two rental quotes"]
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "#air-travel, #getting-around and #status define the open-jaw route, one hop, two cars and June 23 hard return",
+        "southwest-pit-ogg": "Current airline route page supports connecting PIT-OGG feasibility but not exact June 2027 departure/arrival or price",
+        "google-flights-pit-lih": "Current route page supports connecting Kauai-Pittsburgh service, no nonstop and long travel times; exact open-jaw return is unquoted",
+        "southwest-ogg-lih": "Current nonstop Maui-Kauai service proves the proposed island hop is structurally credible; June 2027 schedule is not published"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "reservation-conditions",
+      "category": "reservation",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["maui-haleakala-fees", "maui-waianapanapa", "kauai-waimea-canyon", "kauai-kokee", "kauai-napali-capt-andys", "kauai-haena-state-park", "kauai-gohaena", "kauai-ocean-safety"],
+      "value": {
+        "hardReservations": ["Waianapanapa", "Kilauea Point", "Haena shuttle/entry"],
+        "conditionGates": ["Hana road and flash flooding", "Haleakala summit cold/cloud", "Na Pali sea state", "Waimea/Kokee road and lot status", "Haena trail closure", "Hanalei runoff/surf"],
+        "haenaRelease": "30 days ahead at midnight HST under current rules",
+        "napaliFamilyPriceUsd": 1020
+      },
+      "verifiedAt": "2026-07-10",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "maui-haleakala-fees": "Current $30 private vehicle entrance; sunrise adds a separate reservation but the canonical sunset plan does not use it",
+        "maui-waianapanapa": "Current nonresident $5 per person plus $10 vehicle parking and reservation-required operation",
+        "kauai-waimea-canyon": "Current nonresident entry/parking and park notice page for canyon lookouts",
+        "kauai-kokee": "Current park access, fee and construction/closure notice page paired with Waimea receipt",
+        "kauai-napali-capt-andys": "Current operator states snorkeling and Na Pali access remain weather/sea-condition dependent and may be substituted or canceled",
+        "kauai-haena-state-park": "Current daily visitor limits, advance reservation and Hanakapiai boundary/camping-permit rules",
+        "kauai-gohaena": "Current FAQ: 30-day midnight-HST release and $45 age 16+/$25 age 4–15 round-trip shuttle including entry",
+        "kauai-ocean-safety": "County beach guidance and advisories require live checks before Poipu, Kee or Hanalei swimming"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "value": {"score": 2, "overlap": ["Maui"], "new": ["Kauai"]},
+      "verifiedAt": "2026-07-10",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Canonical family comparison inputs and the new maui-kauai trip window",
+        "scorecard-contract": "scorecard.manifest.json novelty rubric and visited-place list explicitly includes Maui"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 26,
+    "groundHours": 19.5,
+    "timeZones": 5,
+    "baseMoves": 2,
+    "longestTransferHours": 15,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 5,
+    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "lodgingComfort": {
+      "airConditioning": "required in all three bases",
+      "kitchen": "strongly preferred in all three bases",
+      "laundry": "required in Kihei or Poipu",
+      "realBeds": "required for four; sofa-bed-only layouts rejected"
+    },
+    "waterSafety": "Use lifeguarded Kamaole, Poipu and Hanalei Pavilion areas; operator decisions govern boat snorkeling; Haena and North Shore swimming remain conditions-dependent.",
+    "crowdingPressure": "High at Haena release, Hana pullouts, Haleakala sunset and popular Poipu/Hanalei beaches; timed reservations, early starts and two recovery buffers mitigate it.",
+    "medicalAccess": "Good in Kihei/Lihue corridors, slower from Hana, Haleakala summit, Kokee and Haena. Family medical constraints remain unknown; travel insurance and evacuation coverage need confirmation.",
+    "childActivityNotes": {
+      "age13": "fits all canonical days with normal ocean, altitude and motion-sickness screening",
+      "age8": "fits because the plan excludes Pipiwai from the Hana round trip, uses a catamaran rather than a raft and limits Kokee/Haena hiking"
+    }
+  }
+}

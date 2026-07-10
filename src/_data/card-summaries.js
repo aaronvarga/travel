@@ -13,6 +13,7 @@ module.exports = {
   'dolomites-sardinia': 'Combines Venice and high-alpine Dolomites hiking with a warm-water Sardinia finish, delivering the trip’s strongest mountain-to-beach contrast.',
   'greece-via-lisbon': 'Uses Lisbon and Athens as short cultural bookends around a Crete-focused trip of Venetian towns, mountain drives, and standout beaches.',
   hawaii: 'Splits time between Oʻahu and Hawaiʻi Island for warm swimming, snorkeling, volcanoes, waterfalls, and an easy domestic two-island adventure.',
+  'maui-kauai': 'Pairs Maui’s warm beaches, Haleakalā, and Hāna with Kauai’s Nā Pali Coast, Waimea Canyon, Poʻipū swimming, and a slow Hanalei finish.',
   iceland: 'Builds a photography-first loop around Reykjavík, waterfalls, black-sand beaches, glacier lagoons, geothermal pools, and immense volcanic landscapes.',
   'italy-salento-amalfi': 'Connects Gallipoli, Maratea, and Sorrento for Italian food, historic coastal towns, beach time, and the cinematic cliffs of the Amalfi Coast.',
   'madeira-crete': 'Pairs Madeira’s dramatic levada and ridge hiking with Crete’s warm beaches, Venetian towns, and family-friendly Mediterranean swimming.',

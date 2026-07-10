@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "maui-kauai",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night Maui + Kauai plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 9,
+      "budget": {
+        "lowUsd": 14600,
+        "expectedUsd": 17950,
+        "highUsd": 21600,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Five Kihei nights, four Poipu nights and three Princeville/Hanalei nights; June 18 PTO depends on employer holiday observance.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "Maui + Kauai canonical #stays, #itinerary, #budget and #totals"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "No shorter version is promoted: eleven nights loses the full-length scoring benefit and compresses either Maui recovery or Kauai's south/north split."
+}

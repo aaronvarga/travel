@@ -94,6 +94,10 @@
       "2027-06-05",
       "2027-06-15"
     ],
+    "maui-kauai": [
+      "2027-06-10",
+      "2027-06-23"
+    ],
     "iceland": [
       "2027-06-08",
       "2027-06-21"
@@ -152,6 +156,7 @@
     ]
   },
   "routeReadiness": {
+    "maui-kauai": "current-proxy",
     "greece-via-lisbon": "reroute-required",
     "iceland": "exact-2027-schedule-required",
     "madeira-mallorca": "exact-2027-schedule-required",
