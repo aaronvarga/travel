@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "method": {
+    "seed": 20260709,
+    "iterations": 25000,
+    "weightRanges": "Budget 1-3; PTO 0-2; other axes 0-3, integer uniform. Results describe sensitivity, not probability of trip quality."
+  },
+  "presets": {
+    "default": {
+      "budget": 2,
+      "weather": 1,
+      "swim": 1,
+      "variety": 1,
+      "ease": 1,
+      "food": 1,
+      "risk": 1,
+      "nights": 1,
+      "novelty": 1,
+      "pto": 0
+    },
+    "value": {
+      "budget": 3,
+      "weather": 1,
+      "swim": 1,
+      "variety": 1,
+      "ease": 2,
+      "food": 1,
+      "risk": 2,
+      "nights": 1,
+      "novelty": 1,
+      "pto": 1
+    },
+    "lowest-friction": {
+      "budget": 1,
+      "weather": 1,
+      "swim": 1,
+      "variety": 1,
+      "ease": 3,
+      "food": 1,
+      "risk": 3,
+      "nights": 1,
+      "novelty": 1,
+      "pto": 2
+    },
+    "maximum-swim": {
+      "budget": 1,
+      "weather": 2,
+      "swim": 3,
+      "variety": 1,
+      "ease": 1,
+      "food": 1,
+      "risk": 1,
+      "nights": 1,
+      "novelty": 1,
+      "pto": 0
+    },
+    "epic-scenery": {
+      "budget": 1,
+      "weather": 2,
+      "swim": 1,
+      "variety": 3,
+      "ease": 1,
+      "food": 1,
+      "risk": 1,
+      "nights": 1,
+      "novelty": 2,
+      "pto": 0
+    }
+  },
+  "presetResults": {
+    "default": [
+      "portugal",
+      "madeira-mallorca",
+      "portugal-sicily",
+      "iceland",
+      "portugal-crete"
+    ],
+    "value": [
+      "portugal",
+      "madeira-mallorca",
+      "iceland",
+      "portugal-sicily",
+      "portugal-crete"
+    ],
+    "lowest-friction": [
+      "portugal",
+      "madeira-mallorca",
+      "iceland",
+      "hawaii",
+      "portugal-crete"
+    ],
+    "maximum-swim": [
+      "madeira-mallorca",
+      "portugal-crete",
+      "portugal-sicily",
+      "hawaii",
+      "sicily-malta"
+    ],
+    "epic-scenery": [
+      "portugal-sicily",
+      "madeira-mallorca",
+      "sicily-malta",
+      "portugal",
+      "portugal-crete"
+    ]
+  },
+  "robustFinalists": [
+    "madeira-mallorca",
+    "portugal",
+    "portugal-sicily",
+    "iceland"
+  ],
+  "trips": [
+    {
+      "slug": "madeira-mallorca",
+      "winPct": 21.7,
+      "top3Pct": 95.1,
+      "averageRank": 2.2
+    },
+    {
+      "slug": "portugal",
+      "winPct": 62.3,
+      "top3Pct": 84.7,
+      "averageRank": 2
+    },
+    {
+      "slug": "portugal-sicily",
+      "winPct": 10.9,
+      "top3Pct": 63.5,
+      "averageRank": 3.1
+    },
+    {
+      "slug": "iceland",
+      "winPct": 0.8,
+      "top3Pct": 25.5,
+      "averageRank": 6
+    },
+    {
+      "slug": "hawaii",
+      "winPct": 3.7,
+      "top3Pct": 11.2,
+      "averageRank": 8.3
+    },
+    {
+      "slug": "portugal-crete",
+      "winPct": 0.6,
+      "top3Pct": 11.2,
+      "averageRank": 5.1
+    },
+    {
+      "slug": "sicily-malta",
+      "winPct": 0,
+      "top3Pct": 8.4,
+      "averageRank": 5.4
+    },
+    {
+      "slug": "greece-via-lisbon",
+      "winPct": 0,
+      "top3Pct": 0.2,
+      "averageRank": 8.5
+    },
+    {
+      "slug": "madeira-sicily",
+      "winPct": 0,
+      "top3Pct": 0.2,
+      "averageRank": 11
+    },
+    {
+      "slug": "dolomites-sardinia",
+      "winPct": 0,
+      "top3Pct": 0,
+      "averageRank": 8.5
+    },
+    {
+      "slug": "madeira-crete",
+      "winPct": 0,
+      "top3Pct": 0,
+      "averageRank": 11.4
+    },
+    {
+      "slug": "portugal-algarve-sicily",
+      "winPct": 0,
+      "top3Pct": 0,
+      "averageRank": 9.8
+    },
+    {
+      "slug": "sardinia-corsica",
+      "winPct": 0,
+      "top3Pct": 0,
+      "averageRank": 9.9
+    }
+  ]
+}

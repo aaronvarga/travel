@@ -1,0 +1,1208 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-10T10:45:51.894Z",
+  "trips": [
+    {
+      "slug": "albania",
+      "canonical": {
+        "lowUsd": 9715,
+        "highUsd": 14230
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 9700,
+        "sumHighUsd": 14200,
+        "displayedLowUsd": 9715,
+        "displayedHighUsd": 14230,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights + Corfu ferry",
+          "text": "$5,330 target / $7,780 high",
+          "lowUsd": 5330,
+          "highUsd": 7780
+        },
+        {
+          "label": "Lodging, 13 hotel nights",
+          "text": "$1,285 target / $1,750 high",
+          "lowUsd": 1285,
+          "highUsd": 1750
+        },
+        {
+          "label": "Rental car, fuel, one-way drop",
+          "text": "$650 target / $950 high",
+          "lowUsd": 650,
+          "highUsd": 950
+        },
+        {
+          "label": "Food, groceries, activities, tickets",
+          "text": "$2,000 target / $2,750 high",
+          "lowUsd": 2000,
+          "highUsd": 2750
+        },
+        {
+          "label": "Insurance, fees, buffer",
+          "text": "$450 target / $1,000 high",
+          "lowUsd": 450,
+          "highUsd": 1000
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "balkans",
+      "canonical": {
+        "lowUsd": 10600,
+        "highUsd": 16800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 10600,
+        "sumHighUsd": 16800,
+        "displayedLowUsd": 10600,
+        "displayedHighUsd": 16800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$3,800-$5,400",
+          "lowUsd": 3800,
+          "highUsd": 5400
+        },
+        {
+          "label": "Lodging",
+          "text": "$1,995-$3,500",
+          "lowUsd": 1995,
+          "highUsd": 3500
+        },
+        {
+          "label": "Cars, ferry, local transport",
+          "text": "$1,975-$3,560",
+          "lowUsd": 1975,
+          "highUsd": 3560
+        },
+        {
+          "label": "Food",
+          "text": "$1,750-$2,550",
+          "lowUsd": 1750,
+          "highUsd": 2550
+        },
+        {
+          "label": "Activities and beach/boat costs",
+          "text": "$1,050-$1,750",
+          "lowUsd": 1050,
+          "highUsd": 1750
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "california-pacific-coast",
+      "canonical": {
+        "lowUsd": 9275,
+        "highUsd": 16200
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 9300,
+        "sumHighUsd": 16200,
+        "displayedLowUsd": 9300,
+        "displayedHighUsd": 16200,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation",
+          "text": "$2,300-$4,050",
+          "lowUsd": 2300,
+          "highUsd": 4050
+        },
+        {
+          "label": "Lodging",
+          "text": "$3,075-$6,100",
+          "lowUsd": 3075,
+          "highUsd": 6100
+        },
+        {
+          "label": "Activities and tickets",
+          "text": "$1,400-$2,150",
+          "lowUsd": 1400,
+          "highUsd": 2150
+        },
+        {
+          "label": "Food",
+          "text": "$1,850-$2,750",
+          "lowUsd": 1850,
+          "highUsd": 2750
+        },
+        {
+          "label": "Local extras",
+          "text": "$650-$1,150",
+          "lowUsd": 650,
+          "highUsd": 1150
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "canary-islands",
+      "canonical": {
+        "lowUsd": 12420,
+        "highUsd": 16690
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 12400,
+        "sumHighUsd": 16700,
+        "displayedLowUsd": 12420,
+        "displayedHighUsd": 16690,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights and inter-island hops",
+          "text": "$5,020 target / $6,720 high",
+          "lowUsd": 5020,
+          "highUsd": 6720
+        },
+        {
+          "label": "Lodging, 12 hotel nights",
+          "text": "$2,450 target / $3,160 high",
+          "lowUsd": 2450,
+          "highUsd": 3160
+        },
+        {
+          "label": "Cars, fuel, parking, transfers",
+          "text": "$1,130 target / $1,520 high",
+          "lowUsd": 1130,
+          "highUsd": 1520
+        },
+        {
+          "label": "Food, groceries, activities, tickets",
+          "text": "$3,320 target / $4,190 high",
+          "lowUsd": 3320,
+          "highUsd": 4190
+        },
+        {
+          "label": "Insurance, fees, buffer",
+          "text": "$500 target / $1,100 high",
+          "lowUsd": 500,
+          "highUsd": 1100
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "croatia",
+      "canonical": {
+        "lowUsd": 8400,
+        "highUsd": 12800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 8400,
+        "sumHighUsd": 12800,
+        "displayedLowUsd": 8400,
+        "displayedHighUsd": 12800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$3,600–4,800",
+          "lowUsd": 3600,
+          "highUsd": 4800
+        },
+        {
+          "label": "Ferries, transfers, rental car",
+          "text": "$700–1,300",
+          "lowUsd": 700,
+          "highUsd": 1300
+        },
+        {
+          "label": "Lodging",
+          "text": "$2,100–3,100",
+          "lowUsd": 2100,
+          "highUsd": 3100
+        },
+        {
+          "label": "Food + activities",
+          "text": "$1,705–2,900",
+          "lowUsd": 1705,
+          "highUsd": 2900
+        },
+        {
+          "label": "Docs/extras/eSIM/buffer",
+          "text": "$300–700",
+          "lowUsd": 300,
+          "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "dolomites-sardinia",
+      "canonical": {
+        "lowUsd": 13200,
+        "highUsd": 18890
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 13200,
+        "sumHighUsd": 18900,
+        "displayedLowUsd": 13200,
+        "displayedHighUsd": 18890,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights (transatlantic + island hop)",
+          "text": "$5,850-$7,780",
+          "lowUsd": 5850,
+          "highUsd": 7780
+        },
+        {
+          "label": "Lodging (13 nights, 4 bases)",
+          "text": "$2,750-$4,260",
+          "lowUsd": 2750,
+          "highUsd": 4260
+        },
+        {
+          "label": "Rental cars + fuel + tolls",
+          "text": "$1,200-$1,850",
+          "lowUsd": 1200,
+          "highUsd": 1850
+        },
+        {
+          "label": "Boats, cable cars, entries",
+          "text": "$950-$1,400",
+          "lowUsd": 950,
+          "highUsd": 1400
+        },
+        {
+          "label": "Food & drink",
+          "text": "$2,000-$2,900",
+          "lowUsd": 2000,
+          "highUsd": 2900
+        },
+        {
+          "label": "Docs, transfers, insurance, misc",
+          "text": "$450-$700",
+          "lowUsd": 450,
+          "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "greece-via-lisbon",
+      "canonical": {
+        "lowUsd": 10750,
+        "highUsd": 16900
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 10800,
+        "sumHighUsd": 16900,
+        "displayedLowUsd": 10750,
+        "displayedHighUsd": 16900,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights — international + intra-Europe hop, family of 4",
+          "text": "$5,200–8,200",
+          "lowUsd": 5200,
+          "highUsd": 8200
+        },
+        {
+          "label": "Domestic flight — Athens ↔ Chania",
+          "text": "$450–800",
+          "lowUsd": 450,
+          "highUsd": 800
+        },
+        {
+          "label": "Rental car — Crete, ~10 days",
+          "text": "$500–850",
+          "lowUsd": 500,
+          "highUsd": 850
+        },
+        {
+          "label": "Docs & extras — ETIAS, eSIM, Fast Track, transfers",
+          "text": "$250–350",
+          "lowUsd": 250,
+          "highUsd": 350
+        },
+        {
+          "label": "Lodging — 3 vacation bases + Athens gateway buffer",
+          "text": "$1,850–3,000",
+          "lowUsd": 1850,
+          "highUsd": 3000
+        },
+        {
+          "label": "Food + activities — sum of daily blocks above",
+          "text": "$2,500–3,700",
+          "lowUsd": 2500,
+          "highUsd": 3700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "hawaii",
+      "canonical": {
+        "lowUsd": 11000,
+        "highUsd": 15800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 11000,
+        "sumHighUsd": 15800,
+        "displayedLowUsd": 11000,
+        "displayedHighUsd": 15800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation — mainland flights, inter-island, rental cars + fuel",
+          "text": "$5,000–$6,400",
+          "lowUsd": 5000,
+          "highUsd": 6400
+        },
+        {
+          "label": "Lodging — 9 nights (Waikiki 4, Kona 3, Volcano 2)",
+          "text": "$2,900–$4,800",
+          "lowUsd": 2900,
+          "highUsd": 4800
+        },
+        {
+          "label": "Food and groceries — 10 travel days",
+          "text": "$1,600–$2,200",
+          "lowUsd": 1600,
+          "highUsd": 2200
+        },
+        {
+          "label": "Activities, beach logistics, park fees",
+          "text": "$1,100–$1,700",
+          "lowUsd": 1100,
+          "highUsd": 1700
+        },
+        {
+          "label": "Insurance / fees / misc",
+          "text": "$400–$700",
+          "lowUsd": 400,
+          "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "iceland",
+      "canonical": {
+        "lowUsd": 11420,
+        "highUsd": 14720
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 11400,
+        "sumHighUsd": 14700,
+        "displayedLowUsd": 11420,
+        "displayedHighUsd": 14720,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights (nonstop, family of 4)",
+          "text": "$2,600 target / $3,600 high",
+          "lowUsd": 2600,
+          "highUsd": 3600
+        },
+        {
+          "label": "Lodging, 12 hotel nights",
+          "text": "$3,200 target / $3,900 high",
+          "lowUsd": 3200,
+          "highUsd": 3900
+        },
+        {
+          "label": "Rental car, fuel, road tax, tolls",
+          "text": "$1,570 target / $1,920 high",
+          "lowUsd": 1570,
+          "highUsd": 1920
+        },
+        {
+          "label": "Food, groceries, activities, tickets",
+          "text": "$3,550 target / $4,300 high",
+          "lowUsd": 3550,
+          "highUsd": 4300
+        },
+        {
+          "label": "Insurance, eSIM, fees, buffer",
+          "text": "$500 target / $1,000 high",
+          "lowUsd": 500,
+          "highUsd": 1000
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "italy-salento-amalfi",
+      "canonical": {
+        "lowUsd": 11400,
+        "highUsd": 16300
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 4,
+        "sumLowUsd": 11400,
+        "sumHighUsd": 16300,
+        "displayedLowUsd": 11400,
+        "displayedHighUsd": 16300,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$5,200–7,200",
+          "lowUsd": 5200,
+          "highUsd": 7200
+        },
+        {
+          "label": "Ground transport (car, ferry, tolls/fuel)",
+          "text": "$1,640–2,340",
+          "lowUsd": 1640,
+          "highUsd": 2340
+        },
+        {
+          "label": "Lodging (12 nights total)",
+          "text": "$2,620–4,080",
+          "lowUsd": 2620,
+          "highUsd": 4080
+        },
+        {
+          "label": "Food & activities",
+          "text": "$1,930–2,700",
+          "lowUsd": 1930,
+          "highUsd": 2700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "madeira-crete",
+      "canonical": {
+        "lowUsd": 12100,
+        "highUsd": 16800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 12000,
+        "sumHighUsd": 16800,
+        "displayedLowUsd": 12100,
+        "displayedHighUsd": 16800,
+        "deltaLowUsd": -100,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation - all flights, two cars, transfers",
+          "text": "$6,580-$8,700",
+          "lowUsd": 6580,
+          "highUsd": 8700
+        },
+        {
+          "label": "Lodging - 13 hotel nights",
+          "text": "$1,955-$3,150",
+          "lowUsd": 1955,
+          "highUsd": 3150
+        },
+        {
+          "label": "Food and groceries",
+          "text": "$1,850-$2,500",
+          "lowUsd": 1850,
+          "highUsd": 2500
+        },
+        {
+          "label": "Activities, permits, gorge logistics, and paid beach logistics",
+          "text": "$1,150-$1,750",
+          "lowUsd": 1150,
+          "highUsd": 1750
+        },
+        {
+          "label": "Insurance / fees / misc",
+          "text": "$500-$700",
+          "lowUsd": 500,
+          "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "madeira-mallorca",
+      "canonical": {
+        "lowUsd": 11800,
+        "highUsd": 14800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 11800,
+        "sumHighUsd": 14800,
+        "displayedLowUsd": 11800,
+        "displayedHighUsd": 14800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation · flights, cars, fuel, transfers",
+          "text": "$6,300-$7,700",
+          "lowUsd": 6300,
+          "highUsd": 7700
+        },
+        {
+          "label": "Lodging · 12 hotel/apartment nights",
+          "text": "$2,300-$3,150",
+          "lowUsd": 2300,
+          "highUsd": 3150
+        },
+        {
+          "label": "Food and groceries",
+          "text": "$1,850-$2,250",
+          "lowUsd": 1850,
+          "highUsd": 2250
+        },
+        {
+          "label": "Activities and paid beach logistics",
+          "text": "$800-$1,100",
+          "lowUsd": 800,
+          "highUsd": 1100
+        },
+        {
+          "label": "Insurance / fees / misc",
+          "text": "$550-$600",
+          "lowUsd": 550,
+          "highUsd": 600
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "madeira-sicily",
+      "canonical": {
+        "lowUsd": 12300,
+        "highUsd": 15500
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 12300,
+        "sumHighUsd": 15600,
+        "displayedLowUsd": 12300,
+        "displayedHighUsd": 15500,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 100,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation",
+          "text": "$6,900-$8,200",
+          "lowUsd": 6900,
+          "highUsd": 8200
+        },
+        {
+          "label": "Lodging",
+          "text": "$2,350-$3,300",
+          "lowUsd": 2350,
+          "highUsd": 3300
+        },
+        {
+          "label": "Food",
+          "text": "$2,100-$2,450",
+          "lowUsd": 2100,
+          "highUsd": 2450
+        },
+        {
+          "label": "Activities",
+          "text": "$600-$1,100",
+          "lowUsd": 600,
+          "highUsd": 1100
+        },
+        {
+          "label": "Insurance + misc.",
+          "text": "$350-$500",
+          "lowUsd": 350,
+          "highUsd": 500
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "portugal",
+      "canonical": {
+        "lowUsd": 7500,
+        "highUsd": 11700
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 7500,
+        "sumHighUsd": 11700,
+        "displayedLowUsd": 7500,
+        "displayedHighUsd": 11700,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights — international, open-jaw (PIT↔Lisbon / Madeira)",
+          "text": "$2,300–3,500",
+          "lowUsd": 2300,
+          "highUsd": 3500
+        },
+        {
+          "label": "Internal flight — Faro → Funchal (×4)",
+          "text": "$390–785",
+          "lowUsd": 390,
+          "highUsd": 785
+        },
+        {
+          "label": "Rental cars — both islands + one-way drop + tolls",
+          "text": "$650–1,250",
+          "lowUsd": 650,
+          "highUsd": 1250
+        },
+        {
+          "label": "Docs & extras — ETIAS, 2× IDP, Fast Track, eSIM, transfers",
+          "text": "$250–350",
+          "lowUsd": 250,
+          "highUsd": 350
+        },
+        {
+          "label": "Lodging — 12 nights, 3 bases (rough — not researched)",
+          "text": "$2,200–3,500",
+          "lowUsd": 2200,
+          "highUsd": 3500
+        },
+        {
+          "label": "Food + activities — sum of the daily blocks above",
+          "text": "$1,700–2,300",
+          "lowUsd": 1700,
+          "highUsd": 2300
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "portugal-algarve-sicily",
+      "canonical": {
+        "lowUsd": 13750,
+        "highUsd": 16500
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 13800,
+        "sumHighUsd": 16600,
+        "displayedLowUsd": 13750,
+        "displayedHighUsd": 16500,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 100,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation",
+          "text": "$7,450–$8,750",
+          "lowUsd": 7450,
+          "highUsd": 8750
+        },
+        {
+          "label": "Lodging",
+          "text": "$3,400–$4,300",
+          "lowUsd": 3400,
+          "highUsd": 4300
+        },
+        {
+          "label": "Food",
+          "text": "$2,100–$2,400",
+          "lowUsd": 2100,
+          "highUsd": 2400
+        },
+        {
+          "label": "Activities",
+          "text": "$650–$900",
+          "lowUsd": 650,
+          "highUsd": 900
+        },
+        {
+          "label": "Insurance + misc.",
+          "text": "$150–$250",
+          "lowUsd": 150,
+          "highUsd": 250
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "portugal-crete",
+      "canonical": {
+        "lowUsd": 11200,
+        "highUsd": 15400
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 11200,
+        "sumHighUsd": 15400,
+        "displayedLowUsd": 11200,
+        "displayedHighUsd": 15400,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation - all flights, car, local transfers",
+          "text": "$5,850-$7,500",
+          "lowUsd": 5850,
+          "highUsd": 7500
+        },
+        {
+          "label": "Lodging - 12 hotel nights",
+          "text": "$2,075-$3,325",
+          "lowUsd": 2075,
+          "highUsd": 3325
+        },
+        {
+          "label": "Food and groceries",
+          "text": "$1,650-$2,250",
+          "lowUsd": 1650,
+          "highUsd": 2250
+        },
+        {
+          "label": "Activities, gorge logistics, and paid beach logistics",
+          "text": "$1,100-$1,650",
+          "lowUsd": 1100,
+          "highUsd": 1650
+        },
+        {
+          "label": "Insurance / fees / misc",
+          "text": "$500-$700",
+          "lowUsd": 500,
+          "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "portugal-sicily",
+      "canonical": {
+        "lowUsd": 12400,
+        "highUsd": 14700
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 12500,
+        "sumHighUsd": 14700,
+        "displayedLowUsd": 12400,
+        "displayedHighUsd": 14700,
+        "deltaLowUsd": 100,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation",
+          "text": "$6,600-$7,450",
+          "lowUsd": 6600,
+          "highUsd": 7450
+        },
+        {
+          "label": "Lodging",
+          "text": "$2,650-$3,150",
+          "lowUsd": 2650,
+          "highUsd": 3150
+        },
+        {
+          "label": "Food",
+          "text": "$2,100-$2,450",
+          "lowUsd": 2100,
+          "highUsd": 2450
+        },
+        {
+          "label": "Activities",
+          "text": "$750-$1,100",
+          "lowUsd": 750,
+          "highUsd": 1100
+        },
+        {
+          "label": "Insurance + misc.",
+          "text": "$350-$500",
+          "lowUsd": 350,
+          "highUsd": 500
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "sardinia-corsica",
+      "canonical": {
+        "lowUsd": 10700,
+        "highUsd": 16500
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 4,
+        "sumLowUsd": 10700,
+        "sumHighUsd": 16500,
+        "displayedLowUsd": 10700,
+        "displayedHighUsd": 16500,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$3,200-4,600",
+          "lowUsd": 3200,
+          "highUsd": 4600
+        },
+        {
+          "label": "Lodging",
+          "text": "$3,200-5,500",
+          "lowUsd": 3200,
+          "highUsd": 5500
+        },
+        {
+          "label": "Cars, ferry, local transport",
+          "text": "$1,280-2,400",
+          "lowUsd": 1280,
+          "highUsd": 2400
+        },
+        {
+          "label": "Food + activities + extras",
+          "text": "$3,000-4,000",
+          "lowUsd": 3000,
+          "highUsd": 4000
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "sicily-malta",
+      "canonical": {
+        "lowUsd": 10400,
+        "highUsd": 15800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 10400,
+        "sumHighUsd": 15800,
+        "displayedLowUsd": 10400,
+        "displayedHighUsd": 15800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights — international open-jaw",
+          "text": "$4,000–5,200",
+          "lowUsd": 4000,
+          "highUsd": 5200
+        },
+        {
+          "label": "Internal flight — Catania → Malta + bags",
+          "text": "$250–500",
+          "lowUsd": 250,
+          "highUsd": 500
+        },
+        {
+          "label": "Ground transport — Sicily car + Malta no-car logistics",
+          "text": "$1,050–1,850",
+          "lowUsd": 1050,
+          "highUsd": 1850
+        },
+        {
+          "label": "Docs & extras — ETIAS, IDP, eSIM, airport buffers",
+          "text": "$250–400",
+          "lowUsd": 250,
+          "highUsd": 400
+        },
+        {
+          "label": "Lodging — 12 nights, 4 bases",
+          "text": "$3,400–5,200",
+          "lowUsd": 3400,
+          "highUsd": 5200
+        },
+        {
+          "label": "Food + activities",
+          "text": "$1,450–2,650",
+          "lowUsd": 1450,
+          "highUsd": 2650
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "southern-france",
+      "canonical": {
+        "lowUsd": 13350,
+        "highUsd": 19100
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 8,
+        "sumLowUsd": 13400,
+        "sumHighUsd": 19100,
+        "displayedLowUsd": 13350,
+        "displayedHighUsd": 19100,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Open-jaw airfare · PIT→NCE / MRS→PIT",
+          "text": "$5,200–6,800",
+          "lowUsd": 5200,
+          "highUsd": 6800
+        },
+        {
+          "label": "Lodging · 5 Nice / 3 Cassis / 4 Aix",
+          "text": "$4,200–6,000",
+          "lowUsd": 4200,
+          "highUsd": 6000
+        },
+        {
+          "label": "Riviera trains, buses + airport transfer",
+          "text": "$150–250",
+          "lowUsd": 150,
+          "highUsd": 250
+        },
+        {
+          "label": "One-way automatic rental · Jun 16–23",
+          "text": "$650–950",
+          "lowUsd": 650,
+          "highUsd": 950
+        },
+        {
+          "label": "Fuel, tolls + parking",
+          "text": "$350–600",
+          "lowUsd": 350,
+          "highUsd": 600
+        },
+        {
+          "label": "Food + groceries",
+          "text": "$1,800–2,600",
+          "lowUsd": 1800,
+          "highUsd": 2600
+        },
+        {
+          "label": "Activities / boats / admissions",
+          "text": "$500–1,000",
+          "lowUsd": 500,
+          "highUsd": 1000
+        },
+        {
+          "label": "Insurance, eSIM + contingency",
+          "text": "$500–900",
+          "lowUsd": 500,
+          "highUsd": 900
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "spain",
+      "canonical": {
+        "lowUsd": 8800,
+        "highUsd": 14800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 8800,
+        "sumHighUsd": 14800,
+        "displayedLowUsd": 8800,
+        "displayedHighUsd": 14800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights + train positioning",
+          "text": "$3,400–6,300",
+          "lowUsd": 3400,
+          "highUsd": 6300
+        },
+        {
+          "label": "Rental car + fuel + tolls + parking",
+          "text": "$950–1,650",
+          "lowUsd": 950,
+          "highUsd": 1650
+        },
+        {
+          "label": "Lodging — 12 nights",
+          "text": "$2,100–3,200",
+          "lowUsd": 2100,
+          "highUsd": 3200
+        },
+        {
+          "label": "Food + activities",
+          "text": "$2,100–3,350",
+          "lowUsd": 2100,
+          "highUsd": 3350
+        },
+        {
+          "label": "Docs/extras/eSIM/incidentals",
+          "text": "$250–300",
+          "lowUsd": 250,
+          "highUsd": 300
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "turkish-riviera",
+      "canonical": {
+        "lowUsd": 10000,
+        "highUsd": 17400
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 10000,
+        "sumHighUsd": 17400,
+        "displayedLowUsd": 10000,
+        "displayedHighUsd": 17400,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$4,800-$7,000",
+          "lowUsd": 4800,
+          "highUsd": 7000
+        },
+        {
+          "label": "Ground transport",
+          "text": "$1,100-$2,000",
+          "lowUsd": 1100,
+          "highUsd": 2000
+        },
+        {
+          "label": "Lodging",
+          "text": "$1,650-$3,400",
+          "lowUsd": 1650,
+          "highUsd": 3400
+        },
+        {
+          "label": "Food",
+          "text": "$1,350-$2,250",
+          "lowUsd": 1350,
+          "highUsd": 2250
+        },
+        {
+          "label": "Activities and boats",
+          "text": "$700-$2,000",
+          "lowUsd": 700,
+          "highUsd": 2000
+        },
+        {
+          "label": "Docs/extras/buffer",
+          "text": "$350-$700",
+          "lowUsd": 350,
+          "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    }
+  ]
+}
