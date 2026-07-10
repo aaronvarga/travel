@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-10T10:45:51.894Z",
+  "generatedAt": "2026-07-10T14:14:22.965Z",
   "trips": [
     {
       "slug": "albania",
@@ -760,7 +760,7 @@
       "slug": "portugal-algarve-sicily",
       "canonical": {
         "lowUsd": 13750,
-        "highUsd": 16500
+        "highUsd": 16600
       },
       "status": "matched",
       "arithmetic": {
@@ -770,9 +770,9 @@
         "displayedLowUsd": 13750,
         "displayedHighUsd": 16500,
         "deltaLowUsd": 0,
-        "deltaHighUsd": 100,
+        "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
-        "displayedDeltaHighUsd": 0,
+        "displayedDeltaHighUsd": -100,
         "toleranceUsd": 150
       },
       "lineItems": [
