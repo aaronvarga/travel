@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "slug": "portugal-algarve-sicily",
+  "reviewedAt": "2026-07-09",
+  "overallConfidence": "low",
+  "axes": {
+    "budget": { "score": 1, "rationale": "The independently itemized $13,750–$16,500 family planning band has a credible high case above the $15,000 strongly preferred maximum, which maps to 1/5 under the shared budget rubric; it remains visible, not excluded.", "confidence": "medium", "evidence": ["budget-band"] },
+    "weather": { "score": 4, "rationale": "June is mostly comfortable for the Algarve coast and Sicily, but Atlantic wind/cool water, Sicily heat, and mountain/boat conditions require recurring day-level management.", "confidence": "medium", "evidence": ["climate-proxy"] },
+    "swim": { "score": 3, "rationale": "The route has real Algarve and Sicily swim days plus pool/waterpark fallback, but the Algarve’s 68–72°F Atlantic water is cool and conditions are beach-specific.", "confidence": "medium", "evidence": ["swim-conditions"] },
+    "variety": { "score": 5, "rationale": "The canonical plan explicitly schedules water/coast, towns/food, and nature/hiking across Portugal and Sicily.", "confidence": "high", "evidence": ["itinerary-structure"] },
+    "ease": { "score": 1, "rationale": "Four hotel bases, two rental-car strategies, the mandatory Carvoeiro-to-Lisbon backtrack, and an unprotected intra-Europe transfer create very high deterministic logistics load.", "confidence": "high", "evidence": ["operational-load"] },
+    "food": { "score": 5, "rationale": "Each base and remote day has a named pizza/pasta or plain-food fallback, while both Portugal and Sicily are high-appeal family food destinations.", "confidence": "medium", "evidence": ["family-food-coverage"] },
+    "risk": { "score": 2, "rationale": "The critical Lisbon–Palermo leg is unpublished for 2027; current service is only a thin proxy and must be compatible with a long same-day drive or protected by an airport-night buffer.", "confidence": "low", "evidence": ["route-readiness"] },
+    "nights": { "score": 5, "rationale": "Twelve hotel nights derives 5/5 under the canonical nights rubric.", "confidence": "high", "evidence": ["trip-window"] },
+    "novelty": { "score": 5, "rationale": "Portugal, Algarve, Cefalù, Etna and Taormina are new within the documented visited-place overlap rubric.", "confidence": "high", "evidence": ["visited-overlap"] },
+    "pto": { "score": 3, "rationale": "Eight PTO days derives 3/5 and remains unweighted by default.", "confidence": "high", "evidence": ["trip-window"] }
+  },
+  "facts": [
+    {
+      "id": "budget-band", "category": "budget", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["internal-itinerary"],
+      "value": { "lowUsd": 13750, "expectedUsd": null, "highUsd": 16500, "targetUsd": 12000, "preferredMaxUsd": 15000, "distribution": "planning-band", "lineItemCount": 6, "arithmetic": "7,450–8,750 transportation + 3,400–4,300 lodging + 2,100–2,400 food + 650–900 activities + 150–250 misc = 13,750–16,600 (displayed high rounded within $150 tolerance)" },
+      "verifiedAt": "2026-07-09", "expiresAt": "2026-12-31", "sourceLocators": { "internal-itinerary": "Portugal + Algarve + Sicily #budget and #totals; itemized 2026 planning proxies, not 2027 quotes" }, "claimType": "proxy"
+    },
+    {
+      "id": "trip-window", "category": "dates", "proxyStatus": "confirmed", "confidence": "high", "sourceRefs": ["decision-profile"],
+      "value": { "depart": "2027-06-10", "return": "2027-06-23", "hotelNights": 12, "ptoDays": 8 },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-06-23", "sourceLocators": { "decision-profile": "decisionProfile.json tripWindows[portugal-algarve-sicily] and Pittsburgh commitment" }, "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy", "category": "climate", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["copernicus-climate", "visit-portugal-algarve", "internal-itinerary"],
+      "value": { "score": 4, "temperatureF": [64, 86], "route": "Cascais, Algarve, north/east Sicily", "dateWindow": "2027-06-10 → 2027-06-23" },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-04-01", "sourceLocators": { "copernicus-climate": "ERA5 June monthly planning proxy for Portugal and Sicily; not a 2027 forecast", "visit-portugal-algarve": "Algarve beach guidance names Ponta da Piedade, Carvoeiro and Praia da Marinha; not a live weather source", "internal-itinerary": "#itinerary climate notes and weather-flex rules" }, "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions", "category": "swim", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["noaa-oisst", "eea-bathing-water", "visit-portugal-algarve", "internal-itinerary"],
+      "value": { "score": 3, "temperatureF": [68, 75], "hasSwim": true, "route": "Algarve + Sicily", "dateWindow": "2027-06-10 → 2027-06-23" },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-05-15", "sourceLocators": { "noaa-oisst": "June coastal SST planning proxy: Algarve/cold Atlantic to Sicily/Mediterranean; no site-specific 2027 forecast", "eea-bathing-water": "Portugal and Italy latest published monitored bathing-water context; recheck site status and flags", "visit-portugal-algarve": "Praia da Marinha listing gives summer sea-water 20–22°C and lists seasonal services; conditions vary day to day", "internal-itinerary": "Pool/waterpark and Giardini-Naxos fallbacks in #itinerary" }, "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure", "category": "itinerary", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["internal-itinerary"],
+      "value": { "score": 5, "hotelNights": 12, "bases": 4, "modes": ["water", "town/culture", "nature/hikes"] },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-06-23", "sourceLocators": { "internal-itinerary": "#overview, #calendar, #itinerary and #balance" }, "claimType": "derived"
+    },
+    {
+      "id": "operational-load", "category": "logistics", "proxyStatus": "current-proxy", "confidence": "high", "sourceRefs": ["internal-itinerary", "lis-pmo-schedule-proxy"],
+      "value": { "easeScore": 1, "maxConnections": 2, "singleTicket": false, "airHours": 26, "groundHours": 11.3, "baseMoves": 3, "longestTransferHours": 7, "criticalTransfer": "Carvoeiro → LIS Airport → PMO → Cefalù" },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-02-01", "sourceLocators": { "internal-itinerary": "#air-travel and #getting-around; Carvoeiro→LIS proxy 273 km/~2h40 plus airport/PMO/Cefalù sequence", "lis-pmo-schedule-proxy": "July 2026 snapshot: easyJet route about 3h with two weekly nonstop departures; current proxy only" }, "claimType": "proxy"
+    },
+    {
+      "id": "family-food-coverage", "category": "food", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["internal-itinerary"],
+      "value": { "score": 5, "plainFoodRequired": true, "basesWithNamedFallbacks": 4 },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-04-01", "sourceLocators": { "internal-itinerary": "named pizza/pasta/plain-food restaurant fallbacks in every #itinerary stop card" }, "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness", "category": "route", "proxyStatus": "exact-2027-schedule-required", "confidence": "low", "sourceRefs": ["lis-pmo-schedule-proxy", "internal-itinerary", "state-travel", "cdc-travel"],
+      "value": { "status": "exact-2027-schedule-required", "singleTicket": false, "maxConnections": 2, "route": "Carvoeiro → Lisbon Airport → Palermo → Cefalù", "dateWindow": "2027-06-16" },
+      "verifiedAt": "2026-07-09", "expiresAt": "2026-12-31", "sourceLocators": { "lis-pmo-schedule-proxy": "Current 2026 LIS–PMO route appears twice weekly; does not confirm any June 2027 date/time", "internal-itinerary": "#air-travel, #getting-around, Day 7 and #todo require a Lisbon-airport-night contingency", "state-travel": "Portugal and Italy country advisory review required before booking/departure", "cdc-travel": "Portugal and Italy destination health guidance to recheck before departure" }, "claimType": "proxy"
+    },
+    {
+      "id": "ticket-proxies", "category": "price", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["cefalu-rocca", "etna-funivia", "taormina-park", "internal-itinerary"],
+      "value": { "cefaluRocca": "€5 adult / €2.50 reduced age 6–14 current listing", "etna": "cable car from €30 current operator listing", "taormina": "official ticket page; price must be rechecked" },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-04-01", "sourceLocators": { "cefalu-rocca": "Comune page updated March 27, 2026: current price, reduced-age category, and summer access hours", "etna-funivia": "operator 2,500m page: return cable car starting from €30; conditions say prices/operations can change", "taormina-park": "official Ancient Theatre ticket page; 2027 availability/tariff not yet published", "internal-itinerary": "#itinerary cost notes label each as a current proxy, never a 2027 quote" }, "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap", "category": "novelty", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "value": { "score": 5 },
+      "verifiedAt": "2026-07-09", "expiresAt": "2027-06-23", "sourceLocators": { "decision-profile": "family destination/constraint record", "scorecard-contract": "novelty rubric and documented visited-place overlap list" }, "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 26,
+    "groundHours": 11.3,
+    "timeZones": 1,
+    "baseMoves": 3,
+    "longestTransferHours": 7,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 5,
+    "childActivityFit": { "age13": "fits", "age8": "fits" },
+    "lodgingComfort": { "airConditioning": "required filter", "kitchen": "preferred apartment filter", "laundry": "preferred at Sicily coast base", "realBeds": "required filter" },
+    "waterSafety": "Beach flags/sea state and boat conditions must be checked day-of; water shoes recommended for rocks/pebbles.",
+    "crowdingPressure": "high in Algarve and Taormina during June; early/late timing and coast-base fallback required.",
+    "medicalAccess": "not independently audited; verify travel insurance and local care access before departure."
+  },
+  "evidenceBasis": "Scores combine canonical itinerary derivations with current official/operator and current-schedule proxies. A proxy is not a confirmation, quote, or booking recommendation for 2027.",
+  "confidenceBasis": ["independently itemized itinerary arithmetic", "current official/operator ticket signals", "historical climate/SST planning proxies", "exact-2027-schedule-required Portugal-to-Sicily gate"]
+}

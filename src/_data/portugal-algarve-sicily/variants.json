@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "slug": "portugal-algarve-sicily",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night scenery-first canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": { "lowUsd": 13750, "expectedUsd": null, "highUsd": 16500, "distribution": "planning-band", "chanceUnderPreferredMax": null },
+      "removedExperiences": [],
+      "notes": "2 Cascais + 3 Carvoeiro + 3 Cefalù + 4 Taormina coast. The Carvoeiro→LIS→PMO transfer must pass exact-2027 schedule validation; a Lisbon airport buffer is a contingency, not assumed availability.",
+      "confidence": "low",
+      "claimType": "proxy",
+      "sourceRefs": ["internal-itinerary", "lis-pmo-schedule-proxy"],
+      "sourceLocators": { "internal-itinerary": "Portugal + Algarve + Sicily canonical route and itemized tables", "lis-pmo-schedule-proxy": "current twice-weekly LIS–PMO schedule pattern; not 2027 confirmation" }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "A Lisbon-airport-night variant becomes canonical only after exact 2027 flight timing and repriced lodging demonstrate which Portugal night moves without reducing Sicily below its three/four-night allocation."
+}
