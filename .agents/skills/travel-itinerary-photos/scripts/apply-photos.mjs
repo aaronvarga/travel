@@ -43,25 +43,33 @@ const rel = (file) => `../../assets/img/${slug}/${file}`;
 const missing = [];
 const check = (file) => { if (!existsSync(join(localRoot, file))) missing.push(file); };
 
-// index carousels by id
+// Index carousels by id. A few legacy itineraries intentionally repeat the same
+// carouselId across itinerary entries; a quality plan must update every instance,
+// not silently leave the earlier one with its old images.
 const spotsById = new Map();
 for (const day of doc.itinerary?.days || []) {
   for (const spot of day.spots || []) {
-    if ('carouselId' in spot) spotsById.set(spot.carouselId, spot);
+    if ('carouselId' in spot) {
+      const spots = spotsById.get(spot.carouselId) || [];
+      spots.push(spot);
+      spotsById.set(spot.carouselId, spots);
+    }
   }
 }
 
 let carouselsSet = 0, imagesSet = 0;
 for (const [cid, imgs] of Object.entries(plan.carousels || {})) {
-  const spot = spotsById.get(cid);
-  if (!spot) { console.error(`✗ carouselId ${cid} not found in ${slug}`); process.exit(1); }
-  spot.images = imgs.map((im) => {
-    check(im.file);
-    const p = rel(im.file);
-    imagesSet++;
-    return { href: p, src: p, alt: im.alt, captionTitle: im.captionTitle, credit: im.credit };
-  });
-  carouselsSet++;
+  const spots = spotsById.get(cid);
+  if (!spots) { console.error(`✗ carouselId ${cid} not found in ${slug}`); process.exit(1); }
+  for (const spot of spots) {
+    spot.images = imgs.map((im) => {
+      check(im.file);
+      const p = rel(im.file);
+      imagesSet++;
+      return { href: p, src: p, alt: im.alt, captionTitle: im.captionTitle, credit: im.credit };
+    });
+    carouselsSet++;
+  }
 }
 
 // parts[0].html raw-URL replacements (hero + base cards)

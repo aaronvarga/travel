@@ -10,10 +10,12 @@
 //   - JSON still parses
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
+import { createRequire } from 'node:module';
 
 const slug = process.argv[2];
 if (!slug) { console.error('usage: node scripts/verify.mjs <slug>'); process.exit(1); }
 const jsonPath = `src/_data/${slug}/main.json`;
+const require = createRequire(import.meta.url);
 const raw = readFileSync(jsonPath, 'utf8');
 let doc;
 try { doc = JSON.parse(raw); } catch (e) { console.error(`✗ JSON parse failed: ${e.message}`); process.exit(1); }
@@ -56,26 +58,26 @@ for (const ref of [...new Set(embedded)]) {
   if (!existsSync(f)) fails.push(`missing embedded file: ${f}`);
 }
 
-// 4. home-page card header (index.html) for this slug must be local + file exists
+// 4. home-page card manifest entry must be local + file exists
 let cardState = 'n/a';
-if (existsSync('index.html')) {
-  const idx = readFileSync('index.html', 'utf8');
-  const m = idx.match(new RegExp(`<a class="sl-card" href="locations/${slug}/[^>]*>[\\s\\S]*?class="sl-photo"[\\s\\S]*?<img[^>]+src="([^"]+)"`));
-  if (!m) { cardState = 'card not found'; }
-  else {
-    const src = m[1];
-    if (!src.startsWith(`../../assets/img/${slug}/`) && !src.startsWith(`assets/img/${slug}/`)) {
-      fails.push(`home-page card still remote/non-local: ${src.slice(0, 70)}`);
-      cardState = 'REMOTE';
-    } else {
-      const f = join('assets', 'img', slug, src.split('/').pop());
-      if (!existsSync(f)) fails.push(`home-page card file missing: ${f}`);
-      cardState = 'local';
-    }
-  }
+try {
+  const card = require('../../../../src/_data/card-images.js')[slug];
+  if (!card?.path || !card?.alt) {
+    fails.push('home-page card manifest entry is missing path or alt text');
+    cardState = 'missing';
+  } else if (!card.path.startsWith('assets/img/')) {
+    fails.push(`home-page card is not a local source asset: ${card.path}`);
+    cardState = 'non-local';
+  } else if (!existsSync(card.path)) {
+    fails.push(`home-page card file missing: ${card.path}`);
+    cardState = 'missing file';
+  } else cardState = 'local';
+} catch {
+  fails.push('home-page card manifest could not be loaded');
+  cardState = 'unavailable';
 }
 
-console.log(`\n🔍 verify ${slug}: ${imgN} carousel images (${localN} local), ${new Set(embedded).size} embedded local refs, home card: ${cardState}`);
+console.log(`\n🔍 verify ${slug}: ${imgN} carousel images (${localN} local), ${new Set(embedded).size} embedded local refs, home card manifest: ${cardState}`);
 if (fails.length) {
   console.error(`✗ ${fails.length} problem(s):`);
   fails.forEach(f => console.error('   ✗ ' + f));

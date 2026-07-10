@@ -1,15 +1,21 @@
 ---
 name: travel-itinerary-photos
-description: Upgrade the photos on an existing TravelPlanner trip page (src/_data/<slug>/main.json) to professional, self-hosted "wow" shots — replacing Wikimedia/Unsplash/Pexels/remote images (in the day carousels, the hero, and the base cards) with photographer-grade images discovered via Google Images, downloaded, and self-hosted under assets/img/<slug>/. Use this skill whenever the user wants better/nicer/more professional photos on a trip, says the pics look amateur/boring/broken/Wikimedia, asks to "upgrade the photos", "replace the images", "self-host the pictures", "fix the photos on <trip>", "make the carousels look pro", or "swap the wiki photos" for a trip that already exists on the site — even if they don't name a file, carousel, or host. This is the photo-refresh counterpart to the travel-itinerary builder; reach for it to improve an existing page's imagery, not to build a new trip.
+description: Upgrade the photos on an existing TravelPlanner trip page (src/_data/<slug>/main.json) to aspirational, self-hosted flagship photography — replacing Wikimedia/Unsplash/Pexels/remote images and any dull, generic, watermarked, portrait, or accidental selections in day carousels, heroes, base cards, and the home-page card. Use this skill whenever the user wants better/nicer/more professional photos on a trip, says the pics look amateur/boring/broken/Wikimedia, asks to "upgrade the photos", "replace the images", "self-host the pictures", "fix the photos on <trip>", "make the carousels look pro", or asks for more epic/iconic/click-worthy travel imagery. This is the photo-refresh counterpart to the travel-itinerary builder; reach for it to improve an existing page's imagery, not to build a new trip.
 ---
 
 # Travel Itinerary Photo Upgrade
 
 Photos are the thing the user decides on **first** — a correct-but-dull shot is a failure,
-not a pass. This skill replaces every remote/amateur image on an existing trip page with a
-professional-grade, self-hosted one. The mechanical surgery (inventory, JSON rewrite, verify)
-is done by bundled scripts so it's exact and repeatable; **your effort goes into finding
-knockout photos and rejecting mediocre ones by eye.**
+not a pass. Treat every visible image as a miniature travel poster: it should make someone
+want to be there, not merely prove that the place exists. The mechanical surgery (inventory,
+JSON rewrite, verify) is done by bundled scripts so it's exact and repeatable; **your effort
+goes into finding knockout photos and rejecting mediocre ones by eye.**
+
+The home-page card is the quality bar for the rest of the trip. Its image should be the one
+unmistakable, aspirational frame that sells the itinerary at a glance. Carousel images may be
+more specific to an activity or stop, but every one still needs the same professional visual
+standard. Read `references/sourcing.md` before sourcing: it contains the flagship-photo rubric,
+the two-pass contact-sheet process, and the rendered-crop check.
 
 The page you're editing is `src/_data/<slug>/main.json` (150–400KB, indent-2 pretty-printed).
 **Four** photo surfaces belong to a trip:
@@ -17,21 +23,19 @@ The page you're editing is `src/_data/<slug>/main.json` (150–400KB, indent-2 p
 - **Hero** — a full-bleed `.pvcar` carousel of `<figure><img>` inside `parts[0].html`, and on
   some trips a `--hero-url:url(...)` CSS background.
 - **Base cards** — three `<img class="bimg">` in `parts[0].html`.
-- **Home-page card** — the trip's `.sl-card .sl-photo <img>` in the repo-root `index.html`
-  (the decision-hub grid). This one lives in a *different* file and is easy to forget — many
-  cards still point at a remote Unsplash URL even when the trip page itself is fully localized.
-  Its image path is **root-relative** (`assets/img/<slug>/…`, no `../../`) because `index.html`
-  sits at the repo root, unlike the trip pages under `locations/<slug>/`.
+- **Home-page card** — the trip's required entry in `src/_data/card-images.js`, rendered into
+  the decision-hub grid. This is the source of truth; root `index.html` is generated output.
+  It deliberately prevents the hub from silently using the first arbitrary itinerary photo.
 
-Read `references/sourcing.md` for the Google-Images discovery recipe, the contact-sheet
-workflow, and the full rejection rubric. Work one slug at a time.
+Work one slug at a time. Never let a technically valid local image pass without a visual review.
 
 > **This is a live repo with unrelated uncommitted edits.** `git status` before you start
 > and only ever touch the slug you're upgrading (`src/_data/<slug>/main.json`, its
-> `assets/img/<slug>/` files, and its one card in `index.html`). **Never** `git checkout` /
+> `assets/img/<slug>/` files, and its one entry in `src/_data/card-images.js`). **Never** `git checkout` /
 > `git restore` / `git stash` to undo an experiment — sibling trip files carry uncommitted
 > work that a checkout silently discards. If you need a sandbox, copy the file aside; don't
-> revert it. `apply-photos.mjs` only rewrites the one slug and the one card, by design.
+> revert it. `apply-photos.mjs` only rewrites the one slug; update the card-image manifest
+> separately and only for that slug.
 
 ## Workflow
 
@@ -46,6 +50,18 @@ count and any `--hero-url`, the base-card srcs, and a host tally (wikimedia / un
 pexels / other-remote vs. local). `maps.wikimedia.org` tiles are map infrastructure and are
 excluded — only `upload`/`commons.wikimedia.org` count as photos to kill. A trip already at
 `0` remote is done; don't churn it.
+
+### 1a. Write the visual brief before searching
+
+For each surface, name the desired emotional payoff and the strongest visual subject. Use the
+trip's actual promise, not a generic landmark: volcanic drama for Iceland, a cliff-and-cove
+reveal for a coast, a ridge with scale for a hiking itinerary, or a luminous old town above
+water for a culture-and-sea itinerary. The home card gets the single best frame; the hero gets
+the broadest scene; carousel shots can tell the supporting story without repeating either.
+
+If the exact stop has no remarkable photography, broaden to the most photogenic nearby view
+that truthfully represents the day's experience. A stunning regional image beats a flat,
+literal record shot.
 
 ### 2. Source only through Google Images discovery
 
@@ -69,13 +85,17 @@ page (WebFetch the page, read the `<img>`/og:image, download that URL). You stil
 "discovered via Google Images" in the plan/manifest and credit — the discovery channel is the
 requirement, the fetch path is just pragmatism.
 
-### 4. Build a contact sheet before choosing — always
+### 4. Build contact sheets before choosing — always
 
-Download every candidate to `/tmp/pics/<slug>/<subject>/` and montage them into one sheet so
-you compare at a glance instead of committing to the first hit. See `references/sourcing.md`
-for the exact `montage` command. Then **reject by eye**: portrait crops (carousels are
-landscape), storm/gloom/flat-overcast light, interiors, watermarks/date-stamps, tourist
-snapshots, and near-duplicates of another slot. Keep only shots that would sit in a
+Download 4–8 credible candidates to `/tmp/pics/<slug>/<subject>/` and montage them into one
+sheet so you compare at a glance instead of committing to the first hit. Keep the filenames or
+a small candidate list beside the sheet so the winner is unambiguous. Then make a second sheet
+of only the finalists across related surfaces to catch duplicates and uneven quality.
+
+Reject by eye: portrait or square crops (carousels are landscape), flat or blown-out light,
+interiors, watermarks/date-stamps/agency bugs, website screenshots, logos, tourist snapshots,
+and near-duplicates. Also reject a technically beautiful image if it lacks a clear focal point
+or could belong to any destination. Keep only frames that would sit in a professional travel
 photographer's portfolio. Fewer great photos beat more mediocre ones.
 
 ### 5. Self-host every selected image by hand
@@ -112,19 +132,20 @@ Plan shape (full example in `references/sourcing.md`):
   "htmlReplacements": {
     "https://images.unsplash.com/photo-OLD-hero?…": "../../assets/img/turkish-riviera/google_antalya_hero_01.jpg",
     "https://upload.wikimedia.org/…/OldCard.jpg": "../../assets/img/turkish-riviera/google_kas_card_01.jpg"
-  },
-  "indexCard": { "file": "google_antalya_hero_01.jpg", "alt": "Antalya's Kaleici harbor at golden hour" }
+  }
 }
 ```
 
 The script replaces each carousel's images wholesale (in order), sets `href` and `src` to the
 **same** local path, string-swaps the raw hero/base-card URLs in `parts[0].html`
-(longest-first, so no partial clobber), and — from `indexCard` — swaps the trip's home-page
-`.sl-card` image in `index.html` (scoped to this slug's card, written **root-relative**, alt
-updated if given). It keeps indent-2 format and refuses to write anything if a referenced file
-is missing or the JSON won't parse. `captionTitle` stays short; `alt` is descriptive; `credit`
-ends in `· Google Images source`. Reuse your best hero winner as the `indexCard` file (a
-distinct card shot is fine too) — just self-host it under `assets/img/<slug>/` like the rest.
+(longest-first, so no partial clobber). It keeps indent-2 format and refuses to write anything
+if a referenced file is missing or the JSON won't parse. `captionTitle` stays short; `alt` is
+descriptive; `credit` ends in `· Google Images source`.
+
+For the home card, update that slug's explicit entry in `src/_data/card-images.js` after the
+winner is self-hosted. Set its `path` and a descriptive `alt`; do not edit generated
+`index.html`, and do not restore the old automatic-image fallback. Reuse the most aspirational
+hero winner when it is truly the best crop, otherwise select a distinct flagship image.
 
 ### 7. Verify the upgrade is clean
 
@@ -132,30 +153,34 @@ distinct card shot is fine too) — just self-host it under `assets/img/<slug>/`
 node <skill>/scripts/verify.mjs <slug>
 ```
 
-Gate: **0** wikimedia photos, **0** unsplash, **0** pexels, 0 other remote image URLs; every
-structured carousel `src` starts with `../../assets/img/<slug>/`; every embedded HTML photo
-ref is local **and the file exists**; the trip's home-page `.sl-card` image in `index.html` is
-local with its file present; JSON parses. Fix anything it flags before building.
+Technical gate: **0** wikimedia photos, **0** unsplash, **0** pexels, 0 other remote image
+URLs; every structured carousel `src` starts with `../../assets/img/<slug>/`; every embedded
+HTML photo ref is local **and the file exists**; JSON parses.
+
+Visual gate: the final sheet contains only landscape, watermark-free frames with clear subjects,
+depth, pleasing light, and no duplicate composition. The card-image manifest has one distinct,
+existing image for every itinerary. A card or carousel that is merely "fine" fails this gate.
 
 ### 8. Build and browser-check — actually look at it
 
 ```bash
 npm run build
-cp -R _site/locations/ locations/    # GitHub Pages serves root HTML, not _site/
+npm run sync
 ```
 
 A root service worker caches the shell — clear CacheStorage / hard-refresh before screenshots
 or you'll shoot the stale version. Then drive `locations/<slug>/` with the Chrome browser
 tool: screenshot the hero, the base cards, and at least one day carousel (click its next
 button), and browser-eval `document.images` to confirm **zero** `naturalWidth===0` (broken)
-images. Check for the classic regressions: a duplicated image across two cards, a portrait
-shot letterboxed in a landscape slot, a caption/credit on the wrong photo.
+images. Make a final generated hub-card contact sheet as well. Check for the classic
+regressions: a duplicated image across two cards, a portrait shot letterboxed in a landscape
+slot, a watermark or logo missed in source review, and a caption/credit on the wrong photo.
 
 ## Things that bite
 
 - **Thumbnails and hotlinks rot.** Self-host every image; never leave a remote src. That's the whole point — verify enforces it.
 - **`localize-images.mjs` is the wrong tool here.** It's for Unsplash/Pexels/Wikimedia CDNs only. Flickr/blog/tourism URLs must be downloaded by hand (§5).
-- **Dull beats broken as the top complaint.** Run the contact sheet and the rubric every time; re-subject to a photogenic nearby view rather than settle for a flat literal shot.
+- **Dull beats broken as the top complaint.** Run both contact-sheet passes and the rendered-crop review every time; re-subject to a photogenic nearby view rather than settle for a flat literal shot.
 - **Don't hand-edit the JSON.** Targeted string edits on a 300KB file clobber fields silently. `apply-photos.mjs` does it safely and re-checks parse.
 - **Same image twice = a caught regression.** Keep names unique per subject; the browser pass is where duplicates surface.
-- **The home-page card lives in a different file.** It's the most-forgotten surface — a fully-localized trip page still shows a remote card on the hub. `inventory.mjs` reports it, `indexCard` in the plan updates it, `verify.mjs` gates it. Its path is root-relative (`assets/img/<slug>/…`), and after editing `index.html` you don't need `cp` — it's a source file, not generated. Screenshot the hub card too.
+- **The home-page card is deliberate data, not a convenient fallback.** Update its entry in `src/_data/card-images.js`; the generated hub and responsive-image pipeline will carry it through. Screenshot the hub card too.

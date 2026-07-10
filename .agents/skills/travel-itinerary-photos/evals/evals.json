@@ -4,7 +4,7 @@
     {
       "id": 1,
       "prompt": "The photos on the turkish-riviera trip page look amateur — half of them are Wikimedia snapshots. Upgrade them to professional, self-hosted shots and make sure the home-page card gets a good one too.",
-      "expected_output": "Runs inventory on turkish-riviera, sources pro photos via Google Images discovery, self-hosts under assets/img/turkish-riviera/, applies via a plan (carousels + hero + base cards + indexCard), verify.mjs clean, builds + browser-checks. index.html card swapped to a local root-relative image.",
+      "expected_output": "Runs inventory on turkish-riviera, writes a visual brief, sources pro photos via Google Images discovery, compares contact-sheet finalists, self-hosts under assets/img/turkish-riviera/, applies carousels + hero + base cards, updates the explicit card-images manifest entry, verifies, builds, syncs, and browser-checks. The selected images are aspirational, landscape-safe, and watermark-free.",
       "files": []
     },
     {
@@ -16,7 +16,7 @@
     {
       "id": 3,
       "prompt": "A bunch of the trip cards on the homepage still point at remote unsplash urls even though the trip pages themselves are localized. Fix the greece-via-lisbon one and make its carousels pro too.",
-      "expected_output": "Recognizes the home-page .sl-card surface in index.html specifically, inventories greece-via-lisbon, upgrades carousels + updates the index.html card (root-relative local path), verify includes the home-card gate.",
+      "expected_output": "Recognizes the explicit home-card manifest surface, inventories greece-via-lisbon, upgrades carousels, updates its card-images manifest entry, and verifies both technical localization and the visual quality gate.",
       "files": []
     },
     {
