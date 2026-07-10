@@ -12,6 +12,8 @@
     "serve": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve",
     "test": "node --test tools/test/*.test.mjs",
     "validate:evidence": "node tools/validate-evidence.mjs",
+    "derive:evidence-confidence": "node tools/update-evidence-confidence.mjs",
+    "report:evidence-confidence": "node tools/report-evidence-confidence.mjs",
     "reconcile:budgets": "node tools/reconcile-budgets.mjs",
     "analyze:rank": "node tools/analyze-rank-stability.mjs",
     "optimize:images": "node tools/optimize-images.mjs",

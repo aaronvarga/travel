@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { load } from 'cheerio';
-import { freshnessIssues } from './lib/evidence-freshness.mjs';
+import { freshnessIssues, parseDate } from './lib/evidence-freshness.mjs';
+import { deriveEvidenceConfidence, highConfidenceFactIssue } from './lib/evidence-confidence.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const dataDir = path.join(root, 'src', '_data');
@@ -32,6 +33,7 @@ function validateContract() {
     if (!manifest.sourceTiers.includes(source.tier)) issue(`source:${id}`, `unknown tier ${source.tier}`);
     if (!source.url && !source.path) issue(`source:${id}`, 'requires url or path');
     if (source.url && !source.scope) issue(`source:${id}`, 'external source requires a scope/limitation statement');
+    if (source.url && !source.publisher) issue(`source:${id}`, 'external source requires a publisher');
   }
 }
 
@@ -226,6 +228,8 @@ function validateTrips(trips) {
     const variants = readJson(variantsPath);
     if (evidence.schemaVersion !== manifest.schemaVersion || evidence.slug !== trip.slug) issue(trip.slug, 'invalid evidence identity');
     if (!manifest.confidenceLevels.includes(evidence.overallConfidence)) issue(trip.slug, 'invalid overallConfidence');
+    const reviewedAt = parseDate(evidence.reviewedAt);
+    if (!reviewedAt) issue(trip.slug, 'reviewedAt must be an ISO date');
     const facts = new Map();
     for (const item of evidence.facts || []) {
       if (facts.has(item.id)) issue(trip.slug, `duplicate fact ${item.id}`);
@@ -234,10 +238,20 @@ function validateTrips(trips) {
       if (!manifest.proxyStatuses.includes(item.proxyStatus)) issue(trip.slug, `invalid proxy status ${item.proxyStatus}`);
       if (!manifest.confidenceLevels.includes(item.confidence)) issue(trip.slug, `invalid fact confidence ${item.confidence}`);
       for (const ref of item.sourceRefs || []) if (!sources[ref]) issue(trip.slug, `unknown source ${ref}`);
+      const confidenceIssue = highConfidenceFactIssue(item, sources);
+      if (confidenceIssue) issue(`${trip.slug}:${item.id}`, confidenceIssue);
       if (manifest.volatileCategories.includes(item.category) && (!item.verifiedAt || !item.expiresAt)) issue(trip.slug, `${item.id} needs verifiedAt/expiresAt`);
       const freshness = freshnessIssues(item, process.env.EVIDENCE_AS_OF ? new Date(`${process.env.EVIDENCE_AS_OF}T00:00:00Z`) : new Date());
       for (const problem of freshness) issue(`${trip.slug}:${item.id}`, problem);
-      for (const ref of item.sourceRefs || []) if (!item.sourceLocators?.[ref]) issue(`${trip.slug}:${item.id}`, `missing source locator for ${ref}`);
+      const verifiedAt = parseDate(item.verifiedAt);
+      if (reviewedAt && verifiedAt && verifiedAt > reviewedAt) issue(`${trip.slug}:${item.id}`, 'verifiedAt cannot be later than the evidence review');
+      for (const ref of item.sourceRefs || []) {
+        const locator = item.sourceLocators?.[ref];
+        if (!locator) issue(`${trip.slug}:${item.id}`, `missing source locator for ${ref}`);
+        else if (locator.length < 24 || /not yet available|source locator required/i.test(locator)) {
+          issue(`${trip.slug}:${item.id}`, `source locator for ${ref} is not specific enough`);
+        }
+      }
     }
     for (const category of manifest.requiredFactCategories) {
       if (![...facts.values()].some((item) => item.category === category)) issue(trip.slug, `missing ${category} fact`);
@@ -248,6 +262,35 @@ function validateTrips(trips) {
       if (record.score !== trip.main.scorecard.axes[axis]) issue(trip.slug, `${axis} evidence score drift`);
       if (!record.rationale || !manifest.confidenceLevels.includes(record.confidence)) issue(trip.slug, `invalid ${axis} rationale/confidence`);
       for (const id of record.evidence || []) if (!facts.has(id)) issue(trip.slug, `${axis} references missing fact ${id}`);
+    }
+    const derived = deriveEvidenceConfidence(evidence, scoreManifest);
+    for (const [axis, confidence] of Object.entries(derived.axes)) {
+      if (evidence.axes?.[axis]?.confidence !== confidence) {
+        issue(trip.slug, `${axis} confidence must derive to ${confidence}, found ${evidence.axes?.[axis]?.confidence || 'missing'}`);
+      }
+    }
+    if (evidence.overallConfidence !== derived.overall) {
+      issue(trip.slug, `overallConfidence must derive to ${derived.overall}, found ${evidence.overallConfidence}`);
+    }
+    const routeFact = facts.get('route-readiness');
+    const expectedRoute = profile.routeReadiness[trip.slug] || 'current-proxy';
+    if (!routeFact) issue(trip.slug, 'missing route-readiness fact');
+    else {
+      if (routeFact.proxyStatus !== expectedRoute) issue(trip.slug, `route-readiness proxyStatus must be ${expectedRoute}`);
+      if (routeFact.value?.status !== expectedRoute) issue(trip.slug, `route-readiness value.status must be ${expectedRoute}`);
+      if (routeFact.value?.singleTicket !== trip.main.scorecard.facets.singleTicket) issue(trip.slug, 'route-readiness singleTicket drift');
+      if (routeFact.value?.maxConnections !== trip.main.scorecard.facets.maxConnections) issue(trip.slug, 'route-readiness maxConnections drift');
+    }
+    const swimFact = facts.get('swim-conditions');
+    if (JSON.stringify(swimFact?.value?.temperatureF) !== JSON.stringify(trip.main.scorecard.facets.swimTempF)) {
+      issue(trip.slug, 'swim-conditions temperatureF must match scorecard facets.swimTempF');
+    }
+    const loadFact = facts.get('operational-load');
+    if (loadFact?.value && 'singleTicket' in loadFact.value && loadFact.value.singleTicket !== trip.main.scorecard.facets.singleTicket) {
+      issue(trip.slug, 'operational-load singleTicket drift');
+    }
+    if (loadFact?.value && 'maxConnections' in loadFact.value && loadFact.value.maxConnections !== trip.main.scorecard.facets.maxConnections) {
+      issue(trip.slug, 'operational-load maxConnections drift');
     }
     for (const [metric, unit] of Object.entries(manifest.metricUnits)) {
       const value = evidence.metrics?.[metric];

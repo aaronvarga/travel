@@ -77,6 +77,9 @@ for (const slug of slugs) {
     evidence: evidence ? {
       reviewedAt: evidence.reviewedAt,
       overallConfidence: evidence.overallConfidence,
+      limitingAxes: manifest.axes
+        .filter((axis) => axis.weightDefault > 0 && evidence.axes?.[axis.id]?.confidence === evidence.overallConfidence)
+        .map((axis) => axis.id),
       evidenceBasis: evidence.evidenceBasis,
       confidenceBasis: evidence.confidenceBasis,
       confidence: evidenceConfidence(evidence),

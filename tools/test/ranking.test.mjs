@@ -20,7 +20,7 @@ test('readiness never changes appeal data', () => {
   const greece = summary.trips.find((trip) => trip.slug === 'greece-via-lisbon');
   assert.equal(readiness(greece).id, 'reroute-required');
   assert.equal(readiness(greece).bookable, false);
-  assert.equal(greece.totalBaked, 33);
+  assert.equal(greece.totalBaked, 31);
   assert.equal(greece.excluded, null);
 });
 

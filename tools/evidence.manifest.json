@@ -4,6 +4,12 @@
   "sourceTiers": ["official", "operator", "observed-quote", "historical-dataset", "secondary", "anecdotal", "internal-derived"],
   "proxyStatuses": ["confirmed", "current-proxy", "exact-2027-schedule-required", "reroute-required", "derived", "unknown"],
   "routeReadiness": ["confirmed", "current-proxy", "exact-2027-schedule-required", "reroute-required", "unknown"],
+  "confidenceRubric": {
+    "fact": "Confidence measures support for the stated claim, not whether the outcome is favorable. High requires a specific, fresh source appropriate to the claim; a current proxy can be high-confidence evidence when it supports a bounded planning conclusion and is not presented as a 2027 confirmation.",
+    "axis": "The weakest confidence among the facts cited by the axis. Evidence ids must resolve to facts.",
+    "overall": "The weakest derived confidence among axes with nonzero default weight. PTO remains visible but does not control overall confidence because it has zero default weight.",
+    "readinessSeparation": "Route readiness is an outcome and booking gate. A reroute-required or exact-2027-schedule-required conclusion may itself have high evidence confidence."
+  },
   "requiredAxes": ["budget", "weather", "swim", "variety", "ease", "food", "risk", "nights", "novelty", "pto"],
   "requiredFactCategories": ["budget", "dates", "climate", "swim", "itinerary", "logistics", "food", "route", "novelty"],
   "volatileCategories": ["budget", "climate", "swim", "route", "logistics", "food", "regulation", "price", "reservation", "advisory"],

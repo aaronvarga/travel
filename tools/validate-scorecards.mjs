@@ -61,6 +61,7 @@ for (const { slug, main } of trips) {
       issue(slug, 'budget target/preferred maximum do not match decisionProfile.json');
     }
     if (budget.hardMaxUsd != null) issue(slug, 'trip scorecards must not define a hard budget maximum');
+    validateBudgetScore(slug, sc.axes?.budget, budget);
   }
 
   const window = profile.tripWindows[slug];
@@ -96,6 +97,25 @@ function nightsScore(nights) {
   if (nights === 10) return 3;
   if (nights === 9) return 2;
   return 1;
+}
+
+function validateBudgetScore(slug, score, budget) {
+  const midBandCeiling = (budget.targetUsd + budget.preferredMaxUsd) / 2;
+  if (score === 5 && budget.ceilUsd > budget.targetUsd) {
+    issue(slug, `budget 5 requires the entire band at/below $${budget.targetUsd}`);
+  }
+  if (score === 4 && budget.ceilUsd > midBandCeiling) {
+    issue(slug, `budget 4 requires the entire band at/below $${midBandCeiling}`);
+  }
+  if (score === 3 && (budget.floorUsd > budget.targetUsd || budget.ceilUsd > budget.preferredMaxUsd)) {
+    issue(slug, 'budget 3 requires a low case at/below target and a high case within the preferred maximum');
+  }
+  if (score === 2 && budget.ceilUsd > budget.preferredMaxUsd) {
+    issue(slug, 'budget 2 cannot hide a credible high case above the preferred maximum');
+  }
+  if (score === 1 && budget.ceilUsd <= budget.preferredMaxUsd) {
+    issue(slug, 'budget 1 requires a credible high case above the preferred maximum');
+  }
 }
 
 function parseDate(value) {
