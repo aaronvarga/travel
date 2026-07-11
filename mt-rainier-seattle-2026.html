@@ -215,6 +215,7 @@ a.at-badge:hover{background:#356e0f}
 .source-list li:nth-child(3n)::before{background:rgba(63,125,78,.12);color:var(--c3)}
 .source-list a{font-weight:750;text-decoration-thickness:1px;text-underline-offset:2px}
 .cal-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;margin:0 0 16px;color:var(--muted);font-size:.72rem;font-weight:800}
+.weather-history-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.weather-history-card{overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--card);box-shadow:var(--shadow)}.weather-history-head{padding:17px 18px 14px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,rgba(31,111,120,.1),rgba(58,110,165,.08))}.weather-history-head .eyebrow{margin:0 0 4px}.weather-history-head h3{margin:0;font-size:1.2rem;line-height:1.15}.weather-history-head p:last-child{margin:7px 0 0;color:var(--muted);font-size:.77rem;line-height:1.4}.weather-table-wrap{overflow-x:auto}.weather-table{width:100%;border-collapse:collapse;font-size:.8rem}.weather-table th,.weather-table td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}.weather-table th:first-child,.weather-table td:first-child{text-align:left}.weather-table th{color:var(--muted);font-size:.64rem;font-weight:900;letter-spacing:.055em;text-transform:uppercase;background:#faf6ee}.weather-table tbody tr:last-child td{border-bottom:0}.weather-table tbody tr:hover{background:rgba(31,111,120,.045)}.weather-history-callout{margin-top:16px;padding:15px 17px;border:1px solid rgba(31,111,120,.2);border-left:5px solid var(--c1);border-radius:12px;background:rgba(31,111,120,.07);color:#304f50;font-size:.85rem;line-height:1.55}.weather-history-callout strong{color:var(--ink)}.weather-history-source{margin:12px 2px 0;color:var(--muted);font-size:.75rem;line-height:1.45}.weather-history-source a{font-weight:800}
 .cal-legend span{display:inline-flex;align-items:center;gap:6px}.cal-legend i{width:10px;height:10px;border-radius:3px;background:var(--c1)}
 .cal-legend .lg-hike{background:#3f7d4e}.cal-legend .lg-car{background:#9a6a35}.cal-legend .lg-air{background:#2f93d1}.cal-legend .lg-town{background:#8a5cb0}.cal-legend .lg-view{background:#c25a3a}.cal-legend .lg-rest{background:#77706a}
 .cal-scroll{overflow-x:auto;padding:2px 2px 14px;scrollbar-width:thin}
@@ -238,6 +239,7 @@ a.at-badge:hover{background:#356e0f}
 .trip-gallery-meta{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:13px 18px;border-top:1px solid rgba(255,255,255,.12);background:#1d1b17}.trip-gallery-meta strong{display:block;font:650 1rem/1.2 "Fraunces",serif}.trip-gallery-meta span{color:rgba(255,255,255,.6);font-size:.68rem}.trip-gallery-index{font-size:.72rem;font-weight:850;white-space:nowrap}
 footer{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 @media(max-width:860px){
+.weather-history-grid{grid-template-columns:1fr}.weather-table th,.weather-table td{padding:9px 10px}
   header.preview{min-height:auto;grid-template-columns:1fr}.pv-pane{padding:26px 20px}.pvcar .track img{height:clamp(280px,56vh,380px);min-height:0}
   .spot-grid{grid-template-columns:1fr}
   .trail-verdict{grid-template-columns:repeat(2,minmax(0,1fr));margin-inline:16px}
@@ -988,6 +990,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <a href="#arrangements">Arrangements</a>
       <a href="#stays">Lodging</a>
       <a href="#calendar">Calendar</a>
+      <a href="#weather-history">Weather history</a>
       <a href="#map">Trip map</a>
       <a href="#itinerary">Day by day</a>
       <a href="#day1">Fri &middot; Pinnacle</a>
@@ -1152,6 +1155,19 @@ svg.leaflet-image-layer.leaflet-interactive path {
       </div>
     </div>
   </section>
+
+  <!-- WEATHER_HISTORY_START -->
+  <section id="weather-history" class="divider">
+    <div class="section-label">
+      <p class="eyebrow">Historical Conditions</p>
+      <h2>What this exact early-September window has delivered</h2>
+      <p>Eight completed Sep 4–8 windows, 2018–2025, at the mountain and city bases. This is history for trip planning—not a forecast for 2026.</p>
+    </div>
+    <div class="weather-history-grid"><article class="weather-history-card"><div class="weather-history-head"><p class="eyebrow">Sep 4–7 mountain segment</p><h3>Paradise / Skyline Trail</h3><p>API-resolved grid point: 46.784, -121.696 · 1,650 m elevation.</p></div><div class="weather-table-wrap"><table class="weather-table"><thead><tr><th>Year</th><th>Window high / low</th><th>Max 10 m wind</th><th>5-day precip</th></tr></thead><tbody><tr><td>2025</td><td>76° / 45°</td><td>6.7 mph</td><td>0.12&quot;</td></tr><tr><td>2024</td><td>82° / 50°</td><td>10.6 mph</td><td>0.06&quot;</td></tr><tr><td>2023</td><td>62° / 35°</td><td>6.6 mph</td><td>0.05&quot;</td></tr><tr><td>2022</td><td>78° / 38°</td><td>7.3 mph</td><td>0.00&quot;</td></tr><tr><td>2021</td><td>77° / 43°</td><td>7.3 mph</td><td>0.07&quot;</td></tr><tr><td>2020</td><td>83° / 39°</td><td>11.4 mph</td><td>0.00&quot;</td></tr><tr><td>2019</td><td>73° / 43°</td><td>6.9 mph</td><td>0.82&quot;</td></tr><tr><td>2018</td><td>72° / 41°</td><td>8.7 mph</td><td>0.03&quot;</td></tr></tbody></table></div></article><article class="weather-history-card"><div class="weather-history-head"><p class="eyebrow">Sep 7–8 Seattle segment</p><h3>1400 Hubbell Place, Seattle</h3><p>API-resolved grid point: 47.627, -122.323 · 68 m elevation.</p></div><div class="weather-table-wrap"><table class="weather-table"><thead><tr><th>Year</th><th>Window high / low</th><th>Max 10 m wind</th><th>5-day precip</th></tr></thead><tbody><tr><td>2025</td><td>76° / 58°</td><td>8.2 mph</td><td>0.06&quot;</td></tr><tr><td>2024</td><td>83° / 56°</td><td>12.8 mph</td><td>0.00&quot;</td></tr><tr><td>2023</td><td>74° / 54°</td><td>12.4 mph</td><td>0.00&quot;</td></tr><tr><td>2022</td><td>77° / 54°</td><td>14.5 mph</td><td>0.03&quot;</td></tr><tr><td>2021</td><td>80° / 54°</td><td>14.9 mph</td><td>0.11&quot;</td></tr><tr><td>2020</td><td>79° / 56°</td><td>23.1 mph</td><td>0.01&quot;</td></tr><tr><td>2019</td><td>80° / 59°</td><td>13.2 mph</td><td>0.37&quot;</td></tr><tr><td>2018</td><td>79° / 53°</td><td>13.0 mph</td><td>0.08&quot;</td></tr></tbody></table></div></article></div>
+    <div class="weather-history-callout"><strong>How to use this:</strong> across these matching windows, the Paradise high has ranged 62°–83°, the low 35°–50°, and the wettest five-day window totaled 0.82&quot;. Seattle highs ranged 74°–83°. Bring the warm layer and rain shell every mountain day; make the clear-day trail order only after checking the short-range forecast, webcams, and park conditions.</div>
+    <p class="weather-history-source">Source: <a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank" rel="noreferrer">Open-Meteo Historical Weather API</a>, retrieved Jul 11, 2026. Values are ERA5/ERA5-Land historical reanalysis at the coordinates shown: daily 2 m temperature, daily maximum 10 m wind, and daily precipitation total. Display values are rounded; <a href="assets/data/mt-rainier-seattle-2026-weather-history.json" target="_blank" rel="noreferrer">download the raw API-derived history JSON</a> for the individual daily values and exact request URLs.</p>
+  </section>
+  <!-- WEATHER_HISTORY_END -->
 
   <section id="map" class="divider">
     <div class="section-label">
@@ -2288,7 +2304,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <p>Links behind the itinerary and the pages worth opening from the road for conditions, hours, and access.</p>
     </div>
     <div class="source-shell">
-      <div class="source-head"><span class="source-icon" aria-hidden="true">↗</span><div><h3>Evidence library</h3><p>26 planning, trail, weather, photography, dining, and live-condition references</p></div></div>
+      <div class="source-head"><span class="source-icon" aria-hidden="true">↗</span><div><h3>Evidence library</h3><p>27 planning, trail, weather, photography, dining, and live-condition references</p></div></div>
       <ul class="source-list">
       <li><a href="https://my.tripsy.app/i/1034523?code=1ba045db40ec7563291278ce158a2121" target="_blank" rel="noreferrer">Tripsy shared itinerary</a> &mdash; confirmed travel frame.</li>
       <li><a href="https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm" target="_blank" rel="noreferrer">NPS 2026 timed-entry announcement</a> &mdash; no timed-entry reservation in 2026; an entrance pass is still required.</li>
@@ -2296,6 +2312,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
       <li><a href="https://www.nps.gov/mora/planyourvisit/hours.htm" target="_blank" rel="noreferrer">NPS 2026 operating hours</a> &mdash; Sunrise has limited services; bring water, food, and supplies.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/congestion.htm" target="_blank" rel="noreferrer">NPS congestion guidance</a> &mdash; Paradise/Sunrise parking, offline app, and crowd timing.</li>
       <li><a href="https://home.nps.gov/mora/planyourvisit/weather.htm" target="_blank" rel="noreferrer">NPS Mount Rainier weather and climate table</a> &mdash; historical September temperature baseline for Paradise and lower-elevation Ohanapecosh.</li>
+      <li><a href="https://open-meteo.com/en/docs/historical-weather-api" target="_blank" rel="noreferrer">Open-Meteo Historical Weather API</a> and the page&rsquo;s <a href="assets/data/mt-rainier-seattle-2026-weather-history.json" target="_blank" rel="noreferrer">saved raw history extract</a> &mdash; 2018&ndash;2025 Sep. 4&ndash;8 daily high/low, maximum 10 m wind, and precipitation history for the Paradise and Seattle coordinates.</li>
       <li><a href="https://www.nps.gov/mora/planyourvisit/hiking-safety.htm" target="_blank" rel="noreferrer">NPS hiking safety</a> and <a href="https://www.nps.gov/mora/planyourvisit/wilderness-guidelines-and-regulations.htm" target="_blank" rel="noreferrer">Ten Essentials guidance</a> &mdash; footwear, extra warm clothing, rain protection, headlamps, food, water, and emergency gear.</li>
       <li><a href="https://www.nps.gov/thingstodo/hike-to-burroughs-mountain.htm" target="_blank" rel="noreferrer">Burroughs Mountain</a>, <a href="https://www.nps.gov/mora/planyourvisit/pinacle-peak.htm" target="_blank" rel="noreferrer">Pinnacle Peak Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/skyline-trail.htm" target="_blank" rel="noreferrer">Skyline Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm" target="_blank" rel="noreferrer">Naches Peak Loop</a>, and <a href="https://www.nps.gov/mora/planyourvisit/mount-fremont-lookout.htm" target="_blank" rel="noreferrer">Mount Fremont</a> &mdash; official routes and statistics.</li>
       <li><a href="https://www.wta.org/get-involved/go-hiking/hikes/burroughs-mountain" target="_blank" rel="noreferrer">WTA Burroughs</a>, <a href="https://www.wta.org/go-hiking/hikes/pinnacle-saddle" target="_blank" rel="noreferrer">WTA Pinnacle Saddle</a>, and <a href="https://www.wta.org/go-outside/seasonal-hikes/regional/mount-rainier-hikes" target="_blank" rel="noreferrer">WTA Rainier shortlist</a> &mdash; route context and recent hiker reports.</li>
