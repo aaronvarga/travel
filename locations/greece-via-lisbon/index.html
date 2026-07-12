@@ -1995,7 +1995,23 @@ footer a{color:var(--muted)}
       <h2>TAP stopover to Crete</h2>
       <p>One through-fare with a free Lisbon stopover, a new short TAP hop through Athens, one 45-minute domestic flight to Crete, and a single rental car for both Crete bases. No inter-island ferries this time. Price bands are 2025–2026 data — 2027 fares aren't bookable yet.</p>
     </div>
-    <div class="plan-grid">
+    <style>.tt-panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.tt-panel .tt-meter{margin:0}.tt-meter .tt-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 7px}.tt-meter .tt-h p{margin:0;font-size:.63rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.tt-meter .tt-h .tt-tot{font-size:.63rem;font-weight:800;color:var(--muted);white-space:nowrap}.tt-bar{display:flex;gap:3px;min-height:42px;border-radius:9px;overflow:hidden}.tt-bar .seg{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;min-width:36px;padding:4px 4px;text-align:center;cursor:default;transition:filter .12s}.tt-bar .seg:hover,.tt-bar .seg:focus{filter:brightness(1.13);outline:none}.tt-bar .seg .ic{font-size:.72rem;margin-bottom:2px;opacity:.92}.tt-bar .seg b{font-size:.72rem;line-height:1;font-weight:800;white-space:nowrap}.tt-bar .air{background:#2d6ca3}.tt-bar .road{background:#c25a3a}.tt-bar .sea{background:#2f8f9d}.tt-bar .rail{background:#6b7280}.tt-note{margin:8px 0 0;font-size:.68rem;line-height:1.5;color:var(--muted)}.tt-panel .plan-grid{display:block;margin:16px 0 0;padding:16px 0 0;border-top:1px solid var(--line)}.tt-panel .pcard{background:none;border:0;box-shadow:none;border-radius:0;padding:0;margin:0}.tt-panel .pcard + .pcard{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}.tt-panel .pcard h4{margin:0 0 8px;font-size:1rem}@media(max-width:640px){.tt-bar{overflow-x:auto}.tt-bar .seg{min-width:52px}}</style>
+    <div class="tt-panel">
+      <div class="tt-meter">
+        <div class="tt-h"><p>Every travel leg, in order</p><span class="tt-tot">8 legs · ~30 hrs door-to-door</span></div>
+        <div class="tt-bar" role="img" aria-label="Travel legs in order: PIT → Newark ~1.4h, Newark → Lisbon ~7h, Lisbon → Athens ~3.9h, Athens → Chania ~0.8h, Crete rental car (9 days) ~7.5h, Chania → Athens ~0.8h, Athens → US gateway ~7h, US gateway → PIT ~1.4h">
+          <div class="seg air" style="flex:1.4" title="PIT → Newark · ~1.4h — Short connecting hop from Pittsburgh to the Newark gateway." tabindex="0"><span class="ic">✈️</span><b>~1.4h</b></div>
+          <div class="seg air" style="flex:7" title="Newark → Lisbon · ~7h — Overnight transatlantic crossing on the protected TAP through-fare, with a free multi-night Lisbon stopover built in." tabindex="0"><span class="ic">✈️</span><b>~7h</b></div>
+          <div class="seg air" style="flex:3.9" title="Lisbon → Athens · ~3.9h — TAP's new A320neo hop onward to Athens — a fragile 5x/week route (launched Jul 2026) worth reconfirming before locking anything downstream." tabindex="0"><span class="ic">✈️</span><b>~3.9h</b></div>
+          <div class="seg air" style="flex:0.8" title="Athens → Chania · ~0.8h — Aegean or Sky Express domestic hop to Crete — frequent, cheap, and easy to rebook same-day." tabindex="0"><span class="ic">✈️</span><b>~0.8h</b></div>
+          <div class="seg road" style="flex:7.5" title="Crete rental car (9 days) · ~7.5h — One car for both Crete bases: cumulative driving to Balos, Elafonissi, Imbros, and the Omalos/Samaria high country, plus the Chania-to-Rethymno relocation." tabindex="0"><span class="ic">🚗</span><b>~7.5h</b></div>
+          <div class="seg air" style="flex:0.8" title="Chania → Athens · ~0.8h — Return domestic hop out of Chania (not Heraklion) back to the Athens gateway." tabindex="0"><span class="ic">✈️</span><b>~0.8h</b></div>
+          <div class="seg air" style="flex:7" title="Athens → US gateway · ~7h — Transatlantic return leg — the Tuesday ATH-LIS timetable doesn't operate, so this hop needs rebuilding through another European hub or a shifted return day." tabindex="0"><span class="ic">✈️</span><b>~7h</b></div>
+          <div class="seg air" style="flex:1.4" title="US gateway → PIT · ~1.4h — Final short hop home to Pittsburgh." tabindex="0"><span class="ic">✈️</span><b>~1.4h</b></div>
+        </div>
+        <p class="tt-note">Hover any leg for its route and detail. Width ≈ hours; flight routings are 2027 planning proxies.</p>
+      </div>
+      <div class="plan-grid">
       <div class="pcard"><h4><span class="dot"></span>Main Ticket · TAP Stopover</h4>
         <div class="prow"><span>Outbound</span><strong>PIT → gateway → Lisbon / LIS</strong></div><div class="prow"><span>Free stopover</span><strong>1–5 nights in Lisbon, same ticket</strong></div><div class="prow"><span>Onward</span><strong>Lisbon → Athens / ATH (TAP, own metal)</strong></div><div class="prow"><span>Est. family (4)</span><strong>~$5,000–9,000</strong></div>
         <div class="tip">Book as a single through-fare on flytap.com — the "Add a free Stopover" option appears mid-booking. Athens is the connection point, not a destination to optimize around.</div>
@@ -2009,6 +2025,7 @@ footer a{color:var(--muted)}
         <div class="prow"><span>Athens</span><strong>No car — walk to the Acropolis</strong></div><div class="prow"><span>Crete</span><strong>One rental car, Chania airport pickup/drop-off, ~9 days</strong></div><div class="prow"><span>Chania ↔ Rethymno</span><strong>~40 min drive, one move</strong></div><div class="prow"><span>Est. total</span><strong>~$405–630</strong></div>
         <div class="tip">One car covers both Crete bases — Chania to Rethymno is an easy 40-minute drive, no second rental needed. Book an automatic; June is peak season and economy-automatic rates run noticeably higher than off-season quotes.</div>
       </div>
+    </div>
     </div>
   </section>
 
@@ -2109,7 +2126,7 @@ footer a{color:var(--muted)}
       <div class="plan-grid"><div class="pcard">
           <h4><span class="dot"></span>Portugal (incl. Madeira)</h4>
           <div class="prow"><span>Passport</span><strong>Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.</strong></div>
-          <div class="prow"><span>ETIAS</span><strong>Expected to launch late 2026 (repeatedly delayed — not yet confirmed). — €20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).</strong></div>
+          <div class="prow"><span>ETIAS</span><strong>Scheduled to begin operations in the last quarter of 2026; likely mandatory for eligible visa-exempt visitors by June 2027, but recheck the official launch date. — €20 per eligible traveler (about $22 at planning exchange rates; subject to change). Under-18s and over-70s are exempt.</strong></div>
           <div class="prow"><span>Visa</span><strong>None for US citizens — visa-free up to 90 days per 180.</strong></div>
           <div class="prow"><span>Driving permit</span><strong>Recommended, not legally required. Get one from AAA before you go; some rental insurers ask for it.</strong></div>
           <div class="prow"><span>Rental cars</span><strong>Rental fleet is mostly manual — book an automatic early and expect a premium. Min age ~21; under-25 surcharge ~€6–15/day.</strong></div>
@@ -2119,12 +2136,12 @@ footer a{color:var(--muted)}
           <div class="prow"><span>Tap water</span><strong>Safe in Lisbon and most cities. Algarve tap can taste earthy (hard water) — bottled if sensitive.</strong></div>
           <div class="prow"><span>Emergency</span><strong>112 (EU-wide, free, mobile or landline).</strong></div>
           <div class="prow"><span>Connectivity</span><strong>Holafly or Airalo Eurolink work well; buy before departure.</strong></div>
-          <div class="tip">ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed.</div>
+          <div class="tip">ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. The official EU launch timing has shifted before, so reconfirm rules, fee, and eligibility close to departure.</div>
           <p class="sources">Sources: <a href="https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" target="_blank" rel="noreferrer">US State Dept — Schengen passport rules</a> · <a href="https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" target="_blank" rel="noreferrer">EU — ETIAS official</a> · <a href="https://visitors.viaverde.pt/en/home" target="_blank" rel="noreferrer">Via Verde visitors</a></p>
         </div><div class="pcard">
           <h4><span class="dot"></span>Greece (Crete)</h4>
           <div class="prow"><span>Passport</span><strong>Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.</strong></div>
-          <div class="prow"><span>ETIAS</span><strong>Expected to launch late 2026 (repeatedly delayed — not yet confirmed). — €20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).</strong></div>
+          <div class="prow"><span>ETIAS</span><strong>Scheduled to begin operations in the last quarter of 2026; likely mandatory for eligible visa-exempt visitors by June 2027, but recheck the official launch date. — €20 per eligible traveler (about $22 at planning exchange rates; subject to change). Under-18s and over-70s are exempt.</strong></div>
           <div class="prow"><span>Visa</span><strong>None for US citizens — visa-free up to 90 days per 180.</strong></div>
           <div class="prow"><span>Driving permit</span><strong>Strongly recommended — Greek insurers may require both a US license and an IDP. Get one from AAA before you go.</strong></div>
           <div class="prow"><span>Rental cars</span><strong>Rental fleet is mostly manual — book an automatic early. Min age ~21; under-25 surcharge ~€6–15/day.</strong></div>
@@ -2134,7 +2151,7 @@ footer a{color:var(--muted)}
           <div class="prow"><span>Tap water</span><strong>Athens/mainland excellent; Crete tap is safe but very hard (chalky). Some smaller islands need bottled.</strong></div>
           <div class="prow"><span>Emergency</span><strong>112 (EU-wide). Also ambulance 166.</strong></div>
           <div class="prow"><span>Connectivity</span><strong>Holafly or Airalo Eurolink work well; buy before departure.</strong></div>
-          <div class="tip">ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed.</div>
+          <div class="tip">ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. The official EU launch timing has shifted before, so reconfirm rules, fee, and eligibility close to departure.</div>
           <p class="sources">Sources: <a href="https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" target="_blank" rel="noreferrer">US State Dept — Schengen passport rules</a> · <a href="https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" target="_blank" rel="noreferrer">EU — ETIAS official</a> · <a href="https://tollguru.com/greece-motorway-tolls" target="_blank" rel="noreferrer">Greece motorway tolls</a></p>
         </div><div class="pcard">
           <h4><span class="dot"></span>Travel insurance</h4>

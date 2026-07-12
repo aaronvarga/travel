@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-12T03:20:19.876Z",
+  "generatedAt": "2026-07-12T12:47:44.934Z",
   "trips": [
     {
       "slug": "albania",
@@ -717,6 +717,59 @@
           "text": "$500-$700",
           "lowUsd": 500,
           "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "madeira-kefalonia",
+      "canonical": {
+        "lowUsd": 10900,
+        "highUsd": 15000
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 10900,
+        "sumHighUsd": 15000,
+        "displayedLowUsd": 10900,
+        "displayedHighUsd": 15000,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation — all flights, two cars, fuel and transfers",
+          "text": "$5,950–$7,900",
+          "lowUsd": 5950,
+          "highUsd": 7900
+        },
+        {
+          "label": "Lodging — 12 hotel nights",
+          "text": "$2,100–$3,350",
+          "lowUsd": 2100,
+          "highUsd": 3350
+        },
+        {
+          "label": "Food and groceries",
+          "text": "$1,550–$2,050",
+          "lowUsd": 1550,
+          "highUsd": 2050
+        },
+        {
+          "label": "Activities, permits and boat day",
+          "text": "$850–$1,150",
+          "lowUsd": 850,
+          "highUsd": 1150
+        },
+        {
+          "label": "Insurance / ETIAS / misc",
+          "text": "$450–$550",
+          "lowUsd": 450,
+          "highUsd": 550
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

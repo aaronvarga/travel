@@ -1845,10 +1845,27 @@ footer a{color:var(--muted)}
       <h2>One car for the country</h2>
       <p>Pick up at Tirana airport, drop in Sarande before the ferry. Several local firms (e.g. Tic Rent Car, rentfromlocals) offer a free one-way TIA -&gt; Sarande drop; you cannot take an Albanian rental across to Corfu.</p>
     </div>
-    <div class="plan-grid">
+    <style>.tt-panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.tt-panel .tt-meter{margin:0}.tt-meter .tt-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 7px}.tt-meter .tt-h p{margin:0;font-size:.63rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.tt-meter .tt-h .tt-tot{font-size:.63rem;font-weight:800;color:var(--muted);white-space:nowrap}.tt-bar{display:flex;gap:3px;min-height:42px;border-radius:9px;overflow:hidden}.tt-bar .seg{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;min-width:36px;padding:4px 4px;text-align:center;cursor:default;transition:filter .12s}.tt-bar .seg:hover,.tt-bar .seg:focus{filter:brightness(1.13);outline:none}.tt-bar .seg .ic{font-size:.72rem;margin-bottom:2px;opacity:.92}.tt-bar .seg b{font-size:.72rem;line-height:1;font-weight:800;white-space:nowrap}.tt-bar .air{background:#2d6ca3}.tt-bar .road{background:#c25a3a}.tt-bar .sea{background:#2f8f9d}.tt-bar .rail{background:#6b7280}.tt-note{margin:8px 0 0;font-size:.68rem;line-height:1.5;color:var(--muted)}.tt-panel .plan-grid{display:block;margin:16px 0 0;padding:16px 0 0;border-top:1px solid var(--line)}.tt-panel .pcard{background:none;border:0;box-shadow:none;border-radius:0;padding:0;margin:0}.tt-panel .pcard + .pcard{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}.tt-panel .pcard h4{margin:0 0 8px;font-size:1rem}@media(max-width:640px){.tt-bar{overflow-x:auto}.tt-bar .seg{min-width:52px}}</style>
+    <div class="tt-panel">
+      <div class="tt-meter">
+        <div class="tt-h"><p>Every travel leg, in order</p><span class="tt-tot">8 legs · ~32 hrs door-to-door</span></div>
+        <div class="tt-bar" role="img" aria-label="Travel legs in order: PIT → Newark ~1.4h, Newark → Vienna ~8h, Vienna → Tirana ~1.8h, Tirana → Theth → Ksamil → Sarande ~9h, Sarande → Corfu ~30m, Corfu → Vienna ~1.8h, Vienna → Newark ~8h, Newark → PIT ~1.4h">
+          <div class="seg air" style="flex:1.4" title="PIT → Newark · ~1.4h — Domestic connection to a transatlantic gateway." tabindex="0"><span class="ic">✈️</span><b>~1.4h</b></div>
+          <div class="seg air" style="flex:8" title="Newark → Vienna · ~8h — Overnight transatlantic hop on Star Alliance/Austrian metal." tabindex="0"><span class="ic">✈️</span><b>~8h</b></div>
+          <div class="seg air" style="flex:1.8" title="Vienna → Tirana · ~1.8h — Short intra-Europe hop into the fast-growing TIA airport." tabindex="0"><span class="ic">✈️</span><b>~1.8h</b></div>
+          <div class="seg road" style="flex:9" title="Tirana → Theth → Ksamil → Sarande · ~9h — One rental car for the whole mainland: Tirana-Theth on the narrow SH21, Theth-Ksamil across the country, plus Riviera day drives, dropped in Sarande before the ferry." tabindex="0"><span class="ic">🚗</span><b>~9h</b></div>
+          <div class="seg sea" style="flex:0.5" title="Sarande → Corfu · ~30m — High-speed ferry hop, replacing an inter-island flight." tabindex="0"><span class="ic">⛴️</span><b>~30m</b></div>
+          <div class="seg air" style="flex:1.8" title="Corfu → Vienna · ~1.8h — Return intra-Europe hop, open-jaw out of CFU." tabindex="0"><span class="ic">✈️</span><b>~1.8h</b></div>
+          <div class="seg air" style="flex:8" title="Vienna → Newark · ~8h — Return transatlantic leg on Star Alliance." tabindex="0"><span class="ic">✈️</span><b>~8h</b></div>
+          <div class="seg air" style="flex:1.4" title="Newark → PIT · ~1.4h — Final domestic hop home." tabindex="0"><span class="ic">✈️</span><b>~1.4h</b></div>
+        </div>
+        <p class="tt-note">Hover any leg for its route and detail. Width ≈ hours; flight routings are 2027 planning proxies.</p>
+      </div>
+      <div class="plan-grid">
       <div class="pcard"><h4><span class="dot"></span>The rental car</h4><div class="prow"><span>Pickup/drop</span><strong>TIA 6/9/2027 -&gt; Sarande 6/20/2027 (~12 days)</strong></div><div class="prow"><span>Budget</span><strong>~€330-500 + fuel; book an automatic early (limited, premium)</strong></div><div class="prow"><span>Roads</span><strong>SH21 to Theth is paved but narrow/steep; SH8 coast is winding — no night driving</strong></div></div>
       <div class="pcard"><h4><span class="dot"></span>In the mountains</h4><div class="prow"><span>Theth</span><strong>Village is walkable; trailheads on foot or a short 4x4 shuttle</strong></div><div class="prow"><span>Koman ferry</span><strong>~€8-11 pp on foot; a scenic day, not a required transfer</strong></div><div class="prow"><span>Fuel</span><strong>Fill in Koplik — there is no petrol in Theth</strong></div></div>
       <div class="pcard"><h4><span class="dot"></span>On the coast</h4><div class="prow"><span>Ksamil -&gt; Butrint</span><strong>~15 min</strong></div><div class="prow"><span>Ksamil -&gt; Sarande</span><strong>~20 min (the ferry port)</strong></div><div class="prow"><span>Ksamil -&gt; Himare</span><strong>~1h20 up the SH8</strong></div></div>
+    </div>
     </div>
   </section><section id="entry" class="divider">
       <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
@@ -1875,7 +1892,7 @@ footer a{color:var(--muted)}
         </div><div class="pcard">
           <h4><span class="dot"></span>Greece (Crete)</h4>
           <div class="prow"><span>Passport</span><strong>Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.</strong></div>
-          <div class="prow"><span>ETIAS</span><strong>Expected to launch late 2026 (repeatedly delayed — not yet confirmed). — €20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).</strong></div>
+          <div class="prow"><span>ETIAS</span><strong>Scheduled to begin operations in the last quarter of 2026; likely mandatory for eligible visa-exempt visitors by June 2027, but recheck the official launch date. — €20 per eligible traveler (about $22 at planning exchange rates; subject to change). Under-18s and over-70s are exempt.</strong></div>
           <div class="prow"><span>Visa</span><strong>None for US citizens — visa-free up to 90 days per 180.</strong></div>
           <div class="prow"><span>Driving permit</span><strong>Strongly recommended — Greek insurers may require both a US license and an IDP. Get one from AAA before you go.</strong></div>
           <div class="prow"><span>Rental cars</span><strong>Rental fleet is mostly manual — book an automatic early. Min age ~21; under-25 surcharge ~€6–15/day.</strong></div>
@@ -1885,7 +1902,7 @@ footer a{color:var(--muted)}
           <div class="prow"><span>Tap water</span><strong>Athens/mainland excellent; Crete tap is safe but very hard (chalky). Some smaller islands need bottled.</strong></div>
           <div class="prow"><span>Emergency</span><strong>112 (EU-wide). Also ambulance 166.</strong></div>
           <div class="prow"><span>Connectivity</span><strong>Holafly or Airalo Eurolink work well; buy before departure.</strong></div>
-          <div class="tip">ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed.</div>
+          <div class="tip">ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. The official EU launch timing has shifted before, so reconfirm rules, fee, and eligibility close to departure.</div>
           <p class="sources">Sources: <a href="https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html" target="_blank" rel="noreferrer">US State Dept — Schengen passport rules</a> · <a href="https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en" target="_blank" rel="noreferrer">EU — ETIAS official</a> · <a href="https://tollguru.com/greece-motorway-tolls" target="_blank" rel="noreferrer">Greece motorway tolls</a></p>
         </div><div class="pcard">
           <h4><span class="dot"></span>Travel insurance</h4>

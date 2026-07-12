@@ -1919,10 +1919,28 @@ footer a{color:var(--muted)}
       <h2>Two cars, one flight</h2>
       <p>Rent separately for the Dolomites and Sardinia legs; the island hop covers the middle. Get an International Driving Permit before you fly.</p>
     </div>
-    <div class="plan-grid">
+    <style>.tt-panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:0 10px 28px rgba(30,32,28,.08)}.tt-panel .tt-meter{margin:0}.tt-meter .tt-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:0 0 7px}.tt-meter .tt-h p{margin:0;font-size:.63rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.tt-meter .tt-h .tt-tot{font-size:.63rem;font-weight:800;color:var(--muted);white-space:nowrap}.tt-bar{display:flex;gap:3px;min-height:42px;border-radius:9px;overflow:hidden}.tt-bar .seg{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;min-width:36px;padding:4px 4px;text-align:center;cursor:default;transition:filter .12s}.tt-bar .seg:hover,.tt-bar .seg:focus{filter:brightness(1.13);outline:none}.tt-bar .seg .ic{font-size:.72rem;margin-bottom:2px;opacity:.92}.tt-bar .seg b{font-size:.72rem;line-height:1;font-weight:800;white-space:nowrap}.tt-bar .air{background:#2d6ca3}.tt-bar .road{background:#c25a3a}.tt-bar .sea{background:#2f8f9d}.tt-bar .rail{background:#6b7280}.tt-note{margin:8px 0 0;font-size:.68rem;line-height:1.5;color:var(--muted)}.tt-panel .plan-grid{display:block;margin:16px 0 0;padding:16px 0 0;border-top:1px solid var(--line)}.tt-panel .pcard{background:none;border:0;box-shadow:none;border-radius:0;padding:0;margin:0}.tt-panel .pcard + .pcard{margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}.tt-panel .pcard h4{margin:0 0 8px;font-size:1rem}@media(max-width:640px){.tt-bar{overflow-x:auto}.tt-bar .seg{min-width:52px}}</style>
+    <div class="tt-panel">
+      <div class="tt-meter">
+        <div class="tt-h"><p>Every travel leg, in order</p><span class="tt-tot">9 legs · ~38 hrs door-to-door</span></div>
+        <div class="tt-bar" role="img" aria-label="Travel legs in order: PIT → Newark ~1.4h, Newark → Munich ~7.6h, Munich → Venice ~1.6h, Venice/Mestre → Dolomites loop → VCE ~8h, Venice → Olbia ~1.4h, Olbia → Sardinia coast → Olbia ~6h, Olbia → Rome ~1.3h, Rome → Newark ~9.4h, Newark → PIT ~1.4h">
+          <div class="seg air" style="flex:1.4" title="PIT → Newark · ~1.4h — Short domestic hop to the connecting gateway." tabindex="0"><span class="ic">✈️</span><b>~1.4h</b></div>
+          <div class="seg air" style="flex:7.6" title="Newark → Munich · ~7.6h — Overnight transatlantic crossing to the European hub." tabindex="0"><span class="ic">✈️</span><b>~7.6h</b></div>
+          <div class="seg air" style="flex:1.6" title="Munich → Venice · ~1.6h — Short intra-Europe connection into VCE." tabindex="0"><span class="ic">✈️</span><b>~1.6h</b></div>
+          <div class="seg road" style="flex:8" title="Venice/Mestre → Dolomites loop → VCE · ~8h — Cumulative driving over the 5-day Dolomites rental; passes and switchbacks are slow going." tabindex="0"><span class="ic">🚗</span><b>~8h</b></div>
+          <div class="seg air" style="flex:1.4" title="Venice → Olbia · ~1.4h — Volotea's only nonstop island hop, VCE to OLB." tabindex="0"><span class="ic">✈️</span><b>~1.4h</b></div>
+          <div class="seg road" style="flex:6" title="Olbia → Sardinia coast → Olbia · ~6h — Cumulative driving over the 6-day Sardinia rental; no tolls, but winding coastal roads." tabindex="0"><span class="ic">🚗</span><b>~6h</b></div>
+          <div class="seg air" style="flex:1.3" title="Olbia → Rome · ~1.3h — Short intra-Europe hop back to a hub for the transatlantic leg." tabindex="0"><span class="ic">✈️</span><b>~1.3h</b></div>
+          <div class="seg air" style="flex:9.4" title="Rome → Newark · ~9.4h — Westbound transatlantic crossing home." tabindex="0"><span class="ic">✈️</span><b>~9.4h</b></div>
+          <div class="seg air" style="flex:1.4" title="Newark → PIT · ~1.4h — Final short domestic hop home." tabindex="0"><span class="ic">✈️</span><b>~1.4h</b></div>
+        </div>
+        <p class="tt-note">Hover any leg for its route and detail. Width ≈ hours; flight routings are 2027 planning proxies.</p>
+      </div>
+      <div class="plan-grid">
       <div class="pcard"><h4><span class="dot"></span>Dolomites car</h4><div class="prow"><span>Pickup/drop</span><strong>Mestre/VCE 6/30/2027 -&gt; VCE 7/5/2027 (5 days)</strong></div><div class="prow"><span>Budget</span><strong>$375-$600 plus fuel/tolls</strong></div><div class="prow"><span>Watch</span><strong>Cortina ZTL cameras fine by mail — register the plate with the hotel</strong></div></div>
       <div class="pcard"><h4><span class="dot"></span>Sardinia car</h4><div class="prow"><span>Pickup/drop</span><strong>Olbia airport 7/5/2027 -&gt; 7/11/2027 (6 days)</strong></div><div class="prow"><span>Budget</span><strong>$520-$850 plus fuel</strong></div><div class="prow"><span>Note</span><strong>No toll roads on the island, but plenty of winding coast — budget drive time</strong></div></div>
       <div class="pcard"><h4><span class="dot"></span>Water &amp; transfers</h4><div class="prow"><span>VCE -&gt; hotel</span><strong>Alilaguna ~€72/4 or private water taxi ~€150/4</strong></div><div class="prow"><span>Tre Cime toll road</span><strong>€40/car, pre-book online</strong></div><div class="prow"><span>IDP</span><strong>Required — get it from AAA before departure</strong></div></div>
+    </div>
     </div>
   </section><section id="entry" class="divider">
       <style>#entry .entry-list{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:6px}#entry .entry-list li{font-size:.86rem;color:var(--muted);line-height:1.45}#entry .entry-list li b{color:var(--ink)}#entry .sources{margin-top:6px;font-size:.76rem;color:var(--muted)}#entry .sources a{color:var(--c1)}</style>
