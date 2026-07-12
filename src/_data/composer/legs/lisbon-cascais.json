@@ -1,0 +1,383 @@
+{
+  "id": "lisbon-cascais",
+  "name": "Lisbon + Cascais",
+  "country": "Portugal",
+  "sourceTrip": "portugal-sicily",
+  "mapColor": "#1f6f78",
+  "mapPoints": [
+    {
+      "n": "Lisbon Airport (LIS)",
+      "lat": 38.7742,
+      "lng": -9.1342,
+      "r": "portugal",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.7742,-9.1342"
+    },
+    {
+      "n": "Cascais waterfront + Boca do Inferno",
+      "lat": 38.6968,
+      "lng": -9.4215,
+      "r": "portugal",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.6968,-9.4215"
+    },
+    {
+      "n": "Sintra: Quinta da Regaleira + Praia da Adraga",
+      "lat": 38.7959,
+      "lng": -9.3972,
+      "r": "portugal",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.7959,-9.3972"
+    },
+    {
+      "n": "Lisbon: Belém & Alfama",
+      "lat": 38.6975,
+      "lng": -9.2058,
+      "r": "portugal",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.6975,-9.2058"
+    },
+    {
+      "n": "Cabo da Roca coast",
+      "lat": 38.7805,
+      "lng": -9.4989,
+      "r": "portugal",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.7805,-9.4989"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "LIS"
+    ],
+    "pitOutbound": {
+      "route": "PIT→EWR→LIS",
+      "hours": 11,
+      "familyCostUsd": [
+        2600,
+        3500
+      ],
+      "notes": "Multiple one-stop gateway options"
+    },
+    "pitReturn": {
+      "route": "LIS→EWR→PIT",
+      "hours": 12,
+      "familyCostUsd": [
+        2600,
+        3500
+      ],
+      "notes": "Prefer one protected ticket"
+    }
+  },
+  "nights": {
+    "min": 4,
+    "canonical": 5,
+    "max": 7
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/portugal-sicily/google_cascais_boca_01.jpg",
+      "src": "../../assets/img/portugal-sicily/google_cascais_boca_01.jpg",
+      "alt": "Boca do Inferno sea arch with Atlantic water surging through the cliffs.",
+      "captionTitle": "Boca do Inferno",
+      "credit": "Cascais source page · Google Images source"
+    },
+    {
+      "href": "../../assets/img/portugal-sicily/google_cascais_boca_sunset_01.jpg",
+      "src": "../../assets/img/portugal-sicily/google_cascais_boca_sunset_01.jpg",
+      "alt": "Sunset over Boca do Inferno cliffs and the Cascais coastal platform.",
+      "captionTitle": "Cascais Cliffs",
+      "credit": "ExcursionMania · Google Images source"
+    },
+    {
+      "href": "../../assets/img/portugal-sicily/google_cascais_bay_aerial_01.jpg",
+      "src": "../../assets/img/portugal-sicily/google_cascais_bay_aerial_01.jpg",
+      "alt": "Santa Marta lighthouse and Cascais harbor at soft evening light.",
+      "captionTitle": "Cascais Harbor",
+      "credit": "Elvin · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "beach",
+    "heat"
+  ],
+  "june": {
+    "seaTempF": 66,
+    "airHiF": 78,
+    "facts": [
+      "Atlantic water is cool; coast is primarily scenic"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      200,
+      260
+    ],
+    "carPerDayUsd": [
+      0,
+      30
+    ],
+    "foodPerDayUsd": [
+      175,
+      204
+    ],
+    "activitiesFlatUsd": [
+      250,
+      450
+    ],
+    "provenance": "portugal-sicily budget table: Portugal share of apartment lodging, transit, daily food, Regaleira and coast activities"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 2,
+    "food": 5,
+    "novelty": 3,
+    "varietyTags": [
+      "coast",
+      "palaces",
+      "old-towns",
+      "food"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Lisbon -&gt; Cascais soft landing",
+      "feel": "Jet lag + coastal reset",
+      "daycost": "Est. ~$220 · transfer + simple meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cascais · night 1 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Airport transfer, waterfront walk, Boca do Inferno sunset"
+        },
+        {
+          "label": "Water",
+          "valueHtml": "Scenic Atlantic coast; swimming is optional and cool"
+        }
+      ],
+      "note": "Portugal starts the trip with scenery, pastries, tiled streets, and an easy coast, not a hard city day.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Cascais waterfront + Boca do Inferno",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cascais%20waterfront%20%2B%20Boca%20do%20Inferno\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cascais/\" target=\"_blank\" rel=\"noreferrer\">IG · Cascais</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bocadoinferno/\" target=\"_blank\" rel=\"noreferrer\">IG · Boca do Inferno</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=cascais&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal-sicily/google_cascais_boca_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_cascais_boca_01.jpg",
+              "alt": "Boca do Inferno sea arch with Atlantic water surging through the cliffs.",
+              "captionTitle": "Boca do Inferno",
+              "credit": "Cascais source page · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_cascais_boca_sunset_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_cascais_boca_sunset_01.jpg",
+              "alt": "Sunset over Boca do Inferno cliffs and the Cascais coastal platform.",
+              "captionTitle": "Cascais Cliffs",
+              "credit": "ExcursionMania · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_cascais_bay_aerial_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_cascais_bay_aerial_01.jpg",
+              "alt": "Santa Marta lighthouse and Cascais harbor at soft evening light.",
+              "captionTitle": "Cascais Harbor",
+              "credit": "Elvin · Google Images source"
+            }
+          ],
+          "cost": "Waterfront, beaches, and Boca do Inferno are free. Lisbon-Cascais train is roughly EUR2-3 each way; taxi/transfer from LIS to Cascais often lands around $65-$110.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> about <b>73-76 F</b> days / <b>59-64 F</b> nights. Atlantic water is chilly, roughly <b>62-64 F</b>, so treat it as scenery and quick dips, not the main swim act.",
+          "saveHtml": "<b>Save</b> Stay in Cascais/Estoril and use train/taxi instead of renting a Portugal car for only two nights.",
+          "splurgeHtml": "<b>Splurge</b> Private airport transfer to Cascais after the overnight flight; worth the ~$65-$110 if everyone is tired.",
+          "restoHtml": "<li><a href=\"https://www.thefork.com/restaurant/na-pizza-cascais-r843309\" target=\"_blank\" rel=\"noreferrer\"><b>Na Pizza Cascais</b></a> — Margherita listed at EUR13; easy plain pizza night</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189154-d28024269-Reviews-Pasta_Non_Basta_Cascais-Cascais_Lisbon_District_Central_Portugal.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pasta Non Basta Cascais</b></a> — fresh pasta and pizza, simple tomato/cheese fallback</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189164-d20404815-Reviews-Passione_Pizza_Sintra-Sintra_Sintra_Municipality_Lisbon_District_Central_Portuga.html\" target=\"_blank\" rel=\"noreferrer\"><b>Passione Pizza Sintra</b></a> — Sintra pizza stop with plain kid-friendly orders</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://oceanario.pt/en/visit/tickets/\" target=\"_blank\" rel=\"noreferrer\"><b>Lisbon Oceanarium</b> ↩</a> — excellent bad-weather or jet-lag backup; current tickets are EUR25 adults/13+, EUR15 ages 3-12.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Monserrate%20Palace%20Sintra\" target=\"_blank\" rel=\"noreferrer\"><b>Monserrate Palace</b> ↗</a> — lush gardens and lighter crowds than Pena; good if timed palace slots are gone.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20da%20Rainha%20Cascais\" target=\"_blank\" rel=\"noreferrer\"><b>Praia da Rainha</b> ↗</a> — tiny in-town cove for a quick swim/photo when the open Atlantic is rough.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://savourthetrip.com/cascais-with-kids-the-family-travel-guide-to-lisbons-charming-coastal-escape/\" target=\"_blank\" rel=\"noreferrer\">Cascais with kids guide ↗</a><a href=\"https://www.cascais-portugal.com/Guides/cascais-weather-when-to-go-visit.html\" target=\"_blank\" rel=\"noreferrer\">Cascais weather/water notes ↗</a>",
+          "lat": "38.6968",
+          "lng": "-9.4215"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Sintra gardens + Atlantic cliffs",
+      "feel": "Castle magic + coastal nature",
+      "daycost": "Est. ~$230 · Regaleira + train/taxi + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cascais · night 2 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Quinta da Regaleira, Praia da Adraga, easy Cascais dinner"
+        },
+        {
+          "label": "Book",
+          "valueHtml": "Regaleira online; Pena only if early slot is easy"
+        }
+      ],
+      "note": "This is the Portugal feel preserved from the existing plan: Sintra, cliffs, and coastal towns without adding a Portugal drive segment.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Sintra: Quinta da Regaleira + Praia da Adraga",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Sintra%3A%20Quinta%20da%20Regaleira%20%2B%20Praia%20da%20Adraga\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/sintra/\" target=\"_blank\" rel=\"noreferrer\">IG · Sintra</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/quintadaregaleira/\" target=\"_blank\" rel=\"noreferrer\">IG · Quinta da Regaleira</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadaadraga/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia da Adraga</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=sintra&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal-sicily/google_sintra_regaleira_well_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_sintra_regaleira_well_01.jpg",
+              "alt": "The spiral initiation well at Quinta da Regaleira wrapped in green stone.",
+              "captionTitle": "Regaleira Well",
+              "credit": "Trips With Rosie · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_sintra_pena_palace_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_sintra_pena_palace_01.jpg",
+              "alt": "Quinta da Regaleira palace facade in Sintra under blue sky.",
+              "captionTitle": "Regaleira Palace",
+              "credit": "Ted McGrath · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_sintra_adraga_coast_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_sintra_adraga_coast_01.jpg",
+              "alt": "Atlantic beach and village cliffs on the Sintra coast near Azenhas do Mar.",
+              "captionTitle": "Sintra Coast",
+              "credit": "Michael Breitung · Google Images source"
+            }
+          ],
+          "cost": "Quinta da Regaleira official 2026 pricing: EUR15 adult, EUR10 youth 6-17 and seniors 65+, under 6 free. There is no combined family ticket, so a family of 4 (two adults + two kids) is about EUR50. Pena Palace is timed-entry and more crowd-sensitive.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> Sintra is cooler than Lisbon and can be misty; Adraga beach is dramatic but Atlantic-cold.",
+          "saveHtml": "<b>Save</b> Choose Regaleira over a full Pena interior day; the tunnels and Initiation Well are more kid-magical and the pricing is clear (about EUR50 for the four of us).",
+          "splurgeHtml": "<b>Splurge</b> Add Pena Palace only if you can secure an early timed slot; current rules require booking the exact day/time for palace entry.",
+          "restoHtml": "<li><a href=\"https://www.thefork.com/restaurant/na-pizza-cascais-r843309\" target=\"_blank\" rel=\"noreferrer\"><b>Na Pizza Cascais</b></a> — Margherita listed at EUR13; easy plain pizza night</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189154-d28024269-Reviews-Pasta_Non_Basta_Cascais-Cascais_Lisbon_District_Central_Portugal.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pasta Non Basta Cascais</b></a> — fresh pasta and pizza, simple tomato/cheese fallback</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189164-d20404815-Reviews-Passione_Pizza_Sintra-Sintra_Sintra_Municipality_Lisbon_District_Central_Portuga.html\" target=\"_blank\" rel=\"noreferrer\"><b>Passione Pizza Sintra</b></a> — Sintra pizza stop with plain kid-friendly orders</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.parquesdesintra.pt/en/plan-your-visit/tickets-palace-of-pena/\" target=\"_blank\" rel=\"noreferrer\"><b>Pena Palace park/terraces</b> ↩</a> — more iconic color, but stricter timed entry and more crowd pressure.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Monserrate%20Palace%20Sintra\" target=\"_blank\" rel=\"noreferrer\"><b>Monserrate Palace</b> ↗</a> — lush gardens and lighter crowds than Pena if the main Sintra palaces are slammed.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20da%20Rainha%20Cascais\" target=\"_blank\" rel=\"noreferrer\"><b>Praia da Rainha</b> ↗</a> — tiny Cascais cove for an easier swim/photo if the Sintra weather is poor.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://beautifulbrownadventures.com/quinta-da-regaleira-sintra-portugal-kids/\" target=\"_blank\" rel=\"noreferrer\">Regaleira with kids ↗</a><a href=\"https://www.regaleira.pt/en/destaques/2025-entrance-fees-2026/\" target=\"_blank\" rel=\"noreferrer\">Official Regaleira 2026 fees ↗</a>",
+          "lat": "38.7959",
+          "lng": "-9.3972"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Lisbon by tram: Belém + Alfama",
+      "feel": "City day, easy on the legs",
+      "daycost": "Est. ~$240 · transit + entries + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cascais · night 3 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Train in, Belém + Jerónimos, Tram 28 through Alfama, riverside evening"
+        },
+        {
+          "label": "Book",
+          "valueHtml": "Jerónimos/Belém Tower online to skip lines"
+        }
+      ],
+      "note": "The five-night Portugal base makes Lisbon a relaxed day trip by train, not a rushed stop — back to Cascais for dinner and sea air.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Lisbon: Belém, Alfama &amp; Tram 28",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lisbon%20Belem%20Alfama%20Tram%2028\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lisboa/\" target=\"_blank\" rel=\"noreferrer\">IG · Lisbon</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/belem/\" target=\"_blank\" rel=\"noreferrer\">IG · Belém</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=lisboa&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal-sicily/google_lisbon_tram28_alfama_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_lisbon_tram28_alfama_01.jpg",
+              "alt": "Sunrise over Lisbon rooftops and the Tagus from Miradouro de Santa Luzia.",
+              "captionTitle": "Santa Luzia Sunrise",
+              "credit": "Amalia Bastos Photography · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_lisbon_belem_tower_flickr_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_lisbon_belem_tower_flickr_01.jpg",
+              "alt": "Belem Tower reflected at sunset beside the Tagus.",
+              "captionTitle": "Belem Tower",
+              "credit": "Giuseppe Milo · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_lisbon_jeronimos_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_lisbon_jeronimos_01.jpg",
+              "alt": "Jeronimos Monastery facade under a deep blue Lisbon sky.",
+              "captionTitle": "Jeronimos",
+              "credit": "Jeronimos Monastery Tickets · Google Images source"
+            }
+          ],
+          "cost": "City wandering is free. Belém Tower and Jerónimos Monastery are timed-entry, roughly EUR8-15 adult each with reduced/free kids; Tram 28 is a normal transit ride (~EUR3) or on a 24h Viva Viagem pass.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> Lisbon runs warm, about <b>77-84 F</b> and hotter than the coast. Do Alfama and Belém earlier, then riverside gelato and shade in the afternoon.",
+          "saveHtml": "<b>Save</b> Ride the real Tram 28 as your sightseeing instead of a paid hop-on bus, and use a reloadable Viva Viagem card for the family.",
+          "splurgeHtml": "<b>Splurge</b> Pastéis de Belém from the original bakery, or the Lisbon Oceanarium if a kid needs an indoor reset.",
+          "restoHtml": "<li><a href=\"https://www.thefork.com/restaurant/na-pizza-cascais-r843309\" target=\"_blank\" rel=\"noreferrer\"><b>Na Pizza Cascais</b></a> — Margherita listed at EUR13; easy plain pizza night</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189154-d28024269-Reviews-Pasta_Non_Basta_Cascais-Cascais_Lisbon_District_Central_Portugal.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pasta Non Basta Cascais</b></a> — fresh pasta and pizza, simple tomato/cheese fallback</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189164-d20404815-Reviews-Passione_Pizza_Sintra-Sintra_Sintra_Municipality_Lisbon_District_Central_Portuga.html\" target=\"_blank\" rel=\"noreferrer\"><b>Passione Pizza Sintra</b></a> — Sintra pizza stop with plain kid-friendly orders</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://oceanario.pt/en/visit/tickets/\" target=\"_blank\" rel=\"noreferrer\"><b>Lisbon Oceanarium</b> ↩</a> — excellent heat/meltdown backup; current tickets EUR25 adults, EUR15 ages 3-12.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Pena%20Palace%20Sintra%20park\" target=\"_blank\" rel=\"noreferrer\"><b>Pena Palace park</b> ↗</a> — colorful terraces and forested grounds when the full interior visit feels too crowded.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20das%20Macas%20Sintra\" target=\"_blank\" rel=\"noreferrer\"><b>Praia das Macas</b> ↗</a> — bigger family beach with food nearby if cliff coves feel too exposed.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://savourthetrip.com/cascais-with-kids-the-family-travel-guide-to-lisbons-charming-coastal-escape/\" target=\"_blank\" rel=\"noreferrer\">Cascais with kids guide ↗</a><a href=\"https://www.cascais-portugal.com/Guides/cascais-weather-when-to-go-visit.html\" target=\"_blank\" rel=\"noreferrer\">Cascais weather/water notes ↗</a>",
+          "lat": "38.6975",
+          "lng": "-9.2058"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Cabo da Roca + Praia da Ursa coast",
+      "feel": "Cliffs, wind, and big Atlantic views",
+      "daycost": "Est. ~$150 · car/transfer + picnic + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cascais · night 4 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Europe’s westernmost point, Praia da Ursa overlook, Azenhas do Mar sea pool"
+        },
+        {
+          "label": "Gear",
+          "valueHtml": "Grippy shoes + layers; it is windy"
+        }
+      ],
+      "note": "The dramatic-coast day the two-night version never had room for — all free, all scenery, at a kid-friendly pace.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Cabo da Roca, Praia da Ursa &amp; Azenhas do Mar",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cabo%20da%20Roca%20Praia%20da%20Ursa%20Azenhas%20do%20Mar\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/caboroca/\" target=\"_blank\" rel=\"noreferrer\">IG · Cabo da Roca</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadaursa/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia da Ursa</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=caboroca&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal-sicily/google_azenhas_do_mar_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_azenhas_do_mar_01.jpg",
+              "alt": "Azenhas do Mar village perched above its Atlantic tidal pool.",
+              "captionTitle": "Azenhas do Mar",
+              "credit": "Michael Breitung · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_cabo_roca_coast_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_cabo_roca_coast_01.jpg",
+              "alt": "Cliffs and ocean light along the Cabo da Roca coast.",
+              "captionTitle": "Cabo da Roca",
+              "credit": "Tickets Lisbon · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal-sicily/google_sintra_adraga_coast_01.jpg",
+              "src": "../../assets/img/portugal-sicily/google_sintra_adraga_coast_01.jpg",
+              "alt": "Atlantic beach and village cliffs on the Sintra coast near Azenhas do Mar.",
+              "captionTitle": "Sintra Coast",
+              "credit": "Michael Breitung · Google Images source"
+            }
+          ],
+          "cost": "Free. Cabo da Roca (mainland Europe’s westernmost point) has free parking and viewpoints; Praia da Ursa is a steep unofficial scramble (not for little kids alone); Azenhas do Mar has a natural sea pool below the village.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> sunny but windy and Atlantic-cold water. Great for views and tide pools, not long swims — that is what Sicily is for.",
+          "saveHtml": "<b>Save</b> Pack a picnic — there is little food at Cabo da Roca beyond one café, and the views beat overpriced snacks.",
+          "splurgeHtml": "<b>Splurge</b> A cliffside lunch or sunset drink at Azenhas do Mar, or a short Sintra-coast e-bike stretch.",
+          "restoHtml": "<li><a href=\"https://www.thefork.com/restaurant/na-pizza-cascais-r843309\" target=\"_blank\" rel=\"noreferrer\"><b>Na Pizza Cascais</b></a> — Margherita listed at EUR13; easy plain pizza night</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189154-d28024269-Reviews-Pasta_Non_Basta_Cascais-Cascais_Lisbon_District_Central_Portugal.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pasta Non Basta Cascais</b></a> — fresh pasta and pizza, simple tomato/cheese fallback</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189164-d20404815-Reviews-Passione_Pizza_Sintra-Sintra_Sintra_Municipality_Lisbon_District_Central_Portuga.html\" target=\"_blank\" rel=\"noreferrer\"><b>Passione Pizza Sintra</b></a> — Sintra pizza stop with plain kid-friendly orders</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=38.7959,-9.3972\" target=\"_blank\" rel=\"noreferrer\"><b>Praia da Adraga / Guincho</b> ↩</a> — easier sand-and-café beaches if the Ursa scramble is too much.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20das%20Macas%20Sintra\" target=\"_blank\" rel=\"noreferrer\"><b>Praia das Macas</b> ↗</a> — bigger family beach with food nearby if cliff coves feel too exposed.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Lisbon%20Oceanarium\" target=\"_blank\" rel=\"noreferrer\"><b>Lisbon Oceanarium</b> ↗</a> — reliable bad-weather or jet-lag backup before the Sicily flight.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://savourthetrip.com/cascais-with-kids-the-family-travel-guide-to-lisbons-charming-coastal-escape/\" target=\"_blank\" rel=\"noreferrer\">Cascais with kids guide ↗</a><a href=\"https://www.cascais-portugal.com/Guides/cascais-weather-when-to-go-visit.html\" target=\"_blank\" rel=\"noreferrer\">Cascais weather/water notes ↗</a>",
+          "lat": "38.7805",
+          "lng": "-9.4989"
+        }
+      ]
+    }
+  ]
+}

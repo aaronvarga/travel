@@ -1,0 +1,525 @@
+{
+  "id": "madeira",
+  "name": "Madeira",
+  "country": "Portugal",
+  "sourceTrip": "madeira-crete",
+  "mapColor": "#1f6f78",
+  "mapPoints": [
+    {
+      "n": "Madeira Airport (FNC)",
+      "lat": 32.6979,
+      "lng": -16.7745,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.6979,-16.7745"
+    },
+    {
+      "n": "Pico do Arieiro: Stairway to Heaven ridge (PR1)",
+      "lat": 32.7357,
+      "lng": -16.9285,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.7357,-16.9285"
+    },
+    {
+      "n": "25 Fontes + Risco levada (PR6, Rabacal)",
+      "lat": 32.759,
+      "lng": -17.132,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.759,-17.132"
+    },
+    {
+      "n": "Camara de Lobos + Cabo Girao Skywalk",
+      "lat": 32.652,
+      "lng": -16.99,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.652,-16.99"
+    },
+    {
+      "n": "Fanal fog forest (Paul da Serra)",
+      "lat": 32.811,
+      "lng": -17.145,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.811,-17.145"
+    },
+    {
+      "n": "Porto Moniz natural lava pools",
+      "lat": 32.867,
+      "lng": -17.166,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.867,-17.166"
+    },
+    {
+      "n": "Funchal old town + Monte cable car + toboggans",
+      "lat": 32.6496,
+      "lng": -16.9086,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.6496,-16.9086"
+    },
+    {
+      "n": "Ponta de Sao Lourenco cliffs (PR8)",
+      "lat": 32.7446,
+      "lng": -16.706,
+      "r": "madeira",
+      "g": "https://www.google.com/maps/search/?api=1&query=32.7446,-16.706"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "FNC"
+    ],
+    "pitOutbound": {
+      "route": "PIT→EWR→FNC",
+      "hours": 12,
+      "familyCostUsd": [
+        3200,
+        4400
+      ],
+      "notes": "United seasonal nonstop connection; confirm 2027"
+    },
+    "pitReturn": null
+  },
+  "nights": {
+    "min": 4,
+    "canonical": 5,
+    "max": 7
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/madeira-crete/google_funchal_cable_car_01.jpg",
+      "src": "../../assets/img/madeira-crete/google_funchal_cable_car_01.jpg",
+      "alt": "Cable car gliding above Funchal's terracotta roofs",
+      "captionTitle": "Funchal from Above",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/madeira-crete/google_funchal_bay_04.jpg",
+      "src": "../../assets/img/madeira-crete/google_funchal_bay_04.jpg",
+      "alt": "Funchal Bay curving beneath Madeira's green hills",
+      "captionTitle": "Funchal Bay",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/madeira-crete/reuse_funchal_oldtown_01.jpg",
+      "src": "../../assets/img/madeira-crete/reuse_funchal_oldtown_01.jpg",
+      "alt": "Funchal old town in warm coastal light",
+      "captionTitle": "Old Town",
+      "credit": "Existing self-hosted trip gallery"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach"
+  ],
+  "june": {
+    "seaTempF": 70,
+    "airHiF": 75,
+    "facts": [
+      "FNC wind disruption can require a Lisbon buffer"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      163,
+      263
+    ],
+    "carPerDayUsd": [
+      56,
+      90
+    ],
+    "foodPerDayUsd": [
+      125,
+      168
+    ],
+    "activitiesFlatUsd": [
+      300,
+      550
+    ],
+    "provenance": "madeira-crete budget table: Funchal lodging, Madeira car, shared daily food, destination activities"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 3,
+    "food": 4,
+    "novelty": 5,
+    "varietyTags": [
+      "mountains",
+      "levadas",
+      "ocean",
+      "villages"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Funchal, cable car, old town evening",
+      "feel": "Soft landing",
+      "daycost": "Est. $180-$320 - car pickup, cable car, simple dinner",
+      "facts": [
+        {
+          "label": "Base",
+          "valueHtml": "Funchal - night 1 of 4"
+        },
+        {
+          "label": "Easy win",
+          "valueHtml": "Cable car up, toboggan down"
+        }
+      ],
+      "note": "Keep arrival deliberately easy: pick up the car, check in, then use the Monte cable car and toboggan as the jet-lag-proof kid hook. Confirm the operating day, eat early in the Zona Velha, and save the alpine start for a rested morning.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Funchal old town + Monte cable car + toboggans",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Funchal%20old%20town%20%2B%20Monte%20cable%20car%20%2B%20toboggans\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/funchal/\" target=\"_blank\" rel=\"noreferrer\">IG · Funchal</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/monte/\" target=\"_blank\" rel=\"noreferrer\">IG · Monte</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=funchal&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-crete/google_funchal_cable_car_01.jpg",
+              "src": "../../assets/img/madeira-crete/google_funchal_cable_car_01.jpg",
+              "alt": "Cable car gliding above Funchal's terracotta roofs",
+              "captionTitle": "Funchal from Above",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/google_funchal_bay_04.jpg",
+              "src": "../../assets/img/madeira-crete/google_funchal_bay_04.jpg",
+              "alt": "Funchal Bay curving beneath Madeira's green hills",
+              "captionTitle": "Funchal Bay",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_funchal_oldtown_01.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_funchal_oldtown_01.jpg",
+              "alt": "Funchal old town in warm coastal light",
+              "captionTitle": "Old Town",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Cable car EUR 22 RT / EUR 16 one-way adult, ages 7-14 half price - one-way up for the family is ~EUR 48. Monte toboggan (2026 prices): EUR 40 per 2-person sled, cash only, closed Sundays - two sleds = EUR 80. Monte Palace garden EUR 18 adult, kids to 14 free.",
+          "climateLabel": "Weather",
+          "climate": "<b>June Funchal: 72-75 F days / 61-63 F nights</b>, ~10 hours of sun and only ~5 rain days - one of the driest months on the island.",
+          "saveHtml": "<b>Save</b> Ride the cable car one-way up (EUR 48, not EUR 76 RT), toboggan partway down, and finish by Bolt/taxi - the classic route that skips paying for the ride down twice.",
+          "splurgeHtml": "<b>Splurge</b> The toboggan itself IS the splurge at EUR 80 for two wicker sleds - a 130-year-old tradition and the single most kid-memorable EUR 80 on the island.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189167-d1567707-Reviews-Pizzaria_Xaramba-Funchal_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzaria Xaramba</b></a> — old-town pizzeria by the fort; plain margherita is the safe order</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Hamburgueria+do+Mercado+Funchal\" target=\"_blank\" rel=\"noreferrer\"><b>Hamburgueria do Mercado</b></a> — burgers and fries by the market; a plain burger runs about EUR 10</li><li><a href=\"https://www.portobay.com/en/restaurants/restaurants-madeira/il-basilico\" target=\"_blank\" rel=\"noreferrer\"><b>Il Basilico</b></a> — Lido promenade Italian; pizza, plain pasta, and highchairs</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitmadeira.com/en/explore/discover/funchal/mercado-dos-lavradores/\" target=\"_blank\" rel=\"noreferrer\"><b>Mercado dos Lavradores + old-town painted doors</b> ↩</a> — the free version of a Funchal afternoon: market fruit tasting upstairs, painted-door street art in the Zona Velha, gelato by the fort.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Jardim%20Botanico%20da%20Madeira%20Funchal\" target=\"_blank\" rel=\"noreferrer\"><b>Jardim Botanico da Madeira</b> ↗</a> — terraced gardens and city views; a good fog or heat substitute for higher viewpoints.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Complexo%20Balnear%20do%20Lido%20Funchal\" target=\"_blank\" rel=\"noreferrer\"><b>Lido pools</b> ↗</a> — easy managed swim with showers and food if open-water conditions are not friendly.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://madeiracablecar.com/en/price-and-schedule/\" target=\"_blank\" rel=\"noreferrer\">Official cable car prices</a><a href=\"https://www.timesofmadeira.com/carreiros-do-monte-raise-prices-for-monte-toboggan-rides\" target=\"_blank\" rel=\"noreferrer\">Toboggan 2026 price source</a>",
+          "lat": "32.6496",
+          "lng": "-16.9086"
+        }
+      ]
+    },
+    {
+      "role": "flex",
+      "heading": "Arieiro sunrise: Stairway to Heaven - weather shot 1 of 2",
+      "feel": "The flagship hike",
+      "daycost": "Est. $80-$220 - permits, fuel or transfer, lunch",
+      "facts": [
+        {
+          "label": "Wake-up",
+          "valueHtml": "~5:00 am for a 6:50 sunrise"
+        },
+        {
+          "label": "Family version",
+          "valueHtml": "Out-and-back to the staircase viewpoints"
+        },
+        {
+          "label": "Permit",
+          "valueHtml": "PR1 EUR 10.50 pp, kids 12 and under free"
+        }
+      ],
+      "note": "The family version is the out-and-back from the Arieiro summit to Ninho da Manta and the staircase viewpoints (this first section is two-way; the full one-way traverse to Pico Ruivo is too strenuous for the 8-year-old). If the summit is in cloud, bail early and swap this with Saturday - that retry is exactly what the 4-night stay buys.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Pico do Arieiro: Stairway to Heaven ridge (PR1)",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Pico%20do%20Arieiro%3A%20Stairway%20to%20Heaven%20ridge%20%28PR1%29\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/picodoarieiro/\" target=\"_blank\" rel=\"noreferrer\">IG · Pico do Arieiro</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=picodoarieiro&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-crete/google_pico_arieiro_view_01_2.jpg",
+              "src": "../../assets/img/madeira-crete/google_pico_arieiro_view_01_2.jpg",
+              "alt": "Pico do Arieiro ridge above a sea of clouds",
+              "captionTitle": "Pico do Arieiro",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/google_pico_arieiro_epic_03.jpg",
+              "src": "../../assets/img/madeira-crete/google_pico_arieiro_epic_03.jpg",
+              "alt": "Dramatic stairway ridge on Madeira's PR1 trail",
+              "captionTitle": "Stairway Ridge",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_pico_ruivo_sunrise_01.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_pico_ruivo_sunrise_01.jpg",
+              "alt": "Sunrise light across Pico Ruivo's jagged ridge",
+              "captionTitle": "Sunrise Ridge",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "PR1 permit EUR 10.50 pp booked on SIMplifica (EUR 7 with a licensed operator); kids 12 and under free, so the family pays ~EUR 31.50. Summit parking free but full before sunrise on clear days. Shared sunrise transfer alternative: EUR 30-40 pp.",
+          "climateLabel": "Weather",
+          "climate": "<b>Pre-dawn summit (1,818 m): 41-50 F</b> even in June - real jackets and hats. The sea-of-clouds inversion is a morning phenomenon; clouds typically swallow the peaks by afternoon. June is one of Madeira's driest months.",
+          "saveHtml": "<b>Save</b> Self-drive at 5:15 am instead of booking transfer seats: the family saves roughly $120-$160 and keeps the schedule flexible for the cloud lottery.",
+          "splurgeHtml": "<b>Splurge</b> Book the guided sunrise transfer (EUR 30-40 pp) if nobody wants to drive mountain hairpins in the dark - pickup ~5:00-5:30 am for a ~6:50 sunrise.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189167-d1567707-Reviews-Pizzaria_Xaramba-Funchal_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzaria Xaramba</b></a> — old-town pizzeria by the fort; plain margherita is the safe order</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Hamburgueria+do+Mercado+Funchal\" target=\"_blank\" rel=\"noreferrer\"><b>Hamburgueria do Mercado</b></a> — burgers and fries by the market; a plain burger runs about EUR 10</li><li><a href=\"https://www.portobay.com/en/restaurants/restaurants-madeira/il-basilico\" target=\"_blank\" rel=\"noreferrer\"><b>Il Basilico</b></a> — Lido promenade Italian; pizza, plain pasta, and highchairs</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://madeirahiking.org/trails/pr1-2\" target=\"_blank\" rel=\"noreferrer\"><b>Pico Ruivo from Achada do Teixeira (PR1.2)</b> ↩</a> — the gentler back route to Madeira's highest summit - a real substitute if the PR1 first section is closed or the exposure feels like too much for the 8-year-old.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Risco%20waterfall%20Rabacal%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Risco waterfall only</b> ↗</a> — flatter Rabacal branch with a tall waterfall when 25 Fontes feels like too much walking.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Florestal%20das%20Queimadas%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Queimadas Forest Park</b> ↗</a> — thatched houses, picnic lawns, and easy laurel-forest paths without a long levada commitment.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://hikingmadeira.com/blog/pr1-areeiro-opening-april-2026/\" target=\"_blank\" rel=\"noreferrer\">PR1 reopening status (Apr 2026)</a><a href=\"https://madeirahiking.org/fees-booking\" target=\"_blank\" rel=\"noreferrer\">SIMplifica trail permit rules</a>",
+          "lat": "32.7357",
+          "lng": "-16.9285",
+          "alltrailsTrail": "https://www.alltrails.com/trail/portugal/madeira--2/pr1-pico-do-arieiro-pico-ruivo",
+          "alltrailsArea": "https://www.alltrails.com/portugal/madeira--2"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "25 Fontes levada, then Camara de Lobos golden hour",
+      "feel": "Waterfall + village day",
+      "daycost": "Est. $120-$240 - permits, shuttle, skywalk, dinner",
+      "facts": [
+        {
+          "label": "Morning",
+          "valueHtml": "Rabacal / 25 Fontes (PR6)"
+        },
+        {
+          "label": "Late day",
+          "valueHtml": "Camara de Lobos + Cabo Girao skywalk"
+        }
+      ],
+      "note": "Levada walking is the flat, kid-friendly lower-exposure counterpoint to the alpine ridge day: water channels, tunnels of green, and a waterfall pool payoff. Bail to the short Risco branch if the 8-year-old is done. End with fishing boats and the 580 m skywalk on the way home.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "25 Fontes + Risco levada (PR6, Rabacal)",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=25%20Fontes%20%2B%20Risco%20levada%20%28PR6%2C%20Rabacal%29\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/25fontes/\" target=\"_blank\" rel=\"noreferrer\">IG · 25 Fontes</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/risco/\" target=\"_blank\" rel=\"noreferrer\">IG · Risco</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=25fontes&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-crete/google_laurissilva_balcoes_03.jpg",
+              "src": "../../assets/img/madeira-crete/google_laurissilva_balcoes_03.jpg",
+              "alt": "Lush Laurissilva forest along Madeira's levada country",
+              "captionTitle": "Laurissilva Forest",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/google_ribeiro_frio_balcoes_02.jpg",
+              "src": "../../assets/img/madeira-crete/google_ribeiro_frio_balcoes_02.jpg",
+              "alt": "Viewpoint over the Ribeiro Frio green valleys",
+              "captionTitle": "Levada View",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_ribeiro_frio_tunnel_01.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_ribeiro_frio_tunnel_01.jpg",
+              "alt": "Shaded levada tunnel in Ribeiro Frio forest",
+              "captionTitle": "Levada Tunnel",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Permit EUR 4.50 pp (kids 12 and under free) = ~EUR 13.50 family, booked on SIMplifica. Rabacal parking free; the access-road shuttle is EUR 5 one-way / EUR 8 return, cash only.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> the Rabacal plateau sits in the cloud belt - expect cooler, mistier air than Funchal and pack a layer. Trails are mostly flat levada walking with ~300 m of stairs near the falls.",
+          "saveHtml": "<b>Save</b> Start before the ~10-11 am shuttle and walk the 2 km access road down (~40 min) - saves EUR 32 family and beats the crowds to the falls.",
+          "splurgeHtml": "<b>Splurge</b> None needed - this day is nearly free. If energy is high, add the 30-minute Risco waterfall branch (PR6.1) at no extra cost.",
+          "restoHtml": "<li><a href=\"https://www.thefork.pt/restaurante/anonimo-r819576\" target=\"_blank\" rel=\"noreferrer\"><b>Anonimo</b></a> — some of the island's best Neapolitan pizza; margherita for the kids</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1190957-d21246499-Reviews-Pizza_Cafe-Camara_De_Lobos_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza Cafe (Camara de Lobos)</b></a> — generous pizza and pasta portions steps from the harbor</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Restaurante+Santo+Antonio+Estreito+de+Camara+de+Lobos\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Santo Antonio</b></a> — espetada house since 1966; grilled beef/chicken skewers, fries, and bolo do caco bread</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://madeirahiking.org/trails/pr6\" target=\"_blank\" rel=\"noreferrer\"><b>Risco waterfall only (PR6.1)</b> ↩</a> — the built-in bail-out: the Risco branch is a short, flat walk to a 100 m waterfall if the full 9-11 km round trip looks like too much for the 8-year-old.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20Florestal%20das%20Queimadas%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Queimadas Forest Park</b> ↗</a> — thatched houses, picnic lawns, and easy laurel-forest paths without a long levada commitment.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Ribeiro%20Frio%20Balcoes%20viewpoint%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Ribeiro Frio and Balcoes</b> ↗</a> — short, family-friendly forest walk with a big-view payoff if clouds cooperate.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://madeirahiking.org/trails/pr6\" target=\"_blank\" rel=\"noreferrer\">PR6 trail guide and status</a><a href=\"https://ifcn.madeira.gov.pt/en/atividades-de-natureza/percursos-pedestres-recomendados/faq-s-taxas-percursos-pedestres-classificados/frequently-asked-questions-fees-classified-walking-routes.html\" target=\"_blank\" rel=\"noreferrer\">Official IFCN trail-fee FAQ</a>",
+          "lat": "32.759",
+          "lng": "-17.132",
+          "alltrailsTrail": "https://www.alltrails.com/trail/portugal/madeira--2/pr6-levada-25-fontes-e-risco",
+          "alltrailsArea": "https://www.alltrails.com/portugal/madeira--2"
+        },
+        {
+          "name": "Camara de Lobos + Cabo Girao Skywalk",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Camara%20de%20Lobos%20%2B%20Cabo%20Girao%20Skywalk\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/camaradelobos/\" target=\"_blank\" rel=\"noreferrer\">IG · Camara de Lobos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cabogirao/\" target=\"_blank\" rel=\"noreferrer\">IG · Cabo Girao</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=camaradelobos&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-crete/google_cabo_girao_skywalk_03.jpg",
+              "src": "../../assets/img/madeira-crete/google_cabo_girao_skywalk_03.jpg",
+              "alt": "Atlantic view from Cabo Girao's glass skywalk",
+              "captionTitle": "Cabo Girão",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/google_balcoes_panorama_01.jpg",
+              "src": "../../assets/img/madeira-crete/google_balcoes_panorama_01.jpg",
+              "alt": "Layered Madeiran mountains and ravines",
+              "captionTitle": "Madeira Panorama",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_camara_lobos_boats_01.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_camara_lobos_boats_01.jpg",
+              "alt": "Colorful fishing boats in Camara de Lobos",
+              "captionTitle": "Fishing Boats",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Camara de Lobos harbor is free. Cabo Girao skywalk is EUR 5 pp since Jan 2026, kids 12 and under free - plan EUR 15 worst case (whether the 13-year-old is exempt is ambiguous in current sources).",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> the sunny south coast - 72-75 F afternoons. Golden hour is the move: fishing boats glow and the 580 m cliff view softens after the tour buses leave.",
+          "saveHtml": "<b>Save</b> Do this as the late-afternoon tail of the 25 Fontes day rather than a separate outing - it is 15 minutes from Funchal and needs no tickets beyond the skywalk.",
+          "splurgeHtml": "<b>Splurge</b> An espetada dinner at Santo Antonio in Estreito - the skewers-and-fries house the locals drive to, and a legitimately picky-kid-safe splurge.",
+          "restoHtml": "<li><a href=\"https://www.thefork.pt/restaurante/anonimo-r819576\" target=\"_blank\" rel=\"noreferrer\"><b>Anonimo</b></a> — some of the island's best Neapolitan pizza; margherita for the kids</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1190957-d21246499-Reviews-Pizza_Cafe-Camara_De_Lobos_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza Cafe (Camara de Lobos)</b></a> — generous pizza and pasta portions steps from the harbor</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Restaurante+Santo+Antonio+Estreito+de+Camara+de+Lobos\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Santo Antonio</b></a> — espetada house since 1966; grilled beef/chicken skewers, fries, and bolo do caco bread</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitmadeira.com/en/explore/discover/west/ponta-do-sol/\" target=\"_blank\" rel=\"noreferrer\"><b>Ponta do Sol sunset</b> ↩</a> — the island's sunniest village, 15 minutes further west - a good swap if the family wants a slower waterfront evening instead of the skywalk.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Parque%20de%20Santa%20Catarina%20Funchal\" target=\"_blank\" rel=\"noreferrer\"><b>Santa Catarina Park</b> ↗</a> — low-effort green space above the harbor for a quick kid reset before dinner.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Mercado%20dos%20Lavradores%20Funchal\" target=\"_blank\" rel=\"noreferrer\"><b>Mercado dos Lavradores</b> ↗</a> — colorful market + fruit stop in the old town when you want a lighter Funchal hour.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.timesofmadeira.com/cabo-girao-entry-fee-increases-by-66-from-january\" target=\"_blank\" rel=\"noreferrer\">Cabo Girao 2026 fee source</a><a href=\"https://www.visitmadeira.com/en/explore/discover/west/camara-de-lobos/\" target=\"_blank\" rel=\"noreferrer\">Camara de Lobos visitor guide</a>",
+          "lat": "32.652",
+          "lng": "-16.99"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Fanal fog forest + Porto Moniz lava pools",
+      "feel": "Otherworldly north coast",
+      "daycost": "Est. $100-$220 - pools, lunch, fuel",
+      "facts": [
+        {
+          "label": "Morning",
+          "valueHtml": "Fanal - go only if there IS fog"
+        },
+        {
+          "label": "Afternoon",
+          "valueHtml": "Porto Moniz pools, EUR 12 family"
+        },
+        {
+          "label": "Backup role",
+          "valueHtml": "Arieiro retry slot"
+        }
+      ],
+      "note": "This day has a double job: it is the ancient-forest-and-lava-pools loop, and it is the Arieiro backup slot. If Thursday's summit was clouded out, do the sunrise retry first and compress this loop into the afternoon. Fanal without fog is skippable; Porto Moniz is not.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Fanal fog forest (Paul da Serra)",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Fanal%20fog%20forest%20%28Paul%20da%20Serra%29\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/fanal/\" target=\"_blank\" rel=\"noreferrer\">IG · Fanal</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=fanal&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-crete/google_fanal_forest_04.jpg",
+              "src": "../../assets/img/madeira-crete/google_fanal_forest_04.jpg",
+              "alt": "Wind-shaped ancient trees in Fanal's mist",
+              "captionTitle": "Fanal Mist",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_madeira_waterfall_01.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_madeira_waterfall_01.jpg",
+              "alt": "Madeira waterfall framed by lush subtropical growth",
+              "captionTitle": "Forest Falls",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_madeira_waterfall_02.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_madeira_waterfall_02.jpg",
+              "alt": "Green Madeiran valley and cascading water",
+              "captionTitle": "Green Valley",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Currently free, with a large free lot at the Fanal forestry post. Since Jan 2026 access is designated-paths-only with a daily visitor cap; a paid-entry model is under study - verify closer to travel.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> Fanal sits at ~1,150 m in the cloud belt - fog is most likely in the morning and on humid days, and June afternoons often burn clear. The fog IS the show; a clear Fanal is just a pasture with old trees.",
+          "saveHtml": "<b>Save</b> Fanal costs nothing - the save is sequencing. Check the webcams/weather that morning and only commit when fog is actually sitting on the plateau.",
+          "splurgeHtml": "<b>Splurge</b> Nothing to buy here. Spend the saved money on lunch at the Porto Moniz pools 25 minutes downhill.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g644297-d3665406-Reviews-Cachalote-Porto_Moniz_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Cachalote</b></a> — built on the lava rocks beside the pools; burgers and simple grills, the location does the work</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g644297-d1930063-Reviews-Restaurante_Orca-Porto_Moniz_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Orca</b></a> — pool-view terrace; burgers and simple mains</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Restaurante+Santo+Antonio+Estreito+de+Camara+de+Lobos\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Santo Antonio</b></a> — espetada-and-fries dinner stop on the drive back south via Encumeada</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitmadeira.com/en/explore/discover/north/sao-vicente/\" target=\"_blank\" rel=\"noreferrer\"><b>Sao Vicente valley drive</b> ↩</a> — if the plateau is stubbornly clear, drop through the dramatic north-coast valley road instead and get to the pools early.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Achada%20do%20Teixeira%20Pico%20Ruivo%20trail\" target=\"_blank\" rel=\"noreferrer\"><b>Pico Ruivo from Achada do Teixeira</b> ↗</a> — shorter back-door summit route if the Arieiro ridge is closed, foggy, or too exposed.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Risco%20waterfall%20Rabacal%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Risco waterfall only</b> ↗</a> — flatter Rabacal branch with a tall waterfall when 25 Fontes feels like too much walking.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://thisismadeiraisland.com/news/the-future-of-fanal-new-rules-boardwalks-and-probable-fees-for-madeiras-iconic-laurel-forest/\" target=\"_blank\" rel=\"noreferrer\">Fanal 2026 access rules</a><a href=\"https://www.visitmadeira.com/en/explore/discover/north/fanal/\" target=\"_blank\" rel=\"noreferrer\">Fanal visitor guide</a>",
+          "lat": "32.811",
+          "lng": "-17.145"
+        },
+        {
+          "name": "Porto Moniz natural lava pools",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Porto%20Moniz%20natural%20lava%20pools\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/portomoniz/\" target=\"_blank\" rel=\"noreferrer\">IG · Porto Moniz</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=portomoniz&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-crete/google_porto_moniz_pools_01.jpg",
+              "src": "../../assets/img/madeira-crete/google_porto_moniz_pools_01.jpg",
+              "alt": "Atlantic waves beside Porto Moniz lava pools",
+              "captionTitle": "Porto Moniz Pools",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/google_porto_moniz_lava_02.jpg",
+              "src": "../../assets/img/madeira-crete/google_porto_moniz_lava_02.jpg",
+              "alt": "Black volcanic lava along Madeira's north coast",
+              "captionTitle": "Lava Coast",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_porto_moniz_overlook_01.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_porto_moniz_overlook_01.jpg",
+              "alt": "Natural lava pools seen from above",
+              "captionTitle": "Pools from Above",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "EUR 3 pp for everyone age 3+ = EUR 12 family, open 9 am-7 pm in summer, with changing rooms, lockers, showers, lifeguards, and a snack bar. The rougher Cachalote pools on the west side are free.",
+          "climateLabel": "Weather",
+          "climate": "<b>June sea: ~70 F</b> - brisk but swimmable, and the lava pools are calm even when the open Atlantic is rough. This is Madeira's one real swim stop.",
+          "saveHtml": "<b>Save</b> The paid pools are already the cheap option at EUR 12 for the family - bring towels and swim shoes and skip renting anything.",
+          "splurgeHtml": "<b>Splurge</b> Lunch on the rocks at Cachalote or Orca with the surf exploding behind the glass - pay for the view once.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g644297-d3665406-Reviews-Cachalote-Porto_Moniz_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Cachalote</b></a> — built on the lava rocks beside the pools; burgers and simple grills, the location does the work</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g644297-d1930063-Reviews-Restaurante_Orca-Porto_Moniz_Madeira_Madeira_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Orca</b></a> — pool-view terrace; burgers and simple mains</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Restaurante+Santo+Antonio+Estreito+de+Camara+de+Lobos\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Santo Antonio</b></a> — espetada-and-fries dinner stop on the drive back south via Encumeada</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitmadeira.com/en/explore/discover/north/seixal/\" target=\"_blank\" rel=\"noreferrer\"><b>Seixal natural pools + black-sand beach</b> ↩</a> — smaller, wilder pools and a black-sand beach 15 minutes east - a quieter swap if Porto Moniz is packed.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20da%20Calheta%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Praia da Calheta</b> ↗</a> — sheltered golden-sand beach; the easiest true sand-and-swim fallback on Madeira.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Faja%20dos%20Padres%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Faja dos Padres</b> ↗</a> — cable-car descent to a quiet beach/vineyard terrace when the family wants a half-day adventure.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://wiseviator.com/porto-moniz-natural-swimming-pools/\" target=\"_blank\" rel=\"noreferrer\">Porto Moniz pools 2026 guide</a><a href=\"https://www.portomoniz.pt/en/\" target=\"_blank\" rel=\"noreferrer\">Municipality visitor info</a>",
+          "lat": "32.867",
+          "lng": "-17.166"
+        }
+      ]
+    },
+    {
+      "role": "departure",
+      "heading": "São Lourenço cliffs before airport handoff",
+      "feel": "Last hike + flexible departure",
+      "daycost": "Est. $60-$160 - permits, fuel, airport meal",
+      "facts": [
+        {
+          "label": "Morning",
+          "valueHtml": "PR8 to Casa do Sardinha, 8:30 am start"
+        },
+        {
+          "label": "Airport",
+          "valueHtml": "FNC is about 10 minutes from the trailhead"
+        }
+      ],
+      "note": "The east-end trailhead sits close to FNC, so a short PR8 out-and-back can work before a later flight. Keep this flexible: skip the hike when wind, trail conditions, or the departure time make the airport margin uncomfortable.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Ponta de Sao Lourenco cliffs (PR8)",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Ponta%20de%20Sao%20Lourenco%20cliffs%20%28PR8%29\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/saolourenco/\" target=\"_blank\" rel=\"noreferrer\">IG · Ponta de Sao Lourenco</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=saolourenco&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-crete/google_ponta_lourenco_cliffs_01_3.jpg",
+              "src": "../../assets/img/madeira-crete/google_ponta_lourenco_cliffs_01_3.jpg",
+              "alt": "Ochre cliffs dropping into the Atlantic at Ponta de Sao Lourenco",
+              "captionTitle": "Ponta Cliffs",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/google_ponta_lourenco_view_04.jpg",
+              "src": "../../assets/img/madeira-crete/google_ponta_lourenco_view_04.jpg",
+              "alt": "Atlantic headland on Madeira's eastern peninsula",
+              "captionTitle": "Atlantic Headland",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-crete/reuse_ponta_lourenco_ridge_01.jpg",
+              "src": "../../assets/img/madeira-crete/reuse_ponta_lourenco_ridge_01.jpg",
+              "alt": "Red volcanic ridge on the Ponta trail",
+              "captionTitle": "Red Ridge",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Permit EUR 4.50 pp (kids 12 and under free) = ~EUR 13.50 family via SIMplifica. Baia d'Abra trailhead parking is free. Casa do Sardinha cafe at km 3 has drinks, snacks, and EUR 1 toilets.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> the peninsula is exposed, shadeless, and windy - start by 8:30 am, bring hats and water. Family version: hike to the fenced viewpoints (~1 km) or Casa do Sardinha (~3 km) and skip the final Pico do Furado climb.",
+          "saveHtml": "<b>Save</b> This is the cheapest epic view on the island - EUR 13.50 total. Pack water and snacks instead of relying on the one trail cafe.",
+          "splurgeHtml": "<b>Splurge</b> None on the trail. Put the money toward the post-hike pizza terrace in Canical before heading to the airport.",
+          "restoHtml": "<li><a href=\"https://madeirahiking.org/trails/pr8\" target=\"_blank\" rel=\"noreferrer\"><b>Casa do Sardinha (on-trail cafe)</b></a> — drinks, snacks, and toilets ~3 km into the Sao Lourenco trail - the family turnaround point</li><li><a href=\"https://restaurantguru.com/Pizza-Cafe-Machico\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza Cafe (Machico)</b></a> — customizable pizzas 10 minutes from the trailhead</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=La+Carbonara+Canical+Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>La Carbonara (Canical)</b></a> — Italian pizza and pasta with an ocean-view terrace, ideal post-hike</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitmadeira.com/en/explore/discover/east/prainha/\" target=\"_blank\" rel=\"noreferrer\"><b>Prainha do Canical black-sand beach</b> ↩</a> — Madeira's only natural sand beach, 5 minutes from the trailhead - the swap if legs are done but the family still wants the east-end views.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Museu%20da%20Baleia%20Canical%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Whale Museum Canical</b> ↗</a> — compact indoor backup five minutes from the east-end coast.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Miradouro%20da%20Ponta%20do%20Rosto%20Madeira\" target=\"_blank\" rel=\"noreferrer\"><b>Ponta do Rosto viewpoint</b> ↗</a> — drive-up cliff views if the full Sao Lourenco walk is too windy or hot.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://madeirahiking.org/trails/pr8\" target=\"_blank\" rel=\"noreferrer\">PR8 trail guide and permits</a><a href=\"https://www.visitmadeira.com/en/explore/discover/east/ponta-de-sao-lourenco/\" target=\"_blank\" rel=\"noreferrer\">Sao Lourenco visitor guide</a>",
+          "lat": "32.7446",
+          "lng": "-16.706",
+          "alltrailsTrail": "https://www.alltrails.com/trail/portugal/madeira--2/miradouro-de-sao-lourenco-cais-do-sardinha-pico-do-furado",
+          "alltrailsArea": "https://www.alltrails.com/portugal/madeira--2"
+        }
+      ]
+    }
+  ]
+}

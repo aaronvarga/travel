@@ -1,0 +1,508 @@
+{
+  "id": "sicily",
+  "name": "Sicily",
+  "country": "Italy",
+  "sourceTrip": "madeira-sicily",
+  "mapColor": "#3f7d4e",
+  "mapPoints": [
+    {
+      "n": "Palermo Airport (PMO)",
+      "lat": 38.1759,
+      "lng": 13.091,
+      "r": "north-sicily",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.1759,13.0910"
+    },
+    {
+      "n": "Catania Airport (CTA)",
+      "lat": 37.4668,
+      "lng": 15.0664,
+      "r": "east-sicily",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.4668,15.0664"
+    },
+    {
+      "n": "Cefalù old town + beach + La Rocca",
+      "lat": 38.0394,
+      "lng": 14.0229,
+      "r": "north-sicily",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.0394,14.0229"
+    },
+    {
+      "n": "Palermo historic core + Mondello",
+      "lat": 38.1157,
+      "lng": 13.3615,
+      "r": "north-sicily",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.1157,13.3615"
+    },
+    {
+      "n": "Taormina + Isola Bella",
+      "lat": 37.8522,
+      "lng": 15.2866,
+      "r": "east-sicily",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.8522,15.2866"
+    },
+    {
+      "n": "Mount Etna south slope",
+      "lat": 37.6995,
+      "lng": 15.0021,
+      "r": "east-sicily",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.6995,15.0021"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "PMO",
+      "CTA"
+    ],
+    "pitOutbound": null,
+    "pitReturn": {
+      "route": "CTA→FCO→PIT",
+      "hours": 14,
+      "familyCostUsd": [
+        3000,
+        4000
+      ],
+      "notes": "Confirm protected transatlantic itinerary"
+    }
+  },
+  "nights": {
+    "min": 5,
+    "canonical": 6,
+    "max": 8
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_aerial_01.jpg",
+      "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_aerial_01.jpg",
+      "alt": "An aerial sweep over Cefalù's medieval roofs, beach, and turquoise sea.",
+      "captionTitle": "Cefalù Aerial",
+      "credit": "Alpitour · Google Images source"
+    },
+    {
+      "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_dusk_01.jpg",
+      "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_dusk_01.jpg",
+      "alt": "Cefalù's waterfront and La Rocca glowing at dusk from the sea.",
+      "captionTitle": "Cefalù at Dusk",
+      "credit": "Naval S · Google Images source"
+    },
+    {
+      "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_larocca_beach_01.jpg",
+      "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_larocca_beach_01.jpg",
+      "alt": "Cefalù's beach and old town tucked beneath the sheer La Rocca.",
+      "captionTitle": "La Rocca Beach",
+      "credit": "Damiano Giuliano · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach",
+    "heat"
+  ],
+  "june": {
+    "seaTempF": 74,
+    "airHiF": 82,
+    "facts": [
+      "Etna access changes with volcanic conditions"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      196,
+      275
+    ],
+    "carPerDayUsd": [
+      77,
+      109
+    ],
+    "foodPerDayUsd": [
+      175,
+      204
+    ],
+    "activitiesFlatUsd": [
+      300,
+      650
+    ],
+    "provenance": "madeira-sicily budget table: six Sicily nights, Sicily share of two-car range, daily food, Sicily activities"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 4,
+    "food": 5,
+    "novelty": 4,
+    "varietyTags": [
+      "beaches",
+      "volcanoes",
+      "old-towns",
+      "food"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Palermo and settle into Cefalù",
+      "feel": "Travel + first warm swim",
+      "daycost": "Est. ~$240 · transfers + easy dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cefalù · night 1 of 3"
+        },
+        {
+          "label": "Gateway",
+          "valueHtml": "Arrive PMO, then collect the Sicily car"
+        },
+        {
+          "label": "Drive",
+          "valueHtml": "PMO -&gt; Cefalù ~75-90 min; pick up rental at PMO"
+        }
+      ],
+      "note": "Use Palermo as the arrival gateway, collect the rental car, and keep the first Cefalù evening deliberately light. The exact inbound routing belongs to the composed transfer edge, not this leg.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Cefalù old town + beach + La Rocca",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cefalu/\" target=\"_blank\" rel=\"noreferrer\">IG · Cefalù</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/larocca/\" target=\"_blank\" rel=\"noreferrer\">IG · La Rocca</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=cefalu&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_aerial_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_aerial_01.jpg",
+              "alt": "An aerial sweep over Cefalù's medieval roofs, beach, and turquoise sea.",
+              "captionTitle": "Cefalù Aerial",
+              "credit": "Alpitour · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_dusk_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_dusk_01.jpg",
+              "alt": "Cefalù's waterfront and La Rocca glowing at dusk from the sea.",
+              "captionTitle": "Cefalù at Dusk",
+              "credit": "Naval S · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_larocca_beach_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_larocca_beach_01.jpg",
+              "alt": "Cefalù's beach and old town tucked beneath the sheer La Rocca.",
+              "captionTitle": "La Rocca Beach",
+              "credit": "Damiano Giuliano · Google Images source"
+            }
+          ],
+          "cost": "Beach/old town are free. La Rocca urban park is currently EUR5 full / EUR2.50 reduced ages 6-14; family estimate about EUR15.",
+          "climateLabel": "Weather",
+          "climate": "<b>Mid-June:</b> warm coastal days, often upper 70s to low 80s F. Sea commonly runs about <b>72-75 F</b> by mid/late June.",
+          "saveHtml": "<b>Save</b> Make the best day nearly free: beach, old town, sunset harbor, grocery breakfast, and La Rocca only if the morning is cool.",
+          "splurgeHtml": "<b>Splurge</b> Rent a beach set or do a short boat outing along the coast; confirm the chair/umbrella price before sitting.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.ca/Restaurant_Review-g194726-d7991218-Reviews-Tivitti-Cefalu_Province_of_Palermo_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Bottega Tivitti</b></a> — pizzeria/burger seafront option; pizza, burgers, fries</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g194726-d3331534-Reviews-Pasta_e_Pasti-Cefalu_Province_of_Palermo_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pasta e Pasti</b></a> — casual pasta counter; tomato pasta and simple shapes work</li><li><a href=\"https://restaurantguru.com/nna-Principi-Cefalu\" target=\"_blank\" rel=\"noreferrer\"><b>'Nna Principi</b></a> — Italian/pizza spot with Margherita and penne pasta mentioned in current reviews</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitsicily.info/en/campofelice-di-roccella/\" target=\"_blank\" rel=\"noreferrer\"><b>Campofelice di Roccella</b> ↩</a> — less postcard charm, but sometimes better-value beach lodging with parking.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Kalura%20Beach%20Cefalu%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Kalura Beach</b> ↗</a> — clearer rocky cove near Cefalu when the town beach is crowded.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Monreale%20Cathedral%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Monreale Cathedral</b> ↗</a> — mosaic-heavy indoor/culture swap if Palermo street heat is too much.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://travelmademedoit.com/rocca-di-cefalu/\" target=\"_blank\" rel=\"noreferrer\">La Rocca practical guide ↗</a><a href=\"https://savoringsicily.com/restaurants-in-cefalu/\" target=\"_blank\" rel=\"noreferrer\">Cefalù restaurant ideas ↗</a>",
+          "lat": "38.0394",
+          "lng": "14.0229"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Cefalù beach day + La Rocca",
+      "feel": "Water-heavy, low-cost day",
+      "daycost": "Est. ~$190 · La Rocca + beach set/food",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cefalù · night 2 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Morning La Rocca if cool, long beach block, old-town dinner"
+        },
+        {
+          "label": "Balance",
+          "valueHtml": "Mostly swim"
+        }
+      ],
+      "note": "Make this the first full warm-water day: hike La Rocca while it is cool, then leave a long afternoon for the beach and an old-town dinner.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Cefalù old town + beach + La Rocca",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cefal%C3%B9%20old%20town%20%2B%20beach%20%2B%20La%20Rocca\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cefalu/\" target=\"_blank\" rel=\"noreferrer\">IG · Cefalù</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/larocca/\" target=\"_blank\" rel=\"noreferrer\">IG · La Rocca</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=cefalu&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_oldtown_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_oldtown_01.jpg",
+              "alt": "Cefalù's honey-colored waterfront houses and La Rocca above the bay.",
+              "captionTitle": "Old Town Shore",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_waterfront_02.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_waterfront_02.jpg",
+              "alt": "Cefalù's cathedral skyline rising above a calm Mediterranean harbor.",
+              "captionTitle": "Cefalù Waterfront",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_cefalu_rocca_waterfront_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_cefalu_rocca_waterfront_01.jpg",
+              "alt": "A wide blue-water view of Cefalù beneath its towering limestone Rocca.",
+              "captionTitle": "La Rocca Coast",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Beach/old town are free. La Rocca urban park is currently EUR5 full / EUR2.50 reduced ages 6-14; family estimate about EUR15.",
+          "climateLabel": "Weather",
+          "climate": "<b>Mid-June:</b> warm coastal days, often upper 70s to low 80s F. Sea commonly runs about <b>72-75 F</b> by mid/late June.",
+          "saveHtml": "<b>Save</b> Make the best day nearly free: beach, old town, sunset harbor, grocery breakfast, and La Rocca only if the morning is cool.",
+          "splurgeHtml": "<b>Splurge</b> Rent a beach set or do a short boat outing along the coast; confirm the chair/umbrella price before sitting.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.ca/Restaurant_Review-g194726-d7991218-Reviews-Tivitti-Cefalu_Province_of_Palermo_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Bottega Tivitti</b></a> — pizzeria/burger seafront option; pizza, burgers, fries</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g194726-d3331534-Reviews-Pasta_e_Pasti-Cefalu_Province_of_Palermo_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pasta e Pasti</b></a> — casual pasta counter; tomato pasta and simple shapes work</li><li><a href=\"https://restaurantguru.com/nna-Principi-Cefalu\" target=\"_blank\" rel=\"noreferrer\"><b>'Nna Principi</b></a> — Italian/pizza spot with Margherita and penne pasta mentioned in current reviews</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitsicily.info/en/campofelice-di-roccella/\" target=\"_blank\" rel=\"noreferrer\"><b>Campofelice di Roccella</b> ↩</a> — less postcard charm, but sometimes better-value beach lodging with parking.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Kalura%20Beach%20Cefalu%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Kalura Beach</b> ↗</a> — clearer rocky cove near Cefalu when the town beach is crowded.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Monreale%20Cathedral%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Monreale Cathedral</b> ↗</a> — mosaic-heavy indoor/culture swap if Palermo street heat is too much.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://travelmademedoit.com/rocca-di-cefalu/\" target=\"_blank\" rel=\"noreferrer\">La Rocca practical guide ↗</a><a href=\"https://savoringsicily.com/restaurants-in-cefalu/\" target=\"_blank\" rel=\"noreferrer\">Cefalù restaurant ideas ↗</a>",
+          "lat": "38.0394",
+          "lng": "14.0229"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Palermo taste + Mondello option",
+      "feel": "Town/food with swim backup",
+      "daycost": "Est. ~$260 · rail/parking + chapel option + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cefalù · night 3 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Palermo core, street food, optional Mondello swim"
+        },
+        {
+          "label": "Choice",
+          "valueHtml": "Chapel/mosaics or beach, not both if heat is high"
+        }
+      ],
+      "note": "Palermo gives Sicily its city texture, but the day stays flexible because kids may prefer Mondello after two hot hours in town.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Palermo historic core + Mondello",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Palermo%20historic%20core%20%2B%20Mondello\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/palermo/\" target=\"_blank\" rel=\"noreferrer\">IG · Palermo</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/mondello/\" target=\"_blank\" rel=\"noreferrer\">IG · Mondello</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=palermo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-sicily/google_palermo_rooftop_01.jpg",
+              "src": "../../assets/img/madeira-sicily/google_palermo_rooftop_01.jpg",
+              "alt": "Palermo's Baroque rooftops and church towers glowing in golden evening light.",
+              "captionTitle": "Palermo Rooftops",
+              "credit": "UrbanphotoZ · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_palermo_quattro_canti_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_palermo_quattro_canti_01.jpg",
+              "alt": "Palermo's grand historic square framed by mountains and ornate façades.",
+              "captionTitle": "Historic Palermo",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_palermo_coast_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_palermo_coast_01.jpg",
+              "alt": "A dramatic Sicilian coastal scene in clear morning light.",
+              "captionTitle": "Sicilian Coast",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Street wandering is free. Palazzo dei Normanni / Palatine Chapel official current adult tickets vary by day/access; plan roughly EUR15.50-EUR19.50 adult and check the exact calendar.",
+          "climateLabel": "Weather",
+          "climate": "<b>June:</b> Palermo is hotter and less breezy than Cefalù. Do culture early, then use Mondello for afternoon water if the city gets heavy.",
+          "saveHtml": "<b>Save</b> Train from Cefalù into Palermo avoids city parking; Palermo-Cefalù rail is frequent and cheap enough for a family city day.",
+          "splurgeHtml": "<b>Splurge</b> Palatine Chapel/Norman Palace is the paid anchor if mosaics matter; skip it if the kids need beach more than gold ceilings.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.ca/Restaurant_Review-g194726-d7991218-Reviews-Tivitti-Cefalu_Province_of_Palermo_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Bottega Tivitti</b></a> — pizzeria/burger seafront option; pizza, burgers, fries</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g194726-d3331534-Reviews-Pasta_e_Pasti-Cefalu_Province_of_Palermo_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pasta e Pasti</b></a> — casual pasta counter; tomato pasta and simple shapes work</li><li><a href=\"https://restaurantguru.com/nna-Principi-Cefalu\" target=\"_blank\" rel=\"noreferrer\"><b>'Nna Principi</b></a> — Italian/pizza spot with Margherita and penne pasta mentioned in current reviews</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitsicily.info/en/monreale/\" target=\"_blank\" rel=\"noreferrer\"><b>Monreale Cathedral</b> ↩</a> — another mosaic masterpiece if Palermo feels too intense.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Mondello%20Beach%20Palermo\" target=\"_blank\" rel=\"noreferrer\"><b>Mondello Beach</b> ↗</a> — classic Palermo swim day when the kids need sand over churches.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Campofelice%20di%20Roccella%20Sicily%20beach\" target=\"_blank\" rel=\"noreferrer\"><b>Campofelice di Roccella</b> ↗</a> — less charming than Cefalu, but easier parking and often better-value beach lodging.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.federicosecondo.org/en/visit/\" target=\"_blank\" rel=\"noreferrer\">Official Norman Palace visit info ↗</a><a href=\"https://www.alongdustyroads.com/posts/palermo-sicily-travel-guide\" target=\"_blank\" rel=\"noreferrer\">Palermo practical tips ↗</a>",
+          "lat": "38.1157",
+          "lng": "13.3615"
+        }
+      ]
+    },
+    {
+      "role": "arrival",
+      "heading": "Juneteenth transfer to the Taormina coast",
+      "feel": "Holiday + beach arrival",
+      "daycost": "Est. ~$260 · fuel/tolls + beach",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Taormina coast · night 1 of 3"
+        },
+        {
+          "label": "Holiday",
+          "valueHtml": "Observed Juneteenth · no PTO"
+        },
+        {
+          "label": "Drive",
+          "valueHtml": "Cefalù -&gt; Giardini-Naxos ~2.5-3 hr on the A20/A18"
+        }
+      ],
+      "note": "The federal holiday lands exactly on the long transfer day, so it costs nothing. Arrive by early afternoon, Isola Bella swim, Taormina evening up the hill if energy allows.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Taormina + Isola Bella",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Taormina%20%2B%20Isola%20Bella\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/taormina/\" target=\"_blank\" rel=\"noreferrer\">IG · Taormina</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/isolabella/\" target=\"_blank\" rel=\"noreferrer\">IG · Isola Bella</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=taormina&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_taormina_coast_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_taormina_coast_01.jpg",
+              "alt": "Taormina's sunlit coastline sweeping from Isola Bella toward Mount Etna.",
+              "captionTitle": "Taormina Coast",
+              "credit": "CountryClubuk · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_taormina_isola_bella_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_taormina_isola_bella_01.jpg",
+              "alt": "Isola Bella floating in brilliant turquoise water below Taormina.",
+              "captionTitle": "Isola Bella",
+              "credit": "Antonino Bartuccio · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_isola_bella_kayak_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_isola_bella_kayak_01.jpg",
+              "alt": "The Ionian-blue cove around Taormina's Isola Bella.",
+              "captionTitle": "Ionian Blue",
+              "credit": "Katania.pl · Google Images source"
+            }
+          ],
+          "cost": "Ancient Theatre official current fare: EUR14 full / EUR7 reduced. Isola Bella beach is free; beach sets/boat extras vary.",
+          "climateLabel": "Weather",
+          "climate": "<b>Mid/late June:</b> warm to hot, with Ionian water around <b>72-75 F</b>.",
+          "saveHtml": "<b>Save</b> Stay below Taormina and use cable car/taxi into town; avoid old-town parking and lodging premiums.",
+          "splurgeHtml": "<b>Splurge</b> Greek Theatre at golden hour plus an Isola Bella boat/swim stop; budget $120-250 family depending tour style.",
+          "restoHtml": "<li><a href=\"https://www.bambar.it/\" target=\"_blank\" rel=\"noreferrer\"><b>Bam Bar</b></a> — granita/brioche stop; easy snack win near Taormina old town</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187892-d2489649-Reviews-Da_Cristina-Taormina_Province_of_Messina_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Da Cristina</b></a> — arancini, pizza/focaccia-style quick food, fries-like comfort sides nearby</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g194857-Giardini_Naxos_Province_of_Messina_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>La Capinera / beach alternatives</b></a> — Giardini-Naxos has broad pizza, pasta, burger, and beach-lunch options if Taormina menus are too adult</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitsicily.info/en/giardini-naxos/\" target=\"_blank\" rel=\"noreferrer\"><b>Giardini-Naxos beach</b> ↩</a> — easier beach logistics and lower prices if Taormina is crowded.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Castelmola%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Castelmola</b> ↗</a> — hilltop village above Taormina for views without committing to a beach afternoon.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Letojanni%20Beach%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Letojanni Beach</b> ↗</a> — lower-key beach town north of Taormina when Isola Bella is packed.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://parchiarcheologici.regione.sicilia.it/naxos-taormina/en/biglietti/teatro-antico-di-taormina-2/\" target=\"_blank\" rel=\"noreferrer\">Official theatre tickets ↗</a><a href=\"https://www.traveltaormina.com/en/monuments/greek-theatre-taormina.html\" target=\"_blank\" rel=\"noreferrer\">Taormina theatre guide ↗</a>",
+          "lat": "37.8522",
+          "lng": "15.2866"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Etna morning, coast afternoon",
+      "feel": "Nature + recovery swim",
+      "daycost": "Est. ~$170-$420 · depends on cable car",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Taormina coast · night 2 of 3"
+        },
+        {
+          "label": "Plan A",
+          "valueHtml": "Free Silvestri craters + picnic"
+        },
+        {
+          "label": "Plan B",
+          "valueHtml": "Cable car only if weather is clear"
+        }
+      ],
+      "note": "Etna is the nature pillar, not an automatic expensive summit day. Check visibility and volcanic conditions before buying anything above the free crater walks.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Mount Etna south slope",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Mount%20Etna%20south%20slope\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/mountetna/\" target=\"_blank\" rel=\"noreferrer\">IG · Mount Etna</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=mountetna&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_etna_south_crater_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_etna_south_crater_01.jpg",
+              "alt": "Red-and-black volcanic craters spread across Etna's south slope.",
+              "captionTitle": "Etna Crater",
+              "credit": "Etna Lava · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_etna_sunset_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_etna_sunset_01.jpg",
+              "alt": "Mount Etna's lava fields and pine forest in golden-hour light.",
+              "captionTitle": "Etna Sunset",
+              "credit": "Giancarlo Tine · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_etna_volcanic_trail_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_etna_volcanic_trail_01.jpg",
+              "alt": "An ash road crossing volcanic cones beneath Etna's blue sky.",
+              "captionTitle": "Volcanic Trail",
+              "credit": "Go-Etna · Google Images source"
+            }
+          ],
+          "cost": "Free Silvestri craters are the budget plan. Cable-car-only prices have been reported around EUR50 adult / EUR30 kids 5-10; 4x4/guided higher-slope options can push a family toward EUR250-EUR320.",
+          "climateLabel": "Weather",
+          "climate": "<b>Mountain day:</b> cooler and windier than the coast. Visibility drives value; do not buy expensive summit options if clouds/ash are poor.",
+          "saveHtml": "<b>Save</b> Walk Silvestri craters for free, then spend the money on a beach dinner or boat day.",
+          "splurgeHtml": "<b>Splurge</b> Cable car or 4x4 only on a clear morning; the 13-year-old will get more out of it than the 8-year-old if the weather cooperates.",
+          "restoHtml": "<li><a href=\"https://www.bambar.it/\" target=\"_blank\" rel=\"noreferrer\"><b>Bam Bar</b></a> — granita/brioche stop; easy snack win near Taormina old town</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187892-d2489649-Reviews-Da_Cristina-Taormina_Province_of_Messina_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Da Cristina</b></a> — arancini, pizza/focaccia-style quick food, fries-like comfort sides nearby</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g194857-Giardini_Naxos_Province_of_Messina_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>La Capinera / beach alternatives</b></a> — Giardini-Naxos has broad pizza, pasta, burger, and beach-lunch options if Taormina menus are too adult</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitsicily.info/en/gole-dellalcantara/\" target=\"_blank\" rel=\"noreferrer\"><b>Alcantara Gorge</b> ↩</a> — cool-water nature day if Etna weather is bad or crater access is restricted.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Letojanni%20Beach%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Letojanni Beach</b> ↗</a> — lower-key beach town north of Taormina when Isola Bella is packed.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Giardini%20Naxos%20beach%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Giardini-Naxos beach</b> ↗</a> — more space, easier food, and simpler parking than tiny Isola Bella.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.sicilyactive.com/en/mount-etna-cable-car\" target=\"_blank\" rel=\"noreferrer\">Etna cable-car price proxy ↗</a><a href=\"https://guidevulcanologicheetna.it/en/prices-update-of-the-etnas-cableway/\" target=\"_blank\" rel=\"noreferrer\">Etna 4x4 price proxy ↗</a>",
+          "lat": "37.6995",
+          "lng": "15.0021",
+          "alltrailsTrail": "https://www.alltrails.com/trail/italy/sicily/crateri-silvestri-superiori-monti-calcarazzi",
+          "alltrailsArea": "https://www.alltrails.com/parks/italy/sicily/parco-delletna"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Isola Bella / Giardini-Naxos final swim",
+      "feel": "Last full beach day",
+      "daycost": "Est. ~$250 · beach set/boat + final dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Taormina coast · night 3 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Beach/boat, easy packing, Catania airport prep"
+        },
+        {
+          "label": "Do not",
+          "valueHtml": "Add a long inland drive"
+        }
+      ],
+      "note": "End with water, not another town checklist. The whole point of handing swimming to Sicily was a real Mediterranean beach finish.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Taormina + Isola Bella",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Taormina%20%2B%20Isola%20Bella\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/taormina/\" target=\"_blank\" rel=\"noreferrer\">IG · Taormina</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/isolabella/\" target=\"_blank\" rel=\"noreferrer\">IG · Isola Bella</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=taormina&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-sicily/google_taormina_mazzaro_sunset_01.jpg",
+              "src": "../../assets/img/madeira-sicily/google_taormina_mazzaro_sunset_01.jpg",
+              "alt": "Mazzarò Bay and its rocky beach beneath a luminous Sicilian sunset.",
+              "captionTitle": "Mazzarò Sunset",
+              "credit": "Alastair Graham · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/google_taormina_greek_theatre_01.jpg",
+              "src": "../../assets/img/madeira-sicily/google_taormina_greek_theatre_01.jpg",
+              "alt": "Taormina's ancient Greek theatre opening toward the Ionian Sea.",
+              "captionTitle": "Greek Theatre",
+              "credit": "David Wong · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-sicily/shared_sicily_taormina_mazzaro_01.jpg",
+              "src": "../../assets/img/madeira-sicily/shared_sicily_taormina_mazzaro_01.jpg",
+              "alt": "Mazzarò Bay shimmering beneath Taormina's steep coast in the evening.",
+              "captionTitle": "Mazzarò Evening",
+              "credit": "Graham Heywood · Google Images source"
+            }
+          ],
+          "cost": "Ancient Theatre official current fare: EUR14 full / EUR7 reduced. Isola Bella beach is free; beach sets/boat extras vary.",
+          "climateLabel": "Weather",
+          "climate": "<b>Mid/late June:</b> warm to hot, with Ionian water around <b>72-75 F</b>.",
+          "saveHtml": "<b>Save</b> Stay below Taormina and use cable car/taxi into town; avoid old-town parking and lodging premiums.",
+          "splurgeHtml": "<b>Splurge</b> Greek Theatre at golden hour plus an Isola Bella boat/swim stop; budget $120-250 family depending tour style.",
+          "restoHtml": "<li><a href=\"https://www.bambar.it/\" target=\"_blank\" rel=\"noreferrer\"><b>Bam Bar</b></a> — granita/brioche stop; easy snack win near Taormina old town</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187892-d2489649-Reviews-Da_Cristina-Taormina_Province_of_Messina_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>Da Cristina</b></a> — arancini, pizza/focaccia-style quick food, fries-like comfort sides nearby</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g194857-Giardini_Naxos_Province_of_Messina_Sicily.html\" target=\"_blank\" rel=\"noreferrer\"><b>La Capinera / beach alternatives</b></a> — Giardini-Naxos has broad pizza, pasta, burger, and beach-lunch options if Taormina menus are too adult</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.visitsicily.info/en/giardini-naxos/\" target=\"_blank\" rel=\"noreferrer\"><b>Giardini-Naxos beach</b> ↩</a> — easier beach logistics and lower prices if Taormina is crowded.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alcantara%20Gorge%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Alcantara Gorge</b> ↗</a> — cool basalt canyon and water play when Etna weather turns cloudy or windy.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Castelmola%20Sicily\" target=\"_blank\" rel=\"noreferrer\"><b>Castelmola</b> ↗</a> — hilltop village above Taormina for views without committing to a beach afternoon.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://parchiarcheologici.regione.sicilia.it/naxos-taormina/en/biglietti/teatro-antico-di-taormina-2/\" target=\"_blank\" rel=\"noreferrer\">Official theatre tickets ↗</a><a href=\"https://www.traveltaormina.com/en/monuments/greek-theatre-taormina.html\" target=\"_blank\" rel=\"noreferrer\">Taormina theatre guide ↗</a>",
+          "lat": "37.8522",
+          "lng": "15.2866"
+        }
+      ]
+    }
+  ]
+}

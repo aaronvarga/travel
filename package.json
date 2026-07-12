@@ -21,7 +21,9 @@
     "sync": "node tools/sync-site.mjs",
     "sync:check": "node tools/sync-site.mjs --check",
     "import": "node tools/extract.mjs",
-    "alltrails": "node tools/apply-alltrails.mjs"
+    "alltrails": "node tools/apply-alltrails.mjs",
+    "extract:leg": "node tools/composer/extract-legs.mjs",
+    "validate:legs": "node tools/composer/validate-legs.mjs"
   },
   "repository": {
     "type": "git",

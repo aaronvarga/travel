@@ -1,0 +1,84 @@
+{
+  "edges": [
+    {
+      "id": "madeira->crete",
+      "from": "madeira",
+      "to": "crete",
+      "mode": "air",
+      "via": ["LIS", "ATH"],
+      "hours": 28,
+      "familyCostUsd": [1400, 2200],
+      "complexity": 5,
+      "risk": 4,
+      "buffer": { "nights": 1, "city": "Lisbon", "lodgingPerNightUsd": [130, 200], "reason": "FNC wind insurance" },
+      "transferTemplate": "island-exit-with-buffer",
+      "watch": "Keep the Lisbon buffer and prefer one protected itinerary on the Greece side.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "madeira->sicily",
+      "from": "madeira",
+      "to": "sicily",
+      "mode": "air",
+      "via": ["LIS"],
+      "hours": 28.75,
+      "familyCostUsd": [1200, 2000],
+      "complexity": 5,
+      "risk": 5,
+      "buffer": { "nights": 1, "city": "Lisbon", "lodgingPerNightUsd": [130, 200], "reason": "FNC wind insurance" },
+      "transferTemplate": "island-exit-with-buffer",
+      "watch": "Lisbon-Palermo service is thin; confirm the exact 2027 operating day.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "lisbon-cascais->crete",
+      "from": "lisbon-cascais",
+      "to": "crete",
+      "mode": "air",
+      "via": ["ATH"],
+      "hours": 8,
+      "familyCostUsd": [1000, 1700],
+      "complexity": 4,
+      "risk": 4,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Prioritize a protected Athens connection; no dependable Lisbon-Crete nonstop is assumed.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "lisbon-cascais->sicily",
+      "from": "lisbon-cascais",
+      "to": "sicily",
+      "mode": "air",
+      "via": [],
+      "hours": 3,
+      "familyCostUsd": [700, 1200],
+      "complexity": 4,
+      "risk": 4,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "The nonstop is schedule-dependent and may be a separate ticket.",
+      "schedule2027": "unconfirmed"
+    }
+  ],
+  "transferTemplates": {
+    "short-hop": {
+      "transferDays": 1,
+      "replacesFromDeparture": true,
+      "replacesToArrival": true,
+      "pattern": ["Check out, complete the air transfer, collect the next car if needed, and keep the first evening light."]
+    },
+    "island-exit-with-buffer": {
+      "transferDays": 2,
+      "replacesFromDeparture": true,
+      "replacesToArrival": true,
+      "pattern": ["Fly from the island to the buffer city and sleep near the onward gateway.", "Continue on the protected connection and settle into the next destination."]
+    },
+    "ferry": {
+      "transferDays": 1,
+      "replacesFromDeparture": true,
+      "replacesToArrival": true,
+      "pattern": ["Return the first car, cross by ferry, collect the next car, and keep the arrival evening light."]
+    }
+  }
+}
