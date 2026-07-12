@@ -1217,5 +1217,145 @@
     "url": "https://hanaleiburger.com/",
     "publisher": "Hanalei Burger",
     "scope": "Current burger, grilled-cheese and fries pricing; paired itinerary links provide Poipu pizza, hot-dog and chicken alternatives."
+  },
+  "jungfrau-railways": {
+    "label": "Jungfrau Railways prices & tickets",
+    "tier": "operator",
+    "url": "https://www.jungfrau.ch/en-gb/prices-and-tickets/",
+    "publisher": "Jungfraubahnen",
+    "scope": "Operator fares for Jungfraujoch, Grindelwald-First, and reservations. Peak-season pricing is dynamic; a 2026 fare is a proxy, not a 2027 quote."
+  },
+  "maennlichen-fares": {
+    "label": "Männlichen gondola fares from Grindelwald",
+    "tier": "operator",
+    "url": "https://www.maennlichen.ch/en/summer/information/fare-prices-from-grindelwald.html",
+    "publisher": "Männlichenbahn",
+    "scope": "Operator gondola fares and Royal Walk info. 2026 figure used as a 2027 proxy."
+  },
+  "bls-brienz-boat": {
+    "label": "BLS Lake Brienz boat tickets",
+    "tier": "operator",
+    "url": "https://www.bls-schiff.ch/en/lake-cruise/tickets-vouchers/tickets",
+    "publisher": "BLS AG",
+    "scope": "Operator lake-cruise schedule and fares. Season dates current; exact 2027 tariff unconfirmed."
+  },
+  "berner-oberland-pass": {
+    "label": "Berner Oberland Regional Pass prices",
+    "tier": "operator",
+    "url": "https://www.berneseoberlandpass.ch/prices-tickets/",
+    "publisher": "Berner Oberland Pass",
+    "scope": "Regional rail/excursion pass pricing. Exact 5-day tier and Jungfraujoch discount terms need direct confirmation."
+  },
+  "edelweiss-zrh-crete": {
+    "label": "Edelweiss / flight-route data Zurich to Crete",
+    "tier": "operator",
+    "url": "https://www.flightsfrom.com/ZRH-HER",
+    "publisher": "FlightsFrom / Edelweiss",
+    "scope": "Confirms nonstop ZRH-HER (multi-carrier) and weekly ZRH-CHQ (Edelweiss). June 2027 inventory not yet loaded; route existence is a strong inference, not a booking."
+  },
+  "swiss-alps-june-climate": {
+    "label": "Berner Oberland June climate aggregate",
+    "tier": "secondary",
+    "url": "https://seatemperature.net/lakes/water-temp-in-lake-brienz",
+    "publisher": "seatemperature.net / climate aggregators",
+    "scope": "Aggregated June air and Lake Brienz water norms for the Interlaken valley; not an official MeteoSwiss station record or a 2027 forecast."
+  },
+  "lauterbrunnen-trummelbach": {
+    "label": "Lauterbrunnen Tourism — Trümmelbach Falls",
+    "tier": "operator",
+    "url": "https://lauterbrunnen.swiss/en/map/detail/trummelbach-waterfalls-52c355bf-8544-4c9b-9885-427fc77657fb.html",
+    "publisher": "Lauterbrunnen Tourismus",
+    "scope": "Official attraction hours and entry price. Minor figure variance across pages noted."
+  },
+  "lju-vce-routing": {
+    "label": "PIT to Slovenia routing & fares (LJU vs Venice)",
+    "tier": "secondary",
+    "url": "https://www.lju-airport.si/en/info/novice/two-new-airlines-2025/",
+    "publisher": "Ljubljana Airport / KAYAK / Expedia route data",
+    "scope": "Confirms no PIT–Europe nonstop and no long-haul into LJU (Lufthansa-group feed via FRA/MUC/VIE, 2 stops); Venice VCE is a cheaper single-connection gateway ~2h drive from Slovenia. 2025-2026 fare observations used as a June-2027 proxy, not a quote."
+  },
+  "slovenia-alps-june-climate": {
+    "label": "Julian Alps June climate aggregate (Bled, Bohinj, Soča)",
+    "tier": "secondary",
+    "url": "https://weatherspark.com/m/77444/6/Average-Weather-in-June-in-Bled-Slovenia",
+    "publisher": "Weather Spark / AccuWeather aggregators",
+    "scope": "Aggregated June air norms for the Julian Alps (Bled ~24°C highs, frequent afternoon showers) and glacial water temps (Bled lake ~18-19°C, Soča river ~11-15°C). Not an official ARSO station record or a 2027 forecast."
+  },
+  "piran-sea-temp": {
+    "label": "Portorož / Piran June sea temperature",
+    "tier": "secondary",
+    "url": "https://seatemperature.net/monthly/portoroz-piran-pirano-slovenia-sea-temperature-in-june-1438",
+    "publisher": "seatemperature.net",
+    "scope": "June Adriatic sea-surface norm at Portorož/Piran (~22°C / 72°F, swimmable but refreshing, not warm-lagoon). Monthly aggregate, not a 2027 measurement."
+  },
+  "slovenia-driving": {
+    "label": "DARS — Slovenia e-vignette & driving rules",
+    "tier": "official",
+    "url": "https://evinjeta.dars.si/en",
+    "publisher": "DARS (Slovenian motorway operator)",
+    "scope": "Mandatory motorway e-vignette (weekly €16 / monthly €32), 100% electronic since 2022; regional roads incl. Vršič Pass are vignette-exempt. Official operator source."
+  },
+  "slovenia-family-food": {
+    "label": "Slovenia family-food & supermarket coverage",
+    "tier": "secondary",
+    "url": "https://www.tripadvisor.com/Restaurants-g274863-Bled_Upper_Carniola_Region.html",
+    "publisher": "Tripadvisor / Wanderlog restaurant listings",
+    "scope": "Confirms full supermarket coverage (Mercator/Spar) and reliable pizzeria/pasta fallbacks in every base (Bled, Bohinj, Bovec, Piran, Ljubljana). Restaurant kid-menu specifics inferred from format/reviews, not confirmed dish-by-dish."
+  },
+  "bled-island-operator": {
+    "label": "Bled Island — pletna, church & castle pricelist",
+    "tier": "operator",
+    "url": "https://www.bled.si/en/what-to-see/natural-sights/the-bled-island/Price-lists-reservations",
+    "publisher": "Turizem Bled",
+    "scope": "Official pletna boat (€20 adult/€10 child), island church admission (€12/€5), and Bled Castle rate. 2025-2026 figures; expect minor 2027 increases."
+  },
+  "vintgar-operator": {
+    "label": "Vintgar Gorge — pricelist & reservation rules",
+    "tier": "operator",
+    "url": "https://www.vintgar.si/en/my-visit/pricelist/",
+    "publisher": "Turizem Bled / Vintgar",
+    "scope": "Official entry (€15 adult/€5 child), Apr-Oct season, and the 2025+ rule that tickets are online/timed-slot only (no gate sales). 2026 baseline."
+  },
+  "skocjan-operator": {
+    "label": "Škocjan Caves — guided tour tickets & times",
+    "tier": "operator",
+    "url": "https://www.park-skocjanske-jame.si/en/read/tourist-information/skocjan-caves-guided-tours",
+    "publisher": "Park Škocjanske jame (UNESCO)",
+    "scope": "Official Underground Canyon tour price (~€22-24 adult/€12.50 child summer; June tier ambiguous), tour times (10:00-15:00), 5km/~1000-step route, 12°C, no interior photography. 2026 baseline."
+  },
+  "soca-activities-operator": {
+    "label": "Soča Valley rafting & zipline age minimums",
+    "tier": "operator",
+    "url": "https://www.socasplash.com/rafting/",
+    "publisher": "Bovec rafting/zipline operators (Soča Splash, Aqua Tours, zipline.si)",
+    "scope": "Standard rafting min age 8+ (family/panoramic float ~3+), zipline min age ~7 with 120cm/35kg thresholds (tandem for lighter kids). Soča is glacial 11-15°C. Verify child height/weight with the operator."
+  },
+  "tolmin-gorges-operator": {
+    "label": "Tolmin Gorges — pricelist & conditions",
+    "tier": "operator",
+    "url": "https://www.soca-valley.com/en/attraction/tolmin-gorges/price-list/",
+    "publisher": "Soča Valley Tourism",
+    "scope": "Official high-season entry (€12 adult/€6 child), 1-hour timed slot, Apr-Oct season, closes only in exceptional high water (refundable). 2026 baseline."
+  },
+  "ljubljana-castle-operator": {
+    "label": "Ljubljana Castle — funicular & entry pricelist",
+    "tier": "operator",
+    "url": "https://www.ljubljanskigrad.si/en/plan-your-visit/price-list/",
+    "publisher": "Ljubljanski grad",
+    "scope": "Official funicular (family €15 return) and castle entry rates; free courtyard/ramparts without a paid ticket. 2026 baseline."
+  },
+  "vrsic-road-status": {
+    "label": "Vršič Pass — seasonal road status",
+    "tier": "secondary",
+    "url": "https://www.erjavcevakoca.com/road-conditions-over-vrsic-pass/",
+    "publisher": "Erjavčeva koča / promet.si",
+    "scope": "Vršič (1611m) is open roughly late-April to late-October, snow-dependent; mid-June is normally fully open but not guaranteed — no year-specific open-date record found. Check promet.si before travel. Vignette-exempt regional road."
+  },
+  "secovlje-operator": {
+    "label": "Sečovlje Salina Nature Park — entry fees",
+    "tier": "operator",
+    "url": "https://www.kpss.si/en/visiting/entry-fees",
+    "publisher": "Krajinski park Sečoveljske soline",
+    "scope": "Official Apr-Oct entry (€7 adult/€5 student, under-6 free, family €16) covering both salt-pan areas; birdlife and open-air salt museum. 2026 baseline."
   }
 }

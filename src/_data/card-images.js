@@ -26,13 +26,25 @@ module.exports = {
     path: 'assets/img/croatia/google_pakleni_islands_01.jpg',
     alt: 'Turquoise water and pine-covered islands at Pakleni Otoci near Hvar',
   },
+  'switzerland-crete': {
+    path: 'assets/img/switzerland-crete/google_lauterbrunnen_twilight_01.jpg',
+    alt: 'The Lauterbrunnen valley at twilight, a silky river between towering cliffs below snow peaks',
+  },
+  'switzerland-sicily': {
+    path: 'assets/img/switzerland-sicily/google_taormina_isola_bella_01.jpg',
+    alt: 'Isola Bella and Mazzarò Bay below Taormina in clear turquoise Ionian water',
+  },
+  'slovenia-adriatic': {
+    path: 'assets/img/slovenia-adriatic/google_bled_bluehour_02.jpg',
+    alt: 'Lake Bled island church silhouetted against a golden sunrise, mirrored in the still lake below the Julian Alps',
+  },
   'dolomites-sardinia': {
     path: 'assets/img/dolomites-sardinia/img-53a57efe35b7.jpg',
     alt: 'Seceda’s knife-edge ridge and Odle spires rising above an alpine meadow',
   },
   'greece-via-lisbon': {
-    path: 'assets/img/greece-via-lisbon/google_balos_lagoon_01.jpg',
-    alt: 'Balos Lagoon’s electric-blue water and white limestone cliffs in Crete',
+    path: 'assets/img/greece-via-lisbon/g_balos_overlook.jpg',
+    alt: 'Balos Lagoon’s white sandbar curving to Gramvousa from the hilltop overlook in Crete',
   },
   hawaii: {
     path: 'assets/img/hawaii/google_kilauea_lava_flow_02.jpg',
@@ -71,8 +83,8 @@ module.exports = {
     alt: 'Isola Bella glowing at twilight below Taormina’s Sicilian coast',
   },
   'portugal-crete': {
-    path: 'assets/img/portugal-crete/google_elafonissi_pink_sand_01.jpg',
-    alt: 'Elafonissi’s pink-sand shallows glowing below Crete’s mountains',
+    path: 'assets/img/portugal-crete/g_elafonissi_wide.jpg',
+    alt: 'Elafonissi’s pink sand and turquoise lagoon framed by black volcanic rock in Crete',
   },
   'portugal-sicily': {
     path: 'assets/img/portugal-sicily/google_taormina_isola_bella_01.jpg',

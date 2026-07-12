@@ -153,6 +153,18 @@
     "turkish-riviera": [
       "2027-06-10",
       "2027-06-23"
+    ],
+    "switzerland-crete": [
+      "2027-06-08",
+      "2027-06-22"
+    ],
+    "switzerland-sicily": [
+      "2027-06-08",
+      "2027-06-22"
+    ],
+    "slovenia-adriatic": [
+      "2027-06-08",
+      "2027-06-22"
     ]
   },
   "routeReadiness": {
@@ -170,6 +182,9 @@
     "canary-islands": "exact-2027-schedule-required",
     "sicily-malta": "exact-2027-schedule-required",
     "sardinia-corsica": "exact-2027-schedule-required",
-    "dolomites-sardinia": "exact-2027-schedule-required"
+    "dolomites-sardinia": "exact-2027-schedule-required",
+    "switzerland-crete": "current-proxy",
+    "switzerland-sicily": "current-proxy",
+    "slovenia-adriatic": "current-proxy"
   }
 }
