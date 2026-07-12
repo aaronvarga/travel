@@ -90,27 +90,27 @@ footer{padding:30px 0 60px;color:var(--muted);font-size:.82rem}
 
 <nav class="jump" aria-label="Jump to country">
   <div class="wrap">
-    {% for c in countryGroups.countries %}
+    {%- for c in countryGroups.countries %}
       <a href="#{{ c.key }}">{{ c.name }}<span class="n">{{ c.activeCount if c.activeCount else c.total }}</span></a>
-    {% endfor %}
+    {%- endfor %}
   </div>
 </nav>
 
 <main class="wrap">
-  {% for c in countryGroups.countries %}
+  {%- for c in countryGroups.countries %}
   <section class="country" id="{{ c.key }}">
     <h2>{{ c.name }} <span class="count">{{ c.activeCount }} live{% if c.total > c.activeCount %} · {{ c.total - c.activeCount }} excluded{% endif %}</span></h2>
     <p class="sub">
-      {% if c.activeCount > 1 %}Compare {{ c.activeCount }} live {{ c.name }} plans head-to-head.
+      {%- if c.activeCount > 1 %}Compare {{ c.activeCount }} live {{ c.name }} plans head-to-head.
       {% elif c.activeCount == 1 %}One live {{ c.name }} plan{% if c.total > 1 %}, plus excluded references{% endif %}.
-      {% else %}Excluded {{ c.name }} references only.{% endif %}
+      {% else %}Excluded {{ c.name }} references only.{% endif -%}
     </p>
-    {% if shared.countryContrasts[c.key] %}
+    {%- if shared.countryContrasts[c.key] %}
     <div class="contrast">
       <span class="lbl">How these differ</span>
       <p>{{ shared.countryContrasts[c.key] | safe }}</p>
     </div>
-    {% endif %}
+    {%- endif %}
     <div class="scroller">
       <table class="cmp">
         <thead>
@@ -124,7 +124,7 @@ footer{padding:30px 0 60px;color:var(--muted);font-size:.82rem}
           </tr>
         </thead>
         <tbody>
-          {% for t in c.trips %}
+          {%- for t in c.trips %}
           <tr class="{{ 'ex' if t.excluded }}">
             <td class="trip">
               {% if t.href %}<a class="tname" href="{{ t.href }}">{{ t.displayName }}</a>{% else %}<span class="tname">{{ t.displayName }}</span>{% endif %}
@@ -134,11 +134,11 @@ footer{padding:30px 0 60px;color:var(--muted);font-size:.82rem}
             <td class="tot {{ 'is-best' if not t.excluded and t.total == c.best.total }}">{{ t.total }}<span style="color:var(--muted);font-weight:600">/50</span></td>
             <td class="budget {{ 'over' if t.budgetStatus == 'crosses-preference' }} {{ 'is-best' if not t.excluded and t.budget.ceilUsd == c.best.budgetCeil }}">{{ t.budget.ceilUsd | moneyK }}</td>
             <td class="{{ 'is-best' if not t.excluded and t.nights == c.best.nights }}">{{ t.nights }}</td>
-            {% for a in countryGroups.axes %}{% if a.id != "pto" and a.id != "nights" %}
+            {%- for a in countryGroups.axes -%}{%- if a.id != "pto" and a.id != "nights" -%}
               <td class="axis s{{ t.axes[a.id] }} {{ 'is-best' if not t.excluded and t.axes[a.id] == c.best[a.id] }}">{{ t.axes[a.id] }}</td>
-            {% endif %}{% endfor %}
+            {%- endif -%}{%- endfor -%}
           </tr>
-          {% endfor %}
+          {%- endfor %}
         </tbody>
       </table>
     </div>
@@ -149,7 +149,7 @@ footer{padding:30px 0 60px;color:var(--muted);font-size:.82rem}
       <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
     </div>
   </section>
-  {% endfor %}
+  {%- endfor %}
 
   <p class="note">Scores, ranks, and budgets are pulled straight from the same canonical data as the decision hub — a plan’s rank badge here is its global appeal rank at the default weights. Budget shows each plan’s ceiling estimate; amber means it crosses the $15k strongly-preferred maximum. Budget is double-weighted in the /50 total (Budget ×2 + eight axes); PTO is slider-only and omitted here. A country can list the same physical region under more than one plan (e.g. the Crete legs), which is exactly the trade-off this page exists to surface.</p>
 </main>

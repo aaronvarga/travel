@@ -22,6 +22,7 @@ module.exports = {
   iceland: 'Builds a photography-first loop around Reykjavík, waterfalls, black-sand beaches, glacier lagoons, geothermal pools, and immense volcanic landscapes.',
   'italy-salento-amalfi': 'Connects Gallipoli, Maratea, and Sorrento for Italian food, historic coastal towns, beach time, and the cinematic cliffs of the Amalfi Coast.',
   'madeira-crete': 'Pairs Madeira’s dramatic levada and ridge hiking with Crete’s warm beaches, Venetian towns, and family-friendly Mediterranean swimming.',
+  'madeira-kefalonia': 'Pairs Madeira’s levada walks, cloud-high ridge and volcanic coast with Kefalonia’s Myrtos cliffs, blue caves, calm swims, harbor towns, and Athens-protected return.',
   'madeira-mallorca': 'Balances Madeira’s cloud-high trails and volcanic coast with Mallorca’s sandy coves, mountain villages, and warmer, easier swimming.',
   'madeira-sicily': 'Combines Madeira’s hiking and lush scenery with Cefalù and eastern Sicily for beaches, Italian food, historic towns, and Mount Etna.',
   portugal: 'Offers the best-value mix of Cascais, Algarve coves, and Madeira hiking with fewer expensive transfers and a relaxed three-base route.',

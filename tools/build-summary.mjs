@@ -25,6 +25,7 @@ const ignoredSlugs = new Set(['smoketest']);
 // directory slug -> scoreboard data-trip token used in index.html markup
 const TOKEN = {
   portugal: 'portugal', 'portugal-crete': 'portugal-crete', 'madeira-crete': 'madeira-crete',
+  'madeira-kefalonia': 'madeira-kefalonia',
   'portugal-sicily': 'portugal-sicily', 'madeira-sicily': 'madeira-sicily',
   'portugal-algarve-sicily': 'portugal-algarve-sicily',
   'madeira-mallorca': 'madeira-mallorca', 'canary-islands': 'canary-islands', hawaii: 'hawaii',

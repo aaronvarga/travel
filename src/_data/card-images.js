@@ -74,6 +74,10 @@ module.exports = {
     path: 'assets/img/madeira-mallorca/google_ponta_lourenco_view_04.jpg',
     alt: 'Ponta de São Lourenço’s volcanic cliffs rising above the Atlantic',
   },
+  'madeira-kefalonia': {
+    path: 'assets/img/madeira-kefalonia/google_myrtos_cliff_view.jpg',
+    alt: 'Myrtos Beach’s white crescent and cobalt water seen from Kefalonia’s cliff road',
+  },
   'madeira-mallorca': {
     path: 'assets/img/madeira-mallorca/google_pico_arieiro_epic_03.jpg',
     alt: 'Pico do Arieiro’s dramatic ridge crest breaking through Madeira’s clouds',

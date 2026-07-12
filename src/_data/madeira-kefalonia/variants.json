@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "slug": "madeira-kefalonia",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night Madeira + Kefalonia canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 9,
+      "budget": {
+        "lowUsd": 10900,
+        "expectedUsd": null,
+        "highUsd": 15000,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Immutable comparison baseline: Madeira 6 nights plus Kefalonia 6 nights; FNC in and EFL out through Athens, deliberately without Lefkada or PVK.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary", "aegean-kefalonia-official"],
+      "sourceLocators": {
+        "internal-itinerary": "madeira-kefalonia/main.json canonical day-by-day schedule and #totals Grand Total.",
+        "aegean-kefalonia-official": "Current official ATH–EFL route marketing supports the gateway choice only; exact June 2027 itinerary remains a recheck gate."
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "A +1 Lisbon travel-night buffer may be useful if the protected FNC-to-ATH/EFL itinerary cannot price with safe connections, but it needs its own reconciled fare/lodging band before becoming a selectable variant."
+}
