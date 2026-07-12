@@ -22,11 +22,11 @@
           </div>
           <details class="altbox">
             <summary class="mini-h">Also awesome instead / if you have time</summary>
-            {{ s.altboxHtml | safe }}
+            {{- s.altboxHtml | safe -}}
           </details>
           <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>{{ s.bloglinksHtml | safe }}</div>
         </div>
-        {{ s.spotMapHtml | safe }}
+        {{- s.spotMapHtml | safe -}}
       </div>
       {%- endif -%}
     </section>

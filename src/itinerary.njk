@@ -97,7 +97,7 @@ permalink: "/locations/{{ trip.slug }}/index.html"
           {% if c.idp %}<div class="prow"><span>Driving permit</span><strong>{{ c.idp | safe }}</strong></div>{% endif %}
           {% if c.driving %}<div class="prow"><span>Rental cars</span><strong>{{ c.driving | safe }}</strong></div>{% endif %}
           {% if c.tolls %}<div class="prow"><span>Tolls</span><strong>{{ c.tolls | safe }}</strong></div>{% endif %}
-          {% if c.ztl %}<div class="prow"><span>ZTL warning</span><strong>{{ c.ztl | safe }}</strong></div>{% endif %}
+          {%- if c.ztl %}<div class="prow"><span>ZTL warning</span><strong>{{ c.ztl | safe }}</strong></div>{% endif -%}
           {% if c.money %}<div class="prow"><span>Money</span><strong>{{ c.money.cards | safe }} {{ c.money.cash | safe }}</strong></div><div class="prow"><span>Tipping</span><strong>{{ c.money.tipping | safe }}</strong></div>{% endif %}
           {% if c.water %}<div class="prow"><span>Tap water</span><strong>{{ c.water | safe }}</strong></div>{% endif %}
           {% if c.emergency %}<div class="prow"><span>Emergency</span><strong>{{ c.emergency | safe }}</strong></div>{% endif %}
