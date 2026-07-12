@@ -1,0 +1,47 @@
+{%- macro carousel(spot) -%}
+{%- set n = spot.images | length -%}
+<div class="carousel" id="{{ spot.carouselId }}" data-n="{{ n }}"><div class="track">{% for img in spot.images %}<figure>{% if img.href %}<a href="{{ img.href | safe }}" target="_blank" rel="noreferrer"><img src="{{ img.src | safe }}" alt="{{ img.alt | safe }}" loading="lazy"></a>{% else %}<img src="{{ img.src | safe }}" alt="{{ img.alt | safe }}" loading="lazy">{% endif %}<figcaption><strong>{{ img.captionTitle | safe }}</strong><span>{{ img.credit | safe }}</span></figcaption></figure>{% endfor %}</div><button class="nav prev" aria-label="Previous">‹</button><button class="nav next" aria-label="Next">›</button><div class="counter"><span class="cur">1</span> / {{ n }}</div><div class="dots">{% for img in spot.images %}<button class="dot" data-i="{{ loop.index0 }}" aria-label="Photo {{ loop.index }}"></button>{% endfor %}</div></div>
+{%- endmacro -%}
+
+{%- macro spot(s) -%}
+<section class="spot">
+      <div class="spot-head">
+        <div><h4 class="spot-name">{{ s.name | safe }}</h4>{% if s.alltrailsTrail %}<a class="at-badge" href="{{ s.alltrailsTrail | safe }}" target="_blank" rel="noreferrer" title="Open this trail on AllTrails">AllTrails</a>{% endif %}</div>
+        <div class="explore">{{ s.exploreHtml | safe }}{% if s.alltrailsArea %}<a class="xg at-xg" href="{{ s.alltrailsArea | safe }}" target="_blank" rel="noreferrer">AllTrails</a>{% endif %}</div>
+      </div>
+      {{ carousel(s) }}
+      {%- if s.rawAfterCarousel -%}{{ s.rawAfterCarousel | safe }}{%- else -%}
+      <div class="spot-grid">
+        <div class="spot-info">
+          <div class="kv"><span>Cost</span><p>{{ s.cost | safe }}</p></div><div class="kv climate"><span>{{ s.climateLabel | safe }}</span><p>{{ s.climate | safe }}</p></div>
+          <div class="callout save">{{ s.saveHtml | safe }}</div>
+          <div class="callout splurge">{{ s.splurgeHtml | safe }}</div>
+          <div class="resto">
+            <p class="mini-h">Family &amp; picky-kid eats</p>
+            <ul>{{ s.restoHtml | safe }}</ul>
+          </div>
+          <details class="altbox">
+            <summary class="mini-h">Also awesome instead / if you have time</summary>
+            {{ s.altboxHtml | safe }}
+          </details>
+          <div class="bloglinks"><p class="mini-h">Travel-blog tips</p>{{ s.bloglinksHtml | safe }}</div>
+        </div>
+        {{ s.spotMapHtml | safe }}
+      </div>
+      {%- endif -%}
+    </section>
+{%- endmacro -%}
+
+{%- macro day(d) -%}
+<article class="day {{ d.colorClass }}" id="{{ d.id }}">
+      <div class="day-head">
+        <div class="day-badge">{{ d.badge | safe }}</div>
+        <div class="day-title"><p class="eyebrow">{{ d.eyebrow | safe }}</p><h3>{{ d.heading | safe }}</h3><p class="feel">{{ d.feel | safe }}</p><p class="daycost">{{ d.daycost | safe }}</p></div>
+      </div>
+      <div class="logistics">
+        <div class="facts">{% for f in d.facts %}<div><span>{{ f.label | safe }}</span><strong>{{ f.valueHtml | safe }}</strong></div>{% endfor %}</div>
+        <p class="note">{{ d.note | safe }}</p>
+      </div>
+      <div class="spots-wrap">{% if d.travelNote %}<div class="travel-note">{{ d.travelNote | safe }}</div>{% endif %}{% for s in d.spots %}{{ spot(s) }}{% endfor %}</div>
+    </article>
+{%- endmacro -%}

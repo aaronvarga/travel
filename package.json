@@ -8,7 +8,7 @@
     "lint": "node tools/lint-sections.mjs",
     "summary": "node tools/build-summary.mjs",
     "verify-summary": "node tools/verify-summary.mjs",
-    "build": "node tools/lint-sections.mjs && node tools/validate-scorecards.mjs && node tools/validate-evidence.mjs && node tools/reconcile-budgets.mjs --strict && node tools/build-summary.mjs && node tools/analyze-rank-stability.mjs && node tools/optimize-images.mjs && node ./node_modules/@11ty/eleventy/cmd.cjs && node tools/verify-summary.mjs --site && node tools/audit-performance.mjs",
+    "build": "node tools/lint-sections.mjs && node tools/validate-scorecards.mjs && node tools/validate-evidence.mjs && node tools/reconcile-budgets.mjs --strict && node tools/build-summary.mjs && node tools/analyze-rank-stability.mjs && node tools/composer/compose.mjs && node tools/composer/validate-combos.mjs && node tools/optimize-images.mjs && node ./node_modules/@11ty/eleventy/cmd.cjs && node tools/verify-summary.mjs --site && node tools/audit-performance.mjs",
     "serve": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve",
     "test": "node --test tools/test/*.test.mjs",
     "validate:evidence": "node tools/validate-evidence.mjs",
@@ -23,7 +23,9 @@
     "import": "node tools/extract.mjs",
     "alltrails": "node tools/apply-alltrails.mjs",
     "extract:leg": "node tools/composer/extract-legs.mjs",
-    "validate:legs": "node tools/composer/validate-legs.mjs"
+    "validate:legs": "node tools/composer/validate-legs.mjs",
+    "compose": "node tools/composer/compose.mjs",
+    "validate:combos": "node tools/composer/validate-combos.mjs"
   },
   "repository": {
     "type": "git",
