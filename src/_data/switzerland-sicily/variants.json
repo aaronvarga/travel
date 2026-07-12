@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "switzerland-sicily",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 14000,
+        "expectedUsd": null,
+        "highUsd": 19350,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Sicily 7 nights (car) across Taormina and Siracusa, open-jaw ZRH in / Catania out.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "Switzerland + Sicily; variant canonical; route-specific savings/tradeoffs require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "A cheaper variant (drop Jungfraujoch, or swap the Alpine leg shorter) should be added only after route-specific savings and lost experiences are reconciled. Switzerland has no low-cost version of a Jungfrau week."
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "slovenia-adriatic",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 10700,
+        "expectedUsd": null,
+        "highUsd": 14800,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The checked-in itinerary remains the immutable comparison baseline: Bled 4 nights + Bovec/Soča 3 (via the Vršič Pass) + Piran 3 (via the Škocjan Caves) + Ljubljana 2, round-trip Ljubljana, one rental car.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "Slovenia + Adriatic; variant canonical; route-specific savings/tradeoffs require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "Two alternatives are worth documenting but are not yet cost-reconciled. (1) A warm-swim swap: trim the Piran coast leg and fly a short LCC hop from LJU to a Greek island for a genuinely warm-water week — this raises the swim axis but adds a flight, cost, and a second country, so it needs its own reconciliation. (2) A cheaper gateway: fly PIT->Venice and drive ~2h in, typically $200-400/person under the two-stop LJU fare, at the cost of a cross-border car surcharge. Croatia would be the obvious warm partner but is excluded by family decision."
+}

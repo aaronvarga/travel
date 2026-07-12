@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "slug": "switzerland-sicily",
+  "reviewedAt": "2026-07-11",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 1,
+      "rationale": "The eight categories reconcile exactly to $14,000–$19,350. The entire band is above the $12k target and the high case is $4,350 above the $15k preferred maximum. Switzerland's rail, lodging, and mountain-excursion costs drive this; the transatlantic open-jaw is proxy arithmetic, not a live quote.",
+      "confidence": "medium",
+      "evidence": ["budget-band"]
+    },
+    "weather": {
+      "score": 3,
+      "rationale": "A genuine split: Sicily's Ionian and southeast coasts are hot and dry in June (~80–84°F highs), but the Berner Oberland sees rain on well over half of June days and Jungfraujoch can white out. The blended score reflects the real risk on the two marquee summit days.",
+      "confidence": "medium",
+      "evidence": ["climate-split"]
+    },
+    "swim": {
+      "score": 4,
+      "rationale": "The seven Sicily nights deliver a strong ~72–75°F Ionian with the sheltered Isola Bella cove and the warm sandy shallows of Fontane Bianche — the same warm-water week that scores 4 on the Sicily-peer trips. By family decision the swim-free Swiss leg is an accepted split tradeoff (its job is epic scenery and hiking, not swimming), so the axis is not docked for it; it stays at 4 rather than 5 only because the Alpine half has no swimming at all.",
+      "confidence": "medium",
+      "evidence": ["swim-conditions"]
+    },
+    "variety": {
+      "score": 5,
+      "rationale": "A 3,454 m glacier summit, alpine cliff walks, and waterfall valleys paired with a live volcano, Greek theatres, baroque towns, and warm Ionian swims is the widest contrast on the board.",
+      "confidence": "high",
+      "evidence": ["itinerary-structure"]
+    },
+    "ease": {
+      "score": 2,
+      "rationale": "Two countries, an open-jaw ticket with a European connection each way, an intra-Europe flight, and a Sicily rental car across two bases (Taormina and Siracusa). Switzerland's rail simplicity and Catania's short arrival transfer keep it from scoring lower; the second Sicily base move keeps it from scoring higher.",
+      "confidence": "high",
+      "evidence": ["operational-load"]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Both legs are easy for picky eaters: Swiss villages and Sicily both have full supermarkets plus reliable pizza/pasta/burger options. Switzerland is expensive, but cost is scored under budget, not food.",
+      "confidence": "high",
+      "evidence": ["family-food-coverage"]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "One notch above the Crete twin: Catania is a major airport with frequent Zurich links and clean US connections through Rome, Munich, Frankfurt or Zurich, so the Sicily half is far less schedule-fragile than a weekly Greek-island nonstop. The open-jaw fare is still 2026-proxy arithmetic with no live 2027 quote, and Jungfraujoch weather can cancel the marquee summit day.",
+      "confidence": "high",
+      "evidence": ["route-readiness"]
+    },
+    "nights": {
+      "score": 5,
+      "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "The Berner Oberland and eastern Sicily do not overlap the documented visited-place list, and the Alpine biome is unlike anything else on the board, deriving 5/5.",
+      "confidence": "high",
+      "evidence": ["visited-overlap"]
+    },
+    "pto": {
+      "score": 3,
+      "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight; Juneteenth observed (Fri Jun 18) is used as a no-PTO active day.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary", "jungfrau-railways", "etna-funivia"],
+      "value": {
+        "lowUsd": 14000,
+        "expectedUsd": null,
+        "highUsd": 19350,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "6200/8900 + 2230/2850 + 2150/2650 + 820/1150 + 2100/2700 + 500/1100 = 14000/19350"
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "switzerland-sicily/main.json #totals target/high columns; exact category reconciliation",
+        "jungfrau-railways": "Jungfraujoch and First fares that dominate the Swiss excursion line",
+        "etna-funivia": "Funivia dell'Etna cable-car fare anchoring the Sicily activity line"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "decision-profile"],
+      "value": {
+        "depart": "2027-06-08",
+        "homeBy": "2027-06-22",
+        "hotelNights": 12,
+        "ptoDays": 8,
+        "blackoutRespected": true,
+        "note": "Depart Tue Jun 8, home by Tue Jun 22; ahead of the preferred Jun 23 return and clear of the required Pittsburgh days Jun 24-26. Juneteenth observed Fri Jun 18 is a no-PTO active day."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": "2027-06-01",
+      "sourceLocators": {
+        "internal-itinerary": "switzerland-sicily/main.json calendar + timing sections",
+        "decision-profile": "decisionProfile.json tripWindows.switzerland-sicily and pittsburghCommitment"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "climate-split",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["swiss-alps-june-climate", "visit-sicily-sea"],
+      "value": {
+        "berneseOberlandJuneHighF": 63,
+        "berneseOberlandJuneLowF": 47,
+        "berneseOberlandRainDayChance": "~57%",
+        "jungfraujochSummitF": [28, 36],
+        "sicilyJuneHighF": 84,
+        "note": "Alpine valley is mild but wet with frequent afternoon showers; the summit is near freezing even in June. Sicily's Ionian and southeast coasts are hot and dry. Marquee summit days are built to flex to the clearest morning."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": "2027-05-01",
+      "sourceLocators": {
+        "swiss-alps-june-climate": "June air norms for the Interlaken valley and Lake Brienz water temp",
+        "visit-sicily-sea": "June sea-temperature context for the Ionian and southeast Sicily coasts"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["visit-sicily-sea", "swiss-alps-june-climate"],
+      "value": {
+        "score": 4,
+        "temperatureF": [72, 75],
+        "hasSwim": true,
+        "sicilySeaTempF": [72, 75],
+        "lakeBrienzTempF": [57, 64],
+        "shelteredSites": ["Isola Bella / Mazzarò", "Fontane Bianche", "Ortigia rock ladders"],
+        "note": "All real swimming is in Sicily: warm Ionian with the sheltered Isola Bella cove and the sandy shallows of Fontane Bianche. Lake Brienz is glacier-fed and look-only in June."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": "2027-05-01",
+      "sourceLocators": {
+        "visit-sicily-sea": "June sea-temperature context for Sicilian swimming",
+        "swiss-alps-june-climate": "Lake Brienz June water temperature"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary"],
+      "value": {
+        "bases": 3,
+        "swissStops": ["Jungfraujoch", "Grindelwald-First", "Lauterbrunnen", "Männlichen", "Lake Brienz"],
+        "sicilyStops": ["Taormina + Isola Bella", "Mount Etna", "Cefalù", "Noto + Fontane Bianche", "Ortigia / Siracusa"],
+        "note": "Alps, lakes, a live volcano, Greek theatres, baroque towns, and warm coves across two countries in 12 nights."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "switzerland-sicily/main.json itinerary days and map points"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "aci-driving-italy"],
+      "value": {
+        "baseMoves": 2,
+        "countries": 2,
+        "openJaw": true,
+        "intraEuropeFlights": 1,
+        "arrivalTransferHours": 0.8,
+        "swissRentalCar": false,
+        "sicilyRentalCar": true,
+        "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~50-minute CTA-Taormina transfer, and a Sicily rental car across a Taormina and a Siracusa base."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": "2027-05-01",
+      "sourceLocators": {
+        "internal-itinerary": "switzerland-sicily/main.json getting-around and air-travel sections",
+        "aci-driving-italy": "Italian driving/ZTL rules for the Sicily rental-car leg"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["conad-siracusa", "internal-itinerary"],
+      "value": {
+        "note": "Siracusa and the Ionian coast have full supermarkets (Conad and others) plus trattorias and pizzerias with kid-safe options; Swiss villages have Coop/Migros and reliable pizza/pasta. Both legs are picky-eater friendly; Switzerland is expensive but that sits under budget."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": "2027-05-01",
+      "sourceLocators": {
+        "conad-siracusa": "Confirms full-supermarket coverage in the Siracusa base",
+        "internal-itinerary": "Per-stop restaurant picks with plain pizza/pasta/burger options"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["aci-driving-italy", "eu-etias", "internal-itinerary"],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": false,
+        "singleTicketAssumption": false,
+        "maxConnections": 2,
+        "openJawQuote": "none live for 2027; 2026-proxy arithmetic",
+        "zrhCataniaNonstop": "SWISS/Edelweiss seasonal nonstop; ITA/Lufthansa via FCO/MUC as backup; June 2027 inventory not yet loaded",
+        "cataniaUsConnectivity": "major airport; clean US connections via FCO/MUC/FRA/ZRH, far less fragile than a weekly island nonstop",
+        "june2027ProtectedTicketVerified": false,
+        "etias": "mandatory by Jun 2027, ~$22/person, both Schengen legs",
+        "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Catania day once 2027 inventory opens."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "aci-driving-italy": "Italian driving/ZTL context for the Sicily ground leg",
+        "eu-etias": "ETIAS launch/mandatory timeline for June 2027 Schengen entry",
+        "internal-itinerary": "Open-jaw construction and Catania-connection plan"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "scorecard-contract"],
+      "value": {
+        "overlap": "none",
+        "note": "Neither the Berner Oberland nor eastern Sicily overlaps the documented visited-place list; the Alpine biome is unique on the board."
+      },
+      "verifiedAt": "2026-07-11",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "switzerland-sicily route vs visited-places list",
+        "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and visited list"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 22.0,
+    "groundHours": 20.0,
+    "timeZones": 6,
+    "baseMoves": 2,
+    "longestTransferHours": 12,
+    "highOutputDayStreak": 3,
+    "fallbackDays": 2,
+    "childActivityFit": { "age13": "fits", "age8": "fits" },
+    "lodgingComfort": {
+      "airConditioning": "unknown until property selection",
+      "kitchen": "planned in all main bases but unconfirmed",
+      "laundry": "unknown until property selection",
+      "realBeds": "unknown until property selection"
+    },
+    "waterSafety": "All family swims are in Sicily (Isola Bella, Fontane Bianche, Cefalù, Ortigia rocks); Lake Brienz is a look-only 57–64°F lake in June.",
+    "crowdingPressure": "Jungfraujoch reservations require advance timing; Taormina and Ortigia old-town ZTL zones and summer beach demand warrant early planning.",
+    "medicalAccess": "Unknown against incomplete family medical profile; Jungfraujoch altitude and the Etna volcano day warrant caution.",
+    "childActivityNotes": {
+      "age13": "strong for the summit, cliff walks, the Etna craters, and warm-water swimming",
+      "age8": "supported by First adventure rides, the sheltered Isola Bella cove, and the free Silvestri craters; the summit and the long Cefalù drive need restraint"
+    }
+  },
+  "evidenceBasis": "Operator fares (Jungfrau Railways, Männlichen, BLS, Funivia dell'Etna), current route data (ZRH-Catania and Catania US connectivity), official Sicily sea context, aggregate June climate, and deterministic itinerary derivation; SST, the open-jaw fare, and 2027 schedules remain planning proxies.",
+  "confidenceBasis": [
+    "high-confidence logistics, novelty, food-coverage, and route-readiness claims",
+    "medium-confidence blended climate and budget claims",
+    "medium-confidence swim claim (Sicily SST is a proxy)"
+  ]
+}

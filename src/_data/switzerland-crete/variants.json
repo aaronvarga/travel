@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "switzerland-crete",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 14120,
+        "expectedUsd": null,
+        "highUsd": 19440,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Chania 7 nights (car), open-jaw ZRH in / Crete out.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "Switzerland + Crete; variant canonical; route-specific savings/tradeoffs require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "A cheaper variant (drop Jungfraujoch, or swap the Alpine leg shorter) should be added only after route-specific savings and lost experiences are reconciled. Switzerland has no low-cost version of a Jungfrau week."
+}
