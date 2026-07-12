@@ -7,11 +7,11 @@ const root = path.resolve(import.meta.dirname, '../..');
 const dataDir = path.join(root, 'src', '_data');
 const contract = JSON.parse(fs.readFileSync(path.join(root, 'tools', 'evidence.manifest.json'), 'utf8'));
 
-test('all 23 trips have evidence and canonical variants', () => {
+test('all 26 trips have evidence and canonical variants', () => {
   const slugs = fs.readdirSync(dataDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && fs.existsSync(path.join(dataDir, entry.name, 'main.json')))
     .map((entry) => entry.name);
-  assert.equal(slugs.length, 23);
+  assert.equal(slugs.length, 26);
   for (const slug of slugs) {
     const main = read(slug, 'main.json');
     const evidence = read(slug, 'evidence.json');

@@ -33,7 +33,8 @@ const TOKEN = {
   'greece-via-lisbon': 'greece', 'turkish-riviera': 'turkey', 'sicily-malta': 'sicily',
   spain: 'spain', 'california-pacific-coast': 'california', 'southern-france': 'southernfrance',
   balkans: 'balkans', 'dolomites-sardinia': 'dolomites-sardinia', albania: 'albania',
-  iceland: 'iceland',
+  iceland: 'iceland', 'switzerland-crete': 'switzerland-crete',
+  'switzerland-sicily': 'switzerland-sicily', 'slovenia-adriatic': 'slovenia-adriatic',
 };
 
 const slugs = fs

@@ -77,7 +77,7 @@ for (const { slug, main } of trips) {
 }
 
 const excluded = trips.filter(({ main }) => typeof main.excluded === 'string');
-if (trips.length !== 23) issue('all', `expected 23 trips, found ${trips.length}`);
+if (trips.length !== 26) issue("all", `expected 26 trips, found ${trips.length}`);
 if (excluded.length !== 9) issue('all', `expected 9 excluded trips, found ${excluded.length}`);
 
 if (problems.length) {
