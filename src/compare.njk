@@ -1,0 +1,159 @@
+---
+permalink: "/locations/compare/index.html"
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Compare Same-Country Options — Family Trip Decision</title>
+<style>
+:root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;
+ --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;
+ --save:#3f7d4e;--splurge:#a9862b;--shadow:0 18px 46px rgba(30,32,28,.14);
+ --s1:#e9efe6;--s2:#dfe7d6;--s3:#cfe0c2;--s4:#b6d3a0;--s5:#8fbf6f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font:16px/1.55 "Source Sans 3",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Fraunces","Georgia",serif;letter-spacing:-.01em}
+a{color:var(--c1)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+/* HERO */
+header{background:linear-gradient(120deg,#17130f 0%,#243a3d 55%,#1f6f78 100%);color:#fff;padding:34px 0 40px}
+header .wrap{max-width:1180px}
+header .backlink{display:inline-flex;align-items:center;gap:7px;color:rgba(255,255,255,.82);font-weight:700;font-size:.82rem;text-decoration:none;margin-bottom:20px}
+header .backlink:hover{color:#fff}
+h1{margin:0 0 12px;font-size:clamp(2rem,4vw,3.1rem);line-height:1.02;font-weight:600}
+header .lead{max-width:640px;margin:0;color:rgba(255,255,255,.9);font-size:clamp(1rem,1.3vw,1.1rem)}
+/* JUMP NAV */
+.jump{position:sticky;top:0;z-index:20;background:rgba(246,241,231,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.jump .wrap{display:flex;gap:8px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.jump a{text-decoration:none;color:var(--ink);font-weight:700;font-size:.82rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);white-space:nowrap}
+.jump a:hover{border-color:var(--c1);color:var(--c1)}
+.jump a .n{color:var(--muted);font-weight:600;margin-left:5px}
+/* COUNTRY SECTION */
+.country{padding:34px 0 6px}
+.country h2{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 4px;font-size:clamp(1.5rem,2.6vw,2.1rem)}
+.country h2 .count{font-family:"Source Sans 3",sans-serif;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.country .sub{margin:0 0 14px;color:var(--muted);max-width:70ch}
+.contrast{margin:0 0 20px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--c1);border-radius:0 12px 12px 0;max-width:82ch;box-shadow:0 8px 22px rgba(30,32,28,.06)}
+.contrast .lbl{display:block;margin:0 0 7px;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--c1)}
+.contrast p{margin:0;font-size:.92rem;line-height:1.6}
+.contrast strong{color:var(--ink);font-weight:700}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow)}
+table.cmp{border-collapse:collapse;width:100%;min-width:860px;font-size:.9rem}
+table.cmp th,table.cmp td{padding:11px 12px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+table.cmp thead th{position:sticky;top:0;background:var(--card);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:800;z-index:1}
+table.cmp thead th.trip,table.cmp tbody td.trip{text-align:left;position:sticky;left:0;background:var(--card);z-index:2;min-width:210px}
+table.cmp thead th.trip{z-index:3}
+table.cmp tbody tr:hover td{background:#fbf7ee}
+table.cmp tbody tr:hover td.trip{background:#fbf7ee}
+table.cmp tbody tr.ex td{opacity:.62}
+.rank{display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;border-radius:7px;background:#efe7d6;color:#7a5a1e;font-weight:800;font-size:.78rem}
+.rank.ex{background:#e7e2da;color:#7a736a}
+.tname{font-weight:700;color:var(--ink);text-decoration:none}
+.tname:hover{color:var(--c1);text-decoration:underline}
+.tsum{display:block;margin-top:3px;font-size:.74rem;color:var(--muted);white-space:normal;max-width:34ch;font-weight:400}
+.exreason{display:block;margin-top:3px;font-size:.72rem;color:var(--c2);white-space:normal;max-width:34ch}
+.tot{font-weight:800;font-size:1rem}
+.axis{font-weight:700;color:#33301c}
+.axis.s1{background:var(--s1)}.axis.s2{background:var(--s2)}.axis.s3{background:var(--s3)}.axis.s4{background:var(--s4)}.axis.s5{background:var(--s5)}
+.budget{font-weight:700}
+.budget.over{color:var(--splurge)}
+.is-best{position:relative}
+.is-best::after{content:"";position:absolute;inset:4px;border:2px solid var(--c1);border-radius:7px;pointer-events:none}
+.legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:14px 0 0;font-size:.78rem;color:var(--muted)}
+.legend .sw{display:inline-flex;align-items:center;gap:6px}
+.legend .chip{width:16px;height:16px;border-radius:4px;display:inline-block}
+.note{margin:26px 0 40px;padding:16px 18px;border-left:3px solid var(--gold);background:var(--card);border-radius:0 12px 12px 0;color:var(--muted);font-size:.86rem;max-width:80ch}
+footer{padding:30px 0 60px;color:var(--muted);font-size:.82rem}
+@media(max-width:640px){
+ table.cmp thead th.trip,table.cmp tbody td.trip{min-width:170px}
+ .tsum{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="backlink" href="../../index.html">← Back to the decision hub</a>
+    <p class="eyebrow">Same country, different plans</p>
+    <h1>Compare options within a country</h1>
+    <p class="lead">Every trip that visits a country, side by side — so you can settle the “which part of Greece / Portugal / Italy?” question before weighing countries against each other. Scores, budget ceiling, nights, and each scored axis. The blue outline marks the best value in that column among the family’s live options; grey rows are excluded plans kept for reference.</p>
+  </div>
+</header>
+
+<nav class="jump" aria-label="Jump to country">
+  <div class="wrap">
+    {% for c in countryGroups.countries %}
+      <a href="#{{ c.key }}">{{ c.name }}<span class="n">{{ c.activeCount if c.activeCount else c.total }}</span></a>
+    {% endfor %}
+  </div>
+</nav>
+
+<main class="wrap">
+  {% for c in countryGroups.countries %}
+  <section class="country" id="{{ c.key }}">
+    <h2>{{ c.name }} <span class="count">{{ c.activeCount }} live{% if c.total > c.activeCount %} · {{ c.total - c.activeCount }} excluded{% endif %}</span></h2>
+    <p class="sub">
+      {% if c.activeCount > 1 %}Compare {{ c.activeCount }} live {{ c.name }} plans head-to-head.
+      {% elif c.activeCount == 1 %}One live {{ c.name }} plan{% if c.total > 1 %}, plus excluded references{% endif %}.
+      {% else %}Excluded {{ c.name }} references only.{% endif %}
+    </p>
+    {% if shared.countryContrasts[c.key] %}
+    <div class="contrast">
+      <span class="lbl">How these differ</span>
+      <p>{{ shared.countryContrasts[c.key] | safe }}</p>
+    </div>
+    {% endif %}
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            {% for a in countryGroups.axes %}{% if a.id != "pto" and a.id != "nights" %}<th>{{ a.label }}</th>{% endif %}{% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for t in c.trips %}
+          <tr class="{{ 'ex' if t.excluded }}">
+            <td class="trip">
+              {% if t.href %}<a class="tname" href="{{ t.href }}">{{ t.displayName }}</a>{% else %}<span class="tname">{{ t.displayName }}</span>{% endif %}
+              {% if t.excluded and t.excludedReason %}<span class="exreason">{{ t.excludedReason }}</span>{% else %}<span class="tsum">{{ t.cardSummary }}</span>{% endif %}
+            </td>
+            <td>{% if t.rank %}<span class="rank">#{{ t.rank }}</span>{% else %}<span class="rank ex">EX</span>{% endif %}</td>
+            <td class="tot {{ 'is-best' if not t.excluded and t.total == c.best.total }}">{{ t.total }}<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget {{ 'over' if t.budgetStatus == 'crosses-preference' }} {{ 'is-best' if not t.excluded and t.budget.ceilUsd == c.best.budgetCeil }}">{{ t.budget.ceilUsd | moneyK }}</td>
+            <td class="{{ 'is-best' if not t.excluded and t.nights == c.best.nights }}">{{ t.nights }}</td>
+            {% for a in countryGroups.axes %}{% if a.id != "pto" and a.id != "nights" %}
+              <td class="axis s{{ t.axes[a.id] }} {{ 'is-best' if not t.excluded and t.axes[a.id] == c.best[a.id] }}">{{ t.axes[a.id] }}</td>
+            {% endif %}{% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  {% endfor %}
+
+  <p class="note">Scores, ranks, and budgets are pulled straight from the same canonical data as the decision hub — a plan’s rank badge here is its global appeal rank at the default weights. Budget shows each plan’s ceiling estimate; amber means it crosses the $15k strongly-preferred maximum. Budget is double-weighted in the /50 total (Budget ×2 + eight axes); PTO is slider-only and omitted here. A country can list the same physical region under more than one plan (e.g. the Crete legs), which is exactly the trade-off this page exists to surface.</p>
+</main>
+
+<footer class="wrap">Generated from <code>assets/trips-summary.json</code> · one row per plan, grouped by country visited.</footer>
+</body>
+</html>
