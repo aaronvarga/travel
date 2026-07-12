@@ -118,6 +118,8 @@ for (const edge of edgeData.edges.filter((item) => item.enabled !== false).sort(
 
 combos.sort((a, b) => a.slug.localeCompare(b.slug));
 const index = combos.map(({ slug, title, startId, partnerId, startName, partnerName, totalNights, budget, scorecard, transfer }) => ({ slug, title, startId, partnerId, startName, partnerName, totalNights, budget, score: scorecard.totalBaked, transferRisk: transfer.risk }));
+const starts = [...new Map(index.map((item) => [item.startId, { id: item.startId, name: item.startName }])).values()];
 fs.writeFileSync(path.join(composerDir, 'combos.json'), `${JSON.stringify(combos, null, 2)}\n`);
 fs.writeFileSync(path.join(composerDir, 'combosIndex.json'), `${JSON.stringify(index, null, 2)}\n`);
+fs.writeFileSync(path.join(composerDir, 'combosStarts.json'), `${JSON.stringify(starts, null, 2)}\n`);
 console.log(`composed ${combos.length} deterministic trip drafts`);

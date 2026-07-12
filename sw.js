@@ -6,7 +6,7 @@
  *   on demand as the user visits pages (no bulk pre-warming).
  * Cache names are versioned; bump VERSION on release to invalidate. */
 'use strict';
-const VERSION = 'tp-v9';
+const VERSION = 'tp-v10';
 const SHELL = VERSION + '-shell';
 const TILES = VERSION + '-tiles';
 const IMGS = VERSION + '-imgs';
@@ -29,6 +29,7 @@ const CORE = [
   'assets/js/meter.js?v=20260710-dates',
   'assets/js/urlstate.js',
   'assets/js/itinerary.js?v=20260710-gallery-full',
+  'assets/js/builder.js?v=20260712-composer',
   'assets/trips-summary.json',
   'assets/rank-analysis.json',
   'assets/section-status.json',

@@ -29,6 +29,10 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addFilter('roundHours', (value) => Math.round(Number(value)));
   eleventyConfig.addFilter('displayDate', formatDisplayDates);
+  eleventyConfig.addFilter('jsonForScript', (value) => JSON.stringify(value)
+    .replace(/</g, '\\u003c')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029'));
 
   eleventyConfig.addTransform('all-trip-photos-in-hero', function (content) {
     if (!this.page.outputPath?.includes('/locations/') || !this.page.outputPath.endsWith('.html')) return content;
