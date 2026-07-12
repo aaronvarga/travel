@@ -1,0 +1,1718 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=Source+Sans+3:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<title>Compare Same-Country Options — Family Trip Decision</title>
+<style>
+:root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;
+ --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;
+ --save:#3f7d4e;--splurge:#a9862b;--shadow:0 18px 46px rgba(30,32,28,.14);
+ --s1:#e9efe6;--s2:#dfe7d6;--s3:#cfe0c2;--s4:#b6d3a0;--s5:#8fbf6f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+ font:16px/1.55 "Source Sans 3",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Fraunces","Georgia",serif;letter-spacing:-.01em}
+a{color:var(--c1)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+/* HERO */
+header{background:linear-gradient(120deg,#17130f 0%,#243a3d 55%,#1f6f78 100%);color:#fff;padding:34px 0 40px}
+header .wrap{max-width:1180px}
+header .backlink{display:inline-flex;align-items:center;gap:7px;color:rgba(255,255,255,.82);font-weight:700;font-size:.82rem;text-decoration:none;margin-bottom:20px}
+header .backlink:hover{color:#fff}
+h1{margin:0 0 12px;font-size:clamp(2rem,4vw,3.1rem);line-height:1.02;font-weight:600}
+header .lead{max-width:640px;margin:0;color:rgba(255,255,255,.9);font-size:clamp(1rem,1.3vw,1.1rem)}
+/* JUMP NAV */
+.jump{position:sticky;top:0;z-index:20;background:rgba(246,241,231,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.jump .wrap{display:flex;gap:8px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+.jump a{text-decoration:none;color:var(--ink);font-weight:700;font-size:.82rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);white-space:nowrap}
+.jump a:hover{border-color:var(--c1);color:var(--c1)}
+.jump a .n{color:var(--muted);font-weight:600;margin-left:5px}
+/* COUNTRY SECTION */
+.country{padding:34px 0 6px}
+.country h2{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:0 0 4px;font-size:clamp(1.5rem,2.6vw,2.1rem)}
+.country h2 .count{font-family:"Source Sans 3",sans-serif;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.country .sub{margin:0 0 14px;color:var(--muted);max-width:70ch}
+.contrast{margin:0 0 20px;padding:16px 18px;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--c1);border-radius:0 12px 12px 0;max-width:82ch;box-shadow:0 8px 22px rgba(30,32,28,.06)}
+.contrast .lbl{display:block;margin:0 0 7px;font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--c1)}
+.contrast p{margin:0;font-size:.92rem;line-height:1.6}
+.contrast strong{color:var(--ink);font-weight:700}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:var(--shadow)}
+table.cmp{border-collapse:collapse;width:100%;min-width:860px;font-size:.9rem}
+table.cmp th,table.cmp td{padding:11px 12px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+table.cmp thead th{position:sticky;top:0;background:var(--card);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:800;z-index:1}
+table.cmp thead th.trip,table.cmp tbody td.trip{text-align:left;position:sticky;left:0;background:var(--card);z-index:2;min-width:210px}
+table.cmp thead th.trip{z-index:3}
+table.cmp tbody tr:hover td{background:#fbf7ee}
+table.cmp tbody tr:hover td.trip{background:#fbf7ee}
+table.cmp tbody tr.ex td{opacity:.62}
+.rank{display:inline-grid;place-items:center;min-width:30px;height:24px;padding:0 6px;border-radius:7px;background:#efe7d6;color:#7a5a1e;font-weight:800;font-size:.78rem}
+.rank.ex{background:#e7e2da;color:#7a736a}
+.tname{font-weight:700;color:var(--ink);text-decoration:none}
+.tname:hover{color:var(--c1);text-decoration:underline}
+.tsum{display:block;margin-top:3px;font-size:.74rem;color:var(--muted);white-space:normal;max-width:34ch;font-weight:400}
+.exreason{display:block;margin-top:3px;font-size:.72rem;color:var(--c2);white-space:normal;max-width:34ch}
+.tot{font-weight:800;font-size:1rem}
+.axis{font-weight:700;color:#33301c}
+.axis.s1{background:var(--s1)}.axis.s2{background:var(--s2)}.axis.s3{background:var(--s3)}.axis.s4{background:var(--s4)}.axis.s5{background:var(--s5)}
+.budget{font-weight:700}
+.budget.over{color:var(--splurge)}
+.is-best{position:relative}
+.is-best::after{content:"";position:absolute;inset:4px;border:2px solid var(--c1);border-radius:7px;pointer-events:none}
+.legend{display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin:14px 0 0;font-size:.78rem;color:var(--muted)}
+.legend .sw{display:inline-flex;align-items:center;gap:6px}
+.legend .chip{width:16px;height:16px;border-radius:4px;display:inline-block}
+.note{margin:26px 0 40px;padding:16px 18px;border-left:3px solid var(--gold);background:var(--card);border-radius:0 12px 12px 0;color:var(--muted);font-size:.86rem;max-width:80ch}
+footer{padding:30px 0 60px;color:var(--muted);font-size:.82rem}
+@media(max-width:640px){
+ table.cmp thead th.trip,table.cmp tbody td.trip{min-width:170px}
+ .tsum{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="backlink" href="../../index.html">← Back to the decision hub</a>
+    <p class="eyebrow">Same country, different plans</p>
+    <h1>Compare options within a country</h1>
+    <p class="lead">Every trip that visits a country, side by side — so you can settle the “which part of Greece / Portugal / Italy?” question before weighing countries against each other. Scores, budget ceiling, nights, and each scored axis. The blue outline marks the best value in that column among the family’s live options; grey rows are excluded plans kept for reference.</p>
+  </div>
+</header>
+
+<nav class="jump" aria-label="Jump to country">
+  <div class="wrap">
+    
+      <a href="#portugal">Portugal<span class="n">8</span></a>
+    
+      <a href="#italy">Italy<span class="n">7</span></a>
+    
+      <a href="#greece">Greece<span class="n">6</span></a>
+    
+      <a href="#usa">United States<span class="n">2</span></a>
+    
+      <a href="#switzerland">Switzerland<span class="n">2</span></a>
+    
+      <a href="#spain">Spain<span class="n">1</span></a>
+    
+      <a href="#france">France<span class="n">1</span></a>
+    
+      <a href="#iceland">Iceland<span class="n">1</span></a>
+    
+      <a href="#malta">Malta<span class="n">1</span></a>
+    
+      <a href="#slovenia">Slovenia<span class="n">1</span></a>
+    
+      <a href="#albania">Albania<span class="n">1</span></a>
+    
+      <a href="#balkans">Balkans<span class="n">1</span></a>
+    
+      <a href="#croatia">Croatia<span class="n">1</span></a>
+    
+      <a href="#turkey">Turkey<span class="n">1</span></a>
+    
+  </div>
+</nav>
+
+<main class="wrap">
+  
+  <section class="country" id="portugal">
+    <h2>Portugal <span class="count">8 live</span></h2>
+    <p class="sub">
+      Compare 8 live Portugal plans head-to-head.
+      
+    </p>
+    
+    <div class="contrast">
+      <span class="lbl">How these differ</span>
+      <p>Every Portugal plan opens on the Portuguese side — Cascais and Lisbon, the Algarve, and/or Madeira — so the real choice is the warm-water second leg, or whether to have one at all. <strong>Portugal Algarve &amp; Madeira</strong> stays entirely Portuguese: the best value and the fewest transfers, but the Atlantic runs cool for swimming. Adding a Mediterranean leg buys warm water at higher cost and a little more travel friction — <strong>Mallorca</strong> for sandy coves and the easiest swimming, <strong>Crete</strong> for warm Aegean beaches and Venetian towns, or <strong>Sicily</strong> for the strongest food and Mount Etna (but the most fragile flights and the lowest ease). The three-stop versions (<strong>Algarve + Sicily</strong>, <strong>Madeira + Sicily</strong>) pack in the most but carry the most transfers, and <strong>Greece via Lisbon</strong> is really a Crete trip with Lisbon and Athens as short cultural bookends.</p>
+    </div>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../portugal/">Portugal Algarve &amp; Madeira</a>
+              <span class="tsum">Offers the best-value mix of Cascais, Algarve coves, and Madeira hiking with fewer expensive transfers and a relaxed three-base route.</span>
+            </td>
+            <td><span class="rank">#1</span></td>
+            <td class="tot is-best">40<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  is-best">$11.7k</td>
+            <td class="">12</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../madeira-mallorca/">Madeira + Mallorca</a>
+              <span class="tsum">Balances Madeira’s cloud-high trails and volcanic coast with Mallorca’s sandy coves, mountain villages, and warmer, easier swimming.</span>
+            </td>
+            <td><span class="rank">#3</span></td>
+            <td class="tot ">37<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  ">$14.8k</td>
+            <td class="">12</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../portugal-sicily/">Portugal + Sicily</a>
+              <span class="tsum">Pairs Portugal’s coast and city time with Cefalù, Taormina, and Mount Etna for a scenery-rich mix of beaches, towns, and Italian food.</span>
+            </td>
+            <td><span class="rank">#5</span></td>
+            <td class="tot ">35<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  ">$14.7k</td>
+            <td class="">12</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../portugal-crete/">Portugal + Crete</a>
+              <span class="tsum">Blends Portugal’s cities and Atlantic coast with Crete’s warmer water, beaches, historic towns, and a balanced hiking-and-swimming finish.</span>
+            </td>
+            <td><span class="rank">#7</span></td>
+            <td class="tot ">34<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$15.4k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../portugal-algarve-sicily/">Portugal + Algarve + Sicily</a>
+              <span class="tsum">Moves from Lisbon and the Algarve to Sicily for golden coves, dramatic towns, Mount Etna, and Italian food, with more transfers than the simpler hybrids.</span>
+            </td>
+            <td><span class="rank">#14</span></td>
+            <td class="tot ">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.6k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../madeira-crete/">Madeira + Crete</a>
+              <span class="tsum">Pairs Madeira’s dramatic levada and ridge hiking with Crete’s warm beaches, Venetian towns, and family-friendly Mediterranean swimming.</span>
+            </td>
+            <td><span class="rank">#16</span></td>
+            <td class="tot ">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.8k</td>
+            <td class="is-best">13</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../madeira-sicily/">Madeira + Sicily</a>
+              <span class="tsum">Combines Madeira’s hiking and lush scenery with Cefalù and eastern Sicily for beaches, Italian food, historic towns, and Mount Etna.</span>
+            </td>
+            <td><span class="rank">#18</span></td>
+            <td class="tot ">31<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$15.5k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../greece-via-lisbon/">Greece via Lisbon</a>
+              <span class="tsum">Uses Lisbon and Athens as short cultural bookends around a Crete-focused trip of Venetian towns, mountain drives, and standout beaches.</span>
+            </td>
+            <td><span class="rank">#19</span></td>
+            <td class="tot ">31<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.9k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="italy">
+    <h2>Italy <span class="count">7 live · 1 excluded</span></h2>
+    <p class="sub">
+      Compare 7 live Italy plans head-to-head.
+      
+    </p>
+    
+    <div class="contrast">
+      <span class="lbl">How these differ</span>
+      <p>The Italian plans divide by which Italy you want. <strong>Sicily</strong> anchors most of them — Cefalù, Taormina, Mount Etna, baroque Ortigia — and brings the board's best food; <strong>Sicily &amp; Malta</strong> adds Malta's limestone cities and brilliant blue swimming. <strong>Sardinia &amp; Corsica</strong> trades food and monuments for the best pure swimming: turquoise coves and boat days. <strong>Venice, Dolomites &amp; Sardinia</strong> is the outlier — high-alpine hiking into a warm-water Sardinia finish, the strongest mountain-to-beach contrast on the board. The rest pair Sicily with a non-Italian opener (Portugal, Madeira, or the Swiss Alps), so the Italian half stays similar while the first week — and the price and flight risk — change. Ease is low across all of them; these are ambitious, transfer-heavy trips.</p>
+    </div>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../portugal-sicily/">Portugal + Sicily</a>
+              <span class="tsum">Pairs Portugal’s coast and city time with Cefalù, Taormina, and Mount Etna for a scenery-rich mix of beaches, towns, and Italian food.</span>
+            </td>
+            <td><span class="rank">#5</span></td>
+            <td class="tot is-best">35<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  is-best">$14.7k</td>
+            <td class="">12</td>
+            
+              <td class="axis s2 is-best">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../sicily-malta/">Sicily &amp; Malta</a>
+              <span class="tsum">Combines Sicily’s food, beaches, Mount Etna, and historic towns with Malta’s limestone cities, boat trips, and brilliant blue swimming.</span>
+            </td>
+            <td><span class="rank">#8</span></td>
+            <td class="tot ">34<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$15.8k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../dolomites-sardinia/">Venice, Dolomites &amp; Sardinia</a>
+              <span class="tsum">Combines Venice and high-alpine Dolomites hiking with a warm-water Sardinia finish, delivering the trip’s strongest mountain-to-beach contrast.</span>
+            </td>
+            <td><span class="rank">#9</span></td>
+            <td class="tot ">34<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$18.89k</td>
+            <td class="is-best">13</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../switzerland-sicily/">Switzerland + Sicily</a>
+              <span class="tsum">Pairs five nights of Alps — Jungfraujoch, the Grindelwald-First Cliff Walk, Lauterbrunnen’s waterfalls — with seven warm-water nights in Sicily: Taormina’s Isola Bella, Mount Etna, Cefalù, and baroque Ortigia.</span>
+            </td>
+            <td><span class="rank">#11</span></td>
+            <td class="tot ">33<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$19.35k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../sardinia-corsica/">Sardinia &amp; Corsica</a>
+              <span class="tsum">Centers the trip on exceptional Mediterranean swimming, pairing Sardinia’s turquoise coves with Bonifacio’s cliffs, boat days, and compact old towns.</span>
+            </td>
+            <td><span class="rank">#13</span></td>
+            <td class="tot ">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.5k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../portugal-algarve-sicily/">Portugal + Algarve + Sicily</a>
+              <span class="tsum">Moves from Lisbon and the Algarve to Sicily for golden coves, dramatic towns, Mount Etna, and Italian food, with more transfers than the simpler hybrids.</span>
+            </td>
+            <td><span class="rank">#14</span></td>
+            <td class="tot ">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.6k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../madeira-sicily/">Madeira + Sicily</a>
+              <span class="tsum">Combines Madeira’s hiking and lush scenery with Cefalù and eastern Sicily for beaches, Italian food, historic towns, and Mount Etna.</span>
+            </td>
+            <td><span class="rank">#18</span></td>
+            <td class="tot ">31<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$15.5k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../italy-salento-amalfi/">Italy: Salento-Amalfi</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">33<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.3k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s2 ">2</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="greece">
+    <h2>Greece <span class="count">6 live · 1 excluded</span></h2>
+    <p class="sub">
+      Compare 6 live Greece plans head-to-head.
+      
+    </p>
+    
+    <div class="contrast">
+      <span class="lbl">How these differ</span>
+      <p>All the Greek plans swim in warm Aegean or Ionian water, so the split is about vibe and logistics, not temperature. <strong>Ionian Islands</strong> is the calmest and easiest — Lefkada and Kefalonia are road- or short-ferry-connected, it stays in one country, and ferry stress is minimal — but it's the least varied. <strong>Greek Cyclades</strong> is the postcard version: Naxos, Paros and Milos reached by inter-island ferries out of Athens — more iconic and more varied, but exposed to June's meltemi wind and with more moving parts. The other four all center on <strong>Crete's Chania coast</strong> and differ only in the opener bolted on the front — Portugal's cities, Madeira's levada hiking, the Swiss Alps, or a light Lisbon-and-Athens culture bookend. Crete itself gives the warmest, most family-friendly beaches; the opener is what sets the price, the pace, and how much scenic contrast you get (the Alps opener is the priciest and coldest-starting; Portugal or Madeira add a full hiking or city week; Lisbon keeps it lightest).</p>
+    </div>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../greece-ionian/">Ionian Islands</a>
+              <span class="tsum">Links road-connected Lefkada with Kefalonia for warm, calm turquoise swimming — Porto Katsiki’s cliffs, Myrtos, Melissani’s blue cave lake, Assos, and a Navagio boat day — with minimal ferry stress.</span>
+            </td>
+            <td><span class="rank">#4</span></td>
+            <td class="tot is-best">37<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  is-best">$15k</td>
+            <td class="">12</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../portugal-crete/">Portugal + Crete</a>
+              <span class="tsum">Blends Portugal’s cities and Atlantic coast with Crete’s warmer water, beaches, historic towns, and a balanced hiking-and-swimming finish.</span>
+            </td>
+            <td><span class="rank">#7</span></td>
+            <td class="tot ">34<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$15.4k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../greece-cyclades/">Greek Cyclades</a>
+              <span class="tsum">Bookends a short Athens culture opener with three iconic Cyclades — Naxos’s sandy family beaches and mountain villages, Paros’s Naoussa harbor and Kolymbithres coves, and Milos’s Sarakiniko moonscape and Kleftiko sea caves.</span>
+            </td>
+            <td><span class="rank">#10</span></td>
+            <td class="tot ">33<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../switzerland-crete/">Switzerland + Crete</a>
+              <span class="tsum">Splits five nights of Alps — Jungfraujoch, the Grindelwald-First Cliff Walk, Lauterbrunnen’s waterfalls — with seven nights of warm Aegean swimming on Crete’s Chania coast.</span>
+            </td>
+            <td><span class="rank">#15</span></td>
+            <td class="tot ">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$19.44k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../madeira-crete/">Madeira + Crete</a>
+              <span class="tsum">Pairs Madeira’s dramatic levada and ridge hiking with Crete’s warm beaches, Venetian towns, and family-friendly Mediterranean swimming.</span>
+            </td>
+            <td><span class="rank">#16</span></td>
+            <td class="tot ">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.8k</td>
+            <td class="is-best">13</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../greece-via-lisbon/">Greece via Lisbon</a>
+              <span class="tsum">Uses Lisbon and Athens as short cultural bookends around a Crete-focused trip of Venetian towns, mountain drives, and standout beaches.</span>
+            </td>
+            <td><span class="rank">#19</span></td>
+            <td class="tot ">31<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.9k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../albania/">Albania</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">35<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  ">$14.23k</td>
+            <td class="">13</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 ">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="usa">
+    <h2>United States <span class="count">2 live · 1 excluded</span></h2>
+    <p class="sub">
+      Compare 2 live United States plans head-to-head.
+      
+    </p>
+    
+    <div class="contrast">
+      <span class="lbl">How these differ</span>
+      <p>Both Hawaii plans deliver warm swimming and snorkeling; they differ on islands, length, and cost. <strong>Oʻahu + Big Island</strong> is the shorter, cheaper, easier version — two islands, volcanoes and waterfalls, nine nights. <strong>Maui + Kauai</strong> is longer and much pricier: Haleakalā and Hāna on Maui, the Nā Pali Coast and Waimea Canyon on Kauai — more dramatic scenery, but for the most money and time of any plan.</p>
+    </div>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../hawaii/">Hawaii: Oahu + Big Island</a>
+              <span class="tsum">Splits time between Oʻahu and Hawaiʻi Island for warm swimming, snorkeling, volcanoes, waterfalls, and an easy domestic two-island adventure.</span>
+            </td>
+            <td><span class="rank">#12</span></td>
+            <td class="tot is-best">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over is-best">$15.8k</td>
+            <td class="">9</td>
+            
+              <td class="axis s1 is-best">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../maui-kauai/">Hawaii: Maui + Kauai</a>
+              <span class="tsum">Pairs Maui’s warm beaches, Haleakalā, and Hāna with Kauai’s Nā Pali Coast, Waimea Canyon, Poʻipū swimming, and a slow Hanalei finish.</span>
+            </td>
+            <td><span class="rank">#17</span></td>
+            <td class="tot is-best">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$21.6k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s1 is-best">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s2 ">2</td>
+            
+          </tr>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../california-pacific-coast/">California Pacific Coast</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">28<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.2k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s1 ">1</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="switzerland">
+    <h2>Switzerland <span class="count">2 live</span></h2>
+    <p class="sub">
+      Compare 2 live Switzerland plans head-to-head.
+      
+    </p>
+    
+    <div class="contrast">
+      <span class="lbl">How these differ</span>
+      <p>Both Swiss plans run the identical five-night Alps opener — Jungfraujoch, the Grindelwald-First cliff walk, Lauterbrunnen's waterfalls — then split on the warm-water finish. <strong>Switzerland + Sicily</strong> ends with food, baroque towns, and Mount Etna; <strong>Switzerland + Crete</strong> ends with calmer Aegean swimming on Crete's Chania coast. Sicily is the richer, busier second week; Crete is the simpler, warmer-water one. Both sit among the priciest plans because of the Alps.</p>
+    </div>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../switzerland-sicily/">Switzerland + Sicily</a>
+              <span class="tsum">Pairs five nights of Alps — Jungfraujoch, the Grindelwald-First Cliff Walk, Lauterbrunnen’s waterfalls — with seven warm-water nights in Sicily: Taormina’s Isola Bella, Mount Etna, Cefalù, and baroque Ortigia.</span>
+            </td>
+            <td><span class="rank">#11</span></td>
+            <td class="tot is-best">33<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over is-best">$19.35k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s1 is-best">1</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 is-best">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../switzerland-crete/">Switzerland + Crete</a>
+              <span class="tsum">Splits five nights of Alps — Jungfraujoch, the Grindelwald-First Cliff Walk, Lauterbrunnen’s waterfalls — with seven nights of warm Aegean swimming on Crete’s Chania coast.</span>
+            </td>
+            <td><span class="rank">#15</span></td>
+            <td class="tot ">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$19.44k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s1 is-best">1</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 is-best">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="spain">
+    <h2>Spain <span class="count">1 live · 2 excluded</span></h2>
+    <p class="sub">
+      One live Spain plan, plus excluded references.
+      
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../madeira-mallorca/">Madeira + Mallorca</a>
+              <span class="tsum">Balances Madeira’s cloud-high trails and volcanic coast with Mallorca’s sandy coves, mountain villages, and warmer, easier swimming.</span>
+            </td>
+            <td><span class="rank">#3</span></td>
+            <td class="tot is-best">37<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  is-best">$14.8k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s2 is-best">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../canary-islands/">Canary Islands</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">31<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.69k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 ">5</td>
+            
+          </tr>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../spain/">Spain</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">34<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  ">$14.8k</td>
+            <td class="">12</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 ">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="france">
+    <h2>France <span class="count">1 live · 1 excluded</span></h2>
+    <p class="sub">
+      One live France plan, plus excluded references.
+      
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../sardinia-corsica/">Sardinia &amp; Corsica</a>
+              <span class="tsum">Centers the trip on exceptional Mediterranean swimming, pairing Sardinia’s turquoise coves with Bonifacio’s cliffs, boat days, and compact old towns.</span>
+            </td>
+            <td><span class="rank">#13</span></td>
+            <td class="tot is-best">32<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over is-best">$16.5k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s1 is-best">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s2 is-best">2</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../southern-france/">Southern France</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">35<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$19.1k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 ">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="iceland">
+    <h2>Iceland <span class="count">1 live</span></h2>
+    <p class="sub">
+      One live Iceland plan.
+      
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../iceland/">Iceland</a>
+              <span class="tsum">Builds a photography-first loop around Reykjavík, waterfalls, black-sand beaches, glacier lagoons, geothermal pools, and immense volcanic landscapes.</span>
+            </td>
+            <td><span class="rank">#6</span></td>
+            <td class="tot is-best">35<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  is-best">$14.72k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s2 is-best">2</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="malta">
+    <h2>Malta <span class="count">1 live</span></h2>
+    <p class="sub">
+      One live Malta plan.
+      
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../sicily-malta/">Sicily &amp; Malta</a>
+              <span class="tsum">Combines Sicily’s food, beaches, Mount Etna, and historic towns with Malta’s limestone cities, boat trips, and brilliant blue swimming.</span>
+            </td>
+            <td><span class="rank">#8</span></td>
+            <td class="tot is-best">34<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over is-best">$15.8k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s1 is-best">1</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s2 is-best">2</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="slovenia">
+    <h2>Slovenia <span class="count">1 live</span></h2>
+    <p class="sub">
+      One live Slovenia plan.
+      
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="">
+            <td class="trip">
+              <a class="tname" href="../slovenia-adriatic/">Slovenia + Adriatic</a>
+              <span class="tsum">Drives Lake Bled, the Vršič Pass, and the emerald Soča Valley into a warm-water Piran finish — Alps-grade scenery at a fraction of Switzerland’s cost, all in one easy country.</span>
+            </td>
+            <td><span class="rank">#2</span></td>
+            <td class="tot is-best">37<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  is-best">$14.8k</td>
+            <td class="is-best">12</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s4 is-best">4</td>
+            
+              <td class="axis s3 is-best">3</td>
+            
+              <td class="axis s5 is-best">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="albania">
+    <h2>Albania <span class="count">0 live · 1 excluded</span></h2>
+    <p class="sub">
+      Excluded Albania references only.
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../albania/">Albania</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">35<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  ">$14.23k</td>
+            <td class="">13</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 ">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="balkans">
+    <h2>Balkans <span class="count">0 live · 1 excluded</span></h2>
+    <p class="sub">
+      Excluded Balkans references only.
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../balkans/">Balkan Coast Road Trip</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">30<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$16.8k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s4 ">4</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="croatia">
+    <h2>Croatia <span class="count">0 live · 1 excluded</span></h2>
+    <p class="sub">
+      Excluded Croatia references only.
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../croatia/">Croatia</a>
+              <span class="exreason">Repeats the 2026 Croatia trip (Split/Hvar/Korcula) — excluded from the recommendation by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">35<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget  ">$12.8k</td>
+            <td class="">12</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s1 ">1</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+  <section class="country" id="turkey">
+    <h2>Turkey <span class="count">0 live · 1 excluded</span></h2>
+    <p class="sub">
+      Excluded Turkey references only.
+    </p>
+    
+    <div class="scroller">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th class="trip">Plan</th>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Budget</th>
+            <th>Nights</th>
+            <th>Budget</th><th>Weather</th><th>Swim</th><th>Variety</th><th>Ease</th><th>Food</th><th>Risk</th><th>Novelty</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr class="ex">
+            <td class="trip">
+              <a class="tname" href="../turkish-riviera/">Turkish Riviera</a>
+              <span class="exreason">Excluded by family decision</span>
+            </td>
+            <td><span class="rank ex">EX</span></td>
+            <td class="tot ">33<span style="color:var(--muted);font-weight:600">/50</span></td>
+            <td class="budget over ">$17.4k</td>
+            <td class="">12</td>
+            
+              <td class="axis s1 ">1</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s5 ">5</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s3 ">3</td>
+            
+              <td class="axis s4 ">4</td>
+            
+              <td class="axis s2 ">2</td>
+            
+              <td class="axis s5 ">5</td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span class="sw"><span class="chip" style="background:var(--s1)"></span>1</span>
+      <span class="sw"><span class="chip" style="background:var(--s3)"></span>3</span>
+      <span class="sw"><span class="chip" style="background:var(--s5)"></span>5</span>
+      <span class="sw" style="margin-left:8px"><span class="chip" style="border:2px solid var(--c1);background:transparent"></span>best live option in column</span>
+    </div>
+  </section>
+  
+
+  <p class="note">Scores, ranks, and budgets are pulled straight from the same canonical data as the decision hub — a plan’s rank badge here is its global appeal rank at the default weights. Budget shows each plan’s ceiling estimate; amber means it crosses the $15k strongly-preferred maximum. Budget is double-weighted in the /50 total (Budget ×2 + eight axes); PTO is slider-only and omitted here. A country can list the same physical region under more than one plan (e.g. the Crete legs), which is exactly the trade-off this page exists to surface.</p>
+</main>
+
+<footer class="wrap">Generated from <code>assets/trips-summary.json</code> · one row per plan, grouped by country visited.</footer>
+
+
+</body></html>
