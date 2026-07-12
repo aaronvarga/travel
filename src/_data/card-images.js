@@ -51,8 +51,8 @@ module.exports = {
     alt: 'Myrtos Beach’s white crescent and deep blue bay seen from the Kefalonia cliff road',
   },
   'greece-cyclades': {
-    path: 'assets/img/greece-cyclades/google_naxos_portara_sunset.jpg',
-    alt: 'The sun setting through the marble Portara gate of the Temple of Apollo on Naxos, Cyclades',
+    path: 'assets/img/greece-cyclades/google_portara_sunburst.jpg',
+    alt: 'The sun bursting through the marble Portara gate of the Temple of Apollo on Naxos, Cyclades',
   },
   hawaii: {
     path: 'assets/img/hawaii/google_kilauea_lava_flow_02.jpg',
