@@ -16,8 +16,8 @@ test('budget profile uses a preference, not a hard cap', () => {
 
 test('budget status never changes itinerary visibility', () => {
   const summary = readJson('assets/trips-summary.json');
-  assert.equal(summary.trips.length, 26);
-  assert.equal(summary.trips.filter((trip) => !trip.excluded).length, 17);
+  assert.equal(summary.trips.length, 28);
+  assert.equal(summary.trips.filter((trip) => !trip.excluded).length, 19);
   assert.equal(summary.trips.filter((trip) => trip.excluded).length, 9);
   assert.ok(summary.trips.some((trip) => trip.budget.ceilUsd > 15000 && !trip.excluded));
   assert.ok(summary.trips.every((trip) => [

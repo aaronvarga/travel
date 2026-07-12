@@ -111,6 +111,43 @@
       }
     ]
   },
+  "greece-ionian": {
+    "name": "Greece (Ionian Islands)",
+    "domestic": false,
+    "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.",
+    "etias": {
+      "status": "Expected to launch late 2026 (repeatedly delayed — not yet confirmed).",
+      "fee": "€20 (confirmed Jul 2025, subject to change; under-18s and over-70s exempt).",
+      "note": "ETIAS is a pre-travel authorization for visa-free visitors incl. US citizens. Timeline has slipped several times — confirm on the official EU site close to departure. If it isn't yet live for Jun 2027, no action is needed."
+    },
+    "visa": "None for US citizens — visa-free up to 90 days per 180.",
+    "idp": "Strongly recommended — Greek insurers may require both a US license and an IDP. Get one from AAA before you go.",
+    "driving": "Rental fleet is mostly manual — book an automatic early. Min age ~21; under-25 surcharge ~€6–15/day. Lefkada connects to the mainland by a floating causeway (no ferry); Kefalonia needs its own car.",
+    "tolls": "The A2 Egnatia/Ionia Odos toward Preveza has motorway tolls (cash EUR at booths). The islands themselves are toll-free.",
+    "ztl": "",
+    "money": {
+      "cards": "Cards accepted in towns, hotels and tourist tavernas.",
+      "cash": "Carry €100–200 — village tavernas, beach parking, and small ferries are often cash-only.",
+      "tipping": "10–15% for good restaurant service; round up casual bills (cash)."
+    },
+    "water": "Tap is generally potable on Lefkada and Kefalonia, but many visitors prefer bottled for taste; carry water for remote west-coast beaches with no facilities.",
+    "emergency": "112 (EU-wide). Also ambulance 166; coast guard 108.",
+    "esim": "Holafly or Airalo Eurolink work well; buy before departure.",
+    "sources": [
+      {
+        "label": "US State Dept — Schengen passport rules",
+        "url": "https://travel.state.gov/content/travel/en/international-travel/before-you-go/travelers-with-special-considerations/schengen.html"
+      },
+      {
+        "label": "EU — ETIAS official",
+        "url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/european-travel-information-authorisation-system_en"
+      },
+      {
+        "label": "Greece motorway tolls",
+        "url": "https://tollguru.com/greece-motorway-tolls"
+      }
+    ]
+  },
   "italy": {
     "name": "Italy (Sicily)",
     "domestic": false,

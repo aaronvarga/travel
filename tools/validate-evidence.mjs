@@ -300,7 +300,7 @@ function validateTrips(trips) {
     if (!canonical?.canonical) issue(trip.slug, 'missing canonical variant');
     if (canonical && (canonical.nights !== trip.main.scorecard.pto.nights || canonical.ptoDays !== trip.main.scorecard.pto.days)) issue(trip.slug, 'canonical variant drift');
   }
-  if (trips.length !== 26) issue("all", `expected 26 trips, found ${trips.length}`);
+  if (trips.length !== 28) issue("all", `expected 28 trips, found ${trips.length}`);
 }
 
 function numberOrNull(value) {

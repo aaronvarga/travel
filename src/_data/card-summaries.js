@@ -15,6 +15,8 @@ module.exports = {
   'slovenia-adriatic': 'Drives Lake Bled, the Vršič Pass, and the emerald Soča Valley into a warm-water Piran finish — Alps-grade scenery at a fraction of Switzerland’s cost, all in one easy country.',
   'dolomites-sardinia': 'Combines Venice and high-alpine Dolomites hiking with a warm-water Sardinia finish, delivering the trip’s strongest mountain-to-beach contrast.',
   'greece-via-lisbon': 'Uses Lisbon and Athens as short cultural bookends around a Crete-focused trip of Venetian towns, mountain drives, and standout beaches.',
+  'greece-ionian': 'Links road-connected Lefkada with Kefalonia for warm, calm turquoise swimming — Porto Katsiki’s cliffs, Myrtos, Melissani’s blue cave lake, Assos, and a Navagio boat day — with minimal ferry stress.',
+  'greece-cyclades': 'Bookends a short Athens culture opener with three iconic Cyclades — Naxos’s sandy family beaches and mountain villages, Paros’s Naoussa harbor and Kolymbithres coves, and Milos’s Sarakiniko moonscape and Kleftiko sea caves.',
   hawaii: 'Splits time between Oʻahu and Hawaiʻi Island for warm swimming, snorkeling, volcanoes, waterfalls, and an easy domestic two-island adventure.',
   'maui-kauai': 'Pairs Maui’s warm beaches, Haleakalā, and Hāna with Kauai’s Nā Pali Coast, Waimea Canyon, Poʻipū swimming, and a slow Hanalei finish.',
   iceland: 'Builds a photography-first loop around Reykjavík, waterfalls, black-sand beaches, glacier lagoons, geothermal pools, and immense volcanic landscapes.',

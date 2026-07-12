@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-12T00:19:11.930Z",
+  "generatedAt": "2026-07-12T01:35:02.920Z",
   "trips": [
     {
       "slug": "albania",
@@ -322,6 +322,136 @@
           "text": "$450-$700",
           "lowUsd": 450,
           "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "greece-cyclades",
+      "canonical": {
+        "lowUsd": 11650,
+        "highUsd": 16000
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 7,
+        "sumLowUsd": 11700,
+        "sumHighUsd": 16000,
+        "displayedLowUsd": 11650,
+        "displayedHighUsd": 16000,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights (round-trip Athens + the Milos hop)",
+          "text": "$5,300 target / $7,080 high",
+          "lowUsd": 5300,
+          "highUsd": 7080
+        },
+        {
+          "label": "Inter-island ferries, 3 legs",
+          "text": "$340 target / $540 high",
+          "lowUsd": 340,
+          "highUsd": 540
+        },
+        {
+          "label": "Lodging, 12 hotel nights",
+          "text": "$2,150 target / $2,880 high",
+          "lowUsd": 2150,
+          "highUsd": 2880
+        },
+        {
+          "label": "Rental cars (3 islands), fuel, parking",
+          "text": "$850 target / $1,200 high",
+          "lowUsd": 850,
+          "highUsd": 1200
+        },
+        {
+          "label": "Activities, Acropolis, Kleftiko boat, beaches",
+          "text": "$900 target / $1,400 high",
+          "lowUsd": 900,
+          "highUsd": 1400
+        },
+        {
+          "label": "Food, groceries, 13 travel days",
+          "text": "$1,650 target / $2,200 high",
+          "lowUsd": 1650,
+          "highUsd": 2200
+        },
+        {
+          "label": "Insurance, ETIAS, fees, buffer",
+          "text": "$460 target / $700 high",
+          "lowUsd": 460,
+          "highUsd": 700
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "greece-ionian",
+      "canonical": {
+        "lowUsd": 10800,
+        "highUsd": 15000
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 7,
+        "sumLowUsd": 10800,
+        "sumHighUsd": 15000,
+        "displayedLowUsd": 10800,
+        "displayedHighUsd": 15000,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Airfare, open-jaw (EFL in / PVK out)",
+          "text": "$5,600 target / $6,700 high",
+          "lowUsd": 5600,
+          "highUsd": 6700
+        },
+        {
+          "label": "Lodging, 12 nights, two islands",
+          "text": "$1,700 target / $2,800 high",
+          "lowUsd": 1700,
+          "highUsd": 2800
+        },
+        {
+          "label": "Rental cars (two islands) + fuel",
+          "text": "$800 target / $1,300 high",
+          "lowUsd": 800,
+          "highUsd": 1300
+        },
+        {
+          "label": "Inter-island ferry, parking, local transport",
+          "text": "$150 target / $300 high",
+          "lowUsd": 150,
+          "highUsd": 300
+        },
+        {
+          "label": "Food, groceries, 13 travel days",
+          "text": "$1,560 target / $2,200 high",
+          "lowUsd": 1560,
+          "highUsd": 2200
+        },
+        {
+          "label": "Activities, caves, boat trips, sunbeds",
+          "text": "$520 target / $850 high",
+          "lowUsd": 520,
+          "highUsd": 850
+        },
+        {
+          "label": "Insurance, ETIAS, fees, buffer",
+          "text": "$470 target / $850 high",
+          "lowUsd": 470,
+          "highUsd": 850
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

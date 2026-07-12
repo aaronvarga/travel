@@ -434,6 +434,55 @@
     "publisher": "Greek National Tourism Organisation",
     "scope": "Official destination and beach context; not a live sea-state, lifeguard, or water-temperature source."
   },
+  "ionion-pelagos-ferry": {
+    "label": "Ionion Pelagos / Ferryscanner Vasiliki–Fiskardo schedule",
+    "tier": "operator",
+    "url": "https://www.ferryscanner.com/en/ferry-routes/ferry-vassiliki-lefkada-fiskardo-kefalonia",
+    "publisher": "Ionion Pelagos Lines (via Ferryscanner)",
+    "scope": "Direct Vasiliki–Fiskardo crossing (~1h), June frequency and car/passenger fares; 2025/2026 season pattern as a 2027 proxy. Aggregator pricing, not the carrier tariff."
+  },
+  "melissani-cave-fees": {
+    "label": "Melissani Cave official fees and hours",
+    "tier": "official",
+    "url": "https://www.melissani-cave.com/fees",
+    "publisher": "Melissani Cave",
+    "scope": "Adult/child admission, summer 09:00–19:00 hours; a second on-site operator sets different prices, so ±€3 variance applies."
+  },
+  "kefalonia-ionian-guides": {
+    "label": "Kefalonia/Ionian family destination guides (VisitKefalonia, Greeka, Discover Greece)",
+    "tier": "secondary",
+    "url": "https://www.greeka.com/ionian/kefalonia/",
+    "publisher": "Greeka / Discover Greece / VisitKefalonia",
+    "scope": "Beach access, parking, drive times, and family-suitability notes for Myrtos, Assos, Antisamos, Fiskardo, Argostoli; not live sea-state or a booking source."
+  },
+  "lefkada-amazing-guides": {
+    "label": "Amazing Lefkada / Lefkada municipality beach and access guides",
+    "tier": "secondary",
+    "url": "https://amazinglefkada.com/",
+    "publisher": "Amazing Lefkada / Municipality of Lefkada",
+    "scope": "Porto Katsiki parking/steps, west-coast wind exposure, Egremni land-closure status (June 2025 municipal inspection), Nydri/Dimosari flow, causeway access; volatile, re-verify."
+  },
+  "ionian-june-climate": {
+    "label": "Ionian June climate and sea-temperature aggregates",
+    "tier": "historical-dataset",
+    "url": "https://www.seatemperature.net/monthly/lefkada-sea-temperature-in-june-8253",
+    "publisher": "weather-atlas / seatemperature / holiday-weather aggregates",
+    "scope": "June air highs (~78–84°F), sea ~72–74°F, ~1–3 rain days, and the gentle Ionian Maistro (no Meltemi); aggregate climatology, not a 2027 forecast."
+  },
+  "navagio-access-status": {
+    "label": "Navagio (Shipwreck Beach) landing-closure status",
+    "tier": "secondary",
+    "url": "https://www.thetraveler.org/zakynthos-navagio-beach-closed-to-visitors-until-october-2026/",
+    "publisher": "The Traveler / Pappas Post (reporting OASP/municipal decisions)",
+    "scope": "Landslide-driven closure of the cove to landing/swimming extended through Oct 31 2026; boats view from the bay mouth only. 2027-season status not yet announced."
+  },
+  "aegean-ath-efl": {
+    "label": "Aegean / Sky Express Athens–Kefalonia service and interline",
+    "tier": "operator",
+    "url": "https://www.flightconnections.com/flights-from-ath-to-efl",
+    "publisher": "Aegean Airlines / Sky Express (via FlightConnections)",
+    "scope": "ATH–EFL ~28 nonstop flights/week (1h15m); Delta/Aegean IET and United/Aegean Star codeshare make the arrival leg single-ticketable. PVK is thin/charter-served by contrast."
+  },
   "visit-sicily-sea": {
     "label": "Visit Sicily official sea and beaches guide",
     "tier": "official",
@@ -1357,5 +1406,68 @@
     "url": "https://www.kpss.si/en/visiting/entry-fees",
     "publisher": "Krajinski park Sečoveljske soline",
     "scope": "Official Apr-Oct entry (€7 adult/€5 student, under-6 free, family €16) covering both salt-pan areas; birdlife and open-air salt museum. 2026 baseline."
+  },
+  "cyclades-june-climate": {
+    "label": "Cyclades / Naxos June climate",
+    "tier": "secondary",
+    "url": "https://www.climatestotravel.com/climate/greece/naxos",
+    "publisher": "Climates to Travel",
+    "scope": "June Cyclades norm: hot, dry, sunny; highs ~28C/82F, lows high-teens; near-zero rain. Aggregate, not a 2027 forecast."
+  },
+  "cyclades-sea-temp": {
+    "label": "Cyclades June sea temperature (Naxos/Paros/Milos)",
+    "tier": "secondary",
+    "url": "https://seatemperature.info/june/naxos-water-temperature.html",
+    "publisher": "seatemperature.info",
+    "scope": "June Aegean SST ~21-23C / 70-73F, warming through the month; swimmable but breezier/cooler than the Ionian. Monthly aggregate, not a 2027 measurement."
+  },
+  "meltemi-risk": {
+    "label": "Meltemi wind & Cyclades ferry cancellation risk",
+    "tier": "secondary",
+    "url": "https://www.greecetravelsecrets.com/meltemi-wind/",
+    "publisher": "Greece Travel Secrets",
+    "scope": "The etesian meltemi peaks July-August; June is the calm shoulder. High-speed catamarans cancel first (~7 Beaufort); June cancellations are uncommon but possible. Basis for buffer days and the risk score."
+  },
+  "pit-ath-routing": {
+    "label": "PIT-Athens routing & June fare band (proxy)",
+    "tier": "secondary",
+    "url": "https://www.kayak.com/flight-routes/Pittsburgh-PIT/Athens-Eleftherios-V--ATH",
+    "publisher": "KAYAK / Expedia route data",
+    "scope": "No PIT-ATH nonstop; two- to three-stop routings via a US gateway + European hub. June round-trip ~$1,250-1,650 pp proxy (2025-2026). Not a 2027 quote."
+  },
+  "cyclades-ferries": {
+    "label": "Cyclades inter-island ferry routes & fares",
+    "tier": "operator",
+    "url": "https://www.ferryhopper.com/en/ferries/greece/cyclades",
+    "publisher": "Ferryhopper / SeaJets / Blue Star",
+    "scope": "Piraeus-Naxos high-speed ~3h ~E45-52; Naxos-Paros ~30-40 min ~E10-20; Paros-Milos ~2-2.5h ~E60-90. Current 2025-2026 schedules; 2027 sailings unpublished."
+  },
+  "milos-domestic-air": {
+    "label": "Milos (MLO) - Athens domestic flights",
+    "tier": "operator",
+    "url": "https://www.skyexpress.gr/en/flights-from-milos-to-athens",
+    "publisher": "Sky Express / Olympic Air",
+    "scope": "MLO-ATH ~40 min, up to ~7 daily in June, ~E50-170 pp one-way on small aircraft. Supports the Athens buffer night. Current-proxy, not a 2027 booking."
+  },
+  "cyclades-family-food": {
+    "label": "Cyclades family / picky-eater dining",
+    "tier": "secondary",
+    "url": "https://www.kidslovegreece.com/our_top_selections/best-places-to-eat-with-your-family-in-naxos/",
+    "publisher": "Kids Love Greece / operator listings",
+    "scope": "Tavernas across Athens, Naxos, Paros, Milos reliably offer gyros, pizza, pasta, grilled meat, and fries; named venues (Pita Frank, Cuore Rosso, Caya, Egoist) confirm plain-food fallbacks in every base."
+  },
+  "kleftiko-operators": {
+    "label": "Kleftiko full-day boat cruises (Milos)",
+    "tier": "operator",
+    "url": "https://www.getyourguide.com/kleftiko-caves-l97800/",
+    "publisher": "GetYourGuide / Horizon Yachts / Excellent Yachting",
+    "scope": "Full-day Kleftiko group cruises from Adamas/Pollonia ~E120-175 pp incl. swim/snorkel stops and lunch; wind-dependent and cancellable in strong meltemi. Current-proxy pricing."
+  },
+  "acropolis-tickets": {
+    "label": "Acropolis timed tickets & museum",
+    "tier": "official",
+    "url": "https://hhticket.gr/",
+    "publisher": "Hellenic Heritage (official e-ticketing)",
+    "scope": "Acropolis combined ticket ~E30 adult (summer), reduced/free for children; mandatory timed-entry slots since 2024. Acropolis Museum ~E15 separate."
   }
 }

@@ -35,6 +35,8 @@ const TOKEN = {
   balkans: 'balkans', 'dolomites-sardinia': 'dolomites-sardinia', albania: 'albania',
   iceland: 'iceland', 'switzerland-crete': 'switzerland-crete',
   'switzerland-sicily': 'switzerland-sicily', 'slovenia-adriatic': 'slovenia-adriatic',
+  'greece-ionian': 'greece-ionian',
+  'greece-cyclades': 'greece-cyclades',
 };
 
 const slugs = fs

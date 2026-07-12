@@ -46,6 +46,14 @@ module.exports = {
     path: 'assets/img/greece-via-lisbon/g_balos_overlook.jpg',
     alt: 'Balos Lagoon’s white sandbar curving to Gramvousa from the hilltop overlook in Crete',
   },
+  'greece-ionian': {
+    path: 'assets/img/greece-ionian/google_myrtos_cliff_01.jpg',
+    alt: 'Myrtos Beach’s white crescent and deep blue bay seen from the Kefalonia cliff road',
+  },
+  'greece-cyclades': {
+    path: 'assets/img/greece-cyclades/google_naxos_portara_sunset.jpg',
+    alt: 'The sun setting through the marble Portara gate of the Temple of Apollo on Naxos, Cyclades',
+  },
   hawaii: {
     path: 'assets/img/hawaii/google_kilauea_lava_flow_02.jpg',
     alt: 'Glowing lava flowing across black volcanic rock on Hawaiʻi Island',

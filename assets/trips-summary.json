@@ -492,6 +492,55 @@
       "publisher": "Greek National Tourism Organisation",
       "scope": "Official destination and beach context; not a live sea-state, lifeguard, or water-temperature source."
     },
+    "ionion-pelagos-ferry": {
+      "label": "Ionion Pelagos / Ferryscanner Vasiliki–Fiskardo schedule",
+      "tier": "operator",
+      "url": "https://www.ferryscanner.com/en/ferry-routes/ferry-vassiliki-lefkada-fiskardo-kefalonia",
+      "publisher": "Ionion Pelagos Lines (via Ferryscanner)",
+      "scope": "Direct Vasiliki–Fiskardo crossing (~1h), June frequency and car/passenger fares; 2025/2026 season pattern as a 2027 proxy. Aggregator pricing, not the carrier tariff."
+    },
+    "melissani-cave-fees": {
+      "label": "Melissani Cave official fees and hours",
+      "tier": "official",
+      "url": "https://www.melissani-cave.com/fees",
+      "publisher": "Melissani Cave",
+      "scope": "Adult/child admission, summer 09:00–19:00 hours; a second on-site operator sets different prices, so ±€3 variance applies."
+    },
+    "kefalonia-ionian-guides": {
+      "label": "Kefalonia/Ionian family destination guides (VisitKefalonia, Greeka, Discover Greece)",
+      "tier": "secondary",
+      "url": "https://www.greeka.com/ionian/kefalonia/",
+      "publisher": "Greeka / Discover Greece / VisitKefalonia",
+      "scope": "Beach access, parking, drive times, and family-suitability notes for Myrtos, Assos, Antisamos, Fiskardo, Argostoli; not live sea-state or a booking source."
+    },
+    "lefkada-amazing-guides": {
+      "label": "Amazing Lefkada / Lefkada municipality beach and access guides",
+      "tier": "secondary",
+      "url": "https://amazinglefkada.com/",
+      "publisher": "Amazing Lefkada / Municipality of Lefkada",
+      "scope": "Porto Katsiki parking/steps, west-coast wind exposure, Egremni land-closure status (June 2025 municipal inspection), Nydri/Dimosari flow, causeway access; volatile, re-verify."
+    },
+    "ionian-june-climate": {
+      "label": "Ionian June climate and sea-temperature aggregates",
+      "tier": "historical-dataset",
+      "url": "https://www.seatemperature.net/monthly/lefkada-sea-temperature-in-june-8253",
+      "publisher": "weather-atlas / seatemperature / holiday-weather aggregates",
+      "scope": "June air highs (~78–84°F), sea ~72–74°F, ~1–3 rain days, and the gentle Ionian Maistro (no Meltemi); aggregate climatology, not a 2027 forecast."
+    },
+    "navagio-access-status": {
+      "label": "Navagio (Shipwreck Beach) landing-closure status",
+      "tier": "secondary",
+      "url": "https://www.thetraveler.org/zakynthos-navagio-beach-closed-to-visitors-until-october-2026/",
+      "publisher": "The Traveler / Pappas Post (reporting OASP/municipal decisions)",
+      "scope": "Landslide-driven closure of the cove to landing/swimming extended through Oct 31 2026; boats view from the bay mouth only. 2027-season status not yet announced."
+    },
+    "aegean-ath-efl": {
+      "label": "Aegean / Sky Express Athens–Kefalonia service and interline",
+      "tier": "operator",
+      "url": "https://www.flightconnections.com/flights-from-ath-to-efl",
+      "publisher": "Aegean Airlines / Sky Express (via FlightConnections)",
+      "scope": "ATH–EFL ~28 nonstop flights/week (1h15m); Delta/Aegean IET and United/Aegean Star codeshare make the arrival leg single-ticketable. PVK is thin/charter-served by contrast."
+    },
     "visit-sicily-sea": {
       "label": "Visit Sicily official sea and beaches guide",
       "tier": "official",
@@ -1415,6 +1464,69 @@
       "url": "https://www.kpss.si/en/visiting/entry-fees",
       "publisher": "Krajinski park Sečoveljske soline",
       "scope": "Official Apr-Oct entry (€7 adult/€5 student, under-6 free, family €16) covering both salt-pan areas; birdlife and open-air salt museum. 2026 baseline."
+    },
+    "cyclades-june-climate": {
+      "label": "Cyclades / Naxos June climate",
+      "tier": "secondary",
+      "url": "https://www.climatestotravel.com/climate/greece/naxos",
+      "publisher": "Climates to Travel",
+      "scope": "June Cyclades norm: hot, dry, sunny; highs ~28C/82F, lows high-teens; near-zero rain. Aggregate, not a 2027 forecast."
+    },
+    "cyclades-sea-temp": {
+      "label": "Cyclades June sea temperature (Naxos/Paros/Milos)",
+      "tier": "secondary",
+      "url": "https://seatemperature.info/june/naxos-water-temperature.html",
+      "publisher": "seatemperature.info",
+      "scope": "June Aegean SST ~21-23C / 70-73F, warming through the month; swimmable but breezier/cooler than the Ionian. Monthly aggregate, not a 2027 measurement."
+    },
+    "meltemi-risk": {
+      "label": "Meltemi wind & Cyclades ferry cancellation risk",
+      "tier": "secondary",
+      "url": "https://www.greecetravelsecrets.com/meltemi-wind/",
+      "publisher": "Greece Travel Secrets",
+      "scope": "The etesian meltemi peaks July-August; June is the calm shoulder. High-speed catamarans cancel first (~7 Beaufort); June cancellations are uncommon but possible. Basis for buffer days and the risk score."
+    },
+    "pit-ath-routing": {
+      "label": "PIT-Athens routing & June fare band (proxy)",
+      "tier": "secondary",
+      "url": "https://www.kayak.com/flight-routes/Pittsburgh-PIT/Athens-Eleftherios-V--ATH",
+      "publisher": "KAYAK / Expedia route data",
+      "scope": "No PIT-ATH nonstop; two- to three-stop routings via a US gateway + European hub. June round-trip ~$1,250-1,650 pp proxy (2025-2026). Not a 2027 quote."
+    },
+    "cyclades-ferries": {
+      "label": "Cyclades inter-island ferry routes & fares",
+      "tier": "operator",
+      "url": "https://www.ferryhopper.com/en/ferries/greece/cyclades",
+      "publisher": "Ferryhopper / SeaJets / Blue Star",
+      "scope": "Piraeus-Naxos high-speed ~3h ~E45-52; Naxos-Paros ~30-40 min ~E10-20; Paros-Milos ~2-2.5h ~E60-90. Current 2025-2026 schedules; 2027 sailings unpublished."
+    },
+    "milos-domestic-air": {
+      "label": "Milos (MLO) - Athens domestic flights",
+      "tier": "operator",
+      "url": "https://www.skyexpress.gr/en/flights-from-milos-to-athens",
+      "publisher": "Sky Express / Olympic Air",
+      "scope": "MLO-ATH ~40 min, up to ~7 daily in June, ~E50-170 pp one-way on small aircraft. Supports the Athens buffer night. Current-proxy, not a 2027 booking."
+    },
+    "cyclades-family-food": {
+      "label": "Cyclades family / picky-eater dining",
+      "tier": "secondary",
+      "url": "https://www.kidslovegreece.com/our_top_selections/best-places-to-eat-with-your-family-in-naxos/",
+      "publisher": "Kids Love Greece / operator listings",
+      "scope": "Tavernas across Athens, Naxos, Paros, Milos reliably offer gyros, pizza, pasta, grilled meat, and fries; named venues (Pita Frank, Cuore Rosso, Caya, Egoist) confirm plain-food fallbacks in every base."
+    },
+    "kleftiko-operators": {
+      "label": "Kleftiko full-day boat cruises (Milos)",
+      "tier": "operator",
+      "url": "https://www.getyourguide.com/kleftiko-caves-l97800/",
+      "publisher": "GetYourGuide / Horizon Yachts / Excellent Yachting",
+      "scope": "Full-day Kleftiko group cruises from Adamas/Pollonia ~E120-175 pp incl. swim/snorkel stops and lunch; wind-dependent and cancellable in strong meltemi. Current-proxy pricing."
+    },
+    "acropolis-tickets": {
+      "label": "Acropolis timed tickets & museum",
+      "tier": "official",
+      "url": "https://hhticket.gr/",
+      "publisher": "Hellenic Heritage (official e-ticketing)",
+      "scope": "Acropolis combined ticket ~E30 adult (summer), reduced/free for children; mandatory timed-entry slots since 2024. Acropolis Museum ~E15 separate."
     }
   },
   "trips": [
@@ -4382,6 +4494,979 @@
         "id": "exact-2027-schedule-required",
         "label": "Exact 2027 schedule required",
         "tone": "warn",
+        "bookable": false
+      }
+    },
+    {
+      "slug": "greece-cyclades",
+      "token": "greece-cyclades",
+      "title": "Greek Cyclades · Naxos, Paros & Milos via Athens — June 2027",
+      "displayName": "Greek Cyclades",
+      "blurb": "Iconic Aegean: Naxos, Paros &amp; Milos",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 1,
+        "weather": 3,
+        "swim": 4,
+        "variety": 5,
+        "ease": 3,
+        "food": 4,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 4,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 11650,
+        "ceilUsd": 16000,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          71,
+          73
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 33,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-21"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "crosses-preference",
+      "evidence": {
+        "reviewedAt": "2026-07-11",
+        "overallConfidence": "medium",
+        "limitingAxes": [
+          "budget",
+          "weather",
+          "swim",
+          "food",
+          "risk"
+        ],
+        "evidenceBasis": "Operator and official prices (Acropolis/hhticket, Kleftiko cruise operators, ferry operators, Sky Express domestic air), current PIT-Athens route/fare proxies, aggregate June Cyclades climate and Aegean sea temperature, meltemi wind and ferry-cancellation seasonality, named family-friendly tavernas, ETIAS guidance, and the internal reconciled itinerary and totals.",
+        "confidenceBasis": [
+          "high-confidence itinerary-structure, dates, logistics, food-named, and novelty claims",
+          "medium-confidence blended climate, budget, and route-readiness claims (2025-2026 proxies for 2027)",
+          "medium-confidence swim claim (Aegean SST is a proxy, ~72°F, warmer beaches than temperature alone implies)"
+        ],
+        "confidence": {
+          "id": "medium",
+          "value": 2,
+          "label": "Medium evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 1,
+            "rationale": "The eight categories reconcile exactly to $11,650–$16,000. The low case slips just under the $12k target, but the credible high case reaches ~$16,000 — above the $15k strongly preferred maximum — driven by the transatlantic PIT–Athens airfare and peak-season island lodging. By the budget rubric, a high case above the preferred maximum scores 1. Cost never hides the trip, but it is the honest reason it is not ranked higher, and it is consistent with the other expensive-air island plans (e.g. greece-via-lisbon at $16,900).",
+            "confidence": "medium",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 3,
+            "rationale": "June in the Cyclades is hot, dry, and reliably sunny with a warming ~72°F sea, and it sits in the calm shoulder before the July–August meltemi peak. The score is held to 3 because the north/west coasts (Naxos beaches, Sarakiniko, Kleftiko) are exposed to an afternoon meltemi that requires managing — swim early, keep sheltered picks ready — rather than a clean 4.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-split"
+            ]
+          },
+          "swim": {
+            "score": 4,
+            "rationale": "This is the strongest family swimming on the board short of the tropics: Naxos's Agios Prokopios and Plaka are long, shallow, sandy Blue-Flag beaches, Paros's Kolymbithres offers sheltered turquoise coves, and Milos adds boat-day and moonscape swims. The water is honestly ~22°C / 72°F in June — comfortable and warming, warm-ish rather than bathwater, and breezier than the Ionian — so it earns a 4 on beach quality, variety, and access rather than a 5 on temperature.",
+            "confidence": "medium",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "Athens antiquity, Naxos's sandy beaches and green mountain villages, Paros's fishing harbor and granite coves, and Milos's volcanic moonscape and sea caves are four genuinely distinct experiences — culture, family beaches, a pretty harbor, and a wild volcanic finale — with no island repeating another.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 3,
+            "rationale": "Naxos as a four-night anchor and a clean southwest arc keep it manageable, but this is honestly a mid-load plan: four bases, three inter-island ferries, a domestic flight, and a separate rental car on each island is more logistics than a single-island or one-car trip. It scores 3, not lower, because the sequence backtracks little and the Athens buffer night absorbs the fragile final connection.",
+            "confidence": "high",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 4,
+            "rationale": "Every base (Athens, Naxos, Paros, Milos) has supermarkets plus tavernas that reliably serve gyros, pizza, pasta, grilled meat, and fries — named venues (Pita Frank, Cuore Rosso, Caya, Egoist) confirm plain-food fallbacks throughout — strong picky-eater coverage that falls short of a 5 only on the remoteness of some island dinners.",
+            "confidence": "medium",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 3,
+            "rationale": "The defining risk is the meltemi: three inter-island ferries plus the Kleftiko boat can be disrupted by a strong north wind, and Milos's coves are exposed. It scores 3 rather than lower because June is the calm shoulder (the meltemi peaks in July–August, cancellations are uncommon), high-speed ferries usually run, and the plan builds in mitigations — a flex day, three Milos nights so the Kleftiko cruise can slide, and an Athens buffer night before the Atlantic flight.",
+            "confidence": "medium",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights (Athens 2 + Naxos 4 + Paros 2 + Milos 3 + Athens 1 buffer), which scores 5 on the 12+ rubric.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 4,
+            "rationale": "Greece is already represented on the board via the Crete-focused greece-via-lisbon plan, so this is not a wholly new country. But the Cyclades — Athens, Naxos, Paros, Milos — are an entirely distinct region and island set from Crete, with no overlap against the documented visited-place list, so it scores 4 (mostly new, one visited destination type/country) rather than 5.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 3,
+            "rationale": "About 8 PTO days (Jun 9, 10, 11, 14, 15, 16, 17, 21), with weekends Jun 12–13 and 19–20 free and the Kleftiko boat day landing on Juneteenth-observed Friday Jun 18 at no PTO cost. Middle-of-the-pack PTO efficiency; displayed but zero-weighted in the total.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "pit-ath-routing",
+              "kleftiko-operators"
+            ],
+            "value": {
+              "lowUsd": 11650,
+              "expectedUsd": null,
+              "highUsd": 16000,
+              "targetUsd": 12000,
+              "preferredMaxUsd": 15000,
+              "distribution": "planning-band",
+              "lineItemCount": 8,
+              "arithmetic": "5000/6600 + 300/480 + 340/540 + 2150/2880 + 850/1200 + 900/1400 + 1650/2200 + 460/700 = 11650/16000"
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "internal-itinerary": "greece-cyclades/main.json #totals target/high columns; exact category reconciliation",
+              "pit-ath-routing": "PIT->ATH two-stop June round-trip fare band that sets the airfare line (~$5,000-$6,600 family)",
+              "kleftiko-operators": "full-day Kleftiko cruise ~E120-175 pp drives the activities line"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "decision-profile"
+            ],
+            "value": {
+              "departure": "2027-06-08",
+              "homeBy": "2027-06-21",
+              "nights": 12,
+              "ptoDays": 8,
+              "blackoutRespected": true
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "internal-itinerary": "greece-cyclades/main.json calendar + itinerary days; depart Jun 8, home Jun 21",
+              "decision-profile": "decisionProfile.json pittsburghCommitment (full days Jun 24-26) and planningWindow"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "climate-split",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "cyclades-june-climate",
+              "meltemi-risk"
+            ],
+            "value": {
+              "airHighC": 28,
+              "seaTempF": [
+                71,
+                73
+              ],
+              "note": "Hot, dry, sunny June; calm meltemi shoulder, but afternoon north wind on exposed coasts."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "cyclades-june-climate": "Naxos/Cyclades June aggregate: highs ~28C/82F, near-zero rain, sunny",
+              "meltemi-risk": "meltemi peaks Jul-Aug; June is the calm shoulder with occasional afternoon wind"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "cyclades-sea-temp",
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 4,
+              "temperatureF": [
+                71,
+                73
+              ],
+              "hasSwim": true,
+              "seaTempF": [
+                71,
+                73
+              ],
+              "waterType": "sandy shallow beaches (Naxos), sheltered granite coves (Paros), boat + moonscape swims (Milos)",
+              "shelteredSites": [
+                "Agios Prokopios",
+                "Plaka beach (Naxos)",
+                "Kolymbithres coves (Paros)",
+                "Firopotamos (Milos)"
+              ],
+              "note": "Warm-ish and warming through June; breezier than the Ionian; sheltered picks available when the meltemi blows."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "cyclades-sea-temp": "Naxos/Paros/Milos June SST ~21-23C / 70-73F, warming through the month",
+              "internal-itinerary": "beach/cove stops: Agios Prokopios, Plaka, Kolymbithres, Sarakiniko, Firopotamos"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "value": {
+              "bases": 4,
+              "nights": 12,
+              "structure": "Athens 2 + Naxos 4 + Paros 2 + Milos 3 + Athens 1 buffer",
+              "mix": "45% water / 30% towns / 25% nature"
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "internal-itinerary": "greece-cyclades/main.json itinerary.days + stays; four bases, distinct island roles"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "cyclades-ferries",
+              "milos-domestic-air"
+            ],
+            "value": {
+              "baseMoves": 4,
+              "ferryLegs": 3,
+              "domesticFlights": 1,
+              "carRentals": 3,
+              "note": "Mid-load: three high-speed ferries, one MLO->ATH flight, a car per island, low backtracking, Athens buffer night."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "internal-itinerary": "greece-cyclades/main.json getting-around + calendar; ferry + car structure",
+              "cyclades-ferries": "Piraeus-Naxos ~3h, Naxos-Paros ~30-40 min, Paros-Milos ~2-2.5h",
+              "milos-domestic-air": "MLO-ATH ~40 min domestic hop closing the loop"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "cyclades-family-food"
+            ],
+            "value": {
+              "picky": "gyros, pizza, pasta, grilled meat, fries in every base",
+              "named": [
+                "Tzitzikas kai Mermigas (Athens)",
+                "Caya (Naxos)",
+                "Pita Frank (Paros)",
+                "Egoist (Milos)"
+              ],
+              "note": "Supermarkets on every island for self-catering breakfasts and beach lunches."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-03-01",
+            "sourceLocators": {
+              "internal-itinerary": "greece-cyclades/main.json per-stop restaurant lists",
+              "cyclades-family-food": "family/picky-eater taverna coverage across Athens, Naxos, Paros, Milos"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "pit-ath-routing",
+              "cyclades-ferries",
+              "milos-domestic-air",
+              "meltemi-risk",
+              "eu-etias"
+            ],
+            "value": {
+              "status": "current-proxy",
+              "singleTicket": false,
+              "singleTicketAssumption": false,
+              "maxConnections": 2,
+              "airRouting": "PIT->US gateway->Euro hub->ATH; no nonstop; two through-tickets, plus one domestic MLO->ATH",
+              "june2027ProtectedTicketVerified": false,
+              "etias": "likely mandatory by Jun 2027, ~E20/adult (kids exempt but must apply)",
+              "meltemiRisk": "meltemi can cancel high-speed ferries and the Kleftiko boat; June is the calm shoulder, cancellations uncommon",
+              "note": "Not ready to book. Re-quote PIT-Athens on ITA Matrix, confirm 2027 ferry sailings, keep the Kleftiko cruise early in the Milos stay and the flex day open."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "pit-ath-routing": "no PIT-ATH nonstop; two-stop routings via US gateway + European hub",
+              "cyclades-ferries": "three inter-island legs; high-speed cats cancel first in strong wind",
+              "milos-domestic-air": "MLO-ATH domestic hop + Athens buffer night before the Atlantic flight",
+              "meltemi-risk": "June calm shoulder; cancellations uncommon but possible; buffer days mitigate",
+              "eu-etias": "ETIAS likely required by Jun 2027; ~E20/adult, children fee-exempt but must apply"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "decision-profile",
+              "scorecard-contract"
+            ],
+            "value": {
+              "newRegion": true,
+              "overlap": "Greece is on the board via Crete (greece-via-lisbon); the Cyclades are a distinct region with no visited-place overlap",
+              "score": 4
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "decision-profile": "decisionProfile.json + board: Greece present via Crete; Cyclades not yet",
+              "scorecard-contract": "tools/scorecard.manifest.json noveltyRubric visited-place list (no Naxos/Paros/Milos)"
+            },
+            "claimType": "confirmed"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": 24,
+        "groundHours": 16,
+        "timeZones": 7,
+        "baseMoves": 4,
+        "longestTransferHours": 12,
+        "highOutputDayStreak": 3,
+        "fallbackDays": 2,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "expected but unconfirmed until property selection",
+          "kitchen": "planned in island apartments but unconfirmed",
+          "laundry": "unknown until property selection",
+          "realBeds": "unknown until property selection"
+        },
+        "waterSafety": "Warm-water family swims are Naxos's shallow sandy beaches (Agios Prokopios, Plaka) and Paros's sheltered Kolymbithres coves; Milos's Sarakiniko and Kleftiko are exposed and wind-dependent. Sea ~72°F in June. Reef shoes for rock ledges; keep sheltered south/east beaches as the windy-day backup."
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "12-night canonical plan",
+          "canonical": true,
+          "status": "documented",
+          "nights": 12,
+          "ptoDays": 8,
+          "budget": {
+            "lowUsd": 11650,
+            "expectedUsd": null,
+            "highUsd": 16000,
+            "distribution": "planning-band",
+            "chanceUnderPreferredMax": null
+          },
+          "removedExperiences": [],
+          "notes": "The checked-in itinerary is the immutable comparison baseline: Athens 2 nights + Naxos 4 + Paros 2 + Milos 3 + Athens 1 buffer, ferries outbound through the islands and a Milos->Athens domestic flight home, with a rental car on each island.",
+          "confidence": "medium",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "Greek Cyclades; variant canonical; route-specific savings/tradeoffs require re-price"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/greece-cyclades/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
+        "bookable": false
+      }
+    },
+    {
+      "slug": "greece-ionian",
+      "token": "greece-ionian",
+      "title": "Ionian Islands · Kefalonia & Lefkada — June 2027",
+      "displayName": "Ionian Islands",
+      "blurb": "Warmest, easiest turquoise-swim trip",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 3,
+        "weather": 4,
+        "swim": 4,
+        "variety": 3,
+        "ease": 4,
+        "food": 4,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 4,
+        "pto": 2
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 10800,
+        "ceilUsd": 15000,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 9,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 37,
+      "travelWindow": [
+        "2027-06-09",
+        "2027-06-22"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "within-preference",
+      "evidence": {
+        "reviewedAt": "2026-07-11",
+        "overallConfidence": "medium",
+        "limitingAxes": [
+          "budget",
+          "weather",
+          "swim",
+          "food"
+        ],
+        "evidenceBasis": "Operator/route data (Aegean and Sky Express ATH-EFL, Ionion Pelagos ferry), official Melissani fees, Ionian June climatology and SST, current Navagio and Egremni access status, ETIAS timeline, and deterministic itinerary derivation; the open-jaw fare, 2027 ferry timetable, and lodging band remain planning proxies.",
+        "confidenceBasis": [
+          "high-confidence logistics, food-coverage, novelty, and readiness-conclusion claims",
+          "medium-confidence budget, blended climate, and swim (SST proxy) claims",
+          "explicit unknowns: live 2027 open-jaw fare, 2027 ferry timetable, Lefkada lodging precision, Egremni land access, and 2027 Navagio landing status"
+        ],
+        "confidence": {
+          "id": "medium",
+          "value": 2,
+          "label": "Medium evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 3,
+            "rationale": "The seven categories reconcile to $10,800–$15,000. The band straddles the $12k target: a lean family lands near target, while the high case reaches the $15k preferred maximum on peak-June lodging, two island car rentals, and the transatlantic-to-small-Greek-airport airfare. Good mid-board value, but the open-jaw airfare and dual car hire keep it off the top budget tier.",
+            "confidence": "medium",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 4,
+            "rationale": "June on the Ionian is reliably dry (~1–3 rain days) and warm (highs ~78–84°F). It falls short of 5 only because the west-facing Lefkada beaches (Porto Katsiki, Kathisma, Kavalikefta) catch a building afternoon NW breeze that chops up the surface — a real, plan-around-it caveat rather than a washout.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-ionian"
+            ]
+          },
+          "swim": {
+            "score": 4,
+            "rationale": "Warm, calm, genuinely turquoise Ionian water at ~72–74°F in June, with sheltered family-easy swimming at Assos harbor, Antisamos, Lassi/Makris Gialos, and Agios Nikitas/Milos. It is a 4 not a 5 because the marquee Myrtos shelves steeply with waves (a wade-not-swim beach for the 8-year-old) and the west-coast beaches are morning-only before the afternoon chop.",
+            "confidence": "medium",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 3,
+            "rationale": "A focused island-and-sea trip: turquoise beaches, the Melissani/Drogarati caves, the pastel villages of Assos and Fiskardo, a Zakynthos boat day, and light gorge/waterfall and windmill walks. Rich within its lane, but it lacks the mountains, big cities, or major cultural sites that push a route to 5.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 4,
+            "rationale": "The board's easiest warm-water plan: arrival at well-connected EFL is single-ticketable via Athens, then one direct ~1h ferry, short island drives on the gentle Ionian, and a road causeway (no ferry) linking Lefkada to the PVK departure. It is held off 5 by the open-jaw, the thin charter-served PVK departure leg, and renting a separate car on each island.",
+            "confidence": "high",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 4,
+            "rationale": "Easy for picky eaters: reliable pizza/pasta/grilled-chicken tavernas and pizzerias in Sami, Argostoli, Nydri, and Lefkada Town (Pomodoro, Made in Love, Tereza, Ampelaki). Upscale Fiskardo and Assos skew to seafood, so plain-food meals are planned in the bigger towns and those two become parents'-choice splurge nights.",
+            "confidence": "medium",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 3,
+            "rationale": "The departure-side PVK leg is a separate low-cost/charter ticket (self-transfer, low frequency) whose disruption threatens the Jun 24–26 Pittsburgh blackout; the single inter-island ferry is schedule-dependent; Navagio is closed to landing; and Myrtos swimming is hazardous for young children. These are mitigated by the single-ticket EFL arrival, a held Jun 23 buffer day, and abundant calm swim alternatives.",
+            "confidence": "high",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights (Kefalonia 7 + Lefkada 5) derive 5/5 under the canonical nights rubric.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 4,
+            "rationale": "Greece is already represented on the board by the Crete-focused greece-via-lisbon plan, so this is a different region rather than a new country. The Ionian (Lefkada, Kefalonia, Zakynthos) does not overlap the visited-place list, deriving 4/5 rather than 5.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 2,
+            "rationale": "Nine PTO days derive 2/5 under the slider rubric and carry zero default weight; Juneteenth observed (Fri Jun 18) lands mid-trip as a no-PTO active day.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "aegean-ath-efl"
+            ],
+            "value": {
+              "lowUsd": 10800,
+              "expectedUsd": null,
+              "highUsd": 15000,
+              "targetUsd": 12000,
+              "preferredMaxUsd": 15000,
+              "distribution": "planning-band",
+              "lineItemCount": 7,
+              "arithmetic": "5600/6700 + 1700/2800 + 800/1300 + 150/300 + 1560/2200 + 520/850 + 470/850 = 10800/15000"
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-10-31",
+            "sourceLocators": {
+              "internal-itinerary": "greece-ionian/main.json #totals target/high columns; exact category reconciliation",
+              "aegean-ath-efl": "Transatlantic-plus-ATH airfare context driving the largest line item; no live 2027 open-jaw quote"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "decision-profile"
+            ],
+            "value": {
+              "depart": "2027-06-09",
+              "homeBy": "2027-06-22",
+              "hotelNights": 12,
+              "ptoDays": 9,
+              "blackoutRespected": true,
+              "note": "Depart Wed Jun 9 (overnight), first island night Jun 10, home by Tue Jun 22 with Jun 23 held as a buffer before the required Pittsburgh days Jun 24-26. Juneteenth observed Fri Jun 18 is a no-PTO active day mid-trip."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "internal-itinerary": "greece-ionian/main.json calendar + timing sections",
+              "decision-profile": "decisionProfile.json tripWindows.greece-ionian and pittsburghCommitment"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "climate-ionian",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "ionian-june-climate",
+              "noaa-oisst"
+            ],
+            "value": {
+              "juneHighF": [
+                78,
+                84
+              ],
+              "juneLowF": [
+                61,
+                70
+              ],
+              "seaTempF": [
+                72,
+                74
+              ],
+              "rainDays": "~1-3",
+              "wind": "Calm mornings; a gentle NW Maistro breeze builds through the afternoon. No Aegean Meltemi. West-facing Lefkada beaches (Porto Katsiki, Kathisma, Kavalikefta) chop up by late afternoon; Vasiliki's south bay uses that same wind for windsurfing.",
+              "note": "Dry, warm, and far calmer than the Cyclades; the only weather caveat is the afternoon west-coast breeze, handled by scheduling those beaches for mornings."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "ionian-june-climate": "June air highs, sea temperature, rain days, and the Ionian Maistro-vs-Meltemi wind picture",
+              "noaa-oisst": "Ionian coastal June SST cross-check for the 72-74F swim range"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "ionian-june-climate",
+              "kefalonia-ionian-guides",
+              "lefkada-amazing-guides"
+            ],
+            "value": {
+              "score": 4,
+              "temperatureF": [
+                72,
+                74
+              ],
+              "hasSwim": true,
+              "shelteredSites": [
+                "Assos harbor",
+                "Antisamos",
+                "Lassi / Makris Gialos",
+                "Agios Nikitas / Milos"
+              ],
+              "hazardSites": [
+                "Myrtos (steep shelf, waves)",
+                "Porto Katsiki / Kathisma (afternoon NW chop)"
+              ],
+              "note": "Warm calm turquoise water with abundant family-easy coves; the marquee Myrtos is a wade-not-swim beach for young kids, and west-coast beaches are best in the morning."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "ionian-june-climate": "June Ionian sea temperature range",
+              "kefalonia-ionian-guides": "Myrtos steep-shelf/wave warning and calm alternatives (Assos, Antisamos, Lassi)",
+              "lefkada-amazing-guides": "West-coast afternoon-wind exposure and sheltered Agios Nikitas/Milos"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "value": {
+              "bases": 2,
+              "kefaloniaStops": [
+                "Myrtos",
+                "Assos",
+                "Melissani",
+                "Drogarati",
+                "Fiskardo",
+                "Antisamos",
+                "Argostoli / Koutavos",
+                "Lassi",
+                "Zakynthos (Navagio + Blue Caves) boat day"
+              ],
+              "lefkadaStops": [
+                "Porto Katsiki",
+                "Kathisma",
+                "Agios Nikitas / Milos",
+                "Nydri / Dimosari gorge",
+                "Meganisi / Papanikolis boat day",
+                "Lefkada Town / Gyra"
+              ],
+              "note": "Beaches, sea caves, pastel villages, boat days, and light gorge/windmill walks across two islands in 12 nights."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "greece-ionian/main.json itinerary days and map points"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "ionion-pelagos-ferry",
+              "aegean-ath-efl"
+            ],
+            "value": {
+              "baseMoves": 1,
+              "countries": 1,
+              "openJaw": true,
+              "interIslandFerries": 1,
+              "ferryRoute": "Vasiliki (Lefkada) -> Fiskardo (Kefalonia), direct ~1h",
+              "rentalCars": 2,
+              "arrivalAirport": "EFL (single-ticketable via ATH)",
+              "departureAirport": "PVK (road causeway from Lefkada, ~20-36 min)",
+              "note": "One country, one ferry, short island drives; the causeway means no ferry is needed to reach Lefkada. A separate economy car is rented on each island rather than carried across on a costly one-way."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "internal-itinerary": "greece-ionian/main.json getting-around and air-travel sections",
+              "ionion-pelagos-ferry": "Direct Vasiliki-Fiskardo crossing exists (no Ithaca transfer), June frequency and fares",
+              "aegean-ath-efl": "ATH-EFL frequency and interline that make the arrival single-ticketable"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "kefalonia-ionian-guides",
+              "lefkada-amazing-guides",
+              "internal-itinerary"
+            ],
+            "value": {
+              "note": "Picky-eater friendly: named pizza/pasta/grilled-chicken options in Nydri (Pomodoro), Lefkada Town (Made in Love), Agios Nikitas (To Steki), Sami (Tereza/Contessina), and Argostoli (Pizza Al Forno, Ampelaki with a kids' menu). Fiskardo and Assos skew upscale-seafood, so those become splurge nights with snack backups for the kids."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "kefalonia-ionian-guides": "Sami/Argostoli pizzerias and a kids'-menu taverna",
+              "lefkada-amazing-guides": "Nydri/Lefkada Town/Agios Nikitas picky-kid options",
+              "internal-itinerary": "Per-stop restaurant picks with plain pizza/pasta options"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "aegean-ath-efl",
+              "ionion-pelagos-ferry",
+              "navagio-access-status",
+              "eu-etias",
+              "internal-itinerary"
+            ],
+            "value": {
+              "status": "current-proxy",
+              "singleTicket": false,
+              "maxConnections": 2,
+              "arrivalLeg": "PIT -> US gateway -> ATH -> EFL; ATH-EFL single-ticketable via Delta/Aegean interline or United/Aegean Star codeshare",
+              "departureLeg": "PVK -> European hub (LGW/FRA/MUC) -> US gateway -> PIT; the PVK leg is a separate charter/low-cost ticket (self-transfer, low frequency)",
+              "ferry2027": "June 2027 Vasiliki-Fiskardo timetable not yet published; 2025/2026 pattern is the proxy",
+              "navagio": "Cove closed to landing/swimming through Oct 31 2026 (landslide risk); boats view from the bay mouth. 2027 status unannounced.",
+              "etias": "Expected mandatory by ~April 2027, ~$22/person, exempt under-18/over-70; timeline has slipped before.",
+              "note": "Not ready to book. Re-quote the open-jaw once 2027 inventory opens, confirm the ferry timetable and Navagio status, and buffer the thin PVK departure leg with insurance covering self-transfer misconnections."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "aegean-ath-efl": "EFL arrival frequency and interline vs the thin PVK service",
+              "ionion-pelagos-ferry": "Ferry route existence and seasonal-schedule caveat",
+              "navagio-access-status": "Navagio landing closure through Oct 2026",
+              "eu-etias": "ETIAS launch/mandatory timeline and fee for June 2027 Schengen entry",
+              "internal-itinerary": "Open-jaw EFL-in/PVK-out construction and buffer-day plan"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "scorecard-contract"
+            ],
+            "value": {
+              "overlap": "region-new",
+              "note": "Greece is on the board via the Crete-focused greece-via-lisbon plan, so this is a new region (the Ionian: Lefkada, Kefalonia, Zakynthos), not a new country; it does not overlap the visited-place list, deriving 4/5."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "greece-ionian route vs visited-places list",
+              "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and visited list"
+            },
+            "claimType": "derived"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": 22,
+        "groundHours": 14,
+        "timeZones": 7,
+        "baseMoves": 1,
+        "longestTransferHours": 8,
+        "highOutputDayStreak": 2,
+        "fallbackDays": 1,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "unknown until property selection",
+          "kitchen": "planned in both bases but unconfirmed",
+          "laundry": "unknown until property selection",
+          "realBeds": "unknown until property selection"
+        },
+        "waterSafety": "Abundant calm family swimming (Assos, Antisamos, Lassi, Agios Nikitas/Milos); Myrtos shelves steeply with waves and is a wade-not-swim beach for the 8-year-old; west-coast beaches are morning-only before the afternoon NW chop.",
+        "crowdingPressure": "Melissani's blue-shaft window (11am-2pm) concentrates crowds; Myrtos and Porto Katsiki parking fill by late morning in season; Fiskardo and Assos lots are small.",
+        "medicalAccess": "Unknown against the incomplete family medical profile; the winding Myrtos descent and boat days warrant standard caution.",
+        "childActivityNotes": {
+          "age13": "strong for the caves, boat days, windsurf lesson at Vasiliki, and village walks",
+          "age8": "supported by the sheltered coves, the short Melissani boat, and the cave/gorge walks; Myrtos swimming and the west-coast afternoon surf need restraint"
+        }
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "12-night canonical plan",
+          "canonical": true,
+          "status": "documented",
+          "nights": 12,
+          "ptoDays": 9,
+          "budget": {
+            "lowUsd": 10800,
+            "expectedUsd": null,
+            "highUsd": 15000,
+            "distribution": "planning-band",
+            "chanceUnderPreferredMax": null
+          },
+          "removedExperiences": [],
+          "notes": "The checked-in itinerary is the immutable comparison baseline: Kefalonia 7 nights (car) then Lefkada 5 nights (car), open-jaw EFL in / PVK out, one direct Vasiliki-Fiskardo ferry, home by Jun 22 with Jun 23 held as a buffer before the Pittsburgh blackout.",
+          "confidence": "medium",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "Kefalonia + Lefkada; variant canonical; open-jaw EFL/PVK; route-specific fares and 2027 ferry timetable require re-price"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/greece-ionian/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
