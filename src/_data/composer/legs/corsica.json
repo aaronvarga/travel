@@ -1,0 +1,278 @@
+{
+  "id": "corsica",
+  "name": "Corsica",
+  "country": "France",
+  "sourceTrip": "sardinia-corsica",
+  "mapColor": "#c25a3a",
+  "mapPoints": [
+    {
+      "n": "Santa Teresa Gallura ferry port",
+      "lat": 41.242,
+      "lng": 9.1944,
+      "r": "corsica",
+      "g": "https://www.google.com/maps/search/?api=1&query=41.242,9.1944"
+    },
+    {
+      "n": "Bonifacio old town",
+      "lat": 41.3872,
+      "lng": 9.159,
+      "r": "corsica",
+      "g": "https://www.google.com/maps/search/?api=1&query=41.3872,9.159"
+    },
+    {
+      "n": "Rondinara beach",
+      "lat": 41.4707,
+      "lng": 9.2683,
+      "r": "corsica",
+      "g": "https://www.google.com/maps/search/?api=1&query=41.4707,9.2683"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "FSC",
+      "AJA"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→FSC",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "FSC→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 3,
+    "canonical": 4,
+    "max": 6
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/sardinia-corsica/google_santa_teresa_ferry_01.jpg",
+      "src": "../../assets/img/sardinia-corsica/google_santa_teresa_ferry_01.jpg",
+      "alt": "Bonifacio ferry — a high-impact landscape view selected from the self-hosted trip gallery.",
+      "captionTitle": "Bonifacio ferry",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/sardinia-corsica/google_bonifacio_ferry_02.jpg",
+      "src": "../../assets/img/sardinia-corsica/google_bonifacio_ferry_02.jpg",
+      "alt": "Bonifacio ferry — a high-impact landscape view selected from the self-hosted trip gallery.",
+      "captionTitle": "Bonifacio ferry",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/sardinia-corsica/google_ferry_route_03.jpg",
+      "src": "../../assets/img/sardinia-corsica/google_ferry_route_03.jpg",
+      "alt": "Bonifacio ferry — a high-impact landscape view selected from the self-hosted trip gallery.",
+      "captionTitle": "Bonifacio ferry",
+      "credit": "Existing self-hosted trip gallery"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach",
+    "heat"
+  ],
+  "june": {
+    "seaTempF": 74,
+    "airHiF": 81,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      190,
+      310
+    ],
+    "carPerDayUsd": [
+      70,
+      110
+    ],
+    "foodPerDayUsd": [
+      155,
+      210
+    ],
+    "activitiesFlatUsd": [
+      350,
+      700
+    ],
+    "provenance": "sardinia-corsica destination-labelled budget rows, allocated to corsica"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 5,
+    "food": 4,
+    "novelty": 5,
+    "varietyTags": [
+      "beaches",
+      "cliffs",
+      "ferries",
+      "old-towns"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Bonifacio by ferry",
+      "feel": "Change-of-scenery ferry beat",
+      "daycost": "Est. ~$260 · ferry + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Bonifacio · night 1 of 2"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Drive 2h15 to Santa Teresa, 50-min ferry, Bonifacio evening"
+        }
+      ],
+      "note": "Cross the Strait of Bonifacio, settle near the old town, and keep the first evening focused on the cliff-top lanes and harbor.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Santa Teresa Gallura → Bonifacio ferry",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Santa%20Teresa%20Gallura%20%E2%86%92%20Bonifacio%20ferry%20Sardinia%2FCorsica\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/santateresagallura/\" target=\"_blank\" rel=\"noreferrer\">IG · Santa Teresa Gallura</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bonifacio/\" target=\"_blank\" rel=\"noreferrer\">IG · Bonifacio</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=santateresagallura&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_santa_teresa_ferry_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_santa_teresa_ferry_01.jpg",
+              "alt": "Bonifacio ferry — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Bonifacio ferry",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_bonifacio_ferry_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_bonifacio_ferry_02.jpg",
+              "alt": "Bonifacio ferry — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Bonifacio ferry",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_ferry_route_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_ferry_route_03.jpg",
+              "alt": "Bonifacio ferry — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Bonifacio ferry",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "2026 route: 50-60 min. Typical family foot-passenger round trip budget €220-360; with car often €450-650+ round trip, and rental-company permission is the gating item.",
+          "climateLabel": "June weather",
+          "climate": "<b>78°F</b> day / <b>63°F</b> night. Sea <b>72-74°F</b> — the crossing itself is short; beach swimming waits for Corsica.",
+          "saveHtml": "<b>Save</b> Do not ferry the Sardinia rental unless the contract explicitly allows Italy-France ferry travel; park in Santa Teresa and go as foot passengers.",
+          "splurgeHtml": "<b>Splurge</b> Pay for flex tickets and an earlier sailing so a windy Strait delay does not wreck the transfer day.",
+          "restoHtml": "<li><a href=\"https://corsicalovers.fr/en/best-restaurants-bonifacio-where-eat-reviews/\" target=\"_blank\" rel=\"noreferrer\"><b>La Bodega</b></a> — traditional near citadel, €10-25 pp; Corsica Lovers flags it as child-suitable.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g612416-d3849993-Reviews-La_place-Bonifacio_Corse_du_Sud_Corsica.html\" target=\"_blank\" rel=\"noreferrer\"><b>La Place</b></a> — brasserie/pizza/burgers, ~€15-25 pp, 4.3★ TripAdvisor.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g612416-zfp5-Bonifacio_Corse_du_Sud_Corsica.html\" target=\"_blank\" rel=\"noreferrer\"><b>Le Bastion</b></a> — family-rated old-town restaurant, ~€20-35 pp; fries and simple mains available.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://strictlysardinia.com/la-maddalena-sardinia-guide/\" target=\"_blank\" rel=\"noreferrer\"><b>Maddalena day trip</b> ↗</a> — stay in Sardinia and swap Corsica for La Maddalena if ferry prices or rental rules get ugly.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Maria%20Pia%20Beach%20Alghero\" target=\"_blank\" rel=\"noreferrer\"><b>Maria Pia Beach</b> ↗</a> — pine-shaded sand close to Alghero when old-town heat builds.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bosa%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Bosa</b> ↗</a> — painted riverside town about an hour south; a town-heavy alternate if wind spoils the beach.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://ichnusalines.com/en/\" target=\"_blank\" rel=\"noreferrer\">Ichnusa Lines — ferry with kids ↗</a><a href=\"https://www.directferries.com/santa_teresa_di_gallura_bonifacio_ferry.htm\" target=\"_blank\" rel=\"noreferrer\">Direct Ferries — live route pricing ↗</a>",
+          "lat": "41.2420",
+          "lng": "9.1944"
+        },
+        {
+          "name": "Bonifacio clifftop old town",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Bonifacio%20clifftop%20old%20town%20Corsica\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bonifacio/\" target=\"_blank\" rel=\"noreferrer\">IG · Bonifacio</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=bonifacio&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_bonifacio_cliffs_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_bonifacio_cliffs_01.jpg",
+              "alt": "Bonifacio cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Bonifacio cliffs",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_bonifacio_old_town_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_bonifacio_old_town_02.jpg",
+              "alt": "Bonifacio cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Bonifacio cliffs",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_bonifacio_panorama_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_bonifacio_panorama_03.jpg",
+              "alt": "Bonifacio cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Bonifacio cliffs",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Old town free. King Aragon Steps often about €5 adult / €2.50 child; tourist train around €6-8 pp.",
+          "climateLabel": "June weather",
+          "climate": "<b>78°F</b> day / <b>63°F</b> night. Sea <b>72-74°F</b> — good for swimming in nearby bays; old town is the town/history beat.",
+          "saveHtml": "<b>Save</b> Sleep near the marina/port and skip a Corsica car for the town day; everything is walkable but steep.",
+          "splurgeHtml": "<b>Splurge</b> Boat under the cliffs and sea caves, roughly €25-40 pp for the classic one-hour circuit.",
+          "restoHtml": "<li><a href=\"https://corsicalovers.fr/en/best-restaurants-bonifacio-where-eat-reviews/\" target=\"_blank\" rel=\"noreferrer\"><b>La Bodega</b></a> — traditional near citadel, €10-25 pp; Corsica Lovers flags it as child-suitable.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g612416-d3849993-Reviews-La_place-Bonifacio_Corse_du_Sud_Corsica.html\" target=\"_blank\" rel=\"noreferrer\"><b>La Place</b></a> — brasserie/pizza/burgers, ~€15-25 pp, 4.3★ TripAdvisor.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g612416-zfp5-Bonifacio_Corse_du_Sud_Corsica.html\" target=\"_blank\" rel=\"noreferrer\"><b>Le Bastion</b></a> — family-rated old-town restaurant, ~€20-35 pp; fries and simple mains available.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.corsicalovers.fr/en/visit-porto-vecchio-corsica/\" target=\"_blank\" rel=\"noreferrer\"><b>Porto-Vecchio old town</b> ↗</a> — more resort-town energy, bigger restaurant pool, about 35 min if you rent a car.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Santa%20Giulia%20Beach%20Corsica\" target=\"_blank\" rel=\"noreferrer\"><b>Santa Giulia Beach</b> ↗</a> — wide, shallow, family-friendly beach if Rondinara is too busy.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Lavezzi%20Islands%20Corsica\" target=\"_blank\" rel=\"noreferrer\"><b>Lavezzi Islands</b> ↗</a> — boat-day alternative for clear water if beach parking is the problem.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://corsicalovers.fr/en/best-restaurants-bonifacio-where-eat-reviews/\" target=\"_blank\" rel=\"noreferrer\">Corsica Lovers — Bonifacio restaurants ↗</a><a href=\"https://bonifacio.co.uk/discover/bonifacio-a-year-round-destination/in-autumn-bonifacio-in-all-its-intimacy/family-vacation/\" target=\"_blank\" rel=\"noreferrer\">Bonifacio Tourist Office — family vacation ↗</a>",
+          "lat": "41.3872",
+          "lng": "9.1590"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Bonifacio beach + cliffs",
+      "feel": "Corsica swim day",
+      "daycost": "Est. ~$220 · beach transport/boat + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Bonifacio · night 2 of 2"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Rondinara or Petit Sperone, old town at golden hour"
+        }
+      ],
+      "note": "Without a Corsica rental, use taxi/boat and stay focused. If renting locally, book early; supply near Bonifacio is thin.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Rondinara or Petit Sperone beach",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Rondinara%20or%20Petit%20Sperone%20beach%20Corsica\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/rondinara/\" target=\"_blank\" rel=\"noreferrer\">IG · Rondinara</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/petitsperone/\" target=\"_blank\" rel=\"noreferrer\">IG · Petit Sperone</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=rondinara&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_rondinara_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_rondinara_01.jpg",
+              "alt": "Rondinara bay — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Rondinara bay",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_rondinara_bay_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_rondinara_bay_02.jpg",
+              "alt": "Rondinara bay — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Rondinara bay",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_petit_sperone_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_petit_sperone_03.jpg",
+              "alt": "Rondinara bay — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Rondinara bay",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Beach free; parking often €5-10/day in season; taxi or short rental car day if staying car-free.",
+          "climateLabel": "June weather",
+          "climate": "<b>78°F</b> day / <b>63°F</b> night. Sea <b>72-74°F</b> — sheltered water and pale sand make this the Corsica kid-swim day.",
+          "saveHtml": "<b>Save</b> Choose one beach and stay put; Corsica beach-hopping burns money in taxis and parking.",
+          "splurgeHtml": "<b>Splurge</b> Half-day Lavezzi Islands boat from Bonifacio, about €45-75 pp, for the big turquoise-water hit.",
+          "restoHtml": "<li><a href=\"https://corsicalovers.fr/en/best-restaurants-bonifacio-where-eat-reviews/\" target=\"_blank\" rel=\"noreferrer\"><b>La Bodega</b></a> — traditional near citadel, €10-25 pp; Corsica Lovers flags it as child-suitable.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g612416-d3849993-Reviews-La_place-Bonifacio_Corse_du_Sud_Corsica.html\" target=\"_blank\" rel=\"noreferrer\"><b>La Place</b></a> — brasserie/pizza/burgers, ~€15-25 pp, 4.3★ TripAdvisor.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g612416-zfp5-Bonifacio_Corse_du_Sud_Corsica.html\" target=\"_blank\" rel=\"noreferrer\"><b>Le Bastion</b></a> — family-rated old-town restaurant, ~€20-35 pp; fries and simple mains available.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.corsica.co.uk/guide/santa-giulia-beach\" target=\"_blank\" rel=\"noreferrer\"><b>Santa Giulia Beach</b> ↗</a> — wide, shallow, very family-friendly, but busier and farther from Bonifacio.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Porto-Vecchio%20old%20town%20Corsica\" target=\"_blank\" rel=\"noreferrer\"><b>Porto-Vecchio old town</b> ↗</a> — bigger restaurant pool and polished evening scene about 35 minutes from Bonifacio.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Lavezzi%20Islands%20Corsica\" target=\"_blank\" rel=\"noreferrer\"><b>Lavezzi Islands</b> ↗</a> — boat-day alternative for clear water if beach parking is the problem.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://corsicalovers.fr/en/rondinara-beach-corsica/\" target=\"_blank\" rel=\"noreferrer\">Corsica Lovers — Rondinara ↗</a><a href=\"https://thesandyfeet.com/best-beaches-bonifacio-corsica/\" target=\"_blank\" rel=\"noreferrer\">The Sandy Feet — Bonifacio beaches ↗</a>",
+          "lat": "41.4707",
+          "lng": "9.2683"
+        }
+      ]
+    }
+  ]
+}

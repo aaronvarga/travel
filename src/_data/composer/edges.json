@@ -6,46 +6,162 @@
       "from": "madeira",
       "to": "crete",
       "mode": "air",
-      "via": ["LIS", "ATH"],
+      "via": [
+        "LIS"
+      ],
       "hours": 28,
-      "familyCostUsd": [1400, 2200],
+      "familyCostUsd": [
+        1200,
+        2000
+      ],
       "complexity": 5,
       "risk": 4,
-      "buffer": { "nights": 1, "city": "Lisbon", "lodgingPerNightUsd": [130, 200], "reason": "FNC wind insurance" },
+      "buffer": {
+        "nights": 1,
+        "city": "Lisbon",
+        "lodgingPerNightUsd": [
+          130,
+          200
+        ],
+        "reason": "island weather and thin-schedule insurance"
+      },
       "transferTemplate": "island-exit-with-buffer",
-      "watch": "Keep the Lisbon buffer and prefer one protected itinerary on the Greece side.",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
       "schedule2027": "unconfirmed"
     },
     {
       "id": "madeira->sicily",
-      "enabled": false,
+      "enabled": true,
       "from": "madeira",
       "to": "sicily",
       "mode": "air",
-      "via": ["LIS"],
+      "via": [
+        "LIS"
+      ],
       "hours": 28.75,
-      "familyCostUsd": [1200, 2000],
+      "familyCostUsd": [
+        1200,
+        2000
+      ],
       "complexity": 5,
       "risk": 5,
-      "buffer": { "nights": 1, "city": "Lisbon", "lodgingPerNightUsd": [130, 200], "reason": "FNC wind insurance" },
+      "buffer": {
+        "nights": 1,
+        "city": "Lisbon",
+        "lodgingPerNightUsd": [
+          130,
+          200
+        ],
+        "reason": "island weather and thin-schedule insurance"
+      },
       "transferTemplate": "island-exit-with-buffer",
-      "watch": "Lisbon-Palermo service is thin; confirm the exact 2027 operating day.",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "madeira->kefalonia",
+      "enabled": true,
+      "from": "madeira",
+      "to": "kefalonia",
+      "mode": "air",
+      "via": [
+        "LIS"
+      ],
+      "hours": 27,
+      "familyCostUsd": [
+        1200,
+        2000
+      ],
+      "complexity": 5,
+      "risk": 4,
+      "buffer": {
+        "nights": 1,
+        "city": "Lisbon",
+        "lodgingPerNightUsd": [
+          130,
+          200
+        ],
+        "reason": "island weather and thin-schedule insurance"
+      },
+      "transferTemplate": "island-exit-with-buffer",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "madeira->mallorca",
+      "enabled": true,
+      "from": "madeira",
+      "to": "mallorca",
+      "mode": "air",
+      "via": [
+        "LIS"
+      ],
+      "hours": 27,
+      "familyCostUsd": [
+        1100,
+        1820
+      ],
+      "complexity": 4,
+      "risk": 4,
+      "buffer": {
+        "nights": 1,
+        "city": "Lisbon",
+        "lodgingPerNightUsd": [
+          130,
+          200
+        ],
+        "reason": "island weather and thin-schedule insurance"
+      },
+      "transferTemplate": "island-exit-with-buffer",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "madeira->malta",
+      "enabled": true,
+      "from": "madeira",
+      "to": "malta",
+      "mode": "air",
+      "via": [
+        "LIS"
+      ],
+      "hours": 28,
+      "familyCostUsd": [
+        1200,
+        2000
+      ],
+      "complexity": 5,
+      "risk": 5,
+      "buffer": {
+        "nights": 1,
+        "city": "Lisbon",
+        "lodgingPerNightUsd": [
+          130,
+          200
+        ],
+        "reason": "island weather and thin-schedule insurance"
+      },
+      "transferTemplate": "island-exit-with-buffer",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
       "schedule2027": "unconfirmed"
     },
     {
       "id": "lisbon-cascais->crete",
-      "enabled": false,
+      "enabled": true,
       "from": "lisbon-cascais",
       "to": "crete",
       "mode": "air",
-      "via": ["ATH"],
+      "via": [],
       "hours": 8,
-      "familyCostUsd": [1000, 1700],
+      "familyCostUsd": [
+        1100,
+        1820
+      ],
       "complexity": 4,
       "risk": 4,
       "buffer": null,
       "transferTemplate": "short-hop",
-      "watch": "Prioritize a protected Athens connection; no dependable Lisbon-Crete nonstop is assumed.",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
       "schedule2027": "unconfirmed"
     },
     {
@@ -56,12 +172,376 @@
       "mode": "air",
       "via": [],
       "hours": 3,
-      "familyCostUsd": [700, 1200],
+      "familyCostUsd": [
+        1100,
+        1820
+      ],
       "complexity": 4,
       "risk": 4,
       "buffer": null,
       "transferTemplate": "short-hop",
-      "watch": "The nonstop is schedule-dependent and may be a separate ticket.",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "lisbon-cascais->mallorca",
+      "enabled": true,
+      "from": "lisbon-cascais",
+      "to": "mallorca",
+      "mode": "air",
+      "via": [],
+      "hours": 2,
+      "familyCostUsd": [
+        1000,
+        1640
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "lisbon-cascais->malta",
+      "enabled": true,
+      "from": "lisbon-cascais",
+      "to": "malta",
+      "mode": "air",
+      "via": [],
+      "hours": 5,
+      "familyCostUsd": [
+        1100,
+        1820
+      ],
+      "complexity": 4,
+      "risk": 4,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "lisbon-cascais->athens-cyclades",
+      "enabled": true,
+      "from": "lisbon-cascais",
+      "to": "athens-cyclades",
+      "mode": "air",
+      "via": [],
+      "hours": 4,
+      "familyCostUsd": [
+        1000,
+        1640
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "algarve->sicily",
+      "enabled": true,
+      "from": "algarve",
+      "to": "sicily",
+      "mode": "air",
+      "via": [],
+      "hours": 9.67,
+      "familyCostUsd": [
+        1200,
+        2000
+      ],
+      "complexity": 5,
+      "risk": 5,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "algarve->mallorca",
+      "enabled": true,
+      "from": "algarve",
+      "to": "mallorca",
+      "mode": "air",
+      "via": [],
+      "hours": 5,
+      "familyCostUsd": [
+        1100,
+        1820
+      ],
+      "complexity": 4,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "algarve->malta",
+      "enabled": true,
+      "from": "algarve",
+      "to": "malta",
+      "mode": "air",
+      "via": [],
+      "hours": 6,
+      "familyCostUsd": [
+        1100,
+        1820
+      ],
+      "complexity": 4,
+      "risk": 4,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "switzerland->crete",
+      "enabled": true,
+      "from": "switzerland",
+      "to": "crete",
+      "mode": "air",
+      "via": [],
+      "hours": 5,
+      "familyCostUsd": [
+        900,
+        1460
+      ],
+      "complexity": 2,
+      "risk": 2,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "switzerland->sicily",
+      "enabled": true,
+      "from": "switzerland",
+      "to": "sicily",
+      "mode": "air",
+      "via": [],
+      "hours": 3.5,
+      "familyCostUsd": [
+        900,
+        1460
+      ],
+      "complexity": 2,
+      "risk": 2,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "switzerland->mallorca",
+      "enabled": true,
+      "from": "switzerland",
+      "to": "mallorca",
+      "mode": "air",
+      "via": [],
+      "hours": 3,
+      "familyCostUsd": [
+        900,
+        1460
+      ],
+      "complexity": 2,
+      "risk": 2,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "venice-dolomites->sardinia",
+      "enabled": true,
+      "from": "venice-dolomites",
+      "to": "sardinia",
+      "mode": "air",
+      "via": [],
+      "hours": 1.5,
+      "familyCostUsd": [
+        1000,
+        1640
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "venice-dolomites->malta",
+      "enabled": true,
+      "from": "venice-dolomites",
+      "to": "malta",
+      "mode": "air",
+      "via": [],
+      "hours": 2,
+      "familyCostUsd": [
+        1000,
+        1640
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "slovenia->malta",
+      "enabled": true,
+      "from": "slovenia",
+      "to": "malta",
+      "mode": "air",
+      "via": [],
+      "hours": 4,
+      "familyCostUsd": [
+        1000,
+        1640
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "slovenia->sardinia",
+      "enabled": true,
+      "from": "slovenia",
+      "to": "sardinia",
+      "mode": "air",
+      "via": [],
+      "hours": 5,
+      "familyCostUsd": [
+        1100,
+        1820
+      ],
+      "complexity": 4,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "athens-cyclades->crete",
+      "enabled": true,
+      "from": "athens-cyclades",
+      "to": "crete",
+      "mode": "air",
+      "via": [],
+      "hours": 1,
+      "familyCostUsd": [
+        1000,
+        1640
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "athens-cyclades->malta",
+      "enabled": true,
+      "from": "athens-cyclades",
+      "to": "malta",
+      "mode": "air",
+      "via": [],
+      "hours": 2,
+      "familyCostUsd": [
+        1000,
+        1640
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "malta->sicily",
+      "enabled": true,
+      "from": "malta",
+      "to": "sicily",
+      "mode": "air",
+      "via": [],
+      "hours": 0.75,
+      "familyCostUsd": [
+        900,
+        1460
+      ],
+      "complexity": 2,
+      "risk": 2,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "Confirm the exact 2027 operating day and prefer a protected itinerary where available.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "kefalonia->lefkada",
+      "enabled": true,
+      "from": "kefalonia",
+      "to": "lefkada",
+      "mode": "ferry",
+      "via": [],
+      "hours": 3,
+      "familyCostUsd": [
+        250,
+        550
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "ferry",
+      "watch": "Confirm the 2027 ferry day, vehicle rules, and port check-in window.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "sardinia->corsica",
+      "enabled": true,
+      "from": "sardinia",
+      "to": "corsica",
+      "mode": "ferry",
+      "via": [],
+      "hours": 1,
+      "familyCostUsd": [
+        250,
+        550
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "ferry",
+      "watch": "Confirm the 2027 ferry day, vehicle rules, and port check-in window.",
+      "schedule2027": "unconfirmed"
+    },
+    {
+      "id": "corsica->sardinia",
+      "enabled": true,
+      "from": "corsica",
+      "to": "sardinia",
+      "mode": "ferry",
+      "via": [],
+      "hours": 1,
+      "familyCostUsd": [
+        250,
+        550
+      ],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "ferry",
+      "watch": "Confirm the 2027 ferry day, vehicle rules, and port check-in window.",
       "schedule2027": "unconfirmed"
     }
   ],
@@ -70,19 +550,26 @@
       "transferDays": 1,
       "replacesFromDeparture": true,
       "replacesToArrival": true,
-      "pattern": ["Check out, complete the air transfer, collect the next car if needed, and keep the first evening light."]
+      "pattern": [
+        "Check out, complete the air transfer, collect the next car if needed, and keep the first evening light."
+      ]
     },
     "island-exit-with-buffer": {
       "transferDays": 2,
       "replacesFromDeparture": true,
       "replacesToArrival": true,
-      "pattern": ["Fly from the island to the buffer city and sleep near the onward gateway.", "Continue on the protected connection and settle into the next destination."]
+      "pattern": [
+        "Fly from the island to the buffer city and sleep near the onward gateway.",
+        "Continue on the protected connection and settle into the next destination."
+      ]
     },
     "ferry": {
       "transferDays": 1,
       "replacesFromDeparture": true,
       "replacesToArrival": true,
-      "pattern": ["Return the first car, cross by ferry, collect the next car, and keep the arrival evening light."]
+      "pattern": [
+        "Return the first car if required, cross by ferry, collect the next car, and keep the arrival evening light."
+      ]
     }
   }
 }

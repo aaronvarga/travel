@@ -1,5 +1,192 @@
 [
   {
+    "slug": "combo--algarve--mallorca",
+    "title": "Algarve + Mallorca — composed draft",
+    "startId": "algarve",
+    "partnerId": "mallorca",
+    "startName": "Algarve",
+    "partnerName": "Mallorca",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 12130,
+      "ceilUsd": 18715,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 32,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--algarve--malta",
+    "title": "Algarve + Malta — composed draft",
+    "startId": "algarve",
+    "partnerId": "malta",
+    "startName": "Algarve",
+    "partnerName": "Malta",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 11565,
+      "ceilUsd": 17935,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 31,
+    "transferRisk": 4
+  },
+  {
+    "slug": "combo--algarve--sicily",
+    "title": "Algarve + Sicily — composed draft",
+    "startId": "algarve",
+    "partnerId": "sicily",
+    "startName": "Algarve",
+    "partnerName": "Sicily",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 12610,
+      "ceilUsd": 18341,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 28,
+    "transferRisk": 5
+  },
+  {
+    "slug": "combo--athens-cyclades--crete",
+    "title": "Athens + Cyclades + Crete — composed draft",
+    "startId": "athens-cyclades",
+    "partnerId": "crete",
+    "startName": "Athens + Cyclades",
+    "partnerName": "Crete",
+    "totalNights": 13,
+    "budget": {
+      "floorUsd": 13459,
+      "ceilUsd": 20351,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--athens-cyclades--malta",
+    "title": "Athens + Cyclades + Malta — composed draft",
+    "startId": "athens-cyclades",
+    "partnerId": "malta",
+    "startName": "Athens + Cyclades",
+    "partnerName": "Malta",
+    "totalNights": 13,
+    "budget": {
+      "floorUsd": 12755,
+      "ceilUsd": 19965,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--corsica--sardinia",
+    "title": "Corsica + Sardinia — composed draft",
+    "startId": "corsica",
+    "partnerId": "sardinia",
+    "startName": "Corsica",
+    "partnerName": "Sardinia",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 11615,
+      "ceilUsd": 17960,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 34,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--kefalonia--lefkada",
+    "title": "Kefalonia + Lefkada — composed draft",
+    "startId": "kefalonia",
+    "partnerId": "lefkada",
+    "startName": "Kefalonia",
+    "partnerName": "Lefkada",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 11095,
+      "ceilUsd": 17075,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 34,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--lisbon-cascais--athens-cyclades",
+    "title": "Lisbon + Cascais + Athens + Cyclades — composed draft",
+    "startId": "lisbon-cascais",
+    "partnerId": "athens-cyclades",
+    "startName": "Lisbon + Cascais",
+    "partnerName": "Athens + Cyclades",
+    "totalNights": 13,
+    "budget": {
+      "floorUsd": 12635,
+      "ceilUsd": 18890,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--lisbon-cascais--crete",
+    "title": "Lisbon + Cascais + Crete — composed draft",
+    "startId": "lisbon-cascais",
+    "partnerId": "crete",
+    "startName": "Lisbon + Cascais",
+    "partnerName": "Crete",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 12098,
+      "ceilUsd": 17244,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 30,
+    "transferRisk": 4
+  },
+  {
+    "slug": "combo--lisbon-cascais--mallorca",
+    "title": "Lisbon + Cascais + Mallorca — composed draft",
+    "startId": "lisbon-cascais",
+    "partnerId": "mallorca",
+    "startName": "Lisbon + Cascais",
+    "partnerName": "Mallorca",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 11760,
+      "ceilUsd": 17339,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 33,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--lisbon-cascais--malta",
+    "title": "Lisbon + Cascais + Malta — composed draft",
+    "startId": "lisbon-cascais",
+    "partnerId": "malta",
+    "startName": "Lisbon + Cascais",
+    "partnerName": "Malta",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 11295,
+      "ceilUsd": 16739,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 31,
+    "transferRisk": 4
+  },
+  {
     "slug": "combo--lisbon-cascais--sicily",
     "title": "Lisbon + Cascais + Sicily — composed draft",
     "startId": "lisbon-cascais",
@@ -8,8 +195,8 @@
     "partnerName": "Sicily",
     "totalNights": 11,
     "budget": {
-      "floorUsd": 11840,
-      "ceilUsd": 16345,
+      "floorUsd": 12240,
+      "ceilUsd": 16965,
       "targetUsd": 12000,
       "preferredMaxUsd": 15000
     },
@@ -25,12 +212,233 @@
     "partnerName": "Crete",
     "totalNights": 12,
     "budget": {
-      "floorUsd": 13029,
-      "ceilUsd": 18983,
+      "floorUsd": 12829,
+      "ceilUsd": 18783,
       "targetUsd": 12000,
       "preferredMaxUsd": 15000
     },
     "score": 31,
     "transferRisk": 4
+  },
+  {
+    "slug": "combo--madeira--kefalonia",
+    "title": "Madeira + Kefalonia — composed draft",
+    "startId": "madeira",
+    "partnerId": "kefalonia",
+    "startName": "Madeira",
+    "partnerName": "Kefalonia",
+    "totalNights": 12,
+    "budget": {
+      "floorUsd": 12401,
+      "ceilUsd": 18628,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 32,
+    "transferRisk": 4
+  },
+  {
+    "slug": "combo--madeira--mallorca",
+    "title": "Madeira + Mallorca — composed draft",
+    "startId": "madeira",
+    "partnerId": "mallorca",
+    "startName": "Madeira",
+    "partnerName": "Mallorca",
+    "totalNights": 12,
+    "budget": {
+      "floorUsd": 12491,
+      "ceilUsd": 18878,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 32,
+    "transferRisk": 4
+  },
+  {
+    "slug": "combo--madeira--malta",
+    "title": "Madeira + Malta — composed draft",
+    "startId": "madeira",
+    "partnerId": "malta",
+    "startName": "Madeira",
+    "partnerName": "Malta",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 11701,
+      "ceilUsd": 17763,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 30,
+    "transferRisk": 5
+  },
+  {
+    "slug": "combo--madeira--sicily",
+    "title": "Madeira + Sicily — composed draft",
+    "startId": "madeira",
+    "partnerId": "sicily",
+    "startName": "Madeira",
+    "partnerName": "Sicily",
+    "totalNights": 12,
+    "budget": {
+      "floorUsd": 12971,
+      "ceilUsd": 18504,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 30,
+    "transferRisk": 5
+  },
+  {
+    "slug": "combo--malta--sicily",
+    "title": "Malta + Sicily — composed draft",
+    "startId": "malta",
+    "partnerId": "sicily",
+    "startName": "Malta",
+    "partnerName": "Sicily",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 12233,
+      "ceilUsd": 17774,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 36,
+    "transferRisk": 2
+  },
+  {
+    "slug": "combo--sardinia--corsica",
+    "title": "Sardinia + Corsica — composed draft",
+    "startId": "sardinia",
+    "partnerId": "corsica",
+    "startName": "Sardinia",
+    "partnerName": "Corsica",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 11615,
+      "ceilUsd": 17960,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 34,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--slovenia--malta",
+    "title": "Slovenia + Malta — composed draft",
+    "startId": "slovenia",
+    "partnerId": "malta",
+    "startName": "Slovenia",
+    "partnerName": "Malta",
+    "totalNights": 13,
+    "budget": {
+      "floorUsd": 12425,
+      "ceilUsd": 19065,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--slovenia--sardinia",
+    "title": "Slovenia + Sardinia — composed draft",
+    "startId": "slovenia",
+    "partnerId": "sardinia",
+    "startName": "Slovenia",
+    "partnerName": "Sardinia",
+    "totalNights": 13,
+    "budget": {
+      "floorUsd": 13085,
+      "ceilUsd": 20015,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 34,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--switzerland--crete",
+    "title": "Switzerland + Crete — composed draft",
+    "startId": "switzerland",
+    "partnerId": "crete",
+    "startName": "Switzerland",
+    "partnerName": "Crete",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 13038,
+      "ceilUsd": 19570,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 2
+  },
+  {
+    "slug": "combo--switzerland--mallorca",
+    "title": "Switzerland + Mallorca — composed draft",
+    "startId": "switzerland",
+    "partnerId": "mallorca",
+    "startName": "Switzerland",
+    "partnerName": "Mallorca",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 12800,
+      "ceilUsd": 19845,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 2
+  },
+  {
+    "slug": "combo--switzerland--sicily",
+    "title": "Switzerland + Sicily — composed draft",
+    "startId": "switzerland",
+    "partnerId": "sicily",
+    "startName": "Switzerland",
+    "partnerName": "Sicily",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 13180,
+      "ceilUsd": 19291,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 2
+  },
+  {
+    "slug": "combo--venice-dolomites--malta",
+    "title": "Venice + Dolomites + Malta — composed draft",
+    "startId": "venice-dolomites",
+    "partnerId": "malta",
+    "startName": "Venice + Dolomites",
+    "partnerName": "Malta",
+    "totalNights": 11,
+    "budget": {
+      "floorUsd": 12415,
+      "ceilUsd": 19215,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 34,
+    "transferRisk": 3
+  },
+  {
+    "slug": "combo--venice-dolomites--sardinia",
+    "title": "Venice + Dolomites + Sardinia — composed draft",
+    "startId": "venice-dolomites",
+    "partnerId": "sardinia",
+    "startName": "Venice + Dolomites",
+    "partnerName": "Sardinia",
+    "totalNights": 13,
+    "budget": {
+      "floorUsd": 13665,
+      "ceilUsd": 20990,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "score": 35,
+    "transferRisk": 3
   }
 ]

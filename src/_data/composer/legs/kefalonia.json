@@ -1,0 +1,515 @@
+{
+  "id": "kefalonia",
+  "name": "Kefalonia",
+  "country": "Greece",
+  "sourceTrip": "madeira-kefalonia",
+  "mapColor": "#3f7d4e",
+  "mapPoints": [
+    {
+      "n": "Sami / Agia Efimia base",
+      "lat": 38.2969,
+      "lng": 20.6012,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.2969,20.6012",
+      "t": "hotel"
+    },
+    {
+      "n": "Myrtos cliff-road view",
+      "lat": 38.3452,
+      "lng": 20.5401,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.3452,20.5401",
+      "t": "view"
+    },
+    {
+      "n": "Assos harbor",
+      "lat": 38.3772,
+      "lng": 20.5391,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.3772,20.5391",
+      "t": "town"
+    },
+    {
+      "n": "Melissani Cave",
+      "lat": 38.2631,
+      "lng": 20.6281,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.2631,20.6281",
+      "t": "view"
+    },
+    {
+      "n": "Drogarati Cave",
+      "lat": 38.2394,
+      "lng": 20.6322,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.2394,20.6322",
+      "t": "view"
+    },
+    {
+      "n": "Fiskardo harbor",
+      "lat": 38.4573,
+      "lng": 20.5782,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.4573,20.5782",
+      "t": "town"
+    },
+    {
+      "n": "Antisamos Beach",
+      "lat": 38.2583,
+      "lng": 20.6803,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.2583,20.6803",
+      "t": "beach"
+    },
+    {
+      "n": "Argostoli turtles / harbor",
+      "lat": 38.1743,
+      "lng": 20.4891,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.1743,20.4891",
+      "t": "town"
+    },
+    {
+      "n": "Lassi / Makris Gialos",
+      "lat": 38.1561,
+      "lng": 20.4662,
+      "r": "kefalonia",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.1561,20.4662",
+      "t": "beach"
+    },
+    {
+      "n": "Navagio water viewpoint",
+      "lat": 37.8593,
+      "lng": 20.6252,
+      "r": "zakynthos",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.8593,20.6252",
+      "t": "view"
+    },
+    {
+      "n": "Zakynthos Blue Caves",
+      "lat": 37.9291,
+      "lng": 20.6303,
+      "r": "zakynthos",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.9291,20.6303",
+      "t": "beach"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "EFL"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→EFL",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "EFL→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 5,
+    "canonical": 6,
+    "max": 8
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_view.jpg",
+      "src": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_view.jpg",
+      "alt": "myrtos cliff view",
+      "captionTitle": "myrtos cliff view",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_01.jpg",
+      "src": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_01.jpg",
+      "alt": "Myrtos Beach's white crescent and deep blue bay seen from the cliff road above, Kefalonia",
+      "captionTitle": "Myrtos Beach",
+      "credit": "Antti Simonen · Flickr"
+    },
+    {
+      "href": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_02.jpg",
+      "src": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_02.jpg",
+      "alt": "A lone swimmer where turquoise shallows meet deep blue water at Myrtos Beach, Kefalonia",
+      "captionTitle": "Myrtos From Above",
+      "credit": "Dana Tentis · Unsplash"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach",
+    "heat"
+  ],
+  "june": {
+    "seaTempF": 75,
+    "airHiF": 82,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      170,
+      270
+    ],
+    "carPerDayUsd": [
+      60,
+      95
+    ],
+    "foodPerDayUsd": [
+      140,
+      190
+    ],
+    "activitiesFlatUsd": [
+      450,
+      800
+    ],
+    "provenance": "madeira-kefalonia destination-labelled budget rows, allocated to kefalonia"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 5,
+    "food": 4,
+    "novelty": 4,
+    "varietyTags": [
+      "beaches",
+      "caves",
+      "harbors",
+      "boats"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Myrtos reveal, then Assos harbor",
+      "feel": "Cliffs + town",
+      "daycost": "$$",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Kefalonia night 2 of 6"
+        },
+        {
+          "label": "Swim",
+          "valueHtml": "Myrtos is a wade/photo stop; Assos is the calmer option"
+        }
+      ],
+      "note": "The home-card day: cliffs first, harbor lunch second.",
+      "spots": [
+        {
+          "name": "Myrtos cliff-road reveal, then Assos harbor",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Myrtos%20cliff-road%20reveal%2C%20then%20Assos%20harbor\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/madeira/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; madeira</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/kefalonia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; kefalonia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ionian/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ionian</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Myrtos%20cliff-road%20reveal%2C%20then%20Assos%20harbor&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_view.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_view.jpg",
+              "alt": "myrtos cliff view",
+              "captionTitle": "myrtos cliff view",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_01.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_01.jpg",
+              "alt": "Myrtos Beach's white crescent and deep blue bay seen from the cliff road above, Kefalonia",
+              "captionTitle": "Myrtos Beach",
+              "credit": "Antti Simonen · Flickr"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_02.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_myrtos_cliff_02.jpg",
+              "alt": "A lone swimmer where turquoise shallows meet deep blue water at Myrtos Beach, Kefalonia",
+              "captionTitle": "Myrtos From Above",
+              "credit": "Dana Tentis · Unsplash"
+            }
+          ],
+          "cost": "Myrtos viewpoints and Assos wandering are free; budget sunbeds/parking only if used. Myrtos&rsquo;s steep shelf and changing swell make it a look/wade beach for the younger child, not the primary swim.",
+          "climateLabel": "June planning conditions",
+          "climate": "<b>June is warm and dry on Kefalonia:</b> plan around roughly 78–84°F air and 72–74°F sea as historical proxies. Mornings are likelier to be calmer; west-facing exposure can build later.",
+          "saveHtml": "<b>Save</b> Lead with the free cliff-road photo and have lunch in Assos rather than renting Myrtos sunbeds all day.",
+          "splurgeHtml": "<b>Splurge</b> Assos harbor lunch at a waterside taverna after the viewpoint.",
+          "restoHtml": "<li><b>Platanos, Assos</b> &mdash; pizza, pasta and grilled options.</li><li><b>Nefeli-Anait, Assos</b> &mdash; simple taverna dishes and fries.</li><li><b>Sami groceries</b> &mdash; pack water and beach food.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Assos harbor swim</b> if Myrtos surf is up.</li><li><b>Skip the beach descent</b> if parking/heat makes the cliff view enough.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.greeka.com/ionian/kefalonia/\" target=\"_blank\" rel=\"noreferrer\">Kefalonia destination guide</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Melissani + Drogarati, timed for the light",
+      "feel": "Caves + shade",
+      "daycost": "$$",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Kefalonia night 3 of 6"
+        },
+        {
+          "label": "Tickets",
+          "valueHtml": "Current combined cave pricing is a proxy; recheck 2027"
+        }
+      ],
+      "note": "A heat-smart, core Kefalonia day.",
+      "spots": [
+        {
+          "name": "Melissani lake at midday light + Drogarati cave",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Melissani%20lake%20at%20midday%20light%20%2B%20Drogarati%20cave\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/madeira/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; madeira</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/kefalonia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; kefalonia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ionian/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ionian</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Melissani%20lake%20at%20midday%20light%20%2B%20Drogarati%20cave&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_melissani_01.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_melissani_01.jpg",
+              "alt": "Melissani Cave's collapsed roof lighting the underground lake electric turquoise at midday, Kefalonia",
+              "captionTitle": "Melissani Sunbeam",
+              "credit": "Elios K · Flickr"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_melissani_02.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_melissani_02.jpg",
+              "alt": "A wooden tour boat crossing Melissani Cave's glowing blue-green underground lake, Kefalonia",
+              "captionTitle": "Melissani Boat",
+              "credit": "Marcus T Ward · Flickr"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_melissani_03.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_melissani_03.jpg",
+              "alt": "Rowboats crossing Melissani Cave's turquoise underground lake beneath the collapsed round roof opening, Kefalonia",
+              "captionTitle": "Melissani Sunbeam",
+              "credit": "Manuel Muñoz · Flickr"
+            }
+          ],
+          "cost": "Current Sami Municipality pricing lists Melissani at €10 adult / €5 reduced and Drogarati at €6 adult / €3 reduced, with a €4 Drogarati ticket after a Melissani ticket; current daily hours are 09:00–18:00. Recheck 2027 prices and the exact family eligibility.",
+          "climateLabel": "June planning conditions",
+          "climate": "<b>This is the midday exception:</b> Melissani&rsquo;s overhead light is the payoff, while Drogarati is cool and a useful heat break. Expect queues around the cave boats.",
+          "saveHtml": "<b>Save</b> Use the current combined-ticket discount and bring your own lunch for Antisamos afterward.",
+          "splurgeHtml": "<b>Splurge</b> Private transfer/guide only if avoiding parking and timing stress is worth it.",
+          "restoHtml": "<li><b>Contessina, Sami</b> &mdash; pizza, pasta and harbor seating.</li><li><b>Tereza, Sami</b> &mdash; pizza/café fallback.</li><li><b>Karavomylos picnic</b> &mdash; keeps the caves schedule flexible.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Antisamos first</b> if cruise/coach congestion makes the cave queues unpleasant.</li><li><b>Do one cave</b> rather than rushing both with tired kids.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.sami.gov.gr/discover/melissani-drogkarati/\" target=\"_blank\" rel=\"noreferrer\">Sami Municipality: Melissani & Drogarati</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Fiskardo harbor day",
+      "feel": "Town + harbor",
+      "daycost": "$$",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Kefalonia night 4 of 6"
+        }
+      ],
+      "note": "A deliberately unhurried north-island day.",
+      "spots": [
+        {
+          "name": "Fiskardo harbor: northern Kefalonia at a deliberately slow pace",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Fiskardo%20harbor%3A%20northern%20Kefalonia%20at%20a%20deliberately%20slow%20pace\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/madeira/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; madeira</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/kefalonia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; kefalonia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ionian/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ionian</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Fiskardo%20harbor%3A%20northern%20Kefalonia%20at%20a%20deliberately%20slow%20pace&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_fiskardo_01.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_fiskardo_01.jpg",
+              "alt": "A sailing yacht anchored in a turquoise cove near Fiskardo, Kefalonia",
+              "captionTitle": "Fiskardo Anchorage",
+              "credit": "schmilblick · Flickr"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_fiskardo_02.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_fiskardo_02.jpg",
+              "alt": "Yachts moored in Fiskardo harbor with pastel Venetian houses lining the waterfront, Kefalonia",
+              "captionTitle": "Fiskardo Marina",
+              "credit": "Steve · Pexels"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_fiskardo_03.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_fiskardo_03.jpg",
+              "alt": "Colorful Venetian-style waterfront houses and a moored fishing boat in Fiskardo village, Kefalonia",
+              "captionTitle": "Fiskardo Harborfront",
+              "credit": "Fiskardo · Flickr"
+            }
+          ],
+          "cost": "Harbor wandering is free; this is a longer north-island drive, so the cost is fuel and a scenic lunch rather than admission.",
+          "climateLabel": "June planning conditions",
+          "climate": "<b>Use the calm morning for the longer drive.</b> The harbor is a towns-and-food counterweight to beach days, with a swim stop only if the family wants one.",
+          "saveHtml": "<b>Save</b> Keep this one harbor meal and use a picnic / apartment dinner for the second meal.",
+          "splurgeHtml": "<b>Splurge</b> A waterfront lunch with adults&rsquo; seafood and a pizza/pasta fallback for kids.",
+          "restoHtml": "<li><b>Irida&rsquo;s, Fiskardo</b> &mdash; pizza, pasta and harbor tables.</li><li><b>Apagio, Fiskardo</b> &mdash; grilled chicken/fish and fries.</li><li><b>Sami bakery stop</b> &mdash; trail snacks for the drive.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Pair with Assos</b> only if everyone is comfortable with the longer scenic day.</li><li><b>Stay near Sami</b> for a low-output beach day if jet lag lingers.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.greeka.com/ionian/kefalonia/fiskardo/\" target=\"_blank\" rel=\"noreferrer\">Kefalonia guide</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Antisamos: the calm-swim reset",
+      "feel": "Beach + recover",
+      "daycost": "$$",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Kefalonia night 5 of 6"
+        },
+        {
+          "label": "Sea",
+          "valueHtml": "Historical June proxy 72–74°F; daily flags win"
+        }
+      ],
+      "note": "A true beach day before the boat.",
+      "spots": [
+        {
+          "name": "Antisamos: the easy, green-backed family swim day",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Antisamos%3A%20the%20easy%2C%20green-backed%20family%20swim%20day\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/madeira/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; madeira</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/kefalonia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; kefalonia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ionian/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ionian</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Antisamos%3A%20the%20easy%2C%20green-backed%20family%20swim%20day&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_antisamos_01.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_antisamos_01.jpg",
+              "alt": "Antisamos Beach's turquoise water and white pebble shore backed by green pine-covered mountains, Kefalonia",
+              "captionTitle": "Antisamos Bay",
+              "credit": "Evan Verni · Unsplash"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_antisamos_02.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_antisamos_02.jpg",
+              "alt": "Sailboats anchored below the green mountain backdrop of Antisamos Beach, Kefalonia",
+              "captionTitle": "Antisamos Cove",
+              "credit": "Theo Maroulis · Unsplash"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_antisamos_03.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_antisamos_03.jpg",
+              "alt": "Antisamos Beach's turquoise-to-navy water framed by steep pine-green mountains, Kefalonia",
+              "captionTitle": "Antisamos Green Bay",
+              "credit": "Gary Bembridge · Flickr"
+            }
+          ],
+          "cost": "Beach access is free; budget optional sunbeds, snacks and fuel. This is the scheduled easy swim day rather than a decorative beach stop.",
+          "climateLabel": "June planning conditions",
+          "climate": "<b>Historical June sea temperature is about 72–74°F.</b> Antisamos is a more manageable swim choice than Myrtos, but real wind, flags and sea state still win on the day.",
+          "saveHtml": "<b>Save</b> Bring shade/snacks and use the free beach rather than a beach-club package.",
+          "splurgeHtml": "<b>Splurge</b> Rent two sunbeds/umbrella for the all-day reset.",
+          "restoHtml": "<li><b>Antisamos beach café</b> &mdash; sandwiches, fries and simple beach food.</li><li><b>Tereza, Sami</b> &mdash; pizza at the end of the day.</li><li><b>AB / Lidl, Argostoli</b> &mdash; full grocery reset if needed.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Karavomylos waterfront</b> for a calmer, shorter swim.</li><li><b>Indoor cave timing</b> if a hot afternoon needs shade.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.greeka.com/ionian/kefalonia/beaches/antisamos/\" target=\"_blank\" rel=\"noreferrer\">Kefalonia beach guide</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Zakynthos boat: Navagio water-view + Blue Caves",
+      "feel": "Boat + sea caves",
+      "daycost": "$$$",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Kefalonia night 6 of 6"
+        },
+        {
+          "label": "Constraint",
+          "valueHtml": "Navagio landing is unconfirmed/likely restricted; do not promise it"
+        }
+      ],
+      "note": "Book only after 2027 access and sea-state terms are clear.",
+      "spots": [
+        {
+          "name": "Zakynthos day boat: Navagio viewpoint-from-water + Blue Caves",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Zakynthos%20day%20boat%3A%20Navagio%20viewpoint-from-water%20%2B%20Blue%20Caves\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/madeira/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; madeira</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/kefalonia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; kefalonia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ionian/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ionian</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Zakynthos%20day%20boat%3A%20Navagio%20viewpoint-from-water%20%2B%20Blue%20Caves&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_navagio_aerial.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_navagio_aerial.jpg",
+              "alt": "navagio aerial",
+              "captionTitle": "navagio aerial",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_navagio_aerial_01.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_navagio_aerial_01.jpg",
+              "alt": "Aerial view of Navagio Shipwreck Beach's rusted wreck on white sand in a turquoise cove ringed by pale cliffs, Zakynthos",
+              "captionTitle": "Navagio Beach",
+              "credit": "BOVISTAS · Pexels"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_navagio_aerial_02.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_navagio_aerial_02.jpg",
+              "alt": "Cliff-top aerial of Navagio Beach's shipwreck and turquoise cove with tour boats crossing the electric-blue water, Zakynthos",
+              "captionTitle": "Shipwreck Overlook",
+              "credit": "Sadettin Dogan · Pexels"
+            }
+          ],
+          "cost": "Budget a pre-booked full-day boat from Kefalonia. Navagio landing/swimming has been closed under a 2026 landslide safety decision; treat any 2027 cove access as unknown until the operator and authority confirm it. The honest plan is water viewing plus Blue Caves.",
+          "climateLabel": "June planning conditions",
+          "climate": "<b>Early sea is smoother.</b> This is a motion-sickness and wind-sensitive day; choose a licensed operator with cancellation/refund terms and make Antisamos the no-boat fallback.",
+          "saveHtml": "<b>Save</b> Book a standard shared boat with a clear Navagio-closure policy rather than paying for a promised landing that may be illegal.",
+          "splurgeHtml": "<b>Splurge</b> Small-group boat with shade, swim ladder and hotel transfer.",
+          "restoHtml": "<li><b>Pack sandwiches</b> &mdash; boat-day food is usually expensive and limited.</li><li><b>Sami pizza</b> &mdash; simple recovery dinner after the water.</li><li><b>Argostoli bakery</b> &mdash; use it for a shore-day fallback picnic.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Antisamos + Sami</b> if weather cancels the boat.</li><li><b>Blue Caves only</b> if Navagio restrictions remove the full-day value.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.thetraveler.org/zakynthos-navagio-beach-closed-to-visitors-until-october-2026/\" target=\"_blank\" rel=\"noreferrer\">Navagio access status (recheck for 2027)</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Argostoli turtles + Lassi warm-water finale",
+      "feel": "Wildlife + beach",
+      "daycost": "$$",
+      "facts": [
+        {
+          "label": "Wildlife",
+          "valueHtml": "Look, never approach or feed turtles"
+        }
+      ],
+      "note": "Use the final Kefalonia day for Argostoli turtles and a Lassi swim; keep the evening flexible around the eventual outbound schedule.",
+      "spots": [
+        {
+          "name": "Argostoli loggerhead-turtle harbor walk + Lassi/Makris Gialos",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Argostoli%20loggerhead-turtle%20harbor%20walk%20%2B%20Lassi%2FMakris%20Gialos\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/madeira/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; madeira</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/kefalonia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; kefalonia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ionian/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ionian</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Argostoli%20loggerhead-turtle%20harbor%20walk%20%2B%20Lassi%2FMakris%20Gialos&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_loggerhead_sunbeam.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_loggerhead_sunbeam.jpg",
+              "alt": "loggerhead sunbeam",
+              "captionTitle": "loggerhead sunbeam",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_loggerhead_surface.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_loggerhead_surface.jpg",
+              "alt": "loggerhead surface",
+              "captionTitle": "loggerhead surface",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/madeira-kefalonia/google_loggerhead_swim.jpg",
+              "src": "../../assets/img/madeira-kefalonia/google_loggerhead_swim.jpg",
+              "alt": "loggerhead swim",
+              "captionTitle": "loggerhead swim",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "The harbor walk and beach are free; budget beach chairs, a final meal and airport-adjacent fuel. Wildlife sightings are not guaranteed and must stay at a respectful distance.",
+          "climateLabel": "June planning conditions",
+          "climate": "<b>Use this as the warm-water finish.</b> Lassi offers a simpler, shallower beach option near the airport than Myrtos. Follow current beach flags and never approach turtles.",
+          "saveHtml": "<b>Save</b> Stay/park near Argostoli or Lassi for the final night so the airport morning is easy.",
+          "splurgeHtml": "<b>Splurge</b> One final sunset dinner in Argostoli after a short Lassi swim.",
+          "restoHtml": "<li><b>Il Borgo, Argostoli</b> &mdash; pizza, pasta and relaxed final-night seating.</li><li><b>Libretto, Argostoli</b> &mdash; burgers, pasta and fries.</li><li><b>Lassi bakeries</b> &mdash; airport-morning breakfast.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Repeat Antisamos</b> if the family prefers the greener beach.</li><li><b>Harbor-only morning</b> if wildlife etiquette or heat makes a beach day feel wrong.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.greeka.com/ionian/kefalonia/argostoli/\" target=\"_blank\" rel=\"noreferrer\">Kefalonia guide</a>"
+        }
+      ],
+      "travelNote": null
+    }
+  ]
+}

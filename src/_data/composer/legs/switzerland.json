@@ -1,0 +1,508 @@
+{
+  "id": "switzerland",
+  "name": "Switzerland",
+  "country": "Switzerland",
+  "sourceTrip": "switzerland-crete",
+  "mapColor": "#1f6f78",
+  "mapPoints": [
+    {
+      "n": "Lauterbrunnen / Interlaken base",
+      "lat": 46.5934,
+      "lng": 7.9061,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.5934,7.9061",
+      "t": "hotel"
+    },
+    {
+      "n": "Staubbach Falls, Lauterbrunnen",
+      "lat": 46.5946,
+      "lng": 7.9083,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.5946,7.9083",
+      "t": "view"
+    },
+    {
+      "n": "Trümmelbach Falls",
+      "lat": 46.5691,
+      "lng": 7.9033,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.5691,7.9033",
+      "t": "view"
+    },
+    {
+      "n": "Jungfraujoch — Top of Europe",
+      "lat": 46.5475,
+      "lng": 7.9805,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.5475,7.9805",
+      "t": "view"
+    },
+    {
+      "n": "Grindelwald-First (cliff walk)",
+      "lat": 46.6656,
+      "lng": 8.0431,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.6656,8.0431",
+      "t": "hike"
+    },
+    {
+      "n": "Männlichen — Royal Walk",
+      "lat": 46.6203,
+      "lng": 7.9525,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.6203,7.9525",
+      "t": "hike"
+    },
+    {
+      "n": "Iseltwald / Lake Brienz",
+      "lat": 46.6883,
+      "lng": 7.9377,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.6883,7.9377",
+      "t": "town"
+    },
+    {
+      "n": "Giessbach Falls",
+      "lat": 46.7195,
+      "lng": 8.0006,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.7195,8.0006",
+      "t": "view"
+    },
+    {
+      "n": "Harder Kulm / Interlaken",
+      "lat": 46.7027,
+      "lng": 7.8659,
+      "r": "berneroberland",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.7027,7.8659",
+      "t": "view"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "ZRH"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→ZRH",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "ZRH→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 4,
+    "canonical": 5,
+    "max": 7
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/switzerland-crete/google_interlaken_harderkulm_vista_01.jpg",
+      "src": "../../assets/img/switzerland-crete/google_interlaken_harderkulm_vista_01.jpg",
+      "alt": "The Harder Kulm platform cantilevered above Interlaken between Lakes Thun and Brienz",
+      "captionTitle": "Harder Kulm",
+      "credit": "Kosala Bandara · Google Images source"
+    },
+    {
+      "href": "../../assets/img/switzerland-crete/google_interlaken_three_peaks_01.jpg",
+      "src": "../../assets/img/switzerland-crete/google_interlaken_three_peaks_01.jpg",
+      "alt": "Eiger, Mönch and Jungfrau under a towering cumulus above Interlaken",
+      "captionTitle": "The Big Three",
+      "credit": "Eric Y · Google Images source"
+    },
+    {
+      "href": "../../assets/img/switzerland-crete/google_interlaken_lakethun_silhouette_01.jpg",
+      "src": "../../assets/img/switzerland-crete/google_interlaken_lakethun_silhouette_01.jpg",
+      "alt": "Crepuscular sun rays breaking over Lake Thun and the Niesen pyramid",
+      "captionTitle": "Lake Thun Light",
+      "credit": "Ank Kumar · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach",
+    "heat",
+    "rain"
+  ],
+  "june": {
+    "seaTempF": null,
+    "airHiF": 72,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      240,
+      380
+    ],
+    "carPerDayUsd": [
+      20,
+      60
+    ],
+    "foodPerDayUsd": [
+      170,
+      230
+    ],
+    "activitiesFlatUsd": [
+      900,
+      1500
+    ],
+    "provenance": "switzerland-crete destination-labelled budget rows, allocated to switzerland"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 2,
+    "food": 4,
+    "novelty": 5,
+    "varietyTags": [
+      "mountains",
+      "trains",
+      "lakes",
+      "villages"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Zurich, train to the Berner Oberland",
+      "feel": "Interlaken soft landing",
+      "daycost": "Est. $150 &middot; train, groceries, easy dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lauterbrunnen / Interlaken &middot; night 1 of 5"
+        },
+        {
+          "label": "Transfer",
+          "valueHtml": "ZRH -> Interlaken ~2h by direct train"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Check-in, Höheweg walk, groceries, early night"
+        }
+      ],
+      "note": "No Swiss rental car — the rail network reaches every mountain in this plan. Land, take the scenic train down, and let jet-lagged legs recover before the summit days.",
+      "spots": [
+        {
+          "name": "Interlaken soft landing: Höheweg + Harder Kulm view",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Interlaken%20soft%20landing%3A%20H%C3%B6heweg%20%2B%20Harder%20Kulm%20view\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/interlaken/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; interlaken</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/harderkulm/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; harderkulm</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/berneroberland/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; berneroberland</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Interlaken%20soft%20landing%3A%20H%C3%B6heweg%20%2B%20Harder%20Kulm%20view&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/switzerland-crete/google_interlaken_harderkulm_vista_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_interlaken_harderkulm_vista_01.jpg",
+              "alt": "The Harder Kulm platform cantilevered above Interlaken between Lakes Thun and Brienz",
+              "captionTitle": "Harder Kulm",
+              "credit": "Kosala Bandara · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_interlaken_three_peaks_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_interlaken_three_peaks_01.jpg",
+              "alt": "Eiger, Mönch and Jungfrau under a towering cumulus above Interlaken",
+              "captionTitle": "The Big Three",
+              "credit": "Eric Y · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_interlaken_lakethun_silhouette_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_interlaken_lakethun_silhouette_01.jpg",
+              "alt": "Crepuscular sun rays breaking over Lake Thun and the Niesen pyramid",
+              "captionTitle": "Lake Thun Light",
+              "credit": "Ank Kumar · Google Images source"
+            }
+          ],
+          "cost": "The Höheweg promenade and lakefronts are free. The Harder Kulm funicular is the paid add-on, but its published fare is genuinely inconsistent across sources (roughly CHF 19–51 adult depending on window/pass) — treat it as unknown until you check jungfrau.ch the week you travel. Half-Fare/Swiss Travel Pass takes ~50% off.",
+          "climateLabel": "Valley",
+          "climate": "<b>Valley floor, ~1,900 ft.</b> June highs about 63°F / lows 47°F, with a high day-to-day rain probability (~57% chance of some rain). A relaxed arrival day is the right use of jet-lagged legs before the mountain days.",
+          "saveHtml": "<b>Save</b> Walk the Höheweg, watch the paragliders land, and skip the funicular on arrival day; save Harder Kulm for a clear evening later in the block.",
+          "splurgeHtml": "<b>Splurge</b> A clear-evening Harder Kulm sunset ride for the classic squeezed-between-two-lakes shot, if the sky cooperates.",
+          "restoHtml": "<li><b>Luna Piccante (Wilderswil, ~6 min)</b> — wood-fired pizza with a kids’ play area and free parking</li><li><b>Asllanis Corner</b> — gourmet burgers and fries, casual and family-friendly</li><li><b>Ristorante e Pizzeria Sapori</b> — classic Italian in the center, reliable picky-kid pizza/pasta</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Lake Thun boat</b> for a low-effort first afternoon if energy is very low.</li><li><b>Bönigen lakeshore</b> for a quiet turquoise-water stroll away from the crowds.</li><li><b>Grocery + early night</b> — the honest jet-lag choice before Jungfraujoch.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.jungfrau.ch/en-gb/harderkulm/\" target=\"_blank\" rel=\"noreferrer\">Harder Kulm official info</a><a class=\"xg\" href=\"https://www.interlaken.ch/en\" target=\"_blank\" rel=\"noreferrer\">Interlaken tourism</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Lauterbrunnen valley",
+      "feel": "Waterfall valley + Trümmelbach",
+      "daycost": "Est. $140 &middot; Trümmelbach, lunch, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lauterbrunnen / Interlaken &middot; night 2 of 5"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Staubbach + Trümmelbach glacier torrents"
+        },
+        {
+          "label": "Weather rule",
+          "valueHtml": "Trümmelbach is inside the rock — the smart rainy-morning pick"
+        }
+      ],
+      "note": "The classic cliff-walled valley: 72 waterfalls, the Staubbach free-fall, and the Trümmelbach glacier torrents carved inside the mountain. Weather-flexible on purpose.",
+      "spots": [
+        {
+          "name": "Lauterbrunnen valley: 72 waterfalls + Trümmelbach",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lauterbrunnen%20valley%3A%2072%20waterfalls%20%2B%20Tr%C3%BCmmelbach\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lauterbrunnen/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; lauterbrunnen</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/staubbach/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; staubbach</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/trummelbach/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; trummelbach</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Lauterbrunnen%20valley%3A%2072%20waterfalls%20%2B%20Tr%C3%BCmmelbach&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/switzerland-crete/google_lauterbrunnen_twilight_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_lauterbrunnen_twilight_01.jpg",
+              "alt": "Lauterbrunnen valley at dusk with a silky river and snow peaks between the cliffs",
+              "captionTitle": "Twilight Valley",
+              "credit": "Li Feng · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_lauterbrunnen_wengen_pano_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_lauterbrunnen_wengen_pano_01.jpg",
+              "alt": "The Lauterbrunnen valley sweeping toward the Jungfrau from the Wengen side",
+              "captionTitle": "Valley Sweep",
+              "credit": "S. Lasiuk · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_lauterbrunnen_chalets_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_lauterbrunnen_chalets_01.jpg",
+              "alt": "Traditional chalets under a towering cloud in the Lauterbrunnen valley",
+              "captionTitle": "Alpine Chalets",
+              "credit": "Ning Goldtranquil · Google Images source"
+            }
+          ],
+          "cost": "Staubbach Falls is free from the village. Trümmelbach Falls (the glacier torrents inside the mountain) charges about CHF 18 adult / CHF 8 child 6–15 — roughly CHF 52 (~$58) for the family; under-4s are not permitted for safety. Open early April–early November, ~9am–5pm in June.",
+          "climateLabel": "Valley",
+          "climate": "<b>Cliff-walled valley, ~2,600 ft.</b> June is green and misty with frequent afternoon showers. Trümmelbach is inside the rock, so it is the smart rainy-morning pick; the open-valley waterfall walks want a drier window.",
+          "saveHtml": "<b>Save</b> Do the free Staubbach base walk and the village-to-Stechelberg valley path; pay only for Trümmelbach, which is genuinely unique.",
+          "splurgeHtml": "<b>Splurge</b> Add the Wengen or Mürren cliff-shelf funicular for a car-free balcony village and a different angle on the valley.",
+          "restoHtml": "<li><b>Restaurant Steinbeck</b> — ~20 pizza varieties, kid-size portions available</li><li><b>Restaurant Weidstübli</b> — pizza/pasta with vegetarian, vegan and gluten-free options, Staubbach views</li><li><b>Hotel Oberland</b> — pizzas, pasta and soups with a garden in the village center</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Mürren (car-free shelf village)</b> for the balcony view if the valley floor is socked in.</li><li><b>Trümmelbach only</b> as a rainy-morning anchor, then regroup.</li><li><b>Wengen</b> for an easy cog-rail town day with Jungfrau views.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://lauterbrunnen.swiss/en/map/detail/trummelbach-waterfalls-52c355bf-8544-4c9b-9885-427fc77657fb.html\" target=\"_blank\" rel=\"noreferrer\">Trümmelbach Falls official</a><a class=\"xg\" href=\"https://lauterbrunnen.swiss/en/\" target=\"_blank\" rel=\"noreferrer\">Lauterbrunnen tourism</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Jungfraujoch — Top of Europe",
+      "feel": "Highest railway in Europe, on the clearest morning",
+      "daycost": "Est. $700 &middot; summit railway, snacks, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lauterbrunnen / Interlaken &middot; night 3 of 5"
+        },
+        {
+          "label": "Cost truth",
+          "valueHtml": "Family ~CHF 560-580 (~$640) — the leg’s biggest line"
+        },
+        {
+          "label": "Weather rule",
+          "valueHtml": "Go on the clearest forecast day; keep it flexible with First"
+        }
+      ],
+      "note": "The marquee splurge: cog rail to 3,454 m, the Aletsch Glacier, Ice Palace and Sphinx terrace. Near-freezing at the top even in June, and cloud can white it out — so this day floats to the best forecast morning of the block.",
+      "spots": [
+        {
+          "name": "Jungfraujoch — Top of Europe (3,454 m)",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Jungfraujoch%20%E2%80%94%20Top%20of%20Europe%20(3%2C454%20m)\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/jungfraujoch/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; jungfraujoch</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/topofeurope/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; topofeurope</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/aletsch/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; aletsch</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Jungfraujoch%20%E2%80%94%20Top%20of%20Europe%20(3%2C454%20m)&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/switzerland-crete/google_jungfraujoch_sphinx_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_jungfraujoch_sphinx_01.jpg",
+              "alt": "The Sphinx Observatory perched on the rock spire at the Jungfraujoch",
+              "captionTitle": "Sphinx Summit",
+              "credit": "Kevin Poh · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_jungfraujoch_aletsch_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_jungfraujoch_aletsch_01.jpg",
+              "alt": "The Aletsch Glacier sweeping between peaks from the Top of Europe",
+              "captionTitle": "Aletsch Glacier",
+              "credit": "Hurni Christoph · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_jungfraujoch_summit_walk_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_jungfraujoch_summit_walk_01.jpg",
+              "alt": "Visitors on the snow saddle at the Jungfraujoch under a sunstar sky",
+              "captionTitle": "Top of Europe",
+              "credit": "Kosala Bandara · Google Images source"
+            }
+          ],
+          "cost": "The single biggest line item of the whole leg. Plan off the Grindelwald round-trip fare (~CHF 239 adult in summer), with kids 6–15 at about CHF 20–30 (or free with a Swiss Family / Junior card), plus the CHF 10/person May–Oct reservation. Realistic family total: <b>roughly CHF 560–580 (~$630–650)</b>. A Swiss Travel Pass gives only 25% off the summit railway — it is not included. Re-verify at jungfraujochtickets.ch before booking; peak fares run dynamic.",
+          "climateLabel": "Summit",
+          "climate": "<b>3,454 m / near-freezing year-round.</b> Expect roughly 28–36°F at the top even in June, regardless of valley heat — hats, gloves and real jackets. Cloud can white out the Aletsch view entirely, so keep a flex day and go on the clearest morning.",
+          "saveHtml": "<b>Save</b> Buy the Grindelwald-side ticket (cheaper than Interlaken Ost), get free Junior/Family cards at any SBB station first, and pack summit snacks — the Crystal/Panorama self-service is pricey cafeteria fare.",
+          "splurgeHtml": "<b>Splurge</b> The full summit experience — Ice Palace, Sphinx terrace, and a snow-play hour — is the once-in-a-lifetime payoff on a clear day; go all-in when the forecast is good.",
+          "restoHtml": "<li><b>Crystal / Panorama self-service (summit)</b> — fries, pasta, sandwiches; functional, not cheap</li><li><b>Bollywood restaurant (summit)</b> — Indian, the novelty option at the top station</li><li><b>Pack lunch</b> — the smartest move; eat a proper dinner back down in Grindelwald or the valley</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Go on the clearest forecast day</b> — this is why the Swiss block keeps a flex morning.</li><li><b>Schynige Platte or Männlichen</b> as the lower-altitude big-view fallback if the summit is clouded.</li><li><b>Skip entirely and bank the ~$640</b> toward the Crete leg if weather never cooperates.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/\" target=\"_blank\" rel=\"noreferrer\">Jungfraujoch official</a><a class=\"xg\" href=\"https://www.jungfrau.ch/en-gb/prices-and-tickets/\" target=\"_blank\" rel=\"noreferrer\">Jungfrau prices & tickets</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Grindelwald-First adventure day",
+      "feel": "Cliff Walk, zipline, mountain carts",
+      "daycost": "Est. $620 &middot; gondola, activities, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lauterbrunnen / Interlaken &middot; night 4 of 5"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "First Cliff Walk + First Flyer / Mountain Cart"
+        },
+        {
+          "label": "Kid win",
+          "valueHtml": "The single best day for the 8-year-old"
+        }
+      ],
+      "note": "The kid-magnet day: the cantilevered First Cliff Walk against the Eiger, then the First Flyer zipline, First Glider and Mountain Carts back down. Swap with Jungfraujoch if today’s summit forecast is the better one.",
+      "spots": [
+        {
+          "name": "Grindelwald-First: Cliff Walk + adventure day",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Grindelwald-First%3A%20Cliff%20Walk%20%2B%20adventure%20day\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/grindelwaldfirst/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; grindelwaldfirst</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/firstcliffwalk/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; firstcliffwalk</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/firstflyer/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; firstflyer</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Grindelwald-First%3A%20Cliff%20Walk%20%2B%20adventure%20day&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/switzerland-crete/google_first_cliffwalk_schreckhorn_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_first_cliffwalk_schreckhorn_01.jpg",
+              "alt": "The First Cliff Walk on the cliff edge below the glaciated Schreckhorn",
+              "captionTitle": "First Cliff Walk",
+              "credit": "Craig Warner · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_bachalpsee_summer_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_bachalpsee_summer_01.jpg",
+              "alt": "Summer peaks and clouds doubled in the Bachalpsee reflection",
+              "captionTitle": "Mirror Lake",
+              "credit": "Izakigur · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_first_cliffwalk_overhang_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_first_cliffwalk_overhang_01.jpg",
+              "alt": "The First Cliff Walk ducking under a rock overhang toward the Eiger",
+              "captionTitle": "Under the Cliff",
+              "credit": "Robert Smrekar · Google Images source"
+            }
+          ],
+          "cost": "The single best kid-magnet of the leg. Gondola round-trip runs about CHF 76 adult in peak June (kids reduced; STP/Half-Fare ~50% off). The Cliff Walk is free with any gondola ticket. Add-on rides — First Flyer zipline, First Glider, Mountain Cart, Trottibike — start ~CHF 21 each; an Adventure Package bundling gondola + activities is ~CHF 69–99/person. A full family adventure day lands around <b>CHF 500–600 (~$570–680)</b>.",
+          "climateLabel": "Mountain",
+          "climate": "<b>2,168 m.</b> June is roughly 50–59°F up top, windier than the valley, with the usual Alpine afternoon-thunderstorm risk. Ride up in the morning, do the cliff walk and rides before clouds build, and keep rain shells in the pack.",
+          "saveHtml": "<b>Save</b> Buy the gondola + one activity each rather than the whole ride menu; the Cliff Walk and Bachalpsee hike are free once you’re up.",
+          "splurgeHtml": "<b>Splurge</b> Let each kid pick a First Flyer/Mountain Cart combo — this is the day the 8-year-old remembers most.",
+          "restoHtml": "<li><b>Berggasthaus First (top station)</b> — burgers, bacon-cheese penne, rösti, goulash soup, vegan options, big terrace</li><li><b>Grindelwald village pizzerias</b> — plenty of plain-pizza/pasta fallbacks after the descent</li><li><b>Pack trail snacks</b> — for the Bachalpsee walk if you extend the day</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Bachalpsee hike (from First)</b> — ~1 hr each way to the region’s iconic reflection lake.</li><li><b>Cliff Walk only</b> if the kids just want the headline photo and the rides look too much.</li><li><b>Move to a clear day</b> — swap with Jungfraujoch if the summit forecast is better today.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.jungfrau.ch/en-gb/grindelwaldfirst/\" target=\"_blank\" rel=\"noreferrer\">Grindelwald-First official</a><a class=\"xg\" href=\"https://www.jungfrau.ch/en-gb/grindelwaldfirst/adventure-package/\" target=\"_blank\" rel=\"noreferrer\">First Adventure Package</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Männlichen panorama + Lake Brienz",
+      "feel": "Easy ridge view, then turquoise lake",
+      "daycost": "Est. $220 &middot; gondola, boat, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lauterbrunnen / Interlaken &middot; night 5 of 5"
+        },
+        {
+          "label": "Morning",
+          "valueHtml": "Männlichen Royal Walk — easy Eiger-Mönch-Jungfrau view"
+        },
+        {
+          "label": "Afternoon",
+          "valueHtml": "Iseltwald pier + Lake Brienz boat"
+        }
+      ],
+      "note": "A gentler alpine day: the short Männlichen Royal Walk for the three-peak panorama, then glacier-turquoise Lake Brienz and the Iseltwald pier.",
+      "spots": [
+        {
+          "name": "Männlichen Royal Walk — easy Eiger–Mönch–Jungfrau panorama",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=M%C3%A4nnlichen%20Royal%20Walk%20%E2%80%94%20easy%20Eiger%E2%80%93M%C3%B6nch%E2%80%93Jungfrau%20panorama\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/mannlichen/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; mannlichen</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/royalwalk/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; royalwalk</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/grindelwald/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; grindelwald</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=M%C3%A4nnlichen%20Royal%20Walk%20%E2%80%94%20easy%20Eiger%E2%80%93M%C3%B6nch%E2%80%93Jungfrau%20panorama&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/switzerland-crete/google_mannlichen_eiger_ridge_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_mannlichen_eiger_ridge_01.jpg",
+              "alt": "The Eiger north face from the Männlichen ridge trail under blue sky",
+              "captionTitle": "Eiger From the Ridge",
+              "credit": "Jason Selby · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_mannlichen_eiger_cloud_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_mannlichen_eiger_cloud_01.jpg",
+              "alt": "Cloud wrapping the Eiger above green Männlichen meadows",
+              "captionTitle": "Cloud on the Eiger",
+              "credit": "Michael Kemper · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_mannlichen_gondola_valley_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_mannlichen_gondola_valley_01.jpg",
+              "alt": "The Männlichen gondola descending toward the Lauterbrunnen valley",
+              "captionTitle": "Gondola Descent",
+              "credit": "Kosala Bandara · Google Images source"
+            }
+          ],
+          "cost": "The best value big-view of the leg. Männlichen gondola from Grindelwald Terminal is about CHF 34 adult / ~CHF 17 child return — roughly half the Schynige Platte cog railway (CHF 68 adult). The Royal Walk itself (~2 km, +120 m, ~30 min to the crown platform) is free and genuinely stroller-and-8-year-old friendly.",
+          "climateLabel": "Ridge",
+          "climate": "<b>~2,230 m ridge.</b> Cooler and breezier than the valley; the payoff is a dead-ahead Eiger–Mönch–Jungfrau wall from an easy, short walk. A good half-day to pair with the Lake Brienz afternoon.",
+          "saveHtml": "<b>Save</b> Ride from the Grindelwald side (cheaper), do the free Royal Walk, and picnic at the top instead of buying summit food.",
+          "splurgeHtml": "<b>Splurge</b> Walk the panorama ridge trail toward Kleine Scheidegg for a longer high balcony if the 13-year-old wants more.",
+          "restoHtml": "<li><b>Berghaus Männlichen (top)</b> — rösti and simple mountain plates at the crown</li><li><b>Grindelwald village</b> — return for pizza/pasta and burgers after the ride down</li><li><b>Pack a summit picnic</b> — cheapest and best-timed with the panorama</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Schynige Platte</b> instead if you’re Interlaken-side and want the alpine botanical garden.</li><li><b>Kleine Scheidegg ridge walk</b> to extend the panorama for stronger legs.</li><li><b>Straight to Lake Brienz</b> if clouds swallow the peaks — save the ridge for a clear slot.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.maennlichen.ch/en/summer/information/fare-prices-from-grindelwald.html\" target=\"_blank\" rel=\"noreferrer\">Männlichen fares (Grindelwald)</a><a class=\"xg\" href=\"https://www.maennlichen.ch/en/summer/experiences/royal-walk.html\" target=\"_blank\" rel=\"noreferrer\">Royal Walk official</a>"
+        },
+        {
+          "name": "Lake Brienz: Iseltwald pier + Giessbach Falls boat",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lake%20Brienz%3A%20Iseltwald%20pier%20%2B%20Giessbach%20Falls%20boat\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lakebrienz/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; lakebrienz</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/iseltwald/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; iseltwald</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/giessbach/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; giessbach</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Lake%20Brienz%3A%20Iseltwald%20pier%20%2B%20Giessbach%20Falls%20boat&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/switzerland-crete/google_iseltwald_pier_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_iseltwald_pier_01.jpg",
+              "alt": "The famous wooden Iseltwald pier reaching into turquoise Lake Brienz",
+              "captionTitle": "Iseltwald Pier",
+              "credit": "John Wisdom · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_brienz_boat_turquoise_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_brienz_boat_turquoise_01.jpg",
+              "alt": "The decorated MS Brienz cruising the turquoise water of Lake Brienz",
+              "captionTitle": "Brienz Boat",
+              "credit": "Eduardo Arostegui · Google Images source"
+            },
+            {
+              "href": "../../assets/img/switzerland-crete/google_brienz_sunset_sailboat_01.jpg",
+              "src": "../../assets/img/switzerland-crete/google_brienz_sunset_sailboat_01.jpg",
+              "alt": "A sailboat on Lake Brienz at sunset with warm reflections",
+              "captionTitle": "Golden Hour",
+              "credit": "Anthony Petter · Google Images source"
+            }
+          ],
+          "cost": "The turquoise-lake day. A BLS lake boat runs its full schedule from late May; a one-way Interlaken Ost–Brienz seat is ~CHF 39 adult (kids reduced; free with pass). The famous Iseltwald wooden pier now has a turnstile with a ~CHF 5 entry to control crowds. The Giessbach funicular is likely bundled into a BLS combo ticket — confirm that fare before counting on it.",
+          "climateLabel": "Lake",
+          "climate": "<b>Glacier-fed, ~57–64°F in June.</b> The vivid turquoise comes from glacial rock flour — but this is a <b>look-don’t-swim</b> lake in June; kids can wade, full swimming waits for the Crete leg. Official swim season is really July–August.",
+          "saveHtml": "<b>Save</b> Do the free Iseltwald village lanes and the short lakeshore, ride one boat leg rather than the full loop, and let the swimming happen in Crete.",
+          "splurgeHtml": "<b>Splurge</b> The full Brienz → Giessbach → Iseltwald boat loop with the historic Giessbach funicular is a lovely slow half-day if the weather is calm.",
+          "restoHtml": "<li><b>Chälet du Lac (Iseltwald)</b> — explicit kids’ menu and portions, lake-fish specialties</li><li><b>Restaurant Seegarten (Iseltwald)</b> — pizza, salads, burgers on a lakeside terrace</li><li><b>Strandhotel Iseltwald</b> — lake-caught fish plus house plates on the water</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Giessbach Falls funicular + terrace</b> for the grand-hotel waterfall setting.</li><li><b>Brienz village woodcarving shops</b> for a rainy-afternoon town stop.</li><li><b>Lake Thun / Spiez</b> as the alternate turquoise-lake option from Interlaken’s west side.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.bls-schiff.ch/en/lake-cruise/tickets-vouchers/tickets\" target=\"_blank\" rel=\"noreferrer\">Lake Brienz boat tickets (BLS)</a><a class=\"xg\" href=\"https://www.swissinfo.ch/eng/culture/swiss-beauty-spot-to-contain-korean-netflix-tourists/48516698\" target=\"_blank\" rel=\"noreferrer\">Iseltwald crowd-control story</a>"
+        }
+      ],
+      "travelNote": null
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+{
+  "id": "venice-dolomites",
+  "name": "Venice + Dolomites",
+  "country": "Italy",
+  "sourceTrip": "dolomites-sardinia",
+  "mapColor": "#1f6f78",
+  "mapPoints": [
+    {
+      "n": "Venice Marco Polo Airport (VCE)",
+      "lat": 45.5053,
+      "lng": 12.3519,
+      "r": "venice",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.5053,12.3519",
+      "t": "flight"
+    },
+    {
+      "n": "Grand Canal & Rialto",
+      "lat": 45.438,
+      "lng": 12.3359,
+      "r": "venice",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.438,12.3359",
+      "t": "town"
+    },
+    {
+      "n": "Piazza San Marco & St. Mark's Basilica",
+      "lat": 45.4342,
+      "lng": 12.3378,
+      "r": "venice",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.4342,12.3378",
+      "t": "town"
+    },
+    {
+      "n": "Murano & Burano islands",
+      "lat": 45.4854,
+      "lng": 12.4166,
+      "r": "venice",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.4854,12.4166",
+      "t": "town"
+    },
+    {
+      "n": "San Vito di Cadore base (Cortina)",
+      "lat": 46.4667,
+      "lng": 12.206,
+      "r": "dolomites",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.4667,12.206",
+      "t": "hotel"
+    },
+    {
+      "n": "Lago di Braies",
+      "lat": 46.6958,
+      "lng": 12.0857,
+      "r": "dolomites",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.6958,12.0857",
+      "t": "hike"
+    },
+    {
+      "n": "Tre Cime di Lavaredo",
+      "lat": 46.6167,
+      "lng": 12.3017,
+      "r": "dolomites",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.6167,12.3017",
+      "t": "hike"
+    },
+    {
+      "n": "Cadini di Misurina viewpoint",
+      "lat": 46.6072,
+      "lng": 12.2967,
+      "r": "dolomites",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.6072,12.2967",
+      "t": "hike"
+    },
+    {
+      "n": "Seceda & Alpe di Siusi",
+      "lat": 46.5928,
+      "lng": 11.6772,
+      "r": "dolomites",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.5928,11.6772",
+      "t": "hike"
+    },
+    {
+      "n": "Cinque Torri",
+      "lat": 46.5119,
+      "lng": 12.0333,
+      "r": "dolomites",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.5119,12.0333",
+      "t": "hike"
+    },
+    {
+      "n": "Cortina d'Ampezzo",
+      "lat": 46.5405,
+      "lng": 12.1357,
+      "r": "dolomites",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.5405,12.1357",
+      "t": "town"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "VCE"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→VCE",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "VCE→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 6,
+    "canonical": 7,
+    "max": 9
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/dolomites-sardinia/img-1f0e25f18514.jpg",
+      "src": "../../assets/img/dolomites-sardinia/img-1f0e25f18514.jpg",
+      "alt": "St. Mark's Basilica facade and mosaics in Venice",
+      "captionTitle": "St. Mark's Basilica",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/dolomites-sardinia/img-550c91c1acce.jpg",
+      "src": "../../assets/img/dolomites-sardinia/img-550c91c1acce.jpg",
+      "alt": "Domes and spires of St. Mark's Basilica against the sky",
+      "captionTitle": "St. Mark's Domes",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/dolomites-sardinia/google_venice_gondolas_flickr_02.jpg",
+      "src": "../../assets/img/dolomites-sardinia/google_venice_gondolas_flickr_02.jpg",
+      "alt": "Gondolas moored on the Venice lagoon at blue hour.",
+      "captionTitle": "Venice Blue Hour",
+      "credit": "susini.dr · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach",
+    "heat",
+    "rain"
+  ],
+  "june": {
+    "seaTempF": null,
+    "airHiF": 72,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      210,
+      340
+    ],
+    "carPerDayUsd": [
+      65,
+      100
+    ],
+    "foodPerDayUsd": [
+      160,
+      220
+    ],
+    "activitiesFlatUsd": [
+      700,
+      1200
+    ],
+    "provenance": "dolomites-sardinia destination-labelled budget rows, allocated to venice-dolomites"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 2,
+    "food": 5,
+    "novelty": 4,
+    "varietyTags": [
+      "canals",
+      "mountains",
+      "lakes",
+      "villages"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Piazza San Marco at kid pace",
+      "feel": "Towns & squares",
+      "daycost": "Est. $220 &middot; Campanile, meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Venice &middot; night 2 of 2"
+        },
+        {
+          "label": "Morning",
+          "valueHtml": "San Marco early, before the heat"
+        },
+        {
+          "label": "Optional",
+          "valueHtml": "Campanile lift for the lagoon view"
+        }
+      ],
+      "note": "Do the great square early while it is cool and half-empty. The free piazza and facade are the memory; the Campanile elevator is the one paid add-on worth it. Keep the afternoon loose.",
+      "spots": [
+        {
+          "name": "Piazza San Marco &amp; St. Mark's Basilica",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Piazza%20San%20Marco%20%26%20St.%20Mark's%20Basilica\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/sanmarco/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; sanmarco</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/venice/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; venice</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/basilica/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; basilica</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Piazza%20San%20Marco%20%26%20St.%20Mark's%20Basilica&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-1f0e25f18514.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-1f0e25f18514.jpg",
+              "alt": "St. Mark's Basilica facade and mosaics in Venice",
+              "captionTitle": "St. Mark's Basilica",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-550c91c1acce.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-550c91c1acce.jpg",
+              "alt": "Domes and spires of St. Mark's Basilica against the sky",
+              "captionTitle": "St. Mark's Domes",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_venice_gondolas_flickr_02.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_venice_gondolas_flickr_02.jpg",
+              "alt": "Gondolas moored on the Venice lagoon at blue hour.",
+              "captionTitle": "Venice Blue Hour",
+              "credit": "susini.dr · Google Images source"
+            }
+          ],
+          "cost": "Piazza free. Basilica nave &euro;10/person (pre-book). Campanile lift &euro;15/person (~&euro;60/family).",
+          "climateLabel": "Weather",
+          "climate": "<b>82&deg;F</b> day / <b>68&deg;F</b> night &mdash; humid. The square bakes at midday; go early or at dusk.",
+          "saveHtml": "<b>Save</b> Skip the paid Basilica interior &mdash; the free piazza and facade are the photo. Saves &euro;40&ndash;100 and keeps the day light, per the no-death-march plan.",
+          "splurgeHtml": "<b>Splurge</b> Pre-book the Campanile lift (&euro;60/family) for the 323-ft lagoon view &mdash; the elevator is far kinder on kid legs than the stairs.",
+          "restoHtml": "<li><a href=\"https://gruppo1000.com/\" target=\"_blank\" rel=\"noreferrer\"><b>1000 Gourmet Venezia</b></a> &mdash; Neapolitan pizza near the piazza, reliably packed with families</li><li><a href=\"https://www.aciugheta.com/en/\" target=\"_blank\" rel=\"noreferrer\"><b>Aciugheta</b></a> &mdash; Venetian trattoria near San Zaccaria, wood-fired kids’ pizza plus cicchetti</li><li><a href=\"https://www.6342aletole.it/en/\" target=\"_blank\" rel=\"noreferrer\"><b>6342 A Le Tole</b></a> &mdash; 30+ pizzas and housemade pasta in Castello</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Doge’s Palace courtyard</b> &mdash; free-adjacent and a better backup if the Basilica line feels like too much with kids.</li><li><b>Bridge of Sighs</b> &mdash; a two-minute photo stop just behind the palace.</li><li><b>Gelato on the Riva</b> &mdash; a waterfront cone with the lagoon view instead of a second church.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://thetourguy.com/travel-blog/venice/st-marks-square-basilica/\" target=\"_blank\" rel=\"noreferrer\">St. Mark’s Basilica & Piazza Guide</a><a class=\"xg\" href=\"https://www.klook.com/blog/piazza-san-marco/\" target=\"_blank\" rel=\"noreferrer\">A Half-Day in Piazza San Marco</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Lago di Braies &mdash; the emerald warm-up",
+      "feel": "Alpine lake",
+      "daycost": "Est. $150 &middot; shuttle/boat, rifugio lunch",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "San Vito di Cadore (Cortina) &middot; night 2 of 5"
+        },
+        {
+          "label": "Early",
+          "valueHtml": "Beat the 9am valley car-closure"
+        },
+        {
+          "label": "Walk",
+          "valueHtml": "Free lakeshore loop ~35 min"
+        }
+      ],
+      "note": "Ease into the Dolomites with the gentlest, most famous lake. Go early &mdash; the valley closes to private cars at 9am from July 1 (reserve at prags.bz), and morning is when the water is a mirror.",
+      "spots": [
+        {
+          "name": "Lago di Braies",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lago%20di%20Braies\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lagodibraies/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; lagodibraies</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/dolomites/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; dolomites</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/pragserwildsee/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; pragserwildsee</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Lago%20di%20Braies&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-25945131df08.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-25945131df08.jpg",
+              "alt": "Emerald Lago di Braies with its iconic boathouse and mountain wall",
+              "captionTitle": "Lago di Braies",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_braies_flickr_01.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_braies_flickr_01.jpg",
+              "alt": "The Lago di Braies boathouse beneath steep Dolomite walls.",
+              "captionTitle": "Alpine Boathouse",
+              "credit": "\"joseluisleeh\" · Google Images source"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_braies_flickr_02.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_braies_flickr_02.jpg",
+              "alt": "Emerald Lago di Braies reflecting the surrounding peaks.",
+              "captionTitle": "Emerald Lake",
+              "credit": "\"joseluisleeh\" · Google Images source"
+            }
+          ],
+          "cost": "Parking &euro;7 (P2) to &euro;12 (P3, lakeside). Rowboat: shared &euro;20/person, private 45-min &euro;55. Valley car-closed 9am&ndash;4pm from Jul 1 &mdash; reserve at prags.bz.",
+          "climateLabel": "Altitude",
+          "climate": "<b>60&deg;F</b> day / <b>42&deg;F</b> night at lake level (1,496m) &mdash; the cold lake keeps mornings crisp; go before 9am for glass-still reflections.",
+          "saveHtml": "<b>Save</b> Skip the boat and walk the free ~35-minute lakeshore loop &mdash; same emerald water, same boathouse, zero queue. Saves ~&euro;55&ndash;80 for the family.",
+          "splurgeHtml": "<b>Splurge</b> A private 45-minute rowboat (&euro;55) at golden hour for the postcard frame &mdash; wooden hull, the boathouse behind you, the peaks doubled in the water.",
+          "restoHtml": "<li><a href=\"https://www.lagodibraies.com/en/foods-and-drinks/panorama-restaurant-p138.html\" target=\"_blank\" rel=\"noreferrer\"><b>Panorama (Hotel Lago di Braies)</b></a> &mdash; lake-view terrace, South Tyrolean; simple pasta for kids, reserve ahead</li><li><a href=\"https://www.lagodibraies.com/en/\" target=\"_blank\" rel=\"noreferrer\"><b>Chalet snack counter</b></a> &mdash; fries, sandwiches, simple pasta, the fast picky-eater lunch</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=Ristorante+Lago+di+Braies\" target=\"_blank\" rel=\"noreferrer\"><b>Ristorante Lago di Braies</b></a> &mdash; independent lakeside spot, confirm pizza on the day’s menu</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Lago di Carezza</b> &mdash; a zero-hike, drive-up alpine lake below the Latemar with no reservation system.</li><li><b>Lago di Dobbiaco</b> &mdash; a flat, stroller-easy lake loop close to the base.</li><li><b>Prato Piazza (Plätzwiese)</b> &mdash; a high meadow plateau if the family wants views without a climb.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://northabroad.com/dolomites-best-hikes-viewpoints/\" target=\"_blank\" rel=\"noreferrer\">North Abroad &mdash; Best Dolomites Hikes & Viewpoints (master list)</a><a class=\"xg\" href=\"https://www.earthtrekkers.com/how-to-visit-lago-di-braies/\" target=\"_blank\" rel=\"noreferrer\">How to Visit Lago di Braies</a><a class=\"xg\" href=\"https://www.moonhoneytravel.com/lago-di-braies-italy/\" target=\"_blank\" rel=\"noreferrer\">Lago di Braies 2026 Guide</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Tre Cime di Lavaredo &mdash; the big one",
+      "feel": "Epic hike",
+      "daycost": "Est. $180 &middot; toll road, trail lunch",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "San Vito di Cadore (Cortina) &middot; night 3 of 5"
+        },
+        {
+          "label": "Slot",
+          "valueHtml": "Pre-booked toll road, 7&ndash;9am"
+        },
+        {
+          "label": "Loop",
+          "valueHtml": "~6mi, cable-car-free but a gentle grade"
+        }
+      ],
+      "note": "The signature Dolomites day. The toll road drives you to 2,333m so the loop starts high &mdash; the 8-year-old walks under the three peaks without a summit push, the 13-year-old gets a real trail. Start early to beat the storms &mdash; and from the same Rifugio Auronzo car park you can bolt on the short Cadini di Misurina viewpoint at sunrise (see below).",
+      "spots": [
+        {
+          "name": "Tre Cime di Lavaredo",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Tre%20Cime%20di%20Lavaredo\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/trecime/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; trecime</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/dreizinnen/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; dreizinnen</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/dolomites/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; dolomites</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Tre%20Cime%20di%20Lavaredo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-692c22e11451.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-692c22e11451.jpg",
+              "alt": "The Tre Cime massif viewed from the loop trail",
+              "captionTitle": "Three Towers",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-9ec2c545982a.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-9ec2c545982a.jpg",
+              "alt": "Tre Cime's classic three-tower profile under high alpine light",
+              "captionTitle": "Tre Cime",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_trecime_flickr_01.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_trecime_flickr_01.jpg",
+              "alt": "Tre Cime rising beyond the calm surface of Lake Misurina.",
+              "captionTitle": "Misurina View",
+              "credit": "\"echumachenco\" · Google Images source"
+            }
+          ],
+          "cost": "Toll road to Rifugio Auronzo &euro;40/car (pre-book a timed slot at auronzo.info). Rifugio lunch ~&euro;60&ndash;80/family.",
+          "climateLabel": "Altitude",
+          "climate": "<b>62&deg;F</b> day / <b>38&deg;F</b> night at 2,333m &mdash; afternoon storms are common; start the loop by 9am and be down by mid-afternoon.",
+          "saveHtml": "<b>Save</b> Book the 7&ndash;9am toll slot for the best light and thinnest crowd, and pack sandwiches for the Locatelli viewpoint instead of a rifugio lunch (&euro;15&ndash;18/plate &times; 4).",
+          "splurgeHtml": "<b>Splurge</b> Sleep at Rifugio Locatelli (~&euro;60&ndash;70/person half-board) to get the blue-hour and sunrise faces without the day-trippers &mdash; bring cash, the huts don’t take cards.",
+          "restoHtml": "<li><a href=\"https://rifugioauronzo.it/en/\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Auronzo</b></a> &mdash; self-service at the trailhead: pasta, wurstel, fries, polenta; easiest kid meal on the mountain</li><li><a href=\"https://www.passionedolomiti.com/en/rifugio/rifugio-locatelli/\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Locatelli</b></a> &mdash; the classic Three-Peaks view hut; plain polenta for picky eaters</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=Rifugio+Lavaredo\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Lavaredo</b></a> &mdash; trailside on the loop, same Alpine self-service and a good fallback if Locatelli is packed</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Lago di Sorapis</b> &mdash; a harder, quieter hike to a milky-turquoise lake (fixed cables) for the 13-year-old.</li><li><b>Monte Piana</b> &mdash; a WWI open-air museum plateau above Lago di Misurina with trenches, tunnels, and 360&deg; views.</li><li><b>Lago di Misurina lakeshore</b> &mdash; the easy, flat option at the foot of the toll road if legs are done.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.earthtrekkers.com/hiking-tre-cime-di-lavaredo-loop/\" target=\"_blank\" rel=\"noreferrer\">Tre Cime Loop Trail Guide</a><a class=\"xg\" href=\"https://throneandvine.com/tre-cime-di-lavaredo-drei-zinnen-guide/\" target=\"_blank\" rel=\"noreferrer\">The Ultimate Tre Cime Guide (2026)</a>"
+        },
+        {
+          "name": "Cadini di Misurina Viewpoint",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cadini%20di%20Misurina\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cadinidimisurina/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; cadinidimisurina</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/dolomites/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; dolomites</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/misurina/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; misurina</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Cadini%20di%20Misurina&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-3f3784e2dd4f.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-3f3784e2dd4f.jpg",
+              "alt": "Sunlit Cadini limestone spires rising above the trail",
+              "captionTitle": "Limestone Needles",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-7aa77d66e260.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-7aa77d66e260.jpg",
+              "alt": "The Cadini promontory and its serrated limestone needles",
+              "captionTitle": "Cadini Viewpoint",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_cadini_flickr_01.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_cadini_flickr_01.jpg",
+              "alt": "Sunrise color washing the Cadini peaks.",
+              "captionTitle": "Cadini Sunrise",
+              "credit": "\"baileycarswell_\" · Google Images source"
+            }
+          ],
+          "cost": "No extra toll &mdash; same Rifugio Auronzo car park as Tre Cime (&euro;40/car, one timed slot covers both). The viewpoint hike itself is free: ~3.9km out-and-back, ~1hr, only 144m of gain on path #117.",
+          "climateLabel": "Trail",
+          "climate": "<b>Easy hike, one exposed catch.</b> Short and mostly gentle from the car park &mdash; but the famous photo promontory is a <b>narrow ridge with cliff drop-offs</b>. Doable with kids if you keep the 8-year-old close and stop short of the knife-edge tip; the 13-year-old is fine with care in dry weather. A right-side contour path skips the exposed crest entirely. Skip it if wet, icy, or windy.",
+          "saveHtml": "<b>Save</b> This is the rare free epic &mdash; no lift, no separate ticket. Do it first, at sunrise, before the Tre Cime loop while the light rakes the needles and the ridge is empty, then walk back to the car and start the big loop.",
+          "splurgeHtml": "<b>Splurge</b> Book a local sunrise photo guide from Misurina &mdash; they know exactly where the family can stand safely for the postcard frame and handle the pre-dawn timing so you don't.",
+          "restoHtml": "<li><a href=\"https://rifugioauronzo.it/en/\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Auronzo</b></a> &mdash; right at the trailhead; self-service pasta, wurstel, fries before or after the walk</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=Rifugio+Col+de+Varda+Misurina\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Col de Varda</b></a> &mdash; the hut path #117 heads toward; chairlift-served, easy add for a strudel stop</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=Ristorante+Lago+di+Misurina\" target=\"_blank\" rel=\"noreferrer\"><b>Lakeside at Lago di Misurina</b></a> &mdash; pizza and gelato by the lake at the foot of the toll road</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Right-side contour path</b> &mdash; the same viewpoint area without going over the exposed crest, if heights are a concern.</li><li><b>Lago di Misurina loop</b> &mdash; a flat, stroller-easy lakeshore walk with a playground if the family skips the ridge.</li><li><b>Monte Piana</b> &mdash; a WWI trench-and-tunnel plateau above the lake for a history-flavored alternative.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://northabroad.com/dolomites-best-hikes-viewpoints/\" target=\"_blank\" rel=\"noreferrer\">North Abroad &mdash; Best Dolomites Hikes & Viewpoints</a><a class=\"xg\" href=\"https://www.earthtrekkers.com/cadini-di-misurina-viewpoint-hike/\" target=\"_blank\" rel=\"noreferrer\">Exactly How to Hike to the Cadini di Misurina Viewpoint</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Seceda’s ridge by cable car",
+      "feel": "Cable-car alpine",
+      "daycost": "Est. $300 &middot; cableway (family), lunch",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "San Vito di Cadore (Cortina) &middot; night 4 of 5"
+        },
+        {
+          "label": "Cable car",
+          "valueHtml": "Ortisei -> Seceda, timed slot"
+        },
+        {
+          "label": "Walk",
+          "valueHtml": "Ridge stroll, or hike down via Rifugio Firenze"
+        }
+      ],
+      "note": "The cable car does the climbing so everyone stands on the 2,500m Seceda ridge &mdash; the tilted-earth view of the Odle spires. Do the ridge walk before noon; willing hikers can ride up one-way and walk down to turn the ticket into the day’s trek.",
+      "spots": [
+        {
+          "name": "Seceda &amp; Alpe di Siusi",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Seceda%20%26%20Alpe%20di%20Siusi\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/seceda/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; seceda</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alpedisiusi/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; alpedisiusi</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/valgardena/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; valgardena</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Seceda%20%26%20Alpe%20di%20Siusi&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-53a57efe35b7.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-53a57efe35b7.jpg",
+              "alt": "Seceda's knife-edge ridge and Odle spires",
+              "captionTitle": "Seceda Ridge",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_seceda_flickr_01.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_seceda_flickr_01.jpg",
+              "alt": "Seceda’s serrated ridge under sweeping alpine sky.",
+              "captionTitle": "Seceda Ridge",
+              "credit": "\"baileycarswell_\" · Google Images source"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_seceda_flickr_02.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_seceda_flickr_02.jpg",
+              "alt": "A dramatic Seceda panorama with cloud-wrapped spires.",
+              "captionTitle": "Seceda Light",
+              "credit": "\"Brian Wilson.ie\" · Google Images source"
+            }
+          ],
+          "cost": "Ortisei&ndash;Seceda cableway round trip ~&euro;74 adult / &euro;37 junior (8&ndash;15), under-8 free &mdash; ~&euro;222/family. Timed-slot pre-booking required.",
+          "climateLabel": "Altitude",
+          "climate": "<b>57&deg;F</b> day / <b>38&deg;F</b> night on the 2,500m ridge &mdash; very exposed and windy; do the ridge walk before noon, before the storms build.",
+          "saveHtml": "<b>Save</b> Buy one-way UP (&euro;49 adult/&euro;25 junior) and hike down via Rifugio Firenze &mdash; it turns the priciest ticket of the leg into the day’s epic hike and saves ~&euro;25/adult.",
+          "splurgeHtml": "<b>Splurge</b> The full Seceda&ndash;Rifugio Firenze&ndash;Baita Troier circuit with a mid-ridge rifugio lunch &mdash; a half-day alpine trek under the Odle spires with three hut stops.",
+          "restoHtml": "<li><a href=\"https://www.sanon.it/\" target=\"_blank\" rel=\"noreferrer\"><b>Baita Sanon</b></a> &mdash; Alpe di Siusi, family-run Tyrolean/Ladin, explicitly kid-friendly, plain plates on request</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=Rifugio+Firenze+Regensburger+Hutte\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Firenze</b></a> &mdash; on the ridge circuit; pasta, polenta, dumplings and an Odle-peaks terrace</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=Rifugio+Bullaccia+Puflatsch\" target=\"_blank\" rel=\"noreferrer\"><b>Ristorante Bullaccia (Puflatsch)</b></a> &mdash; Alpe di Siusi, fast-serving South Tyrolean for small kids</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Passo Giau</b> &mdash; drive up the switchbacks to a wide-open meadow saddle with 360&deg; views; no cable car, no timed slot.</li><li><b>Alpe di Siusi (Compatsch)</b> &mdash; Europe’s largest alpine meadow, gentle and stroller-friendly by its own gondola.</li><li><b>Ortisei town</b> &mdash; a pretty Val Gardena stroll if the ridge is socked in.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.earthtrekkers.com/seceda-dolomites/\" target=\"_blank\" rel=\"noreferrer\">Best Way to Visit Seceda</a><a class=\"xg\" href=\"https://www.moonhoneytravel.com/hiking-seceda-regensburger-hutte-val-gardena/\" target=\"_blank\" rel=\"noreferrer\">Seceda&ndash;Rifugio Firenze Circuit</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Cinque Torri & Cortina &mdash; the lighter day",
+      "feel": "Easy hike + town",
+      "daycost": "Est. $200 &middot; chairlift, cable car, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "San Vito di Cadore (Cortina) &middot; night 5 of 5"
+        },
+        {
+          "label": "Morning",
+          "valueHtml": "Cinque Torri chairlift + WWI loop"
+        },
+        {
+          "label": "Afternoon",
+          "valueHtml": "Cortina town / Faloria cable car"
+        }
+      ],
+      "note": "Use the short Cinque Torri loop for a lighter alpine finale: WWI trenches beneath wild towers, then Cortina for a stroll and gelato.",
+      "spots": [
+        {
+          "name": "Cinque Torri",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cinque%20Torri\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cinquetorri/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; cinquetorri</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/dolomites/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; dolomites</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cortina/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; cortina</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Cinque%20Torri&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-37309fa9d94e.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-37309fa9d94e.jpg",
+              "alt": "Cinque Torri rising over an alpine meadow",
+              "captionTitle": "Cinque Torri",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_cinquetorri_flickr_02.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_cinquetorri_flickr_02.jpg",
+              "alt": "Cinque Torri standing above the high alpine meadow.",
+              "captionTitle": "Cinque Torri",
+              "credit": "\"baileycarswell_\" · Google Images source"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_cinquetorri_flickr_08.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_cinquetorri_flickr_08.jpg",
+              "alt": "Cinque Torri rising from a wide alpine plateau.",
+              "captionTitle": "Cinque Plateau",
+              "credit": "Andrelo2014 · Google Images source"
+            }
+          ],
+          "cost": "Chairlift return &euro;27.50 adult (one-way &euro;20.50); under-8 free, minors discounted &mdash; budget ~&euro;75&ndash;85/family. 5% card discount in 2026.",
+          "climateLabel": "Altitude",
+          "climate": "<b>60&deg;F</b> day / <b>40&deg;F</b> night at Rifugio Scoiattoli (2,225m) &mdash; short and easy, so it forgives a late-morning start after a slow breakfast.",
+          "saveHtml": "<b>Save</b> Pay by credit card at the base for the built-in 5% discount, then walk the free ~2km WWI-trench loop once you’re up &mdash; one of the cheapest “epic scenery” stops of the whole trip.",
+          "splurgeHtml": "<b>Splurge</b> Add the beginner via-ferrata-lite from Rifugio Scoiattoli toward Averau (short, guided) for the 13-year-old &mdash; a real climbing memory while the rest of the family relaxes on the terrace.",
+          "restoHtml": "<li><a href=\"https://5torri.it/EN/s24-Scoiattoli-Refuge\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Scoiattoli</b></a> &mdash; right under the towers; casunziei ravioli and polenta, flag ahead for a plain-pasta kid plate</li><li><a href=\"https://www.rifugioaverau.it/en/cuisine/the-restaurant/\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Averau</b></a> &mdash; a 30-min walk on, sommelier-run homemade pasta; confirm a simple option</li><li><a href=\"https://5torri.it/EN/s27-Cinque-Torri-Refuge\" target=\"_blank\" rel=\"noreferrer\"><b>Rifugio Cinque Torri</b></a> &mdash; casual at the base of the towers; casunziei, ricotta strudel, homemade bread</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Rifugio Lagazuoi</b> &mdash; a 5-minute cable car to a WWI tunnel network and a panoramic hut at Passo Falzarego.</li><li><b>Nuvolau / Averau loop</b> &mdash; a longer scramble to a 360&deg; summit view for the strong-legged.</li><li><b>Lago Ghedina</b> &mdash; a quiet, forest-ringed little lake near Cortina for an easy afternoon.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.earthtrekkers.com/cinque-torri-hike-dolomites/\" target=\"_blank\" rel=\"noreferrer\">Cinque Torri Hike & Rifugios</a><a class=\"xg\" href=\"https://www.ourbigjourney.com/cinque-torri-dolomites/\" target=\"_blank\" rel=\"noreferrer\">Cinque Torri with Kids</a>"
+        },
+        {
+          "name": "Cortina d'Ampezzo &amp; the Faloria Cable Car",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cortina%20d'Ampezzo%20%26%20the%20Faloria%20Cable%20Car\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cortina/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; cortina</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/dolomites/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; dolomites</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/faloria/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; faloria</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Cortina%20d'Ampezzo%20%26%20the%20Faloria%20Cable%20Car&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/dolomites-sardinia/img-ff7ef24cfb52.jpg",
+              "src": "../../assets/img/dolomites-sardinia/img-ff7ef24cfb52.jpg",
+              "alt": "Aerial view of Cinque Torri and the Tofana wall above Cortina",
+              "captionTitle": "Cortina Peaks",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_cortina_flickr_01.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_cortina_flickr_01.jpg",
+              "alt": "The Tofane wall dominating the Cortina skyline.",
+              "captionTitle": "Tofane",
+              "credit": "\"Michael.Kemper\" · Google Images source"
+            },
+            {
+              "href": "../../assets/img/dolomites-sardinia/google_cortina_flickr_02.jpg",
+              "src": "../../assets/img/dolomites-sardinia/google_cortina_flickr_02.jpg",
+              "alt": "A high Dolomite pass above the Cortina region.",
+              "captionTitle": "Dolomite Pass",
+              "credit": "\"Michael.Kemper\" · Google Images source"
+            }
+          ],
+          "cost": "Faloria cable car ~&euro;27 adult / ~&euro;20 under-16 (~&euro;94/family). Freccia nel Cielo to Cima Tofana &euro;45 adult round trip.",
+          "climateLabel": "Weather",
+          "climate": "<b>65&deg;F</b> day / <b>45&deg;F</b> night in town (1,224m) &mdash; mornings are the reliably clear window; storms roll through most afternoons.",
+          "saveHtml": "<b>Save</b> Ride Faloria (~half the price of Freccia nel Cielo) for a comparable panorama, and window-shop Corso Italia for free &mdash; the 2026-Olympics town is a stroll, not a ticket.",
+          "splurgeHtml": "<b>Splurge</b> Freccia nel Cielo all the way to Cima Tofana (3,244m, &euro;45 adult) &mdash; the single highest, most dramatic viewpoint reachable without technical climbing on the whole trip.",
+          "restoHtml": "<li><a href=\"https://www.google.com/maps/search/?api=1&query=Ristorante+Pizzeria+5+Torri+Cortina\" target=\"_blank\" rel=\"noreferrer\"><b>Ristorante Pizzeria 5 Torri</b></a> &mdash; Corso Italia, busy family standby, traditional pizza and pasta</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=Pizzeria+Ai+Due+Forni+Cortina\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Ai Due Forni</b></a> &mdash; town center, pizza by the slice or whole, the fast post-hike dinner</li><li><a href=\"https://www.google.com/maps/search/?api=1&query=El+Camineto+Cortina\" target=\"_blank\" rel=\"noreferrer\"><b>El Camineto</b></a> &mdash; above town with a valley view; polenta, grilled meats, simple pasta for kids</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Lago di Sorapis viewpoint (Passo Tre Croci)</b> &mdash; roadside massif views instead of a second cable car if legs are tired.</li><li><b>Rifugio Lagazuoi + WWI tunnels</b> &mdash; a cable-car-and-history half day at Passo Falzarego.</li><li><b>Mercato / gelato on Corso Italia</b> &mdash; a low-key town afternoon before the flight south.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.moonhoneytravel.com/cortina-d-ampezzo-italy/\" target=\"_blank\" rel=\"noreferrer\">Cortina d’Ampezzo Guide</a><a class=\"xg\" href=\"https://mamalovesitaly.com/cortina-d-ampezzo-with-kids/\" target=\"_blank\" rel=\"noreferrer\">Cortina with Kids</a>"
+        }
+      ],
+      "travelNote": null
+    }
+  ]
+}

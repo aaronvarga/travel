@@ -9,6 +9,17 @@ const definitions = {
   crete: { sourceTrip: 'madeira-crete', name: 'Crete', country: 'Greece', regions: ['chania', 'rethymno'] },
   sicily: { sourceTrip: 'madeira-sicily', name: 'Sicily', country: 'Italy', regions: ['north-sicily', 'east-sicily'] },
   'lisbon-cascais': { sourceTrip: 'portugal-sicily', name: 'Lisbon + Cascais', country: 'Portugal', regions: ['portugal'] },
+  algarve: { sourceTrip: 'portugal', name: 'Algarve', country: 'Portugal', regions: ['algarve'] },
+  kefalonia: { sourceTrip: 'madeira-kefalonia', name: 'Kefalonia', country: 'Greece', regions: ['kefalonia', 'zakynthos'], dayPattern: 'Myrtos|Melissani|Fiskardo|Antisamos|Zakynthos|Argostoli' },
+  lefkada: { sourceTrip: 'greece-ionian', name: 'Lefkada', country: 'Greece', regions: ['lefkada'], dayPattern: 'Ferry to Lefkada|West-coast|Agios Nikitas|Meganisi|Lefkada Town' },
+  'athens-cyclades': { sourceTrip: 'greece-cyclades', name: 'Athens + Cyclades', country: 'Greece', regions: ['athens', 'naxos', 'paros', 'milos'], dayPattern: 'Arrive Athens|Acropolis|Naxos|Paros|Milos|Kleftiko|Sarakiniko' },
+  switzerland: { sourceTrip: 'switzerland-crete', name: 'Switzerland', country: 'Switzerland', regions: ['berneroberland'], dayPattern: 'Zurich|Lauterbrunnen|Jungfraujoch|Grindelwald|Männlichen' },
+  slovenia: { sourceTrip: 'slovenia-adriatic', name: 'Slovenia', country: 'Slovenia', regions: ['gorenjska', 'soca', 'primorska', 'ljubljana'], dayPattern: 'Ljubljana|Bled|Vintgar|Bohinj|Vršič|Soča|Tolmin|Škocjan|Piran|Beaches' },
+  mallorca: { sourceTrip: 'madeira-mallorca', name: 'Mallorca', country: 'Spain', regions: ['palma', 'north-mallorca', 'east-mallorca'] },
+  malta: { sourceTrip: 'sicily-malta', name: 'Malta', country: 'Malta', regions: ['malta'] },
+  'venice-dolomites': { sourceTrip: 'dolomites-sardinia', name: 'Venice + Dolomites', country: 'Italy', regions: ['venice', 'dolomites'] },
+  sardinia: { sourceTrip: 'sardinia-corsica', name: 'Sardinia', country: 'Italy', regions: ['alghero', 'ogliastra', 'cagliari'] },
+  corsica: { sourceTrip: 'sardinia-corsica', name: 'Corsica', country: 'France', regions: ['corsica'] },
 };
 
 function stripDay(day) {
@@ -76,7 +87,7 @@ function extract(id, config) {
   const pointRegionByCoordinate = new Map((main.mapPoints ?? []).map((point) => [`${Number(point.lat).toFixed(4)},${Number(point.lng).toFixed(4)}`, point.r]));
   const selected = (main.itinerary?.days ?? []).filter((day) => {
     const regions = dayRegions(day, pointRegionByName, pointRegionByCoordinate);
-    return regions.some((region) => config.regions.includes(region));
+    return regions.some((region) => config.regions.includes(region)) || (config.dayPattern && new RegExp(config.dayPattern, 'i').test(day.heading ?? ''));
   });
   const review = [];
   const days = selected.map((day, index) => {

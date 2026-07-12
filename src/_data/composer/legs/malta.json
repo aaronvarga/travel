@@ -1,0 +1,321 @@
+{
+  "id": "malta",
+  "name": "Malta",
+  "country": "Malta",
+  "sourceTrip": "sicily-malta",
+  "mapColor": "#d9a441",
+  "mapPoints": [
+    {
+      "n": "Valletta",
+      "lat": 35.8989,
+      "lng": 14.5146,
+      "r": "malta",
+      "g": "https://www.google.com/maps/search/?api=1&query=35.8989,14.5146"
+    },
+    {
+      "n": "Sliema",
+      "lat": 35.9122,
+      "lng": 14.5069,
+      "r": "malta",
+      "g": "https://www.google.com/maps/search/?api=1&query=35.9122,14.5069"
+    },
+    {
+      "n": "Blue Lagoon",
+      "lat": 36.0143,
+      "lng": 14.3264,
+      "r": "malta",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.0143,14.3264"
+    },
+    {
+      "n": "Comino",
+      "lat": 36.0133,
+      "lng": 14.336,
+      "r": "malta",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.0133,14.336"
+    },
+    {
+      "n": "Gozo / Victoria",
+      "lat": 36.0443,
+      "lng": 14.2512,
+      "r": "malta",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.0443,14.2512"
+    },
+    {
+      "n": "Ramla Bay",
+      "lat": 36.0619,
+      "lng": 14.2845,
+      "r": "malta",
+      "g": "https://www.google.com/maps/search/?api=1&query=36.0619,14.2845"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "MLA"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→MLA",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "MLA→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 3,
+    "canonical": 4,
+    "max": 6
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/sicily-malta/google_comino_blue_lagoon_01.jpg",
+      "src": "../../assets/img/sicily-malta/google_comino_blue_lagoon_01.jpg",
+      "alt": "Blue Lagoon Comino with shallow crystal water and pale sand.",
+      "captionTitle": "Blue Lagoon",
+      "credit": "Voyages Bernard · Google Images source"
+    },
+    {
+      "href": "../../assets/img/sicily-malta/google_comino_cove_01.jpg",
+      "src": "../../assets/img/sicily-malta/google_comino_cove_01.jpg",
+      "alt": "A cinematic island landscape from this Sicily and Malta itinerary.",
+      "captionTitle": "Island View",
+      "credit": "Existing self-hosted trip gallery · Google Images source"
+    },
+    {
+      "href": "../../assets/img/sicily-malta/google_gozo_ramla_bay_01.jpg",
+      "src": "../../assets/img/sicily-malta/google_gozo_ramla_bay_01.jpg",
+      "alt": "Ramla Bay golden beach and green Gozo hills from above.",
+      "captionTitle": "Ramla Bay",
+      "credit": "Tapeciarnia · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "beach",
+    "heat"
+  ],
+  "june": {
+    "seaTempF": 75,
+    "airHiF": 83,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      180,
+      290
+    ],
+    "carPerDayUsd": [
+      0,
+      25
+    ],
+    "foodPerDayUsd": [
+      145,
+      200
+    ],
+    "activitiesFlatUsd": [
+      400,
+      750
+    ],
+    "provenance": "sicily-malta destination-labelled budget rows, allocated to malta"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 5,
+    "food": 4,
+    "novelty": 4,
+    "varietyTags": [
+      "swimming",
+      "fortresses",
+      "boats",
+      "old-towns"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Malta and settle in Valletta or Sliema",
+      "feel": "Short hop + Valletta evening",
+      "daycost": "Est. ~$360–620 · flight + transfers + dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Valletta / Sliema · night 1 of 3"
+        }
+      ],
+      "note": "Skip the rental car: left-side driving and tight parking make a short Malta stay easier with ferries, taxis, and tours.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Valletta old town",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Valletta%20old%20town\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/valletta/\" target=\"_blank\" rel=\"noreferrer\">IG · Valletta</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=valletta&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sicily-malta/google_comino_blue_lagoon_01.jpg",
+              "src": "../../assets/img/sicily-malta/google_comino_blue_lagoon_01.jpg",
+              "alt": "Blue Lagoon Comino with shallow crystal water and pale sand.",
+              "captionTitle": "Blue Lagoon",
+              "credit": "Voyages Bernard · Google Images source"
+            },
+            {
+              "href": "../../assets/img/sicily-malta/google_comino_cove_01.jpg",
+              "src": "../../assets/img/sicily-malta/google_comino_cove_01.jpg",
+              "alt": "A cinematic island landscape from this Sicily and Malta itinerary.",
+              "captionTitle": "Island View",
+              "credit": "Existing self-hosted trip gallery · Google Images source"
+            },
+            {
+              "href": "../../assets/img/sicily-malta/google_gozo_ramla_bay_01.jpg",
+              "src": "../../assets/img/sicily-malta/google_gozo_ramla_bay_01.jpg",
+              "alt": "Ramla Bay golden beach and green Gozo hills from above.",
+              "captionTitle": "Ramla Bay",
+              "credit": "Tapeciarnia · Google Images source"
+            }
+          ],
+          "cost": "St John’s Co-Cathedral: open Mon–Sat 9:00–16:45, last admission 16:00; adults usually ~€15, children/student concessions. Grand Master’s Palace: €12 adult / €10 youth / €8 child 6–11; Throne Room closed until further notice.",
+          "climateLabel": "June weather",
+          "climate": "Air ~<b>80–84°F</b> / <b>69–71°F</b>. Malta/Comino sea should be around <b>73–74°F</b> on Jun 20–22, with sheltered lagoons often feeling warmer.",
+          "saveHtml": "<b>Save</b> Use Valletta ferries/ride-hail instead of a Malta rental car; left-side driving and parking do not help a 3-night stay.",
+          "splurgeHtml": "<b>Splurge</b> A harbor cruise or private dgħajsa boat gives the Grand Harbour view kids remember.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g190328-d26382508-Reviews-I_Pupi_Pizzeria_Valletta-Valletta_Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>I Pupi Pizzeria Valletta</b></a> — excellent-value pizza, 4.9★, ~$12–20 pp</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g190328-c31-zfp5-Valletta_Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>Casa Sotto</b></a> — Roman pizza in Valletta, top family pizza pick</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g190328-Valletta_Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>Sally Port Pizzeria</b></a> — pizza/pasta in Valletta, 4.8★; familiar dinner fallback</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Mdina+Malta\" target=\"_blank\" rel=\"noreferrer\"><b>Mdina</b> ↗</a> — quieter medieval “Silent City” if Valletta feels too hot or crowded.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Ghajn%20Tuffieha%20Malta\" target=\"_blank\" rel=\"noreferrer\"><b>Ghajn Tuffieha</b> ↗</a> — proper sandy beach day without Comino boat logistics.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Ramla%20Bay%20Gozo\" target=\"_blank\" rel=\"noreferrer\"><b>Ramla Bay</b> ↗</a> — red-sand beach version of a Gozo day if a full island loop is too much.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.stjohnscocathedral.com/visit/\" target=\"_blank\" rel=\"noreferrer\">St John official visit rules ↗</a><a href=\"https://heritagemalta.mt/explore/grand-masters-palace/\" target=\"_blank\" rel=\"noreferrer\">Heritage Malta Palace info ↗</a>",
+          "lat": "35.8989",
+          "lng": "14.5146"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Blue Lagoon / Comino swim day",
+      "feel": "Warm-water centerpiece",
+      "daycost": "Est. ~$260–520 · boat choice drives cost",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Valletta / Sliema · night 2 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Pre-book Blue Lagoon slot, boat to Comino, early swim"
+        },
+        {
+          "label": "Car",
+          "valueHtml": "No car; use tour pickup or taxi to departure point"
+        }
+      ],
+      "note": "This is the water-temperature fix in its purest form. Book the new free Blue Lagoon access pass before you go.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Blue Lagoon + Comino",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Blue%20Lagoon%20%2B%20Comino\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bluelagoon/\" target=\"_blank\" rel=\"noreferrer\">IG · Blue Lagoon</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/comino/\" target=\"_blank\" rel=\"noreferrer\">IG · Comino</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=bluelagoon&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sicily-malta/google_valletta_old_street_01.jpg",
+              "src": "../../assets/img/sicily-malta/google_valletta_old_street_01.jpg",
+              "alt": "A cinematic island landscape from this Sicily and Malta itinerary.",
+              "captionTitle": "Island View",
+              "credit": "Existing self-hosted trip gallery · Google Images source"
+            },
+            {
+              "href": "../../assets/img/sicily-malta/img-8c984df4c78f.jpg",
+              "src": "../../assets/img/sicily-malta/img-8c984df4c78f.jpg",
+              "alt": "Traditional Maltese luzzu boats resting in a colorful harbor.",
+              "captionTitle": "Maltese Boats",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sicily-malta/img-8d30352ba3b2.jpg",
+              "src": "../../assets/img/sicily-malta/img-8d30352ba3b2.jpg",
+              "alt": "A sunlit limestone headland rising from deep-blue Maltese water.",
+              "captionTitle": "Limestone Coast",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "The 2026 visitor system requires a <b>free pre-booked Blue Lagoon pass</b> to step on land, with morning/afternoon/evening slots; commercial boat trips commonly ~€30–45 adult / child discounts.",
+          "climateLabel": "June weather",
+          "climate": "Air ~<b>80–84°F</b> / <b>69–71°F</b>. Comino water should be around <b>73–74°F</b> on Jun 21, excellent compared with Portugal and usually calmer/warmer-feeling inside the lagoon.",
+          "saveHtml": "<b>Save</b> Book the free slot yourself before buying a tour; choose the morning slot for clearer water and fewer boats.",
+          "splurgeHtml": "<b>Splurge</b> Private or semi-private Comino/Gozo boat, ~€250–450 family, avoids packed party boats.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g190328-d26382508-Reviews-I_Pupi_Pizzeria_Valletta-Valletta_Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>I Pupi Pizzeria Valletta</b></a> — excellent-value pizza, 4.9★, ~$12–20 pp</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g190328-c31-zfp5-Valletta_Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>Casa Sotto</b></a> — Roman pizza in Valletta, top family pizza pick</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g190328-Valletta_Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>Sally Port Pizzeria</b></a> — pizza/pasta in Valletta, 4.8★; familiar dinner fallback</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Ghajn+Tuffieha+Bay\" target=\"_blank\" rel=\"noreferrer\"><b>Għajn Tuffieħa</b> ↗</a> — Malta beach day with sand and no Comino boat logistics.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Ghajn%20Tuffieha%20Malta\" target=\"_blank\" rel=\"noreferrer\"><b>Ghajn Tuffieha</b> ↗</a> — proper sandy beach day without Comino boat logistics.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Ramla%20Bay%20Gozo\" target=\"_blank\" rel=\"noreferrer\"><b>Ramla Bay</b> ↗</a> — red-sand beach version of a Gozo day if a full island loop is too much.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://blcomino.com/product/blue-lagoon/\" target=\"_blank\" rel=\"noreferrer\">Official Blue Lagoon booking ↗</a><a href=\"https://mta.com.mt/news/new-visitor-booking-system-cominos-blue-lagoon/\" target=\"_blank\" rel=\"noreferrer\">MTA booking-system notice ↗</a>",
+          "lat": "36.0143",
+          "lng": "14.3264"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Gozo day trip",
+      "feel": "Island towns + beach",
+      "daycost": "Est. ~$220–450 · ferry + driver/taxis + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Valletta / Sliema · night 3 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Gozo ferry, Victoria/Cittadella, Ramla or Xlendi swim; keep evening easy before the Jun 23 flight home"
+        },
+        {
+          "label": "Car",
+          "valueHtml": "No car; foot ferry + Gozo driver/taxis"
+        }
+      ],
+      "note": "Last full day: enough adventure to feel different, but avoid returning late before the transatlantic flight.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Gozo day trip",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Gozo%20day%20trip\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/gozo/\" target=\"_blank\" rel=\"noreferrer\">IG · Gozo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=gozo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sicily-malta/shared_portugal-algarve-sicily_archive_cascais_boca_01.jpg",
+              "src": "../../assets/img/sicily-malta/shared_portugal-algarve-sicily_archive_cascais_boca_01.jpg",
+              "alt": "Cascais coast — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cascais coast",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sicily-malta/shared_portugal-algarve-sicily_archive_sintra_adraga_coast_01.jpg",
+              "src": "../../assets/img/sicily-malta/shared_portugal-algarve-sicily_archive_sintra_adraga_coast_01.jpg",
+              "alt": "Cascais coast — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cascais coast",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sicily-malta/shared_portugal-algarve-sicily_google_carvoeiro_coast_04.jpg",
+              "src": "../../assets/img/sicily-malta/shared_portugal-algarve-sicily_google_carvoeiro_coast_04.jpg",
+              "alt": "Carvoeiro cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Carvoeiro cliffs",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Gozo Channel return foot passenger <b>€4.65 adult</b>; children 3–12 <b>€1.15</b>; pay on return from Gozo. Fast ferry from Valletta is more, about €8.50 one way.",
+          "climateLabel": "June weather",
+          "climate": "Air ~<b>80–84°F</b> / <b>69–71°F</b>. Xlendi/Ramla water should be around <b>73–75°F</b> on Jun 22.",
+          "saveHtml": "<b>Save</b> Go as foot passengers and use a Gozo taxi/Bolt for key stops; taking a Malta rental car over adds cost and parking friction.",
+          "splurgeHtml": "<b>Splurge</b> Private Gozo driver for 5–6 hrs, ~€180–280, lets you hit Victoria, Ramla, salt pans and Xlendi without bus waits.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g190320-d1050394-Reviews-Country_Terrace-Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>Country Terrace</b></a> — views near Mgarr; pasta, pizza-ish kids choices, ~$18–30 pp</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g190320-d2065125-Reviews-Maldonado_Bistro-Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>Maldonado Bistro</b></a> — Victoria bistro with pasta/burgers, ~$15–25 pp</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g190320-zfp5-Island_of_Malta.html\" target=\"_blank\" rel=\"noreferrer\"><b>Front Bar Xlendi</b></a> — casual seafront, burgers/fries/sandwiches</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Ramla+Bay+Gozo\" target=\"_blank\" rel=\"noreferrer\"><b>Ramla Bay</b> ↗</a> — make it a red-sand beach day instead of a full island loop.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Three%20Cities%20Malta%20waterfront\" target=\"_blank\" rel=\"noreferrer\"><b>Three Cities waterfront</b> ↗</a> — harbor views and old streets with a calmer feel than Valletta.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Popeye%20Village%20Malta%20viewpoint\" target=\"_blank\" rel=\"noreferrer\"><b>Popeye Village viewpoint</b> ↗</a> — kitschy but kid-friendly photo stop near a scenic cove.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.gozochannel.com/ferry/fares/passenger/\" target=\"_blank\" rel=\"noreferrer\">Gozo Channel official fares ↗</a><a href=\"https://www.fullsuitcase.com/gozo-day-trip/\" target=\"_blank\" rel=\"noreferrer\">Gozo day trip guide ↗</a>",
+          "lat": "36.0443",
+          "lng": "14.2512"
+        }
+      ]
+    }
+  ]
+}

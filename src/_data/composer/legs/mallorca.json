@@ -1,0 +1,577 @@
+{
+  "id": "mallorca",
+  "name": "Mallorca",
+  "country": "Spain",
+  "sourceTrip": "madeira-mallorca",
+  "mapColor": "#8a5cb0",
+  "mapPoints": [
+    {
+      "n": "Palma de Mallorca Airport (PMI)",
+      "lat": 39.5517,
+      "lng": 2.7388,
+      "r": "palma",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.5517,2.7388",
+      "t": "flight"
+    },
+    {
+      "n": "Palma old town + La Seu Cathedral",
+      "lat": 39.5675,
+      "lng": 2.6483,
+      "r": "palma",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.5675,2.6483",
+      "t": "town"
+    },
+    {
+      "n": "Port de Soller + Tramuntana",
+      "lat": 39.7976,
+      "lng": 2.6964,
+      "r": "palma",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.7976,2.6964",
+      "t": "view"
+    },
+    {
+      "n": "Valldemossa village",
+      "lat": 39.7107,
+      "lng": 2.6222,
+      "r": "palma",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.7107,2.6222",
+      "t": "town"
+    },
+    {
+      "n": "Playa de Muro + Alcudia Bay",
+      "lat": 39.812,
+      "lng": 3.117,
+      "r": "north-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.812,3.117",
+      "t": "beach"
+    },
+    {
+      "n": "Alcudia old town",
+      "lat": 39.853,
+      "lng": 3.121,
+      "r": "north-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.853,3.121",
+      "t": "town"
+    },
+    {
+      "n": "Formentor viewpoint and beach",
+      "lat": 39.927,
+      "lng": 3.139,
+      "r": "north-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.927,3.139",
+      "t": "view"
+    },
+    {
+      "n": "Cuevas del Drach, Porto Cristo",
+      "lat": 39.535,
+      "lng": 3.3302,
+      "r": "east-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.535,3.3302",
+      "t": "sight"
+    },
+    {
+      "n": "Cala Mondrago / S Amarador",
+      "lat": 39.3485,
+      "lng": 3.1879,
+      "r": "east-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.3485,3.1879",
+      "t": "beach"
+    },
+    {
+      "n": "Lievito Pizzeria Palma",
+      "lat": 39.5712,
+      "lng": 2.6498,
+      "r": "palma",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.5712,2.6498",
+      "t": "food"
+    },
+    {
+      "n": "Can Joan de s Aigo",
+      "lat": 39.5701,
+      "lng": 2.6515,
+      "r": "palma",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.5701,2.6515",
+      "t": "food"
+    },
+    {
+      "n": "Pizzeria Don Vito Port d Alcudia",
+      "lat": 39.8384,
+      "lng": 3.1269,
+      "r": "north-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.8384,3.1269",
+      "t": "food"
+    },
+    {
+      "n": "Can Matevet Alcudia",
+      "lat": 39.8515,
+      "lng": 3.1214,
+      "r": "north-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.8515,3.1214",
+      "t": "food"
+    },
+    {
+      "n": "Restaurant Sa Font de n Alis, Mondrago",
+      "lat": 39.3502,
+      "lng": 3.1892,
+      "r": "east-mallorca",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.3502,3.1892",
+      "t": "food"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "PMI"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→PMI",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "PMI→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 5,
+    "canonical": 6,
+    "max": 8
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/madeira-mallorca/google_palma_cathedral_01.jpg",
+      "src": "../../assets/img/madeira-mallorca/google_palma_cathedral_01.jpg",
+      "alt": "Palma Cathedral and Royal Palace La Almudaina.",
+      "captionTitle": "Palma Cathedral",
+      "credit": "Diego Delso · Google Images source"
+    },
+    {
+      "href": "../../assets/img/madeira-mallorca/google_palma_laseu_02.jpg",
+      "src": "../../assets/img/madeira-mallorca/google_palma_laseu_02.jpg",
+      "alt": "La Seu Cathedral in Palma de Mallorca.",
+      "captionTitle": "La Seu",
+      "credit": "Ralf Roletschek · Google Images source"
+    },
+    {
+      "href": "../../assets/img/madeira-mallorca/google_palma_cathedral_light_03.jpg",
+      "src": "../../assets/img/madeira-mallorca/google_palma_cathedral_light_03.jpg",
+      "alt": "Palma Cathedral in warm Mediterranean light.",
+      "captionTitle": "Cathedral Light",
+      "credit": "Dietmar Rabich · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach"
+  ],
+  "june": {
+    "seaTempF": 75,
+    "airHiF": 82,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      190,
+      310
+    ],
+    "carPerDayUsd": [
+      60,
+      95
+    ],
+    "foodPerDayUsd": [
+      150,
+      210
+    ],
+    "activitiesFlatUsd": [
+      450,
+      850
+    ],
+    "provenance": "madeira-mallorca destination-labelled budget rows, allocated to mallorca"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 5,
+    "food": 4,
+    "novelty": 3,
+    "varietyTags": [
+      "beaches",
+      "caves",
+      "mountains",
+      "old-towns"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Lisbon -> Palma, then old town reset",
+      "feel": "Travel + first Mediterranean water",
+      "daycost": "Est. ~$230 · meals, airport transfer, light sightseeing",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Palma · night 1 of 2"
+        },
+        {
+          "label": "Flight",
+          "valueHtml": "LIS -> PMI · TAP/easyJet/Vueling corridor, TAP preferred"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Land, check in, La Seu / old town, pool or city-beach dip"
+        }
+      ],
+      "note": "Mallorca starts with Palma because it keeps the arrival day simple. No long drive after the island hop; save the rental-car beach base for Thursday.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Palma old town + La Seu Cathedral",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Palma%20old%20town%20%2B%20La%20Seu%20Cathedral\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/palma/\" target=\"_blank\" rel=\"noreferrer\">IG · palma</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/laseu/\" target=\"_blank\" rel=\"noreferrer\">IG · laseu</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/palmademallorca/\" target=\"_blank\" rel=\"noreferrer\">IG · palmademallorca</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Palma%20old%20town%20%2B%20La%20Seu%20Cathedral&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-mallorca/google_palma_cathedral_01.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_palma_cathedral_01.jpg",
+              "alt": "Palma Cathedral and Royal Palace La Almudaina.",
+              "captionTitle": "Palma Cathedral",
+              "credit": "Diego Delso · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_palma_laseu_02.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_palma_laseu_02.jpg",
+              "alt": "La Seu Cathedral in Palma de Mallorca.",
+              "captionTitle": "La Seu",
+              "credit": "Ralf Roletschek · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_palma_cathedral_light_03.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_palma_cathedral_light_03.jpg",
+              "alt": "Palma Cathedral in warm Mediterranean light.",
+              "captionTitle": "Cathedral Light",
+              "credit": "Dietmar Rabich · Google Images source"
+            }
+          ],
+          "cost": "Palma old town and Parc de la Mar are free. Cathedral baseline visit is roughly EUR10 adult, with children 9 and under free; terraces are a bigger EUR25 adult buy-up and not for under-9s, so the 8-year-old skips that version.",
+          "climateLabel": "Weather",
+          "climate": "<b>Mid-June Palma:</b> warm, dry, and usually upper 70s to low 80s F. City stone gets hot after lunch, so do cathedral/old town early and move to a hotel pool or Cala Major/Portixol if the kids fade.",
+          "saveHtml": "<b>Save</b> Skip the terrace ticket with the 8-year-old; the outside, Parc de la Mar, old lanes, gelato, and a simple cathedral interior ticket are the better family value.",
+          "splurgeHtml": "<b>Splurge</b> One polished tapas dinner in Palma works here because the next four nights are beach-apartment simple.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g187463-zfp5-Palma_de_Mallorca_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Family-restaurant shortlist</b></a> — current Palma family lists surface pizza, Italian, and casual Mediterranean options</li><li><a href=\"https://canjoandesaigo.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Can Joan de s Aigo</b></a> — ensaimada, ice cream, hot chocolate; ideal picky-kid fallback</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g187463-c31-Palma_de_Mallorca_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza fallback</b></a> — Palma has multiple easy pizzerias if tapas fails</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Bellver Castle</b> if the kids need ramparts instead of shopping streets.</li><li><b>Portixol waterfront</b> for bikes/scooters and a calmer dinner walk.</li><li><b>Cala Major</b> for a first Mallorca swim if the hotel pool is not enough.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://catedraldemallorca.org/en/visits/tours/\" target=\"_blank\" rel=\"noreferrer\">Cathedral tickets</a><a class=\"xg\" href=\"https://www.theurbankids.com/en/lieblingstag-mit-kind-in-palma-de-mallorca/\" target=\"_blank\" rel=\"noreferrer\">Palma with kids</a>"
+        }
+      ]
+    },
+    {
+      "role": "flex",
+      "heading": "Palma morning, Soller / Tramuntana afternoon",
+      "feel": "Cathedral + mountain-port choice",
+      "daycost": "Est. ~$260-$360 · depends on Soller train choice",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Palma · night 2 of 2"
+        },
+        {
+          "label": "Choice",
+          "valueHtml": "Cathedral + old town, then drive or train to Soller"
+        },
+        {
+          "label": "Rule",
+          "valueHtml": "Do not overfill this day before the beach-base transfer"
+        }
+      ],
+      "note": "This is the Mallorca variety day: one Gothic city block and one Tramuntana mountain-port block. The old train is charming but expensive for four, so treat it as optional.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Palma old town + La Seu Cathedral",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Palma%20old%20town%20%2B%20La%20Seu%20Cathedral\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/palma/\" target=\"_blank\" rel=\"noreferrer\">IG · palma</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/laseu/\" target=\"_blank\" rel=\"noreferrer\">IG · laseu</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/palmademallorca/\" target=\"_blank\" rel=\"noreferrer\">IG · palmademallorca</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Palma%20old%20town%20%2B%20La%20Seu%20Cathedral&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-mallorca/google_palma_cathedral_01.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_palma_cathedral_01.jpg",
+              "alt": "Palma Cathedral and Royal Palace La Almudaina.",
+              "captionTitle": "Palma Cathedral",
+              "credit": "Diego Delso · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_palma_laseu_02.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_palma_laseu_02.jpg",
+              "alt": "La Seu Cathedral in Palma de Mallorca.",
+              "captionTitle": "La Seu",
+              "credit": "Ralf Roletschek · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_palma_cathedral_light_03.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_palma_cathedral_light_03.jpg",
+              "alt": "Palma Cathedral in warm Mediterranean light.",
+              "captionTitle": "Cathedral Light",
+              "credit": "Dietmar Rabich · Google Images source"
+            }
+          ],
+          "cost": "Palma old town and Parc de la Mar are free. Cathedral baseline visit is roughly EUR10 adult, with children 9 and under free; terraces are a bigger EUR25 adult buy-up and not for under-9s, so the 8-year-old skips that version.",
+          "climateLabel": "Weather",
+          "climate": "<b>Mid-June Palma:</b> warm, dry, and usually upper 70s to low 80s F. City stone gets hot after lunch, so do cathedral/old town early and move to a hotel pool or Cala Major/Portixol if the kids fade.",
+          "saveHtml": "<b>Save</b> Skip the terrace ticket with the 8-year-old; the outside, Parc de la Mar, old lanes, gelato, and a simple cathedral interior ticket are the better family value.",
+          "splurgeHtml": "<b>Splurge</b> One polished tapas dinner in Palma works here because the next four nights are beach-apartment simple.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g187463-zfp5-Palma_de_Mallorca_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Family-restaurant shortlist</b></a> — current Palma family lists surface pizza, Italian, and casual Mediterranean options</li><li><a href=\"https://canjoandesaigo.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Can Joan de s Aigo</b></a> — ensaimada, ice cream, hot chocolate; ideal picky-kid fallback</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g187463-c31-Palma_de_Mallorca_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza fallback</b></a> — Palma has multiple easy pizzerias if tapas fails</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Bellver Castle</b> if the kids need ramparts instead of shopping streets.</li><li><b>Portixol waterfront</b> for bikes/scooters and a calmer dinner walk.</li><li><b>Cala Major</b> for a first Mallorca swim if the hotel pool is not enough.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://catedraldemallorca.org/en/visits/tours/\" target=\"_blank\" rel=\"noreferrer\">Cathedral tickets</a><a class=\"xg\" href=\"https://www.theurbankids.com/en/lieblingstag-mit-kind-in-palma-de-mallorca/\" target=\"_blank\" rel=\"noreferrer\">Palma with kids</a>"
+        },
+        {
+          "name": "Port de Soller + Tramuntana villages",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Port%20de%20Soller%20%2B%20Tramuntana%20villages\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/soller/\" target=\"_blank\" rel=\"noreferrer\">IG · soller</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/portdesoller/\" target=\"_blank\" rel=\"noreferrer\">IG · portdesoller</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/tramuntana/\" target=\"_blank\" rel=\"noreferrer\">IG · tramuntana</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Port%20de%20Soller%20%2B%20Tramuntana%20villages&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-mallorca/google_port_soller_harbor_02.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_port_soller_harbor_02.jpg",
+              "alt": "Wide view of Port de Soller and its curved bay.",
+              "captionTitle": "Soller Harbor",
+              "credit": "Gryffindor · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_soller_tram_03.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_soller_tram_03.jpg",
+              "alt": "Historic tram in Port de Soller.",
+              "captionTitle": "Soller Tram",
+              "credit": "pjt56 · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01.jpg",
+              "alt": "Aerial view of Playa de Muro and Alcudia Bay.",
+              "captionTitle": "Playa de Muro Aerial",
+              "credit": "Chixoy · Google Images source"
+            }
+          ],
+          "cost": "Historic Soller train official fare signal: Palma-Soller return EUR30, or Palma-Port de Soller train+tram EUR40. For four, that is EUR120-EUR160 before lunch, so this is the optional splurge unless the kids love trains.",
+          "climateLabel": "Weather",
+          "climate": "<b>Tramuntana:</b> cooler than Palma in the morning, hot by the port after lunch. Roads are gorgeous but narrow; motion-sick kids do better with fewer village stops.",
+          "saveHtml": "<b>Save</b> Drive the loop instead of paying the full train+tram stack; park once in Soller or Port de Soller and keep the day short.",
+          "splurgeHtml": "<b>Splurge</b> Do the wooden train/tram combo once if the transportation itself is the attraction; it is expensive but memorable and eliminates mountain-road driving for the day.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g187466-Port_de_Soller_Soller_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Port de Soller promenade</b></a> — pizza, grilled fish, ice cream, and fries all within one waterfront walk</li><li><b>Soller market snacks</b> — oranges, pastries, and simple sandwiches keep the train day flexible</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Valldemossa only</b> if the kids are done after one mountain village.</li><li><b>Deia viewpoint stop</b> without the parking battle in the village core.</li><li><b>Hotel/pool afternoon</b> if Tramuntana roads are slow or hot.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://trendesoller.com/eng/timetable\" target=\"_blank\" rel=\"noreferrer\">Soller Train official fares</a><a class=\"xg\" href=\"https://whc.unesco.org/en/list/1371/\" target=\"_blank\" rel=\"noreferrer\">UNESCO Tramuntana</a>"
+        }
+      ]
+    },
+    {
+      "role": "arrival",
+      "heading": "Transfer to Playa de Muro / Alcudia",
+      "feel": "Beach-base arrival",
+      "daycost": "Est. ~$220 · groceries, beach shade, casual dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Playa de Muro / Port d Alcudia · night 1 of 4"
+        },
+        {
+          "label": "Drive",
+          "valueHtml": "Palma -> north beach base · ~45-60 min"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Apartment check-in, grocery run, first long sandy swim"
+        }
+      ],
+      "note": "The plan now stops touring and lets Mallorca do the job it was hired for: shallow sand, warmer water, and easy dinners.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Playa de Muro + Alcudia Bay",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Playa%20de%20Muro%20%2B%20Alcudia%20Bay\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/playademuro/\" target=\"_blank\" rel=\"noreferrer\">IG · playademuro</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alcudia/\" target=\"_blank\" rel=\"noreferrer\">IG · alcudia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/mallorcabeach/\" target=\"_blank\" rel=\"noreferrer\">IG · mallorcabeach</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Playa%20de%20Muro%20%2B%20Alcudia%20Bay&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_2.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_2.jpg",
+              "alt": "Aerial view of Playa de Muro and Alcudia Bay.",
+              "captionTitle": "Playa de Muro Aerial",
+              "credit": "Chixoy · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_bay_02.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_bay_02.jpg",
+              "alt": "Long sandy Playa de Muro on Alcudia Bay.",
+              "captionTitle": "Alcudia Bay",
+              "credit": "Wikimedia Commons contributor · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_03.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_03.jpg",
+              "alt": "Clear shallow water at Playa de Muro.",
+              "captionTitle": "Playa de Muro",
+              "credit": "Mallorcagallery · Google Images source"
+            }
+          ],
+          "cost": "Beach is free; budget EUR25-EUR45/day for two loungers + umbrella when shade matters. Apartment-first lodging near Playa de Muro/Port d Alcudia is the budget gate: target $225-$300/night, walk away above ~$325/night.",
+          "climateLabel": "Weather",
+          "climate": "<b>Sea:</b> Mallorca is usually about 72-75 F by mid/late June around Palma and the bays. Playa de Muro/Alcudia are shallow, sandy, and family-friendly, so this is the swim act Madeira cannot provide.",
+          "saveHtml": "<b>Save</b> Use a grocery breakfast, beach picnic, and apartment laundry. Four low-drama beach nights are cheaper than a full resort if you keep the lodging gate.",
+          "splurgeHtml": "<b>Splurge</b> One beach-club shade day or short bay boat trip is worth it if heat spikes or the 8-year-old needs an easier win.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g580312-c31-Port_d_Alcudia_Alcudia_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Port d Alcudia pizza list</b></a> — Pizza Stellata / Don Vito style fallback if seafood loses</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g1233772-Alcudia_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Alcudia family restaurants</b></a> — Indian, tapas, burgers, and beach menus within a short drive</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Hidropark Alcudia</b> as the heat-wave rescue day, not a default spend.</li><li><b>S Albufera boardwalk</b> for a cheap nature hour near the beach.</li><li><b>Alcudia old town walls</b> at golden hour when the beach wind picks up.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://fundaciomallorcaturisme.net/en/what-to-do/beaches/\" target=\"_blank\" rel=\"noreferrer\">Official Mallorca family beaches</a><a class=\"xg\" href=\"https://www.seemallorca.com/beaches/playa-de-muro-beach-can-picafort-660942\" target=\"_blank\" rel=\"noreferrer\">Playa de Muro beach notes</a>"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Playa de Muro + Alcudia",
+      "feel": "No-PTO swim day",
+      "daycost": "Est. ~$210-$330 · shade / waterpark optional",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Playa de Muro / Port d Alcudia · night 2 of 4"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Beach first; Hidropark only if heat or kid energy demands it"
+        }
+      ],
+      "note": "This is a pure vacation day sitting exactly where the calendar wants it: federal holiday, warm Mediterranean water, and zero logistics.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Playa de Muro + Alcudia Bay",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Playa%20de%20Muro%20%2B%20Alcudia%20Bay\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/playademuro/\" target=\"_blank\" rel=\"noreferrer\">IG · playademuro</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alcudia/\" target=\"_blank\" rel=\"noreferrer\">IG · alcudia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/mallorcabeach/\" target=\"_blank\" rel=\"noreferrer\">IG · mallorcabeach</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Playa%20de%20Muro%20%2B%20Alcudia%20Bay&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_2.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_2.jpg",
+              "alt": "Aerial view of Playa de Muro and Alcudia Bay.",
+              "captionTitle": "Playa de Muro Aerial",
+              "credit": "Chixoy · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_bay_02.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_bay_02.jpg",
+              "alt": "Long sandy Playa de Muro on Alcudia Bay.",
+              "captionTitle": "Alcudia Bay",
+              "credit": "Wikimedia Commons contributor · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_03.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_03.jpg",
+              "alt": "Clear shallow water at Playa de Muro.",
+              "captionTitle": "Playa de Muro",
+              "credit": "Mallorcagallery · Google Images source"
+            }
+          ],
+          "cost": "Beach is free; budget EUR25-EUR45/day for two loungers + umbrella when shade matters. Apartment-first lodging near Playa de Muro/Port d Alcudia is the budget gate: target $225-$300/night, walk away above ~$325/night.",
+          "climateLabel": "Weather",
+          "climate": "<b>Sea:</b> Mallorca is usually about 72-75 F by mid/late June around Palma and the bays. Playa de Muro/Alcudia are shallow, sandy, and family-friendly, so this is the swim act Madeira cannot provide.",
+          "saveHtml": "<b>Save</b> Use a grocery breakfast, beach picnic, and apartment laundry. Four low-drama beach nights are cheaper than a full resort if you keep the lodging gate.",
+          "splurgeHtml": "<b>Splurge</b> One beach-club shade day or short bay boat trip is worth it if heat spikes or the 8-year-old needs an easier win.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g580312-c31-Port_d_Alcudia_Alcudia_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Port d Alcudia pizza list</b></a> — Pizza Stellata / Don Vito style fallback if seafood loses</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g1233772-Alcudia_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Alcudia family restaurants</b></a> — Indian, tapas, burgers, and beach menus within a short drive</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Hidropark Alcudia</b> as the heat-wave rescue day, not a default spend.</li><li><b>S Albufera boardwalk</b> for a cheap nature hour near the beach.</li><li><b>Alcudia old town walls</b> at golden hour when the beach wind picks up.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://fundaciomallorcaturisme.net/en/what-to-do/beaches/\" target=\"_blank\" rel=\"noreferrer\">Official Mallorca family beaches</a><a class=\"xg\" href=\"https://www.seemallorca.com/beaches/playa-de-muro-beach-can-picafort-660942\" target=\"_blank\" rel=\"noreferrer\">Playa de Muro beach notes</a>"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Formentor viewpoints, Pollenca, Alcudia walls",
+      "feel": "North-coast scenery + swim fallback",
+      "daycost": "Est. ~$230 · fuel, parking, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Playa de Muro / Port d Alcudia · night 3 of 4"
+        },
+        {
+          "label": "Plan A",
+          "valueHtml": "Early Formentor / Mirador Es Colomer, beach recovery"
+        },
+        {
+          "label": "Plan B",
+          "valueHtml": "Pollenca + Alcudia old town if access rules or traffic bite"
+        }
+      ],
+      "note": "A scenery day without abandoning the beach base. Go early, take the view, then return to water before the afternoon gets crowded and hot.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Formentor cliffs + Alcudia old town",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Formentor%20cliffs%20%2B%20Alcudia%20old%20town\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/formentor/\" target=\"_blank\" rel=\"noreferrer\">IG · formentor</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alcudia/\" target=\"_blank\" rel=\"noreferrer\">IG · alcudia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/pollenca/\" target=\"_blank\" rel=\"noreferrer\">IG · pollenca</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Formentor%20cliffs%20%2B%20Alcudia%20old%20town&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-mallorca/google_formentor_cliffs_02.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_formentor_cliffs_02.jpg",
+              "alt": "Cape de Formentor cliffs and blue Mediterranean water.",
+              "captionTitle": "Formentor Cliffs",
+              "credit": "Bengt Nyman · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_formentor_2015_03.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_formentor_2015_03.jpg",
+              "alt": "Cap Formentor lighthouse at the edge of Mallorca.",
+              "captionTitle": "Cap Formentor",
+              "credit": "Thomas Wolf · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_3.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_3.jpg",
+              "alt": "Aerial view of Playa de Muro and Alcudia Bay.",
+              "captionTitle": "Playa de Muro Aerial",
+              "credit": "Chixoy · Google Images source"
+            }
+          ],
+          "cost": "Viewpoints and Alcudia old-town walk are free. Budget parking, beach chairs if using Formentor beach, and extra fuel; seasonal access rules can push families onto shuttle/bus segments, so re-check before driving.",
+          "climateLabel": "Weather",
+          "climate": "<b>North cape:</b> sunny, exposed, windy. Go early for viewpoints, then retreat to Playa de Muro for the reliable swim block.",
+          "saveHtml": "<b>Save</b> Treat Formentor as a half-day viewpoint loop, not an all-day remote beach mission with parking stress.",
+          "splurgeHtml": "<b>Splurge</b> A short Pollenca/Alcudia dinner after the cape is a better spend than forcing every viewpoint in one hot afternoon.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g1233772-Alcudia_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Alcudia old town</b></a> — tapas for adults, pizza/burgers nearby for kids</li><li><b>Port de Pollenca promenade</b> — easy gelato and fries fallback after the cape road</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Mirador Es Colomer only</b> if road restrictions or crowds are ugly.</li><li><b>Pollenca steps</b> for a town + view alternative without cape traffic.</li><li><b>Stay on Playa de Muro</b> if wind makes the exposed north unpleasant.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.pollensa.com/en/places-of-interest/cap-de-formentor/\" target=\"_blank\" rel=\"noreferrer\">Cap Formentor access check</a><a class=\"xg\" href=\"https://whc.unesco.org/en/list/1371/\" target=\"_blank\" rel=\"noreferrer\">UNESCO Tramuntana</a>"
+        },
+        {
+          "name": "Playa de Muro + Alcudia Bay",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Playa%20de%20Muro%20%2B%20Alcudia%20Bay\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/playademuro/\" target=\"_blank\" rel=\"noreferrer\">IG · playademuro</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alcudia/\" target=\"_blank\" rel=\"noreferrer\">IG · alcudia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/mallorcabeach/\" target=\"_blank\" rel=\"noreferrer\">IG · mallorcabeach</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Playa%20de%20Muro%20%2B%20Alcudia%20Bay&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_2.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_aerial_01_2.jpg",
+              "alt": "Aerial view of Playa de Muro and Alcudia Bay.",
+              "captionTitle": "Playa de Muro Aerial",
+              "credit": "Chixoy · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_bay_02.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_bay_02.jpg",
+              "alt": "Long sandy Playa de Muro on Alcudia Bay.",
+              "captionTitle": "Alcudia Bay",
+              "credit": "Wikimedia Commons contributor · Google Images source"
+            },
+            {
+              "href": "../../assets/img/madeira-mallorca/google_playa_muro_03.jpg",
+              "src": "../../assets/img/madeira-mallorca/google_playa_muro_03.jpg",
+              "alt": "Clear shallow water at Playa de Muro.",
+              "captionTitle": "Playa de Muro",
+              "credit": "Mallorcagallery · Google Images source"
+            }
+          ],
+          "cost": "Beach is free; budget EUR25-EUR45/day for two loungers + umbrella when shade matters. Apartment-first lodging near Playa de Muro/Port d Alcudia is the budget gate: target $225-$300/night, walk away above ~$325/night.",
+          "climateLabel": "Weather",
+          "climate": "<b>Sea:</b> Mallorca is usually about 72-75 F by mid/late June around Palma and the bays. Playa de Muro/Alcudia are shallow, sandy, and family-friendly, so this is the swim act Madeira cannot provide.",
+          "saveHtml": "<b>Save</b> Use a grocery breakfast, beach picnic, and apartment laundry. Four low-drama beach nights are cheaper than a full resort if you keep the lodging gate.",
+          "splurgeHtml": "<b>Splurge</b> One beach-club shade day or short bay boat trip is worth it if heat spikes or the 8-year-old needs an easier win.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g580312-c31-Port_d_Alcudia_Alcudia_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Port d Alcudia pizza list</b></a> — Pizza Stellata / Don Vito style fallback if seafood loses</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g1233772-Alcudia_Majorca_Balearic_Islands.html\" target=\"_blank\" rel=\"noreferrer\"><b>Alcudia family restaurants</b></a> — Indian, tapas, burgers, and beach menus within a short drive</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Hidropark Alcudia</b> as the heat-wave rescue day, not a default spend.</li><li><b>S Albufera boardwalk</b> for a cheap nature hour near the beach.</li><li><b>Alcudia old town walls</b> at golden hour when the beach wind picks up.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://fundaciomallorcaturisme.net/en/what-to-do/beaches/\" target=\"_blank\" rel=\"noreferrer\">Official Mallorca family beaches</a><a class=\"xg\" href=\"https://www.seemallorca.com/beaches/playa-de-muro-beach-can-picafort-660942\" target=\"_blank\" rel=\"noreferrer\">Playa de Muro beach notes</a>"
+        }
+      ]
+    }
+  ]
+}

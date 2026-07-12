@@ -1,0 +1,805 @@
+{
+  "id": "sardinia",
+  "name": "Sardinia",
+  "country": "Italy",
+  "sourceTrip": "sardinia-corsica",
+  "mapColor": "#1f6f78",
+  "mapPoints": [
+    {
+      "n": "Alghero old town",
+      "lat": 40.5579,
+      "lng": 8.315,
+      "r": "alghero",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.5579,8.315"
+    },
+    {
+      "n": "Capo Caccia",
+      "lat": 40.5637,
+      "lng": 8.1636,
+      "r": "alghero",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.5637,8.1636"
+    },
+    {
+      "n": "La Pelosa",
+      "lat": 40.9667,
+      "lng": 8.2094,
+      "r": "alghero",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.9667,8.2094"
+    },
+    {
+      "n": "Pedra Longa",
+      "lat": 40.0251,
+      "lng": 9.7062,
+      "r": "ogliastra",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.0251,9.7062"
+    },
+    {
+      "n": "Cala Goloritze",
+      "lat": 40.107,
+      "lng": 9.6896,
+      "r": "ogliastra",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.107,9.6896"
+    },
+    {
+      "n": "Cala Mariolu",
+      "lat": 40.1253,
+      "lng": 9.6781,
+      "r": "ogliastra",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.1253,9.6781"
+    },
+    {
+      "n": "Gorropu canyon",
+      "lat": 40.1856,
+      "lng": 9.5067,
+      "r": "ogliastra",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.1856,9.5067"
+    },
+    {
+      "n": "Cagliari Castello",
+      "lat": 39.217,
+      "lng": 9.1167,
+      "r": "cagliari",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.217,9.1167"
+    },
+    {
+      "n": "Poetto beach",
+      "lat": 39.2065,
+      "lng": 9.1695,
+      "r": "cagliari",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.2065,9.1695"
+    },
+    {
+      "n": "Porto Giunco",
+      "lat": 39.1219,
+      "lng": 9.5209,
+      "r": "cagliari",
+      "g": "https://www.google.com/maps/search/?api=1&query=39.1219,9.5209"
+    },
+    {
+      "n": "Nora",
+      "lat": 38.9847,
+      "lng": 9.0162,
+      "r": "cagliari",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.9847,9.0162"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "OLB",
+      "CAG",
+      "AHO"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→OLB",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "OLB→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 6,
+    "canonical": 7,
+    "max": 9
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/sardinia-corsica/google_alghero_bastioni_01.jpg",
+      "src": "../../assets/img/sardinia-corsica/google_alghero_bastioni_01.jpg",
+      "alt": "Alghero bastioni — a high-impact landscape view selected from the self-hosted trip gallery.",
+      "captionTitle": "Alghero bastioni",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/sardinia-corsica/google_alghero_bastioni_wide_02.jpg",
+      "src": "../../assets/img/sardinia-corsica/google_alghero_bastioni_wide_02.jpg",
+      "alt": "Alghero bastioni — a high-impact landscape view selected from the self-hosted trip gallery.",
+      "captionTitle": "Alghero bastioni",
+      "credit": "Existing self-hosted trip gallery"
+    },
+    {
+      "href": "../../assets/img/sardinia-corsica/google_alghero_sunset_03.jpg",
+      "src": "../../assets/img/sardinia-corsica/google_alghero_sunset_03.jpg",
+      "alt": "Alghero bastioni — a high-impact landscape view selected from the self-hosted trip gallery.",
+      "captionTitle": "Alghero bastioni",
+      "credit": "Existing self-hosted trip gallery"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach",
+    "heat"
+  ],
+  "june": {
+    "seaTempF": 75,
+    "airHiF": 83,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      180,
+      290
+    ],
+    "carPerDayUsd": [
+      65,
+      100
+    ],
+    "foodPerDayUsd": [
+      150,
+      205
+    ],
+    "activitiesFlatUsd": [
+      550,
+      1000
+    ],
+    "provenance": "sardinia-corsica destination-labelled budget rows, allocated to sardinia"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 5,
+    "food": 4,
+    "novelty": 4,
+    "varietyTags": [
+      "beaches",
+      "boats",
+      "gorges",
+      "old-towns"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Sardinia → Alghero base",
+      "feel": "Arrival + first swim",
+      "daycost": "Est. ~$120 · groceries + casual dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Alghero · night 1 of 3"
+        },
+        {
+          "label": "Car",
+          "valueHtml": "Pick up Sardinia rental at OLB/AHO"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Check in, old-town walk, easy beach/pool"
+        }
+      ],
+      "note": "Best arrival airport is Olbia or Alghero if fares cooperate; Cagliari works but adds a long first-day drive.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Alghero old town &amp; Bastioni",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Alghero%20old%20town%20%26%20Bastioni%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alghero/\" target=\"_blank\" rel=\"noreferrer\">IG · Alghero</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bastioni/\" target=\"_blank\" rel=\"noreferrer\">IG · Bastioni</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=alghero&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_alghero_bastioni_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_alghero_bastioni_01.jpg",
+              "alt": "Alghero bastioni — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Alghero bastioni",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_alghero_bastioni_wide_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_alghero_bastioni_wide_02.jpg",
+              "alt": "Alghero bastioni — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Alghero bastioni",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_alghero_sunset_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_alghero_sunset_03.jpg",
+              "alt": "Alghero bastioni — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Alghero bastioni",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Old town free; ramparts walk free; gelato/snacks €12-25 family; parking €1-2/hr near the port.",
+          "climateLabel": "June weather",
+          "climate": "<b>79°F</b> day / <b>64°F</b> night. Sea <b>72-73°F</b> — the key fix vs Portugal: warm enough for real kid swims in sheltered bays.",
+          "saveHtml": "<b>Save</b> Sleep just outside the ZTL and walk in; avoids old-town parking stress and €20-30/day garage costs.",
+          "splurgeHtml": "<b>Splurge</b> Book one sunset sailing or snorkel trip from Alghero, typically €45-75 pp in June.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d25289556-Reviews-Fratelli_Bizzarro-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Fratelli Bizzarro</b></a> — pizza/pasta, casual, ~€10-18 pp, strong pizza reviews; plain margherita works.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d7356720-Reviews-Faineria_da_Nino-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Faineria da Nino</b></a> — budget faina/focaccia/pizza slices, ~€6-12 pp, easy snack dinner.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d1068894-Reviews-Mabrouk-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Mabrouk</b></a> — set seafood/pasta menu for parents; kids can stick to simple pasta.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://strictlysardinia.com/bosa-sardinia-guide/\" target=\"_blank\" rel=\"noreferrer\"><b>Bosa day trip</b> ↗</a> — painted riverside town about 55 min south; a town-heavy alternate if wind spoils the beach.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bosa%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Bosa</b> ↗</a> — painted riverside town about an hour south; a town-heavy alternate if wind spoils the beach.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Mugoni%20Beach%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Mugoni Beach</b> ↗</a> — pine-backed, calmer family beach near Capo Caccia.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://strictlysardinia.com/alghero-sardinia-guide/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Alghero guide ↗</a><a href=\"https://www.chasingthelongroad.com/italy/things-to-do-in-alghero-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Chasing the Long Road — Alghero things to do ↗</a>",
+          "lat": "40.5579",
+          "lng": "8.3150"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Capo Caccia + Neptune's Grotto",
+      "feel": "Cliffs, cave, beach reset",
+      "daycost": "Est. ~$190 · cave + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Alghero · night 2 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Capo Caccia, Neptune's Grotto, Mugoni/Porto Conte swim"
+        }
+      ],
+      "note": "Do the cave early, then make the afternoon about water. If the sea is rough, use the stair route or skip the cave and beach-hop.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Capo Caccia &amp; Neptune's Grotto",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Capo%20Caccia%20%26%20Neptune's%20Grotto%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/capocaccia/\" target=\"_blank\" rel=\"noreferrer\">IG · Capo Caccia</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/neptunesgrotto/\" target=\"_blank\" rel=\"noreferrer\">IG · Neptune's Grotto</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=capocaccia&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_neptunes_grotto_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_neptunes_grotto_01.jpg",
+              "alt": "Capo Caccia — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Capo Caccia",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_capo_caccia_grotto_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_capo_caccia_grotto_02.jpg",
+              "alt": "Capo Caccia — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Capo Caccia",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_neptune_grotto_cave_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_neptune_grotto_cave_03.jpg",
+              "alt": "Capo Caccia — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Capo Caccia",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Viewpoints free. Neptune's Grotto: roughly €14 adult / €10 child plus boat or 654-step Escala del Cabirol.",
+          "climateLabel": "June weather",
+          "climate": "<b>79°F</b> day / <b>64°F</b> night. Sea <b>72-73°F</b> — pleasant in sheltered coves, but the cave itself is not a swim stop.",
+          "saveHtml": "<b>Save</b> Use the stairs if knees and heat are reasonable; skip boat fares and control timing.",
+          "splurgeHtml": "<b>Splurge</b> Private dinghy or small-group snorkel around Capo Caccia, about €55-90 pp.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d25289556-Reviews-Fratelli_Bizzarro-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Fratelli Bizzarro</b></a> — pizza/pasta, casual, ~€10-18 pp, strong pizza reviews; plain margherita works.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d7356720-Reviews-Faineria_da_Nino-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Faineria da Nino</b></a> — budget faina/focaccia/pizza slices, ~€6-12 pp, easy snack dinner.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d1068894-Reviews-Mabrouk-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Mabrouk</b></a> — set seafood/pasta menu for parents; kids can stick to simple pasta.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/mugoni\" target=\"_blank\" rel=\"noreferrer\"><b>Mugoni Beach</b> ↗</a> — pine-backed, calmer family beach nearby when the cave feels too touristy.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Le%20Saline%20Beach%20Stintino\" target=\"_blank\" rel=\"noreferrer\"><b>Le Saline Beach</b> ↗</a> — less famous and easier than La Pelosa while keeping clear water.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Maria%20Pia%20Beach%20Alghero\" target=\"_blank\" rel=\"noreferrer\"><b>Maria Pia Beach</b> ↗</a> — pine-shaded sand close to Alghero when old-town heat builds.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://sardiniabylocals.com/neptunes-grotto-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Sardinia by Locals — Neptune's Cave ↗</a><a href=\"https://strictlysardinia.com/capo-caccia-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Capo Caccia ↗</a>",
+          "lat": "40.5637",
+          "lng": "8.1636"
+        }
+      ]
+    },
+    {
+      "role": "flex",
+      "heading": "La Pelosa or Bosa choice day",
+      "feel": "Big north-coast beach or colorful town",
+      "daycost": "Est. ~$150 · permits/parking + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Alghero · night 3 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Timed La Pelosa slot, or Bosa if beach permits/wind are bad"
+        }
+      ],
+      "note": "La Pelosa is the north-coast swim card. Book the slot once 2027 rules open; bring required mats under towels.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "La Pelosa / Stintino beach day",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=La%20Pelosa%20%2F%20Stintino%20beach%20day%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lapelosa/\" target=\"_blank\" rel=\"noreferrer\">IG · La Pelosa</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/stintino/\" target=\"_blank\" rel=\"noreferrer\">IG · Stintino</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=lapelosa&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_la_pelosa_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_la_pelosa_01.jpg",
+              "alt": "La Pelosa — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "La Pelosa",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_la_pelosa_stintino_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_la_pelosa_stintino_02.jpg",
+              "alt": "La Pelosa — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "La Pelosa",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_la_pelosa_tower_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_la_pelosa_tower_03.jpg",
+              "alt": "La Pelosa — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "La Pelosa",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Timed-entry beach rules usually run June-Oct: cap around 1,500/day, ticket about €3.50 pp age 12+, mat under towels required; parking extra.",
+          "climateLabel": "June weather",
+          "climate": "<b>79°F</b> day / <b>64°F</b> night. Sea <b>72-73°F</b> — shallow turquoise water is one of the best kid-swim setups in north Sardinia.",
+          "saveHtml": "<b>Save</b> If La Pelosa slots are gone, use nearby Le Saline or Ezzi Mannu for free beach time.",
+          "splurgeHtml": "<b>Splurge</b> Reserve loungers/umbrella early, roughly €35-60/day, to avoid fighting for shade.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d25289556-Reviews-Fratelli_Bizzarro-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Fratelli Bizzarro</b></a> — pizza/pasta, casual, ~€10-18 pp, strong pizza reviews; plain margherita works.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d7356720-Reviews-Faineria_da_Nino-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Faineria da Nino</b></a> — budget faina/focaccia/pizza slices, ~€6-12 pp, easy snack dinner.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g187880-d1068894-Reviews-Mabrouk-Alghero_Province_of_Sassari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Mabrouk</b></a> — set seafood/pasta menu for parents; kids can stick to simple pasta.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/le-saline-stintino\" target=\"_blank\" rel=\"noreferrer\"><b>Le Saline Beach</b> ↗</a> — less famous, easier parking, still clear water and room for kids to spread out.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Maria%20Pia%20Beach%20Alghero\" target=\"_blank\" rel=\"noreferrer\"><b>Maria Pia Beach</b> ↗</a> — pine-shaded sand close to Alghero when old-town heat builds.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Bosa%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Bosa</b> ↗</a> — painted riverside town about an hour south; a town-heavy alternate if wind spoils the beach.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://strictlysardinia.com/la-pelosa-beach-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — La Pelosa rules ↗</a><a href=\"https://www.sardiniaunlimited.com/blog/best-beaches-stintino\" target=\"_blank\" rel=\"noreferrer\">Sardinia Unlimited — Stintino beaches ↗</a>",
+          "lat": "40.9667",
+          "lng": "8.2094"
+        }
+      ]
+    },
+    {
+      "role": "arrival",
+      "heading": "Ferry back → Ogliastra base",
+      "feel": "Transfer + cliff-meets-sea arrival",
+      "daycost": "Est. ~$190 · ferry + fuel + dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Santa Maria Navarrese / Baunei · night 1 of 4"
+        },
+        {
+          "label": "Car",
+          "valueHtml": "Recover Sardinia rental in Santa Teresa"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Ferry back, drive 3h to Ogliastra, Pedra Longa sunset"
+        }
+      ],
+      "note": "This is the biggest road day after the ferry. Keep the stop simple: Pedra Longa views, pizza dinner, early bed.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Pedra Longa &amp; Santa Maria Navarrese",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Pedra%20Longa%20%26%20Santa%20Maria%20Navarrese%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/pedralonga/\" target=\"_blank\" rel=\"noreferrer\">IG · Pedra Longa</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/santamarianavarrese/\" target=\"_blank\" rel=\"noreferrer\">IG · Santa Maria Navarrese</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=pedralonga&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_pedra_longa_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_pedra_longa_01.jpg",
+              "alt": "Pedra Longa — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Pedra Longa",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_pedra_longa_coast_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_pedra_longa_coast_02.jpg",
+              "alt": "Pedra Longa — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Pedra Longa",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_santa_maria_navarrese_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_santa_maria_navarrese_03.jpg",
+              "alt": "Pedra Longa — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Pedra Longa",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Free viewpoint/swim rocks; parking usually free/low cost. Short walks rather than committing to Selvaggio Blu.",
+          "climateLabel": "June weather",
+          "climate": "<b>81°F</b> day / <b>66°F</b> night. Sea <b>73-75°F</b> — east coast water is the swim payoff the Portugal Atlantic could not deliver.",
+          "saveHtml": "<b>Save</b> Use Pedra Longa as the free cliff-meets-sea substitute for a paid all-day boat if weather is iffy.",
+          "splurgeHtml": "<b>Splurge</b> Dinner with a sea view in Santa Maria Navarrese, €25-40 adult mains, while kids get pizza.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d14790619-Reviews-Mec_Puddu_s-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>MeC Puddu's</b></a> — Santa Maria Navarrese pizzeria/Italian, ~€10-20 pp; pizza, pasta, fries.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d3403932-Reviews-Ristorante_Il_Pozzo-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Ristorante Il Pozzo</b></a> — Italian/pizza/seafood, ~€12-25 pp; reviewers mention pizza and hungry-kid friendliness.</li><li><a href=\"https://restaurantguru.com/Shardana-Ristorante-Santa-Maria-Navarrese\" target=\"_blank\" rel=\"noreferrer\"><b>Shardana</b></a> — pizzeria/Italian, ~€12-22 pp; good fallback for plain pizza and pasta.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/orri\" target=\"_blank\" rel=\"noreferrer\"><b>Lido di Orri</b> ↗</a> — wide sandy beach near Tortoli for an easier pure-swim afternoon.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Cala%20Mariolu%20boat%20tour%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Cala Mariolu by boat</b> ↗</a> — same Gulf of Orosei wow water with less hiking commitment.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Cala%20Luna%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Cala Luna</b> ↗</a> — larger beach with caves, easier for a longer sit if kids tire of moving.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://strictlysardinia.com/baunei-sardinia-guide/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Baunei coast ↗</a><a href=\"https://www.sardiniamood.com/ogliastra-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Sardinia Mood — Ogliastra guide ↗</a>",
+          "lat": "40.0251",
+          "lng": "9.7062"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Cala Goloritze hike + swim",
+      "feel": "Signature hike + real swim",
+      "daycost": "Est. ~$130 · permits + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Ogliastra · night 2 of 4"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Early Cala Goloritze hike, beach swim, slow dinner"
+        }
+      ],
+      "note": "This is the hardest day in the plan. Moving one day earlier keeps the same weather band, but it makes the early start even more important for heat and kid patience.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Cala Goloritze hike / booking day",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cala%20Goloritze%20hike%20%2F%20booking%20day%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/calagoloritze/\" target=\"_blank\" rel=\"noreferrer\">IG · Cala Goloritze</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=calagoloritze&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_cala_goloritze_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_cala_goloritze_01.jpg",
+              "alt": "Cala Goloritzé — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cala Goloritzé",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_cala_goloritze_hike_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_cala_goloritze_hike_02.jpg",
+              "alt": "Cala Goloritzé — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cala Goloritzé",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_cala_goloritze_water_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_cala_goloritze_water_03.jpg",
+              "alt": "Cala Goloritzé — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cala Goloritzé",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "2026-style rules: book ahead via Heart of Sardinia; typical hike ticket €7 pp, daily cap around 250, trail opens 7:30 and closes 14:00; beach stay until late afternoon.",
+          "climateLabel": "June weather",
+          "climate": "<b>81°F</b> day / <b>66°F</b> night. Sea <b>73-75°F</b> — clear and swimmable, but the hike out is hot; start early with the 8-year-old.",
+          "saveHtml": "<b>Save</b> Book the hike instead of a boat landing; the trail ticket is far cheaper and avoids boat crowds.",
+          "splurgeHtml": "<b>Splurge</b> Hire a local guide for the hike or switch to a small-group Gulf of Orosei boat if heat spikes.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d14790619-Reviews-Mec_Puddu_s-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>MeC Puddu's</b></a> — Santa Maria Navarrese pizzeria/Italian, ~€10-20 pp; pizza, pasta, fries.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d3403932-Reviews-Ristorante_Il_Pozzo-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Ristorante Il Pozzo</b></a> — Italian/pizza/seafood, ~€12-25 pp; reviewers mention pizza and hungry-kid friendliness.</li><li><a href=\"https://restaurantguru.com/Shardana-Ristorante-Santa-Maria-Navarrese\" target=\"_blank\" rel=\"noreferrer\"><b>Shardana</b></a> — pizzeria/Italian, ~€12-22 pp; good fallback for plain pizza and pasta.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.goloritze.com/en/\" target=\"_blank\" rel=\"noreferrer\"><b>Cala Mariolu by boat</b> ↗</a> — same Gulf of Orosei wow water with less hiking; book landing QR rules if required.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Cala%20Luna%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Cala Luna</b> ↗</a> — larger beach with caves, easier for a longer sit if kids tire of moving.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Supramonte%20viewpoint%20Dorgali%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Supramonte viewpoint picnic</b> ↗</a> — nature scenery without committing to a long canyon hike.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.turismobaunei.eu/en/services/its-now-possible-to-book-for-cala-goloritze\" target=\"_blank\" rel=\"noreferrer\">Turismo Baunei — Cala Goloritze booking ↗</a><a href=\"https://strictlysardinia.com/cala-goloritze-guide/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Cala Goloritze guide ↗</a>",
+          "lat": "40.1070",
+          "lng": "9.6896",
+          "alltrailsTrail": "https://www.alltrails.com/trail/italy/sardinia/cala-goloritze",
+          "alltrailsArea": "https://www.alltrails.com/italy/sardinia/baunei"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Gulf of Orosei boat day",
+      "feel": "Peak water day",
+      "daycost": "Est. ~$360 · boat + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Ogliastra · night 3 of 4"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Cala Mariolu / Cala Luna / swim stops by boat"
+        }
+      ],
+      "note": "Book a smaller boat from Santa Maria Navarrese or Arbatax and confirm which beaches require landing reservations under 2027 rules.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Gulf of Orosei boat: Cala Mariolu / Cala Luna",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Gulf%20of%20Orosei%20boat%3A%20Cala%20Mariolu%20%2F%20Cala%20Luna%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/calamariolu/\" target=\"_blank\" rel=\"noreferrer\">IG · Cala Mariolu</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/calaluna/\" target=\"_blank\" rel=\"noreferrer\">IG · Cala Luna</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=calamariolu&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_cala_mariolu_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_cala_mariolu_01.jpg",
+              "alt": "Gulf of Orosei — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Gulf of Orosei",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_cala_luna_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_cala_luna_02.jpg",
+              "alt": "Gulf of Orosei — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Gulf of Orosei",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_cala_luna_gulf_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_cala_luna_gulf_03.jpg",
+              "alt": "Gulf of Orosei — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Gulf of Orosei",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Shared boat from Arbatax/Santa Maria Navarrese often €45-75 pp; beach landing/access QR rules apply to regulated Baunei beaches.",
+          "climateLabel": "June weather",
+          "climate": "<b>81°F</b> day / <b>66°F</b> night. Sea <b>73-75°F</b> — best water day of the route; bring water shoes for pebbles.",
+          "saveHtml": "<b>Save</b> Pack lunch and drinks; boat-day beach kiosks are limited and expensive.",
+          "splurgeHtml": "<b>Splurge</b> Private dinghy with skipper, roughly €350-600 family depending boat/time, to control swim stops.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d14790619-Reviews-Mec_Puddu_s-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>MeC Puddu's</b></a> — Santa Maria Navarrese pizzeria/Italian, ~€10-20 pp; pizza, pasta, fries.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d3403932-Reviews-Ristorante_Il_Pozzo-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Ristorante Il Pozzo</b></a> — Italian/pizza/seafood, ~€12-25 pp; reviewers mention pizza and hungry-kid friendliness.</li><li><a href=\"https://restaurantguru.com/Shardana-Ristorante-Santa-Maria-Navarrese\" target=\"_blank\" rel=\"noreferrer\"><b>Shardana</b></a> — pizzeria/Italian, ~€12-22 pp; good fallback for plain pizza and pasta.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/cala-luna\" target=\"_blank\" rel=\"noreferrer\"><b>Cala Luna</b> ↗</a> — larger beach with caves, easier for a long sit if kids tire of moving.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Supramonte%20viewpoint%20Dorgali%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Supramonte viewpoint picnic</b> ↗</a> — nature scenery without committing to a long canyon hike.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Aquarium%20Cala%20Gonone\" target=\"_blank\" rel=\"noreferrer\"><b>Cala Gonone Aquarium</b> ↗</a> — compact indoor/kid backup if boat weather fails.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.goloritze.com/en/\" target=\"_blank\" rel=\"noreferrer\">Goloritze.com — Gulf access rules ↗</a><a href=\"https://fullsuitcase.com/gulf-of-orosei-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Full Suitcase — Gulf of Orosei boat tips ↗</a>",
+          "lat": "40.1253",
+          "lng": "9.6781",
+          "alltrailsTrail": "https://www.alltrails.com/trail/italy/sardinia/cala-luna-grotte-blu-marino-spiaggia-ziu-santoru",
+          "alltrailsArea": "https://www.alltrails.com/italy/sardinia/dorgali"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Gorropu-light or beach buffer",
+      "feel": "Nature without overcooking the kids",
+      "daycost": "Est. ~$140 · short hike + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Ogliastra · night 4 of 4"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Short canyon/viewpoint version, then beach/pool reset"
+        }
+      ],
+      "note": "Keep this easier than a full Selvaggio Blu-adjacent day. Heat and cliff exposure matter more than mileage.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Gorropu easy canyon edge / Dorgali",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Gorropu%20easy%20canyon%20edge%20%2F%20Dorgali%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/gorropu/\" target=\"_blank\" rel=\"noreferrer\">IG · Gorropu</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/dorgali/\" target=\"_blank\" rel=\"noreferrer\">IG · Dorgali</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=gorropu&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_gorropu_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_gorropu_01.jpg",
+              "alt": "Gorropu gorge — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Gorropu gorge",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_gorropu_canyon_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_gorropu_canyon_02.jpg",
+              "alt": "Gorropu gorge — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Gorropu gorge",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_gorropu_dorgali_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_gorropu_dorgali_03.jpg",
+              "alt": "Gorropu gorge — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Gorropu gorge",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Gorropu access commonly ~€6 pp; jeep shuttles extra. For kids, do a shorter canyon-edge version, not an all-day sufferfest.",
+          "climateLabel": "June weather",
+          "climate": "<b>82°F</b> day / <b>65°F</b> night. Sea <b>73-75°F</b> — not a swim stop; pair with a late pool or Santa Maria Navarrese beach reset.",
+          "saveHtml": "<b>Save</b> Do a short out-and-back viewpoint walk and save the paid jeep for hotter or tired legs.",
+          "splurgeHtml": "<b>Splurge</b> Guided family canyon hike, roughly €45-70 pp, for route-finding and safety.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d14790619-Reviews-Mec_Puddu_s-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>MeC Puddu's</b></a> — Santa Maria Navarrese pizzeria/Italian, ~€10-20 pp; pizza, pasta, fries.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1095833-d3403932-Reviews-Ristorante_Il_Pozzo-Santa_Maria_Navarrese_Baunei_Province_of_Ogliastra_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Ristorante Il Pozzo</b></a> — Italian/pizza/seafood, ~€12-25 pp; reviewers mention pizza and hungry-kid friendliness.</li><li><a href=\"https://restaurantguru.com/Shardana-Ristorante-Santa-Maria-Navarrese\" target=\"_blank\" rel=\"noreferrer\"><b>Shardana</b></a> — pizzeria/Italian, ~€12-22 pp; good fallback for plain pizza and pasta.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/supramonte\" target=\"_blank\" rel=\"noreferrer\"><b>Supramonte viewpoint picnic</b> ↗</a> — nature scenery without committing the 8-year-old to a long canyon hike.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Aquarium%20Cala%20Gonone\" target=\"_blank\" rel=\"noreferrer\"><b>Cala Gonone Aquarium</b> ↗</a> — compact indoor/kid backup if boat weather fails.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Lido%20di%20Orri%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Lido di Orri</b> ↗</a> — wide sandy beach near Tortoli for an easier pure-swim afternoon.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.earthtrekkers.com/gorropu-canyon-hike-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Earth Trekkers — Gorropu hike ↗</a><a href=\"https://strictlysardinia.com/gorropu-canyon-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Gorropu guide ↗</a>",
+          "lat": "40.1856",
+          "lng": "9.5067",
+          "alltrailsTrail": "https://www.alltrails.com/trail/italy/sardinia/gola-di-gorropu-via-passo-silana",
+          "alltrailsArea": "https://www.alltrails.com/italy/sardinia/dorgali"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Drive Ogliastra → Cagliari",
+      "feel": "City + beach convenience",
+      "daycost": "Est. ~$150 · fuel + dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cagliari · night 1 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "2h drive, Castello, Bastione, easy dinner"
+        }
+      ],
+      "note": "Cagliari gives the trip a town-and-food finish while keeping Poetto beach minutes away.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Cagliari Castello &amp; Bastione",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Cagliari%20Castello%20%26%20Bastione%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/cagliaricastello/\" target=\"_blank\" rel=\"noreferrer\">IG · Cagliari Castello</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bastione/\" target=\"_blank\" rel=\"noreferrer\">IG · Bastione</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=cagliaricastello&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_cagliari_castello_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_cagliari_castello_01.jpg",
+              "alt": "Cagliari Castello — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cagliari Castello",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/img-f6a917beace7.jpg",
+              "src": "../../assets/img/sardinia-corsica/img-f6a917beace7.jpg",
+              "alt": "Cagliari Castello — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cagliari Castello",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_bastione_santa_croce_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_bastione_santa_croce_03.jpg",
+              "alt": "Cagliari Castello — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Cagliari Castello",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Old town free. Bastione free; towers/museums usually €3-10 pp. Parking garages near Marina/Castello €1.50-2.50/hr.",
+          "climateLabel": "June weather",
+          "climate": "<b>84°F</b> day / <b>68°F</b> night. Sea <b>73-75°F</b> — south coast is reliably warm enough for kid swimming.",
+          "saveHtml": "<b>Save</b> Use one paid garage and walk the old town instead of chasing street parking in heat.",
+          "splurgeHtml": "<b>Splurge</b> Rooftop aperitivo or guided food walk, about €40-75 pp for adults; kids can split pizza after.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g187881-zfp5-Cagliari_Province_of_Cagliari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Cerere</b></a> — top family-pizza pick, ~€10-18 pp, plain pizza safety net.</li><li><a href=\"https://strictlysardinia.com/best-budget-restaurants-in-cagliari/\" target=\"_blank\" rel=\"noreferrer\"><b>Bombas</b></a> — local burgers/fries, ~€10-18 pp; the burger stop for the picky kid.</li><li><a href=\"https://www.quandoo.it/en/cagliari/tags/family-friendly-restaurants\" target=\"_blank\" rel=\"noreferrer\"><b>Caprizza Cagliari</b></a> — family-friendly pizzeria, ~€10-20 pp; easy Marina/Castello dinner.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/molentargius-saline-regional-natural-park\" target=\"_blank\" rel=\"noreferrer\"><b>Molentargius flamingo park</b> ↗</a> — flat bike/walk with flamingos if the old town feels too hot.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Chia%20beaches%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Chia beaches</b> ↗</a> — dune-backed beach payoff west of Pula if ruins get voted down.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Nora%20archaeological%20site%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Nora ruins</b> ↗</a> — coastal ruins plus Pula gelato if you want history with beach access nearby.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://strictlysardinia.com/cagliari-sardinia-guide/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Cagliari guide ↗</a><a href=\"https://www.thecommonwanderer.com/blog/things-to-do-cagliari-sardinia\" target=\"_blank\" rel=\"noreferrer\">The Common Wanderer — Cagliari ↗</a>",
+          "lat": "39.2170",
+          "lng": "9.1167"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Poetto beach + flamingos",
+      "feel": "No-drama swim day",
+      "daycost": "Est. ~$120 · beach setup + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cagliari · night 2 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Poetto, Sella del Diavolo, optional Molentargius flamingos"
+        }
+      ],
+      "note": "A deliberately easy day after Ogliastra. City beach, shallow water, predictable restaurants.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Poetto beach + Sella del Diavolo",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Poetto%20beach%20%2B%20Sella%20del%20Diavolo%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/poetto/\" target=\"_blank\" rel=\"noreferrer\">IG · Poetto</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/selladeldiavolo/\" target=\"_blank\" rel=\"noreferrer\">IG · Sella del Diavolo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=poetto&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_poetto_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_poetto_01.jpg",
+              "alt": "Poetto beach — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Poetto beach",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_sella_del_diavolo_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_sella_del_diavolo_02.jpg",
+              "alt": "Poetto beach — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Poetto beach",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_poetto_sella_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_poetto_sella_03.jpg",
+              "alt": "Poetto beach — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Poetto beach",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Beach free; lidos rent umbrellas/loungers roughly €20-40/day. Easy bus/taxi from center; parking easier early.",
+          "climateLabel": "June weather",
+          "climate": "<b>84°F</b> day / <b>68°F</b> night. Sea <b>73-75°F</b> — long shallow city beach, a proper swim day 10 minutes from town.",
+          "saveHtml": "<b>Save</b> Use the free beach sections and buy snacks from supermarkets/kiosks instead of a full lido day.",
+          "splurgeHtml": "<b>Splurge</b> Reserve front-row lido chairs or do SUP/kayak rental, roughly €15-25/hr.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g187881-zfp5-Cagliari_Province_of_Cagliari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Cerere</b></a> — top family-pizza pick, ~€10-18 pp, plain pizza safety net.</li><li><a href=\"https://strictlysardinia.com/best-budget-restaurants-in-cagliari/\" target=\"_blank\" rel=\"noreferrer\"><b>Bombas</b></a> — local burgers/fries, ~€10-18 pp; the burger stop for the picky kid.</li><li><a href=\"https://www.quandoo.it/en/cagliari/tags/family-friendly-restaurants\" target=\"_blank\" rel=\"noreferrer\"><b>Caprizza Cagliari</b></a> — family-friendly pizzeria, ~€10-20 pp; easy Marina/Castello dinner.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/calamosca\" target=\"_blank\" rel=\"noreferrer\"><b>Calamosca</b> ↗</a> — smaller protected cove when Poetto is windy or too busy.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Nora%20archaeological%20site%20Sardinia\" target=\"_blank\" rel=\"noreferrer\"><b>Nora ruins</b> ↗</a> — coastal ruins plus Pula gelato if you want history with beach access nearby.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Molentargius%20flamingo%20park%20Cagliari\" target=\"_blank\" rel=\"noreferrer\"><b>Molentargius flamingo park</b> ↗</a> — flat bike/walk with flamingos when the old town feels too hot.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.sardegnaturismo.it/it/esplora/poetto\" target=\"_blank\" rel=\"noreferrer\">Sardegna Turismo — Poetto ↗</a><a href=\"https://strictlysardinia.com/poetto-beach-cagliari/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Poetto ↗</a>",
+          "lat": "39.2065",
+          "lng": "9.1695"
+        }
+      ]
+    },
+    {
+      "role": "flex",
+      "heading": "Villasimius or Nora final choice",
+      "feel": "Last big beach or ruins + beach",
+      "daycost": "Est. ~$180 · parking/ruins + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Cagliari · night 3 of 3"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Porto Giunco beach, or Nora + Pula if the family wants history"
+        }
+      ],
+      "note": "Pick based on weather and appetite: Porto Giunco for pure water, Nora for a calmer ruins-and-swim mix.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Porto Giunco / Villasimius beach day",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Porto%20Giunco%20%2F%20Villasimius%20beach%20day%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/portogiunco/\" target=\"_blank\" rel=\"noreferrer\">IG · Porto Giunco</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/villasimius/\" target=\"_blank\" rel=\"noreferrer\">IG · Villasimius</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=portogiunco&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_porto_giunco_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_porto_giunco_01.jpg",
+              "alt": "Porto Giunco — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Porto Giunco",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_porto_giunco_water_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_porto_giunco_water_02.jpg",
+              "alt": "Porto Giunco — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Porto Giunco",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_porto_giunco_tower_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_porto_giunco_tower_03.jpg",
+              "alt": "Porto Giunco — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Porto Giunco",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Beach free; parking often €5-10/day; umbrellas/loungers €25-45/day in June.",
+          "climateLabel": "June weather",
+          "climate": "<b>84°F</b> day / <b>68°F</b> night. Sea <b>73-75°F</b> — shallow, clear, and family-friendly; one of the south coast's strongest beach days.",
+          "saveHtml": "<b>Save</b> Arrive before 9:30, park once, and make this the whole day rather than paying multiple lots.",
+          "splurgeHtml": "<b>Splurge</b> Boat/snorkel trip in Capo Carbonara marine area, about €45-80 pp.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g187881-zfp5-Cagliari_Province_of_Cagliari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Cerere</b></a> — top family-pizza pick, ~€10-18 pp, plain pizza safety net.</li><li><a href=\"https://strictlysardinia.com/best-budget-restaurants-in-cagliari/\" target=\"_blank\" rel=\"noreferrer\"><b>Bombas</b></a> — local burgers/fries, ~€10-18 pp; the burger stop for the picky kid.</li><li><a href=\"https://www.quandoo.it/en/cagliari/tags/family-friendly-restaurants\" target=\"_blank\" rel=\"noreferrer\"><b>Caprizza Cagliari</b></a> — family-friendly pizzeria, ~€10-20 pp; easy Marina/Castello dinner.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/nora\" target=\"_blank\" rel=\"noreferrer\"><b>Nora / Chia</b> ↗</a> — ruins plus beach south-west of Cagliari if you want more history than beach.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Molentargius%20flamingo%20park%20Cagliari\" target=\"_blank\" rel=\"noreferrer\"><b>Molentargius flamingo park</b> ↗</a> — flat bike/walk with flamingos when the old town feels too hot.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Calamosca%20Beach%20Cagliari\" target=\"_blank\" rel=\"noreferrer\"><b>Calamosca</b> ↗</a> — smaller protected cove when Poetto is windy or too busy.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://strictlysardinia.com/best-beaches-villasimius-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Villasimius beaches ↗</a><a href=\"https://www.sardegnaturismo.it/en/explore/porto-giunco\" target=\"_blank\" rel=\"noreferrer\">Sardegna Turismo — Porto Giunco ↗</a>",
+          "lat": "39.1219",
+          "lng": "9.5209"
+        },
+        {
+          "name": "Nora ruins + Pula gelato",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Nora%20ruins%20%2B%20Pula%20gelato%20Sardinia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/nora/\" target=\"_blank\" rel=\"noreferrer\">IG · Nora</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/pula/\" target=\"_blank\" rel=\"noreferrer\">IG · Pula</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=nora&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/sardinia-corsica/google_nora_bathhouse_01.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_nora_bathhouse_01.jpg",
+              "alt": "Nora ruins — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Nora ruins",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_nora_mosaic_02.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_nora_mosaic_02.jpg",
+              "alt": "Nora ruins — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Nora ruins",
+              "credit": "Existing self-hosted trip gallery"
+            },
+            {
+              "href": "../../assets/img/sardinia-corsica/google_nora_roman_ruins_03.jpg",
+              "src": "../../assets/img/sardinia-corsica/google_nora_roman_ruins_03.jpg",
+              "alt": "Nora ruins — a high-impact landscape view selected from the self-hosted trip gallery.",
+              "captionTitle": "Nora ruins",
+              "credit": "Existing self-hosted trip gallery"
+            }
+          ],
+          "cost": "Nora archaeological area often ~€8 adult / reduced kids; parking/beach nearby low cost. Good half-day before packing.",
+          "climateLabel": "June weather",
+          "climate": "<b>84°F</b> day / <b>68°F</b> night. Sea <b>73-75°F</b> — ruins sit beside swimmable water, so history can still end in a dip.",
+          "saveHtml": "<b>Save</b> Pair Nora with the free beach rather than adding another paid attraction.",
+          "splurgeHtml": "<b>Splurge</b> Guided archaeological tour or late seafood dinner in Pula, €30-45 adult mains.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g187881-zfp5-Cagliari_Province_of_Cagliari_Sardinia.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Cerere</b></a> — top family-pizza pick, ~€10-18 pp, plain pizza safety net.</li><li><a href=\"https://strictlysardinia.com/best-budget-restaurants-in-cagliari/\" target=\"_blank\" rel=\"noreferrer\"><b>Bombas</b></a> — local burgers/fries, ~€10-18 pp; the burger stop for the picky kid.</li><li><a href=\"https://www.quandoo.it/en/cagliari/tags/family-friendly-restaurants\" target=\"_blank\" rel=\"noreferrer\"><b>Caprizza Cagliari</b></a> — family-friendly pizzeria, ~€10-20 pp; easy Marina/Castello dinner.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.sardegnaturismo.it/en/explore/chia\" target=\"_blank\" rel=\"noreferrer\"><b>Chia beaches</b> ↗</a> — dune-backed, west of Pula; bigger beach payoff if ruins get voted down.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Calamosca%20Beach%20Cagliari\" target=\"_blank\" rel=\"noreferrer\"><b>Calamosca</b> ↗</a> — smaller protected cove when Poetto is windy or too busy.</li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Molentargius%20flamingo%20park%20Cagliari\" target=\"_blank\" rel=\"noreferrer\"><b>Molentargius flamingo park</b> ↗</a> — flat bike/walk with flamingos when the old town feels too hot.</li></ul>",
+          "bloglinksHtml": "<a href=\"https://strictlysardinia.com/nora-sardinia/\" target=\"_blank\" rel=\"noreferrer\">Strictly Sardinia — Nora ↗</a><a href=\"https://www.sardegnaturismo.it/en/explore/nora\" target=\"_blank\" rel=\"noreferrer\">Sardegna Turismo — Nora ↗</a>",
+          "lat": "38.9847",
+          "lng": "9.0162"
+        }
+      ]
+    }
+  ]
+}

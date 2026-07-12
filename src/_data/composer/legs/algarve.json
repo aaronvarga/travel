@@ -1,0 +1,606 @@
+{
+  "id": "algarve",
+  "name": "Algarve",
+  "country": "Portugal",
+  "sourceTrip": "portugal",
+  "mapColor": "#c25a3a",
+  "mapPoints": [
+    {
+      "n": "Carvoeiro",
+      "lat": 37.0967,
+      "lng": -8.4676,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.0967,-8.4676"
+    },
+    {
+      "n": "Ferragudo",
+      "lat": 37.1235,
+      "lng": -8.5205,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.1235,-8.5205"
+    },
+    {
+      "n": "Lagos",
+      "lat": 37.103,
+      "lng": -8.671,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.1030,-8.6710"
+    },
+    {
+      "n": "Ponta da Piedade",
+      "lat": 37.0817,
+      "lng": -8.6672,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.0817,-8.6672"
+    },
+    {
+      "n": "Algar Seco",
+      "lat": 37.0928,
+      "lng": -8.4655,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.0928,-8.4655"
+    },
+    {
+      "n": "Praia da Marinha",
+      "lat": 37.09,
+      "lng": -8.4125,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.0900,-8.4125"
+    },
+    {
+      "n": "Benagil Cave",
+      "lat": 37.0873,
+      "lng": -8.425,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.0873,-8.4250"
+    },
+    {
+      "n": "Slide & Splash",
+      "lat": 37.1396,
+      "lng": -8.4752,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.1396,-8.4752"
+    },
+    {
+      "n": "Silves Castle",
+      "lat": 37.1906,
+      "lng": -8.4379,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.1906,-8.4379"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "FAO"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→FAO",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "FAO→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 4,
+    "canonical": 5,
+    "max": 7
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/portugal/google_carvoeiro_cliffs_01.jpg",
+      "src": "../../assets/img/portugal/google_carvoeiro_cliffs_01.jpg",
+      "alt": "Golden cliffs and turquoise water at Carvoeiro.",
+      "captionTitle": "Carvoeiro Cliffs",
+      "credit": "Pexels · Google Images source"
+    },
+    {
+      "href": "../../assets/img/portugal/google_carvoeiro_coast_04.jpg",
+      "src": "../../assets/img/portugal/google_carvoeiro_coast_04.jpg",
+      "alt": "Rugged cliff coastline near the Alfanzina lighthouse.",
+      "captionTitle": "Alfanzina Coast",
+      "credit": "Pexels · Google Images source"
+    },
+    {
+      "href": "../../assets/img/portugal/carvoeiro_cand_03.jpg",
+      "src": "../../assets/img/portugal/carvoeiro_cand_03.jpg",
+      "alt": "Colourful Carvoeiro tumbling down to its cove beach.",
+      "captionTitle": "Seaside Town",
+      "credit": "Pexels · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "beach",
+    "hiking"
+  ],
+  "june": {
+    "seaTempF": 68,
+    "airHiF": 80,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      180,
+      280
+    ],
+    "carPerDayUsd": [
+      55,
+      85
+    ],
+    "foodPerDayUsd": [
+      140,
+      190
+    ],
+    "activitiesFlatUsd": [
+      300,
+      600
+    ],
+    "provenance": "portugal destination-labelled budget rows, allocated to algarve"
+  },
+  "scoreHints": {
+    "weather": 5,
+    "swim": 3,
+    "food": 4,
+    "novelty": 3,
+    "varietyTags": [
+      "beaches",
+      "cliffs",
+      "towns",
+      "water-parks"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Drive Cascais → Carvoeiro",
+      "feel": "Transfer + town + swim",
+      "daycost": "Est. ~$140 · dinner out + fuel/tolls",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Carvoeiro · night 1 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Carvoeiro base, Ferragudo dinner, pool/beach"
+        }
+      ],
+      "note": "The big mainland drive: Cascais → Carvoeiro is ~285 km / 2h58 before stops. Do not stack a major activity unless everyone is in great shape.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Carvoeiro",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Carvoeiro%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/carvoeiro/\" target=\"_blank\" rel=\"noreferrer\">IG · Carvoeiro</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=carvoeiro&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/google_carvoeiro_cliffs_01.jpg",
+              "src": "../../assets/img/portugal/google_carvoeiro_cliffs_01.jpg",
+              "alt": "Golden cliffs and turquoise water at Carvoeiro.",
+              "captionTitle": "Carvoeiro Cliffs",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_carvoeiro_coast_04.jpg",
+              "src": "../../assets/img/portugal/google_carvoeiro_coast_04.jpg",
+              "alt": "Rugged cliff coastline near the Alfanzina lighthouse.",
+              "captionTitle": "Alfanzina Coast",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/carvoeiro_cand_03.jpg",
+              "src": "../../assets/img/portugal/carvoeiro_cand_03.jpg",
+              "alt": "Colourful Carvoeiro tumbling down to its cove beach.",
+              "captionTitle": "Seaside Town",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "Beach free (lifeguarded summer). Town parking meters ~$1/hr. Benagil–Marinha boat: $35 adult / $20 child 3–10.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Book the Benagil boat online in advance — kids 3–10 are $20 vs $35; family of 4 ~$115 not $140.",
+          "splurgeHtml": "<b>Splurge</b> Private 2-hr Benagil cave boat charter, ~$165–275 for the boat — go early, at your own pace.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189115-d6507525-Reviews-Mama_Mia-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Mama Mia</b></a> — Italian pizza/pasta, ~$11–15 4.1★ (269 rev) — thin-crust pizza + pasta; 3-course set ~$20; tiny, book ahead.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189115-d23992325-Reviews-Levels_Carvoeiro-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Levels Carvoeiro</b></a> — International/grill, ~$13–20 — explicit kids' plates: mini burgers + 'chicken pops'/fries.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g189115-zfp5-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Jota Lita</b></a> — Portuguese family-run (est. 1988), ~$11–15 — does plain burgers for kids, relaxed.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.algarve-tourist.com/carvoeiro/carvoeiro-beaches-lagoa-best-beach.html\" target=\"_blank\" rel=\"noreferrer\"><b>Praia da Marinha</b> ↗</a> — One of Europe's most famous beaches, ~15 min drive — dramatic arches, clearer &amp; quieter.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20da%20Marinha%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadamarinha/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia da Marinha</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadamarinha&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alvor%20boardwalk%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Alvor boardwalk</b> ↗</a> — flat lagoon walk and town snacks when cliffs or boat timing are not working.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Alvor%20boardwalk%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alvorboardwalk/\" target=\"_blank\" rel=\"noreferrer\">IG · Alvor boardwalk</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=alvorboardwalk&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20de%20Vale%20Centeanes%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Praia de Vale Centeanes</b> ↗</a> — cliff-backed sandy beach near Carvoeiro with easier logistics than Marinha.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20de%20Vale%20Centeanes%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadevalecenteanes/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia de Vale Centeanes</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadevalecenteanes&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://cosmopoliclan.com/travel-with-kids/inspiration/carvoeiro-algarve-portugal/\" target=\"_blank\" rel=\"noreferrer\">Honest family town guide ↗</a><a href=\"https://www.alongdustyroads.com/posts/things-to-do-in-carvoeiro-portugal\" target=\"_blank\" rel=\"noreferrer\">Practical things-to-do ↗</a>",
+          "lat": "37.0967",
+          "lng": "-8.4676"
+        },
+        {
+          "name": "Ferragudo",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Ferragudo%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ferragudo/\" target=\"_blank\" rel=\"noreferrer\">IG · Ferragudo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=ferragudo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/google_ferragudo_village_01.jpg",
+              "src": "../../assets/img/portugal/google_ferragudo_village_01.jpg",
+              "alt": "The whitewashed village of Ferragudo above the estuary.",
+              "captionTitle": "Whitewashed Village",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_ferragudo_beach_04.jpg",
+              "src": "../../assets/img/portugal/google_ferragudo_beach_04.jpg",
+              "alt": "Ferragudo’s beach and moored fishing boats.",
+              "captionTitle": "Village Beach",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/ferragudo_cand_01.jpg",
+              "src": "../../assets/img/portugal/ferragudo_cand_01.jpg",
+              "alt": "Ferragudo waterfront and fishing boats behind agave.",
+              "captionTitle": "Fishing Harbour",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "Village + Praia Grande beach free. Small free car parks (limited; arrive early). No entry gates.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Skip a paid boat here — wander the old town + walk to Castelo de São João &amp; the Praia Grande playground, $0.",
+          "splurgeHtml": "<b>Splurge</b> Private sunset Arade-river cruise, ~$130–225 for a small charter as the fishing boats return.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g735258-d2708568-Reviews-O_Barril_Bar_Restaurant-Ferragudo_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>O Barril</b></a> — Portuguese/international, ~$11–15 4.5★ (~2,790 rev) — homemade chips, steak, grilled fish; toddler-friendly.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g735258-d2697803-Reviews-Restaurante_Praia_Grande-Ferragudo_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Restaurante Praia Grande</b></a> — Beachfront terrace, ~$13–20 — on the sand with a playground steps away; grilled fish/chicken/fries.</li><li><a href=\"https://www.algarveportugaltourism.com/guide/ferragudo.html\" target=\"_blank\" rel=\"noreferrer\"><b>Kalu Beach Bar</b></a> — Casual light bites on Praia Grande, ~$8.50–15 — burgers, snacks, sea views.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.magicalportugal.com/places/ferragudo/\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Pintadinho</b> ↗</a> — Small, calm, sheltered cove just south with a beach café — better on a windy day or for toddlers.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Pintadinho%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadopintadinho/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Pintadinho</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadopintadinho&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20de%20Vale%20Centeanes%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Praia de Vale Centeanes</b> ↗</a> — cliff-backed sandy beach near Carvoeiro with easier logistics than Marinha.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20de%20Vale%20Centeanes%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadevalecenteanes/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia de Vale Centeanes</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadevalecenteanes&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Zoomarine%20Algarve%20Guia\" target=\"_blank\" rel=\"noreferrer\"><b>Zoomarine Algarve</b> ↗</a> — water-park/show day when Slide &amp; Splash feels too intense or the weather is iffy.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Zoomarine%20Algarve%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/zoomarinealgarve/\" target=\"_blank\" rel=\"noreferrer\">IG · Zoomarine Algarve</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=zoomarinealgarve&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.saltinourhair.com/portugal/ferragudo/\" target=\"_blank\" rel=\"noreferrer\">Prettiest-village walking guide ↗</a><a href=\"https://wetravelportugal.com/ferragudo-portugal/\" target=\"_blank\" rel=\"noreferrer\">2026 village + beaches guide ↗</a>",
+          "lat": "37.1235",
+          "lng": "-8.5205"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Lagos / Ponta da Piedade boat day",
+      "feel": "Boat + cliffs + beach",
+      "daycost": "Est. ~$180 · power-boat ~$70 + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Carvoeiro · night 2 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Lagos marina, Ponta da Piedade, Praia do Camilo or Meia Praia"
+        }
+      ],
+      "note": "Your western Algarve wow day — worth keeping even though you are not staying in Lagos.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Lagos",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lagos%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lagos/\" target=\"_blank\" rel=\"noreferrer\">IG · Lagos</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=lagos&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/google_ponta_piedade_lagos_01.jpg",
+              "src": "../../assets/img/portugal/google_ponta_piedade_lagos_01.jpg",
+              "alt": "Golden cliffs of the Lagos coast.",
+              "captionTitle": "Lagos Cliffs",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_ponta_piedade_arches_02.jpg",
+              "src": "../../assets/img/portugal/google_ponta_piedade_arches_02.jpg",
+              "alt": "Sculpted sea arches along the Lagos shoreline.",
+              "captionTitle": "Sea Arches",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_lagos_piedade_03.jpg",
+              "src": "../../assets/img/portugal/google_lagos_piedade_03.jpg",
+              "alt": "Turquoise grottoes below the Lagos cliffs.",
+              "captionTitle": "Grotto Coast",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "Town + marina free (free playground at north end). Power-boat cave cruise from $20 adult/$15 child; catamaran $55/$40.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Take the $20/$15 power-boat grotto cruise not the $55/$40 catamaran — same scenery, family saves ~$110.",
+          "splurgeHtml": "<b>Splurge</b> Private family cave-and-coast boat from the marina, ~$165–275 for 2 hrs, own swim stops.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189117-d5521546-Reviews-Portofino_s_Ristorante_Italiano-Lagos_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Portofino's</b></a> — Italian on the marina, ~$11–15 4.0★ (~1,457 rev) — pizza/pasta/burgers; happy-hour from $6.50.</li><li><a href=\"https://www.inside-algarve.com/the-inside-guides/restaurant-guide-lagos-area/\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza Real</b></a> — Old-town pizzeria, ~$10–15 — fresh pizza incl. BBQ chicken, GF/veg on request; picky-eater safety net.</li><li><a href=\"https://thealgarvefamily.com/lagos-marina-algarve/\" target=\"_blank\" rel=\"noreferrer\"><b>Artesão (Marina)</b></a> — Café/brunch, ~$6.50–13 — pancakes, toasts, wraps; easy low-drama meal.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.lagosportugalguide.com/lagos-algarve/ponta-da-piedade-lagos.html\" target=\"_blank\" rel=\"noreferrer\"><b>Praia Dona Ana</b> ↗</a> — Postcard cliff-backed beach ~10 min from the marina — wide sand, calm water for actual beach time.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20Dona%20Ana%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadonaana/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia Dona Ana</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadonaana&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Zoomarine%20Algarve%20Guia\" target=\"_blank\" rel=\"noreferrer\"><b>Zoomarine Algarve</b> ↗</a> — water-park/show day when Slide &amp; Splash feels too intense or the weather is iffy.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Zoomarine%20Algarve%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/zoomarinealgarve/\" target=\"_blank\" rel=\"noreferrer\">IG · Zoomarine Algarve</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=zoomarinealgarve&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20do%20Pintadinho%20Ferragudo\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Pintadinho</b> ↗</a> — small sheltered cove south of Ferragudo, good on windy days.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Pintadinho%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadopintadinho/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Pintadinho</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadopintadinho&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.mummytravels.com/things-to-do-in-lagos-with-kids-algarve/\" target=\"_blank\" rel=\"noreferrer\">Lagos with kids ↗</a><a href=\"https://cosmopoliclan.com/travel-with-kids/inspiration/lagos-portugal-things-to-do/\" target=\"_blank\" rel=\"noreferrer\">20 family things to do ↗</a>",
+          "lat": "37.1030",
+          "lng": "-8.6710"
+        },
+        {
+          "name": "Ponta da Piedade",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Ponta%20da%20Piedade%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/pontadapiedade/\" target=\"_blank\" rel=\"noreferrer\">IG · Ponta da Piedade</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=pontadapiedade&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/ponta_da_piedade_cand_01.jpg",
+              "src": "../../assets/img/portugal/ponta_da_piedade_cand_01.jpg",
+              "alt": "A golden rock arch over moody teal water at Ponta da Piedade.",
+              "captionTitle": "Golden Arch",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/ponta_da_piedade_cand_10.jpg",
+              "src": "../../assets/img/portugal/ponta_da_piedade_cand_10.jpg",
+              "alt": "Wide aerial of the whole Ponta da Piedade headland toward Lagos.",
+              "captionTitle": "The Headland",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/ponta_da_piedade_cand_13.jpg",
+              "src": "../../assets/img/portugal/ponta_da_piedade_cand_13.jpg",
+              "alt": "Kayaks and boats in the turquoise grottoes from above.",
+              "captionTitle": "Sea Grottoes",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "Free — no gates/tickets; free parking near the lighthouse. Power-boat from $20/$15; kayak ~$35–50 pp.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> The clifftop boardwalk + 182 steps are free — do the walk yourself, then pick ONE water activity (~$70 family by power boat).",
+          "splurgeHtml": "<b>Splurge</b> Private family kayak-and-caves guided tour, ~$165–250 — paddle the grottoes with a guide.",
+          "restoHtml": "<li><a href=\"https://www.lagosportugalguide.com/lagos-algarve/ponta-da-piedade-lagos.html\" target=\"_blank\" rel=\"noreferrer\"><b>O Camilo</b></a> — Portuguese/seafood atop Praia do Camilo, ~$15–25 — closest proper restaurant.</li><li><a href=\"https://www.algarvetips.com/beaches/lagos/ponta-da-piedade/\" target=\"_blank\" rel=\"noreferrer\"><b>Headland kiosk</b></a> — Seasonal drinks/snack kiosk at the lighthouse — quick refuel only.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189117-d5521546-Reviews-Portofino_s_Ristorante_Italiano-Lagos_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Portofino's (Lagos, 5 min)</b></a> — Pizza/pasta fallback for picky kids at the marina.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.lagosportugalguide.com/lagos-algarve/ponta-da-piedade-lagos.html\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Camilo</b> ↗</a> — Jewel-box beach reached by a photogenic wooden staircase right next door — swim here, then walk the cliffs.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Camilo%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadocamilo/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Camilo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadocamilo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20do%20Pintadinho%20Ferragudo\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Pintadinho</b> ↗</a> — small sheltered cove south of Ferragudo, good on windy days.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Pintadinho%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadopintadinho/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Pintadinho</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadopintadinho&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alvor%20boardwalk%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Alvor boardwalk</b> ↗</a> — flat lagoon walk and town snacks when cliffs or boat timing are not working.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Alvor%20boardwalk%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alvorboardwalk/\" target=\"_blank\" rel=\"noreferrer\">IG · Alvor boardwalk</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=alvorboardwalk&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://thealgarvefamily.com/ponta-da-piedade-lagos/\" target=\"_blank\" rel=\"noreferrer\">Did-it-with-a-baby guide ↗</a><a href=\"https://fullsuitcase.com/ponta-da-piedade-kayak-tour-lagos/\" target=\"_blank\" rel=\"noreferrer\">Best kayak tours + tips ↗</a>",
+          "lat": "37.0817",
+          "lng": "-8.6672"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Algar Seco + Praia da Marinha + Ferragudo",
+      "feel": "Rocks/scrambling + beach + town",
+      "daycost": "Est. ~$110 · free sites + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Carvoeiro · night 3 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Algar Seco, Carvoeiro boardwalk, Praia da Marinha, Ferragudo"
+        }
+      ],
+      "note": "One of the best parent/kid overlap days: rock windows, boardwalk, cliff photos, swimming, and an old fishing-village dinner.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Algar Seco",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Algar%20Seco%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/algarseco/\" target=\"_blank\" rel=\"noreferrer\">IG · Algar Seco</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=algarseco&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/google_algar_seco_cave_windows_color_01.jpg",
+              "src": "../../assets/img/portugal/google_algar_seco_cave_windows_color_01.jpg",
+              "alt": "Golden limestone cave windows at Algar Seco frame turquoise Atlantic water.",
+              "captionTitle": "Cave Windows",
+              "credit": "Jules Verne Times Two · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_algar_seco_limestone_arch_02.jpg",
+              "src": "../../assets/img/portugal/google_algar_seco_limestone_arch_02.jpg",
+              "alt": "Honey-colored Algar Seco limestone arches and ocean-carved rock under a clear blue sky.",
+              "captionTitle": "Limestone Arches",
+              "credit": "Jules Verne Times Two · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_algar_seco_ocean_arch_03.jpg",
+              "src": "../../assets/img/portugal/google_algar_seco_ocean_arch_03.jpg",
+              "alt": "Sunlit Algar Seco sea arch and sculpted Algarve cliffs above deep blue Atlantic water.",
+              "captionTitle": "Ocean Arch",
+              "credit": "Jules Verne Times Two · Google Images source"
+            }
+          ],
+          "cost": "FREE — clifftop boardwalk &amp; rock formations open-air. Free parking (fills fast; arrive before 10am). Optional cave boat/kayak ~$25–45 pp.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Skip the paid Boneca boat — the free boardwalk gives the same views; a family saves ~$130 vs a $35 pp boat.",
+          "splurgeHtml": "<b>Splurge</b> Private kayak/SUP to the Boneca cave and grottoes, ~$35–45 pp.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189115-d14985786-Reviews-Pistache_Pizza_Pasta-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pistache Pizza &amp; Pasta</b></a> — Italian, ~$11–15 — thin-crust pizza + simple pasta, exactly picky-kid safe.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189115-d6507525-Reviews-Mama_Mia-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Mama Mia</b></a> — Italian, ~$11–15 — pizza/pasta, varied kids' options.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g189115-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>MataBixo</b></a> — Burgers/hot dogs/toasties, ~$8.50–13 — comfort-food menu of burgers, dogs &amp; fries.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.algarve-tourist.com/carvoeiro/carvoeiro-boardwalk-walk-algar-seco-boneca.html\" target=\"_blank\" rel=\"noreferrer\"><b>Praia de Vale Centeanes</b> ↗</a> — Quieter cliff-backed sandy beach ~1.5 km east — calm family swim after the boardwalk.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20de%20Vale%20Centeanes%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadevalecenteanes/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia de Vale Centeanes</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadevalecenteanes&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20do%20Camilo%20Lagos\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Camilo</b> ↗</a> — staircase beach beside Ponta da Piedade, better for a swim after the viewpoint.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Camilo%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadocamilo/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Camilo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadocamilo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alvor%20boardwalk%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Alvor boardwalk</b> ↗</a> — flat lagoon walk and town snacks when cliffs or boat timing are not working.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Alvor%20boardwalk%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alvorboardwalk/\" target=\"_blank\" rel=\"noreferrer\">IG · Alvor boardwalk</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=alvorboardwalk&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.earthtrekkers.com/algar-seco/\" target=\"_blank\" rel=\"noreferrer\">Family photo-spot tips ↗</a><a href=\"https://thealgarvefamily.com/algar-seco-carvoeiro/\" target=\"_blank\" rel=\"noreferrer\">Best caves tips for families ↗</a>",
+          "lat": "37.0928",
+          "lng": "-8.4655",
+          "alltrailsTrail": "https://www.alltrails.com/trail/portugal/faro/pr1-lga-sete-vales-suspensos",
+          "alltrailsArea": "https://www.alltrails.com/portugal/faro"
+        },
+        {
+          "name": "Praia da Marinha",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20da%20Marinha%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadamarinha/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia da Marinha</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadamarinha&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/google_praia_marinha_arch_02.jpg",
+              "src": "../../assets/img/portugal/google_praia_marinha_arch_02.jpg",
+              "alt": "The sculpted arches above Praia da Marinha.",
+              "captionTitle": "Marinha Arches",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_praia_marinha_epic_03.jpg",
+              "src": "../../assets/img/portugal/google_praia_marinha_epic_03.jpg",
+              "alt": "Emerald water lapping the Marinha cliffs.",
+              "captionTitle": "Emerald Water",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/praia_da_marinha_cand_03.jpg",
+              "src": "../../assets/img/portugal/praia_da_marinha_cand_03.jpg",
+              "alt": "The iconic twin-arch \"M\" formation over emerald water.",
+              "captionTitle": "Twin Arches",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "FREE beach + free clifftop parking (fills by ~9am, road then closed until ~3pm). Steep staircase to the sand.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Arrive before 9am to grab the free lot and dodge the road closure — no private parking or taxi later.",
+          "splurgeHtml": "<b>Splurge</b> Private small-boat photo tour of the Marinha arches + Benagil from Carvoeiro, ~$225+ for the family.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1219346-d1507234-Reviews-O_Algar-Lagoa_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>O Algar (Benagil)</b></a> — Portuguese/seafood + burgers, ~$13–20 4.6★ Google — high chairs, kids' ice creams, burgers/ribs.</li><li><a href=\"https://www.algarve-tourist.com/guides/praia-da-marinha-beach-algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Marinha beach café</b></a> — Snacks/toasties/drinks, ~$5.50–11 (cash only) — plain toasties &amp; chips right on the sand.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g189115-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Carvoeiro pizza (12 min)</b></a> — Pistache/Mama Mia — reliable picky-kid pizza/pasta backup.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.algarvetips.com/beaches/lagoa/praia-da-marinha/\" target=\"_blank\" rel=\"noreferrer\"><b>Sete Vales Suspensos trail</b> ↗</a> — The 7-km clifftop 'Seven Hanging Valleys' walk starts here — short there-and-back for epic arches, no crowds.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Sete%20Vales%20Suspensos%20trail%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/setevalessuspensostrail/\" target=\"_blank\" rel=\"noreferrer\">IG · Sete Vales Suspensos trail</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=setevalessuspensostrail&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alvor%20boardwalk%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Alvor boardwalk</b> ↗</a> — flat lagoon walk and town snacks when cliffs or boat timing are not working.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Alvor%20boardwalk%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alvorboardwalk/\" target=\"_blank\" rel=\"noreferrer\">IG · Alvor boardwalk</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=alvorboardwalk&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20de%20Vale%20Centeanes%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Praia de Vale Centeanes</b> ↗</a> — cliff-backed sandy beach near Carvoeiro with easier logistics than Marinha.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20de%20Vale%20Centeanes%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadevalecenteanes/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia de Vale Centeanes</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadevalecenteanes&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.algarve-tourist.com/guides/praia-da-marinha-beach-algarve.html\" target=\"_blank\" rel=\"noreferrer\">Parking &amp; crowds timing ↗</a><a href=\"https://www.algarvetips.com/beaches/lagoa/praia-da-marinha/\" target=\"_blank\" rel=\"noreferrer\">Complete #1 beach guide ↗</a>",
+          "lat": "37.0900",
+          "lng": "-8.4125",
+          "alltrailsTrail": "https://www.alltrails.com/trail/portugal/faro/pr1-lga-sete-vales-suspensos",
+          "alltrailsArea": "https://www.alltrails.com/portugal/faro"
+        }
+      ]
+    },
+    {
+      "role": "full",
+      "heading": "Kid-first day: Slide &amp; Splash or pool/beach",
+      "feel": "Waterpark + vacation day",
+      "daycost": "Est. ~$180 · Slide &amp; Splash ~$122 + food",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Carvoeiro · night 4 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Slide &amp; Splash, Carvoeiro / Ferragudo"
+        }
+      ],
+      "note": "The intentional kid day. If parents are feeling too much water, swap the morning to Silves Castle and keep the afternoon as pool time.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Slide &amp; Splash",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Slide%20%26%20Splash%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/slidesplash/\" target=\"_blank\" rel=\"noreferrer\">IG · Slide &amp; Splash</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=slidesplash&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/slide_splash_waterpark_cand_01.jpg",
+              "src": "../../assets/img/portugal/slide_splash_waterpark_cand_01.jpg",
+              "alt": "Bright blue and red waterslides against a clear sky.",
+              "captionTitle": "Winding Slides",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/slide_splash_waterpark_cand_02.jpg",
+              "src": "../../assets/img/portugal/slide_splash_waterpark_cand_02.jpg",
+              "alt": "A colourful kids’ aqua-play splash structure over the pool.",
+              "captionTitle": "Aqua Play",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/slide_splash_waterpark_cand_05.jpg",
+              "src": "../../assets/img/portugal/slide_splash_waterpark_cand_05.jpg",
+              "alt": "Aerial of the big resort water park and its slides.",
+              "captionTitle": "Waterpark from Above",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "2026: adult (11–64) $35 low/$40 high; junior (≥1m, ≤10) $25/$30; baby &lt;1m free. Online = 10% off. Family (2+2) high season ≈ $135 gate / $120 online. Open Apr–Oct.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Buy online for 10% off (~$4/adult) — family saves ~$13–15 and skips the ticket queue. BYO picnic allowed.",
+          "splurgeHtml": "<b>Splurge</b> Rent a shaded sunbed/gazebo for the day (~$15–35) so parents have a home base.",
+          "restoHtml": "<li><a href=\"https://www.slidesplash.com/en/restaurants/\" target=\"_blank\" rel=\"noreferrer\"><b>On-site self-service</b></a> — Buffet + snack bars: burgers, chicken/nuggets, chips, pizza, ice cream — standard picky-kid fare. No re-entry.</li><li><a href=\"https://www.slidesplash.com/en/prices/\" target=\"_blank\" rel=\"noreferrer\"><b>BYO picnic</b></a> — Bringing your own food is allowed — caps the day's total.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.algarvetips.com/activities/water-parks/\" target=\"_blank\" rel=\"noreferrer\"><b>Zoomarine Algarve (Guia)</b> ↗</a> — Swap slides for dolphin/sea-lion shows + gentler water play — better for younger/less-daring kids. Adult $40.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Zoomarine%20Algarve%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/zoomarinealgarve/\" target=\"_blank\" rel=\"noreferrer\">IG · Zoomarine Algarve</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=zoomarinealgarve&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Alvor%20boardwalk%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Alvor boardwalk</b> ↗</a> — flat lagoon walk and town snacks when ticketed attractions feel like too much.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Alvor%20boardwalk%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alvorboardwalk/\" target=\"_blank\" rel=\"noreferrer\">IG · Alvor boardwalk</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=alvorboardwalk&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20de%20Vale%20Centeanes%20Algarve\" target=\"_blank\" rel=\"noreferrer\"><b>Praia de Vale Centeanes</b> ↗</a> — cliff-backed sandy beach near Carvoeiro with easier logistics than Marinha.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20de%20Vale%20Centeanes%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadevalecenteanes/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia de Vale Centeanes</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadevalecenteanes&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://planetwhitley.com/visiting-slide-splash-water-park-lagoa-ticket-prices-hours-and-tips/\" target=\"_blank\" rel=\"noreferrer\">Prices, hours, family tips ↗</a><a href=\"https://www.magicalportugal.com/activities/waterparks-algarve/slide-splash-waterpark-algarve/\" target=\"_blank\" rel=\"noreferrer\">2025 discounts &amp; tickets ↗</a>",
+          "lat": "37.1396",
+          "lng": "-8.4752"
+        },
+        {
+          "name": "Silves Castle",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Silves%20Castle%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/silves/\" target=\"_blank\" rel=\"noreferrer\">IG · Silves Castle</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=silves&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/google_silves_castle_aerial_01.jpg",
+              "src": "../../assets/img/portugal/google_silves_castle_aerial_01.jpg",
+              "alt": "Aerial of the red sandstone Castelo de Silves.",
+              "captionTitle": "Castle from Above",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/silves_cand_01.jpg",
+              "src": "../../assets/img/portugal/silves_cand_01.jpg",
+              "alt": "The red sandstone Moorish castle on the hill above Silves.",
+              "captionTitle": "Moorish Castle",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/silves_cand_02.jpg",
+              "src": "../../assets/img/portugal/silves_cand_02.jpg",
+              "alt": "Silves rooftops beneath the castle and cathedral.",
+              "captionTitle": "Silves & Castle",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "Adult $3; combined Castle + Museum $4.50; child/student/65+ $1.50. Jun–Aug 9am–11pm. Free street parking (walk up the hill). Reconfirm 2027 at the gate.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Buy the combined Castle + Museum ticket ($4.50) rather than both separately; kids/over-65 just $1.50 each.",
+          "splurgeHtml": "<b>Splurge</b> Lunch at famous seafood spot Marisqueira Rui in the old town, ~$35–55 pp.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurants-g189122-Silves_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Café Inglês</b></a> — Café/pizza/platters, ~$8.50–15 — 'lovely thin, crispy' pizza, cakes, simple plates; steps from the castle.</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189122-d7795642-Reviews-Cafe_Castelo_de_Silves-Silves_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Café Castelo de Silves</b></a> — Café/light meals, ~$6.50–13 — in the castle courtyard; easy snacks/sandwiches mid-visit.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g189122-c31-Silves_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Old-town pizza/family spots</b></a> — Pizza/pasta, ~$11–15 — plenty of family cafés a short walk downhill.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://tourismattractions.net/portugal/silves-cathedral-ticket-prices\" target=\"_blank\" rel=\"noreferrer\"><b>Silves Cathedral (Sé)</b> ↗</a> — Right beside the castle — quick add-on with Moorish/Gothic history and views.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Silves%20Cathedral%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/silvescathedral/\" target=\"_blank\" rel=\"noreferrer\">IG · Silves Cathedral</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=silvescathedral&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Zoomarine%20Algarve%20Guia\" target=\"_blank\" rel=\"noreferrer\"><b>Zoomarine Algarve</b> ↗</a> — water-park/show day when Slide &amp; Splash feels too intense or the weather is iffy.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Zoomarine%20Algarve%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/zoomarinealgarve/\" target=\"_blank\" rel=\"noreferrer\">IG · Zoomarine Algarve</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=zoomarinealgarve&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20do%20Pintadinho%20Ferragudo\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Pintadinho</b> ↗</a> — small sheltered cove south of Ferragudo, good on windy days.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Pintadinho%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadopintadinho/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Pintadinho</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadopintadinho&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://planetwhitley.com/visiting-silves-castle-portugal-ticket-prices-hours-top-tips/\" target=\"_blank\" rel=\"noreferrer\">Tickets, hours, top tips ↗</a><a href=\"https://mimuandme.com/blogs/family-travel-destinations/silves-with-kids-day-trip-guide\" target=\"_blank\" rel=\"noreferrer\">Silves with kids day trip ↗</a>",
+          "lat": "37.1906",
+          "lng": "-8.4379"
+        }
+      ]
+    },
+    {
+      "role": "flex",
+      "heading": "Flexible Algarve day",
+      "feel": "Buffer day",
+      "daycost": "Est. ~$200 · Benagil boat ~$110 + meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Carvoeiro · night 5 of 5"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Choose one: Benagil boat, Silves, Praia da Marinha repeat, pool, Ferragudo"
+        }
+      ],
+      "note": "The pressure-release day. Do not over-plan it. Use it for the thing that weather or energy prevented earlier.",
+      "travelNote": null,
+      "spots": [
+        {
+          "name": "Benagil Cave",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Benagil%20Cave%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/benagil/\" target=\"_blank\" rel=\"noreferrer\">IG · Benagil Cave</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=benagil&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/portugal/google_benagil_above_01.jpg",
+              "src": "../../assets/img/portugal/google_benagil_above_01.jpg",
+              "alt": "Aerial of the Benagil cove and beach.",
+              "captionTitle": "Benagil from Above",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_benagil_water_03.jpg",
+              "src": "../../assets/img/portugal/google_benagil_water_03.jpg",
+              "alt": "Turquoise water at the mouth of Benagil cave.",
+              "captionTitle": "Turquoise Water",
+              "credit": "Pexels · Google Images source"
+            },
+            {
+              "href": "../../assets/img/portugal/google_benagil_beach_04.jpg",
+              "src": "../../assets/img/portugal/google_benagil_beach_04.jpg",
+              "alt": "The little beach tucked inside the Benagil cove.",
+              "captionTitle": "Cave Beach",
+              "credit": "Pexels · Google Images source"
+            }
+          ],
+          "cost": "⚠ Swimming INTO the cave is BANNED since Aug 2024 (fines up to $2,700). Legal: group motorboat ~$20–40 pp, or guided kayak/SUP ~$20–40 pp (max 8 min inside, no landing). Cheapest departure: Carvoeiro.",
+          "climateLabel": "June weather",
+          "climate": "<b>75°F</b> day / <b>63°F</b> night, ~1 rainy day. Sea <b>65°F</b> (59–73°F) — cool but swimmable.",
+          "saveHtml": "<b>Save</b> Book a group speedboat from Carvoeiro (closest port) at ~$25 pp — family of 4 ~$110 vs $225–325+ private.",
+          "splurgeHtml": "<b>Splurge</b> Private family boat charter into the cave, ~$165–325 depending on size/duration.",
+          "restoHtml": "<li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g1219346-d1507234-Reviews-O_Algar-Lagoa_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>O Algar</b></a> — Portuguese/seafood + burgers, ~$13–20 4.6★ Google — overlooks Benagil beach, high chairs, kids' menu.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g1219346-Lagoa_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Benagil beach snack bars</b></a> — Grilled/seafood/snacks, ~$8.50–15 — plain grilled chicken, chips, toasties on the beachfront.</li><li><a href=\"https://www.tripadvisor.com/Restaurants-g189115-Carvoeiro_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Carvoeiro Italians (10 min)</b></a> — Pistache/Mama Mia — pizza/pasta picky-kid backup.</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><a href=\"https://www.algarvetips.com/beaches/lagoa/praia-da-marinha/\" target=\"_blank\" rel=\"noreferrer\"><b>Praia da Marinha (2 km W)</b> ↗</a> — Combine as one trip — unbeatable arches and calmer swimming than crowded Benagil beach.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20da%20Marinha%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadamarinha/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia da Marinha</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadamarinha&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20do%20Pintadinho%20Ferragudo\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Pintadinho</b> ↗</a> — small sheltered cove south of Ferragudo, good on windy days.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Pintadinho%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadopintadinho/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Pintadinho</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadopintadinho&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li><li><a href=\"https://www.google.com/maps/search/?api=1&amp;query=Praia%20do%20Camilo%20Lagos\" target=\"_blank\" rel=\"noreferrer\"><b>Praia do Camilo</b> ↗</a> — staircase beach beside Ponta da Piedade, better for a swim after the viewpoint.<div class=\"explore alt-explore\"><a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20do%20Camilo%20Portugal\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadocamilo/\" target=\"_blank\" rel=\"noreferrer\">IG · Praia do Camilo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?tags=praiadocamilo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a></div></li></ul>",
+          "bloglinksHtml": "<a href=\"https://www.earthtrekkers.com/benagil-cave/\" target=\"_blank\" rel=\"noreferrer\">2026 new rules + best tours ↗</a><a href=\"https://randomtrip.net/benagil-cave-algarve-portugal/\" target=\"_blank\" rel=\"noreferrer\">Kayak/SUP/boat options ↗</a>",
+          "lat": "37.0873",
+          "lng": "-8.4250",
+          "alltrailsTrail": "https://www.alltrails.com/trail/portugal/faro/percurso-dos-sete-vales-suspensos-gruta-de-benagil-arcos-naturais",
+          "alltrailsArea": "https://www.alltrails.com/portugal/faro"
+        }
+      ]
+    }
+  ]
+}

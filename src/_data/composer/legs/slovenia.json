@@ -1,0 +1,921 @@
+{
+  "id": "slovenia",
+  "name": "Slovenia",
+  "country": "Slovenia",
+  "sourceTrip": "slovenia-adriatic",
+  "mapColor": "#1f6f78",
+  "mapPoints": [
+    {
+      "n": "Lake Bled base",
+      "lat": 46.3683,
+      "lng": 14.1146,
+      "r": "gorenjska",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.3683,14.1146",
+      "t": "hotel"
+    },
+    {
+      "n": "Bled Island (Church of the Assumption)",
+      "lat": 46.3625,
+      "lng": 14.0876,
+      "r": "gorenjska",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.3625,14.0876",
+      "t": "view"
+    },
+    {
+      "n": "Bled Castle",
+      "lat": 46.3691,
+      "lng": 14.1006,
+      "r": "gorenjska",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.3691,14.1006",
+      "t": "view"
+    },
+    {
+      "n": "Vintgar Gorge",
+      "lat": 46.3949,
+      "lng": 14.0894,
+      "r": "gorenjska",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.3949,14.0894",
+      "t": "hike"
+    },
+    {
+      "n": "Lake Bohinj",
+      "lat": 46.2803,
+      "lng": 13.8869,
+      "r": "gorenjska",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.2803,13.8869",
+      "t": "beach"
+    },
+    {
+      "n": "Vogel cable car",
+      "lat": 46.2597,
+      "lng": 13.8403,
+      "r": "gorenjska",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.2597,13.8403",
+      "t": "view"
+    },
+    {
+      "n": "Savica Waterfall",
+      "lat": 46.2942,
+      "lng": 13.8003,
+      "r": "gorenjska",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.2942,13.8003",
+      "t": "hike"
+    },
+    {
+      "n": "Vršič Pass (1611 m)",
+      "lat": 46.4331,
+      "lng": 13.7472,
+      "r": "soca",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.4331,13.7472",
+      "t": "view"
+    },
+    {
+      "n": "Russian Chapel (Ruska kapelica)",
+      "lat": 46.4611,
+      "lng": 13.7581,
+      "r": "soca",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.4611,13.7581",
+      "t": "view"
+    },
+    {
+      "n": "Bovec / Soča Valley base",
+      "lat": 46.3381,
+      "lng": 13.5522,
+      "r": "soca",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.3381,13.5522",
+      "t": "hotel"
+    },
+    {
+      "n": "Great Soča Gorge (Velika korita)",
+      "lat": 46.3128,
+      "lng": 13.61,
+      "r": "soca",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.3128,13.61",
+      "t": "hike"
+    },
+    {
+      "n": "Kozjak Waterfall (Kobarid)",
+      "lat": 46.2586,
+      "lng": 13.5836,
+      "r": "soca",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.2586,13.5836",
+      "t": "hike"
+    },
+    {
+      "n": "Tolmin Gorges (Tolminska korita)",
+      "lat": 46.1897,
+      "lng": 13.7386,
+      "r": "soca",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.1897,13.7386",
+      "t": "hike"
+    },
+    {
+      "n": "Škocjan Caves (UNESCO)",
+      "lat": 45.6633,
+      "lng": 13.9903,
+      "r": "primorska",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.6633,13.9903",
+      "t": "view"
+    },
+    {
+      "n": "Piran base",
+      "lat": 45.5285,
+      "lng": 13.5683,
+      "r": "primorska",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.5285,13.5683",
+      "t": "hotel"
+    },
+    {
+      "n": "Fiesa beach",
+      "lat": 45.5236,
+      "lng": 13.5758,
+      "r": "primorska",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.5236,13.5758",
+      "t": "beach"
+    },
+    {
+      "n": "Portorož beaches",
+      "lat": 45.5136,
+      "lng": 13.5931,
+      "r": "primorska",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.5136,13.5931",
+      "t": "beach"
+    },
+    {
+      "n": "Sečovlje Salina Nature Park",
+      "lat": 45.4831,
+      "lng": 13.6153,
+      "r": "primorska",
+      "g": "https://www.google.com/maps/search/?api=1&query=45.4831,13.6153",
+      "t": "view"
+    },
+    {
+      "n": "Ljubljana Old Town base",
+      "lat": 46.05,
+      "lng": 14.5069,
+      "r": "ljubljana",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.05,14.5069",
+      "t": "hotel"
+    },
+    {
+      "n": "Ljubljana Castle",
+      "lat": 46.0489,
+      "lng": 14.5083,
+      "r": "ljubljana",
+      "g": "https://www.google.com/maps/search/?api=1&query=46.0489,14.5083",
+      "t": "view"
+    }
+  ],
+  "gateways": {
+    "airports": [
+      "LJU"
+    ],
+    "pitOutbound": {
+      "route": "PIT→gateway→LJU",
+      "hours": 12,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    },
+    "pitReturn": {
+      "route": "LJU→gateway→PIT",
+      "hours": 13,
+      "familyCostUsd": [
+        2800,
+        4200
+      ],
+      "notes": "Confirm a protected 2027 itinerary"
+    }
+  },
+  "nights": {
+    "min": 7,
+    "canonical": 9,
+    "max": 11
+  },
+  "heroImages": [
+    {
+      "href": "../../assets/img/slovenia-adriatic/google_bled_bluehour_02.jpg",
+      "src": "../../assets/img/slovenia-adriatic/google_bled_bluehour_02.jpg",
+      "alt": "Bled island church silhouetted against a golden sunrise glow with a flawless symmetric reflection on the still lake, Julian Alps flanking the water.",
+      "captionTitle": "Golden Hour Reflection",
+      "credit": "Wojciech Wyszkowski · Google Images source"
+    },
+    {
+      "href": "../../assets/img/slovenia-adriatic/google_bled_aerial_02.jpg",
+      "src": "../../assets/img/slovenia-adriatic/google_bled_aerial_02.jpg",
+      "alt": "Elevated panorama of the whole of Lake Bled at first light, the tiny island church mirrored in glowing water beneath the snow-dusted Julian Alps.",
+      "captionTitle": "Lake Bled Panorama",
+      "credit": "Pixabay · Google Images source"
+    },
+    {
+      "href": "../../assets/img/slovenia-adriatic/google_bled_castle_02.jpg",
+      "src": "../../assets/img/slovenia-adriatic/google_bled_castle_02.jpg",
+      "alt": "Bled Castle clinging to the top of a sheer vertical cliff above the lakeside town, autumn forest below and clear alpine sky beyond.",
+      "captionTitle": "Castle On The Cliff",
+      "credit": "Vladimir Srajber · Google Images source"
+    }
+  ],
+  "packingTags": [
+    "hiking",
+    "beach",
+    "rain"
+  ],
+  "june": {
+    "seaTempF": 72,
+    "airHiF": 79,
+    "facts": [
+      "Reconfirm destination-specific 2027 operating schedules before booking"
+    ]
+  },
+  "budget": {
+    "lodgingPerNightUsd": [
+      170,
+      260
+    ],
+    "carPerDayUsd": [
+      55,
+      85
+    ],
+    "foodPerDayUsd": [
+      140,
+      190
+    ],
+    "activitiesFlatUsd": [
+      500,
+      900
+    ],
+    "provenance": "slovenia-adriatic destination-labelled budget rows, allocated to slovenia"
+  },
+  "scoreHints": {
+    "weather": 4,
+    "swim": 4,
+    "food": 4,
+    "novelty": 5,
+    "varietyTags": [
+      "mountains",
+      "lakes",
+      "caves",
+      "coast",
+      "old-towns"
+    ]
+  },
+  "days": [
+    {
+      "role": "arrival",
+      "heading": "Arrive Ljubljana, drive to Lake Bled",
+      "feel": "Soft landing on the lake",
+      "daycost": "Est. $130 &middot; groceries, easy dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lake Bled &middot; night 1 of 4"
+        },
+        {
+          "label": "Transfer",
+          "valueHtml": "LJU -> Bled ~30 min by rental car"
+        },
+        {
+          "label": "Plan",
+          "valueHtml": "Pick up the car, check in, lakeshore stroll, early night"
+        }
+      ],
+      "note": "Ljubljana&rsquo;s airport is just 30 minutes from Bled, so the trip starts gently: collect the one rental car you keep the whole trip, settle in, and walk the lake to shake off the flights before the island and gorge days.",
+      "spots": [],
+      "travelNote": "Travel day - land at LJU, collect car, drive to Bled."
+    },
+    {
+      "role": "full",
+      "heading": "Lake Bled",
+      "feel": "Island church, pletna, and the clifftop castle",
+      "daycost": "Est. $200 &middot; boat, island, castle, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lake Bled &middot; night 2 of 4"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Pletna to Bled Island + Bled Castle"
+        },
+        {
+          "label": "Treat",
+          "valueHtml": "Bled cream cake (kremšnita) on a castle terrace"
+        }
+      ],
+      "note": "The postcard day: a pletna boat to the island church and wishing bell, then up to the clifftop castle for the view down the lake. The iconic Slovenia image, and an easy one for the kids.",
+      "spots": [
+        {
+          "name": "Lake Bled: island church, pletna &amp; clifftop castle",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lake%20Bled%3A%20island%20church%2C%20pletna%20%26%20clifftop%20castle\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lakebled/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; lakebled</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bledisland/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; bledisland</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/slovenia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; slovenia</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Lake%20Bled%3A%20island%20church%2C%20pletna%20%26%20clifftop%20castle&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_bled_bluehour_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_bled_bluehour_02.jpg",
+              "alt": "Bled island church silhouetted against a golden sunrise glow with a flawless symmetric reflection on the still lake, Julian Alps flanking the water.",
+              "captionTitle": "Golden Hour Reflection",
+              "credit": "Wojciech Wyszkowski · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_bled_aerial_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_bled_aerial_02.jpg",
+              "alt": "Elevated panorama of the whole of Lake Bled at first light, the tiny island church mirrored in glowing water beneath the snow-dusted Julian Alps.",
+              "captionTitle": "Lake Bled Panorama",
+              "credit": "Pixabay · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_bled_castle_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_bled_castle_02.jpg",
+              "alt": "Bled Castle clinging to the top of a sheer vertical cliff above the lakeside town, autumn forest below and clear alpine sky beyond.",
+              "captionTitle": "Castle On The Cliff",
+              "credit": "Vladimir Srajber · Google Images source"
+            }
+          ],
+          "cost": "The pletna boat to the island is €20 adult / €10 child round trip (cash to the pletnar, ~20 min each way plus ~40 min on the island); the island church admission with the wishing bell is €12 adult / €5 child. Bled Castle is about €19 adult / €7 child. A family of four doing all three runs roughly €150 (~$165). Walking the lake shore, ringing nothing, and photographing the island is free.",
+          "climateLabel": "Lake",
+          "climate": "<b>~1,500 ft, Julian Alps foothills.</b> June highs are a pleasant ~24&deg;C / mid-70s&deg;F with frequent afternoon showers. The lake itself is a swimmable-but-cool ~18&ndash;19&deg;C in June &mdash; fine for a quick dip off the grassy lidos, not a warm-water day (that waits for Piran).",
+          "saveHtml": "<b>Save</b> Skip the pletna and walk the 6 km lakeshore path for the classic island view for free; ring the wishing bell only if the kids insist. The castle courtyard view is the same whether or not you buy the museum ticket.",
+          "splurgeHtml": "<b>Splurge</b> Do the full ritual: pletna across, 99 steps up, ring the bell, then a slice of Bled cream cake (kremšnita) on a castle terrace over the lake.",
+          "restoHtml": "<li><b>Pizzeria Rustika</b> &mdash; wood-fired pizza with a kids&rsquo; pizza noted and simple pasta, a reliable picky-eater anchor</li><li><b>Pizzeria Gallus</b> &mdash; big straightforward pizzas near the lake</li><li><b>Slaščičarna Šmon</b> &mdash; the original Bled cream cake plus ice cream for a low-drama treat stop</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Bled Castle first, island after</b> if morning light is better on the water later.</li><li><b>Straž hill or Ojstrica viewpoint</b> for the postcard aerial of the island without a drone.</li><li><b>Rent a rowboat</b> instead of the pletna for a cheaper, more active crossing.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.bled.si/en/what-to-see/natural-sights/the-bled-island/Price-lists-reservations\" target=\"_blank\" rel=\"noreferrer\">Bled Island — official pricelist</a><a class=\"xg\" href=\"https://www.bled.si/en/\" target=\"_blank\" rel=\"noreferrer\">Bled tourism</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Vintgar Gorge",
+      "feel": "Emerald boardwalk through the canyon",
+      "daycost": "Est. $150 &middot; gorge entry, lunch, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lake Bled &middot; night 3 of 4"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Vintgar Gorge (book the online timed slot)"
+        },
+        {
+          "label": "Weather rule",
+          "valueHtml": "Shaded and cool - a good warm-or-showery-morning pick"
+        }
+      ],
+      "note": "The 1.6 km wooden boardwalk clings to the emerald Radovna over rapids to the Šum waterfall. Buy the timed online pass in advance &mdash; there are no tickets at the gate anymore &mdash; and go early to beat the buses.",
+      "spots": [
+        {
+          "name": "Vintgar Gorge: emerald boardwalk through the Radovna canyon",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Vintgar%20Gorge%3A%20emerald%20boardwalk%20through%20the%20Radovna%20canyon\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/vintgargorge/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; vintgargorge</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/blejskivintgar/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; blejskivintgar</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/slovenia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; slovenia</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Vintgar%20Gorge%3A%20emerald%20boardwalk%20through%20the%20Radovna%20canyon&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_vintgar_boardwalk_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_vintgar_boardwalk_02.jpg",
+              "alt": "The wooden boardwalk clings to the sheer cliff of Vintgar Gorge above a vivid emerald pool of the Radovna River in warm backlight.",
+              "captionTitle": "Boardwalk Over Emerald",
+              "credit": "Russell Eck · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_vintgar_emerald_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_vintgar_emerald_02.jpg",
+              "alt": "Two hikers walk the cliffside walkway as the brilliant blue-emerald Radovna River rushes over rapids through the lush Vintgar Gorge.",
+              "captionTitle": "Emerald Rapids",
+              "credit": "Lior L. · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_vintgar_walls_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_vintgar_walls_02.jpg",
+              "alt": "Whitewater rapids of the Radovna River surge between towering moss-covered limestone canyon walls deep in Vintgar Gorge.",
+              "captionTitle": "Canyon Walls",
+              "credit": "Maksim Shutov · Google Images source"
+            }
+          ],
+          "cost": "Entry is €15 adult / €5 child (up to 15) &mdash; about €40 (~$44) for the family. Since 2025 there are NO tickets at the gorge entrance: you must buy an online timed-slot pass in advance (or on-site only at the P1 Vintgar central parking before the shuttle). Miss your slot and you wait. Open April&ndash;October only; helmets are provided and mandatory.",
+          "climateLabel": "Gorge",
+          "climate": "<b>Shaded river canyon.</b> The 1.6 km wooden boardwalk hugs the emerald Radovna over rapids and pools, ending at the Šum waterfall. Cool and often damp underfoot &mdash; a smart pick on a warm or showery morning. About 45 minutes one way; fine for both kids, not for strollers.",
+          "saveHtml": "<b>Save</b> Book the earliest online slot to beat the tour buses and the midday crush, and walk back the upper forest loop rather than paying for the shuttle.",
+          "splurgeHtml": "<b>Splurge</b> Pair it with the nearby St Catherine&rsquo;s church hilltop or the Pokljuka plateau for a bigger half-day in the Bled backcountry.",
+          "restoHtml": "<li><b>Gostilna Vintgar (at the entrance)</b> &mdash; simple grilled plates, fries, and pizza right by the exit</li><li><b>Pizzeria Rustika (Bled, ~10 min)</b> &mdash; the dependable kids&rsquo;-pizza fallback back in town</li><li><b>Bled lakeside kiosks</b> &mdash; ice cream and quick bites after the walk</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Come at opening or late afternoon</b> &mdash; midday is the crowd peak on the narrow boardwalk.</li><li><b>Tolmin or Great Soča gorges later</b> if you want a second, different canyon on the Soča leg.</li><li><b>Skip if heavy rain</b> closes or slicks the boardwalk &mdash; it&rsquo;s a fair-weather walk.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.vintgar.si/en/my-visit/pricelist/\" target=\"_blank\" rel=\"noreferrer\">Vintgar Gorge — pricelist & booking</a><a class=\"xg\" href=\"https://www.vintgar.si/en/my-visit/\" target=\"_blank\" rel=\"noreferrer\">Vintgar visit info</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Lake Bohinj + Vogel",
+      "feel": "Wilder lake, cable-car panorama, waterfall",
+      "daycost": "Est. $210 &middot; cable car, Savica, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Lake Bled &middot; night 4 of 4"
+        },
+        {
+          "label": "Morning",
+          "valueHtml": "Vogel cable car over Triglav National Park"
+        },
+        {
+          "label": "Afternoon",
+          "valueHtml": "Savica Waterfall + Bohinj lakeshore"
+        }
+      ],
+      "note": "Quieter and wilder than Bled, deep in Triglav National Park: the Vogel cable car for the big peak panorama, the Savica waterfall walk, and a glassy lake for a kayak. Pack a layer for the summit and repack tonight for the Vršič crossing.",
+      "spots": [
+        {
+          "name": "Lake Bohinj: Vogel cable car + Savica Waterfall",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lake%20Bohinj%3A%20Vogel%20cable%20car%20%2B%20Savica%20Waterfall\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lakebohinj/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; lakebohinj</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/vogel/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; vogel</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/triglavnationalpark/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; triglavnationalpark</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Lake%20Bohinj%3A%20Vogel%20cable%20car%20%2B%20Savica%20Waterfall&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_bohinj_church_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_bohinj_church_02.jpg",
+              "alt": "The Church of St John the Baptist and the stone arch bridge at Ribcev Laz mirrored in a glassy Lake Bohinj under a streaked sunset sky.",
+              "captionTitle": "Church of St John",
+              "credit": "Nicola Paltani · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_bohinj_savica_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_bohinj_savica_02.jpg",
+              "alt": "The A-shaped Savica waterfall splits over a grey limestone cliff and plunges into its emerald pool deep in the Triglav gorge.",
+              "captionTitle": "Slap Savica",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_vogel_panorama_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_vogel_panorama_02.jpg",
+              "alt": "The sweeping view from the Vogel cable car looking down over Lake Bohinj to the Bohinj basin and the Julian Alps beyond.",
+              "captionTitle": "Vogel Panorama",
+              "credit": "Travel Slovenia · Google Images source"
+            }
+          ],
+          "cost": "Quieter and wilder than Bled, inside Triglav National Park (no park entry fee). The Vogel cable car is about €33 adult / €16 child return for a huge balcony view over the lake to the Triglav massif. Savica Waterfall is a ~€4 walk-in on a stepped path. Kayak or SUP rental on the lake runs ~€15&ndash;20/hour. The lakeshore and the stone bridge at Ribčev Laz are free.",
+          "climateLabel": "Alpine lake",
+          "climate": "<b>Glacial lake, deeper in the park.</b> Bohinj is colder than Bled &mdash; high-teens &deg;C water even in June &mdash; and can catch mountain cloud. The Vogel top station sits above 1,500 m, so pack a layer even on a warm valley day.",
+          "saveHtml": "<b>Save</b> Do the free lakeshore walk and the Savica path, and skip the cable car if the summit is clouded &mdash; the view is the whole point of the ticket.",
+          "splurgeHtml": "<b>Splurge</b> Ride Vogel on a clear morning for the Triglav panorama, then kayak the glassy east end of the lake in the afternoon.",
+          "restoHtml": "<li><b>Pizzerija Ema</b> &mdash; very family-friendly with a small playground and coloring for kids, wood-fired pizza</li><li><b>Pizzeria Ukanc</b> &mdash; large simple pizzas at the quiet Ukanc (west) end of the lake</li><li><b>Slaščičarna at Ribčev Laz</b> &mdash; ice cream and pancakes by the bridge</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Savica + lakeshore only</b> as a gentle half-day if the peaks are socked in.</li><li><b>Mostnica Gorge (Stara Fužina)</b> for a shorter, cheaper canyon walk with a cow-shaped rock the kids hunt for.</li><li><b>Panoramic lake boat</b> instead of the cable car for a low-effort option.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://vogel.si/en/price-list-summer/\" target=\"_blank\" rel=\"noreferrer\">Vogel cable car — summer pricelist</a><a class=\"xg\" href=\"https://www.bohinj.si/en/\" target=\"_blank\" rel=\"noreferrer\">Bohinj tourism</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Vršič Pass to the Soča Valley",
+      "feel": "Slovenia&rsquo;s highest road, 50 hairpins",
+      "daycost": "Est. $120 &middot; picnic, hut stop, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Bovec / Soča Valley &middot; night 1 of 3"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Vršič Pass (1611 m), Russian Chapel, Lake Jasna"
+        },
+        {
+          "label": "Risk check",
+          "valueHtml": "Confirm the pass is open on promet.si; Predel is the fallback"
+        }
+      ],
+      "note": "The scenic transfer that earns its own day: over the Vršič Pass&rsquo;s 50 numbered hairpins, past the WWI Russian Chapel and turquoise Lake Jasna, down to the emerald Soča. Check the pass is clear before setting off; if late snow has it shut, loop via Predel/Tarvisio.",
+      "spots": [
+        {
+          "name": "Vršič Pass: 50 hairpins over the roof of Slovenia",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Vr%C5%A1i%C4%8D%20Pass%3A%2050%20hairpins%20over%20the%20roof%20of%20Slovenia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/vrsicpass/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; vrsicpass</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/julianalps/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; julianalps</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/socavalley/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; socavalley</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Vr%C5%A1i%C4%8D%20Pass%3A%2050%20hairpins%20over%20the%20roof%20of%20Slovenia&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_lake_jasna_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_lake_jasna_02.jpg",
+              "alt": "The bronze Zlatorog ibex statue perches on rocks above the turquoise water of Lake Jasna as the jagged Julian Alps catch first light behind.",
+              "captionTitle": "Lake Jasna Ibex",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_vrsic_hairpins_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_vrsic_hairpins_02.jpg",
+              "alt": "A cobblestoned hairpin of the historic Russian Road on the Vrsic Pass curves past a dressed-stone retaining wall through the alpine forest.",
+              "captionTitle": "Russian Road Hairpin",
+              "credit": "Earth Trekkers · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_vrsic_chapel_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_vrsic_chapel_02.jpg",
+              "alt": "The twin onion-domed wooden Russian Chapel stands among green spring larches at the foot of the Vrsic Pass, reached by a stone stairway.",
+              "captionTitle": "Russian Chapel",
+              "credit": "Campervan Castaways · Google Images source"
+            }
+          ],
+          "cost": "Free to drive &mdash; the pass is a regional mountain road, so no vignette or toll applies. The only costs are fuel and your nerves on 50 numbered hairpins (24 up from Kranjska Gora, 26 down to the Soča). Budget the whole day for it: the Russian Chapel, the summit, Lake Jasna, and a dozen pull-offs.",
+          "climateLabel": "High pass",
+          "climate": "<b>1,611 m &mdash; Slovenia&rsquo;s highest road pass.</b> Normally fully open and clear by mid-June, but this is the one real timing risk of the trip: late-lying snow can delay the spring clearing and there is no guaranteed open-by date. Check promet.si and the Erjavčeva koča cameras before committing; the Predel/Tarvisio route is the fallback if it&rsquo;s shut.",
+          "saveHtml": "<b>Save</b> It&rsquo;s a free scenic drive &mdash; pack a picnic for the summit and let the road be the day&rsquo;s main event rather than paying for anything up top.",
+          "splurgeHtml": "<b>Splurge</b> Stop at Erjavčeva koča near the top for štruklji and a hot chocolate with the peaks overhead, and detour to turquoise Lake Jasna on the descent.",
+          "restoHtml": "<li><b>Erjavčeva koča (near the summit)</b> &mdash; mountain-hut plates, štruklji, soups, and simple kid food with a view</li><li><b>Okrepčevalnica Loka (Trenta)</b> &mdash; casual grill and pizza on the Soča side of the pass</li><li><b>Pack a picnic</b> &mdash; the smartest move for the summit and the pull-offs</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Predel Pass via Tarvisio (Italy)</b> as the ~2&ndash;2.5 hr fallback if Vršič is closed &mdash; still Schengen, no border stop.</li><li><b>Lake Jasna (Kranjska Gora side)</b> for an easy turquoise-water photo stop with the ibex statue.</li><li><b>Soča Trail / river source (Trenta)</b> for a short leg-stretch on the way down.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.erjavcevakoca.com/road-conditions-over-vrsic-pass/\" target=\"_blank\" rel=\"noreferrer\">Vršič Pass road status (Erjavčeva koča)</a><a class=\"xg\" href=\"https://www.promet.si/en/\" target=\"_blank\" rel=\"noreferrer\">Live road conditions — promet.si</a>"
+        }
+      ],
+      "travelNote": "Scenic transfer - Bled to Bovec over Vršič Pass (or Predel if closed)."
+    },
+    {
+      "role": "full",
+      "heading": "Soča Valley water day",
+      "feel": "Emerald river, rafting, the Great Gorge",
+      "daycost": "Est. $320 &middot; rafting, gorge, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Bovec / Soča Valley &middot; night 2 of 3"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Family rafting + Great Soča Gorge + Kozjak Waterfall"
+        },
+        {
+          "label": "Water truth",
+          "valueHtml": "Soča is a glacial 11-15°C - wetsuits, not casual swimming"
+        }
+      ],
+      "note": "The adventure heart of the trip: guided rafting on the impossibly green Soča (a gentle family stretch for the 8-year-old, the standard run for the 13-year-old), then the free Great Soča Gorge and the easy Kozjak Waterfall walk. Book the water for the morning ahead of afternoon storms.",
+      "spots": [
+        {
+          "name": "Soča Valley: emerald river, family rafting &amp; the Great Gorge",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=So%C4%8Da%20Valley%3A%20emerald%20river%2C%20family%20rafting%20%26%20the%20Great%20Gorge\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/socariver/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; socariver</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/bovec/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; bovec</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/rafting/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; rafting</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=So%C4%8Da%20Valley%3A%20emerald%20river%2C%20family%20rafting%20%26%20the%20Great%20Gorge&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_soca_aerial_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_soca_aerial_02.jpg",
+              "alt": "Aerial view of the emerald Soča river looping in giant turquoise bends around the red-roofed town of Most na Soči deep in its green valley.",
+              "captionTitle": "Emerald River From Above",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_soca_rafting_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_soca_rafting_02.jpg",
+              "alt": "Two paddlers in red and blue kayaks gliding over the impossibly clear turquoise water of the Soča river between pale boulders.",
+              "captionTitle": "Kayaking The Soča",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_soca_gorge_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_soca_gorge_02.jpg",
+              "alt": "The Great Soča Gorge (Velika korita) narrow slot of vivid turquoise water winding between sunlit golden and white limestone cliffs.",
+              "captionTitle": "Great Soča Gorge",
+              "credit": "Travel Slovenia · Google Images source"
+            }
+          ],
+          "cost": "The impossibly emerald Soča is the heart of the leg. Guided rafting runs roughly €45&ndash;80/person plus a ~€6 river permit; standard trips take ages 8+ (the 13-year-old is fine), while a dedicated family/panoramic float suits the 8-year-old. The Great Soča Gorge (Velika korita) has free parking and no entry fee; Kozjak Waterfall is €5 adult / €3 child on an easy 3.3 km forest walk.",
+          "climateLabel": "River",
+          "climate": "<b>Glacial river, cold year-round.</b> The Soča is a stunning ~11&ndash;15&deg;C even in summer &mdash; perfect for wetsuit rafting, too cold for casual kid swimming beyond a shriek-and-out dip. June valley air is warm; afternoon thunderstorms are common, so book water sports for the morning.",
+          "saveHtml": "<b>Save</b> Do the free Great Soča Gorge boardwalk and the cheap Kozjak Waterfall walk, and pick the shorter family rafting stretch rather than the full-day trip.",
+          "splurgeHtml": "<b>Splurge</b> Book the guided rafting for the whole family (wetsuits included) and add the Boka waterfall viewpoint or a via-ferrata taster for the 13-year-old.",
+          "restoHtml": "<li><b>Pizzeria Črna Ovca (&ldquo;Black Sheep&rdquo;), Bovec</b> &mdash; widely praised oven-baked pizza, English-speaking staff</li><li><b>Ristorante Pizzeria Papillo, Bovec</b> &mdash; family-friendly and fast, plain pizza/pasta guaranteed</li><li><b>Letni Vrt, Bovec</b> &mdash; pizza-focused garden spot for an easy dinner</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Family/panoramic raft (Čezsoča stretch)</b> for the 8-year-old instead of the standard run.</li><li><b>Great Soča Gorge + Kozjak</b> as a no-rafting, low-cost water day.</li><li><b>Kobarid WWI museum + Napoleon Bridge</b> for a rainy-morning indoor pivot.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://aquatoursbovec.com/family-rafting-on-the-soca-river-the-perfect-active-adventure-in-bovec/\" target=\"_blank\" rel=\"noreferrer\">Bovec family rafting & ages</a><a class=\"xg\" href=\"https://www.soca-valley.com/en/\" target=\"_blank\" rel=\"noreferrer\">Soča Valley tourism</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Tolmin Gorges",
+      "feel": "Devil&rsquo;s Bridge and the park&rsquo;s lowest canyon",
+      "daycost": "Est. $150 &middot; gorge entry, lunch, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Bovec / Soča Valley &middot; night 3 of 3"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Tolmin Gorges (timed 1-hour slot)"
+        },
+        {
+          "label": "Option",
+          "valueHtml": "Bovec zipline / Kobarid WWI museum add-ons"
+        }
+      ],
+      "note": "A cooler canyon walk to close the Soča leg: the Devil&rsquo;s Bridge high over the river, the thermal spring at the confluence, and Dante&rsquo;s Cave. Add the Bovec zipline for the 13-year-old (height/weight limits apply) or the Kobarid museum if it rains.",
+      "spots": [
+        {
+          "name": "Tolmin Gorges: Devil&rsquo;s Bridge &amp; the Triglav park&rsquo;s lowest canyon",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Tolmin%20Gorges%3A%20Devil%26rsquo%3Bs%20Bridge%20%26%20the%20Triglav%20park%26rsquo%3Bs%20lowest%20canyon\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/tolmingorges/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; tolmingorges</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/tolminskakorita/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; tolminskakorita</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/socavalley/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; socavalley</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Tolmin%20Gorges%3A%20Devil%26rsquo%3Bs%20Bridge%20%26%20the%20Triglav%20park%26rsquo%3Bs%20lowest%20canyon&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_tolmin_river_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_tolmin_river_02.jpg",
+              "alt": "The vivid turquoise Tolminka river snaking through the deep, narrow Tolmin gorge between towering moss-draped limestone walls.",
+              "captionTitle": "The Tolminka Gorge",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_tolmin_bridge_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_tolmin_bridge_02.jpg",
+              "alt": "The Devil's Bridge (Hudičev most) spanning high across the top of the Tolmin gorge above the turquoise Tolminka, with the cliff-side boardwalk below.",
+              "captionTitle": "Devil's Bridge",
+              "credit": "Foodie Baker · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_tolmin_pool_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_tolmin_pool_02.jpg",
+              "alt": "Turquoise water of the Tolminka rushing over pale rocks at the confluence in Tolmin gorge, framed by moss-covered ledges and forest.",
+              "captionTitle": "Tolminka Confluence",
+              "credit": "Travel Slovenia · Google Images source"
+            }
+          ],
+          "cost": "Entry is €12 adult / €6 child (6&ndash;15) in high season &mdash; about €36 (~$40) for the family &mdash; on a one-hour timed slot. The loop takes in the Devil&rsquo;s Bridge (60 m above the river), the thermal spring at the Tolminka&ndash;Zadlaščica confluence, and Dante&rsquo;s Cave. Open roughly April&ndash;October; it closes only in exceptional high water, and tickets are refundable if it does.",
+          "climateLabel": "Gorge",
+          "climate": "<b>Lowest entry point into Triglav National Park.</b> A cooler, shaded canyon walk &mdash; a good hot-afternoon pick. The narrow paths and stairs are fine for both kids but not for strollers. After heavy rain the Tolminka can rise and force a closure, so keep it weather-flexible.",
+          "saveHtml": "<b>Save</b> It&rsquo;s already cheap &mdash; just go early for your slot and bring water; the thermal-spring pool is a free cool-off.",
+          "splurgeHtml": "<b>Splurge</b> Add the nearby Javorca memorial church or a Tolmin town gelato, or combine with the Kozjak Waterfall for a two-canyon day.",
+          "restoHtml": "<li><b>Pizzeria Cinca Marinca, Tolmin</b> &mdash; casual pizza and pasta in town</li><li><b>Gostilna Rajht (Kobarid, ~20 min)</b> &mdash; hearty local plates with simpler kid options</li><li><b>Tolmin bakeries</b> &mdash; burek and pastries for a cheap trail lunch</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Great Soča Gorge instead</b> if you&rsquo;d rather a free, shorter canyon walk.</li><li><b>Tolmin thermal spring pool</b> for a quick kid cool-off inside the gorge.</li><li><b>Skip in high water</b> &mdash; check the gorge&rsquo;s status line before driving over.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.soca-valley.com/en/attraction/tolmin-gorges/price-list/\" target=\"_blank\" rel=\"noreferrer\">Tolmin Gorges — pricelist & hours</a><a class=\"xg\" href=\"https://www.socavalley.com/tolmin-gorges/\" target=\"_blank\" rel=\"noreferrer\">Tolmin Gorges info</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Drive to the coast via Škocjan Caves",
+      "feel": "Underground canyon, then the Adriatic",
+      "daycost": "Est. $180 &middot; cave tour, transfer, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Piran &middot; night 1 of 3"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Škocjan Caves (UNESCO) en route to Piran"
+        },
+        {
+          "label": "Transfer",
+          "valueHtml": "Bovec -> Škocjan -> Piran ~2h30 total"
+        }
+      ],
+      "note": "The Alps-to-coast transition, broken by the UNESCO Škocjan Caves &mdash; a vast underground canyon crossed by a footbridge high over the Reka. It sits right on the route to Piran, so it&rsquo;s a marquee stop, not a detour. Arrive on the coast for the first warm-water evening.",
+      "spots": [
+        {
+          "name": "Škocjan Caves: an underground canyon bridged high over the Reka",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=%C5%A0kocjan%20Caves%3A%20an%20underground%20canyon%20bridged%20high%20over%20the%20Reka\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/skocjancaves/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; skocjancaves</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/skocjanskejame/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; skocjanskejame</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/unesco/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; unesco</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=%C5%A0kocjan%20Caves%3A%20an%20underground%20canyon%20bridged%20high%20over%20the%20Reka&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_skocjan_doline_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_skocjan_doline_02.jpg",
+              "alt": "The Škocjan collapse doline, a huge cliff-walled green sinkhole plunging to the cave mouth with a hilltop church on the forested rim.",
+              "captionTitle": "Škocjan Collapse Doline",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_skocjan_canyon_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_skocjan_canyon_02.jpg",
+              "alt": "The Cerkvenik footbridge spanning the vast illuminated underground canyon of the Škocjan Caves, high above the Reka river gorge.",
+              "captionTitle": "Škocjan Caves Canyon",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_postojna_chamber_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_postojna_chamber_02.jpg",
+              "alt": "An illuminated chamber of Postojna Cave (the easier alternative near Škocjan), a towering stalagmite column and stalactite-draped walls glowing amber above a lone visitor for scale.",
+              "captionTitle": "Postojna Cave Chamber",
+              "credit": "Travel Slovenia · Google Images source"
+            }
+          ],
+          "cost": "The UNESCO show-stopper on the drive to the coast. The Underground Canyon tour is about €22&ndash;24 adult / €12.50 child in summer &mdash; roughly €70 (~$77) for the family &mdash; with departures around 10:00, 11:30, 13:00, 14:00, 15:00. It&rsquo;s a 5 km, ~1,000-step, 2.5&ndash;3 hr walk crossing the famous Cerkvenik footbridge high above the Reka. Interior is ~12&deg;C; no photography inside.",
+          "climateLabel": "Cave",
+          "climate": "<b>~12&deg;C underground, year-round.</b> Bring a layer even on a hot coastal day. This is a genuinely strenuous walk, not a stroll, and not stroller-accessible &mdash; fine for a capable 8-year-old but a real hike. The early-exit option at the Big Collapse Doline shortens it to ~3 km.",
+          "saveHtml": "<b>Save</b> Take the standard Underground Canyon tour rather than any combo add-ons; the collapse-doline early exit trims the steps if legs are tired.",
+          "splurgeHtml": "<b>Splurge</b> If the 8-year-old would prefer easier magic, swap to Postojna Cave&rsquo;s ride-in cave train &mdash; less dramatic than Škocjan&rsquo;s canyon, but stroller-adaptable and a kid hit.",
+          "restoHtml": "<li><b>Gostilna near the park entrance</b> &mdash; simple grilled plates and pizza before the drive on</li><li><b>Divača bakeries (~10 min)</b> &mdash; burek and pastries for a car snack</li><li><b>Piran/Portorož dinner</b> &mdash; save the real meal for arrival on the coast</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Postojna Cave</b> as the easier, train-served alternative for younger kids.</li><li><b>Predjama Castle</b> combined with Postojna if you pivot inland.</li><li><b>Big Collapse Doline early exit</b> to cut the tour short without missing the canyon.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.park-skocjanske-jame.si/en/read/tourist-information/skocjan-caves-guided-tours\" target=\"_blank\" rel=\"noreferrer\">Škocjan Caves — tours & tickets</a><a class=\"xg\" href=\"https://takethekidseverywhere.com/postojna-or-skocjan-caves/\" target=\"_blank\" rel=\"noreferrer\">Škocjan vs Postojna for kids</a>"
+        }
+      ],
+      "travelNote": "Scenic transfer - Bovec to Piran with the Škocjan Caves en route."
+    },
+    {
+      "role": "full",
+      "heading": "Piran old town",
+      "feel": "Venetian lanes and the first Adriatic swim",
+      "daycost": "Est. $150 &middot; walls, bell tower, taverna",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Piran &middot; night 2 of 3"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Tartini Square, town walls, St George&rsquo;s bell tower"
+        },
+        {
+          "label": "Payoff",
+          "valueHtml": "Sea ~22°C / 72°F - the warm-water leg the trip builds to"
+        }
+      ],
+      "note": "The reward after the mountains: a Venetian peninsula of red roofs and narrow lanes, the town-wall panorama, and the first proper Adriatic swim off the Punta rocks. Warmer and calmer than the Atlantic plans, if honestly a refreshing 72°F rather than tropical.",
+      "spots": [
+        {
+          "name": "Piran: a Venetian peninsula and the first warm Adriatic swim",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Piran%3A%20a%20Venetian%20peninsula%20and%20the%20first%20warm%20Adriatic%20swim\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/piran/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; piran</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/slovenianistria/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; slovenianistria</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/adriatic/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; adriatic</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Piran%3A%20a%20Venetian%20peninsula%20and%20the%20first%20warm%20Adriatic%20swim&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_piran_aerial_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_piran_aerial_02.jpg",
+              "alt": "Golden-hour aerial of Piran's red-roofed peninsula jutting into the Adriatic, St George's church and bell tower glowing above the harbor.",
+              "captionTitle": "Piran at Sunset",
+              "credit": "Magic K · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_piran_belltower_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_piran_belltower_02.jpg",
+              "alt": "Elevated view over Piran's whole peninsula and bell tower from St George's hill, a seagull gliding above the calm blue Adriatic.",
+              "captionTitle": "From the Bell Tower",
+              "credit": "visbeek · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_piran_tartini_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_piran_tartini_02.jpg",
+              "alt": "Aerial view of Piran's oval Tartini Square with the Tartini statue, ringed by terracotta roofs, the marina and the open Adriatic beyond.",
+              "captionTitle": "Tartini Square",
+              "credit": "Pham Ngoc Anh · Google Images source"
+            }
+          ],
+          "cost": "Wandering Tartini Square, the harbor, and the tangle of Venetian lanes is free. The town walls are €3 adult / €2 student (under-12 free) for the best red-roof panorama; St George&rsquo;s bell tower is ~€3 to climb its 146 steps. Piran&rsquo;s own shoreline is rocky bathing platforms with ladders into deep water &mdash; the warm-water payoff of the whole trip, if a cooler-than-tropical one.",
+          "climateLabel": "Coast",
+          "climate": "<b>Northern Adriatic.</b> June air is a warm ~25&ndash;28&deg;C / high-70s&deg;F, and the sea is about ~22&deg;C / 72&deg;F &mdash; genuinely swimmable but refreshing, not bathwater, especially early June. This is warmer and calmer than the Atlantic beaches on the Portugal-style plans, and the honest ceiling on this trip&rsquo;s swimming.",
+          "saveHtml": "<b>Save</b> Swim free off the Punta rocks or the concrete platforms along Prešernovo nabrežje, and climb the €3 walls at golden hour instead of a pricier boat trip.",
+          "splurgeHtml": "<b>Splurge</b> A sunset seafood dinner on the Piran waterfront, then the bell-tower climb for the 360&deg; over the peninsula as the lights come on.",
+          "restoHtml": "<li><b>Pizzeria Porto Konoba</b> &mdash; among the best pizza on the Slovenian coast, plus simple seafood</li><li><b>Pizzeria Burin</b> &mdash; straightforward pizza with a sea view and family-friendly staff</li><li><b>Fritolin pri Cantini</b> &mdash; casual order-at-the-counter fried calamari and simple plates at fair prices</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Fiesa beach (15-min walk)</b> for easier pebble-beach family swimming.</li><li><b>Piran town walls at sunset</b> for the red-roof panorama without midday heat.</li><li><b>Boat or kayak to the cliffs</b> for a calm-water paddle off the peninsula.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.portoroz.si/en/what-to-do/beaches/\" target=\"_blank\" rel=\"noreferrer\">Portorož & Piran beaches</a><a class=\"xg\" href=\"https://seatemperature.net/monthly/portoroz-piran-pirano-slovenia-sea-temperature-in-june-1438\" target=\"_blank\" rel=\"noreferrer\">Piran June sea temperature</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Beaches + Sečovlje salt pans",
+      "feel": "beach day",
+      "daycost": "Est. $140 &middot; beach, salt park, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Piran &middot; night 3 of 3"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Portorož/Fiesa beaches + Sečovlje Salina"
+        }
+      ],
+      "note": "The relaxed coast day, ",
+      "spots": [
+        {
+          "name": "Portorož beaches, Fiesa cove &amp; the Sečovlje salt pans",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Portoro%C5%BE%20beaches%2C%20Fiesa%20cove%20%26%20the%20Se%C4%8Dovlje%20salt%20pans\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/portoroz/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; portoroz</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/fiesa/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; fiesa</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/secovlje/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; secovlje</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Portoro%C5%BE%20beaches%2C%20Fiesa%20cove%20%26%20the%20Se%C4%8Dovlje%20salt%20pans&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_flysch_cliffs_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_flysch_cliffs_02.jpg",
+              "alt": "A red-hulled sailboat gliding past the dramatic layered flysch cliffs of Slovenia's Strunjan–Portoroz coast over turquoise water.",
+              "captionTitle": "Strunjan Flysch Cliffs",
+              "credit": "Philipp Schwarz · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_fiesa_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_fiesa_02.jpg",
+              "alt": "Swimmers in the clear turquoise shallows off a pebbly cove, Piran's colorful waterfront and bell tower across the bay.",
+              "captionTitle": "Swimming the Coast",
+              "credit": "visbeek · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_secovlje_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_secovlje_02.jpg",
+              "alt": "Geometric evaporation basins of the Sečovlje saltworks near Piran, mirror-still water reflecting the sky between salt channels.",
+              "captionTitle": "Sečovlje Salt Pans",
+              "credit": "Yerpo · Google Images source"
+            }
+          ],
+          "cost": "The relaxed beach day. Portorož has the coast&rsquo;s most groomed, gently-shelving family beaches (free entry; sunbed + umbrella ~€10&ndash;15/day), and pebbly Fiesa cove between Piran and Portorož is the local family favorite. Sečovlje Salina Nature Park is €7 adult / €5 student, under-6 free, family €16 &mdash; hand-worked salt pans, flamingos and waders, and an open-air salt museum.",
+          "climateLabel": "Coast",
+          "climate": "<b>Calm, shallow, north-Adriatic water.</b> Warm and easy for the kids in June, though not the crystal clarity of the coast further south. The Sečovlje pans are flat and exposed with almost no shade &mdash; do them in the morning or late afternoon with hats and water, not at midday.",
+          "saveHtml": "<b>Save</b> Walk to Fiesa from Piran (parking there is scarce and ~€10) and bring your own shade; the Sečovlje family ticket is a cheap, unusual half-day.",
+          "splurgeHtml": "<b>Splurge</b> A Portorož beach-club lounger day, or a Sečovlje thalasso/salt-spa session using the pans&rsquo; own mud and brine.",
+          "restoHtml": "<li><b>Portorož seafront pizzerias</b> &mdash; plenty of plain-pizza and pasta options along the promenade</li><li><b>Fiesa beach buffet</b> &mdash; casual fries, toasties, and ice cream at the cove</li><li><b>Piran dinner</b> &mdash; walk back over the hill for the harbor restaurants</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Fiesa over Piran&rsquo;s rocks</b> for the calmest, most kid-friendly swim.</li><li><b>Sečovlje salt pans</b> for a birdwatching morning before the beach.</li><li><b>Strunjan cliffs & lagoon</b> as a quieter nature alternative up the coast.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.kpss.si/en/visiting/entry-fees\" target=\"_blank\" rel=\"noreferrer\">Sečovlje Salina — entry & info</a><a class=\"xg\" href=\"https://www.portoroz.si/en/what-to-do/beaches/\" target=\"_blank\" rel=\"noreferrer\">Portorož beaches</a>"
+        }
+      ],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Coast to Ljubljana",
+      "feel": "Castle funicular and the Old Town",
+      "daycost": "Est. $170 &middot; funicular, castle, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Ljubljana Old Town &middot; night 1 of 2"
+        },
+        {
+          "label": "Transfer",
+          "valueHtml": "Piran -> Ljubljana ~1h30 by car"
+        },
+        {
+          "label": "Anchor",
+          "valueHtml": "Ljubljana Castle funicular + riverfront evening"
+        }
+      ],
+      "note": "Drive up to the capital and end on the easiest city on the board: the castle funicular for the view, the Dragon and Triple Bridges, and a car-free riverfront dinner with buskers along the Ljubljanica.",
+      "spots": [
+        {
+          "name": "Ljubljana: castle funicular, dragons, and a car-free riverfront",
+          "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Ljubljana%3A%20castle%20funicular%2C%20dragons%2C%20and%20a%20car-free%20riverfront\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ljubljana/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ljubljana</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ljubljanacastle/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ljubljanacastle</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/slovenia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; slovenia</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Ljubljana%3A%20castle%20funicular%2C%20dragons%2C%20and%20a%20car-free%20riverfront&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+          "images": [
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_ljubljana_castle_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_ljubljana_castle_02.jpg",
+              "alt": "Ljubljana Castle crowning its wooded hilltop above the red-tiled roofs and pink Franciscan church tower of the old town.",
+              "captionTitle": "Ljubljana Castle",
+              "credit": "detait · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_ljubljana_dragon_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_ljubljana_dragon_02.jpg",
+              "alt": "A copper Art-Nouveau dragon of Ljubljana's Dragon Bridge, wings spread, silhouetted against a glowing pastel sunset sky.",
+              "captionTitle": "Dragon Bridge",
+              "credit": "Travel Slovenia · Google Images source"
+            },
+            {
+              "href": "../../assets/img/slovenia-adriatic/google_ljubljana_triple_02.jpg",
+              "src": "../../assets/img/slovenia-adriatic/google_ljubljana_triple_02.jpg",
+              "alt": "Plecnik's Triple Bridge arching over the emerald Ljubljanica River, framed by willows and the old town's pastel facades.",
+              "captionTitle": "Triple Bridge",
+              "credit": "Vito L. Tanzi · Google Images source"
+            }
+          ],
+          "cost": "A compact, pedestrian, genuinely easy capital to end on. The castle funicular is a €15 family return; the courtyard and ramparts are free once you&rsquo;re up if you skip the €36-family museum ticket. The Old Town, Dragon Bridge, Triple Bridge, Plečnik&rsquo;s market colonnade, and Tivoli Park cost nothing. Park in a garage (~€15/day cap) since the center is car-free.",
+          "climateLabel": "City",
+          "climate": "<b>Warm inland June.</b> Days in the high-20s&deg;C, warm evenings for a riverside dinner and buskers along the Ljubljanica. An afternoon thunderstorm is possible; the covered market arcade and castle funicular make good rain pivots.",
+          "saveHtml": "<b>Save</b> Ride the funicular but skip the paid castle museum, eat from the riverside market and bakeries, and let the free Old Town and Tivoli Park be the day.",
+          "splurgeHtml": "<b>Splurge</b> A Ljubljanica river boat cruise plus dinner on the embankment, or the full castle ticket with the Time Machine costumed tour for the kids.",
+          "restoHtml": "<li><b>Pop&rsquo;s Pizza (by Cobblers&rsquo; Bridge)</b> &mdash; wood-fired Neapolitan, widely rated the city&rsquo;s best pizza</li><li><b>PizzaBurger (market arcade)</b> &mdash; burgers and pizza, reviewed as a hit with young kids</li><li><b>Marley &amp; Me (Old Town)</b> &mdash; pasta, salads, and Mediterranean plates for a sit-down dinner</li>",
+          "altboxHtml": "<ul class=\"alt-list\"><li><b>Walk up to the castle</b> via the free path instead of the funicular for older kids.</li><li><b>Tivoli Park + the zoo</b> for a low-key final morning with the 8-year-old.</li><li><b>Postojna Cave day-trip</b> (~45 min) if you want one more wow before flying home.</li></ul>",
+          "bloglinksHtml": "<a class=\"xg\" href=\"https://www.ljubljanskigrad.si/en/plan-your-visit/price-list/\" target=\"_blank\" rel=\"noreferrer\">Ljubljana Castle — funicular & tickets</a><a class=\"xg\" href=\"https://www.visitljubljana.com/en/visitors/\" target=\"_blank\" rel=\"noreferrer\">Visit Ljubljana</a>"
+        }
+      ],
+      "travelNote": "Transfer - Piran to Ljubljana, the final base near the airport."
+    },
+    {
+      "role": "full",
+      "heading": "Ljubljana at leisure",
+      "feel": "Market, Tivoli Park, last river evening",
+      "daycost": "Est. $150 &middot; market, boat, dinner",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Ljubljana Old Town &middot; night 2 of 2"
+        },
+        {
+          "label": "Morning",
+          "valueHtml": "Central Market + Tivoli Park"
+        },
+        {
+          "label": "Option",
+          "valueHtml": "Postojna Cave day-trip (~45 min) for one more wow"
+        }
+      ],
+      "note": "A gentle final full day: Plečnik&rsquo;s riverside market, a Ljubljanica boat cruise, and Tivoli Park &mdash; or a half-day out to Postojna Cave&rsquo;s ride-in cave train if the kids want one last headline. Repack tonight; the airport is 25 minutes away.",
+      "spots": [],
+      "travelNote": null
+    },
+    {
+      "role": "full",
+      "heading": "Fly Ljubljana -> Pittsburgh",
+      "feel": "Home before the blackout",
+      "daycost": "Est. $110 &middot; airport meals",
+      "facts": [
+        {
+          "label": "Sleep",
+          "valueHtml": "Home by Tue Jun 22"
+        },
+        {
+          "label": "Route target",
+          "valueHtml": "LJU -> FRA/MUC/VIE -> US hub -> PIT"
+        },
+        {
+          "label": "Schedule",
+          "valueHtml": "Home by Tue Jun 22, ahead of the Jun 23 preference"
+        }
+      ],
+      "note": "Drop the car at Ljubljana airport, connect through a Lufthansa-group hub and a US gateway, and land home by Tue Jun 22 &mdash; ahead of the preferred Jun 23 return and safely before the required full days in Pittsburgh on Jun 24-26.",
+      "spots": [],
+      "travelNote": "Travel day - leave Ljubljana Monday Jun 21, arrive Pittsburgh by Tuesday Jun 22."
+    }
+  ]
+}
