@@ -47,7 +47,7 @@ module.exports = {
     alt: 'Balos Lagoon’s white sandbar curving to Gramvousa from the hilltop overlook in Crete',
   },
   'greece-ionian': {
-    path: 'assets/img/greece-ionian/google_myrtos_cliff_01.jpg',
+    path: 'assets/img/greece-ionian/google_myrtos_cliff_view.jpg',
     alt: 'Myrtos Beach’s white crescent and deep blue bay seen from the Kefalonia cliff road',
   },
   'greece-cyclades': {
