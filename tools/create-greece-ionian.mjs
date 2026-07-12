@@ -591,14 +591,14 @@ const afterBody = oldPart0.indexOf('</head><body>') + '</head><body>'.length;
 const navStart = oldPart0.indexOf('<nav class="site-nav"');
 const overviewStart = oldPart0.indexOf('<section id="overview"');
 const headBody = oldPart0.slice(0, afterBody)
-  .replace(/<title>.*?<\/title>/, '<title>Ionian Islands &middot; Kefalonia &amp; Lefkada &mdash; June 2027</title>');
+  .replace(/<title>.*?<\/title>/, '<title>Greece: Ionian Islands &middot; Kefalonia &amp; Lefkada &mdash; June 2027</title>');
 const navToMain = oldPart0.slice(navStart, overviewStart)
   .replace('      <a href="#photo-guide">Photo Guide</a>\n      <a href="#food-guide">Food Guide</a>\n', '');
 
 const preview = `<section class="preview">
   <div class="pv-pane">
     <span class="pv-kicker">Family Trip &middot; Jun 9&ndash;22, 2027</span>
-    <h1>Ionian Islands<span>Kefalonia &amp; Lefkada</span></h1>
+    <h1>Greece: Ionian Islands<span>Kefalonia &amp; Lefkada</span></h1>
     <p class="pv-lead">Twelve hotel nights of the warmest, easiest turquoise swimming on the board &mdash; greener and gentler than the Cyclades, with almost no ferry stress. Seven nights on Kefalonia (Myrtos, Melissani&rsquo;s blue cave lake, Assos, Fiskardo, a Zakynthos boat day) then five on road-linked Lefkada (Porto Katsiki, the west-coast beaches, a Meganisi cruise). Calm ~73&deg;F water, one short ferry, short drives.</p>
     <div class="pv-stats"><div><b>12</b><span>Hotel nights</span></div><div><b>2</b><span>Islands</span></div><div><b>23</b><span>Stops mapped</span></div><div><b>$12k</b><span>priced target</span></div></div>
     <div class="pv-split" role="img" aria-label="Trip mix: about 55% water, 25% towns and food, 20% nature">
@@ -919,7 +919,7 @@ const todo = {
 };
 
 const scorecard = {
-  displayName: 'Ionian Islands',
+  displayName: 'Greece: Ionian Islands',
   blurb: 'Warmest, easiest turquoise-swim trip',
   axes: {
     budget: 3,
@@ -980,7 +980,7 @@ const data = {
   packingTags: ['beach', 'hiking', 'heat'],
   slug: 'greece-ionian',
   lang: 'en',
-  title: 'Ionian Islands · Kefalonia & Lefkada — June 2027',
+  title: 'Greece: Ionian Islands · Kefalonia & Lefkada — June 2027',
   hasPhotoGuide: false,
   hasFoodGuide: false,
   mapPoints,
