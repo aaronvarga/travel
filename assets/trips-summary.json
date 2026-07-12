@@ -1275,6 +1275,146 @@
       "url": "https://hanaleiburger.com/",
       "publisher": "Hanalei Burger",
       "scope": "Current burger, grilled-cheese and fries pricing; paired itinerary links provide Poipu pizza, hot-dog and chicken alternatives."
+    },
+    "jungfrau-railways": {
+      "label": "Jungfrau Railways prices & tickets",
+      "tier": "operator",
+      "url": "https://www.jungfrau.ch/en-gb/prices-and-tickets/",
+      "publisher": "Jungfraubahnen",
+      "scope": "Operator fares for Jungfraujoch, Grindelwald-First, and reservations. Peak-season pricing is dynamic; a 2026 fare is a proxy, not a 2027 quote."
+    },
+    "maennlichen-fares": {
+      "label": "Männlichen gondola fares from Grindelwald",
+      "tier": "operator",
+      "url": "https://www.maennlichen.ch/en/summer/information/fare-prices-from-grindelwald.html",
+      "publisher": "Männlichenbahn",
+      "scope": "Operator gondola fares and Royal Walk info. 2026 figure used as a 2027 proxy."
+    },
+    "bls-brienz-boat": {
+      "label": "BLS Lake Brienz boat tickets",
+      "tier": "operator",
+      "url": "https://www.bls-schiff.ch/en/lake-cruise/tickets-vouchers/tickets",
+      "publisher": "BLS AG",
+      "scope": "Operator lake-cruise schedule and fares. Season dates current; exact 2027 tariff unconfirmed."
+    },
+    "berner-oberland-pass": {
+      "label": "Berner Oberland Regional Pass prices",
+      "tier": "operator",
+      "url": "https://www.berneseoberlandpass.ch/prices-tickets/",
+      "publisher": "Berner Oberland Pass",
+      "scope": "Regional rail/excursion pass pricing. Exact 5-day tier and Jungfraujoch discount terms need direct confirmation."
+    },
+    "edelweiss-zrh-crete": {
+      "label": "Edelweiss / flight-route data Zurich to Crete",
+      "tier": "operator",
+      "url": "https://www.flightsfrom.com/ZRH-HER",
+      "publisher": "FlightsFrom / Edelweiss",
+      "scope": "Confirms nonstop ZRH-HER (multi-carrier) and weekly ZRH-CHQ (Edelweiss). June 2027 inventory not yet loaded; route existence is a strong inference, not a booking."
+    },
+    "swiss-alps-june-climate": {
+      "label": "Berner Oberland June climate aggregate",
+      "tier": "secondary",
+      "url": "https://seatemperature.net/lakes/water-temp-in-lake-brienz",
+      "publisher": "seatemperature.net / climate aggregators",
+      "scope": "Aggregated June air and Lake Brienz water norms for the Interlaken valley; not an official MeteoSwiss station record or a 2027 forecast."
+    },
+    "lauterbrunnen-trummelbach": {
+      "label": "Lauterbrunnen Tourism — Trümmelbach Falls",
+      "tier": "operator",
+      "url": "https://lauterbrunnen.swiss/en/map/detail/trummelbach-waterfalls-52c355bf-8544-4c9b-9885-427fc77657fb.html",
+      "publisher": "Lauterbrunnen Tourismus",
+      "scope": "Official attraction hours and entry price. Minor figure variance across pages noted."
+    },
+    "lju-vce-routing": {
+      "label": "PIT to Slovenia routing & fares (LJU vs Venice)",
+      "tier": "secondary",
+      "url": "https://www.lju-airport.si/en/info/novice/two-new-airlines-2025/",
+      "publisher": "Ljubljana Airport / KAYAK / Expedia route data",
+      "scope": "Confirms no PIT–Europe nonstop and no long-haul into LJU (Lufthansa-group feed via FRA/MUC/VIE, 2 stops); Venice VCE is a cheaper single-connection gateway ~2h drive from Slovenia. 2025-2026 fare observations used as a June-2027 proxy, not a quote."
+    },
+    "slovenia-alps-june-climate": {
+      "label": "Julian Alps June climate aggregate (Bled, Bohinj, Soča)",
+      "tier": "secondary",
+      "url": "https://weatherspark.com/m/77444/6/Average-Weather-in-June-in-Bled-Slovenia",
+      "publisher": "Weather Spark / AccuWeather aggregators",
+      "scope": "Aggregated June air norms for the Julian Alps (Bled ~24°C highs, frequent afternoon showers) and glacial water temps (Bled lake ~18-19°C, Soča river ~11-15°C). Not an official ARSO station record or a 2027 forecast."
+    },
+    "piran-sea-temp": {
+      "label": "Portorož / Piran June sea temperature",
+      "tier": "secondary",
+      "url": "https://seatemperature.net/monthly/portoroz-piran-pirano-slovenia-sea-temperature-in-june-1438",
+      "publisher": "seatemperature.net",
+      "scope": "June Adriatic sea-surface norm at Portorož/Piran (~22°C / 72°F, swimmable but refreshing, not warm-lagoon). Monthly aggregate, not a 2027 measurement."
+    },
+    "slovenia-driving": {
+      "label": "DARS — Slovenia e-vignette & driving rules",
+      "tier": "official",
+      "url": "https://evinjeta.dars.si/en",
+      "publisher": "DARS (Slovenian motorway operator)",
+      "scope": "Mandatory motorway e-vignette (weekly €16 / monthly €32), 100% electronic since 2022; regional roads incl. Vršič Pass are vignette-exempt. Official operator source."
+    },
+    "slovenia-family-food": {
+      "label": "Slovenia family-food & supermarket coverage",
+      "tier": "secondary",
+      "url": "https://www.tripadvisor.com/Restaurants-g274863-Bled_Upper_Carniola_Region.html",
+      "publisher": "Tripadvisor / Wanderlog restaurant listings",
+      "scope": "Confirms full supermarket coverage (Mercator/Spar) and reliable pizzeria/pasta fallbacks in every base (Bled, Bohinj, Bovec, Piran, Ljubljana). Restaurant kid-menu specifics inferred from format/reviews, not confirmed dish-by-dish."
+    },
+    "bled-island-operator": {
+      "label": "Bled Island — pletna, church & castle pricelist",
+      "tier": "operator",
+      "url": "https://www.bled.si/en/what-to-see/natural-sights/the-bled-island/Price-lists-reservations",
+      "publisher": "Turizem Bled",
+      "scope": "Official pletna boat (€20 adult/€10 child), island church admission (€12/€5), and Bled Castle rate. 2025-2026 figures; expect minor 2027 increases."
+    },
+    "vintgar-operator": {
+      "label": "Vintgar Gorge — pricelist & reservation rules",
+      "tier": "operator",
+      "url": "https://www.vintgar.si/en/my-visit/pricelist/",
+      "publisher": "Turizem Bled / Vintgar",
+      "scope": "Official entry (€15 adult/€5 child), Apr-Oct season, and the 2025+ rule that tickets are online/timed-slot only (no gate sales). 2026 baseline."
+    },
+    "skocjan-operator": {
+      "label": "Škocjan Caves — guided tour tickets & times",
+      "tier": "operator",
+      "url": "https://www.park-skocjanske-jame.si/en/read/tourist-information/skocjan-caves-guided-tours",
+      "publisher": "Park Škocjanske jame (UNESCO)",
+      "scope": "Official Underground Canyon tour price (~€22-24 adult/€12.50 child summer; June tier ambiguous), tour times (10:00-15:00), 5km/~1000-step route, 12°C, no interior photography. 2026 baseline."
+    },
+    "soca-activities-operator": {
+      "label": "Soča Valley rafting & zipline age minimums",
+      "tier": "operator",
+      "url": "https://www.socasplash.com/rafting/",
+      "publisher": "Bovec rafting/zipline operators (Soča Splash, Aqua Tours, zipline.si)",
+      "scope": "Standard rafting min age 8+ (family/panoramic float ~3+), zipline min age ~7 with 120cm/35kg thresholds (tandem for lighter kids). Soča is glacial 11-15°C. Verify child height/weight with the operator."
+    },
+    "tolmin-gorges-operator": {
+      "label": "Tolmin Gorges — pricelist & conditions",
+      "tier": "operator",
+      "url": "https://www.soca-valley.com/en/attraction/tolmin-gorges/price-list/",
+      "publisher": "Soča Valley Tourism",
+      "scope": "Official high-season entry (€12 adult/€6 child), 1-hour timed slot, Apr-Oct season, closes only in exceptional high water (refundable). 2026 baseline."
+    },
+    "ljubljana-castle-operator": {
+      "label": "Ljubljana Castle — funicular & entry pricelist",
+      "tier": "operator",
+      "url": "https://www.ljubljanskigrad.si/en/plan-your-visit/price-list/",
+      "publisher": "Ljubljanski grad",
+      "scope": "Official funicular (family €15 return) and castle entry rates; free courtyard/ramparts without a paid ticket. 2026 baseline."
+    },
+    "vrsic-road-status": {
+      "label": "Vršič Pass — seasonal road status",
+      "tier": "secondary",
+      "url": "https://www.erjavcevakoca.com/road-conditions-over-vrsic-pass/",
+      "publisher": "Erjavčeva koča / promet.si",
+      "scope": "Vršič (1611m) is open roughly late-April to late-October, snow-dependent; mid-June is normally fully open but not guaranteed — no year-specific open-date record found. Check promet.si before travel. Vignette-exempt regional road."
+    },
+    "secovlje-operator": {
+      "label": "Sečovlje Salina Nature Park — entry fees",
+      "tier": "operator",
+      "url": "https://www.kpss.si/en/visiting/entry-fees",
+      "publisher": "Krajinski park Sečoveljske soline",
+      "scope": "Official Apr-Oct entry (€7 adult/€5 student, under-6 free, family €16) covering both salt-pan areas; birdlife and open-air salt museum. 2026 baseline."
     }
   },
   "trips": [
@@ -11237,6 +11377,500 @@
       }
     },
     {
+      "slug": "slovenia-adriatic",
+      "token": "slovenia-adriatic",
+      "title": "Slovenia + Adriatic · Julian Alps to Piran — June 2027",
+      "displayName": "Slovenia + Adriatic",
+      "blurb": "Julian Alps value + a warm Piran finish",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 3,
+        "weather": 3,
+        "swim": 3,
+        "variety": 5,
+        "ease": 3,
+        "food": 4,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 10700,
+        "ceilUsd": 14800,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          70,
+          73
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 37,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-22"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "within-preference",
+      "evidence": {
+        "reviewedAt": "2026-07-11",
+        "overallConfidence": "medium",
+        "limitingAxes": [
+          "budget",
+          "weather",
+          "swim",
+          "food"
+        ],
+        "evidenceBasis": "Operator fares (Bled Island, Vintgar, Vogel, Tolmin, Škocjan, Ljubljana Castle, Sečovlje), current route data (PIT-LJU/VCE), aggregate June climate and Adriatic sea temperature, DARS driving rules, and deterministic itinerary derivation; the Adriatic SST, the airfare, the Vršič opening, and 2027 schedules remain planning proxies.",
+        "confidenceBasis": [
+          "high-confidence logistics, novelty, and food-coverage claims",
+          "medium-confidence blended climate and budget claims",
+          "medium-confidence swim claim (Adriatic SST is a proxy and cooler than the warm-water peers)"
+        ],
+        "confidence": {
+          "id": "medium",
+          "value": 2,
+          "label": "Medium evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 3,
+            "rationale": "The six categories reconcile exactly to $10,700–$14,800. The floor sits below the $12k target and the whole band stays under the $15k preferred maximum — genuinely good value, and cheaper than nearly every peer whose budget scores 1. It falls short of a 4 only because the high case ($14,800) exceeds the $13,500 mid-band ceiling, driven by the two-stop LJU airfare. Cost is a reason to pick this trip.",
+            "confidence": "medium",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 3,
+            "rationale": "A genuine split: the Piran coast is warm and mostly dry in June (~25–28°C), but the Julian Alps see frequent June afternoon thunderstorms and the Vršič Pass carries a real late-snow timing risk. The gorges and caves are the smart rainy-window picks, so the score reflects manageable-but-recurring mountain weather exposure.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-split"
+            ]
+          },
+          "swim": {
+            "score": 3,
+            "rationale": "The Piran Adriatic is a swimmable ~22°C / 72°F in June — warmer and calmer than the Atlantic plans but cooler than the Greek/Crete lagoons, off rocky platforms rather than warm sand. The glacial Soča and Alpine lakes are look-and-raft, not swim. Usable, limited, and refreshing water scores 3; Croatia, the obvious warm partner, is excluded by family decision.",
+            "confidence": "medium",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "Alpine lakes, an emerald river, three gorges, a UNESCO cave, a mountain pass, a Venetian coast, and a capital city across one compact country is the full spread of water, towns, and nature.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 3,
+            "rationale": "On the ground this is one of the easiest plans on the board: one country, one rental car, four bases in a tidy loop, short drives, no intra-Europe flight and no open-jaw. It scores 3 rather than higher only because Ljubljana has no long-haul service, so the air routing is a two-stop itinerary with a fragile final leg.",
+            "confidence": "high",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 4,
+            "rationale": "Every base (Bled, Bohinj, Bovec, Piran, Ljubljana) has full supermarkets (Mercator/Spar) plus reliable wood-fired pizza, pasta, and burgers — strong picky-eater coverage. It is inexpensive, but cost is scored under budget, not food.",
+            "confidence": "medium",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 3,
+            "rationale": "Lower risk than a multi-country Alpine plan: a single country, one rental car, no open-jaw or intra-Europe flight. Remaining uncertainty is manageable — 2025-2026 proxy fares with no live 2027 quote, a fragile final LJU air leg, and the Vršič Pass's non-guaranteed mid-June opening, each with a stated mitigation.",
+            "confidence": "high",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 5,
+            "rationale": "Slovenia does not overlap the documented visited-place list, and the Julian Alps and Karst caves are unlike anything else on the board, deriving 5/5.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 3,
+            "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight; Juneteenth observed (Fri Jun 18) is used as a no-PTO active day.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "lju-vce-routing"
+            ],
+            "value": {
+              "lowUsd": 10700,
+              "expectedUsd": null,
+              "highUsd": 14800,
+              "targetUsd": 12000,
+              "preferredMaxUsd": 15000,
+              "distribution": "planning-band",
+              "lineItemCount": 6,
+              "arithmetic": "4800/6400 + 1950/2500 + 1000/1500 + 850/1250 + 1700/2250 + 400/900 = 10700/14800"
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "internal-itinerary": "slovenia-adriatic/main.json #totals target/high columns; exact category reconciliation",
+              "lju-vce-routing": "PIT->LJU two-stop vs PIT->VCE single-connection fare bands that set the airfare line"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "decision-profile"
+            ],
+            "value": {
+              "depart": "2027-06-08",
+              "homeBy": "2027-06-22",
+              "hotelNights": 12,
+              "ptoDays": 8,
+              "blackoutRespected": true,
+              "note": "Depart Tue Jun 8, home by Tue Jun 22; ahead of the preferred Jun 23 return and clear of the required Pittsburgh days Jun 24-26. Juneteenth observed Fri Jun 18 is a no-PTO active day."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "internal-itinerary": "slovenia-adriatic/main.json calendar + timing sections",
+              "decision-profile": "decisionProfile.json tripWindows.slovenia-adriatic and pittsburghCommitment"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "climate-split",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "slovenia-alps-june-climate",
+              "piran-sea-temp"
+            ],
+            "value": {
+              "julianAlpsJuneHighF": 75,
+              "julianAlpsRainNote": "frequent June afternoon thunderstorms",
+              "bledLakeTempF": [
+                64,
+                66
+              ],
+              "socaRiverTempF": [
+                52,
+                59
+              ],
+              "piranAirJuneHighF": [
+                77,
+                82
+              ],
+              "piranSeaTempF": 72,
+              "note": "Alpine valleys are mild but wet with afternoon storms and a Vršič late-snow risk; the coast is warm and dry. Gorges and caves are the smart rainy-window picks; the Adriatic swim is warm-but-refreshing, not tropical."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "slovenia-alps-june-climate": "June air norms for Bled/Bohinj/Soča and glacial water temps (lake ~18-19°C, river ~11-15°C)",
+              "piran-sea-temp": "June Portorož/Piran sea-surface norm (~22°C / 72°F) and coastal air range"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "piran-sea-temp",
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 3,
+              "temperatureF": [
+                70,
+                73
+              ],
+              "hasSwim": true,
+              "piranSeaTempF": [
+                70,
+                73
+              ],
+              "socaRiverTempF": [
+                52,
+                59
+              ],
+              "shelteredSites": [
+                "Fiesa beach",
+                "Portorož beaches",
+                "Piran bathing platforms"
+              ],
+              "note": "Warm-water swimming is the Piran Adriatic at ~22°C / 72°F, off rocky platforms or the Fiesa/Portorož beaches; the glacial Soča (11-15°C) and Alpine lakes are for rafting and looking. Croatia, the obvious warm partner, is excluded by family decision."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-15",
+            "sourceLocators": {
+              "piran-sea-temp": "June sea-temperature aggregate for the Piran/Portorož coast used for the swim score",
+              "internal-itinerary": "slovenia-adriatic/main.json coast and Soča stops and their climate labels"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "value": {
+              "bases": 4,
+              "alpsStops": [
+                "Lake Bled",
+                "Vintgar Gorge",
+                "Lake Bohinj / Vogel",
+                "Vršič Pass"
+              ],
+              "socaStops": [
+                "Soča rafting",
+                "Great Soča Gorge",
+                "Kozjak Waterfall",
+                "Tolmin Gorges"
+              ],
+              "coastStops": [
+                "Škocjan Caves",
+                "Piran",
+                "Fiesa / Portorož",
+                "Sečovlje",
+                "Ljubljana"
+              ],
+              "note": "Alpine lakes, an emerald river, three gorges, a UNESCO cave, a Venetian coast, and a capital across 12 nights in one country."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "slovenia-adriatic/main.json itinerary days and map points"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "slovenia-driving"
+            ],
+            "value": {
+              "baseMoves": 3,
+              "countries": 1,
+              "openJaw": false,
+              "intraEuropeFlights": 0,
+              "arrivalTransferHours": 0.5,
+              "rentalCar": true,
+              "eVignetteRequired": true,
+              "note": "One country, one rental car for the whole loop, four bases with ~30 min to ~2h30 drives, no intra-Europe flight and no open-jaw. The only air friction is the two-stop routing into LJU; a mandatory motorway e-vignette applies on the ground."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-02-01",
+            "sourceLocators": {
+              "internal-itinerary": "slovenia-adriatic/main.json getting-around and air-travel sections",
+              "slovenia-driving": "DARS mandatory e-vignette rule and Vršič regional-road exemption"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "slovenia-family-food"
+            ],
+            "value": {
+              "note": "Every base has full supermarkets (Mercator/Spar) plus reliable pizzerias with plain pizza/pasta/burger options (Rustika, Ema, Črna Ovca, Porto Konoba, Pop's Pizza). Strong picky-eater coverage; Slovenia is inexpensive, which sits under budget."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-04-01",
+            "sourceLocators": {
+              "internal-itinerary": "Per-stop restaurant picks with plain pizza/pasta/burger options in each base",
+              "slovenia-family-food": "Confirms Mercator/Spar supermarket coverage and pizzeria fallbacks across the bases"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "lju-vce-routing",
+              "eu-etias",
+              "internal-itinerary"
+            ],
+            "value": {
+              "status": "current-proxy",
+              "singleTicket": false,
+              "singleTicketAssumption": false,
+              "maxConnections": 2,
+              "gatewayOptions": "round-trip LJU (two-stop, Lufthansa group via FRA/MUC/VIE) or cheaper single-connection PIT->VCE + ~2h drive",
+              "june2027ProtectedTicketVerified": false,
+              "etias": "likely mandatory by Jun 2027, ~€20/adult (kids exempt but must apply)",
+              "vrsicOpening": "normally open by mid-June but not guaranteed; check promet.si, Predel/Tarvisio fallback",
+              "note": "Not ready to book. Re-quote LJU vs Venice on ITA Matrix, confirm the Vršič Pass is open near travel, and verify ETIAS status once 2027 inventory opens."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "lju-vce-routing": "No PIT-Europe nonstop and no LJU long-haul; two-stop LJU vs single-connection Venice gateway",
+              "eu-etias": "ETIAS launch/mandatory timeline for June 2027 Schengen entry",
+              "internal-itinerary": "slovenia-adriatic/main.json air-travel section and round-trip construction"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "decision-profile",
+              "scorecard-contract"
+            ],
+            "value": {
+              "overlap": "none",
+              "note": "Slovenia does not overlap the documented visited-place list; the Julian Alps and the Karst cave country are unique on the board."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "decision-profile": "slovenia-adriatic route vs visited-places list",
+              "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and visited list"
+            },
+            "claimType": "derived"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": 22,
+        "groundHours": 14,
+        "timeZones": 6,
+        "baseMoves": 3,
+        "longestTransferHours": 12,
+        "highOutputDayStreak": 3,
+        "fallbackDays": 2,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "unknown until property selection",
+          "kitchen": "planned in all four bases but unconfirmed",
+          "laundry": "unknown until property selection",
+          "realBeds": "unknown until property selection"
+        },
+        "waterSafety": "Warm-water swims are the Piran Adriatic (rocky platforms) and the Fiesa/Portorož beaches; the glacial Soča is wetsuit rafting only, and Vintgar/Tolmin/Škocjan are supervised walkways with helmets or set tours.",
+        "crowdingPressure": "Vintgar (online timed slots) and Škocjan (set tour times) require advance booking; Bled and Piran are busy in peak summer.",
+        "medicalAccess": "Unknown against incomplete family medical profile; the Škocjan 1,000-step tour and Vršič altitude warrant normal caution.",
+        "childActivityNotes": {
+          "age13": "strong for standard Soča rafting, the Bovec zipline, the gorges, and the Škocjan canyon walk",
+          "age8": "supported by family/panoramic rafting, the pletna-and-castle ritual, shallow Fiesa/Portorož beaches, and the Postojna cave-train alternative"
+        }
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "12-night canonical plan",
+          "canonical": true,
+          "status": "documented",
+          "nights": 12,
+          "ptoDays": 8,
+          "budget": {
+            "lowUsd": 10700,
+            "expectedUsd": null,
+            "highUsd": 14800,
+            "distribution": "planning-band",
+            "chanceUnderPreferredMax": null
+          },
+          "removedExperiences": [],
+          "notes": "The checked-in itinerary remains the immutable comparison baseline: Bled 4 nights + Bovec/Soča 3 (via the Vršič Pass) + Piran 3 (via the Škocjan Caves) + Ljubljana 2, round-trip Ljubljana, one rental car.",
+          "confidence": "medium",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "Slovenia + Adriatic; variant canonical; route-specific savings/tradeoffs require re-price"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/slovenia-adriatic/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
+        "bookable": false
+      }
+    },
+    {
       "slug": "southern-france",
       "token": "southernfrance",
       "title": "Southern France · Riviera to Provence — June 2027",
@@ -12323,6 +12957,975 @@
         "id": "family-excluded",
         "label": "Family-excluded reference",
         "tone": "muted",
+        "bookable": false
+      }
+    },
+    {
+      "slug": "switzerland-crete",
+      "token": "switzerland-crete",
+      "title": "Switzerland + Crete · Berner Oberland to Chania — June 2027",
+      "displayName": "Switzerland + Crete",
+      "blurb": "Alps epic + warm Crete swimming",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 1,
+        "weather": 3,
+        "swim": 4,
+        "variety": 5,
+        "ease": 2,
+        "food": 4,
+        "risk": 2,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 14120,
+        "ceilUsd": 19440,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          75
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 32,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-22"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "crosses-preference",
+      "evidence": {
+        "reviewedAt": "2026-07-11",
+        "overallConfidence": "medium",
+        "limitingAxes": [
+          "budget",
+          "weather",
+          "swim"
+        ],
+        "evidenceBasis": "Operator fares (Jungfrau Railways, Männlichen, BLS), current route data (ZRH-Crete), official Crete beach context, aggregate June climate, and deterministic itinerary derivation; SST, the open-jaw fare, and 2027 schedules remain planning proxies.",
+        "confidenceBasis": [
+          "high-confidence logistics, novelty, and food-coverage claims",
+          "medium-confidence blended climate and budget claims",
+          "medium-confidence swim claim (Crete SST is a proxy)"
+        ],
+        "confidence": {
+          "id": "medium",
+          "value": 2,
+          "label": "Medium evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 1,
+            "rationale": "The eight categories reconcile exactly to $14,120–$19,440. The entire band is above the $12k target and the high case is $4,440 above the $15k preferred maximum. Switzerland's rail, lodging, and mountain-excursion costs drive this; the transatlantic open-jaw is proxy arithmetic, not a live quote.",
+            "confidence": "medium",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 3,
+            "rationale": "A genuine split: Crete's Chania coast is hot and dry in June (~84°F highs), but the Berner Oberland sees rain on well over half of June days and Jungfraujoch can white out. The blended score reflects the real risk on the two marquee summit days.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-split"
+            ]
+          },
+          "swim": {
+            "score": 4,
+            "rationale": "The seven Crete nights deliver a strong ~73–75°F Aegean with calm shallow lagoons at Balos and Elafonissi — the same warm-water week that scores 4 on the Crete-peer trips. By family decision the swim-free Swiss leg is an accepted split tradeoff (its job is epic scenery and hiking, not swimming), so the axis is not docked for it; it stays at 4 rather than 5 only because the Alpine half has no swimming at all.",
+            "confidence": "medium",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "A 3,454 m glacier summit, alpine cliff walks, and waterfall valleys paired with Venetian harbors, pink-sand lagoons, and Cretan gorges is the widest contrast on the board.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 2,
+            "rationale": "Two countries, an open-jaw ticket with a European connection each way, an intra-Europe flight, a ~2h20 arrival transfer, and a Crete rental car. Switzerland's rail simplicity and a single base per leg keep it from scoring lower.",
+            "confidence": "high",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 4,
+            "rationale": "Both legs are easy for picky eaters: Swiss villages and Chania both have full supermarkets plus reliable pizza/pasta/burger options. Switzerland is expensive, but cost is scored under budget, not food.",
+            "confidence": "high",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 2,
+            "rationale": "The open-jaw fare is 2026-proxy arithmetic with no live 2027 quote, the ZRH–Crete nonstop schedule for June 2027 is not yet loaded, Jungfraujoch weather can cancel the marquee day, and the Chania nonstop from Zurich is weekly-only.",
+            "confidence": "high",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 5,
+            "rationale": "The Berner Oberland and Crete do not overlap the documented visited-place list, and the Alpine biome is unlike anything else on the board, deriving 5/5.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 3,
+            "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight; Juneteenth observed (Fri Jun 18) is used as a no-PTO active day.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "jungfrau-railways"
+            ],
+            "value": {
+              "lowUsd": 14120,
+              "expectedUsd": null,
+              "highUsd": 19440,
+              "targetUsd": 12000,
+              "preferredMaxUsd": 15000,
+              "distribution": "planning-band",
+              "lineItemCount": 6,
+              "arithmetic": "6300/9000 + 2170/2790 + 2150/2650 + 850/1150 + 2150/2750 + 500/1100 = 14120/19440"
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-10-31",
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-crete/main.json #totals target/high columns; exact category reconciliation",
+              "jungfrau-railways": "Jungfraujoch and First fares that dominate the Swiss excursion line"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "decision-profile"
+            ],
+            "value": {
+              "depart": "2027-06-08",
+              "homeBy": "2027-06-22",
+              "hotelNights": 12,
+              "ptoDays": 8,
+              "blackoutRespected": true,
+              "note": "Depart Tue Jun 8, home by Tue Jun 22; ahead of the preferred Jun 23 return and clear of the required Pittsburgh days Jun 24-26. Juneteenth observed Fri Jun 18 is a no-PTO active day."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-crete/main.json calendar + timing sections",
+              "decision-profile": "decisionProfile.json tripWindows.switzerland-crete and pittsburghCommitment"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "climate-split",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "swiss-alps-june-climate",
+              "meteo-heraklion-climate"
+            ],
+            "value": {
+              "berneseOberlandJuneHighF": 63,
+              "berneseOberlandJuneLowF": 47,
+              "berneseOberlandRainDayChance": "~57%",
+              "jungfraujochSummitF": [
+                28,
+                36
+              ],
+              "creteJuneHighF": 84,
+              "note": "Alpine valley is mild but wet with frequent afternoon showers; the summit is near freezing even in June. Crete's Chania coast is hot and dry. Marquee summit days are built to flex to the clearest morning."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "swiss-alps-june-climate": "June air norms for the Interlaken valley and Lake Brienz water temp",
+              "meteo-heraklion-climate": "June monthly climate table for the Crete/Heraklion side as a Chania proxy"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "visit-greece-crete",
+              "meteo-heraklion-climate",
+              "swiss-alps-june-climate"
+            ],
+            "value": {
+              "score": 4,
+              "temperatureF": [
+                72,
+                75
+              ],
+              "hasSwim": true,
+              "creteSeaTempF": [
+                73,
+                75
+              ],
+              "lakeBrienzTempF": [
+                57,
+                64
+              ],
+              "shelteredSites": [
+                "Balos Lagoon",
+                "Elafonissi Lagoon",
+                "Nea Chora / Agii Apostoli"
+              ],
+              "note": "All real swimming is on Crete: warm Aegean with calm shallow lagoons at Balos and Elafonissi. Lake Brienz is glacier-fed and look-only in June."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "visit-greece-crete": "Official Crete beach context for Chania-coast swimming",
+              "meteo-heraklion-climate": "June sea-temperature proxy for Crete",
+              "swiss-alps-june-climate": "Lake Brienz June water temperature"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "value": {
+              "bases": 2,
+              "swissStops": [
+                "Jungfraujoch",
+                "Grindelwald-First",
+                "Lauterbrunnen",
+                "Männlichen",
+                "Lake Brienz"
+              ],
+              "creteStops": [
+                "Chania",
+                "Balos",
+                "Elafonissi",
+                "Imbros Gorge",
+                "Rethymno",
+                "Preveli",
+                "Samaria (optional)"
+              ],
+              "note": "Alps, lakes, gorges, harbors, and lagoons across two countries in 12 nights."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-crete/main.json itinerary days and map points"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "edelweiss-zrh-crete"
+            ],
+            "value": {
+              "baseMoves": 1,
+              "countries": 2,
+              "openJaw": true,
+              "intraEuropeFlights": 1,
+              "arrivalTransferHours": 2.3,
+              "swissRentalCar": false,
+              "creteRentalCar": true,
+              "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~2h20 HER-Chania transfer, and a Crete rental car."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-crete/main.json getting-around and air-travel sections",
+              "edelweiss-zrh-crete": "ZRH-HER nonstop capacity vs weekly ZRH-CHQ"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "lidl-chania",
+              "internal-itinerary"
+            ],
+            "value": {
+              "note": "Chania has full supermarkets (Lidl and others) plus tavernas with kid-safe options; Swiss villages have Coop/Migros and reliable pizza/pasta. Both legs are picky-eater friendly; Switzerland is expensive but that sits under budget."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "lidl-chania": "Confirms full-supermarket coverage in the Chania base",
+              "internal-itinerary": "Per-stop restaurant picks with plain pizza/pasta/burger options"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "edelweiss-zrh-crete",
+              "eu-etias",
+              "internal-itinerary"
+            ],
+            "value": {
+              "status": "current-proxy",
+              "singleTicket": false,
+              "singleTicketAssumption": false,
+              "maxConnections": 2,
+              "openJawQuote": "none live for 2027; 2026-proxy arithmetic",
+              "zrhCreteNonstop": "HER multi-carrier nonstop; CHQ weekly Edelweiss; June 2027 inventory not yet loaded",
+              "june2027ProtectedTicketVerified": false,
+              "etias": "mandatory by Jun 2027, ~$22/person, both Schengen legs",
+              "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Crete day once 2027 inventory opens."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "edelweiss-zrh-crete": "ZRH-HER and ZRH-CHQ nonstop existence and frequency",
+              "eu-etias": "ETIAS launch/mandatory timeline for June 2027 Schengen entry",
+              "internal-itinerary": "Open-jaw construction and homebound-via-Athens plan"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "scorecard-contract"
+            ],
+            "value": {
+              "overlap": "none",
+              "note": "Neither the Berner Oberland nor Crete overlaps the documented visited-place list; the Alpine biome is unique on the board."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-crete route vs visited-places list",
+              "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and visited list"
+            },
+            "claimType": "derived"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": 24,
+        "groundHours": 18,
+        "timeZones": 6,
+        "baseMoves": 1,
+        "longestTransferHours": 12,
+        "highOutputDayStreak": 3,
+        "fallbackDays": 2,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "unknown until property selection",
+          "kitchen": "planned in both main bases but unconfirmed",
+          "laundry": "unknown until property selection",
+          "realBeds": "unknown until property selection"
+        },
+        "waterSafety": "All family swims are on Crete (Chania beaches, Balos, Elafonissi); Lake Brienz is a look-only 57–64°F lake in June.",
+        "crowdingPressure": "Jungfraujoch reservations and Balos boat capacity require advance timing; Iseltwald pier is turnstile-gated.",
+        "medicalAccess": "Unknown against incomplete family medical profile; Jungfraujoch altitude and remote Crete gorges warrant caution.",
+        "childActivityNotes": {
+          "age13": "strong for the summit, cliff walks, gorges, and warm-water swimming",
+          "age8": "supported by First adventure rides, shallow lagoons, and the scaled Imbros gorge; Samaria and summit ambitions need restraint"
+        }
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "12-night canonical plan",
+          "canonical": true,
+          "status": "documented",
+          "nights": 12,
+          "ptoDays": 8,
+          "budget": {
+            "lowUsd": 14120,
+            "expectedUsd": null,
+            "highUsd": 19440,
+            "distribution": "planning-band",
+            "chanceUnderPreferredMax": null
+          },
+          "removedExperiences": [],
+          "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Chania 7 nights (car), open-jaw ZRH in / Crete out.",
+          "confidence": "medium",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "Switzerland + Crete; variant canonical; route-specific savings/tradeoffs require re-price"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/switzerland-crete/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
+        "bookable": false
+      }
+    },
+    {
+      "slug": "switzerland-sicily",
+      "token": "switzerland-sicily",
+      "title": "Switzerland + Sicily · Berner Oberland to Taormina — June 2027",
+      "displayName": "Switzerland + Sicily",
+      "blurb": "Alps epic + warm Sicily swimming",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 1,
+        "weather": 3,
+        "swim": 4,
+        "variety": 5,
+        "ease": 2,
+        "food": 4,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 14000,
+        "ceilUsd": 19350,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          72,
+          75
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 33,
+      "travelWindow": [
+        "2027-06-08",
+        "2027-06-22"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "crosses-preference",
+      "evidence": {
+        "reviewedAt": "2026-07-11",
+        "overallConfidence": "medium",
+        "limitingAxes": [
+          "budget",
+          "weather",
+          "swim"
+        ],
+        "evidenceBasis": "Operator fares (Jungfrau Railways, Männlichen, BLS, Funivia dell'Etna), current route data (ZRH-Catania and Catania US connectivity), official Sicily sea context, aggregate June climate, and deterministic itinerary derivation; SST, the open-jaw fare, and 2027 schedules remain planning proxies.",
+        "confidenceBasis": [
+          "high-confidence logistics, novelty, food-coverage, and route-readiness claims",
+          "medium-confidence blended climate and budget claims",
+          "medium-confidence swim claim (Sicily SST is a proxy)"
+        ],
+        "confidence": {
+          "id": "medium",
+          "value": 2,
+          "label": "Medium evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 1,
+            "rationale": "The eight categories reconcile exactly to $14,000–$19,350. The entire band is above the $12k target and the high case is $4,350 above the $15k preferred maximum. Switzerland's rail, lodging, and mountain-excursion costs drive this; the transatlantic open-jaw is proxy arithmetic, not a live quote.",
+            "confidence": "medium",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 3,
+            "rationale": "A genuine split: Sicily's Ionian and southeast coasts are hot and dry in June (~80–84°F highs), but the Berner Oberland sees rain on well over half of June days and Jungfraujoch can white out. The blended score reflects the real risk on the two marquee summit days.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-split"
+            ]
+          },
+          "swim": {
+            "score": 4,
+            "rationale": "The seven Sicily nights deliver a strong ~72–75°F Ionian with the sheltered Isola Bella cove and the warm sandy shallows of Fontane Bianche — the same warm-water week that scores 4 on the Sicily-peer trips. By family decision the swim-free Swiss leg is an accepted split tradeoff (its job is epic scenery and hiking, not swimming), so the axis is not docked for it; it stays at 4 rather than 5 only because the Alpine half has no swimming at all.",
+            "confidence": "medium",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "A 3,454 m glacier summit, alpine cliff walks, and waterfall valleys paired with a live volcano, Greek theatres, baroque towns, and warm Ionian swims is the widest contrast on the board.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 2,
+            "rationale": "Two countries, an open-jaw ticket with a European connection each way, an intra-Europe flight, and a Sicily rental car across two bases (Taormina and Siracusa). Switzerland's rail simplicity and Catania's short arrival transfer keep it from scoring lower; the second Sicily base move keeps it from scoring higher.",
+            "confidence": "high",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 4,
+            "rationale": "Both legs are easy for picky eaters: Swiss villages and Sicily both have full supermarkets plus reliable pizza/pasta/burger options. Switzerland is expensive, but cost is scored under budget, not food.",
+            "confidence": "high",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 3,
+            "rationale": "One notch above the Crete twin: Catania is a major airport with frequent Zurich links and clean US connections through Rome, Munich, Frankfurt or Zurich, so the Sicily half is far less schedule-fragile than a weekly Greek-island nonstop. The open-jaw fare is still 2026-proxy arithmetic with no live 2027 quote, and Jungfraujoch weather can cancel the marquee summit day.",
+            "confidence": "high",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 5,
+            "rationale": "The Berner Oberland and eastern Sicily do not overlap the documented visited-place list, and the Alpine biome is unlike anything else on the board, deriving 5/5.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 3,
+            "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight; Juneteenth observed (Fri Jun 18) is used as a no-PTO active day.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "jungfrau-railways",
+              "etna-funivia"
+            ],
+            "value": {
+              "lowUsd": 14000,
+              "expectedUsd": null,
+              "highUsd": 19350,
+              "targetUsd": 12000,
+              "preferredMaxUsd": 15000,
+              "distribution": "planning-band",
+              "lineItemCount": 6,
+              "arithmetic": "6200/8900 + 2230/2850 + 2150/2650 + 820/1150 + 2100/2700 + 500/1100 = 14000/19350"
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-10-31",
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-sicily/main.json #totals target/high columns; exact category reconciliation",
+              "jungfrau-railways": "Jungfraujoch and First fares that dominate the Swiss excursion line",
+              "etna-funivia": "Funivia dell'Etna cable-car fare anchoring the Sicily activity line"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "decision-profile"
+            ],
+            "value": {
+              "depart": "2027-06-08",
+              "homeBy": "2027-06-22",
+              "hotelNights": 12,
+              "ptoDays": 8,
+              "blackoutRespected": true,
+              "note": "Depart Tue Jun 8, home by Tue Jun 22; ahead of the preferred Jun 23 return and clear of the required Pittsburgh days Jun 24-26. Juneteenth observed Fri Jun 18 is a no-PTO active day."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-sicily/main.json calendar + timing sections",
+              "decision-profile": "decisionProfile.json tripWindows.switzerland-sicily and pittsburghCommitment"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "climate-split",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "swiss-alps-june-climate",
+              "visit-sicily-sea"
+            ],
+            "value": {
+              "berneseOberlandJuneHighF": 63,
+              "berneseOberlandJuneLowF": 47,
+              "berneseOberlandRainDayChance": "~57%",
+              "jungfraujochSummitF": [
+                28,
+                36
+              ],
+              "sicilyJuneHighF": 84,
+              "note": "Alpine valley is mild but wet with frequent afternoon showers; the summit is near freezing even in June. Sicily's Ionian and southeast coasts are hot and dry. Marquee summit days are built to flex to the clearest morning."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "swiss-alps-june-climate": "June air norms for the Interlaken valley and Lake Brienz water temp",
+              "visit-sicily-sea": "June sea-temperature context for the Ionian and southeast Sicily coasts"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "visit-sicily-sea",
+              "swiss-alps-june-climate"
+            ],
+            "value": {
+              "score": 4,
+              "temperatureF": [
+                72,
+                75
+              ],
+              "hasSwim": true,
+              "sicilySeaTempF": [
+                72,
+                75
+              ],
+              "lakeBrienzTempF": [
+                57,
+                64
+              ],
+              "shelteredSites": [
+                "Isola Bella / Mazzarò",
+                "Fontane Bianche",
+                "Ortigia rock ladders"
+              ],
+              "note": "All real swimming is in Sicily: warm Ionian with the sheltered Isola Bella cove and the sandy shallows of Fontane Bianche. Lake Brienz is glacier-fed and look-only in June."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "visit-sicily-sea": "June sea-temperature context for Sicilian swimming",
+              "swiss-alps-june-climate": "Lake Brienz June water temperature"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "value": {
+              "bases": 3,
+              "swissStops": [
+                "Jungfraujoch",
+                "Grindelwald-First",
+                "Lauterbrunnen",
+                "Männlichen",
+                "Lake Brienz"
+              ],
+              "sicilyStops": [
+                "Taormina + Isola Bella",
+                "Mount Etna",
+                "Cefalù",
+                "Noto + Fontane Bianche",
+                "Ortigia / Siracusa"
+              ],
+              "note": "Alps, lakes, a live volcano, Greek theatres, baroque towns, and warm coves across two countries in 12 nights."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-sicily/main.json itinerary days and map points"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "aci-driving-italy"
+            ],
+            "value": {
+              "baseMoves": 2,
+              "countries": 2,
+              "openJaw": true,
+              "intraEuropeFlights": 1,
+              "arrivalTransferHours": 0.8,
+              "swissRentalCar": false,
+              "sicilyRentalCar": true,
+              "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~50-minute CTA-Taormina transfer, and a Sicily rental car across a Taormina and a Siracusa base."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-sicily/main.json getting-around and air-travel sections",
+              "aci-driving-italy": "Italian driving/ZTL rules for the Sicily rental-car leg"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "conad-siracusa",
+              "internal-itinerary"
+            ],
+            "value": {
+              "note": "Siracusa and the Ionian coast have full supermarkets (Conad and others) plus trattorias and pizzerias with kid-safe options; Swiss villages have Coop/Migros and reliable pizza/pasta. Both legs are picky-eater friendly; Switzerland is expensive but that sits under budget."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "conad-siracusa": "Confirms full-supermarket coverage in the Siracusa base",
+              "internal-itinerary": "Per-stop restaurant picks with plain pizza/pasta/burger options"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "aci-driving-italy",
+              "eu-etias",
+              "internal-itinerary"
+            ],
+            "value": {
+              "status": "current-proxy",
+              "singleTicket": false,
+              "singleTicketAssumption": false,
+              "maxConnections": 2,
+              "openJawQuote": "none live for 2027; 2026-proxy arithmetic",
+              "zrhCataniaNonstop": "SWISS/Edelweiss seasonal nonstop; ITA/Lufthansa via FCO/MUC as backup; June 2027 inventory not yet loaded",
+              "cataniaUsConnectivity": "major airport; clean US connections via FCO/MUC/FRA/ZRH, far less fragile than a weekly island nonstop",
+              "june2027ProtectedTicketVerified": false,
+              "etias": "mandatory by Jun 2027, ~$22/person, both Schengen legs",
+              "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Catania day once 2027 inventory opens."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": "2026-12-31",
+            "sourceLocators": {
+              "aci-driving-italy": "Italian driving/ZTL context for the Sicily ground leg",
+              "eu-etias": "ETIAS launch/mandatory timeline for June 2027 Schengen entry",
+              "internal-itinerary": "Open-jaw construction and Catania-connection plan"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "scorecard-contract"
+            ],
+            "value": {
+              "overlap": "none",
+              "note": "Neither the Berner Oberland nor eastern Sicily overlaps the documented visited-place list; the Alpine biome is unique on the board."
+            },
+            "verifiedAt": "2026-07-11",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "switzerland-sicily route vs visited-places list",
+              "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and visited list"
+            },
+            "claimType": "derived"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": 22,
+        "groundHours": 20,
+        "timeZones": 6,
+        "baseMoves": 2,
+        "longestTransferHours": 12,
+        "highOutputDayStreak": 3,
+        "fallbackDays": 2,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "unknown until property selection",
+          "kitchen": "planned in all main bases but unconfirmed",
+          "laundry": "unknown until property selection",
+          "realBeds": "unknown until property selection"
+        },
+        "waterSafety": "All family swims are in Sicily (Isola Bella, Fontane Bianche, Cefalù, Ortigia rocks); Lake Brienz is a look-only 57–64°F lake in June.",
+        "crowdingPressure": "Jungfraujoch reservations require advance timing; Taormina and Ortigia old-town ZTL zones and summer beach demand warrant early planning.",
+        "medicalAccess": "Unknown against incomplete family medical profile; Jungfraujoch altitude and the Etna volcano day warrant caution.",
+        "childActivityNotes": {
+          "age13": "strong for the summit, cliff walks, the Etna craters, and warm-water swimming",
+          "age8": "supported by First adventure rides, the sheltered Isola Bella cove, and the free Silvestri craters; the summit and the long Cefalù drive need restraint"
+        }
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "12-night canonical plan",
+          "canonical": true,
+          "status": "documented",
+          "nights": 12,
+          "ptoDays": 8,
+          "budget": {
+            "lowUsd": 14000,
+            "expectedUsd": null,
+            "highUsd": 19350,
+            "distribution": "planning-band",
+            "chanceUnderPreferredMax": null
+          },
+          "removedExperiences": [],
+          "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Sicily 7 nights (car) across Taormina and Siracusa, open-jaw ZRH in / Catania out.",
+          "confidence": "medium",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "Switzerland + Sicily; variant canonical; route-specific savings/tradeoffs require re-price"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/switzerland-sicily/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },

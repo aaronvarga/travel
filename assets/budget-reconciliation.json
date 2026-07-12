@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-10T18:09:40.438Z",
+  "generatedAt": "2026-07-12T00:19:11.930Z",
   "trips": [
     {
       "slug": "albania",
@@ -1075,6 +1075,65 @@
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
     },
     {
+      "slug": "slovenia-adriatic",
+      "canonical": {
+        "lowUsd": 10700,
+        "highUsd": 14800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 10700,
+        "sumHighUsd": 14800,
+        "displayedLowUsd": 10700,
+        "displayedHighUsd": 14800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights (round-trip Ljubljana, or less via Venice)",
+          "text": "$4,800 target / $6,400 high",
+          "lowUsd": 4800,
+          "highUsd": 6400
+        },
+        {
+          "label": "Lodging, 12 hotel nights",
+          "text": "$1,950 target / $2,500 high",
+          "lowUsd": 1950,
+          "highUsd": 2500
+        },
+        {
+          "label": "Rental car, e-vignette, fuel, tolls, parking",
+          "text": "$1,000 target / $1,500 high",
+          "lowUsd": 1000,
+          "highUsd": 1500
+        },
+        {
+          "label": "Activities, gorges, rafting, caves, castle",
+          "text": "$850 target / $1,250 high",
+          "lowUsd": 850,
+          "highUsd": 1250
+        },
+        {
+          "label": "Food, groceries, 13 travel days",
+          "text": "$1,700 target / $2,250 high",
+          "lowUsd": 1700,
+          "highUsd": 2250
+        },
+        {
+          "label": "Insurance, ETIAS, fees, buffer",
+          "text": "$400 target / $900 high",
+          "lowUsd": 400,
+          "highUsd": 900
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
       "slug": "southern-france",
       "canonical": {
         "lowUsd": 13350,
@@ -1194,6 +1253,124 @@
           "text": "$250–300",
           "lowUsd": 250,
           "highUsd": 300
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "switzerland-crete",
+      "canonical": {
+        "lowUsd": 14120,
+        "highUsd": 19440
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 14100,
+        "sumHighUsd": 19400,
+        "displayedLowUsd": 14120,
+        "displayedHighUsd": 19440,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights and intra-Europe hop",
+          "text": "$6,300 target / $9,000 high",
+          "lowUsd": 6300,
+          "highUsd": 9000
+        },
+        {
+          "label": "Lodging, 12 hotel nights",
+          "text": "$2,170 target / $2,790 high",
+          "lowUsd": 2170,
+          "highUsd": 2790
+        },
+        {
+          "label": "Swiss rail pass + mountain excursions",
+          "text": "$2,150 target / $2,650 high",
+          "lowUsd": 2150,
+          "highUsd": 2650
+        },
+        {
+          "label": "Crete car, boats, gorge fees, activities",
+          "text": "$850 target / $1,150 high",
+          "lowUsd": 850,
+          "highUsd": 1150
+        },
+        {
+          "label": "Food, groceries, 13 travel days",
+          "text": "$2,150 target / $2,750 high",
+          "lowUsd": 2150,
+          "highUsd": 2750
+        },
+        {
+          "label": "Insurance, ETIAS, fees, buffer",
+          "text": "$500 target / $1,100 high",
+          "lowUsd": 500,
+          "highUsd": 1100
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "switzerland-sicily",
+      "canonical": {
+        "lowUsd": 14000,
+        "highUsd": 19350
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 14000,
+        "sumHighUsd": 19400,
+        "displayedLowUsd": 14000,
+        "displayedHighUsd": 19350,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights and intra-Europe hop",
+          "text": "$6,200 target / $8,900 high",
+          "lowUsd": 6200,
+          "highUsd": 8900
+        },
+        {
+          "label": "Lodging, 12 hotel nights",
+          "text": "$2,230 target / $2,850 high",
+          "lowUsd": 2230,
+          "highUsd": 2850
+        },
+        {
+          "label": "Swiss rail pass + mountain excursions",
+          "text": "$2,150 target / $2,650 high",
+          "lowUsd": 2150,
+          "highUsd": 2650
+        },
+        {
+          "label": "Sicily car, Etna, boat, beach sets",
+          "text": "$820 target / $1,150 high",
+          "lowUsd": 820,
+          "highUsd": 1150
+        },
+        {
+          "label": "Food, groceries, 13 travel days",
+          "text": "$2,100 target / $2,700 high",
+          "lowUsd": 2100,
+          "highUsd": 2700
+        },
+        {
+          "label": "Insurance, ETIAS, fees, buffer",
+          "text": "$500 target / $1,100 high",
+          "lowUsd": 500,
+          "highUsd": 1100
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
