@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "greece-cyclades",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 11650,
+        "expectedUsd": null,
+        "highUsd": 16000,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The checked-in itinerary is the immutable comparison baseline: Athens 2 nights + Naxos 4 + Paros 2 + Milos 3 + Athens 1 buffer, ferries outbound through the islands and a Milos->Athens domestic flight home, with a rental car on each island.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "Greek Cyclades; variant canonical; route-specific savings/tradeoffs require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "Two alternatives are worth documenting but are not yet cost-reconciled. (1) A leaner three-island cut that drops Paros (Athens 2 + Naxos 4 + Milos 4 + Athens 1) removes one ferry and one base move, trimming cost and logistics at the expense of Naoussa and Kolymbithres — it would need its own reconciliation and a re-scored ease/budget. (2) A calmer single-island fallback (Naxos or Milos only) if the meltemi forecast looks severe near travel, cutting ferry-cancellation exposure but losing the multi-island variety. Both need re-pricing before they can be treated as ranked variants."
+}
