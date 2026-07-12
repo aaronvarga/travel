@@ -6658,6 +6658,828 @@
     }
   },
   {
+    "slug": "combo--iceland--ischia-cilento",
+    "title": "Iceland + Ischia + Cilento — composed draft",
+    "startId": "iceland",
+    "partnerId": "ischia-cilento",
+    "startName": "Iceland",
+    "partnerName": "Ischia + Cilento",
+    "sourceRefs": [
+      "iceland-ischia-cilento"
+    ],
+    "departDate": "2027-06-06",
+    "returnDate": "2027-06-19",
+    "legNightsA": 4,
+    "legNightsB": 7,
+    "edgeNights": 0,
+    "totalNights": 11,
+    "calendarDays": 13,
+    "heroImages": [
+      {
+        "href": "../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg",
+        "src": "../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg",
+        "alt": "Rainbow mist at Skógafoss on Iceland's South Coast",
+        "captionTitle": "Skógafoss",
+        "credit": "Austaclausen · Google Images source"
+      },
+      {
+        "href": "../../assets/img/iceland-ischia-cilento/google_reykjavik_base_01.jpg",
+        "src": "../../assets/img/iceland-ischia-cilento/google_reykjavik_base_01.jpg",
+        "alt": "Reykjavík skyline beneath a dramatic summer sunset",
+        "captionTitle": "Reykjavík",
+        "credit": "Hallgrimur P. Helgason · Google Images source"
+      },
+      {
+        "href": "../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_rainbow_05.jpg",
+        "src": "../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_rainbow_05.jpg",
+        "alt": "Rainbow spray above Gullfoss on Iceland's Golden Circle",
+        "captionTitle": "Gullfoss",
+        "credit": "Jane Cumming · Google Images source"
+      },
+      {
+        "href": "../../assets/img/iceland-ischia-cilento/google_ischia_castello_hero_01.jpg",
+        "src": "../../assets/img/iceland-ischia-cilento/google_ischia_castello_hero_01.jpg",
+        "alt": "Castello Aragonese mirrored in calm Tyrrhenian water",
+        "captionTitle": "Castello Aragonese",
+        "credit": "malcbawn.photos · Google Images source"
+      },
+      {
+        "href": "../../assets/img/iceland-ischia-cilento/google_cilento_licosa_hero_01.jpg",
+        "src": "../../assets/img/iceland-ischia-cilento/google_cilento_licosa_hero_01.jpg",
+        "alt": "The lighthouse island at Punta Licosa",
+        "captionTitle": "Punta Licosa",
+        "credit": "52picchio · Google Images source"
+      },
+      {
+        "href": "../../assets/img/iceland-ischia-cilento/google_paestum_temple_sunset_01.jpg",
+        "src": "../../assets/img/iceland-ischia-cilento/google_paestum_temple_sunset_01.jpg",
+        "alt": "Paestum's Greek temple glowing at sunset",
+        "captionTitle": "Paestum",
+        "credit": "funeralsong2011 · Google Images source"
+      }
+    ],
+    "mapPoints": [
+      {
+        "n": "Keflavík Airport (KEF)",
+        "lat": 63.985,
+        "lng": -22.6056,
+        "r": "iceland",
+        "g": "https://www.google.com/maps/search/?api=1&query=63.985,-22.6056"
+      },
+      {
+        "n": "Reykjavík",
+        "lat": 64.1466,
+        "lng": -21.9426,
+        "r": "iceland",
+        "g": "https://www.google.com/maps/search/?api=1&query=64.1466,-21.9426"
+      },
+      {
+        "n": "Gullfoss",
+        "lat": 64.3271,
+        "lng": -20.1199,
+        "r": "iceland",
+        "g": "https://www.google.com/maps/search/?api=1&query=64.3271,-20.1199"
+      },
+      {
+        "n": "Skógafoss",
+        "lat": 63.5321,
+        "lng": -19.5114,
+        "r": "iceland",
+        "g": "https://www.google.com/maps/search/?api=1&query=63.5321,-19.5114"
+      },
+      {
+        "n": "Rome Fiumicino Airport (FCO)",
+        "lat": 41.8003,
+        "lng": 12.2389,
+        "r": "ischia-cilento",
+        "g": "https://www.google.com/maps/search/?api=1&query=41.8003,12.2389"
+      },
+      {
+        "n": "Forio, Ischia",
+        "lat": 40.7355,
+        "lng": 13.8552,
+        "r": "ischia-cilento",
+        "g": "https://www.google.com/maps/search/?api=1&query=40.7355,13.8552"
+      },
+      {
+        "n": "Santa Maria di Castellabate",
+        "lat": 40.2858,
+        "lng": 14.95,
+        "r": "ischia-cilento",
+        "g": "https://www.google.com/maps/search/?api=1&query=40.2858,14.9500"
+      },
+      {
+        "n": "Paestum",
+        "lat": 40.4239,
+        "lng": 15.0058,
+        "r": "ischia-cilento",
+        "g": "https://www.google.com/maps/search/?api=1&query=40.4239,15.0058"
+      },
+      {
+        "n": "Capo Palinuro",
+        "lat": 40.0307,
+        "lng": 15.2777,
+        "r": "ischia-cilento",
+        "g": "https://www.google.com/maps/search/?api=1&query=40.0307,15.2777"
+      }
+    ],
+    "mapColors": {
+      "iceland": "#3b7080",
+      "transfer": "#c25a3a",
+      "ischia-cilento": "#b7613f"
+    },
+    "budget": {
+      "floorUsd": 9410,
+      "ceilUsd": 13600,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "budgetRows": [
+      {
+        "id": "budget-1",
+        "label": "Iceland lodging",
+        "floorUsd": 920,
+        "ceilUsd": 1320
+      },
+      {
+        "id": "budget-2",
+        "label": "Iceland car/local transport",
+        "floorUsd": 350,
+        "ceilUsd": 550
+      },
+      {
+        "id": "budget-3",
+        "label": "Iceland food",
+        "floorUsd": 725,
+        "ceilUsd": 975
+      },
+      {
+        "id": "budget-4",
+        "label": "Iceland activities",
+        "floorUsd": 220,
+        "ceilUsd": 420
+      },
+      {
+        "id": "budget-5",
+        "label": "Mid-trip transfer",
+        "floorUsd": 700,
+        "ceilUsd": 1100
+      },
+      {
+        "id": "budget-6",
+        "label": "Ischia + Cilento lodging",
+        "floorUsd": 1155,
+        "ceilUsd": 1715
+      },
+      {
+        "id": "budget-7",
+        "label": "Ischia + Cilento car/local transport",
+        "floorUsd": 360,
+        "ceilUsd": 600
+      },
+      {
+        "id": "budget-8",
+        "label": "Ischia + Cilento food",
+        "floorUsd": 960,
+        "ceilUsd": 1360
+      },
+      {
+        "id": "budget-9",
+        "label": "Ischia + Cilento activities",
+        "floorUsd": 420,
+        "ceilUsd": 760
+      },
+      {
+        "id": "budget-10",
+        "label": "PIT outbound gateway",
+        "floorUsd": 1800,
+        "ceilUsd": 2400
+      },
+      {
+        "id": "budget-11",
+        "label": "PIT return gateway",
+        "floorUsd": 1800,
+        "ceilUsd": 2400
+      }
+    ],
+    "scorecard": {
+      "axes": {
+        "budget": 3,
+        "weather": 3,
+        "swim": 5,
+        "variety": 5,
+        "ease": 3,
+        "food": 3,
+        "risk": 3,
+        "nights": 4,
+        "novelty": 5,
+        "pto": 2
+      },
+      "pto": {
+        "days": 9,
+        "nights": 11
+      },
+      "totalBaked": 37,
+      "estimated": true,
+      "audited": false
+    },
+    "transfer": {
+      "id": "iceland->ischia-cilento",
+      "mode": "air",
+      "hours": 9,
+      "complexity": 3,
+      "risk": 3,
+      "watch": "The 2026 nonstop KEF-FCO route is the value case; confirm the exact 2027 operating day before booking the split.",
+      "via": []
+    },
+    "itinerary": {
+      "className": "itinerary composed-itinerary",
+      "labelHtml": "<p class=\"eyebrow\">Day by day</p><h2>Iceland + Ischia + Cilento</h2>",
+      "daysClass": "days",
+      "days": [
+        {
+          "role": "departure",
+          "heading": "Depart Pittsburgh after work",
+          "feel": "Overnight travel",
+          "daycost": "Airport meals and ground transport",
+          "facts": [
+            {
+              "label": "Gateway",
+              "valueHtml": "PIT→gateway→KEF"
+            }
+          ],
+          "note": "Use Icelandair stopover pricing when competitive; confirm the protected 2027 routing.",
+          "travelNote": "Overnight flight",
+          "spots": [],
+          "badge": "0",
+          "id": "day0",
+          "sectionId": "combo--iceland--ischia-cilento-day-0",
+          "eyebrow": "Sun - Jun 6",
+          "colorClass": "c1"
+        },
+        {
+          "role": "arrival",
+          "heading": "Reykjavík arrival + geothermal reset",
+          "feel": "Easy first day",
+          "daycost": "Est. $130-$210 · transfer, pool and meals",
+          "facts": [
+            {
+              "label": "Base",
+              "valueHtml": "Reykjavík · night 1 of 4"
+            },
+            {
+              "label": "Water",
+              "valueHtml": "Heated geothermal pool, not an ocean swim"
+            }
+          ],
+          "note": "Keep the first day compact: settle in, walk the harbor, and use Laugardalslaug as the jet-lag reset.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "Reykjavík waterfront",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_reykjavik_sun_voyager_02.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_reykjavik_sun_voyager_02.jpg",
+                  "alt": "Sun Voyager at Reykjavík sunset",
+                  "captionTitle": "Sun Voyager",
+                  "credit": "Pierre Leclerc · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_reykjavik_harpa_blue_hour_03.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_reykjavik_harpa_blue_hour_03.jpg",
+                  "alt": "Harpa reflected in Reykjavík harbor",
+                  "captionTitle": "Harpa",
+                  "credit": "Judith Kuhn · Google Images source"
+                }
+              ],
+              "cost": "City walk free; municipal pool pricing should be rechecked for 2027.",
+              "climateLabel": "June",
+              "climate": "Long daylight, cool air and fast-changing weather; carry a waterproof layer.",
+              "lat": "64.1466",
+              "lng": "-21.9426",
+              "carouselId": "combo--iceland--ischia-cilento-d1-s1"
+            }
+          ],
+          "badge": "1",
+          "id": "day1",
+          "sectionId": "combo--iceland--ischia-cilento-day-1",
+          "eyebrow": "Mon - Jun 7",
+          "colorClass": "c1"
+        },
+        {
+          "role": "full",
+          "heading": "Golden Circle + Secret Lagoon",
+          "feel": "Waterfalls and geothermal power",
+          "daycost": "Est. $170-$270 · car, pool, meals",
+          "facts": [
+            {
+              "label": "Loop",
+              "valueHtml": "Þingvellir → Strokkur → Gullfoss"
+            },
+            {
+              "label": "Finish",
+              "valueHtml": "Warm soak at Secret Lagoon"
+            }
+          ],
+          "note": "Start early, keep the geothermal soak as the soft landing after the sightseeing loop, and do not confuse it with the warm-water beach requirement later in Italy.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "Golden Circle",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_golden_circle_thingvellir_02.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_golden_circle_thingvellir_02.jpg",
+                  "alt": "Þingvellir's rift valley",
+                  "captionTitle": "Þingvellir",
+                  "credit": "Chris Ford · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_golden_circle_strokkur_03.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_golden_circle_strokkur_03.jpg",
+                  "alt": "Strokkur erupting into a textured sky",
+                  "captionTitle": "Strokkur",
+                  "credit": "Larch · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_01.jpg",
+                  "alt": "Gullfoss plunging into its canyon",
+                  "captionTitle": "Gullfoss",
+                  "credit": "Giuseppe Milo · Google Images source"
+                }
+              ],
+              "cost": "Natural sites are free; budget for fuel, parking if introduced, and the family geothermal entry.",
+              "climateLabel": "June",
+              "climate": "Exposed and windy even on bright days.",
+              "lat": "64.3271",
+              "lng": "-20.1199",
+              "carouselId": "combo--iceland--ischia-cilento-d2-s1"
+            }
+          ],
+          "badge": "2",
+          "id": "day2",
+          "sectionId": "combo--iceland--ischia-cilento-day-2",
+          "eyebrow": "Tue - Jun 8",
+          "colorClass": "c1"
+        },
+        {
+          "role": "flex",
+          "heading": "South Coast waterfalls + Reynisfjara",
+          "feel": "The cinematic Iceland day",
+          "daycost": "Est. $180-$280 · long car day and meals",
+          "facts": [
+            {
+              "label": "Flagships",
+              "valueHtml": "Seljalandsfoss + Skógafoss"
+            },
+            {
+              "label": "Safety",
+              "valueHtml": "Never turn your back on Reynisfjara surf"
+            }
+          ],
+          "note": "This is the weather-flex day: go when the South Coast forecast is best and keep generous driving margin.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "Iceland South Coast",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_south_coast_seljalandsfoss_cave_03.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_south_coast_seljalandsfoss_cave_03.jpg",
+                  "alt": "Seljalandsfoss from the path behind the water",
+                  "captionTitle": "Behind the Falls",
+                  "credit": "Iceland Photo Tours · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg",
+                  "alt": "Rainbow at Skógafoss",
+                  "captionTitle": "Skógafoss",
+                  "credit": "Austaclausen · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_south_coast_reynisfjara_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_south_coast_reynisfjara_01.jpg",
+                  "alt": "Black sand and sea stacks at Reynisfjara",
+                  "captionTitle": "Reynisfjara",
+                  "credit": "Giuseppe Milo · Google Images source"
+                }
+              ],
+              "cost": "Natural sights are free; the cost is the rental day, fuel and a road meal.",
+              "climateLabel": "June",
+              "climate": "Cold spray and Atlantic wind make waterproof layers essential.",
+              "lat": "63.5321",
+              "lng": "-19.5114",
+              "carouselId": "combo--iceland--ischia-cilento-d3-s1"
+            }
+          ],
+          "badge": "3",
+          "id": "day3",
+          "sectionId": "combo--iceland--ischia-cilento-day-3",
+          "eyebrow": "Wed - Jun 9",
+          "colorClass": "c1"
+        },
+        {
+          "role": "flex",
+          "heading": "Reykjanes weather-flex + optional Blue Lagoon",
+          "feel": "Steam, lava and a softer final day",
+          "daycost": "Est. $160-$460 · car, meals and optional lagoon",
+          "facts": [
+            {
+              "label": "Route",
+              "valueHtml": "Gunnuhver → lava coast → optional Blue Lagoon"
+            },
+            {
+              "label": "Rule",
+              "valueHtml": "Use this day to recover a missed flagship loop first"
+            }
+          ],
+          "note": "The fourth night is weather insurance. Drive the compact Reykjanes loop only if the Golden Circle and South Coast already succeeded; add Blue Lagoon only when the live price fits.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "Reykjanes weather-flex",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_reykjanes_gunnuhver_steam_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_reykjanes_gunnuhver_steam_01.jpg",
+                  "alt": "Steam rising at Gunnuhver on the Reykjanes Peninsula",
+                  "captionTitle": "Gunnuhver",
+                  "credit": "Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_reykjanes_lava_field_03.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_reykjanes_lava_field_03.jpg",
+                  "alt": "Dark lava fields across the Reykjanes Peninsula",
+                  "captionTitle": "Reykjanes Lava",
+                  "credit": "Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_reykjanes_blue_lagoon_04.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_reykjanes_blue_lagoon_04.jpg",
+                  "alt": "Blue Lagoon geothermal water amid black lava",
+                  "captionTitle": "Blue Lagoon",
+                  "credit": "Google Images source"
+                }
+              ],
+              "cost": "Gunnuhver and the coast are free; Blue Lagoon is optional and must be repriced for 2027.",
+              "climateLabel": "Weather flex",
+              "climate": "Keep this day movable and follow current road, weather and volcanic-access guidance.",
+              "lat": "63.8193",
+              "lng": "-22.6844",
+              "carouselId": "combo--iceland--ischia-cilento-d4-s1"
+            }
+          ],
+          "badge": "4",
+          "id": "day4",
+          "sectionId": "combo--iceland--ischia-cilento-day-4",
+          "eyebrow": "Thu - Jun 10",
+          "colorClass": "c1"
+        },
+        {
+          "role": "transfer",
+          "heading": "iceland → ischia-cilento",
+          "feel": "Flight transfer",
+          "daycost": "Transfer included in iceland->ischia-cilento budget",
+          "facts": [
+            {
+              "label": "Route",
+              "valueHtml": "Direct when scheduled"
+            },
+            {
+              "label": "Watch",
+              "valueHtml": "unconfirmed"
+            }
+          ],
+          "note": "Check out, complete the air transfer, collect the next car if needed, and keep the first evening light.",
+          "travelNote": "The 2026 nonstop KEF-FCO route is the value case; confirm the exact 2027 operating day before booking the split.",
+          "spots": [],
+          "badge": "5",
+          "id": "day5",
+          "sectionId": "combo--iceland--ischia-cilento-day-5",
+          "eyebrow": "Fri - Jun 11",
+          "colorClass": "c2"
+        },
+        {
+          "role": "full",
+          "heading": "Castello Aragonese + Ischia Ponte swim",
+          "feel": "Castle above warm water",
+          "daycost": "Est. $170-$270 · admission, transit and meals",
+          "facts": [
+            {
+              "label": "Morning",
+              "valueHtml": "Castello Aragonese"
+            },
+            {
+              "label": "Afternoon",
+              "valueHtml": "Beach and swim at Ischia Ponte"
+            }
+          ],
+          "note": "Do the stone climb before the heat, then move directly to the water.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "Castello Aragonese",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_ischia_castello_hero_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_ischia_castello_hero_01.jpg",
+                  "alt": "Castello Aragonese at sunset",
+                  "captionTitle": "Castello Aragonese",
+                  "credit": "malcbawn.photos · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_ischia_castello_moonrise_05.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_ischia_castello_moonrise_05.jpg",
+                  "alt": "Moonrise behind Castello Aragonese",
+                  "captionTitle": "Castle Moonrise",
+                  "credit": "jcamachob · Google Images source"
+                }
+              ],
+              "cost": "Recheck 2027 admission; beach access is free.",
+              "climateLabel": "June",
+              "climate": "Warm afternoons make the post-castle swim the correct pacing.",
+              "lat": "40.7319",
+              "lng": "13.9633",
+              "carouselId": "combo--iceland--ischia-cilento-d6-s1"
+            }
+          ],
+          "badge": "6",
+          "id": "day6",
+          "sectionId": "combo--iceland--ischia-cilento-day-6",
+          "eyebrow": "Sat - Jun 12",
+          "colorClass": "c3"
+        },
+        {
+          "role": "full",
+          "heading": "San Montano Bay + Negombo",
+          "feel": "Warm-water flagship",
+          "daycost": "Est. $250-$370 · thermal park and meals",
+          "facts": [
+            {
+              "label": "Sea",
+              "valueHtml": "Sheltered San Montano Bay"
+            },
+            {
+              "label": "Reset",
+              "valueHtml": "Negombo thermal gardens"
+            }
+          ],
+          "note": "This is the non-negotiable warm-water day: calm bay first, thermal pools second.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "San Montano and Negombo",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_san_montano_bay_04.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_san_montano_bay_04.jpg",
+                  "alt": "San Montano's sheltered crescent bay",
+                  "captionTitle": "San Montano Bay",
+                  "credit": "Nunzio Pascale · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_negombo_thermal_pool_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_negombo_thermal_pool_01.jpg",
+                  "alt": "Negombo thermal pool opening toward the sea",
+                  "captionTitle": "Negombo",
+                  "credit": "yamec2012 · Google Images source"
+                }
+              ],
+              "cost": "2026 signal: €100 for two adults plus child pricing by height; recheck 2027.",
+              "climateLabel": "Water",
+              "climate": "Warm sheltered sea plus managed thermal water.",
+              "lat": "40.7521",
+              "lng": "13.8827",
+              "carouselId": "combo--iceland--ischia-cilento-d7-s1"
+            }
+          ],
+          "badge": "7",
+          "id": "day7",
+          "sectionId": "combo--iceland--ischia-cilento-day-7",
+          "eyebrow": "Sun - Jun 13",
+          "colorClass": "c3"
+        },
+        {
+          "role": "flex",
+          "heading": "Cilento beaches + Punta Licosa",
+          "feel": "Slow family beach base",
+          "daycost": "Est. $150-$240 · car, shade and meals",
+          "facts": [
+            {
+              "label": "Base",
+              "valueHtml": "Santa Maria di Castellabate · 4 nights"
+            },
+            {
+              "label": "Water",
+              "valueHtml": "Clear, family-friendly Tyrrhenian sea"
+            }
+          ],
+          "note": "Move from Ischia by hydrofoil, collect the car, and protect multiple low-logistics swim days around Castellabate.",
+          "travelNote": "Keep the car on the mainland; do not take it to Ischia.",
+          "spots": [
+            {
+              "name": "Punta Licosa",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_cilento_licosa_hero_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_cilento_licosa_hero_01.jpg",
+                  "alt": "Punta Licosa lighthouse island",
+                  "captionTitle": "Punta Licosa",
+                  "credit": "52picchio · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_cilento_licosa_sunset_03.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_cilento_licosa_sunset_03.jpg",
+                  "alt": "Sunset over Punta Licosa",
+                  "captionTitle": "Licosa Sunset",
+                  "credit": "52picchio · Google Images source"
+                }
+              ],
+              "cost": "Beaches free; budget for parking, umbrella and lunch.",
+              "climateLabel": "June water",
+              "climate": "Historically warm enough for long family swims by this point in June.",
+              "lat": "40.2858",
+              "lng": "14.9500",
+              "carouselId": "combo--iceland--ischia-cilento-d8-s1"
+            }
+          ],
+          "badge": "8",
+          "id": "day8",
+          "sectionId": "combo--iceland--ischia-cilento-day-8",
+          "eyebrow": "Mon - Jun 14",
+          "colorClass": "c3"
+        },
+        {
+          "role": "full",
+          "heading": "Paestum temples + beach",
+          "feel": "Ancient Greece before lunch, warm sea after",
+          "daycost": "Est. $180-$280 · tickets, car and meals",
+          "facts": [
+            {
+              "label": "Culture",
+              "valueHtml": "Paestum archaeological park"
+            },
+            {
+              "label": "Balance",
+              "valueHtml": "Beach afternoon"
+            }
+          ],
+          "note": "Use the coolest morning hours for the temples and preserve the afternoon as a real swim day.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "Paestum",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_paestum_temple_sunset_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_paestum_temple_sunset_01.jpg",
+                  "alt": "Paestum temple at sunset",
+                  "captionTitle": "Paestum",
+                  "credit": "funeralsong2011 · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_paestum_pines_05.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_paestum_pines_05.jpg",
+                  "alt": "Paestum temple framed by umbrella pines",
+                  "captionTitle": "Temple and Pines",
+                  "credit": "Magna Graecia Paestum · Google Images source"
+                }
+              ],
+              "cost": "2026 signal: €15 adult and under 18 free; recheck 2027.",
+              "climateLabel": "June",
+              "climate": "Little midday shade at the ruins; swim after lunch.",
+              "lat": "40.4239",
+              "lng": "15.0058",
+              "carouselId": "combo--iceland--ischia-cilento-d9-s1"
+            }
+          ],
+          "badge": "9",
+          "id": "day9",
+          "sectionId": "combo--iceland--ischia-cilento-day-9",
+          "eyebrow": "Tue - Jun 15",
+          "colorClass": "c3"
+        },
+        {
+          "role": "flex",
+          "heading": "Capo Palinuro sea caves + cove swim",
+          "feel": "The boat-day finale",
+          "daycost": "Est. $240-$420 · boat, car and meals",
+          "facts": [
+            {
+              "label": "Weather gate",
+              "valueHtml": "Run only in calm sea"
+            },
+            {
+              "label": "Payoff",
+              "valueHtml": "Caves, cliffs and warm-water swim stop"
+            }
+          ],
+          "note": "Book the local boat only when the marine forecast is favorable; otherwise repeat the easy Castellabate beach day.",
+          "travelNote": null,
+          "spots": [
+            {
+              "name": "Capo Palinuro",
+              "images": [
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_palinuro_blue_cove_02.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_palinuro_blue_cove_02.jpg",
+                  "alt": "Blue cove at Capo Palinuro",
+                  "captionTitle": "Palinuro Cove",
+                  "credit": "m.giordano · Google Images source"
+                },
+                {
+                  "href": "../../assets/img/iceland-ischia-cilento/google_palinuro_cliffs_01.jpg",
+                  "src": "../../assets/img/iceland-ischia-cilento/google_palinuro_cliffs_01.jpg",
+                  "alt": "Capo Palinuro's limestone cliffs above blue water",
+                  "captionTitle": "Palinuro Cliffs",
+                  "credit": "Fabbio Menna · Google Images source"
+                }
+              ],
+              "cost": "2027 operator price not yet published; hold a family boat-day allowance.",
+              "climateLabel": "Marine conditions",
+              "climate": "Warm water, but caves are a wind-and-swell decision.",
+              "lat": "40.0307",
+              "lng": "15.2777",
+              "carouselId": "combo--iceland--ischia-cilento-d10-s1"
+            }
+          ],
+          "badge": "10",
+          "id": "day10",
+          "sectionId": "combo--iceland--ischia-cilento-day-10",
+          "eyebrow": "Wed - Jun 16",
+          "colorClass": "c3"
+        },
+        {
+          "role": "departure",
+          "heading": "Drive to Fiumicino buffer night",
+          "feel": "Risk-managed exit",
+          "daycost": "Est. $220-$340 · fuel, tolls, lodging and meals",
+          "facts": [
+            {
+              "label": "Reason",
+              "valueHtml": "Sleep beside FCO before the transatlantic flight"
+            },
+            {
+              "label": "Rule",
+              "valueHtml": "Do not attempt a dawn Cilento-to-FCO run"
+            }
+          ],
+          "note": "Return the car, eat near the airport, and protect the flight home.",
+          "travelNote": "The buffer night is part of the route, not optional padding.",
+          "spots": [],
+          "badge": "11",
+          "id": "day11",
+          "sectionId": "combo--iceland--ischia-cilento-day-11",
+          "eyebrow": "Thu - Jun 17",
+          "colorClass": "c3"
+        },
+        {
+          "role": "return",
+          "heading": "Depart Ischia + Cilento for Pittsburgh",
+          "feel": "Return flight",
+          "daycost": "Airport meals and transfers",
+          "facts": [
+            {
+              "label": "Gateway",
+              "valueHtml": "FCO→gateway→PIT"
+            }
+          ],
+          "note": "Use the final Fiumicino buffer night and a protected transatlantic itinerary.",
+          "travelNote": "Return flight",
+          "spots": [],
+          "badge": "12",
+          "id": "day12",
+          "sectionId": "combo--iceland--ischia-cilento-day-12",
+          "eyebrow": "Fri - Jun 18",
+          "colorClass": "c3"
+        },
+        {
+          "role": "home",
+          "heading": "Arrive home",
+          "feel": "Trip complete",
+          "daycost": "—",
+          "facts": [
+            {
+              "label": "Commitment",
+              "valueHtml": "Back before the June 24-26 Pittsburgh blackout"
+            }
+          ],
+          "note": "Keep the next full day protected in Pittsburgh.",
+          "travelNote": null,
+          "spots": [],
+          "badge": "13",
+          "id": "day13",
+          "sectionId": "combo--iceland--ischia-cilento-day-13",
+          "eyebrow": "Sat - Jun 19",
+          "colorClass": "c3"
+        }
+      ]
+    }
+  },
+  {
     "slug": "combo--kefalonia--lefkada",
     "title": "Kefalonia + Lefkada — composed draft",
     "startId": "kefalonia",

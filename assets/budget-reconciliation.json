@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-12T12:47:44.934Z",
+  "generatedAt": "2026-07-12T16:50:14.256Z",
   "trips": [
     {
       "slug": "albania",
@@ -617,6 +617,65 @@
           "text": "$500 target / $1,000 high",
           "lowUsd": 500,
           "highUsd": 1000
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "iceland-ischia-cilento",
+      "canonical": {
+        "lowUsd": 10400,
+        "highUsd": 14900
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 10400,
+        "sumHighUsd": 14900,
+        "displayedLowUsd": 10400,
+        "displayedHighUsd": 14900,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$3,600–4,800",
+          "lowUsd": 3600,
+          "highUsd": 4800
+        },
+        {
+          "label": "Lodging",
+          "text": "$2,550–3,750",
+          "lowUsd": 2550,
+          "highUsd": 3750
+        },
+        {
+          "label": "Ground transport",
+          "text": "$1,400–2,000",
+          "lowUsd": 1400,
+          "highUsd": 2000
+        },
+        {
+          "label": "Food + groceries",
+          "text": "$1,550–2,200",
+          "lowUsd": 1550,
+          "highUsd": 2200
+        },
+        {
+          "label": "Activities",
+          "text": "$800–1,350",
+          "lowUsd": 800,
+          "highUsd": 1350
+        },
+        {
+          "label": "Insurance / contingency",
+          "text": "$500–800",
+          "lowUsd": 500,
+          "highUsd": 800
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

@@ -70,17 +70,17 @@
   "presetResults": {
     "default": [
       "portugal",
-      "slovenia-adriatic",
       "madeira-mallorca",
-      "greece-ionian",
-      "madeira-kefalonia"
+      "portugal-sicily",
+      "slovenia-adriatic",
+      "iceland-ischia-cilento"
     ],
     "value": [
       "portugal",
+      "madeira-mallorca",
       "slovenia-adriatic",
       "greece-ionian",
-      "madeira-mallorca",
-      "iceland"
+      "portugal-sicily"
     ],
     "lowest-friction": [
       "portugal",
@@ -91,145 +91,151 @@
     ],
     "maximum-swim": [
       "madeira-mallorca",
+      "iceland-ischia-cilento",
       "greece-ionian",
       "madeira-kefalonia",
-      "hawaii",
-      "portugal-crete"
+      "hawaii"
     ],
     "epic-scenery": [
       "madeira-mallorca",
       "portugal",
       "portugal-sicily",
-      "slovenia-adriatic",
-      "madeira-kefalonia"
+      "sicily-malta",
+      "dolomites-sardinia"
     ]
   },
   "robustFinalists": [
-    "portugal",
     "madeira-mallorca",
-    "slovenia-adriatic",
-    "greece-ionian"
+    "portugal",
+    "portugal-sicily",
+    "iceland-ischia-cilento"
   ],
   "trips": [
     {
+      "slug": "madeira-mallorca",
+      "winPct": 19.4,
+      "top3Pct": 90.6,
+      "averageRank": 2.2
+    },
+    {
       "slug": "portugal",
-      "winPct": 63.2,
-      "top3Pct": 81.3,
+      "winPct": 65.3,
+      "top3Pct": 83,
       "averageRank": 2.4
     },
     {
-      "slug": "madeira-mallorca",
-      "winPct": 19.1,
-      "top3Pct": 68.6,
-      "averageRank": 2.8
-    },
-    {
-      "slug": "slovenia-adriatic",
-      "winPct": 1.2,
-      "top3Pct": 49.6,
-      "averageRank": 4.1
-    },
-    {
-      "slug": "greece-ionian",
-      "winPct": 5.2,
-      "top3Pct": 30.6,
-      "averageRank": 6.5
-    },
-    {
       "slug": "portugal-sicily",
-      "winPct": 1.9,
-      "top3Pct": 17.8,
-      "averageRank": 6.7
+      "winPct": 1.4,
+      "top3Pct": 27.5,
+      "averageRank": 6.2
     },
     {
-      "slug": "madeira-kefalonia",
-      "winPct": 1.8,
-      "top3Pct": 16.7,
-      "averageRank": 6
+      "slug": "iceland-ischia-cilento",
+      "winPct": 5.6,
+      "top3Pct": 26.4,
+      "averageRank": 6.8
     },
     {
       "slug": "hawaii",
       "winPct": 6.6,
-      "top3Pct": 14.3,
-      "averageRank": 11.6
+      "top3Pct": 18.1,
+      "averageRank": 11.8
     },
     {
-      "slug": "iceland",
-      "winPct": 0.4,
-      "top3Pct": 9.9,
-      "averageRank": 9.4
+      "slug": "greece-ionian",
+      "winPct": 1.3,
+      "top3Pct": 17.6,
+      "averageRank": 9.3
+    },
+    {
+      "slug": "slovenia-adriatic",
+      "winPct": 0,
+      "top3Pct": 16.6,
+      "averageRank": 6.3
     },
     {
       "slug": "sicily-malta",
       "winPct": 0.4,
-      "top3Pct": 5,
-      "averageRank": 8.4
+      "top3Pct": 6.2,
+      "averageRank": 8.2
     },
     {
       "slug": "portugal-crete",
       "winPct": 0,
-      "top3Pct": 3.5,
-      "averageRank": 8
+      "top3Pct": 4.3,
+      "averageRank": 7.7
+    },
+    {
+      "slug": "iceland",
+      "winPct": 0,
+      "top3Pct": 3.6,
+      "averageRank": 12.9
+    },
+    {
+      "slug": "madeira-kefalonia",
+      "winPct": 0,
+      "top3Pct": 3,
+      "averageRank": 8.7
     },
     {
       "slug": "maui-kauai",
       "winPct": 0.1,
-      "top3Pct": 1.4,
-      "averageRank": 15.6
-    },
-    {
-      "slug": "madeira-sicily",
-      "winPct": 0,
-      "top3Pct": 0.6,
-      "averageRank": 15.9
-    },
-    {
-      "slug": "switzerland-sicily",
-      "winPct": 0,
-      "top3Pct": 0.5,
-      "averageRank": 11.9
+      "top3Pct": 1.5,
+      "averageRank": 16.2
     },
     {
       "slug": "dolomites-sardinia",
       "winPct": 0,
-      "top3Pct": 0.2,
+      "top3Pct": 0.6,
       "averageRank": 11.6
+    },
+    {
+      "slug": "switzerland-sicily",
+      "winPct": 0,
+      "top3Pct": 0.6,
+      "averageRank": 12.1
+    },
+    {
+      "slug": "madeira-sicily",
+      "winPct": 0,
+      "top3Pct": 0.5,
+      "averageRank": 16.6
     },
     {
       "slug": "greece-cyclades",
       "winPct": 0,
       "top3Pct": 0,
-      "averageRank": 11.6
+      "averageRank": 11.8
     },
     {
       "slug": "greece-via-lisbon",
       "winPct": 0,
       "top3Pct": 0,
-      "averageRank": 16.7
+      "averageRank": 17.5
     },
     {
       "slug": "madeira-crete",
       "winPct": 0,
       "top3Pct": 0,
-      "averageRank": 16.8
+      "averageRank": 17.5
     },
     {
       "slug": "portugal-algarve-sicily",
       "winPct": 0,
       "top3Pct": 0,
-      "averageRank": 14.1
+      "averageRank": 14.6
     },
     {
       "slug": "sardinia-corsica",
       "winPct": 0,
       "top3Pct": 0,
-      "averageRank": 14.6
+      "averageRank": 15.1
     },
     {
       "slug": "switzerland-crete",
       "winPct": 0,
       "top3Pct": 0,
-      "averageRank": 15.1
+      "averageRank": 15.7
     }
   ]
 }

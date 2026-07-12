@@ -1548,6 +1548,83 @@
       "url": "https://hhticket.gr/",
       "publisher": "Hellenic Heritage (official e-ticketing)",
       "scope": "Acropolis combined ticket ~E30 adult (summer), reduced/free for children; mandatory timed-entry slots since 2024. Acropolis Museum ~E15 separate."
+    },
+    "icelandair-stopover": {
+      "label": "Icelandair Stopover rules",
+      "tier": "operator",
+      "url": "https://www.icelandair.com/flights/stopover/",
+      "publisher": "Icelandair",
+      "scope": "Most transatlantic fares permit an Iceland stopover of up to seven nights without an additional airfare surcharge; date-specific fare differences, hotels, and ground costs remain separate."
+    },
+    "icelandair-pit-kef-2027-fare": {
+      "label": "Icelandair PIT–KEF June 2027 fare signal",
+      "tier": "observed-quote",
+      "url": "https://www.icelandair.com/en-us/flights/flights-from-pittsburgh-to-reykjavik",
+      "publisher": "Icelandair",
+      "scope": "Observed July 12, 2026: nearby June 2027 PIT–KEF round trips displayed from $719 per traveler. This does not quote the exact June 10 stopover itinerary, seats, bags, or family total."
+    },
+    "icelandair-pit-fco-fare": {
+      "label": "Icelandair PIT–FCO fare signal",
+      "tier": "observed-quote",
+      "url": "https://www.icelandair.com/en-us/flights/flights-from-pittsburgh-to-rome",
+      "publisher": "Icelandair",
+      "scope": "Observed July 12, 2026: a separate 2027 PIT–FCO round-trip window displayed from $1,114 per traveler. It is a bounded route-price signal, not the June 10–23 stopover quote."
+    },
+    "alilauro-naples-ischia-2026": {
+      "label": "Alilauro Naples–Ischia 2026 summer schedule and fares",
+      "tier": "operator",
+      "url": "https://www.alilauro.it/it/tratte/napoli-beverello-ischia-ischia-napoli-beverello/",
+      "publisher": "Alilauro",
+      "scope": "June 15–September 15, 2026 schedule lists frequent daily hydrofoils; adult €23.90–24.10, child 2–12 €15.90, and qualifying luggage €3.50. Exact 2027 times and fares require recheck."
+    },
+    "negombo-2026": {
+      "label": "Negombo 2026 admission and child restrictions",
+      "tier": "operator",
+      "url": "https://negombo.it/assets/Uploads/listino-prezzi-2026.pdf",
+      "publisher": "Negombo Thermal Park",
+      "scope": "April 23–July 3, 2026 full-day prices and child height bands; children under 1.4m cannot use thermal pools. Recheck 2027 prices, operating dates, and restrictions."
+    },
+    "la-mortella-2026": {
+      "label": "La Mortella 2026 visit information",
+      "tier": "operator",
+      "url": "https://www.lamortella.org/en/visit",
+      "publisher": "Fondazione William Walton e La Mortella",
+      "scope": "2026 opening days, 9am–7pm hours, and €15 adult / €10 age 12–18 / €8 age 6–11 admission. Recheck the 2027 calendar and tariff."
+    },
+    "paestum-velia-tickets": {
+      "label": "Paestum and Velia official tickets",
+      "tier": "official",
+      "url": "https://parchipaestumvelia.cultura.gov.it/en/ticket-info/",
+      "publisher": "Italian Ministry of Culture — Paestum and Velia Archaeological Parks",
+      "scope": "March–November 2026 full admission €15, under-18 free, three-day access to Paestum, Velia and the museum; booking not mandatory. Recheck 2027 terms."
+    },
+    "visit-cilento-castellabate": {
+      "label": "Visit Cilento: Santa Maria di Castellabate family beaches",
+      "tier": "official",
+      "url": "https://www.visitcilento.com/en/scheda_localita/9-castellabate-santa-maria-di.html",
+      "publisher": "Cilento, Vallo di Diano and Alburni National Park tourism portal",
+      "scope": "Identifies Lago/Santa Maria white sand, clear water, equipped beaches, children’s facilities, Punta Tresino and the marine protected area."
+    },
+    "palinuro-caves-operator": {
+      "label": "Capo Palinuro sea-cave tour route",
+      "tier": "operator",
+      "url": "https://www.costieradelcilento.it/tour-info-en/",
+      "publisher": "Costiera del Cilento",
+      "scope": "Current operator route and timing for Capo Palinuro, Natural Arch and Blue Cave motorboat tours; no stable 2027 family fare is published."
+    },
+    "la-tinaia-forio": {
+      "label": "La Tinaia Forio family food coverage",
+      "tier": "operator",
+      "url": "https://www.latinaiaforio.it/en/",
+      "publisher": "La Tinaia",
+      "scope": "First-party restaurant and pizzeria pages confirm wood-fired pizza, handmade pasta and all-day service in the Forio base."
+    },
+    "palinuro-family-food": {
+      "label": "Palinuro pizza and burger coverage",
+      "tier": "operator",
+      "url": "https://www.maripalinuro.it/en/",
+      "publisher": "Marì Pizza-Bistrot",
+      "scope": "First-party menu description confirms classic Neapolitan pizza and hamburgers at the Palinuro day-trip base."
     }
   },
   "trips": [
@@ -2087,7 +2164,7 @@
     {
       "slug": "balkans",
       "token": "balkans",
-      "title": "Balkan Coast Road Trip - July 2027",
+      "title": "Balkan Coast · Dubrovnik to Corfu — July 2027",
       "displayName": "Balkan Coast Road Trip",
       "blurb": "Most adventurous",
       "recommended": false,
@@ -2578,7 +2655,7 @@
     {
       "slug": "california-pacific-coast",
       "token": "california",
-      "title": "California Pacific Coast Road Trip - July 2027",
+      "title": "California Pacific Coast · San Diego to San Francisco — July 2027",
       "displayName": "California Pacific Coast",
       "blurb": "Best domestic road trip",
       "recommended": false,
@@ -4993,13 +5070,13 @@
     {
       "slug": "greece-ionian",
       "token": "greece-ionian",
-      "title": "Ionian Islands · Kefalonia & Lefkada — June 2027",
-      "displayName": "Ionian Islands",
+      "title": "Greece: Ionian Islands · Kefalonia & Lefkada — June 2027",
+      "displayName": "Greece: Ionian Islands",
       "blurb": "Warmest, easiest turquoise-swim trip",
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 2,
         "weather": 4,
         "swim": 4,
         "variety": 3,
@@ -5043,7 +5120,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 35,
       "travelWindow": [
         "2027-06-09",
         "2027-06-22"
@@ -5072,8 +5149,8 @@
         },
         "axes": {
           "budget": {
-            "score": 3,
-            "rationale": "The seven categories reconcile to $10,800–$15,000. The band straddles the $12k target: a lean family lands near target, while the high case reaches the $15k preferred maximum on peak-June lodging, two island car rentals, and the transatlantic-to-small-Greek-airport airfare. Good mid-board value, but the open-jaw airfare and dual car hire keep it off the top budget tier.",
+            "score": 2,
+            "rationale": "The seven categories reconcile to $10,800–$15,000, but the high case reaches the preferred maximum and the open-jaw airfare, peak-June lodging, and two island car rentals remain medium-confidence 2027 proxies. The rubric therefore caps Budget at 2/5 until a high-confidence family quote confirms the band.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -6457,7 +6534,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 2,
         "weather": 2,
         "swim": 3,
         "variety": 5,
@@ -6506,7 +6583,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 35,
+      "totalBaked": 33,
       "travelWindow": [
         "2027-06-08",
         "2027-06-21"
@@ -6533,8 +6610,8 @@
         },
         "axes": {
           "budget": {
-            "score": 3,
-            "rationale": "The five category targets reconcile exactly to $11,420–$14,720. The band fits the preferred maximum, but flights, lodging, and vehicle inventory remain unquoted June 2027 proxies, so 3/5 is conditional on later high-confidence reconciliation.",
+            "score": 2,
+            "rationale": "The five category targets reconcile exactly to $11,420–$14,720, but flights, lodging, and vehicle inventory remain unquoted June 2027 proxies. The medium-confidence band sits within $280 of the preferred maximum, so the rubric caps Budget at 2/5 until a high-confidence reconciliation is available.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -6943,6 +7020,575 @@
         "total": 17
       },
       "href": "locations/iceland/index.html",
+      "readiness": {
+        "id": "exact-2027-schedule-required",
+        "label": "Exact 2027 schedule required",
+        "tone": "warn",
+        "bookable": false
+      }
+    },
+    {
+      "slug": "iceland-ischia-cilento",
+      "token": "iceland-ischia-cilento",
+      "title": "Iceland + Ischia + Cilento — June 2027",
+      "displayName": "Iceland + Ischia + Cilento",
+      "blurb": "Volcanic Iceland, then warm Tyrrhenian water",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 2,
+        "weather": 3,
+        "swim": 5,
+        "variety": 5,
+        "ease": 2,
+        "food": 5,
+        "risk": 2,
+        "nights": 5,
+        "novelty": 4,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 10400,
+        "ceilUsd": 14900,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 1,
+        "swimTempF": [
+          74,
+          77
+        ],
+        "heatedSwimTempF": [
+          82,
+          104
+        ],
+        "swimType": "warm-sea-plus-geothermal",
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 35,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "exact-2027-schedule-required",
+      "budgetStatus": "within-preference",
+      "evidence": {
+        "reviewedAt": "2026-07-12",
+        "overallConfidence": "medium",
+        "limitingAxes": [
+          "budget",
+          "weather",
+          "swim",
+          "nights"
+        ],
+        "evidenceBasis": "Current operator schedules, official attraction prices, a live nearby June 2027 PIT–KEF fare signal, historical climate/sea proxies, and exact internal itinerary arithmetic.",
+        "confidenceBasis": "The route shape and itemized arithmetic are high-confidence derived facts. Overall confidence is medium because the exact June 10–23 stopover airfare, operating days, lodging, cars, and 2027 hydrofoils are not yet quoted together.",
+        "confidence": {
+          "id": "medium",
+          "value": 2,
+          "label": "Medium evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 2,
+            "rationale": "Six itemized categories reconcile exactly to $10,400–$14,900, but the complete stopover/open-jaw family quote and lodging stack remain unconfirmed. Because the estimate is medium confidence and within $100 of the preferred maximum, the rubric caps Budget at 2/5 until the full 2027 stack is quoted.",
+            "confidence": "medium",
+            "evidence": [
+              "budget-band",
+              "airfare-proxy"
+            ]
+          },
+          "weather": {
+            "score": 3,
+            "rationale": "Four Iceland nights retain cool wind/rain exposure, while seven Campania nights are warm and generally dry. The combined route is materially better than Iceland alone but not uniformly beach-weather.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-proxy"
+            ]
+          },
+          "swim": {
+            "score": 5,
+            "rationale": "The itinerary schedules municipal geothermal water, Secret Lagoon, Negombo/San Montano, and at least five additional warm-sea days. The Italy segment is explicitly designed around a 74–77°F historical planning range.",
+            "confidence": "medium",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "The canonical days cover waterfalls, geysers, black sand, geothermal pools, volcanic Reykjanes, castles, marine reserves, sandy beaches, Greek temples and sea caves.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 2,
+            "rationale": "Four lodging bases, one mid-trip flight, rail, two hydrofoils and two rental cars create meaningful operational load despite the deliberate Fiumicino buffer.",
+            "confidence": "high",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 5,
+            "rationale": "Every base and remote day has independently named pizza, pasta, burger, fries, sandwich or grocery fallbacks; Forio and Palinuro have first-party operator confirmation.",
+            "confidence": "high",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 2,
+            "rationale": "The precise 2027 stopover operating days remain a booking gate, June 14 chains three transport modes, and both Iceland and boat days are condition-sensitive. The airport buffer lowers but does not erase the risk.",
+            "confidence": "high",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights derive 5/5 under the canonical rubric.",
+            "confidence": "medium",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 4,
+            "rationale": "Iceland and the less-visited Ischia/Cilento combination provide strong novelty, moderated by prior Italy overlap in the family profile.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 3,
+            "rationale": "Eight PTO days assume an after-work June 10 departure and employer observance of Juneteenth on Friday June 18; PTO remains zero-weight in the baked total.",
+            "confidence": "medium",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "value": {
+              "lowUsd": 10400,
+              "expectedUsd": null,
+              "highUsd": 14900,
+              "targetUsd": 12000,
+              "preferredMaxUsd": 15000,
+              "distribution": "planning-band",
+              "lineItemCount": 6,
+              "arithmetic": "3600/4800 + 2550/3750 + 1400/2000 + 1550/2200 + 800/1350 + 500/800 = 10400/14900"
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": "2026-10-31",
+            "sourceLocators": {
+              "internal-itinerary": "iceland-ischia-cilento/main.json #budget and #totals exact category reconciliation"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "airfare-proxy",
+            "category": "route",
+            "proxyStatus": "exact-2027-schedule-required",
+            "confidence": "medium",
+            "sourceRefs": [
+              "icelandair-stopover",
+              "icelandair-pit-kef-2027-fare",
+              "icelandair-pit-fco-fare"
+            ],
+            "value": {
+              "nearbyPitKefRoundTripPerPersonUsd": 719,
+              "separatePitFco2027SignalPerPersonUsd": 1114,
+              "familyPlanningBandUsd": [
+                3600,
+                4800
+              ],
+              "stopoverNights": 4,
+              "exactTripQuoteObserved": false
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": "2026-08-15",
+            "sourceLocators": {
+              "icelandair-stopover": "Most fares permit up to seven stopover nights with no additional airfare surcharge; demand can still alter the fare.",
+              "icelandair-pit-kef-2027-fare": "PIT–KEF page displayed nearby June 2027 round trips from $719 on July 12, 2026.",
+              "icelandair-pit-fco-fare": "PIT–FCO page displayed a separate 2027 round-trip window from $1,114 on July 12, 2026."
+            },
+            "claimType": "observed-quote"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "proxyStatus": "confirmed",
+            "confidence": "medium",
+            "sourceRefs": [
+              "decision-profile",
+              "internal-itinerary"
+            ],
+            "value": {
+              "depart": "2027-06-10",
+              "return": "2027-06-23",
+              "hotelNights": 12,
+              "ptoDays": 8,
+              "juneteenthObservedAssumption": true
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": null,
+            "sourceLocators": {
+              "decision-profile": "Family must be in Pittsburgh for full days June 24–26; June 23 return is preferred and accepted.",
+              "internal-itinerary": "day0 through day13 cover each calendar date; PTO assumes employer observes Friday June 18."
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "climate-proxy",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "imo-iceland-climate-data",
+              "copernicus-climate",
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 3,
+              "temperatureF": [
+                45,
+                86
+              ],
+              "icelandPlanningF": [
+                45,
+                58
+              ],
+              "campaniaPlanningF": [
+                72,
+                86
+              ],
+              "forecast": false
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": "2027-04-01",
+            "sourceLocators": {
+              "imo-iceland-climate-data": "Historical Reykjavík/South Coast June proxy; no trip forecast.",
+              "copernicus-climate": "Historical Campania June air-temperature planning context; no date-specific forecast stored.",
+              "internal-itinerary": "Every day carries destination-specific weather handling."
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "reykjavik-laugardalslaug",
+              "negombo-2026",
+              "noaa-oisst",
+              "eea-bathing-water",
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 5,
+              "temperatureF": [
+                74,
+                77
+              ],
+              "naturalSeaTemperatureF": [
+                74,
+                77
+              ],
+              "heatedSwimTemperatureF": [
+                82,
+                104
+              ],
+              "swimType": "warm-sea-plus-geothermal",
+              "scheduledWaterDays": 8,
+              "warmWaterSecondLegRequired": true
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": "2027-05-15",
+            "sourceLocators": {
+              "reykjavik-laugardalslaug": "Official municipal pool temperatures: 28–44°C across pool types.",
+              "negombo-2026": "Official thermal-park price list and child-height pool restriction.",
+              "noaa-oisst": "Historical Tyrrhenian SST planning range for Ischia/Cilento; not a forecast.",
+              "eea-bathing-water": "Italy bathing-water assessment context; exact beaches and 2027 flags require recheck.",
+              "internal-itinerary": "Italy days 5–11 protect repeated sea/thermal swimming; Iceland ocean is explicitly excluded."
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "paestum-velia-tickets",
+              "visit-cilento-castellabate"
+            ],
+            "value": {
+              "score": 5,
+              "hotelNights": 12,
+              "lodgingBases": 4,
+              "baseNames": [
+                "Reykjavík",
+                "Forio",
+                "Santa Maria di Castellabate",
+                "Fiumicino"
+              ],
+              "scheduledModes": [
+                "geothermal",
+                "waterfalls/geology",
+                "Reykjanes weather flex",
+                "warm beaches",
+                "town/castle",
+                "archaeology",
+                "sea caves"
+              ]
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "main.json day0–day13 and #balance.",
+              "paestum-velia-tickets": "Official combined Paestum/Velia/museum access supports the archaeological day.",
+              "visit-cilento-castellabate": "Official family-beach and marine-reserve coverage supports the Cilento base."
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary",
+              "alilauro-naples-ischia-2026",
+              "aci-driving-italy"
+            ],
+            "value": {
+              "easeScore": 2,
+              "airHours": 18.5,
+              "groundHours": 22.5,
+              "timeZones": 2,
+              "baseMoves": 3,
+              "longestTransferHours": 11,
+              "highOutputDayStreak": 3,
+              "fallbackDays": 4,
+              "midTripFlights": 1,
+              "rentalCars": 2,
+              "hydrofoilSegments": 2,
+              "singleTicket": false,
+              "maxConnections": 1
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": "2027-02-01",
+            "sourceLocators": {
+              "internal-itinerary": "Four bases, Jun 15 flight/rail/hydrofoil chain, Jun 18 hydrofoil/car chain and Jun 22 FCO buffer.",
+              "alilauro-naples-ischia-2026": "Frequent 2026 daily service supports the transfer concept but not exact 2027 timing.",
+              "aci-driving-italy": "Non-EU license plus IDP or certified Italian translation requirement."
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "bonus-iceland-stores",
+              "kronan-iceland-stores",
+              "la-tinaia-forio",
+              "palinuro-family-food",
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 5,
+              "plainFoodRequired": true,
+              "coveredBases": [
+                "Reykjavík",
+                "Forio",
+                "Santa Maria di Castellabate",
+                "Fiumicino"
+              ],
+              "fallbackTypes": [
+                "pizza",
+                "pasta",
+                "burgers",
+                "fries",
+                "sandwiches",
+                "supermarkets",
+                "packed picnics"
+              ]
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": "2027-04-01",
+            "sourceLocators": {
+              "bonus-iceland-stores": "Official Iceland grocery locator.",
+              "kronan-iceland-stores": "Official Iceland grocery locator including Reykjavík coverage.",
+              "la-tinaia-forio": "First-party pizza and handmade-pasta coverage in Forio.",
+              "palinuro-family-food": "First-party pizza and hamburger coverage in Palinuro.",
+              "internal-itinerary": "Every structured spot lists at least three named fallbacks."
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "proxyStatus": "exact-2027-schedule-required",
+            "confidence": "high",
+            "sourceRefs": [
+              "icelandair-stopover",
+              "icelandair-pit-kef-2027-fare",
+              "alilauro-naples-ischia-2026",
+              "palinuro-caves-operator",
+              "safetravel-iceland",
+              "safetravel-reynisfjara",
+              "internal-itinerary"
+            ],
+            "value": {
+              "status": "exact-2027-schedule-required",
+              "currentProxy": "Icelandair stopover to Rome plus frequent 2026 Naples–Ischia hydrofoils",
+              "june10StopoverVerified": false,
+              "june23ReturnVerified": false,
+              "dailySafetyChecksRequired": true,
+              "singleTicket": false,
+              "maxConnections": 1
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": "2026-08-15",
+            "sourceLocators": {
+              "icelandair-stopover": "Stopover product permits the route shape; exact days and fare remain unquoted.",
+              "icelandair-pit-kef-2027-fare": "Nearby June 2027 service is selling, not the exact itinerary.",
+              "alilauro-naples-ischia-2026": "Current summer hydrofoil schedule/fare proxy.",
+              "palinuro-caves-operator": "Boat route published; 2027 price and sea-state execution unknown.",
+              "safetravel-iceland": "Official live Iceland condition checks.",
+              "safetravel-reynisfjara": "Official sneaker-wave warning protocol.",
+              "internal-itinerary": "FCO buffer and weather alternatives bound the known risks."
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "decision-profile",
+              "scorecard-contract"
+            ],
+            "value": {
+              "score": 4,
+              "newRegions": [
+                "Iceland",
+                "Ischia",
+                "Cilento"
+              ],
+              "countryOverlap": [
+                "Italy"
+              ]
+            },
+            "verifiedAt": "2026-07-12",
+            "expiresAt": null,
+            "sourceLocators": {
+              "decision-profile": "Family visited-place context.",
+              "scorecard-contract": "Novelty rubric; country overlap moderates otherwise new regional content."
+            },
+            "claimType": "derived"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": 18.5,
+        "groundHours": 22.5,
+        "timeZones": 2,
+        "baseMoves": 3,
+        "longestTransferHours": 11,
+        "highOutputDayStreak": 3,
+        "fallbackDays": 4,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "unknown until property selection",
+          "kitchen": "unknown until property selection",
+          "laundry": "unknown until property selection",
+          "realBeds": "unknown until property selection"
+        },
+        "waterSafety": "Iceland ocean swimming is excluded; geothermal pools require posted-rule compliance, and every Campania beach or boat day requires a same-day sea-state check.",
+        "crowdingPressure": "Golden Circle parking, Negombo, San Montano, Paestum and Palinuro boats all reward early starts or advance reservations.",
+        "medicalAccess": "Unknown against the family's incomplete medical profile; Reykjavík, Ischia, Castellabate and the final Fiumicino buffer preserve access to populated bases.",
+        "childActivityNotes": {
+          "age13": "supported with waterfalls, castles, beaches, temples and boat caves",
+          "age8": "supported with short walks, geothermal pools, sheltered beaches and explicit bailout days"
+        }
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "12-night canonical plan",
+          "canonical": true,
+          "status": "documented",
+          "nights": 12,
+          "ptoDays": 8,
+          "budget": {
+            "lowUsd": 10400,
+            "expectedUsd": null,
+            "highUsd": 14900,
+            "distribution": "planning-band",
+            "chanceUnderPreferredMax": null
+          },
+          "removedExperiences": [
+            "Standalone La Mortella garden day"
+          ],
+          "notes": "Four Reykjavík nights, three Forio nights, four Santa Maria di Castellabate nights, and one Fiumicino return buffer. Exact 2027 air and hydrofoil schedules require recheck.",
+          "confidence": "medium",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "iceland-ischia-cilento/main.json canonical June 10–23 route and reconciled #totals"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/iceland-ischia-cilento/index.html",
       "readiness": {
         "id": "exact-2027-schedule-required",
         "label": "Exact 2027 schedule required",
@@ -7489,7 +8135,7 @@
     {
       "slug": "madeira-crete",
       "token": "madeira-crete",
-      "title": "Madeira + Crete Family Itinerary - June 2027",
+      "title": "Madeira · Crete — June 2027",
       "displayName": "Madeira + Crete",
       "blurb": "Best-fit hybrid: hiking + warm water",
       "recommended": true,
@@ -7990,13 +8636,13 @@
     {
       "slug": "madeira-kefalonia",
       "token": "madeira-kefalonia",
-      "title": "Madeira + Kefalonia Family Itinerary - June 2027",
+      "title": "Madeira · Kefalonia — June 2027",
       "displayName": "Madeira + Kefalonia",
       "blurb": "Madeira ridges + calm Ionian swimming, without PVK risk",
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 2,
         "weather": 4,
         "swim": 4,
         "variety": 5,
@@ -8040,7 +8686,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 35,
       "travelWindow": [
         "2027-06-08",
         "2027-06-22"
@@ -8070,8 +8716,8 @@
         },
         "axes": {
           "budget": {
-            "score": 3,
-            "rationale": "The reconciled $10,900–$15,000 family band reaches the $12k target in its lean case and stays at the strongly preferred maximum in its high case. It remains a current-proxy estimate until the protected multi-airport ticket and 2027 lodging are priced.",
+            "score": 2,
+            "rationale": "The reconciled $10,900–$15,000 family band reaches the target in its lean case, but its high case consumes the entire preferred maximum and the protected multi-airport ticket and 2027 lodging remain unquoted. Medium confidence therefore caps Budget at 2/5 until the full family stack is confirmed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -8497,7 +9143,7 @@
     {
       "slug": "madeira-mallorca",
       "token": "madeira-mallorca",
-      "title": "Madeira + Mallorca Family Itinerary - June 2027",
+      "title": "Madeira · Mallorca — June 2027",
       "displayName": "Madeira + Mallorca",
       "blurb": "Hiking + sandy Mediterranean swim",
       "recommended": true,
@@ -8993,7 +9639,7 @@
     {
       "slug": "madeira-sicily",
       "token": "madeira-sicily",
-      "title": "Madeira + Sicily Hybrid - June 2027",
+      "title": "Madeira · Sicily — June 2027",
       "displayName": "Madeira + Sicily",
       "blurb": "Italy-bias hiking hybrid",
       "recommended": false,
@@ -11081,7 +11727,7 @@
     {
       "slug": "portugal-crete",
       "token": "portugal-crete",
-      "title": "Portugal + Crete Family Itinerary - June 2027",
+      "title": "Portugal · Crete — June 2027",
       "displayName": "Portugal + Crete",
       "blurb": "Recommended pick",
       "recommended": true,
@@ -11579,7 +12225,7 @@
     {
       "slug": "portugal-sicily",
       "token": "portugal-sicily",
-      "title": "Portugal + Sicily Hybrid - June 2027",
+      "title": "Portugal · Sicily — June 2027",
       "displayName": "Portugal + Sicily",
       "blurb": "Mainland Italy hybrid",
       "recommended": false,
@@ -12998,7 +13644,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 3,
+        "budget": 2,
         "weather": 3,
         "swim": 3,
         "variety": 5,
@@ -13042,7 +13688,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 35,
       "travelWindow": [
         "2027-06-08",
         "2027-06-22"
@@ -13071,8 +13717,8 @@
         },
         "axes": {
           "budget": {
-            "score": 3,
-            "rationale": "The six categories reconcile exactly to $10,700–$14,800. The floor sits below the $12k target and the whole band stays under the $15k preferred maximum — genuinely good value, and cheaper than nearly every peer whose budget scores 1. It falls short of a 4 only because the high case ($14,800) exceeds the $13,500 mid-band ceiling, driven by the two-stop LJU airfare. Cost is a reason to pick this trip.",
+            "score": 2,
+            "rationale": "The six categories reconcile exactly to $10,700–$14,800, but the two-stop Ljubljana airfare and 2027 lodging remain planning proxies. With medium-confidence evidence and a high case within $200 of the preferred maximum, the rubric caps Budget at 2/5 until the full family quote is confirmed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -15545,7 +16191,7 @@
     {
       "slug": "turkish-riviera",
       "token": "turkey",
-      "title": "Turkish Riviera Family Itinerary - June 2027",
+      "title": "Turkish Riviera · Antalya to Fethiye — June 2027",
       "displayName": "Turkish Riviera",
       "blurb": "Warm-water Europe wild card",
       "recommended": false,
