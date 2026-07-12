@@ -314,7 +314,7 @@
         "maxConnections": 2,
         "gatewayOptions": "round-trip LJU (two-stop, Lufthansa group via FRA/MUC/VIE) or cheaper single-connection PIT->VCE + ~2h drive",
         "june2027ProtectedTicketVerified": false,
-        "etias": "likely mandatory by Jun 2027, ~€20/adult (kids exempt but must apply)",
+        "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required, children apply without a fee",
         "vrsicOpening": "normally open by mid-June but not guaranteed; check promet.si, Predel/Tarvisio fallback",
         "note": "Not ready to book. Re-quote LJU vs Venice on ITA Matrix, confirm the Vršič Pass is open near travel, and verify ETIAS status once 2027 inventory opens."
       },
@@ -322,7 +322,7 @@
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "lju-vce-routing": "No PIT-Europe nonstop and no LJU long-haul; two-stop LJU vs single-connection Venice gateway",
-        "eu-etias": "ETIAS launch/mandatory timeline for June 2027 Schengen entry",
+        "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "slovenia-adriatic/main.json air-travel section and round-trip construction"
       },
       "claimType": "proxy"
