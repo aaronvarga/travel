@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "slug": "iceland-ischia-cilento",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 8,
+      "budget": {
+        "lowUsd": 10400,
+        "expectedUsd": null,
+        "highUsd": 14900,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": ["Standalone La Mortella garden day"],
+      "notes": "Four Reykjavík nights, three Forio nights, four Santa Maria di Castellabate nights, and one Fiumicino return buffer. Exact 2027 air and hydrofoil schedules require recheck.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "iceland-ischia-cilento/main.json canonical June 10–23 route and reconciled #totals"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "The canonical plan already shortens Ischia by one night to fund the fourth Iceland night. Do not shorten the seven-night warm-water segment further or remove the Fiumicino buffer without re-auditing route risk and the family swim requirement."
+}

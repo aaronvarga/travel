@@ -66,6 +66,10 @@ module.exports = {
     path: 'assets/img/iceland/google_vestrahorn_sunrise_qa_01.jpg',
     alt: 'Vestrahorn’s jagged peaks reflected at sunrise on Iceland’s black-sand coast',
   },
+  'iceland-ischia-cilento': {
+    path: 'assets/img/iceland-ischia-cilento/google_ischia_castello_hero_01.jpg',
+    alt: 'Castello Aragonese mirrored in the warm Tyrrhenian Sea at sunset on Ischia',
+  },
   'italy-salento-amalfi': {
     path: 'assets/img/italy-salento-amalfi/google_amalfi_02.jpg',
     alt: 'Amalfi’s pastel cliffside homes glowing above the Tyrrhenian Sea',

@@ -5,64 +5,84 @@
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 3,
-      "rationale": "The seven categories reconcile to $10,800–$15,000. The band straddles the $12k target: a lean family lands near target, while the high case reaches the $15k preferred maximum on peak-June lodging, two island car rentals, and the transatlantic-to-small-Greek-airport airfare. Good mid-board value, but the open-jaw airfare and dual car hire keep it off the top budget tier.",
+      "score": 2,
+      "rationale": "The seven categories reconcile to $10,800–$15,000, but the high case reaches the preferred maximum and the open-jaw airfare, peak-June lodging, and two island car rentals remain medium-confidence 2027 proxies. The rubric therefore caps Budget at 2/5 until a high-confidence family quote confirms the band.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 4,
       "rationale": "June on the Ionian is reliably dry (~1–3 rain days) and warm (highs ~78–84°F). It falls short of 5 only because the west-facing Lefkada beaches (Porto Katsiki, Kathisma, Kavalikefta) catch a building afternoon NW breeze that chops up the surface — a real, plan-around-it caveat rather than a washout.",
       "confidence": "medium",
-      "evidence": ["climate-ionian"]
+      "evidence": [
+        "climate-ionian"
+      ]
     },
     "swim": {
       "score": 4,
       "rationale": "Warm, calm, genuinely turquoise Ionian water at ~72–74°F in June, with sheltered family-easy swimming at Assos harbor, Antisamos, Lassi/Makris Gialos, and Agios Nikitas/Milos. It is a 4 not a 5 because the marquee Myrtos shelves steeply with waves (a wade-not-swim beach for the 8-year-old) and the west-coast beaches are morning-only before the afternoon chop.",
       "confidence": "medium",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 3,
       "rationale": "A focused island-and-sea trip: turquoise beaches, the Melissani/Drogarati caves, the pastel villages of Assos and Fiskardo, a Zakynthos boat day, and light gorge/waterfall and windmill walks. Rich within its lane, but it lacks the mountains, big cities, or major cultural sites that push a route to 5.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 4,
       "rationale": "The board's easiest warm-water plan: arrival at well-connected EFL is single-ticketable via Athens, then one direct ~1h ferry, short island drives on the gentle Ionian, and a road causeway (no ferry) linking Lefkada to the PVK departure. It is held off 5 by the open-jaw, the thin charter-served PVK departure leg, and renting a separate car on each island.",
       "confidence": "high",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 4,
       "rationale": "Easy for picky eaters: reliable pizza/pasta/grilled-chicken tavernas and pizzerias in Sami, Argostoli, Nydri, and Lefkada Town (Pomodoro, Made in Love, Tereza, Ampelaki). Upscale Fiskardo and Assos skew to seafood, so plain-food meals are planned in the bigger towns and those two become parents'-choice splurge nights.",
       "confidence": "medium",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
       "rationale": "The departure-side PVK leg is a separate low-cost/charter ticket (self-transfer, low frequency) whose disruption threatens the Jun 24–26 Pittsburgh blackout; the single inter-island ferry is schedule-dependent; Navagio is closed to landing; and Myrtos swimming is hazardous for young children. These are mitigated by the single-ticket EFL arrival, a held Jun 23 buffer day, and abundant calm swim alternatives.",
       "confidence": "high",
-      "evidence": ["route-readiness"]
+      "evidence": [
+        "route-readiness"
+      ]
     },
     "nights": {
       "score": 5,
       "rationale": "Twelve hotel nights (Kefalonia 7 + Lefkada 5) derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 4,
       "rationale": "Greece is already represented on the board by the Crete-focused greece-via-lisbon plan, so this is a different region rather than a new country. The Ionian (Lefkada, Kefalonia, Zakynthos) does not overlap the visited-place list, deriving 4/5 rather than 5.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 2,
       "rationale": "Nine PTO days derive 2/5 under the slider rubric and carry zero default weight; Juneteenth observed (Fri Jun 18) lands mid-trip as a no-PTO active day.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +91,10 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "aegean-ath-efl"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "aegean-ath-efl"
+      ],
       "value": {
         "lowUsd": 10800,
         "expectedUsd": null,
@@ -95,7 +118,10 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "decision-profile"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "decision-profile"
+      ],
       "value": {
         "depart": "2027-06-09",
         "homeBy": "2027-06-22",
@@ -117,11 +143,23 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["ionian-june-climate", "noaa-oisst"],
+      "sourceRefs": [
+        "ionian-june-climate",
+        "noaa-oisst"
+      ],
       "value": {
-        "juneHighF": [78, 84],
-        "juneLowF": [61, 70],
-        "seaTempF": [72, 74],
+        "juneHighF": [
+          78,
+          84
+        ],
+        "juneLowF": [
+          61,
+          70
+        ],
+        "seaTempF": [
+          72,
+          74
+        ],
         "rainDays": "~1-3",
         "wind": "Calm mornings; a gentle NW Maistro breeze builds through the afternoon. No Aegean Meltemi. West-facing Lefkada beaches (Porto Katsiki, Kathisma, Kavalikefta) chop up by late afternoon; Vasiliki's south bay uses that same wind for windsurfing.",
         "note": "Dry, warm, and far calmer than the Cyclades; the only weather caveat is the afternoon west-coast breeze, handled by scheduling those beaches for mornings."
@@ -139,13 +177,28 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["ionian-june-climate", "kefalonia-ionian-guides", "lefkada-amazing-guides"],
+      "sourceRefs": [
+        "ionian-june-climate",
+        "kefalonia-ionian-guides",
+        "lefkada-amazing-guides"
+      ],
       "value": {
         "score": 4,
-        "temperatureF": [72, 74],
+        "temperatureF": [
+          72,
+          74
+        ],
         "hasSwim": true,
-        "shelteredSites": ["Assos harbor", "Antisamos", "Lassi / Makris Gialos", "Agios Nikitas / Milos"],
-        "hazardSites": ["Myrtos (steep shelf, waves)", "Porto Katsiki / Kathisma (afternoon NW chop)"],
+        "shelteredSites": [
+          "Assos harbor",
+          "Antisamos",
+          "Lassi / Makris Gialos",
+          "Agios Nikitas / Milos"
+        ],
+        "hazardSites": [
+          "Myrtos (steep shelf, waves)",
+          "Porto Katsiki / Kathisma (afternoon NW chop)"
+        ],
         "note": "Warm calm turquoise water with abundant family-easy coves; the marquee Myrtos is a wade-not-swim beach for young kids, and west-coast beaches are best in the morning."
       },
       "verifiedAt": "2026-07-11",
@@ -162,11 +215,30 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "bases": 2,
-        "kefaloniaStops": ["Myrtos", "Assos", "Melissani", "Drogarati", "Fiskardo", "Antisamos", "Argostoli / Koutavos", "Lassi", "Zakynthos (Navagio + Blue Caves) boat day"],
-        "lefkadaStops": ["Porto Katsiki", "Kathisma", "Agios Nikitas / Milos", "Nydri / Dimosari gorge", "Meganisi / Papanikolis boat day", "Lefkada Town / Gyra"],
+        "kefaloniaStops": [
+          "Myrtos",
+          "Assos",
+          "Melissani",
+          "Drogarati",
+          "Fiskardo",
+          "Antisamos",
+          "Argostoli / Koutavos",
+          "Lassi",
+          "Zakynthos (Navagio + Blue Caves) boat day"
+        ],
+        "lefkadaStops": [
+          "Porto Katsiki",
+          "Kathisma",
+          "Agios Nikitas / Milos",
+          "Nydri / Dimosari gorge",
+          "Meganisi / Papanikolis boat day",
+          "Lefkada Town / Gyra"
+        ],
         "note": "Beaches, sea caves, pastel villages, boat days, and light gorge/windmill walks across two islands in 12 nights."
       },
       "verifiedAt": "2026-07-11",
@@ -181,7 +253,11 @@
       "category": "logistics",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "ionion-pelagos-ferry", "aegean-ath-efl"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "ionion-pelagos-ferry",
+        "aegean-ath-efl"
+      ],
       "value": {
         "baseMoves": 1,
         "countries": 1,
@@ -207,7 +283,11 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["kefalonia-ionian-guides", "lefkada-amazing-guides", "internal-itinerary"],
+      "sourceRefs": [
+        "kefalonia-ionian-guides",
+        "lefkada-amazing-guides",
+        "internal-itinerary"
+      ],
       "value": {
         "note": "Picky-eater friendly: named pizza/pasta/grilled-chicken options in Nydri (Pomodoro), Lefkada Town (Made in Love), Agios Nikitas (To Steki), Sami (Tereza/Contessina), and Argostoli (Pizza Al Forno, Ampelaki with a kids' menu). Fiskardo and Assos skew upscale-seafood, so those become splurge nights with snack backups for the kids."
       },
@@ -225,7 +305,13 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["aegean-ath-efl", "ionion-pelagos-ferry", "navagio-access-status", "eu-etias", "internal-itinerary"],
+      "sourceRefs": [
+        "aegean-ath-efl",
+        "ionion-pelagos-ferry",
+        "navagio-access-status",
+        "eu-etias",
+        "internal-itinerary"
+      ],
       "value": {
         "status": "current-proxy",
         "singleTicket": false,
@@ -253,7 +339,10 @@
       "category": "novelty",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "scorecard-contract"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "scorecard-contract"
+      ],
       "value": {
         "overlap": "region-new",
         "note": "Greece is on the board via the Crete-focused greece-via-lisbon plan, so this is a new region (the Ionian: Lefkada, Kefalonia, Zakynthos), not a new country; it does not overlap the visited-place list, deriving 4/5."
@@ -268,14 +357,17 @@
     }
   ],
   "metrics": {
-    "airHours": 22.0,
-    "groundHours": 14.0,
+    "airHours": 22,
+    "groundHours": 14,
     "timeZones": 7,
     "baseMoves": 1,
     "longestTransferHours": 8,
     "highOutputDayStreak": 2,
     "fallbackDays": 1,
-    "childActivityFit": { "age13": "fits", "age8": "fits" },
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
     "lodgingComfort": {
       "airConditioning": "unknown until property selection",
       "kitchen": "planned in both bases but unconfirmed",

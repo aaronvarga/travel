@@ -5,64 +5,84 @@
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 3,
-      "rationale": "The reconciled $10,900–$15,000 family band reaches the $12k target in its lean case and stays at the strongly preferred maximum in its high case. It remains a current-proxy estimate until the protected multi-airport ticket and 2027 lodging are priced.",
+      "score": 2,
+      "rationale": "The reconciled $10,900–$15,000 family band reaches the target in its lean case, but its high case consumes the entire preferred maximum and the protected multi-airport ticket and 2027 lodging remain unquoted. Medium confidence therefore caps Budget at 2/5 until the full family stack is confirmed.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 4,
       "rationale": "June is favorable in both chapters: Funchal's official normal is mild/dry while Kefalonia is warm and dry. Madeira summit cloud/wind and exposed Ionian afternoons require active day-order flexibility, keeping it below 5.",
       "confidence": "medium",
-      "evidence": ["climate-proxy"]
+      "evidence": [
+        "climate-proxy"
+      ]
     },
     "swim": {
       "score": 4,
       "rationale": "Kefalonia supplies repeated 72–74°F historical-proxy swimming at Antisamos and Lassi, while Madeira is scenery first. Myrtos' shelf/swell and a weather-sensitive boat day prevent a 5.",
       "confidence": "medium",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 5,
       "rationale": "The canonical schedule deliberately balances Madeira ridges, levadas, forest and volcanic coast with Kefalonia beaches, caves, harbor towns, turtles and a Zakynthos boat day.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 2,
       "rationale": "Two six-night bases and no inter-island ferry help, but the itinerary still has a 3-connection protected long-haul shape, a Madeira-to-Kefalonia flight pivot, and two rental cars. This is meaningfully easier than a PVK exit, not easy.",
       "confidence": "medium",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 4,
       "rationale": "Every base and long day names pizza, pasta, burgers, grilled chicken/fries or a grocery fallback. Local branches and seasonal restaurant hours still need a 2027 check.",
       "confidence": "medium",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
       "rationale": "The deliberate EFL-via-Athens return removes the thin/charter PVK self-transfer risk, but FNC wind, unpublished June 2027 schedules, the FNC–LIS–ATH–EFL chain, trail status and Navagio access are material managed uncertainties.",
       "confidence": "high",
-      "evidence": ["route-readiness"]
+      "evidence": [
+        "route-readiness"
+      ]
     },
     "nights": {
       "score": 5,
       "rationale": "Twelve hotel nights derives 5/5 from the shared nights rubric.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 4,
       "rationale": "Madeira and Kefalonia are new exact destinations, though the family has experienced Greek-island travel; the score correctly recognizes mostly-new places with a familiar trip type.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 2,
       "rationale": "Nine PTO days derives 2/5 under the shared slider rubric and has zero default ranking weight; Juneteenth observed on Friday June 18 is a no-PTO activity day.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +91,10 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "aegean-kefalonia-official"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "aegean-kefalonia-official"
+      ],
       "value": {
         "lowUsd": 10900,
         "expectedUsd": null,
@@ -95,13 +118,19 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["decision-profile"],
+      "sourceRefs": [
+        "decision-profile"
+      ],
       "value": {
         "depart": "2027-06-08",
         "return": "2027-06-22",
         "hotelNights": 12,
         "ptoDays": 9,
-        "pittsburghFullDaysProtected": ["2027-06-24", "2027-06-25", "2027-06-26"],
+        "pittsburghFullDaysProtected": [
+          "2027-06-24",
+          "2027-06-25",
+          "2027-06-26"
+        ],
         "holiday": "Juneteenth observed Friday 2027-06-18"
       },
       "verifiedAt": "2026-07-12",
@@ -116,11 +145,28 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["ipma-funchal-normal-1991-2020", "ionian-june-climate"],
+      "sourceRefs": [
+        "ipma-funchal-normal-1991-2020",
+        "ionian-june-climate"
+      ],
       "value": {
         "score": 4,
-        "juneMeanDailyLowHighF": {"Funchal": [65, 75], "Kefalonia": [78, 84]},
-        "juneRainDays": {"Kefalonia": [1, 3]},
+        "juneMeanDailyLowHighF": {
+          "Funchal": [
+            65,
+            75
+          ],
+          "Kefalonia": [
+            78,
+            84
+          ]
+        },
+        "juneRainDays": {
+          "Kefalonia": [
+            1,
+            3
+          ]
+        },
         "forecast": false,
         "mountainConditionsExcluded": true
       },
@@ -137,13 +183,22 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["ionian-june-climate", "kefalonia-ionian-guides"],
+      "sourceRefs": [
+        "ionian-june-climate",
+        "kefalonia-ionian-guides"
+      ],
       "value": {
         "score": 4,
-        "temperatureF": [72, 74],
+        "temperatureF": [
+          72,
+          74
+        ],
         "hasSwim": true,
         "primarySwimRegion": "Kefalonia",
-        "plannedEasySwims": ["Antisamos", "Lassi/Makris Gialos"],
+        "plannedEasySwims": [
+          "Antisamos",
+          "Lassi/Makris Gialos"
+        ],
         "safetyConstraint": "Myrtos is a steep-shelf/swell-dependent photo and wade stop for the younger child."
       },
       "verifiedAt": "2026-07-12",
@@ -159,13 +214,28 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "score": 5,
         "hotelNights": 12,
-        "baseNames": ["Funchal / São Martinho", "Sami / Agia Efimia"],
-        "nightSplit": [6, 6],
-        "scheduledModes": ["ridge and levada hiking", "forest/coastal drives", "beaches and swimming", "caves", "harbor towns", "boat day"]
+        "baseNames": [
+          "Funchal / São Martinho",
+          "Sami / Agia Efimia"
+        ],
+        "nightSplit": [
+          6,
+          6
+        ],
+        "scheduledModes": [
+          "ridge and levada hiking",
+          "forest/coastal drives",
+          "beaches and swimming",
+          "caves",
+          "harbor towns",
+          "boat day"
+        ]
       },
       "verifiedAt": "2026-07-12",
       "expiresAt": null,
@@ -179,7 +249,10 @@
       "category": "logistics",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "aegean-kefalonia-official"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "aegean-kefalonia-official"
+      ],
       "value": {
         "easeScore": 2,
         "maxConnections": 3,
@@ -205,12 +278,25 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "continente-portugal-stores"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "continente-portugal-stores"
+      ],
       "value": {
         "score": 4,
         "plainFoodRequired": true,
-        "coveredSleeps": ["Funchal / São Martinho", "Sami / Agia Efimia"],
-        "fallbackTypes": ["pizza", "pasta", "burger", "grilled chicken", "fries", "grocery kitchen"],
+        "coveredSleeps": [
+          "Funchal / São Martinho",
+          "Sami / Agia Efimia"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burger",
+          "grilled chicken",
+          "fries",
+          "grocery kitchen"
+        ],
         "lodgingKitchenRequired": true
       },
       "verifiedAt": "2026-07-12",
@@ -226,7 +312,12 @@
       "category": "route",
       "proxyStatus": "exact-2027-schedule-required",
       "confidence": "high",
-      "sourceRefs": ["ana-madeira-wind-operations", "aegean-kefalonia-official", "eu-etias", "navagio-2026-status"],
+      "sourceRefs": [
+        "ana-madeira-wind-operations",
+        "aegean-kefalonia-official",
+        "eu-etias",
+        "navagio-2026-status"
+      ],
       "value": {
         "status": "exact-2027-schedule-required",
         "singleTicket": false,
@@ -251,7 +342,10 @@
       "category": "novelty",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
       "value": {
         "score": 4,
         "overlapType": "new exact destinations; familiar Greek-island travel type"

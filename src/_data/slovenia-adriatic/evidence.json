@@ -5,64 +5,84 @@
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 3,
-      "rationale": "The six categories reconcile exactly to $10,700–$14,800. The floor sits below the $12k target and the whole band stays under the $15k preferred maximum — genuinely good value, and cheaper than nearly every peer whose budget scores 1. It falls short of a 4 only because the high case ($14,800) exceeds the $13,500 mid-band ceiling, driven by the two-stop LJU airfare. Cost is a reason to pick this trip.",
+      "score": 2,
+      "rationale": "The six categories reconcile exactly to $10,700–$14,800, but the two-stop Ljubljana airfare and 2027 lodging remain planning proxies. With medium-confidence evidence and a high case within $200 of the preferred maximum, the rubric caps Budget at 2/5 until the full family quote is confirmed.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 3,
       "rationale": "A genuine split: the Piran coast is warm and mostly dry in June (~25–28°C), but the Julian Alps see frequent June afternoon thunderstorms and the Vršič Pass carries a real late-snow timing risk. The gorges and caves are the smart rainy-window picks, so the score reflects manageable-but-recurring mountain weather exposure.",
       "confidence": "medium",
-      "evidence": ["climate-split"]
+      "evidence": [
+        "climate-split"
+      ]
     },
     "swim": {
       "score": 3,
       "rationale": "The Piran Adriatic is a swimmable ~22°C / 72°F in June — warmer and calmer than the Atlantic plans but cooler than the Greek/Crete lagoons, off rocky platforms rather than warm sand. The glacial Soča and Alpine lakes are look-and-raft, not swim. Usable, limited, and refreshing water scores 3; Croatia, the obvious warm partner, is excluded by family decision.",
       "confidence": "medium",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 5,
       "rationale": "Alpine lakes, an emerald river, three gorges, a UNESCO cave, a mountain pass, a Venetian coast, and a capital city across one compact country is the full spread of water, towns, and nature.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 3,
       "rationale": "On the ground this is one of the easiest plans on the board: one country, one rental car, four bases in a tidy loop, short drives, no intra-Europe flight and no open-jaw. It scores 3 rather than higher only because Ljubljana has no long-haul service, so the air routing is a two-stop itinerary with a fragile final leg.",
       "confidence": "high",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 4,
       "rationale": "Every base (Bled, Bohinj, Bovec, Piran, Ljubljana) has full supermarkets (Mercator/Spar) plus reliable wood-fired pizza, pasta, and burgers — strong picky-eater coverage. It is inexpensive, but cost is scored under budget, not food.",
       "confidence": "medium",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
       "rationale": "Lower risk than a multi-country Alpine plan: a single country, one rental car, no open-jaw or intra-Europe flight. Remaining uncertainty is manageable — 2025-2026 proxy fares with no live 2027 quote, a fragile final LJU air leg, and the Vršič Pass's non-guaranteed mid-June opening, each with a stated mitigation.",
       "confidence": "high",
-      "evidence": ["route-readiness"]
+      "evidence": [
+        "route-readiness"
+      ]
     },
     "nights": {
       "score": 5,
       "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 5,
       "rationale": "Slovenia does not overlap the documented visited-place list, and the Julian Alps and Karst caves are unlike anything else on the board, deriving 5/5.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 3,
       "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight; Juneteenth observed (Fri Jun 18) is used as a no-PTO active day.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +91,10 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "lju-vce-routing"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "lju-vce-routing"
+      ],
       "value": {
         "lowUsd": 10700,
         "expectedUsd": null,
@@ -95,7 +118,10 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "decision-profile"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "decision-profile"
+      ],
       "value": {
         "depart": "2027-06-08",
         "homeBy": "2027-06-22",
@@ -117,13 +143,25 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["slovenia-alps-june-climate", "piran-sea-temp"],
+      "sourceRefs": [
+        "slovenia-alps-june-climate",
+        "piran-sea-temp"
+      ],
       "value": {
         "julianAlpsJuneHighF": 75,
         "julianAlpsRainNote": "frequent June afternoon thunderstorms",
-        "bledLakeTempF": [64, 66],
-        "socaRiverTempF": [52, 59],
-        "piranAirJuneHighF": [77, 82],
+        "bledLakeTempF": [
+          64,
+          66
+        ],
+        "socaRiverTempF": [
+          52,
+          59
+        ],
+        "piranAirJuneHighF": [
+          77,
+          82
+        ],
         "piranSeaTempF": 72,
         "note": "Alpine valleys are mild but wet with afternoon storms and a Vršič late-snow risk; the coast is warm and dry. Gorges and caves are the smart rainy-window picks; the Adriatic swim is warm-but-refreshing, not tropical."
       },
@@ -140,14 +178,30 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["piran-sea-temp", "internal-itinerary"],
+      "sourceRefs": [
+        "piran-sea-temp",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 3,
-        "temperatureF": [70, 73],
+        "temperatureF": [
+          70,
+          73
+        ],
         "hasSwim": true,
-        "piranSeaTempF": [70, 73],
-        "socaRiverTempF": [52, 59],
-        "shelteredSites": ["Fiesa beach", "Portorož beaches", "Piran bathing platforms"],
+        "piranSeaTempF": [
+          70,
+          73
+        ],
+        "socaRiverTempF": [
+          52,
+          59
+        ],
+        "shelteredSites": [
+          "Fiesa beach",
+          "Portorož beaches",
+          "Piran bathing platforms"
+        ],
         "note": "Warm-water swimming is the Piran Adriatic at ~22°C / 72°F, off rocky platforms or the Fiesa/Portorož beaches; the glacial Soča (11-15°C) and Alpine lakes are for rafting and looking. Croatia, the obvious warm partner, is excluded by family decision."
       },
       "verifiedAt": "2026-07-11",
@@ -163,12 +217,30 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "bases": 4,
-        "alpsStops": ["Lake Bled", "Vintgar Gorge", "Lake Bohinj / Vogel", "Vršič Pass"],
-        "socaStops": ["Soča rafting", "Great Soča Gorge", "Kozjak Waterfall", "Tolmin Gorges"],
-        "coastStops": ["Škocjan Caves", "Piran", "Fiesa / Portorož", "Sečovlje", "Ljubljana"],
+        "alpsStops": [
+          "Lake Bled",
+          "Vintgar Gorge",
+          "Lake Bohinj / Vogel",
+          "Vršič Pass"
+        ],
+        "socaStops": [
+          "Soča rafting",
+          "Great Soča Gorge",
+          "Kozjak Waterfall",
+          "Tolmin Gorges"
+        ],
+        "coastStops": [
+          "Škocjan Caves",
+          "Piran",
+          "Fiesa / Portorož",
+          "Sečovlje",
+          "Ljubljana"
+        ],
         "note": "Alpine lakes, an emerald river, three gorges, a UNESCO cave, a Venetian coast, and a capital across 12 nights in one country."
       },
       "verifiedAt": "2026-07-11",
@@ -183,7 +255,10 @@
       "category": "logistics",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "slovenia-driving"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "slovenia-driving"
+      ],
       "value": {
         "baseMoves": 3,
         "countries": 1,
@@ -207,7 +282,10 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "slovenia-family-food"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "slovenia-family-food"
+      ],
       "value": {
         "note": "Every base has full supermarkets (Mercator/Spar) plus reliable pizzerias with plain pizza/pasta/burger options (Rustika, Ema, Črna Ovca, Porto Konoba, Pop's Pizza). Strong picky-eater coverage; Slovenia is inexpensive, which sits under budget."
       },
@@ -224,7 +302,11 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["lju-vce-routing", "eu-etias", "internal-itinerary"],
+      "sourceRefs": [
+        "lju-vce-routing",
+        "eu-etias",
+        "internal-itinerary"
+      ],
       "value": {
         "status": "current-proxy",
         "singleTicket": false,
@@ -250,7 +332,10 @@
       "category": "novelty",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
       "value": {
         "overlap": "none",
         "note": "Slovenia does not overlap the documented visited-place list; the Julian Alps and the Karst cave country are unique on the board."
@@ -265,14 +350,17 @@
     }
   ],
   "metrics": {
-    "airHours": 22.0,
-    "groundHours": 14.0,
+    "airHours": 22,
+    "groundHours": 14,
     "timeZones": 6,
     "baseMoves": 3,
     "longestTransferHours": 12,
     "highOutputDayStreak": 3,
     "fallbackDays": 2,
-    "childActivityFit": { "age13": "fits", "age8": "fits" },
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
     "lodgingComfort": {
       "airConditioning": "unknown until property selection",
       "kitchen": "planned in all four bases but unconfirmed",

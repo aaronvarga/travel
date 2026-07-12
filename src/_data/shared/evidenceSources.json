@@ -1490,5 +1490,82 @@
     "url": "https://hhticket.gr/",
     "publisher": "Hellenic Heritage (official e-ticketing)",
     "scope": "Acropolis combined ticket ~E30 adult (summer), reduced/free for children; mandatory timed-entry slots since 2024. Acropolis Museum ~E15 separate."
+  },
+  "icelandair-stopover": {
+    "label": "Icelandair Stopover rules",
+    "tier": "operator",
+    "url": "https://www.icelandair.com/flights/stopover/",
+    "publisher": "Icelandair",
+    "scope": "Most transatlantic fares permit an Iceland stopover of up to seven nights without an additional airfare surcharge; date-specific fare differences, hotels, and ground costs remain separate."
+  },
+  "icelandair-pit-kef-2027-fare": {
+    "label": "Icelandair PIT–KEF June 2027 fare signal",
+    "tier": "observed-quote",
+    "url": "https://www.icelandair.com/en-us/flights/flights-from-pittsburgh-to-reykjavik",
+    "publisher": "Icelandair",
+    "scope": "Observed July 12, 2026: nearby June 2027 PIT–KEF round trips displayed from $719 per traveler. This does not quote the exact June 10 stopover itinerary, seats, bags, or family total."
+  },
+  "icelandair-pit-fco-fare": {
+    "label": "Icelandair PIT–FCO fare signal",
+    "tier": "observed-quote",
+    "url": "https://www.icelandair.com/en-us/flights/flights-from-pittsburgh-to-rome",
+    "publisher": "Icelandair",
+    "scope": "Observed July 12, 2026: a separate 2027 PIT–FCO round-trip window displayed from $1,114 per traveler. It is a bounded route-price signal, not the June 10–23 stopover quote."
+  },
+  "alilauro-naples-ischia-2026": {
+    "label": "Alilauro Naples–Ischia 2026 summer schedule and fares",
+    "tier": "operator",
+    "url": "https://www.alilauro.it/it/tratte/napoli-beverello-ischia-ischia-napoli-beverello/",
+    "publisher": "Alilauro",
+    "scope": "June 15–September 15, 2026 schedule lists frequent daily hydrofoils; adult €23.90–24.10, child 2–12 €15.90, and qualifying luggage €3.50. Exact 2027 times and fares require recheck."
+  },
+  "negombo-2026": {
+    "label": "Negombo 2026 admission and child restrictions",
+    "tier": "operator",
+    "url": "https://negombo.it/assets/Uploads/listino-prezzi-2026.pdf",
+    "publisher": "Negombo Thermal Park",
+    "scope": "April 23–July 3, 2026 full-day prices and child height bands; children under 1.4m cannot use thermal pools. Recheck 2027 prices, operating dates, and restrictions."
+  },
+  "la-mortella-2026": {
+    "label": "La Mortella 2026 visit information",
+    "tier": "operator",
+    "url": "https://www.lamortella.org/en/visit",
+    "publisher": "Fondazione William Walton e La Mortella",
+    "scope": "2026 opening days, 9am–7pm hours, and €15 adult / €10 age 12–18 / €8 age 6–11 admission. Recheck the 2027 calendar and tariff."
+  },
+  "paestum-velia-tickets": {
+    "label": "Paestum and Velia official tickets",
+    "tier": "official",
+    "url": "https://parchipaestumvelia.cultura.gov.it/en/ticket-info/",
+    "publisher": "Italian Ministry of Culture — Paestum and Velia Archaeological Parks",
+    "scope": "March–November 2026 full admission €15, under-18 free, three-day access to Paestum, Velia and the museum; booking not mandatory. Recheck 2027 terms."
+  },
+  "visit-cilento-castellabate": {
+    "label": "Visit Cilento: Santa Maria di Castellabate family beaches",
+    "tier": "official",
+    "url": "https://www.visitcilento.com/en/scheda_localita/9-castellabate-santa-maria-di.html",
+    "publisher": "Cilento, Vallo di Diano and Alburni National Park tourism portal",
+    "scope": "Identifies Lago/Santa Maria white sand, clear water, equipped beaches, children’s facilities, Punta Tresino and the marine protected area."
+  },
+  "palinuro-caves-operator": {
+    "label": "Capo Palinuro sea-cave tour route",
+    "tier": "operator",
+    "url": "https://www.costieradelcilento.it/tour-info-en/",
+    "publisher": "Costiera del Cilento",
+    "scope": "Current operator route and timing for Capo Palinuro, Natural Arch and Blue Cave motorboat tours; no stable 2027 family fare is published."
+  },
+  "la-tinaia-forio": {
+    "label": "La Tinaia Forio family food coverage",
+    "tier": "operator",
+    "url": "https://www.latinaiaforio.it/en/",
+    "publisher": "La Tinaia",
+    "scope": "First-party restaurant and pizzeria pages confirm wood-fired pizza, handmade pasta and all-day service in the Forio base."
+  },
+  "palinuro-family-food": {
+    "label": "Palinuro pizza and burger coverage",
+    "tier": "operator",
+    "url": "https://www.maripalinuro.it/en/",
+    "publisher": "Marì Pizza-Bistrot",
+    "scope": "First-party menu description confirms classic Neapolitan pizza and hamburgers at the Palinuro day-trip base."
   }
 }

@@ -20,6 +20,7 @@ module.exports = {
   hawaii: 'Splits time between Oʻahu and Hawaiʻi Island for warm swimming, snorkeling, volcanoes, waterfalls, and an easy domestic two-island adventure.',
   'maui-kauai': 'Pairs Maui’s warm beaches, Haleakalā, and Hāna with Kauai’s Nā Pali Coast, Waimea Canyon, Poʻipū swimming, and a slow Hanalei finish.',
   iceland: 'Builds a photography-first loop around Reykjavík, waterfalls, black-sand beaches, glacier lagoons, geothermal pools, and immense volcanic landscapes.',
+  'iceland-ischia-cilento': 'Concentrates Iceland’s waterfalls, black sand, and geothermal water into three nights before eight warm-water nights across Ischia and the quieter Cilento coast.',
   'italy-salento-amalfi': 'Connects Gallipoli, Maratea, and Sorrento for Italian food, historic coastal towns, beach time, and the cinematic cliffs of the Amalfi Coast.',
   'madeira-crete': 'Pairs Madeira’s dramatic levada and ridge hiking with Crete’s warm beaches, Venetian towns, and family-friendly Mediterranean swimming.',
   'madeira-kefalonia': 'Pairs Madeira’s levada walks, cloud-high ridge and volcanic coast with Kefalonia’s Myrtos cliffs, blue caves, calm swims, harbor towns, and Athens-protected return.',

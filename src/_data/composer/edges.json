@@ -1,6 +1,22 @@
 {
   "edges": [
     {
+      "id": "iceland->ischia-cilento",
+      "enabled": true,
+      "from": "iceland",
+      "to": "ischia-cilento",
+      "mode": "air",
+      "via": [],
+      "hours": 9,
+      "familyCostUsd": [700, 1100],
+      "complexity": 3,
+      "risk": 3,
+      "buffer": null,
+      "transferTemplate": "short-hop",
+      "watch": "The 2026 nonstop KEF-FCO route is the value case; confirm the exact 2027 operating day before booking the split.",
+      "schedule2027": "unconfirmed"
+    },
+    {
       "id": "madeira->crete",
       "enabled": true,
       "from": "madeira",

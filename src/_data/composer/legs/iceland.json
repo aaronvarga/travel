@@ -1,0 +1,53 @@
+{
+  "id": "iceland",
+  "name": "Iceland",
+  "country": "Iceland",
+  "sourceTrip": "iceland-ischia-cilento",
+  "mapColor": "#3b7080",
+  "mapPoints": [
+    {"n":"Keflavík Airport (KEF)","lat":63.985,"lng":-22.6056,"r":"iceland","g":"https://www.google.com/maps/search/?api=1&query=63.985,-22.6056"},
+    {"n":"Reykjavík","lat":64.1466,"lng":-21.9426,"r":"iceland","g":"https://www.google.com/maps/search/?api=1&query=64.1466,-21.9426"},
+    {"n":"Gullfoss","lat":64.3271,"lng":-20.1199,"r":"iceland","g":"https://www.google.com/maps/search/?api=1&query=64.3271,-20.1199"},
+    {"n":"Skógafoss","lat":63.5321,"lng":-19.5114,"r":"iceland","g":"https://www.google.com/maps/search/?api=1&query=63.5321,-19.5114"}
+  ],
+  "gateways": {
+    "airports": ["KEF"],
+    "pitOutbound": {"route":"PIT→gateway→KEF","hours":9,"familyCostUsd":[1800,2400],"notes":"Use Icelandair stopover pricing when competitive; confirm the protected 2027 routing."},
+    "pitReturn": null
+  },
+  "nights": {"min":3,"canonical":4,"max":4},
+  "heroImages": [
+    {"href":"../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg","src":"../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg","alt":"Rainbow mist at Skógafoss on Iceland's South Coast","captionTitle":"Skógafoss","credit":"Austaclausen · Google Images source"},
+    {"href":"../../assets/img/iceland-ischia-cilento/google_reykjavik_base_01.jpg","src":"../../assets/img/iceland-ischia-cilento/google_reykjavik_base_01.jpg","alt":"Reykjavík skyline beneath a dramatic summer sunset","captionTitle":"Reykjavík","credit":"Hallgrimur P. Helgason · Google Images source"},
+    {"href":"../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_rainbow_05.jpg","src":"../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_rainbow_05.jpg","alt":"Rainbow spray above Gullfoss on Iceland's Golden Circle","captionTitle":"Gullfoss","credit":"Jane Cumming · Google Images source"}
+  ],
+  "packingTags": ["hiking","rain","layers"],
+  "june": {"seaTempF":50,"airHiF":56,"facts":["Iceland is the cool scenic leg; ocean swimming is not part of this route.","Geothermal pools provide the water reset before the warm Mediterranean leg."]},
+  "budget": {
+    "lodgingPerNightUsd":[230,330],
+    "carPerDayUsd":[70,110],
+    "foodPerDayUsd":[145,195],
+    "activitiesFlatUsd":[220,420],
+    "provenance":"iceland-ischia-cilento canonical budget allocation for four Reykjavík nights, rental car, food, pools and parking"
+  },
+  "scoreHints": {"weather":3,"swim":1,"food":3,"novelty":5,"varietyTags":["waterfalls","geothermal","black-sand","city"]},
+  "days": [
+    {
+      "role":"arrival","heading":"Reykjavík arrival + geothermal reset","feel":"Easy first day","daycost":"Est. $130-$210 · transfer, pool and meals","facts":[{"label":"Base","valueHtml":"Reykjavík · night 1 of 4"},{"label":"Water","valueHtml":"Heated geothermal pool, not an ocean swim"}],"note":"Keep the first day compact: settle in, walk the harbor, and use Laugardalslaug as the jet-lag reset.","travelNote":null,
+      "spots":[{"name":"Reykjavík waterfront","images":[{"href":"../../assets/img/iceland-ischia-cilento/google_reykjavik_sun_voyager_02.jpg","src":"../../assets/img/iceland-ischia-cilento/google_reykjavik_sun_voyager_02.jpg","alt":"Sun Voyager at Reykjavík sunset","captionTitle":"Sun Voyager","credit":"Pierre Leclerc · Google Images source"},{"href":"../../assets/img/iceland-ischia-cilento/google_reykjavik_harpa_blue_hour_03.jpg","src":"../../assets/img/iceland-ischia-cilento/google_reykjavik_harpa_blue_hour_03.jpg","alt":"Harpa reflected in Reykjavík harbor","captionTitle":"Harpa","credit":"Judith Kuhn · Google Images source"}],"cost":"City walk free; municipal pool pricing should be rechecked for 2027.","climateLabel":"June","climate":"Long daylight, cool air and fast-changing weather; carry a waterproof layer.","lat":"64.1466","lng":"-21.9426"}]
+    },
+    {
+      "role":"full","heading":"Golden Circle + Secret Lagoon","feel":"Waterfalls and geothermal power","daycost":"Est. $170-$270 · car, pool, meals","facts":[{"label":"Loop","valueHtml":"Þingvellir → Strokkur → Gullfoss"},{"label":"Finish","valueHtml":"Warm soak at Secret Lagoon"}],"note":"Start early, keep the geothermal soak as the soft landing after the sightseeing loop, and do not confuse it with the warm-water beach requirement later in Italy.","travelNote":null,
+      "spots":[{"name":"Golden Circle","images":[{"href":"../../assets/img/iceland-ischia-cilento/google_golden_circle_thingvellir_02.jpg","src":"../../assets/img/iceland-ischia-cilento/google_golden_circle_thingvellir_02.jpg","alt":"Þingvellir's rift valley","captionTitle":"Þingvellir","credit":"Chris Ford · Google Images source"},{"href":"../../assets/img/iceland-ischia-cilento/google_golden_circle_strokkur_03.jpg","src":"../../assets/img/iceland-ischia-cilento/google_golden_circle_strokkur_03.jpg","alt":"Strokkur erupting into a textured sky","captionTitle":"Strokkur","credit":"Larch · Google Images source"},{"href":"../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_01.jpg","src":"../../assets/img/iceland-ischia-cilento/google_golden_circle_gullfoss_01.jpg","alt":"Gullfoss plunging into its canyon","captionTitle":"Gullfoss","credit":"Giuseppe Milo · Google Images source"}],"cost":"Natural sites are free; budget for fuel, parking if introduced, and the family geothermal entry.","climateLabel":"June","climate":"Exposed and windy even on bright days.","lat":"64.3271","lng":"-20.1199"}]
+    },
+    {
+      "role":"flex","heading":"South Coast waterfalls + Reynisfjara","feel":"The cinematic Iceland day","daycost":"Est. $180-$280 · long car day and meals","facts":[{"label":"Flagships","valueHtml":"Seljalandsfoss + Skógafoss"},{"label":"Safety","valueHtml":"Never turn your back on Reynisfjara surf"}],"note":"This is the weather-flex day: go when the South Coast forecast is best and keep generous driving margin.","travelNote":null,
+      "spots":[{"name":"Iceland South Coast","images":[{"href":"../../assets/img/iceland-ischia-cilento/google_south_coast_seljalandsfoss_cave_03.jpg","src":"../../assets/img/iceland-ischia-cilento/google_south_coast_seljalandsfoss_cave_03.jpg","alt":"Seljalandsfoss from the path behind the water","captionTitle":"Behind the Falls","credit":"Iceland Photo Tours · Google Images source"},{"href":"../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg","src":"../../assets/img/iceland-ischia-cilento/google_iceland_skogafoss_hero_01.jpg","alt":"Rainbow at Skógafoss","captionTitle":"Skógafoss","credit":"Austaclausen · Google Images source"},{"href":"../../assets/img/iceland-ischia-cilento/google_south_coast_reynisfjara_01.jpg","src":"../../assets/img/iceland-ischia-cilento/google_south_coast_reynisfjara_01.jpg","alt":"Black sand and sea stacks at Reynisfjara","captionTitle":"Reynisfjara","credit":"Giuseppe Milo · Google Images source"}],"cost":"Natural sights are free; the cost is the rental day, fuel and a road meal.","climateLabel":"June","climate":"Cold spray and Atlantic wind make waterproof layers essential.","lat":"63.5321","lng":"-19.5114"}]
+    },
+    {
+      "role":"flex","heading":"Reykjanes weather-flex + optional Blue Lagoon","feel":"Steam, lava and a softer final day","daycost":"Est. $160-$460 · car, meals and optional lagoon","facts":[{"label":"Route","valueHtml":"Gunnuhver → lava coast → optional Blue Lagoon"},{"label":"Rule","valueHtml":"Use this day to recover a missed flagship loop first"}],"note":"The fourth night is weather insurance. Drive the compact Reykjanes loop only if the Golden Circle and South Coast already succeeded; add Blue Lagoon only when the live price fits.","travelNote":null,
+      "spots":[{"name":"Reykjanes weather-flex","images":[{"href":"../../assets/img/iceland-ischia-cilento/google_reykjanes_gunnuhver_steam_01.jpg","src":"../../assets/img/iceland-ischia-cilento/google_reykjanes_gunnuhver_steam_01.jpg","alt":"Steam rising at Gunnuhver on the Reykjanes Peninsula","captionTitle":"Gunnuhver","credit":"Google Images source"},{"href":"../../assets/img/iceland-ischia-cilento/google_reykjanes_lava_field_03.jpg","src":"../../assets/img/iceland-ischia-cilento/google_reykjanes_lava_field_03.jpg","alt":"Dark lava fields across the Reykjanes Peninsula","captionTitle":"Reykjanes Lava","credit":"Google Images source"},{"href":"../../assets/img/iceland-ischia-cilento/google_reykjanes_blue_lagoon_04.jpg","src":"../../assets/img/iceland-ischia-cilento/google_reykjanes_blue_lagoon_04.jpg","alt":"Blue Lagoon geothermal water amid black lava","captionTitle":"Blue Lagoon","credit":"Google Images source"}],"cost":"Gunnuhver and the coast are free; Blue Lagoon is optional and must be repriced for 2027.","climateLabel":"Weather flex","climate":"Keep this day movable and follow current road, weather and volcanic-access guidance.","lat":"63.8193","lng":"-22.6844"}]
+    },
+    {"role":"departure","heading":"Fly KEF → Rome","feel":"Direct seasonal bridge to warmth","daycost":"Transfer priced in the route edge","facts":[{"label":"Current route signal","valueHtml":"Icelandair operates nonstop KEF→FCO in 2026"},{"label":"2027 gate","valueHtml":"Book only after exact operating day is published"}],"note":"Use the nonstop KEF–FCO if its 2027 operating day matches; otherwise reject the split rather than add an exhausting European connection.","travelNote":"Allow time after FCO arrival for the train to Naples and hydrofoil to Ischia.","spots":[]}
+  ]
+}

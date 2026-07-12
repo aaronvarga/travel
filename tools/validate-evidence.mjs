@@ -261,6 +261,9 @@ function validateTrips(trips) {
       if (!record) { issue(trip.slug, `missing ${axis} evidence`); continue; }
       if (record.score !== trip.main.scorecard.axes[axis]) issue(trip.slug, `${axis} evidence score drift`);
       if (!record.rationale || !manifest.confidenceLevels.includes(record.confidence)) issue(trip.slug, `invalid ${axis} rationale/confidence`);
+      if (axis === 'budget' && record.score === 3 && record.confidence !== 'high') {
+        issue(trip.slug, 'budget 3 requires high-confidence budget evidence under the scorecard rubric');
+      }
       for (const id of record.evidence || []) if (!facts.has(id)) issue(trip.slug, `${axis} references missing fact ${id}`);
     }
     const derived = deriveEvidenceConfidence(evidence, scoreManifest);
@@ -300,7 +303,7 @@ function validateTrips(trips) {
     if (!canonical?.canonical) issue(trip.slug, 'missing canonical variant');
     if (canonical && (canonical.nights !== trip.main.scorecard.pto.nights || canonical.ptoDays !== trip.main.scorecard.pto.days)) issue(trip.slug, 'canonical variant drift');
   }
-  if (trips.length !== 29) issue("all", `expected 29 trips, found ${trips.length}`);
+  if (trips.length !== 30) issue("all", `expected 30 trips, found ${trips.length}`);
 }
 
 function numberOrNull(value) {
