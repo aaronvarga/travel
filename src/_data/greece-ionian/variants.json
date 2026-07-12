@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "greece-ionian",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "12-night canonical plan",
+      "canonical": true,
+      "status": "documented",
+      "nights": 12,
+      "ptoDays": 9,
+      "budget": {
+        "lowUsd": 10800,
+        "expectedUsd": null,
+        "highUsd": 15000,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "The checked-in itinerary is the immutable comparison baseline: Kefalonia 7 nights (car) then Lefkada 5 nights (car), open-jaw EFL in / PVK out, one direct Vasiliki-Fiskardo ferry, home by Jun 22 with Jun 23 held as a buffer before the Pittsburgh blackout.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "Kefalonia + Lefkada; variant canonical; open-jaw EFL/PVK; route-specific fares and 2027 ferry timetable require re-price"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "A lower-risk routing variant flies round-trip into EFL (fully single-ticketable via Athens on Aegean) and reaches Lefkada by the same ferry in both directions, trading one extra ferry crossing and a little backtracking for avoiding the thin, charter-served, self-transfer PVK leg. It should be added as a formal variant only after its own fares and the second ferry day are reconciled; nights and budget are otherwise unchanged."
+}
