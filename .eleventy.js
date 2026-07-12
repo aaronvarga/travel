@@ -27,6 +27,7 @@ module.exports = function (eleventyConfig) {
     const digits = Number(value) % 1000 === 0 ? 0 : Number(value) % 100 === 0 ? 1 : 2;
     return `$${amount.toFixed(digits).replace(/\.0+$/, '')}k`;
   });
+  eleventyConfig.addFilter('money', (value) => `$${Number(value).toLocaleString('en-US')}`);
   eleventyConfig.addFilter('roundHours', (value) => Math.round(Number(value)));
   eleventyConfig.addFilter('displayDate', formatDisplayDates);
   eleventyConfig.addFilter('jsonForScript', (value) => JSON.stringify(value)

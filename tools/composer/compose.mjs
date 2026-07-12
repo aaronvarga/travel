@@ -117,7 +117,11 @@ for (const edge of edgeData.edges.filter((item) => item.enabled !== false).sort(
 }
 
 combos.sort((a, b) => a.slug.localeCompare(b.slug));
-const index = combos.map(({ slug, title, startId, partnerId, startName, partnerName, totalNights, budget, scorecard, transfer }) => ({ slug, title, startId, partnerId, startName, partnerName, totalNights, budget, score: scorecard.totalBaked, transferRisk: transfer.risk }));
+const index = combos.map(({ slug, title, startId, partnerId, startName, partnerName, totalNights, budget, scorecard, transfer, departDate, returnDate, heroImages }) => ({
+  slug, title, startId, partnerId, startName, partnerName, totalNights, budget,
+  score: scorecard.totalBaked, ptoDays: scorecard.pto.days, transferRisk: transfer.risk,
+  departDate, returnDate, heroImage: heroImages[0]?.src, heroAlt: heroImages[0]?.alt,
+}));
 const starts = [...new Map(index.map((item) => [item.startId, { id: item.startId, name: item.startName }])).values()];
 fs.writeFileSync(path.join(composerDir, 'combos.json'), `${JSON.stringify(combos, null, 2)}\n`);
 fs.writeFileSync(path.join(composerDir, 'combosIndex.json'), `${JSON.stringify(index, null, 2)}\n`);

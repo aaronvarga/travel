@@ -31,6 +31,18 @@ test('composed pages preserve the canonical itinerary section contract', () => {
   for (const id of required) assert.match(template, new RegExp(`id=\\"${id}\\"|id=\\'${id}\\'`));
   assert.match(template, /verification-empty/);
   assert.match(template, /verification-badge/);
-  assert.match(template, /class="preview"/);
+  assert.match(template, /class="preview composer-preview"/);
   assert.match(template, /class="site-nav"/);
+  assert.match(template, /composer-preview/);
+  assert.match(template, /score-axis-list/);
+  assert.doesNotMatch(template, /score-axis-grid/);
+});
+
+test('Trip Builder cards use the home-page card vocabulary and flagship images', () => {
+  const template = fs.readFileSync('src/builder-index.njk', 'utf8');
+  assert.match(template, /class="sl-card builder-card"/);
+  assert.match(template, /class="sl-photo"/);
+  assert.match(template, /item\.heroImage/);
+  assert.match(template, /item\.departDate \| displayDate/);
+  assert.match(template, /item\.budget\.floorUsd \/ 1000/);
 });
