@@ -6,7 +6,7 @@
  *   on demand as the user visits pages (no bulk pre-warming).
  * Cache names are versioned; bump VERSION on release to invalidate. */
 'use strict';
-const VERSION = 'tp-v10';
+const VERSION = 'tp-v11';
 const SHELL = VERSION + '-shell';
 const TILES = VERSION + '-tiles';
 const IMGS = VERSION + '-imgs';
@@ -17,6 +17,7 @@ const CORE = [
   'index.html',
   'assets/css/hub.css',
   'assets/css/itinerary.css?v=20260710-travel-frame-all',
+  'assets/css/composer-shell.css?v=20260712-parity',
   'assets/js/store.js',
   'assets/js/recommendation-engine.js',
   'assets/js/board.js',
@@ -30,6 +31,7 @@ const CORE = [
   'assets/js/urlstate.js',
   'assets/js/itinerary.js?v=20260710-gallery-full',
   'assets/js/builder.js?v=20260712-composer',
+  'assets/js/composer-shell.js?v=20260712-parity',
   'assets/trips-summary.json',
   'assets/rank-analysis.json',
   'assets/section-status.json',

@@ -40,7 +40,7 @@ test('date-formatting scripts bypass stale offline caches', () => {
     assert.match(hub, new RegExp(`${script.replace('.', '\\.')}\\?v=20260710-dates`));
     assert.match(serviceWorker, new RegExp(`${script.replace('.', '\\.')}\\?v=20260710-dates`));
   }
-  assert.match(serviceWorker, /const VERSION = 'tp-v10'/);
+  assert.match(serviceWorker, /const VERSION = 'tp-v11'/);
   assert.match(serviceWorker, /builder\.js\?v=20260712-composer/);
 });
 

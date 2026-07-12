@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { budgetScore, nightsScore, ptoDays, ptoScore } from '../composer/estimate-scorecard.mjs';
+import fs from 'node:fs';
 
 test('composer score rubrics preserve canonical thresholds', () => {
   assert.equal(nightsScore(13), 5);
@@ -20,4 +21,16 @@ test('committed combo timelines account for buffer nights exactly once', async (
     assert.equal(combo.calendarDays, combo.totalNights + 2);
     assert.equal(combo.itinerary.days.length, combo.calendarDays + 1);
   }
+});
+
+test('composed pages preserve the canonical itinerary section contract', () => {
+  const template = fs.readFileSync('src/builder.njk', 'utf8')
+    + fs.readFileSync('src/_includes/itinerary/composed-map.njk', 'utf8')
+    + fs.readFileSync('src/_includes/composer/sections.njk', 'utf8');
+  const required = ['overview', 'why-this-trip', 'kids-favorites', 'stays', 'calendar', 'itinerary', 'map', 'air-travel', 'getting-around', 'entry', 'health-check', 'timing', 'todo', 'budget', 'totals', 'tips', 'packing', 'social', 'balance', 'status', 'photo-guide', 'food-guide', 'recommendation-readiness', 'recommendation-evidence', 'variants'];
+  for (const id of required) assert.match(template, new RegExp(`id=\\"${id}\\"|id=\\'${id}\\'`));
+  assert.match(template, /verification-empty/);
+  assert.match(template, /verification-badge/);
+  assert.match(template, /class="preview"/);
+  assert.match(template, /class="site-nav"/);
 });

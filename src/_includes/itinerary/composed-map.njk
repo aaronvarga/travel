@@ -1,4 +1,4 @@
-<section class="composer-map" id="map">
-  <div class="section-label"><p class="eyebrow">Route map</p><h2>The composed route</h2><p>Destination and gateway points inherited from the source legs.</p></div>
-  <div class="composer-map-grid">{% for point in combo.mapPoints %}<a href="{{ point.g | safe }}" target="_blank" rel="noreferrer"><strong>{{ point.n | safe }}</strong><span>{{ point.r | safe }}</span></a>{% endfor %}</div>
+<section id="map" class="divider">
+  <div class="section-label"><p class="eyebrow">The Whole Trip, Mapped</p><h2>Every stop on one map <span class="verification-badge verified">Verified source</span></h2><p>Map points are inherited from reviewed source legs; transfer routing remains estimated.</p></div>
+  <div class="tripmap-wrap"><div class="mapbtns"><button data-region="all">Whole trip</button></div><div class="mapstage"><div id="tripmap"></div></div><div class="composer-map-grid">{% for point in combo.mapPoints %}<a href="{{ point.g | safe }}" target="_blank" rel="noreferrer"><strong>{{ point.n | safe }}</strong><span>{{ point.r | safe }}</span></a>{% endfor %}</div></div>
 </section>
