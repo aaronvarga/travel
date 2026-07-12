@@ -1,0 +1,31 @@
+<div class="flight-legend" aria-label="Flight desk scoring legend">
+  <span><b>Complexity</b> counts extra stops, buffers, cars, and repositioning.</span>
+  <span><b>Fragility</b> is 1–5: higher means more ways the handoff can fail.</span>
+  <span>Times are current planning proxies, not 2027 schedules.</span>
+</div>
+<div class="flight-table-wrap">
+  <table class="flight-table" id="mid-trip-flight-table">
+    <thead>
+      <tr>
+        <th scope="col">Mid-trip handoff</th>
+        <th scope="col">Used by</th>
+        <th scope="col"><button type="button" data-flight-sort="complexity" aria-label="Sort by complexity">Complexity <span aria-hidden="true">↑</span></button></th>
+        <th scope="col"><button type="button" data-flight-sort="time" aria-label="Sort by transfer time">Transfer time</button></th>
+        <th scope="col"><button type="button" data-flight-sort="risk" aria-label="Sort by fragility">Fragility</button></th>
+        <th scope="col">What has to go right</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for flight in midTripFlights %}
+        <tr data-complexity="{{ flight.complexity }}" data-time="{{ flight.timeValue }}" data-risk="{{ flight.risk }}">
+          <th scope="row"><strong>{{ flight.route }}</strong><span>{{ flight.transfer }}</span></th>
+          <td class="flight-trips">{% for trip in flight.trips %}<a href="{{ trip.href }}">{{ trip.label }}</a>{% endfor %}</td>
+          <td><span class="flight-meter meter-{{ flight.complexity }}" aria-label="Complexity {{ flight.complexity }} out of 5"><b>{{ flight.complexity }}</b><small>/5</small></span></td>
+          <td class="flight-time">{{ flight.transfer }}</td>
+          <td><span class="flight-meter risk-{{ flight.risk }}" aria-label="Fragility {{ flight.risk }} out of 5"><b>{{ flight.risk }}</b><small>/5</small></span></td>
+          <td class="flight-watch">{{ flight.watch }}</td>
+        </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
