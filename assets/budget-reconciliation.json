@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-13T17:11:32.471Z",
+  "generatedAt": "2026-07-13T19:17:37.096Z",
   "trips": [
     {
       "slug": "albania",
@@ -1258,6 +1258,65 @@
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
     },
     {
+      "slug": "short-acadia",
+      "canonical": {
+        "lowUsd": 6700,
+        "highUsd": 10200
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 6700,
+        "sumHighUsd": 10200,
+        "displayedLowUsd": 6700,
+        "displayedHighUsd": 10200,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights + bags/seats",
+          "text": "$800–$1,600",
+          "lowUsd": 800,
+          "highUsd": 1600
+        },
+        {
+          "label": "7 hotel nights",
+          "text": "$2,450–$3,850",
+          "lowUsd": 2450,
+          "highUsd": 3850
+        },
+        {
+          "label": "Rental car + fuel + tolls",
+          "text": "$650–$1,100",
+          "lowUsd": 650,
+          "highUsd": 1100
+        },
+        {
+          "label": "Food + groceries",
+          "text": "$1,200–$1,700",
+          "lowUsd": 1200,
+          "highUsd": 1700
+        },
+        {
+          "label": "Park + activities",
+          "text": "$300–$550",
+          "lowUsd": 300,
+          "highUsd": 550
+        },
+        {
+          "label": "Contingency",
+          "text": "$1,300–$1,400",
+          "lowUsd": 1300,
+          "highUsd": 1400
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
       "slug": "short-algarve",
       "canonical": {
         "lowUsd": 8400,
@@ -1312,6 +1371,71 @@
           "text": "$500–$800",
           "lowUsd": 500,
           "highUsd": 800
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-azores",
+      "canonical": {
+        "lowUsd": 6200,
+        "highUsd": 9800
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 7,
+        "sumLowUsd": 6200,
+        "sumHighUsd": 9800,
+        "displayedLowUsd": 6200,
+        "displayedHighUsd": 9800,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Line item",
+          "text": "Family of 4",
+          "lowUsd": 4,
+          "highUsd": 4
+        },
+        {
+          "label": "Flights: PIT–BOS–PDL for four",
+          "text": "$3,200–$5,000",
+          "lowUsd": 3200,
+          "highUsd": 5000
+        },
+        {
+          "label": "Seven-night Ponta Delgada apartment",
+          "text": "$1,050–$1,750",
+          "lowUsd": 1050,
+          "highUsd": 1750
+        },
+        {
+          "label": "Automatic car, fuel and parking",
+          "text": "$450–$800",
+          "lowUsd": 450,
+          "highUsd": 800
+        },
+        {
+          "label": "Food and groceries",
+          "text": "$750–$1,150",
+          "lowUsd": 750,
+          "highUsd": 1150
+        },
+        {
+          "label": "Thermal pools, whale option and entries",
+          "text": "$300–$500",
+          "lowUsd": 300,
+          "highUsd": 500
+        },
+        {
+          "label": "Insurance and contingency",
+          "text": "$450–$600",
+          "lowUsd": 450,
+          "highUsd": 600
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
@@ -1477,6 +1601,65 @@
           "text": "$500–$800",
           "lowUsd": 500,
           "highUsd": 800
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-puerto-rico",
+      "canonical": {
+        "lowUsd": 6200,
+        "highUsd": 9630
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 6200,
+        "sumHighUsd": 9600,
+        "displayedLowUsd": 6200,
+        "displayedHighUsd": 9630,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Air transportation",
+          "text": "$1,800–3,000",
+          "lowUsd": 1800,
+          "highUsd": 3000
+        },
+        {
+          "label": "Lodging",
+          "text": "$1,600–2,600",
+          "lowUsd": 1600,
+          "highUsd": 2600
+        },
+        {
+          "label": "Ground transportation",
+          "text": "$600–1,030",
+          "lowUsd": 600,
+          "highUsd": 1030
+        },
+        {
+          "label": "Food",
+          "text": "$900–1,250",
+          "lowUsd": 900,
+          "highUsd": 1250
+        },
+        {
+          "label": "Activities",
+          "text": "$700–1,100",
+          "lowUsd": 700,
+          "highUsd": 1100
+        },
+        {
+          "label": "Insurance + contingency",
+          "text": "$600–650",
+          "lowUsd": 600,
+          "highUsd": 650
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
