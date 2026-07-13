@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-azores",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "eyebrow": "The trip as planned",
+      "label": "7 nights on São Miguel",
+      "canonical": true,
+      "status": "documented",
+      "nights": 7,
+      "ptoDays": 5,
+      "budget": {
+        "lowUsd": 6200,
+        "expectedUsd": null,
+        "highUsd": 9800,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Seven nights in one Ponta Delgada base preserve two thermal days, two crater-weather opportunities and a coast/whale flex day.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "short-azores/main.json canonical dates, nights and totals"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Shortening the week removes the weather-flex day that makes the Azores practical."
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-puerto-rico",
+  "reviewedAt": "2026-07-13",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {"score": 5, "rationale": "The seven reconciled categories total $6,200–$9,630, below the shared $12,000 target. Exact June 2027 airfare, rooms and tours are not quoted, so the score remains medium-confidence.", "confidence": "medium", "evidence": ["budget-band"]},
+    "weather": {"score": 3, "rationale": "June is hot with warm water, but humidity, showers, thunderstorms and early Atlantic hurricane-season exposure require flexible days and refundable bookings.", "confidence": "high", "evidence": ["climate-proxy"]},
+    "swim": {"score": 5, "rationale": "Low-80s°F June water, five Luquillo nights, a pool requirement and an Icacos day create the strongest warm-swimming access in the short-trip set, conditional on live flags and storms.", "confidence": "high", "evidence": ["swim-conditions"]},
+    "variety": {"score": 4, "rationale": "The compact route combines a fortified colonial city, family beach, tropical rainforest, catamaran/reef day and genuine rest time without adding a third base.", "confidence": "high", "evidence": ["itinerary-structure"]},
+    "ease": {"score": 4, "rationale": "Domestic travel, one expected connection, one hotel move and short northeast-coast drives are unusually easy. The flight connection and five-day rental keep this below 5.", "confidence": "medium", "evidence": ["operational-load", "route-readiness"]},
+    "food": {"score": 4, "rationale": "San Juan and Luquillo both have pizza, burgers, chicken, fries, supermarkets and a five-night kitchen fallback; exact 2027 menus and hours require recheck.", "confidence": "medium", "evidence": ["family-food-coverage"]},
+    "risk": {"score": 3, "rationale": "The ground plan is simple, but tropical systems, rip currents, thunderstorms, forest closures and boat cancellations remain meaningful managed risks.", "confidence": "medium", "evidence": ["climate-proxy", "swim-conditions", "route-readiness"]},
+    "nights": {"score": 1, "rationale": "Seven hotel nights deliberately optimize ease and PTO, but the shared rubric gives trips of eight nights or fewer 1/5.", "confidence": "high", "evidence": ["trip-window"]},
+    "novelty": {"score": 5, "rationale": "Puerto Rico is absent from the family visited-place record, so the destination and tropical-city/rainforest combination are new.", "confidence": "high", "evidence": ["visited-overlap"]},
+    "pto": {"score": 5, "rationale": "Saturday-to-Saturday travel plus Juneteenth observed on Friday June 18 requires only four PTO weekdays.", "confidence": "high", "evidence": ["trip-window"]}
+  },
+  "facts": [
+    {
+      "id": "budget-band", "category": "budget", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["internal-itinerary"],
+      "value": {"lowUsd": 6200, "expectedUsd": null, "highUsd": 9630, "targetUsd": 12000, "preferredMaxUsd": 15000, "distribution": "planning-band", "lineItemCount": 7, "arithmetic": "1800/3000 + 500/800 + 1100/1800 + 600/1030 + 900/1250 + 700/1100 + 600/650 = 6200/9630"},
+      "verifiedAt": "2026-07-13", "expiresAt": "2026-10-31", "sourceLocators": {"internal-itinerary": "short-puerto-rico/main.json #budget and #totals; exact seven-line reconciliation"}, "claimType": "proxy"
+    },
+    {
+      "id": "trip-window", "category": "dates", "proxyStatus": "confirmed", "confidence": "high", "sourceRefs": ["decision-profile"],
+      "value": {"depart": "2027-06-12", "return": "2027-06-19", "hotelNights": 7, "ptoDays": 4, "holiday": "Juneteenth observed Friday 2027-06-18", "pittsburghFullDaysProtected": ["2027-06-24", "2027-06-25", "2027-06-26"]},
+      "verifiedAt": "2026-07-13", "expiresAt": null, "sourceLocators": {"decision-profile": "Required addition: decisionProfile.json tripWindows.short-puerto-rico; depart and return are both daytime domestic travel days with seven intervening hotel nights"}, "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy", "category": "climate", "proxyStatus": "current-proxy", "confidence": "high", "sourceRefs": ["nws-san-juan-climate", "noaa-climate"],
+      "value": {"score": 3, "juneDaytimeF": [87, 90], "juneNightF": [76, 80], "forecast": false, "hurricaneSeason": true, "planningRule": "Hot/humid tropical normal; daily thunder, heat and tropical-weather checks required"},
+      "verifiedAt": "2026-07-13", "expiresAt": "2027-05-15", "sourceLocators": {"nws-san-juan-climate": "NWS San Juan climate pages and June reviews: June is hot; tropical waves and variable rainfall remain possible", "noaa-climate": "Atlantic hurricane season includes June; a planning-season fact, not a 2027 storm forecast"}, "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions", "category": "swim", "proxyStatus": "current-proxy", "confidence": "high", "sourceRefs": ["noaa-oisst", "discover-pr-family-beaches"],
+      "value": {"score": 5, "temperatureF": [81, 83], "hasSwim": true, "primaryBeach": "Balneario La Monserrate", "poolRequired": true, "safetyConstraint": "Live flags, NWS rip-current/thunder guidance and staffed/operator decisions control every swim"},
+      "verifiedAt": "2026-07-13", "expiresAt": "2027-05-15", "sourceLocators": {"noaa-oisst": "Historical June northeast Puerto Rico sea-surface planning range; not a 2027 forecast", "discover-pr-family-beaches": "Discover Puerto Rico family-beach guide identifies La Monserrate as shallow, family-oriented water with facilities"}, "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure", "category": "itinerary", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["internal-itinerary"],
+      "value": {"score": 4, "hotelNights": 7, "baseNames": ["San Juan", "Luquillo"], "nightSplit": [2, 5], "scheduledModes": ["fortified colonial city", "warm family beach", "tropical rainforest", "catamaran and reef", "rest and pool"]},
+      "verifiedAt": "2026-07-13", "expiresAt": null, "sourceLocators": {"internal-itinerary": "short-puerto-rico/main.json days 1–8, stays and balance sections"}, "claimType": "derived"
+    },
+    {
+      "id": "operational-load", "category": "logistics", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["internal-itinerary"],
+      "value": {"easeScore": 4, "maxConnections": 1, "singleTicket": true, "lodgingSleeps": 2, "baseMoves": 1, "internalFlights": 0, "ferrySegments": 0, "rentalCars": 1, "rentalDays": 5, "airHours": 12, "groundHours": 5.5},
+      "verifiedAt": "2026-07-13", "expiresAt": "2027-02-01", "sourceLocators": {"internal-itinerary": "main.json #air-travel, #getting-around and itinerary: no city car, one coast car, one base move"}, "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage", "category": "food", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["discover-pr-luquillo", "internal-itinerary"],
+      "value": {"score": 4, "plainFoodRequired": true, "coveredSleeps": ["San Juan", "Luquillo"], "fallbackTypes": ["pizza", "burgers", "grilled chicken", "fries", "supermarket", "apartment kitchen"]},
+      "verifiedAt": "2026-07-13", "expiresAt": "2027-04-01", "sourceLocators": {"discover-pr-luquillo": "Official Luquillo destination page documents the kiosk concentration beside the beaches", "internal-itinerary": "main.json restaurant lists for every structured stop"}, "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness", "category": "route", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["internal-itinerary"],
+      "value": {"status": "current-proxy", "singleTicket": true, "maxConnections": 1, "preferredConnections": 1, "june2027ProtectedTicketVerified": false, "routeRule": "PIT–US hub–SJU on one protected domestic round trip; no PIT–SJU nonstop assumed", "observedRoundTripPerTravelerUsd": null},
+      "verifiedAt": "2026-07-13", "expiresAt": "2026-10-31", "sourceLocators": {"internal-itinerary": "Current route search supports one-stop options; no exact June 12–19, 2027 family quote or nonstop is represented as confirmed"}, "claimType": "proxy"
+    },
+    {
+      "id": "el-yunque-access", "category": "reservation", "proxyStatus": "current-proxy", "confidence": "high", "sourceRefs": ["usfs-el-portal", "usfs-el-yunque-status"],
+      "value": {"visitorCenter": "El Portal", "hoursObserved": "8:00–16:00", "feeAdultOver16Usd": 8, "children15AndUnderUsd": 0, "reservationObserved": false, "liveStatusRequired": true},
+      "verifiedAt": "2026-07-13", "expiresAt": "2027-04-01", "sourceLocators": {"usfs-el-portal": "USFS El Portal page: daily 8–4 with listed holiday closures, $8 over age 16, children 15 and under free, no reservation for the facility", "usfs-el-yunque-status": "USFS recreation page: Road 988/Luquillo entrance currently does not require reservation; live road/trail status still controls"}, "claimType": "proxy"
+    },
+    {
+      "id": "san-juan-fort-fee", "category": "reservation", "proxyStatus": "current-proxy", "confidence": "high", "sourceRefs": ["nps-san-juan-fees", "nps-san-juan-hours"],
+      "value": {"adult16PlusUsd": 10, "child15UnderUsd": 0, "validHours": 24, "covers": ["El Morro", "San Cristóbal"], "hoursObserved": "9:00–17:00"},
+      "verifiedAt": "2026-07-13", "expiresAt": "2027-04-01", "sourceLocators": {"nps-san-juan-fees": "NPS fees page: $10 per visitor over 16, age 15 and under free, valid 24 hours for both forts", "nps-san-juan-hours": "NPS operating-hours page: forts currently open daily 9–5 except listed holidays"}, "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap", "category": "novelty", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "value": {"score": 5, "overlap": []}, "verifiedAt": "2026-07-13", "expiresAt": null, "sourceLocators": {"decision-profile": "Family visited-place history; Puerto Rico absent", "scorecard-contract": "scorecard.manifest.json novelty rubric"}, "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 12, "groundHours": 5.5, "timeZones": 0, "baseMoves": 1, "longestTransferHours": 1.25, "highOutputDayStreak": 2, "fallbackDays": 3,
+    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "lodgingComfort": {"airConditioning": "required", "kitchen": "required in Luquillo", "laundry": "required in Luquillo", "realBeds": "required", "pool": "required in Luquillo"},
+    "waterSafety": "Prefer La Monserrate when staffed/appropriate; obey flags and NWS rip/thunder guidance; boat operators and live conditions control Icacos.",
+    "crowdingPressure": "Old San Juan and El Yunque favor early starts; Luquillo provides flexible repeats.",
+    "medicalAccess": "San Juan has strongest access; Luquillo/Fajardo remain within the northeast metro corridor, while Icacos is remote and operator-dependent.",
+    "childActivityNotes": {"age13": "strong fit for fort, catamaran, rainforest and warm water", "age8": "short forest walk, beach repetition and optional rather than mandatory bio-bay night"}
+  },
+  "evidenceBasis": "Primary NPS, USFS, State Department, TSA, NWS/NOAA and official destination sources plus deterministic itinerary structure; volatile commercial prices remain planning allowances.",
+  "confidenceBasis": ["route shape, date arithmetic, domestic entry and federal-site rules are high-confidence", "exact June 2027 air, lodging, rental and tour quotes remain open", "tropical weather and ocean conditions require same-day decisions"]
+}

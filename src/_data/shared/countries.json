@@ -38,7 +38,7 @@
     ]
   },
   "portugal": {
-    "name": "Portugal (incl. Madeira)",
+    "name": "Portugal (incl. Madeira and the Azores)",
     "domestic": false,
     "passportRule": "Valid ≥3 months beyond your planned EU departure, and issued within the last 10 years.",
     "etias": {
@@ -376,7 +376,7 @@
     ]
   },
   "usa": {
-    "name": "USA (Hawaii)",
+    "name": "United States",
     "domestic": true,
     "passportRule": "N/A — domestic. A valid government photo ID (REAL ID) is required to fly; passports optional.",
     "etias": {
@@ -386,15 +386,15 @@
     },
     "visa": "N/A — domestic.",
     "idp": "N/A — US license valid in all states.",
-    "driving": "US rentals default to automatic. Min age typically 21 (varies by company/state).",
-    "tolls": "Minimal on the islands; rental toll programs charge any tolls to the card on file.",
+    "driving": "US rentals default to automatic. Minimum age is typically 21, with rules and young-driver fees varying by company and location.",
+    "tolls": "Tolls vary by state and territory; confirm the rental company's transponder and toll-handling fees before pickup.",
     "ztl": "",
     "money": {
       "cards": "Cards accepted everywhere.",
       "cash": "Not essential.",
       "tipping": "Standard US: 15–20% restaurants, 10% bars."
     },
-    "water": "Tap water safe throughout Hawaii (EPA standards).",
+    "water": "Municipal tap water generally meets federal or territorial standards; check current local advisories before travel.",
     "emergency": "911.",
     "esim": "Not needed — use your normal US cell plan.",
     "sources": [

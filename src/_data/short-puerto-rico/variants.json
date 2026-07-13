@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-puerto-rico",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "eyebrow": "The trip as planned",
+      "label": "San Juan 2 + Luquillo 5",
+      "canonical": true,
+      "status": "documented",
+      "nights": 7,
+      "ptoDays": 4,
+      "budget": {
+        "lowUsd": 6200,
+        "expectedUsd": null,
+        "highUsd": 9630,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Two San Juan nights protect a real city-and-fort day; five Luquillo nights provide warm-water repeats, El Yunque, one Icacos excursion and two weather-flex days with only one hotel move.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {"internal-itinerary": "short-puerto-rico/main.json dates, 2+5 night split, four PTO days and reconciled family total"}
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "A shorter version would either reduce San Juan to a rushed arrival night or remove Luquillo's weather buffer, undermining the easy-travel brief."
+}

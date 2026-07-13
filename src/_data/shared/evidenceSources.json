@@ -1589,6 +1589,132 @@
     "publisher": "Turismo de Portugal",
     "scope": "Official destination overview supporting Meia Praia, Ponta da Piedade, boat access and the compact Lagos coast; not a live sea-state source."
   },
+  "flypittsburgh-pwm": {
+    "label": "Pittsburgh International Airport: Portland, Maine service",
+    "tier": "official",
+    "url": "https://flypittsburgh.com/pittsburgh-international-airport/flights/destinations/",
+    "publisher": "Pittsburgh International Airport",
+    "scope": "Current seasonal PIT–PWM service listing; exact June 2027 operating dates and fares still require verification."
+  },
+  "nws-bangor-climate": {
+    "label": "National Weather Service Bangor climate reports",
+    "tier": "official",
+    "url": "https://marine.weather.gov/product.php?issuedby=BGR&product=CLM",
+    "publisher": "National Weather Service",
+    "scope": "Official current and historical climate reporting for coastal Maine; not a trip-date forecast."
+  },
+  "nws-bar-harbor-water": {
+    "label": "National Weather Service near-shore water temperature normals",
+    "tier": "official",
+    "url": "https://www.weather.gov/gyx/water_temperature_normals.html",
+    "publisher": "National Weather Service Gray/Portland",
+    "scope": "Monthly near-shore water-temperature normals including Bar Harbor; not a live beach-condition report."
+  },
+  "nps-jordan-pond": {
+    "label": "National Park Service: Jordan Pond",
+    "tier": "official",
+    "url": "https://www.nps.gov/places/jordan-pond.htm",
+    "publisher": "National Park Service",
+    "scope": "Official access, trail and public-water-supply guidance for Jordan Pond."
+  },
+  "nps-acadia-hours": {
+    "label": "National Park Service: Acadia hours and seasons",
+    "tier": "official",
+    "url": "https://www.nps.gov/acad/planyourvisit/hours.htm",
+    "publisher": "National Park Service",
+    "scope": "Current Acadia operating seasons and facility status; recheck for June 2027."
+  },
+  "nps-island-explorer": {
+    "label": "National Park Service: Island Explorer",
+    "tier": "official",
+    "url": "https://www.nps.gov/acad/planyourvisit/island-explorer.htm",
+    "publisher": "National Park Service",
+    "scope": "Current fare-free shuttle overview; exact 2027 routes and start date require verification."
+  },
+  "visit-bar-harbor-food": {
+    "label": "Visit Bar Harbor dining directory",
+    "tier": "official",
+    "url": "https://www.visitbarharbor.com/eat",
+    "publisher": "Bar Harbor Chamber of Commerce",
+    "scope": "Destination dining directory used to verify the range of family-meal options in the base."
+  },
+  "nps-acadia-cadillac": {
+    "label": "National Park Service: Cadillac Summit Road reservations",
+    "tier": "official",
+    "url": "https://www.nps.gov/acad/planyourvisit/vehicle_reservations.htm",
+    "publisher": "National Park Service",
+    "scope": "Current vehicle-reservation rules and fees; exact 2027 windows and prices require verification."
+  },
+  "nws-san-juan-climate": {
+    "label": "National Weather Service San Juan climate normals",
+    "tier": "official",
+    "url": "https://www.weather.gov/sju/climo_main",
+    "publisher": "National Weather Service San Juan",
+    "scope": "Official climate observations and normals for Puerto Rico; not a June 2027 forecast."
+  },
+  "discover-pr-family-beaches": {
+    "label": "Discover Puerto Rico: best beaches for families",
+    "tier": "official",
+    "url": "https://www.discoverpuertorico.com/article/best-beaches-families",
+    "publisher": "Discover Puerto Rico",
+    "scope": "Official destination guidance on family-oriented beach choices; same-day surf and lifeguard conditions still control swimming."
+  },
+  "discover-pr-luquillo": {
+    "label": "Discover Puerto Rico: Luquillo",
+    "tier": "official",
+    "url": "https://www.discoverpuertorico.com/regions/east/luquillo",
+    "publisher": "Discover Puerto Rico",
+    "scope": "Official destination overview supporting Luquillo as the east-coast base for beach and rainforest access."
+  },
+  "usfs-el-portal": {
+    "label": "U.S. Forest Service: El Portal visitor center",
+    "tier": "official",
+    "url": "https://www.fs.usda.gov/r08/elyunque/recreation/el-portal-de-el-yunque-visitor-center",
+    "publisher": "U.S. Forest Service",
+    "scope": "Official visitor-center access and current recreation information; recheck hours and reservations for 2027."
+  },
+  "usfs-el-yunque-status": {
+    "label": "U.S. Forest Service: El Yunque recreation status",
+    "tier": "official",
+    "url": "https://www.fs.usda.gov/recarea/elyunque/recarea/?recid=82983",
+    "publisher": "U.S. Forest Service",
+    "scope": "Official current-area status and alerts; verify trail and road conditions immediately before visiting."
+  },
+  "nps-san-juan-fees": {
+    "label": "National Park Service: San Juan National Historic Site fees",
+    "tier": "official",
+    "url": "https://www.nps.gov/saju/planyourvisit/fees.htm",
+    "publisher": "National Park Service",
+    "scope": "Current entrance-fee guidance for San Juan National Historic Site; recheck for 2027."
+  },
+  "nps-san-juan-hours": {
+    "label": "National Park Service: San Juan National Historic Site hours",
+    "tier": "official",
+    "url": "https://www.nps.gov/saju/planyourvisit/hours.htm",
+    "publisher": "National Park Service",
+    "scope": "Current operating hours and closures; recheck for the exact 2027 visit date."
+  },
+  "azores-airlines-bos-pdl": {
+    "label": "Azores Airlines: flights to the Azores",
+    "tier": "operator",
+    "url": "https://www.azoresairlines.pt/en/destinations/flights-to-azores",
+    "publisher": "Azores Airlines",
+    "scope": "Current Boston–Ponta Delgada frequency pattern lists daily June–September service; exact June 2027 schedules and ticket protection require verification."
+  },
+  "azores-parks-official": {
+    "label": "São Miguel Nature Park",
+    "tier": "official",
+    "url": "https://parquesnaturais.azores.gov.pt/en/parques/9",
+    "publisher": "Government of the Azores",
+    "scope": "Official protected-area, visitor-center and trail guidance for São Miguel; live access, thermal rules and reservations require rechecking."
+  },
+  "azores-climate-official": {
+    "label": "IPMA climate normals",
+    "tier": "official",
+    "url": "https://www.ipma.pt/en/oclima/normais.clima/",
+    "publisher": "Portuguese Institute for Sea and Atmosphere",
+    "scope": "Ponta Delgada June historical climate normal used as a planning proxy, not a trip-date forecast."
+  },
   "google-flights-pit-lis": {
     "label": "Google Flights Pittsburgh–Lisbon fare and routing snapshot",
     "tier": "observed-quote",

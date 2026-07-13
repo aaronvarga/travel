@@ -110,6 +110,18 @@ module.exports = {
     path: 'assets/img/short-madeira/google_peaks_clouds_02.jpg',
     alt: 'Pico do Areeiro’s sunlit ridge rising above Madeira’s sea of clouds',
   },
+  'short-acadia': {
+    path: 'assets/img/short-acadia/google_frenchman_bay_sunrise_04.jpg',
+    alt: 'Fiery sunrise above Acadia’s island-dotted Frenchman Bay',
+  },
+  'short-puerto-rico': {
+    path: 'assets/img/short-puerto-rico/google_luquillo_08.jpg',
+    alt: 'Luquillo’s tropical shoreline beneath a dramatic painted sky',
+  },
+  'short-azores': {
+    path: 'assets/img/short-azores/google_sete_05.jpg',
+    alt: 'São Miguel’s green volcanic calderas and jewel-like lakes seen from above',
+  },
   'portugal-algarve-sicily': {
     path: 'assets/img/portugal-algarve-sicily/img-d24952d35c93.jpg',
     alt: 'Isola Bella glowing at twilight below Taormina’s Sicilian coast',

@@ -1,0 +1,350 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-azores",
+  "reviewedAt": "2026-07-13",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 5,
+      "rationale": "The $6,200–$9,800 planning band stays below the family targets, but exact June 2027 air and lodging quotes are not yet loaded.",
+      "confidence": "medium",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 3,
+      "rationale": "June is mild, but fast cloud, wind and rain changes make daily order flexibility essential.",
+      "confidence": "medium",
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "swim": {
+      "score": 4,
+      "rationale": "Warm managed thermal pools are a core experience; June Atlantic water remains cool and ocean entries are optional.",
+      "confidence": "high",
+      "evidence": [
+        "swim-conditions"
+      ]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "Crater lakes, thermal gardens, waterfalls, tea, coast, town and optional whale watching fit one island.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "ease": {
+      "score": 4,
+      "rationale": "One apartment and one rental car avoid base moves; the BOS positioning/PDL ticket structure prevents a perfect score.",
+      "confidence": "high",
+      "evidence": [
+        "operational-load"
+      ]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Ponta Delgada apartment cooking plus pizza, burgers, grilled chicken and bakery fallbacks cover picky eaters.",
+      "confidence": "medium",
+      "evidence": [
+        "food-coverage"
+      ]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "Weather and separate-ticket exposure are material; a protected through-ticket or long BOS buffer is mandatory.",
+      "confidence": "medium",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Exactly seven hotel nights intentionally earns the short-trip 1/5 length score.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "São Miguel is new to the family’s recorded travel history.",
+      "confidence": "high",
+      "evidence": [
+        "visited-overlap"
+      ]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "Friday-to-Saturday timing around observed Juneteenth requires five vacation days.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "lowUsd": 6200,
+        "highUsd": 9800,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "3200/5000 + 1050/1750 + 450/800 + 750/1150 + 300/500 + 450/600 = 6200/9800"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-azores/main.json #budget and #totals planning band"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "value": {
+        "depart": "2027-06-11",
+        "return": "2027-06-19",
+        "hotelNights": 7,
+        "ptoDays": 5,
+        "holiday": "Juneteenth observed Friday 2027-06-18"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Required decisionProfile addition: tripWindows.short-azores"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "azores-climate-official"
+      ],
+      "value": {
+        "juneAirF": [
+          61,
+          72
+        ],
+        "forecast": false,
+        "rapidChanges": true
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "azores-climate-official": "IPMA/Azores historical Ponta Delgada June climate normal; add to shared evidenceSources"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "noaa-oisst",
+        "azores-parks-official"
+      ],
+      "value": {
+        "score": 4,
+        "temperatureF": [
+          64,
+          67
+        ],
+        "thermalPools": [
+          "Terra Nostra",
+          "Poça da Dona Beija",
+          "Caldeira Velha"
+        ],
+        "heatedTemperatureF": [
+          95,
+          104
+        ],
+        "swimType": "geothermal",
+        "hasSwim": true
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "noaa-oisst": "Historical June coastal SST planning range around São Miguel; not a 2027 forecast",
+        "azores-parks-official": "Official São Miguel Nature Park and operator pool pages; opening and reservations require recheck"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "hotelNights": 7,
+        "baseNames": [
+          "Ponta Delgada"
+        ],
+        "nightSplit": [
+          7
+        ],
+        "scheduledModes": [
+          "city",
+          "crater lakes",
+          "thermal pools",
+          "waterfalls",
+          "tea plantation",
+          "coast",
+          "optional whale watching"
+        ]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-azores/main.json itinerary and calendar"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "easeScore": 4,
+        "baseMoves": 0,
+        "rentalCars": 1,
+        "internalFlights": 0,
+        "lodgingSleeps": 1,
+        "maxConnections": 1,
+        "singleTicket": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "One Ponta Delgada base and one rental car"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "fallbackTypes": [
+          "pizza",
+          "burgers",
+          "grilled chicken",
+          "fries",
+          "apartment kitchen",
+          "packed lunch"
+        ]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "Restaurants and apartment fallbacks in main.json"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "medium",
+      "sourceRefs": [
+        "azores-airlines-bos-pdl",
+        "internal-itinerary"
+      ],
+      "value": {
+        "status": "exact-2027-schedule-required",
+        "routeRule": "Prefer a protected PIT–BOS–PDL itinerary; if tickets are separate, overnight in Boston each direction or reject",
+        "june2027Verified": false,
+        "currentPattern": "Azores Airlines currently advertises daily June Boston–Ponta Delgada service",
+        "maxConnections": 1,
+        "singleTicket": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "azores-airlines-bos-pdl": "Official Azores Airlines Flights to Azores page, Boston <> Ponta Delgada: June through September all days; exact June 2027 inventory not yet confirmed",
+        "internal-itinerary": "main.json air-travel rules"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Family visited-place history; São Miguel/Azores absent",
+        "scorecard-contract": "tools/scorecard.manifest.json visitedPlaces list and novelty rubric; São Miguel/Azores absent"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 11,
+    "groundHours": 13,
+    "timeZones": 1,
+    "baseMoves": 0,
+    "longestTransferHours": 8,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 3,
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "lodgingComfort": {
+      "kitchen": "required",
+      "laundry": "preferred",
+      "realBeds": "required"
+    },
+    "waterSafety": "Use staffed thermal pools; ocean swimming only with safe flags and conditions.",
+    "crowdingPressure": "Reserve thermal pools and whale trips; reach crater viewpoints early.",
+    "medicalAccess": "Ponta Delgada is the strongest medical base; remote calderas require conservative plans."
+  },
+  "evidenceBasis": "Current official/operator route, park, trail and thermal information plus derived one-base structure.",
+  "confidenceBasis": [
+    "dates and one-base structure are high confidence",
+    "exact 2027 flights and prices remain open",
+    "June climate is a historical planning proxy"
+  ]
+}

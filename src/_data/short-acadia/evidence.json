@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-acadia",
+  "reviewedAt": "2026-07-13",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 5,
+      "rationale": "The six-category family estimate reconciles exactly to $6,700–$10,200, below the shared $12,000 target; confidence is medium until exact 2027 air, room and car quotes exist.",
+      "confidence": "medium",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 3,
+      "rationale": "June is mild enough for hiking but coastal fog, rain and exposed-summit wind can erase views. A free reset day protects the route without making weather dependable.",
+      "confidence": "medium",
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "swim": {
+      "score": 1,
+      "rationale": "The official June Bar Harbor near-shore normal is about 55°F, Jordan Pond does not allow swimming and Echo Lake is only an optional freshwater fallback. This is not a swim trip.",
+      "confidence": "high",
+      "evidence": [
+        "swim-conditions"
+      ]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "The week combines granite coast, summit, ponds, carriage roads, Bar Harbor and the quiet side from one compact region, with materially distinct experiences despite one base.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "ease": {
+      "score": 4,
+      "rationale": "One room, one rental car, no passport and short local loops are strong. The roughly three-hour Portland transfer in each direction prevents a perfect ease score.",
+      "confidence": "high",
+      "evidence": [
+        "operational-load"
+      ]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Bar Harbor has named pizza, pasta, burger and grocery fallbacks every night, and a breakfast/kitchenette room can protect mornings. Exact 2027 hours remain a recheck.",
+      "confidence": "medium",
+      "evidence": [
+        "family-food-coverage"
+      ]
+    },
+    "risk": {
+      "score": 4,
+      "rationale": "Domestic travel, one base and condition-flexible days remove most failure points. The exact 2027 seasonal nonstop and Cadillac booking remain explicit gates, with protected-connection and non-summit fallbacks.",
+      "confidence": "medium",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Seven hotel nights derive 1/5 under the shared rubric for trips of eight nights or fewer.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "Acadia, Bar Harbor and Mount Desert Island do not overlap the documented visited-place list.",
+      "confidence": "high",
+      "evidence": [
+        "visited-overlap"
+      ]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "Four PTO days receive 5/5; Juneteenth observed on Friday June 18 protects a workday subject to employer policy.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "lowUsd": 6700,
+        "expectedUsd": null,
+        "highUsd": 10200,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "800–1600 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 6700–10200"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-acadia/main.json #budget and #totals; six itemized categories reconcile to the displayed total"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "value": {
+        "depart": "2027-06-12",
+        "return": "2027-06-19",
+        "hotelNights": 7,
+        "ptoDays": 4,
+        "juneteenthObserved": "2027-06-18"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Add decisionProfile.json tripWindows.short-acadia [2027-06-12, 2027-06-19]; dates avoid the Jun 24–26 Pittsburgh constraint"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "nws-bangor-climate"
+      ],
+      "value": {
+        "score": 3,
+        "juneMeanDailyLowHighF": [
+          53,
+          75
+        ],
+        "forecast": false,
+        "weatherRisks": [
+          "rain",
+          "fog",
+          "summit wind"
+        ]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "nws-bangor-climate": "NWS 1991–2020 Bangor June normals used as the nearest official inland proxy; coastal Bar Harbor can be cooler and foggier"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "nws-bar-harbor-water",
+        "nps-jordan-pond"
+      ],
+      "value": {
+        "score": 1,
+        "temperatureF": [
+          55,
+          65
+        ],
+        "nearShoreJuneNormalF": 55,
+        "hasSwim": false,
+        "scheduledSwimDays": 0,
+        "primarySwim": "optional Echo Lake fallback only; not Jordan Pond or dependable ocean swimming"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "nws-bar-harbor-water": "Official Near Shore Water Temperature Normals table lists Bar Harbor June at 55°F",
+        "nps-jordan-pond": "Official NPS place guidance identifies Jordan Pond as a public water supply where swimming is prohibited"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "nps-acadia-hours"
+      ],
+      "value": {
+        "score": 4,
+        "hotelNights": 7,
+        "lodgingBases": 1,
+        "baseNames": [
+          "Bar Harbor"
+        ],
+        "scheduledModes": [
+          "coast",
+          "mountain",
+          "pond/forest",
+          "town",
+          "quiet-side villages"
+        ]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-acadia/main.json itinerary.days and #stays; all seven nights remain in Bar Harbor",
+        "nps-acadia-hours": "Official NPS seasonal operations page supports the park roads, visitor facilities, beaches and Jordan Pond House used in the route"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "nps-island-explorer"
+      ],
+      "value": {
+        "easeScore": 4,
+        "maxConnections": 0,
+        "singleTicket": true,
+        "lodgingBases": 1,
+        "baseMoves": 0,
+        "rentalCars": 1,
+        "longestTransferHours": 3.25,
+        "airHoursPlanningEstimate": 4,
+        "groundHoursPlanningEstimate": 11
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-acadia/main.json day0/day7 Portland transfer, one Bar Harbor base and compact local loops",
+        "nps-island-explorer": "Official NPS page describes fare-free service to towns and many park trailheads, excluding Cadillac summit"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "visit-bar-harbor-food"
+      ],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true,
+        "coveredBases": [
+          "Bar Harbor"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "fries",
+          "groceries"
+        ],
+        "lodgingKitchenConfirmed": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-acadia/main.json three structured spots name current Bar Harbor pizza and burger fallbacks",
+        "visit-bar-harbor-food": "Official chamber dining directory supports broad current restaurant coverage; exact menus and hours require a 2027 recheck"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "flypittsburgh-pwm",
+        "internal-itinerary",
+        "nps-acadia-cadillac"
+      ],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 0,
+        "outbound": "PIT–PWM seasonal nonstop preferred; one protected connection fallback",
+        "return": "PWM–PIT seasonal nonstop preferred; one protected connection fallback",
+        "exact2027FlightsVerified": false,
+        "cadillac2027RulesVerified": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "flypittsburgh-pwm": "Official Pittsburgh destinations page reviewed for current seasonal Portland service; exact June 2027 dates are not confirmed",
+        "internal-itinerary": "short-acadia/main.json #air-travel clearly marks the nonstop and prices as proxies",
+        "nps-acadia-cadillac": "Official 2026 NPS reservation page: $6, online-only, 30% at 90 days and 70% at two days; recheck 2027"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Family visited-place list does not include Acadia, Bar Harbor or Mount Desert Island",
+        "scorecard-contract": "tools/scorecard.manifest.json novelty rubric gives 5/5 for no overlap"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 4,
+    "groundHours": 11,
+    "timeZones": 0,
+    "baseMoves": 0,
+    "longestTransferHours": 3.25,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 4,
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "lodgingComfort": {
+      "airConditioning": "preferred but not essential in June",
+      "kitchen": "preferred but unknown until property selection",
+      "laundry": "preferred for seven nights",
+      "realBeds": "required but unknown until property selection"
+    },
+    "waterSafety": "June ocean water is cold; Jordan Pond swimming is prohibited; use staffed Echo Lake conditions or a lodging pool only.",
+    "crowdingPressure": "Cadillac, Jordan Pond, Sand Beach and Ocean Path are crowd-sensitive; timed entry, early starts and Island Explorer use protect the week.",
+    "medicalAccess": "Bar Harbor has local access; major hospital care is farther away and family medical profile remains incomplete.",
+    "childActivityNotes": {
+      "age13": "summit, coast, bikes and optional cruise offer distinct modes",
+      "age8": "shortened walks, tide pools, popovers and one room protect energy"
+    }
+  },
+  "confidenceBasis": [
+    "official NPS fee, reservation, seasonal-operations and shuttle guidance",
+    "official NWS Bar Harbor water-temperature normal",
+    "one-base itinerary derivation",
+    "current seasonal route evidence but no exact June 2027 schedule or quotes"
+  ],
+  "evidenceBasis": "Official federal park and weather sources, official airport route evidence, current local operator/destination material and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and reservation rules remain proxies."
+}

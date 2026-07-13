@@ -12,13 +12,16 @@ test('short escapes stay compact, budget-first, and outside the long-trip rankin
   const summary = JSON.parse(fs.readFileSync(path.join(root, 'assets/trips-summary.json'), 'utf8'));
 
   assert.deepEqual(shortTrips.map((trip) => trip.slug), [
+    'short-puerto-rico',
     'short-algarve',
     'short-portugal',
+    'short-azores',
     'short-madeira',
+    'short-acadia',
     'short-iceland',
   ]);
-  assert.deepEqual(shortTrips.map((trip) => trip.shortScore), [42, 41, 40, 38]);
-  assert.deepEqual(shortTrips.map((trip) => trip.shortRank), [1, 2, 3, 4]);
+  assert.deepEqual(shortTrips.map((trip) => trip.shortScore), [42, 42, 41, 41, 40, 39, 38]);
+  assert.deepEqual(shortTrips.map((trip) => trip.shortRank), [1, 2, 3, 4, 5, 6, 7]);
   for (const trip of shortTrips) {
     const main = JSON.parse(fs.readFileSync(path.join(root, 'src/_data', trip.slug, 'main.json'), 'utf8'));
     assert.equal(main.tripCategory, 'short');
@@ -35,18 +38,18 @@ test('the short-escape band appears before the comparison shortlist', () => {
 });
 
 test('every short escape uses one continuous hourly calendar', () => {
-  for (const slug of ['short-algarve', 'short-portugal', 'short-madeira', 'short-iceland']) {
+  for (const { slug } of require('../../src/_data/shortTrips.js')()) {
     const main = JSON.parse(fs.readFileSync(path.join(root, 'src/_data', slug, 'main.json'), 'utf8'));
     const calendar = main.parts[0].html.match(/<section id="calendar"[\s\S]*?<\/section>/)?.[0] || '';
     assert.equal((calendar.match(/class="cal-week"/g) || []).length, 1, `${slug} must have one strip`);
-    assert.equal((calendar.match(/class="dh trip"/g) || []).length, 9, `${slug} must show all nine travel days`);
+    assert.equal((calendar.match(/class="dh trip"/g) || []).length, main.itinerary.days.length, `${slug} must show every travel day`);
     assert.equal((calendar.match(/class="tl"/g) || []).length, 9, `${slug} must show the 6a–10p hour gutter`);
     assert.doesNotMatch(calendar, /short-cal-|cc-/, `${slug} still contains a legacy short calendar`);
   }
 });
 
 test('every short escape carousel contains exactly ten photos', () => {
-  for (const slug of ['short-algarve', 'short-portugal', 'short-madeira', 'short-iceland']) {
+  for (const { slug } of require('../../src/_data/shortTrips.js')()) {
     const main = JSON.parse(fs.readFileSync(path.join(root, 'src/_data', slug, 'main.json'), 'utf8'));
     const hero = main.parts[0].html.match(/<div class="carousel pvcar"[\s\S]*?<\/section>/)?.[0] || '';
     assert.equal((hero.match(/<figure>/g) || []).length, 10, `${slug} hero must have ten photos`);

@@ -11,9 +11,17 @@ test('all comparison and short trips have evidence and canonical variants', () =
   const slugs = fs.readdirSync(dataDir, { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && fs.existsSync(path.join(dataDir, entry.name, 'main.json')))
     .map((entry) => entry.name);
-  assert.equal(slugs.length, 34);
+  assert.equal(slugs.length, 37);
   const shortSlugs = slugs.filter((slug) => read(slug, 'main.json').tripCategory === 'short');
-  assert.deepEqual(shortSlugs.sort(), ['short-algarve', 'short-iceland', 'short-madeira', 'short-portugal']);
+  assert.deepEqual(shortSlugs.sort(), [
+    'short-acadia',
+    'short-algarve',
+    'short-azores',
+    'short-iceland',
+    'short-madeira',
+    'short-portugal',
+    'short-puerto-rico',
+  ]);
   for (const slug of slugs) {
     const main = read(slug, 'main.json');
     const evidence = read(slug, 'evidence.json');

@@ -2,7 +2,15 @@ const fs = require('fs');
 const path = require('path');
 const Engine = require('../../assets/js/recommendation-engine.js');
 
-const SHORT_TRIP_SLUGS = ['short-iceland', 'short-portugal', 'short-algarve', 'short-madeira'];
+const SHORT_TRIP_SLUGS = [
+  'short-puerto-rico',
+  'short-iceland',
+  'short-portugal',
+  'short-algarve',
+  'short-madeira',
+  'short-azores',
+  'short-acadia',
+];
 const SHORT_WEIGHTS = {
   budget: 2,
   ease: 2,
@@ -14,9 +22,12 @@ const SHORT_WEIGHTS = {
   pto: 1,
 };
 const SHORT_VERDICTS = {
+  'short-puerto-rico': 'Best warm-water week: Old San Juan, rainforest and easy beach days, with hurricane-season risk to manage.',
   'short-algarve': 'Best pure ease-and-value week: one base, pool access, and flexible coast days.',
   'short-portugal': 'Best overall balance of cost, easy rail travel, food, and optional beach time.',
+  'short-azores': 'Best one-base volcanic week: crater lakes and thermal swims, with the Boston connection still to verify.',
   'short-madeira': 'Best one-base scenery trip, just one point behind because swimming is less dependable.',
+  'short-acadia': 'Best domestic nature week: major coastal scenery, with cold water and the Portland drive as the tradeoffs.',
   'short-iceland': 'Best nonstop adventure, with colder weather and higher disruption risk as the tradeoff.',
 };
 

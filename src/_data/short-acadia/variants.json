@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-acadia",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Bar Harbor base · 7 nights",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 7,
+      "ptoDays": 4,
+      "budget": {
+        "lowUsd": 6700,
+        "expectedUsd": null,
+        "highUsd": 10200,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Fly Pittsburgh to Portland, rent one car and sleep all seven nights in Bar Harbor. Ocean Path, Jordan Pond, Cadillac Mountain, a weather-reset day and the quiet side fit without moving hotels.",
+      "confidence": "medium",
+      "claimType": "proxy",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "short-acadia/main.json Jun 12–19 route, seven Bar Harbor hotel nights, four PTO days and itemized $6,700–$10,200 total"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Seven nights is already the short-trip ceiling. A second base or Schoodic overnight adds packing and driving without improving this ease-first plan."
+}
