@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-algarve",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Lagos only · 7 nights",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 7,
+      "ptoDays": 4,
+      "budget": {
+        "lowUsd": 8400,
+        "expectedUsd": null,
+        "highUsd": 11850,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Fly into and out of Faro and sleep all seven nights in Lagos. The week keeps the pool, beaches, Ponta da Piedade, Sagres, Praia da Luz and Burgau while removing every hotel change, rental car and internal transport connection.",
+      "confidence": "medium",
+      "claimType": "proxy",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "short-algarve/main.json Jun 12–20 route, seven Lagos hotel nights, four PTO days and itemized $8,400–$11,850 total"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Seven nights is already the short-trip ceiling and the one-base route is the maximum-ease version; shortening it would remove the weather-reset day that protects the coast outings."
+}

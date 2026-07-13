@@ -16,8 +16,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'assets/css': 'assets/css' });
   eleventyConfig.addPassthroughCopy({ 'assets/js': 'assets/js' });
   eleventyConfig.addPassthroughCopy({ 'assets/generated': 'assets/generated' });
+  eleventyConfig.addPassthroughCopy({ 'assets/img/mt-rainier-seattle-2026': 'assets/img/mt-rainier-seattle-2026' });
+  eleventyConfig.addPassthroughCopy({ 'assets/data/mt-rainier-seattle-2026-weather-history.json': 'assets/data/mt-rainier-seattle-2026-weather-history.json' });
   eleventyConfig.addPassthroughCopy({ 'assets/aaron-amanda-sedona.png': 'assets/aaron-amanda-sedona.png' });
   eleventyConfig.addPassthroughCopy({ 'assets/family-cartoon.png': 'assets/family-cartoon.png' });
+  eleventyConfig.addPassthroughCopy({ 'mt-rainier-seattle-2026.html': 'mt-rainier-seattle-2026.html' });
   for (const file of ['budget-reconciliation.json', 'rank-analysis.json', 'section-status.json', 'trips-summary.json']) {
     eleventyConfig.addPassthroughCopy({ [`assets/${file}`]: `assets/${file}` });
   }
@@ -38,7 +41,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addTransform('all-trip-photos-in-hero', function (content) {
     if (!this.page.outputPath?.includes('/locations/') || !this.page.outputPath.endsWith('.html')) return content;
     const $ = load(content, { decodeEntities: false });
-    syncHeroCarousel($);
+    const shortTrip = this.page.outputPath.includes('/locations/short-');
+    syncHeroCarousel($, shortTrip ? { maxPhotos: 10 } : undefined);
     return $.html();
   });
 

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-madeira",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "eyebrow": "The trip as planned",
+      "label": "7 nights in Funchal",
+      "canonical": true,
+      "status": "documented",
+      "nights": 7,
+      "ptoDays": 5,
+      "budget": {
+        "lowUsd": 5700,
+        "expectedUsd": null,
+        "highUsd": 8900,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Seven nights in Funchal leave time for four island drives, a reserved 25 Fontes/Risco waterfall day, easy city evenings and a final weather-flex day without changing hotels.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "short-madeira/main.json dates, seven Funchal sleeps, five vacation days, and full-trip cost totals"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Cutting the trip shorter would remove the weather-flex day and make the mountain and waterfall outings easier to lose to cloud, wind or a trail closure."
+}

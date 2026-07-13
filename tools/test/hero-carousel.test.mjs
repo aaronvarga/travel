@@ -22,3 +22,14 @@ test('legacy background heroes are promoted to full carousels', () => {
   assert.equal($('body > header.legacy-trip-hero > .pvcar').length, 1);
   assert.deepEqual($('.pvcar .track img').map((_, image) => $(image).attr('src')).get(), ['hero.jpg', 'day.jpg']);
 });
+
+test('curated short-trip heroes keep an explicit ten-photo limit', () => {
+  const figures = Array.from({ length: 12 }, (_, index) => `<figure><img src="photo-${index}.jpg" alt="Photo ${index}"></figure>`).join('');
+  const $ = load(`<body><section class="preview"><div class="carousel pvcar"><div class="track">${figures}</div><div class="counter"></div></div></section></body>`);
+  const result = syncHeroCarousel($, { maxPhotos: 10 });
+  assert.equal(result.count, 10);
+  assert.equal($('.pvcar figure').length, 10);
+  assert.equal($('.pvcar').attr('data-n'), '10');
+  assert.equal($('.pvcar').attr('data-curated-photos'), 'true');
+  assert.equal($('.pvcar').attr('data-all-trip-photos'), undefined);
+});

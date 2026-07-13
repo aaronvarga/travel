@@ -1,6 +1,6 @@
 'use strict';
 
-function syncHeroCarousel($) {
+function syncHeroCarousel($, { maxPhotos } = {}) {
   let hero = $('.preview .pvcar').first();
   const legacyHeader = hero.length ? null : $('body > header').first();
   const candidates = [];
@@ -41,9 +41,15 @@ function syncHeroCarousel($) {
   }
 
   const track = hero.find('> .track').first();
-  const figures = candidates.map((candidate, index) => buildFigure($, candidate, index));
+  const selected = Number.isInteger(maxPhotos) ? candidates.slice(0, maxPhotos) : candidates;
+  const figures = selected.map((candidate, index) => buildFigure($, candidate, index));
   track.empty().append(figures);
-  hero.attr({ 'data-n': String(figures.length), 'data-all-trip-photos': 'true' });
+  hero.attr('data-n', String(figures.length));
+  if (Number.isInteger(maxPhotos)) {
+    hero.removeAttr('data-all-trip-photos').attr('data-curated-photos', 'true');
+  } else {
+    hero.removeAttr('data-curated-photos').attr('data-all-trip-photos', 'true');
+  }
   let counter = hero.find('> .counter').first();
   if (!counter.length) counter = $('<div class="counter"></div>').appendTo(hero);
   counter.empty().append(`<span class="cur">1</span> / ${figures.length}`);

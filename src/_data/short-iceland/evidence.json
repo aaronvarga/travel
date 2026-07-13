@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-iceland",
+  "reviewedAt": "2026-07-13",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 5,
+      "rationale": "The six cost categories add up to an estimated $7,100–$9,600, keeping even the high end below the $12,000 target. Icelandair has published June 2027 pricing, while lodging and rental-car costs still need live quotes.",
+      "confidence": "medium",
+      "evidence": ["budget-band", "airfare-signal"]
+    },
+    "weather": {
+      "score": 2,
+      "rationale": "The headline days are exposed to cool air, wind, rain and spray. A full buffer day helps, but weather can still cancel the glacier or materially reshape the Golden Circle and coast days.",
+      "confidence": "medium",
+      "evidence": ["climate-proxy", "route-readiness"]
+    },
+    "swim": {
+      "score": 3,
+      "rationale": "Natural ocean water is too cold and unsafe for family swimming, but the route schedules warm municipal geothermal pools and Secret Lagoon. That is meaningful heated/geothermal swimming rather than warm natural sea swimming.",
+      "confidence": "high",
+      "evidence": ["swim-conditions"]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "The seven-night route schedules a city/harbour, geothermal swimming, geysers, waterfalls, glacier ice, black coast and volcanic terrain. Culture and food are lighter than nature, bounding the score at 4/5.",
+      "confidence": "high",
+      "evidence": ["itinerary-structure"]
+    },
+    "ease": {
+      "score": 4,
+      "rationale": "A nonstop outbound flight, one round-trip rental and only two hotel changes keep the week manageable. Using the Golden Circle as the drive to Hella avoids backtracking, and the final Keflavík night makes departure morning easy.",
+      "confidence": "high",
+      "evidence": ["operational-load", "airfare-signal"]
+    },
+    "food": {
+      "score": 3,
+      "rationale": "Every base has pizza, burgers, fries and grocery coverage, and the route explicitly carries picnic food on remote days. Icelandic prices and thin hours outside Reykjavík prevent a higher score.",
+      "confidence": "high",
+      "evidence": ["family-food-coverage"]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "The direct route removes connection risk, but wind and road conditions, Reynisfjara sneaker waves, a weather-sensitive glacier tour and changing Reykjanes volcanic access require live official checks and real fallbacks.",
+      "confidence": "high",
+      "evidence": ["route-readiness"]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Seven hotel nights are intentionally compact. The main comparison rewards longer vacations, so every trip of eight nights or fewer receives 1/5 on this measure.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "Iceland is entirely new to the family, earning the strongest score for novelty.",
+      "confidence": "high",
+      "evidence": ["visited-overlap"]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "The observed Juneteenth holiday keeps this seven-night trip to five vacation days, an excellent time-off fit.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary", "icelandair-pit-kef-2027-fare"],
+      "value": {
+        "lowUsd": 7100,
+        "expectedUsd": null,
+        "highUsd": 9600,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "2840/3600 + 1550/2150 + 650/950 + 1150/1550 + 560/850 + 350/500 = 7100/9600"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-iceland/main.json #budget and #totals; exact six-line reconciliation",
+        "icelandair-pit-kef-2027-fare": "Icelandair plan-ahead table displayed Jun 13–21, 2027 from $709 per traveler and nearby June dates from $709–719; retrieved 2026-07-13"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "airfare-signal",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["icelandair-pit-kef-2027-fare", "flypittsburgh-nonstop-destinations"],
+      "value": {
+        "route": "PIT–KEF",
+        "currentDisplayedFareUsdPerPerson": 709,
+        "displayedDates": "2027-06-13/2027-06-21",
+        "fareIncludesFamilySeatsAndBags": false,
+        "checkoutReconfirmationRequired": true,
+        "seasonalNonstop": true
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-08-15",
+      "sourceLocators": {
+        "icelandair-pit-kef-2027-fare": "Icelandair plan-ahead table: PIT to Reykjavík, Jun 13–21 2027, round-trip economy from $709; fare collected recently and subject to availability",
+        "flypittsburgh-nonstop-destinations": "PIT current nonstop directory lists Reykjavík on Icelandair as seasonal, up to four weekly"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "decision-profile"],
+      "value": {
+        "depart": "2027-06-13",
+        "return": "2027-06-21",
+        "hotelNights": 7,
+        "ptoDays": 5,
+        "holiday": "Juneteenth observed Friday 2027-06-18",
+        "pittsburghBlackoutClear": true
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-iceland/main.json day1–day9 and #timing calendar math",
+        "decision-profile": "Required Pittsburgh full days Jun 24–26; plan returns Jun 21"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["imo-iceland-climate-data", "internal-itinerary"],
+      "value": {
+        "temperatureF": [45, 57],
+        "routeRegion": "Reykjavík, Golden Circle and South Coast west of Vík",
+        "forecast": false,
+        "weatherBufferDays": 1,
+        "exposure": ["wind", "rain", "waterfall spray"]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "imo-iceland-climate-data": "Official historical observation portal reviewed for southwest Iceland June planning; exact trip forecast is unavailable",
+        "internal-itinerary": "short-iceland/main.json climate fields and Jun 19 weather-buffer day"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["reykjavik-laugardalslaug", "internal-itinerary"],
+      "value": {
+        "score": 3,
+        "naturalSeaTemperatureF": [50, 52],
+        "swimType": "geothermal",
+        "mainPoolF": 82,
+        "childPoolF": 84,
+        "wadingPoolF": 90,
+        "hotTubsF": [100, 111],
+        "scheduledSwimDays": 3,
+        "oceanSwimmingPlanned": false,
+        "temperatureF": [50, 52]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "reykjavik-laugardalslaug": "City facility specifications state main pool 28°C, children’s pool 29°C, wading pool 32°C and hot tubs 38–44°C",
+        "internal-itinerary": "short-iceland/main.json schedules Laugardalslaug, Secret Lagoon and a local-pool recovery option; Reynisfjara is viewing-only"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary"],
+      "value": {
+        "hotelNights": 7,
+        "lodgingBases": 3,
+        "baseNames": ["Reykjavík", "Hella/Hvolsvöllur", "Keflavík"],
+        "scheduledModes": ["geothermal swim", "city/harbour", "geyser/waterfalls", "guided glacier", "black coast", "volcanic landscape"],
+        "bufferDays": 1
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-iceland/main.json day1–day9; stays 2/4/1; Golden Circle is the Jun 16 transfer into Hella; day7 reserved as weather buffer"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "flypittsburgh-nonstop-destinations"],
+      "value": {
+        "easeScore": 4,
+        "lodgingBases": 3,
+        "baseMoves": 2,
+        "oneNightStops": 1,
+        "rentalCars": 1,
+        "midTripFlights": 0,
+        "ferries": 0,
+        "selfTransfers": 0,
+        "singleTicket": true,
+        "maxConnections": 0,
+        "airHoursPlanningEstimate": 11,
+        "groundHoursPlanningEstimate": 10
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-iceland/main.json #getting-around, mapPoints and day1–day9; Golden Circle transfer continues to Hella without returning to Reykjavík",
+        "flypittsburgh-nonstop-destinations": "PIT directory identifies Reykjavík as a seasonal Icelandair nonstop"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "bonus-iceland-stores", "kronan-iceland-stores"],
+      "value": {
+        "score": 3,
+        "plainFoodRequired": true,
+        "coveredBases": ["Reykjavík", "Hella/Hvolsvöllur", "Keflavík"],
+        "fallbackTypes": ["pizza", "burgers", "fries", "supermarkets", "packed picnic"],
+        "remoteDayConstraint": true,
+        "kitchenLodgingRequired": true
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-iceland/main.json restaurant lists cover each stop and #stays requires kitchen access where practical",
+        "bonus-iceland-stores": "Operator English locator lists Reykjavík and Reykjanes/Keflavík-area branches and current hours",
+        "kronan-iceland-stores": "Operator locator lists Reykjavík and Vík stores; packed food is specified for remote days"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "high",
+      "sourceRefs": ["icelandair-pit-kef-2027-fare", "flypittsburgh-nonstop-destinations", "safetravel-iceland", "internal-itinerary"],
+      "value": {
+        "status": "exact-2027-schedule-required",
+        "singleTicket": true,
+        "maxConnections": 0,
+        "exactDateFareDisplayed": true,
+        "checkoutConfirmed": false,
+        "dailySafetyChecksRequired": true,
+        "reykjanesFallback": true,
+        "weatherBufferDays": 1
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-08-15",
+      "sourceLocators": {
+        "icelandair-pit-kef-2027-fare": "Icelandair displayed Jun 13–21 2027 fare inventory; checkout, family seats and bags are not captured",
+        "flypittsburgh-nonstop-destinations": "PIT directory lists current seasonal Icelandair nonstop service",
+        "safetravel-iceland": "Official live travel-condition portal covers road, weather, beach and volcanic alerts; itinerary requires a daily check",
+        "internal-itinerary": "short-iceland/main.json day7 buffer, Reynisfjara safety rule and optional Reykjanes finale"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "value": { "score": 5, "overlap": [] },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Family trip context and visited places",
+        "scorecard-contract": "Visited-place list contains no Iceland location"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 11,
+    "groundHours": 10,
+    "timeZones": 1,
+    "baseMoves": 2,
+    "longestTransferHours": 4,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 1,
+    "childActivityFit": { "age13": "fits", "age8": "fits" },
+    "lodgingComfort": { "airConditioning": "not a climate requirement", "kitchen": "required in search brief", "laundry": "nice-to-have", "realBeds": "required in search brief" },
+    "waterSafety": "All planned swimming is heated/geothermal; ocean and Reynisfjara are viewing-only.",
+    "crowdingPressure": "Golden Circle, Secret Lagoon, glacier inventory and scarce South Coast family rooms need advance planning.",
+    "medicalAccess": "Reykjavík and Keflavík have the strongest access; glacier and coastal days are more remote.",
+    "childActivityNotes": { "age13": "Strong for glacier, waterfalls and geothermal swims.", "age8": "Strong if the glacier operator confirms age and footwear eligibility; buffer day limits fatigue." }
+  },
+  "evidenceBasis": "Fresh Icelandair June 2027 fare inventory, current PIT route listing, official city pool specifications, official safety guidance and canonical route arithmetic.",
+  "confidenceBasis": [
+    "high-confidence route shape, geothermal temperatures, food fallback coverage and deterministic load",
+    "medium-confidence lodging, car and climate planning ranges",
+    "volatile airfare and volcanic access require recheck before booking"
+  ]
+}

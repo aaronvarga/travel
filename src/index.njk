@@ -9,7 +9,7 @@ permalink: "/index.html"
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-<title>Family Trip Decision Dashboard - 29-Trip Comparison</title>
+<title>Family Trip Decision Dashboard - 30-Trip Comparison</title>
 <style>
 :root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;
  --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;
@@ -382,6 +382,49 @@ footer a{color:var(--muted)}
 .sl-excluded-head .sl-eyebrow{margin:0 0 8px;color:#8a8377;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .sl-excluded-head h3{font-family:'Spectral',Georgia,serif;font-weight:700;color:#1c2620;font-size:clamp(1.3rem,3vw,1.7rem);line-height:1.15;margin:0 0 8px}
 .sl-excluded-head p{margin:0;color:#5b625a;font-size:.92rem;line-height:1.5}
+/* SEPARATE TRIP */
+#seattle-rainier{border:0;border-radius:22px;padding:0;overflow:hidden;background:#1d2928;box-shadow:var(--shadow)}
+.separate-trip-card{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1.1fr);min-height:300px;color:#fff;text-decoration:none}
+.separate-trip-photo{position:relative;min-height:300px;overflow:hidden;background:#43534e}
+.separate-trip-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,18,18,.02),rgba(9,18,18,.42))}
+.separate-trip-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.separate-trip-badge{position:absolute;z-index:1;top:16px;left:16px;padding:6px 11px;border-radius:999px;background:#f1c878;color:#392c12;font-size:.68rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;box-shadow:0 3px 12px rgba(0,0,0,.25)}
+.separate-trip-body{display:flex;flex-direction:column;justify-content:center;padding:34px clamp(24px,4vw,52px)}
+.separate-trip-body .eyebrow{color:#f1c878}
+.separate-trip-body h2{margin:0 0 12px;font-family:'Spectral',Georgia,serif;font-size:clamp(2rem,4vw,3.1rem);line-height:1.02;color:#fff}
+.separate-trip-body>p:not(.eyebrow){margin:0 0 20px;max-width:620px;color:rgba(255,255,255,.78);font-size:.95rem;line-height:1.55}
+.separate-trip-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.separate-trip-tags span{padding:6px 10px;border:1px solid rgba(255,255,255,.2);border-radius:999px;background:rgba(255,255,255,.08);color:rgba(255,255,255,.9);font-size:.7rem;font-weight:800}
+.separate-trip-cta{align-self:flex-start;color:#1d2928;background:#f1c878;border-radius:999px;padding:9px 15px;font-size:.78rem;font-weight:900}
+.separate-trip-card:hover .separate-trip-photo img{transform:scale(1.025)}
+.separate-trip-card:hover .separate-trip-cta{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.separate-trip-card{grid-template-columns:1fr}.separate-trip-photo{min-height:230px}.separate-trip-body{padding:26px 22px 30px}}
+/* SHORT, EASY ESCAPES */
+#short-trips{font-family:'Source Sans 3',system-ui,sans-serif;background:linear-gradient(145deg,#173f42,#235e5c);border:0;border-radius:22px;padding:40px clamp(20px,3vw,44px) 44px;color:#fff;overflow:hidden}
+#short-trips .short-head{max-width:780px;margin-bottom:26px}
+#short-trips .eyebrow{color:#f1c878}
+#short-trips h2{margin:0 0 10px;font-family:'Spectral',Georgia,serif;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.05;color:#fff}
+#short-trips .short-head>p:last-child{margin:0;color:rgba(255,255,255,.78)}
+.short-method{margin-top:10px!important;font-size:.78rem;line-height:1.45}
+.short-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.short-card{min-width:0;overflow:hidden;border:1px solid rgba(255,255,255,.2);border-radius:16px;background:#fffdf8;color:#1c2620;text-decoration:none;box-shadow:0 16px 38px rgba(3,19,20,.25);transition:transform .18s ease,box-shadow .18s ease}
+.short-card:first-child{border-color:#f1c878;box-shadow:0 18px 44px rgba(3,19,20,.34),0 0 0 2px #f1c878}
+.short-card:hover{transform:translateY(-4px);box-shadow:0 22px 48px rgba(3,19,20,.34)}
+.short-photo{position:relative;height:190px;background:#d8d2c4}
+.short-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.short-badge{position:absolute;left:12px;top:12px;padding:5px 10px;border-radius:999px;background:#f1c878;color:#392c12;font-size:.68rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 3px 10px rgba(0,0,0,.22)}
+.short-score{position:absolute;right:12px;top:12px;padding:5px 10px;border-radius:999px;background:rgba(23,63,66,.94);color:#fff;font-size:.68rem;font-weight:900;letter-spacing:.04em;box-shadow:0 3px 10px rgba(0,0,0,.22)}
+.short-body{padding:17px 18px 19px}
+.short-dates{display:block;margin-bottom:5px;color:#2f6b52;font-size:.69rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.short-body h3{margin:0 0 7px;font-family:'Spectral',Georgia,serif;font-size:1.45rem;line-height:1.05}
+.short-body>p{min-height:3.2em;margin:0 0 14px;color:#5b625a;font-size:.85rem;line-height:1.5}
+.short-verdict{min-height:3em!important;margin-top:-5px!important;color:#315f50!important;font-size:.76rem!important;font-weight:700}
+.short-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding-top:13px;border-top:1px solid #e8e0d2}
+.short-stat{padding:8px 9px;border-radius:9px;background:#eef3ee}
+.short-stat span{display:block;color:#778176;font-size:.61rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.short-stat b{display:block;margin-top:1px;color:#1a4a3c;font-size:.83rem;line-height:1.25}
+.short-ready{margin-top:11px;color:#2f6b52;font-size:.72rem;font-weight:800}
+@media(max-width:700px){.short-grid{grid-template-columns:1fr}.short-photo{height:clamp(180px,42vw,260px)}.short-body>p{min-height:0}}
 </style>
 <style>
 .decision-hero{background:linear-gradient(90deg,#17130f 0%,#17130f 42%,#3b2419 72%,#6c3f25 100%)}
@@ -505,8 +548,8 @@ footer a{color:var(--muted)}
 <header class="decision-hero">
   <div class="hero-inner">
     <p class="eyebrow">Family Travel Decision Dashboard</p>
-    <h1>Epic Family Vacation: 29-Trip Comparison</h1>
-    <p class="lead">A data-first ranking of 29 finished itineraries (20 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The Portugal/Italy preference is retired from the scoring; novelty carries the honest version instead. The numbers, at a glance:</p>
+    <h1>Epic Family Vacation: 30-Trip Comparison</h1>
+    <p class="lead">A data-first ranking of 30 finished comparison itineraries (21 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The four short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
   </div>
 </header>
 
@@ -514,6 +557,8 @@ footer a{color:var(--muted)}
   <details class="site-nav-menu">
     <summary><span>Sections</span></summary>
     <div class="site-nav-links">
+      <a href="#seattle-rainier">Seattle + Rainier</a>
+      <a href="#short-trips">Short Trips</a>
       <a href="#trips">Trips</a>
       <a href="locations/trip-builder/">Trip Builder →</a>
       <a href="locations/compare/">Compare by Country →</a>
@@ -532,17 +577,66 @@ footer a{color:var(--muted)}
   <section id="overview">
     <p class="eyebrow">The Plan at a Glance</p>
     <div class="overview">
-      <div class="ocard"><b>29</b><span>complete trip plans reviewed (20 ranked, 9 excluded)</span></div>
+      <div class="ocard"><b>30 + 4</b><span>comparison plans plus four short escapes (21 ranked, 9 excluded)</span></div>
       <div class="ocard"><b>$7.5k</b><span>lowest all-in floor: Portugal</span></div>
       <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland &times; Crete/Sicily/Mallorca grid</span></div>
       <div class="ocard"><b data-preserve-date>June 24-26</b><span>Full days in Pittsburgh protected</span></div>
     </div>
   </section>
 
+  <section id="seattle-rainier" aria-labelledby="seattle-rainier-title">
+    <a class="separate-trip-card" href="mt-rainier-seattle-2026.html">
+      <div class="separate-trip-photo">
+        <img src="assets/img/mt-rainier-seattle-2026/google_hero_car_1.jpg" alt="Mount Rainier rising above the surrounding landscape" loading="lazy">
+        <span class="separate-trip-badge">Separate 2026 trip</span>
+      </div>
+      <div class="separate-trip-body">
+        <p class="eyebrow">Couples trip · September 4–8, 2026</p>
+        <h2 id="seattle-rainier-title">Mount Rainier + Seattle</h2>
+        <p>Four mountain-focused nights built around Skyline, Pinnacle Saddle, and Mount Fremont Lookout at sunset, followed by an easy Seattle finish.</p>
+        <div class="separate-trip-tags" aria-label="Trip highlights">
+          <span>4 nights</span>
+          <span>3 priority hikes</span>
+          <span>Fremont sunset</span>
+        </div>
+        <span class="separate-trip-cta">Open the itinerary →</span>
+      </div>
+    </a>
+  </section>
+
+  <section id="short-trips">
+    <div class="short-head">
+      <p class="eyebrow">New · 7 Nights or Less</p>
+      <h2>Short, easy escapes</h2>
+      <p>Smaller-budget trips built around fewer bases, lighter logistics, and enough breathing room to feel like a vacation. Warm water is a bonus here, not the price of admission.</p>
+      <p class="short-method"><b>Ranked only against each other:</b> budget and ease count double; weather, swimming, variety, food, risk, and PTO count once. The Algarve leads Portugal by one point.</p>
+    </div>
+    <div class="short-grid">
+      {%- for trip in shortTrips %}
+      <a class="short-card" href="{{ trip.href }}">
+        <div class="short-photo"><img src="{{ trip.heroImage }}" alt="{{ trip.heroAlt }}" loading="lazy"><span class="short-badge">#{{ trip.shortRank }} · {{ trip.pto.nights }} nights</span><span class="short-score">{{ trip.shortScore }}/50</span></div>
+        <div class="short-body">
+          <span class="short-dates">{{ trip.travelWindow[0] | displayDate }}–{{ trip.travelWindow[1] | displayDate }}</span>
+          <h3>{{ trip.displayName }}</h3>
+          <p>{{ trip.blurb }}</p>
+          <p class="short-verdict">{{ trip.shortVerdict }}</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>${{ (trip.budget.floorUsd / 1000) | round(1) }}k–${{ (trip.budget.ceilUsd / 1000) | round(1) }}k</b></div>
+            <div class="short-stat"><span>PTO</span><b>{{ trip.pto.days }} days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>{% if trip.metrics.baseMoves != null %}{{ trip.metrics.baseMoves + 1 }}{% else %}Minimal{% endif %}</b></div>
+            <div class="short-stat"><span>Swimming</span><b>{% if trip.facets.swimType == 'geothermal' %}Warm geothermal{% elif trip.facets.heatedSwimTempF %}Pool + Atlantic{% else %}{{ trip.facets.swimTempF[0] }}–{{ trip.facets.swimTempF[1] }}°F water{% endif %}</b></div>
+          </div>
+          <div class="short-ready">{{ trip.readiness.label }} →</div>
+        </div>
+      </a>
+      {%- endfor %}
+    </div>
+  </section>
+
   <section id="trips" class="shortlist">
     <div class="sl-head">
       <p class="sl-eyebrow">Trip Shortlist</p>
-      <h2>Fifteen ranked ways to spend the same two weeks</h2>
+      <h2>Twenty-one ranked ways to spend the same two weeks</h2>
       <p>Ranked by the scoreboard — pure data, no preference thumb on the scale; the top score is outlined in red. Tap any card for the full day-by-day itinerary. Nights pill = hotel (bed) nights; the <b>+1</b> chip is the red-eye/travel night away.</p>
     </div>
     {% include "hub/cards.njk" %}

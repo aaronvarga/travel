@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-portugal",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Lisbon + Lagos · 7 nights",
+      "canonical": true,
+      "status": "documented",
+      "nights": 7,
+      "ptoDays": 4,
+      "budget": {
+        "lowUsd": 8700,
+        "expectedUsd": null,
+        "highUsd": 11950,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Two Lisbon nights and five Lagos nights preserve city, Sintra and coast variety with only one rail move; the outbound red-eye makes eight nights away while seven hotel nights are paid.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": {
+        "internal-itinerary": "short-portugal/main.json recommended Jun 12–20 route, seven hotel nights, four PTO days and itemized $8,700–$11,950 total"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "The one-base Algarve week is published separately as the Short Algarve destination so each complete trip can be compared on its own."
+}

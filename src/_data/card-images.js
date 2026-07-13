@@ -66,6 +66,10 @@ module.exports = {
     path: 'assets/img/iceland/google_vestrahorn_sunrise_qa_01.jpg',
     alt: 'Vestrahorn’s jagged peaks reflected at sunrise on Iceland’s black-sand coast',
   },
+  'short-iceland': {
+    path: 'assets/img/short-iceland/google_waterfalls_02.jpg',
+    alt: 'Seljalandsfoss glowing in warm evening light above Iceland’s South Coast',
+  },
   'iceland-ischia-cilento': {
     path: 'assets/img/iceland-ischia-cilento/google_ischia_castello_hero_01.jpg',
     alt: 'Castello Aragonese mirrored in the warm Tyrrhenian Sea at sunset on Ischia',
@@ -93,6 +97,18 @@ module.exports = {
   portugal: {
     path: 'assets/img/portugal/google_praia_marinha_epic_03.jpg',
     alt: 'Praia da Marinha’s golden limestone arches above the Algarve’s blue water',
+  },
+  'short-portugal': {
+    path: 'assets/img/short-portugal/google_marinha_arches_01.jpg',
+    alt: 'Praia da Marinha’s limestone arches rising from vivid Algarve water',
+  },
+  'short-algarve': {
+    path: 'assets/img/short-algarve/google_sagres_headland_01.jpg',
+    alt: 'The Sagres lighthouse and cliffs glowing at the edge of the Atlantic',
+  },
+  'short-madeira': {
+    path: 'assets/img/short-madeira/google_peaks_clouds_02.jpg',
+    alt: 'Pico do Areeiro’s sunlit ridge rising above Madeira’s sea of clouds',
   },
   'portugal-algarve-sicily': {
     path: 'assets/img/portugal-algarve-sicily/img-d24952d35c93.jpg',

@@ -45,6 +45,10 @@ const slugs = fs
   .filter((d) => d.isDirectory() && fs.existsSync(path.join(dataDir, d.name, 'main.json')))
   .map((d) => d.name)
   .filter((name) => !ignoredSlugs.has(name))
+  .filter((name) => {
+    const main = JSON.parse(fs.readFileSync(path.join(dataDir, name, 'main.json'), 'utf8'));
+    return main.tripCategory !== 'short';
+  })
   .sort();
 
 const trips = [];
@@ -105,6 +109,11 @@ for (const slug of slugs) {
 // Every status slug must have a scorecard trip too.
 for (const slug of Object.keys(status)) {
   if (ignoredSlugs.has(slug)) continue;
+  const mainPath = path.join(dataDir, slug, 'main.json');
+  if (fs.existsSync(mainPath)) {
+    const main = JSON.parse(fs.readFileSync(mainPath, 'utf8'));
+    if (main.tripCategory === 'short') continue;
+  }
   if (!trips.find((t) => t.slug === slug)) problems.push(`${slug}: in section-status.json but no scorecard trip`);
 }
 

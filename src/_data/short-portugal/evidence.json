@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-portugal",
+  "reviewedAt": "2026-07-13",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 5,
+      "rationale": "The six cost categories add up to an estimated $8,700–$11,950, keeping even the high end under the $12,000 target. June 2027 flights, lodging and rail still need live quotes.",
+      "confidence": "medium",
+      "evidence": ["budget-band"]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "Official 1991–2020 June normals support mostly comfortable Lisbon and Faro-region days, with manageable midday heat and exposed-coast wind rather than climate that conflicts with the plan.",
+      "confidence": "high",
+      "evidence": ["climate-proxy"]
+    },
+    "swim": {
+      "score": 3,
+      "rationale": "The Algarve schedules two meaningful water/coast days and official destination data lists summer sea water at 20–22°C (68–72°F). It is usable but cool, while a Lagos pool is the warm-water fallback.",
+      "confidence": "high",
+      "evidence": ["swim-conditions"]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "The seven-night plan schedules town/culture, coast/water and nature/garden modes; nature is the lighter thread and the route intentionally avoids a third region.",
+      "confidence": "high",
+      "evidence": ["itinerary-structure"]
+    },
+    "ease": {
+      "score": 4,
+      "rationale": "Two multi-night bases, one rail move, no rental car and no internal flight make this a straightforward week. The international connection from Pittsburgh and the Lagos–Faro departure transfer keep it from a perfect score.",
+      "confidence": "high",
+      "evidence": ["operational-load"]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Pizza, pasta, burgers, bakeries and supermarkets give the family dependable choices in both bases. Exact branches and opening hours need a fresh check before the trip.",
+      "confidence": "high",
+      "evidence": ["family-food-coverage"]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "The simple route has no fragile internal flight, but exact June 2027 open-jaw air and CP rail are not confirmed. Protected-ticket and Lisbon-airport-night fallbacks keep that uncertainty manageable.",
+      "confidence": "medium",
+      "evidence": ["route-readiness"]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Seven hotel nights are intentionally compact. The main comparison rewards longer vacations, so every trip of eight nights or fewer receives 1/5 on this measure.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "Portugal, Lisbon and the Algarve are all new to the family, earning the strongest score for novelty.",
+      "confidence": "high",
+      "evidence": ["visited-overlap"]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "The observed Juneteenth holiday keeps this seven-night trip to only four vacation days, the best time-off fit among these short options.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary"],
+      "value": {
+        "lowUsd": 8700,
+        "expectedUsd": null,
+        "highUsd": 11950,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "5000–6200 + 1600–2400 + 900–1250 + 350–600 + 350–700 + 500–800 = 8700–11950",
+        "airfareObservation": "Google Flights route page reviewed 2026-07-13 showed June historical typical prices of $1,250–$1,550 per traveler and no PIT–LIS nonstop; this is not an exact June 2027 family quote"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-portugal/main.json #budget and #totals tables; six itemized categories reconcile to the displayed planning band and #air-travel records the observed Google Flights route-page range"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile"],
+      "value": {
+        "depart": "2027-06-12",
+        "return": "2027-06-20",
+        "hotelNights": 7,
+        "nightsAwayIncludingOutboundRedeye": 8,
+        "ptoDays": 4,
+        "juneteenthObserved": "2027-06-18"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows.short-portugal and the Pittsburgh required full-day constraint for 2027-06-24 through 2027-06-26"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["ipma-lisbon-normal-1991-2020", "ipma-faro-normal-1991-2020"],
+      "value": {
+        "score": 4,
+        "normalPeriod": "1991–2020",
+        "juneMeanDailyLowHighF": {
+          "LisbonTapada": [59, 79],
+          "Faro": [64, 80]
+        },
+        "forecast": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "ipma-lisbon-normal-1991-2020": "Station 762 official 1991–2020 normal table, June TN 15.2°C and TX 26.2°C",
+        "ipma-faro-normal-1991-2020": "Station 554 official 1991–2020 normal table, June TN 17.8°C and TX 26.8°C"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["visit-portugal-algarve", "eea-bathing-water"],
+      "value": {
+        "score": 3,
+        "temperatureF": [68, 72],
+        "temperatureC": [20, 22],
+        "hasSwim": true,
+        "scheduledSwimDays": 2,
+        "warmWaterFallback": "Lagos lodging pool; property heating not confirmed"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "visit-portugal-algarve": "Official Visit Portugal Algarve beach material and the linked Praia dos Pinheiros record list summer average sea water at 20–22°C; destination condition, not a daily forecast",
+        "eea-bathing-water": "Latest Portugal bathing-water assessment; recheck selected Lagos/Algarve site status for the 2027 season"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary"],
+      "value": {
+        "score": 4,
+        "hotelNights": 7,
+        "lodgingBases": 2,
+        "baseNames": ["Lisbon", "Lagos"],
+        "scheduledModes": ["town/culture", "coast/water", "nature/gardens"]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-portugal/main.json itinerary.days day1 through day7 and #stays; two Lisbon nights followed by five Lagos nights"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary"],
+      "value": {
+        "easeScore": 4,
+        "maxConnections": 1,
+        "singleTicket": true,
+        "lodgingBases": 2,
+        "baseMoves": 1,
+        "internalFlights": 0,
+        "rentalCars": 0,
+        "longDistanceTrains": 1,
+        "airHoursPlanningEstimate": 20.0,
+        "groundHoursPlanningEstimate": 7.0
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-portugal/main.json day0/day8 protected one-connection air, day3 Lisbon-to-Lagos rail, #stays two bases, and #getting-around no-rental plan"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "continente-portugal-stores"],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true,
+        "coveredBases": ["Lisbon", "Lagos"],
+        "fallbackTypes": ["pizza", "pasta", "burgers", "bakery", "supermarket picnic"],
+        "lodgingKitchenConfirmed": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-portugal/main.json day-by-day restoHtml/saveHtml names plain pizza, pasta, burgers, bakery and picnic options in Lisbon and Lagos",
+        "continente-portugal-stores": "Current Continente operator locator confirms a broad Portuguese store network; exact Lisbon/Lagos branch, hours and departments require a 2027 property-level recheck"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary", "state-travel"],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "outbound": "PIT–LIS with one protected connection",
+        "return": "FAO–PIT with one protected connection preferred",
+        "exact2027FlightsVerified": false,
+        "exact2027RailVerified": false,
+        "fallback": "Lagos to Lisbon and LIS airport night if protected FAO return is poor"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-portugal/main.json #air-travel, #getting-around and day0/day3/day8; exact June 2027 air and CP rail are explicitly marked unconfirmed",
+        "state-travel": "U.S. State Department Portugal destination/advisory entry reviewed for country-level planning; it does not confirm airline or rail schedules"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json family visited-place list; Portugal, Lisbon and the Algarve are absent",
+        "scorecard-contract": "tools/scorecard.manifest.json noveltyRubric documented visited-place list and no-overlap 5/5 rule"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 20.0,
+    "groundHours": 7.0,
+    "timeZones": 1,
+    "baseMoves": 1,
+    "longestTransferHours": 4.5,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 3,
+    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "lodgingComfort": {
+      "airConditioning": "required but unknown until property selection",
+      "kitchen": "preferred but unknown until property selection",
+      "laundry": "preferred but not required for seven nights",
+      "realBeds": "required but unknown until property selection"
+    },
+    "waterSafety": "Atlantic water and cliff edges require daily flag, wind and swell checks; pool is the controlled fallback.",
+    "crowdingPressure": "Regaleira and Ponta da Piedade are crowd-sensitive; timed entry and early starts are scheduled.",
+    "medicalAccess": "Urban Lisbon and Lagos retain reasonable base access; the family medical profile remains incomplete.",
+    "childActivityNotes": {
+      "age13": "gardens, tunnels, cliffs, optional boat and pool provide distinct modes",
+      "age8": "short walks, plain-food stops and pool/beach fallbacks protect energy"
+    }
+  },
+  "evidenceBasis": "Official climate normals, official Portugal destination/bathing-water material, current route-page observations and line-by-line derivation from the canonical itinerary. Exact June 2027 prices and schedules remain proxies.",
+  "confidenceBasis": [
+    "official 1991–2020 climate normals",
+    "official 20–22°C Algarve summer water listing",
+    "canonical two-base/no-rental derivation",
+    "current airfare route-page observation but no exact June 2027 family quote",
+    "exact 2027 CP rail and protected open-jaw schedules not yet verified"
+  ]
+}

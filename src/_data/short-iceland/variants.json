@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-iceland",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Iceland highlights · 7 nights",
+      "canonical": true,
+      "status": "documented",
+      "nights": 7,
+      "ptoDays": 5,
+      "budget": {
+        "lowUsd": 7100,
+        "expectedUsd": null,
+        "highUsd": 9600,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [],
+      "notes": "Two Reykjavík nights lead into the Golden Circle and a four-night Hella/Hvolsvöllur stay, followed by one easy airport night. A protected weather-flex day and optional Blue Lagoon finale keep the week resilient.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": ["internal-itinerary", "icelandair-pit-kef-2027-fare"],
+      "sourceLocators": {
+        "internal-itinerary": "short-iceland/main.json day1–day9 and exact #totals reconciliation",
+        "icelandair-pit-kef-2027-fare": "Icelandair plan-ahead table displayed a matching Jun 13–21, 2027 PIT–KEF fare signal on 2026-07-13"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Seven nights is already the short-trip ceiling; a shorter alternative would remove the weather buffer that makes the route resilient."
+}

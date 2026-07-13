@@ -1,7 +1,7 @@
 <section id="recommendation-evidence" class="divider evidence-section">
-  <div class="section-label"><p class="eyebrow">Why These Scores</p><h2>Evidence and rationale</h2><p>Each axis points to structured facts. Direct 2027 facts, current proxies, derivations, and unknowns remain visibly different.</p></div>
+  <div class="section-label"><p class="eyebrow">Why These Scores</p><h2>How we rated this trip</h2><p>See the reasoning behind each score, including where current information is firm and where 2027 details still need confirmation.</p></div>
   <div class="axis-evidence-grid">{%- for axisId, record in trip.evidence.axes -%}<article><h3>{{ axisId | title }} <span>{{ record.score }}/5</span></h3><p>{{ record.rationale }}</p><small>{{ record.confidence | title }} confidence · {{ record.evidence | join(", ") }}</small></article>{%- endfor -%}</div>
-  <details class="fact-ledger"><summary>Supporting facts and sources</summary>
+  <details class="fact-ledger"><summary>See sources and planning assumptions</summary>
     {%- for fact in trip.evidence.facts -%}
     <div class="fact-row"><div><strong>{{ fact.id | replace("-", " ") | title }}</strong><span>{{ fact.proxyStatus | replace("-", " ") | title }} · {{ fact.confidence | title }} confidence · {{ fact.claimType | default("proxy") }}</span></div><div><span>Verified {{ fact.verifiedAt | displayDate }}{% if fact.expiresAt %} · recheck by {{ fact.expiresAt | displayDate }}{% endif %}</span><span>{% for sourceId in fact.sourceRefs %}{% set source = shared.evidenceSources[sourceId] %}{% if source.url %}<a href="{{ source.url }}" target="_blank" rel="noreferrer">{{ source.label }}</a>{% else %}{{ source.label }}{% endif %}{% if fact.sourceLocators and fact.sourceLocators[sourceId] %} <small>({{ fact.sourceLocators[sourceId] | displayDate }})</small>{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}</span></div></div>
     {%- endfor -%}

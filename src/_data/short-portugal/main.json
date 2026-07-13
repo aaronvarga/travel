@@ -1,0 +1,892 @@
+{
+  "recommended": true,
+  "tripCategory": "short",
+  "slug": "short-portugal",
+  "lang": "en",
+  "title": "Portugal in One Week — June 2027",
+  "countries": [
+    "portugal"
+  ],
+  "packingTags": [
+    "beach",
+    "hiking",
+    "heat"
+  ],
+  "overrides": {
+    "packing": [
+      "<b>Light wind layer:</b> useful in Sintra and on exposed Algarve cliffs.",
+      "<b>Water shoes:</b> optional for rocky/pebbly entries.",
+      "<b>Packable day bag:</b> keep one overnight-flight change and rail snacks accessible."
+    ]
+  },
+  "hasPhotoGuide": false,
+  "hasFoodGuide": false,
+  "mapPoints": [
+    {
+      "n": "Lisbon Airport (LIS)",
+      "lat": 38.7742,
+      "lng": -9.1342,
+      "r": "lisbon",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.7742,-9.1342",
+      "t": "flight"
+    },
+    {
+      "n": "Baixa / Chiado base",
+      "lat": 38.7107,
+      "lng": -9.1405,
+      "r": "lisbon",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.7107,-9.1405",
+      "t": "hotel"
+    },
+    {
+      "n": "Alfama",
+      "lat": 38.7121,
+      "lng": -9.1307,
+      "r": "lisbon",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.7121,-9.1307",
+      "t": "town"
+    },
+    {
+      "n": "Belém",
+      "lat": 38.6977,
+      "lng": -9.2065,
+      "r": "lisbon",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.6977,-9.2065",
+      "t": "sight"
+    },
+    {
+      "n": "Quinta da Regaleira",
+      "lat": 38.7976,
+      "lng": -9.3904,
+      "r": "lisbon",
+      "g": "https://www.google.com/maps/search/?api=1&query=38.7976,-9.3904",
+      "t": "sight"
+    },
+    {
+      "n": "Lagos base",
+      "lat": 37.1028,
+      "lng": -8.673,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.1028,-8.673",
+      "t": "hotel"
+    },
+    {
+      "n": "Ponta da Piedade",
+      "lat": 37.0817,
+      "lng": -8.6672,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.0817,-8.6672",
+      "t": "view"
+    },
+    {
+      "n": "Praia do Camilo",
+      "lat": 37.087,
+      "lng": -8.6696,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.087,-8.6696",
+      "t": "beach"
+    },
+    {
+      "n": "Praia da Marinha",
+      "lat": 37.09,
+      "lng": -8.4125,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.09,-8.4125",
+      "t": "beach"
+    },
+    {
+      "n": "Faro Airport (FAO)",
+      "lat": 37.0144,
+      "lng": -7.9659,
+      "r": "algarve",
+      "g": "https://www.google.com/maps/search/?api=1&query=37.0144,-7.9659",
+      "t": "flight"
+    }
+  ],
+  "mapColors": {
+    "lisbon": "#1f6f78",
+    "algarve": "#c25a3a"
+  },
+  "itinerary": {
+    "className": "divider",
+    "labelHtml": "<div class=\"section-label\">\n      <p class=\"eyebrow\">Day by Day</p>\n      <h2>Lisbon, Sintra and five nights by the coast</h2>\n      <p>Arrival and departure frame seven hotel nights. Every busy day has a nearby pool, town or rest option if the family needs to slow down.</p>\n    </div>",
+    "daysClass": "days",
+    "days": [
+      {
+        "id": "day0",
+        "colorClass": "c0",
+        "badge": "1",
+        "eyebrow": "Sat · Jun 12",
+        "heading": "Pittsburgh → Lisbon",
+        "feel": "Weekend departure, one protected connection",
+        "daycost": "Est. $70 · airport food",
+        "facts": [
+          {
+            "label": "Route",
+            "valueHtml": "PIT → hub → LIS"
+          },
+          {
+            "label": "PTO",
+            "valueHtml": "None today"
+          }
+        ],
+        "note": "No nonstop exists in the current route snapshot; buy one protected ticket and reject an overnight self-transfer.",
+        "spots": [],
+        "travelNote": "&#9992;&#65038; Travel day &mdash; no stops"
+      },
+      {
+        "id": "day1",
+        "colorClass": "c1",
+        "badge": "2",
+        "eyebrow": "Sun · Jun 13",
+        "heading": "Arrive Lisbon · Alfama soft landing",
+        "feel": "One compact downhill walk",
+        "daycost": "Est. $130 · transfer, groceries, dinner",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Lisbon · night 1 of 2"
+          },
+          {
+            "label": "Rule",
+            "valueHtml": "No timed attraction"
+          }
+        ],
+        "note": "The win is being fed, showered and asleep early—not completing a checklist.",
+        "spots": [
+          {
+            "name": "Alfama + Baixa soft landing",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Alfama%20%2B%20Baixa%20soft%20landing\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lisbon/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; lisbon</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/alfama/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; alfama</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Alfama%20%2B%20Baixa%20soft%20landing&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "sp-lisbon",
+            "images": [
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_alfama_sunrise_01.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_alfama_sunrise_01.jpg",
+                "alt": "Alfama rooftops and tiled terraces glowing above the Tagus at sunrise",
+                "captionTitle": "Alfama Sunrise",
+                "credit": "Amalia Bastos Photography · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_belem_sunset_02.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_belem_sunset_02.jpg",
+                "alt": "Belém Tower reflected in the Tagus beneath a fiery sunset",
+                "captionTitle": "Belém at Sunset",
+                "credit": "Giuseppe Milo · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_jeronimos_03.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_jeronimos_03.jpg",
+                "alt": "The ornate white façade of Jerónimos Monastery beneath a deep blue sky",
+                "captionTitle": "Jerónimos",
+                "credit": "Jerónimos Monastery Tickets · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_castle_view_04.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_castle_view_04.jpg",
+                "alt": "Lisbon's terracotta hills rising toward São Jorge Castle above the Tagus",
+                "captionTitle": "Castle Hill",
+                "credit": "Pedro Ribeiro Simões · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_cityscape_05.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_cityscape_05.jpg",
+                "alt": "Layered terracotta roofs spreading across Lisbon’s historic hills",
+                "captionTitle": "Seven Hills",
+                "credit": "Justraveling.com · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_rooftops_06.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_rooftops_06.jpg",
+                "alt": "Sunlit Lisbon rooftops filling the frame from a high overlook",
+                "captionTitle": "Lisbon Rooftops",
+                "credit": "Justraveling.com · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_baixa_07.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_baixa_07.jpg",
+                "alt": "Lisbon’s Baixa blocks and river horizon seen from above",
+                "captionTitle": "Baixa Below",
+                "credit": "Michael Gaylard · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_bridge_view_08.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_bridge_view_08.jpg",
+                "alt": "Lisbon neighborhoods and the 25 de Abril Bridge framed from a hill",
+                "captionTitle": "Bridge View",
+                "credit": "Stephan · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_blue_hour_09.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_blue_hour_09.jpg",
+                "alt": "Lisbon lights glowing blue and gold above the Tagus after dusk",
+                "captionTitle": "Blue Hour",
+                "credit": "Artem Kavalerov · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lisbon_viewpoint_10.jpg",
+                "src": "../../assets/img/short-portugal/google_lisbon_viewpoint_10.jpg",
+                "alt": "São Pedro de Alcântara’s azulejo panorama overlooking Lisbon",
+                "captionTitle": "Hilltop Viewpoint",
+                "credit": "Jules Verne Times Two · Google Images source"
+              }
+            ],
+            "cost": "The neighborhoods and miradouros are free. Budget about €25–45 for a family airport transfer or use Metro when luggage and energy allow; exact 2027 fares require recheck.",
+            "climateLabel": "June air",
+            "climate": "<b>About 59–79°F typical daily low/high.</b> Keep arrival day shaded and short; Lisbon hills add effort even when the temperature looks gentle.",
+            "saveHtml": "<b>Save</b> Walk one compact downhill loop and eat near the apartment.",
+            "splurgeHtml": "<b>Splurge</b> Use a direct airport transfer after the overnight flight; this is an ease purchase, not a sightseeing tour.",
+            "restoHtml": "<li><a href=\"https://www.pizzeriazerozero.pt/\" target=\"_blank\" rel=\"noreferrer\"><b>ZeroZero</b></a> — pizza and fresh pasta</li><li><a href=\"https://www.manteigaria.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Manteigaria</b></a> — pastéis de nata and a low-stakes snack</li><li>Keep supermarket bread, fruit and yogurt in the room for jet-lag hunger.</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Hotel reset</b> if arrival is late.</li><li><b>Tagus waterfront</b> for flat walking instead of Alfama hills.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://www.visitlisboa.com/\" target=\"_blank\" rel=\"noreferrer\">Visit Lisboa</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=38.7121,-9.1307&amp;z=13&amp;output=embed\" title=\"Map of Alfama + Baixa soft landing\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=38.7121,-9.1307\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day2",
+        "colorClass": "c1",
+        "badge": "3",
+        "eyebrow": "Mon · Jun 14",
+        "heading": "Sintra · one palace only",
+        "feel": "Regaleira gardens and tunnels",
+        "daycost": "Est. $190 · family ticket, transit, meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Lisbon · night 2 of 2"
+          },
+          {
+            "label": "Book",
+            "valueHtml": "Timed Regaleira entry"
+          }
+        ],
+        "note": "One paid anchor plus one easy meal; skip the three-palace marathon and pack for Lagos tonight.",
+        "spots": [
+          {
+            "name": "Sintra · Quinta da Regaleira",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Sintra%20%C2%B7%20Quinta%20da%20Regaleira\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/sintra/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; sintra</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/quintadaregaleira/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; quintadaregaleira</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Sintra%20%C2%B7%20Quinta%20da%20Regaleira&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "sp-sintra",
+            "images": [
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_pena_aerial_01.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_pena_aerial_01.jpg",
+                "alt": "Pena Palace glowing red and yellow above Sintra’s forested ridge",
+                "captionTitle": "Pena Above the Forest",
+                "credit": "Matej Simko · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_regaleira_garden_02.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_regaleira_garden_02.jpg",
+                "alt": "Moss-covered stonework and garden detail at Quinta da Regaleira",
+                "captionTitle": "Enchanted Garden",
+                "credit": "Quinta da Regaleira · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_regaleira_palace_03.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_regaleira_palace_03.jpg",
+                "alt": "Quinta da Regaleira’s carved palace façade framed by palms",
+                "captionTitle": "Regaleira Palace",
+                "credit": "Parques de Sintra · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_initiation_well_04.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_initiation_well_04.jpg",
+                "alt": "The Initiation Well spiraling deep into mossy stone",
+                "captionTitle": "Initiation Well",
+                "credit": "Dan Perez Photography · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_well_spiral_05.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_well_spiral_05.jpg",
+                "alt": "A dramatic overhead view down the circular Regaleira well",
+                "captionTitle": "Spiral Descent",
+                "credit": "Unsplash · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_gothic_towers_06.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_gothic_towers_06.jpg",
+                "alt": "Gothic towers and ornate stone arches rising above Regaleira",
+                "captionTitle": "Gothic Towers",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_palace_facade_07.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_palace_facade_07.jpg",
+                "alt": "Regaleira Palace’s richly carved façade in clear summer light",
+                "captionTitle": "Palace Details",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_mystic_grotto_08.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_mystic_grotto_08.jpg",
+                "alt": "A shadowed stone grotto opening into the green Regaleira gardens",
+                "captionTitle": "Mystic Grotto",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_azenhas_twilight_09.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_azenhas_twilight_09.jpg",
+                "alt": "Azenhas do Mar glowing on a cliff above Atlantic surf at twilight",
+                "captionTitle": "Azenhas Twilight",
+                "credit": "Michael Breitung · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_sintra_adraga_beach_10.jpg",
+                "src": "../../assets/img/short-portugal/google_sintra_adraga_beach_10.jpg",
+                "alt": "Praia da Adraga’s jagged sea stacks framing an empty sweep of sand",
+                "captionTitle": "Adraga Coast",
+                "credit": "TravelPlanner source archive · Google Images source"
+              }
+            ],
+            "cost": "Official 2026 self-guided family admission is €60 for two adults plus two youths; tickets are timed, personal, nonrefundable except closure, and allow a one-hour grace period. Recheck 2027.",
+            "climateLabel": "June hills",
+            "climate": "<b>Cooler and damper than central Lisbon.</b> Carry a light rain/wind layer and grippy shoes for steps, tunnels and garden paths.",
+            "saveHtml": "<b>Save</b> Choose Regaleira as the only paid Sintra anchor and use train plus local bus/taxi.",
+            "splurgeHtml": "<b>Splurge</b> A prebooked transfer earns its keep only if it removes queues and preserves a calm return.",
+            "restoHtml": "<li><a href=\"https://www.incomumbyluissantos.pt/\" target=\"_blank\" rel=\"noreferrer\"><b>Incomum</b></a> — book only if the menu fits</li><li><a href=\"https://www.pizzahut.pt/restaurantes/sintra-vila/\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza Hut Sintra Vila</b></a> — predictable pizza and pasta fallback</li><li>Pack a simple picnic for outside the grounds; snacks are not allowed inside Regaleira.</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Cascais waterfront</b> if Sintra is foggy or everyone needs a flatter day.</li><li><b>Lisbon Oceanarium</b> as a weather-proof kid option.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://www.regaleira.pt/en/visitas\" target=\"_blank\" rel=\"noreferrer\">Regaleira official</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=38.7976,-9.3904&amp;z=13&amp;output=embed\" title=\"Map of Sintra · Quinta da Regaleira\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=38.7976,-9.3904\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day3",
+        "colorClass": "c2",
+        "badge": "4",
+        "eyebrow": "Tue · Jun 15",
+        "heading": "Train Lisbon → Lagos",
+        "feel": "Move early, then stay put",
+        "daycost": "Est. $190 · rail, local transfer, meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Lagos · night 1 of 5"
+          },
+          {
+            "label": "Rail",
+            "valueHtml": "Reserved long-distance segment; exact 2027 timetable required"
+          }
+        ],
+        "note": "Choose a morning departure, settle into the pool base, and let beach time be a bonus rather than a deadline.",
+        "spots": [],
+        "travelNote": null
+      },
+      {
+        "id": "day4",
+        "colorClass": "c2",
+        "badge": "5",
+        "eyebrow": "Wed · Jun 16",
+        "heading": "Ponta da Piedade + Camilo",
+        "feel": "Headline Algarve scenery",
+        "daycost": "Est. $180 · taxi/boat option, meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Lagos · night 2 of 5"
+          },
+          {
+            "label": "Water",
+            "valueHtml": "Optional; check flags and swell"
+          }
+        ],
+        "note": "The free clifftop view is the baseline; the boat is never the only reason the day works.",
+        "spots": [
+          {
+            "name": "Ponta da Piedade + Praia do Camilo",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Ponta%20da%20Piedade%20%2B%20Praia%20do%20Camilo\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/pontadapiedade/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; pontadapiedade</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadocamilo/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; praiadocamilo</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Ponta%20da%20Piedade%20%2B%20Praia%20do%20Camilo&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "sp-ponta",
+            "images": [
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_cliffs_01.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_cliffs_01.jpg",
+                "alt": "Golden Ponta da Piedade cliffs dropping into clear blue Atlantic water",
+                "captionTitle": "Golden Headland",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_arches_02.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_arches_02.jpg",
+                "alt": "Natural limestone arches and sea stacks rising from turquoise water",
+                "captionTitle": "Sea Arches",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_grotto_coast_03.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_grotto_coast_03.jpg",
+                "alt": "Boats threading between Ponta da Piedade’s sculpted rock towers",
+                "captionTitle": "Grotto Coast",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_golden_arch_04.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_golden_arch_04.jpg",
+                "alt": "A sunlit rock arch opening toward the calm Atlantic",
+                "captionTitle": "Golden Arch",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_headland_05.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_headland_05.jpg",
+                "alt": "Ponta da Piedade’s rugged headland seen from above the sea",
+                "captionTitle": "The Headland",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_sea_grottoes_06.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_sea_grottoes_06.jpg",
+                "alt": "Emerald grotto water surrounded by steep ochre cliffs",
+                "captionTitle": "Sea Grottoes",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_sea_stacks_07.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_sea_stacks_07.jpg",
+                "alt": "Towering limestone stacks isolated against deep blue water",
+                "captionTitle": "Sea Stacks",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_kayak_channel_11.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_kayak_channel_11.jpg",
+                "alt": "Kayaks slipping between Ponta da Piedade’s towering golden walls",
+                "captionTitle": "Kayak Channel",
+                "credit": "Wikimedia contributor · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_waterline_09.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_waterline_09.jpg",
+                "alt": "Ponta da Piedade formations seen from a boat at water level",
+                "captionTitle": "From the Water",
+                "credit": "Wikimedia contributor · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_ponta_tidal_arches_10.jpg",
+                "src": "../../assets/img/short-portugal/google_ponta_tidal_arches_10.jpg",
+                "alt": "Sea arches and tidal pools glowing in soft coastal light",
+                "captionTitle": "Tidal Arches",
+                "credit": "franzi.sohn · Google Images source"
+              }
+            ],
+            "cost": "Clifftop boardwalks/viewpoints are free. Treat any short licensed boat as a weather-day choice and reprice it for 2027; never assume cave access in swell.",
+            "climateLabel": "Sea conditions",
+            "climate": "<b>Atlantic roughly 68–72°F in summer.</b> The official beach listings show summer averages of 20–22°C; swimming and boats still depend on flags, wind and swell.",
+            "saveHtml": "<b>Save</b> Walk the free boardwalk early and skip the boat if conditions or price disappoint.",
+            "splurgeHtml": "<b>Splurge</b> A small-group boat is worthwhile only after the operator confirms the route that morning.",
+            "restoHtml": "<li><a href=\"https://www.casagastronomiaitaliana.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Casa da Gastronomia Italiana</b></a> — pizza/pasta after the cliffs</li><li><a href=\"https://www.nahnahbah.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Nah Nah Bah</b></a> — burgers and fries</li><li>Carry a picnic and water; cliff stops are not the place to depend on a picky-eater menu.</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Meia Praia</b> for flat sand and space.</li><li><b>Hotel pool</b> if wind or stairs are wrong for the day.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://www.visitportugal.com/en/NR/exeres/38A76329-60A7-42C1-BB1F-A5CEA6E9EC06\" target=\"_blank\" rel=\"noreferrer\">Visit Portugal beach data</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.0817,-8.6672&amp;z=13&amp;output=embed\" title=\"Map of Ponta da Piedade + Praia do Camilo\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.0817,-8.6672\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day5",
+        "colorClass": "c2",
+        "badge": "6",
+        "eyebrow": "Thu · Jun 17",
+        "heading": "Pool + Meia Praia reset",
+        "feel": "The useful empty day",
+        "daycost": "Est. $120 · local rides and meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Lagos · night 3 of 5"
+          },
+          {
+            "label": "Plan",
+            "valueHtml": "Pool first; nearby sand only if everyone wants it"
+          }
+        ],
+        "note": "This day absorbs wind, jet lag, a delayed train, or a Ponta boat moved by sea conditions. If nothing goes wrong, it is simply an easy swim day.",
+        "spots": [
+          {
+            "name": "Lagos old town + Meia Praia",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Lagos%20old%20town%20%2B%20Meia%20Praia\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/lagos/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; lagos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/mei%20praia/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; mei praia</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Lagos%20old%20town%20%2B%20Meia%20Praia&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "sp-lagos",
+            "images": [
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_headland_aerial_01.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_headland_aerial_01.jpg",
+                "alt": "Lagos lighthouse and cliff paths traced from directly above",
+                "captionTitle": "Lagos Headland",
+                "credit": "Mike Art · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_rock_sunset_02.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_rock_sunset_02.jpg",
+                "alt": "Lagos sea stacks silhouetted against warm light on the Atlantic horizon",
+                "captionTitle": "Atlantic Glow",
+                "credit": "S. Deigl · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_old_town_03.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_old_town_03.jpg",
+                "alt": "Colorful façades and patterned paving along a sunny Lagos street",
+                "captionTitle": "Old Town Color",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_meia_praia_04.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_meia_praia_04.jpg",
+                "alt": "Meia Praia’s long sandy arc and breakwater seen from the air",
+                "captionTitle": "Meia Praia",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_camilo_cove_05.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_camilo_cove_05.jpg",
+                "alt": "Golden cliffs and blue water framing Praia do Camilo",
+                "captionTitle": "Camilo Cove",
+                "credit": "Petra Nesti · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_dona_ana_06.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_dona_ana_06.jpg",
+                "alt": "Dona Ana’s limestone stacks and sheltered beach in clear light",
+                "captionTitle": "Dona Ana",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_burgau_coast_07.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_burgau_coast_07.jpg",
+                "alt": "Burgau’s white village spilling toward a turquoise bay",
+                "captionTitle": "Burgau Bay",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_camilo_stairs_08.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_camilo_stairs_08.jpg",
+                "alt": "Praia do Camilo and its stairway tucked between ochre cliffs",
+                "captionTitle": "Camilo Stairs",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_beach_sunset_09.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_beach_sunset_09.jpg",
+                "alt": "A Lagos beach glowing orange and violet beneath a dramatic sunset",
+                "captionTitle": "Beach Sunset",
+                "credit": "Wikimedia contributor · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_lagos_old_gate_10.jpg",
+                "src": "../../assets/img/short-portugal/google_lagos_old_gate_10.jpg",
+                "alt": "A stone arch framing a bright cobbled lane in Lagos old town",
+                "captionTitle": "Old Town Gate",
+                "credit": "Wikimedia contributor · Google Images source"
+              }
+            ],
+            "cost": "Old town and beach are free. The Lisbon–Lagos rail trip requires a reserved long-distance segment and commonly a Tunes connection; price the exact 2027 departure in CP before booking.",
+            "climateLabel": "June coast",
+            "climate": "<b>About 64–80°F air; Atlantic water roughly 68–72°F.</b> Swimming is optional. A pool is the reliable warm-water fallback.",
+            "saveHtml": "<b>Save</b> Stay walkable to old town and the station, then use local taxis rather than rent a car.",
+            "splurgeHtml": "<b>Splurge</b> Choose an apartment/hotel with a heated or sun-warmed pool; that upgrade solves the cool-ocean tradeoff.",
+            "restoHtml": "<li><a href=\"https://www.casagastronomiaitaliana.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Casa da Gastronomia Italiana</b></a> — pizza and pasta</li><li><a href=\"https://www.tripadvisor.com/Restaurant_Review-g189117-d17415665-Reviews-Pizza_Pazza-Lagos_Faro_District_Algarve.html\" target=\"_blank\" rel=\"noreferrer\"><b>Pizza Pazza</b></a> — simple pizza fallback</li><li>Pingo Doce/Continente groceries cover breakfast and beach picnics.</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Pool afternoon</b> if the train runs late.</li><li><b>Marina walk</b> if beach wind is up.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://www.visitportugal.com/en/destinos/algarve/73807\" target=\"_blank\" rel=\"noreferrer\">Visit Portugal · Algarve</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.1028,-8.673&amp;z=13&amp;output=embed\" title=\"Map of Lagos old town + Meia Praia\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.1028,-8.673\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day6",
+        "colorClass": "c2",
+        "badge": "7",
+        "eyebrow": "Fri · Jun 18 · Juneteenth observed",
+        "heading": "Marinha coast or easy Lagos repeat",
+        "feel": "Weather-flex coast day",
+        "daycost": "Est. $200 · transfer/tour option, meals",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Lagos · night 4 of 5"
+          },
+          {
+            "label": "PTO",
+            "valueHtml": "Observed holiday protects this workday"
+          }
+        ],
+        "note": "Use Marinha only when transport, heat and sea conditions line up; the pool and nearby beach remain an equally valid finish.",
+        "spots": [
+          {
+            "name": "Praia da Marinha coast day",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Praia%20da%20Marinha%20coast%20day\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/praiadamarinha/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; praiadamarinha</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/algarve/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; algarve</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Praia%20da%20Marinha%20coast%20day&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "sp-marinha",
+            "images": [
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_arches_01.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_arches_01.jpg",
+                "alt": "Praia da Marinha’s twin limestone arches over blue-green water",
+                "captionTitle": "Marinha Arches",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_emerald_02.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_emerald_02.jpg",
+                "alt": "Emerald water and golden stacks filling the Marinha cove",
+                "captionTitle": "Emerald Water",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_twin_arches_03.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_twin_arches_03.jpg",
+                "alt": "The famous twin arches aligned along the Algarve coast",
+                "captionTitle": "Twin Arches",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_turquoise_cove_04.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_turquoise_cove_04.jpg",
+                "alt": "A turquoise cove sheltered beneath layered limestone cliffs",
+                "captionTitle": "Turquoise Cove",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_benagil_above_05.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_benagil_above_05.jpg",
+                "alt": "Benagil Cave’s circular skylight and beach seen from above",
+                "captionTitle": "Benagil from Above",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_benagil_water_06.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_benagil_water_06.jpg",
+                "alt": "Kayaks approaching the bright mouth of a limestone sea cave",
+                "captionTitle": "Benagil by Water",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_cave_beach_07.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_cave_beach_07.jpg",
+                "alt": "Sunlight pouring through Benagil Cave onto its hidden beach",
+                "captionTitle": "Cave Beach",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_carvoeiro_08.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_carvoeiro_08.jpg",
+                "alt": "Carvoeiro’s white village perched above a golden beach",
+                "captionTitle": "Carvoeiro Bay",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_cliff_village_09.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_cliff_village_09.jpg",
+                "alt": "Whitewashed Algarve homes crowning a dramatic ochre headland",
+                "captionTitle": "Cliff Village",
+                "credit": "TravelPlanner source archive · Google Images source"
+              },
+              {
+                "href": "../../assets/img/short-portugal/google_marinha_albandeira_arch_10.jpg",
+                "src": "../../assets/img/short-portugal/google_marinha_albandeira_arch_10.jpg",
+                "alt": "Albandeira’s natural rock arch surrounded by vivid blue sea",
+                "captionTitle": "Albandeira Arch",
+                "credit": "TravelPlanner source archive · Google Images source"
+              }
+            ],
+            "cost": "The viewpoints are free. Budget local transfer/taxi money instead of a weeklong rental; confirm the pickup plan before committing because Marinha is not a frictionless transit beach.",
+            "climateLabel": "June coast",
+            "climate": "<b>About 64–80°F air and 68–72°F sea planning range.</b> Keep children well back from cliff edges and make the beach descent optional.",
+            "saveHtml": "<b>Save</b> Use a pre-priced transfer and make the overlook the guaranteed payoff.",
+            "splurgeHtml": "<b>Splurge</b> A half-day licensed coast tour can bundle transport and a boat, but only with a clear cancellation policy.",
+            "restoHtml": "<li><a href=\"https://www.casagastronomiaitaliana.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Casa da Gastronomia Italiana</b></a> — reliable Lagos dinner afterward</li><li><a href=\"https://www.nahnahbah.com/\" target=\"_blank\" rel=\"noreferrer\"><b>Nah Nah Bah</b></a> — burgers/fries fallback</li><li>Pack lunch rather than depend on the beach concession.</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Lagos pool + old town</b> for the easiest day.</li><li><b>Praia Dona Ana</b> for a closer beach without the long transfer.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://www.visitportugal.com/en/node/141913\" target=\"_blank\" rel=\"noreferrer\">Visit Portugal · Praia da Marinha</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=37.09,-8.4125&amp;z=13&amp;output=embed\" title=\"Map of Praia da Marinha coast day\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=37.09,-8.4125\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day7",
+        "colorClass": "c2",
+        "badge": "8",
+        "eyebrow": "Sat · Jun 19",
+        "heading": "Final pool, beach + old-town dinner",
+        "feel": "Nothing left to prove",
+        "daycost": "Est. $140 · local food and beach/pool",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Lagos · night 5 of 5"
+          },
+          {
+            "label": "Pack",
+            "valueHtml": "Prebook tomorrow’s FAO transfer"
+          }
+        ],
+        "note": "Keep the final day local. It is spare capacity if weather displaced an earlier coast day and a true rest day if the plan ran normally.",
+        "spots": [],
+        "travelNote": null
+      },
+      {
+        "id": "day8",
+        "colorClass": "c0",
+        "badge": "9",
+        "eyebrow": "Sun · Jun 20",
+        "heading": "Faro → Pittsburgh",
+        "feel": "Weekend return",
+        "daycost": "Est. $90 · transfer and airport food",
+        "facts": [
+          {
+            "label": "Route",
+            "valueHtml": "Lagos → FAO → hub → PIT"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Home"
+          }
+        ],
+        "note": "Use a prebooked Lagos–FAO transfer and a protected through-ticket; exact 2027 schedule is not ready.",
+        "spots": [],
+        "travelNote": "&#9992;&#65038; Travel day &mdash; no stops"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "t": "raw",
+      "html": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Portugal in One Week — June 2027</title><style>/* required styles */\n\n.leaflet-pane,\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-tile-container,\n.leaflet-pane > svg,\n.leaflet-pane > canvas,\n.leaflet-zoom-box,\n.leaflet-image-layer,\n.leaflet-layer {\n\tposition: absolute;\n\tleft: 0;\n\ttop: 0;\n\t}\n.leaflet-container {\n\toverflow: hidden;\n\t}\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\t-webkit-user-select: none;\n\t   -moz-user-select: none;\n\t        user-select: none;\n\t  -webkit-user-drag: none;\n\t}\n/* Prevents IE11 from highlighting tiles in blue */\n.leaflet-tile::selection {\n\tbackground: transparent;\n}\n/* Safari renders non-retina tile on retina better with this, but Chrome is worse */\n.leaflet-safari .leaflet-tile {\n\timage-rendering: -webkit-optimize-contrast;\n\t}\n/* hack that prevents hw layers \"stretching\" when loading new tiles */\n.leaflet-safari .leaflet-tile-container {\n\twidth: 1600px;\n\theight: 1600px;\n\t-webkit-transform-origin: 0 0;\n\t}\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\tdisplay: block;\n\t}\n/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */\n/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */\n.leaflet-container .leaflet-overlay-pane svg {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\t}\n.leaflet-container .leaflet-marker-pane img,\n.leaflet-container .leaflet-shadow-pane img,\n.leaflet-container .leaflet-tile-pane img,\n.leaflet-container img.leaflet-image-layer,\n.leaflet-container .leaflet-tile {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\twidth: auto;\n\tpadding: 0;\n\t}\n\n.leaflet-container img.leaflet-tile {\n\t/* See: https://bugs.chromium.org/p/chromium/issues/detail?id=600120 */\n\tmix-blend-mode: plus-lighter;\n}\n\n.leaflet-container.leaflet-touch-zoom {\n\t-ms-touch-action: pan-x pan-y;\n\ttouch-action: pan-x pan-y;\n\t}\n.leaflet-container.leaflet-touch-drag {\n\t-ms-touch-action: pinch-zoom;\n\t/* Fallback for FF which doesn't support pinch-zoom */\n\ttouch-action: none;\n\ttouch-action: pinch-zoom;\n}\n.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {\n\t-ms-touch-action: none;\n\ttouch-action: none;\n}\n.leaflet-container {\n\t-webkit-tap-highlight-color: transparent;\n}\n.leaflet-container a {\n\t-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);\n}\n.leaflet-tile {\n\tfilter: inherit;\n\tvisibility: hidden;\n\t}\n.leaflet-tile-loaded {\n\tvisibility: inherit;\n\t}\n.leaflet-zoom-box {\n\twidth: 0;\n\theight: 0;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tz-index: 800;\n\t}\n/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */\n.leaflet-overlay-pane svg {\n\t-moz-user-select: none;\n\t}\n\n.leaflet-pane         { z-index: 400; }\n\n.leaflet-tile-pane    { z-index: 200; }\n.leaflet-overlay-pane { z-index: 400; }\n.leaflet-shadow-pane  { z-index: 500; }\n.leaflet-marker-pane  { z-index: 600; }\n.leaflet-tooltip-pane   { z-index: 650; }\n.leaflet-popup-pane   { z-index: 700; }\n\n.leaflet-map-pane canvas { z-index: 100; }\n.leaflet-map-pane svg    { z-index: 200; }\n\n.leaflet-vml-shape {\n\twidth: 1px;\n\theight: 1px;\n\t}\n.lvml {\n\tbehavior: url(#default#VML);\n\tdisplay: inline-block;\n\tposition: absolute;\n\t}\n\n\n/* control positioning */\n\n.leaflet-control {\n\tposition: relative;\n\tz-index: 800;\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n.leaflet-top,\n.leaflet-bottom {\n\tposition: absolute;\n\tz-index: 1000;\n\tpointer-events: none;\n\t}\n.leaflet-top {\n\ttop: 0;\n\t}\n.leaflet-right {\n\tright: 0;\n\t}\n.leaflet-bottom {\n\tbottom: 0;\n\t}\n.leaflet-left {\n\tleft: 0;\n\t}\n.leaflet-control {\n\tfloat: left;\n\tclear: both;\n\t}\n.leaflet-right .leaflet-control {\n\tfloat: right;\n\t}\n.leaflet-top .leaflet-control {\n\tmargin-top: 10px;\n\t}\n.leaflet-bottom .leaflet-control {\n\tmargin-bottom: 10px;\n\t}\n.leaflet-left .leaflet-control {\n\tmargin-left: 10px;\n\t}\n.leaflet-right .leaflet-control {\n\tmargin-right: 10px;\n\t}\n\n\n/* zoom and fade animations */\n\n.leaflet-fade-anim .leaflet-popup {\n\topacity: 0;\n\t-webkit-transition: opacity 0.2s linear;\n\t   -moz-transition: opacity 0.2s linear;\n\t        transition: opacity 0.2s linear;\n\t}\n.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {\n\topacity: 1;\n\t}\n.leaflet-zoom-animated {\n\t-webkit-transform-origin: 0 0;\n\t    -ms-transform-origin: 0 0;\n\t        transform-origin: 0 0;\n\t}\nsvg.leaflet-zoom-animated {\n\twill-change: transform;\n}\n\n.leaflet-zoom-anim .leaflet-zoom-animated {\n\t-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);\n\t}\n.leaflet-zoom-anim .leaflet-tile,\n.leaflet-pan-anim .leaflet-tile {\n\t-webkit-transition: none;\n\t   -moz-transition: none;\n\t        transition: none;\n\t}\n\n.leaflet-zoom-anim .leaflet-zoom-hide {\n\tvisibility: hidden;\n\t}\n\n\n/* cursors */\n\n.leaflet-interactive {\n\tcursor: pointer;\n\t}\n.leaflet-grab {\n\tcursor: -webkit-grab;\n\tcursor:    -moz-grab;\n\tcursor:         grab;\n\t}\n.leaflet-crosshair,\n.leaflet-crosshair .leaflet-interactive {\n\tcursor: crosshair;\n\t}\n.leaflet-popup-pane,\n.leaflet-control {\n\tcursor: auto;\n\t}\n.leaflet-dragging .leaflet-grab,\n.leaflet-dragging .leaflet-grab .leaflet-interactive,\n.leaflet-dragging .leaflet-marker-draggable {\n\tcursor: move;\n\tcursor: -webkit-grabbing;\n\tcursor:    -moz-grabbing;\n\tcursor:         grabbing;\n\t}\n\n/* marker & overlays interactivity */\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-image-layer,\n.leaflet-pane > svg path,\n.leaflet-tile-container {\n\tpointer-events: none;\n\t}\n\n.leaflet-marker-icon.leaflet-interactive,\n.leaflet-image-layer.leaflet-interactive,\n.leaflet-pane > svg path.leaflet-interactive,\nsvg.leaflet-image-layer.leaflet-interactive path {\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n\n/* visual tweaks */\n\n.leaflet-container {\n\tbackground: #ddd;\n\toutline-offset: 1px;\n\t}\n.leaflet-container a {\n\tcolor: #0078A8;\n\t}\n.leaflet-zoom-box {\n\tborder: 2px dotted #38f;\n\tbackground: rgba(255,255,255,0.5);\n\t}\n\n\n/* general typography */\n.leaflet-container {\n\tfont-family: \"Helvetica Neue\", Arial, Helvetica, sans-serif;\n\tfont-size: 12px;\n\tfont-size: 0.75rem;\n\tline-height: 1.5;\n\t}\n\n\n/* general toolbar styles */\n\n.leaflet-bar {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.65);\n\tborder-radius: 4px;\n\t}\n.leaflet-bar a {\n\tbackground-color: #fff;\n\tborder-bottom: 1px solid #ccc;\n\twidth: 26px;\n\theight: 26px;\n\tline-height: 26px;\n\tdisplay: block;\n\ttext-align: center;\n\ttext-decoration: none;\n\tcolor: black;\n\t}\n.leaflet-bar a,\n.leaflet-control-layers-toggle {\n\tbackground-position: 50% 50%;\n\tbackground-repeat: no-repeat;\n\tdisplay: block;\n\t}\n.leaflet-bar a:hover,\n.leaflet-bar a:focus {\n\tbackground-color: #f4f4f4;\n\t}\n.leaflet-bar a:first-child {\n\tborder-top-left-radius: 4px;\n\tborder-top-right-radius: 4px;\n\t}\n.leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 4px;\n\tborder-bottom-right-radius: 4px;\n\tborder-bottom: none;\n\t}\n.leaflet-bar a.leaflet-disabled {\n\tcursor: default;\n\tbackground-color: #f4f4f4;\n\tcolor: #bbb;\n\t}\n\n.leaflet-touch .leaflet-bar a {\n\twidth: 30px;\n\theight: 30px;\n\tline-height: 30px;\n\t}\n.leaflet-touch .leaflet-bar a:first-child {\n\tborder-top-left-radius: 2px;\n\tborder-top-right-radius: 2px;\n\t}\n.leaflet-touch .leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 2px;\n\tborder-bottom-right-radius: 2px;\n\t}\n\n/* zoom control */\n\n.leaflet-control-zoom-in,\n.leaflet-control-zoom-out {\n\tfont: bold 18px 'Lucida Console', Monaco, monospace;\n\ttext-indent: 1px;\n\t}\n\n.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {\n\tfont-size: 22px;\n\t}\n\n\n/* layers control */\n\n.leaflet-control-layers {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.4);\n\tbackground: #fff;\n\tborder-radius: 5px;\n\t}\n.leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers.png);\n\twidth: 36px;\n\theight: 36px;\n\t}\n.leaflet-retina .leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers-2x.png);\n\tbackground-size: 26px 26px;\n\t}\n.leaflet-touch .leaflet-control-layers-toggle {\n\twidth: 44px;\n\theight: 44px;\n\t}\n.leaflet-control-layers .leaflet-control-layers-list,\n.leaflet-control-layers-expanded .leaflet-control-layers-toggle {\n\tdisplay: none;\n\t}\n.leaflet-control-layers-expanded .leaflet-control-layers-list {\n\tdisplay: block;\n\tposition: relative;\n\t}\n.leaflet-control-layers-expanded {\n\tpadding: 6px 10px 6px 6px;\n\tcolor: #333;\n\tbackground: #fff;\n\t}\n.leaflet-control-layers-scrollbar {\n\toverflow-y: scroll;\n\toverflow-x: hidden;\n\tpadding-right: 5px;\n\t}\n.leaflet-control-layers-selector {\n\tmargin-top: 2px;\n\tposition: relative;\n\ttop: 1px;\n\t}\n.leaflet-control-layers label {\n\tdisplay: block;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\t}\n.leaflet-control-layers-separator {\n\theight: 0;\n\tborder-top: 1px solid #ddd;\n\tmargin: 5px -10px 5px -6px;\n\t}\n\n/* Default icon URLs */\n.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */\n\tbackground-image: url(images/marker-icon.png);\n\t}\n\n\n/* attribution and scale controls */\n\n.leaflet-container .leaflet-control-attribution {\n\tbackground: #fff;\n\tbackground: rgba(255, 255, 255, 0.8);\n\tmargin: 0;\n\t}\n.leaflet-control-attribution,\n.leaflet-control-scale-line {\n\tpadding: 0 5px;\n\tcolor: #333;\n\tline-height: 1.4;\n\t}\n.leaflet-control-attribution a {\n\ttext-decoration: none;\n\t}\n.leaflet-control-attribution a:hover,\n.leaflet-control-attribution a:focus {\n\ttext-decoration: underline;\n\t}\n.leaflet-attribution-flag {\n\tdisplay: inline !important;\n\tvertical-align: baseline !important;\n\twidth: 1em;\n\theight: 0.6669em;\n\t}\n.leaflet-left .leaflet-control-scale {\n\tmargin-left: 5px;\n\t}\n.leaflet-bottom .leaflet-control-scale {\n\tmargin-bottom: 5px;\n\t}\n.leaflet-control-scale-line {\n\tborder: 2px solid #777;\n\tborder-top: none;\n\tline-height: 1.1;\n\tpadding: 2px 5px 1px;\n\twhite-space: nowrap;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tbackground: rgba(255, 255, 255, 0.8);\n\ttext-shadow: 1px 1px #fff;\n\t}\n.leaflet-control-scale-line:not(:first-child) {\n\tborder-top: 2px solid #777;\n\tborder-bottom: none;\n\tmargin-top: -2px;\n\t}\n.leaflet-control-scale-line:not(:first-child):not(:last-child) {\n\tborder-bottom: 2px solid #777;\n\t}\n\n.leaflet-touch .leaflet-control-attribution,\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tbox-shadow: none;\n\t}\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tborder: 2px solid rgba(0,0,0,0.2);\n\tbackground-clip: padding-box;\n\t}\n\n\n/* popup */\n\n.leaflet-popup {\n\tposition: absolute;\n\ttext-align: center;\n\tmargin-bottom: 20px;\n\t}\n.leaflet-popup-content-wrapper {\n\tpadding: 1px;\n\ttext-align: left;\n\tborder-radius: 12px;\n\t}\n.leaflet-popup-content {\n\tmargin: 13px 24px 13px 20px;\n\tline-height: 1.3;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\tmin-height: 1px;\n\t}\n.leaflet-popup-content p {\n\tmargin: 17px 0;\n\tmargin: 1.3em 0;\n\t}\n.leaflet-popup-tip-container {\n\twidth: 40px;\n\theight: 20px;\n\tposition: absolute;\n\tleft: 50%;\n\tmargin-top: -1px;\n\tmargin-left: -20px;\n\toverflow: hidden;\n\tpointer-events: none;\n\t}\n.leaflet-popup-tip {\n\twidth: 17px;\n\theight: 17px;\n\tpadding: 1px;\n\n\tmargin: -10px auto 0;\n\tpointer-events: auto;\n\n\t-webkit-transform: rotate(45deg);\n\t   -moz-transform: rotate(45deg);\n\t    -ms-transform: rotate(45deg);\n\t        transform: rotate(45deg);\n\t}\n.leaflet-popup-content-wrapper,\n.leaflet-popup-tip {\n\tbackground: white;\n\tcolor: #333;\n\tbox-shadow: 0 3px 14px rgba(0,0,0,0.4);\n\t}\n.leaflet-container a.leaflet-popup-close-button {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tborder: none;\n\ttext-align: center;\n\twidth: 24px;\n\theight: 24px;\n\tfont: 16px/24px Tahoma, Verdana, sans-serif;\n\tcolor: #757575;\n\ttext-decoration: none;\n\tbackground: transparent;\n\t}\n.leaflet-container a.leaflet-popup-close-button:hover,\n.leaflet-container a.leaflet-popup-close-button:focus {\n\tcolor: #585858;\n\t}\n.leaflet-popup-scrolled {\n\toverflow: auto;\n\t}\n\n.leaflet-oldie .leaflet-popup-content-wrapper {\n\t-ms-zoom: 1;\n\t}\n.leaflet-oldie .leaflet-popup-tip {\n\twidth: 24px;\n\tmargin: 0 auto;\n\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)\";\n\tfilter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);\n\t}\n\n.leaflet-oldie .leaflet-control-zoom,\n.leaflet-oldie .leaflet-control-layers,\n.leaflet-oldie .leaflet-popup-content-wrapper,\n.leaflet-oldie .leaflet-popup-tip {\n\tborder: 1px solid #999;\n\t}\n\n\n/* div icon */\n\n.leaflet-div-icon {\n\tbackground: #fff;\n\tborder: 1px solid #666;\n\t}\n\n\n/* Tooltip */\n/* Base styles for the element that has a tooltip */\n.leaflet-tooltip {\n\tposition: absolute;\n\tpadding: 6px;\n\tbackground-color: #fff;\n\tborder: 1px solid #fff;\n\tborder-radius: 3px;\n\tcolor: #222;\n\twhite-space: nowrap;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n\tpointer-events: none;\n\tbox-shadow: 0 1px 3px rgba(0,0,0,0.4);\n\t}\n.leaflet-tooltip.leaflet-interactive {\n\tcursor: pointer;\n\tpointer-events: auto;\n\t}\n.leaflet-tooltip-top:before,\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\tposition: absolute;\n\tpointer-events: none;\n\tborder: 6px solid transparent;\n\tbackground: transparent;\n\tcontent: \"\";\n\t}\n\n/* Directions */\n\n.leaflet-tooltip-bottom {\n\tmargin-top: 6px;\n}\n.leaflet-tooltip-top {\n\tmargin-top: -6px;\n}\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-top:before {\n\tleft: 50%;\n\tmargin-left: -6px;\n\t}\n.leaflet-tooltip-top:before {\n\tbottom: 0;\n\tmargin-bottom: -12px;\n\tborder-top-color: #fff;\n\t}\n.leaflet-tooltip-bottom:before {\n\ttop: 0;\n\tmargin-top: -12px;\n\tmargin-left: -6px;\n\tborder-bottom-color: #fff;\n\t}\n.leaflet-tooltip-left {\n\tmargin-left: -6px;\n}\n.leaflet-tooltip-right {\n\tmargin-left: 6px;\n}\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\ttop: 50%;\n\tmargin-top: -6px;\n\t}\n.leaflet-tooltip-left:before {\n\tright: 0;\n\tmargin-right: -12px;\n\tborder-left-color: #fff;\n\t}\n.leaflet-tooltip-right:before {\n\tleft: 0;\n\tmargin-left: -12px;\n\tborder-right-color: #fff;\n\t}\n\n/* Printing */\n\n@media print {\n\t/* Prevent printers from removing background-images of controls. */\n\t.leaflet-control {\n\t\t-webkit-print-color-adjust: exact;\n\t\tprint-color-adjust: exact;\n\t\t}\n\t}\n\n:root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;\n --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;\n --save:#3f7d4e;--splurge:#a9862b;--shadow:0 18px 46px rgba(30,32,28,.14)}\n*{box-sizing:border-box}\nhtml{scroll-behavior:smooth}\nbody{margin:0;background:var(--paper);color:var(--ink);\n font:16px/1.55 \"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;-webkit-font-smoothing:antialiased}\nh1,h2,h3,h4{font-family:\"Fraunces\",\"Georgia\",serif;letter-spacing:-.01em}\na{color:var(--c1)}\n.eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}\n/* HERO */\nheader{position:relative;min-height:90vh;display:grid;align-items:end;padding:40px clamp(20px,5vw,80px) 54px;color:#fff;overflow:hidden}\nheader::before{content:\"\";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,24,.12),rgba(10,18,22,.34) 45%,rgba(8,14,18,.88)),url(\"../../assets/img/portugal-sicily/google_cascais_boca_01.jpg\") center 40% / cover;transform:scale(1.03);z-index:-1}\n.hero-inner{max-width:1100px}\nheader .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}\nh1{margin:0 0 18px;font-size:clamp(2.9rem,9vw,7rem);line-height:.9;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}\nheader .lead{max-width:640px;margin:0 0 26px;font-size:clamp(1.05rem,2.1vw,1.3rem);color:rgba(255,255,255,.94);line-height:1.5}\n.hero-meta{display:flex;flex-wrap:wrap;gap:26px}\n.hero-meta div{display:flex;flex-direction:column}\n.hero-meta b{font-family:\"Fraunces\",serif;font-size:1.5rem;line-height:1}\n.hero-meta span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}\n/* NAV */\nsection[id],article[id]{scroll-margin-top:84px}\n.site-nav{z-index:500;--nav-bg:#17130f;--nav-panel:#211c16;--nav-panel-2:#2a231b;--nav-line:rgba(246,241,231,.16);--nav-text:#f6f1e7;--nav-muted:rgba(246,241,231,.62);--nav-active:#5f9aa3;--nav-active-ink:#061517;--nav-shadow:0 18px 42px rgba(12,10,8,.28)}\n.site-nav summary{list-style:none}\n.site-nav summary::-webkit-details-marker{display:none}\n.site-nav a{color:var(--nav-text);font-weight:800;text-decoration:none;line-height:1.2;transition:background .15s,color .15s,border-color .15s,box-shadow .15s}\n.site-nav a.active{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active);box-shadow:0 8px 22px rgba(95,154,163,.22)}\n@media(min-width:960px){\n  body{padding-left:clamp(210px,17vw,248px)}\n  section[id],article[id]{scroll-margin-top:24px}\n  .site-nav{position:fixed;inset:0 auto 0 0;width:clamp(210px,17vw,248px);display:block;padding:18px 14px;background:linear-gradient(180deg,rgba(33,28,22,.98),rgba(18,15,12,.97));border-right:1px solid var(--nav-line);backdrop-filter:blur(16px);box-shadow:14px 0 42px rgba(12,10,8,.26);overflow:hidden;color:var(--nav-text)}\n  .site-nav-menu{height:100%;display:flex;flex-direction:column;min-height:0;overflow:hidden}\n  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:10px 10px 13px;border-bottom:1px solid var(--nav-line);color:var(--nav-muted);font-size:.7rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;cursor:default}\n  .site-nav summary::after{content:\"\";width:26px;height:2px;background:var(--nav-line)}\n  .site-nav-links{flex:1 1 auto;display:grid;align-content:start;gap:6px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;min-height:0;max-height:calc(100vh - 92px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(246,241,231,.26) transparent}\n  .site-nav a{display:flex;align-items:center;min-height:36px;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:transparent;font-size:.82rem}\n  .site-nav a:hover{background:rgba(246,241,231,.1);color:#fff;border-color:var(--nav-line)}\n  .site-nav a.nav-home{margin-bottom:6px;background:rgba(42,83,89,.42);color:var(--nav-active);border-color:rgba(95,154,163,.48)}\n}\n@media(max-width:959px){\n  .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}\n  .site-nav-menu{max-width:1320px;margin:0 auto}\n  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}\n  .site-nav summary::after{content:\"+\";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}\n  .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}\n  .site-nav-menu[open] summary::after{content:\"-\"}\n  .site-nav-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin-top:8px;max-height:min(70vh,480px);overflow:auto;padding:8px;border:1px solid var(--nav-line);border-radius:12px;background:linear-gradient(180deg,var(--nav-panel),var(--nav-bg));box-shadow:0 18px 42px rgba(12,10,8,.34)}\n  .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}\n  .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}\n}\nmain{max-width:1320px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}\n.section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}\n.section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}\n.section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}\n.divider{margin:78px 0 40px}\n/* OVERVIEW */\n.overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}\n.ocard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.ocard .eyebrow{color:var(--c1)}\n.ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}\n.ocard p{margin:0;color:var(--muted);font-size:.92rem}\n/* TRIP MAP */\n.hc-grid{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}\n.hc{display:grid;grid-template-columns:132px minmax(190px,285px) minmax(0,1fr);gap:16px;align-items:start;margin:0;padding:18px 22px;border:0;border-left:5px solid var(--muted);border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}\n.hc:last-child{border-bottom:0}\n.hc.actnow{border-left-color:#c0392b}\n.hc.watch{border-left-color:var(--gold)}\n.hc.good{border-left-color:var(--c3)}\n.hc-tag{display:inline-flex;align-items:center;justify-content:center;width:max-content;max-width:100%;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:1px 0 0;color:#fff;text-align:center;white-space:nowrap}\n.hc.actnow .hc-tag{background:#c0392b}\n.hc.watch .hc-tag{background:var(--gold)}\n.hc.good .hc-tag{background:var(--c3)}\n.hc h4{margin:0;font-size:1.08rem;font-weight:600;line-height:1.16}\n.hc p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.48}\n.hc p b{color:var(--ink)}\n@media(max-width:860px){.hc{grid-template-columns:1fr;gap:8px;padding:16px 18px}.hc-tag{margin:0}.hc h4{font-size:1.05rem}}\n\n/* TRAVEL TIPS */\n.tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}\n.tips-order p.mini-h{margin:0 0 12px}\n.tips-order ol{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;counter-reset:step}\n.tips-order li{counter-increment:step;position:relative;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 30px;font-size:.82rem;font-weight:600}\n.tips-order li::before{content:counter(step);position:absolute;left:6px;top:50%;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:var(--c1);color:#fff;font-size:.68rem;font-weight:800;display:grid;place-items:center}\n.tips-order li span{color:var(--muted);font-weight:600}\n.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}\n.tipcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--c1)}\n.tipcard.t2{border-top-color:var(--c2)}.tipcard.t3{border-top-color:var(--gold)}.tipcard.t4{border-top-color:var(--c3)}\n.tipcard h4{margin:0 0 4px;font-size:1.2rem;font-weight:600}\n.tipcard .sub{margin:0 0 12px;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.tipcard ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}\n.tipcard li{font-size:.88rem;color:var(--muted);line-height:1.5;padding-left:16px;position:relative}\n.tipcard li::before{content:\"\";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.tipcard li b{color:var(--ink)}\n.tipcard li.flag::before{background:#c0392b;width:8px;height:8px;top:7px}\n.tipcard li.flag b{color:#b5361f}\n\n.daycost{display:inline-block;margin:8px 0 0;font-size:.76rem;font-weight:700;color:var(--c2);background:rgba(194,90,58,.1);border:1px solid rgba(194,90,58,.28);border-radius:999px;padding:3px 11px}\n.budget-tbl.grand tr.total td{background:var(--ink);color:#fff;font-size:1.05rem;font-weight:800}\n.rate-note{margin:12px 2px 0;font-size:.78rem;color:var(--muted);line-height:1.5}\n\n.kv.climate{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}\n.kv.climate span{color:var(--c1)}\n\n/* TIMING COMPARE */\n.timing-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:22px}\n.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}\n.tcard.now{border-top-color:var(--c1)}\n.tcard.later{border-top-color:var(--c2)}\n.tcard.best{border-top-color:var(--c3)}\n.tcard.best .tlabel{background:var(--c3)}\n.tcard .tlabel{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px;color:#fff}\n.tcard.now .tlabel{background:var(--c1)}\n.tcard.later .tlabel{background:var(--c2)}\n.tcard h4{margin:0 0 12px;font-size:1.25rem;font-weight:600}\n.tcard .trow{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.88rem}\n.tcard .trow:last-child{border-bottom:0}\n.tcard .trow span{color:var(--muted)}\n.tcard .trow strong{text-align:right}\n.tcard .trow strong.bad{color:#b5361f}\n.listcard.pro-list{border-top:4px solid var(--c3)}\n.listcard.con-list{border-top:4px solid #c0392b}\n.listcard.pro-list li::before{content:\"✓\";position:static;width:auto;height:auto;border-radius:0;background:none;color:var(--c3);font-weight:800;margin-right:6px}\n.listcard.con-list li::before{content:\"✗\";position:static;width:auto;height:auto;border-radius:0;background:none;color:#c0392b;font-weight:800;margin-right:6px}\n.listcard.pro-list li,.listcard.con-list li{padding-left:0;display:flex;gap:2px}\n.listcard.pro-list li>span,.listcard.con-list li>span{flex:1}\n.verdict-box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ink);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin-top:20px}\n.verdict-box h4{margin:0 0 8px;font-size:1.1rem;font-weight:800}\n.verdict-box p{margin:0 0 10px;font-size:.92rem;color:var(--muted);line-height:1.55}\n.verdict-box p:last-child{margin-bottom:0}\n.verdict-box .aside{font-size:.82rem;font-style:italic;border-top:1px dashed var(--line);padding-top:10px;margin-top:12px}\n\n.tripmap-wrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow)}\n.mapbtns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}\n.mapbtns button{border:1px solid var(--line);background:var(--paper);color:var(--ink);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;cursor:pointer;transition:.15s}\n.mapbtns button:hover{background:var(--ink);color:#fff}\n.mapbtns button .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}\n#tripmap{height:460px;border-radius:14px;z-index:1}\n.leaflet-popup-content{font:14px/1.4 \"Inter\",sans-serif}\n.leaflet-popup-content b{font-family:\"Fraunces\",serif}\n.pin{width:16px;height:16px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.5)}\n/* BASES */\n.bases{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}\n.base{position:relative;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}\n.base .band{height:6px}\n.base.b1 .band{background:var(--c1)}.base.b2 .band{background:var(--c2)}.base.b3 .band{background:var(--c3)}\n.base .bimg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}\n.base .bbody{padding:18px 20px 22px}\n.base .nights{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.06em;color:#fff;margin-bottom:10px}\n.base.b1 .nights{background:var(--c1)}.base.b2 .nights{background:var(--c2)}.base.b3 .nights{background:var(--c3)}\n.base h4{margin:0 0 4px;font-size:1.55rem;font-weight:600}\n.base .dates{margin:0 0 10px;color:var(--muted);font-size:.85rem;font-weight:600}\n.base p{margin:0;color:var(--muted);font-size:.9rem}\n.base .book{margin:12px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink)}\n.base .book b{color:var(--c2)}\n/* PLAN GRID */\n.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.pcard h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:10px}\n.pcard h4 .dot{width:10px;height:10px;border-radius:50%;background:var(--gold)}\n.prow{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.prow:last-of-type{border-bottom:0}\n.prow span{color:var(--muted)}.prow strong{text-align:right}\n.pcard .tip{margin:12px 0 0;padding:10px 12px;background:rgba(217,164,65,.12);border-radius:10px;font-size:.82rem;color:#8a6a1e}\n/* DAYS */\n.days{display:grid;gap:26px}\n.day{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border-left:6px solid var(--c1)}\n.day.c1{border-left-color:var(--c1)}.day.c2{border-left-color:var(--c2)}.day.c3{border-left-color:var(--c3)}.day.c0{border-left-color:var(--muted)}\n.day-head{display:flex;gap:18px;align-items:center;padding:20px 24px 6px}\n.day-badge{flex:0 0 auto;width:58px;height:58px;border-radius:14px;display:grid;place-items:center;font-family:\"Fraunces\",serif;font-weight:600;font-size:1.15rem;color:#fff;line-height:1;text-align:center}\n.day.c1 .day-badge{background:var(--c1)}.day.c2 .day-badge{background:var(--c2)}.day.c3 .day-badge{background:var(--c3)}.day.c0 .day-badge{background:var(--muted)}\n.day-title h3{margin:2px 0 4px;font-size:1.4rem;font-weight:600;line-height:1.05}\n.day-title .feel{margin:0;color:var(--c2);font-size:.82rem;font-weight:700}\n.logistics{padding:4px 24px 12px}\n.facts{display:grid;margin:6px 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden}\n.facts div{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:9px 13px;border-bottom:1px solid var(--line);font-size:.86rem}\n.facts div:last-child{border-bottom:0}\n.facts span{color:var(--muted);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}\n.facts strong{font-weight:600}\n.note{margin:0;color:var(--ink);font-size:.94rem;line-height:1.55}\n/* SPOTS */\n.spots-wrap{display:grid;gap:20px;padding:6px 24px 24px}\n.travel-note{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px;font-weight:600}\n.spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}\n.spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}\n.spot-name{margin:0;font-size:1.22rem;font-weight:600}\n.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}\n.explore::-webkit-scrollbar{display:none}\n.explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}\n.explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}\n.explore .xg{background:#4285F4}\n.explore .xi{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}\n.explore .xf{background:#0063dc}\n/* CAROUSEL */\n.carousel{position:relative;overflow:hidden;background:#e7e1d4}\n.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}\n.track::-webkit-scrollbar{display:none}\n.track figure{margin:0;flex:0 0 100%;scroll-snap-align:center;position:relative}\n.track img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#e7e1d4}\n.track figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:.74rem;line-height:1.3;background:linear-gradient(180deg,transparent,rgba(0,0,0,.68))}\n.track figcaption strong{display:block;font-weight:700}\n.track figcaption span{color:rgba(255,255,255,.82);font-size:.66rem}\n.nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.86);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:.15s;z-index:2}\n.nav:hover{background:#fff;transform:translateY(-50%) scale(1.08)}\n.nav.prev{left:12px}.nav.next{right:12px}\n.counter{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;z-index:2}\n.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;flex-wrap:wrap;padding:0 40px}\n.dots .dot{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer;padding:0;transition:.15s}\n.dots .dot.on{background:#fff;width:20px;border-radius:999px}\n/* SPOT GRID */\n.spot-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px;padding:16px}\n.mini-h{margin:0 0 6px;font-weight:800;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.kv{margin-bottom:12px}\n.kv span{font-weight:800;font-size:.78rem;color:var(--ink)}\n.kv p{margin:4px 0 0;font-size:.9rem;color:var(--muted)}\n.callout{border-radius:10px;padding:10px 12px;font-size:.86rem;margin-bottom:10px;line-height:1.45}\n.callout b{font-weight:800}\n.callout.save{background:rgba(63,125,78,.1);border-left:3px solid var(--save)}\n.callout.save b{color:var(--save)}\n.callout.splurge{background:rgba(217,164,65,.14);border-left:3px solid var(--splurge)}\n.callout.splurge b{color:var(--splurge)}\n.resto{margin:14px 0 4px}\n.resto ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.resto li{font-size:.85rem;color:var(--muted);line-height:1.4;padding-left:14px;position:relative}\n.resto li::before{content:\"\";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.resto li a{text-decoration:none}.resto li b{color:var(--ink)}\n.altbox{margin:14px 0 4px;padding:12px;background:rgba(31,111,120,.07);border-radius:10px}\n.altbox p:last-child{margin:0;font-size:.86rem;color:var(--muted);line-height:1.45}\n.altbox a{text-decoration:none}\n.bloglinks{margin-top:14px;display:flex;flex-direction:column;gap:6px}\n.bloglinks a{font-size:.83rem;text-decoration:none;color:var(--c1);font-weight:600}\n.bloglinks a:hover{text-decoration:underline}\n.spot-map{display:flex;flex-direction:column}\n.mapwrap{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);flex:1;min-height:240px}\n.gmap{width:100%;height:100%;min-height:240px;border:0;display:block}\n.gmap-btn{margin-top:10px;text-align:center;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:10px;border-radius:10px;transition:.15s}\n.gmap-btn:hover{background:var(--c1)}\n/* BUDGET */\n.budget-tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}\n.budget-tbl th{background:rgba(31,111,120,.08);font-family:\"Fraunces\",serif;font-weight:600}\n.budget-tbl td:last-child,.budget-tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}\n.budget-tbl tr:last-child td{border-bottom:0;font-weight:700}\n.budget-scroll{overflow-x:auto}\n.twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}\n.listcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}\n.listcard h4{margin:0 0 12px;font-size:1.2rem;font-weight:600}\n.listcard.save-list{border-top:4px solid var(--save)}\n.listcard.splurge-list{border-top:4px solid var(--splurge)}\n.listcard ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}\n.listcard li{font-size:.88rem;color:var(--muted);line-height:1.45;padding-left:22px;position:relative}\n.save-list li::before{content:\"💰\";position:absolute;left:0;top:0}\n.splurge-list li::before{content:\"✨\";position:absolute;left:0;top:0}\n.listcard li b{color:var(--ink)}\n/* BALANCE */\n.bar{height:10px;border-radius:999px;background:rgba(26,23,18,.08);overflow:hidden;margin:14px 0 24px;display:flex}\n.bar i{height:100%;display:block}\n.balance{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}\n.bcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.bcard .pct{font-family:\"Fraunces\",serif;font-size:2.4rem;font-weight:600;line-height:1}\n.bcard.k1 .pct{color:var(--c1)}.bcard.k2 .pct{color:var(--c2)}.bcard.k3 .pct{color:var(--c3)}.bcard.k4 .pct{color:var(--muted)}\n.bcard h4{margin:6px 0;font-family:\"Inter\",sans-serif;font-size:.95rem;font-weight:800}\n.bcard p{margin:0;color:var(--muted);font-size:.84rem}\n/* STATUS */\n.status{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.scol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.scol h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:8px}\n.scol.settled h4::before{content:\"✓\";color:var(--c3);font-weight:800}\n.scol.open h4::before{content:\"○\";color:var(--c2);font-weight:800}\n.scol .row{padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.scol .row:last-child{border-bottom:0}\n.scol .row b{display:block;margin-bottom:2px}\n.scol .row span{color:var(--muted)}\nfooter{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}\nfooter a{color:var(--muted)}\n@media(max-width:860px){\n header{min-height:80vh}\n .plan-grid,.status,.twocol{grid-template-columns:1fr}\n .spot-grid{grid-template-columns:1fr}\n .day-head{gap:14px;padding:18px 16px 4px}\n .logistics{padding:4px 16px 10px}\n .spots-wrap{padding:6px 12px 18px}\n #tripmap{height:380px}\n}\n\n:root{\n--c4:#3a6ea5;\n}\n.day.c4{border-left-color:var(--c4)}\n.day.c4 .day-badge{background:var(--c4)}\n.base.b4 .band{background:var(--c4)}\n.base.b4 .nights{background:var(--c4)}\n/* TRIP PREVIEW */\n.preview{display:grid;grid-template-columns:minmax(300px,34%) 1fr;min-height:82vh;background:var(--ink);color:#fff}\n.pv-pane{padding:clamp(22px,4vw,54px);display:flex;flex-direction:column;justify-content:center;gap:16px}\n.pv-kicker{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#e0a13a;font-weight:800}\n.pv-pane h1{font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.02;margin:0;font-weight:800}\n.pv-pane h1 span{display:block;font-size:.42em;font-weight:500;color:rgba(255,255,255,.7);margin-top:8px;letter-spacing:.01em}\n.pv-lead{color:rgba(255,255,255,.82);font-size:.96rem;line-height:1.5;max-width:46ch;margin:0}\n.pv-stats{display:flex;flex-wrap:wrap;gap:10px}\n.pv-stats>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:9px 13px;min-width:62px}\n.pv-stats b{display:block;font-size:1.3rem;font-weight:800;line-height:1}\n.pv-stats span{font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;color:rgba(255,255,255,.6)}\n.pv-split{display:flex;height:46px;border-radius:10px;overflow:hidden}\n.pv-split .seg{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;min-width:0;padding:0 4px;text-align:center}\n.pv-split .seg b{font-size:.92rem;line-height:1;font-weight:800}\n.pv-split .seg span{font-size:.55rem;text-transform:uppercase;letter-spacing:.04em;opacity:.92;white-space:nowrap;margin-top:2px}\n.pv-split .water{background:#2f8f9d}.pv-split .town{background:#c25a3a}.pv-split .nature{background:#3f7d4e}\n.pv-cue{margin:2px 0 0;font-size:.74rem;color:rgba(255,255,255,.5);font-weight:700}\n.pvcar{background:#000}\n.pvcar .track img{aspect-ratio:auto;height:82vh}\n.pvcar .track figcaption{padding:96px 20px 20px;display:flex;flex-direction:column;gap:5px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4) 34%,rgba(0,0,0,.86))}\n.pvcar .cap-day{font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f0b350}\n.pvcar .track figcaption strong{font-size:1.04rem;font-weight:800;line-height:1.2}\n.pvcar .cap-desc{font-size:.83rem;line-height:1.42;color:rgba(255,255,255,.9);max-width:64ch;font-weight:400}\n.pvcar .counter{font-size:.78rem;padding:5px 12px}\n@media(max-width:820px){.preview{grid-template-columns:1fr;min-height:auto}.pvcar .track img{height:56vh}.pv-pane{padding:26px 20px}}\n\n\n\n\n\n\n\n\n/* SECTION POLISH 2026-07 */\n.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}\n.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}\n.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;letter-spacing:0}\n.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}\n.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}\n.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}\n#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n#budget .pcard h4{font-size:1.12rem}\n#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}\n#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}\n#budget .pcard li::before{content:\"\";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n#budget .pcard li b{color:var(--ink)}\n#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}\n#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}\n#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}\n#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}\n#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}\n#balance .budget-scroll{max-width:none;margin-inline:0}\n.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}\n.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}\n.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.status-col .row:last-child{border-bottom:0}\n.status-col .row b{display:block;color:var(--ink);line-height:1.25}\n.status-col .row span{display:block;color:var(--muted);line-height:1.45}\n.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}\n.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}\n.field-note:last-child{border-bottom:0}\n.field-note h4{margin:0;font-size:1.02rem;font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;line-height:1.25}\n.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}\n.field-note .note-body{min-width:0}\n.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}\n.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}\n.field-note li::before{content:\"\";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}\n.field-note b{color:var(--ink)}\n#tips .tips-list{max-width:none}\n@media(max-width:860px){\n  #budget .plan-grid,.status-grid{grid-template-columns:1fr}\n  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}\n  .status-col .row{grid-template-columns:1fr;gap:3px}\n}\n@media(max-width:620px){\n  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}\n  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}\n}\n</style></head><body><section class=\"preview\">\n  <div class=\"pv-pane\">\n    <span class=\"pv-kicker\">Short trip · Pittsburgh family of 4 · June 2027</span>\n    <h1>Portugal<span>Lisbon + Lagos in one easy week</span></h1>\n    <p class=\"pv-lead\">Seven hotel nights, two bases and one train move: two nights for Lisbon and Sintra, then five in Lagos for cliffs, pool time, optional Atlantic swimming and two real weather buffers.</p>\n    <div class=\"pv-stats\"><div><b>7</b><span>hotel nights</span></div><div><b>2</b><span>bases</span></div><div><b>$8.7k–11.95k</b><span>estimated total</span></div><div><b>4</b><span>PTO days</span></div></div>\n    <div class=\"pv-split\" role=\"img\" aria-label=\"Trip mix: about 45% water + coast, about 30% towns + food, about 25% nature\">\n      <div class=\"seg s1\" style=\"flex:45\"><b>45%</b><span>Water + coast</span></div><div class=\"seg s2\" style=\"flex:30\"><b>30%</b><span>Towns + food</span></div><div class=\"seg s3\" style=\"flex:25\"><b>25%</b><span>Nature</span></div>\n    </div>\n    <p class=\"pv-cue\">&darr; Full day-by-day plan below</p>\n  </div>\n  <div class=\"carousel pvcar\" data-n=\"10\">\n    <div class=\"track\"><figure><img src=\"../../assets/img/short-portugal/google_lisbon_alfama_sunrise_01.jpg\" alt=\"Alfama rooftops and tiled terraces glowing above the Tagus at sunrise\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Alfama Sunrise</strong><span class=\"cap-desc\">Alfama rooftops and tiled terraces glowing above the Tagus at sunrise</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_lisbon_belem_sunset_02.jpg\" alt=\"Belém Tower reflected in the Tagus beneath a fiery sunset\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Belém at Sunset</strong><span class=\"cap-desc\">Belém Tower reflected in the Tagus beneath a fiery sunset</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_sintra_pena_aerial_01.jpg\" alt=\"Pena Palace glowing red and yellow above Sintra’s forested ridge\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Pena Above the Forest</strong><span class=\"cap-desc\">Pena Palace glowing red and yellow above Sintra’s forested ridge</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_sintra_azenhas_twilight_09.jpg\" alt=\"Azenhas do Mar glowing on a cliff above Atlantic surf at twilight\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Azenhas Twilight</strong><span class=\"cap-desc\">Azenhas do Mar glowing on a cliff above Atlantic surf at twilight</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_ponta_arches_02.jpg\" alt=\"Natural limestone arches and sea stacks rising from turquoise water\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Sea Arches</strong><span class=\"cap-desc\">Natural limestone arches and sea stacks rising from turquoise water</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_ponta_grotto_coast_03.jpg\" alt=\"Boats threading between Ponta da Piedade’s sculpted rock towers\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Grotto Coast</strong><span class=\"cap-desc\">Boats threading between Ponta da Piedade’s sculpted rock towers</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_lagos_meia_praia_04.jpg\" alt=\"Meia Praia’s long sandy arc and breakwater seen from the air\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Meia Praia</strong><span class=\"cap-desc\">Meia Praia’s long sandy arc and breakwater seen from the air</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_lagos_burgau_coast_07.jpg\" alt=\"Burgau’s white village spilling toward a turquoise bay\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Burgau Bay</strong><span class=\"cap-desc\">Burgau’s white village spilling toward a turquoise bay</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_marinha_arches_01.jpg\" alt=\"Praia da Marinha’s twin limestone arches over blue-green water\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Marinha Arches</strong><span class=\"cap-desc\">Praia da Marinha’s twin limestone arches over blue-green water</span></figcaption></figure><figure><img src=\"../../assets/img/short-portugal/google_marinha_benagil_above_05.jpg\" alt=\"Benagil Cave’s circular skylight and beach seen from above\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Trip highlight</span><strong>Benagil from Above</strong><span class=\"cap-desc\">Benagil Cave’s circular skylight and beach seen from above</span></figcaption></figure></div>\n    <button class=\"nav prev\" aria-label=\"Previous\">&#8249;</button>\n    <button class=\"nav next\" aria-label=\"Next\">&#8250;</button>\n    <div class=\"counter\"><span class=\"cur\">1</span> / 10</div>\n  </div>\n</section><nav class=\"site-nav\" aria-label=\"Page sections\">\n  <details class=\"site-nav-menu\">\n    <summary><span>Sections</span></summary>\n    <div class=\"site-nav-links\">\n      <a href=\"../../index.html\" class=\"nav-home\">← All Trips</a>\n      <a href=\"#overview\">Overview</a>\n      <a href=\"#why-this-trip\">Why This Trip</a>\n      <a href=\"#kids-favorites\">Kids&rsquo; Favorites</a>\n      <a href=\"#stays\">Where We Stay</a>\n      <a href=\"#calendar\">Calendar</a>\n      <a href=\"#itinerary\">Day by Day</a>\n      <a href=\"#map\">Trip Map</a>\n      <a href=\"#air-travel\">Air Travel</a>\n      <a href=\"#getting-around\">Getting Around</a>\n      <a href=\"#entry\">Entry &amp; Docs</a><a href=\"#health-check\">Health-Check</a>\n      <a href=\"#timing\">Best Time</a>\n      <a href=\"#todo\">To-Do</a>\n      <a href=\"#budget\">Budget</a>\n      <a href=\"#tips\">Travel Tips</a>\n      <a href=\"#packing\">Packing</a><a href=\"#social\">What People Say</a>\n      <a href=\"#status\">Settled & Open</a>\n    </div>\n  </details>\n</nav>\n<main>\n  <section id=\"overview\"><div class=\"section-label\">\n      <p class=\"eyebrow\">The Week at a Glance</p>\n      <h2>Lisbon first, then slow down in Lagos</h2>\n      <p>Spend two nights seeing Lisbon and Sintra, then settle into five coast nights with room for cliffs, beaches, pool time and an unhurried family pace.</p>\n    </div><div class=\"overview\"><div class=\"ocard\"><h4>7 hotel nights</h4><p>2 in Lisbon · 5 in Lagos, with no rushed one-night stops.</p></div><div class=\"ocard\"><h4>Jun 12–20</h4><p>Weekend-to-weekend; the observed Juneteenth holiday keeps time off to four days.</p></div><div class=\"ocard\"><h4>$8.7k–11.95k</h4><p>Estimated family total, with June airfare creating most of the range.</p></div><div class=\"ocard\"><h4>Book later</h4><p>Wait for exact 2027 flights and the Lisbon–Lagos train timetable.</p></div></div></section><section id=\"why-this-trip\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Why This Route Works</p>\n      <h2>City energy, then five easy coast nights</h2>\n      <p>One train ride creates two very different parts of Portugal without adding a rental car or a chain of hotel changes.</p>\n    </div><div class=\"tips-grid\"><div class=\"tipcard\"><h4>Easy travel</h4><p class=\"sub\">less moving around</p><ul><li>No rental car, island flight or one-night hotel stops.</li><li>A single Lisbon→Lagos train ride handles the only change of base.</li><li>Both cities have groceries, pizza, pasta and easy evenings close to the hotel.</li></ul></div><div class=\"tipcard\"><h4>Lower daily costs</h4><p class=\"sub\">more free experiences</p><ul><li>Seven hotel nights in only two places.</li><li>Miradouros, riverfronts, beaches and cliff boardwalks are free.</li><li>Regaleira and one Algarve boat or coast outing are the main splurges.</li></ul></div><div class=\"tipcard\"><h4>Swimming is optional</h4><p class=\"sub\">pool time when the ocean feels cool</p><ul><li>The Algarve sea is beautiful but refreshing rather than tropical.</li><li>Choose a Lagos stay with a pool if warm water matters.</li><li>Every beach day can become a town, viewpoint or pool day.</li></ul></div></div></section><section id=\"stays\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Where to Stay</p>\n      <h2>Two comfortable family bases</h2>\n      <p>Stay central in Lisbon for easy sightseeing, then choose a walkable Lagos apartment or family room with air conditioning and, ideally, a pool.</p>\n    </div><div class=\"plan-grid\"><div class=\"pcard\"><h4><span class=\"dot\"></span>Lisbon · 2 nights</h4><div class=\"prow\"><span>Dates</span><strong>Jun 13–14</strong></div><div class=\"prow\"><span>Estimated price</span><strong>$210–$320/night</strong></div><div class=\"prow\"><span>Best area</span><strong>Baixa / Chiado or near a direct Metro line</strong></div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Lagos · 5 nights</h4><div class=\"prow\"><span>Dates</span><strong>Jun 15–19</strong></div><div class=\"prow\"><span>Estimated price</span><strong>$230–$350/night</strong></div><div class=\"prow\"><span>Best area</span><strong>Walkable to old town/station; pool preferred</strong></div></div></div></section><section id=\"calendar\" class=\"divider continuous-calendar\">\n    <div class=\"section-label\"><p class=\"eyebrow\">Your Travel Week</p><h2>From Pittsburgh to Portugal and back</h2><p>See how the city days, train ride and slower Algarve days fit together. Times are a rough guide until the 2027 flight and rail schedules are published.</p></div>\n    <style>\n      .continuous-calendar .cal-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}\n      .continuous-calendar .cal-legend span{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:700;color:var(--ink)}\n      .continuous-calendar .cal-legend i{width:16px;height:16px;border-radius:5px;display:inline-block}\n      .continuous-calendar .lg-air{background:#3d4d74}.continuous-calendar .lg-car{background:var(--gold)}\n      .continuous-calendar .lg-hike{background:var(--c3)}.continuous-calendar .lg-water{background:var(--c1)}.continuous-calendar .lg-town{background:var(--c2)}.continuous-calendar .lg-rest{background:#8a857c}\n      .continuous-calendar .cal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}\n      .continuous-calendar .cal-week{min-width:1000px;margin:0 0 22px}\n      .continuous-calendar .cal-hd{display:grid;gap:0}\n      .continuous-calendar .cal-hd .dh{padding:6px 4px;text-align:center;border-bottom:2px solid var(--line)}\n      .continuous-calendar .cal-hd .dh .dow{display:block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}\n      .continuous-calendar .cal-hd .dh .dnum{display:block;font-size:1.02rem;font-weight:800;color:var(--c1);line-height:1.1}\n      .continuous-calendar .cal-hd .dh.trip{background:rgba(31,111,120,.06)}\n      .continuous-calendar .cal-hd .gut{border-bottom:2px solid var(--line)}\n      .continuous-calendar .cal-bd{display:grid;grid-template-rows:repeat(9,32px);position:relative;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px),repeating-linear-gradient(to right,transparent 0 calc(10% - 1px),var(--line) calc(10% - 1px) 10%)}\n      .continuous-calendar .cal-bd .tl{grid-column:1;font-size:.62rem;font-weight:700;color:var(--muted);padding:2px 4px 0 4px;text-align:right}\n      .continuous-calendar .ev{margin:2px;border-radius:6px;padding:3px 6px;font-size:.68rem;line-height:1.14;font-weight:700;color:#fff;overflow:hidden;position:relative;z-index:2;box-shadow:0 1px 3px rgba(30,32,28,.2);display:flex;align-items:flex-start}\n      .continuous-calendar .ev.sm{font-size:.62rem;align-items:center}.continuous-calendar .ev.air{background:#3d4d74}.continuous-calendar .ev.car{background:var(--gold);color:#3a2f12}.continuous-calendar .ev.hike{background:var(--c3)}.continuous-calendar .ev.water{background:var(--c1)}.continuous-calendar .ev.town{background:var(--c2)}.continuous-calendar .ev.rest{background:#8a857c}\n    </style>\n    <div class=\"cal-legend\"><span><i class=\"lg-air\"></i>Air</span><span><i class=\"lg-car\"></i>Rail / transfer</span><span><i class=\"lg-hike\"></i>Walk</span><span><i class=\"lg-water\"></i>Water</span><span><i class=\"lg-town\"></i>Town</span><span><i class=\"lg-rest\"></i>Rest / buffer</span></div>\n    <div class=\"cal-scroll\" aria-label=\"Portugal trip calendar, June 12 through June 20, 2027\"><div class=\"cal-week\" data-trip-days=\"9\"><div class=\"cal-hd\" style=\"grid-template-columns:64px repeat(9,minmax(104px,1fr))\"><div class=\"gut\"></div><div class=\"dh trip\"><span class=\"dow\">Sat</span><span class=\"dnum\">12</span></div><div class=\"dh trip\"><span class=\"dow\">Sun</span><span class=\"dnum\">13</span></div><div class=\"dh trip\"><span class=\"dow\">Mon</span><span class=\"dnum\">14</span></div><div class=\"dh trip\"><span class=\"dow\">Tue</span><span class=\"dnum\">15</span></div><div class=\"dh trip\"><span class=\"dow\">Wed</span><span class=\"dnum\">16</span></div><div class=\"dh trip\"><span class=\"dow\">Thu</span><span class=\"dnum\">17</span></div><div class=\"dh trip\"><span class=\"dow\">Fri</span><span class=\"dnum\">18</span></div><div class=\"dh trip\"><span class=\"dow\">Sat</span><span class=\"dnum\">19</span></div><div class=\"dh trip\"><span class=\"dow\">Sun</span><span class=\"dnum\">20</span></div></div><div class=\"cal-bd\" style=\"grid-template-columns:64px repeat(9,minmax(104px,1fr))\"><div class=\"tl\" style=\"grid-row:1\">6a</div><div class=\"tl\" style=\"grid-row:2\">8a</div><div class=\"tl\" style=\"grid-row:3\">10a</div><div class=\"tl\" style=\"grid-row:4\">12p</div><div class=\"tl\" style=\"grid-row:5\">2p</div><div class=\"tl\" style=\"grid-row:6\">4p</div><div class=\"tl\" style=\"grid-row:7\">6p</div><div class=\"tl\" style=\"grid-row:8\">8p</div><div class=\"tl\" style=\"grid-row:9\">10p</div><div class=\"ev air\" style=\"grid-column:2;grid-row:6/10\">Depart PIT</div><div class=\"ev air\" style=\"grid-column:3;grid-row:2/6\">Arrive LIS</div><div class=\"ev rest\" style=\"grid-column:3;grid-row:5/8\">Soft landing</div><div class=\"ev town sm\" style=\"grid-column:4;grid-row:3/4\">Sintra</div><div class=\"ev rest sm\" style=\"grid-column:4;grid-row:7/8\">Pack + dinner</div><div class=\"ev car sm\" style=\"grid-column:5;grid-row:2/3\">Train to Lagos</div><div class=\"ev water\" style=\"grid-column:5;grid-row:6/9\">Pool / beach</div><div class=\"ev hike\" style=\"grid-column:6;grid-row:2/4\">Ponta cliffs</div><div class=\"ev water sm\" style=\"grid-column:6;grid-row:5/6\">Boat / beach</div><div class=\"ev water sm\" style=\"grid-column:7;grid-row:3/4\">Pool + Meia Praia</div><div class=\"ev rest\" style=\"grid-column:7;grid-row:6/9\">Weather buffer</div><div class=\"ev water sm\" style=\"grid-column:8;grid-row:3/4\">Marinha / Lagos</div><div class=\"ev rest\" style=\"grid-column:8;grid-row:6/9\">Easy evening</div><div class=\"ev water sm\" style=\"grid-column:9;grid-row:3/4\">Pool / beach buffer</div><div class=\"ev rest\" style=\"grid-column:9;grid-row:6/9\">Pack</div><div class=\"ev car sm\" style=\"grid-column:10;grid-row:1/2\">Transfer to FAO</div><div class=\"ev air\" style=\"grid-column:10;grid-row:3/5\">Fly home</div></div></div></div>\n  </section>"
+    },
+    {
+      "t": "itinerary"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"map\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Where You Will Go</p>\n      <h2>Lisbon, Sintra and the Algarve</h2>\n      <p>Explore the Lisbon-area sights and Lagos coast separately, or show the full route from the capital to the southern beaches.</p>\n    </div><div class=\"tripmap-wrap\"><div class=\"mapbtns\"><button data-region=\"lisbon\"><span class=\"sw\" style=\"background:#1f6f78\"></span>Lisbon</button><button data-region=\"algarve\"><span class=\"sw\" style=\"background:#c25a3a\"></span>Algarve</button><button data-region=\"all\">Whole trip</button></div><div class=\"mapstage\"><button class=\"layers-btn\" aria-expanded=\"false\" aria-label=\"Map layers\"><span class=\"lbi\">▧</span> Layers</button><div class=\"layers-panel\" hidden><div class=\"layers-top\"><strong>Map layers</strong><button class=\"layers-x\" aria-label=\"Close\">×</button></div><div class=\"layers-acts\"><button data-all=\"1\">Select all</button><span class=\"dot\">·</span><button data-all=\"0\">Deselect all</button></div><div class=\"layers-list\"></div></div><div id=\"tripmap\"></div></div></div></section><section id=\"air-travel\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Getting to Portugal</p>\n      <h2>Fly into Lisbon and home from Faro</h2>\n      <p>This saves a return trip across Portugal. Plan on one connection each way; recent June fares have commonly run $1,250–$1,550 per traveler, but the exact 2027 family fare is not available yet.</p>\n    </div><div class=\"plan-grid\"><div class=\"pcard\"><h4><span class=\"dot\"></span>Flight to Lisbon</h4><div class=\"prow\"><span>Route</span><strong>PIT → hub → LIS</strong></div><div class=\"prow\"><span>Connections</span><strong>1, all on one ticket</strong></div><div class=\"prow\"><span>Recent June range</span><strong>$1,250–$1,550 each</strong></div><div class=\"tip\">Search PIT–LIS / FAO–PIT together as a multi-city trip, then compare a Lisbon round trip only after including the cost and time of returning from the Algarve.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Flight home from Faro</h4><div class=\"prow\"><span>Route</span><strong>FAO → hub → PIT</strong></div><div class=\"prow\"><span>Booking rule</span><strong>Keep every flight on one ticket</strong></div><div class=\"prow\"><span>Travel date</span><strong>Sun Jun 20, 2027</strong></div><div class=\"tip\">If the Faro flight is expensive or badly timed, travel to Lisbon the afternoon before and sleep near LIS airport instead of attempting a predawn cross-country transfer.</div></div></div></section><section id=\"getting-around\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Getting Around Portugal</p>\n      <h2>Trains, walking and short transfers</h2>\n      <p>Skip the rental car: Lisbon is easy by foot and transit, while Lagos works well with walking, taxis and a prebooked airport ride.</p>\n    </div><div class=\"plan-grid\"><div class=\"pcard\"><h4><span class=\"dot\"></span>Lisbon</h4><div class=\"prow\"><span>From the airport</span><strong>Metro or fixed transfer</strong></div><div class=\"prow\"><span>To Sintra</span><strong>Suburban train + local transfer</strong></div><div class=\"prow\"><span>Around the city</span><strong>Walk + short transit hops</strong></div><div class=\"tip\">A central apartment may cost more per night, but it reduces travel time and repeated family transfers.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Lisbon → Lagos</h4><div class=\"prow\"><span>Train company</span><strong>CP · reserved long-distance rail</strong></div><div class=\"prow\"><span>Likely route</span><strong>Usually changes at Tunes</strong></div><div class=\"prow\"><span>Fare</span><strong>Check the exact 2027 train and advance price</strong></div><div class=\"tip\">Book the full journey through CP and allow comfortable connection time at Tunes.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Lagos and Faro</h4><div class=\"prow\"><span>Around Lagos</span><strong>Walk + local taxi</strong></div><div class=\"prow\"><span>Praia da Marinha</span><strong>Pre-priced transfer or tour</strong></div><div class=\"prow\"><span>Flight home</span><strong>Prebook Lagos → FAO</strong></div><div class=\"tip\">Most Algarve days stay close to Lagos, so a few planned rides are easier than keeping a car all week.</div></div></div></section>"
+    },
+    {
+      "t": "entry"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"health-check\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">What Could Change</p>\n      <h2>Watch airfare, trains and coastal conditions</h2>\n      <p>The route is comfortably paced, but exact 2027 prices and schedules are still to come. Wind, swell or heat may also change which Algarve day happens when.</p>\n    </div><div class=\"hc-grid\"><div class=\"hc good\"><span class=\"hc-tag\">Easy pace</span><h4>Only one hotel change</h4><p>Two multi-night stays, no rental car and no flight within Portugal keep the family travel load light.</p></div><div class=\"hc good\"><span class=\"hc-tag\">Cost</span><h4>The estimate stays under $12k</h4><p>The family range is $8.7k–$11.95k, with June airfare creating the biggest swing.</p></div><div class=\"hc good\"><span class=\"hc-tag\">Flexibility</span><h4>Five Lagos nights leave room to adapt</h4><p>Move the pool and beach days around Ponta or Marinha when wind, swell, heat or travel fatigue calls for a change.</p></div></div></section><section id=\"timing\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Dates and Time Off</p>\n      <h2>Seven hotel nights for four PTO days</h2>\n      <p>Weekend travel and the observed Juneteenth holiday make June 12–20 especially efficient, while still returning well before the June 24–26 Pittsburgh commitment.</p>\n    </div><div class=\"timing-compare\"><div class=\"tcard best\"><span>Recommended dates</span><h4>Jun 12–20</h4><p>Seven hotel nights; four PTO days if Juneteenth observed is a paid holiday.</p></div><div class=\"tcard\"><span>If Faro flights do not work</span><h4>Return via Lisbon</h4><p>Use the final night near LIS Airport only if the Faro return is too expensive or poorly timed.</p></div><div class=\"tcard\"><span>Keep the week focused</span><h4>Skip Madeira and Porto</h4><p>A third region would take too much time away from Lisbon and the Algarve.</p></div></div><div class=\"verdict-box\"><b>Time-off calculation:</b> Mon–Thu Jun 14–17 use four workdays; Fri Jun 18 is Juneteenth observed. Weekend travel uses no PTO. Employer holiday policy still controls.</div></section>"
+    },
+    {
+      "t": "todo"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"budget\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Estimated Costs</p>\n      <h2>Where the family budget goes</h2>\n      <p>Use these current estimates to decide whether the trip fits; replace them with exact June 2027 quotes before booking.</p>\n    </div> <div class=\"budget-scroll\"><table class=\"budget-tbl\"><tr><th>Line item</th><th>Estimated family range</th></tr><tr><td>Flights into Lisbon and home from Faro + seats/bags</td><td>$5,000–$6,200</td></tr><tr><td>Lodging · 7 nights</td><td>$1,600–$2,400</td></tr><tr><td>Food · groceries + casual meals</td><td>$900–$1,250</td></tr><tr><td>Rail, airport/local transfers</td><td>$350–$600</td></tr><tr><td>Activities · Regaleira + optional boat/tour</td><td>$350–$700</td></tr><tr><td>Insurance + contingency</td><td>$500–$800</td></tr></table></div><div class=\"twocol\"><div class=\"listcard save-list\"><h4>Good places to save</h4><ul><li>Choose two apartments with kitchens, not several hotels.</li><li>Enjoy free city walks and cliff viewpoints.</li><li>Pick either the boat or Marinha transfer as the Algarve splurge.</li></ul></div><div class=\"listcard splurge-list\"><h4>Worth paying for</h4><ul><li>A direct arrival transfer after the overnight flight.</li><li>A Lagos pool for dependable warm-water time.</li><li>One-ticket airfare with comfortable connections.</li></ul></div></div></section><section id=\"totals\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Family Trip Total</p>\n      <h2>$8,700–$11,950 for four</h2>\n      <p>This estimate includes flights, seven hotel nights, meals, transportation, activities, insurance and a contingency cushion.</p>\n    </div> <div class=\"budget-scroll\"><table class=\"budget-tbl grand\"><tr><th>Category</th><th>Estimated family range</th></tr><tr><td>Air transportation</td><td>$5,000–$6,200</td></tr><tr><td>Ground transportation</td><td>$350–$600</td></tr><tr><td>Lodging</td><td>$1,600–$2,400</td></tr><tr><td>Food</td><td>$900–$1,250</td></tr><tr><td>Activities</td><td>$350–$700</td></tr><tr><td>Insurance + contingency</td><td>$500–$800</td></tr><tr><td>Grand total — family of 4</td><td>$8,700–$11,950</td></tr></table></div><p class=\"rate-note\">Even the upper estimate stays just under $12,000. Airfare, lodging and rail prices will become clearer when 2027 dates are available.</p></section><section id=\"tips\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">How to Keep the Trip Easy</p>\n      <h2>Book the big pieces, then stop adding</h2>\n      <p>The best version of this week protects comfortable connections, two good family stays and plenty of open time in Lagos.</p>\n    </div><div class=\"tips-order\"><ol><li>Track the PIT–LIS / FAO–PIT flights<span> · now through winter</span></li><li>Hold refundable lodging in both cities<span> · pool priority in Lagos</span></li><li>Book the CP train after flights<span> · when the 2027 timetable appears</span></li><li>Book Regaleira and one Algarve splurge<span> · 30–60 days out</span></li></ol></div><div class=\"tipcard\"><h4>Keep these promises</h4><p class=\"sub\">protect the easy week</p><ul><li class=\"flag\">Book the international journey on one ticket; avoid a separate-ticket connection.</li><li class=\"flag\">Stay with two bases rather than adding another city or island.</li><li>Recheck beach flags, boat conditions, timed-entry rules and the train schedule close to departure.</li></ul></div></section>"
+    },
+    {
+      "t": "packing"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"social\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Pacing the Week</p>\n      <h2>Leave room for everyone to enjoy it</h2>\n      <p>Keep the first day gentle, limit Sintra to one main sight and use the extra Lagos time whenever the family needs a slower day.</p>\n    </div><div class=\"tips-grid\"><div class=\"tipcard\"><h4>Lisbon</h4><p class=\"sub\">Two nights with two simple goals</p><ul><li>The arrival day has no timed ticket.</li><li>Sintra gets one palace, not a checklist.</li><li>Pack after Sintra and take the train while everyone still has energy.</li></ul></div><div class=\"tipcard\"><h4>Lagos</h4><p class=\"sub\">Five nights create breathing room</p><ul><li>Ponta boardwalks still work when boats do not.</li><li>Move the two local pool and beach days wherever the weather needs them.</li><li>Skip Marinha if the transfer feels like too much effort.</li></ul></div></div></section><section id=\"balance\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">What the Family Gets</p>\n      <h2>Coast, towns and nature in one week</h2>\n      <p>The trip leans toward Algarve scenery and pool or beach time, but still includes Lisbon neighborhoods, Sintra gardens and relaxed old-town dinners.</p>\n    </div><div class=\"bar\"><i style=\"width:45%;background:#1f6f78\"></i><i style=\"width:30%;background:#c25a3a\"></i><i style=\"width:25%;background:#3f7d4e\"></i></div><div class=\"balance\"><div class=\"bcard k1\"><div class=\"pct\">45%</div><h4>Water + coast</h4><p>Two flexible Lagos pool or beach days, Ponta and an optional Marinha outing.</p></div><div class=\"bcard k2\"><div class=\"pct\">30%</div><h4>Towns + food</h4><p>Alfama, Sintra and Lagos old-town evenings.</p></div><div class=\"bcard k3\"><div class=\"pct\">25%</div><h4>Nature</h4><p>Sintra gardens and Algarve cliff landscapes.</p></div></div></section><section id=\"status\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">What Is Decided</p>\n      <h2>And what can wait until booking</h2>\n      <p>The dates and two-city route are set. Flights, the exact train and the Lagos apartment should wait for 2027 schedules and prices.</p>\n    </div><div class=\"status\"><div class=\"scol settled\"><h4>Decided</h4><div class=\"row\"><b>Trip length</b><span>Seven hotel nights.</span></div><div class=\"row\"><b>Route</b><span>2 Lisbon · 5 Lagos; one train ride.</span></div><div class=\"row\"><b>Dates</b><span>Jun 12–20, 2027.</span></div></div><div class=\"scol open\"><h4>Choose later</h4><div class=\"row\"><b>Flights</b><span>Exact one-ticket price and schedule into Lisbon and home from Faro.</span></div><div class=\"row\"><b>Train</b><span>2027 CP departure and family fare.</span></div><div class=\"row\"><b>Lagos stay</b><span>Pool, air conditioning, kitchen and real beds at the chosen property.</span></div></div></div></section>"
+    },
+    {
+      "t": "raw",
+      "html": "\n  <!--PG:END-->\n  <!--FG:START-->\n"
+    },
+    {
+      "t": "raw",
+      "html": "\n  <!--FG:END-->\n</main>\n<footer>\n  <p>Portugal + Sicily hybrid — working family itinerary for June 2027. Photos are refreshed Google Images-source local assets with visible carousel credits. Prices researched July 2026 using current 2026/public proxy data where 2027 is unavailable — reconfirm before booking. Maps via Google & OpenStreetMap.</p>\n</footer>\n<script>/* @preserve\n * Leaflet 1.9.4, a JS library for interactive maps. https://leafletjs.com\n * (c) 2010-2023 Vladimir Agafonkin, (c) 2010-2011 CloudMade\n */\n//# sourceMappingURL=leaflet.js.map</script>"
+    },
+    {
+      "t": "lib",
+      "key": "1f252bc08ec393b31f65de1e0b899e59"
+    },
+    {
+      "t": "raw",
+      "html": "<!--GL-LOADER--><link href=\"https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css\" rel=\"stylesheet\" integrity=\"sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V\" crossorigin=\"anonymous\"><script src=\"https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js\" integrity=\"sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj\" crossorigin=\"anonymous\"></script><script src=\"https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.22/leaflet-maplibre-gl.js\" integrity=\"sha384-4CB9Vtol9LN6lGgBCvmPLbUEZwilrqIvPieSRurgAXAB7FVJaLS9n8WyAIA5wjQ+\" crossorigin=\"anonymous\"></script><!--/GL-LOADER--><script>window.__MAP_POINTS__=[{\"n\":\"Lisbon Airport (LIS)\",\"lat\":38.7742,\"lng\":-9.1342,\"r\":\"lisbon\",\"g\":\"https://www.google.com/maps/search/?api=1&query=38.7742,-9.1342\",\"t\":\"flight\"},{\"n\":\"Baixa / Chiado base\",\"lat\":38.7107,\"lng\":-9.1405,\"r\":\"lisbon\",\"g\":\"https://www.google.com/maps/search/?api=1&query=38.7107,-9.1405\",\"t\":\"hotel\"},{\"n\":\"Alfama\",\"lat\":38.7121,\"lng\":-9.1307,\"r\":\"lisbon\",\"g\":\"https://www.google.com/maps/search/?api=1&query=38.7121,-9.1307\",\"t\":\"town\"},{\"n\":\"Belém\",\"lat\":38.6977,\"lng\":-9.2065,\"r\":\"lisbon\",\"g\":\"https://www.google.com/maps/search/?api=1&query=38.6977,-9.2065\",\"t\":\"sight\"},{\"n\":\"Quinta da Regaleira\",\"lat\":38.7976,\"lng\":-9.3904,\"r\":\"lisbon\",\"g\":\"https://www.google.com/maps/search/?api=1&query=38.7976,-9.3904\",\"t\":\"sight\"},{\"n\":\"Lagos base\",\"lat\":37.1028,\"lng\":-8.673,\"r\":\"algarve\",\"g\":\"https://www.google.com/maps/search/?api=1&query=37.1028,-8.673\",\"t\":\"hotel\"},{\"n\":\"Ponta da Piedade\",\"lat\":37.0817,\"lng\":-8.6672,\"r\":\"algarve\",\"g\":\"https://www.google.com/maps/search/?api=1&query=37.0817,-8.6672\",\"t\":\"view\"},{\"n\":\"Praia do Camilo\",\"lat\":37.087,\"lng\":-8.6696,\"r\":\"algarve\",\"g\":\"https://www.google.com/maps/search/?api=1&query=37.087,-8.6696\",\"t\":\"beach\"},{\"n\":\"Praia da Marinha\",\"lat\":37.09,\"lng\":-8.4125,\"r\":\"algarve\",\"g\":\"https://www.google.com/maps/search/?api=1&query=37.09,-8.4125\",\"t\":\"beach\"},{\"n\":\"Faro Airport (FAO)\",\"lat\":37.0144,\"lng\":-7.9659,\"r\":\"algarve\",\"g\":\"https://www.google.com/maps/search/?api=1&query=37.0144,-7.9659\",\"t\":\"flight\"}];window.__MAP_COLORS__={\"lisbon\":\"#1f6f78\",\"algarve\":\"#c25a3a\"};window.__MAP_TYPES__={\"flight\":{\"label\":\"Flights\",\"color\":\"#2f93d1\",\"emoji\":\"✈️\"},\"hotel\":{\"label\":\"Hotels and lodging\",\"color\":\"#7144aa\",\"emoji\":\"🏨\"},\"rental\":{\"label\":\"Rental cars\",\"color\":\"#2fa7a5\",\"emoji\":\"🚗\"},\"transit\":{\"label\":\"Transit\",\"color\":\"#18a765\",\"emoji\":\"↔️\"},\"hike\":{\"label\":\"Hikes & trails\",\"color\":\"#3f7d4e\",\"emoji\":\"🥾\"},\"beach\":{\"label\":\"Beaches & swim\",\"color\":\"#1f8aa8\",\"emoji\":\"🏖️\"},\"view\":{\"label\":\"Viewpoints\",\"color\":\"#c25a3a\",\"emoji\":\"👁️\"},\"town\":{\"label\":\"Towns & villages\",\"color\":\"#0b6a43\",\"emoji\":\"🏘️\"},\"sight\":{\"label\":\"Attractions & POI\",\"color\":\"#8a5cb0\",\"emoji\":\"⭐\"},\"food\":{\"label\":\"Restaurants\",\"color\":\"#d64550\",\"emoji\":\"🍴\"}};window.__MAP_TYPE_GROUPS__=[{\"label\":\"Overview\",\"types\":[\"flight\",\"hotel\",\"rental\",\"transit\"]},{\"label\":\"Places\",\"types\":[\"hike\",\"beach\",\"view\",\"town\",\"sight\",\"food\"]}];</script><script>// ---- carousels ----\ndocument.querySelectorAll('.carousel').forEach(function(c){\n  var track=c.querySelector('.track'), cur=c.querySelector('.cur'),\n      dots=[].slice.call(c.querySelectorAll('.dot')), n=+c.dataset.n;\n  function idx(){return Math.round(track.scrollLeft/track.clientWidth);}\n  function sync(){var i=idx();if(cur)cur.textContent=i+1;dots.forEach(function(d,j){d.classList.toggle('on',j===i);});}\n  function go(i){i=Math.max(0,Math.min(n-1,i));track.scrollTo({left:i*track.clientWidth,behavior:'smooth'});}\n  var p=c.querySelector('.prev'),nx=c.querySelector('.next');\n  if(p)p.addEventListener('click',function(){go(idx()-1);});\n  if(nx)nx.addEventListener('click',function(){go(idx()+1);});\n  dots.forEach(function(d){d.addEventListener('click',function(){go(+d.dataset.i);});});\n  var t;track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(sync,80);});\n  sync();\n});\n\n// ---- trip map (Leaflet, Wanderlog-style layer filtering) ----\n(function(){\n  var el=document.getElementById('tripmap');\n  if(!el||typeof L==='undefined')return;\n  var pts=window.__MAP_POINTS__||[], rColors=window.__MAP_COLORS__||{}, TYPES=window.__MAP_TYPES__||{}, GROUPS=window.__MAP_TYPE_GROUPS__||[];\n  var map=L.map('tripmap',{scrollWheelZoom:false,zoomSnap:0.25,zoomDelta:0.5}).setView([20,0],2);\n  var enField=['coalesce',['get','name:en'],['get','name:latin'],['get','name']];\n  function englishify(mm){\n    try{\n      (mm.getStyle().layers||[]).forEach(function(l){\n        if(l.type==='symbol'&&l.layout&&('text-field' in l.layout)){\n          mm.setLayoutProperty(l.id,'text-field',enField);\n        }\n      });\n    }catch(e){}\n  }\n  if(L.maplibreGL){\n    var gl=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/liberty',attribution:'&copy; OpenFreeMap &copy; OpenMapTiles &copy; OpenStreetMap'}).addTo(map);\n    var mm=gl.getMaplibreMap();\n    mm.on('styledata',function(){englishify(mm);});\n  }else{\n    L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors, Wikimedia'}).addTo(map);\n  }\n  el.addEventListener('wheel',function(e){\n    if(e.ctrlKey||e.metaKey){\n      e.preventDefault();\n      var z=map.getZoom()-e.deltaY*0.02;\n      map.setZoomAround(map.mouseEventToContainerPoint(e),Math.max(map.getMinZoom(),Math.min(map.getMaxZoom(),z)));\n    }\n  },{passive:false});\n  function esc(s){\n    return String(s||'').replace(/[&<>\"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c];});\n  }\n  var active={}, regions={}, counts={};\n  Object.keys(TYPES).forEach(function(k){active[k]=true;counts[k]=0;});\n  pts.forEach(function(p){if(!p.t||!TYPES[p.t])p.t='sight';counts[p.t]=(counts[p.t]||0)+1;});\n  function buildLayerRows(){\n    var list=document.querySelector('.layers-list');\n    if(!list)return;\n    list.innerHTML='';\n    GROUPS.forEach(function(group){\n      var keys=(group.types||[]).filter(function(k){return TYPES[k]&&counts[k];});\n      if(!keys.length)return;\n      var head=document.createElement('p');\n      head.className='layers-head';\n      head.textContent=group.label;\n      list.appendChild(head);\n      keys.forEach(function(k){\n        var ty=TYPES[k];\n        list.insertAdjacentHTML('beforeend','<label class=\"lrow\"><span class=\"lsw\" style=\"background:'+esc(ty.color)+'\"><span>'+esc(ty.emoji)+'</span></span><span class=\"ltxt\">'+esc(ty.label)+'</span><input type=\"checkbox\" data-type=\"'+esc(k)+'\" checked autocomplete=\"off\"></label>');\n      });\n    });\n  }\n  buildLayerRows();\n  pts.forEach(function(p){\n    var ty=TYPES[p.t]||TYPES.sight||{color:'#c25a3a',emoji:'📍',label:'Place'};\n    p._m=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:'<div class=\"pin2\" style=\"background:'+ty.color+'\"><span>'+ty.emoji+'</span></div>',iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-12]})});\n    p._m.bindPopup('<b>'+esc(p.n)+'</b><br><span class=\"pop-ty\">'+esc(ty.emoji)+' '+esc(ty.label)+'</span><br><a href=\"'+esc(p.g)+'\" target=\"_blank\" rel=\"noreferrer\">Open in Google Maps &#8599;</a>');\n    (regions[p.r]=regions[p.r]||[]).push([p.lat,p.lng]);\n  });\n  function render(){\n    pts.forEach(function(p){\n      if(active[p.t])p._m.addTo(map);else map.removeLayer(p._m);\n    });\n  }\n  function fit(region){\n    var arr=region==='all'?pts.map(function(p){return [p.lat,p.lng];}):regions[region];\n    if(arr&&arr.length)map.flyToBounds(L.latLngBounds(arr).pad(0.22),{maxZoom:region==='all'?7:12});\n  }\n  function showAllLayers(){\n    Object.keys(TYPES).forEach(function(k){active[k]=true;});\n    document.querySelectorAll('.layers-list input[type=checkbox]').forEach(function(box){box.checked=true;});\n    render();\n  }\n  document.querySelectorAll('.mapbtns button').forEach(function(b){\n    b.addEventListener('click',function(){\n      if(b.dataset.region==='all')showAllLayers();\n      fit(b.dataset.region);\n    });\n  });\n  var panel=document.querySelector('.layers-panel'), lbtn=document.querySelector('.layers-btn');\n  if(lbtn&&panel){\n    lbtn.addEventListener('click',function(){\n      var opening=panel.hasAttribute('hidden');\n      if(opening)panel.removeAttribute('hidden');else panel.setAttribute('hidden','');\n      lbtn.setAttribute('aria-expanded',opening?'true':'false');\n    });\n    var xb=panel.querySelector('.layers-x');\n    if(xb)xb.addEventListener('click',function(){panel.setAttribute('hidden','');lbtn.setAttribute('aria-expanded','false');});\n  }\n  var boxes=[].slice.call(document.querySelectorAll('.layers-list input[type=checkbox]'));\n  boxes.forEach(function(box){\n    box.addEventListener('change',function(){active[box.dataset.type]=box.checked;render();});\n  });\n  document.querySelectorAll('.layers-acts button').forEach(function(b){\n    b.addEventListener('click',function(){\n      var on=b.dataset.all==='1';\n      boxes.forEach(function(box){box.checked=on;active[box.dataset.type]=on;});\n      render();\n    });\n  });\n  render();\n  fit('all');\n  setTimeout(function(){map.invalidateSize();},300);\n})();\n</script>\n<button id=\"backToTop\" aria-label=\"Back to top\" title=\"Back to top\">↑</button>\n<style>\n#backToTop{position:fixed;right:20px;bottom:20px;z-index:9999;width:48px;height:48px;border:none;border-radius:50%;background:rgba(26,23,18,.85);color:#f6f1e7;font-size:22px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,background .2s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}\n#backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}\n#backToTop:hover{background:rgba(26,23,18,1)}\n@media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}\n\n\n\n\n\n\n\n\n/* SECTION POLISH 2026-07 */\n.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}\n.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}\n.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;letter-spacing:0}\n.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}\n.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}\n.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}\n#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n#budget .pcard h4{font-size:1.12rem}\n#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}\n#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}\n#budget .pcard li::before{content:\"\";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n#budget .pcard li b{color:var(--ink)}\n#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}\n#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}\n#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}\n#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}\n#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}\n#balance .budget-scroll{max-width:none;margin-inline:0}\n.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}\n.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}\n.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.status-col .row:last-child{border-bottom:0}\n.status-col .row b{display:block;color:var(--ink);line-height:1.25}\n.status-col .row span{display:block;color:var(--muted);line-height:1.45}\n.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}\n.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}\n.field-note:last-child{border-bottom:0}\n.field-note h4{margin:0;font-size:1.02rem;font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;line-height:1.25}\n.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}\n.field-note .note-body{min-width:0}\n.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}\n.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}\n.field-note li::before{content:\"\";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}\n.field-note b{color:var(--ink)}\n#tips .tips-list{max-width:none}\n@media(max-width:860px){\n  #budget .plan-grid,.status-grid{grid-template-columns:1fr}\n  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}\n  .status-col .row{grid-template-columns:1fr;gap:3px}\n}\n@media(max-width:620px){\n  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}\n  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}\n}\n</style>\n<script>\n(function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();\n</script>\n<script>/*site nav*/(function(){var nav=document.querySelector(\".site-nav\");if(!nav)return;var menu=nav.querySelector(\".site-nav-menu\"),summary=nav.querySelector(\"summary\"),box=nav.querySelector(\".site-nav-links\"),mq=window.matchMedia(\"(min-width:960px)\");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener(\"change\",sync);else mq.addListener(sync);if(summary)summary.addEventListener(\"click\",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^=\"#\"]'));links.forEach(function(a){a.addEventListener(\"click\",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute(\"href\").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:\"smooth\"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:\"smooth\"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle(\"active\",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:\"-50% 0px -50% 0px\",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>"
+    }
+  ],
+  "preDepartureTodos": {
+    "labelHtml": "<p class=\"eyebrow\">Before You Go</p><h2>Book the few things that matter</h2><p>Start with flights and two comfortable stays. Add the train and a couple of timed experiences only after the 2027 schedules appear.</p>",
+    "blocks": [
+      {
+        "when": "Now–Nov 2026",
+        "tone": "watch",
+        "title": "Watch flights and hold two stays",
+        "items": [
+          "<b>Track PIT–LIS / FAO–PIT</b> as one multi-city journey on a single ticket.",
+          "<b>Hold refundable Lisbon and Lagos lodging</b>; prioritize a Lagos pool, air conditioning and real beds."
+        ]
+      },
+      {
+        "when": "When 2027 flights and trains appear",
+        "tone": "hot",
+        "title": "Book the travel days",
+        "items": [
+          "<b>Buy airfare only when both schedule and total fit</b>.",
+          "<b>Book the Lisbon–Lagos CP train</b> after the flight dates are fixed; allow comfortable time at Tunes."
+        ]
+      },
+      {
+        "when": "30–60 days out",
+        "tone": "watch",
+        "title": "Reserve two special experiences",
+        "items": [
+          "<b>Reserve Regaleira timed entry</b> on the official site.",
+          "<b>Choose at most one paid Algarve boat or coast transfer</b> with a clear weather cancellation policy."
+        ]
+      },
+      {
+        "when": "Final week",
+        "tone": "done",
+        "title": "Recheck conditions",
+        "items": [
+          "<b>Check sea flags, boat status and heat</b>.",
+          "<b>Confirm the airport transfer and any CP train disruptions</b>."
+        ]
+      }
+    ],
+    "callout": "<b>Ready now:</b> the dates and route. <b>Wait to book:</b> exact June 2027 flights and the Lisbon–Lagos train."
+  },
+  "scorecard": {
+    "displayName": "Portugal: Lisbon + Lagos",
+    "blurb": "One-week, two-base value trip",
+    "axes": {
+      "budget": 5,
+      "weather": 4,
+      "swim": 3,
+      "variety": 4,
+      "ease": 4,
+      "food": 4,
+      "risk": 3,
+      "nights": 1,
+      "novelty": 5,
+      "pto": 5
+    },
+    "weightDefaults": {
+      "budget": 2,
+      "weather": 1,
+      "swim": 1,
+      "variety": 1,
+      "ease": 1,
+      "food": 1,
+      "risk": 1,
+      "nights": 1,
+      "novelty": 1,
+      "pto": 0
+    },
+    "budget": {
+      "floorUsd": 8700,
+      "ceilUsd": 11950,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "pto": {
+      "days": 4,
+      "nights": 7
+    },
+    "facets": {
+      "continent": "europe",
+      "maxConnections": 1,
+      "swimTempF": [
+        68,
+        72
+      ],
+      "noPassport": false,
+      "singleTicket": true,
+      "hasSwim": true
+    },
+    "totalBaked": 38
+  }
+}

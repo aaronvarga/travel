@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-algarve",
+  "reviewedAt": "2026-07-13",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 5,
+      "rationale": "Six visible categories reconcile exactly to $8,400–$11,850, keeping the complete family estimate below the shared $12,000 target. Confidence is medium because exact June 2027 Faro airfare and lodging are not yet quoted.",
+      "confidence": "medium",
+      "evidence": ["budget-band"]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "Official Faro 1991–2020 normals support warm, relatively dry June coast days. Exposed Sagres wind and midday heat require flexible timing but do not conflict with the route.",
+      "confidence": "high",
+      "evidence": ["climate-proxy"]
+    },
+    "swim": {
+      "score": 3,
+      "rationale": "The week offers multiple meaningful beach or pool days, while official Algarve material places summer sea water near 20–22°C (68–72°F). The Atlantic is usable but cool; the lodging pool is the dependable warm-water fallback.",
+      "confidence": "high",
+      "evidence": ["swim-conditions"]
+    },
+    "variety": {
+      "score": 3,
+      "rationale": "The itinerary covers coast and water, towns and food, plus cliff and headland nature, but all seven nights remain in one region and nature is primarily coastal rather than a separate landscape mode.",
+      "confidence": "high",
+      "evidence": ["itinerary-structure"]
+    },
+    "ease": {
+      "score": 5,
+      "rationale": "One lodging base, zero hotel moves, no rental car, no internal flight and no rail segment create the lowest deterministic load available for this European short-trip set. Only Faro transfers and one optional Sagres outing remain.",
+      "confidence": "high",
+      "evidence": ["operational-load"]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "Lagos, Sagres and Praia da Luz days name current pizza, pasta, burger and grocery fallbacks. The apartment kitchen protects breakfasts and excursions, although the exact lodging and 2027 opening hours remain unconfirmed.",
+      "confidence": "high",
+      "evidence": ["family-food-coverage"]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "The one-base route removes rail, rental-car and hotel-change failure points, but exact June 2027 Faro flights are not confirmed and Atlantic/cliff activities remain condition-dependent. One-ticket airfare and pool/town fallbacks keep the uncertainty manageable.",
+      "confidence": "medium",
+      "evidence": ["route-readiness"]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Seven hotel nights derive 1/5 under the comparison rubric for any trip of eight or fewer nights; this is expected for the separate short-trip category.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "The Algarve, Lagos and Sagres do not overlap the documented visited-place list, so the novelty rubric derives 5/5.",
+      "confidence": "high",
+      "evidence": ["visited-overlap"]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "Four PTO days are better than the top documented six-day threshold and therefore receive 5/5; the observed Juneteenth holiday protects Friday June 18, subject to employer policy.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary", "google-flights-pit-lis"],
+      "value": {
+        "lowUsd": 8400,
+        "expectedUsd": null,
+        "highUsd": 11850,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "4800–6200 + 1600–2400 + 850–1150 + 350–650 + 300–650 + 500–800 = 8400–11850",
+        "airfareObservation": "Pittsburgh-to-Lisbon route evidence shows June gateway prices around $1,250–$1,550 per traveler; the $4,800–$6,200 Faro family range uses that as a conservative Portugal proxy and is not an exact June 2027 quote"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-algarve/main.json #budget and #totals; six itemized categories reconcile to the displayed family total",
+        "google-flights-pit-lis": "Route page reviewed 2026-07-13; June historical typical price $1,250–$1,550 per traveler and no Pittsburgh nonstop, used only as a Faro planning proxy"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile"],
+      "value": {
+        "depart": "2027-06-12",
+        "return": "2027-06-20",
+        "hotelNights": 7,
+        "nightsAwayIncludingOutboundRedeye": 8,
+        "ptoDays": 4,
+        "juneteenthObserved": "2027-06-18"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows.short-algarve and the Pittsburgh required full-day constraint for 2027-06-24 through 2027-06-26"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["ipma-faro-normal-1991-2020"],
+      "value": {
+        "score": 4,
+        "normalPeriod": "1991–2020",
+        "juneMeanDailyLowHighF": {"Faro": [64, 80]},
+        "forecast": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "ipma-faro-normal-1991-2020": "Station 554 official 1991–2020 normal table, June TN 17.8°C and TX 26.8°C"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["visit-portugal-algarve", "lagos-municipal-beaches", "eea-bathing-water"],
+      "value": {
+        "score": 3,
+        "temperatureF": [68, 72],
+        "temperatureC": [20, 22],
+        "hasSwim": true,
+        "scheduledSwimDays": 4,
+        "warmWaterFallback": "Lagos lodging pool; heating not confirmed until property selection"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "visit-portugal-algarve": "Official Algarve destination material gives a summer sea-water planning range of 20–22°C; not a daily forecast",
+        "lagos-municipal-beaches": "Official municipal guide identifies Meia Praia and the compact Lagos beach sequence used by the itinerary",
+        "eea-bathing-water": "Latest Portugal bathing-water assessment; recheck the selected beaches and live flags for the 2027 season"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "lagos-municipal-routes", "visit-portugal-lagos"],
+      "value": {
+        "score": 3,
+        "hotelNights": 7,
+        "lodgingBases": 1,
+        "baseNames": ["Lagos"],
+        "scheduledModes": ["coast/water", "town/food", "cliff/headland nature"]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-algarve/main.json itinerary.days day1 through day7 and #stays; all seven hotel nights remain in Lagos",
+        "lagos-municipal-routes": "Official municipal route guide supports the Ponta boardwalk and local walking mode",
+        "visit-portugal-lagos": "Official destination overview supports Meia Praia, Ponta da Piedade and the compact Lagos coast"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary"],
+      "value": {
+        "easeScore": 5,
+        "maxConnections": 1,
+        "singleTicket": true,
+        "lodgingBases": 1,
+        "baseMoves": 0,
+        "internalFlights": 0,
+        "rentalCars": 0,
+        "longDistanceTrains": 0,
+        "airHoursPlanningEstimate": 22.0,
+        "groundHoursPlanningEstimate": 6.5
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-algarve/main.json day0/day8 protected one-connection air, #stays one Lagos base, #getting-around no-rental plan, and only the day4 Sagres outing exceeds a short local ride"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "continente-portugal-stores"],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true,
+        "coveredBases": ["Lagos"],
+        "coveredOutings": ["Sagres", "Praia da Luz"],
+        "fallbackTypes": ["pizza", "pasta", "burgers", "fries", "supermarket picnic"],
+        "lodgingKitchenConfirmed": false
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-algarve/main.json day-by-day restaurant lists name current first-party pizza, pasta and burger options in Lagos, Sagres and Praia da Luz",
+        "continente-portugal-stores": "Current operator locator supports broad Portugal grocery coverage; exact Lagos branch, hours and departments require a 2027 recheck"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary", "google-flights-pit-lis", "state-travel"],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "outbound": "PIT–FAO with one protected connection preferred",
+        "return": "FAO–PIT with one protected connection preferred",
+        "exact2027FlightsVerified": false,
+        "fallback": "Use a protected two-connection ticket if no safe one-connection Faro itinerary prices; do not self-transfer"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-algarve/main.json #air-travel, day0 and day8 explicitly mark June 2027 Faro schedules and prices unconfirmed",
+        "google-flights-pit-lis": "Current Pittsburgh-to-Portugal gateway snapshot supports no-nonstop and June fare planning, not exact Faro service",
+        "state-travel": "U.S. State Department Portugal entry reviewed for country-level planning; it does not confirm airline schedules"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "value": {"score": 5, "overlap": []},
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json family visited-place list; the Algarve, Lagos and Sagres are absent",
+        "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and no-overlap 5/5 rule"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 22.0,
+    "groundHours": 6.5,
+    "timeZones": 1,
+    "baseMoves": 0,
+    "longestTransferHours": 1.5,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 4,
+    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "lodgingComfort": {
+      "airConditioning": "required but unknown until property selection",
+      "kitchen": "required but unknown until property selection",
+      "laundry": "preferred for seven nights",
+      "realBeds": "required but unknown until property selection"
+    },
+    "waterSafety": "Atlantic water, stairs and cliff edges require daily flag, wind and swell checks; the pool is the controlled fallback.",
+    "crowdingPressure": "Ponta da Piedade and Camilo are crowd-sensitive; an early start and willingness to leave protect the day.",
+    "medicalAccess": "Lagos retains reasonable urban access; the family medical profile remains incomplete.",
+    "childActivityNotes": {
+      "age13": "cliff viewpoints, an optional boat, Sagres and independent pool time provide distinct modes",
+      "age8": "short walks, familiar food, pool days and easy exit paths protect energy"
+    }
+  },
+  "evidenceBasis": "Official climate normals, official municipal and national destination guidance, current route-page observations and line-by-line derivation from the one-base itinerary. Exact June 2027 prices and flights remain proxies.",
+  "confidenceBasis": [
+    "official 1991–2020 Faro climate normal",
+    "official Lagos beach and walking-route guidance",
+    "official Algarve 20–22°C summer water planning range",
+    "canonical one-base/no-rental derivation",
+    "current Portugal gateway airfare evidence but no exact June 2027 Faro quote"
+  ]
+}

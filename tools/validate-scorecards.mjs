@@ -76,8 +76,9 @@ for (const { slug, main } of trips) {
   }
 }
 
-const excluded = trips.filter(({ main }) => typeof main.excluded === 'string');
-if (trips.length !== 30) issue("all", `expected 30 trips, found ${trips.length}`);
+const comparisonTrips = trips.filter(({ main }) => main.tripCategory !== 'short');
+const excluded = comparisonTrips.filter(({ main }) => typeof main.excluded === 'string');
+if (comparisonTrips.length !== 30) issue("all", `expected 30 comparison trips, found ${comparisonTrips.length}`);
 if (excluded.length !== 9) issue('all', `expected 9 excluded trips, found ${excluded.length}`);
 
 if (problems.length) {
@@ -85,7 +86,7 @@ if (problems.length) {
   for (const problem of problems) console.error(`  - ${problem}`);
   process.exit(1);
 }
-console.log(`validated ${trips.length} scorecards (${trips.length - excluded.length} ranked, ${excluded.length} excluded)`);
+console.log(`validated ${trips.length} scorecards (${comparisonTrips.length - excluded.length} ranked comparison trips, ${excluded.length} excluded, ${trips.length - comparisonTrips.length} short)`);
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));

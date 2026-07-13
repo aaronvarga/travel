@@ -33,6 +33,7 @@
   },
   "ptoRubric": {
     "_comment": "Fewer PTO days burned = higher score. Keyed by PTO days.",
+    "0": 5, "1": 5, "2": 5, "3": 5, "4": 5, "5": 5,
     "6": 5, "7": 4, "8": 3, "9": 2, "10": 1
   },
   "budgetTargets": { "targetUsd": 12000, "preferredMaxUsd": 15000, "hardMaxUsd": null },

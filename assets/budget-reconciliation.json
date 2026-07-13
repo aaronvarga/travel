@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-12T20:34:06.297Z",
+  "generatedAt": "2026-07-13T17:11:32.471Z",
   "trips": [
     {
       "slug": "albania",
@@ -1253,6 +1253,230 @@
           "text": "$3,000-4,000",
           "lowUsd": 3000,
           "highUsd": 4000
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-algarve",
+      "canonical": {
+        "lowUsd": 8400,
+        "highUsd": 11850
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 8400,
+        "sumHighUsd": 11900,
+        "displayedLowUsd": 8400,
+        "displayedHighUsd": 11850,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Air transportation",
+          "text": "$4,800–$6,200",
+          "lowUsd": 4800,
+          "highUsd": 6200
+        },
+        {
+          "label": "Ground transportation",
+          "text": "$350–$650",
+          "lowUsd": 350,
+          "highUsd": 650
+        },
+        {
+          "label": "Lodging",
+          "text": "$1,600–$2,400",
+          "lowUsd": 1600,
+          "highUsd": 2400
+        },
+        {
+          "label": "Food",
+          "text": "$850–$1,150",
+          "lowUsd": 850,
+          "highUsd": 1150
+        },
+        {
+          "label": "Activities",
+          "text": "$300–$650",
+          "lowUsd": 300,
+          "highUsd": 650
+        },
+        {
+          "label": "Insurance + contingency",
+          "text": "$500–$800",
+          "lowUsd": 500,
+          "highUsd": 800
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-iceland",
+      "canonical": {
+        "lowUsd": 7100,
+        "highUsd": 9600
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 7100,
+        "sumHighUsd": 9600,
+        "displayedLowUsd": 7100,
+        "displayedHighUsd": 9600,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$2,840–3,600",
+          "lowUsd": 2840,
+          "highUsd": 3600
+        },
+        {
+          "label": "Lodging",
+          "text": "$1,550–2,150",
+          "lowUsd": 1550,
+          "highUsd": 2150
+        },
+        {
+          "label": "Car + fuel + parking",
+          "text": "$650–950",
+          "lowUsd": 650,
+          "highUsd": 950
+        },
+        {
+          "label": "Food + activities",
+          "text": "$1,710–2,400",
+          "lowUsd": 1710,
+          "highUsd": 2400
+        },
+        {
+          "label": "Insurance + contingency",
+          "text": "$350–500",
+          "lowUsd": 350,
+          "highUsd": 500
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-madeira",
+      "canonical": {
+        "lowUsd": 5700,
+        "highUsd": 8900
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 5,
+        "sumLowUsd": 5700,
+        "sumHighUsd": 8900,
+        "displayedLowUsd": 5700,
+        "displayedHighUsd": 8900,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights",
+          "text": "$3,000–4,400",
+          "lowUsd": 3000,
+          "highUsd": 4400
+        },
+        {
+          "label": "Lodging",
+          "text": "$875–1,575",
+          "lowUsd": 875,
+          "highUsd": 1575
+        },
+        {
+          "label": "Ground transport",
+          "text": "$550–950",
+          "lowUsd": 550,
+          "highUsd": 950
+        },
+        {
+          "label": "Food + activities",
+          "text": "$875–1,375",
+          "lowUsd": 875,
+          "highUsd": 1375
+        },
+        {
+          "label": "Documents + extra cushion",
+          "text": "$400–600",
+          "lowUsd": 400,
+          "highUsd": 600
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-portugal",
+      "canonical": {
+        "lowUsd": 8700,
+        "highUsd": 11950
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 8700,
+        "sumHighUsd": 12000,
+        "displayedLowUsd": 8700,
+        "displayedHighUsd": 11950,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Air transportation",
+          "text": "$5,000–$6,200",
+          "lowUsd": 5000,
+          "highUsd": 6200
+        },
+        {
+          "label": "Ground transportation",
+          "text": "$350–$600",
+          "lowUsd": 350,
+          "highUsd": 600
+        },
+        {
+          "label": "Lodging",
+          "text": "$1,600–$2,400",
+          "lowUsd": 1600,
+          "highUsd": 2400
+        },
+        {
+          "label": "Food",
+          "text": "$900–$1,250",
+          "lowUsd": 900,
+          "highUsd": 1250
+        },
+        {
+          "label": "Activities",
+          "text": "$350–$700",
+          "lowUsd": 350,
+          "highUsd": 700
+        },
+        {
+          "label": "Insurance + contingency",
+          "text": "$500–$800",
+          "lowUsd": 500,
+          "highUsd": 800
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

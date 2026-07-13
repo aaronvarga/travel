@@ -58,17 +58,17 @@
   },
   "evidenceSources": {
     "internal-itinerary": {
-      "label": "Canonical itinerary and reconciled trip tables",
+      "label": "Itinerary details and trip cost tables",
       "tier": "internal-derived",
       "path": "src/_data/<slug>/main.json"
     },
     "decision-profile": {
-      "label": "Canonical family decision profile",
+      "label": "Family travel preferences and dates",
       "tier": "internal-derived",
       "path": "src/_data/decisionProfile.json"
     },
     "scorecard-contract": {
-      "label": "Scorecard rubric contract",
+      "label": "Trip scoring guide",
       "tier": "internal-derived",
       "path": "tools/scorecard.manifest.json"
     },
@@ -1625,6 +1625,34 @@
       "url": "https://www.maripalinuro.it/en/",
       "publisher": "Marì Pizza-Bistrot",
       "scope": "First-party menu description confirms classic Neapolitan pizza and hamburgers at the Palinuro day-trip base."
+    },
+    "lagos-municipal-beaches": {
+      "label": "Municipality of Lagos beach guide",
+      "tier": "official",
+      "url": "https://cm-lagos.pt/descobrir-lagos/visitar/praias",
+      "publisher": "Câmara Municipal de Lagos",
+      "scope": "Official descriptions and access context for Meia Praia and the Lagos beaches between the historic center and Ponta da Piedade; live flags and 2027 services still require a same-day recheck."
+    },
+    "lagos-municipal-routes": {
+      "label": "Municipality of Lagos walking routes",
+      "tier": "official",
+      "url": "https://www.cm-lagos.pt/descobrir-lagos/lazer-e-entretenimento/rotas-e-percursos",
+      "publisher": "Câmara Municipal de Lagos",
+      "scope": "Official route guide describing the Ponta da Piedade boardwalks and local walking network; not a live closure or heat-condition source."
+    },
+    "visit-portugal-lagos": {
+      "label": "Visit Portugal: Lagos",
+      "tier": "official",
+      "url": "https://www.visitportugal.com/en/destinos/algarve/73799",
+      "publisher": "Turismo de Portugal",
+      "scope": "Official destination overview supporting Meia Praia, Ponta da Piedade, boat access and the compact Lagos coast; not a live sea-state source."
+    },
+    "google-flights-pit-lis": {
+      "label": "Google Flights Pittsburgh–Lisbon fare and routing snapshot",
+      "tier": "observed-quote",
+      "url": "https://www.google.com/travel/flights/flights-from-pittsburgh-to-lisbon.html?gl=US&hl=en-US",
+      "publisher": "Google Flights",
+      "scope": "Observed June Portugal gateway fare and routing proxy; cannot confirm exact June 2027 Faro pricing, operating days or ticket protection."
     }
   },
   "trips": [
