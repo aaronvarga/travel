@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-alaska",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Seward + Girdwood · 7 nights",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 7,
+      "ptoDays": 4,
+      "budget": {
+        "lowUsd": 9140,
+        "expectedUsd": null,
+        "highUsd": 12600,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [
+        "Denali National Park and Talkeetna flightseeing, which sit about five hours north of Girdwood"
+      ],
+      "notes": "Fly Pittsburgh to Anchorage with one connection, rent one car, sleep three nights in Seward and four in Girdwood. The Kenai Fjords cruise, Exit Glacier, the Turnagain Arm drive, the wildlife center and Portage fit with a single base move and one blank weather day.",
+      "confidence": "medium",
+      "claimType": "proxy",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "short-alaska/main.json Jun 12–19 route, three Seward and four Girdwood hotel nights, four PTO days and itemized $9,140–$12,600 total"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Seven nights is the short-trip ceiling. Adding Denali or Talkeetna would need a third base and roughly five hours of driving each way, which contradicts the ease-first premise of the short-escape band."
+}

@@ -10,6 +10,7 @@ const SHORT_TRIP_SLUGS = [
   'short-madeira',
   'short-azores',
   'short-acadia',
+  'short-alaska',
 ];
 const SHORT_WEIGHTS = {
   budget: 2,
@@ -29,6 +30,7 @@ const SHORT_VERDICTS = {
   'short-madeira': 'Best one-base scenery trip, just one point behind because swimming is less dependable.',
   'short-acadia': 'Best domestic nature week: major coastal scenery, with cold water and the Portland drive as the tradeoffs.',
   'short-iceland': 'Best nonstop adventure, with colder weather and higher disruption risk as the tradeoff.',
+  'short-alaska': 'The biggest scenery on this list and the worst fit for it: tidewater glaciers and whales, but the highest cost, the coldest water, and the only connecting flight.',
 };
 
 module.exports = function () {

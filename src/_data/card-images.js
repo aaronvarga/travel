@@ -110,6 +110,10 @@ module.exports = {
     path: 'assets/img/short-madeira/google_peaks_clouds_02.jpg',
     alt: 'Pico do Areeiro’s sunlit ridge rising above Madeira’s sea of clouds',
   },
+  'short-alaska': {
+    path: 'assets/img/short-alaska/google_turnagain_arm_sunset_01.jpg',
+    alt: 'A blazing sunset over Alaska’s Turnagain Arm, a boulder anchoring the mirror-wet tidal flats',
+  },
   'short-acadia': {
     path: 'assets/img/short-acadia/google_frenchman_bay_sunrise_04.jpg',
     alt: 'Fiery sunrise above Acadia’s island-dotted Frenchman Bay',
