@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-13T19:17:37.096Z",
+  "generatedAt": "2026-07-16T01:28:15.405Z",
   "trips": [
     {
       "slug": "albania",
@@ -1312,6 +1312,71 @@
           "text": "$1,300–$1,400",
           "lowUsd": 1300,
           "highUsd": 1400
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-alaska",
+      "canonical": {
+        "lowUsd": 9140,
+        "highUsd": 12600
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 7,
+        "sumLowUsd": 9100,
+        "sumHighUsd": 12600,
+        "displayedLowUsd": 9140,
+        "displayedHighUsd": 12600,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights — PIT→ANC one stop, bags and seats",
+          "text": "$2,000–$3,000",
+          "lowUsd": 2000,
+          "highUsd": 3000
+        },
+        {
+          "label": "7 hotel nights — Seward 3, Girdwood 4",
+          "text": "$2,750–$3,500",
+          "lowUsd": 2750,
+          "highUsd": 3500
+        },
+        {
+          "label": "Rental car + fuel",
+          "text": "$700–$1,100",
+          "lowUsd": 700,
+          "highUsd": 1100
+        },
+        {
+          "label": "Food + groceries",
+          "text": "$1,500–$2,100",
+          "lowUsd": 1500,
+          "highUsd": 2100
+        },
+        {
+          "label": "Kenai Fjords cruise — 3 adult fares + 1 child",
+          "text": "$840–$950",
+          "lowUsd": 840,
+          "highUsd": 950
+        },
+        {
+          "label": "Tram, wildlife center, Portage, tunnel toll",
+          "text": "$450–$750",
+          "lowUsd": 450,
+          "highUsd": 750
+        },
+        {
+          "label": "Contingency",
+          "text": "$900–$1,200",
+          "lowUsd": 900,
+          "highUsd": 1200
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
