@@ -453,7 +453,20 @@ footer a{color:var(--muted)}
 .lm-verdict-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .lm-verdict-grid p{margin:0;font-size:.85rem;line-height:1.55;color:rgba(255,255,255,.88)}
 .lm-verdict-grid b{color:#fff}
-@media(max-width:1000px){.lm-grid,.lm-verdict-grid{grid-template-columns:1fr}}
+.lm-lab{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px clamp(20px,2.4vw,28px);box-shadow:0 10px 26px rgba(30,32,28,.08)}
+.lm-lab h3{margin:0 0 4px;font-size:1.12rem}
+.lm-slider-row{display:flex;align-items:center;gap:16px;margin-top:6px}
+.lm-slider-row input[type=range]{flex:1;accent-color:#00939e;height:26px}
+.lm-slider-row output{font-family:"Fraunces","Georgia",serif;font-size:1.45rem;font-weight:700;white-space:nowrap;min-width:104px;text-align:right;font-variant-numeric:tabular-nums}
+.lm-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+.lm-tile{background:#f3eee3;border-radius:10px;padding:9px 11px 10px}
+.lm-tile span{display:block;color:#7a7365;font-size:.62rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.lm-tile b{display:block;margin-top:2px;font-size:.95rem;font-variant-numeric:tabular-nums;line-height:1.25}
+.lm-lab-verdict{margin:16px 0 0;padding:11px 14px;border-left:3px solid #00939e;border-radius:0 8px 8px 0;background:#f6f1e7;color:#3d382f;font-size:.83rem;line-height:1.55}
+.lm-lab-note{margin:10px 0 0;color:var(--muted);font-size:.72rem;line-height:1.45}
+.lm-chart-title{margin:0 0 8px;font-size:.8rem;font-weight:700;color:#4a453d}
+.lm-lab-right svg{width:100%;height:auto;display:block}
+@media(max-width:1000px){.lm-grid,.lm-verdict-grid,.lm-lab{grid-template-columns:1fr}}
 </style>
 <style>
 .decision-hero{background:linear-gradient(90deg,#17130f 0%,#17130f 42%,#3b2419 72%,#6c3f25 100%)}
@@ -688,6 +701,95 @@ footer a{color:var(--muted)}
         <p class="lm-note"><b>Same adjustment cost, double the payoff.</b> A 7-night Europe trip pays full airfare for about 5 fully-enjoyed days; 12 nights pays the same airfare for 10.</p>
       </div>
     </div>
+    <div class="lm-lab">
+      <div class="lm-lab-left">
+        <h3>Find the sweet spot</h3>
+        <p class="lm-sub">Drag the nights. Live model for a warm-Europe trip, family of 4: flights + transfers <b>$4.5&ndash;5k fixed</b>, plus <b>$600&ndash;800 per night</b> on the ground. Estimates only &mdash; the trip pages&rsquo; audited budgets stay the source of truth.</p>
+        <div class="lm-slider-row">
+          <input type="range" id="lm-nights" min="5" max="14" step="1" value="12" aria-label="Trip length in nights">
+          <output id="lm-nights-out" for="lm-nights">12 nights</output>
+        </div>
+        <div class="lm-tiles" aria-live="polite">
+          <div class="lm-tile"><span>Est. total</span><b id="lm-total">&nbsp;</b></div>
+          <div class="lm-tile"><span>Per night</span><b id="lm-pernight">&nbsp;</b></div>
+          <div class="lm-tile"><span>Good days</span><b id="lm-good">&nbsp;</b></div>
+          <div class="lm-tile"><span>Est. PTO</span><b id="lm-pto">&nbsp;</b></div>
+          <div class="lm-tile"><span>Nights score</span><b id="lm-nscore">&nbsp;</b></div>
+          <div class="lm-tile"><span>Score vs 12n plan</span><b id="lm-delta">&nbsp;</b></div>
+        </div>
+        <p class="lm-lab-verdict" id="lm-verdict-line">&nbsp;</p>
+        <p class="lm-lab-note">Not modeled: a shorter total can lift the double-weighted Budget axis for plans above the $15k line &mdash; that case is what per-trip variants are for.</p>
+      </div>
+      <div class="lm-lab-right">
+        <p class="lm-chart-title">Cost per <b>good</b> day (after the 2 jet-lag days) &mdash; watch it flatten</p>
+        <svg id="lm-curve" viewBox="0 0 340 224" role="img" aria-label="Cost per good day falls steeply from 5 to 11 nights, then flattens near 12 to 14 nights"></svg>
+      </div>
+    </div>
+    <script>
+    (function(){
+      var slider=document.getElementById('lm-nights');
+      var svg=document.getElementById('lm-curve');
+      if(!slider||!svg)return;
+      var FLO=4500,FHI=5000,NLO=600,NHI=800,NMIN=5,NMAX=14;
+      function model(n){
+        var lo=FLO+NLO*n,hi=FHI+NHI*n,mid=(lo+hi)/2;
+        var nscore=n>=12?5:(n===11?4:(n===10?3:(n===9?2:1)));
+        return{lo:lo,hi:hi,mid:mid,good:n-2,nscore:nscore,pto:Math.round((n+1)*8/13),perNight:mid/n,perGood:mid/(n-2)};
+      }
+      var PX0=44,PX1=326,PY0=14,PY1=192,YMIN=1100,YMAX=2900;
+      function X(n){return PX0+(n-NMIN)/(NMAX-NMIN)*(PX1-PX0);}
+      function Y(v){return PY1-(v-YMIN)/(YMAX-YMIN)*(PY1-PY0);}
+      function el(tag,attrs,text){
+        var e=document.createElementNS('http://www.w3.org/2000/svg',tag);
+        for(var k in attrs)e.setAttribute(k,attrs[k]);
+        if(text)e.textContent=text;
+        svg.appendChild(e);return e;
+      }
+      el('rect',{x:X(11),y:PY0,width:X(12.6)-X(11),height:PY1-PY0,fill:'#00939e',opacity:'.08'});
+      el('text',{x:(X(11)+X(12.6))/2,y:PY0+12,'text-anchor':'middle',fill:'#00737c','font-size':'9','font-weight':'800','letter-spacing':'.08em'},'SWEET SPOT');
+      [1500,2000,2500].forEach(function(v){
+        el('line',{x1:PX0,y1:Y(v),x2:PX1,y2:Y(v),stroke:'#e3dccc','stroke-width':'1'});
+        el('text',{x:PX0-6,y:Y(v)+3,'text-anchor':'end',fill:'#8d8676','font-size':'9'},'$'+(v/1000).toFixed(1)+'k');
+      });
+      var pts=[];
+      for(var n=NMIN;n<=NMAX;n++){pts.push(X(n)+','+Y(model(n).perGood));}
+      el('polyline',{points:pts.join(' '),fill:'none',stroke:'#00939e','stroke-width':'2','stroke-linejoin':'round'});
+      for(n=NMIN;n<=NMAX;n++){
+        el('circle',{cx:X(n),cy:Y(model(n).perGood),r:'2.5',fill:'#00939e'});
+        el('text',{x:X(n),y:PY1+14,'text-anchor':'middle',fill:'#8d8676','font-size':'9'},n);
+      }
+      el('text',{x:(PX0+PX1)/2,y:PY1+26,'text-anchor':'middle',fill:'#8d8676','font-size':'9','font-weight':'700'},'NIGHTS');
+      var marker=el('circle',{r:'6',fill:'#1a1712',stroke:'#fffdf8','stroke-width':'2'});
+      var markerLabel=el('text',{'text-anchor':'middle',fill:'#1a1712','font-size':'11','font-weight':'800'});
+      function fmtK(v){return '$'+(v/1000).toFixed(1)+'k';}
+      function fmt(v){return '$'+Math.round(v).toLocaleString('en-US');}
+      function verdictFor(n){
+        if(n<=8)return 'Worst-value zone: full airfare for '+(n-2)+' good days. This is the math the short Europe escapes pay — fine domestic, expensive across the Atlantic.';
+        if(n<=10)return 'The middle ground saves ~$'+((model(12).mid-model(n).mid)/1000).toFixed(1)+'k vs 12 nights but drops the Nights score to '+model(n).nscore+'/5. Only worth it if the trim pulls a too-expensive plan under the $15k line.';
+        if(n<=12)return 'Sweet spot: the airfare is fully amortized, Nights scores '+model(n).nscore+'/5, and the curve is flat — each extra night now costs only ~$700.';
+        return 'Diminishing returns: cost per good day barely falls, estimated PTO climbs to '+model(n).pto+' days, and the Jun 24–26 Pittsburgh commitment caps how far this stretches.';
+      }
+      function set(id,v){document.getElementById(id).textContent=v;}
+      function update(){
+        var n=+slider.value,m=model(n);
+        set('lm-nights-out',n+' nights');
+        set('lm-total',fmtK(m.lo)+'–'+fmtK(m.hi));
+        set('lm-pernight',fmt(m.perNight));
+        set('lm-good',m.good+' of '+n);
+        set('lm-pto',m.pto+' days');
+        set('lm-nscore',m.nscore+'/5');
+        set('lm-delta',(m.nscore===5?'±0':(m.nscore-5))+' /50');
+        set('lm-verdict-line',verdictFor(n));
+        var mx=X(n),my=Y(m.perGood);
+        marker.setAttribute('cx',mx);marker.setAttribute('cy',my);
+        markerLabel.setAttribute('x',Math.min(Math.max(mx,PX0+24),PX1-24));
+        markerLabel.setAttribute('y',my-11);
+        markerLabel.textContent=fmt(m.perGood);
+      }
+      slider.addEventListener('input',update);
+      update();
+    })();
+    </script>
     <div class="lm-verdict">
       <h3>The verdict</h3>
       <div class="lm-verdict-grid">
