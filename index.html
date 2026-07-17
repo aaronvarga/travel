@@ -421,6 +421,34 @@ footer a{color:var(--muted)}
 .short-ready{margin-top:11px;color:#2f6b52;font-size:.72rem;font-weight:800}
 @media(max-width:1000px){.short-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.short-grid{grid-template-columns:1fr}.short-photo{height:clamp(180px,42vw,260px)}.short-body>p{min-height:0}}
+
+/* TRIP LENGTH REALITY CHECK */
+#trip-length .lm-legend{display:flex;flex-wrap:wrap;gap:18px;margin:0 0 20px;font-size:.78rem;font-weight:700;color:#4a453d}
+#trip-length .lm-legend span{display:inline-flex;align-items:center;gap:7px}
+#trip-length .lm-legend i{width:14px;height:14px;border-radius:4px;background:#00939e}
+#trip-length .lm-legend i.lm-short{background:#c25a3a}
+.lm-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.lm-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 20px 18px;box-shadow:0 10px 26px rgba(30,32,28,.08)}
+.lm-card h3{margin:0 0 4px;font-size:1.12rem}
+.lm-card .lm-sub{margin:0 0 18px;color:var(--muted);font-size:.79rem;line-height:1.45}
+.lm-row{margin-bottom:13px}
+.lm-row-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:4px}
+.lm-row-top span{font-size:.77rem;font-weight:700;color:#4a453d}
+.lm-row-top b{font-size:.95rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lm-bar{height:14px;min-width:3px;border-radius:0 4px 4px 0;background:#00939e}
+.lm-bar.lm-short{background:#c25a3a}
+.lm-days{display:flex;flex-wrap:wrap;gap:3px;margin-top:2px}
+.lm-day{width:15px;height:15px;border-radius:4px;background:#00939e}
+.lm-day.lm-short{background:#c25a3a}
+.lm-day.lm-lost{background:#d5cdbe}
+.lm-note{margin:auto 0 0;padding-top:14px;border-top:1px solid var(--line);color:#4a453d;font-size:.8rem;line-height:1.5}
+.lm-note b{color:var(--ink)}
+.lm-verdict{margin-top:18px;border-radius:16px;background:linear-gradient(145deg,#173f42,#235e5c);color:#fff;padding:24px clamp(20px,3vw,32px) 22px}
+.lm-verdict h3{margin:0 0 14px;font-family:'Spectral',Georgia,serif;font-size:1.35rem;color:#f1c878}
+.lm-verdict-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.lm-verdict-grid p{margin:0;font-size:.85rem;line-height:1.55;color:rgba(255,255,255,.88)}
+.lm-verdict-grid b{color:#fff}
+@media(max-width:1000px){.lm-grid,.lm-verdict-grid{grid-template-columns:1fr}}
 </style>
 <style>
 .decision-hero{background:linear-gradient(90deg,#17130f 0%,#17130f 42%,#3b2419 72%,#6c3f25 100%)}
@@ -554,6 +582,7 @@ footer a{color:var(--muted)}
     <summary><span>Sections</span></summary>
     <div class="site-nav-links">
       <a href="#seattle-rainier">Seattle + Rainier</a>
+      <a href="#trip-length">Short vs Full</a>
       <a href="#short-trips">Short Trips</a>
       <a href="#trips">Trips</a>
       <a href="locations/trip-builder/">Trip Builder →</a>
@@ -598,6 +627,70 @@ footer a{color:var(--muted)}
         <span class="separate-trip-cta">Open the itinerary →</span>
       </div>
     </a>
+  </section>
+
+  <section id="trip-length">
+    <p class="eyebrow">Reality Check</p>
+    <h2>Short trips aren’t half price</h2>
+    <p>The short escapes exist because a first Europe trip with the kids feels like a big swing. But the flights are the expensive part — roughly $4.5–5k for the four of us — and that cost is identical whether we stay 7 nights or 12. Cutting nights only trims the cheap part of the trip.</p>
+    <div class="lm-legend"><span><i class="lm-short"></i>7-night escape</span><span><i></i>Full 12-night trip</span><span><i style="background:#d5cdbe"></i>Jet-lag adjustment day</span></div>
+    <div class="lm-grid">
+      <div class="lm-card">
+        <h3>Same destination, same airfare</h3>
+        <p class="lm-sub">Portugal head-to-head: mid-range planning total for the family of 4.</p>
+        <div class="lm-row" title="Short Portugal: $8.7k–$12.0k planning band">
+          <div class="lm-row-top"><span>Short Portugal · 7 nights</span><b>$10.3k</b></div>
+          <div class="lm-bar lm-short" style="width:94%"></div>
+        </div>
+        <div class="lm-row" title="Full Portugal: $7.5k–$11.7k planning band">
+          <div class="lm-row-top"><span>Full Portugal · 12 nights</span><b>$9.6k</b></div>
+          <div class="lm-bar" style="width:87%"></div>
+        </div>
+        <p class="lm-note"><b>The 12-night trip costs less.</b> Five fewer nights, higher total — because the airfare doesn’t shrink when the trip does.</p>
+      </div>
+      <div class="lm-card">
+        <h3>What one night actually costs</h3>
+        <p class="lm-sub">Mid-range total ÷ nights, family of 4.</p>
+        <div class="lm-row" title="Full Portugal: $9.6k over 12 nights">
+          <div class="lm-row-top"><span>Full Portugal</span><b>$800</b></div>
+          <div class="lm-bar" style="width:50%"></div>
+        </div>
+        <div class="lm-row" title="Median of the 21 ranked two-week plans">
+          <div class="lm-row-top"><span>Typical full trip</span><b>$1,130</b></div>
+          <div class="lm-bar" style="width:71%"></div>
+        </div>
+        <div class="lm-row" title="Puerto Rico, Acadia, Azores, Iceland, Madeira average">
+          <div class="lm-row-top"><span>Short domestic / Atlantic</span><b>$1,140</b></div>
+          <div class="lm-bar lm-short" style="width:71%"></div>
+        </div>
+        <div class="lm-row" title="Algarve, Portugal, Sicily, Ischia escapes average">
+          <div class="lm-row-top"><span>Short Mediterranean</span><b>$1,490</b></div>
+          <div class="lm-bar lm-short" style="width:93%"></div>
+        </div>
+        <p class="lm-note"><b>Going long is the value play.</b> Stretching a Mediterranean escape to a typical full trip adds ~$3.2k for 5 more nights — about <b>$640 a night</b>, the cheapest nights we can buy in Europe.</p>
+      </div>
+      <div class="lm-card">
+        <h3>Jet lag takes the same bite</h3>
+        <p class="lm-sub">Kids new to Europe need ~2 days to adjust — on any length of trip.</p>
+        <div class="lm-row">
+          <div class="lm-row-top"><span>7-night escape</span><b>5 good days</b></div>
+          <div class="lm-days"><i class="lm-day lm-lost"></i><i class="lm-day lm-lost"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i></div>
+        </div>
+        <div class="lm-row">
+          <div class="lm-row-top"><span>12-night trip</span><b>10 good days</b></div>
+          <div class="lm-days"><i class="lm-day lm-lost"></i><i class="lm-day lm-lost"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i></div>
+        </div>
+        <p class="lm-note"><b>Same adjustment cost, double the payoff.</b> A 7-night Europe trip pays full airfare for about 5 fully-enjoyed days; 12 nights pays the same airfare for 10.</p>
+      </div>
+    </div>
+    <div class="lm-verdict">
+      <h3>The verdict</h3>
+      <div class="lm-verdict-grid">
+        <p><b>Book the full 12 nights.</b> Portugal’s 12-night plan is the cheapest complete plan on the whole board — cheaper than most 7-night escapes. Going long is the budget move, not the splurge.</p>
+        <p><b>8–10 nights isn’t a magic middle.</b> Trimming to 10 nights saves only about $1–1.5k and 2 PTO days. What actually protects a first Europe trip with kids is fewer bases and fewer connections — pick a calm 2–3 base plan, not a shorter one.</p>
+        <p><b>When short does make sense: cheap flights.</b> Puerto Rico, Acadia, and the Azores land near $8k because getting there is cheap — they’re the escapes that don’t burn a $5k airfare on a 7-night stay.</p>
+      </div>
+    </div>
   </section>
 
   <section id="short-trips">
