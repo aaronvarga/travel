@@ -406,7 +406,7 @@ footer a{color:var(--muted)}
 #short-trips h2{margin:0 0 10px;font-family:'Spectral',Georgia,serif;font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.05;color:#fff}
 #short-trips .short-head>p:last-child{margin:0;color:rgba(255,255,255,.78)}
 .short-method{margin-top:10px!important;font-size:.78rem;line-height:1.45}
-.short-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.short-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .short-card{min-width:0;overflow:hidden;border:1px solid rgba(255,255,255,.2);border-radius:16px;background:#fffdf8;color:#1c2620;text-decoration:none;box-shadow:0 16px 38px rgba(3,19,20,.25);transition:transform .18s ease,box-shadow .18s ease}
 .short-card:first-child{border-color:#f1c878;box-shadow:0 18px 44px rgba(3,19,20,.34),0 0 0 2px #f1c878}
 .short-card:hover{transform:translateY(-4px);box-shadow:0 22px 48px rgba(3,19,20,.34)}
@@ -424,6 +424,7 @@ footer a{color:var(--muted)}
 .short-stat span{display:block;color:#778176;font-size:.61rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
 .short-stat b{display:block;margin-top:1px;color:#1a4a3c;font-size:.83rem;line-height:1.25}
 .short-ready{margin-top:11px;color:#2f6b52;font-size:.72rem;font-weight:800}
+@media(max-width:1000px){.short-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.short-grid{grid-template-columns:1fr}.short-photo{height:clamp(180px,42vw,260px)}.short-body>p{min-height:0}}
 </style>
 <style>
