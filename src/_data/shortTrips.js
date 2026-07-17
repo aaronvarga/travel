@@ -11,6 +11,8 @@ const SHORT_TRIP_SLUGS = [
   'short-azores',
   'short-acadia',
   'short-alaska',
+  'short-sicily',
+  'short-ischia',
 ];
 const SHORT_WEIGHTS = {
   budget: 2,
@@ -31,6 +33,8 @@ const SHORT_VERDICTS = {
   'short-acadia': 'Best domestic nature week: major coastal scenery, with cold water and the Portland drive as the tradeoffs.',
   'short-iceland': 'Best nonstop adventure, with colder weather and higher disruption risk as the tradeoff.',
   'short-alaska': 'The biggest scenery on this list and the worst fit for it: tidewater glaciers and whales, but the highest cost, the coldest water, and the only connecting flight.',
+  'short-sicily': 'Best culture-plus-swim week: Greek theatres, golden Noto, a live volcano and 73°F Ionian coves — with June airfare and festival-season hotels as the price of admission.',
+  'short-ischia': 'Warmest water on this list: 74°F sea plus thermal parks from one car-free island base, with the plane-bus-boat arrival chain as the tradeoff.',
 };
 
 module.exports = function () {

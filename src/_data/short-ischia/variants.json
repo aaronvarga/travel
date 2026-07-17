@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-ischia",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Forio one-base · 7 nights",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 7,
+      "ptoDays": 4,
+      "budget": {
+        "lowUsd": 9230,
+        "expectedUsd": null,
+        "highUsd": 12670,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [
+        "Capri (already visited by the family)",
+        "A dedicated Pompeii day, which requires a Naples overnight or a departure-day add-on"
+      ],
+      "notes": "Fly Pittsburgh to Naples with one United connection, cross by Alibus and hydrofoil, and hold Forio for all seven nights with no rental car. Poseidon, the Castello Aragonese, Procida, the giro dell’isola boat day and the south-coast beaches all run on buses and boats.",
+      "confidence": "medium",
+      "claimType": "proxy",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "short-ischia/main.json Jun 12–20 route, seven Forio hotel nights, four PTO days and itemized $9,230–$12,670 total"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Seven nights is the short-trip ceiling and one base is the premise. Adding a Naples or Sorrento leg would reintroduce the base move and the packing churn this band exists to avoid; Pompeii stays documented as an optional departure-day add-on instead."
+}

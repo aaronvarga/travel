@@ -1,0 +1,768 @@
+{
+  "recommended": true,
+  "tripCategory": "short",
+  "slug": "short-ischia",
+  "lang": "en",
+  "title": "Ischia + the Bay of Naples — June 2027",
+  "countries": [
+    "italy"
+  ],
+  "packingTags": [
+    "beach",
+    "heat"
+  ],
+  "overrides": {
+    "packing": [
+      "<b>Water shoes for everyone:</b> Sorgeto’s hot-spring cove and several coves are pebble-and-rock entries.",
+      "<b>Reef-safe sunscreen and swim shirts:</b> the schedule averages four-plus water hours a day at 79°F.",
+      "<b>One packable tote per person:</b> beach-and-bus days work out of totes, not the big bags, which never leave Forio.",
+      "<b>Motion-sickness tabs:</b> one hydrofoil each way plus two ferry days — cheap insurance for the 8-year-old.",
+      "<b>Passports + ETIAS printouts:</b> Italy is Schengen; check ETIAS status before travel."
+    ]
+  },
+  "hasPhotoGuide": false,
+  "hasFoodGuide": false,
+  "mapPoints": [
+    {
+      "n": "Naples International Airport",
+      "lat": 40.886,
+      "lng": 14.2908,
+      "r": "naples",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.886,14.2908",
+      "t": "flight"
+    },
+    {
+      "n": "Molo Beverello ferry terminal",
+      "lat": 40.8375,
+      "lng": 14.252,
+      "r": "naples",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.8375,14.252",
+      "t": "town"
+    },
+    {
+      "n": "Forio base",
+      "lat": 40.7381,
+      "lng": 13.8578,
+      "r": "forio",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7381,13.8578",
+      "t": "hotel"
+    },
+    {
+      "n": "Chiesa del Soccorso",
+      "lat": 40.7397,
+      "lng": 13.8531,
+      "r": "forio",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7397,13.8531",
+      "t": "view"
+    },
+    {
+      "n": "Chiaia beach",
+      "lat": 40.7444,
+      "lng": 13.86,
+      "r": "forio",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7444,13.86",
+      "t": "view"
+    },
+    {
+      "n": "Giardini Poseidon Terme",
+      "lat": 40.7096,
+      "lng": 13.8555,
+      "r": "thermal",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7096,13.8555",
+      "t": "view"
+    },
+    {
+      "n": "Citara beach",
+      "lat": 40.7135,
+      "lng": 13.8541,
+      "r": "thermal",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7135,13.8541",
+      "t": "view"
+    },
+    {
+      "n": "Negombo · San Montano",
+      "lat": 40.7576,
+      "lng": 13.883,
+      "r": "thermal",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7576,13.883",
+      "t": "view"
+    },
+    {
+      "n": "Sorgeto hot-spring cove",
+      "lat": 40.7003,
+      "lng": 13.8531,
+      "r": "thermal",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7003,13.8531",
+      "t": "view"
+    },
+    {
+      "n": "Castello Aragonese",
+      "lat": 40.7316,
+      "lng": 13.9633,
+      "r": "ponte",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7316,13.9633",
+      "t": "town"
+    },
+    {
+      "n": "Sant’Angelo village",
+      "lat": 40.6959,
+      "lng": 13.8933,
+      "r": "ponte",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.6959,13.8933",
+      "t": "town"
+    },
+    {
+      "n": "Maronti beach",
+      "lat": 40.7003,
+      "lng": 13.9107,
+      "r": "ponte",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7003,13.9107",
+      "t": "view"
+    },
+    {
+      "n": "Casamicciola ferry port",
+      "lat": 40.7477,
+      "lng": 13.9074,
+      "r": "ponte",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7477,13.9074",
+      "t": "town"
+    },
+    {
+      "n": "Marina Corricella · Procida",
+      "lat": 40.762,
+      "lng": 14.0169,
+      "r": "procida",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.762,14.0169",
+      "t": "town"
+    },
+    {
+      "n": "Terra Murata viewpoint",
+      "lat": 40.7593,
+      "lng": 14.0225,
+      "r": "procida",
+      "g": "https://www.google.com/maps/search/?api=1&query=40.7593,14.0225",
+      "t": "view"
+    }
+  ],
+  "mapColors": {
+    "forio": "#c25a3a",
+    "thermal": "#1f6f78",
+    "ponte": "#3a6ea5",
+    "procida": "#7d5ba6",
+    "naples": "#3f7d4e"
+  },
+  "itinerary": {
+    "className": "divider",
+    "labelHtml": "<div class=\"section-label\">\n      <p class=\"eyebrow\">Day by Day</p>\n      <h2>Seven nights, one base, no car</h2>\n      <p>Forio holds every night. Boats and buses carry the days, and Saturday absorbs whatever the wind postpones.</p>\n    </div>",
+    "daysClass": "days",
+    "days": [
+      {
+        "id": "day0",
+        "colorClass": "c1",
+        "badge": "1",
+        "eyebrow": "Sat · Jun 12",
+        "heading": "Pittsburgh → Newark → overnight to Naples",
+        "feel": "One connection, then sleep over the Atlantic",
+        "daycost": "Est. $120 · airport meals",
+        "facts": [
+          {
+            "label": "Flight",
+            "valueHtml": "PIT → EWR → NAP · United, single ticket"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "In the air"
+          }
+        ],
+        "note": "United’s Naples nonstop leaves Newark in the late afternoon or evening, so a midday PIT → EWR hop connects with slack. Mid-June is United’s one-flight-a-day window on this route — a misconnect means 24 hours, not three days, but build the buffer anyway.",
+        "spots": [],
+        "travelNote": "&#9992;&#65038; Overnight flight day"
+      },
+      {
+        "id": "day1",
+        "colorClass": "c1",
+        "badge": "2",
+        "eyebrow": "Sun · Jun 13",
+        "heading": "Naples → hydrofoil → Forio",
+        "feel": "Land, cross the bay, unpack once",
+        "daycost": "Est. $220 · Alibus, hydrofoil, first dinner",
+        "facts": [
+          {
+            "label": "Transfer",
+            "valueHtml": "Alibus €5pp → Molo Beverello → Alilauro hydrofoil ~50 min"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Forio · night 1 of 7"
+          }
+        ],
+        "note": "The Alibus runs every 15–30 minutes from the terminal to the port, and Alilauro serves Forio direct — no Naples logistics beyond one bus. If the sea is up, the slow car ferry from Porta di Massa almost never cancels; take it and lose an hour, not the day.",
+        "spots": [],
+        "travelNote": null
+      },
+      {
+        "id": "day2",
+        "colorClass": "c1",
+        "badge": "3",
+        "eyebrow": "Mon · Jun 14",
+        "heading": "Forio + Chiaia beach",
+        "feel": "A deliberately soft first full day",
+        "daycost": "Est. $150 · beach, gelato, groceries",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Forio · night 2 of 7"
+          },
+          {
+            "label": "Water",
+            "valueHtml": "Sea about 74°F — warm enough to stay in"
+          }
+        ],
+        "note": "Walk Forio, claim a stretch of Chiaia or San Francesco beach, and let the jet lag drain. The Soccorso church two blocks from town is the sunset ritual all week. Nothing today is allowed to have a ticket.",
+        "spots": [],
+        "travelNote": null
+      },
+      {
+        "id": "day3",
+        "colorClass": "c1",
+        "badge": "4",
+        "eyebrow": "Tue · Jun 15",
+        "heading": "Giardini Poseidon thermal day",
+        "feel": "The signature Ischia purchase",
+        "daycost": "Est. $260 · park tickets + lunch",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Forio · night 3 of 7"
+          },
+          {
+            "label": "Rule",
+            "valueHtml": "Under-12s: seawater pools + beach, not thermal pools"
+          }
+        ],
+        "note": "Twenty-two pools terraced above Citara Bay, graded from 61°F to 104°F. Split coverage: one parent rotates the hot pools with the 13-year-old, the other holds the seawater pools and beach with the 8-year-old, swap after lunch.",
+        "spots": [
+          {
+            "name": "Poseidon Gardens + Citara Bay",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Poseidon%20Gardens%20%2B%20Citara%20Bay\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/poseidon/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; poseidon</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/citara/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; citara</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Poseidon%20Gardens%20%2B%20Citara%20Bay&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "is-swim",
+            "images": [
+              {
+                "href": "../../assets/img/short-ischia/google_negombo_thermal_pool_01.jpg",
+                "src": "../../assets/img/short-ischia/google_negombo_thermal_pool_01.jpg",
+                "alt": "A stone-arched thermal pool at Negombo overlooking San Montano bay",
+                "captionTitle": "Negombo Thermal Pool",
+                "credit": "yamec2012 · Flickr source"
+              },
+              {
+                "href": "../../assets/img/short-ischia/google_negombo_rock_pool_05.jpg",
+                "src": "../../assets/img/short-ischia/google_negombo_rock_pool_05.jpg",
+                "alt": "A rock-framed warm pool tucked into Negombo’s terraced gardens",
+                "captionTitle": "Negombo Rock Pool",
+                "credit": "Yellow.Cat · Flickr source"
+              },
+              {
+                "href": "../../assets/img/short-ischia/google_negombo_garden_pool_v2.jpg",
+                "src": "../../assets/img/short-ischia/google_negombo_garden_pool_v2.jpg",
+                "alt": "Flower-lined garden path descending to a waterfall pool at Negombo",
+                "captionTitle": "Negombo Gardens",
+                "credit": "Negombo official · Operator gallery"
+              },
+              {
+                "href": "../../assets/img/short-ischia/sea-cave-boat.jpg",
+                "src": "../../assets/img/short-ischia/sea-cave-boat.jpg",
+                "alt": "A motorboat entering a dark sea cave mouth on Ischia’s coast",
+                "captionTitle": "Sea Cave by Boat",
+                "credit": "Melanie Rispo · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/red-umbrellas-castello.jpg",
+                "src": "../../assets/img/short-ischia/red-umbrellas-castello.jpg",
+                "alt": "Red beach umbrellas and swimmers with the Castello Aragonese across the water",
+                "captionTitle": "Ischia Ponte Beach Day",
+                "credit": "Peter Thomas · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/cove-beach-umbrellas.jpg",
+                "src": "../../assets/img/short-ischia/cove-beach-umbrellas.jpg",
+                "alt": "Umbrella terraces above a green-walled swimming cove on Ischia",
+                "captionTitle": "Cove Swimming",
+                "credit": "Arno Senoner · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/castello-beach-evening.jpg",
+                "src": "../../assets/img/short-ischia/castello-beach-evening.jpg",
+                "alt": "Evening bathers on the sand with the Aragonese castle hazy in the background",
+                "captionTitle": "Evening Swim, Ischia Ponte",
+                "credit": "Nati · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/santangelo-tombolo-aerial.jpg",
+                "src": "../../assets/img/short-ischia/santangelo-tombolo-aerial.jpg",
+                "alt": "Drone view of Sant’Angelo’s sand isthmus, harbor and swimming coves",
+                "captionTitle": "Sant’Angelo From Above",
+                "credit": "Domenico Paolella · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/ischia-beach-sweep-aerial.jpg",
+                "src": "../../assets/img/short-ischia/ischia-beach-sweep-aerial.jpg",
+                "alt": "A long sweep of umbrella-lined beach below Ischia’s green ridges",
+                "captionTitle": "The Beach Sweep",
+                "credit": "Giovanni Di Meglio · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/santangelo-calm-water.jpg",
+                "src": "../../assets/img/short-ischia/santangelo-calm-water.jpg",
+                "alt": "Flat calm morning water off Sant’Angelo’s headland",
+                "captionTitle": "Morning Calm",
+                "credit": "Nati · Pexels License"
+              }
+            ],
+            "cost": "Giardini Poseidon’s published 2026 tariff is <b>€50 adult full day, €45 from 1 p.m., ages 4–11 half price</b> — about €175 for this family. The one rule that shapes the day: <b>under-12s are not allowed in the thermal pools</b>, only the three seawater pools and the beach. The 13-year-old gets all 22 pools; the 8-year-old still gets a full beach-and-pool day.",
+            "climateLabel": "Citara Bay, June",
+            "climate": "<b>Sea about 74°F by mid-June and the island’s driest stretch of the year.</b> Poseidon’s pools are graded 61–104°F, so a cool morning or a windy afternoon never cancels the day.",
+            "saveHtml": "<b>Save</b> The afternoon ticket (from 1 p.m.) saves €20 for the family and still leaves four hours of pools; Citara’s public beach next door is free all week.",
+            "splurgeHtml": "<b>Splurge</b> One full-day Poseidon visit is the trip’s signature purchase. Negombo on San Montano bay is the second thermal park if the family wants a rematch — note its child pricing runs by height, and both kids likely pay as adults there.",
+            "restoHtml": "<li><a href=\"https://wanderlog.com/list/geoCategory/33785/best-family-restaurants-in-forio\" target=\"_blank\" rel=\"noreferrer\"><b>La Tinaia</b></a> — family trattoria in Forio center; plain pasta on request and a famous lemon spaghetti</li><li><a href=\"https://wanderlog.com/list/geoCategory/1860478/best-pizza-spots-in-forio\" target=\"_blank\" rel=\"noreferrer\"><b>Pizzeria Di Meglio</b></a> — frequently called the island’s best pizza, near San Francesco beach</li><li><a href=\"https://wanderlog.com/list/geoCategory/33785/best-family-restaurants-in-forio\" target=\"_blank\" rel=\"noreferrer\"><b>La Ruota</b></a> — beachfront on Chiaia — swim, then eat without moving the towels</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Negombo (San Montano)</b> if Poseidon reads as too big — smaller, greener, on the island’s calmest swimming bay.</li><li><b>San Montano bay on its own</b> — shallow, warm and the best pure kid-swim on Ischia, no park ticket required.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://giardiniposeidonterme.com/en/preiseinfo-en/\" target=\"_blank\" rel=\"noreferrer\">Giardini Poseidon · official prices</a><a class=\"xg\" href=\"https://negombo.it/en/useful-info/\" target=\"_blank\" rel=\"noreferrer\">Negombo · visitor info</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=40.7096,13.8555&amp;z=13&amp;output=embed\" title=\"Map of Poseidon Gardens + Citara Bay\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=40.7096,13.8555\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day4",
+        "colorClass": "c1",
+        "badge": "5",
+        "eyebrow": "Wed · Jun 16",
+        "heading": "Castello Aragonese + Ischia Ponte",
+        "feel": "The island’s icon, then its beach",
+        "daycost": "Est. $180 · castle + dinner out",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Forio · night 4 of 7"
+          },
+          {
+            "label": "Tickets",
+            "valueHtml": "€12 / €6 ages 10–18 / free under 10"
+          }
+        ],
+        "note": "Bus across the island, walk the causeway, take the elevator up and the ramparts slowly. The beach beside the causeway fills the afternoon, and a floodlit-castle dinner in Ischia Ponte is the night to stay out late.",
+        "spots": [
+          {
+            "name": "Castello Aragonese + Ischia Ponte",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Castello%20Aragonese%20%2B%20Ischia%20Ponte\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/castello/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; castello</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/ischiaponte/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; ischiaponte</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Castello%20Aragonese%20%2B%20Ischia%20Ponte&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "is-island",
+            "images": [
+              {
+                "href": "../../assets/img/short-ischia/castello-sunset.jpg",
+                "src": "../../assets/img/short-ischia/castello-sunset.jpg",
+                "alt": "Castello Aragonese glowing warm gold above a calm sea at sunset",
+                "captionTitle": "Castello Aragonese at Sunset",
+                "credit": "Raffella Elia · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/google_ischia_castello_blue_v2.jpg",
+                "src": "../../assets/img/short-ischia/google_ischia_castello_blue_v2.jpg",
+                "alt": "The Aragonese castle rock rising from turquoise water off Ischia Ponte",
+                "captionTitle": "Castello Over Turquoise",
+                "credit": "Unsplash · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/google_ischia_castello_hero_01.jpg",
+                "src": "../../assets/img/short-ischia/google_ischia_castello_hero_01.jpg",
+                "alt": "A red boat drifting below the Castello Aragonese in long golden light",
+                "captionTitle": "Castello + Red Boat",
+                "credit": "malcbawn.photos · Flickr source"
+              },
+              {
+                "href": "../../assets/img/short-ischia/castello-islet-boats.jpg",
+                "src": "../../assets/img/short-ischia/castello-islet-boats.jpg",
+                "alt": "Sailboats anchored in deep blue water around the Castello Aragonese islet",
+                "captionTitle": "Boats Below the Castle",
+                "credit": "Pronto Ischia · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/castello-causeway-arch.jpg",
+                "src": "../../assets/img/short-ischia/castello-causeway-arch.jpg",
+                "alt": "Visitors crossing the stone causeway to the Castello Aragonese framed by an arch and lantern",
+                "captionTitle": "The Causeway",
+                "credit": "Francesco Pinto · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/castello-cliff-blue.jpg",
+                "src": "../../assets/img/short-ischia/castello-cliff-blue.jpg",
+                "alt": "The castle crag and its saturated blue channel seen from the rocks of Ischia Ponte",
+                "captionTitle": "Castello From the Rocks",
+                "credit": "Antonio Vivace · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/google_ischia_forio_sunset_01.jpg",
+                "src": "../../assets/img/short-ischia/google_ischia_forio_sunset_01.jpg",
+                "alt": "The white Soccorso church in Forio silhouetted by a burning sunset",
+                "captionTitle": "Chiesa del Soccorso, Forio",
+                "credit": "Norbert Liese · Flickr source"
+              },
+              {
+                "href": "../../assets/img/short-ischia/google_forio_palm_sunset_05.jpg",
+                "src": "../../assets/img/short-ischia/google_forio_palm_sunset_05.jpg",
+                "alt": "The sun setting into the Tyrrhenian Sea through palm fronds on Forio’s west coast",
+                "captionTitle": "Forio West-Coast Sunset",
+                "credit": "JoannaRB2009 · Flickr source"
+              },
+              {
+                "href": "../../assets/img/short-ischia/santangelo-pastel-harbor.jpg",
+                "src": "../../assets/img/short-ischia/santangelo-pastel-harbor.jpg",
+                "alt": "Sant’Angelo’s pastel houses and moored boats stacked against the blue sea",
+                "captionTitle": "Sant’Angelo Village",
+                "credit": "Heinz Klier · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/santangelo-from-the-sea.jpg",
+                "src": "../../assets/img/short-ischia/santangelo-from-the-sea.jpg",
+                "alt": "The whitewashed village of Sant’Angelo seen from the water under a clear sky",
+                "captionTitle": "Sant’Angelo From the Water",
+                "credit": "Martina Amaro · Pexels License"
+              }
+            ],
+            "cost": "Castello Aragonese is <b>€12 adult, €6 ages 10–18, free under 10</b> — €36 for this family, elevator included, and the ticket allows same-day re-entry. The stone causeway, the ramparts and the olive-terrace views are most of the visit; budget a gelato-paced half day.",
+            "climateLabel": "Ischia Ponte, June",
+            "climate": "<b>June averages 79°F with about seven brief rain days for the whole month.</b> The castle is an open-air site with real sun exposure — do it before lunch and leave the afternoon for the beach below.",
+            "saveHtml": "<b>Save</b> The castle’s €36 family total is the cheapest headline attraction on this board; the beach on either side of the causeway is free.",
+            "splurgeHtml": "<b>Splurge</b> Dinner in Ischia Ponte with the castle floodlit — the malcbawn boat-and-castle shot in this carousel is a normal Tuesday here.",
+            "restoHtml": "<li><a href=\"https://www.castelloaragoneseischia.com/en/plan-your-visit\" target=\"_blank\" rel=\"noreferrer\"><b>Il Terrazzo (in the castle)</b></a> — café-terrace inside the walls for mid-visit bribes</li><li><a href=\"https://wanderlog.com/list/geoCategory/33785/best-family-restaurants-in-forio\" target=\"_blank\" rel=\"noreferrer\"><b>Ischia Ponte trattorias</b></a> — plain pasta and pizza line the causeway street</li><li><a href=\"https://www.ischiareview.com/buses-in-ischia.html\" target=\"_blank\" rel=\"noreferrer\"><b>CS/CD bus back to Forio</b></a> — runs until late; no driving, no parking</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Sant’Angelo</b> — the car-free pastel village on the south coast, saved here for Saturday.</li><li><b>Mount Epomeo’s summit walk</b> from Fontana (about 2–2.5 hours round trip) if the family wants one real hike with a 360° bay view.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://www.castelloaragoneseischia.com/en/plan-your-visit\" target=\"_blank\" rel=\"noreferrer\">Castello Aragonese · plan your visit</a><a class=\"xg\" href=\"https://www.ischiareview.com/buses-in-ischia.html\" target=\"_blank\" rel=\"noreferrer\">Ischia Review · buses</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=40.7316,13.9633&amp;z=13&amp;output=embed\" title=\"Map of Castello Aragonese + Ischia Ponte\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=40.7316,13.9633\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day5",
+        "colorClass": "c1",
+        "badge": "6",
+        "eyebrow": "Thu · Jun 17",
+        "heading": "Procida day trip",
+        "feel": "Pastel Corricella, twenty minutes away",
+        "daycost": "Est. $200 · ferries + harbor lunch",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Forio · night 5 of 7"
+          },
+          {
+            "label": "Ferry",
+            "valueHtml": "15–30 min · ~€13–19pp round trip"
+          }
+        ],
+        "note": "The Bay’s most photogenic harbor is one short crossing from Casamicciola. Climb to Terra Murata for the postcard angle, eat on the Corricella front, and be back on Ischia for an evening swim.",
+        "spots": [
+          {
+            "name": "Procida day trip",
+            "exploreHtml": "<a class=\"xg\" href=\"https://www.google.com/search?tbm=isch&amp;q=Procida%20day%20trip\" target=\"_blank\" rel=\"noreferrer\">Photos</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/procida/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; procida</a><a class=\"xi\" href=\"https://www.instagram.com/explore/tags/corricella/\" target=\"_blank\" rel=\"noreferrer\">IG &middot; corricella</a><a class=\"xf\" href=\"https://www.flickr.com/search/?text=Procida%20day%20trip&amp;sort=interestingness-desc\" target=\"_blank\" rel=\"noreferrer\">Flickr</a>",
+            "carouselId": "is-bay",
+            "images": [
+              {
+                "href": "../../assets/img/short-ischia/corricella-dusk.jpg",
+                "src": "../../assets/img/short-ischia/corricella-dusk.jpg",
+                "alt": "Procida’s Marina Corricella pastel houses glowing at dusk above the fishing fleet",
+                "captionTitle": "Corricella at Dusk",
+                "credit": "Nati · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/procida-aerial.jpg",
+                "src": "../../assets/img/short-ischia/procida-aerial.jpg",
+                "alt": "Aerial view of Procida’s colored waterfront and boat harbor",
+                "captionTitle": "Procida From Above",
+                "credit": "Yiannis Tsapanidis · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/corricella-birdseye.jpg",
+                "src": "../../assets/img/short-ischia/corricella-birdseye.jpg",
+                "alt": "Bird’s-eye panorama of Corricella’s amphitheater of houses meeting the water",
+                "captionTitle": "Corricella Panorama",
+                "credit": "Charles Devaux · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/procida-skyline-clouds.jpg",
+                "src": "../../assets/img/short-ischia/procida-skyline-clouds.jpg",
+                "alt": "Procida’s skyline and harbor boats under dramatic June clouds",
+                "captionTitle": "Procida Skyline",
+                "credit": "Laurent Gence · Unsplash License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/naples-vesuvius-aerial.jpg",
+                "src": "../../assets/img/short-ischia/naples-vesuvius-aerial.jpg",
+                "alt": "Naples harbor from the air with Vesuvius rising behind the city",
+                "captionTitle": "Naples + Vesuvius",
+                "credit": "Kelly · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/naples-panorama.jpg",
+                "src": "../../assets/img/short-ischia/naples-panorama.jpg",
+                "alt": "Panoramic view over Naples rooftops toward a hazy Vesuvius",
+                "captionTitle": "Over the Rooftops",
+                "credit": "Holodna · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/naples-dusk-aerial.jpg",
+                "src": "../../assets/img/short-ischia/naples-dusk-aerial.jpg",
+                "alt": "Naples and its bay at dusk with the city lights coming on",
+                "captionTitle": "Naples at Dusk",
+                "credit": "Kelly · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/castel-dellovo.jpg",
+                "src": "../../assets/img/short-ischia/castel-dellovo.jpg",
+                "alt": "Castel dell’Ovo on the Naples waterfront in bright summer light",
+                "captionTitle": "Castel dell’Ovo",
+                "credit": "Margo Evardson · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/pompeii-forum-columns.jpg",
+                "src": "../../assets/img/short-ischia/pompeii-forum-columns.jpg",
+                "alt": "Pompeii’s forum columns under a dramatic golden sky",
+                "captionTitle": "Pompeii Forum",
+                "credit": "James Frid · Pexels License"
+              },
+              {
+                "href": "../../assets/img/short-ischia/ferry-vesuvius-dusk.jpg",
+                "src": "../../assets/img/short-ischia/ferry-vesuvius-dusk.jpg",
+                "alt": "A ferry crossing the Bay of Naples at dusk below the silhouette of Vesuvius",
+                "captionTitle": "Bay Crossing",
+                "credit": "Kelly · Pexels License"
+              }
+            ],
+            "cost": "Ischia → Procida ferries run 15–30 minutes, up to a dozen sailings a day, roughly <b>€13–19 per person round trip</b> from Casamicciola — call it €60–80 for four. Marina Corricella and the Terra Murata viewpoint are free; lunch on the harbor is the day’s real spend.",
+            "climateLabel": "Procida, June",
+            "climate": "<b>Same forgiving June as Ischia — around 79°F and dry.</b> The crossing is short enough that a windy-morning postponement costs nothing; swap it with any Forio beach day.",
+            "saveHtml": "<b>Save</b> Procida is a half-day done cheaply: ferry, one climb to Terra Murata, granita, ferry home.",
+            "splurgeHtml": "<b>Splurge</b> A long harbor-front lunch at Corricella facing the pastel amphitheater — the single most photographed table setting in the Bay of Naples.",
+            "restoHtml": "<li><a href=\"https://www.directferries.com/ischia_procida_ferry.htm\" target=\"_blank\" rel=\"noreferrer\"><b>Corricella harbor front</b></a> — fried fish cones, pasta and pizza at the water’s edge</li><li><a href=\"https://www.directferries.com/ischia_procida_ferry.htm\" target=\"_blank\" rel=\"noreferrer\"><b>Via Roma near the port</b></a> — gelato and granita for the walk back</li><li><a href=\"https://www.directferries.com/ischia_procida_ferry.htm\" target=\"_blank\" rel=\"noreferrer\"><b>Ferry-day picnic</b></a> — Forio bakeries pack focaccia for the crossing</li>",
+            "altboxHtml": "<ul class=\"alt-list\"><li><b>Pompeii instead?</b> Honest answer: from Ischia it burns 3–4 hours of ferry + train each way. It only fits this trip as a departure-day add-on with a late flight, or by adding a Naples overnight. Tickets are €20 (Express) with a timed-entry cap — and note US-citizen kids pay; the EU under-18 free rule does not apply.</li><li><b>Capri is deliberately skipped</b> — the family has already been; Procida is the new island.</li></ul>",
+            "bloglinksHtml": "<a class=\"xg\" href=\"https://www.directferries.com/ischia_procida_ferry.htm\" target=\"_blank\" rel=\"noreferrer\">Direct Ferries · Ischia–Procida</a><a class=\"xg\" href=\"https://pompeiisites.org/en/visiting-info/timetables-and-tickets/\" target=\"_blank\" rel=\"noreferrer\">Pompeii · official tickets</a>",
+            "spotMapHtml": "<div class=\"spot-map\">\n          <div class=\"mapwrap\"><iframe class=\"gmap\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\" src=\"https://www.google.com/maps?q=40.762,14.0169&amp;z=13&amp;output=embed\" title=\"Map of Procida day trip\"></iframe></div>\n          <a class=\"gmap-btn\" href=\"https://www.google.com/maps/search/?api=1&query=40.762,14.0169\" target=\"_blank\" rel=\"noreferrer\">&#128205; Open in Google Maps &#8617;</a>\n        </div>"
+          }
+        ],
+        "travelNote": null
+      },
+      {
+        "id": "day6",
+        "colorClass": "c1",
+        "badge": "7",
+        "eyebrow": "Fri · Jun 18 · Juneteenth observed",
+        "heading": "Giro dell’isola boat day",
+        "feel": "Sea caves and swim stops by boat",
+        "daycost": "Est. $340 · boat tour + dinner",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Forio · night 6 of 7"
+          },
+          {
+            "label": "PTO",
+            "valueHtml": "Observed holiday; employer policy"
+          }
+        ],
+        "note": "The classic full-day boat circle of the island — sea caves, cliff villages from the water, and swim stops the buses can’t reach — runs about €73 per person with lunch. In the evening, Sorgeto’s free hot-spring cove is the volcanic party trick: thermal water bubbling straight into the sea.",
+        "spots": [],
+        "travelNote": null
+      },
+      {
+        "id": "day7",
+        "colorClass": "c1",
+        "badge": "8",
+        "eyebrow": "Sat · Jun 19",
+        "heading": "Sant’Angelo + Maronti",
+        "feel": "The car-free south coast, then pack",
+        "daycost": "Est. $180 · buses, beach, last dinner",
+        "facts": [
+          {
+            "label": "Sleep",
+            "valueHtml": "Forio · night 7 of 7"
+          },
+          {
+            "label": "Flex",
+            "valueHtml": "This day absorbs any weather postponement"
+          }
+        ],
+        "note": "Sant’Angelo is the whitewashed, car-free village on the sand isthmus; Maronti is the island’s longest beach, with fumaroles steaming in the sand. This is also the week’s pressure valve — anything the wind cancelled lands here.",
+        "spots": [],
+        "travelNote": null
+      },
+      {
+        "id": "day8",
+        "colorClass": "c0",
+        "badge": "9",
+        "eyebrow": "Sun · Jun 20",
+        "heading": "Forio → Naples → Pittsburgh",
+        "feel": "Boat, plane, home the same day",
+        "daycost": "Est. $250 · hydrofoil, Alibus, airport meals",
+        "facts": [
+          {
+            "label": "Route",
+            "valueHtml": "Hydrofoil → NAP → EWR → PIT · same-day arrival"
+          },
+          {
+            "label": "Sleep",
+            "valueHtml": "Home"
+          }
+        ],
+        "note": "Take an early hydrofoil with real slack — Sunday-morning boats toward Naples are the ones that sell out, so book this leg ahead. United’s Naples departure lands you in Pittsburgh the same evening, four clear days before the Jun 24–26 commitment.",
+        "spots": [],
+        "travelNote": "&#9992;&#65038; Travel day &mdash; no stops"
+      }
+    ]
+  },
+  "parts": [
+    {
+      "t": "raw",
+      "html": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><title>Ischia + the Bay of Naples — June 2027</title><style>/* required styles */\n\n.leaflet-pane,\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-tile-container,\n.leaflet-pane > svg,\n.leaflet-pane > canvas,\n.leaflet-zoom-box,\n.leaflet-image-layer,\n.leaflet-layer {\n\tposition: absolute;\n\tleft: 0;\n\ttop: 0;\n\t}\n.leaflet-container {\n\toverflow: hidden;\n\t}\n.leaflet-tile,\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\t-webkit-user-select: none;\n\t   -moz-user-select: none;\n\t        user-select: none;\n\t  -webkit-user-drag: none;\n\t}\n/* Prevents IE11 from highlighting tiles in blue */\n.leaflet-tile::selection {\n\tbackground: transparent;\n}\n/* Safari renders non-retina tile on retina better with this, but Chrome is worse */\n.leaflet-safari .leaflet-tile {\n\timage-rendering: -webkit-optimize-contrast;\n\t}\n/* hack that prevents hw layers \"stretching\" when loading new tiles */\n.leaflet-safari .leaflet-tile-container {\n\twidth: 1600px;\n\theight: 1600px;\n\t-webkit-transform-origin: 0 0;\n\t}\n.leaflet-marker-icon,\n.leaflet-marker-shadow {\n\tdisplay: block;\n\t}\n/* .leaflet-container svg: reset svg max-width decleration shipped in Joomla! (joomla.org) 3.x */\n/* .leaflet-container img: map is broken in FF if you have max-width: 100% on tiles */\n.leaflet-container .leaflet-overlay-pane svg {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\t}\n.leaflet-container .leaflet-marker-pane img,\n.leaflet-container .leaflet-shadow-pane img,\n.leaflet-container .leaflet-tile-pane img,\n.leaflet-container img.leaflet-image-layer,\n.leaflet-container .leaflet-tile {\n\tmax-width: none !important;\n\tmax-height: none !important;\n\twidth: auto;\n\tpadding: 0;\n\t}\n\n.leaflet-container img.leaflet-tile {\n\t/* See: https://bugs.chromium.org/p/chromium/issues/detail?id=600120 */\n\tmix-blend-mode: plus-lighter;\n}\n\n.leaflet-container.leaflet-touch-zoom {\n\t-ms-touch-action: pan-x pan-y;\n\ttouch-action: pan-x pan-y;\n\t}\n.leaflet-container.leaflet-touch-drag {\n\t-ms-touch-action: pinch-zoom;\n\t/* Fallback for FF which doesn't support pinch-zoom */\n\ttouch-action: none;\n\ttouch-action: pinch-zoom;\n}\n.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom {\n\t-ms-touch-action: none;\n\ttouch-action: none;\n}\n.leaflet-container {\n\t-webkit-tap-highlight-color: transparent;\n}\n.leaflet-container a {\n\t-webkit-tap-highlight-color: rgba(51, 181, 229, 0.4);\n}\n.leaflet-tile {\n\tfilter: inherit;\n\tvisibility: hidden;\n\t}\n.leaflet-tile-loaded {\n\tvisibility: inherit;\n\t}\n.leaflet-zoom-box {\n\twidth: 0;\n\theight: 0;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tz-index: 800;\n\t}\n/* workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=888319 */\n.leaflet-overlay-pane svg {\n\t-moz-user-select: none;\n\t}\n\n.leaflet-pane         { z-index: 400; }\n\n.leaflet-tile-pane    { z-index: 200; }\n.leaflet-overlay-pane { z-index: 400; }\n.leaflet-shadow-pane  { z-index: 500; }\n.leaflet-marker-pane  { z-index: 600; }\n.leaflet-tooltip-pane   { z-index: 650; }\n.leaflet-popup-pane   { z-index: 700; }\n\n.leaflet-map-pane canvas { z-index: 100; }\n.leaflet-map-pane svg    { z-index: 200; }\n\n.leaflet-vml-shape {\n\twidth: 1px;\n\theight: 1px;\n\t}\n.lvml {\n\tbehavior: url(#default#VML);\n\tdisplay: inline-block;\n\tposition: absolute;\n\t}\n\n\n/* control positioning */\n\n.leaflet-control {\n\tposition: relative;\n\tz-index: 800;\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n.leaflet-top,\n.leaflet-bottom {\n\tposition: absolute;\n\tz-index: 1000;\n\tpointer-events: none;\n\t}\n.leaflet-top {\n\ttop: 0;\n\t}\n.leaflet-right {\n\tright: 0;\n\t}\n.leaflet-bottom {\n\tbottom: 0;\n\t}\n.leaflet-left {\n\tleft: 0;\n\t}\n.leaflet-control {\n\tfloat: left;\n\tclear: both;\n\t}\n.leaflet-right .leaflet-control {\n\tfloat: right;\n\t}\n.leaflet-top .leaflet-control {\n\tmargin-top: 10px;\n\t}\n.leaflet-bottom .leaflet-control {\n\tmargin-bottom: 10px;\n\t}\n.leaflet-left .leaflet-control {\n\tmargin-left: 10px;\n\t}\n.leaflet-right .leaflet-control {\n\tmargin-right: 10px;\n\t}\n\n\n/* zoom and fade animations */\n\n.leaflet-fade-anim .leaflet-popup {\n\topacity: 0;\n\t-webkit-transition: opacity 0.2s linear;\n\t   -moz-transition: opacity 0.2s linear;\n\t        transition: opacity 0.2s linear;\n\t}\n.leaflet-fade-anim .leaflet-map-pane .leaflet-popup {\n\topacity: 1;\n\t}\n.leaflet-zoom-animated {\n\t-webkit-transform-origin: 0 0;\n\t    -ms-transform-origin: 0 0;\n\t        transform-origin: 0 0;\n\t}\nsvg.leaflet-zoom-animated {\n\twill-change: transform;\n}\n\n.leaflet-zoom-anim .leaflet-zoom-animated {\n\t-webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t   -moz-transition:    -moz-transform 0.25s cubic-bezier(0,0,0.25,1);\n\t        transition:         transform 0.25s cubic-bezier(0,0,0.25,1);\n\t}\n.leaflet-zoom-anim .leaflet-tile,\n.leaflet-pan-anim .leaflet-tile {\n\t-webkit-transition: none;\n\t   -moz-transition: none;\n\t        transition: none;\n\t}\n\n.leaflet-zoom-anim .leaflet-zoom-hide {\n\tvisibility: hidden;\n\t}\n\n\n/* cursors */\n\n.leaflet-interactive {\n\tcursor: pointer;\n\t}\n.leaflet-grab {\n\tcursor: -webkit-grab;\n\tcursor:    -moz-grab;\n\tcursor:         grab;\n\t}\n.leaflet-crosshair,\n.leaflet-crosshair .leaflet-interactive {\n\tcursor: crosshair;\n\t}\n.leaflet-popup-pane,\n.leaflet-control {\n\tcursor: auto;\n\t}\n.leaflet-dragging .leaflet-grab,\n.leaflet-dragging .leaflet-grab .leaflet-interactive,\n.leaflet-dragging .leaflet-marker-draggable {\n\tcursor: move;\n\tcursor: -webkit-grabbing;\n\tcursor:    -moz-grabbing;\n\tcursor:         grabbing;\n\t}\n\n/* marker & overlays interactivity */\n.leaflet-marker-icon,\n.leaflet-marker-shadow,\n.leaflet-image-layer,\n.leaflet-pane > svg path,\n.leaflet-tile-container {\n\tpointer-events: none;\n\t}\n\n.leaflet-marker-icon.leaflet-interactive,\n.leaflet-image-layer.leaflet-interactive,\n.leaflet-pane > svg path.leaflet-interactive,\nsvg.leaflet-image-layer.leaflet-interactive path {\n\tpointer-events: visiblePainted; /* IE 9-10 doesn't have auto */\n\tpointer-events: auto;\n\t}\n\n/* visual tweaks */\n\n.leaflet-container {\n\tbackground: #ddd;\n\toutline-offset: 1px;\n\t}\n.leaflet-container a {\n\tcolor: #0078A8;\n\t}\n.leaflet-zoom-box {\n\tborder: 2px dotted #38f;\n\tbackground: rgba(255,255,255,0.5);\n\t}\n\n\n/* general typography */\n.leaflet-container {\n\tfont-family: \"Helvetica Neue\", Arial, Helvetica, sans-serif;\n\tfont-size: 12px;\n\tfont-size: 0.75rem;\n\tline-height: 1.5;\n\t}\n\n\n/* general toolbar styles */\n\n.leaflet-bar {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.65);\n\tborder-radius: 4px;\n\t}\n.leaflet-bar a {\n\tbackground-color: #fff;\n\tborder-bottom: 1px solid #ccc;\n\twidth: 26px;\n\theight: 26px;\n\tline-height: 26px;\n\tdisplay: block;\n\ttext-align: center;\n\ttext-decoration: none;\n\tcolor: black;\n\t}\n.leaflet-bar a,\n.leaflet-control-layers-toggle {\n\tbackground-position: 50% 50%;\n\tbackground-repeat: no-repeat;\n\tdisplay: block;\n\t}\n.leaflet-bar a:hover,\n.leaflet-bar a:focus {\n\tbackground-color: #f4f4f4;\n\t}\n.leaflet-bar a:first-child {\n\tborder-top-left-radius: 4px;\n\tborder-top-right-radius: 4px;\n\t}\n.leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 4px;\n\tborder-bottom-right-radius: 4px;\n\tborder-bottom: none;\n\t}\n.leaflet-bar a.leaflet-disabled {\n\tcursor: default;\n\tbackground-color: #f4f4f4;\n\tcolor: #bbb;\n\t}\n\n.leaflet-touch .leaflet-bar a {\n\twidth: 30px;\n\theight: 30px;\n\tline-height: 30px;\n\t}\n.leaflet-touch .leaflet-bar a:first-child {\n\tborder-top-left-radius: 2px;\n\tborder-top-right-radius: 2px;\n\t}\n.leaflet-touch .leaflet-bar a:last-child {\n\tborder-bottom-left-radius: 2px;\n\tborder-bottom-right-radius: 2px;\n\t}\n\n/* zoom control */\n\n.leaflet-control-zoom-in,\n.leaflet-control-zoom-out {\n\tfont: bold 18px 'Lucida Console', Monaco, monospace;\n\ttext-indent: 1px;\n\t}\n\n.leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out  {\n\tfont-size: 22px;\n\t}\n\n\n/* layers control */\n\n.leaflet-control-layers {\n\tbox-shadow: 0 1px 5px rgba(0,0,0,0.4);\n\tbackground: #fff;\n\tborder-radius: 5px;\n\t}\n.leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers.png);\n\twidth: 36px;\n\theight: 36px;\n\t}\n.leaflet-retina .leaflet-control-layers-toggle {\n\tbackground-image: url(images/layers-2x.png);\n\tbackground-size: 26px 26px;\n\t}\n.leaflet-touch .leaflet-control-layers-toggle {\n\twidth: 44px;\n\theight: 44px;\n\t}\n.leaflet-control-layers .leaflet-control-layers-list,\n.leaflet-control-layers-expanded .leaflet-control-layers-toggle {\n\tdisplay: none;\n\t}\n.leaflet-control-layers-expanded .leaflet-control-layers-list {\n\tdisplay: block;\n\tposition: relative;\n\t}\n.leaflet-control-layers-expanded {\n\tpadding: 6px 10px 6px 6px;\n\tcolor: #333;\n\tbackground: #fff;\n\t}\n.leaflet-control-layers-scrollbar {\n\toverflow-y: scroll;\n\toverflow-x: hidden;\n\tpadding-right: 5px;\n\t}\n.leaflet-control-layers-selector {\n\tmargin-top: 2px;\n\tposition: relative;\n\ttop: 1px;\n\t}\n.leaflet-control-layers label {\n\tdisplay: block;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\t}\n.leaflet-control-layers-separator {\n\theight: 0;\n\tborder-top: 1px solid #ddd;\n\tmargin: 5px -10px 5px -6px;\n\t}\n\n/* Default icon URLs */\n.leaflet-default-icon-path { /* used only in path-guessing heuristic, see L.Icon.Default */\n\tbackground-image: url(images/marker-icon.png);\n\t}\n\n\n/* attribution and scale controls */\n\n.leaflet-container .leaflet-control-attribution {\n\tbackground: #fff;\n\tbackground: rgba(255, 255, 255, 0.8);\n\tmargin: 0;\n\t}\n.leaflet-control-attribution,\n.leaflet-control-scale-line {\n\tpadding: 0 5px;\n\tcolor: #333;\n\tline-height: 1.4;\n\t}\n.leaflet-control-attribution a {\n\ttext-decoration: none;\n\t}\n.leaflet-control-attribution a:hover,\n.leaflet-control-attribution a:focus {\n\ttext-decoration: underline;\n\t}\n.leaflet-attribution-flag {\n\tdisplay: inline !important;\n\tvertical-align: baseline !important;\n\twidth: 1em;\n\theight: 0.6669em;\n\t}\n.leaflet-left .leaflet-control-scale {\n\tmargin-left: 5px;\n\t}\n.leaflet-bottom .leaflet-control-scale {\n\tmargin-bottom: 5px;\n\t}\n.leaflet-control-scale-line {\n\tborder: 2px solid #777;\n\tborder-top: none;\n\tline-height: 1.1;\n\tpadding: 2px 5px 1px;\n\twhite-space: nowrap;\n\t-moz-box-sizing: border-box;\n\t     box-sizing: border-box;\n\tbackground: rgba(255, 255, 255, 0.8);\n\ttext-shadow: 1px 1px #fff;\n\t}\n.leaflet-control-scale-line:not(:first-child) {\n\tborder-top: 2px solid #777;\n\tborder-bottom: none;\n\tmargin-top: -2px;\n\t}\n.leaflet-control-scale-line:not(:first-child):not(:last-child) {\n\tborder-bottom: 2px solid #777;\n\t}\n\n.leaflet-touch .leaflet-control-attribution,\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tbox-shadow: none;\n\t}\n.leaflet-touch .leaflet-control-layers,\n.leaflet-touch .leaflet-bar {\n\tborder: 2px solid rgba(0,0,0,0.2);\n\tbackground-clip: padding-box;\n\t}\n\n\n/* popup */\n\n.leaflet-popup {\n\tposition: absolute;\n\ttext-align: center;\n\tmargin-bottom: 20px;\n\t}\n.leaflet-popup-content-wrapper {\n\tpadding: 1px;\n\ttext-align: left;\n\tborder-radius: 12px;\n\t}\n.leaflet-popup-content {\n\tmargin: 13px 24px 13px 20px;\n\tline-height: 1.3;\n\tfont-size: 13px;\n\tfont-size: 1.08333em;\n\tmin-height: 1px;\n\t}\n.leaflet-popup-content p {\n\tmargin: 17px 0;\n\tmargin: 1.3em 0;\n\t}\n.leaflet-popup-tip-container {\n\twidth: 40px;\n\theight: 20px;\n\tposition: absolute;\n\tleft: 50%;\n\tmargin-top: -1px;\n\tmargin-left: -20px;\n\toverflow: hidden;\n\tpointer-events: none;\n\t}\n.leaflet-popup-tip {\n\twidth: 17px;\n\theight: 17px;\n\tpadding: 1px;\n\n\tmargin: -10px auto 0;\n\tpointer-events: auto;\n\n\t-webkit-transform: rotate(45deg);\n\t   -moz-transform: rotate(45deg);\n\t    -ms-transform: rotate(45deg);\n\t        transform: rotate(45deg);\n\t}\n.leaflet-popup-content-wrapper,\n.leaflet-popup-tip {\n\tbackground: white;\n\tcolor: #333;\n\tbox-shadow: 0 3px 14px rgba(0,0,0,0.4);\n\t}\n.leaflet-container a.leaflet-popup-close-button {\n\tposition: absolute;\n\ttop: 0;\n\tright: 0;\n\tborder: none;\n\ttext-align: center;\n\twidth: 24px;\n\theight: 24px;\n\tfont: 16px/24px Tahoma, Verdana, sans-serif;\n\tcolor: #757575;\n\ttext-decoration: none;\n\tbackground: transparent;\n\t}\n.leaflet-container a.leaflet-popup-close-button:hover,\n.leaflet-container a.leaflet-popup-close-button:focus {\n\tcolor: #585858;\n\t}\n.leaflet-popup-scrolled {\n\toverflow: auto;\n\t}\n\n.leaflet-oldie .leaflet-popup-content-wrapper {\n\t-ms-zoom: 1;\n\t}\n.leaflet-oldie .leaflet-popup-tip {\n\twidth: 24px;\n\tmargin: 0 auto;\n\n\t-ms-filter: \"progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)\";\n\tfilter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678);\n\t}\n\n.leaflet-oldie .leaflet-control-zoom,\n.leaflet-oldie .leaflet-control-layers,\n.leaflet-oldie .leaflet-popup-content-wrapper,\n.leaflet-oldie .leaflet-popup-tip {\n\tborder: 1px solid #999;\n\t}\n\n\n/* div icon */\n\n.leaflet-div-icon {\n\tbackground: #fff;\n\tborder: 1px solid #666;\n\t}\n\n\n/* Tooltip */\n/* Base styles for the element that has a tooltip */\n.leaflet-tooltip {\n\tposition: absolute;\n\tpadding: 6px;\n\tbackground-color: #fff;\n\tborder: 1px solid #fff;\n\tborder-radius: 3px;\n\tcolor: #222;\n\twhite-space: nowrap;\n\t-webkit-user-select: none;\n\t-moz-user-select: none;\n\t-ms-user-select: none;\n\tuser-select: none;\n\tpointer-events: none;\n\tbox-shadow: 0 1px 3px rgba(0,0,0,0.4);\n\t}\n.leaflet-tooltip.leaflet-interactive {\n\tcursor: pointer;\n\tpointer-events: auto;\n\t}\n.leaflet-tooltip-top:before,\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\tposition: absolute;\n\tpointer-events: none;\n\tborder: 6px solid transparent;\n\tbackground: transparent;\n\tcontent: \"\";\n\t}\n\n/* Directions */\n\n.leaflet-tooltip-bottom {\n\tmargin-top: 6px;\n}\n.leaflet-tooltip-top {\n\tmargin-top: -6px;\n}\n.leaflet-tooltip-bottom:before,\n.leaflet-tooltip-top:before {\n\tleft: 50%;\n\tmargin-left: -6px;\n\t}\n.leaflet-tooltip-top:before {\n\tbottom: 0;\n\tmargin-bottom: -12px;\n\tborder-top-color: #fff;\n\t}\n.leaflet-tooltip-bottom:before {\n\ttop: 0;\n\tmargin-top: -12px;\n\tmargin-left: -6px;\n\tborder-bottom-color: #fff;\n\t}\n.leaflet-tooltip-left {\n\tmargin-left: -6px;\n}\n.leaflet-tooltip-right {\n\tmargin-left: 6px;\n}\n.leaflet-tooltip-left:before,\n.leaflet-tooltip-right:before {\n\ttop: 50%;\n\tmargin-top: -6px;\n\t}\n.leaflet-tooltip-left:before {\n\tright: 0;\n\tmargin-right: -12px;\n\tborder-left-color: #fff;\n\t}\n.leaflet-tooltip-right:before {\n\tleft: 0;\n\tmargin-left: -12px;\n\tborder-right-color: #fff;\n\t}\n\n/* Printing */\n\n@media print {\n\t/* Prevent printers from removing background-images of controls. */\n\t.leaflet-control {\n\t\t-webkit-print-color-adjust: exact;\n\t\tprint-color-adjust: exact;\n\t\t}\n\t}\n\n:root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;\n --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;\n --save:#3f7d4e;--splurge:#a9862b;--shadow:0 18px 46px rgba(30,32,28,.14)}\n*{box-sizing:border-box}\nhtml{scroll-behavior:smooth}\nbody{margin:0;background:var(--paper);color:var(--ink);\n font:16px/1.55 \"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;-webkit-font-smoothing:antialiased}\nh1,h2,h3,h4{font-family:\"Fraunces\",\"Georgia\",serif;letter-spacing:-.01em}\na{color:var(--c1)}\n.eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}\n/* HERO */\nheader{position:relative;min-height:90vh;display:grid;align-items:end;padding:40px clamp(20px,5vw,80px) 54px;color:#fff;overflow:hidden}\nheader::before{content:\"\";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,20,24,.12),rgba(10,18,22,.34) 45%,rgba(8,14,18,.88)),url(\"../../assets/img/short-ischia/castello-sunset.jpg\") center 40% / cover;transform:scale(1.03);z-index:-1}\n.hero-inner{max-width:1100px}\nheader .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}\nh1{margin:0 0 18px;font-size:clamp(2.9rem,9vw,7rem);line-height:.9;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}\nheader .lead{max-width:640px;margin:0 0 26px;font-size:clamp(1.05rem,2.1vw,1.3rem);color:rgba(255,255,255,.94);line-height:1.5}\n.hero-meta{display:flex;flex-wrap:wrap;gap:26px}\n.hero-meta div{display:flex;flex-direction:column}\n.hero-meta b{font-family:\"Fraunces\",serif;font-size:1.5rem;line-height:1}\n.hero-meta span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.75);margin-top:4px}\n/* NAV */\nsection[id],article[id]{scroll-margin-top:84px}\n.site-nav{z-index:500;--nav-bg:#17130f;--nav-panel:#211c16;--nav-panel-2:#2a231b;--nav-line:rgba(246,241,231,.16);--nav-text:#f6f1e7;--nav-muted:rgba(246,241,231,.62);--nav-active:#5f9aa3;--nav-active-ink:#061517;--nav-shadow:0 18px 42px rgba(12,10,8,.28)}\n.site-nav summary{list-style:none}\n.site-nav summary::-webkit-details-marker{display:none}\n.site-nav a{color:var(--nav-text);font-weight:800;text-decoration:none;line-height:1.2;transition:background .15s,color .15s,border-color .15s,box-shadow .15s}\n.site-nav a.active{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active);box-shadow:0 8px 22px rgba(95,154,163,.22)}\n@media(min-width:960px){\n  body{padding-left:clamp(210px,17vw,248px)}\n  section[id],article[id]{scroll-margin-top:24px}\n  .site-nav{position:fixed;inset:0 auto 0 0;width:clamp(210px,17vw,248px);display:block;padding:18px 14px;background:linear-gradient(180deg,rgba(33,28,22,.98),rgba(18,15,12,.97));border-right:1px solid var(--nav-line);backdrop-filter:blur(16px);box-shadow:14px 0 42px rgba(12,10,8,.26);overflow:hidden;color:var(--nav-text)}\n  .site-nav-menu{height:100%;display:flex;flex-direction:column;min-height:0;overflow:hidden}\n  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px;padding:10px 10px 13px;border-bottom:1px solid var(--nav-line);color:var(--nav-muted);font-size:.7rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase;cursor:default}\n  .site-nav summary::after{content:\"\";width:26px;height:2px;background:var(--nav-line)}\n  .site-nav-links{flex:1 1 auto;display:grid;align-content:start;gap:6px;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;min-height:0;max-height:calc(100vh - 92px);padding:2px 2px 16px;scrollbar-width:thin;scrollbar-color:rgba(246,241,231,.26) transparent}\n  .site-nav a{display:flex;align-items:center;min-height:36px;padding:8px 10px;border:1px solid transparent;border-radius:8px;background:transparent;font-size:.82rem}\n  .site-nav a:hover{background:rgba(246,241,231,.1);color:#fff;border-color:var(--nav-line)}\n  .site-nav a.nav-home{margin-bottom:6px;background:rgba(42,83,89,.42);color:var(--nav-active);border-color:rgba(95,154,163,.48)}\n}\n@media(max-width:959px){\n  .site-nav{position:sticky;top:0;padding:10px clamp(14px,4vw,22px);background:rgba(23,19,15,.96);border-bottom:1px solid var(--nav-line);backdrop-filter:blur(14px);box-shadow:0 10px 28px rgba(12,10,8,.18)}\n  .site-nav-menu{max-width:1320px;margin:0 auto}\n  .site-nav summary{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:8px 12px;border:1px solid var(--nav-line);border-radius:10px;background:var(--nav-panel);box-shadow:0 8px 24px rgba(12,10,8,.22);color:var(--nav-text);font-size:.84rem;font-weight:900;cursor:pointer}\n  .site-nav summary::after{content:\"+\";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--nav-active);color:var(--nav-active-ink);font-size:1rem;line-height:1}\n  .site-nav-menu[open] summary{border-color:rgba(95,154,163,.55)}\n  .site-nav-menu[open] summary::after{content:\"-\"}\n  .site-nav-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:7px;margin-top:8px;max-height:min(70vh,480px);overflow:auto;padding:8px;border:1px solid var(--nav-line);border-radius:12px;background:linear-gradient(180deg,var(--nav-panel),var(--nav-bg));box-shadow:0 18px 42px rgba(12,10,8,.34)}\n  .site-nav a{display:flex;align-items:center;min-height:42px;padding:9px 10px;border:1px solid var(--nav-line);border-radius:8px;background:rgba(246,241,231,.06);font-size:.82rem}\n  .site-nav a.nav-home,.site-nav a:hover{background:var(--nav-active);color:var(--nav-active-ink);border-color:var(--nav-active)}\n}\nmain{max-width:1320px;margin:0 auto;padding:56px clamp(18px,5vw,60px) 40px}\n.section-label{text-align:center;margin:0 auto 28px;max-width:min(1320px,100%)}\n.section-label h2{margin:.08em 0 .16em;font-size:clamp(1.75rem,3.1vw,2.55rem);line-height:.92;font-weight:600;text-wrap:balance}\n.section-label p{max-width:960px;margin:0 auto;color:var(--muted);line-height:1.38}\n.divider{margin:78px 0 40px}\n/* OVERVIEW */\n.overview{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px}\n.ocard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.ocard .eyebrow{color:var(--c1)}\n.ocard h4{margin:0 0 6px;font-size:1.4rem;font-weight:600}\n.ocard p{margin:0;color:var(--muted);font-size:.92rem}\n/* TRIP MAP */\n.hc-grid{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}\n.hc{display:grid;grid-template-columns:132px minmax(190px,285px) minmax(0,1fr);gap:16px;align-items:start;margin:0;padding:18px 22px;border:0;border-left:5px solid var(--muted);border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none}\n.hc:last-child{border-bottom:0}\n.hc.actnow{border-left-color:#c0392b}\n.hc.watch{border-left-color:var(--gold)}\n.hc.good{border-left-color:var(--c3)}\n.hc-tag{display:inline-flex;align-items:center;justify-content:center;width:max-content;max-width:100%;font-size:.66rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:1px 0 0;color:#fff;text-align:center;white-space:nowrap}\n.hc.actnow .hc-tag{background:#c0392b}\n.hc.watch .hc-tag{background:var(--gold)}\n.hc.good .hc-tag{background:var(--c3)}\n.hc h4{margin:0;font-size:1.08rem;font-weight:600;line-height:1.16}\n.hc p{margin:0;font-size:.92rem;color:var(--muted);line-height:1.48}\n.hc p b{color:var(--ink)}\n@media(max-width:860px){.hc{grid-template-columns:1fr;gap:8px;padding:16px 18px}.hc-tag{margin:0}.hc h4{font-size:1.05rem}}\n\n/* TRAVEL TIPS */\n.tips-order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);margin-bottom:22px}\n.tips-order p.mini-h{margin:0 0 12px}\n.tips-order ol{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px;counter-reset:step}\n.tips-order li{counter-increment:step;position:relative;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px 7px 30px;font-size:.82rem;font-weight:600}\n.tips-order li::before{content:counter(step);position:absolute;left:6px;top:50%;transform:translateY(-50%);width:18px;height:18px;border-radius:50%;background:var(--c1);color:#fff;font-size:.68rem;font-weight:800;display:grid;place-items:center}\n.tips-order li span{color:var(--muted);font-weight:600}\n.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px}\n.tipcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--c1)}\n.tipcard.t2{border-top-color:var(--c2)}.tipcard.t3{border-top-color:var(--gold)}.tipcard.t4{border-top-color:var(--c3)}\n.tipcard h4{margin:0 0 4px;font-size:1.2rem;font-weight:600}\n.tipcard .sub{margin:0 0 12px;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.tipcard ul{margin:0;padding:0;list-style:none;display:grid;gap:11px}\n.tipcard li{font-size:.88rem;color:var(--muted);line-height:1.5;padding-left:16px;position:relative}\n.tipcard li::before{content:\"\";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.tipcard li b{color:var(--ink)}\n.tipcard li.flag::before{background:#c0392b;width:8px;height:8px;top:7px}\n.tipcard li.flag b{color:#b5361f}\n\n.daycost{display:inline-block;margin:8px 0 0;font-size:.76rem;font-weight:700;color:var(--c2);background:rgba(194,90,58,.1);border:1px solid rgba(194,90,58,.28);border-radius:999px;padding:3px 11px}\n.budget-tbl.grand tr.total td{background:var(--ink);color:#fff;font-size:1.05rem;font-weight:800}\n.rate-note{margin:12px 2px 0;font-size:.78rem;color:var(--muted);line-height:1.5}\n\n.kv.climate{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}\n.kv.climate span{color:var(--c1)}\n\n/* TIMING COMPARE */\n.timing-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-bottom:22px}\n.tcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);border-top:4px solid var(--muted)}\n.tcard.now{border-top-color:var(--c1)}\n.tcard.later{border-top-color:var(--c2)}\n.tcard.best{border-top-color:var(--c3)}\n.tcard.best .tlabel{background:var(--c3)}\n.tcard .tlabel{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin-bottom:10px;color:#fff}\n.tcard.now .tlabel{background:var(--c1)}\n.tcard.later .tlabel{background:var(--c2)}\n.tcard h4{margin:0 0 12px;font-size:1.25rem;font-weight:600}\n.tcard .trow{display:flex;justify-content:space-between;gap:14px;padding:7px 0;border-bottom:1px solid var(--line);font-size:.88rem}\n.tcard .trow:last-child{border-bottom:0}\n.tcard .trow span{color:var(--muted)}\n.tcard .trow strong{text-align:right}\n.tcard .trow strong.bad{color:#b5361f}\n.listcard.pro-list{border-top:4px solid var(--c3)}\n.listcard.con-list{border-top:4px solid #c0392b}\n.listcard.pro-list li::before{content:\"✓\";position:static;width:auto;height:auto;border-radius:0;background:none;color:var(--c3);font-weight:800;margin-right:6px}\n.listcard.con-list li::before{content:\"✗\";position:static;width:auto;height:auto;border-radius:0;background:none;color:#c0392b;font-weight:800;margin-right:6px}\n.listcard.pro-list li,.listcard.con-list li{padding-left:0;display:flex;gap:2px}\n.listcard.pro-list li>span,.listcard.con-list li>span{flex:1}\n.verdict-box{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ink);border-radius:14px;padding:20px 22px;box-shadow:var(--shadow);margin-top:20px}\n.verdict-box h4{margin:0 0 8px;font-size:1.1rem;font-weight:800}\n.verdict-box p{margin:0 0 10px;font-size:.92rem;color:var(--muted);line-height:1.55}\n.verdict-box p:last-child{margin-bottom:0}\n.verdict-box .aside{font-size:.82rem;font-style:italic;border-top:1px dashed var(--line);padding-top:10px;margin-top:12px}\n\n.tripmap-wrap{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:var(--shadow)}\n.mapbtns{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}\n.mapbtns button{border:1px solid var(--line);background:var(--paper);color:var(--ink);font-weight:700;font-size:.82rem;padding:7px 14px;border-radius:999px;cursor:pointer;transition:.15s}\n.mapbtns button:hover{background:var(--ink);color:#fff}\n.mapbtns button .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}\n#tripmap{height:460px;border-radius:14px;z-index:1}\n.leaflet-popup-content{font:14px/1.4 \"Inter\",sans-serif}\n.leaflet-popup-content b{font-family:\"Fraunces\",serif}\n.pin{width:16px;height:16px;border-radius:50%;border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.5)}\n/* BASES */\n.bases{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}\n.base{position:relative;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}\n.base .band{height:6px}\n.base.b1 .band{background:var(--c1)}.base.b2 .band{background:var(--c2)}.base.b3 .band{background:var(--c3)}\n.base .bimg{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}\n.base .bbody{padding:18px 20px 22px}\n.base .nights{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.06em;color:#fff;margin-bottom:10px}\n.base.b1 .nights{background:var(--c1)}.base.b2 .nights{background:var(--c2)}.base.b3 .nights{background:var(--c3)}\n.base h4{margin:0 0 4px;font-size:1.55rem;font-weight:600}\n.base .dates{margin:0 0 10px;color:var(--muted);font-size:.85rem;font-weight:600}\n.base p{margin:0;color:var(--muted);font-size:.9rem}\n.base .book{margin:12px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:.82rem;color:var(--ink)}\n.base .book b{color:var(--c2)}\n/* PLAN GRID */\n.plan-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.pcard h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:10px}\n.pcard h4 .dot{width:10px;height:10px;border-radius:50%;background:var(--gold)}\n.prow{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.prow:last-of-type{border-bottom:0}\n.prow span{color:var(--muted)}.prow strong{text-align:right}\n.pcard .tip{margin:12px 0 0;padding:10px 12px;background:rgba(217,164,65,.12);border-radius:10px;font-size:.82rem;color:#8a6a1e}\n/* DAYS */\n.days{display:grid;gap:26px}\n.day{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);border-left:6px solid var(--c1)}\n.day.c1{border-left-color:var(--c1)}.day.c2{border-left-color:var(--c2)}.day.c3{border-left-color:var(--c3)}.day.c0{border-left-color:var(--muted)}\n.day-head{display:flex;gap:18px;align-items:center;padding:20px 24px 6px}\n.day-badge{flex:0 0 auto;width:58px;height:58px;border-radius:14px;display:grid;place-items:center;font-family:\"Fraunces\",serif;font-weight:600;font-size:1.15rem;color:#fff;line-height:1;text-align:center}\n.day.c1 .day-badge{background:var(--c1)}.day.c2 .day-badge{background:var(--c2)}.day.c3 .day-badge{background:var(--c3)}.day.c0 .day-badge{background:var(--muted)}\n.day-title h3{margin:2px 0 4px;font-size:1.4rem;font-weight:600;line-height:1.05}\n.day-title .feel{margin:0;color:var(--c2);font-size:.82rem;font-weight:700}\n.logistics{padding:4px 24px 12px}\n.facts{display:grid;margin:6px 0 12px;border:1px solid var(--line);border-radius:12px;overflow:hidden}\n.facts div{display:grid;grid-template-columns:64px 1fr;gap:12px;padding:9px 13px;border-bottom:1px solid var(--line);font-size:.86rem}\n.facts div:last-child{border-bottom:0}\n.facts span{color:var(--muted);font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}\n.facts strong{font-weight:600}\n.note{margin:0;color:var(--ink);font-size:.94rem;line-height:1.55}\n/* SPOTS */\n.spots-wrap{display:grid;gap:20px;padding:6px 24px 24px}\n.travel-note{padding:40px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:14px;font-weight:600}\n.spot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--paper)}\n.spot-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px}\n.spot-name{margin:0;font-size:1.22rem;font-weight:600}\n.explore{display:flex;gap:6px;flex:0 1 auto;min-width:0;max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}\n.explore::-webkit-scrollbar{display:none}\n.explore a{font-size:.7rem;font-weight:800;letter-spacing:.02em;text-decoration:none;padding:5px 10px;border-radius:999px;color:#fff;transition:.15s;white-space:nowrap}\n.explore a:hover{filter:brightness(1.08);transform:translateY(-1px)}\n.explore .xg{background:#4285F4}\n.explore .xi{background:linear-gradient(45deg,#f09433,#dc2743 55%,#bc1888)}\n.explore .xf{background:#0063dc}\n/* CAROUSEL */\n.carousel{position:relative;overflow:hidden;background:#e7e1d4}\n.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}\n.track::-webkit-scrollbar{display:none}\n.track figure{margin:0;flex:0 0 100%;scroll-snap-align:center;position:relative}\n.track img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;background:#e7e1d4}\n.track figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:.74rem;line-height:1.3;background:linear-gradient(180deg,transparent,rgba(0,0,0,.68))}\n.track figcaption strong{display:block;font-weight:700}\n.track figcaption span{color:rgba(255,255,255,.82);font-size:.66rem}\n.nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.86);color:var(--ink);font-size:1.4rem;line-height:1;cursor:pointer;display:grid;place-items:center;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:.15s;z-index:2}\n.nav:hover{background:#fff;transform:translateY(-50%) scale(1.08)}\n.nav.prev{left:12px}.nav.next{right:12px}\n.counter{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.55);color:#fff;font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:999px;z-index:2}\n.dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:6px;z-index:2;flex-wrap:wrap;padding:0 40px}\n.dots .dot{width:7px;height:7px;border-radius:50%;border:0;background:rgba(255,255,255,.5);cursor:pointer;padding:0;transition:.15s}\n.dots .dot.on{background:#fff;width:20px;border-radius:999px}\n/* SPOT GRID */\n.spot-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px;padding:16px}\n.mini-h{margin:0 0 6px;font-weight:800;font-size:.76rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}\n.kv{margin-bottom:12px}\n.kv span{font-weight:800;font-size:.78rem;color:var(--ink)}\n.kv p{margin:4px 0 0;font-size:.9rem;color:var(--muted)}\n.callout{border-radius:10px;padding:10px 12px;font-size:.86rem;margin-bottom:10px;line-height:1.45}\n.callout b{font-weight:800}\n.callout.save{background:rgba(63,125,78,.1);border-left:3px solid var(--save)}\n.callout.save b{color:var(--save)}\n.callout.splurge{background:rgba(217,164,65,.14);border-left:3px solid var(--splurge)}\n.callout.splurge b{color:var(--splurge)}\n.resto{margin:14px 0 4px}\n.resto ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.resto li{font-size:.85rem;color:var(--muted);line-height:1.4;padding-left:14px;position:relative}\n.resto li::before{content:\"\";position:absolute;left:0;top:7px;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.resto li a{text-decoration:none}.resto li b{color:var(--ink)}\n.altbox{margin:14px 0 4px;padding:12px;background:rgba(31,111,120,.07);border-radius:10px}\n.altbox p:last-child{margin:0;font-size:.86rem;color:var(--muted);line-height:1.45}\n.altbox a{text-decoration:none}\n.bloglinks{margin-top:14px;display:flex;flex-direction:column;gap:6px}\n.bloglinks a{font-size:.83rem;text-decoration:none;color:var(--c1);font-weight:600}\n.bloglinks a:hover{text-decoration:underline}\n.spot-map{display:flex;flex-direction:column}\n.mapwrap{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);flex:1;min-height:240px}\n.gmap{width:100%;height:100%;min-height:240px;border:0;display:block}\n.gmap-btn{margin-top:10px;text-align:center;background:var(--ink);color:#fff;text-decoration:none;font-weight:700;font-size:.85rem;padding:10px;border-radius:10px;transition:.15s}\n.gmap-btn:hover{background:var(--c1)}\n/* BUDGET */\n.budget-tbl{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}\n.budget-tbl th{background:rgba(31,111,120,.08);font-family:\"Fraunces\",serif;font-weight:600}\n.budget-tbl td:last-child,.budget-tbl th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}\n.budget-tbl tr:last-child td{border-bottom:0;font-weight:700}\n.budget-scroll{overflow-x:auto}\n.twocol{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:22px}\n.listcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow)}\n.listcard h4{margin:0 0 12px;font-size:1.2rem;font-weight:600}\n.listcard.save-list{border-top:4px solid var(--save)}\n.listcard.splurge-list{border-top:4px solid var(--splurge)}\n.listcard ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}\n.listcard li{font-size:.88rem;color:var(--muted);line-height:1.45;padding-left:22px;position:relative}\n.save-list li::before{content:\"💰\";position:absolute;left:0;top:0}\n.splurge-list li::before{content:\"✨\";position:absolute;left:0;top:0}\n.listcard li b{color:var(--ink)}\n/* BALANCE */\n.bar{height:10px;border-radius:999px;background:rgba(26,23,18,.08);overflow:hidden;margin:14px 0 24px;display:flex}\n.bar i{height:100%;display:block}\n.balance{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}\n.bcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}\n.bcard .pct{font-family:\"Fraunces\",serif;font-size:2.4rem;font-weight:600;line-height:1}\n.bcard.k1 .pct{color:var(--c1)}.bcard.k2 .pct{color:var(--c2)}.bcard.k3 .pct{color:var(--c3)}.bcard.k4 .pct{color:var(--muted)}\n.bcard h4{margin:6px 0;font-family:\"Inter\",sans-serif;font-size:.95rem;font-weight:800}\n.bcard p{margin:0;color:var(--muted);font-size:.84rem}\n/* STATUS */\n.status{display:grid;grid-template-columns:1fr 1fr;gap:20px}\n.scol{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}\n.scol h4{margin:0 0 14px;font-size:1.3rem;font-weight:600;display:flex;align-items:center;gap:8px}\n.scol.settled h4::before{content:\"✓\";color:var(--c3);font-weight:800}\n.scol.open h4::before{content:\"○\";color:var(--c2);font-weight:800}\n.scol .row{padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.scol .row:last-child{border-bottom:0}\n.scol .row b{display:block;margin-bottom:2px}\n.scol .row span{color:var(--muted)}\nfooter{max-width:1320px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}\nfooter a{color:var(--muted)}\n@media(max-width:860px){\n header{min-height:80vh}\n .plan-grid,.status,.twocol{grid-template-columns:1fr}\n .spot-grid{grid-template-columns:1fr}\n .day-head{gap:14px;padding:18px 16px 4px}\n .logistics{padding:4px 16px 10px}\n .spots-wrap{padding:6px 12px 18px}\n #tripmap{height:380px}\n}\n\n:root{\n--c4:#3a6ea5;\n}\n.day.c4{border-left-color:var(--c4)}\n.day.c4 .day-badge{background:var(--c4)}\n.base.b4 .band{background:var(--c4)}\n.base.b4 .nights{background:var(--c4)}\n/* TRIP PREVIEW */\n.preview{display:grid;grid-template-columns:minmax(300px,34%) 1fr;min-height:82vh;background:var(--ink);color:#fff}\n.pv-pane{padding:clamp(22px,4vw,54px);display:flex;flex-direction:column;justify-content:center;gap:16px}\n.pv-kicker{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#e0a13a;font-weight:800}\n.pv-pane h1{font-size:clamp(1.8rem,3.4vw,3rem);line-height:1.02;margin:0;font-weight:800}\n.pv-pane h1 span{display:block;font-size:.42em;font-weight:500;color:rgba(255,255,255,.7);margin-top:8px;letter-spacing:.01em}\n.pv-lead{color:rgba(255,255,255,.82);font-size:.96rem;line-height:1.5;max-width:46ch;margin:0}\n.pv-stats{display:flex;flex-wrap:wrap;gap:10px}\n.pv-stats>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:11px;padding:9px 13px;min-width:62px}\n.pv-stats b{display:block;font-size:1.3rem;font-weight:800;line-height:1}\n.pv-stats span{font-size:.6rem;text-transform:uppercase;letter-spacing:.06em;color:rgba(255,255,255,.6)}\n.pv-split{display:flex;height:46px;border-radius:10px;overflow:hidden}\n.pv-split .seg{display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;min-width:0;padding:0 4px;text-align:center}\n.pv-split .seg b{font-size:.92rem;line-height:1;font-weight:800}\n.pv-split .seg span{font-size:.55rem;text-transform:uppercase;letter-spacing:.04em;opacity:.92;white-space:nowrap;margin-top:2px}\n.pv-split .water{background:#2f8f9d}.pv-split .town{background:#c25a3a}.pv-split .nature{background:#3f7d4e}\n.pv-cue{margin:2px 0 0;font-size:.74rem;color:rgba(255,255,255,.5);font-weight:700}\n.pvcar{background:#000}\n.pvcar .track img{aspect-ratio:auto;height:82vh}\n.pvcar .track figcaption{padding:96px 20px 20px;display:flex;flex-direction:column;gap:5px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.4) 34%,rgba(0,0,0,.86))}\n.pvcar .cap-day{font-size:.66rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#f0b350}\n.pvcar .track figcaption strong{font-size:1.04rem;font-weight:800;line-height:1.2}\n.pvcar .cap-desc{font-size:.83rem;line-height:1.42;color:rgba(255,255,255,.9);max-width:64ch;font-weight:400}\n.pvcar .counter{font-size:.78rem;padding:5px 12px}\n@media(max-width:820px){.preview{grid-template-columns:1fr;min-height:auto}.pvcar .track img{height:56vh}.pv-pane{padding:26px 20px}}\n\n\n\n\n\n\n\n\n/* SECTION POLISH 2026-07 */\n.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}\n.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}\n.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;letter-spacing:0}\n.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}\n.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}\n.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}\n#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n#budget .pcard h4{font-size:1.12rem}\n#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}\n#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}\n#budget .pcard li::before{content:\"\";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n#budget .pcard li b{color:var(--ink)}\n#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}\n#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}\n#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}\n#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}\n#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}\n#balance .budget-scroll{max-width:none;margin-inline:0}\n.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}\n.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}\n.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.status-col .row:last-child{border-bottom:0}\n.status-col .row b{display:block;color:var(--ink);line-height:1.25}\n.status-col .row span{display:block;color:var(--muted);line-height:1.45}\n.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}\n.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}\n.field-note:last-child{border-bottom:0}\n.field-note h4{margin:0;font-size:1.02rem;font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;line-height:1.25}\n.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}\n.field-note .note-body{min-width:0}\n.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}\n.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}\n.field-note li::before{content:\"\";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}\n.field-note b{color:var(--ink)}\n#tips .tips-list{max-width:none}\n@media(max-width:860px){\n  #budget .plan-grid,.status-grid{grid-template-columns:1fr}\n  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}\n  .status-col .row{grid-template-columns:1fr;gap:3px}\n}\n@media(max-width:620px){\n  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}\n  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}\n}\n</style></head><body><section class=\"preview\">\n  <div class=\"pv-pane\">\n    <span class=\"pv-kicker\">Pittsburgh family of 4 · June 2027</span>\n    <h1>Ischia<span>Thermal island + the Bay of Naples</span></h1>\n    <p class=\"pv-lead\">Seven nights on the Bay of Naples’ volcanic spa island — 74°F sea, terraced thermal pools, a 15th-century castle on its own rock, and pastel Procida twenty minutes away. One base, no rental car, no driving.</p>\n    <div class=\"pv-stats\"><div><b>7</b><span>hotel nights</span></div><div><b>1</b><span>home base</span></div><div><b>$9.2k–12.7k</b><span>planning total</span></div><div><b>4</b><span>PTO days</span></div></div>\n    <div class=\"pv-split\" role=\"img\" aria-label=\"Trip mix: about 50% water + coast, about 30% town + food, about 20% nature\">\n      <div class=\"seg s1\" style=\"flex:50\"><b>50%</b><span>Water + coast</span></div><div class=\"seg s2\" style=\"flex:30\"><b>30%</b><span>Town + food</span></div><div class=\"seg s3\" style=\"flex:20\"><b>20%</b><span>Nature</span></div>\n    </div>\n    <p class=\"pv-cue\">&darr; Full day-by-day plan below</p>\n  </div>\n  <div class=\"carousel pvcar\" data-n=\"10\">\n    <div class=\"track\"><figure><img src=\"../../assets/img/short-ischia/castello-sunset.jpg\" alt=\"Castello Aragonese at Sunset\"><figcaption><span class=\"cap-day\">Highlight 1</span><strong>Castello Aragonese at Sunset</strong><span class=\"cap-desc\">The island’s defining silhouette, five minutes from the bus stop.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/corricella-dusk.jpg\" alt=\"Corricella at Dusk\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 2</span><strong>Corricella at Dusk</strong><span class=\"cap-desc\">Twenty minutes by ferry, and the Bay’s most photogenic harbor.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/google_ischia_castello_blue_v2.jpg\" alt=\"Castello Over Turquoise\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 3</span><strong>Castello Over Turquoise</strong><span class=\"cap-desc\">A 15th-century fortress on a volcanic islet.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/santangelo-tombolo-aerial.jpg\" alt=\"Sant’Angelo From Above\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 4</span><strong>Sant’Angelo From Above</strong><span class=\"cap-desc\">The car-free south coast: beaches on both sides of a sand bridge.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/google_negombo_thermal_pool_01.jpg\" alt=\"Negombo Thermal Pool\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 5</span><strong>Negombo Thermal Pool</strong><span class=\"cap-desc\">Thermal water with a sea view — Ischia’s specialty.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/red-umbrellas-castello.jpg\" alt=\"Ischia Ponte Beach Day\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 6</span><strong>Ischia Ponte Beach Day</strong><span class=\"cap-desc\">Beach culture, castle view — an ordinary Ischia afternoon.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/naples-vesuvius-aerial.jpg\" alt=\"Naples + Vesuvius\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 7</span><strong>Naples + Vesuvius</strong><span class=\"cap-desc\">The gateway: every leg of this trip crosses this bay.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/pompeii-forum-columns.jpg\" alt=\"Pompeii Forum\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 8</span><strong>Pompeii Forum</strong><span class=\"cap-desc\">The optional add-on — honest advice inside on when it fits.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/sea-cave-boat.jpg\" alt=\"Sea Cave by Boat\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 9</span><strong>Sea Cave by Boat</strong><span class=\"cap-desc\">The giro dell’isola threads caves and swim stops.</span></figcaption></figure><figure><img src=\"../../assets/img/short-ischia/google_ischia_forio_sunset_01.jpg\" alt=\"Chiesa del Soccorso, Forio\" loading=\"lazy\"><figcaption><span class=\"cap-day\">Highlight 10</span><strong>Chiesa del Soccorso, Forio</strong><span class=\"cap-desc\">The home base’s sunset ritual, two blocks from dinner.</span></figcaption></figure></div>\n    <button class=\"nav prev\" aria-label=\"Previous\">&#8249;</button>\n    <button class=\"nav next\" aria-label=\"Next\">&#8250;</button>\n    <div class=\"counter\"><span class=\"cur\">1</span> / 10</div>\n  </div>\n</section><nav class=\"site-nav\" aria-label=\"Page sections\">\n  <details class=\"site-nav-menu\">\n    <summary><span>Sections</span></summary>\n    <div class=\"site-nav-links\">\n      <a href=\"../../index.html\" class=\"nav-home\">← All Trips</a>\n      <a href=\"#overview\">Overview</a>\n      <a href=\"#why-this-trip\">Why This Trip</a>\n      <a href=\"#kids-favorites\">Kids&rsquo; Favorites</a>\n      <a href=\"#stays\">Where We Stay</a>\n      <a href=\"#calendar\">Calendar</a>\n      <a href=\"#itinerary\">Day by Day</a>\n      <a href=\"#map\">Trip Map</a>\n      <a href=\"#air-travel\">Air Travel</a>\n      <a href=\"#getting-around\">Getting Around</a>\n      <a href=\"#entry\">Entry &amp; Docs</a><a href=\"#health-check\">Health-Check</a>\n      <a href=\"#timing\">Best Time</a>\n      <a href=\"#todo\">To-Do</a>\n      <a href=\"#budget\">Budget</a>\n      <a href=\"#tips\">Travel Tips</a>\n      <a href=\"#packing\">Packing</a><a href=\"#social\">What People Say</a>\n      <a href=\"#status\">Settled & Open</a>\n    </div>\n  </details>\n</nav>\n<main>\n  <section id=\"overview\"><div class=\"section-label\">\n      <p class=\"eyebrow\">The Week at a Glance</p>\n      <h2>One island base, zero driving</h2>\n      <p>Forio for seven nights. Buses, boats and one hydrofoil do all the moving — there is no rental car, no ZTL camera and no parking on this trip.</p>\n    </div><div class=\"overview\"><div class=\"ocard\"><h4>7 hotel nights</h4><p>All in Forio. The only base move is the day you fly home.</p></div><div class=\"ocard\"><h4>Jun 12–20</h4><p>Overnight flight out, same-day return; four PTO days with Juneteenth observed.</p></div><div class=\"ocard\"><h4>$9.2k–12.7k</h4><p>Airfare and the thermal-pool hotel drive the range.</p></div><div class=\"ocard\"><h4>74°F sea + thermal</h4><p>The warmest dependable swim on the short-escape board.</p></div></div></section><section id=\"why-this-trip\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Why Ischia Works — and What It Costs You</p>\n      <h2>The warmest water on this board, honestly priced</h2>\n      <p>This trip wins on swimming and loses on the arrival chain. Both are real: the sea is warmer than anything else here, and getting to it takes a plane, a bus, a boat and a taxi.</p>\n    </div><div class=\"tips-grid\"><div class=\"tipcard\"><h4>The water</h4><p class=\"sub\">sea + volcano together</p><ul><li>About 74°F by mid-June — warm enough that nobody negotiates about getting in.</li><li>Poseidon’s 22 pools run 61–104°F regardless of weather.</li><li>Sorgeto’s free hot spring bubbles straight into the sea.</li></ul></div><div class=\"tipcard\"><h4>The ease on the ground</h4><p class=\"sub\">no car all week</p><ul><li>One base, seven nights, zero repacking.</li><li>Buses and boats reach every day of this plan.</li><li>No ZTL cameras, no parking, no international driving permit.</li></ul></div><div class=\"tipcard\"><h4>The honest costs</h4><p class=\"sub\">the arrival chain is real</p><ul><li>Plane → Alibus → hydrofoil → taxi, with a 6-hour time change.</li><li>Mid-June is United’s one-flight-a-day window to Naples.</li><li>Poseidon bans under-12s from the thermal pools — the 8-year-old gets beach and seawater pools.</li></ul></div></div></section><section id=\"stays\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Where to Stay</p>\n      <h2>Forio, west coast, 7 nights</h2>\n      <p>Forio has the direct hydrofoil from Naples, the deepest bench of family thermal hotels, Citara Bay on its doorstep and the island’s sunsets.</p>\n    </div><div class=\"plan-grid\"><div class=\"pcard\"><h4><span class=\"dot\"></span>Forio · 7 nights</h4><div class=\"prow\"><span>Dates</span><strong>Jun 13–20</strong></div><div class=\"prow\"><span>Planning band</span><strong>$270–$415/night</strong></div><div class=\"prow\"><span>Candidates</span><strong>Le Canne Family Resort · Sorriso Thermae · Parco Smeraldo (Maronti)</strong></div><div class=\"prow\"><span>Why Forio</span><strong>Direct Alilauro boat + Poseidon next door</strong></div><div class=\"tip\">Most Ischia four-stars include their own thermal pools — the hotel pool here is a real thermal amenity, not a consolation. Half-board deals are common and worth pricing for picky-eater certainty.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Why not elsewhere</h4><div class=\"prow\"><span>Sant’Angelo</span><strong>Prettiest, but car-free + remote: €50 taxi from the port</strong></div><div class=\"prow\"><span>Ischia Porto</span><strong>Most connected, least resort-like</strong></div><div class=\"prow\"><span>Capri/Sorrento</span><strong>Visited before; wrong island for this trip</strong></div><div class=\"tip\">Sant’Angelo and Maronti stay in the plan as bus-and-boat day trips — you get their beaches without their logistics.</div></div></div></section><section id=\"calendar\" class=\"divider continuous-calendar\">\n    <div class=\"section-label\"><p class=\"eyebrow\">At a Glance</p><h2>Your Ischia Week</h2><p>Only the boat tour and Poseidon are date-flexible purchases; everything else is a bus ride that can move with the weather.</p></div>\n    <style>\n      .continuous-calendar .cal-legend{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}\n      .continuous-calendar .cal-legend span{display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:700;color:var(--ink)}\n      .continuous-calendar .cal-legend i{width:16px;height:16px;border-radius:5px;display:inline-block}\n      .continuous-calendar .lg-air{background:#3d4d74}.continuous-calendar .lg-car{background:var(--gold)}\n      .continuous-calendar .lg-hike{background:var(--c3)}.continuous-calendar .lg-water{background:var(--c1)}.continuous-calendar .lg-town{background:var(--c2)}.continuous-calendar .lg-rest{background:#8a857c}\n      .continuous-calendar .cal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}\n      .continuous-calendar .cal-week{min-width:1000px;margin:0 0 22px}\n      .continuous-calendar .cal-hd{display:grid;gap:0}\n      .continuous-calendar .cal-hd .dh{padding:6px 4px;text-align:center;border-bottom:2px solid var(--line)}\n      .continuous-calendar .cal-hd .dh .dow{display:block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}\n      .continuous-calendar .cal-hd .dh .dnum{display:block;font-size:1.02rem;font-weight:800;color:var(--c1);line-height:1.1}\n      .continuous-calendar .cal-hd .dh.trip{background:rgba(31,111,120,.06)}\n      .continuous-calendar .cal-hd .gut{border-bottom:2px solid var(--line)}\n      .continuous-calendar .cal-bd{display:grid;grid-template-rows:repeat(9,32px);position:relative;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px),repeating-linear-gradient(to right,transparent 0 calc(10% - 1px),var(--line) calc(10% - 1px) 10%)}\n      .continuous-calendar .cal-bd .tl{grid-column:1;font-size:.62rem;font-weight:700;color:var(--muted);padding:2px 4px 0 4px;text-align:right}\n      .continuous-calendar .ev{margin:2px;border-radius:6px;padding:3px 6px;font-size:.68rem;line-height:1.14;font-weight:700;color:#fff;overflow:hidden;position:relative;z-index:2;box-shadow:0 1px 3px rgba(30,32,28,.2);display:flex;align-items:flex-start}\n      .continuous-calendar .ev.sm{font-size:.62rem;align-items:center}.continuous-calendar .ev.air{background:#3d4d74}.continuous-calendar .ev.car{background:var(--gold);color:#3a2f12}.continuous-calendar .ev.hike{background:var(--c3)}.continuous-calendar .ev.water{background:var(--c1)}.continuous-calendar .ev.town{background:var(--c2)}.continuous-calendar .ev.rest{background:#8a857c}\n    </style>\n    <div class=\"cal-legend\"><span><i class=\"lg-air\"></i>Air</span><span><i class=\"lg-car\"></i>Drive / transfer</span><span><i class=\"lg-hike\"></i>Nature</span><span><i class=\"lg-water\"></i>Water</span><span><i class=\"lg-town\"></i>Town</span><span><i class=\"lg-rest\"></i>Rest / buffer</span></div>\n    <div class=\"cal-scroll\" aria-label=\"Ischia trip calendar June 12 through June 20 2027\"><div class=\"cal-week\" data-trip-days=\"9\"><div class=\"cal-hd\" style=\"grid-template-columns:64px repeat(9,minmax(104px,1fr))\"><div class=\"gut\"></div><div class=\"dh trip\"><span class=\"dow\">Sat</span><span class=\"dnum\">12</span></div><div class=\"dh trip\"><span class=\"dow\">Sun</span><span class=\"dnum\">13</span></div><div class=\"dh trip\"><span class=\"dow\">Mon</span><span class=\"dnum\">14</span></div><div class=\"dh trip\"><span class=\"dow\">Tue</span><span class=\"dnum\">15</span></div><div class=\"dh trip\"><span class=\"dow\">Wed</span><span class=\"dnum\">16</span></div><div class=\"dh trip\"><span class=\"dow\">Thu</span><span class=\"dnum\">17</span></div><div class=\"dh trip\"><span class=\"dow\">Fri</span><span class=\"dnum\">18</span></div><div class=\"dh trip\"><span class=\"dow\">Sat</span><span class=\"dnum\">19</span></div><div class=\"dh trip\"><span class=\"dow\">Sun</span><span class=\"dnum\">20</span></div></div><div class=\"cal-bd\" style=\"grid-template-columns:64px repeat(9,minmax(104px,1fr))\"><div class=\"tl\" style=\"grid-row:1\">6a</div><div class=\"tl\" style=\"grid-row:2\">8a</div><div class=\"tl\" style=\"grid-row:3\">10a</div><div class=\"tl\" style=\"grid-row:4\">12p</div><div class=\"tl\" style=\"grid-row:5\">2p</div><div class=\"tl\" style=\"grid-row:6\">4p</div><div class=\"tl\" style=\"grid-row:7\">6p</div><div class=\"tl\" style=\"grid-row:8\">8p</div><div class=\"tl\" style=\"grid-row:9\">10p</div><div class=\"ev car sm\" style=\"grid-column:2;grid-row:3/4\">PIT → EWR</div><div class=\"ev air\" style=\"grid-column:2;grid-row:7/9\">Overnight to Naples</div><div class=\"ev air\" style=\"grid-column:3;grid-row:1/5\">Land NAP</div><div class=\"ev water sm\" style=\"grid-column:3;grid-row:4/5\">Hydrofoil to Forio</div><div class=\"ev rest\" style=\"grid-column:3;grid-row:6/9\">Check in + beach</div><div class=\"ev town sm\" style=\"grid-column:4;grid-row:3/4\">Forio</div><div class=\"ev water\" style=\"grid-column:4;grid-row:5/7\">Chiaia beach</div><div class=\"ev water\" style=\"grid-column:5;grid-row:3/8\">Poseidon thermal day</div><div class=\"ev rest sm\" style=\"grid-column:5;grid-row:7/8\">Soccorso sunset</div><div class=\"ev town\" style=\"grid-column:6;grid-row:3/6\">Castello Aragonese</div><div class=\"ev water\" style=\"grid-column:6;grid-row:5/7\">Ischia Ponte beach</div><div class=\"ev water\" style=\"grid-column:7;grid-row:3/5\">Ferry to Procida</div><div class=\"ev town\" style=\"grid-column:7;grid-row:4/6\">Corricella + Terra Murata</div><div class=\"ev water\" style=\"grid-column:7;grid-row:7/9\">Evening swim</div><div class=\"ev water\" style=\"grid-column:8;grid-row:3/6\">Boat: giro dell’isola</div><div class=\"ev water sm\" style=\"grid-column:8;grid-row:7/8\">Sorgeto hot spring</div><div class=\"ev town\" style=\"grid-column:9;grid-row:3/6\">Sant’Angelo</div><div class=\"ev water\" style=\"grid-column:9;grid-row:5/8\">Maronti beach</div><div class=\"ev rest sm\" style=\"grid-column:9;grid-row:7/8\">Pack</div><div class=\"ev water\" style=\"grid-column:10;grid-row:2/4\">Hydrofoil to Naples</div><div class=\"ev air\" style=\"grid-column:10;grid-row:4/10\">Fly home</div></div></div></div>\n  </section>"
+    },
+    {
+      "t": "itinerary"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"map\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Where You Will Go</p>\n      <h2>One island, one bay, no car</h2>\n      <p>Everything moves by bus and boat. Forio anchors the west coast; the castle and the ferries sit on the east side, twenty minutes across.</p>\n    </div><div class=\"tripmap-wrap\"><div class=\"mapbtns\"><button data-region=\"forio\"><span class=\"sw\" style=\"background:#c25a3a\"></span>Forio</button><button data-region=\"thermal\"><span class=\"sw\" style=\"background:#1f6f78\"></span>Thermal + swim</button><button data-region=\"ponte\"><span class=\"sw\" style=\"background:#3a6ea5\"></span>East + south</button><button data-region=\"procida\"><span class=\"sw\" style=\"background:#7d5ba6\"></span>Procida</button><button data-region=\"naples\"><span class=\"sw\" style=\"background:#3f7d4e\"></span>Naples gateway</button><button data-region=\"all\">Whole trip</button></div><div class=\"mapstage\"><button class=\"layers-btn\" aria-expanded=\"false\" aria-label=\"Map layers\"><span class=\"lbi\">▧</span> Layers</button><div class=\"layers-panel\" hidden><div class=\"layers-top\"><strong>Map layers</strong><button class=\"layers-x\" aria-label=\"Close\">×</button></div><div class=\"layers-acts\"><button data-all=\"1\">Select all</button><span class=\"dot\">·</span><button data-all=\"0\">Deselect all</button></div><div class=\"layers-list\"></div></div><div id=\"tripmap\"></div></div></div></section><section id=\"air-travel\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Getting to Ischia</p>\n      <h2>One connection, then a boat</h2>\n      <p>United’s Newark–Naples nonstop is the clean single-ticket play from Pittsburgh. Mid-June is its one-flight-a-day window, so the EWR connection deserves real slack.</p>\n    </div><div class=\"plan-grid\"><div class=\"pcard\"><h4><span class=\"dot\"></span>Preferred outbound</h4><div class=\"prow\"><span>Date</span><strong>Sat Jun 12 · overnight</strong></div><div class=\"prow\"><span>Route</span><strong>PIT → EWR → NAP · United, single ticket</strong></div><div class=\"prow\"><span>Family air band</span><strong>$4,400–$5,900 with bags/seats</strong></div><div class=\"prow\"><span>Backup</span><strong>Delta JFK–NAP daily · ITA via FCO</strong></div><div class=\"tip\">United has ~6 PIT–EWR flights a day, so book the connection with hours of slack, not minutes. A misconnect in the 1x-daily window costs 24 hours.</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>The bay crossing</h4><div class=\"prow\"><span>Airport → port</span><strong>Alibus · €5pp · every 15–30 min</strong></div><div class=\"prow\"><span>Hydrofoil</span><strong>Alilauro Beverello → Forio direct · ~50 min</strong></div><div class=\"prow\"><span>Current fares</span><strong>€23.90–24.10 adult · €15.90 child 2–12 · bags €3.50</strong></div><div class=\"prow\"><span>Rough sea?</span><strong>Slow car ferry from Porta di Massa almost never cancels</strong></div><div class=\"tip\">Book the Sunday-morning return boat ahead — those are the sailings that sell out. Everything else can be bought the day before.</div></div></div></section><section id=\"getting-around\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Getting Around</p>\n      <h2>Buses, boats and two taxis</h2>\n      <p>Ischia is the rare Italian trip where skipping the rental car makes the week easier, not harder. The CS/CD circle buses reach every base, beach and trailhead in this plan.</p>\n    </div><div class=\"plan-grid\"><div class=\"pcard\"><h4><span class=\"dot\"></span>EAV island buses</h4><div class=\"prow\"><span>Single ride</span><strong>€1.70 pre-purchased · €2.20 onboard</strong></div><div class=\"prow\"><span>Day pass</span><strong>€5.10 · weekly €14.50</strong></div><div class=\"prow\"><span>Family week</span><strong>About €58 in passes for four</strong></div><div class=\"prow\"><span>Coverage</span><strong>Forio, Poseidon, Sant’Angelo, Maronti, the castle</strong></div><div class=\"tip\">June buses run late and often. The only taxi rides worth planning are the two hotel transfers with luggage (€15 minimum, ~€32 port → Forio).</div></div><div class=\"pcard\"><h4><span class=\"dot\"></span>Why no rental car</h4><div class=\"prow\"><span>Car ferry</span><strong>~€60 each way to bring one</strong></div><div class=\"prow\"><span>June parking</span><strong>Tight everywhere, absent in Sant’Angelo</strong></div><div class=\"prow\"><span>ZTL risk</span><strong>None on this plan — no driving at all</strong></div><div class=\"tip\">Water taxis from Ischia Ponte and Sant’Angelo are often cheaper than land taxis for coastal hops, and more fun.</div></div></div></section>"
+    },
+    {
+      "t": "entry"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"health-check\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">What Could Change</p>\n      <h2>Wind, one flight a day, and a pool rule</h2>\n      <p>The plan is bus-simple, but three specific things deserve watching. None of them is a reason to skip the trip; all three are reasons to build slack.</p>\n    </div><div class=\"hc-grid\"><div class=\"hc actnow\"><span class=\"hc-tag\">Act now</span><h4>The EWR connection is the trip’s pinch point</h4><p>Mid-June is United’s one-flight-a-day window to Naples. Book PIT–EWR with hours of slack, and know the Delta JFK–NAP daily exists as a same-day rescue.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Watch</span><h4>Hydrofoils cancel in chop; car ferries don’t</h4><p>Alilauro suspends around 2-meter waves. The mitigation is built in: the slow ferry from Porta di Massa keeps sailing, and the return morning has a spare boat’s worth of buffer.</p></div><div class=\"hc watch\"><span class=\"hc-tag\">Watch</span><h4>Poseidon’s under-12 thermal rule</h4><p>The 8-year-old gets the beach and three seawater pools, not the hot pools. Plan the split-parent rotation, or pick Negombo where the rule runs by height instead.</p></div><div class=\"hc good\"><span class=\"hc-tag\">Good</span><h4>June is Ischia’s driest, calmest month</h4><p>About 79°F, seven brief rain days, and Festa della Repubblica crowds gone two weeks before arrival. Sea state problems are isolated storm events, not a pattern.</p></div></div></section><section id=\"timing\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Why These Dates</p>\n      <h2>Juneteenth saves a PTO day</h2>\n      <p>Saturday out, Sunday home, four PTO days, and back four clear days before the family’s Jun 24–26 Pittsburgh commitment.</p>\n    </div><div class=\"timing-compare\"><div class=\"tcard best\"><span class=\"tlabel\">Preferred</span><h4>Jun 12–20</h4><div class=\"trow\"><span>Hotel nights</span><b>7</b></div><div class=\"trow\"><span>PTO days</span><b>4</b></div><div class=\"trow\"><span>Sea temp</span><b>~74°F</b></div></div><div class=\"tcard now\"><span class=\"tlabel\">Do not force</span><h4>Late June for warmer water</h4><div class=\"trow\"><span>Sea temp gain</span><b>+1–2°F</b></div><div class=\"trow\"><span>Cost</span><b>United’s 2x-daily starts ~Jun 23, but hotel rates climb</b></div></div></div><div class=\"verdict-box\"><b>Verdict:</b> mid-June already clears the warm-water bar that defines this trip. Waiting a week buys a marginal sea-temperature gain and costs the Juneteenth PTO trick plus the pre-peak hotel pricing.</div></section>"
+    },
+    {
+      "t": "todo"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"budget\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Planning Budget</p>\n      <h2>Airfare decides the band</h2>\n      <p>Everything on the ground is cheap for a resort island — buses cost euros and the castle costs less than an American museum. The flights and the thermal-pool hotel are the two lines that matter.</p>\n    </div> <div class=\"budget-scroll\"><table class=\"budget-tbl\"><tr><th>Line item</th><th>Family estimate</th></tr><tr><td>Flights — PIT→EWR→NAP round trip, bags and seats</td><td>$4,400–$5,900</td></tr><tr><td>7 hotel nights — Forio thermal-pool family room</td><td>$1,900–$2,900</td></tr><tr><td>Ferries, Alibus, island buses and taxis</td><td>$450–$600</td></tr><tr><td>Food + groceries</td><td>$1,300–$1,700</td></tr><tr><td>Poseidon, castle, boat tour, Procida ferries</td><td>$480–$620</td></tr><tr><td>Contingency</td><td>$700–$950</td></tr></table></div><div class=\"twocol\"><div class=\"listcard save-list\"><h4>Keep it near the floor</h4><ul><li>Book United the day 2027 inventory loads — June is the route’s priciest month.</li><li>Half-board hotel deals cover the picky-eater dinners cheaply.</li><li>Poseidon’s afternoon ticket saves €20; Sorgeto and San Montano are free.</li><li>Weekly bus passes, not taxis: €58 covers the family’s whole week.</li></ul></div><div class=\"listcard splurge-list\"><h4>Worth paying for</h4><ul><li>The full-day giro dell’isola boat — the island’s best day, unreachable by bus.</li><li>A hotel whose thermal pools you’d actually use every evening.</li><li>The floodlit-castle dinner in Ischia Ponte.</li></ul></div></div></section><section id=\"totals\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Trip Total</p>\n      <h2>Auditable family planning band</h2>\n      <p>Six line items, no hidden food or contingency. The 13-year-old pays adult prices at Poseidon and on most ferries; the 8-year-old rides and swims at child rates.</p>\n    </div> <div class=\"budget-scroll\"><table class=\"budget-tbl grand\"><tr><th>Category</th><th>Planning range</th></tr><tr><td>Flights — PIT→EWR→NAP round trip, bags and seats</td><td>$4,400–$5,900</td></tr><tr><td>7 hotel nights — Forio thermal-pool family room</td><td>$1,900–$2,900</td></tr><tr><td>Ferries, Alibus, island buses and taxis</td><td>$450–$600</td></tr><tr><td>Food + groceries</td><td>$1,300–$1,700</td></tr><tr><td>Poseidon, castle, boat tour, Procida ferries</td><td>$480–$620</td></tr><tr><td>Contingency</td><td>$700–$950</td></tr><tr><td>Grand total — family of 4</td><td>$9,230–$12,670</td></tr></table></div><p class=\"rate-note\">Planning proxy reviewed July 16, 2026 against current-season operator pricing (Alilauro, Poseidon, Castello Aragonese, EAV, Alibus) and current-year June fare signals. The ceiling exceeds the $12,000 short-trip target; replace airfare and room bands with live June 2027 quotes before booking.</p></section><section id=\"tips\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Book in This Order</p>\n      <h2>The flight, then the room, then nothing for months</h2>\n      <p>Almost everything on Ischia is bought the day before. Only the transatlantic seat and the June hotel inventory reward early action.</p>\n    </div><div class=\"tips-order\"><ol><li>Book PIT–EWR–NAP when United loads June 2027<span>· the route’s priciest month</span></li><li>Hold the Forio thermal hotel<span>· family rooms are the scarce unit</span></li><li>Book the Sunday-morning return hydrofoil<span>· the one boat that sells out</span></li><li>Reserve the giro dell’isola boat a few days out<span>· weather-flexible</span></li><li>Buy Poseidon tickets on the chosen morning<span>· no timed entry</span></li></ol></div></section>"
+    },
+    {
+      "t": "packing"
+    },
+    {
+      "t": "raw",
+      "html": "<section id=\"social\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Family Fit</p>\n      <h2>Warm water carries everyone</h2>\n      <p>This is the rare trip where the 8-year-old’s perfect day and the teenager’s perfect day are the same day, just in different pools.</p>\n    </div><div class=\"tips-grid\"><div class=\"tipcard\"><h4>For the 13-year-old</h4><p class=\"sub\">real range, real freedom</p><ul><li>All 22 Poseidon pools, including the 104°F ones.</li><li>Cliff-jumping spots on the boat day and Sorgeto’s natural hot spring.</li><li>Procida’s photo game is genuinely strong.</li></ul></div><div class=\"tipcard\"><h4>For the 8-year-old</h4><p class=\"sub\">shallow, warm, sandy</p><ul><li>San Montano and Maronti are shallow-entry, 74°F beaches.</li><li>The castle has an elevator, ramparts and a gelato terrace.</li><li>Boats replace car time — every transfer is part of the fun.</li></ul></div><div class=\"tipcard\"><h4>For picky eaters</h4><p class=\"sub\">the pizza homeland</p><ul><li>Pizzeria Di Meglio and La Tinaia cover plain pizza and pasta in Forio.</li><li>Half-board hotel dining guarantees a known dinner.</li><li>Corricella’s harbor fries fish in paper cones — chicken-nugget adjacent.</li></ul></div></div></section><section id=\"balance\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">Trip Balance</p>\n      <h2>The most water-forward week on the board</h2>\n      <p>Half of this trip happens in, on or beside warm water. Towns fill the evenings; the one hike is optional.</p>\n    </div><div class=\"bar\"><i style=\"width:50%;background:var(--c1)\"></i><i style=\"width:30%;background:var(--c2)\"></i><i style=\"width:20%;background:var(--c3)\"></i></div><div class=\"balance\"><div class=\"bcard k1\"><div class=\"pct\">50%</div><h4>Water + coast</h4><p>Thermal parks, four beaches, a boat day, a hot-spring cove and two ferry crossings.</p></div><div class=\"bcard k2\"><div class=\"pct\">30%</div><h4>Town + food</h4><p>Forio evenings, Ischia Ponte, Sant’Angelo and Corricella.</p></div><div class=\"bcard k3\"><div class=\"pct\">20%</div><h4>Nature</h4><p>Volcanic coastline from the water, fumaroles in the sand, optional Epomeo summit.</p></div></div></section><section id=\"status\" class=\"divider\"><div class=\"section-label\">\n      <p class=\"eyebrow\">What Is Decided</p>\n      <h2>And what waits for live inventory</h2>\n      <p>The one-base, no-car shape is settled. The money is the open question.</p>\n    </div><div class=\"status\"><div class=\"scol settled\"><h4>Decided</h4><div class=\"row\"><b>Base</b><span>Forio, all seven nights.</span></div><div class=\"row\"><b>Dates</b><span>Jun 12–20, 2027.</span></div><div class=\"row\"><b>No rental car</b><span>Buses + boats cover the entire plan.</span></div><div class=\"row\"><b>Procida, not Capri</b><span>Capri is already on the visited list; Procida is new.</span></div><div class=\"row\"><b>Pompeii is optional</b><span>Departure-day add-on or Naples overnight only — not a mid-week ferry marathon.</span></div></div><div class=\"scol open\"><h4>Choose later</h4><div class=\"row\"><b>Airfare</b><span>United 2027 June fares — the band’s biggest swing.</span></div><div class=\"row\"><b>The hotel</b><span>Le Canne vs Sorriso Thermae vs Parco Smeraldo.</span></div><div class=\"row\"><b>Second thermal park</b><span>Negombo rematch vs a free San Montano day.</span></div></div></div></section>"
+    },
+    {
+      "t": "raw",
+      "html": "\n  <!--PG:END-->\n  <!--FG:START-->\n"
+    },
+    {
+      "t": "raw",
+      "html": "\n  <!--FG:END-->\n</main>\n<footer><p>Ischia + Bay of Naples family itinerary for June 2027. Exact flights, rooms, ferry and park tariffs require fresh verification before booking. Maps via Google &amp; OpenStreetMap.</p></footer>\n<script>/* @preserve\n * Leaflet 1.9.4, a JS library for interactive maps. https://leafletjs.com\n * (c) 2010-2023 Vladimir Agafonkin, (c) 2010-2011 CloudMade\n */\n//# sourceMappingURL=leaflet.js.map</script>"
+    },
+    {
+      "t": "lib",
+      "key": "1f252bc08ec393b31f65de1e0b899e59"
+    },
+    {
+      "t": "raw",
+      "html": "<!--GL-LOADER--><link href=\"https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css\" rel=\"stylesheet\" integrity=\"sha384-MinO0mNliZ3vwppuPOUnGa+iq619pfMhLVUXfC4LHwSCvF9H+6P/KO4Q7qBOYV5V\" crossorigin=\"anonymous\"><script src=\"https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js\" integrity=\"sha384-SYKAG6cglRMN0RVvhNeBY0r3FYKNOJtznwA0v7B5Vp9tr31xAHsZC0DqkQ/pZDmj\" crossorigin=\"anonymous\"></script><script src=\"https://unpkg.com/@maplibre/maplibre-gl-leaflet@0.0.22/leaflet-maplibre-gl.js\" integrity=\"sha384-4CB9Vtol9LN6lGgBCvmPLbUEZwilrqIvPieSRurgAXAB7FVJaLS9n8WyAIA5wjQ+\" crossorigin=\"anonymous\"></script><!--/GL-LOADER--><script>window.__MAP_POINTS__=[{\"n\":\"Naples International Airport\",\"lat\":40.886,\"lng\":14.2908,\"r\":\"naples\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.886,14.2908\",\"t\":\"flight\"},{\"n\":\"Molo Beverello ferry terminal\",\"lat\":40.8375,\"lng\":14.252,\"r\":\"naples\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.8375,14.252\",\"t\":\"town\"},{\"n\":\"Forio base\",\"lat\":40.7381,\"lng\":13.8578,\"r\":\"forio\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7381,13.8578\",\"t\":\"hotel\"},{\"n\":\"Chiesa del Soccorso\",\"lat\":40.7397,\"lng\":13.8531,\"r\":\"forio\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7397,13.8531\",\"t\":\"view\"},{\"n\":\"Chiaia beach\",\"lat\":40.7444,\"lng\":13.86,\"r\":\"forio\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7444,13.86\",\"t\":\"view\"},{\"n\":\"Giardini Poseidon Terme\",\"lat\":40.7096,\"lng\":13.8555,\"r\":\"thermal\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7096,13.8555\",\"t\":\"view\"},{\"n\":\"Citara beach\",\"lat\":40.7135,\"lng\":13.8541,\"r\":\"thermal\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7135,13.8541\",\"t\":\"view\"},{\"n\":\"Negombo · San Montano\",\"lat\":40.7576,\"lng\":13.883,\"r\":\"thermal\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7576,13.883\",\"t\":\"view\"},{\"n\":\"Sorgeto hot-spring cove\",\"lat\":40.7003,\"lng\":13.8531,\"r\":\"thermal\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7003,13.8531\",\"t\":\"view\"},{\"n\":\"Castello Aragonese\",\"lat\":40.7316,\"lng\":13.9633,\"r\":\"ponte\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7316,13.9633\",\"t\":\"town\"},{\"n\":\"Sant’Angelo village\",\"lat\":40.6959,\"lng\":13.8933,\"r\":\"ponte\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.6959,13.8933\",\"t\":\"town\"},{\"n\":\"Maronti beach\",\"lat\":40.7003,\"lng\":13.9107,\"r\":\"ponte\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7003,13.9107\",\"t\":\"view\"},{\"n\":\"Casamicciola ferry port\",\"lat\":40.7477,\"lng\":13.9074,\"r\":\"ponte\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7477,13.9074\",\"t\":\"town\"},{\"n\":\"Marina Corricella · Procida\",\"lat\":40.762,\"lng\":14.0169,\"r\":\"procida\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.762,14.0169\",\"t\":\"town\"},{\"n\":\"Terra Murata viewpoint\",\"lat\":40.7593,\"lng\":14.0225,\"r\":\"procida\",\"g\":\"https://www.google.com/maps/search/?api=1&query=40.7593,14.0225\",\"t\":\"view\"}];window.__MAP_COLORS__={\"forio\":\"#c25a3a\",\"thermal\":\"#1f6f78\",\"ponte\":\"#3a6ea5\",\"procida\":\"#7d5ba6\",\"naples\":\"#3f7d4e\"};window.__MAP_TYPES__={\"flight\":{\"label\":\"Flights\",\"color\":\"#2f93d1\",\"emoji\":\"✈️\"},\"hotel\":{\"label\":\"Hotels and lodging\",\"color\":\"#7144aa\",\"emoji\":\"🏨\"},\"rental\":{\"label\":\"Rental cars\",\"color\":\"#2fa7a5\",\"emoji\":\"🚗\"},\"transit\":{\"label\":\"Transit\",\"color\":\"#18a765\",\"emoji\":\"↔️\"},\"hike\":{\"label\":\"Hikes & trails\",\"color\":\"#3f7d4e\",\"emoji\":\"🥾\"},\"beach\":{\"label\":\"Beaches & swim\",\"color\":\"#1f8aa8\",\"emoji\":\"🏖️\"},\"view\":{\"label\":\"Viewpoints\",\"color\":\"#c25a3a\",\"emoji\":\"👁️\"},\"town\":{\"label\":\"Towns & villages\",\"color\":\"#0b6a43\",\"emoji\":\"🏘️\"},\"sight\":{\"label\":\"Attractions & POI\",\"color\":\"#8a5cb0\",\"emoji\":\"⭐\"},\"food\":{\"label\":\"Restaurants\",\"color\":\"#d64550\",\"emoji\":\"🍴\"}};window.__MAP_TYPE_GROUPS__=[{\"label\":\"Overview\",\"types\":[\"flight\",\"hotel\",\"rental\",\"transit\"]},{\"label\":\"Places\",\"types\":[\"hike\",\"beach\",\"view\",\"town\",\"sight\",\"food\"]}];</script><script>// ---- carousels ----\ndocument.querySelectorAll('.carousel').forEach(function(c){\n  var track=c.querySelector('.track'), cur=c.querySelector('.cur'),\n      dots=[].slice.call(c.querySelectorAll('.dot')), n=+c.dataset.n;\n  function idx(){return Math.round(track.scrollLeft/track.clientWidth);}\n  function sync(){var i=idx();if(cur)cur.textContent=i+1;dots.forEach(function(d,j){d.classList.toggle('on',j===i);});}\n  function go(i){i=Math.max(0,Math.min(n-1,i));track.scrollTo({left:i*track.clientWidth,behavior:'smooth'});}\n  var p=c.querySelector('.prev'),nx=c.querySelector('.next');\n  if(p)p.addEventListener('click',function(){go(idx()-1);});\n  if(nx)nx.addEventListener('click',function(){go(idx()+1);});\n  dots.forEach(function(d){d.addEventListener('click',function(){go(+d.dataset.i);});});\n  var t;track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(sync,80);});\n  sync();\n});\n\n// ---- trip map (Leaflet, Wanderlog-style layer filtering) ----\n(function(){\n  var el=document.getElementById('tripmap');\n  if(!el||typeof L==='undefined')return;\n  var pts=window.__MAP_POINTS__||[], rColors=window.__MAP_COLORS__||{}, TYPES=window.__MAP_TYPES__||{}, GROUPS=window.__MAP_TYPE_GROUPS__||[];\n  var map=L.map('tripmap',{scrollWheelZoom:false,zoomSnap:0.25,zoomDelta:0.5}).setView([20,0],2);\n  var enField=['coalesce',['get','name:en'],['get','name:latin'],['get','name']];\n  function englishify(mm){\n    try{\n      (mm.getStyle().layers||[]).forEach(function(l){\n        if(l.type==='symbol'&&l.layout&&('text-field' in l.layout)){\n          mm.setLayoutProperty(l.id,'text-field',enField);\n        }\n      });\n    }catch(e){}\n  }\n  if(L.maplibreGL){\n    var gl=L.maplibreGL({style:'https://tiles.openfreemap.org/styles/liberty',attribution:'&copy; OpenFreeMap &copy; OpenMapTiles &copy; OpenStreetMap'}).addTo(map);\n    var mm=gl.getMaplibreMap();\n    mm.on('styledata',function(){englishify(mm);});\n  }else{\n    L.tileLayer('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors, Wikimedia'}).addTo(map);\n  }\n  el.addEventListener('wheel',function(e){\n    if(e.ctrlKey||e.metaKey){\n      e.preventDefault();\n      var z=map.getZoom()-e.deltaY*0.02;\n      map.setZoomAround(map.mouseEventToContainerPoint(e),Math.max(map.getMinZoom(),Math.min(map.getMaxZoom(),z)));\n    }\n  },{passive:false});\n  function esc(s){\n    return String(s||'').replace(/[&<>\"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',\"'\":'&#39;'}[c];});\n  }\n  var active={}, regions={}, counts={};\n  Object.keys(TYPES).forEach(function(k){active[k]=true;counts[k]=0;});\n  pts.forEach(function(p){if(!p.t||!TYPES[p.t])p.t='sight';counts[p.t]=(counts[p.t]||0)+1;});\n  function buildLayerRows(){\n    var list=document.querySelector('.layers-list');\n    if(!list)return;\n    list.innerHTML='';\n    GROUPS.forEach(function(group){\n      var keys=(group.types||[]).filter(function(k){return TYPES[k]&&counts[k];});\n      if(!keys.length)return;\n      var head=document.createElement('p');\n      head.className='layers-head';\n      head.textContent=group.label;\n      list.appendChild(head);\n      keys.forEach(function(k){\n        var ty=TYPES[k];\n        list.insertAdjacentHTML('beforeend','<label class=\"lrow\"><span class=\"lsw\" style=\"background:'+esc(ty.color)+'\"><span>'+esc(ty.emoji)+'</span></span><span class=\"ltxt\">'+esc(ty.label)+'</span><input type=\"checkbox\" data-type=\"'+esc(k)+'\" checked autocomplete=\"off\"></label>');\n      });\n    });\n  }\n  buildLayerRows();\n  pts.forEach(function(p){\n    var ty=TYPES[p.t]||TYPES.sight||{color:'#c25a3a',emoji:'📍',label:'Place'};\n    p._m=L.marker([p.lat,p.lng],{icon:L.divIcon({className:'',html:'<div class=\"pin2\" style=\"background:'+ty.color+'\"><span>'+ty.emoji+'</span></div>',iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-12]})});\n    p._m.bindPopup('<b>'+esc(p.n)+'</b><br><span class=\"pop-ty\">'+esc(ty.emoji)+' '+esc(ty.label)+'</span><br><a href=\"'+esc(p.g)+'\" target=\"_blank\" rel=\"noreferrer\">Open in Google Maps &#8599;</a>');\n    (regions[p.r]=regions[p.r]||[]).push([p.lat,p.lng]);\n  });\n  function render(){\n    pts.forEach(function(p){\n      if(active[p.t])p._m.addTo(map);else map.removeLayer(p._m);\n    });\n  }\n  function fit(region){\n    var arr=region==='all'?pts.map(function(p){return [p.lat,p.lng];}):regions[region];\n    if(arr&&arr.length)map.flyToBounds(L.latLngBounds(arr).pad(0.22),{maxZoom:region==='all'?7:12});\n  }\n  function showAllLayers(){\n    Object.keys(TYPES).forEach(function(k){active[k]=true;});\n    document.querySelectorAll('.layers-list input[type=checkbox]').forEach(function(box){box.checked=true;});\n    render();\n  }\n  document.querySelectorAll('.mapbtns button').forEach(function(b){\n    b.addEventListener('click',function(){\n      if(b.dataset.region==='all')showAllLayers();\n      fit(b.dataset.region);\n    });\n  });\n  var panel=document.querySelector('.layers-panel'), lbtn=document.querySelector('.layers-btn');\n  if(lbtn&&panel){\n    lbtn.addEventListener('click',function(){\n      var opening=panel.hasAttribute('hidden');\n      if(opening)panel.removeAttribute('hidden');else panel.setAttribute('hidden','');\n      lbtn.setAttribute('aria-expanded',opening?'true':'false');\n    });\n    var xb=panel.querySelector('.layers-x');\n    if(xb)xb.addEventListener('click',function(){panel.setAttribute('hidden','');lbtn.setAttribute('aria-expanded','false');});\n  }\n  var boxes=[].slice.call(document.querySelectorAll('.layers-list input[type=checkbox]'));\n  boxes.forEach(function(box){\n    box.addEventListener('change',function(){active[box.dataset.type]=box.checked;render();});\n  });\n  document.querySelectorAll('.layers-acts button').forEach(function(b){\n    b.addEventListener('click',function(){\n      var on=b.dataset.all==='1';\n      boxes.forEach(function(box){box.checked=on;active[box.dataset.type]=on;});\n      render();\n    });\n  });\n  render();\n  fit('all');\n  setTimeout(function(){map.invalidateSize();},300);\n})();\n</script>\n<button id=\"backToTop\" aria-label=\"Back to top\" title=\"Back to top\">↑</button>\n<style>\n#backToTop{position:fixed;right:20px;bottom:20px;z-index:9999;width:48px;height:48px;border:none;border-radius:50%;background:rgba(26,23,18,.85);color:#f6f1e7;font-size:22px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s,background .2s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}\n#backToTop.show{opacity:1;visibility:visible;transform:translateY(0)}\n#backToTop:hover{background:rgba(26,23,18,1)}\n@media(max-width:640px){#backToTop{right:14px;bottom:14px;width:44px;height:44px}}\n\n\n\n\n\n\n\n\n/* SECTION POLISH 2026-07 */\n.budget-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}\n.budget-scroll table{width:100%;border-collapse:collapse;table-layout:fixed}\n.budget-scroll .budget-tbl,.budget-scroll .cost-table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:.9rem}\n.budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);overflow-wrap:anywhere}\n.budget-tbl th,.cost-table th{background:rgba(31,111,120,.08);font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;letter-spacing:0}\n.budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;width:34%}\n.budget-tbl tr:last-child td,.cost-table tr:last-child td{border-bottom:0}\n.budget-tbl.grand tr.total td,.cost-table.grand tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#budget .plan-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}\n#budget .pcard{border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n#budget .pcard h4{font-size:1.12rem}\n#budget .pcard ul,#budget .pcard ol{margin:0;padding:0;list-style:none;display:grid;gap:9px}\n#budget .pcard li{position:relative;padding-left:17px;color:var(--muted);font-size:.88rem;line-height:1.48}\n#budget .pcard li::before{content:\"\";position:absolute;left:0;top:.68em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n#budget .pcard li b{color:var(--ink)}\n#totals .cost-table tr.total td,#totals .budget-tbl tr.total td{background:var(--ink);color:#fff;font-size:1rem;font-weight:850}\n#totals .cost-table td:last-child,#totals .budget-tbl td:last-child{white-space:normal;overflow-wrap:anywhere}\n#totals .note,#totals .rate-note{max-width:980px;margin:14px auto 0;color:var(--muted);font-size:.9rem;line-height:1.48}\n#balance .cost-table td:first-child,#balance .cost-table th:first-child{width:32%}\n#balance .cost-table td:nth-child(2),#balance .cost-table th:nth-child(2){width:96px;text-align:center;white-space:nowrap}\n#balance .cost-table td:last-child,#balance .cost-table th:last-child{width:auto;text-align:left;white-space:normal}\n#balance .budget-scroll{max-width:none;margin-inline:0}\n.status-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}\n.status-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;box-shadow:0 12px 30px rgba(30,32,28,.1)}\n.status-col h3{margin:0 0 12px;font-size:1.22rem;font-weight:650}\n.status-col .row{display:grid;grid-template-columns:minmax(150px,210px) minmax(0,1fr);gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.9rem}\n.status-col .row:last-child{border-bottom:0}\n.status-col .row b{display:block;color:var(--ink);line-height:1.25}\n.status-col .row span{display:block;color:var(--muted);line-height:1.45}\n.field-notes-list{width:100%;margin:0;padding:0;list-style:none;display:grid;gap:0;max-width:none;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 30px rgba(30,32,28,.1);overflow:hidden}\n.field-note{display:grid;grid-template-columns:minmax(190px,270px) minmax(0,1fr);gap:18px;padding:17px 20px;border-bottom:1px solid var(--line)}\n.field-note:last-child{border-bottom:0}\n.field-note h4{margin:0;font-size:1.02rem;font-family:\"Inter\",ui-sans-serif,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-weight:850;line-height:1.25}\n.field-note .sub{margin:4px 0 0;color:var(--muted);font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;line-height:1.35}\n.field-note .note-body{min-width:0}\n.field-note .note-body>p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}\n.field-note ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}\n.field-note li{position:relative;padding-left:15px;color:var(--muted);font-size:.88rem;line-height:1.48}\n.field-note li::before{content:\"\";position:absolute;left:0;top:.7em;width:6px;height:6px;border-radius:50%;background:var(--gold)}\n.field-note li.flag::before{background:#c0392b;width:8px;height:8px;top:.62em}\n.field-note b{color:var(--ink)}\n#tips .tips-list{max-width:none}\n@media(max-width:860px){\n  #budget .plan-grid,.status-grid{grid-template-columns:1fr}\n  .field-note{grid-template-columns:1fr;gap:8px;padding:16px}\n  .status-col .row{grid-template-columns:1fr;gap:3px}\n}\n@media(max-width:620px){\n  .budget-tbl th,.budget-tbl td,.cost-table th,.cost-table td{padding:9px 10px;font-size:.84rem}\n  .budget-tbl td:last-child,.budget-tbl th:last-child,.cost-table td:last-child,.cost-table th:last-child{width:38%}\n}\n</style>\n<script>\n(function(){var b=document.getElementById('backToTop');if(!b)return;function t(){(window.pageYOffset||document.documentElement.scrollTop)>400?b.classList.add('show'):b.classList.remove('show');}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();\n</script>\n<script>/*site nav*/(function(){var nav=document.querySelector(\".site-nav\");if(!nav)return;var menu=nav.querySelector(\".site-nav-menu\"),summary=nav.querySelector(\"summary\"),box=nav.querySelector(\".site-nav-links\"),mq=window.matchMedia(\"(min-width:960px)\");function sync(){if(menu)menu.open=mq.matches;}sync();if(mq.addEventListener)mq.addEventListener(\"change\",sync);else mq.addListener(sync);if(summary)summary.addEventListener(\"click\",function(e){if(mq.matches)e.preventDefault();});var links=[].slice.call(nav.querySelectorAll('.site-nav-links a[href^=\"#\"]'));links.forEach(function(a){a.addEventListener(\"click\",function(){if(menu&&!mq.matches)menu.open=false;});});var map={},secs=[];links.forEach(function(a){var id=a.getAttribute(\"href\").slice(1);var el=document.getElementById(id);if(el){map[id]=a;secs.push(el);}});if(!secs.length)return;var cur=null;function keepVisible(a){if(!box)return;var top=a.offsetTop-box.offsetTop;if(top<box.scrollTop+12)box.scrollTo({top:Math.max(0,top-12),behavior:\"smooth\"});else if(top+a.offsetHeight>box.scrollTop+box.clientHeight-12)box.scrollTo({top:top+a.offsetHeight-box.clientHeight+12,behavior:\"smooth\"});}function setActive(a){if(a===cur)return;cur=a;links.forEach(function(l){l.classList.toggle(\"active\",l===a);});keepVisible(a);}var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&map[en.target.id])setActive(map[en.target.id]);});},{rootMargin:\"-50% 0px -50% 0px\",threshold:0});secs.forEach(function(s){io.observe(s);});})();</script></body></html>"
+    }
+  ],
+  "preDepartureTodos": {
+    "labelHtml": "<p class=\"eyebrow\">Before You Go</p><h2>Protect the flight and the Sunday boat</h2><p>Those two legs are the only scarce inventory on the whole trip.</p>",
+    "blocks": [
+      {
+        "when": "As early as inventory allows",
+        "tone": "hot",
+        "title": "Lock the airfare",
+        "items": [
+          "<b>Book PIT–EWR–NAP on one United ticket</b> the day June 2027 loads — June is this route’s most expensive month.",
+          "<b>Choose a PIT–EWR connection with hours of slack.</b> Mid-June is the one-flight-a-day window; a misconnect costs 24 hours."
+        ]
+      },
+      {
+        "when": "After flights",
+        "tone": "hot",
+        "title": "Hold the Forio hotel",
+        "items": [
+          "<b>Price Le Canne, Sorriso Thermae and Parco Smeraldo</b> for a 4-person family room with half board.",
+          "<b>Confirm the hotel’s own thermal pools</b> — they are the evening amenity that makes the week."
+        ]
+      },
+      {
+        "when": "A few weeks out",
+        "tone": "watch",
+        "title": "Boats and parks",
+        "items": [
+          "<b>Book the Sunday-morning return hydrofoil</b> — the one sailing that sells out.",
+          "<b>Reserve the giro dell’isola boat day</b> once the forecast firms up.",
+          "<b>Recheck Poseidon’s 2027 prices and the under-12 thermal rule</b> before promising the kids anything."
+        ]
+      },
+      {
+        "when": "Final week",
+        "tone": "done",
+        "title": "Let the wind set the order",
+        "items": [
+          "<b>Swap Procida, the boat day and beach days freely</b> — every ticket here is day-of or day-before.",
+          "<b>Check ETIAS status for all four passports.</b>"
+        ]
+      }
+    ],
+    "callout": "<b>Ready now:</b> one-base route, dates, and an itemized budget. <b>Not ready to book:</b> exact 2027 flights, live room quotes, and 2027 park and ferry tariffs."
+  },
+  "scorecard": {
+    "displayName": "Ischia + Procida",
+    "blurb": "Warmest swim on the short board: 74°F sea plus thermal parks, no car",
+    "axes": {
+      "budget": 4,
+      "weather": 4,
+      "swim": 5,
+      "variety": 4,
+      "ease": 3,
+      "food": 5,
+      "risk": 3,
+      "nights": 1,
+      "novelty": 4,
+      "pto": 5
+    },
+    "weightDefaults": {
+      "budget": 2,
+      "weather": 1,
+      "swim": 1,
+      "variety": 1,
+      "ease": 1,
+      "food": 1,
+      "risk": 1,
+      "nights": 1,
+      "novelty": 1,
+      "pto": 0
+    },
+    "budget": {
+      "floorUsd": 9230,
+      "ceilUsd": 12670,
+      "targetUsd": 12000,
+      "preferredMaxUsd": 15000
+    },
+    "pto": {
+      "days": 4,
+      "nights": 7
+    },
+    "facets": {
+      "continent": "europe",
+      "maxConnections": 1,
+      "swimTempF": [
+        73,
+        75
+      ],
+      "heatedSwimTempF": [
+        82,
+        104
+      ],
+      "swimType": "warm-sea-plus-thermal",
+      "noPassport": false,
+      "singleTicket": true,
+      "hasSwim": true
+    },
+    "totalBaked": 37
+  }
+}

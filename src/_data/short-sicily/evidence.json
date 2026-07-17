@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-sicily",
+  "reviewedAt": "2026-07-16",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 4,
+      "rationale": "Six visible categories reconcile exactly to $8,400–$12,100. The low case sits under the $12,000 target and the high case is $100 over it but well inside $13,500, deriving 4/5 under the budget rubric. Confidence is medium because exact June 2027 Catania airfare and both stays are not yet quoted.",
+      "confidence": "medium",
+      "evidence": ["budget-band"]
+    },
+    "weather": {
+      "score": 5,
+      "rationale": "June climatology for Siracusa (about 64–83°F) and Taormina (about 61–77°F) shows warm, dry, reliably sunny days with roughly three rain days for the month — the strongest weather profile in the short-trip set. Etna summit cold is a packing issue, not a weather risk.",
+      "confidence": "high",
+      "evidence": ["climate-proxy"]
+    },
+    "swim": {
+      "score": 4,
+      "rationale": "June Ionian water runs about 72–74°F at Siracusa and Taormina — comfortable rather than warm — and the week schedules swim time on five days across Ortigia's sea decks, Fontane Bianche, Isola Bella and Mazzarò, matching the 4/5 rubric band for frequent comfortable swimming.",
+      "confidence": "high",
+      "evidence": ["swim-conditions"]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "The week combines warm-water coast, two Greek theatres, Baroque Noto and a fishing village, plus a genuinely distinct volcanic landscape on Etna and the Alcantara canyon. It stays one region of one island, which keeps it short of 5/5.",
+      "confidence": "high",
+      "evidence": ["itinerary-structure"]
+    },
+    "ease": {
+      "score": 4,
+      "rationale": "One protected connection each way, two multi-night bases with a single 1h45 transfer, one automatic rental and no internal flights or ferries match the deterministic load of the other two-base short trips scored 4/5. The car, ZTL zones and the mid-week hotel change prevent a 5.",
+      "confidence": "high",
+      "evidence": ["operational-load"]
+    },
+    "food": {
+      "score": 5,
+      "rationale": "Sicily is the easiest picky-eater destination in the set: named current pizza, pasta, market-sandwich and granita options exist at every base and outing, with grocery backup in both bases and trattoria pricing well below resort norms.",
+      "confidence": "high",
+      "evidence": ["family-food-coverage"]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "Exact June 2027 flights are unconfirmed, Etna activity can close the summit stages on short notice, and mid-June festival calendars (INDA, Taormina Film Fest) compress hotels. One-ticket routing, a swappable day order and always-available fallbacks keep the uncertainty manageable.",
+      "confidence": "medium",
+      "evidence": ["route-readiness", "etna-conditions"]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Seven hotel nights derive 1/5 under the comparison rubric for any trip of eight or fewer nights; this is expected for the separate short-trip category.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "Sicily does not appear on the documented visited-place list — the family's Italy history is Puglia and the Amalfi coast — so Ortigia, Noto, Etna and Taormina derive 5/5 under the no-overlap rule, consistent with the switzerland-sicily scorecard.",
+      "confidence": "high",
+      "evidence": ["visited-overlap"]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "Four PTO days are better than the top documented six-day threshold and therefore receive 5/5; Juneteenth 2027 falls on Saturday June 19 and is observed Friday June 18, protecting that workday subject to employer policy.",
+      "confidence": "high",
+      "evidence": ["trip-window"]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["internal-itinerary", "kayak-pit-cta", "etna-funivia"],
+      "value": {
+        "lowUsd": 8400,
+        "expectedUsd": null,
+        "highUsd": 12100,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "4600–5800 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 8400–12100",
+        "airfareObservation": "Kayak's US–Catania route data shows June as the most expensive month at about $1,379 per person average, with recent Pittsburgh–Catania round trips observed near $1,045; the $4,600–$5,800 family range assumes early booking of the one-connection Delta routing and is not a June 2027 quote"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2026-11-15",
+      "sourceLocators": {
+        "internal-itinerary": "short-sicily/main.json #budget and #totals; six itemized categories reconcile to the displayed family total",
+        "kayak-pit-cta": "Route page reviewed 2026-07-16; June average $1,379 per traveler US–CTA and a recent $1,045 PIT–CTA round-trip observation, used as a planning proxy only",
+        "etna-funivia": "March 2026 tariff: cable car €54/€30, cable car + 4x4 €78/€50 — anchors the activities line"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile"],
+      "value": {
+        "depart": "2027-06-12",
+        "return": "2027-06-20",
+        "hotelNights": 7,
+        "nightsAwayIncludingOutboundRedeye": 8,
+        "ptoDays": 4,
+        "juneteenthObserved": "2027-06-18"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows.short-sicily and the Pittsburgh required full-day constraint for 2027-06-24 through 2027-06-26; return lands Sunday evening Jun 20 with three buffer days"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["weather-atlas-sicily-june"],
+      "value": {
+        "score": 5,
+        "normalPeriod": "recent climatology",
+        "juneMeanDailyLowHighF": {"Siracusa": [64, 83], "Taormina": [61, 77]},
+        "rainDaysJune": 3,
+        "etnaSummitNote": "Summit stages run 20–30°F colder than the coast with strong UV; a packing consideration, not a weather-score penalty",
+        "forecast": false
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "weather-atlas-sicily-june": "June pages for Syracuse (high 28.2°C / low 17.8°C) and Taormina (high ~25°C / low ~16°C), about 3 rain days and ~10 sunshine hours"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["seatemperature-sicily-june", "visit-sicily-sea"],
+      "value": {
+        "score": 4,
+        "temperatureF": [72, 74],
+        "temperatureC": [22, 23.5],
+        "hasSwim": true,
+        "scheduledSwimDays": 5,
+        "beachTypes": "Ortigia sea decks and rocky coves; Fontane Bianche sand; Isola Bella and Mazzarò pebbles (water shoes)",
+        "warmWaterFallback": "Giardini Naxos lodging pool for the Taormina half; heating not confirmed until property selection"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "seatemperature-sicily-june": "June averages: Siracusa about 22.8°C (~73°F), Taormina about 21.7–23.1°C (72–74°F)",
+        "visit-sicily-sea": "Official beach-character guidance for the Taormina and Giardini Naxos coast; not a live temperature report"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "neapolis-park", "taormina-park"],
+      "value": {
+        "score": 4,
+        "hotelNights": 7,
+        "lodgingBases": 2,
+        "baseNames": ["Ortigia (Siracusa)", "Giardini Naxos / Taormina"],
+        "scheduledModes": ["coast/water", "town/food", "volcanic nature", "ancient sites"]
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-sicily/main.json itinerary.days day1 through day7 and #stays; four Ortigia nights then three near Taormina",
+        "neapolis-park": "Official park tariff page (€14/€7) supports the Greek Theatre morning",
+        "taormina-park": "Official Teatro Antico tariff page (€14/€7, open to ~19:45) supports the Taormina day"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "aci-driving-italy"],
+      "value": {
+        "easeScore": 4,
+        "maxConnections": 1,
+        "singleTicket": true,
+        "lodgingBases": 2,
+        "baseMoves": 1,
+        "internalFlights": 0,
+        "rentalCars": 1,
+        "longDistanceTrains": 0,
+        "longestMandatoryDriveHours": 1.75,
+        "airHoursPlanningEstimate": 21.0,
+        "groundHoursPlanningEstimate": 8.0,
+        "ztlNote": "Ortigia and Taormina cores are camera-enforced ZTL zones; the plan parks at Talete and Lumbi/the Naxos base instead"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-sicily/main.json day0/day8 one-connection air, #stays two bases with one 1h45 transfer, #getting-around drive matrix and parking plan",
+        "aci-driving-italy": "Article 135: U.S. licenses require an International Driving Permit or sworn translation — reflected in packing and todo items"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": ["internal-itinerary", "conad-siracusa", "vecchia-taormina-menu"],
+      "value": {
+        "score": 5,
+        "plainFoodRequired": true,
+        "coveredBases": ["Ortigia", "Giardini Naxos / Taormina"],
+        "coveredOutings": ["Noto", "Marzamemi", "Etna / Zafferana"],
+        "fallbackTypes": ["pizza", "plain pasta", "market sandwiches", "granita and gelato", "supermarket picnic"],
+        "lodgingKitchenConfirmed": false
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-sicily/main.json spot restaurant lists name current pizza, pasta and market options in Ortigia, Noto, Marzamemi, Zafferana and Taormina/Naxos",
+        "conad-siracusa": "Current first-party locator for the Siracusa supermarket backing the Ortigia base",
+        "vecchia-taormina-menu": "Current operator menu with plain pizza and fries near the Taormina corso"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["delta-jfk-cta", "kayak-pit-cta", "internal-itinerary", "eu-etias"],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "outbound": "PIT–JFK–CTA on one Delta ticket; JFK–CTA has run as a daily summer nonstop since May 2025",
+        "return": "CTA–JFK daytime nonstop connecting to PIT the same evening",
+        "exact2027FlightsVerified": false,
+        "fallback": "ITA or Delta partners via FCO with the hourly Rome–Catania shuttle if the nonstop misprices; never self-transfer"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2026-11-15",
+      "sourceLocators": {
+        "delta-jfk-cta": "Delta newsroom: daily JFK–Catania service launched May 21, 2025 (767-300), returned for summer 2026 with near-year-round extension — the only U.S. nonstop to Sicily; June 2027 schedule not yet published",
+        "kayak-pit-cta": "Current fare observations supporting the family airfare band",
+        "internal-itinerary": "short-sicily/main.json #air-travel and day0/day8 mark June 2027 schedules unconfirmed",
+        "eu-etias": "EU travel-authorization requirement horizon for U.S. citizens; recheck status before 2027 booking"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "etna-conditions",
+      "category": "logistics",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["etna-funivia", "etna-guide-tariffs"],
+      "value": {
+        "cableCarRoundTripEur": {"adult": 54, "child5to10": 30},
+        "cableCarPlus4x4Eur": {"adult": 78, "child5to10": 50},
+        "tariffDate": "2026-03-01",
+        "familyEstimateEur": 284,
+        "accessNote": "Volcanic activity or wind can close the cable car or jeep stage with little notice; the free Silvestri craters at Rifugio Sapienza remain the guaranteed floor"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-03-01",
+      "sourceLocators": {
+        "etna-funivia": "Operator ticketing portal for the south-slope cable car",
+        "etna-guide-tariffs": "Official volcanological-guides price update effective March 1, 2026: €54/€30 cable car, €78/€50 with 4x4"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "festival-calendars",
+      "category": "logistics",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": ["inda-festival", "taormina-park"],
+      "value": {
+        "indaSeason2026": "2026-05-08 to 2026-06-28 in the Siracusa Greek Theatre; wooden staging covers the cavea and the theatre closes mid-afternoon on performance days",
+        "inda2027": "unknown — expect a similar May–late-June window overlapping this trip",
+        "taorminaFilmFest2026": "2026-06-10 to 2026-06-14 at the Teatro Antico",
+        "planningEffect": "Both calendars can reorder the Neapolis morning and the Taormina evening; evening INDA seats are also a bookable family upgrade"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-03-01",
+      "sourceLocators": {
+        "inda-festival": "INDA Foundation 2026 season page and box office; 2027 (62nd season) dates unannounced as of review",
+        "taormina-park": "Teatro Antico official page notes daytime visiting continues during event season with evening closures"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": ["decision-profile", "scorecard-contract"],
+      "value": {"score": 5, "overlap": []},
+      "verifiedAt": "2026-07-16",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json family visited-place list; Sicily, Ortigia, Noto, Etna and Taormina are absent (Italy history is Puglia and the Amalfi coast)",
+        "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and no-overlap 5/5 rule"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 21.0,
+    "groundHours": 8.0,
+    "timeZones": 6,
+    "baseMoves": 1,
+    "longestTransferHours": 1.75,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 3,
+    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "lodgingComfort": {
+      "airConditioning": "required in June Sicily; unknown until property selection",
+      "kitchen": "required at the Ortigia base; unknown until property selection",
+      "laundry": "preferred at one of the two bases",
+      "realBeds": "required but unknown until property selection"
+    },
+    "waterSafety": "Ionian swimming is calm-morning friendly, but pebble entries need water shoes and the sea decks require basic swim confidence; the Naxos pool is the controlled fallback.",
+    "crowdingPressure": "Mid-June brings INDA crowds to Siracusa and film-festival crowds to Taormina; early starts and the Naxos base absorb most of it.",
+    "medicalAccess": "Siracusa and Taormina both retain urban hospital access; Etna outings stay on guided, road-served routes.",
+    "childActivityNotes": {
+      "age13": "the volcano jeep stage, sea-cave boats, theatre ruins and independent granita runs give real teen material",
+      "age8": "short town mornings, daily swim or pool time, the cable car and a cold-river canyon keep the energy managed"
+    }
+  },
+  "evidenceBasis": "Official park and operator tariff pages, current Delta route announcements, June climatology and sea-temperature references, and line-by-line derivation from the two-base itinerary. Exact June 2027 prices, flights and festival dates remain proxies.",
+  "confidenceBasis": [
+    "official Neapolis and Teatro Antico tariff pages",
+    "operator Funivia dell'Etna pricing effective March 2026",
+    "Delta newsroom route confirmation for the JFK–Catania nonstop through 2026",
+    "June climatology and 72–74°F Ionian sea-temperature references",
+    "canonical two-base/one-car derivation; no exact June 2027 quotes yet"
+  ]
+}

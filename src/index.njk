@@ -549,7 +549,7 @@ footer a{color:var(--muted)}
   <div class="hero-inner">
     <p class="eyebrow">Family Travel Decision Dashboard</p>
     <h1>Epic Family Vacation: 30-Trip Comparison</h1>
-    <p class="lead">A data-first ranking of 30 finished comparison itineraries (21 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The eight short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
+    <p class="lead">A data-first ranking of 30 finished comparison itineraries (21 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The ten short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
   </div>
 </header>
 
@@ -577,7 +577,7 @@ footer a{color:var(--muted)}
   <section id="overview">
     <p class="eyebrow">The Plan at a Glance</p>
     <div class="overview">
-      <div class="ocard"><b>30 + 8</b><span>comparison plans plus eight short escapes (21 ranked, 9 excluded)</span></div>
+      <div class="ocard"><b>30 + 10</b><span>comparison plans plus ten short escapes (21 ranked, 9 excluded)</span></div>
       <div class="ocard"><b>$7.5k</b><span>lowest all-in floor: Portugal</span></div>
       <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland &times; Crete/Sicily/Mallorca grid</span></div>
       <div class="ocard"><b data-preserve-date>June 24-26</b><span>Full days in Pittsburgh protected</span></div>
@@ -624,7 +624,7 @@ footer a{color:var(--muted)}
             <div class="short-stat"><span>Family budget</span><b>${{ (trip.budget.floorUsd / 1000) | round(1) }}k–${{ (trip.budget.ceilUsd / 1000) | round(1) }}k</b></div>
             <div class="short-stat"><span>PTO</span><b>{{ trip.pto.days }} days</b></div>
             <div class="short-stat"><span>Home bases</span><b>{% if trip.metrics.baseMoves != null %}{{ trip.metrics.baseMoves + 1 }}{% else %}Minimal{% endif %}</b></div>
-            <div class="short-stat"><span>Swimming</span><b>{% if trip.facets.swimType == 'geothermal' %}Warm geothermal{% elif trip.facets.heatedSwimTempF %}Pool + Atlantic{% else %}{{ trip.facets.swimTempF[0] }}–{{ trip.facets.swimTempF[1] }}°F water{% endif %}</b></div>
+            <div class="short-stat"><span>Swimming</span><b>{% if trip.facets.swimType == 'geothermal' %}Warm geothermal{% elif trip.facets.swimType == 'warm-sea-plus-thermal' %}{{ trip.facets.swimTempF[1] }}°F sea + thermal{% elif trip.facets.heatedSwimTempF %}Pool + Atlantic{% else %}{{ trip.facets.swimTempF[0] }}–{{ trip.facets.swimTempF[1] }}°F water{% endif %}</b></div>
           </div>
           <div class="short-ready">{{ trip.readiness.label }} →</div>
         </div>

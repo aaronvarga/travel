@@ -114,6 +114,14 @@ module.exports = {
     path: 'assets/img/short-alaska/google_turnagain_arm_sunset_01.jpg',
     alt: 'A blazing sunset over Alaska’s Turnagain Arm, a boulder anchoring the mirror-wet tidal flats',
   },
+  'short-sicily': {
+    path: 'assets/img/short-sicily/isola-bella-bay-panorama.jpg',
+    alt: 'The turquoise sweep of Isola Bella bay below Taormina’s green headlands',
+  },
+  'short-ischia': {
+    path: 'assets/img/short-ischia/castello-sunset.jpg',
+    alt: 'Castello Aragonese glowing gold above a calm sea at sunset off Ischia',
+  },
   'short-acadia': {
     path: 'assets/img/short-acadia/google_frenchman_bay_sunrise_04.jpg',
     alt: 'Fiery sunrise above Acadia’s island-dotted Frenchman Bay',

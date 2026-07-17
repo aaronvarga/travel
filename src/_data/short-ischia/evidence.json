@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-ischia",
+  "reviewedAt": "2026-07-16",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 4,
+      "rationale": "The six-category family estimate reconciles exactly to $9,230–$12,670. The whole band sits below $13,000 but the ceiling exceeds the $12,000 target, so this scores 4 rather than 5, matching the Alaska precedent. Ground costs are cheap; the transatlantic June fare drives the range.",
+      "confidence": "medium",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "Ischia’s June normals run about 79°F/59°F with roughly seven brief rain days and one of the driest stretches of its year. Heat is moderate rather than punishing at this latitude in mid-June, and no monsoon-style washout pattern exists; wind is the only weather variable that touches the plan, via ferries.",
+      "confidence": "medium",
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "swim": {
+      "score": 5,
+      "rationale": "The sea reaches about 74°F by mid-June — the warmest dependable open water on the short-escape board — and the island adds 22 graded thermal pools at Poseidon (61–104°F), Negombo, the free Sorgeto hot-spring cove, and shallow kid beaches at San Montano and Maronti. Water is scheduled on seven of nine days.",
+      "confidence": "high",
+      "evidence": [
+        "swim-conditions"
+      ]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "Distinct modes fill the week — thermal-park day, a 15th-century island castle, a pastel-island ferry day trip, a full-day boat circle with sea caves, four different beaches and an optional volcano-rim hike. It stops short of 5 because the modes are all coastal-leisure variants; there is no true wilderness or high-culture anchor.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "ease": {
+      "score": 3,
+      "rationale": "One base, no rental car, no ZTL exposure and single-ticket air are genuinely easy. But the arrival chain is plane → Alibus → hydrofoil → taxi with a six-hour time change, mid-June sits in United’s one-flight-a-day Naples window, and every mainland connection depends on a boat. That chain holds it below the fly-and-drive one-base trips.",
+      "confidence": "high",
+      "evidence": [
+        "operational-load"
+      ]
+    },
+    "food": {
+      "score": 5,
+      "rationale": "Campania is the pizza homeland: Pizzeria Di Meglio and La Tinaia cover plain pizza and pasta in Forio, half-board hotel dining guarantees known dinners, and every harbor front serves fried fish, fries and plain pasta. Adult upside is real (coniglio all’ischitana, Procida lemons). Exact 2027 menus remain a recheck.",
+      "confidence": "medium",
+      "evidence": [
+        "family-food-coverage"
+      ]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "Hydrofoils suspend in about 2-meter waves and mid-June is a one-flight-a-day window, so the connection and the crossing are genuine exposure. Mitigations are structural: car ferries keep sailing when hydrofoils stop, Delta’s JFK–NAP daily is a same-day air rescue, the Saturday flex day absorbs postponements, and no activity is prepaid more than days ahead.",
+      "confidence": "medium",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Seven hotel nights derive 1/5 under the shared rubric for trips of eight nights or fewer.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    },
+    "novelty": {
+      "score": 4,
+      "rationale": "Ischia, Procida and the thermal-park mode are all new, but the route runs through Naples and the family has already visited Naples, Capri and Positano — a visited gateway under the shared rubric, scoring 4. Capri is deliberately excluded from the plan for the same reason.",
+      "confidence": "high",
+      "evidence": [
+        "visited-overlap"
+      ]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "Four PTO days receive 5/5; Juneteenth falls on Saturday June 19, 2027 and is observed Friday June 18, protecting a workday subject to employer policy. Return lands Sunday Jun 20, four clear days before the Jun 24–26 Pittsburgh commitment.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "giardini-poseidon-prices",
+        "alilauro-naples-ischia-2026"
+      ],
+      "value": {
+        "lowUsd": 9230,
+        "expectedUsd": null,
+        "highUsd": 12670,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "4400–5900 + 1900–2900 + 450–600 + 1300–1700 + 480–620 + 700–950 = 9230–12670",
+        "exceedsShortTripTarget": true
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-ischia/main.json #budget and #totals; six itemized categories reconcile to the displayed total",
+        "giardini-poseidon-prices": "Official 2026 tariff €50 adult / €45 afternoon / ages 4–11 half price supports the activities line",
+        "alilauro-naples-ischia-2026": "Current hydrofoil fares €23.90–24.10 adult, €15.90 child, €3.50 per qualifying bag support the ferries-and-transfers line"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "value": {
+        "depart": "2027-06-12",
+        "return": "2027-06-20",
+        "hotelNights": 7,
+        "ptoDays": 4,
+        "juneteenthObserved": "2027-06-18",
+        "pittsburghBlackoutRespected": true
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows.short-ischia [2027-06-12, 2027-06-20]; returns four days before the Jun 24–26 Pittsburgh commitment"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "weather-atlas-ischia"
+      ],
+      "value": {
+        "score": 4,
+        "ischiaJuneHighLowF": [
+          79,
+          59
+        ],
+        "ischiaJuneRainDays": 7,
+        "ischiaJuneRainInches": 1.1,
+        "forecast": false,
+        "weatherRisks": [
+          "wind-driven ferry suspensions",
+          "brief showers"
+        ]
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "weather-atlas-ischia": "Ischia June normals: about 26°C/15°C (79°F/59°F) with ~27 mm of rain across ~7 trace-rain days — among the island’s driest months"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "seatemperature-ischia",
+        "giardini-poseidon-prices"
+      ],
+      "value": {
+        "score": 5,
+        "temperatureF": [
+          73,
+          75
+        ],
+        "heatedSwimTemperatureF": [
+          82,
+          104
+        ],
+        "swimType": "warm-sea-plus-thermal",
+        "hasSwim": true,
+        "scheduledSwimDays": 7,
+        "primarySwim": "Citara, Chiaia, San Montano and Maronti beaches plus Poseidon/Negombo thermal parks and the free Sorgeto hot-spring cove",
+        "under12ThermalRule": "Poseidon bars under-12s from thermal pools; seawater pools and beach remain available"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "seatemperature-ischia": "Ischia June average sea temperature ~23.3°C (74°F), rising toward 25°C late month",
+        "giardini-poseidon-prices": "Official page documents 22 pools graded 16–40°C (61–104°F) and the under-12 thermal-pool restriction"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "castello-aragonese-visit"
+      ],
+      "value": {
+        "score": 4,
+        "hotelNights": 7,
+        "lodgingBases": 1,
+        "baseNames": [
+          "Forio"
+        ],
+        "scheduledModes": [
+          "thermal park",
+          "island castle",
+          "island-hop ferry day",
+          "full-day boat circle",
+          "beach days",
+          "hot-spring cove"
+        ],
+        "capriExcluded": true,
+        "capriReason": "already on the family visited-place list; Procida is the new island",
+        "pompeiiOptional": true,
+        "pompeiiReason": "a mid-week Ischia→Pompeii round trip burns 3–4 hours each way; it fits only as a departure-day add-on or with a Naples overnight"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-ischia/main.json itinerary.days: seven Forio nights, zero base moves, water scheduled on seven of nine days",
+        "castello-aragonese-visit": "Official visitor page: €12 adult / €6 ages 10–18 / free under 10, elevator included, open daily 9:00–sunset"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "anm-alibus",
+        "ischiareview-transport"
+      ],
+      "value": {
+        "easeScore": 3,
+        "maxConnections": 1,
+        "singleTicket": true,
+        "nonstopExists": false,
+        "lodgingBases": 1,
+        "baseMoves": 0,
+        "rentalCars": 0,
+        "timeZoneShift": 6,
+        "arrivalChainLegs": 4,
+        "hydrofoilMinutes": 50,
+        "airHoursPlanningEstimate": 22,
+        "groundHoursPlanningEstimate": 6,
+        "oneFlightPerDayWindow": true
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-ischia/main.json day0/day8: PIT→EWR→NAP single ticket, Alibus + ~50-min hydrofoil each way, no rental car",
+        "anm-alibus": "Official ANM Alibus page: €5 per person, every 15–30 minutes, airport → Molo Beverello",
+        "ischiareview-transport": "EAV bus fares €1.70 single / €5.10 day / €14.50 weekly; CS/CD circle lines reach Forio, Citara, Sant’Angelo, Maronti and the castle"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "ischia-family-dining"
+      ],
+      "value": {
+        "score": 5,
+        "plainFoodRequired": true,
+        "coveredBases": [
+          "Forio",
+          "Ischia Ponte",
+          "Procida harbor"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "fried fish cones",
+          "fries",
+          "half-board hotel dining",
+          "groceries"
+        ],
+        "halfBoardCommon": true,
+        "thirteenYearOldPricesAsAdult": true
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-ischia/main.json structured spots name La Tinaia, Pizzeria Di Meglio and La Ruota as plain-food anchors at the Forio base",
+        "ischia-family-dining": "Curated Forio family-restaurant listings document La Tinaia (family trattoria) and Pizzeria Di Meglio (island’s best-regarded pizza) with plain pasta/pizza coverage"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "united-ewr-nap-schedule",
+        "alilauro-naples-ischia-2026"
+      ],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "nonstopExists": false,
+        "outbound": "PIT → EWR → NAP · United single ticket; EWR–NAP nonstop ~2x daily June 2026, historically 1x daily until ~Jun 23",
+        "return": "NAP → EWR → PIT · same-day arrival",
+        "exact2027FlightsVerified": false,
+        "hydrofoilWeatherRisk": "Alilauro suspends around 2 m waves; Porta di Massa car ferries almost never cancel Apr–Oct",
+        "deltaJfkNapBackup": true
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2026-12-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-ischia/main.json #air-travel marks all routings and fares as current proxies requiring 2027 verification",
+        "united-ewr-nap-schedule": "Flight-schedule data shows United EWR–NAP ~14 weekly June 2026 on 767-300, seasonal May–Oct; second daily historically starts ~Jun 23",
+        "alilauro-naples-ischia-2026": "Operator publishes June 15–Sept 15 2026 schedule with frequent daily Beverello–Forio/Ischia hydrofoils; 2027 times unpublished"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 4,
+        "overlap": [
+          "Naples (gateway)",
+          "Capri (excluded from plan)",
+          "Positano (not visited on this plan)"
+        ],
+        "newRegions": [
+          "Ischia",
+          "Procida"
+        ]
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Family visited-place list includes Naples, Capri and Positano; Ischia and Procida do not appear",
+        "scorecard-contract": "tools/scorecard.manifest.json novelty rubric: mostly new with one visited gateway scores 4/5"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 22,
+    "groundHours": 6,
+    "timeZones": 6,
+    "baseMoves": 0,
+    "longestTransferHours": 2,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 2,
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "lodgingComfort": {
+      "airConditioning": "required in June and standard in Ischia four-stars",
+      "kitchen": "optional; half-board dining replaces it here",
+      "laundry": "preferred for seven beach nights",
+      "realBeds": "required but unknown until property selection"
+    },
+    "waterSafety": "Sea about 74°F with shallow-entry family beaches at San Montano and Maronti; Sorgeto’s hot-spring cove has rock entries and locally very hot pockets — water shoes and supervision required. Poseidon bars under-12s from thermal pools.",
+    "crowdingPressure": "Mid-June is busy but pre-peak; Festa della Repubblica (Wed Jun 2, 2027) surge ends well before arrival. Sunday-return hydrofoils to Naples sell out and should be booked ahead.",
+    "medicalAccess": "Ischia has a hospital (Anna Rizzoli, Lacco Ameno); Naples carries full tertiary care one hydrofoil crossing away.",
+    "childActivityNotes": {
+      "age13": "all 22 Poseidon pools, cliff-jump swim stops on the boat day, Sorgeto at night and Procida photo terrain",
+      "age8": "shallow warm beaches, a castle with an elevator, boats as entertainment rather than transit"
+    }
+  },
+  "confidenceBasis": [
+    "official operator tariffs from Giardini Poseidon, Castello Aragonese, Alilauro, ANM Alibus and EAV",
+    "published June climate and sea-temperature normals for Ischia",
+    "current United EWR–NAP schedule data and historical seasonal pattern",
+    "one-base itinerary derivation",
+    "no exact June 2027 schedule, fare or room quote exists for any line"
+  ],
+  "evidenceBasis": "Official operator and transit tariffs, published climate and sea-temperature normals, current-season ferry and flight schedules, and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and ferry times remain current-season proxies."
+}

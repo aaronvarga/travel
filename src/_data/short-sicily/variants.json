@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-sicily",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Ortigia + Taormina · 7 nights · Jun 12–20",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 7,
+      "ptoDays": 4,
+      "budget": { "lowUsd": 8400, "highUsd": 12100, "distribution": "planning-band" },
+      "removedExperiences": [],
+      "notes": "Four Ortigia nights and three near Taormina with one automatic rental. Palermo, Agrigento and the west are deliberately out of scope; they belong to a full-length Sicily trip, not this week.",
+      "confidence": "medium",
+      "claimType": "proxy",
+      "sourceRefs": ["internal-itinerary"],
+      "sourceLocators": { "internal-itinerary": "short-sicily/main.json #overview, #stays, #totals and the nine-day itinerary" }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "The week is already the short variant of the documented switzerland-sicily and portugal-sicily Sicily legs; no shorter or cheaper sub-variant is evidence-backed."
+}
