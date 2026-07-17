@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-16T01:28:15.405Z",
+  "generatedAt": "2026-07-17T04:12:49.474Z",
   "trips": [
     {
       "slug": "albania",
@@ -1559,6 +1559,65 @@
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
     },
     {
+      "slug": "short-ischia",
+      "canonical": {
+        "lowUsd": 9230,
+        "highUsd": 12670
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 9200,
+        "sumHighUsd": 12700,
+        "displayedLowUsd": 9230,
+        "displayedHighUsd": 12670,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights — PIT→EWR→NAP round trip, bags and seats",
+          "text": "$4,400–$5,900",
+          "lowUsd": 4400,
+          "highUsd": 5900
+        },
+        {
+          "label": "7 hotel nights — Forio thermal-pool family room",
+          "text": "$1,900–$2,900",
+          "lowUsd": 1900,
+          "highUsd": 2900
+        },
+        {
+          "label": "Ferries, Alibus, island buses and taxis",
+          "text": "$450–$600",
+          "lowUsd": 450,
+          "highUsd": 600
+        },
+        {
+          "label": "Food + groceries",
+          "text": "$1,300–$1,700",
+          "lowUsd": 1300,
+          "highUsd": 1700
+        },
+        {
+          "label": "Poseidon, castle, boat tour, Procida ferries",
+          "text": "$480–$620",
+          "lowUsd": 480,
+          "highUsd": 620
+        },
+        {
+          "label": "Contingency",
+          "text": "$700–$950",
+          "lowUsd": 700,
+          "highUsd": 950
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
       "slug": "short-madeira",
       "canonical": {
         "lowUsd": 5700,
@@ -1725,6 +1784,65 @@
           "text": "$600–650",
           "lowUsd": 600,
           "highUsd": 650
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-sicily",
+      "canonical": {
+        "lowUsd": 8400,
+        "highUsd": 12100
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 8400,
+        "sumHighUsd": 12100,
+        "displayedLowUsd": 8400,
+        "displayedHighUsd": 12100,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Air transportation",
+          "text": "$4,600–$5,800",
+          "lowUsd": 4600,
+          "highUsd": 5800
+        },
+        {
+          "label": "Ground transportation",
+          "text": "$600–$1,050",
+          "lowUsd": 600,
+          "highUsd": 1050
+        },
+        {
+          "label": "Lodging",
+          "text": "$1,150–$2,150",
+          "lowUsd": 1150,
+          "highUsd": 2150
+        },
+        {
+          "label": "Food",
+          "text": "$900–$1,300",
+          "lowUsd": 900,
+          "highUsd": 1300
+        },
+        {
+          "label": "Activities",
+          "text": "$650–$1,050",
+          "lowUsd": 650,
+          "highUsd": 1050
+        },
+        {
+          "label": "Insurance + contingency",
+          "text": "$500–$750",
+          "lowUsd": 500,
+          "highUsd": 750
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

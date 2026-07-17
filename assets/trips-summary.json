@@ -1863,6 +1863,111 @@
       "url": "https://www.weather-atlas.com/en/alaska-usa/seward-weather-june",
       "publisher": "Weather Atlas",
       "scope": "June normals for Seward: temperature, rainfall days and daylight hours. Secondary aggregation, not an official NWS normals table."
+    },
+    "delta-jfk-cta": {
+      "label": "Delta News Hub · JFK–Catania nonstop",
+      "tier": "operator",
+      "url": "https://news.delta.com/discover-captivating-catania-delta-introduces-nonstop-service-sicily",
+      "publisher": "Delta Air Lines",
+      "scope": "Route announcement: daily JFK–Catania nonstop launched May 21, 2025 and returned for 2026 with near-year-round extension; June 2027 schedule and equipment not yet published."
+    },
+    "kayak-pit-cta": {
+      "label": "Kayak Pittsburgh–Catania fare snapshot",
+      "tier": "observed-quote",
+      "url": "https://www.kayak.com/flight-routes/Pittsburgh-PIT/Catania-Fontanarossa-CTA",
+      "publisher": "Kayak",
+      "scope": "Observed June fare levels (US–CTA June average ~$1,379 pp; recent PIT–CTA round trips near $1,045); a planning proxy that cannot confirm June 2027 pricing or protection."
+    },
+    "neapolis-park": {
+      "label": "Parco Archeologico Neapolis tickets",
+      "tier": "official",
+      "url": "https://parchiarcheologici.regione.sicilia.it/siracusa-eloro-villa-tellaro-akrai/en/biglietti/",
+      "publisher": "Regione Siciliana",
+      "scope": "Official tariff page for the Siracusa Greek Theatre park (€14 full / €7 reduced); recheck 2027 tariffs, hours and INDA-season access."
+    },
+    "inda-festival": {
+      "label": "INDA Foundation season + box office",
+      "tier": "operator",
+      "url": "https://www.indafondazione.org/en/2026-season/",
+      "publisher": "Fondazione INDA",
+      "scope": "2026 (61st) season ran May 8–Jun 28 in the Greek Theatre with mid-afternoon closures on show days; 2027 dates unannounced."
+    },
+    "etna-guide-tariffs": {
+      "label": "Etna volcanological guides price update",
+      "tier": "operator",
+      "url": "https://guidevulcanologicheetna.it/en/prices-update-of-the-etnas-cableway/",
+      "publisher": "Guide Vulcanologiche Etna Sud",
+      "scope": "Tariffs effective March 1, 2026: cable car RT €54 adult / €30 child 5–10; cable car + 4x4 €78 / €50. 2027 pricing can change."
+    },
+    "weather-atlas-sicily-june": {
+      "label": "Weather Atlas June climatology · Syracuse + Taormina",
+      "tier": "historical-dataset",
+      "url": "https://www.weather-atlas.com/en/italy/syracuse-weather-june",
+      "publisher": "Weather Atlas",
+      "scope": "June normals: Syracuse high 28.2°C / low 17.8°C; Taormina high ~25°C / low ~16°C, ~3 rain days; climatology, not a forecast."
+    },
+    "seatemperature-sicily-june": {
+      "label": "World Sea Temperature · June Ionian averages",
+      "tier": "historical-dataset",
+      "url": "https://www.seatemperature.org/europe/italy/siracusa-june.htm",
+      "publisher": "World Sea Temperatures",
+      "scope": "June sea averages near 22.8°C (~73°F) at Siracusa and 21.7–23.1°C (72–74°F) at Taormina; historical averages, not daily readings."
+    },
+    "giardini-poseidon-prices": {
+      "label": "Giardini Poseidon Terme · official prices and rules",
+      "tier": "operator",
+      "url": "https://giardiniposeidonterme.com/en/preiseinfo-en/",
+      "publisher": "Giardini Poseidon Terme",
+      "scope": "2026 tariff: €50 adult full day, €45 from 1 p.m., ages 4–11 half price, 0–3 free; under-12s barred from thermal pools (seawater pools and beach allowed); 22 pools at 16–40°C; season Apr 18–Oct 31. 2027 tariff requires recheck."
+    },
+    "castello-aragonese-visit": {
+      "label": "Castello Aragonese · plan your visit",
+      "tier": "operator",
+      "url": "https://www.castelloaragoneseischia.com/en/plan-your-visit",
+      "publisher": "Castello Aragonese d'Ischia",
+      "scope": "Current tickets €12 adult, €6 ages 10–18, free 0–9; open daily 9:00–sunset with elevator and same-day re-entry. 2027 tariff requires recheck."
+    },
+    "united-ewr-nap-schedule": {
+      "label": "United EWR–Naples nonstop schedule data",
+      "tier": "historical-dataset",
+      "url": "https://www.flightconnections.com/flights-from-ewr-to-nap",
+      "publisher": "FlightConnections",
+      "scope": "June 2026 shows ~14 weekly EWR–NAP frequencies on 767-300 (~8h45m eastbound); historical seasonal pattern runs one daily from early May with a second daily from about Jun 23. June 2027 schedule not yet published."
+    },
+    "anm-alibus": {
+      "label": "ANM Alibus airport–port shuttle",
+      "tier": "official",
+      "url": "https://www.anm.it/s/alibus?language=en_US",
+      "publisher": "ANM Napoli",
+      "scope": "Official fare €5 per person one-way, departures every 15–30 minutes, airport to Molo Beverello in about 35 minutes; recheck fares and stops before 2027 travel."
+    },
+    "ischiareview-transport": {
+      "label": "Ischia Review · buses and taxis",
+      "tier": "observed-quote",
+      "url": "https://www.ischiareview.com/buses-in-ischia.html",
+      "publisher": "Ischia Review",
+      "scope": "Observed EAV fares: €1.70 single pre-purchased (€2.20 onboard), €5.10 day pass, €14.50 weekly; taxi minimum €15, port→Forio ~€32. Local observations, not an official tariff page."
+    },
+    "ischia-family-dining": {
+      "label": "Forio family-restaurant listings",
+      "tier": "observed-quote",
+      "url": "https://wanderlog.com/list/geoCategory/33785/best-family-restaurants-in-forio",
+      "publisher": "Wanderlog",
+      "scope": "Aggregated diner observations naming La Tinaia, Pizzeria Di Meglio and La Ruota as family-friendly Forio options with plain pizza/pasta; menus and operation require a 2027 recheck."
+    },
+    "weather-atlas-ischia": {
+      "label": "Weather Atlas · Ischia June climate",
+      "tier": "historical-dataset",
+      "url": "https://www.weather-atlas.com/en/italy/ischia-weather-june",
+      "publisher": "Weather Atlas",
+      "scope": "June normals: about 26°C/15°C (79°F/59°F) with ~27 mm of rain over ~7 trace-rain days; climatology, not a forecast."
+    },
+    "seatemperature-ischia": {
+      "label": "World Sea Temperature · Ischia June average",
+      "tier": "historical-dataset",
+      "url": "https://www.seatemperature.org/europe/italy/ischia-june.htm",
+      "publisher": "World Sea Temperatures",
+      "scope": "Ischia June average sea temperature ~23.3°C (74°F), rising toward 25°C late month; historical averages, not daily readings."
     }
   },
   "trips": [
