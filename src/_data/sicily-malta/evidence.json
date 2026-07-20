@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "sicily-malta",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -281,7 +281,8 @@
         "ryanair-cta-mla",
         "internal-itinerary",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -290,13 +291,14 @@
         "route": "CTA → MLA on a separate ticket",
         "dateWindow": "2027-06-20"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "ryanair-cta-mla": "Official Ryanair route page checked 2026-07-10 sells CTA–MLA on current dates; it does not confirm 2027-06-20",
         "internal-itinerary": "#air-travel and #decisions require CTA–MLA on 2027-06-20 after the Sicily car drop",
         "state-travel": "Italy Level 2 and Malta Level 1 advisories reviewed 2026-07-10",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Sicily & Malta; recheck before departure"
+        "cdc-travel": "CDC Travelers' Health destination guidance for Sicily & Malta; recheck before departure",
+        "google-flights-2027-audit": "Checked 2026-07-19: CTA-MLA verified - Ryanair/Malta Air x3 daily plus KM Malta/ITA nonstop (45-50 min, $45-137); MLA-PIT verified same-day single tickets (SWISS+United via ZRH+ORD 17h07 ~$1,630; Lufthansa+United ~16h; BA overnight ~$985)."
       },
       "claimType": "proxy"
     },

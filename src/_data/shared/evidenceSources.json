@@ -1910,5 +1910,26 @@
     "url": "https://www.seatemperature.org/europe/italy/ischia-june.htm",
     "publisher": "World Sea Temperatures",
     "scope": "Ischia June average sea temperature ~23.3°C (74°F), rising toward 25°C late month; historical averages, not daily readings."
+  },
+  "flightconnections-fao-pmo": {
+    "label": "FlightConnections: Faro–Palermo routings",
+    "tier": "secondary",
+    "url": "https://www.flightconnections.com/flights-from-fao-to-pmo",
+    "publisher": "FlightConnections",
+    "scope": "Schedule aggregation checked 2026-07-19: no FAO–PMO nonstop. Its theoretical shortest-flight-time routing (Madrid) is NOT sold as a convenient single ticket; Google Flights shows Vueling via Barcelona as the real fastest single-ticket one-stop. A current pattern, not a 2027 confirmation."
+  },
+  "vueling-fao-bcn-pmo": {
+    "label": "Vueling Faro–Barcelona–Palermo routing",
+    "tier": "operator",
+    "url": "https://www.vueling.com/en/flights-from-faro-to-palermo",
+    "scope": "Vueling operates FAO–BCN and BCN–PMO and sells the FAO→BCN→PMO connection as a single through-ticket via its Barcelona hub. Verified on Google Flights 2026-07-19 (~6h55, 1 stop, ~3h layover). Exact June-2027 day not yet in the booking window; Iberia/Madrid is NOT a FAO–PMO routing.",
+    "publisher": "Vueling"
+  },
+  "google-flights-2027-audit": {
+    "label": "Google Flights live booking-engine audit (June 2027 logistics)",
+    "tier": "official",
+    "url": "https://www.google.com/travel/flights",
+    "publisher": "Google Flights",
+    "scope": "Live sold-itinerary checks run 2026-07-19 across every ranked full trip: exact June 2027 dates where inside the booking window (PIT-KEF, PIT-ATH, PIT-LJU, PIT-FNC, EWR-FNC, PIT-HNL, PIT-OGG, KOA-PIT, PIT-FAO, LIS-CHQ), otherwise same-season Aug 2026 weekday proxies. Records actual carriers, hubs, single-ticket status, durations and one-adult fares as sold; supersedes aggregator route inference."
   }
 }

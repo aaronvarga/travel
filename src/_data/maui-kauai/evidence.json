@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "maui-kauai",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "evidenceBasis": "The score uses an internally reconciled 12-night route, official NOAA climate and water observations, current state/federal park rules, current operator pricing, official lodging-market ADRs and observed air-route/fare proxies. Exact June 2027 air, rooms, cars, boats and reservations remain explicitly unconfirmed.",
   "confidenceBasis": [
@@ -15,61 +15,82 @@
       "score": 1,
       "rationale": "The nine-line budget reconciles to $14,600–$21,600. Its low edge barely fits the $15,000 preference and the high case is materially above it; exact June 2027 quotes are unavailable, so the canonical rubric supports 1/5.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 4,
       "rationale": "NOAA June normals support hot, dry South Maui and warm Kauai touring, while Haleakala summit cold, windward-Hana rain and North Shore runoff prevent a near-guaranteed 5/5 conclusion.",
       "confidence": "high",
-      "evidence": ["climate-proxy"]
+      "evidence": [
+        "climate-proxy"
+      ]
     },
     "swim": {
       "score": 5,
       "rationale": "NOAA's Kahului June coastal mean is 78.8°F and the route repeatedly uses lifeguarded or operator-managed water days. Daily hazard, runoff and boat decisions remain mandatory but the underlying warm-water access fits 5/5.",
       "confidence": "high",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 4,
       "rationale": "The route strongly balances warm-water days and major landscapes, with smaller-town and food experiences in Kīhei, Upcountry, Hāna, Kōloa, Kīlauea and Hanalei. Culture/town depth is lighter than the existing Oahu plus Big Island route, supporting 4/5.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 3,
       "rationale": "Three bases, two base moves, one inter-island flight, two rental periods, a red-eye and the long Haleakala/Hana days create moderate deterministic load. Splitting Kauai south/north removes the worst repeated cross-island drives.",
       "confidence": "high",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 4,
       "rationale": "Current operator menus verify pizza, burgers, chicken, grilled cheese, fries and pasta in every base, while kitchens and groceries reduce restaurant dependence. Remote park/boat days still require packed food, so the fit is strong rather than exceptional.",
       "confidence": "high",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
       "rationale": "The route is structurally feasible, but June 2027 air remains unpublished and Hāʻena inventory, Nā Pali seas, Hāna roads, summit conditions and North Shore runoff are material single-day gates. Explicit buffers and alternatives keep the risk manageable at 3/5.",
       "confidence": "high",
-      "evidence": ["route-readiness", "reservation-conditions"]
+      "evidence": [
+        "route-readiness",
+        "reservation-conditions"
+      ]
     },
     "nights": {
       "score": 5,
       "rationale": "Twelve hotel nights derives 5/5 under the canonical nights rubric.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 2,
       "rationale": "Maui is explicitly on the visited-place list and is a material five-night repeat; Kauai is new. That matches the rubric's route-includes-visited-place level of 2/5.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 2,
       "rationale": "Nine PTO days derives 2/5 and has zero default weight. It becomes ten if the employer does not observe Juneteenth on Friday, June 18, 2027.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -78,7 +99,13 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "hawaii-dbedt-vacation-rentals-2026-05", "google-flights-pit-lih", "southwest-ogg-lih", "kauai-napali-capt-andys"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "hawaii-dbedt-vacation-rentals-2026-05",
+        "google-flights-pit-lih",
+        "southwest-ogg-lih",
+        "kauai-napali-capt-andys"
+      ],
       "value": {
         "lowUsd": 14600,
         "expectedUsd": 17950,
@@ -105,14 +132,21 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "internal-itinerary"],
+      "sourceRefs": [
+        "decision-profile",
+        "internal-itinerary"
+      ],
       "value": {
         "depart": "2027-06-10",
         "return": "2027-06-23",
         "hotelNights": 12,
         "ptoDays": 9,
         "ptoDaysWithoutObservedHoliday": 10,
-        "homeProtected": ["2027-06-24", "2027-06-25", "2027-06-26"]
+        "homeProtected": [
+          "2027-06-24",
+          "2027-06-25",
+          "2027-06-26"
+        ]
       },
       "verifiedAt": "2026-07-10",
       "expiresAt": null,
@@ -127,11 +161,28 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["maui-noaa-kahului-normals", "kauai-noaa-lihue-summary", "maui-haleakala-sunrise", "internal-itinerary"],
+      "sourceRefs": [
+        "maui-noaa-kahului-normals",
+        "kauai-noaa-lihue-summary",
+        "maui-haleakala-sunrise",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 4,
-        "temperatureF": [30, 88],
-        "juneMeanHighLowF": {"Kahului": [88.3, 70.3], "Lihue": [82.9, 72.3]},
+        "temperatureF": [
+          30,
+          88
+        ],
+        "juneMeanHighLowF": {
+          "Kahului": [
+            88.3,
+            70.3
+          ],
+          "Lihue": [
+            82.9,
+            72.3
+          ]
+        },
         "route": "Kihei, Haleakala, Hana, Poipu, Waimea/Kokee and Hanalei",
         "dateWindow": "2027-06-10 → 2027-06-23"
       },
@@ -150,13 +201,28 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["noaa-coastal-water-temperature", "kauai-pacioos-hanalei", "hawaii-ocean-safety", "kauai-ocean-safety", "internal-itinerary"],
+      "sourceRefs": [
+        "noaa-coastal-water-temperature",
+        "kauai-pacioos-hanalei",
+        "hawaii-ocean-safety",
+        "kauai-ocean-safety",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 5,
-        "temperatureF": [78, 80],
+        "temperatureF": [
+          78,
+          80
+        ],
         "hasSwim": true,
-        "historicalJuneF": {"KahuluiHarbor": 78.8},
-        "waterTypes": ["Pacific beaches", "operator-managed snorkel", "hotel pools"],
+        "historicalJuneF": {
+          "KahuluiHarbor": 78.8
+        },
+        "waterTypes": [
+          "Pacific beaches",
+          "operator-managed snorkel",
+          "hotel pools"
+        ],
         "dateWindow": "2027-06-10 → 2027-06-22"
       },
       "verifiedAt": "2026-07-10",
@@ -175,14 +241,28 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "score": 4,
         "hotelNights": 12,
         "bases": 3,
-        "basePattern": ["Kihei 5", "Poipu 4", "Princeville/Hanalei 3"],
-        "modes": ["warm water and recovery", "small towns and food", "volcanoes, canyons and coastal hiking"],
-        "balancePercent": {"water": 45, "towns": 25, "nature": 30},
+        "basePattern": [
+          "Kihei 5",
+          "Poipu 4",
+          "Princeville/Hanalei 3"
+        ],
+        "modes": [
+          "warm water and recovery",
+          "small towns and food",
+          "volcanoes, canyons and coastal hiking"
+        ],
+        "balancePercent": {
+          "water": 45,
+          "towns": 25,
+          "nature": 30
+        },
         "recoveryDays": 2
       },
       "verifiedAt": "2026-07-10",
@@ -197,7 +277,12 @@
       "category": "logistics",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "southwest-pit-ogg", "southwest-ogg-lih", "maui-hana-official"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "southwest-pit-ogg",
+        "southwest-ogg-lih",
+        "maui-hana-official"
+      ],
       "value": {
         "easeScore": 3,
         "maxConnections": 2,
@@ -225,12 +310,28 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["maui-family-menus", "kauai-family-menus", "internal-itinerary"],
+      "sourceRefs": [
+        "maui-family-menus",
+        "kauai-family-menus",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 4,
         "plainFoodRequired": true,
-        "verifiedBases": ["Kihei/Wailea", "Poipu/Koloa", "Princeville/Hanalei"],
-        "coverage": ["pizza", "burgers", "chicken tenders", "grilled cheese", "fries", "pasta", "grocery/self-catering"]
+        "verifiedBases": [
+          "Kihei/Wailea",
+          "Poipu/Koloa",
+          "Princeville/Hanalei"
+        ],
+        "coverage": [
+          "pizza",
+          "burgers",
+          "chicken tenders",
+          "grilled cheese",
+          "fries",
+          "pasta",
+          "grocery/self-catering"
+        ]
       },
       "verifiedAt": "2026-07-10",
       "expiresAt": "2027-04-01",
@@ -246,7 +347,13 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "southwest-pit-ogg", "google-flights-pit-lih", "southwest-ogg-lih"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "southwest-pit-ogg",
+        "google-flights-pit-lih",
+        "southwest-ogg-lih",
+        "google-flights-2027-audit"
+      ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
@@ -254,15 +361,22 @@
         "route": "PIT → OGG; OGG → LIH; LIH → PIT",
         "dateWindow": "2027-06-10 → 2027-06-23",
         "confirmed2027": false,
-        "bookingGates": ["same-day June 10 PIT-OGG arrival", "direct June 15 OGG-LIH timing", "protected June 22 LIH departure arriving PIT June 23", "three exact lodging totals", "two rental quotes"]
+        "bookingGates": [
+          "same-day June 10 PIT-OGG arrival",
+          "direct June 15 OGG-LIH timing",
+          "protected June 22 LIH departure arriving PIT June 23",
+          "three exact lodging totals",
+          "two rental quotes"
+        ]
       },
-      "verifiedAt": "2026-07-10",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "internal-itinerary": "#air-travel, #getting-around and #status define the open-jaw route, one hop, two cars and June 23 hard return",
         "southwest-pit-ogg": "Current airline route page supports connecting PIT-OGG feasibility but not exact June 2027 departure/arrival or price",
         "google-flights-pit-lih": "Current route page supports connecting Kauai-Pittsburgh service, no nonstop and long travel times; exact open-jaw return is unquoted",
-        "southwest-ogg-lih": "Current nonstop Maui-Kauai service proves the proposed island hop is structurally credible; June 2027 schedule is not published"
+        "southwest-ogg-lih": "Current nonstop Maui-Kauai service proves the proposed island hop is structurally credible; June 2027 schedule is not published",
+        "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-10: PIT-OGG sold as American single tickets via DFW (12h05, $333, lands 12:05 PM) and via PHX; Southwest June 2027 schedule not yet open and no LAX-hub itinerary currently sold. LIH-PIT 2027-06-22 beyond current window; KOA-PIT Jun 14 red-eye pattern verified on United."
       },
       "claimType": "proxy"
     },
@@ -271,10 +385,30 @@
       "category": "reservation",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["maui-haleakala-fees", "maui-waianapanapa", "kauai-waimea-canyon", "kauai-kokee", "kauai-napali-capt-andys", "kauai-haena-state-park", "kauai-gohaena", "kauai-ocean-safety"],
+      "sourceRefs": [
+        "maui-haleakala-fees",
+        "maui-waianapanapa",
+        "kauai-waimea-canyon",
+        "kauai-kokee",
+        "kauai-napali-capt-andys",
+        "kauai-haena-state-park",
+        "kauai-gohaena",
+        "kauai-ocean-safety"
+      ],
       "value": {
-        "hardReservations": ["Waianapanapa", "Kilauea Point", "Haena shuttle/entry"],
-        "conditionGates": ["Hana road and flash flooding", "Haleakala summit cold/cloud", "Na Pali sea state", "Waimea/Kokee road and lot status", "Haena trail closure", "Hanalei runoff/surf"],
+        "hardReservations": [
+          "Waianapanapa",
+          "Kilauea Point",
+          "Haena shuttle/entry"
+        ],
+        "conditionGates": [
+          "Hana road and flash flooding",
+          "Haleakala summit cold/cloud",
+          "Na Pali sea state",
+          "Waimea/Kokee road and lot status",
+          "Haena trail closure",
+          "Hanalei runoff/surf"
+        ],
         "haenaRelease": "30 days ahead at midnight HST under current rules",
         "napaliFamilyPriceUsd": 1020
       },
@@ -297,8 +431,19 @@
       "category": "novelty",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "scorecard-contract"],
-      "value": {"score": 2, "overlap": ["Maui"], "new": ["Kauai"]},
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 2,
+        "overlap": [
+          "Maui"
+        ],
+        "new": [
+          "Kauai"
+        ]
+      },
       "verifiedAt": "2026-07-10",
       "expiresAt": null,
       "sourceLocators": {
@@ -316,7 +461,10 @@
     "longestTransferHours": 15,
     "highOutputDayStreak": 2,
     "fallbackDays": 5,
-    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
     "lodgingComfort": {
       "airConditioning": "required in all three bases",
       "kitchen": "strongly preferred in all three bases",

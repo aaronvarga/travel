@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "greece-via-lisbon",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -53,8 +53,8 @@
       ]
     },
     "risk": {
-      "score": 1,
-      "rationale": "The return route is not supported as written on the required Tuesday 2027-06-22 date, creating a critical unresolved routing failure (1/5) until the itinerary is rebuilt.",
+      "score": 2,
+      "rationale": "The as-written Tuesday ATH-LIS return was unbookable and has been replaced with a CHQ-ATH-oneworld-gateway-PIT single ticket whose Tuesday pattern is verified sold (Google Flights 2026-07-19, ~19h, same-day arrival). June 2027 inventory is beyond the carriers’ booking window, so material (2/5) uncertainty remains until it loads.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -273,29 +273,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "reroute-required",
+      "proxyStatus": "exact-2027-schedule-required",
       "confidence": "high",
       "sourceRefs": [
         "aegean-ath-lis",
         "internal-itinerary",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "google-flights-2027-audit"
       ],
       "value": {
-        "status": "reroute-required",
+        "status": "exact-2027-schedule-required",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Crete → ATH → LIS → PIT return as written",
+        "route": "CHQ -> ATH -> oneworld US gateway (CLT/ORD/PHL) -> PIT on one Aegean/Sky Express + American ticket",
         "dateWindow": "2027-06-22",
         "requiredAction": "rebuild return via a published ATH–LIS date or another protected hub"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "aegean-ath-lis": "AEGEAN official fare calendar checked 2026-07-10 sells ATH–LIS on selected dates through April 2027 but does not publish or confirm 2027-06-22",
         "internal-itinerary": "#decisions explicitly says the current Tuesday ATH–LIS proxy does not operate and the return must be rebuilt",
         "state-travel": "Greece and Portugal Level 1 advisories reviewed 2026-07-10; Greece also flags summer heat/wildfire exposure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Greece via Lisbon; recheck before departure"
+        "cdc-travel": "CDC Travelers' Health destination guidance for Greece via Lisbon; recheck before departure",
+        "google-flights-2027-audit": "Rebuilt return checked 2026-07-19 (Tuesday Aug 18 proxy): CHQ-ATH-CLT-PIT sells as one Aegean/Sky Express + American ticket (18h46, lands PIT 9:11 PM same day, ~$1,123-1,237 pp). ATH-LIS Tuesday nonstops DO sell in peak summer but both arrive LIS too late for a same-day PIT connection, so the via-Lisbon return stays dead."
       },
       "claimType": "proxy"
     },

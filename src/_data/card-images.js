@@ -135,8 +135,8 @@ module.exports = {
     alt: 'São Miguel’s green volcanic calderas and jewel-like lakes seen from above',
   },
   'portugal-algarve-sicily': {
-    path: 'assets/img/portugal-algarve-sicily/img-d24952d35c93.jpg',
-    alt: 'Isola Bella glowing at twilight below Taormina’s Sicilian coast',
+    path: 'assets/img/portugal-algarve-sicily/google_benagil_interior_up_01L.jpg',
+    alt: 'The Benagil sea cave oculus, sunlight pouring through the sky-hole onto warm rock',
   },
   'portugal-crete': {
     path: 'assets/img/portugal-crete/g_elafonissi_wide.jpg',

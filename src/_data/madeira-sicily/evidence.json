@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-sicily",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -53,8 +53,8 @@
       ]
     },
     "risk": {
-      "score": 1,
-      "rationale": "Madeira wind exposure plus a separate-ticket, less-than-daily LIS–PMO dependency and no same-day recovery option form a critical single point of failure. Exact June 2027 operation is mandatory before booking.",
+      "score": 2,
+      "rationale": "Verified 2026-07-19: the Tuesday easyJet LIS-PMO nonstop is selling in the current pattern and same-day one-stop backups (Vueling via BCN, TAP+ITA via FCO) are sold daily, so the no-same-day-recovery assumption behind 1/5 no longer holds. Madeira wind plus a separate-ticket, less-than-daily nonstop still cap this at 2/5 until June 2027 loads.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -311,7 +311,8 @@
       "sourceRefs": [
         "easyjet-lis-pmo",
         "ana-madeira-wind-operations",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -321,12 +322,13 @@
         "june2027Verified": false,
         "mandatoryBuffer": "Lisbon"
       },
-      "verifiedAt": "2026-07-10",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-10-31",
       "sourceLocators": {
         "easyjet-lis-pmo": "Operator August 2026 timetable observed Tuesday/Friday service; exact June 2027 dates absent",
         "ana-madeira-wind-operations": "Official historical example of wind disruption at Madeira Airport",
-        "internal-itinerary": "madeira-sicily/main.json air section calls LIS–PMO an easyJet monopoly and keeps a Lisbon buffer"
+        "internal-itinerary": "madeira-sicily/main.json air section calls LIS–PMO an easyJet monopoly and keeps a Lisbon buffer",
+        "google-flights-2027-audit": "Checked 2026-07-19: easyJet LIS-PMO nonstop confirmed selling on Tuesday ($307, 3h); Monday not served; same-day one-stop backups sold daily (Vueling via BCN, TAP+ITA via FCO), so a same-day recovery path exists. United EWR-FNC sold for exact 2027-06-08."
       },
       "claimType": "proxy"
     },

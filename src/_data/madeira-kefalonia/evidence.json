@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-kefalonia",
-  "reviewedAt": "2026-07-12",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -316,7 +316,8 @@
         "ana-madeira-wind-operations",
         "aegean-kefalonia-official",
         "eu-etias",
-        "navagio-2026-status"
+        "navagio-2026-status",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -327,13 +328,14 @@
         "etias": "Current EU rule is €20 for eligible adults and exemption for children; activation is scheduled before the trip but needs final confirmation.",
         "navagioLanding": "unknown for 2027"
       },
-      "verifiedAt": "2026-07-12",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-10-31",
       "sourceLocators": {
         "ana-madeira-wind-operations": "Official ANA disruption notice documents strong-wind operational sensitivity at Madeira Airport; it supports the need for protected/rebookable routing, not a 2027 probability.",
         "aegean-kefalonia-official": "Official Aegean destination/route page shows ATH–EFL is a current service; June 2027 inventory, frequency and through-ticket protection require a live quote.",
         "eu-etias": "Official EU ETIAS guidance says operations are scheduled for late 2026 and the application fee is €20; eligibility/launch must be reconfirmed for June 2027.",
-        "navagio-2026-status": "2026 closure reporting supports a view-only/conservative boat plan; it cannot establish the eventual 2027 cove-access decision."
+        "navagio-2026-status": "2026 closure reporting supports a view-only/conservative boat plan; it cannot establish the eventual 2027 cove-access decision.",
+        "google-flights-2027-audit": "Checked 2026-07-19: ATH-EFL verified 4 nonstops/day (Aegean/Olympic + Sky Express, 1h-1h15, $97-202); United EWR-FNC nonstop sold for exact 2027-06-08."
       },
       "claimType": "proxy"
     },

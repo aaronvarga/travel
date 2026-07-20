@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-sicily",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -53,8 +53,8 @@
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "The separate-ticket LIS–PMO hinge and current operating-day mismatch create material unresolved exposure (2/5) until the exact Monday 2027-06-14 transfer is confirmed or redesigned.",
+      "score": 3,
+      "rationale": "The LIS-PMO hinge is no longer day-mismatched: Monday one-stop single tickets (Vueling via BCN, TAP+ITA via FCO) are sold in the current pattern, verified on Google Flights 2026-07-19. Residual exposure is the unpublished June 2027 schedule and the separate-ticket hinge, so 3/5 rather than higher.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -294,7 +294,8 @@
         "easyjet-lis-pmo",
         "internal-itinerary",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -305,13 +306,14 @@
         "currentOperatorPattern": "Tuesday/Friday in the checked August 2026 timetable",
         "requiredWeekday": "Monday"
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "easyjet-lis-pmo": "Official easyJet timetable checked 2026-07-10 shows no Monday service in the displayed August 2026 pattern and does not publish June 2027; this proves the current plan needs exact-date verification or a one-stop fallback",
         "internal-itinerary": "#air-travel requires a Monday 2027-06-14 LIS–PMO handoff and explicitly treats it as the route hinge",
         "state-travel": "Portugal Level 1 (issued 2025-12-23) and Italy Level 2 (issued 2025-05-23), both reviewed 2026-07-10; recheck before booking/departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Portugal + Sicily; recheck before departure"
+        "cdc-travel": "CDC Travelers' Health destination guidance for Portugal + Sicily; recheck before departure",
+        "google-flights-2027-audit": "Checked 2026-07-19 (Monday Aug 17 proxy): Monday LIS-PMO has NO nonstop and no easyJet at all; sold Monday single tickets are Vueling+Iberia via BCN (6h35, ~$248) and TAP+ITA via FCO (5h50-7h, ~$306). Tuesday easyJet nonstop confirmed selling ($307, 3h)."
       },
       "claimType": "proxy"
     },

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "hawaii",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-20",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -295,21 +295,22 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
         "uss-arizona-programs",
         "hanauma-reservations",
-        "hawaii-volcanoes-conditions"
+        "hawaii-volcanoes-conditions",
+        "google-flights-2027-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 2,
         "route": "PIT → HNL; HNL → KOA; KOA → PIT",
         "dateWindow": "2027-06-05 → 2027-06-15",
-        "confirmed2027": false,
+        "confirmed2027": true,
         "bookingGates": [
           "protected PIT/HNL and KOA/PIT fares",
           "HNL/KOA schedule",
@@ -318,13 +319,14 @@
           "volcano, vog and closure check"
         ]
       },
-      "verifiedAt": "2026-07-10",
+      "verifiedAt": "2026-07-20",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
         "uss-arizona-programs": "NPS current rule: free reservations release daily at 3 pm HST in 8-week and 24-hour windows; $1 Recreation.gov fee; programs remain weather/repair dependent",
         "hanauma-reservations": "City and County of Honolulu reservation system/audit: online inventory opens two days ahead at 7:00 am HST; operating rules must be rechecked for 2027",
-        "hawaii-volcanoes-conditions": "NPS Alerts & Conditions: eruption, volcanic gas, construction, parking and temporary area closures require a current check"
+        "hawaii-volcanoes-conditions": "NPS Alerts & Conditions: eruption, volcanic gas, construction, parking and temporary area closures require a current check",
+        "google-flights-2027-audit": "All three route legs verified SOLD for the exact trip dates on Google Flights 2026-07-19/20: PIT-HNL 2027-06-05 one-stop single tickets $382-572 (Alaska via SEA lands 3:05 PM; American via DFW lands 12:20 PM); HNL-KOA 2027-06-09 with 17 nonstops (Hawaiian/Alaska, 46 min, $75-125); KOA-PIT 2027-06-14 United red-eye via LAX 10:15 PM-4:44 PM+1 ($303). Route is bookable today; remaining gates are fare protection and activity reservations, not schedules."
       },
       "claimType": "proxy"
     },

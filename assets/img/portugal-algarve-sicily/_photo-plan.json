@@ -1,338 +1,68 @@
 {
+  "_note": "5 distinct landscape photos per carousel, 45 total, no image reused across carousels. New downloads sourced via Google Images -> Unsplash/Pexels; existing reuse credited to the trip gallery. Portrait candidates were center-cropped to 3:2 (files ending L).",
   "carousels": {
-    "c-cascais": [
-      {
-        "file": "img-3b917af417c4.jpg",
-        "alt": "Cascais coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cascais coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "img-cc9369324679.jpg",
-        "alt": "Cascais coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cascais coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_cascais_bay_aerial_01.jpg",
-        "alt": "Cascais coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cascais coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_cascais_boca_01.jpg",
-        "alt": "Cascais coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cascais coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_sintra_adraga_coast_01.jpg",
-        "alt": "Cascais coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cascais coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      }
+    "c-arrive": [
+      { "file": "google_carvoeiro_cliffs_01.jpg", "captionTitle": "Carvoeiro cove", "alt": "Carvoeiro's whitewashed town above its turquoise cove", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_carvoeiro_coast_04.jpg", "captionTitle": "Carvoeiro beach", "alt": "Carvoeiro beach framed by ochre cliffs and white houses", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_ferragudo_castle_01.jpg", "captionTitle": "Ferragudo castle", "alt": "Sao Joao do Arade castle on the water at Ferragudo", "credit": "Nils Rotura · Pexels License" },
+      { "file": "google_ferragudo_aerial_01.jpg", "captionTitle": "Ferragudo coast", "alt": "Golden-hour aerial of the Ferragudo coastline and lighthouse pier", "credit": "Gantas · Pexels License" },
+      { "file": "google_algarve_cliff_beach_01.jpg", "captionTitle": "Algarve cove", "alt": "A cliff-ringed Algarve beach cove seen from above", "credit": "SuRu · Unsplash License" }
     ],
-    "c-carvoeiro": [
-      {
-        "file": "google_carvoeiro_coast_04.jpg",
-        "alt": "Carvoeiro cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Carvoeiro cliffs",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_praia_marinha_epic_03.jpg",
-        "alt": "Carvoeiro cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Carvoeiro cliffs",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_benagil_above_01.jpg",
-        "alt": "Carvoeiro cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Carvoeiro cliffs",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_benagil_water_03.jpg",
-        "alt": "Carvoeiro cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Carvoeiro cliffs",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_carvoeiro_cliffs_01.jpg",
-        "alt": "Carvoeiro cliffs — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Carvoeiro cliffs",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      }
+    "c-benagil": [
+      { "file": "google_benagil_interior_up_01L.jpg", "captionTitle": "Benagil oculus", "alt": "The Benagil cave sky-hole seen from inside, sunlight on warm rock", "credit": "Vince · Pexels License" },
+      { "file": "archive_benagil_water_03.jpg", "captionTitle": "Benagil from the water", "alt": "Benagil sea cave and cliffs seen from a boat", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_benagil_beach_04.jpg", "captionTitle": "Inside the cave", "alt": "The sandy beach inside the Benagil cave under its arches", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_benagil_above_01.jpg", "captionTitle": "Benagil from above", "alt": "Aerial of the Benagil cave showing the collapsed-roof sky-hole", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_benagil_aerial_hole_01.jpg", "captionTitle": "Benagil coast", "alt": "Aerial of the Benagil cave mouth and surrounding cliffs", "credit": "Mo Eid · Pexels License" }
     ],
     "c-lagos": [
-      {
-        "file": "google_ponta_piedade_lagos_01.jpg",
-        "alt": "Ponta da Piedade — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Ponta da Piedade",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_ponta_piedade_arches_02.jpg",
-        "alt": "Ponta da Piedade — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Ponta da Piedade",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_lagos_piedade_03.jpg",
-        "alt": "Ponta da Piedade — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Ponta da Piedade",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_praia_marinha_arch_02.jpg",
-        "alt": "Ponta da Piedade — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Ponta da Piedade",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_benagil_beach_04.jpg",
-        "alt": "Ponta da Piedade — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Ponta da Piedade",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      }
+      { "file": "google_ponta_kayaks_01L.jpg", "captionTitle": "Ponta da Piedade", "alt": "Golden sea stacks and turquoise water with kayaks at Ponta da Piedade", "credit": "Julie Aagaard · Pexels License" },
+      { "file": "google_ponta_piedade_lagos_01.jpg", "captionTitle": "Ponta grottoes", "alt": "The grottoes and cliffs of Ponta da Piedade near Lagos", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_ponta_piedade_arches_02.jpg", "captionTitle": "Ponta arches", "alt": "Natural sandstone sea arches at Ponta da Piedade", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_ponta_arch_close_01.jpg", "captionTitle": "Sea arch", "alt": "A golden sandstone arch over turquoise water at Ponta da Piedade", "credit": "Leo Pekaar · Pexels License" },
+      { "file": "archive_lagos_piedade_03.jpg", "captionTitle": "Lagos cliffs", "alt": "Sandstone cliffs and clear water on the Lagos coast", "credit": "Existing self-hosted trip gallery" }
     ],
-    "c-water": [
-      {
-        "file": "slide_splash_waterpark_cand_06.jpg",
-        "alt": "Algarve water day — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Algarve water day",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_slide_splash_01.jpg",
-        "alt": "Algarve water day — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Algarve water day",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_slide_splash_02.jpg",
-        "alt": "Algarve water day — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Algarve water day",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_slide_splash_05.jpg",
-        "alt": "Algarve water day — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Algarve water day",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_benagil_water_03.jpg",
-        "alt": "Algarve water day — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Algarve water day",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      }
+    "c-carvoeiro": [
+      { "file": "google_praia_marinha_epic_03.jpg", "captionTitle": "Praia da Marinha", "alt": "Praia da Marinha rock formations and turquoise water at its finest", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_praia_marinha_arch_02.jpg", "captionTitle": "Marinha arch", "alt": "The famous double rock arch at Praia da Marinha", "credit": "Existing self-hosted trip gallery" },
+      { "file": "slide_splash_waterpark_cand_06.jpg", "captionTitle": "Kid-first water day", "alt": "Waterpark slides, the deliberate release-valve afternoon", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_slide_splash_01.jpg", "captionTitle": "Slide & Splash", "alt": "Family waterpark pools and slides", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_slide_splash_05.jpg", "captionTitle": "Pool afternoon", "alt": "Waterpark lagoon and slides on a hot afternoon", "credit": "Existing self-hosted trip gallery" }
+    ],
+    "c-sagres": [
+      { "file": "google_saovicente_sunset_02L.jpg", "captionTitle": "Cabo sunset", "alt": "The sun setting over the Atlantic at Cabo de Sao Vicente", "credit": "Johannes Mandle · Unsplash License" },
+      { "file": "google_saovicente_cliff_03.jpg", "captionTitle": "Cabo de Sao Vicente", "alt": "Golden-hour cliffs meeting the ocean at Cabo de Sao Vicente", "credit": "Johannes Mandle · Unsplash License" },
+      { "file": "google_sagres_cliffs_05.jpg", "captionTitle": "Sagres cliffs", "alt": "Dramatic Sagres cliffs above the deep-blue Atlantic", "credit": "Nils Rotura · Pexels License" },
+      { "file": "google_sagres_sunset_04L.jpg", "captionTitle": "Sagres coast", "alt": "Sea stacks and cliffs along the Sagres coast at dusk", "credit": "Sergei · Pexels License" },
+      { "file": "algarve_saovicente_sunset_01.jpg", "captionTitle": "Edge of Europe", "alt": "A couple silhouetted at sunset on the cliffs of Cabo de Sao Vicente", "credit": "Junior · Unsplash License" }
+    ],
+    "c-alvor": [
+      { "file": "google_praia_rocha_beach_02.jpg", "captionTitle": "Praia da Rocha", "alt": "Praia da Rocha wide beach and ochre rock stacks", "credit": "Jeffrey Eisen · Unsplash License" },
+      { "file": "algarve_alvor_aerial_01.jpg", "captionTitle": "Alvor from above", "alt": "Aerial of Alvor beach and rock formations", "credit": "Ian Carlo Bottinelli Wolleter · Pexels License" },
+      { "file": "algarve_alvor_sunset_02.jpg", "captionTitle": "Alvor sunset", "alt": "Alvor beach at golden hour", "credit": "Theo Tkachuk · Pexels License" },
+      { "file": "google_alvor_estuary_02.jpg", "captionTitle": "Alvor estuary", "alt": "Golden-hour boats on the Alvor estuary", "credit": "Alexandre Quintas · Pexels License" },
+      { "file": "google_lagoa_aerial_01L.jpg", "captionTitle": "Turquoise coast", "alt": "Drone view of turquoise water and golden cliffs on the Lagoa coast", "credit": "Mo Eid · Pexels License" }
     ],
     "c-cefalu": [
-      {
-        "file": "img-7c2d10f9db96.jpg",
-        "alt": "Cefalù coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cefalù coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "img-cab8d79d0cd9.jpg",
-        "alt": "Cefalù coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cefalù coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "img-0ab89c6be247.jpg",
-        "alt": "Cefalù coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cefalù coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_cefalu_aerial_01_2.jpg",
-        "alt": "Cefalù coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cefalù coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_cefalu_rocca_trail_01.jpg",
-        "alt": "Cefalù coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cefalù coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_cefalu_waterfront_01.jpg",
-        "alt": "Cefalù coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cefalù coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_cefalu_dusk_01.jpg",
-        "alt": "Cefalù coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Cefalù coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      }
+      { "file": "google_cefalu_oldtown_01.jpg", "captionTitle": "Cefalu old town", "alt": "Elevated view of Cefalu old town and beach curve under La Rocca", "credit": "Jacek Dylag · Unsplash License" },
+      { "file": "google_cefalu_dusk_02.jpg", "captionTitle": "Cefalu at dusk", "alt": "Cefalu seaside houses glowing at dusk", "credit": "Mikael Dubarry · Pexels License" },
+      { "file": "google_cefalu_aerial_02.jpg", "captionTitle": "Cefalu coast", "alt": "Aerial of Cefalu marina and coastline in vivid blue water", "credit": "Verolova · Pexels License" },
+      { "file": "archive_cefalu_dusk_01.jpg", "captionTitle": "La Rocca headland", "alt": "La Rocca headland and Cefalu old town under pink dusk clouds", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_cefalu_larocca_beach_01.jpg", "captionTitle": "Cefalu beach", "alt": "The Cefalu beach curve beneath the La Rocca headland", "credit": "Existing self-hosted trip gallery" }
     ],
     "c-taormina": [
-      {
-        "file": "img-d24952d35c93.jpg",
-        "alt": "Taormina coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Taormina coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_taormina_viewpoint_01.jpg",
-        "alt": "Taormina coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Taormina coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_taormina_coast_01.jpg",
-        "alt": "Taormina coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Taormina coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_isola_bella_kayak_01.jpg",
-        "alt": "Taormina coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Taormina coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_taormina_isola_bella_01.jpg",
-        "alt": "Taormina coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Taormina coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_cefalu_larocca_beach_01.jpg",
-        "alt": "Taormina coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Taormina coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "img-cab8d79d0cd9.jpg",
-        "alt": "Taormina coast — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Taormina coast",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      }
+      { "file": "archive_taormina_isola_bella_01.jpg", "captionTitle": "Isola Bella", "alt": "Taormina Isola Bella island beach and turquoise bay", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_isola_bella_kayak_01.jpg", "captionTitle": "Isola Bella bay", "alt": "Isola Bella seen from the water", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_taormina_coast_01.jpg", "captionTitle": "Taormina coast", "alt": "The Ionian coast below Taormina", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_taormina_viewpoint_01.jpg", "captionTitle": "Taormina view", "alt": "View over the Taormina coast and bay", "credit": "Existing self-hosted trip gallery" },
+      { "file": "img-d24952d35c93.jpg", "captionTitle": "Ionian bay", "alt": "The Taormina coast and Ionian Sea", "credit": "Existing self-hosted trip gallery" }
     ],
     "c-etna": [
-      {
-        "file": "img-21cff50679e4.jpg",
-        "alt": "Mount Etna — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Mount Etna",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_etna_ridge_01.jpg",
-        "alt": "Mount Etna — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Mount Etna",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "google_etna_volcanic_trail_01.jpg",
-        "alt": "Mount Etna — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Mount Etna",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_etna_sunset_01.jpg",
-        "alt": "Mount Etna — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Mount Etna",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "archive_etna_lava_01.jpg",
-        "alt": "Mount Etna — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Mount Etna",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      },
-      {
-        "file": "img-7c2d10f9db96.jpg",
-        "alt": "Mount Etna — a high-impact landscape view selected from the self-hosted trip gallery.",
-        "captionTitle": "Mount Etna",
-        "credit": "Existing self-hosted trip gallery",
-        "sourcePage": "Local self-hosted trip gallery",
-        "discoveredVia": "Existing verified self-hosted asset"
-      }
+      { "file": "archive_etna_sunset_01.jpg", "captionTitle": "Etna at sunset", "alt": "Mount Etna glowing over the Sicilian coast at sunset", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_etna_ridge_01.jpg", "captionTitle": "Etna ridge", "alt": "Etna ridge above the coast", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_etna_volcanic_trail_01.jpg", "captionTitle": "Volcanic trail", "alt": "A trail across Etna volcanic slopes", "credit": "Existing self-hosted trip gallery" },
+      { "file": "google_etna_south_crater_01.jpg", "captionTitle": "Silvestri craters", "alt": "The Silvestri craters on Etna south slope", "credit": "Existing self-hosted trip gallery" },
+      { "file": "archive_etna_funivia_01.jpg", "captionTitle": "Etna cable car", "alt": "The Funivia dell Etna cable car on the upper slopes", "credit": "Existing self-hosted trip gallery" }
     ]
   }
 }

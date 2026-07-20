@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "dolomites-sardinia",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -280,7 +280,8 @@
         "dolomiti-lifts-2026",
         "internal-itinerary",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -293,14 +294,15 @@
           "2027 mountain lift calendar"
         ]
       },
-      "verifiedAt": "2026-07-09",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "volotea-vce-olb": "Official Volotea route page checked 2026-07-10 markets nonstop Venice–Olbia; July 2027 timetable not published",
         "dolomiti-lifts-2026": "Official 2026 Val Gardena lift calendar shows key lifts open through analogous dates; 2027 dates remain unpublished and weather-dependent",
         "internal-itinerary": "#air-travel and #decisions require VCE–OLB between the Dolomites and Sardinia legs",
         "state-travel": "Italy Level 2 advisory reviewed 2026-07-10",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Venice, Dolomites & Sardinia; recheck before departure"
+        "cdc-travel": "CDC Travelers' Health destination guidance for Venice, Dolomites & Sardinia; recheck before departure",
+        "google-flights-2027-audit": "Checked 2026-07-19: Volotea VCE-OLB nonstop verified (1h25, x2 on checked Aug Thursday, from $36); OLB-PIT Sunday return verified sold as ONE ticket - British Airways+American via LHR, 14h35, lands PIT 7:55 PM same day (~$843, Aug 2026 proxy). Jul 2027 beyond window."
       },
       "claimType": "proxy"
     },

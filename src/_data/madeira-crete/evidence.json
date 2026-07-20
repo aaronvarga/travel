@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-crete",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -313,7 +313,8 @@
         "aegean-lisbon-athens",
         "aegean-athens-crete",
         "internal-itinerary",
-        "visit-madeira-hiking"
+        "visit-madeira-hiking",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -324,14 +325,15 @@
         "trailReservationsRequired": true,
         "singleTicket": false
       },
-      "verifiedAt": "2026-07-10",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-10-31",
       "sourceLocators": {
         "ana-madeira-wind-operations": "ANA official notice documents strong-wind flight disruption at Madeira; historical example only",
         "aegean-lisbon-athens": "Operator currently sells LIS–ATH but not the exact June 14, 2027 chain",
         "aegean-athens-crete": "Operator current route calendar includes ATH–CHQ/HER",
         "internal-itinerary": "madeira-crete/main.json Plan Health-Check mandates Lisbon wind buffer and protected tickets",
-        "visit-madeira-hiking": "Official 2026 rules require timed reservation for all classified PR trails and live status checks"
+        "visit-madeira-hiking": "Official 2026 rules require timed reservation for all classified PR trails and live status checks",
+        "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop sold for exact 2027-06-08; LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55 total, 1h10 ATH connection, ~$440); Aegean June 2027 inventory not yet loaded."
       },
       "claimType": "proxy"
     },

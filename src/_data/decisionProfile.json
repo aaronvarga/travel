@@ -226,7 +226,7 @@
   "routeReadiness": {
     "maui-kauai": "current-proxy",
     "greece-ionian": "current-proxy",
-    "greece-via-lisbon": "reroute-required",
+    "greece-via-lisbon": "exact-2027-schedule-required",
     "iceland": "exact-2027-schedule-required",
     "iceland-ischia-cilento": "exact-2027-schedule-required",
     "short-iceland": "exact-2027-schedule-required",
@@ -255,6 +255,7 @@
     "greece-cyclades": "current-proxy",
     "short-alaska": "current-proxy",
     "short-sicily": "current-proxy",
-    "short-ischia": "current-proxy"
+    "short-ischia": "current-proxy",
+    "hawaii": "confirmed"
   }
 }

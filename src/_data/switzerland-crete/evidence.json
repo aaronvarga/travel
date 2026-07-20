@@ -1,68 +1,88 @@
 {
   "schemaVersion": 1,
   "slug": "switzerland-crete",
-  "reviewedAt": "2026-07-11",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
       "rationale": "The eight categories reconcile exactly to $14,120–$19,440. The entire band is above the $12k target and the high case is $4,440 above the $15k preferred maximum. Switzerland's rail, lodging, and mountain-excursion costs drive this; the transatlantic open-jaw is proxy arithmetic, not a live quote.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 3,
       "rationale": "A genuine split: Crete's Chania coast is hot and dry in June (~84°F highs), but the Berner Oberland sees rain on well over half of June days and Jungfraujoch can white out. The blended score reflects the real risk on the two marquee summit days.",
       "confidence": "medium",
-      "evidence": ["climate-split"]
+      "evidence": [
+        "climate-split"
+      ]
     },
     "swim": {
       "score": 4,
       "rationale": "The seven Crete nights deliver a strong ~73–75°F Aegean with calm shallow lagoons at Balos and Elafonissi — the same warm-water week that scores 4 on the Crete-peer trips. By family decision the swim-free Swiss leg is an accepted split tradeoff (its job is epic scenery and hiking, not swimming), so the axis is not docked for it; it stays at 4 rather than 5 only because the Alpine half has no swimming at all.",
       "confidence": "medium",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 5,
       "rationale": "A 3,454 m glacier summit, alpine cliff walks, and waterfall valleys paired with Venetian harbors, pink-sand lagoons, and Cretan gorges is the widest contrast on the board.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 2,
       "rationale": "Two countries, an open-jaw ticket with a European connection each way, an intra-Europe flight, a ~2h20 arrival transfer, and a Crete rental car. Switzerland's rail simplicity and a single base per leg keep it from scoring lower.",
       "confidence": "high",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 4,
       "rationale": "Both legs are easy for picky eaters: Swiss villages and Chania both have full supermarkets plus reliable pizza/pasta/burger options. Switzerland is expensive, but cost is scored under budget, not food.",
       "confidence": "high",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 2,
       "rationale": "The open-jaw fare is 2026-proxy arithmetic with no live 2027 quote, the ZRH–Crete nonstop schedule for June 2027 is not yet loaded, Jungfraujoch weather can cancel the marquee day, and the Chania nonstop from Zurich is weekly-only.",
       "confidence": "high",
-      "evidence": ["route-readiness"]
+      "evidence": [
+        "route-readiness"
+      ]
     },
     "nights": {
       "score": 5,
       "rationale": "Twelve hotel nights derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 5,
       "rationale": "The Berner Oberland and Crete do not overlap the documented visited-place list, and the Alpine biome is unlike anything else on the board, deriving 5/5.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 3,
       "rationale": "Eight PTO days derive 3/5 under the slider rubric and have zero default weight; Juneteenth observed (Fri Jun 18) is used as a no-PTO active day.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +91,10 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "jungfrau-railways"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "jungfrau-railways"
+      ],
       "value": {
         "lowUsd": 14120,
         "expectedUsd": null,
@@ -95,7 +118,10 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "decision-profile"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "decision-profile"
+      ],
       "value": {
         "depart": "2027-06-08",
         "homeBy": "2027-06-22",
@@ -117,12 +143,18 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["swiss-alps-june-climate", "meteo-heraklion-climate"],
+      "sourceRefs": [
+        "swiss-alps-june-climate",
+        "meteo-heraklion-climate"
+      ],
       "value": {
         "berneseOberlandJuneHighF": 63,
         "berneseOberlandJuneLowF": 47,
         "berneseOberlandRainDayChance": "~57%",
-        "jungfraujochSummitF": [28, 36],
+        "jungfraujochSummitF": [
+          28,
+          36
+        ],
         "creteJuneHighF": 84,
         "note": "Alpine valley is mild but wet with frequent afternoon showers; the summit is near freezing even in June. Crete's Chania coast is hot and dry. Marquee summit days are built to flex to the clearest morning."
       },
@@ -139,14 +171,31 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["visit-greece-crete", "meteo-heraklion-climate", "swiss-alps-june-climate"],
+      "sourceRefs": [
+        "visit-greece-crete",
+        "meteo-heraklion-climate",
+        "swiss-alps-june-climate"
+      ],
       "value": {
         "score": 4,
-        "temperatureF": [72, 75],
+        "temperatureF": [
+          72,
+          75
+        ],
         "hasSwim": true,
-        "creteSeaTempF": [73, 75],
-        "lakeBrienzTempF": [57, 64],
-        "shelteredSites": ["Balos Lagoon", "Elafonissi Lagoon", "Nea Chora / Agii Apostoli"],
+        "creteSeaTempF": [
+          73,
+          75
+        ],
+        "lakeBrienzTempF": [
+          57,
+          64
+        ],
+        "shelteredSites": [
+          "Balos Lagoon",
+          "Elafonissi Lagoon",
+          "Nea Chora / Agii Apostoli"
+        ],
         "note": "All real swimming is on Crete: warm Aegean with calm shallow lagoons at Balos and Elafonissi. Lake Brienz is glacier-fed and look-only in June."
       },
       "verifiedAt": "2026-07-11",
@@ -163,11 +212,27 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "bases": 2,
-        "swissStops": ["Jungfraujoch", "Grindelwald-First", "Lauterbrunnen", "Männlichen", "Lake Brienz"],
-        "creteStops": ["Chania", "Balos", "Elafonissi", "Imbros Gorge", "Rethymno", "Preveli", "Samaria (optional)"],
+        "swissStops": [
+          "Jungfraujoch",
+          "Grindelwald-First",
+          "Lauterbrunnen",
+          "Männlichen",
+          "Lake Brienz"
+        ],
+        "creteStops": [
+          "Chania",
+          "Balos",
+          "Elafonissi",
+          "Imbros Gorge",
+          "Rethymno",
+          "Preveli",
+          "Samaria (optional)"
+        ],
         "note": "Alps, lakes, gorges, harbors, and lagoons across two countries in 12 nights."
       },
       "verifiedAt": "2026-07-11",
@@ -182,7 +247,10 @@
       "category": "logistics",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "edelweiss-zrh-crete"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "edelweiss-zrh-crete"
+      ],
       "value": {
         "baseMoves": 1,
         "countries": 2,
@@ -206,7 +274,10 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["lidl-chania", "internal-itinerary"],
+      "sourceRefs": [
+        "lidl-chania",
+        "internal-itinerary"
+      ],
       "value": {
         "note": "Chania has full supermarkets (Lidl and others) plus tavernas with kid-safe options; Swiss villages have Coop/Migros and reliable pizza/pasta. Both legs are picky-eater friendly; Switzerland is expensive but that sits under budget."
       },
@@ -223,7 +294,12 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["edelweiss-zrh-crete", "eu-etias", "internal-itinerary"],
+      "sourceRefs": [
+        "edelweiss-zrh-crete",
+        "eu-etias",
+        "internal-itinerary",
+        "google-flights-2027-audit"
+      ],
       "value": {
         "status": "current-proxy",
         "singleTicket": false,
@@ -235,12 +311,13 @@
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required for the Schengen legs",
         "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Crete day once 2027 inventory opens."
       },
-      "verifiedAt": "2026-07-11",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "edelweiss-zrh-crete": "ZRH-HER and ZRH-CHQ nonstop existence and frequency",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
-        "internal-itinerary": "Open-jaw construction and homebound-via-Athens plan"
+        "internal-itinerary": "Open-jaw construction and homebound-via-Athens plan",
+        "google-flights-2027-audit": "Checked 2026-07-19: ZRH-HER verified with 4 nonstops on the checked Aug Tuesday (Edelweiss x2, Condor, Chair Airlines; 2h50, from $209)."
       },
       "claimType": "proxy"
     },
@@ -249,7 +326,10 @@
       "category": "novelty",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "scorecard-contract"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "scorecard-contract"
+      ],
       "value": {
         "overlap": "none",
         "note": "Neither the Berner Oberland nor Crete overlaps the documented visited-place list; the Alpine biome is unique on the board."
@@ -264,14 +344,17 @@
     }
   ],
   "metrics": {
-    "airHours": 24.0,
-    "groundHours": 18.0,
+    "airHours": 24,
+    "groundHours": 18,
     "timeZones": 6,
     "baseMoves": 1,
     "longestTransferHours": 12,
     "highOutputDayStreak": 3,
     "fallbackDays": 2,
-    "childActivityFit": { "age13": "fits", "age8": "fits" },
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
     "lodgingComfort": {
       "airConditioning": "unknown until property selection",
       "kitchen": "planned in both main bases but unconfirmed",

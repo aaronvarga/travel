@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -320,7 +320,8 @@
       "confidence": "high",
       "sourceRefs": [
         "tap-faro-funchal",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -333,11 +334,12 @@
         "protectedOpenJawVerified": false,
         "singleTicket": false
       },
-      "verifiedAt": "2026-07-10",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-10-31",
       "sourceLocators": {
         "tap-faro-funchal": "TAP fare calendar observed 2026-07-10 displayed FAO–FNC round trip June 13–19, 2027 from €221; page did not establish nonstop operation on June 18 or ticket protection",
-        "internal-itinerary": "portugal/main.json Plan Health-Check identifies FAO→FNC as the fragile joint and requires it to anchor the dates"
+        "internal-itinerary": "portugal/main.json Plan Health-Check identifies FAO→FNC as the fragile joint and requires it to anchor the dates",
+        "google-flights-2027-audit": "Checked 2026-07-19: TAP/Portugalia FAO-FNC nonstop (1h40, ~$253) sells Mon/Thu/Sun in the Aug 2026 pattern; Friday is NOT served, so the Friday 2027-06-18 anchor needs the Thu/Sun nonstop or the sold TAP one-stop via LIS (5h35 single ticket)."
       },
       "claimType": "proxy"
     },

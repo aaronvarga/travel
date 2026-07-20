@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-19T22:08:30.325Z",
+  "generatedAt": "2026-07-20T00:51:56.558Z",
   "trips": [
     {
       "slug": "albania",
@@ -1054,34 +1054,34 @@
     {
       "slug": "portugal-algarve-sicily",
       "canonical": {
-        "lowUsd": 13750,
-        "highUsd": 16600
+        "lowUsd": 12850,
+        "highUsd": 16750
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 5,
-        "sumLowUsd": 13800,
-        "sumHighUsd": 16600,
-        "displayedLowUsd": 13750,
-        "displayedHighUsd": 16500,
+        "sumLowUsd": 12900,
+        "sumHighUsd": 16800,
+        "displayedLowUsd": 12850,
+        "displayedHighUsd": 16750,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
-        "displayedDeltaHighUsd": -100,
+        "displayedDeltaHighUsd": 0,
         "toleranceUsd": 150
       },
       "lineItems": [
         {
           "label": "Transportation",
-          "text": "$7,450–$8,750",
-          "lowUsd": 7450,
-          "highUsd": 8750
+          "text": "$7,050–$9,000",
+          "lowUsd": 7050,
+          "highUsd": 9000
         },
         {
           "label": "Lodging",
-          "text": "$3,400–$4,300",
-          "lowUsd": 3400,
-          "highUsd": 4300
+          "text": "$2,900–$4,200",
+          "lowUsd": 2900,
+          "highUsd": 4200
         },
         {
           "label": "Food",

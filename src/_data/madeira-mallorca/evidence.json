@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-mallorca",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -53,8 +53,8 @@
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "The Lisbon buffer mitigates Madeira wind risk and LIS–PMI has a current operator route, but the itinerary explicitly depends on exact June 2027 FNC and PMI operating days plus a protected homebound ticket.",
+      "score": 4,
+      "rationale": "United’s Tuesday EWR-FNC red-eye is sold for the exact 2027-06-08 date and LIS-PMI is a healthy multi-carrier corridor (TAP x2 daily + easyJet + Vueling), both verified on Google Flights 2026-07-19. Remaining exposure is Madeira wind and the still-unquoted protected homebound ticket, so 4/5.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -306,7 +306,8 @@
       "sourceRefs": [
         "tap-lisbon-palma",
         "ana-madeira-wind-operations",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -322,12 +323,13 @@
         "mandatoryBuffer": "Lisbon",
         "singleTicket": false
       },
-      "verifiedAt": "2026-07-10",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-10-31",
       "sourceLocators": {
         "tap-lisbon-palma": "TAP operator announcement confirms seasonal LIS–PMI route exists, not exact June 2027 days",
         "ana-madeira-wind-operations": "Official ANA historical notice confirms strong winds can disrupt Madeira operations",
-        "internal-itinerary": "madeira-mallorca/main.json Air Travel and Plan Health-Check explicitly require exact 2027 operating days and protected quote"
+        "internal-itinerary": "madeira-mallorca/main.json Air Travel and Plan Health-Check explicitly require exact 2027 operating days and protected quote",
+        "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop is SOLD for the exact Tue 2027-06-08 ($1,139 one-way, 7:15 PM-7:05 AM) and PIT-FNC prices as one United ticket ($1,353, 9h40). LIS-PMI verified healthy: TAP x2 daily nonstop + easyJet + Vueling nonstops on the checked Tuesday."
       },
       "claimType": "proxy"
     },

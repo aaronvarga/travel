@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "iceland-ischia-cilento",
-  "reviewedAt": "2026-07-12",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "evidenceBasis": "Current operator schedules, official attraction prices, a live nearby June 2027 PIT–KEF fare signal, historical climate/sea proxies, and exact internal itinerary arithmetic.",
   "confidenceBasis": "The route shape and itemized arithmetic are high-confidence derived facts. Overall confidence is medium because the exact June 10–23 stopover airfare, operating days, lodging, cars, and 2027 hydrofoils are not yet quoted together.",
@@ -370,7 +370,8 @@
         "palinuro-caves-operator",
         "safetravel-iceland",
         "safetravel-reynisfjara",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -381,7 +382,7 @@
         "singleTicket": false,
         "maxConnections": 1
       },
-      "verifiedAt": "2026-07-12",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-08-15",
       "sourceLocators": {
         "icelandair-stopover": "Stopover product permits the route shape; exact days and fare remain unquoted.",
@@ -390,7 +391,8 @@
         "palinuro-caves-operator": "Boat route published; 2027 price and sea-state execution unknown.",
         "safetravel-iceland": "Official live Iceland condition checks.",
         "safetravel-reynisfjara": "Official sneaker-wave warning protocol.",
-        "internal-itinerary": "FCO buffer and weather alternatives bound the known risks."
+        "internal-itinerary": "FCO buffer and weather alternatives bound the known risks.",
+        "google-flights-2027-audit": "Checked 2026-07-19: PIT-KEF 2027-06-10 nonstop not sold (1-stop single tickets are); KEF-FCO Icelandair seasonal nonstop verified in the Aug 2026 pattern (4h45, ~$671); Jun 15 2027 is beyond the booking window."
       },
       "claimType": "proxy"
     },

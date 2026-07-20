@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "slovenia-adriatic",
-  "reviewedAt": "2026-07-11",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -305,7 +305,8 @@
       "sourceRefs": [
         "lju-vce-routing",
         "eu-etias",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -318,12 +319,13 @@
         "vrsicOpening": "normally open by mid-June but not guaranteed; check promet.si, Predel/Tarvisio fallback",
         "note": "Not ready to book. Re-quote LJU vs Venice on ITA Matrix, confirm the Vršič Pass is open near travel, and verify ETIAS status once 2027 inventory opens."
       },
-      "verifiedAt": "2026-07-11",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-12-31",
       "sourceLocators": {
         "lju-vce-routing": "No PIT-Europe nonstop and no LJU long-haul; two-stop LJU vs single-connection Venice gateway",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
-        "internal-itinerary": "slovenia-adriatic/main.json air-travel section and round-trip construction"
+        "internal-itinerary": "slovenia-adriatic/main.json air-travel section and round-trip construction",
+        "google-flights-2027-audit": "Checked 2026-07-19: PIT-LJU bookable NOW for the exact 2027-06-08 date - 2-stop single tickets $536-550 (United+SWISS via IAD/ZRH 13h05; Air Canada+Lufthansa via YUL/FRA 12h05); BA 1-stop via LHR $926."
       },
       "claimType": "proxy"
     },

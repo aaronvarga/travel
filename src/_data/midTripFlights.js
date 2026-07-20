@@ -24,7 +24,7 @@ const flights = [
   {
     route: 'Carvoeiro → Lisbon → Palermo',
     trips: [
-      { label: 'Portugal + Algarve + Sicily', href: 'locations/portugal-algarve-sicily/index.html' },
+      { label: 'Portugal (Algarve) + Sicily', href: 'locations/portugal-algarve-sicily/index.html' },
     ],
     transfer: '~2h40 airport drive + ~3h flight',
     timeValue: 9.67,
@@ -35,7 +35,7 @@ const flights = [
   {
     route: 'Lisbon → Athens → Chania',
     trips: [
-      { label: 'Portugal + Crete', href: 'locations/portugal-crete/index.html' },
+      { label: 'Portugal (Lisbon) + Crete', href: 'locations/portugal-crete/index.html' },
       { label: 'Greece via Lisbon', href: 'locations/greece-via-lisbon/index.html' },
     ],
     transfer: '1 stop · full transfer day',
@@ -58,7 +58,7 @@ const flights = [
   {
     route: 'Lisbon → Palermo',
     trips: [
-      { label: 'Portugal + Sicily', href: 'locations/portugal-sicily/index.html' },
+      { label: 'Portugal (Lisbon) + Sicily', href: 'locations/portugal-sicily/index.html' },
     ],
     transfer: '~3h nonstop when it operates',
     timeValue: 3,
@@ -69,7 +69,7 @@ const flights = [
   {
     route: 'Faro → Funchal',
     trips: [
-      { label: 'Portugal Algarve & Madeira', href: 'locations/portugal/index.html' },
+      { label: 'Portugal (Algarve + Madeira)', href: 'locations/portugal/index.html' },
     ],
     transfer: '~1¾h flight · limited seasonal pattern',
     timeValue: 1.75,

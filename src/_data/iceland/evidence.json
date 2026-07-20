@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "iceland",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-19",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -308,7 +308,8 @@
         "flypittsburgh-nonstop-destinations",
         "safetravel-iceland",
         "safetravel-reynisfjara",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -321,14 +322,15 @@
         "singleTicket": true,
         "maxConnections": 1
       },
-      "verifiedAt": "2026-07-10",
+      "verifiedAt": "2026-07-19",
       "expiresAt": "2026-10-31",
       "sourceLocators": {
         "flypittsburgh-icelandair-2026": "PIT official announcement confirms Icelandair service for summer 2026 only",
         "flypittsburgh-nonstop-destinations": "PIT current route list shows Reykjavík seasonal, up to four weekly; no exact 2027 date",
         "safetravel-iceland": "ICE-SAR official live conditions emphasize rapid weather/road changes and current Reykjanes alerts",
         "safetravel-reynisfjara": "Official warning protocol documents sneaker waves, falling rock, three hazard levels, and possible short-notice closure",
-        "internal-itinerary": "iceland/main.json health check says verify summer 2027 nonstop and hold one-stop backup"
+        "internal-itinerary": "iceland/main.json health check says verify summer 2027 nonstop and hold one-stop backup",
+        "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-08: PIT-KEF Icelandair nonstop NOT sold; best sold single tickets are United 1-stop via IAD (8h30, ~$541 pp) and JetBlue+Icelandair via BOS (9h50, ~$642). Nonstop remains conditional on Icelandair re-filing the seasonal PIT route for 2027."
       },
       "claimType": "proxy"
     },
