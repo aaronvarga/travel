@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "sardinia-corsica",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. The route's most exposed profiles are Sardinia from June into early July and Southern Corsica in June. Sardinia formally designates June 1–October 31 as high fire danger. In 2026 the island recorded roughly 670 June fires before the full July aerial deployment, making this a recurring planning issue even when most ignitions remain small. Corsica's maquis and mountain roads are fire-prone, and France publishes daily forest-danger maps from June through September. June is earlier than the historic late-summer peak, but a coastal road closure can materially disrupt this compact driving route.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -321,6 +329,56 @@
         "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for sardinia-corsica"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "sardinia-fire-season-2026",
+        "effis-2024-fire-report",
+        "france-forest-fire"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "sardinia-june",
+            "name": "Sardinia from June into early July",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Sardinia formally designates June 1–October 31 as high fire danger. In 2026 the island recorded roughly 670 June fires before the full July aerial deployment, making this a recurring planning issue even when most ignitions remain small."
+          },
+          {
+            "id": "corsica-june",
+            "name": "Southern Corsica in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Corsica's maquis and mountain roads are fire-prone, and France publishes daily forest-danger maps from June through September. June is earlier than the historic late-summer peak, but a coastal road closure can materially disrupt this compact driving route."
+          }
+        ],
+        "routeNames": [
+          "Sardinia from June into early July",
+          "Southern Corsica in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "sardinia-fire-season-2026": "Sardinia 2026 campaign: high-danger period June 1–October 31; regional update reported about 670 June fires",
+        "effis-2024-fire-report": "Section 3.2.12 and Figure 264 include France and Corsica in the 2024 fire assessment",
+        "france-forest-fire": "Géorisques: France publishes daily forest-danger maps throughout June–September using weather, vegetation dryness, and land cover"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

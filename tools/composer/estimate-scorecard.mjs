@@ -1,5 +1,25 @@
 import manifest from '../scorecard.manifest.json' with { type: 'json' };
 
+const FIRE_SAFETY_BY_LEG = {
+  iceland: 5,
+  switzerland: 5,
+  'venice-dolomites': 5,
+  slovenia: 4,
+  'lisbon-cascais': 4,
+  madeira: 4,
+  'ischia-cilento': 4,
+  malta: 4,
+  algarve: 3,
+  crete: 3,
+  kefalonia: 3,
+  lefkada: 3,
+  sardinia: 3,
+  sicily: 3,
+  mallorca: 3,
+  'athens-cyclades': 3,
+  corsica: 3,
+};
+
 function thresholdScore(value, rubric) {
   const keys = Object.keys(rubric).filter((key) => /^\d+$/.test(key)).map(Number).sort((a, b) => a - b);
   const exactOrLower = keys.filter((key) => value <= key).at(0);
@@ -42,6 +62,7 @@ export function estimateScorecard({ legA, legB, edge, totalNights, budget, depar
   const axes = {
     budget: budgetScore(budget),
     weather: Math.min(legA.scoreHints.weather, legB.scoreHints.weather),
+    fireRisk: Math.min(FIRE_SAFETY_BY_LEG[legA.id] ?? 3, FIRE_SAFETY_BY_LEG[legB.id] ?? 3),
     swim: Math.max(legA.scoreHints.swim, legB.scoreHints.swim),
     variety: variety >= 6 ? 5 : variety >= 4 ? 4 : 3,
     ease: Math.max(1, 6 - edge.complexity),
@@ -51,6 +72,6 @@ export function estimateScorecard({ legA, legB, edge, totalNights, budget, depar
     novelty: Math.min(legA.scoreHints.novelty, legB.scoreHints.novelty),
     pto: ptoScore(pto),
   };
-  const totalBaked = axes.budget * 2 + ['weather', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty'].reduce((sum, key) => sum + axes[key], 0);
+  const totalBaked = manifest.axes.reduce((sum, axis) => sum + axes[axis.id] * axis.weightDefault, 0);
   return { axes, pto: { days: pto, nights: totalNights }, totalBaked, estimated: true, audited: false };
 }

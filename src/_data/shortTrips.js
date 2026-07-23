@@ -18,6 +18,7 @@ const SHORT_WEIGHTS = {
   budget: 2,
   ease: 2,
   weather: 1,
+  fireRisk: 1,
   swim: 1,
   variety: 1,
   food: 1,
@@ -70,6 +71,7 @@ module.exports = function () {
       metrics: evidence.metrics,
       heroImage: normalizeImagePath(image.src),
       heroAlt: image.alt,
+      fireRisk: evidence.facts.find((fact) => fact.id === 'wildfire-exposure')?.value || null,
       shortScore: shortScore(main.scorecard.axes),
       shortVerdict: SHORT_VERDICTS[slug],
     };

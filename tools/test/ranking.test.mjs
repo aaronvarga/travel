@@ -27,7 +27,7 @@ test('source prose rank and total citations match the default engine result', ()
         assert.equal(Number(match[1]), rankBySlug.get(trip.slug), `${trip.slug} has stale rank citation ${match[0]}`);
         assert.equal(Number(match[2]), ranked.length, `${trip.slug} has stale ranked-count citation ${match[0]}`);
       }
-      for (const match of text.matchAll(/\b(\d{2})\/50\b/g)) {
+      for (const match of text.matchAll(/\b(\d{2})\/55\b/g)) {
         assert.equal(Number(match[1]), trip.totalBaked, `${trip.slug} has stale total citation ${match[0]}`);
       }
     }
@@ -38,7 +38,7 @@ test('readiness never changes appeal data', () => {
   const greece = summary.trips.find((trip) => trip.slug === 'greece-via-lisbon');
   assert.equal(readiness(greece).id, 'exact-2027-schedule-required');
   assert.equal(readiness(greece).bookable, false);
-  assert.equal(greece.totalBaked, 32);
+  assert.equal(greece.totalBaked, 35);
   assert.equal(greece.excluded, null);
 });
 

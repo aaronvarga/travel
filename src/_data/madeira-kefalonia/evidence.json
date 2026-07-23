@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-kefalonia",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Greece's official fire season runs May 1–October 31, EFFIS shows the main recent season from June through September, and late-June red-code conditions have occurred on Crete. Island geography limits fire spread but wind can quickly close gorges, roads, beaches, or ferry approaches.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -359,6 +367,56 @@
         "scorecard-contract": "tools/scorecard.manifest.json novelty rubric lists prior Greek islands but not Madeira or Kefalonia and defines 4 as mostly new with a familiar element."
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "madeira-fire-2024",
+        "effis-2024-fire-report",
+        "greece-fire-season-2026"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "madeira-june",
+            "name": "Madeira in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day."
+          },
+          {
+            "id": "greece-june",
+            "name": "Athens and the Greek islands in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Greece's official fire season runs May 1–October 31, EFFIS shows the main recent season from June through September, and late-June red-code conditions have occurred on Crete. Island geography limits fire spread but wind can quickly close gorges, roads, beaches, or ferry approaches."
+          }
+        ],
+        "routeNames": [
+          "Madeira in June",
+          "Athens and the Greek islands in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "madeira-fire-2024": "Madeira Civil Protection: August 14–24, 2024 fire affected about 5,000 hectares under heat, wind, and low humidity",
+        "effis-2024-fire-report": "Section 3.2.14: Greece's 2024 fire season ran June–September and included seven fires over 1,000 hectares",
+        "greece-fire-season-2026": "Greek Civil Protection launched daily maps for the May 1–October 31, 2026 fire season"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

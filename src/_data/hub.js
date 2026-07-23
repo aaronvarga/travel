@@ -32,6 +32,7 @@ module.exports = function () {
       cardSummary,
       display: {
         weatherTempF: trip.evidence?.facts?.find((fact) => fact.id === 'climate-proxy')?.value?.temperatureF || null,
+        fireChance: trip.evidence?.facts?.find((fact) => fact.id === 'wildfire-exposure')?.value?.chanceBand || null,
         swimTempF: trip.facets.swimTempF,
       },
       };

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "slovenia-adriatic",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-split"
+      ]
+    },
+    "fireRisk": {
+      "score": 4,
+      "rationale": "Low is the safety rating (4/5), corresponding to a 2–5% planning chance of material wildfire disruption during the exact trip window. The moist alpine half is low risk; the Karst and coastal southwest can burn. EFFIS mapped only two Slovenian fires in 2024, while the July 2024 Karst fire demonstrates that localized disruption is credible later in summer.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -349,6 +357,45 @@
         "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and visited list"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "effis-2024-fire-report",
+        "slovenia-karst-fire-2024"
+      ],
+      "value": {
+        "score": 4,
+        "level": "Low",
+        "chanceBand": "2–5%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "slovenia-june",
+            "name": "Ljubljana, the Julian Alps, Soča Valley, and Piran in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "The moist alpine half is low risk; the Karst and coastal southwest can burn. EFFIS mapped only two Slovenian fires in 2024, while the July 2024 Karst fire demonstrates that localized disruption is credible later in summer."
+          }
+        ],
+        "routeNames": [
+          "Ljubljana, the Julian Alps, Soča Valley, and Piran in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.30: two mapped fires totaling 79 hectares in Slovenia in 2024",
+        "slovenia-karst-fire-2024": "Government of Slovenia July 18, 2024 report: 350+ firefighters responded to the Karst fire"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

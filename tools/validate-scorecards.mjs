@@ -34,6 +34,8 @@ for (const { slug, main } of trips) {
   if (JSON.stringify(sc.weightDefaults) !== JSON.stringify(expectedWeights)) {
     issue(slug, 'weightDefaults do not match scorecard.manifest.json');
   }
+  const expectedTotal = manifest.axes.reduce((sum, axis) => sum + (sc.axes?.[axis.id] || 0) * axis.weightDefault, 0);
+  if (sc.totalBaked !== expectedTotal) issue(slug, `totalBaked ${sc.totalBaked} != manifest-weighted ${expectedTotal}`);
 
   const expectedNights = nightsScore(sc.pto?.nights);
   if (sc.axes?.nights !== expectedNights) issue(slug, `nights score ${sc.axes?.nights} != derived ${expectedNights}`);

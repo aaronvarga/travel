@@ -10,9 +10,9 @@
     "overall": "The weakest derived confidence among axes with nonzero default weight. PTO remains visible but does not control overall confidence because it has zero default weight.",
     "readinessSeparation": "Route readiness is an outcome and booking gate. A reroute-required or exact-2027-schedule-required conclusion may itself have high evidence confidence."
   },
-  "requiredAxes": ["budget", "weather", "swim", "variety", "ease", "food", "risk", "nights", "novelty", "pto"],
-  "requiredFactCategories": ["budget", "dates", "climate", "swim", "itinerary", "logistics", "food", "route", "novelty"],
-  "volatileCategories": ["budget", "climate", "swim", "route", "logistics", "food", "regulation", "price", "reservation", "advisory"],
+  "requiredAxes": ["budget", "weather", "fireRisk", "swim", "variety", "ease", "food", "risk", "nights", "novelty", "pto"],
+  "requiredFactCategories": ["budget", "dates", "climate", "wildfire", "swim", "itinerary", "logistics", "food", "route", "novelty"],
+  "volatileCategories": ["budget", "climate", "wildfire", "swim", "route", "logistics", "food", "regulation", "price", "reservation", "advisory"],
   "metricUnits": {
     "airHours": "hours",
     "groundHours": "hours",

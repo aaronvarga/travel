@@ -1,68 +1,97 @@
 {
   "schemaVersion": 1,
   "slug": "short-sicily",
-  "reviewedAt": "2026-07-16",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 4,
       "rationale": "Six visible categories reconcile exactly to $8,400–$12,100. The low case sits under the $12,000 target and the high case is $100 over it but well inside $13,500, deriving 4/5 under the budget rubric. Confidence is medium because exact June 2027 Catania airfare and both stays are not yet quoted.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 5,
       "rationale": "June climatology for Siracusa (about 64–83°F) and Taormina (about 61–77°F) shows warm, dry, reliably sunny days with roughly three rain days for the month — the strongest weather profile in the short-trip set. Etna summit cold is a packing issue, not a weather risk.",
       "confidence": "high",
-      "evidence": ["climate-proxy"]
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
+      ]
     },
     "swim": {
       "score": 4,
       "rationale": "June Ionian water runs about 72–74°F at Siracusa and Taormina — comfortable rather than warm — and the week schedules swim time on five days across Ortigia's sea decks, Fontane Bianche, Isola Bella and Mazzarò, matching the 4/5 rubric band for frequent comfortable swimming.",
       "confidence": "high",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 4,
       "rationale": "The week combines warm-water coast, two Greek theatres, Baroque Noto and a fishing village, plus a genuinely distinct volcanic landscape on Etna and the Alcantara canyon. It stays one region of one island, which keeps it short of 5/5.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 4,
       "rationale": "One protected connection each way, two multi-night bases with a single 1h45 transfer, one automatic rental and no internal flights or ferries match the deterministic load of the other two-base short trips scored 4/5. The car, ZTL zones and the mid-week hotel change prevent a 5.",
       "confidence": "high",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 5,
       "rationale": "Sicily is the easiest picky-eater destination in the set: named current pizza, pasta, market-sandwich and granita options exist at every base and outing, with grocery backup in both bases and trattoria pricing well below resort norms.",
       "confidence": "high",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
       "rationale": "Exact June 2027 flights are unconfirmed, Etna activity can close the summit stages on short notice, and mid-June festival calendars (INDA, Taormina Film Fest) compress hotels. One-ticket routing, a swappable day order and always-available fallbacks keep the uncertainty manageable.",
       "confidence": "medium",
-      "evidence": ["route-readiness", "etna-conditions"]
+      "evidence": [
+        "route-readiness",
+        "etna-conditions"
+      ]
     },
     "nights": {
       "score": 1,
       "rationale": "Seven hotel nights derive 1/5 under the comparison rubric for any trip of eight or fewer nights; this is expected for the separate short-trip category.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 5,
       "rationale": "Sicily does not appear on the documented visited-place list — the family's Italy history is Puglia and the Amalfi coast — so Ortigia, Noto, Etna and Taormina derive 5/5 under the no-overlap rule, consistent with the switzerland-sicily scorecard.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 5,
       "rationale": "Four PTO days are better than the top documented six-day threshold and therefore receive 5/5; Juneteenth 2027 falls on Saturday June 19 and is observed Friday June 18, protecting that workday subject to employer policy.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +100,11 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "kayak-pit-cta", "etna-funivia"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "kayak-pit-cta",
+        "etna-funivia"
+      ],
       "value": {
         "lowUsd": 8400,
         "expectedUsd": null,
@@ -97,7 +130,9 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["decision-profile"],
+      "sourceRefs": [
+        "decision-profile"
+      ],
       "value": {
         "depart": "2027-06-12",
         "return": "2027-06-20",
@@ -118,11 +153,22 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["weather-atlas-sicily-june"],
+      "sourceRefs": [
+        "weather-atlas-sicily-june"
+      ],
       "value": {
         "score": 5,
         "normalPeriod": "recent climatology",
-        "juneMeanDailyLowHighF": {"Siracusa": [64, 83], "Taormina": [61, 77]},
+        "juneMeanDailyLowHighF": {
+          "Siracusa": [
+            64,
+            83
+          ],
+          "Taormina": [
+            61,
+            77
+          ]
+        },
         "rainDaysJune": 3,
         "etnaSummitNote": "Summit stages run 20–30°F colder than the coast with strong UV; a packing consideration, not a weather-score penalty",
         "forecast": false
@@ -139,11 +185,20 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["seatemperature-sicily-june", "visit-sicily-sea"],
+      "sourceRefs": [
+        "seatemperature-sicily-june",
+        "visit-sicily-sea"
+      ],
       "value": {
         "score": 4,
-        "temperatureF": [72, 74],
-        "temperatureC": [22, 23.5],
+        "temperatureF": [
+          72,
+          74
+        ],
+        "temperatureC": [
+          22,
+          23.5
+        ],
         "hasSwim": true,
         "scheduledSwimDays": 5,
         "beachTypes": "Ortigia sea decks and rocky coves; Fontane Bianche sand; Isola Bella and Mazzarò pebbles (water shoes)",
@@ -162,13 +217,25 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "neapolis-park", "taormina-park"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "neapolis-park",
+        "taormina-park"
+      ],
       "value": {
         "score": 4,
         "hotelNights": 7,
         "lodgingBases": 2,
-        "baseNames": ["Ortigia (Siracusa)", "Giardini Naxos / Taormina"],
-        "scheduledModes": ["coast/water", "town/food", "volcanic nature", "ancient sites"]
+        "baseNames": [
+          "Ortigia (Siracusa)",
+          "Giardini Naxos / Taormina"
+        ],
+        "scheduledModes": [
+          "coast/water",
+          "town/food",
+          "volcanic nature",
+          "ancient sites"
+        ]
       },
       "verifiedAt": "2026-07-16",
       "expiresAt": null,
@@ -184,7 +251,10 @@
       "category": "logistics",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "aci-driving-italy"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "aci-driving-italy"
+      ],
       "value": {
         "easeScore": 4,
         "maxConnections": 1,
@@ -195,8 +265,8 @@
         "rentalCars": 1,
         "longDistanceTrains": 0,
         "longestMandatoryDriveHours": 1.75,
-        "airHoursPlanningEstimate": 21.0,
-        "groundHoursPlanningEstimate": 8.0,
+        "airHoursPlanningEstimate": 21,
+        "groundHoursPlanningEstimate": 8,
         "ztlNote": "Ortigia and Taormina cores are camera-enforced ZTL zones; the plan parks at Talete and Lumbi/the Naxos base instead"
       },
       "verifiedAt": "2026-07-16",
@@ -212,13 +282,30 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "conad-siracusa", "vecchia-taormina-menu"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "conad-siracusa",
+        "vecchia-taormina-menu"
+      ],
       "value": {
         "score": 5,
         "plainFoodRequired": true,
-        "coveredBases": ["Ortigia", "Giardini Naxos / Taormina"],
-        "coveredOutings": ["Noto", "Marzamemi", "Etna / Zafferana"],
-        "fallbackTypes": ["pizza", "plain pasta", "market sandwiches", "granita and gelato", "supermarket picnic"],
+        "coveredBases": [
+          "Ortigia",
+          "Giardini Naxos / Taormina"
+        ],
+        "coveredOutings": [
+          "Noto",
+          "Marzamemi",
+          "Etna / Zafferana"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "plain pasta",
+          "market sandwiches",
+          "granita and gelato",
+          "supermarket picnic"
+        ],
         "lodgingKitchenConfirmed": false
       },
       "verifiedAt": "2026-07-16",
@@ -235,7 +322,12 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["delta-jfk-cta", "kayak-pit-cta", "internal-itinerary", "eu-etias"],
+      "sourceRefs": [
+        "delta-jfk-cta",
+        "kayak-pit-cta",
+        "internal-itinerary",
+        "eu-etias"
+      ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
@@ -260,10 +352,19 @@
       "category": "logistics",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["etna-funivia", "etna-guide-tariffs"],
+      "sourceRefs": [
+        "etna-funivia",
+        "etna-guide-tariffs"
+      ],
       "value": {
-        "cableCarRoundTripEur": {"adult": 54, "child5to10": 30},
-        "cableCarPlus4x4Eur": {"adult": 78, "child5to10": 50},
+        "cableCarRoundTripEur": {
+          "adult": 54,
+          "child5to10": 30
+        },
+        "cableCarPlus4x4Eur": {
+          "adult": 78,
+          "child5to10": 50
+        },
         "tariffDate": "2026-03-01",
         "familyEstimateEur": 284,
         "accessNote": "Volcanic activity or wind can close the cable car or jeep stage with little notice; the free Silvestri craters at Rifugio Sapienza remain the guaranteed floor"
@@ -281,7 +382,10 @@
       "category": "logistics",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["inda-festival", "taormina-park"],
+      "sourceRefs": [
+        "inda-festival",
+        "taormina-park"
+      ],
       "value": {
         "indaSeason2026": "2026-05-08 to 2026-06-28 in the Siracusa Greek Theatre; wooden staging covers the cavea and the theatre closes mid-afternoon on performance days",
         "inda2027": "unknown — expect a similar May–late-June window overlapping this trip",
@@ -301,8 +405,14 @@
       "category": "novelty",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "scorecard-contract"],
-      "value": {"score": 5, "overlap": []},
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
       "verifiedAt": "2026-07-16",
       "expiresAt": null,
       "sourceLocators": {
@@ -310,17 +420,59 @@
         "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and no-overlap 5/5 rule"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "sicily-fire-history-2023",
+        "sicily-fire-emergency-2026"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "sicily-june",
+            "name": "Sicily in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk."
+          }
+        ],
+        "routeNames": [
+          "Sicily in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "sicily-fire-history-2023": "Regional report pp. 14–17: no critical June/early-July phase; July 24 surge; 74,341 hectares burned in Sicily in 2023",
+        "sicily-fire-emergency-2026": "Sicilian Civil Protection July 19–20, 2026 update lists active and controlled fires across Palermo, Agrigento, Siracusa, Enna, Ragusa, and Catania"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {
-    "airHours": 21.0,
-    "groundHours": 8.0,
+    "airHours": 21,
+    "groundHours": 8,
     "timeZones": 6,
     "baseMoves": 1,
     "longestTransferHours": 1.75,
     "highOutputDayStreak": 2,
     "fallbackDays": 3,
-    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
     "lodgingComfort": {
       "airConditioning": "required in June Sicily; unknown until property selection",
       "kitchen": "required at the Ortigia base; unknown until property selection",

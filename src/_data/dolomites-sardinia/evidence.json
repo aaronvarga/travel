@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "dolomites-sardinia",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Sardinia formally designates June 1–October 31 as high fire danger. In 2026 the island recorded roughly 670 June fires before the full July aerial deployment, making this a recurring planning issue even when most ignitions remain small.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -325,6 +333,56 @@
         "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for dolomites-sardinia"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "effis-2024-fire-report",
+        "italy-fire-season-2026",
+        "sardinia-fire-season-2026"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "alps-june",
+            "name": "Venice and the Dolomites in June",
+            "score": 5,
+            "level": "Very low",
+            "chanceBand": "<2%",
+            "rationale": "The high, relatively moist Dolomite portion of this June route has very low material wildfire-disruption exposure. Italy's national campaign covers the summer season, but the country's large-fire damage is concentrated later and farther south; live local warnings still take precedence during dry or windy spells."
+          },
+          {
+            "id": "sardinia-june",
+            "name": "Sardinia from June into early July",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Sardinia formally designates June 1–October 31 as high fire danger. In 2026 the island recorded roughly 670 June fires before the full July aerial deployment, making this a recurring planning issue even when most ignitions remain small."
+          }
+        ],
+        "routeNames": [
+          "Venice and the Dolomites in June",
+          "Sardinia from June into early July"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.17 and Italy/Sardinia map provide annual historical context",
+        "italy-fire-season-2026": "National 2026 active wildfire campaign runs June 15–October 15",
+        "sardinia-fire-season-2026": "Sardinia 2026 campaign: high-danger period June 1–October 31; regional update reported about 670 June fires"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

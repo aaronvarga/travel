@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "high",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Portugal is one of Europe's highest absolute fire-danger countries and the official summer campaign begins June 1. Coastal Lagos is less exposed than the wooded interior, but Monchique, Sagres, and east–west road excursions add enough wildland interface that fire belongs in the plan.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -363,6 +371,65 @@
         "scorecard-contract": "scorecard.manifest.json noveltyRubric visited-place list; no Portugal or Madeira destinations listed"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "effis-2024-fire-report",
+        "copernicus-fire-season",
+        "madeira-fire-2024"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "lisbon-june",
+            "name": "Lisbon, Cascais, and Sintra in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Central Portugal has severe wildfire history, but this route is mainly urban/coastal and travels before the usual late-summer peak. Sintra-Cascais Natural Park and wooded day trips create a real but low closure/smoke exposure."
+          },
+          {
+            "id": "algarve-june",
+            "name": "The Algarve in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Portugal is one of Europe's highest absolute fire-danger countries and the official summer campaign begins June 1. Coastal Lagos is less exposed than the wooded interior, but Monchique, Sagres, and east–west road excursions add enough wildland interface that fire belongs in the plan."
+          },
+          {
+            "id": "madeira-june",
+            "name": "Madeira in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day."
+          }
+        ],
+        "routeNames": [
+          "Lisbon, Cascais, and Sintra in June",
+          "The Algarve in June",
+          "Madeira in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "effis-2024-fire-report": "Portugal/Madeira regional context; exact June danger is weather-dependent and must be checked live",
+        "copernicus-fire-season": "Copernicus identifies June–September as the main southern European and Mediterranean fire season",
+        "madeira-fire-2024": "Madeira Civil Protection: August 14–24, 2024 fire affected about 5,000 hectares under heat, wind, and low humidity"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

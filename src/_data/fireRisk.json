@@ -1,0 +1,339 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-07-22",
+  "methodology": {
+    "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+    "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+    "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+    "rubric": {
+      "5": "Very low: less than 2% planning chance",
+      "4": "Low: 2–5% planning chance",
+      "3": "Moderate: 5–10% planning chance",
+      "2": "High: 10–20% planning chance",
+      "1": "Very high: greater than 20% planning chance"
+    },
+    "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+  },
+  "profiles": {
+    "alps-june": {
+      "name": "Venice and the Dolomites in June",
+      "score": 5,
+      "rationale": "The high, relatively moist Dolomite portion of this June route has very low material wildfire-disruption exposure. Italy's national campaign covers the summer season, but the country's large-fire damage is concentrated later and farther south; live local warnings still take precedence during dry or windy spells.",
+      "sourceRefs": ["effis-2024-fire-report", "italy-fire-season-2026"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "Italy chapter: about 75% of 2024 burned area occurred in July and August",
+        "italy-fire-season-2026": "National 2026 active wildfire campaign runs June 15–October 15"
+      }
+    },
+    "acadia-june": {
+      "name": "Acadia and Mount Desert Island in mid-June",
+      "score": 5,
+      "rationale": "Acadia has a serious wildfire history, but its defining 1947 disaster followed an exceptionally dry summer and occurred in October. Recent June fires have generally been small and rapidly contained, so material itinerary disruption in this cool coastal window is very unlikely.",
+      "sourceRefs": ["acadia-wildland-fire", "acadia-1947-fire"],
+      "sourceLocators": {
+        "acadia-wildland-fire": "NPS History of Wildland Fire at Acadia and current fire-management overview",
+        "acadia-1947-fire": "NPS chronology: prolonged summer drought preceded the October 1947 fire; 17,188 acres burned"
+      }
+    },
+    "adriatic-july": {
+      "name": "Dubrovnik, Kotor, the Albanian Riviera, and Corfu in early July",
+      "score": 2,
+      "rationale": "This route spends two weeks in dry coastal vegetation during the accelerating Mediterranean fire season. Montenegro's 2024 activity peaked in July–August, Albania recorded severe July seasons in 2024–2025, and the multi-border road route has limited detour simplicity if smoke or closures affect a corridor.",
+      "sourceRefs": ["effis-2024-fire-report", "albania-fire-history"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "Sections 3.2.6 and 3.2.21: Croatia and Montenegro activity concentrated in late July and August",
+        "albania-fire-history": "Albanian National Civil Protection timeline: 2024 and 2025 severe seasons affected southern and coastal municipalities"
+      }
+    },
+    "alaska-kenai-june": {
+      "name": "Seward, Kenai Fjords, Girdwood, and Turnagain Arm in mid-June",
+      "score": 4,
+      "rationale": "Most June visits are unaffected, but the route has a real single-corridor precedent: the June 2019 Swan Lake Fire produced heavy smoke, recreation closures, and intermittent Sterling Highway disruption. The wetter Seward/Girdwood side lowers exposure compared with interior Alaska.",
+      "sourceRefs": ["alaska-2019-fire-report", "alaska-swan-lake-travel"],
+      "sourceLocators": {
+        "alaska-2019-fire-report": "Alaska Division of Forestry 2019 report: Kenai/Kodiak had 23 June fires; Swan Lake began June 5 and burned about 167,000 acres",
+        "alaska-swan-lake-travel": "Official June 23, 2019 travel advisory documented Sterling Highway, campground, and trail exposure"
+      }
+    },
+    "albania-june": {
+      "name": "Theth, Tirana, and the Albanian Riviera in June",
+      "score": 4,
+      "rationale": "Albania has meaningful summer wildfire exposure and recent severe seasons, including fires near Theth and Sarandë, but the worst recent activity has clustered in July and August. A June route is lower risk than the same itinerary a month later.",
+      "sourceRefs": ["effis-2024-fire-report", "albania-fire-history"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.1: 49,189 hectares mapped in 2024, mostly in July and August",
+        "albania-fire-history": "Official national timeline identifies 2024 fires near Theth, Sarandë, Gjirokastër, and the southern coast"
+      }
+    },
+    "algarve-june": {
+      "name": "The Algarve in June",
+      "score": 3,
+      "rationale": "Portugal is one of Europe's highest absolute fire-danger countries and the official summer campaign begins June 1. Coastal Lagos is less exposed than the wooded interior, but Monchique, Sagres, and east–west road excursions add enough wildland interface that fire belongs in the plan.",
+      "sourceRefs": ["effis-2024-fire-report", "copernicus-fire-season"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.26 and EUMED long series: Portugal remains a recurrent high-burn country despite strong year-to-year variation",
+        "copernicus-fire-season": "Copernicus identifies June–September as the main southern European and Mediterranean fire season"
+      }
+    },
+    "andalusia-june": {
+      "name": "Seville, Granada, and the Costa del Sol in early June",
+      "score": 3,
+      "rationale": "Spain's official summer wildfire campaign starts June 1, and recent large fires have occurred from June through August in central and southern regions. Dense cities and the coast provide alternatives, but the Granada and mountain-road portions remain exposed.",
+      "sourceRefs": ["spain-fire-statistics", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "spain-fire-statistics": "MITECO states that weekly summer wildfire reporting runs June 1–October 15 and publishes the national historical series",
+        "effis-2024-fire-report": "Section 3.2.31: all six Spanish fires over 1,000 hectares outside the January maximum occurred June–August"
+      }
+    },
+    "azores-june": {
+      "name": "São Miguel, Azores in June",
+      "score": 5,
+      "rationale": "The Azores' humid maritime climate and official regional planning describe forest fires as a potential hazard without enough regional expression to rank among the archipelago's major recurring natural risks. Material fire disruption is very unlikely.",
+      "sourceRefs": ["azores-risk-plan", "copernicus-fire-season"],
+      "sourceLocators": {
+        "azores-risk-plan": "Regional civil-protection plan states that forest fires lack significant expression in the Azores but remain a potential risk",
+        "copernicus-fire-season": "Mediterranean seasonality is used only as a regional cross-check; the Azores sit outside the Mediterranean regime"
+      }
+    },
+    "california-coast-july": {
+      "name": "San Diego to San Francisco by Highway 1 in early July",
+      "score": 2,
+      "rationale": "July is an active California fire month, and this itinerary repeatedly crosses exposed coastal ranges and single-corridor road sections around Santa Barbara, San Luis Obispo, Big Sur, and Monterey. A fire need not reach a hotel to close Highway 1, create smoke, or force a long reroute.",
+      "sourceRefs": ["calfire-statistics", "calfire-2025-incidents"],
+      "sourceLocators": {
+        "calfire-statistics": "CAL FIRE statewide current and five-year fire/acre statistics, updated July 22, 2026",
+        "calfire-2025-incidents": "Official archive includes the July 2, 2025 Madre Fire in San Luis Obispo and other coastal-county incidents"
+      }
+    },
+    "canaries-june": {
+      "name": "Tenerife and La Palma in June",
+      "score": 4,
+      "rationale": "The Canary Islands have experienced major wildfires and Spain's summer campaign begins June 1, but June is generally earlier than the islands' hottest, driest late-summer peak. Coastal bases are resilient; forest and caldera days are the exposed pieces.",
+      "sourceRefs": ["spain-fire-statistics", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "spain-fire-statistics": "MITECO national database covers every reported forest fire and the June 1–October 15 summer reporting campaign",
+        "effis-2024-fire-report": "Spain long-series and monthly EFFIS context; exact island conditions still require daily AEMET and regional alerts"
+      }
+    },
+    "campania-june": {
+      "name": "Naples, Ischia, and Cilento in June",
+      "score": 4,
+      "rationale": "Italy's national summer firefighting campaign starts June 15, but three quarters of Italy's 2024 burned area occurred in July and August. Island/coastal bases reduce direct exposure; inland Cilento drives and wooded Ischia slopes remain the watch points.",
+      "sourceRefs": ["italy-fire-season-2026", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "italy-fire-season-2026": "Italian Civil Protection defines the 2026 summer active-fire campaign as June 15–October 15",
+        "effis-2024-fire-report": "Section 3.2.17: 75% of Italy's 2024 burned area occurred in July and August"
+      }
+    },
+    "corsica-june": {
+      "name": "Southern Corsica in June",
+      "score": 3,
+      "rationale": "Corsica's maquis and mountain roads are fire-prone, and France publishes daily forest-danger maps from June through September. June is earlier than the historic late-summer peak, but a coastal road closure can materially disrupt this compact driving route.",
+      "sourceRefs": ["france-forest-fire", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "france-forest-fire": "Géorisques: France publishes daily forest-danger maps throughout June–September using weather, vegetation dryness, and land cover",
+        "effis-2024-fire-report": "Section 3.2.12 and Figure 264 include France and Corsica in the 2024 fire assessment"
+      }
+    },
+    "croatia-june": {
+      "name": "Split, Hvar, and Korčula in June",
+      "score": 4,
+      "rationale": "Dalmatia's legal high-fire controls begin June 1 and late-June lightning fires do occur, including Hvar/Šibenik incidents in 2026. The largest recent coastal fires have clustered in late July and August, so this June itinerary is low rather than high risk.",
+      "sourceRefs": ["croatia-fire-2024", "croatia-fire-2026"],
+      "sourceLocators": {
+        "croatia-fire-2024": "Croatian Firefighting Association: 2024's largest coastal fires occurred in late July and the second half of August",
+        "croatia-fire-2026": "Official June 24, 2026 report records late-June lightning fires on Hvar, Čiovo, Dugi Otok, and near Šibenik"
+      }
+    },
+    "greece-june": {
+      "name": "Athens and the Greek islands in June",
+      "score": 3,
+      "rationale": "Greece's official fire season runs May 1–October 31, EFFIS shows the main recent season from June through September, and late-June red-code conditions have occurred on Crete. Island geography limits fire spread but wind can quickly close gorges, roads, beaches, or ferry approaches.",
+      "sourceRefs": ["greece-fire-season-2026", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "greece-fire-season-2026": "Greek Civil Protection launched daily maps for the May 1–October 31, 2026 fire season",
+        "effis-2024-fire-report": "Section 3.2.14: Greece's 2024 fire season ran June–September and included seven fires over 1,000 hectares"
+      }
+    },
+    "hawaii-june": {
+      "name": "Oʻahu, Hawaiʻi Island, Maui, and Kauaʻi in June",
+      "score": 3,
+      "rationale": "June begins Hawaiʻi's dry-season lookout period, and statewide fire-history maps show repeated starts on every planned island. Resort/coastal alternatives are strong, but leeward Maui and Hawaiʻi Island, Haleakalā, Hāna, Waimea, and Kōkeʻe expose the route to smoke or road closures.",
+      "sourceRefs": ["hawaii-fire-history", "hawaii-wildfire-lookout"],
+      "sourceLocators": {
+        "hawaii-fire-history": "HWMO State of Hawaiʻi Wildfire History Map covers mapped fires on the major islands from 1999–2022",
+        "hawaii-wildfire-lookout": "Statewide Wildfire & Drought LOOKOUT campaign identifies June and the summer dry season as a preparedness period"
+      }
+    },
+    "iceland-june": {
+      "name": "Reykjavík, Reykjanes, and Iceland's South Coast in June",
+      "score": 5,
+      "rationale": "Iceland has had rare large grass fires, but its maritime climate, sparse tree cover, and limited fire history make wildfire a very small June travel risk. Volcanic hazards remain important, but they stay in the separate general Risk axis.",
+      "sourceRefs": ["iceland-climate-report", "iceland-2006-fire"],
+      "sourceLocators": {
+        "iceland-climate-report": "Icelandic Meteorological Office says wildfire is an emerging hazard with limited national experience",
+        "iceland-2006-fire": "IMO climate summary documents the exceptional March 2006 grass fire, the largest known in Iceland"
+      }
+    },
+    "lisbon-june": {
+      "name": "Lisbon, Cascais, and Sintra in June",
+      "score": 4,
+      "rationale": "Central Portugal has severe wildfire history, but this route is mainly urban/coastal and travels before the usual late-summer peak. Sintra-Cascais Natural Park and wooded day trips create a real but low closure/smoke exposure.",
+      "sourceRefs": ["effis-2024-fire-report", "copernicus-fire-season"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.26 and 1980–2024 southern-EU comparison establish Portugal's high interannual fire exposure",
+        "copernicus-fire-season": "Copernicus describes June–September as the main Mediterranean fire season, with strong year-to-year weather control"
+      }
+    },
+    "madeira-june": {
+      "name": "Madeira in June",
+      "score": 4,
+      "rationale": "Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day.",
+      "sourceRefs": ["madeira-fire-2024", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "madeira-fire-2024": "Madeira Civil Protection: August 14–24, 2024 fire affected about 5,000 hectares under heat, wind, and low humidity",
+        "effis-2024-fire-report": "Portugal/Madeira regional context; exact June danger is weather-dependent and must be checked live"
+      }
+    },
+    "mallorca-june": {
+      "name": "Mallorca in June",
+      "score": 3,
+      "rationale": "Mallorca's pine-covered Tramuntana roads and coves sit inside Spain's June–October summer fire campaign. The route has beach and town substitutions, but a mountain closure could remove several signature days at once.",
+      "sourceRefs": ["spain-fire-statistics", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "spain-fire-statistics": "MITECO comprehensive national fire database and June 1–October 15 summer reporting period",
+        "effis-2024-fire-report": "Spain's 2024 assessment and long-term Mediterranean fire context; island-specific daily danger remains a live check"
+      }
+    },
+    "malta-june": {
+      "name": "Malta and Gozo in June",
+      "score": 4,
+      "rationale": "Malta has dry grass and brush fires, but limited forest cover and short road distances make landscape-scale travel disruption less likely than on Sicily or Sardinia. Smoke or a localized road closure is the more plausible impact.",
+      "sourceRefs": ["effis-2024-fire-report", "copernicus-fire-season"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "EFFIS mapped no qualifying fires in Malta in 2024; small fires below the mapping threshold remain possible",
+        "copernicus-fire-season": "Mediterranean June–September fire-weather season provides the regional seasonal baseline"
+      }
+    },
+    "puerto-rico-northeast-june": {
+      "name": "San Juan, Luquillo, Fajardo, and El Yunque in June",
+      "score": 4,
+      "rationale": "Puerto Rico experiences many wildland fires and June remains within its extended vulnerable season, but official evidence identifies the drier south and west as the main hotspots. This itinerary stays in the wetter northeast with dense road alternatives.",
+      "sourceRefs": ["puerto-rico-fire-2026"],
+      "sourceLocators": {
+        "puerto-rico-fire-2026": "USDA Forest Service FY2026 profile: 1,351 fires/9,000 acres in 2025; south and west are most fire-prone, unlike this northeast route"
+      }
+    },
+    "sardinia-june": {
+      "name": "Sardinia from June into early July",
+      "score": 3,
+      "rationale": "Sardinia formally designates June 1–October 31 as high fire danger. In 2026 the island recorded roughly 670 June fires before the full July aerial deployment, making this a recurring planning issue even when most ignitions remain small.",
+      "sourceRefs": ["sardinia-fire-season-2026", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "sardinia-fire-season-2026": "Sardinia 2026 campaign: high-danger period June 1–October 31; regional update reported about 670 June fires",
+        "effis-2024-fire-report": "Section 3.2.17 and Italy/Sardinia map provide annual historical context"
+      }
+    },
+    "sicily-june": {
+      "name": "Sicily in June",
+      "score": 3,
+      "rationale": "Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk.",
+      "sourceRefs": ["sicily-fire-history-2023", "sicily-fire-emergency-2026"],
+      "sourceLocators": {
+        "sicily-fire-history-2023": "Regional report pp. 14–17: no critical June/early-July phase; July 24 surge; 74,341 hectares burned in Sicily in 2023",
+        "sicily-fire-emergency-2026": "Sicilian Civil Protection July 19–20, 2026 update lists active and controlled fires across Palermo, Agrigento, Siracusa, Enna, Ragusa, and Catania"
+      }
+    },
+    "slovenia-june": {
+      "name": "Ljubljana, the Julian Alps, Soča Valley, and Piran in June",
+      "score": 4,
+      "rationale": "The moist alpine half is low risk; the Karst and coastal southwest can burn. EFFIS mapped only two Slovenian fires in 2024, while the July 2024 Karst fire demonstrates that localized disruption is credible later in summer.",
+      "sourceRefs": ["effis-2024-fire-report", "slovenia-karst-fire-2024"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.30: two mapped fires totaling 79 hectares in Slovenia in 2024",
+        "slovenia-karst-fire-2024": "Government of Slovenia July 18, 2024 report: 350+ firefighters responded to the Karst fire"
+      }
+    },
+    "southern-france-june": {
+      "name": "Nice, Cassis, and Provence in June",
+      "score": 4,
+      "rationale": "Provence and the Riviera are fire-prone and France begins daily forest-danger mapping in June. This itinerary is early in the season and has urban/coastal substitutes, but calanque and inland-forest closures are realistic during a hot, windy spell.",
+      "sourceRefs": ["france-forest-fire", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "france-forest-fire": "Géorisques/Météo-France publishes daily June–September forest danger based on weather, vegetation dryness, and land cover",
+        "effis-2024-fire-report": "Section 3.2.12: 2024 was below average but 605 qualifying fires still burned 17,321 hectares"
+      }
+    },
+    "southern-italy-june": {
+      "name": "Salento, Basilicata, and the Amalfi Coast in June",
+      "score": 4,
+      "rationale": "The route enters Italy's official summer campaign on June 15, but recent national damage is concentrated in July and August. Coastal towns are resilient; wooded Basilicata/Cilento transfers and cliff-road closures are the practical exposure.",
+      "sourceRefs": ["italy-fire-season-2026", "effis-2024-fire-report"],
+      "sourceLocators": {
+        "italy-fire-season-2026": "Italian Civil Protection sets the national 2026 active campaign from June 15 through October 15",
+        "effis-2024-fire-report": "Section 3.2.17: three quarters of Italy's 2024 fire damage occurred in July and August"
+      }
+    },
+    "switzerland-june": {
+      "name": "The Bernese Oberland in June",
+      "score": 5,
+      "rationale": "Swiss forest fires are usually small and the greatest burned area is historically south of the Alps or in dry winter surface fires. The lush, high-elevation Bernese Oberland in June has very low material trip-disruption exposure.",
+      "sourceRefs": ["switzerland-forest-report-2025"],
+      "sourceLocators": {
+        "switzerland-forest-report-2025": "Federal Forest Report: 2015–2022 average 114 fires and 143.3 hectares/year; 88% of burned area came from winter surface fires"
+      }
+    },
+    "turkey-june": {
+      "name": "Antalya, Kaş, and Fethiye in June",
+      "score": 3,
+      "rationale": "The Turkish Riviera combines dry pine forest, steep roads, and a June entry into the eastern Mediterranean fire season. Türkiye's 2024 burned area was more than double its long-term average; exact resort exposure varies sharply with wind and heat.",
+      "sourceRefs": ["effis-2024-fire-report", "copernicus-fire-season"],
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.34: 1,663 fires burned 131,223 hectares in Türkiye in 2024, more than double the long-term average",
+        "copernicus-fire-season": "Copernicus identifies June–September as the main Mediterranean fire season"
+      }
+    }
+  },
+  "tripProfiles": {
+    "albania": ["albania-june"],
+    "balkans": ["adriatic-july"],
+    "california-pacific-coast": ["california-coast-july"],
+    "canary-islands": ["canaries-june"],
+    "croatia": ["croatia-june"],
+    "dolomites-sardinia": ["alps-june", "sardinia-june"],
+    "greece-cyclades": ["greece-june"],
+    "greece-ionian": ["greece-june"],
+    "greece-via-lisbon": ["lisbon-june", "greece-june"],
+    "hawaii": ["hawaii-june"],
+    "iceland-ischia-cilento": ["iceland-june", "campania-june"],
+    "iceland": ["iceland-june"],
+    "italy-salento-amalfi": ["southern-italy-june"],
+    "madeira-crete": ["madeira-june", "greece-june"],
+    "madeira-kefalonia": ["madeira-june", "greece-june"],
+    "madeira-mallorca": ["madeira-june", "mallorca-june"],
+    "madeira-sicily": ["madeira-june", "sicily-june"],
+    "maui-kauai": ["hawaii-june"],
+    "portugal-algarve-sicily": ["algarve-june", "sicily-june"],
+    "portugal-crete": ["lisbon-june", "greece-june"],
+    "portugal-sicily": ["lisbon-june", "sicily-june"],
+    "portugal": ["lisbon-june", "algarve-june", "madeira-june"],
+    "sardinia-corsica": ["sardinia-june", "corsica-june"],
+    "short-acadia": ["acadia-june"],
+    "short-alaska": ["alaska-kenai-june"],
+    "short-algarve": ["algarve-june"],
+    "short-azores": ["azores-june"],
+    "short-iceland": ["iceland-june"],
+    "short-ischia": ["campania-june"],
+    "short-madeira": ["madeira-june"],
+    "short-portugal": ["lisbon-june", "algarve-june"],
+    "short-puerto-rico": ["puerto-rico-northeast-june"],
+    "short-sicily": ["sicily-june"],
+    "sicily-malta": ["sicily-june", "malta-june"],
+    "slovenia-adriatic": ["slovenia-june"],
+    "southern-france": ["southern-france-june"],
+    "spain": ["andalusia-june"],
+    "switzerland-crete": ["switzerland-june", "greece-june"],
+    "switzerland-sicily": ["switzerland-june", "sicily-june"],
+    "turkish-riviera": ["turkey-june"]
+  }
+}

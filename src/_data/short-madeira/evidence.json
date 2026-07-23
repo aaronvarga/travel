@@ -1,70 +1,417 @@
 {
   "schemaVersion": 1,
   "slug": "short-madeira",
-  "reviewedAt": "2026-07-13",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
-    "budget": { "score": 5, "rationale": "The six reconciled categories total $5,700–$8,900, comfortably below both the $12,000 target and $15,000 preferred maximum. Exact June 2027 airfare and lodging are not quoted, so the favorable score is medium-confidence.", "confidence": "medium", "evidence": ["budget-band"] },
-    "weather": { "score": 4, "rationale": "IPMA's Funchal June normal is mild and relatively dry, while official Madeira guidance warns that mountain conditions can differ and trails can close. Flexible day order manages, but does not remove, cloud and wind.", "confidence": "high", "evidence": ["climate-proxy"] },
-    "swim": { "score": 2, "rationale": "The plan includes managed Lido and Porto Moniz entries plus Machico, but June Atlantic water is refreshing rather than warm and every swim remains conditional on flags and swell.", "confidence": "medium", "evidence": ["swim-conditions"] },
-    "variety": { "score": 4, "rationale": "Within one island the itinerary schedules a city, gardens, volcanic pools, a mist forest, high peaks, a dedicated PR6 25 Fontes/Risco levada day, an exposed headland and two low-output reset days.", "confidence": "high", "evidence": ["itinerary-structure", "pr6-access"] },
-    "ease": { "score": 4, "rationale": "The family sleeps in the same apartment all week, skips ferries and extra flights, enjoys two car-free days and reaches the airport in about 20–30 minutes. The transatlantic connection is the only reason this is not a 5.", "confidence": "high", "evidence": ["operational-load"] },
-    "food": { "score": 4, "rationale": "The Funchal base has apartment cooking and current supermarket coverage, while every named road stop includes pizza, grilled chicken, fries or a packed-lunch fallback. Exact 2027 menus and hours remain unconfirmed.", "confidence": "medium", "evidence": ["family-food-coverage"] },
-    "risk": { "score": 3, "rationale": "The one-base plan avoids compounding logistics, but Madeira Airport wind, unpublished exact June 2027 protected routing, trail closures and Atlantic swell remain material managed risks.", "confidence": "medium", "evidence": ["route-readiness"] },
-    "nights": { "score": 1, "rationale": "Seven hotel nights keep this intentionally short and easy to fit into the year. In a comparison that gives more length points to vacations of nine nights or more, this earns 1/5.", "confidence": "high", "evidence": ["trip-window"] },
-    "novelty": { "score": 5, "rationale": "The family has not visited Madeira before, so both the island and this scenery-first style of trip feel genuinely new.", "confidence": "high", "evidence": ["visited-overlap"] },
-    "pto": { "score": 5, "rationale": "Using the observed Juneteenth holiday keeps the trip to only five vacation days, the strongest time-off fit in the comparison.", "confidence": "high", "evidence": ["trip-window"] }
+    "budget": {
+      "score": 5,
+      "rationale": "The six reconciled categories total $5,700–$8,900, comfortably below both the $12,000 target and $15,000 preferred maximum. Exact June 2027 airfare and lodging are not quoted, so the favorable score is medium-confidence.",
+      "confidence": "medium",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "IPMA's Funchal June normal is mild and relatively dry, while official Madeira guidance warns that mountain conditions can differ and trails can close. Flexible day order manages, but does not remove, cloud and wind.",
+      "confidence": "high",
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 4,
+      "rationale": "Low is the safety rating (4/5), corresponding to a 2–5% planning chance of material wildfire disruption during the exact trip window. Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
+      ]
+    },
+    "swim": {
+      "score": 2,
+      "rationale": "The plan includes managed Lido and Porto Moniz entries plus Machico, but June Atlantic water is refreshing rather than warm and every swim remains conditional on flags and swell.",
+      "confidence": "medium",
+      "evidence": [
+        "swim-conditions"
+      ]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "Within one island the itinerary schedules a city, gardens, volcanic pools, a mist forest, high peaks, a dedicated PR6 25 Fontes/Risco levada day, an exposed headland and two low-output reset days.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure",
+        "pr6-access"
+      ]
+    },
+    "ease": {
+      "score": 4,
+      "rationale": "The family sleeps in the same apartment all week, skips ferries and extra flights, enjoys two car-free days and reaches the airport in about 20–30 minutes. The transatlantic connection is the only reason this is not a 5.",
+      "confidence": "high",
+      "evidence": [
+        "operational-load"
+      ]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "The Funchal base has apartment cooking and current supermarket coverage, while every named road stop includes pizza, grilled chicken, fries or a packed-lunch fallback. Exact 2027 menus and hours remain unconfirmed.",
+      "confidence": "medium",
+      "evidence": [
+        "family-food-coverage"
+      ]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "The one-base plan avoids compounding logistics, but Madeira Airport wind, unpublished exact June 2027 protected routing, trail closures and Atlantic swell remain material managed risks.",
+      "confidence": "medium",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Seven hotel nights keep this intentionally short and easy to fit into the year. In a comparison that gives more length points to vacations of nine nights or more, this earns 1/5.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "The family has not visited Madeira before, so both the island and this scenery-first style of trip feel genuinely new.",
+      "confidence": "high",
+      "evidence": [
+        "visited-overlap"
+      ]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "Using the observed Juneteenth holiday keeps the trip to only five vacation days, the strongest time-off fit in the comparison.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
   },
   "facts": [
     {
-      "id": "budget-band", "category": "budget", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["internal-itinerary"],
-      "value": { "lowUsd": 5700, "expectedUsd": null, "highUsd": 8900, "targetUsd": 12000, "preferredMaxUsd": 15000, "distribution": "planning-band", "lineItemCount": 6, "arithmetic": "3000/4400 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 5700/8900" },
-      "verifiedAt": "2026-07-13", "expiresAt": "2026-10-31", "sourceLocators": { "internal-itinerary": "short-madeira/main.json #budget and #totals; exact six-line low/high category reconciliation" }, "claimType": "proxy"
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "lowUsd": 5700,
+        "expectedUsd": null,
+        "highUsd": 8900,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "3000/4400 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 5700/8900"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "short-madeira/main.json #budget and #totals; exact six-line low/high category reconciliation"
+      },
+      "claimType": "proxy"
     },
     {
-      "id": "trip-window", "category": "dates", "proxyStatus": "confirmed", "confidence": "high", "sourceRefs": ["decision-profile"],
-      "value": { "depart": "2027-06-11", "return": "2027-06-19", "hotelNights": 7, "ptoDays": 5, "holiday": "Juneteenth observed Friday 2027-06-18", "pittsburghFullDaysProtected": ["2027-06-24", "2027-06-25", "2027-06-26"] },
-      "verifiedAt": "2026-07-13", "expiresAt": null, "sourceLocators": { "decision-profile": "decisionProfile.json tripWindows.short-madeira plus the required Pittsburgh full days June 24–26" }, "claimType": "confirmed"
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "value": {
+        "depart": "2027-06-11",
+        "return": "2027-06-19",
+        "hotelNights": 7,
+        "ptoDays": 5,
+        "holiday": "Juneteenth observed Friday 2027-06-18",
+        "pittsburghFullDaysProtected": [
+          "2027-06-24",
+          "2027-06-25",
+          "2027-06-26"
+        ]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json tripWindows.short-madeira plus the required Pittsburgh full days June 24–26"
+      },
+      "claimType": "confirmed"
     },
     {
-      "id": "climate-proxy", "category": "climate", "proxyStatus": "current-proxy", "confidence": "high", "sourceRefs": ["ipma-funchal-normal-1991-2020", "visit-madeira-hiking"],
-      "value": { "score": 4, "juneMeanDailyLowHighF": { "Funchal": [65, 75] }, "junePrecipitationMm": 7.8, "forecast": false, "mountainConditionsExcluded": true },
-      "verifiedAt": "2026-07-13", "expiresAt": "2027-04-01", "sourceLocators": { "ipma-funchal-normal-1991-2020": "IPMA Funchal station 522 1991–2020 normal: June TN 18.2°C, TX 23.7°C, precipitation 7.8 mm", "visit-madeira-hiking": "Official Madeira hiking page: weather can temporarily close trails; live status and reservation system required" }, "claimType": "proxy"
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "ipma-funchal-normal-1991-2020",
+        "visit-madeira-hiking"
+      ],
+      "value": {
+        "score": 4,
+        "juneMeanDailyLowHighF": {
+          "Funchal": [
+            65,
+            75
+          ]
+        },
+        "junePrecipitationMm": 7.8,
+        "forecast": false,
+        "mountainConditionsExcluded": true
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "ipma-funchal-normal-1991-2020": "IPMA Funchal station 522 1991–2020 normal: June TN 18.2°C, TX 23.7°C, precipitation 7.8 mm",
+        "visit-madeira-hiking": "Official Madeira hiking page: weather can temporarily close trails; live status and reservation system required"
+      },
+      "claimType": "proxy"
     },
     {
-      "id": "swim-conditions", "category": "swim", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["noaa-oisst", "internal-itinerary"],
-      "value": { "score": 2, "temperatureF": [68, 71], "hasSwim": true, "managedEntries": ["Lido Bathing Complex", "Porto Moniz Natural Pools"], "safetyConstraint": "Live flags, swell and staff opening control all Atlantic swimming" },
-      "verifiedAt": "2026-07-13", "expiresAt": "2027-05-15", "sourceLocators": { "noaa-oisst": "Historical June coastal SST planning range at Funchal/Madeira; 68–71°F retained as a proxy rather than a 2027 forecast", "internal-itinerary": "short-madeira/main.json Lido, Porto Moniz and Machico cards; every swim is explicitly conditional" }, "claimType": "proxy"
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "noaa-oisst",
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 2,
+        "temperatureF": [
+          68,
+          71
+        ],
+        "hasSwim": true,
+        "managedEntries": [
+          "Lido Bathing Complex",
+          "Porto Moniz Natural Pools"
+        ],
+        "safetyConstraint": "Live flags, swell and staff opening control all Atlantic swimming"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "noaa-oisst": "Historical June coastal SST planning range at Funchal/Madeira; 68–71°F retained as a proxy rather than a 2027 forecast",
+        "internal-itinerary": "short-madeira/main.json Lido, Porto Moniz and Machico cards; every swim is explicitly conditional"
+      },
+      "claimType": "proxy"
     },
     {
-      "id": "itinerary-structure", "category": "itinerary", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["internal-itinerary"],
-      "value": { "score": 4, "hotelNights": 7, "baseNames": ["Funchal / São Martinho"], "nightSplit": [7], "scheduledModes": ["city and gardens", "high mountain viewpoint", "PR6 25 Fontes and Risco levada hiking", "lava pools", "mist forest", "volcanic headland", "managed swimming"] },
-      "verifiedAt": "2026-07-13", "expiresAt": null, "sourceLocators": { "internal-itinerary": "short-madeira/main.json day1–day8, stays and balance sections document the one-base structure" }, "claimType": "derived"
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "hotelNights": 7,
+        "baseNames": [
+          "Funchal / São Martinho"
+        ],
+        "nightSplit": [
+          7
+        ],
+        "scheduledModes": [
+          "city and gardens",
+          "high mountain viewpoint",
+          "PR6 25 Fontes and Risco levada hiking",
+          "lava pools",
+          "mist forest",
+          "volcanic headland",
+          "managed swimming"
+        ]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "short-madeira/main.json day1–day8, stays and balance sections document the one-base structure"
+      },
+      "claimType": "derived"
     },
     {
-      "id": "operational-load", "category": "logistics", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["internal-itinerary"],
-      "value": { "easeScore": 4, "maxConnections": 2, "singleTicket": true, "lodgingSleeps": 1, "baseMoves": 0, "internalFlights": 0, "ferrySegments": 0, "rentalCars": 1, "rentalDays": 4, "airHours": 16, "groundHours": 13.5 },
-      "verifiedAt": "2026-07-13", "expiresAt": "2027-02-01", "sourceLocators": { "internal-itinerary": "short-madeira/main.json air-travel, getting-around and itinerary sections: one base, no internal transport, four car days" }, "claimType": "derived"
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "easeScore": 4,
+        "maxConnections": 2,
+        "singleTicket": true,
+        "lodgingSleeps": 1,
+        "baseMoves": 0,
+        "internalFlights": 0,
+        "ferrySegments": 0,
+        "rentalCars": 1,
+        "rentalDays": 4,
+        "airHours": 16,
+        "groundHours": 13.5
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-02-01",
+      "sourceLocators": {
+        "internal-itinerary": "short-madeira/main.json air-travel, getting-around and itinerary sections: one base, no internal transport, four car days"
+      },
+      "claimType": "derived"
     },
     {
-      "id": "family-food-coverage", "category": "food", "proxyStatus": "current-proxy", "confidence": "medium", "sourceRefs": ["continente-portugal-stores", "internal-itinerary"],
-      "value": { "score": 4, "plainFoodRequired": true, "coveredSleeps": ["Funchal / São Martinho"], "fallbackTypes": ["pizza", "pasta", "burgers", "grilled chicken", "fries", "apartment kitchen", "packed lunch"] },
-      "verifiedAt": "2026-07-13", "expiresAt": "2027-04-01", "sourceLocators": { "continente-portugal-stores": "Operator locator confirms current Madeira/Funchal grocery coverage; exact São Martinho branch hours require recheck", "internal-itinerary": "short-madeira/main.json restaurant lists for Funchal, mountains, Porto Moniz and Machico" }, "claimType": "proxy"
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "continente-portugal-stores",
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true,
+        "coveredSleeps": [
+          "Funchal / São Martinho"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "grilled chicken",
+          "fries",
+          "apartment kitchen",
+          "packed lunch"
+        ]
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "continente-portugal-stores": "Operator locator confirms current Madeira/Funchal grocery coverage; exact São Martinho branch hours require recheck",
+        "internal-itinerary": "short-madeira/main.json restaurant lists for Funchal, mountains, Porto Moniz and Machico"
+      },
+      "claimType": "proxy"
     },
     {
-      "id": "pr6-access", "category": "reservation", "proxyStatus": "current-proxy", "confidence": "high", "sourceRefs": ["visit-madeira-hiking"],
-      "value": { "trail": "PR6 Levada das 25 Fontes", "statusObserved": "open", "distanceKm": 4.3, "durationHours": 3, "difficulty": "medium", "reservationRequired": true, "individualFeeEur2026": 4.5, "combinedDailyFeeEur2026": 9, "includesOptional": "PR6.1 Levada do Risco only with the appropriate combined reservation" },
-      "verifiedAt": "2026-07-13", "expiresAt": "2027-04-01", "sourceLocators": { "visit-madeira-hiking": "Official 2026 hiking FAQ and PR6 listing: PR6 open when checked; 4.3 km, about 3 hr, medium; all PR trails require prepaid SIMplifica reservation; general individual fee €4.50 and combined-day fee €9" }, "claimType": "proxy"
+      "id": "pr6-access",
+      "category": "reservation",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "visit-madeira-hiking"
+      ],
+      "value": {
+        "trail": "PR6 Levada das 25 Fontes",
+        "statusObserved": "open",
+        "distanceKm": 4.3,
+        "durationHours": 3,
+        "difficulty": "medium",
+        "reservationRequired": true,
+        "individualFeeEur2026": 4.5,
+        "combinedDailyFeeEur2026": 9,
+        "includesOptional": "PR6.1 Levada do Risco only with the appropriate combined reservation"
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "visit-madeira-hiking": "Official 2026 hiking FAQ and PR6 listing: PR6 open when checked; 4.3 km, about 3 hr, medium; all PR trails require prepaid SIMplifica reservation; general individual fee €4.50 and combined-day fee €9"
+      },
+      "claimType": "proxy"
     },
     {
-      "id": "route-readiness", "category": "route", "proxyStatus": "exact-2027-schedule-required", "confidence": "medium", "sourceRefs": ["internal-itinerary", "ana-madeira-wind-operations"],
-      "value": { "status": "exact-2027-schedule-required", "singleTicket": true, "maxConnections": 2, "preferredConnections": 1, "june2027ProtectedTicketVerified": false, "routeRule": "PIT–European hub–FNC on one protected round trip; reject separate tickets", "observedRoundTripPerTravelerUsd": 723 },
-      "verifiedAt": "2026-07-13", "expiresAt": "2026-10-31", "sourceLocators": { "internal-itinerary": "Skyscanner PIT–FNC route page observed 2026-07-13: no nonstop, recent all-date round-trip low $723; exact June 2027 unavailable", "ana-madeira-wind-operations": "Official ANA operational notice documents strong-wind disruption sensitivity at Madeira Airport" }, "claimType": "proxy"
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "exact-2027-schedule-required",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "ana-madeira-wind-operations"
+      ],
+      "value": {
+        "status": "exact-2027-schedule-required",
+        "singleTicket": true,
+        "maxConnections": 2,
+        "preferredConnections": 1,
+        "june2027ProtectedTicketVerified": false,
+        "routeRule": "PIT–European hub–FNC on one protected round trip; reject separate tickets",
+        "observedRoundTripPerTravelerUsd": 723
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": "2026-10-31",
+      "sourceLocators": {
+        "internal-itinerary": "Skyscanner PIT–FNC route page observed 2026-07-13: no nonstop, recent all-date round-trip low $723; exact June 2027 unavailable",
+        "ana-madeira-wind-operations": "Official ANA operational notice documents strong-wind disruption sensitivity at Madeira Airport"
+      },
+      "claimType": "proxy"
     },
     {
-      "id": "visited-overlap", "category": "novelty", "proxyStatus": "derived", "confidence": "high", "sourceRefs": ["decision-profile", "scorecard-contract"],
-      "value": { "score": 5, "overlap": [] }, "verifiedAt": "2026-07-13", "expiresAt": null,
-      "sourceLocators": { "decision-profile": "decisionProfile.json family trip context and recorded visited-place history", "scorecard-contract": "scorecard.manifest.json novelty rubric; Madeira is absent from the visited list" }, "claimType": "derived"
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
+      "verifiedAt": "2026-07-13",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "decisionProfile.json family trip context and recorded visited-place history",
+        "scorecard-contract": "scorecard.manifest.json novelty rubric; Madeira is absent from the visited list"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "madeira-fire-2024",
+        "effis-2024-fire-report"
+      ],
+      "value": {
+        "score": 4,
+        "level": "Low",
+        "chanceBand": "2–5%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "madeira-june",
+            "name": "Madeira in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day."
+          }
+        ],
+        "routeNames": [
+          "Madeira in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "madeira-fire-2024": "Madeira Civil Protection: August 14–24, 2024 fire affected about 5,000 hectares under heat, wind, and low humidity",
+        "effis-2024-fire-report": "Portugal/Madeira regional context; exact June danger is weather-dependent and must be checked live"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {
@@ -75,13 +422,28 @@
     "longestTransferHours": 9,
     "highOutputDayStreak": 3,
     "fallbackDays": 3,
-    "childActivityFit": { "age13": "fits", "age8": "fits" },
-    "lodgingComfort": { "airConditioning": "preferred at selection", "kitchen": "required", "laundry": "required", "realBeds": "required" },
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "lodgingComfort": {
+      "airConditioning": "preferred at selection",
+      "kitchen": "required",
+      "laundry": "required",
+      "realBeds": "required"
+    },
     "waterSafety": "Use managed Lido or Porto Moniz entries only when open; all ocean swims require live flag and swell checks.",
     "crowdingPressure": "Pico parking, classified PR reservations and Porto Moniz midday demand favor early starts.",
     "medicalAccess": "Funchal has the island's strongest access; peak, Fanal and Ponta days are remote and require conservative turn-around rules.",
-    "childActivityNotes": { "age13": "strong fit for peaks, PR6 waterfalls, coast and flexible swim days", "age8": "Balcões, supervised PR6 levada sections and short Ponta segments replace full exposed ridge hikes" }
+    "childActivityNotes": {
+      "age13": "strong fit for peaks, PR6 waterfalls, coast and flexible swim days",
+      "age8": "Balcões, supervised PR6 levada sections and short Ponta segments replace full exposed ridge hikes"
+    }
   },
   "evidenceBasis": "Official IPMA climate normal, official Madeira trail and airport-wind sources, operator supermarket coverage, historical SST planning evidence and deterministic itinerary structure.",
-  "confidenceBasis": ["ground plan and date arithmetic are high-confidence", "exact June 2027 airfare, lodging and rental quotes remain open", "Atlantic temperature and family menu details remain medium-confidence planning inputs"]
+  "confidenceBasis": [
+    "ground plan and date arithmetic are high-confidence",
+    "exact June 2027 airfare, lodging and rental quotes remain open",
+    "Atlantic temperature and family menu details remain medium-confidence planning inputs"
+  ]
 }

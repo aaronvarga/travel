@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "iceland-ischia-cilento",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "evidenceBasis": "Current operator schedules, official attraction prices, a live nearby June 2027 PIT–KEF fare signal, historical climate/sea proxies, and exact internal itinerary arithmetic.",
   "confidenceBasis": "The route shape and itemized arithmetic are high-confidence derived facts. Overall confidence is medium because the exact June 10–23 stopover airfare, operating days, lodging, cars, and 2027 hydrofoils are not yet quoted together.",
@@ -21,6 +21,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 4,
+      "rationale": "Low is the safety rating (4/5), corresponding to a 2–5% planning chance of material wildfire disruption during the exact trip window. Italy's national summer firefighting campaign starts June 15, but three quarters of Italy's 2024 burned area occurred in July and August. Island/coastal bases reduce direct exposure; inland Cilento drives and wooded Ischia slopes remain the watch points.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -423,6 +431,58 @@
         "scorecard-contract": "Novelty rubric; country overlap moderates otherwise new regional content."
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "iceland-climate-report",
+        "iceland-2006-fire",
+        "italy-fire-season-2026",
+        "effis-2024-fire-report"
+      ],
+      "value": {
+        "score": 4,
+        "level": "Low",
+        "chanceBand": "2–5%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "iceland-june",
+            "name": "Reykjavík, Reykjanes, and Iceland's South Coast in June",
+            "score": 5,
+            "level": "Very low",
+            "chanceBand": "<2%",
+            "rationale": "Iceland has had rare large grass fires, but its maritime climate, sparse tree cover, and limited fire history make wildfire a very small June travel risk. Volcanic hazards remain important, but they stay in the separate general Risk axis."
+          },
+          {
+            "id": "campania-june",
+            "name": "Naples, Ischia, and Cilento in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Italy's national summer firefighting campaign starts June 15, but three quarters of Italy's 2024 burned area occurred in July and August. Island/coastal bases reduce direct exposure; inland Cilento drives and wooded Ischia slopes remain the watch points."
+          }
+        ],
+        "routeNames": [
+          "Reykjavík, Reykjanes, and Iceland's South Coast in June",
+          "Naples, Ischia, and Cilento in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "iceland-climate-report": "Icelandic Meteorological Office says wildfire is an emerging hazard with limited national experience",
+        "iceland-2006-fire": "IMO climate summary documents the exceptional March 2006 grass fire, the largest known in Iceland",
+        "italy-fire-season-2026": "Italian Civil Protection defines the 2026 summer active-fire campaign as June 15–October 15",
+        "effis-2024-fire-report": "Section 3.2.17: 75% of Italy's 2024 burned area occurred in July and August"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

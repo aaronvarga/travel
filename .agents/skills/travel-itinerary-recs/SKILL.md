@@ -1,7 +1,7 @@
 ---
 name: travel-itinerary-recs
 description: >-
-  Audit and correct the TravelPlanner recommendation engine — the /50 scorecards, the ranking order, and
+  Audit and correct the TravelPlanner recommendation engine — the /55 scorecards, the ranking order, and
   the factual pros/cons/risks/metrics across every itinerary — so the hub reflects real family-travel
   considerations. Use this whenever the user wants to re-rank trips, verify or fix scores, reconcile budget
   numbers, correct a trip's claims (routes, ETIAS, licensing, reservations, temperatures, airline schedules),
@@ -16,7 +16,8 @@ description: >-
 
 # Travel Itinerary Recommendations Audit
 
-The TravelPlanner hub ranks 21 family-trip itineraries (16 ranked + 5 excluded) for a June 2027 vacation.
+The TravelPlanner hub contains 40 family-trip itineraries for a June 2027 vacation: 21 ranked comparison
+plans, 9 excluded comparison references, and 10 short escapes ranked in their own band.
 The ranking, the scores, and the prose on each trip page are three layers that **drift independently** — a
 score change that isn't propagated to the static card, the scoreboard row, the rank badge, and the TL;DR box
 produces a hub that silently contradicts itself. This skill audits those layers back into agreement and
@@ -43,11 +44,11 @@ The repo already encodes the decisions — don't relitigate them, reconcile agai
 
 ## The scoring model (do the arithmetic, don't trust the bake)
 
-Total is **/50**: `Budget×2 + Weather + Swim + Variety + Ease + Food + Risk + Nights + Novelty`, each axis
+Total is **/55**: `Budget×2 + Weather + Fire safety + Swim + Variety + Ease + Food + Risk + Nights + Novelty`, each axis
 1–5. **PTO has `weightDefault` 0** — it's a slider-only axis, never in the default total.
 
 - `scorecard.totalBaked` is a cached number. **Recompute it from the component axes every time** and treat a
-  mismatch as the bug. `tools/verify-summary.mjs` asserts `totalBaked == budget×2 + the 8 scored axes`; if you
+  mismatch as the bug. `tools/verify-summary.mjs` asserts `totalBaked` against the manifest-weighted axes; if you
   change an axis you must recompute `totalBaked` and update every surface that cites it (see propagation).
 - **Nights and PTO are derived, not free.** `validate-scorecards.mjs` recomputes `nights` from
   `pto.nights` (12+→5, 11→4, 10→3, 9→2, ≤8→1) and `pto` from `manifest.ptoRubric[pto.days]`. Set the source
@@ -71,13 +72,13 @@ simulate the sort: `(excluded, -weightedTotal, capBreach, ptoDays, ceil, floor)`
    scoring/invariants sections. Note any concurrent uncommitted work (`git status`) — photo refreshes and
    asset changes are common; **preserve them, never revert unrelated work**.
 2. **Enumerate trips** from `src/_data/*/main.json`. Classify ranked vs excluded by the `excluded` string
-   field. Confirm the 21 / 16 / 5 counts. `recommended: true` means the page has all required sections — it is
+   field. Confirm the 40 total / 21 ranked comparison / 9 excluded / 10 short counts. `recommended: true` means the page has all required sections — it is
    a **completeness gate, not an engine endorsement**; do not read it as a ranking signal.
 3. **Recompute every metric.** For each trip: reconcile the budget category arithmetic against the page's own
    "Grand total" rollup; recompute each axis against its manifest rubric; recompute `totalBaked`. Record every
    delta.
 4. **Verify derived axes and dates programmatically** — run `node tools/validate-scorecards.mjs`. It enforces
-   the axis set, default weights, derived Nights/PTO, `hasSwim`, swim-temp ranges, budget fields, the 21/16/5
+   the axis set, default weights, derived Nights/PTO, `hasSwim`, swim-temp ranges, budget fields, the 40/21/9/10
    counts, and that **no trip window overlaps June 24–26**. Fix source data until it passes; don't work around
    it.
 5. **Audit the prose.** Fact-check pros/cons/risks against primary sources and the decision profile. Correct
@@ -112,7 +113,7 @@ A single axis edit ripples. After changing any score, update **all** of:
   `california`, `southernfrance`).
 - Any prose that cites the score or rank: hub cards, hero, decision console, winner cards, the practical
   matrix, and the **per-page TL;DR box** (injected into each ranked page's `overview` section, may cite
-  "#N of 16" and the score).
+  "#N of 21" and the score).
 - `assets/js/urlstate.js` — the hardcoded `AXES` array + `DEFAULT_W` are **positional**; they must match the
   manifest axis order and default weights exactly, or shared URL weight vectors decode wrong.
 
@@ -134,7 +135,7 @@ node tools/lint-sections.mjs && node tools/validate-scorecards.mjs && node tools
 
 GitHub Pages serves root HTML, not `_site/`; use the safe sync commands above rather than copying directories manually.
 
-Verify: `validate-scorecards` prints `21 scorecards (16 ranked, 5 excluded)`; `verify-summary` confirms the
+Verify: `validate-scorecards` prints `40 scorecards (21 ranked comparison trips, 9 excluded, 10 short)`; `verify-summary` confirms the
 static row/card/rank order equals the engine sort; `git diff --check` is clean. Then **verify in-browser**,
 not with curl (curl triggers anti-bot false-negatives; a root service worker also serves the previous shell —
 hard-refresh or clear CacheStorage). Confirm no regressions: duplicated blocks, clobbered fields, duplicate

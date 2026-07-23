@@ -1,12 +1,20 @@
 {% set routeFact = trip.evidence.facts | selectattr("id", "equalto", "route-readiness") | first %}
+{% set fireFact = trip.evidence.facts | selectattr("id", "equalto", "wildfire-exposure") | first %}
 <section id="recommendation-readiness" class="divider evidence-section">
   <div class="section-label"><p class="eyebrow">How It Stacks Up</p><h2>What works well—and what still needs checking</h2><p>The score reflects how well this trip fits the family. Flight schedules, live prices, and availability still need a fresh check before booking.</p></div>
   <div class="evidence-summary-grid">
-    <article><span>Family-fit score</span><strong>{{ trip.main.scorecard.totalBaked }}/50</strong><p>Value matters most in the score; PTO is shown separately.</p></article>
+    <article><span>Family-fit score</span><strong>{{ trip.main.scorecard.totalBaked }}/55</strong><p>Value matters most; fire safety counts once and PTO is shown separately.</p></article>
     <article><span>Before you book</span><strong>{{ routeFact["value"]["status"] | replace("-", " ") | title }}</strong><p>{{ routeFact.confidence | title }} confidence · recheck by {{ (routeFact.expiresAt | displayDate) if routeFact.expiresAt else "when the schedule or route changes" }}</p></article>
     <article><span>How solid are the estimates?</span><strong>{{ trip.evidence.overallConfidence | title }}</strong><p>Reviewed {{ trip.evidence.reviewedAt | displayDate }}.{% if trip.evidence.overallConfidence != "high" and trip.evidence.limitingAxes.length %} The least certain areas are {{ trip.evidence.limitingAxes | join(", ") }}.{% endif %}</p></article>
     <article><span>Expected family total</span><strong>{% if trip.main.scorecard.budget.ceilUsd <= 12000 %}At/below target{% elif trip.main.scorecard.budget.ceilUsd <= 15000 %}Within $15k preference{% elif trip.main.scorecard.budget.floorUsd <= 15000 %}Range crosses $15k{% else %}Likely above $15k{% endif %}</strong><p>{{ trip.main.scorecard.budget.floorUsd | moneyK }}&ndash;{{ trip.main.scorecard.budget.ceilUsd | moneyK }} estimated range.</p></article>
+    <article><span>Wildfire disruption</span><strong>{{ fireFact.value.level }} · {{ fireFact.value.chanceBand }}</strong><p>Planning chance for these dates; live warnings override history.</p></article>
   </div>
+  <details class="verification-log fire-risk-log">
+    <summary>See wildfire evidence for every stop</summary>
+    <p>{{ fireFact.value.outcome }} The trip uses the least-safe route segment as its overall rating.</p>
+    <ul>{%- for profile in fireFact.value.routeProfiles -%}<li><b>{{ profile.name }}</b> &mdash; {{ profile.level }} ({{ profile.chanceBand }}): {{ profile.rationale }}</li>{%- endfor -%}</ul>
+    <p><b>How to use this:</b> {{ fireFact.value.monitoring }} These are evidence-based planning bands, not actuarial forecasts.</p>
+  </details>
   <details class="verification-log">
     <summary>See recent planning updates</summary>
     <ul>{%- for event in verificationLog.events -%}{% if event.scope == "all" or event.scope == trip.slug %}<li><time datetime="{{ event.date }}">{{ event.date }}</time> &mdash; {{ event.summary }}</li>{% endif %}{%- endfor -%}</ul>

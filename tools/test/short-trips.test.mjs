@@ -13,17 +13,17 @@ test('short escapes stay compact, budget-first, and outside the long-trip rankin
 
   assert.deepEqual(shortTrips.map((trip) => trip.slug), [
     'short-puerto-rico',
+    'short-azores',
     'short-algarve',
     'short-sicily',
+    'short-acadia',
     'short-portugal',
-    'short-azores',
     'short-ischia',
     'short-madeira',
-    'short-acadia',
     'short-iceland',
     'short-alaska',
   ]);
-  assert.deepEqual(shortTrips.map((trip) => trip.shortScore), [42, 42, 42, 41, 41, 40, 40, 39, 38, 34]);
+  assert.deepEqual(shortTrips.map((trip) => trip.shortScore), [46, 46, 45, 45, 44, 44, 44, 44, 43, 38]);
   assert.deepEqual(shortTrips.map((trip) => trip.shortRank), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
   for (const trip of shortTrips) {
     const main = JSON.parse(fs.readFileSync(path.join(root, 'src/_data', trip.slug, 'main.json'), 'utf8'));

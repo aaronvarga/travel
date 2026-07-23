@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "turkish-riviera",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "high",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. The Turkish Riviera combines dry pine forest, steep roads, and a June entry into the eastern Mediterranean fire season. Türkiye's 2024 burned area was more than double its long-term average; exact resort exposure varies sharply with wind and heat.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -321,6 +329,45 @@
         "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for turkish-riviera"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "effis-2024-fire-report",
+        "copernicus-fire-season"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "turkey-june",
+            "name": "Antalya, Kaş, and Fethiye in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "The Turkish Riviera combines dry pine forest, steep roads, and a June entry into the eastern Mediterranean fire season. Türkiye's 2024 burned area was more than double its long-term average; exact resort exposure varies sharply with wind and heat."
+          }
+        ],
+        "routeNames": [
+          "Antalya, Kaş, and Fethiye in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.34: 1,663 fires burned 131,223 hectares in Türkiye in 2024, more than double the long-term average",
+        "copernicus-fire-season": "Copernicus identifies June–September as the main Mediterranean fire season"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

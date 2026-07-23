@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-sicily",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -352,6 +360,58 @@
         "scorecard-contract": "scorecard.manifest.json visited list includes southern Italy places but not Sicily or Madeira"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "madeira-fire-2024",
+        "effis-2024-fire-report",
+        "sicily-fire-history-2023",
+        "sicily-fire-emergency-2026"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "madeira-june",
+            "name": "Madeira in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day."
+          },
+          {
+            "id": "sicily-june",
+            "name": "Sicily in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk."
+          }
+        ],
+        "routeNames": [
+          "Madeira in June",
+          "Sicily in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "madeira-fire-2024": "Madeira Civil Protection: August 14–24, 2024 fire affected about 5,000 hectares under heat, wind, and low humidity",
+        "effis-2024-fire-report": "Portugal/Madeira regional context; exact June danger is weather-dependent and must be checked live",
+        "sicily-fire-history-2023": "Regional report pp. 14–17: no critical June/early-July phase; July 24 surge; 74,341 hectares burned in Sicily in 2023",
+        "sicily-fire-emergency-2026": "Sicilian Civil Protection July 19–20, 2026 update lists active and controlled fires across Palermo, Agrigento, Siracusa, Enna, Ragusa, and Catania"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

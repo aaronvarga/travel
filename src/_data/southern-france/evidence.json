@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "southern-france",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -19,6 +19,14 @@
       "evidence": [
         "climate-proxy",
         "calanques-access"
+      ]
+    },
+    "fireRisk": {
+      "score": 4,
+      "rationale": "Low is the safety rating (4/5), corresponding to a 2–5% planning chance of material wildfire disruption during the exact trip window. Provence and the Riviera are fire-prone and France begins daily forest-danger mapping in June. This itinerary is early in the season and has urban/coastal substitutes, but calanque and inland-forest closures are realistic during a hot, windy spell.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -464,6 +472,45 @@
         "scorecard-contract": "Novelty rubric and documented overlap list"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "france-forest-fire",
+        "effis-2024-fire-report"
+      ],
+      "value": {
+        "score": 4,
+        "level": "Low",
+        "chanceBand": "2–5%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "southern-france-june",
+            "name": "Nice, Cassis, and Provence in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Provence and the Riviera are fire-prone and France begins daily forest-danger mapping in June. This itinerary is early in the season and has urban/coastal substitutes, but calanque and inland-forest closures are realistic during a hot, windy spell."
+          }
+        ],
+        "routeNames": [
+          "Nice, Cassis, and Provence in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "france-forest-fire": "Géorisques/Météo-France publishes daily June–September forest danger based on weather, vegetation dryness, and land cover",
+        "effis-2024-fire-report": "Section 3.2.12: 2024 was below average but 605 qualifying fires still burned 17,321 hectares"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

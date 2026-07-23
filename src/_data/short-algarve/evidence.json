@@ -1,68 +1,96 @@
 {
   "schemaVersion": 1,
   "slug": "short-algarve",
-  "reviewedAt": "2026-07-13",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
       "rationale": "Six visible categories reconcile exactly to $8,400–$11,850, keeping the complete family estimate below the shared $12,000 target. Confidence is medium because exact June 2027 Faro airfare and lodging are not yet quoted.",
       "confidence": "medium",
-      "evidence": ["budget-band"]
+      "evidence": [
+        "budget-band"
+      ]
     },
     "weather": {
       "score": 4,
       "rationale": "Official Faro 1991–2020 normals support warm, relatively dry June coast days. Exposed Sagres wind and midday heat require flexible timing but do not conflict with the route.",
       "confidence": "high",
-      "evidence": ["climate-proxy"]
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Portugal is one of Europe's highest absolute fire-danger countries and the official summer campaign begins June 1. Coastal Lagos is less exposed than the wooded interior, but Monchique, Sagres, and east–west road excursions add enough wildland interface that fire belongs in the plan.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
+      ]
     },
     "swim": {
       "score": 3,
       "rationale": "The week offers multiple meaningful beach or pool days, while official Algarve material places summer sea water near 20–22°C (68–72°F). The Atlantic is usable but cool; the lodging pool is the dependable warm-water fallback.",
       "confidence": "high",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 3,
       "rationale": "The itinerary covers coast and water, towns and food, plus cliff and headland nature, but all seven nights remain in one region and nature is primarily coastal rather than a separate landscape mode.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 5,
       "rationale": "One lodging base, zero hotel moves, no rental car, no internal flight and no rail segment create the lowest deterministic load available for this European short-trip set. Only Faro transfers and one optional Sagres outing remain.",
       "confidence": "high",
-      "evidence": ["operational-load"]
+      "evidence": [
+        "operational-load"
+      ]
     },
     "food": {
       "score": 4,
       "rationale": "Lagos, Sagres and Praia da Luz days name current pizza, pasta, burger and grocery fallbacks. The apartment kitchen protects breakfasts and excursions, although the exact lodging and 2027 opening hours remain unconfirmed.",
       "confidence": "high",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
       "rationale": "The one-base route removes rail, rental-car and hotel-change failure points, but exact June 2027 Faro flights are not confirmed and Atlantic/cliff activities remain condition-dependent. One-ticket airfare and pool/town fallbacks keep the uncertainty manageable.",
       "confidence": "medium",
-      "evidence": ["route-readiness"]
+      "evidence": [
+        "route-readiness"
+      ]
     },
     "nights": {
       "score": 1,
       "rationale": "Seven hotel nights derive 1/5 under the comparison rubric for any trip of eight or fewer nights; this is expected for the separate short-trip category.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 5,
       "rationale": "The Algarve, Lagos and Sagres do not overlap the documented visited-place list, so the novelty rubric derives 5/5.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 5,
       "rationale": "Four PTO days are better than the top documented six-day threshold and therefore receive 5/5; the observed Juneteenth holiday protects Friday June 18, subject to employer policy.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +99,10 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "google-flights-pit-lis"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "google-flights-pit-lis"
+      ],
       "value": {
         "lowUsd": 8400,
         "expectedUsd": null,
@@ -96,7 +127,9 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["decision-profile"],
+      "sourceRefs": [
+        "decision-profile"
+      ],
       "value": {
         "depart": "2027-06-12",
         "return": "2027-06-20",
@@ -117,11 +150,18 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["ipma-faro-normal-1991-2020"],
+      "sourceRefs": [
+        "ipma-faro-normal-1991-2020"
+      ],
       "value": {
         "score": 4,
         "normalPeriod": "1991–2020",
-        "juneMeanDailyLowHighF": {"Faro": [64, 80]},
+        "juneMeanDailyLowHighF": {
+          "Faro": [
+            64,
+            80
+          ]
+        },
         "forecast": false
       },
       "verifiedAt": "2026-07-13",
@@ -136,11 +176,21 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["visit-portugal-algarve", "lagos-municipal-beaches", "eea-bathing-water"],
+      "sourceRefs": [
+        "visit-portugal-algarve",
+        "lagos-municipal-beaches",
+        "eea-bathing-water"
+      ],
       "value": {
         "score": 3,
-        "temperatureF": [68, 72],
-        "temperatureC": [20, 22],
+        "temperatureF": [
+          68,
+          72
+        ],
+        "temperatureC": [
+          20,
+          22
+        ],
         "hasSwim": true,
         "scheduledSwimDays": 4,
         "warmWaterFallback": "Lagos lodging pool; heating not confirmed until property selection"
@@ -159,13 +209,23 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "lagos-municipal-routes", "visit-portugal-lagos"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "lagos-municipal-routes",
+        "visit-portugal-lagos"
+      ],
       "value": {
         "score": 3,
         "hotelNights": 7,
         "lodgingBases": 1,
-        "baseNames": ["Lagos"],
-        "scheduledModes": ["coast/water", "town/food", "cliff/headland nature"]
+        "baseNames": [
+          "Lagos"
+        ],
+        "scheduledModes": [
+          "coast/water",
+          "town/food",
+          "cliff/headland nature"
+        ]
       },
       "verifiedAt": "2026-07-13",
       "expiresAt": null,
@@ -181,7 +241,9 @@
       "category": "logistics",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "easeScore": 5,
         "maxConnections": 1,
@@ -191,7 +253,7 @@
         "internalFlights": 0,
         "rentalCars": 0,
         "longDistanceTrains": 0,
-        "airHoursPlanningEstimate": 22.0,
+        "airHoursPlanningEstimate": 22,
         "groundHoursPlanningEstimate": 6.5
       },
       "verifiedAt": "2026-07-13",
@@ -206,13 +268,27 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "continente-portugal-stores"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "continente-portugal-stores"
+      ],
       "value": {
         "score": 4,
         "plainFoodRequired": true,
-        "coveredBases": ["Lagos"],
-        "coveredOutings": ["Sagres", "Praia da Luz"],
-        "fallbackTypes": ["pizza", "pasta", "burgers", "fries", "supermarket picnic"],
+        "coveredBases": [
+          "Lagos"
+        ],
+        "coveredOutings": [
+          "Sagres",
+          "Praia da Luz"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "pasta",
+          "burgers",
+          "fries",
+          "supermarket picnic"
+        ],
         "lodgingKitchenConfirmed": false
       },
       "verifiedAt": "2026-07-13",
@@ -228,7 +304,11 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "google-flights-pit-lis", "state-travel"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "google-flights-pit-lis",
+        "state-travel"
+      ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
@@ -252,8 +332,14 @@
       "category": "novelty",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "scorecard-contract"],
-      "value": {"score": 5, "overlap": []},
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
       "verifiedAt": "2026-07-13",
       "expiresAt": null,
       "sourceLocators": {
@@ -261,17 +347,59 @@
         "scorecard-contract": "tools/scorecard.manifest.json novelty rubric and no-overlap 5/5 rule"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "effis-2024-fire-report",
+        "copernicus-fire-season"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "algarve-june",
+            "name": "The Algarve in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Portugal is one of Europe's highest absolute fire-danger countries and the official summer campaign begins June 1. Coastal Lagos is less exposed than the wooded interior, but Monchique, Sagres, and east–west road excursions add enough wildland interface that fire belongs in the plan."
+          }
+        ],
+        "routeNames": [
+          "The Algarve in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.26 and EUMED long series: Portugal remains a recurrent high-burn country despite strong year-to-year variation",
+        "copernicus-fire-season": "Copernicus identifies June–September as the main southern European and Mediterranean fire season"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {
-    "airHours": 22.0,
+    "airHours": 22,
     "groundHours": 6.5,
     "timeZones": 1,
     "baseMoves": 0,
     "longestTransferHours": 1.5,
     "highOutputDayStreak": 2,
     "fallbackDays": 4,
-    "childActivityFit": {"age13": "fits", "age8": "fits"},
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
     "lodgingComfort": {
       "airConditioning": "required but unknown until property selection",
       "kitchen": "required but unknown until property selection",

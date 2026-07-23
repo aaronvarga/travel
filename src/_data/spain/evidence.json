@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "spain",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "high",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Spain's official summer wildfire campaign starts June 1, and recent large fires have occurred from June through August in central and southern regions. Dense cities and the coast provide alternatives, but the Granada and mountain-road portions remain exposed.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -337,6 +345,45 @@
         "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for spain"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "spain-fire-statistics",
+        "effis-2024-fire-report"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "andalusia-june",
+            "name": "Seville, Granada, and the Costa del Sol in early June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Spain's official summer wildfire campaign starts June 1, and recent large fires have occurred from June through August in central and southern regions. Dense cities and the coast provide alternatives, but the Granada and mountain-road portions remain exposed."
+          }
+        ],
+        "routeNames": [
+          "Seville, Granada, and the Costa del Sol in early June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "spain-fire-statistics": "MITECO states that weekly summer wildfire reporting runs June 1–October 15 and publishes the national historical series",
+        "effis-2024-fire-report": "Section 3.2.31: all six Spanish fires over 1,000 hectares outside the January maximum occurred June–August"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

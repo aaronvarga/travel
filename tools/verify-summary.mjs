@@ -2,8 +2,8 @@
 /**
  * verify-summary.mjs — proves the extraction is lossless.
  *
- * For every trip, the default-weighted total of the eight single-weight scored
- * axes plus the double-weighted budget axis (the /50 rubric, excluding PTO)
+ * For every trip, the default-weighted total of the manifest axes
+ * (the /55 rubric, excluding zero-weight PTO)
  * must equal the baked total transcribed from index.html.
  * Exits non-zero on any mismatch.
  */
@@ -18,13 +18,11 @@ const { formatCompactTravelWindow } = displayDates;
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const summary = JSON.parse(fs.readFileSync(path.join(root, 'assets', 'trips-summary.json'), 'utf8'));
-
-// /50 = budget*2 + weather + swim + variety + ease + food + risk + nights + novelty (no pto).
-const SCORED_AXES = ['weather', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty'];
+const maxScore = summary.axes.reduce((sum, axis) => sum + axis.weightDefault * 5, 0);
 
 const bad = [];
 for (const t of summary.trips) {
-  const computed = t.axes.budget * 2 + SCORED_AXES.reduce((s, a) => s + (t.axes[a] || 0), 0);
+  const computed = summary.axes.reduce((sum, axis) => sum + (t.axes[axis.id] || 0) * axis.weightDefault, 0);
   if (computed !== t.totalBaked) bad.push(`${t.slug}: computed ${computed} != baked ${t.totalBaked}`);
 }
 
@@ -107,7 +105,7 @@ if (bad.length) {
   for (const b of bad) console.error(`  ${b}`);
   process.exit(1);
 }
-console.log(`✓ all ${summary.trips.length} scorecards match baked /50 totals`);
+console.log(`✓ all ${summary.trips.length} scorecards match baked /${maxScore} totals`);
 
 function hasNonDisplayDate(value) {
   return /\b\d{4}-\d{2}-\d{2}\b/.test(value)

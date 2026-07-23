@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "canary-islands",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "high",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 4,
+      "rationale": "Low is the safety rating (4/5), corresponding to a 2–5% planning chance of material wildfire disruption during the exact trip window. The Canary Islands have experienced major wildfires and Spain's summer campaign begins June 1, but June is generally earlier than the islands' hottest, driest late-summer peak. Coastal bases are resilient; forest and caldera days are the exposed pieces.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -350,6 +358,45 @@
         "scorecard-contract": "scorecard.manifest.json visited list contains neither Tenerife nor La Palma"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "spain-fire-statistics",
+        "effis-2024-fire-report"
+      ],
+      "value": {
+        "score": 4,
+        "level": "Low",
+        "chanceBand": "2–5%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "canaries-june",
+            "name": "Tenerife and La Palma in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "The Canary Islands have experienced major wildfires and Spain's summer campaign begins June 1, but June is generally earlier than the islands' hottest, driest late-summer peak. Coastal bases are resilient; forest and caldera days are the exposed pieces."
+          }
+        ],
+        "routeNames": [
+          "Tenerife and La Palma in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "spain-fire-statistics": "MITECO national database covers every reported forest fire and the June 1–October 15 summer reporting campaign",
+        "effis-2024-fire-report": "Spain long-series and monthly EFFIS context; exact island conditions still require daily AEMET and regional alerts"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

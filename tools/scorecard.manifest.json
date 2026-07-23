@@ -1,8 +1,9 @@
 {
-  "_comment": "Canonical scorecard contract consumed by tools/seed-scorecard.mjs, tools/build-summary.mjs and the client (assets/js/*). Each trip's src/_data/<slug>/main.json carries a `scorecard` block matching this shape. Axis scores are 1-5. Budget is weighted x2 by default. PTO was promoted from unscored text to a real 1-5 axis via ptoRubric.",
+  "_comment": "Canonical /55 scorecard contract consumed by tools/seed-scorecard.mjs, tools/build-summary.mjs and the client (assets/js/*). Each trip's src/_data/<slug>/main.json carries a `scorecard` block matching this shape. Axis scores are 1-5. Budget is weighted x2 by default. PTO is displayed but has weight zero by default.",
   "axes": [
     { "id": "budget",  "label": "Budget",  "weightDefault": 2 },
     { "id": "weather", "label": "Weather", "weightDefault": 1 },
+    { "id": "fireRisk", "label": "Fire safety", "weightDefault": 1 },
     { "id": "swim",    "label": "Swim",    "weightDefault": 1 },
     { "id": "variety", "label": "Variety", "weightDefault": 1 },
     { "id": "ease",    "label": "Ease",    "weightDefault": 1 },
@@ -15,6 +16,7 @@
   "axisRubrics": {
     "budget": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
     "weather": "Outdoor comfort for the actual dates, excluding water temperature: 5 = reliably comfortable for nearly every headline day; 4 = mostly comfortable with manageable heat/rain/wind; 3 = recurring midday or weather management; 2 = material disruption exposure; 1 = climate conflicts with the core itinerary.",
+    "fireRisk": "Chance that wildfire, smoke, evacuation, road or park closure, or related flight disruption materially changes the itinerary during the exact travel dates. Higher is safer: 5 = very low (<2% planning chance); 4 = low (2-5%); 3 = moderate (5-10%); 2 = high (10-20%); 1 = very high (>20%). Use recent official evidence, fire history, seasonality, route exposure, and itinerary flexibility. These are conservative planning bands, not actuarial forecasts.",
     "swim": "Usable family swim days, water type, access and safety: 5 = frequent warm, high-quality natural swimming; 4 = frequent comfortable swimming around 72-75F; 3 = usable but cool, limited, or primarily heated/geothermal; 2 = cold water or only occasional swimming; 1 = no meaningful family swim.",
     "variety": "Distinct, balanced trip modes that are actually scheduled: 5 = strong water, town/culture and nature payoffs; 4 = three modes with one lighter; 3 = two strong modes; 2 = repetitive; 1 = one-note.",
     "ease": "Deterministic logistics load only: connections, bases, one-night stops, internal flights/ferries, self-transfers and long mandatory drives. Do not include disruption uncertainty here.",

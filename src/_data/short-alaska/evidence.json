@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-alaska",
-  "reviewedAt": "2026-07-15",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 4,
+      "rationale": "Low is the safety rating (4/5), corresponding to a 2–5% planning chance of material wildfire disruption during the exact trip window. Most June visits are unaffected, but the route has a real single-corridor precedent: the June 2019 Swan Lake Fire produced heavy smoke, recreation closures, and intermittent Sterling Highway disruption. The wetter Seward/Girdwood side lowers exposure compared with interior Alaska.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -353,6 +361,45 @@
         "scorecard-contract": "tools/scorecard.manifest.json novelty rubric gives 5/5 for no overlap"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "alaska-2019-fire-report",
+        "alaska-swan-lake-travel"
+      ],
+      "value": {
+        "score": 4,
+        "level": "Low",
+        "chanceBand": "2–5%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "alaska-kenai-june",
+            "name": "Seward, Kenai Fjords, Girdwood, and Turnagain Arm in mid-June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Most June visits are unaffected, but the route has a real single-corridor precedent: the June 2019 Swan Lake Fire produced heavy smoke, recreation closures, and intermittent Sterling Highway disruption. The wetter Seward/Girdwood side lowers exposure compared with interior Alaska."
+          }
+        ],
+        "routeNames": [
+          "Seward, Kenai Fjords, Girdwood, and Turnagain Arm in mid-June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "alaska-2019-fire-report": "Alaska Division of Forestry 2019 report: Kenai/Kodiak had 23 June fires; Swan Lake began June 5 and burned about 167,000 acres",
+        "alaska-swan-lake-travel": "Official June 23, 2019 travel advisory documented Sterling Highway, campground, and trail exposure"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

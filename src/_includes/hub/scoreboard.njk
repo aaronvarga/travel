@@ -3,6 +3,7 @@
         <th><span>{{ trip.displayName }}</span><small>{{ trip.blurb }}</small></th>
         <td><span class="wx-cell">{{ trip.budget.floorUsd | moneyK }}&ndash;{{ trip.budget.ceilUsd | moneyK }}</span><span class="rating" aria-label="{{ trip.axes.budget }} out of 5"></span><b>{{ trip.axes.budget }}</b></td>
         <td>{% if trip.display.weatherTempF %}<span class="wx-cell">{{ trip.display.weatherTempF[0] }}&ndash;{{ trip.display.weatherTempF[1] }}&deg;F</span>{% endif %}<span class="rating" aria-label="{{ trip.axes.weather }} out of 5"></span><b>{{ trip.axes.weather }}</b></td>
+        <td><span class="wx-cell">{{ trip.display.fireChance }}</span><span class="rating" aria-label="{{ trip.axes.fireRisk }} out of 5; higher is safer"></span><b>{{ trip.axes.fireRisk }}</b></td>
         <td><span class="wx-cell">{{ trip.display.swimTempF[0] }}&ndash;{{ trip.display.swimTempF[1] }}&deg;F</span><span class="rating" aria-label="{{ trip.axes.swim }} out of 5"></span><b>{{ trip.axes.swim }}</b></td>
         <td><span class="rating" aria-label="{{ trip.axes.variety }} out of 5"></span><b>{{ trip.axes.variety }}</b></td>
         <td><span class="ease-travel" title="Total flight time {{ trip.metrics.airHours }}h &middot; total ground time {{ trip.metrics.groundHours }}h">&#9992;&#65039; {{ trip.metrics.airHours | roundHours }}h<span class="tt-sep">/</span>&#128663; {{ trip.metrics.groundHours | roundHours }}h</span><span class="rating" aria-label="{{ trip.axes.ease }} out of 5"></span><b>{{ trip.axes.ease }}</b></td>

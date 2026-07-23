@@ -680,6 +680,7 @@
     "axes": {
       "budget": 4,
       "weather": 3,
+      "fireRisk": 4,
       "swim": 1,
       "variety": 4,
       "ease": 3,
@@ -692,6 +693,7 @@
     "weightDefaults": {
       "budget": 2,
       "weather": 1,
+      "fireRisk": 1,
       "swim": 1,
       "variety": 1,
       "ease": 1,
@@ -722,6 +724,6 @@
       "singleTicket": true,
       "hasSwim": false
     },
-    "totalBaked": 32
+    "totalBaked": 36
   }
 }

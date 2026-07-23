@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-acadia",
-  "reviewedAt": "2026-07-13",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 5,
+      "rationale": "Very low is the safety rating (5/5), corresponding to a <2% planning chance of material wildfire disruption during the exact trip window. Acadia has a serious wildfire history, but its defining 1947 disaster followed an exceptionally dry summer and occurred in October. Recent June fires have generally been small and rapidly contained, so material itinerary disruption in this cool coastal window is very unlikely.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -329,6 +337,45 @@
         "scorecard-contract": "tools/scorecard.manifest.json novelty rubric gives 5/5 for no overlap"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "acadia-wildland-fire",
+        "acadia-1947-fire"
+      ],
+      "value": {
+        "score": 5,
+        "level": "Very low",
+        "chanceBand": "<2%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "acadia-june",
+            "name": "Acadia and Mount Desert Island in mid-June",
+            "score": 5,
+            "level": "Very low",
+            "chanceBand": "<2%",
+            "rationale": "Acadia has a serious wildfire history, but its defining 1947 disaster followed an exceptionally dry summer and occurred in October. Recent June fires have generally been small and rapidly contained, so material itinerary disruption in this cool coastal window is very unlikely."
+          }
+        ],
+        "routeNames": [
+          "Acadia and Mount Desert Island in mid-June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "acadia-wildland-fire": "NPS History of Wildland Fire at Acadia and current fire-management overview",
+        "acadia-1947-fire": "NPS chronology: prolonged summer drought preceded the October 1947 fire; 17,188 acres burned"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-crete",
-  "reviewedAt": "2026-07-19",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "high",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. Greece's official fire season runs May 1–October 31, EFFIS shows the main recent season from June through September, and late-June red-code conditions have occurred on Crete. Island geography limits fire spread but wind can quickly close gorges, roads, beaches, or ferry approaches.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -354,6 +362,56 @@
         "scorecard-contract": "scorecard.manifest.json noveltyRubric includes Santorini, Mykonos, and Rhodes but not Crete or Portugal"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "effis-2024-fire-report",
+        "copernicus-fire-season",
+        "greece-fire-season-2026"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "lisbon-june",
+            "name": "Lisbon, Cascais, and Sintra in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Central Portugal has severe wildfire history, but this route is mainly urban/coastal and travels before the usual late-summer peak. Sintra-Cascais Natural Park and wooded day trips create a real but low closure/smoke exposure."
+          },
+          {
+            "id": "greece-june",
+            "name": "Athens and the Greek islands in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Greece's official fire season runs May 1–October 31, EFFIS shows the main recent season from June through September, and late-June red-code conditions have occurred on Crete. Island geography limits fire spread but wind can quickly close gorges, roads, beaches, or ferry approaches."
+          }
+        ],
+        "routeNames": [
+          "Lisbon, Cascais, and Sintra in June",
+          "Athens and the Greek islands in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.14: Greece's 2024 fire season ran June–September and included seven fires over 1,000 hectares",
+        "copernicus-fire-season": "Copernicus describes June–September as the main Mediterranean fire season, with strong year-to-year weather control",
+        "greece-fire-season-2026": "Greek Civil Protection launched daily maps for the May 1–October 31, 2026 fire season"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

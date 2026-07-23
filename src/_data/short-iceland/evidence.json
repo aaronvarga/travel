@@ -1,68 +1,99 @@
 {
   "schemaVersion": 1,
   "slug": "short-iceland",
-  "reviewedAt": "2026-07-13",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
       "rationale": "The six cost categories add up to an estimated $7,100–$9,600, keeping even the high end below the $12,000 target. Icelandair has published June 2027 pricing, while lodging and rental-car costs still need live quotes.",
       "confidence": "medium",
-      "evidence": ["budget-band", "airfare-signal"]
+      "evidence": [
+        "budget-band",
+        "airfare-signal"
+      ]
     },
     "weather": {
       "score": 2,
       "rationale": "The headline days are exposed to cool air, wind, rain and spray. A full buffer day helps, but weather can still cancel the glacier or materially reshape the Golden Circle and coast days.",
       "confidence": "medium",
-      "evidence": ["climate-proxy", "route-readiness"]
+      "evidence": [
+        "climate-proxy",
+        "route-readiness"
+      ]
+    },
+    "fireRisk": {
+      "score": 5,
+      "rationale": "Very low is the safety rating (5/5), corresponding to a <2% planning chance of material wildfire disruption during the exact trip window. Iceland has had rare large grass fires, but its maritime climate, sparse tree cover, and limited fire history make wildfire a very small June travel risk. Volcanic hazards remain important, but they stay in the separate general Risk axis.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
+      ]
     },
     "swim": {
       "score": 3,
       "rationale": "Natural ocean water is too cold and unsafe for family swimming, but the route schedules warm municipal geothermal pools and Secret Lagoon. That is meaningful heated/geothermal swimming rather than warm natural sea swimming.",
       "confidence": "high",
-      "evidence": ["swim-conditions"]
+      "evidence": [
+        "swim-conditions"
+      ]
     },
     "variety": {
       "score": 4,
       "rationale": "The seven-night route schedules a city/harbour, geothermal swimming, geysers, waterfalls, glacier ice, black coast and volcanic terrain. Culture and food are lighter than nature, bounding the score at 4/5.",
       "confidence": "high",
-      "evidence": ["itinerary-structure"]
+      "evidence": [
+        "itinerary-structure"
+      ]
     },
     "ease": {
       "score": 4,
       "rationale": "A nonstop outbound flight, one round-trip rental and only two hotel changes keep the week manageable. Using the Golden Circle as the drive to Hella avoids backtracking, and the final Keflavík night makes departure morning easy.",
       "confidence": "high",
-      "evidence": ["operational-load", "airfare-signal"]
+      "evidence": [
+        "operational-load",
+        "airfare-signal"
+      ]
     },
     "food": {
       "score": 3,
       "rationale": "Every base has pizza, burgers, fries and grocery coverage, and the route explicitly carries picnic food on remote days. Icelandic prices and thin hours outside Reykjavík prevent a higher score.",
       "confidence": "high",
-      "evidence": ["family-food-coverage"]
+      "evidence": [
+        "family-food-coverage"
+      ]
     },
     "risk": {
       "score": 3,
       "rationale": "The direct route removes connection risk, but wind and road conditions, Reynisfjara sneaker waves, a weather-sensitive glacier tour and changing Reykjanes volcanic access require live official checks and real fallbacks.",
       "confidence": "high",
-      "evidence": ["route-readiness"]
+      "evidence": [
+        "route-readiness"
+      ]
     },
     "nights": {
       "score": 1,
       "rationale": "Seven hotel nights are intentionally compact. The main comparison rewards longer vacations, so every trip of eight nights or fewer receives 1/5 on this measure.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     },
     "novelty": {
       "score": 5,
       "rationale": "Iceland is entirely new to the family, earning the strongest score for novelty.",
       "confidence": "high",
-      "evidence": ["visited-overlap"]
+      "evidence": [
+        "visited-overlap"
+      ]
     },
     "pto": {
       "score": 5,
       "rationale": "The observed Juneteenth holiday keeps this seven-night trip to five vacation days, an excellent time-off fit.",
       "confidence": "high",
-      "evidence": ["trip-window"]
+      "evidence": [
+        "trip-window"
+      ]
     }
   },
   "facts": [
@@ -71,7 +102,10 @@
       "category": "budget",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["internal-itinerary", "icelandair-pit-kef-2027-fare"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "icelandair-pit-kef-2027-fare"
+      ],
       "value": {
         "lowUsd": 7100,
         "expectedUsd": null,
@@ -95,7 +129,10 @@
       "category": "route",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["icelandair-pit-kef-2027-fare", "flypittsburgh-nonstop-destinations"],
+      "sourceRefs": [
+        "icelandair-pit-kef-2027-fare",
+        "flypittsburgh-nonstop-destinations"
+      ],
       "value": {
         "route": "PIT–KEF",
         "currentDisplayedFareUsdPerPerson": 709,
@@ -117,7 +154,10 @@
       "category": "dates",
       "proxyStatus": "confirmed",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "decision-profile"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "decision-profile"
+      ],
       "value": {
         "depart": "2027-06-13",
         "return": "2027-06-21",
@@ -139,13 +179,23 @@
       "category": "climate",
       "proxyStatus": "current-proxy",
       "confidence": "medium",
-      "sourceRefs": ["imo-iceland-climate-data", "internal-itinerary"],
+      "sourceRefs": [
+        "imo-iceland-climate-data",
+        "internal-itinerary"
+      ],
       "value": {
-        "temperatureF": [45, 57],
+        "temperatureF": [
+          45,
+          57
+        ],
         "routeRegion": "Reykjavík, Golden Circle and South Coast west of Vík",
         "forecast": false,
         "weatherBufferDays": 1,
-        "exposure": ["wind", "rain", "waterfall spray"]
+        "exposure": [
+          "wind",
+          "rain",
+          "waterfall spray"
+        ]
       },
       "verifiedAt": "2026-07-13",
       "expiresAt": "2027-04-01",
@@ -160,18 +210,30 @@
       "category": "swim",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["reykjavik-laugardalslaug", "internal-itinerary"],
+      "sourceRefs": [
+        "reykjavik-laugardalslaug",
+        "internal-itinerary"
+      ],
       "value": {
         "score": 3,
-        "naturalSeaTemperatureF": [50, 52],
+        "naturalSeaTemperatureF": [
+          50,
+          52
+        ],
         "swimType": "geothermal",
         "mainPoolF": 82,
         "childPoolF": 84,
         "wadingPoolF": 90,
-        "hotTubsF": [100, 111],
+        "hotTubsF": [
+          100,
+          111
+        ],
         "scheduledSwimDays": 3,
         "oceanSwimmingPlanned": false,
-        "temperatureF": [50, 52]
+        "temperatureF": [
+          50,
+          52
+        ]
       },
       "verifiedAt": "2026-07-13",
       "expiresAt": "2027-05-15",
@@ -186,12 +248,25 @@
       "category": "itinerary",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "value": {
         "hotelNights": 7,
         "lodgingBases": 3,
-        "baseNames": ["Reykjavík", "Hella/Hvolsvöllur", "Keflavík"],
-        "scheduledModes": ["geothermal swim", "city/harbour", "geyser/waterfalls", "guided glacier", "black coast", "volcanic landscape"],
+        "baseNames": [
+          "Reykjavík",
+          "Hella/Hvolsvöllur",
+          "Keflavík"
+        ],
+        "scheduledModes": [
+          "geothermal swim",
+          "city/harbour",
+          "geyser/waterfalls",
+          "guided glacier",
+          "black coast",
+          "volcanic landscape"
+        ],
         "bufferDays": 1
       },
       "verifiedAt": "2026-07-13",
@@ -206,7 +281,10 @@
       "category": "logistics",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "flypittsburgh-nonstop-destinations"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "flypittsburgh-nonstop-destinations"
+      ],
       "value": {
         "easeScore": 4,
         "lodgingBases": 3,
@@ -234,12 +312,26 @@
       "category": "food",
       "proxyStatus": "current-proxy",
       "confidence": "high",
-      "sourceRefs": ["internal-itinerary", "bonus-iceland-stores", "kronan-iceland-stores"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "bonus-iceland-stores",
+        "kronan-iceland-stores"
+      ],
       "value": {
         "score": 3,
         "plainFoodRequired": true,
-        "coveredBases": ["Reykjavík", "Hella/Hvolsvöllur", "Keflavík"],
-        "fallbackTypes": ["pizza", "burgers", "fries", "supermarkets", "packed picnic"],
+        "coveredBases": [
+          "Reykjavík",
+          "Hella/Hvolsvöllur",
+          "Keflavík"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "burgers",
+          "fries",
+          "supermarkets",
+          "packed picnic"
+        ],
         "remoteDayConstraint": true,
         "kitchenLodgingRequired": true
       },
@@ -257,7 +349,12 @@
       "category": "route",
       "proxyStatus": "exact-2027-schedule-required",
       "confidence": "high",
-      "sourceRefs": ["icelandair-pit-kef-2027-fare", "flypittsburgh-nonstop-destinations", "safetravel-iceland", "internal-itinerary"],
+      "sourceRefs": [
+        "icelandair-pit-kef-2027-fare",
+        "flypittsburgh-nonstop-destinations",
+        "safetravel-iceland",
+        "internal-itinerary"
+      ],
       "value": {
         "status": "exact-2027-schedule-required",
         "singleTicket": true,
@@ -283,8 +380,14 @@
       "category": "novelty",
       "proxyStatus": "derived",
       "confidence": "high",
-      "sourceRefs": ["decision-profile", "scorecard-contract"],
-      "value": { "score": 5, "overlap": [] },
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
       "verifiedAt": "2026-07-13",
       "expiresAt": null,
       "sourceLocators": {
@@ -292,6 +395,45 @@
         "scorecard-contract": "Visited-place list contains no Iceland location"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "iceland-climate-report",
+        "iceland-2006-fire"
+      ],
+      "value": {
+        "score": 5,
+        "level": "Very low",
+        "chanceBand": "<2%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "iceland-june",
+            "name": "Reykjavík, Reykjanes, and Iceland's South Coast in June",
+            "score": 5,
+            "level": "Very low",
+            "chanceBand": "<2%",
+            "rationale": "Iceland has had rare large grass fires, but its maritime climate, sparse tree cover, and limited fire history make wildfire a very small June travel risk. Volcanic hazards remain important, but they stay in the separate general Risk axis."
+          }
+        ],
+        "routeNames": [
+          "Reykjavík, Reykjanes, and Iceland's South Coast in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "iceland-climate-report": "Icelandic Meteorological Office says wildfire is an emerging hazard with limited national experience",
+        "iceland-2006-fire": "IMO climate summary documents the exceptional March 2006 grass fire, the largest known in Iceland"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {
@@ -302,12 +444,23 @@
     "longestTransferHours": 4,
     "highOutputDayStreak": 2,
     "fallbackDays": 1,
-    "childActivityFit": { "age13": "fits", "age8": "fits" },
-    "lodgingComfort": { "airConditioning": "not a climate requirement", "kitchen": "required in search brief", "laundry": "nice-to-have", "realBeds": "required in search brief" },
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "lodgingComfort": {
+      "airConditioning": "not a climate requirement",
+      "kitchen": "required in search brief",
+      "laundry": "nice-to-have",
+      "realBeds": "required in search brief"
+    },
     "waterSafety": "All planned swimming is heated/geothermal; ocean and Reynisfjara are viewing-only.",
     "crowdingPressure": "Golden Circle, Secret Lagoon, glacier inventory and scarce South Coast family rooms need advance planning.",
     "medicalAccess": "Reykjavík and Keflavík have the strongest access; glacier and coastal days are more remote.",
-    "childActivityNotes": { "age13": "Strong for glacier, waterfalls and geothermal swims.", "age8": "Strong if the glacier operator confirms age and footwear eligibility; buffer day limits fatigue." }
+    "childActivityNotes": {
+      "age13": "Strong for glacier, waterfalls and geothermal swims.",
+      "age8": "Strong if the glacier operator confirms age and footwear eligibility; buffer day limits fatigue."
+    }
   },
   "evidenceBasis": "Fresh Icelandair June 2027 fare inventory, current PIT route listing, official city pool specifications, official safety guidance and canonical route arithmetic.",
   "confidenceBasis": [

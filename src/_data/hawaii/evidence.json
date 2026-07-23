@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "hawaii",
-  "reviewedAt": "2026-07-20",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "high",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Moderate is the safety rating (3/5), corresponding to a 5–10% planning chance of material wildfire disruption during the exact trip window. June begins Hawaiʻi's dry-season lookout period, and statewide fire-history maps show repeated starts on every planned island. Resort/coastal alternatives are strong, but leeward Maui and Hawaiʻi Island, Haleakalā, Hāna, Waimea, and Kōkeʻe expose the route to smoke or road closures.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -349,6 +357,45 @@
         "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for hawaii"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "hawaii-fire-history",
+        "hawaii-wildfire-lookout"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "hawaii-june",
+            "name": "Oʻahu, Hawaiʻi Island, Maui, and Kauaʻi in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "June begins Hawaiʻi's dry-season lookout period, and statewide fire-history maps show repeated starts on every planned island. Resort/coastal alternatives are strong, but leeward Maui and Hawaiʻi Island, Haleakalā, Hāna, Waimea, and Kōkeʻe expose the route to smoke or road closures."
+          }
+        ],
+        "routeNames": [
+          "Oʻahu, Hawaiʻi Island, Maui, and Kauaʻi in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "hawaii-fire-history": "HWMO State of Hawaiʻi Wildfire History Map covers mapped fires on the major islands from 1999–2022",
+        "hawaii-wildfire-lookout": "Statewide Wildfire & Drought LOOKOUT campaign identifies June and the summer dry season as a preparedness period"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

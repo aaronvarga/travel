@@ -5,21 +5,24 @@
  * serialized, so an untouched page keeps a clean URL. */
 (function () {
   'use strict';
-  const V = 'v2';
-  const AXES = ['budget', 'weather', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty', 'pto'];
-  const DEFAULT_W = { budget: 2, weather: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, nights: 1, novelty: 1, pto: 0 };
+  const V = 'v3';
+  const LEGACY_AXES = ['budget', 'weather', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty', 'pto'];
+  const AXES = ['budget', 'weather', 'fireRisk', 'swim', 'variety', 'ease', 'food', 'risk', 'nights', 'novelty', 'pto'];
+  const DEFAULT_W = { budget: 2, weather: 1, fireRisk: 1, swim: 1, variety: 1, ease: 1, food: 1, risk: 1, nights: 1, novelty: 1, pto: 0 };
 
   // ---- parse URL -> patch --------------------------------------------------
   function parse() {
     const q = new URLSearchParams(location.search);
-    if (!['v1', V].includes(q.get('v'))) return {}; // ignore unknown/absent schema versions
+    const version = q.get('v');
+    if (!['v1', 'v2', V].includes(version)) return {}; // ignore unknown/absent schema versions
     const patch = {};
 
     const w = q.get('w');
     if (w) {
       const nums = w.split(',').map((n) => parseInt(n, 10));
-      if (nums.length === AXES.length && nums.every((n) => n >= 0 && n <= 3)) {
-        patch.weights = Object.fromEntries(AXES.map((a, i) => [a, nums[i]]));
+      const encodedAxes = version === V ? AXES : LEGACY_AXES;
+      if (nums.length === encodedAxes.length && nums.every((n) => n >= 0 && n <= 3)) {
+        patch.weights = { ...DEFAULT_W, ...Object.fromEntries(encodedAxes.map((a, i) => [a, nums[i]])) };
       }
     }
 

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "albania",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "medium",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 4,
+      "rationale": "Low is the safety rating (4/5), corresponding to a 2–5% planning chance of material wildfire disruption during the exact trip window. Albania has meaningful summer wildfire exposure and recent severe seasons, including fires near Theth and Sarandë, but the worst recent activity has clustered in July and August. A June route is lower risk than the same itinerary a month later.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -386,6 +394,45 @@
         "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for albania"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "effis-2024-fire-report",
+        "albania-fire-history"
+      ],
+      "value": {
+        "score": 4,
+        "level": "Low",
+        "chanceBand": "2–5%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "albania-june",
+            "name": "Theth, Tirana, and the Albanian Riviera in June",
+            "score": 4,
+            "level": "Low",
+            "chanceBand": "2–5%",
+            "rationale": "Albania has meaningful summer wildfire exposure and recent severe seasons, including fires near Theth and Sarandë, but the worst recent activity has clustered in July and August. A June route is lower risk than the same itinerary a month later."
+          }
+        ],
+        "routeNames": [
+          "Theth, Tirana, and the Albanian Riviera in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "effis-2024-fire-report": "Section 3.2.1: 49,189 hectares mapped in 2024, mostly in July and August",
+        "albania-fire-history": "Official national timeline identifies 2024 fires near Theth, Sarandë, Gjirokastër, and the southern coast"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {

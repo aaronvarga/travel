@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "california-pacific-coast",
-  "reviewedAt": "2026-07-10",
+  "reviewedAt": "2026-07-22",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -18,6 +18,14 @@
       "confidence": "high",
       "evidence": [
         "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 2,
+      "rationale": "High is the safety rating (2/5), corresponding to a 10–20% planning chance of material wildfire disruption during the exact trip window. July is an active California fire month, and this itinerary repeatedly crosses exposed coastal ranges and single-corridor road sections around Santa Barbara, San Luis Obispo, Big Sur, and Monterey. A fire need not reach a hotel to close Highway 1, create smoke, or force a long reroute.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
       ]
     },
     "swim": {
@@ -326,6 +334,45 @@
         "scorecard-contract": "scorecard.manifest.json axis rubric and visited-place derivation for california-pacific-coast"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "calfire-statistics",
+        "calfire-2025-incidents"
+      ],
+      "value": {
+        "score": 2,
+        "level": "High",
+        "chanceBand": "10–20%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "california-coast-july",
+            "name": "San Diego to San Francisco by Highway 1 in early July",
+            "score": 2,
+            "level": "High",
+            "chanceBand": "10–20%",
+            "rationale": "July is an active California fire month, and this itinerary repeatedly crosses exposed coastal ranges and single-corridor road sections around Santa Barbara, San Luis Obispo, Big Sur, and Monterey. A fire need not reach a hotel to close Highway 1, create smoke, or force a long reroute."
+          }
+        ],
+        "routeNames": [
+          "San Diego to San Francisco by Highway 1 in early July"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "calfire-statistics": "CAL FIRE statewide current and five-year fire/acre statistics, updated July 22, 2026",
+        "calfire-2025-incidents": "Official archive includes the July 2, 2025 Madre Fire in San Luis Obispo and other coastal-county incidents"
+      },
+      "claimType": "inference"
     }
   ],
   "metrics": {
