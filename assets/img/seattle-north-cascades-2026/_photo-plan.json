@@ -1,0 +1,22 @@
+{
+  "discovery": "Google Images",
+  "queries": [
+    "Diablo Lake professional photography",
+    "Maple Pass professional landscape photos",
+    "Washington Pass instagram photos horizontal",
+    "Blue Lake North Cascades professional landscape photography"
+  ],
+  "selected": {
+    "diablo": ["diablo-01.jpg", "diablo-02.jpg", "diablo-03.jpg", "diablo-04.jpg", "diablo-05.jpg"],
+    "maple": ["maple-01.jpg", "maple-02.jpg", "maple-03.jpg", "maple-04.jpg", "maple-05.jpg"],
+    "pass": ["pass-01.jpg", "pass-02.jpg", "pass-03.jpg", "pass-04.jpg", "pass-05.jpg"],
+    "blue": ["blue-01.jpg", "blue-02.jpg", "blue-03.jpg", "blue-04.jpg", "blue-05.jpg"]
+  },
+  "rejected": [
+    "portrait-oriented Diablo Lake candidate",
+    "near-duplicate Maple Pass candidate",
+    "Stacy Garfield Maple Pass candidate: visible signature discovered in finalist-sheet QA",
+    "flat or generic travel-result candidates"
+  ],
+  "qa": "Two-pass contact-sheet review completed; all finalists are horizontal, destination-specific, and source-linked in the itinerary."
+}

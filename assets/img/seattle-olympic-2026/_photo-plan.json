@@ -1,0 +1,24 @@
+{
+  "discovery": "Google Images",
+  "queries": [
+    "Hurricane Ridge professional photography",
+    "Lake Crescent professional landscape photos",
+    "Salt Creek Olympic Peninsula instagram photos horizontal",
+    "Dungeness Spit professional landscape photography"
+  ],
+  "selected": {
+    "hurricane": ["hurricane-01.jpg", "hurricane-02.jpg", "hurricane-03.jpg", "hurricane-04.jpg", "hurricane-05.jpg", "hurricane-06.jpg"],
+    "lake": ["lake-01.jpg", "lake-02.jpg", "lake-03.jpg", "lake-04.jpg", "lake-05.jpg", "lake-06.jpg", "lake-07.jpg"],
+    "coast": ["coast-01.jpg", "coast-02.jpg", "coast-03.jpg", "coast-04.jpg", "coast-05.jpg", "coast-06.jpg", "coast-07.jpg"]
+  },
+  "rejected": [
+    "Richard Wong Hurricane Ridge candidate: visible watermark",
+    "Dave Lichterman Lake Crescent candidate: visible watermark",
+    "Rod Barbee Lake Crescent candidates: visible watermark",
+    "Journey of Light Hurricane Ridge candidate: visible watermark discovered in rendered-page QA",
+    "Robert Faucher Hurricane Ridge candidate: visible signature discovered in finalist-sheet QA",
+    "portrait-oriented and flat midday candidates",
+    "near-duplicate Lake Crescent sunset candidate"
+  ],
+  "qa": "Two-pass contact-sheet review completed; all finalists are horizontal, destination-specific, and source-linked in the itinerary."
+}

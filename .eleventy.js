@@ -17,10 +17,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'assets/js': 'assets/js' });
   eleventyConfig.addPassthroughCopy({ 'assets/generated': 'assets/generated' });
   eleventyConfig.addPassthroughCopy({ 'assets/img/mt-rainier-seattle-2026': 'assets/img/mt-rainier-seattle-2026' });
+  eleventyConfig.addPassthroughCopy({ 'assets/img/seattle-olympic-2026': 'assets/img/seattle-olympic-2026' });
+  eleventyConfig.addPassthroughCopy({ 'assets/img/seattle-north-cascades-2026': 'assets/img/seattle-north-cascades-2026' });
   eleventyConfig.addPassthroughCopy({ 'assets/data/mt-rainier-seattle-2026-weather-history.json': 'assets/data/mt-rainier-seattle-2026-weather-history.json' });
   eleventyConfig.addPassthroughCopy({ 'assets/aaron-amanda-sedona.png': 'assets/aaron-amanda-sedona.png' });
   eleventyConfig.addPassthroughCopy({ 'assets/family-cartoon.png': 'assets/family-cartoon.png' });
   eleventyConfig.addPassthroughCopy({ 'mt-rainier-seattle-2026.html': 'mt-rainier-seattle-2026.html' });
+  eleventyConfig.addPassthroughCopy({ 'seattle-olympic-2026.html': 'seattle-olympic-2026.html' });
+  eleventyConfig.addPassthroughCopy({ 'seattle-north-cascades-2026.html': 'seattle-north-cascades-2026.html' });
   for (const file of ['budget-reconciliation.json', 'rank-analysis.json', 'section-status.json', 'trips-summary.json']) {
     eleventyConfig.addPassthroughCopy({ [`assets/${file}`]: `assets/${file}` });
   }
