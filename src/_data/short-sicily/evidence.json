@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-sicily",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "Six visible categories reconcile exactly to $8,400–$12,100. The low case sits under the $12,000 target and the high case is $100 over it but well inside $13,500, deriving 4/5 under the budget rubric. Confidence is medium because exact June 2027 Catania airfare and both stays are not yet quoted.",
+      "score": 2,
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $11,400–$14,700. The Budget 2/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -61,8 +61,8 @@
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "Exact June 2027 flights are unconfirmed, Etna activity can close the summit stages on short notice, and mid-June festival calendars (INDA, Taormina Film Fest) compress hotels. One-ticket routing, a swappable day order and always-available fallbacks keep the uncertainty manageable.",
+      "score": 4,
+      "rationale": "Exact protected one-stop Catania inventory removes the flight-publication gate. Etna operations and summer disruption remain manageable, supporting Risk 4/5.",
       "confidence": "medium",
       "evidence": [
         "route-readiness",
@@ -103,25 +103,27 @@
       "sourceRefs": [
         "internal-itinerary",
         "kayak-pit-cta",
-        "etna-funivia"
+        "etna-funivia",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 8400,
+        "lowUsd": 11400,
         "expectedUsd": null,
-        "highUsd": 12100,
+        "highUsd": 14700,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "4600–5800 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 8400–12100",
+        "arithmetic": "7600–8400 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 11400–14700",
         "airfareObservation": "Kayak's US–Catania route data shows June as the most expensive month at about $1,379 per person average, with recent Pittsburgh–Catania round trips observed near $1,045; the $4,600–$5,800 family range assumes early booking of the one-connection Delta routing and is not a June 2027 quote"
       },
-      "verifiedAt": "2026-07-16",
-      "expiresAt": "2026-11-15",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "short-sicily/main.json #budget and #totals; six itemized categories reconcile to the displayed family total",
         "kayak-pit-cta": "Route page reviewed 2026-07-16; June average $1,379 per traveler US–CTA and a recent $1,045 PIT–CTA round-trip observation, used as a planning proxy only",
-        "etna-funivia": "March 2026 tariff: cable car €54/€30, cable car + 4x4 €78/€50 — anchors the activities line"
+        "etna-funivia": "March 2026 tariff: cable car €54/€30, cable car + 4x4 €78/€50 — anchors the activities line",
+        "google-flights-2027-current-audit": "PIT–CTA sells June 12–20 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
       },
       "claimType": "proxy"
     },
@@ -320,30 +322,34 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
         "delta-jfk-cta",
         "kayak-pit-cta",
         "internal-itinerary",
-        "eu-etias"
+        "eu-etias",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "outbound": "PIT–JFK–CTA on one Delta ticket; JFK–CTA has run as a daily summer nonstop since May 2025",
         "return": "CTA–JFK daytime nonstop connecting to PIT the same evening",
-        "exact2027FlightsVerified": false,
-        "fallback": "ITA or Delta partners via FCO with the hourly Rome–Catania shuttle if the nonstop misprices; never self-transfer"
+        "exact2027FlightsVerified": true,
+        "fallback": "ITA or Delta partners via FCO with the hourly Rome–Catania shuttle if the nonstop misprices; never self-transfer",
+        "currentFlightAudit": "PIT–CTA sells June 12–20 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly.",
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-16",
-      "expiresAt": "2026-11-15",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "delta-jfk-cta": "Delta newsroom: daily JFK–Catania service launched May 21, 2025 (767-300), returned for summer 2026 with near-year-round extension — the only U.S. nonstop to Sicily; June 2027 schedule not yet published",
         "kayak-pit-cta": "Current fare observations supporting the family airfare band",
         "internal-itinerary": "short-sicily/main.json #air-travel and day0/day8 mark June 2027 schedules unconfirmed",
-        "eu-etias": "EU travel-authorization requirement horizon for U.S. citizens; recheck status before 2027 booking"
+        "eu-etias": "EU travel-authorization requirement horizon for U.S. citizens; recheck status before 2027 booking",
+        "google-flights-2027-current-audit": "PIT–CTA sells June 12–20 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
       },
       "claimType": "proxy"
     },
@@ -494,5 +500,10 @@
     "Delta newsroom route confirmation for the JFK–Catania nonstop through 2026",
     "June climatology and 72–74°F Ionian sea-temperature references",
     "canonical two-base/one-car derivation; no exact June 2027 quotes yet"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "The exact Catania flight is live—and materially more expensive"
+  }
 }

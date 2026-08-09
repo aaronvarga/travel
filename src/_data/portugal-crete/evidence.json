@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-crete",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -315,30 +315,34 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "aegean-lisbon-athens",
         "aegean-athens-crete",
         "internal-itinerary",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicketAssumption": true,
         "maxConnections": 2,
         "criticalChain": "LIS–ATH–CHQ",
         "june2027Verified": false,
         "separateTightTicketsAllowed": false,
-        "singleTicket": false
+        "singleTicket": false,
+        "currentFlightAudit": "Aegean sells LIS–ATH–CHQ on June 14 as one itinerary in about 6 hours. Price the full PIT/LIS/Crete open-jaw together, but the former schedule-publication gate is resolved.",
+        "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 sells LIS–ATH into January 2027, not June 2027",
         "aegean-athens-crete": "Operator route calendar observed 2026-07-10 shows ATH–CHQ and ATH–HER current service",
         "internal-itinerary": "portugal-crete/main.json air-travel and Plan Health-Check require one protected LIS–ATH–CHQ itinerary",
-        "google-flights-2027-audit": "Checked 2026-07-19: LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55, 1h10 ATH connection, ~$440); Aegean June 2027 beyond its booking window; CHQ-PIT same-day single tickets verified (Aegean/Sky Express + American via ATH+CLT ~19h)."
+        "google-flights-2027-audit": "Checked 2026-07-19: LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55, 1h10 ATH connection, ~$440); Aegean June 2027 beyond its booking window; CHQ-PIT same-day single tickets verified (Aegean/Sky Express + American via ATH+CLT ~19h).",
+        "google-flights-2027-current-audit": "Aegean sells LIS–ATH–CHQ on June 14 as one itinerary in about 6 hours. Price the full PIT/LIS/Crete open-jaw together, but the former schedule-publication gate is resolved."
       },
       "claimType": "proxy"
     },
@@ -446,5 +450,10 @@
     "high-confidence deterministic logistics",
     "high-confidence independent grocery coverage in every base",
     "medium-confidence budget and non-reproduced SST"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The exact Lisbon–Chania connection is selling"
+  }
 }

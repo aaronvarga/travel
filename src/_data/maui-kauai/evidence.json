@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "maui-kauai",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "evidenceBasis": "The score uses an internally reconciled 12-night route, official NOAA climate and water observations, current state/federal park rules, current operator pricing, official lodging-market ADRs and observed air-route/fare proxies. Exact June 2027 air, rooms, cars, boats and reservations remain explicitly unconfirmed.",
   "confidenceBasis": [
@@ -360,7 +360,8 @@
         "southwest-pit-ogg",
         "google-flights-pit-lih",
         "southwest-ogg-lih",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -375,16 +376,20 @@
           "protected June 22 LIH departure arriving PIT June 23",
           "three exact lodging totals",
           "two rental quotes"
-        ]
+        ],
+        "currentFlightAudit": "OGG–LIH sells multiple exact June 15 nonstops of about 50 minutes. PIT–OGG was already live; verify LIH–PIT June 22 as one protected ticket before booking premium lodging.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "#air-travel, #getting-around and #status define the open-jaw route, one hop, two cars and June 23 hard return",
         "southwest-pit-ogg": "Current airline route page supports connecting PIT-OGG feasibility but not exact June 2027 departure/arrival or price",
         "google-flights-pit-lih": "Current route page supports connecting Kauai-Pittsburgh service, no nonstop and long travel times; exact open-jaw return is unquoted",
         "southwest-ogg-lih": "Current nonstop Maui-Kauai service proves the proposed island hop is structurally credible; June 2027 schedule is not published",
-        "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-10: PIT-OGG sold as American single tickets via DFW (12h05, $333, lands 12:05 PM) and via PHX; Southwest June 2027 schedule not yet open and no LAX-hub itinerary currently sold. LIH-PIT 2027-06-22 beyond current window; KOA-PIT Jun 14 red-eye pattern verified on United."
+        "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-10: PIT-OGG sold as American single tickets via DFW (12h05, $333, lands 12:05 PM) and via PHX; Southwest June 2027 schedule not yet open and no LAX-hub itinerary currently sold. LIH-PIT 2027-06-22 beyond current window; KOA-PIT Jun 14 red-eye pattern verified on United.",
+        "google-flights-2027-current-audit": "OGG–LIH sells multiple exact June 15 nonstops of about 50 minutes. PIT–OGG was already live; verify LIH–PIT June 22 as one protected ticket before booking premium lodging."
       },
       "claimType": "proxy"
     },
@@ -525,5 +530,10 @@
       "age13": "fits all canonical days with normal ocean, altitude and motion-sickness screening",
       "age8": "fits because the plan excludes Pipiwai from the Hana round trip, uses a catamaran rather than a raft and limits Kokee/Haena hiking"
     }
+  },
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The inter-island hop is confirmed; the complete open-jaw still needs one quote"
   }
 }

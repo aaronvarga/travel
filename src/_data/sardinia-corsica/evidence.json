@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "sardinia-corsica",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 4-line-item family budget is $10,700–$16,500 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $12,900–$18,300. The Budget 1/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 10700,
+        "lowUsd": 12900,
         "expectedUsd": null,
-        "highUsd": 16500,
+        "highUsd": 18300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 4,
-        "arithmetic": "10700–16500 line-item sum; tolerance 150"
+        "arithmetic": "5400–6400 + 3200–5500 + 1280–2400 + 3000–4000 = 12880–18300; displayed 12900–18300"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
-        "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning."
       },
       "claimType": "proxy"
     },
@@ -283,30 +285,35 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "moby-stg-bonifacio",
         "internal-itinerary",
         "state-travel",
         "cdc-travel",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 2,
         "route": "Santa Teresa Gallura ↔ Bonifacio as foot passengers; Sardinia rental car remains parked",
-        "dateWindow": "June 2027 exact ferry dates unpublished"
+        "dateWindow": "June 2027 exact ferry dates unpublished",
+        "currentFlightAudit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "moby-stg-bonifacio": "Official Moby route page checked 2026-07-10: multiple daily sailings, 50-minute crossing, 2026 terms; 2027 timetable not published",
         "internal-itinerary": "#health-check defaults to foot passengers because rental agreements may prohibit taking an Italian car into Corsica",
         "state-travel": "Italy and France Level 2 advisories reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Sardinia & Corsica; recheck before departure",
-        "google-flights-2027-audit": "Checked 2026-07-19: PIT-OLB sold as single tickets (2-stop ~$514-540, ~15h, United/AC/Delta; BA 1-stop via LHR $715); CAG-PIT Wednesday verified same-day single ticket (Vueling+BA+Iberia via BCN+LHR, 16h, ~$1,057)."
+        "google-flights-2027-audit": "Checked 2026-07-19: PIT-OLB sold as single tickets (2-stop ~$514-540, ~15h, United/AC/Delta; BA 1-stop via LHR $715); CAG-PIT Wednesday verified same-day single ticket (Vueling+BA+Iberia via BCN+LHR, 16h, ~$1,057).",
+        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning."
       },
       "claimType": "proxy"
     },
@@ -413,5 +420,10 @@
     "official historical climate and bathing-water datasets",
     "official 2026 ferry and regulated-access evidence",
     "exact 2027 timetable and rental terms remain open"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Exact Sardinia inventory is live, but the old low airfare floor is gone"
+  }
 }

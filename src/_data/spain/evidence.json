@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "spain",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -298,7 +298,8 @@
         "spain-alhambra-tickets",
         "state-travel",
         "cdc-travel",
-        "eu-etias"
+        "eu-etias",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -312,17 +313,21 @@
           "arrival-day MAD/Seville train with recovery margin",
           "named Alhambra General tickets with exact Nasrid time",
           "ETIAS official launch/status recheck"
-        ]
+        ],
+        "currentFlightAudit": "PIT–MAD sells June 3–16 from about $1,092 per traveler with one stop. Confirm AGP–PIT on the same open-jaw ticket before removing the Madrid-train fallback.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "Spain #air-travel, #getting-around, day-by-day route and explicit heat/activity fallbacks",
         "spain-renfe-madrid-seville": "Current direct-train pattern is an operator proxy only; June 4, 2027 train must be paired to the actual flight after schedules publish",
         "spain-alhambra-tickets": "Official Alhambra system: named tickets, original ID, punctual access at the printed Nasrid time; current General price €22.27 and 2027 tariff subject to change",
         "state-travel": "Spain advisory review required before booking and departure",
         "cdc-travel": "Spain destination health guidance to recheck before departure",
-        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 traveler action remains a recheck, not a confirmed current requirement"
+        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 traveler action remains a recheck, not a confirmed current requirement",
+        "google-flights-2027-current-audit": "PIT–MAD sells June 3–16 from about $1,092 per traveler with one stop. Confirm AGP–PIT on the same open-jaw ticket before removing the Madrid-train fallback."
       },
       "claimType": "proxy"
     },
@@ -418,5 +423,10 @@
     "AEMET station-specific June normals",
     "official current Renfe, Alhambra and EU operating/regulatory evidence",
     "June 2027 airfare, lodging, exact train and sea-state remain open"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Madrid inventory is live and fits the current family band"
+  }
 }

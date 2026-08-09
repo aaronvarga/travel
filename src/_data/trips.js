@@ -9,6 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const scoreManifest = require('../../tools/scorecard.manifest.json');
+const flightAudits = require('./flightAudits.json');
 
 module.exports = function () {
   const dir = __dirname; // src/_data
@@ -23,7 +24,10 @@ module.exports = function () {
   return slugs.map((slug) => {
     const base = path.join(dir, slug);
     const readJson = (f) => JSON.parse(fs.readFileSync(path.join(base, f), 'utf8'));
-    const trip = { slug, main: readJson('main.json') };
+    const flightAudit = flightAudits.trips[slug]
+      ? { ...flightAudits.trips[slug], reviewedAt: flightAudits.reviewedAt }
+      : null;
+    const trip = { slug, main: readJson('main.json'), flightAudit };
     if (fs.existsSync(path.join(base, 'photoGuide.json'))) trip.photoGuide = readJson('photoGuide.json');
     if (fs.existsSync(path.join(base, 'foodGuide.json'))) trip.foodGuide = readJson('foodGuide.json');
     if (fs.existsSync(path.join(base, 'evidence.json'))) {

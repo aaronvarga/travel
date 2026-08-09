@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "dolomites-sardinia",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -289,7 +289,8 @@
         "internal-itinerary",
         "state-travel",
         "cdc-travel",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "exact-2027-schedule-required",
@@ -300,17 +301,21 @@
         "gates": [
           "exact VCE–OLB date/time",
           "2027 mountain lift calendar"
-        ]
+        ],
+        "currentFlightAudit": "VCE–OLB and OLB–PIT remain current-pattern evidence only because the July 11 return is beyond several carriers’ booking horizon. Do not book the Dolomites car or Sardinia stays around an assumed Volotea day.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "volotea-vce-olb": "Official Volotea route page checked 2026-07-10 markets nonstop Venice–Olbia; July 2027 timetable not published",
         "dolomiti-lifts-2026": "Official 2026 Val Gardena lift calendar shows key lifts open through analogous dates; 2027 dates remain unpublished and weather-dependent",
         "internal-itinerary": "#air-travel and #decisions require VCE–OLB between the Dolomites and Sardinia legs",
         "state-travel": "Italy Level 2 advisory reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Venice, Dolomites & Sardinia; recheck before departure",
-        "google-flights-2027-audit": "Checked 2026-07-19: Volotea VCE-OLB nonstop verified (1h25, x2 on checked Aug Thursday, from $36); OLB-PIT Sunday return verified sold as ONE ticket - British Airways+American via LHR, 14h35, lands PIT 7:55 PM same day (~$843, Aug 2026 proxy). Jul 2027 beyond window."
+        "google-flights-2027-audit": "Checked 2026-07-19: Volotea VCE-OLB nonstop verified (1h25, x2 on checked Aug Thursday, from $36); OLB-PIT Sunday return verified sold as ONE ticket - British Airways+American via LHR, 14h35, lands PIT 7:55 PM same day (~$843, Aug 2026 proxy). Jul 2027 beyond window.",
+        "google-flights-2027-current-audit": "VCE–OLB and OLB–PIT remain current-pattern evidence only because the July 11 return is beyond several carriers’ booking horizon. Do not book the Dolomites car or Sardinia stays around an assumed Volotea day."
       },
       "claimType": "proxy"
     },
@@ -417,5 +422,10 @@
     "official historical climate and bathing-water datasets",
     "official current operator route and lift evidence",
     "exact 2027 flight and lift calendars remain open"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "exact-2027-schedule-required",
+    "headline": "The July island hop and return are not fully in the sale window"
+  }
 }

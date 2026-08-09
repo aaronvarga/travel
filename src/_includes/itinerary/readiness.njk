@@ -9,6 +9,11 @@
     <article><span>Expected family total</span><strong>{% if trip.main.scorecard.budget.ceilUsd <= 12000 %}At/below target{% elif trip.main.scorecard.budget.ceilUsd <= 15000 %}Within $15k preference{% elif trip.main.scorecard.budget.floorUsd <= 15000 %}Range crosses $15k{% else %}Likely above $15k{% endif %}</strong><p>{{ trip.main.scorecard.budget.floorUsd | moneyK }}&ndash;{{ trip.main.scorecard.budget.ceilUsd | moneyK }} estimated range.</p></article>
     <article><span>Wildfire disruption</span><strong>{{ fireFact.value.level }} · {{ fireFact.value.chanceBand }}</strong><p>Planning chance for these dates; live warnings override history.</p></article>
   </div>
+  {% if trip.flightAudit %}<article class="flight-audit-card">
+    <span>Current flight check · {{ trip.flightAudit.reviewedAt | displayDate }}</span>
+    <strong>{{ trip.flightAudit.headline }}</strong>
+    <p>{{ trip.flightAudit.detail }}</p>
+  </article>{% endif %}
   <details class="verification-log fire-risk-log">
     <summary>See wildfire evidence for every stop</summary>
     <p>{{ fireFact.value.outcome }} The trip uses the least-safe route segment as its overall rating.</p>

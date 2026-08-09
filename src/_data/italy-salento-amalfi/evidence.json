@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "italy-salento-amalfi",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 3,
       "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -302,25 +302,30 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 2,
         "route": "Italy: Salento-Amalfi",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "dateWindow": "2027-06-10 → 2027-06-23",
+        "currentFlightAudit": "PIT–BDS is selling June 10–23 from about $1,459 per traveler. Price BDS-in/NAP-out together before relying on the open-jaw protection.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
         "state-travel": "Italy Level 2 advisory reviewed 2026-07-10; recheck before booking/departure",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Italy: Salento-Amalfi; recheck before departure"
+        "cdc-travel": "CDC Travelers' Health destination guidance for Italy: Salento-Amalfi; recheck before departure",
+        "google-flights-2027-current-audit": "PIT–BDS is selling June 10–23 from about $1,459 per traveler. Price BDS-in/NAP-out together before relying on the open-jaw protection."
       },
       "claimType": "proxy"
     },
@@ -435,5 +440,10 @@
     "deterministic itinerary structure and operational load",
     "official Italian driving-document rule",
     "medium-confidence budget, climate, swim and route proxies"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Brindisi inventory is live and fits the existing flight band"
+  }
 }

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-algarve",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 5,
-      "rationale": "Six visible categories reconcile exactly to $8,400–$11,850, keeping the complete family estimate below the shared $12,000 target. Confidence is medium because exact June 2027 Faro airfare and lodging are not yet quoted.",
+      "score": 4,
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $9,800–$12,650. The Budget 4/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -61,9 +61,9 @@
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "The one-base route removes rail, rental-car and hotel-change failure points, but exact June 2027 Faro flights are not confirmed and Atlantic/cliff activities remain condition-dependent. One-ticket airfare and pool/town fallbacks keep the uncertainty manageable.",
-      "confidence": "medium",
+      "score": 4,
+      "rationale": "Exact protected Faro inventory removes the former schedule gate. The remaining uncertainty is ordinary Atlantic/cliff conditions with flexible one-base fallbacks, supporting Risk 4/5.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -101,24 +101,26 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-pit-lis"
+        "google-flights-pit-lis",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 8400,
+        "lowUsd": 9800,
         "expectedUsd": null,
-        "highUsd": 11850,
+        "highUsd": 12650,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "4800–6200 + 1600–2400 + 850–1150 + 350–650 + 300–650 + 500–800 = 8400–11850",
+        "arithmetic": "6200–7000 + 1600–2400 + 850–1150 + 350–650 + 300–650 + 500–800 = 9800–12650",
         "airfareObservation": "Pittsburgh-to-Lisbon route evidence shows June gateway prices around $1,250–$1,550 per traveler; the $4,800–$6,200 Faro family range uses that as a conservative Portugal proxy and is not an exact June 2027 quote"
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "short-algarve/main.json #budget and #totals; six itemized categories reconcile to the displayed family total",
-        "google-flights-pit-lis": "Route page reviewed 2026-07-13; June historical typical price $1,250–$1,550 per traveler and no Pittsburgh nonstop, used only as a Faro planning proxy"
+        "google-flights-pit-lis": "Route page reviewed 2026-07-13; June historical typical price $1,250–$1,550 per traveler and no Pittsburgh nonstop, used only as a Faro planning proxy",
+        "google-flights-2027-current-audit": "PIT–FAO sells June 12–20 from about $1,513 per traveler with one stop. Raise the family flight allowance to $6.2k–$7.0k including seats and bags."
       },
       "claimType": "proxy"
     },
@@ -302,28 +304,32 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
         "google-flights-pit-lis",
-        "state-travel"
+        "state-travel",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "outbound": "PIT–FAO with one protected connection preferred",
         "return": "FAO–PIT with one protected connection preferred",
-        "exact2027FlightsVerified": false,
-        "fallback": "Use a protected two-connection ticket if no safe one-connection Faro itinerary prices; do not self-transfer"
+        "exact2027FlightsVerified": true,
+        "fallback": "Use a protected two-connection ticket if no safe one-connection Faro itinerary prices; do not self-transfer",
+        "currentFlightAudit": "PIT–FAO sells June 12–20 from about $1,513 per traveler with one stop. Raise the family flight allowance to $6.2k–$7.0k including seats and bags.",
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "short-algarve/main.json #air-travel, day0 and day8 explicitly mark June 2027 Faro schedules and prices unconfirmed",
         "google-flights-pit-lis": "Current Pittsburgh-to-Portugal gateway snapshot supports no-nonstop and June fare planning, not exact Faro service",
-        "state-travel": "U.S. State Department Portugal entry reviewed for country-level planning; it does not confirm airline schedules"
+        "state-travel": "U.S. State Department Portugal entry reviewed for country-level planning; it does not confirm airline schedules",
+        "google-flights-2027-current-audit": "PIT–FAO sells June 12–20 from about $1,513 per traveler with one stop. Raise the family flight allowance to $6.2k–$7.0k including seats and bags."
       },
       "claimType": "proxy"
     },
@@ -421,5 +427,10 @@
     "official Algarve 20–22°C summer water planning range",
     "canonical one-base/no-rental derivation",
     "current Portugal gateway airfare evidence but no exact June 2027 Faro quote"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "Exact Faro flights are selling near the top of the old band"
+  }
 }

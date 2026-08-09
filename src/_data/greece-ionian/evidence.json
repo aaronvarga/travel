@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "greece-ionian",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -45,8 +45,8 @@
       ]
     },
     "ease": {
-      "score": 4,
-      "rationale": "The board's easiest warm-water plan: arrival at well-connected EFL is single-ticketable via Athens, then one direct ~1h ferry, short island drives on the gentle Ionian, and a road causeway (no ferry) linking Lefkada to the PVK departure. It is held off 5 by the open-jaw, the thin charter-served PVK departure leg, and renting a separate car on each island.",
+      "score": 3,
+      "rationale": "The corrected route adds a third lodging sleep and a 4½–5 hour Lefkada-to-Athens transfer before the buffer night, so Ease falls from 4/5 to 3/5.",
       "confidence": "high",
       "evidence": [
         "operational-load"
@@ -62,7 +62,7 @@
     },
     "risk": {
       "score": 3,
-      "rationale": "The departure-side PVK leg is a separate low-cost/charter ticket (self-transfer, low frequency) whose disruption threatens the Jun 24–26 Pittsburgh blackout; the single inter-island ferry is schedule-dependent; Navagio is closed to landing; and Myrtos swimming is hazardous for young children. These are mitigated by the single-ticket EFL arrival, a held Jun 23 buffer day, and abundant calm swim alternatives.",
+      "rationale": "The corrected route removes the unavailable PVK self-transfer and uses sold ATH inventory, but the 4½–5 hour final drive, one-way car return, ferry timetable, and beach-access rules still require active management; Risk remains 3/5.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -70,7 +70,7 @@
     },
     "nights": {
       "score": 5,
-      "rationale": "Twelve hotel nights (Kefalonia 7 + Lefkada 5) derive 5/5 under the canonical nights rubric.",
+      "rationale": "Twelve hotel nights (Kefalonia 7 + Lefkada 4 + Athens airport 1) derive 5/5 under the canonical nights rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -267,15 +267,18 @@
         "aegean-ath-efl"
       ],
       "value": {
-        "baseMoves": 1,
+        "baseMoves": 2,
         "countries": 1,
         "openJaw": true,
         "interIslandFerries": 1,
         "ferryRoute": "Vasiliki (Lefkada) -> Fiskardo (Kefalonia), direct ~1h",
         "rentalCars": 2,
         "arrivalAirport": "EFL (single-ticketable via ATH)",
-        "departureAirport": "PVK (road causeway from Lefkada, ~20-36 min)",
-        "note": "One country, one ferry, short island drives; the causeway means no ferry is needed to reach Lefkada. A separate economy car is rented on each island rather than carried across on a costly one-way."
+        "departureAirport": "ATH after a 4½–5 hour Lefkada drive and one airport-buffer night",
+        "note": "One country and one ferry remain simple on the islands; the corrected exit adds a long Lefkada-to-ATH drive, a one-way mainland car return, and a third lodging sleep.",
+        "easeScore": 3,
+        "maxConnections": 2,
+        "singleTicket": false
       },
       "verifiedAt": "2026-07-11",
       "expiresAt": "2027-05-01",
@@ -319,28 +322,33 @@
         "navagio-access-status",
         "eu-etias",
         "internal-itinerary",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 2,
         "arrivalLeg": "PIT -> US gateway -> ATH -> EFL; ATH-EFL single-ticketable via Delta/Aegean interline or United/Aegean Star codeshare",
-        "departureLeg": "PVK -> European hub (LGW/FRA/MUC) -> US gateway -> PIT; the PVK leg is a separate charter/low-cost ticket (self-transfer, low frequency)",
+        "departureLeg": "Lefkada -> ATH by car on Jun 21; airport-buffer night; ATH -> one protected hub -> PIT on Jun 22",
         "ferry2027": "June 2027 Vasiliki-Fiskardo timetable not yet published; 2025/2026 pattern is the proxy",
         "navagio": "Cove closed to landing/swimming through Oct 31 2026 (landslide risk); boats view from the bay mouth. 2027 status unannounced.",
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; EUR20/adult if required, exempt under 18/over 70.",
-        "note": "Not ready to book. Re-quote the open-jaw once 2027 inventory opens, confirm the ferry timetable and Navagio status, and buffer the thin PVK departure leg with insurance covering self-transfer misconnections."
+        "note": "Exact-date PIT-EFL and ATH-PIT components are live. Price EFL-in/ATH-out as one protected multi-city ticket, reject PVK, and reconfirm the ferry timetable and Navagio status.",
+        "currentFlightAudit": "Google Flights returns no PIT–PVK options for the exact dates. The itinerary now drives from Lefkada to an Athens-airport buffer on June 21 and uses sold June 22 ATH–PIT inventory; price EFL-in/ATH-out together before booking.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
-        "aegean-ath-efl": "EFL arrival frequency and interline vs the thin PVK service",
+        "aegean-ath-efl": "EFL arrival frequency and sold ATH return inventory supporting the corrected multi-city route",
         "ionion-pelagos-ferry": "Ferry route existence and seasonal-schedule caveat",
         "navagio-access-status": "Navagio landing closure through Oct 2026",
         "eu-etias": "Official Q4 2026 launch guidance, EUR20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
-        "internal-itinerary": "Open-jaw EFL-in/PVK-out construction and buffer-day plan",
-        "google-flights-2027-audit": "Checked 2026-07-19: PVK-PIT interline single tickets exist but from ~$3,053 pp and 28-30h via ZRH (Tuesday Aug proxy), confirming the thin/charter-exit concern; ATH-EFL verified 4 nonstops/day (Aegean/Olympic, Sky Express, $97-202)."
+        "internal-itinerary": "Corrected EFL-in/ATH-out construction with Jun 21 airport-buffer night",
+        "google-flights-2027-audit": "Checked 2026-07-19: PVK-PIT interline single tickets exist but from ~$3,053 pp and 28-30h via ZRH (Tuesday Aug proxy), confirming the thin/charter-exit concern; ATH-EFL verified 4 nonstops/day (Aegean/Olympic, Sky Express, $97-202).",
+        "google-flights-2027-current-audit": "Google Flights returns no PIT–PVK options for the exact dates. The itinerary now drives from Lefkada to an Athens-airport buffer on June 21 and uses sold June 22 ATH–PIT inventory; price EFL-in/ATH-out together before booking."
       },
       "claimType": "proxy"
     },
@@ -436,5 +444,10 @@
     "high-confidence logistics, food-coverage, novelty, and readiness-conclusion claims",
     "medium-confidence budget, blended climate, and swim (SST proxy) claims",
     "explicit unknowns: live 2027 open-jaw fare, 2027 ferry timetable, Lefkada lodging precision, Egremni land access, and 2027 Navagio landing status"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The corrected route exits through Athens, not Preveza"
+  }
 }

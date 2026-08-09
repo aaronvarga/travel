@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "croatia",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "The five-category rollup reconciles to $8,400–$12,800 and the entire band is below $13,500, matching Budget 4. Flights/lodging are planning bands, while attraction/ferry anchors are current 2026 proxies.",
+      "score": 2,
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $10,400–$14,800. The Budget 2/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,22 +101,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 8400,
+        "lowUsd": 10400,
         "expectedUsd": null,
-        "highUsd": 12800,
+        "highUsd": 14800,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "8400–12800 line-item sum; tolerance 150"
+        "arithmetic": "5600–6800 flights + 700–1300 grouped ground transport + 2100–3100 lodging + 1705–2900 grouped food/activities + 300–700 buffer = 10405–14800; displayed 10400–14800"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
-        "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket."
       },
       "claimType": "proxy"
     },
@@ -292,7 +294,8 @@
         "croatia-dhmz-marine",
         "state-travel",
         "cdc-travel",
-        "eu-etias"
+        "eu-etias",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -311,10 +314,13 @@
           "weather-flexible boat days",
           "private Korčula/DBV transfer with flight margin",
           "ETIAS status"
-        ]
+        ],
+        "currentFlightAudit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "Croatia #air-travel, #getting-around, #status and exact island-transfer/departure days",
         "jadrolinija-split-hvar-2026": "Jadrolinija official line 641/current page: direct Split–Hvar passenger service and 2026 seasonal timetable; not a June 2027 confirmation",
@@ -322,7 +328,8 @@
         "croatia-dhmz-marine": "DHMZ marine observations demonstrate live sea/wind variability; operator disruption notices and the marine forecast must be checked for each sailing/boat day",
         "state-travel": "Croatia advisory review required before booking/departure",
         "cdc-travel": "Croatia destination health guidance to recheck before departure",
-        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck"
+        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck",
+        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket."
       },
       "claimType": "proxy"
     },
@@ -442,5 +449,10 @@
     "DHMZ site-specific climate and live marine evidence",
     "official 2026 ferry timetables and national-park rules",
     "independent food/store audit and June 2027 schedules remain incomplete"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Exact Split inventory is live, but the Dubrovnik open-jaw costs more than the old band"
+  }
 }

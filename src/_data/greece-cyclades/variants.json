@@ -21,7 +21,9 @@
       "notes": "The checked-in itinerary is the immutable comparison baseline: Athens 2 nights + Naxos 4 + Paros 2 + Milos 3 + Athens 1 buffer, ferries outbound through the islands and a Milos->Athens domestic flight home, with a rental car on each island.",
       "confidence": "medium",
       "claimType": "derived",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "sourceLocators": {
         "internal-itinerary": "Greek Cyclades; variant canonical; route-specific savings/tradeoffs require re-price"
       }

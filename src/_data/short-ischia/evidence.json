@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-ischia",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -61,9 +61,9 @@
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "Hydrofoils suspend in about 2-meter waves and mid-June is a one-flight-a-day window, so the connection and the crossing are genuine exposure. Mitigations are structural: car ferries keep sailing when hydrofoils stop, Delta’s JFK–NAP daily is a same-day air rescue, the Saturday flex day absorbs postponements, and no activity is prepaid more than days ahead.",
-      "confidence": "medium",
+      "score": 4,
+      "rationale": "Exact protected Naples inventory removes the transatlantic schedule gate. Bay crossing weather remains a managed fallback risk, supporting Risk 4/5.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -319,30 +319,34 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
         "united-ewr-nap-schedule",
-        "alilauro-naples-ischia-2026"
+        "alilauro-naples-ischia-2026",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "nonstopExists": false,
         "outbound": "PIT → EWR → NAP · United single ticket; EWR–NAP nonstop ~2x daily June 2026, historically 1x daily until ~Jun 23",
         "return": "NAP → EWR → PIT · same-day arrival",
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "hydrofoilWeatherRisk": "Alilauro suspends around 2 m waves; Porta di Massa car ferries almost never cancel Apr–Oct",
-        "deltaJfkNapBackup": true
+        "deltaJfkNapBackup": true,
+        "currentFlightAudit": "PIT–NAP sells June 12–20 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound.",
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-16",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "short-ischia/main.json #air-travel marks all routings and fares as current proxies requiring 2027 verification",
         "united-ewr-nap-schedule": "Flight-schedule data shows United EWR–NAP ~14 weekly June 2026 on 767-300, seasonal May–Oct; second daily historically starts ~Jun 23",
-        "alilauro-naples-ischia-2026": "Operator publishes June 15–Sept 15 2026 schedule with frequent daily Beverello–Forio/Ischia hydrofoils; 2027 times unpublished"
+        "alilauro-naples-ischia-2026": "Operator publishes June 15–Sept 15 2026 schedule with frequent daily Beverello–Forio/Ischia hydrofoils; 2027 times unpublished",
+        "google-flights-2027-current-audit": "PIT–NAP sells June 12–20 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound."
       },
       "claimType": "proxy"
     },
@@ -448,5 +452,10 @@
     "one-base itinerary derivation",
     "no exact June 2027 schedule, fare or room quote exists for any line"
   ],
-  "evidenceBasis": "Official operator and transit tariffs, published climate and sea-temperature normals, current-season ferry and flight schedules, and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and ferry times remain current-season proxies."
+  "evidenceBasis": "Official operator and transit tariffs, published climate and sea-temperature normals, current-season ferry and flight schedules, and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and ferry times remain current-season proxies.",
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "Exact Naples flights are selling with one stop"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-crete",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -61,8 +61,8 @@
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "The buffer correctly mitigates Madeira wind disruption, but FNC–LIS and the next-day LIS–ATH–CHQ chain remain critical; Madeira trail status/slots and June 2027 flights must be rechecked.",
+      "score": 3,
+      "rationale": "Exact PIT–FNC and protected LIS–ATH–CHQ inventory is selling. The deliberate Lisbon buffer contains Madeira wind risk, supporting Risk 3/5.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -314,7 +314,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "ana-madeira-wind-operations",
@@ -322,26 +322,30 @@
         "aegean-athens-crete",
         "internal-itinerary",
         "visit-madeira-hiking",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicketAssumption": true,
         "maxConnections": 3,
         "mandatoryBuffer": "Lisbon night after FNC",
         "june2027Verified": false,
         "trailReservationsRequired": true,
-        "singleTicket": false
+        "singleTicket": false,
+        "currentFlightAudit": "PIT–FNC sells June 8 from about $1,202 round trip and LIS–CHQ sells June 14 via ATH on one Aegean ticket. Keep the Lisbon weather-buffer night.",
+        "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "ana-madeira-wind-operations": "ANA official notice documents strong-wind flight disruption at Madeira; historical example only",
         "aegean-lisbon-athens": "Operator currently sells LIS–ATH but not the exact June 14, 2027 chain",
         "aegean-athens-crete": "Operator current route calendar includes ATH–CHQ/HER",
         "internal-itinerary": "madeira-crete/main.json Plan Health-Check mandates Lisbon wind buffer and protected tickets",
         "visit-madeira-hiking": "Official 2026 rules require timed reservation for all classified PR trails and live status checks",
-        "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop sold for exact 2027-06-08; LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55 total, 1h10 ATH connection, ~$440); Aegean June 2027 inventory not yet loaded."
+        "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop sold for exact 2027-06-08; LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55 total, 1h10 ATH connection, ~$440); Aegean June 2027 inventory not yet loaded.",
+        "google-flights-2027-current-audit": "PIT–FNC sells June 8 from about $1,202 round trip and LIS–CHQ sells June 14 via ATH on one Aegean ticket. Keep the Lisbon weather-buffer night."
       },
       "claimType": "proxy"
     },
@@ -449,5 +453,10 @@
     "deterministic logistics strongly sourced",
     "independent grocery coverage strongly sourced",
     "prices, properties, and non-reproduced SST remain medium"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The exact Madeira and Lisbon–Chania flights are selling"
+  }
 }

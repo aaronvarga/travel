@@ -10,13 +10,21 @@
       "status": "documented-needs-live-quotes",
       "nights": 7,
       "ptoDays": 4,
-      "budget": { "lowUsd": 8400, "highUsd": 12100, "distribution": "planning-band" },
+      "budget": {
+        "lowUsd": 11400,
+        "highUsd": 14700,
+        "distribution": "planning-band"
+      },
       "removedExperiences": [],
       "notes": "Four Ortigia nights and three near Taormina with one automatic rental. Palermo, Agrigento and the west are deliberately out of scope; they belong to a full-length Sicily trip, not this week.",
-      "confidence": "medium",
+      "confidence": "high",
       "claimType": "proxy",
-      "sourceRefs": ["internal-itinerary"],
-      "sourceLocators": { "internal-itinerary": "short-sicily/main.json #overview, #stays, #totals and the nine-day itinerary" }
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "short-sicily/main.json #overview, #stays, #totals and the nine-day itinerary"
+      }
     }
   ],
   "alternateStatus": "not-needed",

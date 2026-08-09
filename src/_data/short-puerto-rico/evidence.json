@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-puerto-rico",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -47,7 +47,7 @@
     "ease": {
       "score": 4,
       "rationale": "Domestic travel, one expected connection, one hotel move and short northeast-coast drives are unusually easy. The flight connection and five-day rental keep this below 5.",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "operational-load",
         "route-readiness"
@@ -62,9 +62,9 @@
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "The ground plan is simple, but tropical systems, rip currents, thunderstorms, forest closures and boat cancellations remain meaningful managed risks.",
-      "confidence": "medium",
+      "score": 4,
+      "rationale": "Exact protected one-stop inventory removes the flight-publication gate. June tropical weather remains flexible rather than critical, supporting Risk 4/5.",
+      "confidence": "high",
       "evidence": [
         "climate-proxy",
         "swim-conditions",
@@ -306,24 +306,29 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "preferredConnections": 1,
         "june2027ProtectedTicketVerified": false,
         "routeRule": "PIT–US hub–SJU on one protected domestic round trip; no PIT–SJU nonstop assumed",
-        "observedRoundTripPerTravelerUsd": null
+        "observedRoundTripPerTravelerUsd": null,
+        "currentFlightAudit": "PIT–SJU sells June 12–19 from about $571 per traveler via Charlotte or Philadelphia. Keep the one-stop itinerary and a $2.4k–$3.2k family allowance including seats and bags.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
-        "internal-itinerary": "Current route search supports one-stop options; no exact June 12–19, 2027 family quote or nonstop is represented as confirmed"
+        "internal-itinerary": "Current route search supports one-stop options; no exact June 12–19, 2027 family quote or nonstop is represented as confirmed",
+        "google-flights-2027-current-audit": "PIT–SJU sells June 12–19 from about $571 per traveler via Charlotte or Philadelphia. Keep the one-stop itinerary and a $2.4k–$3.2k family allowance including seats and bags."
       },
       "claimType": "proxy"
     },
@@ -470,5 +475,10 @@
     "route shape, date arithmetic, domestic entry and federal-site rules are high-confidence",
     "exact June 2027 air, lodging, rental and tour quotes remain open",
     "tropical weather and ocean conditions require same-day decisions"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "Exact protected one-stop flights are selling"
+  }
 }

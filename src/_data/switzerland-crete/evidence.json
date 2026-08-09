@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "switzerland-crete",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -267,7 +267,10 @@
         "arrivalTransferHours": 2.3,
         "swissRentalCar": false,
         "creteRentalCar": true,
-        "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~2h20 HER-Chania transfer, and a Crete rental car."
+        "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~2h20 HER-Chania transfer, and a Crete rental car.",
+        "easeScore": 2,
+        "maxConnections": 2,
+        "singleTicket": false
       },
       "verifiedAt": "2026-07-11",
       "expiresAt": "2027-05-01",
@@ -306,7 +309,8 @@
         "edelweiss-zrh-crete",
         "eu-etias",
         "internal-itinerary",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -317,15 +321,19 @@
         "zrhCreteNonstop": "HER multi-carrier nonstop; CHQ weekly Edelweiss; June 2027 inventory not yet loaded",
         "june2027ProtectedTicketVerified": false,
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required for the Schengen legs",
-        "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Crete day once 2027 inventory opens."
+        "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Crete day once 2027 inventory opens.",
+        "currentFlightAudit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells two June 14 ZRH–HER nonstops of about 2h50. Keep the Heraklion-to-Chania drive in the plan.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "edelweiss-zrh-crete": "ZRH-HER and ZRH-CHQ nonstop existence and frequency",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "Open-jaw construction and homebound-via-Athens plan",
-        "google-flights-2027-audit": "Checked 2026-07-19: ZRH-HER verified with 4 nonstops on the checked Aug Tuesday (Edelweiss x2, Condor, Chair Airlines; 2h50, from $209)."
+        "google-flights-2027-audit": "Checked 2026-07-19: ZRH-HER verified with 4 nonstops on the checked Aug Tuesday (Edelweiss x2, Condor, Chair Airlines; 2h50, from $209).",
+        "google-flights-2027-current-audit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells two June 14 ZRH–HER nonstops of about 2h50. Keep the Heraklion-to-Chania drive in the plan."
       },
       "claimType": "proxy"
     },
@@ -432,5 +440,10 @@
     "high-confidence logistics, novelty, and food-coverage claims",
     "medium-confidence blended climate and budget claims",
     "medium-confidence swim claim (Crete SST is a proxy)"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Zurich and the exact Heraklion hop are selling"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "greece-cyclades",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 3,
       "rationale": "The defining risk is the meltemi: three inter-island ferries plus the Kleftiko boat can be disrupted by a strong north wind, and Milos's coves are exposed. It scores 3 rather than lower because June is the calm shoulder (the meltemi peaks in July–August, cancellations are uncommon), high-speed ferries usually run, and the plan builds in mitigations — a flex day, three Milos nights so the Kleftiko cruise can slide, and an Athens buffer night before the Atlantic flight.",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -245,7 +245,10 @@
         "ferryLegs": 3,
         "domesticFlights": 1,
         "carRentals": 3,
-        "note": "Mid-load: three high-speed ferries, one MLO->ATH flight, a car per island, low backtracking, Athens buffer night."
+        "note": "Mid-load: three high-speed ferries, one MLO->ATH flight, a car per island, low backtracking, Athens buffer night.",
+        "easeScore": 3,
+        "maxConnections": 2,
+        "singleTicket": false
       },
       "verifiedAt": "2026-07-11",
       "expiresAt": "2026-12-31",
@@ -286,18 +289,19 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
         "pit-ath-routing",
         "cyclades-ferries",
         "milos-domestic-air",
         "meltemi-risk",
         "eu-etias",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": false,
         "singleTicketAssumption": false,
         "maxConnections": 2,
@@ -305,17 +309,21 @@
         "june2027ProtectedTicketVerified": false,
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; E20/adult if required, children apply without a fee",
         "meltemiRisk": "meltemi can cancel high-speed ferries and the Kleftiko boat; June is the calm shoulder, cancellations uncommon",
-        "note": "Not ready to book. Re-quote PIT-Athens on ITA Matrix, confirm 2027 ferry sailings, keep the Kleftiko cruise early in the Milos stay and the flex day open."
+        "note": "Not ready to book. Re-quote PIT-Athens on ITA Matrix, confirm 2027 ferry sailings, keep the Kleftiko cruise early in the Milos stay and the flex day open.",
+        "currentFlightAudit": "PIT–ATH is available June 8–21 from about $1,291 per traveler with one stop. MLO–ATH sells multiple 40-minute nonstops on June 20; ferries remain a separate timetable recheck.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "pit-ath-routing": "no PIT-ATH nonstop; two-stop routings via US gateway + European hub",
         "cyclades-ferries": "three inter-island legs; high-speed cats cancel first in strong wind",
         "milos-domestic-air": "MLO-ATH domestic hop + Athens buffer night before the Atlantic flight",
         "meltemi-risk": "June calm shoulder; cancellations uncommon but possible; buffer days mitigate",
         "eu-etias": "Official Q4 2026 launch guidance, E20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
-        "google-flights-2027-audit": "PIT-ATH verified for exact 2027-06-08 on Google Flights 2026-07-19: abundant 1-stop single tickets $569-586 (United via EWR 11h55; American via CLT/PHL; Air Canada via YYZ/YUL) - better than the 2-stop planning assumption."
+        "google-flights-2027-audit": "PIT-ATH verified for exact 2027-06-08 on Google Flights 2026-07-19: abundant 1-stop single tickets $569-586 (United via EWR 11h55; American via CLT/PHL; Air Canada via YYZ/YUL) - better than the 2-stop planning assumption.",
+        "google-flights-2027-current-audit": "PIT–ATH is available June 8–21 from about $1,291 per traveler with one stop. MLO–ATH sells multiple 40-minute nonstops on June 20; ferries remain a separate timetable recheck."
       },
       "claimType": "proxy"
     },
@@ -406,5 +414,10 @@
     "high-confidence itinerary-structure, dates, logistics, food-named, and novelty claims",
     "medium-confidence blended climate, budget, and route-readiness claims (2025-2026 proxies for 2027)",
     "medium-confidence swim claim (Aegean SST is a proxy, ~72°F, warmer beaches than temperature alone implies)"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "The exact Athens and Milos flight dates are selling"
+  }
 }

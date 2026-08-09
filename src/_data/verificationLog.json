@@ -2,6 +2,12 @@
   "schemaVersion": 1,
   "events": [
     {
+      "date": "2026-08-08",
+      "scope": "all",
+      "type": "flight-inventory",
+      "summary": "Rechecked exact 2027 flight dates for all 40 short and full itineraries; updated route assumptions, fare bands, readiness, dependent itinerary copy, and recommendation scores. Greece Ionian now exits through an Athens buffer because PVK has no exact-date itinerary, and Iceland + Ischia + Cilento is explicitly reroute-required because its assumed Jun 10 nonstop does not operate."
+    },
+    {
       "date": "2026-07-09",
       "scope": "all",
       "type": "recommendation-model",

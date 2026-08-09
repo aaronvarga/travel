@@ -11,17 +11,19 @@
       "nights": 7,
       "ptoDays": 4,
       "budget": {
-        "lowUsd": 8400,
+        "lowUsd": 9800,
         "expectedUsd": null,
-        "highUsd": 11850,
+        "highUsd": 12650,
         "distribution": "planning-band",
         "chanceUnderPreferredMax": null
       },
       "removedExperiences": [],
       "notes": "Fly into and out of Faro and sleep all seven nights in Lagos. The week keeps the pool, beaches, Ponta da Piedade, Sagres, Praia da Luz and Burgau while removing every hotel change, rental car and internal transport connection.",
-      "confidence": "medium",
+      "confidence": "high",
       "claimType": "proxy",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "sourceLocators": {
         "internal-itinerary": "short-algarve/main.json Jun 12–20 route, seven Lagos hotel nights, four PTO days and itemized $8,400–$11,850 total"
       }

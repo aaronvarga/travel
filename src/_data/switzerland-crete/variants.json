@@ -21,7 +21,9 @@
       "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Chania 7 nights (car), open-jaw ZRH in / Crete out.",
       "confidence": "medium",
       "claimType": "derived",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "sourceLocators": {
         "internal-itinerary": "Switzerland + Crete; variant canonical; route-specific savings/tradeoffs require re-price"
       }

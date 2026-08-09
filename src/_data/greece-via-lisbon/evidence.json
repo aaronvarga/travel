@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "greece-via-lisbon",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -281,31 +281,36 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "aegean-ath-lis",
         "internal-itinerary",
         "state-travel",
         "cdc-travel",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 2,
         "route": "CHQ -> ATH -> oneworld US gateway (CLT/ORD/PHL) -> PIT on one Aegean/Sky Express + American ticket",
         "dateWindow": "2027-06-22",
-        "requiredAction": "rebuild return via a published ATH–LIS date or another protected hub"
+        "requiredAction": "rebuild return via a published ATH–LIS date or another protected hub",
+        "currentFlightAudit": "LIS–CHQ is selling June 14 via ATH on one Aegean itinerary (about 6 hours). The CHQ–PIT return must still be quoted as one protected multi-city ticket; do not route home through Lisbon on Tuesday.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "aegean-ath-lis": "AEGEAN official fare calendar checked 2026-07-10 sells ATH–LIS on selected dates through April 2027 but does not publish or confirm 2027-06-22",
         "internal-itinerary": "#decisions explicitly says the current Tuesday ATH–LIS proxy does not operate and the return must be rebuilt",
         "state-travel": "Greece and Portugal Level 1 advisories reviewed 2026-07-10; Greece also flags summer heat/wildfire exposure",
         "cdc-travel": "CDC Travelers' Health destination guidance for Greece via Lisbon; recheck before departure",
-        "google-flights-2027-audit": "Rebuilt return checked 2026-07-19 (Tuesday Aug 18 proxy): CHQ-ATH-CLT-PIT sells as one Aegean/Sky Express + American ticket (18h46, lands PIT 9:11 PM same day, ~$1,123-1,237 pp). ATH-LIS Tuesday nonstops DO sell in peak summer but both arrive LIS too late for a same-day PIT connection, so the via-Lisbon return stays dead."
+        "google-flights-2027-audit": "Rebuilt return checked 2026-07-19 (Tuesday Aug 18 proxy): CHQ-ATH-CLT-PIT sells as one Aegean/Sky Express + American ticket (18h46, lands PIT 9:11 PM same day, ~$1,123-1,237 pp). ATH-LIS Tuesday nonstops DO sell in peak summer but both arrive LIS too late for a same-day PIT connection, so the via-Lisbon return stays dead.",
+        "google-flights-2027-current-audit": "LIS–CHQ is selling June 14 via ATH on one Aegean itinerary (about 6 hours). The CHQ–PIT return must still be quoted as one protected multi-city ticket; do not route home through Lisbon on Tuesday."
       },
       "claimType": "proxy"
     },
@@ -412,5 +417,10 @@
     "official airline evidence for the route gate",
     "medium-confidence climate/SST proxies",
     "reroute-required for the exact return"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The Lisbon–Athens–Chania flight chain now sells on the exact dates"
+  }
 }

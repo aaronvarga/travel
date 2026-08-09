@@ -21,7 +21,10 @@
       "notes": "Immutable comparison baseline: Madeira 6 nights plus Kefalonia 6 nights; FNC in and EFL out through Athens, deliberately without Lefkada or PVK.",
       "confidence": "medium",
       "claimType": "derived",
-      "sourceRefs": ["internal-itinerary", "aegean-kefalonia-official"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "aegean-kefalonia-official"
+      ],
       "sourceLocators": {
         "internal-itinerary": "madeira-kefalonia/main.json canonical day-by-day schedule and #totals Grand Total.",
         "aegean-kefalonia-official": "Current official ATH–EFL route marketing supports the gateway choice only; exact June 2027 itinerary remains a recheck gate."

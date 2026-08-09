@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-sicily",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -45,8 +45,8 @@
       ]
     },
     "ease": {
-      "score": 1,
-      "rationale": "Four lodging sleeps, three base moves, two rental cars, two internal flights, and up to three connections are high load. However, the unprotected-ticket uncertainty belongs in Risk, so the deterministic rubric more plausibly supports 2/5 than 1/5.",
+      "score": 2,
+      "rationale": "Four lodging sleeps, three base moves, two cars and a now-confirmed one-stop Lisbon–Palermo transfer are very high deterministic load, but the itinerary remains executable; Ease 2/5 is more consistent than 1/5.",
       "confidence": "high",
       "evidence": [
         "operational-load"
@@ -252,7 +252,7 @@
         "internal-itinerary"
       ],
       "value": {
-        "easeScore": 1,
+        "easeScore": 2,
         "maxConnections": 3,
         "singleTicket": false,
         "lodgingSleeps": 4,
@@ -314,29 +314,33 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "easyjet-lis-pmo",
         "ana-madeira-wind-operations",
         "internal-itinerary",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 3,
         "criticalLeg": "LIS–PMO less-than-daily easyJet",
         "june2027Verified": false,
-        "mandatoryBuffer": "Lisbon"
+        "mandatoryBuffer": "Lisbon",
+        "currentFlightAudit": "Exact-date results show one-stop LIS–PMO itineraries via Zurich, Munich or Rome in roughly 6½–10 hours. Keep the Lisbon buffer and replace every claim that the Tuesday easyJet nonstop is the route hinge.",
+        "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "easyjet-lis-pmo": "Operator August 2026 timetable observed Tuesday/Friday service; exact June 2027 dates absent",
         "ana-madeira-wind-operations": "Official historical example of wind disruption at Madeira Airport",
         "internal-itinerary": "madeira-sicily/main.json air section calls LIS–PMO an easyJet monopoly and keeps a Lisbon buffer",
-        "google-flights-2027-audit": "Checked 2026-07-19: easyJet LIS-PMO nonstop confirmed selling on Tuesday ($307, 3h); Monday not served; same-day one-stop backups sold daily (Vueling via BCN, TAP+ITA via FCO), so a same-day recovery path exists. United EWR-FNC sold for exact 2027-06-08."
+        "google-flights-2027-audit": "Checked 2026-07-19: easyJet LIS-PMO nonstop confirmed selling on Tuesday ($307, 3h); Monday not served; same-day one-stop backups sold daily (Vueling via BCN, TAP+ITA via FCO), so a same-day recovery path exists. United EWR-FNC sold for exact 2027-06-08.",
+        "google-flights-2027-current-audit": "Exact-date results show one-stop LIS–PMO itineraries via Zurich, Munich or Rome in roughly 6½–10 hours. Keep the Lisbon buffer and replace every claim that the Tuesday easyJet nonstop is the route hinge."
       },
       "claimType": "proxy"
     },
@@ -445,5 +449,10 @@
     "high-confidence exact-schedule gate and deterministic load",
     "high-confidence base-specific grocery and plain-menu coverage",
     "medium-confidence budget, lodging, climate grid, and non-reproduced SST"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "There is no June 15 Lisbon–Palermo nonstop"
+  }
 }

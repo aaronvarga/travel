@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "turkish-riviera",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 6-line-item family budget is $10,000–$17,400 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $12,200–$18,400. The Budget 1/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 10000,
+        "lowUsd": 12200,
         "expectedUsd": null,
-        "highUsd": 17400,
+        "highUsd": 18400,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "10000–17400 line-item sum; tolerance 150"
+        "arithmetic": "7000–8000 + 1100–2000 + 1650–3400 + 1350–2250 + 700–2000 + 350–700 = 12150–18350; displayed 12200–18400"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
-        "internal-itinerary": "Turkish Riviera; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "Turkish Riviera; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible."
       },
       "claimType": "proxy"
     },
@@ -273,21 +275,26 @@
       "sourceRefs": [
         "internal-itinerary",
         "state-travel",
-        "cdc-travel"
+        "cdc-travel",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 2,
         "route": "Turkish Riviera",
-        "dateWindow": "2027-06-10 → 2027-06-23"
+        "dateWindow": "2027-06-10 → 2027-06-23",
+        "currentFlightAudit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "#air-travel and #getting-around require AYT-in/DLM-out but contain only planning bands, not June 2027 bookings",
         "state-travel": "Türkiye Level 2 advisory issued 2026-06-09 and reviewed 2026-07-10; no-travel area is the Syria/Iraq border, not this southwest-coast route",
-        "cdc-travel": "CDC Travelers' Health destination guidance for Turkish Riviera; recheck before departure"
+        "cdc-travel": "CDC Travelers' Health destination guidance for Turkish Riviera; recheck before departure",
+        "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible."
       },
       "claimType": "proxy"
     },
@@ -402,5 +409,10 @@
     "official Antalya climate statistics and current travel advisory",
     "deterministic three-base itinerary load",
     "medium-confidence budget, swim, food and flight proxies"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Antalya inventory is live near the top of the existing band"
+  }
 }

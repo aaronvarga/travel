@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-algarve-sicily",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 3,
       "rationale": "Removing the Carvoeiro-to-Lisbon same-day backtrack and the twice-weekly self-transfer, and routing the internal hop as a single Vueling Barcelona connection, cuts the worst failure mode to a moderate 3/5; the exact 2027 schedule and the single-through-ticket status remain unverified, which is why it is not higher.",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -284,32 +284,37 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "medium",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
       "sourceRefs": [
         "vueling-fao-bcn-pmo",
         "flightconnections-fao-pmo",
         "internal-itinerary",
         "state-travel",
         "cdc-travel",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 2,
         "route": "Faro → Barcelona → Palermo → Cefalù",
-        "dateWindow": "2027-06-17"
+        "dateWindow": "2027-06-17",
+        "currentFlightAudit": "PIT–FAO and CTA–PIT exact-date inventory exists. Retain the Barcelona one-stop plan only if Vueling sells FAO–BCN–PMO as one ticket on June 17.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "vueling-fao-bcn-pmo": "Google Flights (2026-07-19) confirms Vueling sells the FAO→BCN→PMO connection as one through-ticket via Barcelona (~6h55, 1 stop); the single-ticket routing is verified, but the exact June-2027 day is beyond the current booking window and unconfirmed",
         "flightconnections-fao-pmo": "Schedule aggregation checked 2026-07-19 lists Barcelona as the fastest FAO–PMO one-stop routing at ~6h55 total (1 stop); a current pattern, not a 2027 confirmation",
         "internal-itinerary": "#air-travel, #getting-around and Day 7 require a Faro→Barcelona→Palermo→Cefalù sequence with a protected connection",
         "state-travel": "Portugal Level 1 and Italy Level 2 advisories reviewed 2026-07-19",
         "cdc-travel": "Portugal and Italy traveler pages reviewed 2026-07-19; recheck before departure",
-        "google-flights-2027-audit": "Checked 2026-07-19: PIT-FAO sold for exact 2027-06-10 (BA 1-stop via LHR; 2-stop single tickets $733-754); CTA-PIT verified same-day pattern (Delta/KLM via JFK 17h42 lands 9:37 PM ~$961; ITA+American via FCO+PHL $1,026)."
+        "google-flights-2027-audit": "Checked 2026-07-19: PIT-FAO sold for exact 2027-06-10 (BA 1-stop via LHR; 2-stop single tickets $733-754); CTA-PIT verified same-day pattern (Delta/KLM via JFK 17h42 lands 9:37 PM ~$961; ITA+American via FCO+PHL $1,026).",
+        "google-flights-2027-current-audit": "PIT–FAO and CTA–PIT exact-date inventory exists. Retain the Barcelona one-stop plan only if Vueling sells FAO–BCN–PMO as one ticket on June 17."
       },
       "claimType": "proxy"
     },
@@ -441,5 +446,10 @@
     "current official/operator ticket signals",
     "historical climate/SST planning proxies",
     "exact-2027-schedule-required Algarve-to-Sicily Vueling gate"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The outer dates are live; the Faro–Palermo through-ticket remains the gate"
+  }
 }

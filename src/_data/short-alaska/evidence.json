@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-alaska",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 3,
       "rationale": "Domestic travel and flexible days help, but the Kenai Fjords cruise is a genuine single point of failure that weather cancels, and every routing depends on one connection. June also brings bears with cubs and the start of the salmon run. Mitigations are real — a spare Seward day, ranger-led walks, an indoor SeaLife Center fallback — but the exposure is above a one-base domestic week.",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -314,30 +314,34 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
         "majormarine-kenai-cruise",
-        "adfg-bears"
+        "adfg-bears",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "nonstopExists": false,
         "outbound": "PIT → SEA/ORD/MSP/DEN → ANC; no nonstop exists",
         "return": "ANC → one connection → PIT; eastbound loses four hours",
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "cruiseIsSinglePointOfFailure": true,
-        "bearExposure": "June brings mothers with cubs and the start of the salmon run"
+        "bearExposure": "June brings mothers with cubs and the start of the salmon run",
+        "currentFlightAudit": "PIT–ANC is available June 12–19 from about $463 per traveler via Seattle, with practical 9h57–10h52 outbound options. The existing family flight band remains adequate.",
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-15",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "short-alaska/main.json #air-travel marks every routing as connecting and prices as current proxies",
         "majormarine-kenai-cruise": "Operator publishes current-season sailings only; 2027 fares and schedules are not available and weather cancellation is an operator-stated risk",
-        "adfg-bears": "Official ADF&G bear-country guidance supports the ranger-led-walk and well-travelled-trail mitigation rather than family backcountry hiking"
+        "adfg-bears": "Official ADF&G bear-country guidance supports the ranger-led-walk and well-travelled-trail mitigation rather than family backcountry hiking",
+        "google-flights-2027-current-audit": "PIT–ANC is available June 12–19 from about $463 per traveler via Seattle, with practical 9h57–10h52 outbound options. The existing family flight band remains adequate."
       },
       "claimType": "proxy"
     },
@@ -436,5 +440,10 @@
     "two-base itinerary derivation",
     "no exact June 2027 schedule, fare or room quote exists for any line"
   ],
-  "evidenceBasis": "Official federal park, state transport and wildlife sources, current operator pricing, published climate and sea-temperature normals, and line-by-line derivation from the two-base itinerary. Exact June 2027 prices, flights and cruise schedules remain current-season proxies."
+  "evidenceBasis": "Official federal park, state transport and wildlife sources, current operator pricing, published climate and sea-temperature normals, and line-by-line derivation from the two-base itinerary. Exact June 2027 prices, flights and cruise schedules remain current-season proxies.",
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "Exact one-stop Alaska flights are selling"
+  }
 }

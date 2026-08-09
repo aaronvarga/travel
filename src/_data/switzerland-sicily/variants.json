@@ -21,7 +21,9 @@
       "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Sicily 7 nights (car) across Taormina and Siracusa, open-jaw ZRH in / Catania out.",
       "confidence": "medium",
       "claimType": "derived",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "sourceLocators": {
         "internal-itinerary": "Switzerland + Sicily; variant canonical; route-specific savings/tradeoffs require re-price"
       }

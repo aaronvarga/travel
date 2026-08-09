@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-acadia",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "The six-category family estimate reconciles exactly to $6,700–$10,200, below the shared $12,000 target; confidence is medium until exact 2027 air, room and car quotes exist.",
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $7,700–$10,800. The Budget 5/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -45,8 +45,8 @@
       ]
     },
     "ease": {
-      "score": 4,
-      "rationale": "One room, one rental car, no passport and short local loops are strong. The roughly three-hour Portland transfer in each direction prevents a perfect ease score.",
+      "score": 3,
+      "rationale": "One room and one rental car remain simple, but the exact itinerary now requires one air connection plus the three-hour Portland drive in each direction, supporting Ease 3/5.",
       "confidence": "high",
       "evidence": [
         "operational-load"
@@ -63,7 +63,7 @@
     "risk": {
       "score": 4,
       "rationale": "Domestic travel, one base and condition-flexible days remove most failure points. The exact 2027 seasonal nonstop and Cadillac booking remain explicit gates, with protected-connection and non-summit fallbacks.",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 6700,
+        "lowUsd": 7700,
         "expectedUsd": null,
-        "highUsd": 10200,
+        "highUsd": 10800,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "800–1600 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 6700–10200"
+        "arithmetic": "1800–2200 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 7700–10800"
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
-        "internal-itinerary": "short-acadia/main.json #budget and #totals; six itemized categories reconcile to the displayed total"
+        "internal-itinerary": "short-acadia/main.json #budget and #totals; six itemized categories reconcile to the displayed total",
+        "google-flights-2027-current-audit": "June 12–19 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
       },
       "claimType": "proxy"
     },
@@ -239,8 +241,8 @@
         "nps-island-explorer"
       ],
       "value": {
-        "easeScore": 4,
-        "maxConnections": 0,
+        "easeScore": 3,
+        "maxConnections": 1,
         "singleTicket": true,
         "lodgingBases": 1,
         "baseMoves": 0,
@@ -292,28 +294,32 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
         "flypittsburgh-pwm",
         "internal-itinerary",
-        "nps-acadia-cadillac"
+        "nps-acadia-cadillac",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
-        "maxConnections": 0,
+        "maxConnections": 1,
         "outbound": "PIT–PWM seasonal nonstop preferred; one protected connection fallback",
         "return": "PWM–PIT seasonal nonstop preferred; one protected connection fallback",
-        "exact2027FlightsVerified": false,
-        "cadillac2027RulesVerified": false
+        "exact2027FlightsVerified": true,
+        "cadillac2027RulesVerified": false,
+        "currentFlightAudit": "June 12–19 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band.",
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "flypittsburgh-pwm": "Official Pittsburgh destinations page reviewed for current seasonal Portland service; exact June 2027 dates are not confirmed",
         "internal-itinerary": "short-acadia/main.json #air-travel clearly marks the nonstop and prices as proxies",
-        "nps-acadia-cadillac": "Official 2026 NPS reservation page: $6, online-only, 30% at 90 days and 70% at two days; recheck 2027"
+        "nps-acadia-cadillac": "Official 2026 NPS reservation page: $6, online-only, 30% at 90 days and 70% at two days; recheck 2027",
+        "google-flights-2027-current-audit": "June 12–19 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
       },
       "claimType": "proxy"
     },
@@ -410,5 +416,10 @@
     "one-base itinerary derivation",
     "current seasonal route evidence but no exact June 2027 schedule or quotes"
   ],
-  "evidenceBasis": "Official federal park and weather sources, official airport route evidence, current local operator/destination material and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and reservation rules remain proxies."
+  "evidenceBasis": "Official federal park and weather sources, official airport route evidence, current local operator/destination material and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and reservation rules remain proxies.",
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "No nonstop is sold on the exact dates"
+  }
 }

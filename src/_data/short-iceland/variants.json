@@ -21,7 +21,10 @@
       "notes": "Two Reykjavík nights lead into the Golden Circle and a four-night Hella/Hvolsvöllur stay, followed by one easy airport night. A protected weather-flex day and optional Blue Lagoon finale keep the week resilient.",
       "confidence": "medium",
       "claimType": "derived",
-      "sourceRefs": ["internal-itinerary", "icelandair-pit-kef-2027-fare"],
+      "sourceRefs": [
+        "internal-itinerary",
+        "icelandair-pit-kef-2027-fare"
+      ],
       "sourceLocators": {
         "internal-itinerary": "short-iceland/main.json day1–day9 and exact #totals reconciliation",
         "icelandair-pit-kef-2027-fare": "Icelandair plan-ahead table displayed a matching Jun 13–21, 2027 PIT–KEF fare signal on 2026-07-13"

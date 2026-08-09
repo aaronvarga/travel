@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "balkans",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -304,7 +304,8 @@
         "albania-state-driving",
         "state-travel",
         "cdc-travel",
-        "eu-etias"
+        "eu-etias",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -315,10 +316,13 @@
         "confirmed2027": false,
         "blockingGate": "written quote naming Croatia, Bosnia, Montenegro and Albania plus an accepted international one-way drop before Corfu",
         "fallback": "redesign with separate rentals/private transfers if no compliant through-car quote exists",
-        "ferryGate": "exact July 11, 2027 Saranda–Corfu sailing after car return"
+        "ferryGate": "exact July 11, 2027 Saranda–Corfu sailing after car return",
+        "currentFlightAudit": "Keep PIT–DBV / CFU–PIT as a planning proxy. Do not lock the cross-border road route until the exact July 1–14 open-jaw and baggage protection can be priced together.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "Balkans #getting-around, #tips and #status explicitly identify the cross-border one-way car as the make-or-break gate",
         "croatia-rental-albania-restrictions": "Croatia Rent's current published terms prohibit taking its vehicles into Albania; other suppliers differ, so a named supplier and written approval/drop quote are mandatory",
@@ -329,7 +333,8 @@
         "albania-state-driving": "State country information documents variable rural roads and elevated driving risk",
         "state-travel": "Country advisories for Bosnia and Herzegovina, Montenegro, Albania and Greece require recheck",
         "cdc-travel": "Destination health guidance for all four countries requires recheck",
-        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact date later; July 2027 Greece entry action remains a recheck"
+        "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact date later; July 2027 Greece entry action remains a recheck",
+        "google-flights-2027-current-audit": "Keep PIT–DBV / CFU–PIT as a planning proxy. Do not lock the cross-border road route until the exact July 1–14 open-jaw and baggage protection can be priced together."
       },
       "claimType": "proxy"
     },
@@ -425,5 +430,10 @@
     "direct Croatian rental-company cross-border/one-way terms",
     "official country driving guidance and current ferry-operator proxy",
     "no qualifying Dubrovnik-to-Saranda one-way-car quote yet"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The July return is still outside some airlines’ full sale window"
+  }
 }

@@ -21,7 +21,9 @@
       "notes": "The checked-in itinerary remains the immutable comparison baseline: Bled 4 nights + Bovec/Soča 3 (via the Vršič Pass) + Piran 3 (via the Škocjan Caves) + Ljubljana 2, round-trip Ljubljana, one rental car.",
       "confidence": "medium",
       "claimType": "derived",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "sourceLocators": {
         "internal-itinerary": "Slovenia + Adriatic; variant canonical; route-specific savings/tradeoffs require re-price"
       }

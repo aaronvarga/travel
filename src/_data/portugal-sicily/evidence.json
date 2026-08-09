@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-sicily",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -296,32 +296,37 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "easyjet-lis-pmo",
         "internal-itinerary",
         "state-travel",
         "cdc-travel",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 2,
         "route": "LIS → PMO on a separate ticket",
         "dateWindow": "2027-06-14",
         "currentOperatorPattern": "Tuesday/Friday in the checked August 2026 timetable",
-        "requiredWeekday": "Monday"
+        "requiredWeekday": "Monday",
+        "currentFlightAudit": "No nonstop is offered. One-stop itineraries via Zurich, Munich or Rome sell in roughly 6½–10 hours; keep the transfer day and do not advertise an easyJet nonstop.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "easyjet-lis-pmo": "Official easyJet timetable checked 2026-07-10 shows no Monday service in the displayed August 2026 pattern and does not publish June 2027; this proves the current plan needs exact-date verification or a one-stop fallback",
         "internal-itinerary": "#air-travel requires a Monday 2027-06-14 LIS–PMO handoff and explicitly treats it as the route hinge",
         "state-travel": "Portugal Level 1 (issued 2025-12-23) and Italy Level 2 (issued 2025-05-23), both reviewed 2026-07-10; recheck before booking/departure",
         "cdc-travel": "CDC Travelers' Health destination guidance for Portugal + Sicily; recheck before departure",
-        "google-flights-2027-audit": "Checked 2026-07-19 (Monday Aug 17 proxy): Monday LIS-PMO has NO nonstop and no easyJet at all; sold Monday single tickets are Vueling+Iberia via BCN (6h35, ~$248) and TAP+ITA via FCO (5h50-7h, ~$306). Tuesday easyJet nonstop confirmed selling ($307, 3h)."
+        "google-flights-2027-audit": "Checked 2026-07-19 (Monday Aug 17 proxy): Monday LIS-PMO has NO nonstop and no easyJet at all; sold Monday single tickets are Vueling+Iberia via BCN (6h35, ~$248) and TAP+ITA via FCO (5h50-7h, ~$306). Tuesday easyJet nonstop confirmed selling ($307, 3h).",
+        "google-flights-2027-current-audit": "No nonstop is offered. One-stop itineraries via Zurich, Munich or Rome sell in roughly 6½–10 hours; keep the transfer day and do not advertise an easyJet nonstop."
       },
       "claimType": "proxy"
     },
@@ -430,5 +435,10 @@
     "official historical climate and bathing-water datasets",
     "official easyJet current timetable",
     "exact-2027-schedule-required for 2027-06-14"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The exact June 14 Lisbon–Palermo one-stop is selling"
+  }
 }

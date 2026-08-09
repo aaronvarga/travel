@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "canary-islands",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -61,8 +61,8 @@
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "The itinerary sensibly returns to Tenerife before the long-haul flight, but depends on two airport systems, an inter-island hop, two car inventories, and an unpublished June 2027 protected PIT–Tenerife routing.",
+      "score": 3,
+      "rationale": "Exact PIT–Tenerife and Tenerife–La Palma inventory is selling. Two airports, two car rentals and island weather still create moderate disruption exposure, supporting Risk 3/5.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -314,27 +314,32 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "binter-canary-network-2026",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "confirmed",
         "singleTicketAssumption": true,
         "maxConnections": 3,
         "interIslandRoute": "TFN–SPC",
         "longHaulRoute": "PIT–Tenerife via European hub",
         "june2027ProtectedTicketVerified": false,
         "returnBuffer": "one Tenerife night",
-        "singleTicket": false
+        "singleTicket": false,
+        "currentFlightAudit": "PIT–Tenerife is available June 8–22 from about $1,178 per traveler with two stops. Binter sells exact June 15/20 Tenerife–La Palma nonstops from about $133 round trip; the planned Tenerife buffer remains prudent.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "binter-canary-network-2026": "Binter 2026 press kit documents dense service among Tenerife and La Palma; exact 2027 dates/fare absent",
-        "internal-itinerary": "canary-islands/main.json air section requires Tenerife reposition and prohibits a fragile direct SPC long-haul chain"
+        "internal-itinerary": "canary-islands/main.json air section requires Tenerife reposition and prohibits a fragile direct SPC long-haul chain",
+        "google-flights-2027-current-audit": "PIT–Tenerife is available June 8–22 from about $1,178 per traveler with two stops. Binter sells exact June 15/20 Tenerife–La Palma nonstops from about $133 round trip; the planned Tenerife buffer remains prudent."
       },
       "claimType": "proxy"
     },
@@ -430,5 +435,10 @@
     "high-confidence climate, route-gate, and logistics claims",
     "high-confidence base-specific grocery coverage",
     "medium-confidence SST and budget claims"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "Both the long-haul dates and Tenerife–La Palma flights are selling"
+  }
 }

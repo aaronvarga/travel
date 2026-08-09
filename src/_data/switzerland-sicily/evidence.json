@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "switzerland-sicily",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -265,7 +265,10 @@
         "arrivalTransferHours": 0.8,
         "swissRentalCar": false,
         "sicilyRentalCar": true,
-        "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~50-minute CTA-Taormina transfer, and a Sicily rental car across a Taormina and a Siracusa base."
+        "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~50-minute CTA-Taormina transfer, and a Sicily rental car across a Taormina and a Siracusa base.",
+        "easeScore": 2,
+        "maxConnections": 2,
+        "singleTicket": false
       },
       "verifiedAt": "2026-07-11",
       "expiresAt": "2027-05-01",
@@ -304,7 +307,8 @@
         "aci-driving-italy",
         "eu-etias",
         "internal-itinerary",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -316,15 +320,19 @@
         "cataniaUsConnectivity": "major airport; clean US connections via FCO/MUC/FRA/ZRH, far less fragile than a weekly island nonstop",
         "june2027ProtectedTicketVerified": false,
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required for the Schengen legs",
-        "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Catania day once 2027 inventory opens."
+        "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Catania day once 2027 inventory opens.",
+        "currentFlightAudit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells a June 14 ZRH–CTA nonstop of about 2h05. The larger Catania gateway remains the easier island handoff.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "aci-driving-italy": "Italian driving/ZTL context for the Sicily ground leg",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "Open-jaw construction and Catania-connection plan",
-        "google-flights-2027-audit": "Checked 2026-07-19: ZRH-CTA Edelweiss/SWISS nonstop verified selling (2h10, $276, Tuesday served); June 2027 beyond window."
+        "google-flights-2027-audit": "Checked 2026-07-19: ZRH-CTA Edelweiss/SWISS nonstop verified selling (2h10, $276, Tuesday served); June 2027 beyond window.",
+        "google-flights-2027-current-audit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells a June 14 ZRH–CTA nonstop of about 2h05. The larger Catania gateway remains the easier island handoff."
       },
       "claimType": "proxy"
     },
@@ -431,5 +439,10 @@
     "high-confidence logistics, novelty, food-coverage, and route-readiness claims",
     "medium-confidence blended climate and budget claims",
     "medium-confidence swim claim (Sicily SST is a proxy)"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Zurich and the exact Catania hop are selling"
+  }
 }

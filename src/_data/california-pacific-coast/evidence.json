@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "california-pacific-coast",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -293,7 +293,8 @@
         "internal-itinerary",
         "caltrans-highway-1",
         "caltrans-regents-slide",
-        "point-lobos-official"
+        "point-lobos-official",
+        "google-flights-2027-current-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -303,15 +304,19 @@
         "dateWindow": "2027-07-01 → 2027-07-13",
         "confirmed2027": false,
         "mandatoryGate": "Caltrans Highway 1 status before the Santa Barbara–Monterey transfer",
-        "crowdWindow": "Independence Day weekend in San Diego"
+        "crowdWindow": "Independence Day weekend in San Diego",
+        "currentFlightAudit": "PIT–SAN / SFO–PIT remains the correct shape, but the July 13 return is outside some carriers’ current booking horizon. Retain the one-stop fallback instead of promising nonstops.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "California Pacific Coast canonical route and current open booking gates",
         "caltrans-highway-1": "Caltrans current SR-1 road-information page; live controls and closures must be checked immediately before the Big Sur day",
         "caltrans-regents-slide": "Caltrans: full Big Sur route reopened in January 2026 after nearly three years, but subsequent storms caused temporary closure and ongoing controls",
-        "point-lobos-official": "California State Parks current rules: 8am–7pm, $10 vehicle entry, approximately 150 in-reserve spaces; hours/fees/capacity can change before 2027"
+        "point-lobos-official": "California State Parks current rules: 8am–7pm, $10 vehicle entry, approximately 150 in-reserve spaces; hours/fees/capacity can change before 2027",
+        "google-flights-2027-current-audit": "PIT–SAN / SFO–PIT remains the correct shape, but the July 13 return is outside some carriers’ current booking horizon. Retain the one-stop fallback instead of promising nonstops."
       },
       "claimType": "proxy"
     },
@@ -407,5 +412,10 @@
     "NOAA 1991–2020 station normals and coastal-water means",
     "official Caltrans and California State Parks operating evidence",
     "July 2027 flight, car and lodging inventory remains unquoted"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "The July open-jaw is not fully comparable yet"
+  }
 }

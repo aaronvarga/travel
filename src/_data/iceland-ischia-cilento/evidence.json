@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "iceland-ischia-cilento",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "evidenceBasis": "Current operator schedules, official attraction prices, a live nearby June 2027 PIT–KEF fare signal, historical climate/sea proxies, and exact internal itinerary arithmetic.",
   "confidenceBasis": "The route shape and itemized arithmetic are high-confidence derived facts. Overall confidence is medium because the exact June 10–23 stopover airfare, operating days, lodging, cars, and 2027 hydrofoils are not yet quoted together.",
@@ -64,8 +64,8 @@
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "The precise 2027 stopover operating days remain a booking gate, June 14 chains three transport modes, and both Iceland and boat days are condition-sensitive. The airport buffer lowers but does not erase the risk.",
+      "score": 1,
+      "rationale": "The assumed June 10 Icelandair nonstop/stopover construction is not sold. Because the air stack must be re-dated or rebuilt before the trip works, Risk falls to 1/5.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -369,7 +369,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "reroute-required",
       "confidence": "high",
       "sourceRefs": [
         "icelandair-stopover",
@@ -379,19 +379,23 @@
         "safetravel-iceland",
         "safetravel-reynisfjara",
         "internal-itinerary",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "reroute-required",
         "currentProxy": "Icelandair stopover to Rome plus frequent 2026 Naples–Ischia hydrofoils",
         "june10StopoverVerified": false,
         "june23ReturnVerified": false,
         "dailySafetyChecksRequired": true,
         "singleTicket": false,
-        "maxConnections": 1
+        "maxConnections": 1,
+        "currentFlightAudit": "PIT–KEF has no nonstop on Thursday June 10. One-stop tickets sell, but they do not preserve the assumed Icelandair stopover fare to Rome; re-date the outbound or rebuild the air stack before treating this itinerary as bookable.",
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-08-15",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "icelandair-stopover": "Stopover product permits the route shape; exact days and fare remain unquoted.",
         "icelandair-pit-kef-2027-fare": "Nearby June 2027 service is selling, not the exact itinerary.",
@@ -400,7 +404,8 @@
         "safetravel-iceland": "Official live Iceland condition checks.",
         "safetravel-reynisfjara": "Official sneaker-wave warning protocol.",
         "internal-itinerary": "FCO buffer and weather alternatives bound the known risks.",
-        "google-flights-2027-audit": "Checked 2026-07-19: PIT-KEF 2027-06-10 nonstop not sold (1-stop single tickets are); KEF-FCO Icelandair seasonal nonstop verified in the Aug 2026 pattern (4h45, ~$671); Jun 15 2027 is beyond the booking window."
+        "google-flights-2027-audit": "Checked 2026-07-19: PIT-KEF 2027-06-10 nonstop not sold (1-stop single tickets are); KEF-FCO Icelandair seasonal nonstop verified in the Aug 2026 pattern (4h45, ~$671); Jun 15 2027 is beyond the booking window.",
+        "google-flights-2027-current-audit": "PIT–KEF has no nonstop on Thursday June 10. One-stop tickets sell, but they do not preserve the assumed Icelandair stopover fare to Rome; re-date the outbound or rebuild the air stack before treating this itinerary as bookable."
       },
       "claimType": "proxy"
     },
@@ -510,5 +515,10 @@
       "age13": "supported with waterfalls, castles, beaches, temples and boat caves",
       "age8": "supported with short walks, geothermal pools, sheltered beaches and explicit bailout days"
     }
+  },
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "reroute-required",
+    "headline": "The June 10 Icelandair nonstop/stopover construction does not exist"
   }
 }

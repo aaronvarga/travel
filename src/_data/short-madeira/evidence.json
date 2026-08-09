@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-madeira",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 5,
-      "rationale": "The six reconciled categories total $5,700–$8,900, comfortably below both the $12,000 target and $15,000 preferred maximum. Exact June 2027 airfare and lodging are not quoted, so the favorable score is medium-confidence.",
+      "score": 4,
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $10,900–$13,500. The Budget 4/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -64,7 +64,7 @@
     "risk": {
       "score": 3,
       "rationale": "The one-base plan avoids compounding logistics, but Madeira Airport wind, unpublished exact June 2027 protected routing, trail closures and Atlantic swell remain material managed risks.",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
@@ -101,22 +101,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 5700,
+        "lowUsd": 10900,
         "expectedUsd": null,
-        "highUsd": 8900,
+        "highUsd": 13500,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "3000/4400 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 5700/8900"
+        "arithmetic": "8200/9000 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 10900/13500"
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
-        "internal-itinerary": "short-madeira/main.json #budget and #totals; exact six-line low/high category reconciliation"
+        "internal-itinerary": "short-madeira/main.json #budget and #totals; exact six-line low/high category reconciliation",
+        "google-flights-2027-current-audit": "Acceptable protected PIT–FNC itineraries June 11–19 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
       },
       "claimType": "proxy"
     },
@@ -330,26 +332,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "medium",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
-        "ana-madeira-wind-operations"
+        "ana-madeira-wind-operations",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 2,
         "preferredConnections": 1,
         "june2027ProtectedTicketVerified": false,
         "routeRule": "PIT–European hub–FNC on one protected round trip; reject separate tickets",
-        "observedRoundTripPerTravelerUsd": 723
+        "observedRoundTripPerTravelerUsd": 723,
+        "currentFlightAudit": "Acceptable protected PIT–FNC itineraries June 11–19 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "internal-itinerary": "Skyscanner PIT–FNC route page observed 2026-07-13: no nonstop, recent all-date round-trip low $723; exact June 2027 unavailable",
-        "ana-madeira-wind-operations": "Official ANA operational notice documents strong-wind disruption sensitivity at Madeira Airport"
+        "ana-madeira-wind-operations": "Official ANA operational notice documents strong-wind disruption sensitivity at Madeira Airport",
+        "google-flights-2027-current-audit": "Acceptable protected PIT–FNC itineraries June 11–19 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
       },
       "claimType": "proxy"
     },
@@ -445,5 +452,10 @@
     "ground plan and date arithmetic are high-confidence",
     "exact June 2027 airfare, lodging and rental quotes remain open",
     "Atlantic temperature and family menu details remain medium-confidence planning inputs"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "The dates are bookable, but the old airfare estimate is unusable"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-iceland",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -64,8 +64,8 @@
       ]
     },
     "risk": {
-      "score": 3,
-      "rationale": "The direct route removes connection risk, but wind and road conditions, Reynisfjara sneaker waves, a weather-sensitive glacier tour and changing Reykjanes volcanic access require live official checks and real fallbacks.",
+      "score": 4,
+      "rationale": "The exact PIT–KEF nonstop is sold in both directions. Wind, road, surf and volcanic conditions still require daily checks, but schedule uncertainty is now low enough for Risk 4/5.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -347,31 +347,36 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "icelandair-pit-kef-2027-fare",
         "flypittsburgh-nonstop-destinations",
         "safetravel-iceland",
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 0,
         "exactDateFareDisplayed": true,
         "checkoutConfirmed": false,
         "dailySafetyChecksRequired": true,
         "reykjanesFallback": true,
-        "weatherBufferDays": 1
+        "weatherBufferDays": 1,
+        "currentFlightAudit": "Icelandair sells the June 13 outbound nonstop and the June 21 return from $709 per traveler; protected one-stop backups start near $654. The existing family air allowance still works.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-08-15",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "icelandair-pit-kef-2027-fare": "Icelandair displayed Jun 13–21 2027 fare inventory; checkout, family seats and bags are not captured",
         "flypittsburgh-nonstop-destinations": "PIT directory lists current seasonal Icelandair nonstop service",
         "safetravel-iceland": "Official live travel-condition portal covers road, weather, beach and volcanic alerts; itinerary requires a daily check",
-        "internal-itinerary": "short-iceland/main.json day7 buffer, Reynisfjara safety rule and optional Reykjanes finale"
+        "internal-itinerary": "short-iceland/main.json day7 buffer, Reynisfjara safety rule and optional Reykjanes finale",
+        "google-flights-2027-current-audit": "Icelandair sells the June 13 outbound nonstop and the June 21 return from $709 per traveler; protected one-stop backups start near $654. The existing family air allowance still works."
       },
       "claimType": "proxy"
     },
@@ -467,5 +472,10 @@
     "high-confidence route shape, geothermal temperatures, food fallback coverage and deterministic load",
     "medium-confidence lodging, car and climate planning ranges",
     "volatile airfare and volcanic access require recheck before booking"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "confirmed",
+    "headline": "The exact PIT–KEF nonstop is selling"
+  }
 }

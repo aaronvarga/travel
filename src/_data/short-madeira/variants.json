@@ -12,17 +12,19 @@
       "nights": 7,
       "ptoDays": 5,
       "budget": {
-        "lowUsd": 5700,
+        "lowUsd": 10900,
         "expectedUsd": null,
-        "highUsd": 8900,
+        "highUsd": 13500,
         "distribution": "planning-band",
         "chanceUnderPreferredMax": null
       },
       "removedExperiences": [],
       "notes": "Seven nights in Funchal leave time for four island drives, a reserved 25 Fontes/Risco waterfall day, easy city evenings and a final weather-flex day without changing hotels.",
-      "confidence": "medium",
+      "confidence": "high",
       "claimType": "derived",
-      "sourceRefs": ["internal-itinerary"],
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
       "sourceLocators": {
         "internal-itinerary": "short-madeira/main.json dates, seven Funchal sleeps, five vacation days, and full-trip cost totals"
       }

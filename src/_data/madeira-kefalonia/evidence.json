@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-kefalonia",
-  "reviewedAt": "2026-07-22",
+  "reviewedAt": "2026-08-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -318,32 +318,36 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "ana-madeira-wind-operations",
         "aegean-kefalonia-official",
         "eu-etias",
         "navagio-2026-status",
-        "google-flights-2027-audit"
+        "google-flights-2027-audit",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 3,
         "june2027Verified": false,
         "routeRule": "FNC inbound / EFL outbound through Athens; reject PVK and self-transfer exit options.",
         "etias": "Current EU rule is €20 for eligible adults and exemption for children; activation is scheduled before the trip but needs final confirmation.",
-        "navagioLanding": "unknown for 2027"
+        "navagioLanding": "unknown for 2027",
+        "currentFlightAudit": "The June 8 PIT–FNC leg is sold. Athens–Kefalonia has live June inventory, but the FNC/LIS/ATH/EFL chain and final return still need to price as protected tickets.",
+        "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
       "sourceLocators": {
         "ana-madeira-wind-operations": "Official ANA disruption notice documents strong-wind operational sensitivity at Madeira Airport; it supports the need for protected/rebookable routing, not a 2027 probability.",
         "aegean-kefalonia-official": "Official Aegean destination/route page shows ATH–EFL is a current service; June 2027 inventory, frequency and through-ticket protection require a live quote.",
         "eu-etias": "Official EU ETIAS guidance says operations are scheduled for late 2026 and the application fee is €20; eligibility/launch must be reconfirmed for June 2027.",
         "navagio-2026-status": "2026 closure reporting supports a view-only/conservative boat plan; it cannot establish the eventual 2027 cove-access decision.",
-        "google-flights-2027-audit": "Checked 2026-07-19: ATH-EFL verified 4 nonstops/day (Aegean/Olympic + Sky Express, 1h-1h15, $97-202); United EWR-FNC nonstop sold for exact 2027-06-08."
+        "google-flights-2027-audit": "Checked 2026-07-19: ATH-EFL verified 4 nonstops/day (Aegean/Olympic + Sky Express, 1h-1h15, $97-202); United EWR-FNC nonstop sold for exact 2027-06-08.",
+        "google-flights-2027-current-audit": "The June 8 PIT–FNC leg is sold. Athens–Kefalonia has live June inventory, but the FNC/LIS/ATH/EFL chain and final return still need to price as protected tickets."
       },
       "claimType": "proxy"
     },
@@ -450,5 +454,10 @@
     "exact 2027 flights, fares, lodging, trail slots and Navagio access are not yet bookable",
     "route-risk conclusion is strongly evidenced even though the booking outcome remains unresolved",
     "historical sea temperature and dining coverage remain medium-confidence planning inputs"
-  ]
+  ],
+  "flightAudit": {
+    "reviewedAt": "2026-08-08",
+    "status": "current-proxy",
+    "headline": "Madeira is live; the Kefalonia handoff still needs a complete quote"
+  }
 }
