@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-07-23T01:11:15.421Z",
+  "generatedAt": "2026-08-09T00:45:12.983Z",
   "trips": [
     {
       "slug": "albania",
@@ -217,16 +217,16 @@
     {
       "slug": "croatia",
       "canonical": {
-        "lowUsd": 8400,
-        "highUsd": 12800
+        "lowUsd": 10400,
+        "highUsd": 14800
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 5,
-        "sumLowUsd": 8400,
-        "sumHighUsd": 12800,
-        "displayedLowUsd": 8400,
-        "displayedHighUsd": 12800,
+        "sumLowUsd": 10400,
+        "sumHighUsd": 14800,
+        "displayedLowUsd": 10400,
+        "displayedHighUsd": 14800,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -236,9 +236,9 @@
       "lineItems": [
         {
           "label": "Flights",
-          "text": "$3,600–4,800",
-          "lowUsd": 3600,
-          "highUsd": 4800
+          "text": "$5,600–6,800",
+          "lowUsd": 5600,
+          "highUsd": 6800
         },
         {
           "label": "Ferries, transfers, rental car",
@@ -412,7 +412,7 @@
       },
       "lineItems": [
         {
-          "label": "Airfare, open-jaw (EFL in / PVK out)",
+          "label": "Airfare, multi-city (EFL in / ATH out)",
           "text": "$5,600 target / $6,700 high",
           "lowUsd": 5600,
           "highUsd": 6700
@@ -995,16 +995,16 @@
     {
       "slug": "portugal",
       "canonical": {
-        "lowUsd": 7500,
-        "highUsd": 11700
+        "lowUsd": 10500,
+        "highUsd": 14400
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 6,
-        "sumLowUsd": 7500,
-        "sumHighUsd": 11700,
-        "displayedLowUsd": 7500,
-        "displayedHighUsd": 11700,
+        "sumLowUsd": 10500,
+        "sumHighUsd": 14400,
+        "displayedLowUsd": 10500,
+        "displayedHighUsd": 14400,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -1014,9 +1014,9 @@
       "lineItems": [
         {
           "label": "Flights — international, open-jaw (PIT↔Lisbon / Madeira)",
-          "text": "$2,300–3,500",
-          "lowUsd": 2300,
-          "highUsd": 3500
+          "text": "$5,300–6,200",
+          "lowUsd": 5300,
+          "highUsd": 6200
         },
         {
           "label": "Internal flight — Faro → Funchal (×4)",
@@ -1213,16 +1213,16 @@
     {
       "slug": "sardinia-corsica",
       "canonical": {
-        "lowUsd": 10700,
-        "highUsd": 16500
+        "lowUsd": 12900,
+        "highUsd": 18300
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 4,
-        "sumLowUsd": 10700,
-        "sumHighUsd": 16500,
-        "displayedLowUsd": 10700,
-        "displayedHighUsd": 16500,
+        "sumLowUsd": 12900,
+        "sumHighUsd": 18300,
+        "displayedLowUsd": 12900,
+        "displayedHighUsd": 18300,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -1232,9 +1232,9 @@
       "lineItems": [
         {
           "label": "Flights",
-          "text": "$3,200-4,600",
-          "lowUsd": 3200,
-          "highUsd": 4600
+          "text": "$5,400-6,400",
+          "lowUsd": 5400,
+          "highUsd": 6400
         },
         {
           "label": "Lodging",
@@ -1260,16 +1260,16 @@
     {
       "slug": "short-acadia",
       "canonical": {
-        "lowUsd": 6700,
-        "highUsd": 10200
+        "lowUsd": 7700,
+        "highUsd": 10800
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 6,
-        "sumLowUsd": 6700,
-        "sumHighUsd": 10200,
-        "displayedLowUsd": 6700,
-        "displayedHighUsd": 10200,
+        "sumLowUsd": 7700,
+        "sumHighUsd": 10800,
+        "displayedLowUsd": 7700,
+        "displayedHighUsd": 10800,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -1279,9 +1279,9 @@
       "lineItems": [
         {
           "label": "Flights + bags/seats",
-          "text": "$800–$1,600",
-          "lowUsd": 800,
-          "highUsd": 1600
+          "text": "$1,800–$2,200",
+          "lowUsd": 1800,
+          "highUsd": 2200
         },
         {
           "label": "7 hotel nights",
@@ -1384,16 +1384,16 @@
     {
       "slug": "short-algarve",
       "canonical": {
-        "lowUsd": 8400,
-        "highUsd": 11850
+        "lowUsd": 9800,
+        "highUsd": 12650
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 6,
-        "sumLowUsd": 8400,
-        "sumHighUsd": 11900,
-        "displayedLowUsd": 8400,
-        "displayedHighUsd": 11850,
+        "sumLowUsd": 9800,
+        "sumHighUsd": 12700,
+        "displayedLowUsd": 9800,
+        "displayedHighUsd": 12650,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -1403,9 +1403,9 @@
       "lineItems": [
         {
           "label": "Air transportation",
-          "text": "$4,800–$6,200",
-          "lowUsd": 4800,
-          "highUsd": 6200
+          "text": "$6,200–$7,000",
+          "lowUsd": 6200,
+          "highUsd": 7000
         },
         {
           "label": "Ground transportation",
@@ -1443,16 +1443,16 @@
     {
       "slug": "short-azores",
       "canonical": {
-        "lowUsd": 6200,
-        "highUsd": 9800
+        "lowUsd": 9600,
+        "highUsd": 12200
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 7,
-        "sumLowUsd": 6200,
-        "sumHighUsd": 9800,
-        "displayedLowUsd": 6200,
-        "displayedHighUsd": 9800,
+        "sumLowUsd": 9600,
+        "sumHighUsd": 12200,
+        "displayedLowUsd": 9600,
+        "displayedHighUsd": 12200,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -1467,10 +1467,10 @@
           "highUsd": 4
         },
         {
-          "label": "Flights: PIT–BOS–PDL for four",
-          "text": "$3,200–$5,000",
-          "lowUsd": 3200,
-          "highUsd": 5000
+          "label": "Flights: PIT–EWR–PDL for four",
+          "text": "$6,600–$7,400",
+          "lowUsd": 6600,
+          "highUsd": 7400
         },
         {
           "label": "Seven-night Ponta Delgada apartment",
@@ -1620,16 +1620,16 @@
     {
       "slug": "short-madeira",
       "canonical": {
-        "lowUsd": 5700,
-        "highUsd": 8900
+        "lowUsd": 10900,
+        "highUsd": 13500
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 5,
-        "sumLowUsd": 5700,
-        "sumHighUsd": 8900,
-        "displayedLowUsd": 5700,
-        "displayedHighUsd": 8900,
+        "sumLowUsd": 10900,
+        "sumHighUsd": 13500,
+        "displayedLowUsd": 10900,
+        "displayedHighUsd": 13500,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -1639,9 +1639,9 @@
       "lineItems": [
         {
           "label": "Flights",
-          "text": "$3,000–4,400",
-          "lowUsd": 3000,
-          "highUsd": 4400
+          "text": "$8,200–9,000",
+          "lowUsd": 8200,
+          "highUsd": 9000
         },
         {
           "label": "Lodging",
@@ -1791,16 +1791,16 @@
     {
       "slug": "short-sicily",
       "canonical": {
-        "lowUsd": 8400,
-        "highUsd": 12100
+        "lowUsd": 11400,
+        "highUsd": 14700
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 6,
-        "sumLowUsd": 8400,
-        "sumHighUsd": 12100,
-        "displayedLowUsd": 8400,
-        "displayedHighUsd": 12100,
+        "sumLowUsd": 11400,
+        "sumHighUsd": 14700,
+        "displayedLowUsd": 11400,
+        "displayedHighUsd": 14700,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -1810,9 +1810,9 @@
       "lineItems": [
         {
           "label": "Air transportation",
-          "text": "$4,600–$5,800",
-          "lowUsd": 4600,
-          "highUsd": 5800
+          "text": "$7,600–$8,400",
+          "lowUsd": 7600,
+          "highUsd": 8400
         },
         {
           "label": "Ground transportation",
@@ -2210,16 +2210,16 @@
     {
       "slug": "turkish-riviera",
       "canonical": {
-        "lowUsd": 10000,
-        "highUsd": 17400
+        "lowUsd": 12200,
+        "highUsd": 18400
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 6,
-        "sumLowUsd": 10000,
-        "sumHighUsd": 17400,
-        "displayedLowUsd": 10000,
-        "displayedHighUsd": 17400,
+        "sumLowUsd": 12200,
+        "sumHighUsd": 18400,
+        "displayedLowUsd": 12200,
+        "displayedHighUsd": 18400,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -2229,9 +2229,9 @@
       "lineItems": [
         {
           "label": "Flights",
-          "text": "$4,800-$7,000",
-          "lowUsd": 4800,
-          "highUsd": 7000
+          "text": "$7,000-$8,000",
+          "lowUsd": 7000,
+          "highUsd": 8000
         },
         {
           "label": "Ground transport",

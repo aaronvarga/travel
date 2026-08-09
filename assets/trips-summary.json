@@ -2183,6 +2183,13 @@
       "url": "https://www.gov.si/en/news/2024-07-18-the-fire-is-not-yet-out-but-the-situation-is-stable/",
       "publisher": "Government of the Republic of Slovenia",
       "scope": "Official response update demonstrating credible Karst fire consequence in July; not typical June frequency."
+    },
+    "google-flights-2027-current-audit": {
+      "label": "Google Flights exact-date June 2027 audit",
+      "tier": "observed-quote",
+      "url": "https://www.google.com/travel/flights",
+      "publisher": "Google Flights",
+      "scope": "Exact-date inventory checked August 8, 2026 for the itinerary flight corridors. Prices are one-adult economy snapshots including required taxes and fees but excluding optional seats and bags; availability, through-ticket protection, and fares can change. Open-jaw trips remain provisional unless the complete multi-city ticket was observed."
     }
   },
   "trips": [
@@ -2249,7 +2256,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -2567,7 +2574,8 @@
               "albania-state-driving",
               "state-travel",
               "cdc-travel",
-              "eu-etias"
+              "eu-etias",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -2582,17 +2590,21 @@
                 "June 20, 2027 Saranda/Corfu ferry",
                 "Valbona and Koman day redesign/conditions",
                 "ETIAS status for the Corfu exit"
-              ]
+              ],
+              "currentFlightAudit": "PIT–TIA is selling for June 7–22 from about $1,145 per traveler with one or two stops. Keep the current $5.3k–$7.8k flight/ferry family band until CFU–PIT is priced on the same multi-city ticket.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-10",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "Albania #air-travel, #getting-around, #status and day-by-day routing",
               "finikas-saranda-corfu": "Finikas 2026 operator timetable shows daily seasonal Saranda/Corfu service and 30-minute hydrofoil/50-minute car-ferry products; June 20, 2027 operation is not published",
               "albania-state-driving": "Current official driving and IDP cautions for Albania",
               "state-travel": "Albania advisory is Level 2 as of the cited current page; recheck before booking and departure",
               "cdc-travel": "Albania destination health guidance to recheck before departure",
-              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck"
+              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck",
+              "google-flights-2027-current-audit": "PIT–TIA is selling for June 7–22 from about $1,145 per traveler with one or two stops. Keep the current $5.3k–$7.8k flight/ferry family band until CFU–PIT is priced on the same multi-city ticket."
             },
             "claimType": "proxy"
           },
@@ -2832,7 +2844,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -3153,7 +3165,8 @@
               "albania-state-driving",
               "state-travel",
               "cdc-travel",
-              "eu-etias"
+              "eu-etias",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -3164,10 +3177,13 @@
               "confirmed2027": false,
               "blockingGate": "written quote naming Croatia, Bosnia, Montenegro and Albania plus an accepted international one-way drop before Corfu",
               "fallback": "redesign with separate rentals/private transfers if no compliant through-car quote exists",
-              "ferryGate": "exact July 11, 2027 Saranda–Corfu sailing after car return"
+              "ferryGate": "exact July 11, 2027 Saranda–Corfu sailing after car return",
+              "currentFlightAudit": "Keep PIT–DBV / CFU–PIT as a planning proxy. Do not lock the cross-border road route until the exact July 1–14 open-jaw and baggage protection can be priced together.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-10",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "Balkans #getting-around, #tips and #status explicitly identify the cross-border one-way car as the make-or-break gate",
               "croatia-rental-albania-restrictions": "Croatia Rent's current published terms prohibit taking its vehicles into Albania; other suppliers differ, so a named supplier and written approval/drop quote are mandatory",
@@ -3178,7 +3194,8 @@
               "albania-state-driving": "State country information documents variable rural roads and elevated driving risk",
               "state-travel": "Country advisories for Bosnia and Herzegovina, Montenegro, Albania and Greece require recheck",
               "cdc-travel": "Destination health guidance for all four countries requires recheck",
-              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact date later; July 2027 Greece entry action remains a recheck"
+              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact date later; July 2027 Greece entry action remains a recheck",
+              "google-flights-2027-current-audit": "Keep PIT–DBV / CFU–PIT as a planning proxy. Do not lock the cross-border road route until the exact July 1–14 open-jaw and baggage protection can be priced together."
             },
             "claimType": "proxy"
           },
@@ -3373,7 +3390,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -3681,7 +3698,8 @@
               "internal-itinerary",
               "caltrans-highway-1",
               "caltrans-regents-slide",
-              "point-lobos-official"
+              "point-lobos-official",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -3691,15 +3709,19 @@
               "dateWindow": "2027-07-01 → 2027-07-13",
               "confirmed2027": false,
               "mandatoryGate": "Caltrans Highway 1 status before the Santa Barbara–Monterey transfer",
-              "crowdWindow": "Independence Day weekend in San Diego"
+              "crowdWindow": "Independence Day weekend in San Diego",
+              "currentFlightAudit": "PIT–SAN / SFO–PIT remains the correct shape, but the July 13 return is outside some carriers’ current booking horizon. Retain the one-stop fallback instead of promising nonstops.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-10",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "California Pacific Coast canonical route and current open booking gates",
               "caltrans-highway-1": "Caltrans current SR-1 road-information page; live controls and closures must be checked immediately before the Big Sur day",
               "caltrans-regents-slide": "Caltrans: full Big Sur route reopened in January 2026 after nearly three years, but subsequent storms caused temporary closure and ongoing controls",
-              "point-lobos-official": "California State Parks current rules: 8am–7pm, $10 vehicle entry, approximately 150 in-reserve spaces; hours/fees/capacity can change before 2027"
+              "point-lobos-official": "California State Parks current rules: 8am–7pm, $10 vehicle entry, approximately 150 in-reserve spaces; hours/fees/capacity can change before 2027",
+              "google-flights-2027-current-audit": "PIT–SAN / SFO–PIT remains the correct shape, but the July 13 return is outside some carriers’ current booking horizon. Retain the one-stop fallback instead of promising nonstops."
             },
             "claimType": "proxy"
           },
@@ -3847,7 +3869,7 @@
         "variety": 5,
         "ease": 2,
         "food": 3,
-        "risk": 2,
+        "risk": 3,
         "nights": 5,
         "novelty": 5,
         "pto": 3
@@ -3886,15 +3908,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 35,
+      "totalBaked": 36,
       "travelWindow": [
         "2027-06-08",
         "2027-06-22"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -3970,8 +3992,8 @@
             ]
           },
           "risk": {
-            "score": 2,
-            "rationale": "The itinerary sensibly returns to Tenerife before the long-haul flight, but depends on two airport systems, an inter-island hop, two car inventories, and an unpublished June 2027 protected PIT–Tenerife routing.",
+            "score": 3,
+            "rationale": "Exact PIT–Tenerife and Tenerife–La Palma inventory is selling. Two airports, two car rentals and island weather still create moderate disruption exposure, supporting Risk 3/5.",
             "confidence": "high",
             "evidence": [
               "route-readiness"
@@ -4223,27 +4245,32 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "confirmed",
             "confidence": "high",
             "sourceRefs": [
               "binter-canary-network-2026",
-              "internal-itinerary"
+              "internal-itinerary",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "confirmed",
               "singleTicketAssumption": true,
               "maxConnections": 3,
               "interIslandRoute": "TFN–SPC",
               "longHaulRoute": "PIT–Tenerife via European hub",
               "june2027ProtectedTicketVerified": false,
               "returnBuffer": "one Tenerife night",
-              "singleTicket": false
+              "singleTicket": false,
+              "currentFlightAudit": "PIT–Tenerife is available June 8–22 from about $1,178 per traveler with two stops. Binter sells exact June 15/20 Tenerife–La Palma nonstops from about $133 round trip; the planned Tenerife buffer remains prudent.",
+              "exact2027FlightsVerified": true,
+              "june2027Verified": true
             },
-            "verifiedAt": "2026-07-10",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "binter-canary-network-2026": "Binter 2026 press kit documents dense service among Tenerife and La Palma; exact 2027 dates/fare absent",
-              "internal-itinerary": "canary-islands/main.json air section requires Tenerife reposition and prohibits a fragile direct SPC long-haul chain"
+              "internal-itinerary": "canary-islands/main.json air section requires Tenerife reposition and prohibits a fragile direct SPC long-haul chain",
+              "google-flights-2027-current-audit": "PIT–Tenerife is available June 8–22 from about $1,178 per traveler with two stops. Binter sells exact June 15/20 Tenerife–La Palma nonstops from about $133 round trip; the planned Tenerife buffer remains prudent."
             },
             "claimType": "proxy"
           },
@@ -4385,7 +4412,7 @@
       "recommended": false,
       "excluded": "Repeats the 2026 Croatia trip (Split/Hvar/Korcula) — excluded from the recommendation by family decision",
       "axes": {
-        "budget": 4,
+        "budget": 2,
         "weather": 4,
         "fireRisk": 4,
         "swim": 4,
@@ -4411,8 +4438,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 8400,
-        "ceilUsd": 12800,
+        "floorUsd": 10400,
+        "ceilUsd": 14800,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000
       },
@@ -4431,7 +4458,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 39,
+      "totalBaked": 35,
       "travelWindow": [
         "2027-06-10",
         "2027-06-23"
@@ -4439,7 +4466,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -4460,8 +4487,8 @@
         },
         "axes": {
           "budget": {
-            "score": 4,
-            "rationale": "The five-category rollup reconciles to $8,400–$12,800 and the entire band is below $13,500, matching Budget 4. Flights/lodging are planning bands, while attraction/ferry anchors are current 2026 proxies.",
+            "score": 2,
+            "rationale": "The exact-date flight refresh moves the reconciled family band to $10,400–$14,800. The Budget 2/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -4556,22 +4583,24 @@
             "proxyStatus": "current-proxy",
             "confidence": "medium",
             "sourceRefs": [
-              "internal-itinerary"
+              "internal-itinerary",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "lowUsd": 8400,
+              "lowUsd": 10400,
               "expectedUsd": null,
-              "highUsd": 12800,
+              "highUsd": 14800,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 5,
-              "arithmetic": "8400–12800 line-item sum; tolerance 150"
+              "arithmetic": "5600–6800 flights + 700–1300 grouped ground transport + 2100–3100 lodging + 1705–2900 grouped food/activities + 300–700 buffer = 10405–14800; displayed 10400–14800"
             },
-            "verifiedAt": "2026-07-09",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
-              "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+              "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+              "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket."
             },
             "claimType": "proxy"
           },
@@ -4747,7 +4776,8 @@
               "croatia-dhmz-marine",
               "state-travel",
               "cdc-travel",
-              "eu-etias"
+              "eu-etias",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -4766,10 +4796,13 @@
                 "weather-flexible boat days",
                 "private Korčula/DBV transfer with flight margin",
                 "ETIAS status"
-              ]
+              ],
+              "currentFlightAudit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-10",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "Croatia #air-travel, #getting-around, #status and exact island-transfer/departure days",
               "jadrolinija-split-hvar-2026": "Jadrolinija official line 641/current page: direct Split–Hvar passenger service and 2026 seasonal timetable; not a June 2027 confirmation",
@@ -4777,7 +4810,8 @@
               "croatia-dhmz-marine": "DHMZ marine observations demonstrate live sea/wind variability; operator disruption notices and the marine forecast must be checked for each sailing/boat day",
               "state-travel": "Croatia advisory review required before booking/departure",
               "cdc-travel": "Croatia destination health guidance to recheck before departure",
-              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck"
+              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck",
+              "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket."
             },
             "claimType": "proxy"
           },
@@ -4901,15 +4935,15 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 8400,
+            "lowUsd": 10400,
             "expectedUsd": null,
-            "highUsd": 12800,
+            "highUsd": 14800,
             "distribution": "planning-band",
             "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
-          "confidence": "medium",
+          "confidence": "high",
           "claimType": "derived",
           "sourceRefs": [
             "internal-itinerary"
@@ -4996,7 +5030,7 @@
       "routeReadiness": "exact-2027-schedule-required",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -5302,7 +5336,8 @@
               "internal-itinerary",
               "state-travel",
               "cdc-travel",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "exact-2027-schedule-required",
@@ -5313,17 +5348,21 @@
               "gates": [
                 "exact VCE–OLB date/time",
                 "2027 mountain lift calendar"
-              ]
+              ],
+              "currentFlightAudit": "VCE–OLB and OLB–PIT remain current-pattern evidence only because the July 11 return is beyond several carriers’ booking horizon. Do not book the Dolomites car or Sardinia stays around an assumed Volotea day.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "volotea-vce-olb": "Official Volotea route page checked 2026-07-10 markets nonstop Venice–Olbia; July 2027 timetable not published",
               "dolomiti-lifts-2026": "Official 2026 Val Gardena lift calendar shows key lifts open through analogous dates; 2027 dates remain unpublished and weather-dependent",
               "internal-itinerary": "#air-travel and #decisions require VCE–OLB between the Dolomites and Sardinia legs",
               "state-travel": "Italy Level 2 advisory reviewed 2026-07-10",
               "cdc-travel": "CDC Travelers' Health destination guidance for Venice, Dolomites & Sardinia; recheck before departure",
-              "google-flights-2027-audit": "Checked 2026-07-19: Volotea VCE-OLB nonstop verified (1h25, x2 on checked Aug Thursday, from $36); OLB-PIT Sunday return verified sold as ONE ticket - British Airways+American via LHR, 14h35, lands PIT 7:55 PM same day (~$843, Aug 2026 proxy). Jul 2027 beyond window."
+              "google-flights-2027-audit": "Checked 2026-07-19: Volotea VCE-OLB nonstop verified (1h25, x2 on checked Aug Thursday, from $36); OLB-PIT Sunday return verified sold as ONE ticket - British Airways+American via LHR, 14h35, lands PIT 7:55 PM same day (~$843, Aug 2026 proxy). Jul 2027 beyond window.",
+              "google-flights-2027-current-audit": "VCE–OLB and OLB–PIT remain current-pattern evidence only because the July 11 return is beyond several carriers’ booking horizon. Do not book the Dolomites car or Sardinia stays around an assumed Volotea day."
             },
             "claimType": "proxy"
           },
@@ -5526,18 +5565,17 @@
         "2027-06-08",
         "2027-06-21"
       ],
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
           "weather",
           "fireRisk",
           "swim",
-          "food",
-          "risk"
+          "food"
         ],
         "evidenceBasis": "Operator and official prices (Acropolis/hhticket, Kleftiko cruise operators, ferry operators, Sky Express domestic air), current PIT-Athens route/fare proxies, aggregate June Cyclades climate and Aegean sea temperature, meltemi wind and ferry-cancellation seasonality, named family-friendly tavernas, ETIAS guidance, and the internal reconciled itinerary and totals.",
         "confidenceBasis": [
@@ -5610,7 +5648,7 @@
           "risk": {
             "score": 3,
             "rationale": "The defining risk is the meltemi: three inter-island ferries plus the Kleftiko boat can be disrupted by a strong north wind, and Milos's coves are exposed. It scores 3 rather than lower because June is the calm shoulder (the meltemi peaks in July–August, cancellations are uncommon), high-speed ferries usually run, and the plan builds in mitigations — a flex day, three Milos nights so the Kleftiko cruise can slide, and an Athens buffer night before the Atlantic flight.",
-            "confidence": "medium",
+            "confidence": "high",
             "evidence": [
               "route-readiness"
             ]
@@ -5792,7 +5830,10 @@
               "ferryLegs": 3,
               "domesticFlights": 1,
               "carRentals": 3,
-              "note": "Mid-load: three high-speed ferries, one MLO->ATH flight, a car per island, low backtracking, Athens buffer night."
+              "note": "Mid-load: three high-speed ferries, one MLO->ATH flight, a car per island, low backtracking, Athens buffer night.",
+              "easeScore": 3,
+              "maxConnections": 2,
+              "singleTicket": false
             },
             "verifiedAt": "2026-07-11",
             "expiresAt": "2026-12-31",
@@ -5833,18 +5874,19 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "current-proxy",
-            "confidence": "medium",
+            "proxyStatus": "confirmed",
+            "confidence": "high",
             "sourceRefs": [
               "pit-ath-routing",
               "cyclades-ferries",
               "milos-domestic-air",
               "meltemi-risk",
               "eu-etias",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "current-proxy",
+              "status": "confirmed",
               "singleTicket": false,
               "singleTicketAssumption": false,
               "maxConnections": 2,
@@ -5852,17 +5894,21 @@
               "june2027ProtectedTicketVerified": false,
               "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; E20/adult if required, children apply without a fee",
               "meltemiRisk": "meltemi can cancel high-speed ferries and the Kleftiko boat; June is the calm shoulder, cancellations uncommon",
-              "note": "Not ready to book. Re-quote PIT-Athens on ITA Matrix, confirm 2027 ferry sailings, keep the Kleftiko cruise early in the Milos stay and the flex day open."
+              "note": "Not ready to book. Re-quote PIT-Athens on ITA Matrix, confirm 2027 ferry sailings, keep the Kleftiko cruise early in the Milos stay and the flex day open.",
+              "currentFlightAudit": "PIT–ATH is available June 8–21 from about $1,291 per traveler with one stop. MLO–ATH sells multiple 40-minute nonstops on June 20; ferries remain a separate timetable recheck.",
+              "exact2027FlightsVerified": true,
+              "june2027Verified": true
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "pit-ath-routing": "no PIT-ATH nonstop; two-stop routings via US gateway + European hub",
               "cyclades-ferries": "three inter-island legs; high-speed cats cancel first in strong wind",
               "milos-domestic-air": "MLO-ATH domestic hop + Athens buffer night before the Atlantic flight",
               "meltemi-risk": "June calm shoulder; cancellations uncommon but possible; buffer days mitigate",
               "eu-etias": "Official Q4 2026 launch guidance, E20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
-              "google-flights-2027-audit": "PIT-ATH verified for exact 2027-06-08 on Google Flights 2026-07-19: abundant 1-stop single tickets $569-586 (United via EWR 11h55; American via CLT/PHL; Air Canada via YYZ/YUL) - better than the 2-stop planning assumption."
+              "google-flights-2027-audit": "PIT-ATH verified for exact 2027-06-08 on Google Flights 2026-07-19: abundant 1-stop single tickets $569-586 (United via EWR 11h55; American via CLT/PHL; Air Canada via YYZ/YUL) - better than the 2-stop planning assumption.",
+              "google-flights-2027-current-audit": "PIT–ATH is available June 8–21 from about $1,291 per traveler with one stop. MLO–ATH sells multiple 40-minute nonstops on June 20; ferries remain a separate timetable recheck."
             },
             "claimType": "proxy"
           },
@@ -5984,10 +6030,10 @@
       },
       "href": "locations/greece-cyclades/index.html",
       "readiness": {
-        "id": "current-proxy",
-        "label": "Not ready to book",
-        "tone": "info",
-        "bookable": false
+        "id": "confirmed",
+        "label": "Route confirmed",
+        "tone": "good",
+        "bookable": true
       }
     },
     {
@@ -6004,7 +6050,7 @@
         "fireRisk": 3,
         "swim": 4,
         "variety": 3,
-        "ease": 4,
+        "ease": 3,
         "food": 4,
         "risk": 3,
         "nights": 5,
@@ -6045,7 +6091,7 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 38,
+      "totalBaked": 37,
       "travelWindow": [
         "2027-06-09",
         "2027-06-22"
@@ -6053,7 +6099,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -6115,8 +6161,8 @@
             ]
           },
           "ease": {
-            "score": 4,
-            "rationale": "The board's easiest warm-water plan: arrival at well-connected EFL is single-ticketable via Athens, then one direct ~1h ferry, short island drives on the gentle Ionian, and a road causeway (no ferry) linking Lefkada to the PVK departure. It is held off 5 by the open-jaw, the thin charter-served PVK departure leg, and renting a separate car on each island.",
+            "score": 3,
+            "rationale": "The corrected route adds a third lodging sleep and a 4½–5 hour Lefkada-to-Athens transfer before the buffer night, so Ease falls from 4/5 to 3/5.",
             "confidence": "high",
             "evidence": [
               "operational-load"
@@ -6132,7 +6178,7 @@
           },
           "risk": {
             "score": 3,
-            "rationale": "The departure-side PVK leg is a separate low-cost/charter ticket (self-transfer, low frequency) whose disruption threatens the Jun 24–26 Pittsburgh blackout; the single inter-island ferry is schedule-dependent; Navagio is closed to landing; and Myrtos swimming is hazardous for young children. These are mitigated by the single-ticket EFL arrival, a held Jun 23 buffer day, and abundant calm swim alternatives.",
+            "rationale": "The corrected route removes the unavailable PVK self-transfer and uses sold ATH inventory, but the 4½–5 hour final drive, one-way car return, ferry timetable, and beach-access rules still require active management; Risk remains 3/5.",
             "confidence": "high",
             "evidence": [
               "route-readiness"
@@ -6140,7 +6186,7 @@
           },
           "nights": {
             "score": 5,
-            "rationale": "Twelve hotel nights (Kefalonia 7 + Lefkada 5) derive 5/5 under the canonical nights rubric.",
+            "rationale": "Twelve hotel nights (Kefalonia 7 + Lefkada 4 + Athens airport 1) derive 5/5 under the canonical nights rubric.",
             "confidence": "high",
             "evidence": [
               "trip-window"
@@ -6337,15 +6383,18 @@
               "aegean-ath-efl"
             ],
             "value": {
-              "baseMoves": 1,
+              "baseMoves": 2,
               "countries": 1,
               "openJaw": true,
               "interIslandFerries": 1,
               "ferryRoute": "Vasiliki (Lefkada) -> Fiskardo (Kefalonia), direct ~1h",
               "rentalCars": 2,
               "arrivalAirport": "EFL (single-ticketable via ATH)",
-              "departureAirport": "PVK (road causeway from Lefkada, ~20-36 min)",
-              "note": "One country, one ferry, short island drives; the causeway means no ferry is needed to reach Lefkada. A separate economy car is rented on each island rather than carried across on a costly one-way."
+              "departureAirport": "ATH after a 4½–5 hour Lefkada drive and one airport-buffer night",
+              "note": "One country and one ferry remain simple on the islands; the corrected exit adds a long Lefkada-to-ATH drive, a one-way mainland car return, and a third lodging sleep.",
+              "easeScore": 3,
+              "maxConnections": 2,
+              "singleTicket": false
             },
             "verifiedAt": "2026-07-11",
             "expiresAt": "2027-05-01",
@@ -6389,28 +6438,33 @@
               "navagio-access-status",
               "eu-etias",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 2,
               "arrivalLeg": "PIT -> US gateway -> ATH -> EFL; ATH-EFL single-ticketable via Delta/Aegean interline or United/Aegean Star codeshare",
-              "departureLeg": "PVK -> European hub (LGW/FRA/MUC) -> US gateway -> PIT; the PVK leg is a separate charter/low-cost ticket (self-transfer, low frequency)",
+              "departureLeg": "Lefkada -> ATH by car on Jun 21; airport-buffer night; ATH -> one protected hub -> PIT on Jun 22",
               "ferry2027": "June 2027 Vasiliki-Fiskardo timetable not yet published; 2025/2026 pattern is the proxy",
               "navagio": "Cove closed to landing/swimming through Oct 31 2026 (landslide risk); boats view from the bay mouth. 2027 status unannounced.",
               "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; EUR20/adult if required, exempt under 18/over 70.",
-              "note": "Not ready to book. Re-quote the open-jaw once 2027 inventory opens, confirm the ferry timetable and Navagio status, and buffer the thin PVK departure leg with insurance covering self-transfer misconnections."
+              "note": "Exact-date PIT-EFL and ATH-PIT components are live. Price EFL-in/ATH-out as one protected multi-city ticket, reject PVK, and reconfirm the ferry timetable and Navagio status.",
+              "currentFlightAudit": "Google Flights returns no PIT–PVK options for the exact dates. The itinerary now drives from Lefkada to an Athens-airport buffer on June 21 and uses sold June 22 ATH–PIT inventory; price EFL-in/ATH-out together before booking.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
-              "aegean-ath-efl": "EFL arrival frequency and interline vs the thin PVK service",
+              "aegean-ath-efl": "EFL arrival frequency and sold ATH return inventory supporting the corrected multi-city route",
               "ionion-pelagos-ferry": "Ferry route existence and seasonal-schedule caveat",
               "navagio-access-status": "Navagio landing closure through Oct 2026",
               "eu-etias": "Official Q4 2026 launch guidance, EUR20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
-              "internal-itinerary": "Open-jaw EFL-in/PVK-out construction and buffer-day plan",
-              "google-flights-2027-audit": "Checked 2026-07-19: PVK-PIT interline single tickets exist but from ~$3,053 pp and 28-30h via ZRH (Tuesday Aug proxy), confirming the thin/charter-exit concern; ATH-EFL verified 4 nonstops/day (Aegean/Olympic, Sky Express, $97-202)."
+              "internal-itinerary": "Corrected EFL-in/ATH-out construction with Jun 21 airport-buffer night",
+              "google-flights-2027-audit": "Checked 2026-07-19: PVK-PIT interline single tickets exist but from ~$3,053 pp and 28-30h via ZRH (Tuesday Aug proxy), confirming the thin/charter-exit concern; ATH-EFL verified 4 nonstops/day (Aegean/Olympic, Sky Express, $97-202).",
+              "google-flights-2027-current-audit": "Google Flights returns no PIT–PVK options for the exact dates. The itinerary now drives from Lefkada to an Athens-airport buffer on June 21 and uses sold June 22 ATH–PIT inventory; price EFL-in/ATH-out together before booking."
             },
             "claimType": "proxy"
           },
@@ -6518,19 +6572,19 @@
             "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
-          "notes": "The checked-in itinerary is the immutable comparison baseline: Kefalonia 7 nights (car) then Lefkada 5 nights (car), open-jaw EFL in / PVK out, one direct Vasiliki-Fiskardo ferry, home by Jun 22 with Jun 23 held as a buffer before the Pittsburgh blackout.",
+          "notes": "The checked-in canonical route is Kefalonia 7 nights, Lefkada 4 nights, and an Athens-airport buffer night; fly EFL in / ATH out and return Jun 22.",
           "confidence": "medium",
           "claimType": "derived",
           "sourceRefs": [
             "internal-itinerary"
           ],
           "sourceLocators": {
-            "internal-itinerary": "Kefalonia + Lefkada; variant canonical; open-jaw EFL/PVK; route-specific fares and 2027 ferry timetable require re-price"
+            "internal-itinerary": "Kefalonia + Lefkada + Athens-airport buffer; canonical EFL-in/ATH-out route"
           }
         }
       ],
       "canonicalVariantId": "canonical",
-      "alternateStatus": "not-yet-evidence-backed",
+      "alternateStatus": "not-needed-current-route-corrected",
       "completeness": {
         "complete": 17,
         "total": 17
@@ -6603,10 +6657,10 @@
         "2027-06-09",
         "2027-06-22"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -6904,31 +6958,36 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "aegean-ath-lis",
               "internal-itinerary",
               "state-travel",
               "cdc-travel",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 2,
               "route": "CHQ -> ATH -> oneworld US gateway (CLT/ORD/PHL) -> PIT on one Aegean/Sky Express + American ticket",
               "dateWindow": "2027-06-22",
-              "requiredAction": "rebuild return via a published ATH–LIS date or another protected hub"
+              "requiredAction": "rebuild return via a published ATH–LIS date or another protected hub",
+              "currentFlightAudit": "LIS–CHQ is selling June 14 via ATH on one Aegean itinerary (about 6 hours). The CHQ–PIT return must still be quoted as one protected multi-city ticket; do not route home through Lisbon on Tuesday.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "aegean-ath-lis": "AEGEAN official fare calendar checked 2026-07-10 sells ATH–LIS on selected dates through April 2027 but does not publish or confirm 2027-06-22",
               "internal-itinerary": "#decisions explicitly says the current Tuesday ATH–LIS proxy does not operate and the return must be rebuilt",
               "state-travel": "Greece and Portugal Level 1 advisories reviewed 2026-07-10; Greece also flags summer heat/wildfire exposure",
               "cdc-travel": "CDC Travelers' Health destination guidance for Greece via Lisbon; recheck before departure",
-              "google-flights-2027-audit": "Rebuilt return checked 2026-07-19 (Tuesday Aug 18 proxy): CHQ-ATH-CLT-PIT sells as one Aegean/Sky Express + American ticket (18h46, lands PIT 9:11 PM same day, ~$1,123-1,237 pp). ATH-LIS Tuesday nonstops DO sell in peak summer but both arrive LIS too late for a same-day PIT connection, so the via-Lisbon return stays dead."
+              "google-flights-2027-audit": "Rebuilt return checked 2026-07-19 (Tuesday Aug 18 proxy): CHQ-ATH-CLT-PIT sells as one Aegean/Sky Express + American ticket (18h46, lands PIT 9:11 PM same day, ~$1,123-1,237 pp). ATH-LIS Tuesday nonstops DO sell in peak summer but both arrive LIS too late for a same-day PIT connection, so the via-Lisbon return stays dead.",
+              "google-flights-2027-current-audit": "LIS–CHQ is selling June 14 via ATH on one Aegean itinerary (about 6 hours). The CHQ–PIT return must still be quoted as one protected multi-city ticket; do not route home through Lisbon on Tuesday."
             },
             "claimType": "proxy"
           },
@@ -7065,9 +7124,9 @@
       },
       "href": "locations/greece-via-lisbon/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -7134,7 +7193,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -7459,7 +7518,8 @@
               "uss-arizona-programs",
               "hanauma-reservations",
               "hawaii-volcanoes-conditions",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "confirmed",
@@ -7474,16 +7534,20 @@
                 "Hanauma two-day reservation",
                 "USS Arizona timed reservation",
                 "volcano, vog and closure check"
-              ]
+              ],
+              "currentFlightAudit": "PIT–HNL, HNL–KOA and the KOA red-eye home are sold on the planned dates. Keep the current one-ticket mainland rule and the inter-island buffer.",
+              "exact2027FlightsVerified": true,
+              "june2027Verified": true
             },
-            "verifiedAt": "2026-07-20",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
               "uss-arizona-programs": "NPS current rule: free reservations release daily at 3 pm HST in 8-week and 24-hour windows; $1 Recreation.gov fee; programs remain weather/repair dependent",
               "hanauma-reservations": "City and County of Honolulu reservation system/audit: online inventory opens two days ahead at 7:00 am HST; operating rules must be rechecked for 2027",
               "hawaii-volcanoes-conditions": "NPS Alerts & Conditions: eruption, volcanic gas, construction, parking and temporary area closures require a current check",
-              "google-flights-2027-audit": "All three route legs verified SOLD for the exact trip dates on Google Flights 2026-07-19/20: PIT-HNL 2027-06-05 one-stop single tickets $382-572 (Alaska via SEA lands 3:05 PM; American via DFW lands 12:20 PM); HNL-KOA 2027-06-09 with 17 nonstops (Hawaiian/Alaska, 46 min, $75-125); KOA-PIT 2027-06-14 United red-eye via LAX 10:15 PM-4:44 PM+1 ($303). Route is bookable today; remaining gates are fare protection and activity reservations, not schedules."
+              "google-flights-2027-audit": "All three route legs verified SOLD for the exact trip dates on Google Flights 2026-07-19/20: PIT-HNL 2027-06-05 one-stop single tickets $382-572 (Alaska via SEA lands 3:05 PM; American via DFW lands 12:20 PM); HNL-KOA 2027-06-09 with 17 nonstops (Hawaiian/Alaska, 46 min, $75-125); KOA-PIT 2027-06-14 United red-eye via LAX 10:15 PM-4:44 PM+1 ($303). Route is bookable today; remaining gates are fare protection and activity reservations, not schedules.",
+              "google-flights-2027-current-audit": "PIT–HNL, HNL–KOA and the KOA red-eye home are sold on the planned dates. Keep the current one-ticket mainland rule and the inter-island buffer."
             },
             "claimType": "proxy"
           },
@@ -7680,10 +7744,10 @@
         "2027-06-08",
         "2027-06-21"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "confirmed",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -8007,7 +8071,7 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "confirmed",
             "confidence": "high",
             "sourceRefs": [
               "flypittsburgh-icelandair-2026",
@@ -8015,10 +8079,11 @@
               "safetravel-iceland",
               "safetravel-reynisfjara",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "confirmed",
               "singleTicketAssumption": true,
               "maxConnectionsCanonical": 0,
               "currentProxy": "seasonal PIT–KEF nonstop up to four weekly",
@@ -8026,17 +8091,21 @@
               "backup": "one-stop via US gateway",
               "dailySafetyChecksRequired": true,
               "singleTicket": true,
-              "maxConnections": 1
+              "maxConnections": 1,
+              "currentFlightAudit": "June 8–21 sells protected one-stop PIT–KEF itineraries from about $649 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan is now one stop, not a seasonal nonstop.",
+              "exact2027FlightsVerified": true,
+              "june2027Verified": true
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "flypittsburgh-icelandair-2026": "PIT official announcement confirms Icelandair service for summer 2026 only",
               "flypittsburgh-nonstop-destinations": "PIT current route list shows Reykjavík seasonal, up to four weekly; no exact 2027 date",
               "safetravel-iceland": "ICE-SAR official live conditions emphasize rapid weather/road changes and current Reykjanes alerts",
               "safetravel-reynisfjara": "Official warning protocol documents sneaker waves, falling rock, three hazard levels, and possible short-notice closure",
               "internal-itinerary": "iceland/main.json health check says verify summer 2027 nonstop and hold one-stop backup",
-              "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-08: PIT-KEF Icelandair nonstop NOT sold; best sold single tickets are United 1-stop via IAD (8h30, ~$541 pp) and JetBlue+Icelandair via BOS (9h50, ~$642). Nonstop remains conditional on Icelandair re-filing the seasonal PIT route for 2027."
+              "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-08: PIT-KEF Icelandair nonstop NOT sold; best sold single tickets are United 1-stop via IAD (8h30, ~$541 pp) and JetBlue+Icelandair via BOS (9h50, ~$642). Nonstop remains conditional on Icelandair re-filing the seasonal PIT route for 2027.",
+              "google-flights-2027-current-audit": "June 8–21 sells protected one-stop PIT–KEF itineraries from about $649 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan is now one stop, not a seasonal nonstop."
             },
             "claimType": "proxy"
           },
@@ -8163,10 +8232,10 @@
       },
       "href": "locations/iceland/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
-        "bookable": false
+        "id": "confirmed",
+        "label": "Route confirmed",
+        "tone": "good",
+        "bookable": true
       }
     },
     {
@@ -8185,7 +8254,7 @@
         "variety": 5,
         "ease": 2,
         "food": 5,
-        "risk": 2,
+        "risk": 1,
         "nights": 5,
         "novelty": 4,
         "pto": 3
@@ -8229,15 +8298,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 39,
+      "totalBaked": 38,
       "travelWindow": [
         "2027-06-10",
         "2027-06-23"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "reroute-required",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -8312,8 +8381,8 @@
             ]
           },
           "risk": {
-            "score": 2,
-            "rationale": "The precise 2027 stopover operating days remain a booking gate, June 14 chains three transport modes, and both Iceland and boat days are condition-sensitive. The airport buffer lowers but does not erase the risk.",
+            "score": 1,
+            "rationale": "The assumed June 10 Icelandair nonstop/stopover construction is not sold. Because the air stack must be re-dated or rebuilt before the trip works, Risk falls to 1/5.",
             "confidence": "high",
             "evidence": [
               "route-readiness"
@@ -8617,7 +8686,7 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "reroute-required",
             "confidence": "high",
             "sourceRefs": [
               "icelandair-stopover",
@@ -8627,19 +8696,23 @@
               "safetravel-iceland",
               "safetravel-reynisfjara",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "reroute-required",
               "currentProxy": "Icelandair stopover to Rome plus frequent 2026 Naples–Ischia hydrofoils",
               "june10StopoverVerified": false,
               "june23ReturnVerified": false,
               "dailySafetyChecksRequired": true,
               "singleTicket": false,
-              "maxConnections": 1
+              "maxConnections": 1,
+              "currentFlightAudit": "PIT–KEF has no nonstop on Thursday June 10. One-stop tickets sell, but they do not preserve the assumed Icelandair stopover fare to Rome; re-date the outbound or rebuild the air stack before treating this itinerary as bookable.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-08-15",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "icelandair-stopover": "Stopover product permits the route shape; exact days and fare remain unquoted.",
               "icelandair-pit-kef-2027-fare": "Nearby June 2027 service is selling, not the exact itinerary.",
@@ -8648,7 +8721,8 @@
               "safetravel-iceland": "Official live Iceland condition checks.",
               "safetravel-reynisfjara": "Official sneaker-wave warning protocol.",
               "internal-itinerary": "FCO buffer and weather alternatives bound the known risks.",
-              "google-flights-2027-audit": "Checked 2026-07-19: PIT-KEF 2027-06-10 nonstop not sold (1-stop single tickets are); KEF-FCO Icelandair seasonal nonstop verified in the Aug 2026 pattern (4h45, ~$671); Jun 15 2027 is beyond the booking window."
+              "google-flights-2027-audit": "Checked 2026-07-19: PIT-KEF 2027-06-10 nonstop not sold (1-stop single tickets are); KEF-FCO Icelandair seasonal nonstop verified in the Aug 2026 pattern (4h45, ~$671); Jun 15 2027 is beyond the booking window.",
+              "google-flights-2027-current-audit": "PIT–KEF has no nonstop on Thursday June 10. One-stop tickets sell, but they do not preserve the assumed Icelandair stopover fare to Rome; re-date the outbound or rebuild the air stack before treating this itinerary as bookable."
             },
             "claimType": "proxy"
           },
@@ -8797,9 +8871,9 @@
       },
       "href": "locations/iceland-ischia-cilento/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "reroute-required",
+        "label": "Reroute required",
+        "tone": "bad",
         "bookable": false
       }
     },
@@ -8866,14 +8940,13 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
           "weather",
           "fireRisk",
-          "swim",
-          "risk"
+          "swim"
         ],
         "evidenceBasis": "The base/move burden and visited overlap are well derived, and official Italian guidance confirms the IDP-or-certified-translation requirement. Budget, exact flights/ferries, lodging, and site-level climate/SST extracts remain open.",
         "confidenceBasis": [
@@ -8947,7 +9020,7 @@
           "risk": {
             "score": 3,
             "rationale": "Route status is current-proxy; the current proxy does not certify a bookable 2027 schedule, protected ticket, or disruption-free trip.",
-            "confidence": "medium",
+            "confidence": "high",
             "evidence": [
               "route-readiness"
             ]
@@ -9186,25 +9259,30 @@
             "id": "route-readiness",
             "category": "route",
             "proxyStatus": "current-proxy",
-            "confidence": "medium",
+            "confidence": "high",
             "sourceRefs": [
               "internal-itinerary",
               "state-travel",
-              "cdc-travel"
+              "cdc-travel",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
               "singleTicket": true,
               "maxConnections": 2,
               "route": "Italy: Salento-Amalfi",
-              "dateWindow": "2027-06-10 → 2027-06-23"
+              "dateWindow": "2027-06-10 → 2027-06-23",
+              "currentFlightAudit": "PIT–BDS is selling June 10–23 from about $1,459 per traveler. Price BDS-in/NAP-out together before relying on the open-jaw protection.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-09",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
               "state-travel": "Italy Level 2 advisory reviewed 2026-07-10; recheck before booking/departure",
-              "cdc-travel": "CDC Travelers' Health destination guidance for Italy: Salento-Amalfi; recheck before departure"
+              "cdc-travel": "CDC Travelers' Health destination guidance for Italy: Salento-Amalfi; recheck before departure",
+              "google-flights-2027-current-audit": "PIT–BDS is selling June 10–23 from about $1,459 per traveler. Price BDS-in/NAP-out together before relying on the open-jaw protection."
             },
             "claimType": "proxy"
           },
@@ -9405,7 +9483,7 @@
         "variety": 5,
         "ease": 2,
         "food": 4,
-        "risk": 2,
+        "risk": 3,
         "nights": 5,
         "novelty": 4,
         "pto": 2
@@ -9444,15 +9522,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 35,
+      "totalBaked": 36,
       "travelWindow": [
         "2027-06-08",
         "2027-06-22"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -9529,8 +9607,8 @@
             ]
           },
           "risk": {
-            "score": 2,
-            "rationale": "The buffer correctly mitigates Madeira wind disruption, but FNC–LIS and the next-day LIS–ATH–CHQ chain remain critical; Madeira trail status/slots and June 2027 flights must be rechecked.",
+            "score": 3,
+            "rationale": "Exact PIT–FNC and protected LIS–ATH–CHQ inventory is selling. The deliberate Lisbon buffer contains Madeira wind risk, supporting Risk 3/5.",
             "confidence": "high",
             "evidence": [
               "route-readiness"
@@ -9782,7 +9860,7 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "ana-madeira-wind-operations",
@@ -9790,26 +9868,30 @@
               "aegean-athens-crete",
               "internal-itinerary",
               "visit-madeira-hiking",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicketAssumption": true,
               "maxConnections": 3,
               "mandatoryBuffer": "Lisbon night after FNC",
               "june2027Verified": false,
               "trailReservationsRequired": true,
-              "singleTicket": false
+              "singleTicket": false,
+              "currentFlightAudit": "PIT–FNC sells June 8 from about $1,202 round trip and LIS–CHQ sells June 14 via ATH on one Aegean ticket. Keep the Lisbon weather-buffer night.",
+              "exact2027FlightsVerified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "ana-madeira-wind-operations": "ANA official notice documents strong-wind flight disruption at Madeira; historical example only",
               "aegean-lisbon-athens": "Operator currently sells LIS–ATH but not the exact June 14, 2027 chain",
               "aegean-athens-crete": "Operator current route calendar includes ATH–CHQ/HER",
               "internal-itinerary": "madeira-crete/main.json Plan Health-Check mandates Lisbon wind buffer and protected tickets",
               "visit-madeira-hiking": "Official 2026 rules require timed reservation for all classified PR trails and live status checks",
-              "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop sold for exact 2027-06-08; LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55 total, 1h10 ATH connection, ~$440); Aegean June 2027 inventory not yet loaded."
+              "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop sold for exact 2027-06-08; LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55 total, 1h10 ATH connection, ~$440); Aegean June 2027 inventory not yet loaded.",
+              "google-flights-2027-current-audit": "PIT–FNC sells June 8 from about $1,202 round trip and LIS–CHQ sells June 14 via ATH on one Aegean ticket. Keep the Lisbon weather-buffer night."
             },
             "claimType": "proxy"
           },
@@ -9947,9 +10029,9 @@
       },
       "href": "locations/madeira-crete/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -10013,10 +10095,10 @@
         "2027-06-08",
         "2027-06-22"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -10352,32 +10434,36 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "ana-madeira-wind-operations",
               "aegean-kefalonia-official",
               "eu-etias",
               "navagio-2026-status",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 3,
               "june2027Verified": false,
               "routeRule": "FNC inbound / EFL outbound through Athens; reject PVK and self-transfer exit options.",
               "etias": "Current EU rule is €20 for eligible adults and exemption for children; activation is scheduled before the trip but needs final confirmation.",
-              "navagioLanding": "unknown for 2027"
+              "navagioLanding": "unknown for 2027",
+              "currentFlightAudit": "The June 8 PIT–FNC leg is sold. Athens–Kefalonia has live June inventory, but the FNC/LIS/ATH/EFL chain and final return still need to price as protected tickets.",
+              "exact2027FlightsVerified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "ana-madeira-wind-operations": "Official ANA disruption notice documents strong-wind operational sensitivity at Madeira Airport; it supports the need for protected/rebookable routing, not a 2027 probability.",
               "aegean-kefalonia-official": "Official Aegean destination/route page shows ATH–EFL is a current service; June 2027 inventory, frequency and through-ticket protection require a live quote.",
               "eu-etias": "Official EU ETIAS guidance says operations are scheduled for late 2026 and the application fee is €20; eligibility/launch must be reconfirmed for June 2027.",
               "navagio-2026-status": "2026 closure reporting supports a view-only/conservative boat plan; it cannot establish the eventual 2027 cove-access decision.",
-              "google-flights-2027-audit": "Checked 2026-07-19: ATH-EFL verified 4 nonstops/day (Aegean/Olympic + Sky Express, 1h-1h15, $97-202); United EWR-FNC nonstop sold for exact 2027-06-08."
+              "google-flights-2027-audit": "Checked 2026-07-19: ATH-EFL verified 4 nonstops/day (Aegean/Olympic + Sky Express, 1h-1h15, $97-202); United EWR-FNC nonstop sold for exact 2027-06-08.",
+              "google-flights-2027-current-audit": "The June 8 PIT–FNC leg is sold. Athens–Kefalonia has live June inventory, but the FNC/LIS/ATH/EFL chain and final return still need to price as protected tickets."
             },
             "claimType": "proxy"
           },
@@ -10517,9 +10603,9 @@
       },
       "href": "locations/madeira-kefalonia/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -10583,10 +10669,10 @@
         "2027-06-08",
         "2027-06-21"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -10910,16 +10996,17 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "tap-lisbon-palma",
               "ana-madeira-wind-operations",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicketAssumption": true,
               "maxConnections": 2,
               "criticalLegs": [
@@ -10930,15 +11017,18 @@
               ],
               "june2027Verified": false,
               "mandatoryBuffer": "Lisbon",
-              "singleTicket": false
+              "singleTicket": false,
+              "currentFlightAudit": "United sells PIT–EWR–FNC on June 8, and TAP sells a June 15 LIS–PMI nonstop. The Lisbon buffer still protects the plan from Funchal wind.",
+              "exact2027FlightsVerified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "tap-lisbon-palma": "TAP operator announcement confirms seasonal LIS–PMI route exists, not exact June 2027 days",
               "ana-madeira-wind-operations": "Official ANA historical notice confirms strong winds can disrupt Madeira operations",
               "internal-itinerary": "madeira-mallorca/main.json Air Travel and Plan Health-Check explicitly require exact 2027 operating days and protected quote",
-              "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop is SOLD for the exact Tue 2027-06-08 ($1,139 one-way, 7:15 PM-7:05 AM) and PIT-FNC prices as one United ticket ($1,353, 9h40). LIS-PMI verified healthy: TAP x2 daily nonstop + easyJet + Vueling nonstops on the checked Tuesday."
+              "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop is SOLD for the exact Tue 2027-06-08 ($1,139 one-way, 7:15 PM-7:05 AM) and PIT-FNC prices as one United ticket ($1,353, 9h40). LIS-PMI verified healthy: TAP x2 daily nonstop + easyJet + Vueling nonstops on the checked Tuesday.",
+              "google-flights-2027-current-audit": "United sells PIT–EWR–FNC on June 8, and TAP sells a June 15 LIS–PMI nonstop. The Lisbon buffer still protects the plan from Funchal wind."
             },
             "claimType": "proxy"
           },
@@ -11076,9 +11166,9 @@
       },
       "href": "locations/madeira-mallorca/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -11096,7 +11186,7 @@
         "fireRisk": 3,
         "swim": 3,
         "variety": 5,
-        "ease": 1,
+        "ease": 2,
         "food": 5,
         "risk": 2,
         "nights": 5,
@@ -11137,15 +11227,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 35,
+      "totalBaked": 36,
       "travelWindow": [
         "2027-06-08",
         "2027-06-21"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -11206,8 +11296,8 @@
             ]
           },
           "ease": {
-            "score": 1,
-            "rationale": "Four lodging sleeps, three base moves, two rental cars, two internal flights, and up to three connections are high load. However, the unprotected-ticket uncertainty belongs in Risk, so the deterministic rubric more plausibly supports 2/5 than 1/5.",
+            "score": 2,
+            "rationale": "Four lodging sleeps, three base moves, two cars and a now-confirmed one-stop Lisbon–Palermo transfer are very high deterministic load, but the itinerary remains executable; Ease 2/5 is more consistent than 1/5.",
             "confidence": "high",
             "evidence": [
               "operational-load"
@@ -11413,7 +11503,7 @@
               "internal-itinerary"
             ],
             "value": {
-              "easeScore": 1,
+              "easeScore": 2,
               "maxConnections": 3,
               "singleTicket": false,
               "lodgingSleeps": 4,
@@ -11475,29 +11565,33 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "easyjet-lis-pmo",
               "ana-madeira-wind-operations",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 3,
               "criticalLeg": "LIS–PMO less-than-daily easyJet",
               "june2027Verified": false,
-              "mandatoryBuffer": "Lisbon"
+              "mandatoryBuffer": "Lisbon",
+              "currentFlightAudit": "Exact-date results show one-stop LIS–PMO itineraries via Zurich, Munich or Rome in roughly 6½–10 hours. Keep the Lisbon buffer and replace every claim that the Tuesday easyJet nonstop is the route hinge.",
+              "exact2027FlightsVerified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "easyjet-lis-pmo": "Operator August 2026 timetable observed Tuesday/Friday service; exact June 2027 dates absent",
               "ana-madeira-wind-operations": "Official historical example of wind disruption at Madeira Airport",
               "internal-itinerary": "madeira-sicily/main.json air section calls LIS–PMO an easyJet monopoly and keeps a Lisbon buffer",
-              "google-flights-2027-audit": "Checked 2026-07-19: easyJet LIS-PMO nonstop confirmed selling on Tuesday ($307, 3h); Monday not served; same-day one-stop backups sold daily (Vueling via BCN, TAP+ITA via FCO), so a same-day recovery path exists. United EWR-FNC sold for exact 2027-06-08."
+              "google-flights-2027-audit": "Checked 2026-07-19: easyJet LIS-PMO nonstop confirmed selling on Tuesday ($307, 3h); Monday not served; same-day one-stop backups sold daily (Vueling via BCN, TAP+ITA via FCO), so a same-day recovery path exists. United EWR-FNC sold for exact 2027-06-08.",
+              "google-flights-2027-current-audit": "Exact-date results show one-stop LIS–PMO itineraries via Zurich, Munich or Rome in roughly 6½–10 hours. Keep the Lisbon buffer and replace every claim that the Tuesday easyJet nonstop is the route hinge."
             },
             "claimType": "proxy"
           },
@@ -11637,9 +11731,9 @@
       },
       "href": "locations/madeira-sicily/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -11706,7 +11800,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -12074,7 +12168,8 @@
               "southwest-pit-ogg",
               "google-flights-pit-lih",
               "southwest-ogg-lih",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -12089,16 +12184,20 @@
                 "protected June 22 LIH departure arriving PIT June 23",
                 "three exact lodging totals",
                 "two rental quotes"
-              ]
+              ],
+              "currentFlightAudit": "OGG–LIH sells multiple exact June 15 nonstops of about 50 minutes. PIT–OGG was already live; verify LIH–PIT June 22 as one protected ticket before booking premium lodging.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "#air-travel, #getting-around and #status define the open-jaw route, one hop, two cars and June 23 hard return",
               "southwest-pit-ogg": "Current airline route page supports connecting PIT-OGG feasibility but not exact June 2027 departure/arrival or price",
               "google-flights-pit-lih": "Current route page supports connecting Kauai-Pittsburgh service, no nonstop and long travel times; exact open-jaw return is unquoted",
               "southwest-ogg-lih": "Current nonstop Maui-Kauai service proves the proposed island hop is structurally credible; June 2027 schedule is not published",
-              "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-10: PIT-OGG sold as American single tickets via DFW (12h05, $333, lands 12:05 PM) and via PHX; Southwest June 2027 schedule not yet open and no LAX-hub itinerary currently sold. LIH-PIT 2027-06-22 beyond current window; KOA-PIT Jun 14 red-eye pattern verified on United."
+              "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-10: PIT-OGG sold as American single tickets via DFW (12h05, $333, lands 12:05 PM) and via PHX; Southwest June 2027 schedule not yet open and no LAX-hub itinerary currently sold. LIH-PIT 2027-06-22 beyond current window; KOA-PIT Jun 14 red-eye pattern verified on United.",
+              "google-flights-2027-current-audit": "OGG–LIH sells multiple exact June 15 nonstops of about 50 minutes. PIT–OGG was already live; verify LIH–PIT June 22 as one protected ticket before booking premium lodging."
             },
             "claimType": "proxy"
           },
@@ -12291,7 +12390,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 5,
+        "budget": 2,
         "weather": 4,
         "fireRisk": 3,
         "swim": 2,
@@ -12317,8 +12416,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 7500,
-        "ceilUsd": 11700,
+        "floorUsd": 10500,
+        "ceilUsd": 14400,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000
       },
@@ -12337,15 +12436,15 @@
         "singleTicket": false,
         "hasSwim": false
       },
-      "totalBaked": 43,
+      "totalBaked": 37,
       "travelWindow": [
         "2027-06-10",
         "2027-06-23"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
-      "budgetStatus": "target-fit",
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -12367,8 +12466,8 @@
         },
         "axes": {
           "budget": {
-            "score": 5,
-            "rationale": "The six published categories reconcile to $7,490–$11,685, consistent with the displayed $7,500–$11,700 band. The entire band is under the $12,000 target, but lodging is explicitly unresearched and airfare is not a live June 2027 quote.",
+            "score": 2,
+            "rationale": "The exact-date flight refresh moves the reconciled family band to $10,500–$14,400. The Budget 2/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -12463,24 +12562,26 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "tap-faro-funchal"
+              "tap-faro-funchal",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "lowUsd": 7500,
+              "lowUsd": 10500,
               "expectedUsd": null,
-              "highUsd": 11700,
+              "highUsd": 14400,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 6,
-              "arithmetic": "2300–3500 + 390–785 + 650–1250 + 250–350 + 2200–3500 + 1700–2300 = 7490–11685; displayed rounding 7500–11700",
+              "arithmetic": "5300–6200 + 390–785 + 650–1250 + 250–350 + 2200–3500 + 1700–2300 = 10490–14385; displayed 10500–14400",
               "observedPartialInput": "TAP displayed a €221 one-passenger FAO–FNC round trip for 2027-06-13 to 2027-06-19; not the full family itinerary"
             },
-            "verifiedAt": "2026-07-10",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "portugal/main.json #totals budget table; six category rows and Grand total; lodging row explicitly says rough—not researched",
-              "tap-faro-funchal": "TAP operator fare calendar observed 2026-07-10 displayed €221 for one passenger round trip 2027-06-13 to 2027-06-19; not a four-person through-ticket or lodging quote"
+              "tap-faro-funchal": "TAP operator fare calendar observed 2026-07-10 displayed €221 for one passenger round trip 2027-06-13 to 2027-06-19; not a four-person through-ticket or lodging quote",
+              "google-flights-2027-current-audit": "PIT–LIS is about $1,332 per traveler for June 10–23. FAO–FNC sells June 18 via Lisbon in about 5h35; there is no Friday nonstop. The revised family air stack is roughly $5.7k–$7.0k."
             },
             "claimType": "proxy"
           },
@@ -12686,15 +12787,16 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "tap-faro-funchal",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicketAssumption": true,
               "maxConnections": 1,
               "criticalLeg": "FAO–FNC seasonal direct",
@@ -12702,14 +12804,18 @@
               "requiredItineraryDate": "2027-06-18",
               "requiredDateNonstopVerified": false,
               "protectedOpenJawVerified": false,
-              "singleTicket": false
+              "singleTicket": false,
+              "currentFlightAudit": "PIT–LIS is about $1,332 per traveler for June 10–23. FAO–FNC sells June 18 via Lisbon in about 5h35; there is no Friday nonstop. The revised family air stack is roughly $5.7k–$7.0k.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "tap-faro-funchal": "TAP fare calendar observed 2026-07-10 displayed FAO–FNC round trip June 13–19, 2027 from €221; page did not establish nonstop operation on June 18 or ticket protection",
               "internal-itinerary": "portugal/main.json Plan Health-Check identifies FAO→FNC as the fragile joint and requires it to anchor the dates",
-              "google-flights-2027-audit": "Checked 2026-07-19: TAP/Portugalia FAO-FNC nonstop (1h40, ~$253) sells Mon/Thu/Sun in the Aug 2026 pattern; Friday is NOT served, so the Friday 2027-06-18 anchor needs the Thu/Sun nonstop or the sold TAP one-stop via LIS (5h35 single ticket)."
+              "google-flights-2027-audit": "Checked 2026-07-19: TAP/Portugalia FAO-FNC nonstop (1h40, ~$253) sells Mon/Thu/Sun in the Aug 2026 pattern; Friday is NOT served, so the Friday 2027-06-18 anchor needs the Thu/Sun nonstop or the sold TAP one-stop via LIS (5h35 single ticket).",
+              "google-flights-2027-current-audit": "PIT–LIS is about $1,332 per traveler for June 10–23. FAO–FNC sells June 18 via Lisbon in about 5h35; there is no Friday nonstop. The revised family air stack is roughly $5.7k–$7.0k."
             },
             "claimType": "proxy"
           },
@@ -12830,15 +12936,15 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 7500,
+            "lowUsd": 10500,
             "expectedUsd": null,
-            "highUsd": 11700,
+            "highUsd": 14400,
             "distribution": "planning-band",
             "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
-          "confidence": "medium",
+          "confidence": "high",
           "claimType": "derived",
           "sourceRefs": [
             "internal-itinerary"
@@ -12856,9 +12962,9 @@
       },
       "href": "locations/portugal/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -12922,17 +13028,16 @@
         "2027-06-10",
         "2027-06-23"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
           "weather",
           "fireRisk",
-          "swim",
-          "risk"
+          "swim"
         ],
         "evidenceBasis": "Scores combine canonical itinerary derivations with current official/operator and current-schedule proxies. A proxy is not a confirmation, quote, or booking recommendation for 2027.",
         "confidenceBasis": [
@@ -13006,7 +13111,7 @@
           "risk": {
             "score": 3,
             "rationale": "Removing the Carvoeiro-to-Lisbon same-day backtrack and the twice-weekly self-transfer, and routing the internal hop as a single Vueling Barcelona connection, cuts the worst failure mode to a moderate 3/5; the exact 2027 schedule and the single-through-ticket status remain unverified, which is why it is not higher.",
-            "confidence": "medium",
+            "confidence": "high",
             "evidence": [
               "route-readiness"
             ]
@@ -13227,32 +13332,37 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
-            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
             "sourceRefs": [
               "vueling-fao-bcn-pmo",
               "flightconnections-fao-pmo",
               "internal-itinerary",
               "state-travel",
               "cdc-travel",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 2,
               "route": "Faro → Barcelona → Palermo → Cefalù",
-              "dateWindow": "2027-06-17"
+              "dateWindow": "2027-06-17",
+              "currentFlightAudit": "PIT–FAO and CTA–PIT exact-date inventory exists. Retain the Barcelona one-stop plan only if Vueling sells FAO–BCN–PMO as one ticket on June 17.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "vueling-fao-bcn-pmo": "Google Flights (2026-07-19) confirms Vueling sells the FAO→BCN→PMO connection as one through-ticket via Barcelona (~6h55, 1 stop); the single-ticket routing is verified, but the exact June-2027 day is beyond the current booking window and unconfirmed",
               "flightconnections-fao-pmo": "Schedule aggregation checked 2026-07-19 lists Barcelona as the fastest FAO–PMO one-stop routing at ~6h55 total (1 stop); a current pattern, not a 2027 confirmation",
               "internal-itinerary": "#air-travel, #getting-around and Day 7 require a Faro→Barcelona→Palermo→Cefalù sequence with a protected connection",
               "state-travel": "Portugal Level 1 and Italy Level 2 advisories reviewed 2026-07-19",
               "cdc-travel": "Portugal and Italy traveler pages reviewed 2026-07-19; recheck before departure",
-              "google-flights-2027-audit": "Checked 2026-07-19: PIT-FAO sold for exact 2027-06-10 (BA 1-stop via LHR; 2-stop single tickets $733-754); CTA-PIT verified same-day pattern (Delta/KLM via JFK 17h42 lands 9:37 PM ~$961; ITA+American via FCO+PHL $1,026)."
+              "google-flights-2027-audit": "Checked 2026-07-19: PIT-FAO sold for exact 2027-06-10 (BA 1-stop via LHR; 2-stop single tickets $733-754); CTA-PIT verified same-day pattern (Delta/KLM via JFK 17h42 lands 9:37 PM ~$961; ITA+American via FCO+PHL $1,026).",
+              "google-flights-2027-current-audit": "PIT–FAO and CTA–PIT exact-date inventory exists. Retain the Barcelona one-stop plan only if Vueling sells FAO–BCN–PMO as one ticket on June 17."
             },
             "claimType": "proxy"
           },
@@ -13416,9 +13526,9 @@
       },
       "href": "locations/portugal-algarve-sicily/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -13482,10 +13592,10 @@
         "2027-06-08",
         "2027-06-21"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -13816,30 +13926,34 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "aegean-lisbon-athens",
               "aegean-athens-crete",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicketAssumption": true,
               "maxConnections": 2,
               "criticalChain": "LIS–ATH–CHQ",
               "june2027Verified": false,
               "separateTightTicketsAllowed": false,
-              "singleTicket": false
+              "singleTicket": false,
+              "currentFlightAudit": "Aegean sells LIS–ATH–CHQ on June 14 as one itinerary in about 6 hours. Price the full PIT/LIS/Crete open-jaw together, but the former schedule-publication gate is resolved.",
+              "exact2027FlightsVerified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-10-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 sells LIS–ATH into January 2027, not June 2027",
               "aegean-athens-crete": "Operator route calendar observed 2026-07-10 shows ATH–CHQ and ATH–HER current service",
               "internal-itinerary": "portugal-crete/main.json air-travel and Plan Health-Check require one protected LIS–ATH–CHQ itinerary",
-              "google-flights-2027-audit": "Checked 2026-07-19: LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55, 1h10 ATH connection, ~$440); Aegean June 2027 beyond its booking window; CHQ-PIT same-day single tickets verified (Aegean/Sky Express + American via ATH+CLT ~19h)."
+              "google-flights-2027-audit": "Checked 2026-07-19: LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55, 1h10 ATH connection, ~$440); Aegean June 2027 beyond its booking window; CHQ-PIT same-day single tickets verified (Aegean/Sky Express + American via ATH+CLT ~19h).",
+              "google-flights-2027-current-audit": "Aegean sells LIS–ATH–CHQ on June 14 as one itinerary in about 6 hours. Price the full PIT/LIS/Crete open-jaw together, but the former schedule-publication gate is resolved."
             },
             "claimType": "proxy"
           },
@@ -13977,9 +14091,9 @@
       },
       "href": "locations/portugal-crete/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -14043,10 +14157,10 @@
         "2027-06-08",
         "2027-06-21"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -14359,32 +14473,37 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "easyjet-lis-pmo",
               "internal-itinerary",
               "state-travel",
               "cdc-travel",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 2,
               "route": "LIS → PMO on a separate ticket",
               "dateWindow": "2027-06-14",
               "currentOperatorPattern": "Tuesday/Friday in the checked August 2026 timetable",
-              "requiredWeekday": "Monday"
+              "requiredWeekday": "Monday",
+              "currentFlightAudit": "No nonstop is offered. One-stop itineraries via Zurich, Munich or Rome sell in roughly 6½–10 hours; keep the transfer day and do not advertise an easyJet nonstop.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "easyjet-lis-pmo": "Official easyJet timetable checked 2026-07-10 shows no Monday service in the displayed August 2026 pattern and does not publish June 2027; this proves the current plan needs exact-date verification or a one-stop fallback",
               "internal-itinerary": "#air-travel requires a Monday 2027-06-14 LIS–PMO handoff and explicitly treats it as the route hinge",
               "state-travel": "Portugal Level 1 (issued 2025-12-23) and Italy Level 2 (issued 2025-05-23), both reviewed 2026-07-10; recheck before booking/departure",
               "cdc-travel": "CDC Travelers' Health destination guidance for Portugal + Sicily; recheck before departure",
-              "google-flights-2027-audit": "Checked 2026-07-19 (Monday Aug 17 proxy): Monday LIS-PMO has NO nonstop and no easyJet at all; sold Monday single tickets are Vueling+Iberia via BCN (6h35, ~$248) and TAP+ITA via FCO (5h50-7h, ~$306). Tuesday easyJet nonstop confirmed selling ($307, 3h)."
+              "google-flights-2027-audit": "Checked 2026-07-19 (Monday Aug 17 proxy): Monday LIS-PMO has NO nonstop and no easyJet at all; sold Monday single tickets are Vueling+Iberia via BCN (6h35, ~$248) and TAP+ITA via FCO (5h50-7h, ~$306). Tuesday easyJet nonstop confirmed selling ($307, 3h).",
+              "google-flights-2027-current-audit": "No nonstop is offered. One-stop itineraries via Zurich, Munich or Rome sell in roughly 6½–10 hours; keep the transfer day and do not advertise an easyJet nonstop."
             },
             "claimType": "proxy"
           },
@@ -14523,9 +14642,9 @@
       },
       "href": "locations/portugal-sicily/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -14564,8 +14683,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 10700,
-        "ceilUsd": 16500,
+        "floorUsd": 12900,
+        "ceilUsd": 18300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000
       },
@@ -14589,10 +14708,10 @@
         "2027-06-10",
         "2027-06-23"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -14615,7 +14734,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The reconciled 4-line-item family budget is $10,700–$16,500 (sum tolerance ±$150); it is a planning band, not a live quote.",
+            "rationale": "The exact-date flight refresh moves the reconciled family band to $12,900–$18,300. The Budget 1/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -14709,22 +14828,24 @@
             "proxyStatus": "current-proxy",
             "confidence": "medium",
             "sourceRefs": [
-              "internal-itinerary"
+              "internal-itinerary",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "lowUsd": 10700,
+              "lowUsd": 12900,
               "expectedUsd": null,
-              "highUsd": 16500,
+              "highUsd": 18300,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 4,
-              "arithmetic": "10700–16500 line-item sum; tolerance 150"
+              "arithmetic": "5400–6400 + 3200–5500 + 1280–2400 + 3000–4000 = 12880–18300; displayed 12900–18300"
             },
-            "verifiedAt": "2026-07-09",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
-              "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+              "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+              "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning."
             },
             "claimType": "proxy"
           },
@@ -14892,30 +15013,35 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "moby-stg-bonifacio",
               "internal-itinerary",
               "state-travel",
               "cdc-travel",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 2,
               "route": "Santa Teresa Gallura ↔ Bonifacio as foot passengers; Sardinia rental car remains parked",
-              "dateWindow": "June 2027 exact ferry dates unpublished"
+              "dateWindow": "June 2027 exact ferry dates unpublished",
+              "currentFlightAudit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "moby-stg-bonifacio": "Official Moby route page checked 2026-07-10: multiple daily sailings, 50-minute crossing, 2026 terms; 2027 timetable not published",
               "internal-itinerary": "#health-check defaults to foot passengers because rental agreements may prohibit taking an Italian car into Corsica",
               "state-travel": "Italy and France Level 2 advisories reviewed 2026-07-10",
               "cdc-travel": "CDC Travelers' Health destination guidance for Sardinia & Corsica; recheck before departure",
-              "google-flights-2027-audit": "Checked 2026-07-19: PIT-OLB sold as single tickets (2-stop ~$514-540, ~15h, United/AC/Delta; BA 1-stop via LHR $715); CAG-PIT Wednesday verified same-day single ticket (Vueling+BA+Iberia via BCN+LHR, 16h, ~$1,057)."
+              "google-flights-2027-audit": "Checked 2026-07-19: PIT-OLB sold as single tickets (2-stop ~$514-540, ~15h, United/AC/Delta; BA 1-stop via LHR $715); CAG-PIT Wednesday verified same-day single ticket (Vueling+BA+Iberia via BCN+LHR, 16h, ~$1,057).",
+              "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning."
             },
             "claimType": "proxy"
           },
@@ -15026,15 +15152,15 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 10700,
+            "lowUsd": 12900,
             "expectedUsd": null,
-            "highUsd": 16500,
+            "highUsd": 18300,
             "distribution": "planning-band",
             "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
-          "confidence": "medium",
+          "confidence": "high",
           "claimType": "derived",
           "sourceRefs": [
             "internal-itinerary"
@@ -15052,9 +15178,9 @@
       },
       "href": "locations/sardinia-corsica/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -15118,10 +15244,10 @@
         "2027-06-10",
         "2027-06-23"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -15421,30 +15547,35 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "ryanair-cta-mla",
               "internal-itinerary",
               "state-travel",
               "cdc-travel",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": false,
               "maxConnections": 2,
               "route": "CTA → MLA on a separate ticket",
-              "dateWindow": "2027-06-20"
+              "dateWindow": "2027-06-20",
+              "currentFlightAudit": "Ryanair/Malta Air sells June 20 CTA–MLA nonstops of 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "ryanair-cta-mla": "Official Ryanair route page checked 2026-07-10 sells CTA–MLA on current dates; it does not confirm 2027-06-20",
               "internal-itinerary": "#air-travel and #decisions require CTA–MLA on 2027-06-20 after the Sicily car drop",
               "state-travel": "Italy Level 2 and Malta Level 1 advisories reviewed 2026-07-10",
               "cdc-travel": "CDC Travelers' Health destination guidance for Sicily & Malta; recheck before departure",
-              "google-flights-2027-audit": "Checked 2026-07-19: CTA-MLA verified - Ryanair/Malta Air x3 daily plus KM Malta/ITA nonstop (45-50 min, $45-137); MLA-PIT verified same-day single tickets (SWISS+United via ZRH+ORD 17h07 ~$1,630; Lufthansa+United ~16h; BA overnight ~$985)."
+              "google-flights-2027-audit": "Checked 2026-07-19: CTA-MLA verified - Ryanair/Malta Air x3 daily plus KM Malta/ITA nonstop (45-50 min, $45-137); MLA-PIT verified same-day single tickets (SWISS+United via ZRH+ORD 17h07 ~$1,630; Lufthansa+United ~16h; BA overnight ~$985).",
+              "google-flights-2027-current-audit": "Ryanair/Malta Air sells June 20 CTA–MLA nonstops of 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote."
             },
             "claimType": "proxy"
           },
@@ -15583,9 +15714,9 @@
       },
       "href": "locations/sicily-malta/index.html",
       "readiness": {
-        "id": "exact-2027-schedule-required",
-        "label": "Exact 2027 schedule required",
-        "tone": "warn",
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     },
@@ -15605,7 +15736,7 @@
         "variety": 5,
         "ease": 3,
         "food": 4,
-        "risk": 3,
+        "risk": 4,
         "nights": 5,
         "novelty": 5,
         "pto": 3
@@ -15641,18 +15772,18 @@
           73
         ],
         "noPassport": false,
-        "singleTicket": false,
+        "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 39,
+      "totalBaked": 40,
       "travelWindow": [
         "2027-06-08",
         "2027-06-22"
       ],
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -15730,8 +15861,8 @@
             ]
           },
           "risk": {
-            "score": 3,
-            "rationale": "Lower risk than a multi-country Alpine plan: a single country, one rental car, no open-jaw or intra-Europe flight. Remaining uncertainty is manageable — 2025-2026 proxy fares with no live 2027 quote, a fragile final LJU air leg, and the Vršič Pass's non-guaranteed mid-June opening, each with a stated mitigation.",
+            "score": 4,
+            "rationale": "Exact protected PIT–LJU inventory is selling. The remaining uncertainty is the Vršič Pass and ordinary road/weather disruption, supporting Risk 4/5.",
             "confidence": "high",
             "evidence": [
               "route-readiness"
@@ -15944,7 +16075,10 @@
               "arrivalTransferHours": 0.5,
               "rentalCar": true,
               "eVignetteRequired": true,
-              "note": "One country, one rental car for the whole loop, four bases with ~30 min to ~2h30 drives, no intra-Europe flight and no open-jaw. The only air friction is the two-stop routing into LJU; a mandatory motorway e-vignette applies on the ground."
+              "note": "One country, one rental car for the whole loop, four bases with ~30 min to ~2h30 drives, no intra-Europe flight and no open-jaw. The only air friction is the two-stop routing into LJU; a mandatory motorway e-vignette applies on the ground.",
+              "easeScore": 3,
+              "maxConnections": 2,
+              "singleTicket": true
             },
             "verifiedAt": "2026-07-11",
             "expiresAt": "2027-02-01",
@@ -15977,32 +16111,37 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "current-proxy",
+            "proxyStatus": "confirmed",
             "confidence": "high",
             "sourceRefs": [
               "lju-vce-routing",
               "eu-etias",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "current-proxy",
-              "singleTicket": false,
+              "status": "confirmed",
+              "singleTicket": true,
               "singleTicketAssumption": false,
               "maxConnections": 2,
               "gatewayOptions": "round-trip LJU (two-stop, Lufthansa group via FRA/MUC/VIE) or cheaper single-connection PIT->VCE + ~2h drive",
               "june2027ProtectedTicketVerified": false,
               "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required, children apply without a fee",
               "vrsicOpening": "normally open by mid-June but not guaranteed; check promet.si, Predel/Tarvisio fallback",
-              "note": "Not ready to book. Re-quote LJU vs Venice on ITA Matrix, confirm the Vršič Pass is open near travel, and verify ETIAS status once 2027 inventory opens."
+              "note": "Not ready to book. Re-quote LJU vs Venice on ITA Matrix, confirm the Vršič Pass is open near travel, and verify ETIAS status once 2027 inventory opens.",
+              "currentFlightAudit": "PIT–LJU is available June 8–22 from about $1,348 per traveler with two stops; a British Airways one-stop via Heathrow also appears. The old ‘2027 not bookable’ language is obsolete.",
+              "exact2027FlightsVerified": true,
+              "june2027Verified": true
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "lju-vce-routing": "No PIT-Europe nonstop and no LJU long-haul; two-stop LJU vs single-connection Venice gateway",
               "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
               "internal-itinerary": "slovenia-adriatic/main.json air-travel section and round-trip construction",
-              "google-flights-2027-audit": "Checked 2026-07-19: PIT-LJU bookable NOW for the exact 2027-06-08 date - 2-stop single tickets $536-550 (United+SWISS via IAD/ZRH 13h05; Air Canada+Lufthansa via YUL/FRA 12h05); BA 1-stop via LHR $926."
+              "google-flights-2027-audit": "Checked 2026-07-19: PIT-LJU bookable NOW for the exact 2027-06-08 date - 2-stop single tickets $536-550 (United+SWISS via IAD/ZRH 13h05; Air Canada+Lufthansa via YUL/FRA 12h05); BA 1-stop via LHR $926.",
+              "google-flights-2027-current-audit": "PIT–LJU is available June 8–22 from about $1,348 per traveler with two stops; a British Airways one-stop via Heathrow also appears. The old ‘2027 not bookable’ language is obsolete."
             },
             "claimType": "proxy"
           },
@@ -16129,10 +16268,10 @@
       },
       "href": "locations/slovenia-adriatic/index.html",
       "readiness": {
-        "id": "current-proxy",
-        "label": "Not ready to book",
-        "tone": "info",
-        "bookable": false
+        "id": "confirmed",
+        "label": "Route confirmed",
+        "tone": "good",
+        "bookable": true
       }
     },
     {
@@ -16195,10 +16334,10 @@
         "2027-06-10",
         "2027-06-23"
       ],
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -16564,29 +16703,34 @@
           {
             "id": "route-readiness",
             "category": "route",
-            "proxyStatus": "exact-2027-schedule-required",
+            "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
               "google-flights-pit-nce",
               "internal-itinerary",
               "state-travel",
-              "cdc-travel"
+              "cdc-travel",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "status": "exact-2027-schedule-required",
+              "status": "current-proxy",
               "singleTicket": true,
               "maxConnections": 1,
               "route": "PIT → NCE / MRS → PIT open-jaw",
               "hardReturn": "2027-06-23",
-              "rejectedReturn": "2027-06-24 or later"
+              "rejectedReturn": "2027-06-24 or later",
+              "currentFlightAudit": "PIT–NCE sells June 10–23 from about $1,289 per traveler with one stop, consistent with the existing family band. Reject any MRS return arriving after June 23.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-09",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "google-flights-pit-nce": "Current proxy shows no PIT–Nice nonstop; exact June 2027 open-jaw schedule/fare is unconfirmed",
               "internal-itinerary": "#air-travel and #todo make June 23 PIT arrival a booking permission gate",
               "state-travel": "France advisory review required before booking/departure",
-              "cdc-travel": "France destination health guidance to recheck before departure"
+              "cdc-travel": "France destination health guidance to recheck before departure",
+              "google-flights-2027-current-audit": "PIT–NCE sells June 10–23 from about $1,289 per traveler with one stop, consistent with the existing family band. Reject any MRS return arriving after June 23."
             },
             "claimType": "proxy"
           },
@@ -16855,7 +16999,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -17169,7 +17313,8 @@
               "spain-alhambra-tickets",
               "state-travel",
               "cdc-travel",
-              "eu-etias"
+              "eu-etias",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -17183,17 +17328,21 @@
                 "arrival-day MAD/Seville train with recovery margin",
                 "named Alhambra General tickets with exact Nasrid time",
                 "ETIAS official launch/status recheck"
-              ]
+              ],
+              "currentFlightAudit": "PIT–MAD sells June 3–16 from about $1,092 per traveler with one stop. Confirm AGP–PIT on the same open-jaw ticket before removing the Madrid-train fallback.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-10",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "Spain #air-travel, #getting-around, day-by-day route and explicit heat/activity fallbacks",
               "spain-renfe-madrid-seville": "Current direct-train pattern is an operator proxy only; June 4, 2027 train must be paired to the actual flight after schedules publish",
               "spain-alhambra-tickets": "Official Alhambra system: named tickets, original ID, punctual access at the printed Nasrid time; current General price €22.27 and 2027 tariff subject to change",
               "state-travel": "Spain advisory review required before booking and departure",
               "cdc-travel": "Spain destination health guidance to recheck before departure",
-              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 traveler action remains a recheck, not a confirmed current requirement"
+              "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 traveler action remains a recheck, not a confirmed current requirement",
+              "google-flights-2027-current-audit": "PIT–MAD sells June 3–16 from about $1,092 per traveler with one stop. Confirm AGP–PIT on the same open-jaw ticket before removing the Madrid-train fallback."
             },
             "claimType": "proxy"
           },
@@ -17388,7 +17537,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -17671,7 +17820,10 @@
               "arrivalTransferHours": 2.3,
               "swissRentalCar": false,
               "creteRentalCar": true,
-              "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~2h20 HER-Chania transfer, and a Crete rental car."
+              "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~2h20 HER-Chania transfer, and a Crete rental car.",
+              "easeScore": 2,
+              "maxConnections": 2,
+              "singleTicket": false
             },
             "verifiedAt": "2026-07-11",
             "expiresAt": "2027-05-01",
@@ -17710,7 +17862,8 @@
               "edelweiss-zrh-crete",
               "eu-etias",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -17721,15 +17874,19 @@
               "zrhCreteNonstop": "HER multi-carrier nonstop; CHQ weekly Edelweiss; June 2027 inventory not yet loaded",
               "june2027ProtectedTicketVerified": false,
               "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required for the Schengen legs",
-              "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Crete day once 2027 inventory opens."
+              "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Crete day once 2027 inventory opens.",
+              "currentFlightAudit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells two June 14 ZRH–HER nonstops of about 2h50. Keep the Heraklion-to-Chania drive in the plan.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "edelweiss-zrh-crete": "ZRH-HER and ZRH-CHQ nonstop existence and frequency",
               "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
               "internal-itinerary": "Open-jaw construction and homebound-via-Athens plan",
-              "google-flights-2027-audit": "Checked 2026-07-19: ZRH-HER verified with 4 nonstops on the checked Aug Tuesday (Edelweiss x2, Condor, Chair Airlines; 2h50, from $209)."
+              "google-flights-2027-audit": "Checked 2026-07-19: ZRH-HER verified with 4 nonstops on the checked Aug Tuesday (Edelweiss x2, Condor, Chair Airlines; 2h50, from $209).",
+              "google-flights-2027-current-audit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells two June 14 ZRH–HER nonstops of about 2h50. Keep the Heraklion-to-Chania drive in the plan."
             },
             "claimType": "proxy"
           },
@@ -17936,7 +18093,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -18217,7 +18374,10 @@
               "arrivalTransferHours": 0.8,
               "swissRentalCar": false,
               "sicilyRentalCar": true,
-              "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~50-minute CTA-Taormina transfer, and a Sicily rental car across a Taormina and a Siracusa base."
+              "note": "Rail-based Swiss leg (no car), one intra-Europe flight, a ~50-minute CTA-Taormina transfer, and a Sicily rental car across a Taormina and a Siracusa base.",
+              "easeScore": 2,
+              "maxConnections": 2,
+              "singleTicket": false
             },
             "verifiedAt": "2026-07-11",
             "expiresAt": "2027-05-01",
@@ -18256,7 +18416,8 @@
               "aci-driving-italy",
               "eu-etias",
               "internal-itinerary",
-              "google-flights-2027-audit"
+              "google-flights-2027-audit",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
@@ -18268,15 +18429,19 @@
               "cataniaUsConnectivity": "major airport; clean US connections via FCO/MUC/FRA/ZRH, far less fragile than a weekly island nonstop",
               "june2027ProtectedTicketVerified": false,
               "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required for the Schengen legs",
-              "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Catania day once 2027 inventory opens."
+              "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Catania day once 2027 inventory opens.",
+              "currentFlightAudit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells a June 14 ZRH–CTA nonstop of about 2h05. The larger Catania gateway remains the easier island handoff.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-19",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "aci-driving-italy": "Italian driving/ZTL context for the Sicily ground leg",
               "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
               "internal-itinerary": "Open-jaw construction and Catania-connection plan",
-              "google-flights-2027-audit": "Checked 2026-07-19: ZRH-CTA Edelweiss/SWISS nonstop verified selling (2h10, $276, Tuesday served); June 2027 beyond window."
+              "google-flights-2027-audit": "Checked 2026-07-19: ZRH-CTA Edelweiss/SWISS nonstop verified selling (2h10, $276, Tuesday served); June 2027 beyond window.",
+              "google-flights-2027-current-audit": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells a June 14 ZRH–CTA nonstop of about 2h05. The larger Catania gateway remains the easier island handoff."
             },
             "claimType": "proxy"
           },
@@ -18455,8 +18620,8 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 10000,
-        "ceilUsd": 17400,
+        "floorUsd": 12200,
+        "ceilUsd": 18400,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000
       },
@@ -18483,7 +18648,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-07-22",
+        "reviewedAt": "2026-08-08",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -18506,7 +18671,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The reconciled 6-line-item family budget is $10,000–$17,400 (sum tolerance ±$150); it is a planning band, not a live quote.",
+            "rationale": "The exact-date flight refresh moves the reconciled family band to $12,200–$18,400. The Budget 1/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -18600,22 +18765,24 @@
             "proxyStatus": "current-proxy",
             "confidence": "medium",
             "sourceRefs": [
-              "internal-itinerary"
+              "internal-itinerary",
+              "google-flights-2027-current-audit"
             ],
             "value": {
-              "lowUsd": 10000,
+              "lowUsd": 12200,
               "expectedUsd": null,
-              "highUsd": 17400,
+              "highUsd": 18400,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 6,
-              "arithmetic": "10000–17400 line-item sum; tolerance 150"
+              "arithmetic": "7000–8000 + 1100–2000 + 1650–3400 + 1350–2250 + 700–2000 + 350–700 = 12150–18350; displayed 12200–18400"
             },
-            "verifiedAt": "2026-07-09",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
-              "internal-itinerary": "Turkish Riviera; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+              "internal-itinerary": "Turkish Riviera; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+              "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible."
             },
             "claimType": "proxy"
           },
@@ -18773,21 +18940,26 @@
             "sourceRefs": [
               "internal-itinerary",
               "state-travel",
-              "cdc-travel"
+              "cdc-travel",
+              "google-flights-2027-current-audit"
             ],
             "value": {
               "status": "current-proxy",
               "singleTicket": true,
               "maxConnections": 2,
               "route": "Turkish Riviera",
-              "dateWindow": "2027-06-10 → 2027-06-23"
+              "dateWindow": "2027-06-10 → 2027-06-23",
+              "currentFlightAudit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible.",
+              "exact2027FlightsVerified": false,
+              "june2027Verified": false
             },
-            "verifiedAt": "2026-07-09",
-            "expiresAt": "2026-12-31",
+            "verifiedAt": "2026-08-08",
+            "expiresAt": "2026-09-08",
             "sourceLocators": {
               "internal-itinerary": "#air-travel and #getting-around require AYT-in/DLM-out but contain only planning bands, not June 2027 bookings",
               "state-travel": "Türkiye Level 2 advisory issued 2026-06-09 and reviewed 2026-07-10; no-travel area is the Syria/Iraq border, not this southwest-coast route",
-              "cdc-travel": "CDC Travelers' Health destination guidance for Turkish Riviera; recheck before departure"
+              "cdc-travel": "CDC Travelers' Health destination guidance for Turkish Riviera; recheck before departure",
+              "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible."
             },
             "claimType": "proxy"
           },
@@ -18906,15 +19078,15 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 10000,
+            "lowUsd": 12200,
             "expectedUsd": null,
-            "highUsd": 17400,
+            "highUsd": 18400,
             "distribution": "planning-band",
             "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
-          "confidence": "medium",
+          "confidence": "high",
           "claimType": "derived",
           "sourceRefs": [
             "internal-itinerary"
