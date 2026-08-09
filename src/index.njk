@@ -383,7 +383,7 @@ footer a{color:var(--muted)}
 .sl-excluded-head h3{font-family:'Spectral',Georgia,serif;font-weight:700;color:#1c2620;font-size:clamp(1.3rem,3vw,1.7rem);line-height:1.15;margin:0 0 8px}
 .sl-excluded-head p{margin:0;color:#5b625a;font-size:.92rem;line-height:1.5}
 /* SEPARATE TRIP */
-#seattle-rainier{border:0;border-radius:22px;padding:0;margin-top:56px;overflow:hidden;background:#1d2928;box-shadow:var(--shadow)}
+.separate-trip-section{border:0;border-radius:22px;padding:0;margin-top:56px;overflow:hidden;background:#1d2928;box-shadow:var(--shadow)}
 .separate-trip-card{display:grid;grid-template-columns:minmax(280px,.9fr) minmax(0,1.1fr);min-height:300px;color:#fff;text-decoration:none}
 .separate-trip-photo{position:relative;min-height:300px;overflow:hidden;background:#43534e}
 .separate-trip-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,18,18,.02),rgba(9,18,18,.42))}
@@ -600,6 +600,8 @@ footer a{color:var(--muted)}
     <summary><span>Sections</span></summary>
     <div class="site-nav-links">
       <a href="#seattle-rainier">Seattle + Rainier</a>
+      <a href="#seattle-olympic">Seattle + Olympic</a>
+      <a href="#seattle-north-cascades">Seattle + North Cascades</a>
       <a href="#trip-length">Short vs Full</a>
       <a href="#short-trips">Short Trips</a>
       <a href="#trips">Trips</a>
@@ -627,7 +629,7 @@ footer a{color:var(--muted)}
     </div>
   </section>
 
-  <section id="seattle-rainier" aria-labelledby="seattle-rainier-title">
+  <section class="separate-trip-section" id="seattle-rainier" aria-labelledby="seattle-rainier-title">
     <a class="separate-trip-card" href="mt-rainier-seattle-2026.html">
       <div class="separate-trip-photo">
         <img src="assets/img/mt-rainier-seattle-2026/google_hero_car_1.jpg" alt="Mount Rainier rising above the surrounding landscape" loading="lazy">
@@ -645,6 +647,9 @@ footer a{color:var(--muted)}
         <span class="separate-trip-cta">Open the itinerary →</span>
       </div>
     </a>
+  </section>
+
+  <section class="separate-trip-section" id="seattle-olympic" aria-labelledby="seattle-olympic-title">
     <a class="separate-trip-card" href="seattle-olympic-2026.html">
       <div class="separate-trip-photo">
         <img src="assets/img/seattle-olympic-2026/hurricane-02.jpg" alt="Olympic Mountains beneath dramatic sunset clouds" loading="lazy">
@@ -652,7 +657,7 @@ footer a{color:var(--muted)}
       </div>
       <div class="separate-trip-body">
         <p class="eyebrow">Couples trip · September 4–8, 2026</p>
-        <h2>Olympic Peninsula + Seattle</h2>
+        <h2 id="seattle-olympic-title">Olympic Peninsula + Seattle</h2>
         <p>Three nights in Port Angeles for Hurricane Ridge, Lake Crescent, and the Strait—the most dependable current substitute for Rainier-scale scenery.</p>
         <div class="separate-trip-tags" aria-label="Trip highlights">
           <span>4 nights</span>
@@ -662,6 +667,9 @@ footer a{color:var(--muted)}
         <span class="separate-trip-cta">Open the alternate →</span>
       </div>
     </a>
+  </section>
+
+  <section class="separate-trip-section" id="seattle-north-cascades" aria-labelledby="seattle-north-cascades-title">
     <a class="separate-trip-card" href="seattle-north-cascades-2026.html">
       <div class="separate-trip-photo">
         <img src="assets/img/seattle-north-cascades-2026/maple-04.jpg" alt="Golden larches and rugged peaks on Maple Pass" loading="lazy">
@@ -669,7 +677,7 @@ footer a{color:var(--muted)}
       </div>
       <div class="separate-trip-body">
         <p class="eyebrow">Couples trip · September 4–8, 2026</p>
-        <h2>North Cascades + Seattle</h2>
+        <h2 id="seattle-north-cascades-title">North Cascades + Seattle</h2>
         <p>Diablo Lake, Maple Pass, Washington Pass, and the Methow Valley—with explicit exit rules for the active Luna and Border 2 fires.</p>
         <div class="separate-trip-tags" aria-label="Trip highlights">
           <span>4 nights</span>
