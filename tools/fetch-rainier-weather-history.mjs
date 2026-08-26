@@ -12,9 +12,9 @@ const locations = [
   },
   {
     key: 'seattle',
-    label: '1400 Hubbell Place, Seattle',
-    latitude: 47.6122,
-    longitude: -122.3298,
+    label: 'W Seattle · 1112 4th Ave',
+    latitude: 47.6075,
+    longitude: -122.3339,
     tripSegment: 'Sep 7–8 Seattle segment'
   }
 ];
