@@ -166,6 +166,16 @@ function tgGallery(label, items) {
   return `<div class="tg-gallery" data-gallery>${buttons}</div>`;
 }
 
+function pgGuideGallery(label, items) {
+  const buttons = items.map(([file, cap], i) => {
+    const src = `assets/img/mt-rainier-seattle-2026/${file}`;
+    const hero = i === 0 ? ' pg-hero' : '';
+    const count = i === 0 ? `<span class="pg-gcount">${items.length} photos</span>` : '';
+    return `<button class="pg-gitem${hero}" type="button" data-full="${src}" data-cap="${cap}" style="background-image:url('${src}')" aria-label="Open photo ${i + 1} of ${label}">${count}</button>`;
+  }).join('');
+  return `<div class="pg-gallery" data-gallery>${buttons}</div>`;
+}
+
 function tgTrail(t) {
   const facts = t.facts.map(([k, v]) => `<div class="tg-fact"><span>${k}</span><b>${v}</b></div>`).join('');
   const links = t.links.map(([label, href]) => `<a href="${href}" target="_blank" rel="noreferrer">${label} &#8599;</a>`).join('');
@@ -185,7 +195,7 @@ function day(d) {
 
 replaceOnce(
   '.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}',
-  '.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}\n.alt-discovery{margin-top:7px}.trail-discovery{margin-top:8px;flex-wrap:wrap;overflow-x:visible}.trail-discovery a,.alt-discovery a{font-size:.65rem;padding:4px 9px}'
+  '.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}\n.alt-discovery{margin-top:7px}.trail-discovery{margin-top:8px;flex-wrap:wrap;overflow-x:visible}.trail-discovery a,.alt-discovery a{font-size:.65rem;padding:4px 9px}\n.site-home{display:flex;align-items:center;justify-content:center;min-height:40px;margin:0 2px 10px;padding:8px 10px;border:1px solid var(--nav-line);border-radius:10px;background:rgba(246,241,231,.08);color:#fff!important;font-size:.76rem;letter-spacing:.03em}.site-home:hover{background:var(--nav-active)!important;color:var(--nav-active-ink)!important;border-color:var(--nav-active)!important}@media(min-width:960px){.site-nav{display:flex;flex-direction:column}.site-nav>.site-nav-menu{height:auto;flex:1 1 auto}.site-nav-links{max-height:calc(100vh - 142px)}}@media(max-width:959px){.site-home{max-width:1180px;margin:0 auto 8px}}'
 );
 
 replaceOnce('<p class="pv-lead">Four nights built around the views that matter most: Pinnacle Saddle on arrival afternoon, Skyline above Paradise, Mount Fremont Lookout through sunset, and an unhurried Seattle handoff the next morning.</p>', '<p class="pv-lead">Your paid Packwood cabin stays. The trip now runs entirely on the open south and west sides: Bench and Snow Lakes on arrival, Skyline above Paradise, Comet Falls and Van Trump Park, then Tipsoo and Naches Peak before Seattle.</p>');
@@ -196,7 +206,7 @@ replaceOnce('<div class="pv-stats"><div><b>3</b><span>Priority hikes</span></div
 // are; only the two captions and one alt that named closed terrain are corrected.
 replaceOnce('alt="Mount Rainier rising above a glowing cloud inversion at sunset near Mount Fremont Lookout"', 'alt="Mount Rainier rising above a glowing cloud inversion at sunset"');
 
-replaceBlock('<nav class="site-nav" aria-label="Page sections">', '</nav>', `<nav class="site-nav" aria-label="Page sections"><details class="site-nav-menu" open><summary>Packwood / Rainier / Seattle</summary><div class="site-nav-links"><a href="#top">Overview</a><a href="#closure-update">Closures</a><a href="#arrangements">Bookings</a><a href="#stays">Lodging</a><a href="#calendar">Calendar</a><a href="#map">Map</a><a href="#recommended-trails">Best hikes</a><a href="#trail-guide">Trail guide</a><a href="#closed-trails">What is closed</a><a href="#saved-ideas">Saved ideas</a><a href="#itinerary">Day by day</a><a href="#day1">Friday</a><a href="#day2">Saturday</a><a href="#day3">Sunday</a><a href="#day4">Monday</a><a href="#day4c">Seattle max</a><a href="#day5">Tuesday</a><a href="#photo-guide">Photo guide</a><a href="#packing">Packing</a><a href="#food-guide">Food</a><a href="#insider-tips">Tips</a><a href="#sources">Sources</a></div></details></nav>`);
+replaceBlock('<nav class="site-nav" aria-label="Page sections">', '</nav>', `<nav class="site-nav" aria-label="Page sections"><a class="site-home" href="index.html">&larr; TravelPlanner home</a><details class="site-nav-menu" open><summary>Packwood / Rainier / Seattle</summary><div class="site-nav-links"><a href="#top">Overview</a><a href="#closure-update">Closures</a><a href="#arrangements">Bookings</a><a href="#stays">Lodging</a><a href="#calendar">Calendar</a><a href="#map">Map</a><a href="#recommended-trails">Best hikes</a><a href="#trail-guide">Trail guide</a><a href="#closed-trails">What is closed</a><a href="#saved-ideas">Saved ideas</a><a href="#itinerary">Day by day</a><a href="#day1">Friday</a><a href="#day2">Saturday</a><a href="#day3">Sunday</a><a href="#day4">Monday</a><a href="#day4c">Seattle max</a><a href="#day5">Tuesday</a><a href="#photo-guide">Photo guide</a><a href="#packing">Packing</a><a href="#food-guide">Food</a><a href="#insider-tips">Tips</a><a href="#sources">Sources</a></div></details></nav>`);
 
 /* --------------------------------------------------------- new sections */
 
@@ -258,8 +268,22 @@ const waterfallPhotos = carousel('day3-car', [
   photo('google_christine_falls_02.jpg', 'https://www.flickr.com/photos/phils-pixels/38704784754/', 'Time Flows Like a River', `Phil Kuntz &middot; ${G}`, 'Long-exposure of Christine Falls dropping through a mossy gorge')
 ]);
 
-const seattleMondayPhotos = carousel('day4b-car', figuresFor('google_c4b_', 5));
-const seattleMaxPhotos = carousel('day4c-car', figuresFor('google_c4b_', 5));
+const seattleMondayPhotos = carousel('day4b-car', [
+  photo('google_seattle_monday_pike_flowers_01.jpg', 'https://visitseattle.org/things-to-do/sightseeing/waterfrontexpansion/', 'Flowers at Pike Place', `Brian Jannsen / Visit Seattle &middot; ${G}`, 'Colorful flower bouquets and shoppers inside Pike Place Market'),
+  photo('google_seattle_monday_overlook_walk_01.jpg', 'https://www.seattle.gov/waterfront/projects/overlook-walk', 'Overlook Walk to Elliott Bay', `Waterfront Seattle &middot; ${G}`, 'Overlook Walk descending through landscaped terraces toward Elliott Bay and the Seattle Great Wheel'),
+  photo('google_seattle_monday_pier_62_01.jpg', 'https://waterfrontparkseattle.org/pier-62/', 'Pier 62 on Elliott Bay', `Robert Wade / Waterfront Park Seattle &middot; ${G}`, 'Open promenade at Pier 62 with the Seattle skyline and Great Wheel beyond'),
+  photo('google_seattle_monday_matts_market_01.jpg', 'https://www.timeout.com/seattle/restaurants/matts-in-the-market', 'Matt&rsquo;s Above the Market', `Time Out Seattle &middot; ${G}`, 'Warm dining room at Matt&rsquo;s in the Market overlooking the Pike Place sign'),
+  photo('google_seattle_monday_kerry_park_01.jpg', 'https://www.flickr.com/photos/chatterstone/15789975841/', 'Rainier from Kerry Park', `Grant &middot; ${G}`, 'Space Needle, downtown Seattle, and Mount Rainier aligned at dusk from Kerry Park')
+]);
+const seattleMaxPhotos = carousel('day4c-car', [
+  photo('google_seattle_max_pike_sign_01.jpg', 'https://www.flickr.com/photos/stonebridgedapper/3812261243/', 'The Public Market Entrance', `StoneBridgeDapper &middot; ${G}`, 'Pike Place Market&rsquo;s red neon clock and Public Market Center sign above the busy entrance'),
+  photo('google_seattle_max_pike_vendor_01.jpg', 'https://www.flickr.com/photos/tormodspictures/15291048879/', 'Market Vendors at Work', `Tormod Ulsberg &middot; ${G}`, 'Pike Place produce and flower vendors working beneath hanging peppers and market signs'),
+  photo('google_seattle_max_waterfront_01.jpg', 'https://www.soundtransit.org/blog/lifestyle/album-journey-seattle-waterfront-westlake-station-carnavas', 'Waterfront and Pier 62', `Sound Transit &middot; ${G}`, 'Seattle waterfront, Pier 62, Great Wheel, and downtown towers seen from above'),
+  photo('google_seattle_max_smith_tower_01.jpg', 'https://www.indefiniteadventure.com/seattle-smith-tower-observatory-access-ticket/', 'Smith Tower Observatory', `Indefinite Adventure &middot; ${G}`, 'Visitors having a drink beside the arched windows of Smith Tower Observatory'),
+  photo('google_seattle_max_kerry_park_01.jpg', 'https://www.flickr.com/photos/esteecha/15062653067/', 'Kerry Park at Blue Hour', `Estee Cha &middot; ${G}`, 'Seattle city lights, the Space Needle, and Mount Rainier at blue hour from Kerry Park'),
+  photo('google_seattle_max_nest_01.jpg', 'https://visitseattle.org/blog/did-someone-say-rooftop-bar/', 'The Nest over Elliott Bay', `Visit Seattle &middot; ${G}`, 'The Nest rooftop lounge overlooking Elliott Bay, the Great Wheel, and the Olympic Mountains'),
+  photo('google_seattle_max_pike_night_01.jpg', 'https://www.flickr.com/photos/sunrisesoup/23887531675/', 'Pike Place after Dark', `sunrisesoup &middot; ${G}`, 'Pike Place Market&rsquo;s neon sign glowing after dark beside the market arcade')
+]);
 const seattleTuesdayPhotos = carousel('day5-car', figuresFor('google_c5_', 5));
 
 /* ----------------------------------------------------------- trail guide */
@@ -530,7 +554,21 @@ trailGuide = trailGuide.replace(
 
 let photoGuide = sectionFromBaseline('photo-guide');
 photoGuide = dropArticles(photoGuide, 'pg-spot', ['Mount Fremont Lookout & Sunrise', 'First + Second Burroughs']);
+photoGuide = photoGuide.replace(
+  /<div class="pg-gallery" data-gallery><button[^>]+google_c4b_1\.jpg[\s\S]*?<\/div>/,
+  pgGuideGallery('Seattle city itinerary', [
+    ['google_seattle_guide_pike_sign_01.jpg', `Public Market Center &middot; Kay &middot; ${G}`],
+    ['google_seattle_guide_fish_counter_01.jpg', `Fish Counter Theater &middot; dr.&#333;zda &middot; ${G}`],
+    ['google_seattle_guide_overlook_walk_01.jpg', `Overlook Walk to Elliott Bay &middot; Engineering News-Record &middot; ${G}`],
+    ['google_seattle_guide_nest_patio_01.jpg', `The Nest Rooftop Patio &middot; Chris &amp; Sara &middot; ${G}`],
+    ['google_seattle_guide_pike_sunset_01.jpg', `Market Sign at Sunset &middot; Katie Killian &middot; ${G}`]
+  ])
+);
 photoGuide = edit(photoGuide, [
+  ['<p>One night in the city. Everything hinges on blue hour at Kerry Park; the market and waterfront are the all-weather fallback.</p>',
+   '<p>One night in the city, photographed as the itinerary actually unfolds: Pike Place, Overlook Walk and the waterfront, one Kerry Park payoff, then dinner and a rooftop drink.</p>'],
+  ['<p class="pg-tag">The skyline frame</p>', '<p class="pg-tag">The city sequence</p>'],
+  ['<h3>Kerry Park &amp; Pike Place</h3>', '<h3>Pike Place to the rooftop</h3>'],
   ['<h3>The exact light plan &mdash; Fremont sunset &amp; Seattle blue hour</h3>', '<h3>The exact light plan &mdash; Reflection Lakes dawn &amp; Seattle blue hour</h3>'],
   ['<p>Rainier makes its own weather, so the whole plan flexes on whether the summit is out. Protect Mount Fremont for Sunday golden hour and sunset, keep Pinnacle/Skyline as clear-mountain priorities, and treat Tipsoo as a quick Monday bonus. Reflection Lakes remains in this photo reference only; it is no longer worth a dedicated dawn alarm.</p>',
    '<p>Rainier makes its own weather, so the whole plan flexes on whether the summit is out. With Sunrise and the Fremont lookout closed, the signature frames move to the south side: Reflection Lakes and Faraway Rock in still morning air, Skyline for glacier scale, Comet Falls and Van Trump Park for water and ice, and Tipsoo as a quick Monday bonus.</p>'],
