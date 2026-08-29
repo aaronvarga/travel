@@ -185,7 +185,7 @@ function day(d) {
 
 replaceOnce(
   '.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}',
-  '.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}\n.alt-discovery{margin-top:7px}.trail-discovery{margin-top:8px}.trail-discovery a,.alt-discovery a{font-size:.65rem;padding:4px 9px}'
+  '.altbox .alt-list a{text-decoration:none}.altbox .alt-list b{color:var(--ink)}\n.alt-discovery{margin-top:7px}.trail-discovery{margin-top:8px;flex-wrap:wrap;overflow-x:visible}.trail-discovery a,.alt-discovery a{font-size:.65rem;padding:4px 9px}'
 );
 
 replaceOnce('<p class="pv-lead">Four nights built around the views that matter most: Pinnacle Saddle on arrival afternoon, Skyline above Paradise, Mount Fremont Lookout through sunset, and an unhurried Seattle handoff the next morning.</p>', '<p class="pv-lead">Your paid Packwood cabin stays. The trip now runs entirely on the open south and west sides: Bench and Snow Lakes on arrival, Skyline above Paradise, Comet Falls and Van Trump Park, then Tipsoo and Naches Peak before Seattle.</p>');
@@ -290,6 +290,8 @@ const benchSnowCard = tgTrail({
   ],
   links: [
     ['NPS Bench &amp; Snow Lake', 'https://www.nps.gov/mora/planyourvisit/bench-snow-lake-trail.htm'],
+    ['WTA route + trip reports', 'https://www.wta.org/go-hiking/hikes/bench-and-snow-lakes'],
+    ['AllTrails reviews', 'https://www.alltrails.com/trail/us/washington/bench-lake'],
     ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],
     ['NPS fire closures', 'https://www.nps.gov/mora/learn/news/fire.htm'],
     ['Cabin &rarr; trailhead', 'https://www.google.com/maps/dir/?api=1&amp;origin=46.6505,-121.63574&amp;destination=46.7649,-121.7038']
@@ -322,6 +324,9 @@ const cometCard = tgTrail({
   ],
   links: [
     ['NPS Comet Falls / Van Trump', 'https://www.nps.gov/mora/planyourvisit/comet-falls-van-trump-park-trail.htm'],
+    ['WTA Comet Falls route', 'https://www.wta.org/go-hiking/hikes/comet-falls'],
+    ['WTA Van Trump Park route', 'https://www.wta.org/go-hiking/hikes/van-trump-park'],
+    ['AllTrails reviews', 'https://www.alltrails.com/trail/us/washington/comet-falls-via-van-trump-trail'],
     ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],
     ['NPS Rampart Ridge fallback', 'https://www.nps.gov/mora/planyourvisit/rampart-ridge-trail.htm'],
     ['Cabin &rarr; trailhead', 'https://www.google.com/maps/dir/?api=1&amp;origin=46.6505,-121.63574&amp;destination=46.7791,-121.7806']
@@ -333,7 +338,10 @@ const eagleCard = tgTrail({
   title: 'Eagle Peak Saddle', status: 'Group opt-in', statusCls: 'alt',
   gallery: [
     ['google_eagle_peak_01.jpg', `The Playground (Tatoosh from Eagle Peak) &middot; Rich Border &middot; ${G}`],
-    ['google_eagle_peak_02.jpg', `Life in the Clouds &middot; Rich Border &middot; ${G}`]
+    ['google_eagle_peak_02.jpg', `Life in the Clouds &middot; Rich Border &middot; ${G}`],
+    ['google_eagle_peak_03.jpg', `Fog Below the Saddle &middot; T. Kirkendall and V. Spring &middot; ${G}`],
+    ['google_eagle_peak_04.jpg', `The Final Meadow Climb &middot; T. Kirkendall and V. Spring &middot; ${G}`],
+    ['google_eagle_peak_05.jpg', `Rainier from Eagle Peak Saddle &middot; T. Kirkendall and V. Spring &middot; ${G}`]
   ],
   facts: [
     ['Official route', '7.2 mi &middot; 2,955 ft gain<br>maintained to the saddle only'],
@@ -351,6 +359,8 @@ const eagleCard = tgTrail({
   ],
   links: [
     ['NPS Eagle Peak brochure', 'https://www.nps.gov/mora/planyourvisit/upload/Eagle-Peak-Trail-Dec18.pdf'],
+    ['WTA route + trip reports', 'https://www.wta.org/go-hiking/hikes/eagle-peak-saddle'],
+    ['AllTrails reviews', 'https://www.alltrails.com/trail/us/washington/eagle-peak-trail'],
     ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],
     ['Cabin &rarr; Longmire', 'https://www.google.com/maps/dir/?api=1&amp;origin=46.6505,-121.63574&amp;destination=46.7497,-121.8128']
   ]
@@ -358,7 +368,14 @@ const eagleCard = tgTrail({
 
 const shrinerCard = tgTrail({
   id: 'tg-shriner', label: 'Shriner Peak', kicker: 'Best open lookout &middot; strenuous full-day swap',
-  title: 'Shriner Peak Fire Lookout', status: 'Major-hike alternate', statusCls: 'alt', gallery: [],
+  title: 'Shriner Peak Fire Lookout', status: 'Major-hike alternate', statusCls: 'alt',
+  gallery: [
+    ['google_shriner_peak_01.jpg', `Balcony Above Rainier &middot; T. Kirkendall and V. Spring &middot; ${G}`],
+    ['google_shriner_peak_02.jpg', `Trail from the Lookout &middot; T. Kirkendall and V. Spring &middot; ${G}`],
+    ['google_shriner_peak_03.jpg', `Shriner Peak Lookout &middot; T. Kirkendall and V. Spring &middot; ${G}`],
+    ['google_shriner_peak_04.jpg', `Sunrise Above the Clouds &middot; WTA hiker report &middot; ${G}`],
+    ['google_shriner_peak_05.jpg', `Rainier from Shriner Peak &middot; Hiking Tahoma &middot; ${G}`]
+  ],
   facts: [
     ['Official route', '8 mi &middot; 3,434 ft gain<br>out and back to the lookout'],
     ['Difficulty + time', 'Strenuous &middot; about 5 hr<br>steep, exposed and waterless'],
@@ -374,14 +391,24 @@ const shrinerCard = tgTrail({
   ],
   links: [
     ['NPS Shriner Peak', 'https://www.nps.gov/mora/planyourvisit/shriner-peak.htm'],
+    ['WTA route + trip reports', 'https://www.wta.org/go-hiking/hikes/shriner-peak'],
+    ['AllTrails reviews', 'https://www.alltrails.com/trail/us/washington/shriner-peak-lookout-trail'],
     ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],
-    ['NPS road status', 'https://www.nps.gov/mora/planyourvisit/road-status.htm']
+    ['NPS road status', 'https://www.nps.gov/mora/planyourvisit/road-status.htm'],
+    ['Cabin &rarr; trailhead', 'https://www.google.com/maps/dir/?api=1&amp;origin=46.6505,-121.63574&amp;destination=46.8018,-121.5551']
   ]
 });
 
 const rampartCard = tgTrail({
   id: 'tg-rampart', label: 'Rampart Ridge', kicker: 'Best dependable Plan B &middot; lower Longmire loop',
-  title: 'Rampart Ridge Loop', status: 'Default fallback', statusCls: 'alt', gallery: [],
+  title: 'Rampart Ridge Loop', status: 'Default fallback', statusCls: 'alt',
+  gallery: [
+    ['google_rampart_ridge_01.jpg', `Rainier Along Rampart Ridge &middot; NPS / E. Brouwer &middot; ${G}`],
+    ['google_rampart_ridge_02.jpg', `Mountain Through the Firs &middot; Brittany Burnett &middot; ${G}`],
+    ['google_rampart_ridge_03.jpg', `Tumtum Peak and Nisqually Valley &middot; NPS / S. Redman &middot; ${G}`],
+    ['google_rampart_ridge_04.jpg', `Rainier from the Ridge &middot; NPS &middot; ${G}`],
+    ['google_rampart_ridge_05.jpg', `Longmire Forest Light &middot; Rebecca Latson &middot; ${G}`]
+  ],
   facts: [
     ['Official route', '4.6 mi &middot; 1,339 ft gain<br>clockwise loop from Longmire'],
     ['Difficulty + time', 'Moderate &middot; about 2.5 hr<br>steep opening, easier ridge'],
@@ -397,13 +424,23 @@ const rampartCard = tgTrail({
   ],
   links: [
     ['NPS Rampart Ridge', 'https://www.nps.gov/mora/planyourvisit/rampart-ridge-trail.htm'],
-    ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm']
+    ['WTA route + trip reports', 'https://www.wta.org/go-hiking/hikes/rampart-ridge-loop'],
+    ['AllTrails reviews', 'https://www.alltrails.com/trail/us/washington/rampart-ridge-loop'],
+    ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],
+    ['Cabin &rarr; Longmire', 'https://www.google.com/maps/dir/?api=1&amp;origin=46.6505,-121.63574&amp;destination=46.7497,-121.8106']
   ]
 });
 
 const lakesCard = tgTrail({
   id: 'tg-lakes-faraway', label: 'Lakes Trail', kicker: 'Best late-arrival save &middot; Reflection Lakes',
-  title: 'Lakes Trail + Faraway Rock', status: 'Friday Plan B', statusCls: 'alt', gallery: [],
+  title: 'Lakes Trail + Faraway Rock', status: 'Friday Plan B', statusCls: 'alt',
+  gallery: [
+    ['google_lakes_faraway_01.jpg', `Twilight at Reflection Lakes &middot; Firefall Photography &middot; ${G}`],
+    ['google_lakes_faraway_02.jpg', `The Perfect Mirror &middot; Rebecca Latson &middot; ${G}`],
+    ['google_lakes_faraway_03.jpg', `Golden Forest Reflection &middot; NW Adventure Rentals &middot; ${G}`],
+    ['google_lakes_faraway_04.jpg', `Storm Light on Rainier &middot; Craig Goodwin &middot; ${G}`],
+    ['google_lakes_faraway_05.jpg', `Quiet Water at Reflection Lakes &middot; The National Parks Experience &middot; ${G}`]
+  ],
   facts: [
     ['Official route', 'About 3 mi loop<br>Reflection Lakes to Faraway Rock'],
     ['Difficulty + time', 'Moderate &middot; 1.5&ndash;2 hr<br>roots, rocks and steep east side'],
@@ -419,13 +456,24 @@ const lakesCard = tgTrail({
   ],
   links: [
     ['NPS Reflection Lakes + Lakes Trail', 'https://www.nps.gov/places/reflection-lakes.htm'],
-    ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm']
+    ['WTA Faraway Rock route', 'https://www.wta.org/go-hiking/hikes/faraway-rock'],
+    ['WTA full Lakes Trail loop', 'https://www.wta.org/go-hiking/hikes/reflection-lakes'],
+    ['AllTrails reviews', 'https://www.alltrails.com/trail/us/washington/faraway-rock-via-skyline-and-mazama-ridge-trail'],
+    ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],
+    ['Cabin &rarr; Reflection Lakes', 'https://www.google.com/maps/dir/?api=1&amp;origin=46.6505,-121.63574&amp;destination=46.7689,-121.7240']
   ]
 });
 
 const silverCard = tgTrail({
   id: 'tg-silver-falls', label: 'Silver Falls', kicker: 'Best smoke / cloud fallback &middot; low forest',
-  title: 'Silver Falls from Grove Parking', status: 'Weather fallback', statusCls: 'alt', gallery: [],
+  title: 'Silver Falls from Grove Parking', status: 'Weather fallback', statusCls: 'alt',
+  gallery: [
+    ['google_silver_falls_01.jpg', `Turquoise Water at Silver Falls &middot; WTA hiker report &middot; ${G}`],
+    ['google_silver_falls_02.jpg', `Falls Beneath the Old Growth &middot; Anna Roth / WTA &middot; ${G}`],
+    ['google_silver_falls_03.jpg', `Ohanapecosh River Trail &middot; Earth Trekkers &middot; ${G}`],
+    ['google_silver_falls_04.jpg', `Silver Falls in the Forest &middot; Ordinary Adventures &middot; ${G}`],
+    ['google_silver_falls_05.jpg', `Spring Flow at Silver Falls &middot; NPS / K. Loving &middot; ${G}`]
+  ],
   facts: [
     ['Official route', '2 mi &middot; 300 ft gain<br>out and back during campground closure'],
     ['Difficulty + time', 'Moderate &middot; about 1 hr<br>old growth + 60-foot falls'],
@@ -442,7 +490,10 @@ const silverCard = tgTrail({
   links: [
     ['NPS current Grove trailhead access', 'https://www.nps.gov/places/grove-of-the-patriarchs-trailhead.htm'],
     ['NPS Silver Falls', 'https://www.nps.gov/places/silver-falls.htm'],
-    ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm']
+    ['WTA route + current caveat', 'https://www.wta.org/go-hiking/hikes/silver-falls-loop'],
+    ['AllTrails reviews', 'https://www.alltrails.com/trail/us/washington/silver-falls-loop-trail'],
+    ['Live trail conditions', 'https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],
+    ['Cabin &rarr; Grove parking', 'https://www.google.com/maps/dir/?api=1&amp;origin=46.6505,-121.63574&amp;destination=46.7330,-121.5693']
   ]
 });
 
