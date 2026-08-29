@@ -6,10 +6,11 @@
  *   on demand as the user visits pages (no bulk pre-warming).
  * Cache names are versioned; bump VERSION on release to invalidate. */
 'use strict';
-const VERSION = 'tp-v12';
+const VERSION = 'tp-v15';
 const SHELL = VERSION + '-shell';
 const TILES = VERSION + '-tiles';
 const IMGS = VERSION + '-imgs';
+const TRIPS = VERSION + '-trip-';
 const imageAccess = new Map();
 
 // Paths are relative to sw.js (site root), so they resolve under any base path.
@@ -32,6 +33,8 @@ const CORE = [
   'assets/js/itinerary.js?v=20260710-gallery-full',
   'assets/js/builder.js?v=20260712-composer',
   'assets/js/composer-shell.js?v=20260712-parity-2',
+  'assets/js/pwa.js?v=20260829-offline-trips-2',
+  'manifest.webmanifest',
   'assets/trips-summary.json',
   'assets/rank-analysis.json',
   'assets/section-status.json',
@@ -61,7 +64,7 @@ self.addEventListener('fetch', (e) => {
 
   if (url.hostname === 'tiles.openfreemap.org') {
     e.respondWith(cacheFirst(req, TILES, 500));
-  } else if (url.hostname === 'images.unsplash.com' || url.hostname.endsWith('staticflickr.com')) {
+  } else if (req.destination === 'image' || url.hostname === 'images.unsplash.com' || url.hostname.endsWith('staticflickr.com')) {
     e.respondWith(cacheFirst(req, IMGS, 250));
   } else if (url.origin === self.location.origin && /\/assets\/(?:generated\/images|img)\//.test(url.pathname)) {
     // Photos are always isolated from the app shell and bounded. Archival
@@ -74,27 +77,94 @@ self.addEventListener('fetch', (e) => {
     e.respondWith(networkFirst(req, SHELL));
   } else if (url.origin === self.location.origin) {
     e.respondWith(staleWhileRevalidate(req, SHELL));
+  } else if (['style', 'script', 'font'].includes(req.destination)) {
+    // Explicitly saved trips may contain third-party fonts or libraries. Use
+    // the network while online, then fall back to the pinned trip package.
+    e.respondWith(fetch(req).catch(() => caches.match(req)));
   }
 });
 
 self.addEventListener('message', (event) => {
-  if (event.data?.type !== 'CACHE_TRIP' || !Array.isArray(event.data.urls)) return;
-  const urls = [...new Set(event.data.urls)].slice(0, 81);
-  event.waitUntil(Promise.allSettled(urls.map(async (value) => {
-    const url = new URL(value, self.location.origin);
-    if (url.origin !== self.location.origin) return;
-    const request = new Request(url.href);
-    const response = await fetch(request);
-    if (!response.ok) return;
-    const image = /\/assets\/generated\/images\//.test(url.pathname);
-    const cache = await caches.open(image ? IMGS : SHELL);
-    await cache.put(request, response);
-    if (image) {
-      touch(request);
-      await trim(cache, 80);
-    }
-  })));
+  const data = event.data || {};
+  if (data.type === 'CHECK_TRIP') {
+    const cacheName = tripCacheName(data.tripId);
+    event.waitUntil(caches.open(cacheName)
+      .then((cache) => cache.match(tripMarker(data.tripId)))
+      .then((marker) => postTo(event.source, {
+        type: 'CACHE_TRIP_STATUS', requestId: data.requestId, saved: Boolean(marker)
+      })));
+    return;
+  }
+  if (data.type !== 'CACHE_TRIP' || !Array.isArray(data.urls)) return;
+  event.waitUntil(cacheTrip(event, data));
 });
+
+async function cacheTrip(event, data) {
+  const urls = [...new Set(data.urls.map((value) => {
+    try { return new URL(value, self.location.origin).href; } catch (_) { return null; }
+  }).filter(Boolean))];
+  const cache = await caches.open(tripCacheName(data.tripId));
+  await cache.delete(tripMarker(data.tripId));
+  let cursor = 0;
+  let completed = 0;
+  let failed = 0;
+  const failedDetails = [];
+
+  async function cacheNext() {
+    while (cursor < urls.length) {
+      const href = urls[cursor++];
+      try {
+        const url = new URL(href);
+        const sameOrigin = url.origin === self.location.origin;
+        const request = new Request(href, sameOrigin
+          ? { credentials: 'same-origin' }
+          : { mode: 'no-cors', credentials: 'omit' });
+        const response = await fetch(request);
+        if (!(response.ok || response.type === 'opaque')) throw new Error('request failed');
+        await cache.put(request, response);
+      } catch (error) {
+        failed += 1;
+        failedDetails.push({ url: href, error: String(error && error.message || error) });
+      }
+      completed += 1;
+      postTo(event.source, {
+        type: 'CACHE_TRIP_PROGRESS', requestId: data.requestId,
+        completed, total: urls.length, failed
+      });
+    }
+  }
+
+  // A small pool avoids overwhelming mobile Safari while allowing large trips
+  // to finish much faster than a strictly sequential download.
+  const workers = Array.from({ length: Math.min(4, urls.length) }, cacheNext);
+  await Promise.all(workers);
+  if (!failed) {
+    await cache.put(tripMarker(data.tripId), new Response(JSON.stringify({
+      version: VERSION, files: urls.length, savedAt: new Date().toISOString()
+    }), { headers: { 'content-type': 'application/json' } }));
+  }
+  postTo(event.source, {
+    type: 'CACHE_TRIP_COMPLETE', requestId: data.requestId,
+    completed, total: urls.length, failed, failedDetails, version: VERSION
+  });
+}
+
+function tripCacheName(tripId) {
+  return TRIPS + safeTripId(tripId);
+}
+
+function tripMarker(tripId) {
+  return new Request(new URL('__offline_trip__/' + safeTripId(tripId), self.location.href).href);
+}
+
+function safeTripId(tripId) {
+  const safeId = String(tripId || 'itinerary').toLowerCase().replace(/[^a-z0-9_-]+/g, '-').slice(0, 80);
+  return safeId || 'itinerary';
+}
+
+function postTo(client, message) {
+  try { client?.postMessage(message); } catch (_) {}
+}
 
 function networkFirst(req, cacheName) {
   return fetch(req)
@@ -102,12 +172,12 @@ function networkFirst(req, cacheName) {
       if (res && res.ok) caches.open(cacheName).then((c) => c.put(req, res.clone()));
       return res;
     })
-    .catch(() => caches.open(cacheName).then((c) => c.match(req)));
+    .catch(() => caches.match(req));
 }
 
 function cacheFirst(req, cacheName, max) {
   return caches.open(cacheName).then((cache) =>
-    cache.match(req).then((hit) => {
+    caches.match(req).then((hit) => {
       if (hit) {
         touch(req);
         return hit;
@@ -126,7 +196,7 @@ function cacheFirst(req, cacheName, max) {
 
 function staleWhileRevalidate(req, cacheName) {
   return caches.open(cacheName).then((cache) =>
-    cache.match(req).then((hit) => {
+    caches.match(req).then((hit) => {
       const net = fetch(req).then((res) => {
         if (res && res.ok) cache.put(req, res.clone());
         return res;

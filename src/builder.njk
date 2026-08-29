@@ -7,7 +7,7 @@ permalink: "/locations/{{ combo.slug }}/index.html"
 ---
 {%- from "itinerary/macros.njk" import day -%}
 {%- from "composer/sections.njk" import badge, empty, heading -%}
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ combo.startName }} · {{ combo.partnerName }} — June 2027</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="../../assets/css/composer-shell.css?v=20260712-parity-2"><link rel="stylesheet" href="../../assets/css/itinerary.css?v=20260710-travel-frame-all"></head><body data-trip-slug="{{ combo.slug }}">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="manifest" href="../../manifest.webmanifest"><link rel="apple-touch-icon" href="../../assets/icons/travelplanner-180.png"><meta name="theme-color" content="#173c38"><title>{{ combo.startName }} · {{ combo.partnerName }} — June 2027</title><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="../../assets/css/composer-shell.css?v=20260712-parity-2"><link rel="stylesheet" href="../../assets/css/itinerary.css?v=20260710-travel-frame-all"><script src="../../assets/js/pwa.js?v=20260829-offline-trips-2" defer></script></head><body data-trip-slug="{{ combo.slug }}">
 <section class="preview composer-preview">
   <div class="pv-pane">
     <span class="pv-kicker">Family Trip · {{ combo.departDate | displayDate }}–{{ combo.returnDate | displayDate }} {{ badge('estimated','Estimated') }}</span>

@@ -15,20 +15,24 @@ const decisionProfile = require('./src/_data/decisionProfile.json');
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'assets/css': 'assets/css' });
   eleventyConfig.addPassthroughCopy({ 'assets/js': 'assets/js' });
+  eleventyConfig.addPassthroughCopy({ 'assets/icons': 'assets/icons' });
   eleventyConfig.addPassthroughCopy({ 'assets/generated': 'assets/generated' });
   eleventyConfig.addPassthroughCopy({ 'assets/img/mt-rainier-seattle-2026': 'assets/img/mt-rainier-seattle-2026' });
   eleventyConfig.addPassthroughCopy({ 'assets/img/seattle-olympic-2026': 'assets/img/seattle-olympic-2026' });
   eleventyConfig.addPassthroughCopy({ 'assets/img/seattle-north-cascades-2026': 'assets/img/seattle-north-cascades-2026' });
+  eleventyConfig.addPassthroughCopy({ 'assets/img/seattle-mount-baker-2026': 'assets/img/seattle-mount-baker-2026' });
   eleventyConfig.addPassthroughCopy({ 'assets/data/mt-rainier-seattle-2026-weather-history.json': 'assets/data/mt-rainier-seattle-2026-weather-history.json' });
   eleventyConfig.addPassthroughCopy({ 'assets/aaron-amanda-sedona.png': 'assets/aaron-amanda-sedona.png' });
   eleventyConfig.addPassthroughCopy({ 'assets/family-cartoon.png': 'assets/family-cartoon.png' });
   eleventyConfig.addPassthroughCopy({ 'mt-rainier-seattle-2026.html': 'mt-rainier-seattle-2026.html' });
   eleventyConfig.addPassthroughCopy({ 'seattle-olympic-2026.html': 'seattle-olympic-2026.html' });
   eleventyConfig.addPassthroughCopy({ 'seattle-north-cascades-2026.html': 'seattle-north-cascades-2026.html' });
+  eleventyConfig.addPassthroughCopy({ 'seattle-mount-baker-2026.html': 'seattle-mount-baker-2026.html' });
   for (const file of ['budget-reconciliation.json', 'rank-analysis.json', 'section-status.json', 'trips-summary.json']) {
     eleventyConfig.addPassthroughCopy({ [`assets/${file}`]: `assets/${file}` });
   }
   eleventyConfig.addPassthroughCopy({ 'sw.js': 'sw.js' });
+  eleventyConfig.addPassthroughCopy({ 'manifest.webmanifest': 'manifest.webmanifest' });
   eleventyConfig.addFilter('moneyK', (value) => {
     const amount = Number(value) / 1000;
     const digits = Number(value) % 1000 === 0 ? 0 : Number(value) % 100 === 0 ? 1 : 2;

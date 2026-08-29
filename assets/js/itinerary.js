@@ -437,13 +437,3 @@
     if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', requestUpdate);
     else if (desktopQuery.addListener) desktopQuery.addListener(requestUpdate);
   })();
-
-/* Phase 8 — register the offline service worker (root scope) for on-trip use. */
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      var p = location.pathname, i = p.indexOf('/locations/');
-      var root = i >= 0 ? p.slice(0, i + 1) : p.replace(/[^/]*$/, '');
-      navigator.serviceWorker.register(root + 'sw.js', { scope: root }).catch(function () {});
-    });
-  }
-(function(){if(!('serviceWorker' in navigator))return;var button=document.createElement('button');button.type='button';button.className='offline-save';button.textContent='Save trip offline';button.addEventListener('click',function(){navigator.serviceWorker.ready.then(function(registration){var worker=registration.active||navigator.serviceWorker.controller;if(!worker)throw new Error('service worker is not active');var urls=[location.href].concat([].map.call(document.images,function(image){return image.currentSrc||image.src;}).filter(Boolean));worker.postMessage({type:'CACHE_TRIP',urls:urls});button.textContent='Saved for offline use';button.disabled=true;}).catch(function(){button.textContent='Offline save unavailable';});});document.body.appendChild(button);}());

@@ -150,6 +150,7 @@ permalink: "/locations/{{ trip.slug }}/index.html"
 {%- if trip.variants -%}{% include "itinerary/variants.njk" %}{%- endif -%}
 <link rel="stylesheet" href="../../assets/css/itinerary.css?v=20260710-travel-frame-all">
 <script src="../../assets/js/itinerary.js?v=20260710-gallery-full" defer></script>
+<script src="../../assets/js/pwa.js?v=20260829-offline-trips-2" defer></script>
 <dialog class="trip-gallery-dialog" id="tripGalleryDialog" data-trip-slug="{{ trip.slug }}" aria-label="Trip photo gallery">
   <div class="trip-gallery-shell">
     <div class="trip-gallery-head">

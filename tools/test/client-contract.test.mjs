@@ -40,8 +40,33 @@ test('date-formatting scripts bypass stale offline caches', () => {
     assert.match(hub, new RegExp(`${script.replace('.', '\\.')}\\?v=20260710-dates`));
     assert.match(serviceWorker, new RegExp(`${script.replace('.', '\\.')}\\?v=20260710-dates`));
   }
-  assert.match(serviceWorker, /const VERSION = 'tp-v12'/);
+  assert.match(serviceWorker, /const VERSION = 'tp-v15'/);
   assert.match(serviceWorker, /builder\.js\?v=20260712-composer/);
+});
+
+test('offline trip packages have no URL cap and report verified completion', () => {
+  const serviceWorker = fs.readFileSync('sw.js', 'utf8');
+  const pwa = fs.readFileSync('assets/js/pwa.js', 'utf8');
+  assert.doesNotMatch(serviceWorker, /slice\(0,\s*81\)/);
+  assert.match(serviceWorker, /const TRIPS = VERSION \+ '-trip-'/);
+  assert.match(serviceWorker, /CACHE_TRIP_COMPLETE/);
+  assert.match(pwa, /querySelectorAll\('\[data-full\]'\)/);
+  assert.match(pwa, /CACHE_TRIP_PROGRESS/);
+  assert.match(pwa, /navigator\.storage\.persist/);
+  assert.match(serviceWorker, /tripMarker\(data\.tripId\)/);
+  const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest', 'utf8'));
+  assert.equal(manifest.display, 'standalone');
+  for (const page of [
+    'mt-rainier-seattle-2026.html',
+    'seattle-mount-baker-2026.html',
+    'seattle-north-cascades-2026.html',
+    'seattle-olympic-2026.html'
+  ]) {
+    const html = fs.readFileSync(page, 'utf8');
+    assert.match(html, /manifest\.webmanifest/);
+    assert.match(html, /assets\/js\/pwa\.js/);
+    assert.match(html, /data-trip-slug=/);
+  }
 });
 
 test('ranked and excluded cards provide a wrapping badge container', () => {
