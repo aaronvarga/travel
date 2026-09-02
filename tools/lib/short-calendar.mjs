@@ -60,15 +60,15 @@ export function shortCalendar({ eyebrow, title, intro, ariaLabel, days, legend =
       .continuous-calendar .cal-legend i{width:16px;height:16px;border-radius:5px;display:inline-block}
       .continuous-calendar .lg-air{background:#3d4d74}.continuous-calendar .lg-car{background:var(--gold)}
       .continuous-calendar .lg-hike{background:var(--c3)}.continuous-calendar .lg-water{background:var(--c1)}.continuous-calendar .lg-town{background:var(--c2)}.continuous-calendar .lg-rest{background:#8a857c}
-      .continuous-calendar .cal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
-      .continuous-calendar .cal-week{min-width:${minWidth}px;margin:0 0 22px}
-      .continuous-calendar .cal-hd{display:grid;gap:0}
+      .continuous-calendar .cal-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 0 6px}
+      .continuous-calendar .cal-week{display:block;width:100%;min-width:${minWidth}px;margin:0 0 22px;border:0;border-radius:0;overflow:visible;background:transparent;box-shadow:none;grid-template-columns:none;grid-template-rows:none}
+      .continuous-calendar .cal-hd{display:grid;gap:0;place-items:stretch;padding:0;border:0;background:transparent;font-size:inherit;font-weight:inherit;letter-spacing:normal;text-transform:none}
       .continuous-calendar .cal-hd .dh{padding:6px 4px;text-align:center;border-bottom:2px solid var(--line)}
       .continuous-calendar .cal-hd .dh .dow{display:block;font-size:.66rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
       .continuous-calendar .cal-hd .dh .dnum{display:block;font-size:1.02rem;font-weight:800;color:var(--c1);line-height:1.1}
       .continuous-calendar .cal-hd .dh.trip{background:rgba(31,111,120,.06)}
       .continuous-calendar .cal-hd .gut{border-bottom:2px solid var(--line)}
-      .continuous-calendar .cal-bd{display:grid;grid-template-rows:repeat(9,32px);position:relative;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px),repeating-linear-gradient(to right,transparent 0 calc(${columnWidth}% - 1px),var(--line) calc(${columnWidth}% - 1px) ${columnWidth}%)}
+      .continuous-calendar .cal-bd{display:grid;grid-template-rows:repeat(9,32px);position:relative;border:0;background-color:transparent;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--line) 31px 32px),repeating-linear-gradient(to right,transparent 0 calc(${columnWidth}% - 1px),var(--line) calc(${columnWidth}% - 1px) ${columnWidth}%)}
       .continuous-calendar .cal-bd .tl{grid-column:1;font-size:.62rem;font-weight:700;color:var(--muted);padding:2px 4px 0 4px;text-align:right}
       .continuous-calendar .ev{margin:2px;border-radius:6px;padding:3px 6px;font-size:.68rem;line-height:1.14;font-weight:700;color:#fff;overflow:hidden;position:relative;z-index:2;box-shadow:0 1px 3px rgba(30,32,28,.2);display:flex;align-items:flex-start}
       .continuous-calendar .ev.sm{font-size:.62rem;align-items:center}.continuous-calendar .ev.air{background:#3d4d74}.continuous-calendar .ev.car{background:var(--gold);color:#3a2f12}.continuous-calendar .ev.hike{background:var(--c3)}.continuous-calendar .ev.water{background:var(--c1)}.continuous-calendar .ev.town{background:var(--c2)}.continuous-calendar .ev.rest{background:#8a857c}
