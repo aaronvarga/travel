@@ -253,51 +253,53 @@ const calendar = shortCalendar({
   days: [
     { dow: 'Fri', date: [9, 4], blocks: [
       { act: 'air', start: 6, end: 10, label: 'AS78 &middot; PIT 7:02 &rarr; SEA 9:14' },
-      { act: 'car', start: 10, end: 14, label: 'Rental &rarr; Pinnacle &middot; plan 3&ndash;3&frac12; hr' },
-      { act: 'hike', start: 14, end: 16, label: 'Pinnacle Saddle &middot; about 2 hr' },
-      { act: 'car', start: 16, end: 18, label: 'Trail &rarr; Blanton&rsquo;s &middot; plan 1&ndash;1&frac14; hr' },
-      { act: 'town', start: 18, end: 20, label: 'Groceries + beer &middot; cabin 12 min farther' },
-      { act: 'rest', start: 20, end: 22, label: 'Cabin + dinner' }
+      { act: 'car', start: 10, end: 12, label: 'Rental &rarr; Fred Meyer SR 7 &middot; plan 1:00&ndash;1:15' },
+      { act: 'town', start: 12, end: 14, label: 'Groceries + beer, then Fred Meyer &rarr; Pinnacle &middot; plan 2 hr' },
+      { act: 'hike', start: 16, end: 20, label: 'Pinnacle Saddle sunset &middot; 7:39 PM' },
+      { act: 'car', start: 20, end: 22, label: 'Trail &rarr; cabin &middot; plan 1:00&ndash;1:15' }
     ] },
     { dow: 'Sat', date: [9, 5], blocks: [
-      { act: 'car', start: 6, end: 8, label: 'Cabin &rarr; Paradise &middot; 1:20&ndash;1:35' },
-      { act: 'hike', start: 8, end: 14, label: 'Skyline Loop &middot; 4&frac12;&ndash;5&frac12; hr' },
-      { act: 'town', start: 14, end: 16, label: 'Paradise lunch / views' },
-      { act: 'car', start: 16, end: 18, label: 'Paradise &rarr; cabin &middot; 1:20&ndash;1:35' },
-      { act: 'rest', start: 18, end: 22, label: 'Dinner + recover' }
+      { act: 'rest', start: 6, end: 12, label: 'Sleep, breakfast + recovery' },
+      { act: 'car', start: 12, end: 14, label: 'Cabin &rarr; Paradise &middot; 1:20&ndash;1:35' },
+      { act: 'hike', start: 14, end: 20, label: 'Skyline Loop sunset &middot; 7:37 PM' },
+      { act: 'car', start: 20, end: 22, label: 'Paradise &rarr; cabin &middot; 1:20&ndash;1:35' }
     ] },
     { dow: 'Sun', date: [9, 6], blocks: [
       { act: 'car', start: 6, end: 8, label: 'Leave 5:15 &middot; cabin &rarr; Comet 1:30&ndash;1:45' },
-      { act: 'hike', start: 8, end: 14, label: 'Comet Falls + Van Trump &middot; 4&ndash;5 hr' },
-      { act: 'car', start: 14, end: 16, label: 'Comet &rarr; cabin &middot; 1:30&ndash;1:45' },
-      { act: 'rest', start: 16, end: 22, label: 'Cabin recovery + dinner' }
+      { act: 'hike', start: 8, end: 12, label: 'Comet Falls / Van Trump &middot; preserve evening legs' },
+      { act: 'car', start: 12, end: 14, label: 'Comet &rarr; cabin &middot; 1:30&ndash;1:45' },
+      { act: 'rest', start: 14, end: 16, label: 'Cabin recovery + early dinner' },
+      { act: 'car', start: 16, end: 18, label: 'Cabin &rarr; Tipsoo &middot; 1:00&ndash;1:10' },
+      { act: 'hike', start: 18, end: 20, label: 'Naches clockwise sunset &middot; 7:35 PM' },
+      { act: 'car', start: 20, end: 22, label: 'Tipsoo &rarr; cabin &middot; 1:00&ndash;1:10' }
     ] },
     { dow: 'Mon', date: [9, 7], blocks: [
-      { act: 'car', start: 6, end: 8, label: 'Cabin &rarr; Tipsoo &middot; 1:00&ndash;1:10' },
-      { act: 'hike', start: 8, end: 10, label: 'Naches Peak Loop &middot; about 2 hr' },
-      { act: 'car', start: 10, end: 14, label: 'Tipsoo &rarr; W Seattle &middot; plan 2:45&ndash;3:30' },
-      { act: 'town', start: 14, end: 20, label: 'Pike Place + waterfront + dinner' },
-      { act: 'rest', start: 20, end: 22, label: 'W Seattle' }
+      { act: 'rest', start: 6, end: 10, label: 'Breakfast, pack + checkout' },
+      { act: 'car', start: 10, end: 14, label: 'Cabin &rarr; W Seattle &middot; plan 2:45&ndash;3:30' },
+      { act: 'town', start: 14, end: 16, label: 'Pike Place + waterfront lunch' },
+      { act: 'car', start: 16, end: 18, label: 'W &rarr; Discovery Park &middot; plan 25&ndash;35 min' },
+      { act: 'hike', start: 18, end: 20, label: 'Discovery Park / West Point sunset &middot; 7:37 PM' },
+      { act: 'car', start: 20, end: 22, label: 'Discovery &rarr; W &middot; plan 25&ndash;35 min' }
     ] },
     { dow: 'Tue', date: [9, 8], blocks: [
       { act: 'town', start: 6, end: 8, label: 'Grab-and-go breakfast + checkout' },
       { act: 'car', start: 8, end: 10, label: 'W &rarr; Budget &middot; 30&ndash;45 min + shuttle' },
       { act: 'rest', start: 10, end: 12, label: 'SEA check-in + security buffer' },
-      { act: 'air', start: 12, end: 22, label: 'AS429 11:35 &rarr; ORD &middot; AS6776 &rarr; PIT 9:44 PM' }
+      { act: 'air', start: 12, end: 22, label: 'Only non-sunset day: AS429 11:35 &rarr; ORD &middot; AS6776 &rarr; PIT 9:44 PM' }
     ] }
   ]
 });
 
-const recommended = section('recommended-trails', 'Research verdict', 'The strongest hikes still open from Packwood', 'These are ranked for scenery, photography, closure confidence, drive logic, and how well they replace the experience you lost on the northeast side.', `<div class="overview">
-${card('#1 &middot; Must do', 'Skyline Loop &mdash; 9.7/10', '<b>5.5 mi / 1,700 ft / 4.5 hr.</b> It was already a cornerstone and remains the strongest complete Rainier hike: close glacier detail, meadows, Panorama Point, wildlife, and near-constant scale. Snow-free as of the Aug. 4 NPS reading.')}
-${card('#2 &middot; Best new anchor', 'Comet Falls + Van Trump Park &mdash; 9.4/10', '<b>5.8 mi / 2,000 ft / 4&ndash;5 hr.</b> The closest emotional substitute for the Fremont sunset: a 320-foot waterfall followed by a meadow directly below Rainier&rsquo;s Kautz and Van Trump Glaciers. Listed open and snow-free; the trailhead lot is the only real constraint.')}
-${card('#3 &middot; Arrival hike, restored', 'Pinnacle Saddle &mdash; 9.2/10', '<b>2.5 mi / 1,050 ft / 2 hr.</b> Reopened Aug. 27 when the Plummer Peak Fire closure lifted. The cleanest arrival-day payoff in the park: 1.25 miles from Reflection Lakes to the 5,920-ft saddle with Rainier north and Adams and St. Helens south. Bench + Snow Lakes (2.5 mi / 700 ft, never closed) stays the gentler same-corridor fallback.')}
-${card('#4 &middot; Best farewell', 'Naches Peak Loop &mdash; 8.7/10', '<b>3.5 mi / 500 ft / 2 hr.</b> Hike clockwise for the mountain reveal, meadows, tarns, and huckleberries. It remains open, but it is closest to the active east-side fire and smoke picture, so it gets a strict same-morning gate.')}
+const recommended = section('recommended-trails', 'Research verdict', 'Four sunset anchors, all currently accessible', 'The plan now protects a real sunset hike every day you are not airborne. Official fire and trail status decides whether a route is legal; recent hiker reports and photography guides decide where the light is worth the effort.', `<div class="overview">
+${card('Friday &middot; 7:39 PM', 'Pinnacle Saddle sunset &mdash; 9.4/10', '<b>2.5 mi / 1,050 ft / 2&ndash;2.5 hr.</b> The west-facing Tatoosh ridge catches warm side light and the trail starts beside Reflection Lakes. It reopened Aug. 27. Buy groceries before entering the park so the evening remains protected.')}
+${card('Saturday &middot; 7:37 PM', 'Skyline Loop sunset &mdash; 9.8/10', '<b>5.5 mi / 1,700 ft / 4.5&ndash;5.5 hr.</b> This is the premier open sunset hike: glaciers, meadows, Panorama Point and a Rainier-facing descent. Recent sunset hikers consistently praise the quieter late-day trail; carry headlamps and expect the final mile after dusk.')}
+${card('Sunday &middot; 7:35 PM', 'Naches Peak sunset &mdash; 9.2/10', '<b>3.2 mi / 600 ft / about 2 hr.</b> WTA and NPS both favor clockwise travel so the iconic Rainier view unfolds on the return. It remains open from Tipsoo, but its proximity to the east-side fire earns the strictest same-day smoke and closure gate.')}
+${card('Monday &middot; 7:37 PM', 'Discovery Park + West Point &mdash; 9.0/10', '<b>About 3.5&ndash;4.5 mi / modest gain / 2&frac12;&ndash;3 hr.</b> The bluff, beach and lighthouse face the Olympic Mountains across Puget Sound. It is a genuine city hike, not a viewpoint drive, and it replaces the rushed Kerry Park photo stop.')}
 ${card('Opt-in hard day', 'Eagle Peak Saddle &mdash; 9.0/10 scenery', '<b>7.2 mi / 2,955 ft / 5 hr.</b> The best true Tatoosh-ridge view left open, and well west of the Lane Peak boundary. Take it only if the group actively wants a steep, strenuous Sunday in place of Comet and Van Trump &mdash; it is not the automatic fallback.')}
 ${card('Best open lookout alternative', 'Shriner Peak &mdash; 8.9/10 scenery', '<b>8 mi / 3,434 ft / about 5 hr.</b> A historic lookout with commanding Rainier, Ohanapecosh Valley, and Cascade views from an open SR 123 trailhead. It is steep, shadeless, and waterless, so it replaces a major hike only after an early group decision.')}
 ${card('Weather + parking fallback', 'Rampart Ridge &mdash; 7.8/10', '<b>4.6 mi / 1,339 ft / 2.5 hr.</b> Open old-growth loop from Longmire with Rainier and Nisqually Valley viewpoints. This is the default catch when the Comet Falls lot is full or high ridges are windy or hazy.')}
 ${card('Best low-smoke / low-cloud fallback', 'Silver Falls &mdash; 7.7/10', '<b>2 mi / 300 ft / about 1 hr.</b> A forceful 60-foot river waterfall reached from the seasonally open Grove of the Patriarchs parking lot. The grove is closed, but NPS explicitly keeps this trail access open.')}
-</div><p class="notice"><b>Why Comet beats Eagle for this trip:</b> it delivers a huge waterfall and direct glacier drama with 955 feet less climbing, lets you turn around at the falls if smoke or fatigue rises, and leaves enough energy for Monday&rsquo;s farewell hike and Seattle.</p>`);
+</div><p class="notice"><b>Why Sunday is the flex day:</b> Comet Falls delivers a huge waterfall and optional glacier meadow, while the shorter clockwise Naches loop owns the better evening light. Turn around at Comet Falls before sacrificing the Naches sunset; Van Trump is the extension, not the obligation.</p>`);
 
 const closedTrails = section('closed-trails', 'Access rules', 'What stays closed—and what only looks closed', 'Several famous trails still appear in old blogs, cached maps, and saved lists. Most are not options for these dates; Silver Falls and the reopened Pinnacle Peak Trail are the important exceptions.', `<div class="overview">
 ${card('No access', 'Fremont, Burroughs, Glacier Basin, Emmons, Dege, Silver Forest', 'All originate from the closed Sunrise or White River roads. Do not route around the gates or treat a trail app&rsquo;s &ldquo;open&rdquo; label as authoritative.')}
@@ -640,16 +642,17 @@ const silverCard = tgTrail({
 let trailGuide = sectionFromBaseline('trail-guide');
 trailGuide = dropArticles(trailGuide, 'tg-trail', [
   'First + Second Burroughs', 'Mount Fremont Lookout',
-  'Dege Peak', 'Emmons Moraine', 'Silver Forest + Emmons Vista'
+  'Dege Peak', 'Emmons Moraine', 'Silver Forest + Emmons Vista',
+  'High Rock Lookout'
 ]);
 trailGuide = edit(trailGuide, [
-  ['<h2>Ten view-first hikes worth knowing</h2>', '<h2>Thirteen closure-compatible routes worth knowing</h2>'],
+  ['<h2>Ten view-first hikes worth knowing</h2>', '<h2>Twelve closure-compatible routes worth knowing</h2>'],
   ['Every featured trail includes ten portfolio-grade photographs; tap any image to open its source.',
-   'Five trails behind the Sunrise and White River closures were removed; Pinnacle Saddle returned when the Plummer Peak closure lifted Aug. 27, and the Pinnacle Glacier Tarn is documented as the one unmaintained route in the guide. The guide keeps every scheduled hike plus the strongest short, strenuous, weather-flex, and parking-flex alternatives that remain accessible from Packwood. Tap any image to open its source.'],
+   'Five trails behind the Sunrise and White River closures were removed; High Rock was also removed because its official 2026 access information is not current enough to trust for a sunset descent. Pinnacle Saddle returned when the Plummer Peak closure lifted Aug. 27, and the Pinnacle Glacier Tarn is documented as the one unmaintained route in the guide. Tap any image to open its source.'],
   ['<h3>Open the full trail field guide</h3><p>Ten recommendations &middot; 50 trail-specific photos &middot; review intel &middot; cabin-to-trailhead drives</p>',
-   '<h3>Open the full trail field guide</h3><p>Thirteen closure-compatible routes &middot; 65 trail-specific photos &middot; official access gates &middot; cabin-to-trailhead logic</p>'],
+   '<h3>Open the full trail field guide</h3><p>Twelve closure-compatible routes &middot; 60 trail-specific photos &middot; official access gates &middot; cabin-to-trailhead logic</p>'],
   ['<div><b>How to read the ten</b><span>Fremont, Skyline, and Pinnacle are scheduled. Burroughs and Naches remain strong view-first alternates, followed by easier, shorter, and weather-flex options for the same trailheads.</span></div>',
-   '<div><b>How to read the thirteen</b><span>Pinnacle (reopened Aug. 27), Skyline, and Comet are scheduled; the Pinnacle Glacier Tarn is the photo-first swap for Friday and Bench &amp; Snow is the fallback, with Naches conditional. Lakes/Faraway, Deadhorse/Moraine, Rampart and Silver Falls solve time, weather, smoke and parking failures. Eagle and Shriner are the two legitimate hard-day upgrades. High Rock remains conditional on a fresh Forest Service access check. Only the tarn is unmaintained &mdash; everything else is an official NPS trail.</span></div>'],
+   '<div><b>How to read the twelve</b><span>Pinnacle, Skyline, Comet and Naches are scheduled; the Pinnacle Glacier Tarn is the photo-first Friday swap and Bench &amp; Snow is the maintained fallback. Lakes/Faraway, Deadhorse/Moraine, Rampart and Silver Falls solve time, weather, smoke and parking failures. Eagle and Shriner are the two legitimate hard-day upgrades. High Rock is omitted until the Forest Service publishes current access. Only the tarn is unmaintained &mdash; everything else is an official NPS trail.</span></div>'],
   ['<h4>Why this makes the trip</h4><p>This is the cleanest answer to',
    '<h4>Why this makes the trip</h4><p>Reopened Aug. 27 after the Plummer Peak Fire closure lifted &mdash; recheck the trail report the same morning. This is the cleanest answer to'],
   ['Check the Paradise webcam before committing to the drive.',
@@ -659,7 +662,12 @@ trailGuide = edit(trailGuide, [
   ['<span class="tg-status alt">Only if Fremont cancels</span>', '<span class="tg-status alt">Optional Monday farewell</span>'],
   ['<h4>When it comes back</h4><p>Restore the loop only if Fremont is canceled or ends early enough to protect sleep.',
    '<h4>When it comes back</h4><p>Hike it only if Monday&rsquo;s east-side air, visibility, and traffic all pass the morning gate.'],
-  ['<article class="tg-trail" id="tg-high-rock">', `${eagleCard}${shrinerCard}${rampartCard}${lakesCard}${silverCard}<article class="tg-trail" id="tg-high-rock">`],
+  ['<span class="tg-status">Scheduled Saturday</span>', '<span class="tg-status">Scheduled Saturday sunset</span>'],
+  ['7:15 AM&ndash;12:15 PM<br>best mountain light before 10', '2:15&ndash;8:15 PM Saturday<br>golden hour + 7:37 sunset'],
+  ['3:15&ndash;5:45 PM Friday<br>warm side light on Rainier', '4:30&ndash;8:10 PM Friday<br>golden hour + 7:39 sunset'],
+  ['<span class="tg-status alt">Optional Monday farewell</span>', '<span class="tg-status">Scheduled Sunday sunset</span>'],
+  ['Hike it only if Monday&rsquo;s east-side air, visibility, and traffic all pass the morning gate.', 'Sunday&rsquo;s clockwise sunset loop is protected; hike it only if east-side air, visibility, trail status, and energy all pass the 3:30 PM gate.'],
+  ['<article class="tg-trail" id="tg-deadhorse">', `${eagleCard}${shrinerCard}${rampartCard}${lakesCard}${silverCard}<article class="tg-trail" id="tg-deadhorse">`],
   ['Tolmie Peak is inaccessible during the 2026 Carbon River / Mowich closure. Sunrise Rim is already the preferred Burroughs ascent, while Alta Vista and Nisqually Vista substantially overlap the Paradise plan. Bench and Snow Lakes are pretty but deliver less direct Rainier impact; Comet and Silver Falls are waterfall-first; Summerland, Panhandle Gap, Shriner Peak, and Third Burroughs exceed the requested mileage or the safe schedule.',
    'Tolmie Peak and Spray Park are inaccessible during the 2026 Carbon River / Mowich closure. Summerland begins on closed White River Road, so an apparently open trail segment is not actionable. Crystal Lakes, Crystal Peak, Palisades and the White River approach to Owyhigh stay too close to the northeast fire/access picture; Owyhigh from SR 123 is technically possible but is nearly ten miles round trip from that side and has no Rainier view. Panhandle Gap and Third Burroughs are also excluded by closure or schedule. Shriner, Rampart, Lakes/Faraway and the still-open Silver Falls approach are now included because each solves a distinct failure without moving the paid Packwood base.']
 ]);
@@ -684,21 +692,21 @@ photoGuide = photoGuide.replace(
 );
 photoGuide = edit(photoGuide, [
   ['<p>One night in the city. Everything hinges on blue hour at Kerry Park; the market and waterfront are the all-weather fallback.</p>',
-   '<p>One night in the city, photographed as the itinerary actually unfolds: Pike Place, Overlook Walk and the waterfront, one Kerry Park payoff, then dinner and a rooftop drink.</p>'],
+   '<p>One night in the city, photographed as the itinerary actually unfolds: Pike Place and the waterfront in the afternoon, then a Discovery Park hike through sunset at West Point.</p>'],
   ['<p class="pg-tag">The skyline frame</p>', '<p class="pg-tag">The city sequence</p>'],
-  ['<h3>Kerry Park &amp; Pike Place</h3>', '<h3>Pike Place to the rooftop</h3>'],
-  ['<h3>The exact light plan &mdash; Fremont sunset &amp; Seattle blue hour</h3>', '<h3>The exact light plan &mdash; Reflection Lakes dawn &amp; Seattle blue hour</h3>'],
+  ['<h3>Kerry Park &amp; Pike Place</h3>', '<h3>Pike Place to Discovery Park</h3>'],
+  ['<h3>The exact light plan &mdash; Fremont sunset &amp; Seattle blue hour</h3>', '<h3>The exact light plan &mdash; four protected sunsets</h3>'],
   ['<p>Rainier makes its own weather, so the whole plan flexes on whether the summit is out. Protect Mount Fremont for Sunday golden hour and sunset, keep Pinnacle/Skyline as clear-mountain priorities, and treat Tipsoo as a quick Monday bonus. Reflection Lakes remains in this photo reference only; it is no longer worth a dedicated dawn alarm.</p>',
-   '<p>Rainier makes its own weather, so the whole plan flexes on whether the summit is out. With Sunrise and the Fremont lookout closed, the signature frames move to the south side: Pinnacle Saddle in warm Friday side light, the Pinnacle Glacier Tarn if you want the mirror badly enough to trade the saddle for it, Reflection Lakes and Faraway Rock in still morning air, Skyline for glacier scale, Comet Falls and Van Trump Park for water and ice, and Tipsoo as a quick Monday bonus.</p>'],
+   '<p>Rainier makes its own weather, but the schedule no longer gives away the light: Friday protects Pinnacle Saddle, Saturday protects Skyline, Sunday protects a clockwise Naches loop after the Comet morning, and Monday protects Discovery Park and West Point. Each has a shorter maintained bailout so weather, smoke, timing, or tired legs can reduce mileage without automatically erasing sunset.</p>'],
   ['<div class="pg-warning"><b>Cloud inversion reality check:</b> the orange sea-of-clouds image is a rare weather payoff, not a schedulable event. Your best odds are to be high while a low marine layer fills the valleys, with the summit and trail above cloud. Check the Paradise/Sunrise webcams, hourly cloud-base forecast, wind, and smoke before committing. Roads and high-country access can still change on short notice.</div>',
    `<div class="pg-warning"><b>Fire-and-front reality check:</b> this week both smoke and weather are in play. A cold front crosses Wednesday&ndash;Thursday with rain and a snow mix at Paradise elevations &mdash; it should scrub the haze, but it leaves shower chances and possible fresh white above 6,000 feet through the weekend. Haze flattens contrast long before it looks dangerous, and a mountain that reads clear from Packwood can be invisible from Paradise. Check the ${camLink('live Paradise Mountain webcam')}, the hourly forecast, the AirNow smoke map, and the NPS fire page before committing to any dawn alarm &mdash; and remember the closure boundary itself can move overnight.</div>`],
   ['<li>Two headlamps with red mode, microfiber cloths, and warm layers for the Fremont sunset walk-out.</li>',
-   '<li>Two headlamps with red mode, microfiber cloths, and a fast lens cloth for spray at Comet Falls.</li>'],
+   '<li>Two tested headlamps per person with spare batteries, red mode, microfiber cloths, and a fast lens cloth for spray at Comet Falls. Every planned sunset ends at or after dusk.</li>'],
   ['<p>On your dates, Rainier sunrise shifts from 6:30 to 6:34 AM and sunset from 7:40 to 7:34 PM. Sunday evening is reserved for Mount Fremont; the other dawn times are reference only, not scheduled alarms.</p>',
-   '<p>On your dates, Rainier sunrise shifts from 6:30 to 6:34 AM and sunset from 7:40 to 7:34 PM. Sunday morning is the one real alarm &mdash; the Comet Falls lot, not the light, sets it. Friday is an afternoon arrival window and the other dawn times are reference only.</p>'],
+   '<p>Sunset is 7:39 Friday, 7:37 Saturday and 7:35 Sunday around Rainier, then 7:37 Monday in Seattle; civil dusk follows about 31 minutes later. Sunday morning is the one real alarm &mdash; the tiny Comet Falls lot sets it &mdash; but the evening Naches loop remains the protected priority.</p>'],
   ['<p class="pg-tag">Optional reference &middot; not scheduled</p>', '<p class="pg-tag">Friday &middot; arrival-day shoot + fallback</p>'],
   ['<p><b>Not scheduled.</b> Sunrise remains the best photographic window, but Skyline parking margin, sleep, and Fremont matter more on this trip. The card stays here only as an optional weather-and-timing reference.</p>',
-   '<p><b>Friday 4:30&ndash;7:40 PM</b> around the Pinnacle Saddle hike &mdash; the trailhead parking is at the lakes, so shoot the mirror before or after the climb. If the arrival runs late, this replaces the hike outright: shoreline plus the Lakes Trail to Faraway Rock is 2.6 miles and 500 feet. If the target is instead the alpine mirror under Pinnacle Glacier, that is a different, unmaintained outing on the same parking &mdash; gold runs 6:40&ndash;7:40 with sunset at 7:42, which means a headlamp descent; see the tarn card in the trail guide before choosing it.</p>']
+   '<p><b>Friday 4:30&ndash;8:10 PM:</b> Pinnacle Saddle through the 7:39 sunset, then a headlamp descent; late arrival drops to Lakes Trail / Faraway Rock or the Reflection Lakes shoreline. <b>Saturday 2:15&ndash;8:15 PM:</b> clockwise Skyline, with the high traverse in golden hour and the Rainier-facing descent through sunset; the maintained Paradise meadow sequence is the short bailout. <b>Sunday 6:00&ndash;8:15 PM:</b> clockwise Naches so the iconic Rainier-facing half lands in the last light; shorten the morning Comet hike before cutting this window. <b>Monday 5:30&ndash;8:20 PM:</b> Discovery Park bluff, South Beach and West Point lighthouse for the Olympic Mountains sunset; use the inland loop if the shoreline is unsafe.</p>']
 ]);
 
 
@@ -729,9 +737,9 @@ savedIdeas = edit(savedIdeas, [
 // hold 25-36% shower chances with highs 54-58F up high, 71-73F in Packwood.
 let packing = sectionFromBaseline('packing');
 packing = edit(packing, [
-  ['a cold post-sunset walk above 7,000 feet.', 'a cold, spray-soaked hour at the base of a waterfall.'],
+  ['a cold post-sunset walk above 7,000 feet.', 'four consecutive sunset walk-outs plus a cold, spray-soaked morning at the base of a waterfall.'],
   ['Rain and wet cold are possible in any month.',
-   `Rain and wet cold are possible in any month. <b>Trip-week forecast (NWS point forecast, read Aug. 31):</b> a cold front crosses Wednesday&ndash;Thursday with rain, thunderstorms, and a rain-and-snow mix at Paradise elevations. Friday reads 48&deg;F at Paradise with light rain likely (about 60%), and Saturday&ndash;Monday each hold a 25&ndash;36% shower chance with highs of only 54&ndash;58&deg;F up high (low 70s in Packwood). Treat the waterproof shell as a wear layer this trip, not a just-in-case item, and re-read the hourly forecast and the ${camLink('live Paradise Mountain webcam')} each evening.`],
+   `Rain and wet cold are possible in any month. <b>Trip-week forecast (NWS point forecast, read Sept. 2):</b> Friday has showers likely with possible thunder after 11 AM and a high near 44&deg;F at Paradise; Saturday carries another afternoon shower / thunder chance near 50&deg;F. Sunday and Monday currently look drier and mostly sunny in the mid-50s. Treat the waterproof shell as a wear layer this trip, not a just-in-case item, and re-read the hourly forecast and the ${camLink('live Paradise Mountain webcam')} before every sunset departure.`],
   ['Pinnacle 3:15&ndash;5:45 PM: 48&ndash;58&deg;F', 'Pinnacle 3:15&ndash;6:30 PM: 42&ndash;55&deg;F'],
   ['<b>Pinnacle:</b> hiking pants, breathable base, fleece in the pack, and shell immediately available; the saddle is windy even when the trailhead feels pleasant.',
    `<b>Pinnacle:</b> hiking pants, breathable base, fleece in the pack, and the waterproof shell worn or on top of the pack &mdash; Friday&rsquo;s forecast is light rain likely, and wet rock slows the upper switchbacks; the saddle is windy even when the trailhead feels pleasant. Glance at the ${camLink('Tatoosh webcam', CAM_TATOOSH)} before leaving Seattle &mdash; it looks south from Paradise straight at the range you are climbing into.`],
@@ -740,13 +748,18 @@ packing = edit(packing, [
   ['Microspikes are a trip-week conditions decision, not a default September requirement.',
    `Microspikes are a trip-week conditions decision &mdash; and this trip week opens with a Thursday rain-and-snow event at Paradise elevations, so make the call on the ${camLink('Friday-morning webcam')} and trail report, not on the September default.`],
   ['Sunrise starts at 6,400 feet and Fremont reaches an exposed ridge above 7,000 feet, so the sunset route needs substantially more insulation than Packwood suggests.',
-   'Paradise sits at 5,400 feet and the Skyline high traverse crosses 6,800, while Comet Falls holds cold spray and shade all morning &mdash; both need more insulation than a mild Packwood morning suggests.'],
+   'Paradise sits at 5,400 feet and the Skyline high traverse crosses 6,800; after sunset, wind chill and a stopped photography pace need substantially more insulation than a mild Packwood afternoon suggests. Comet Falls also holds cold spray and shade all morning.'],
   ['<span class="pack-time">Sunday &middot; 3:45&ndash;9:15 PM</span><h4>Mount Fremont sunset</h4><span class="pack-temp">Expected air: 38&ndash;55&deg;F &middot; exposed wind after sunset can feel near 30&ndash;40&deg;F</span><p><b>Wear:</b> wicking base, hiking pants, and grippy trail footwear. <b>Carry even if Packwood is warm:</b> midweight fleece, hooded puffy, waterproof wind shell, warm hat, and real gloves. Put layers on <em>before</em> settling at the lookout. Each person carries a headlamp with spare power; add thin thermal bottoms if the trip-week forecast shows near-freezing temperatures or strong wind.</p>',
-   '<span class="pack-time">Sunday &middot; 5:15 AM&ndash;2:00 PM</span><h4>Comet Falls + Van Trump Park</h4><span class="pack-temp">Expected air: 38&ndash;58&deg;F &middot; falls basin stays cold, shaded and wet all morning</span><p><b>Wear:</b> wicking base, hiking pants, and grippy trail footwear with real tread &mdash; the rock near the falls stays slick from spray. <b>Carry even if Packwood is warm:</b> midweight fleece, waterproof shell, warm hat, and light gloves for the pre-dawn drive and the cold amphitheatre below the falls. Poles help on the descent. Each person carries a headlamp for the dark start.</p>'],
+   '<span class="pack-time">Friday&ndash;Monday &middot; every evening</span><h4>Sunset hike kit</h4><span class="pack-temp">Expect a 20&ndash;30&deg;F perceived drop after stopping for photos and losing the sun</span><p><b>Each person carries:</b> a tested headlamp plus spare power, offline map, midweight fleece, hooded puffy, waterproof wind shell, warm hat, real gloves, water and a no-cook meal. Sunday also needs grippy footwear and poles for the cold, slick Comet Falls approach. Put layers on before waiting for color; never rely on one shared light.</p>'],
   ['The full alpine kit stays packed unless Fremont was canceled and Naches is deliberately restored.', 'The full alpine kit stays packed unless the Naches loop is deliberately hiked.']
 ]);
 
-const foodGuide = sectionFromBaseline('food-guide');
+let foodGuide = sectionFromBaseline('food-guide');
+foodGuide = edit(foodGuide, [
+  ['a city dinner timed to land you at Kerry Park for blue hour, and a serious cocktail bar to close it.', 'a packed-food strategy for four late sunset finishes, a quick Seattle lunch, and a post-hike cocktail to close the trip.'],
+  ['Pack lunches for park days &mdash; Paradise and Sunrise food lines eat your light.', 'Shop once at Fred Meyer Bethel Station on Friday, then pack lunches and late cold dinners &mdash; park food hours cannot support the sunset schedule.'],
+  ['The best arrival-night landing in town: local beer, a big shared patio, and pizza/nachos reviewers rave about. Low-key after a travel day, and the outdoor tables catch evening light on the peaks.', 'A good Packwood option on Saturday or Sunday only. Friday&rsquo;s Pinnacle sunset returns too late to rely on a restaurant, so the planned cabin dinner comes from the grocery stop.']
+]);
 
 let insiderTips = sectionFromBaseline('insider-tips');
 insiderTips = edit(insiderTips, [
@@ -848,11 +861,92 @@ const days = edit(daysRaw, [
   ]
 ]);
 
+// The trip is photography-first. Keep the original generated day cards above as
+// source material, but render this sunset-protected schedule so a daytime hike or
+// grocery errand can never silently consume the best light again.
+const sunsetDays = [
+  day({
+    id:'day1', cls:'c1', badge:'Fri', date:'Sept. 4',
+    title:'SEA &rarr; groceries &rarr; Pinnacle Saddle sunset',
+    feel:'Land, provision once, then make the reopened Tatoosh ridge the first sunset',
+    facts:[['Land','SEA 9:14 AM'],['Rental &rarr; groceries','35 mi &middot; router 54 min<br>plan 1:00&ndash;1:15'],['Fred Meyer &rarr; trail','58.5 mi &middot; router 1:40<br>plan about 2 hr'],['Sunset','7:39 PM &middot; civil dusk 8:10']],
+    note:'Shop at Fred Meyer Bethel Station on SR 7 before entering the park. Target the Reflection Lakes trailhead by 4:15 PM and start by 4:30. The 2.5-mile saddle hike takes 2&ndash;2&frac12; hours; photograph the saddle through sunset, descend on headlamps, and plan about 1&ndash;1&frac14; hours to the cabin.',
+    spot:'Pinnacle Saddle at sunset', photos:arrivalPhotos,
+    flow:'After the rental shuttle and pickup, follow the official Seattle-to-Nisqually corridor south. Fred Meyer at 22303 Mountain Hwy E is a full grocery with beer, wine and liquor, open 7 AM&ndash;10 PM. Continue via SR 7 / SR 706, Nisqually Entrance, Paradise and Stevens Canyon Road. At Reflection Lakes, cross to the signed Pinnacle Peak Trail and stop at the maintained saddle. Shoot warm Tatoosh side light and Rainier alpenglow, then walk down together with both headlamps on.',
+    reality:'Friday currently has the weakest forecast: showers likely, possible thunder after 11 AM, and an upper-40s high near Paradise. Any thunder, expanding fire closure, unhealthy smoke, slick rock, or arrival after 5:15 cancels the saddle. The sunset commitment survives by dropping to the maintained Lakes Trail / Faraway Rock or a short Reflection Lakes shoreline walk; do not substitute the unmaintained Pinnacle Glacier Tarn for a wet or late evening.',
+    cost:'Park entrance pass required; no timed entry in 2026. Groceries replace an expensive late restaurant scramble.',
+    food:'Buy all breakfasts, trail lunches, recovery food, water and beer at Fred Meyer. Eat a substantial carry-in meal before the hike and keep a cold cabin dinner ready for the late arrival.',
+    map:'Pinnacle Peak Trailhead Mount Rainier',
+    alts:[{title:'Late but dry: Lakes Trail + Faraway Rock',href:'https://www.nps.gov/places/reflection-lakes.htm',body:'use the same parking for a maintained 2.6&ndash;3 mile sunset loop. Turn around early enough to be back at the car by civil dusk.'},{title:'Very late or tired: Reflection Lakes',href:'https://www.nps.gov/places/reflection-lakes.htm',body:'make the legal shoreline and pullouts the sunset walk. This preserves the photograph without pretending an unsafe dark ridge hike is still on.'}],
+    links:[['Fred Meyer Bethel Station','https://www.fredmeyer.com/stores/grocery/wa/spanaway/bethel-station/701/00604'],['NPS Pinnacle Peak Trail','https://www.nps.gov/mora/planyourvisit/pinacle-peak.htm'],['NPS current trail status','https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm'],['NWS Paradise forecast','https://forecast.weather.gov/MapClick.php?lat=46.7786&amp;lon=-121.7251']]
+  }),
+  day({
+    id:'day2', cls:'c2', badge:'Sat', date:'Sept. 5',
+    title:'Paradise &rarr; Skyline Loop sunset',
+    feel:'The signature hike moves into the signature light',
+    facts:[['Leave cabin','12:30 PM'],['Cabin &rarr; Paradise','38.9 mi &middot; plan 1:20&ndash;1:35'],['Trail window','2:15&ndash;8:15 PM'],['Sunset','7:37 PM &middot; civil dusk 8:08']],
+    note:'Start the full clockwise Skyline Loop by 2:30 PM. The 5.5 miles / 1,700 feet normally take 4&frac12;&ndash;5&frac12; hours, placing the high country in golden hour and the Rainier-facing descent around sunset. Expect a headlamp finish and a 9:45&ndash;10:15 PM cabin return.',
+    spot:'Skyline Trail via Panorama Point at sunset', photos:skylinePhotos,
+    flow:'Sleep after Friday, eat an early lunch, and drive the open Stevens Canyon&ndash;Paradise route. Ascend clockwise from Jackson Visitor Center toward Panorama Point, stay on the signed Skyline route or posted High Skyline connector, and descend through Paradise Valley and Myrtle Falls. A late-afternoon start avoids the worst entrance rush and recent sunset hikers report a quieter trail, but it does not remove the need for navigation, layers and lights after dusk.',
+    reality:'Saturday has a chance of afternoon showers or thunderstorms. Do not enter exposed high terrain with thunder nearby. If cloud, wind, timing or legs fail the full-loop gate by 2:30, preserve sunset with the signed Nisqually Vista plus Myrtle Falls / Alta Vista sequence from Paradise. Turn around before footing or visibility becomes uncertain.',
+    cost:'Park pass required; no timed entry. Carry everything because visitor services may close before the hike ends.',
+    food:'Brunch and pack dinner at the cabin. Carry a full trail meal, warm drink and recovery snacks; the return is too late to rely on Paradise or Packwood kitchens.',
+    map:'Skyline Trail Paradise Mount Rainier',
+    alts:[{title:'Thunder or low cloud: Paradise short loop',href:'https://www.nps.gov/mora/planyourvisit/day-hiking-at-mount-rainier.htm',body:'combine Nisqually Vista with Myrtle Falls and only add Alta Vista while conditions remain safe. It keeps sunset in the meadows without committing to the exposed upper loop.'},{title:'Unsafe evening: stop the hike',href:'https://www.weather.gov/safety/lightning',body:'sunset is a priority, not a reason to remain exposed in lightning, high wind, smoke or poor visibility.'}],
+    links:[['NPS Skyline Trail','https://www.nps.gov/mora/planyourvisit/skyline-trail.htm'],['Recent Skyline sunset discussion','https://www.reddit.com/r/PNWhiking/comments/1vtqay4/skyline_loop_at_sunset/'],['Visit Rainier sunset hikes','https://visitrainier.com/sunset-hikes/'],['Live Paradise webcam',CAM_MOUNTAIN]]
+  }),
+  day({
+    id:'day3', cls:'c3', badge:'Sun', date:'Sept. 6',
+    title:'Comet Falls morning + Naches Peak sunset',
+    feel:'Waterfall and glacier country first; the clockwise Rainier reveal closes the day',
+    facts:[['Cabin &rarr; Comet','41.6 mi &middot; plan 1:30&ndash;1:45'],['Morning hike','3.8 or 5.8 mi &middot; finish by noon'],['Cabin &rarr; Tipsoo','31.6 mi &middot; plan 1:00&ndash;1:10'],['Sunset','7:35 PM &middot; civil dusk 8:06']],
+    note:'Leave at 5:15 AM for the tiny Comet Falls lot. The default is Comet Falls only; add Van Trump Park only if you are moving quickly enough to be back at the car by noon. Recover at the cabin, leave again by 4:45 PM, start Naches clockwise around 6:00, and finish on headlamps around 8:15.',
+    spot:'Comet Falls and Naches Peak Loop', photos:nachesPhotos,
+    flow:'Climb to Comet Falls in the morning and make the Van Trump extension a real-time energy choice. Return to the cabin for food, dry layers and at least two hours off your feet. At Tipsoo, hike Naches clockwise: both NPS and WTA recommend that direction because it saves the classic Rainier-facing half for the return. Be in position along the western half before 7:00, stay through the 7:35 sunset only if the air and trail remain safe, then finish by civil dusk or headlamp.',
+    reality:'This is the highest-output day. The evening hike wins every tradeoff: shorten Comet before cutting Naches, and omit Van Trump if noon is no longer realistic. Naches is open now, but it is the planned route closest to the Grand Park 2 / Backbone fire picture. Any closure expansion, visible smoke increase, unhealthy AQI, thunder or obscured mountain sends you to the south-side fallback or keeps you at the cabin.',
+    cost:'Park pass covers both trailheads. There is no legal overflow at Comet Falls.',
+    food:'Pack breakfast and lunch for Comet. Eat an early cabin dinner around 3:30&ndash;4:00 and carry a thermos and snack for Naches.',
+    map:'Naches Peak Loop Tipsoo Lake',
+    alts:[{title:'East-side smoke: Reflection Lakes / Faraway Rock',href:'https://www.nps.gov/places/reflection-lakes.htm',body:'use this maintained south-side sunset only if Stevens Canyon remains open and its air is clearly better. Do not chase a shifting fire boundary.'},{title:'Legs fail: Tipsoo tarns and meadow',href:'https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm',body:'keep the sunset walk near Tipsoo and turn back before the full loop. The group does not owe the itinerary another 3.2 miles after Comet.'}],
+    links:[['NPS Comet Falls / Van Trump','https://www.nps.gov/mora/planyourvisit/comet-falls-van-trump-park-trail.htm'],['NPS Naches Peak Loop','https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm'],['WTA Naches Peak Loop','https://www.wta.org/go-hiking/hikes/naches-peak-loop'],['NPS fire information','https://www.nps.gov/mora/learn/news/fire.htm']]
+  }),
+  day({
+    id:'day4', cls:'c4', badge:'Mon', date:'Sept. 7',
+    title:'Packwood &rarr; Seattle &rarr; Discovery Park sunset',
+    feel:'A real coastal hike and Olympic sunset, not a rushed roadside viewpoint',
+    facts:[['Leave cabin','10:00 AM &middot; checkout complete'],['Cabin &rarr; W','Plan 2:45&ndash;3:30'],['W &rarr; Discovery','Router 19 min &middot; plan 25&ndash;35'],['Sunset','7:37 PM &middot; civil dusk 8:08']],
+    note:'Reach the W around 1:00&ndash;1:30 PM, use Pike Place and the waterfront for lunch, eat or pack an early dinner, then leave the hotel by 4:45 PM. Park in a general-use lot, begin the Discovery Park loop around 5:30, and reach the West Point lighthouse / beach before 7:00.',
+    spot:'Discovery Park Loop and West Point', photos:seattleMondayPhotos,
+    flow:'Use the Loop Trail, South Beach spur, bluff and West Point shoreline for roughly 3.5&ndash;4.5 miles depending on the exact lot and return. The west-facing beach gives an unobstructed Puget Sound and Olympic Mountains sunset. Leave the beach after color fades and return together with headlamps; plan 25&ndash;35 minutes back to the W and a late drink or simple dinner downtown.',
+    reality:'The beach parking lot is ADA-only, so do not navigate straight to it. Use the East, North or South general lot and preserve enough daylight for the climb back from the water. If Labor Day traffic puts you at the hotel after 3:00, cut the market—not the sunset hike—and use the shorter bluff / South Beach out-and-back. High wind, poor air or a closed shoreline converts this to the signed inland loop.',
+    cost:'Discovery Park is free. Budget for hotel or downtown parking and dinner.',
+    food:'Pike Place lunch around 2 PM, then an early bite or packed food before leaving for Discovery. Save cocktails for after the hike.',
+    map:'Discovery Park Seattle',
+    alts:[{title:'Late arrival: bluff + West Point out-and-back',href:'https://www.seattle.gov/parks/parks/discovery-park',body:'cut mileage and city stops, not the light. Start from a legal general lot and turn around early enough to climb back safely.'},{title:'Weather bailout: inland Loop Trail',href:'https://www.wta.org/go-hiking/hikes/discovery-park-loop-trail',body:'stay on the signed forest and meadow loop if wind or shoreline conditions make the beach unpleasant.'}],
+    links:[['Seattle Parks Discovery Park','https://www.seattle.gov/parks/parks/discovery-park'],['WTA Discovery Park Loop','https://www.wta.org/go-hiking/hikes/discovery-park-loop-trail'],['Sunset hiking overview','https://www.explore.com/1184430/hike-through-seattles-discovery-park-for-stunning-sunset-views-over-the-olympic-mountains/'],['Recent community sunset photo','https://www.reddit.com/r/Seattle/comments/1tjvxyv/sunset_at_discovery_park/']]
+  }),
+  day({
+    id:'day5', cls:'c0', badge:'Tue', date:'Sept. 8',
+    title:'W Seattle &rarr; SEA &rarr; fly home',
+    feel:'The only non-sunset day: you are airborne before noon and land after dark',
+    facts:[['Leave the W','8:00 AM'],['W &rarr; Budget','Plan 30&ndash;45 min'],['SEA departure','AS429 &middot; SEA 11:35 AM'],['PIT arrival','AS6776 &middot; 9:44 PM']],
+    note:'There is no honest way to schedule a sunset hike on Tuesday: the first flight leaves Seattle at 11:35 AM and the connection lands in Pittsburgh at 9:44 PM. Protect the rental return, shuttle and security buffer.',
+    spot:'Seattle Tacoma International Airport', photos:seattleTuesdayPhotos,
+    flow:'Use grab-and-go breakfast beside the W, check out, and leave at 8:00 AM. Target the off-site Budget return for 8:30&ndash;8:45, then take the dedicated rental-car shuttle and aim to be inside SEA around 9:00.',
+    reality:'A crash, rental line, shuttle wait or security line can consume the buffer. Do not move departure later for a morning attraction.',
+    cost:'Breakfast, possible fuel and airport food only.',
+    food:'Carry out breakfast immediately; no sit-down reservation.',
+    map:'Seattle Tacoma International Airport',
+    alts:[{title:'Heavy traffic or security lines',href:'https://www.portseattle.org/sea-tac/security-screening-checkpoints',body:'leave at 7:15&ndash;7:30 and skip breakfast. The flight is the fixed point.'}],
+    links:[['SEA traveler tips','https://www.portseattle.org/page/traveler-updates-and-tips'],['SEA rental-car shuttle','https://www.portseattle.org/sea/ground-transportation/rental-car'],['SEA security checkpoints','https://www.portseattle.org/sea-tac/security-screening-checkpoints']]
+  })
+].join('\n');
+
 /* ------------------------------------------------------------------ main */
 
-const sources = section('sources', 'Evidence', 'Official sources behind the rebuild', 'Every source below is dated by when the agency last updated it, not by when it was read. Closure and trail sources were re-read on Aug. 31, 2026. Wildfire conditions change during the day; recheck at night and again before driving.', `<ul class="source-list"><li><a href="https://www.nps.gov/mora/planyourvisit/conditions.htm" target="_blank" rel="noreferrer">NPS Alerts &amp; Conditions</a> &mdash; <b>NPS updated Aug. 31, 2026.</b> The active wildfire closure alert now names only the north side (Sunrise, White River, Grand Park, Northern Loop, and the northern Wonderland segment); the Plummer Peak / Pinnacle closure is no longer listed.</li><li><a href="https://www.nps.gov/mora/learn/news/fire.htm" target="_blank" rel="noreferrer">NPS Wildland Fire Information</a> &mdash; Sunrise/White River closures, the Wonderland Complex closures, Backbone Fire smoke warning, air-quality guidance, and the parkwide fire ban.</li><li><a href="https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm" target="_blank" rel="noreferrer">NPS Trail Status Report</a> &mdash; <b>NPS updated Aug. 31, 2026; the Pinnacle Peak Trail row was cleared of its closure note on Aug. 27.</b> Trail-by-trail access; Pinnacle, Bench/Snow, Lakes Trail, Skyline, Comet Falls, Eagle Peak, Rampart Ridge, Shriner Peak, Silver Falls and Naches all read open, subject to their road and morning air gates.</li><li><a href="https://www.nps.gov/mora/planyourvisit/road-status.htm" target="_blank" rel="noreferrer">NPS Road Status</a> &mdash; <b>updated when status changes.</b> Stevens Canyon, Longmire&ndash;Paradise, Paradise Valley, SR 123 and SR 410 open; Sunrise, White River and SR 165 closed. Confirm the spine again before driving.</li><li><a href="https://wsdot.com/Travel/Real-time/Map/" target="_blank" rel="noreferrer">WSDOT mountain-pass and real-time map</a> &mdash; Cayuse and Chinook Pass status on the drive between Packwood, Tipsoo and Seattle.</li><li><a href="https://www.nps.gov/mora/planyourvisit/pinacle-peak.htm" target="_blank" rel="noreferrer">NPS Pinnacle Peak Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/bench-snow-lake-trail.htm" target="_blank" rel="noreferrer">Bench and Snow Lake Trail</a>, and <a href="https://www.nps.gov/places/reflection-lakes.htm" target="_blank" rel="noreferrer">Reflection Lakes / Lakes Trail</a> &mdash; Friday primary and its two fallback tiers.</li><li><a href="https://www.nps.gov/mora/planyourvisit/skyline-trail.htm" target="_blank" rel="noreferrer">NPS Skyline Trail</a> and <a href="https://www.nps.gov/mora/planyourvisit/day-hiking-at-mount-rainier.htm" target="_blank" rel="noreferrer">day-hike table</a> &mdash; Saturday primary and shorter Paradise option.</li><li><a href="https://www.nps.gov/mora/planyourvisit/comet-falls-van-trump-park-trail.htm" target="_blank" rel="noreferrer">NPS Comet Falls and Van Trump Park</a>, <a href="https://www.nps.gov/mora/planyourvisit/upload/Eagle-Peak-Trail-Dec18.pdf" target="_blank" rel="noreferrer">Eagle Peak</a>, and <a href="https://www.nps.gov/mora/planyourvisit/rampart-ridge-trail.htm" target="_blank" rel="noreferrer">Rampart Ridge</a> &mdash; Sunday primary and two distinct fallback levels.</li><li><a href="https://www.nps.gov/mora/planyourvisit/shriner-peak.htm" target="_blank" rel="noreferrer">NPS Shriner Peak</a> &mdash; strongest still-accessible lookout alternative on open SR 123.</li><li><a href="https://www.nps.gov/places/grove-of-the-patriarchs-trailhead.htm" target="_blank" rel="noreferrer">NPS Grove trailhead access</a> and <a href="https://www.nps.gov/places/silver-falls.htm" target="_blank" rel="noreferrer">Silver Falls</a> &mdash; the grove is closed, but its parking, restrooms, Eastside Trail, and Silver Falls approach remain open.</li><li><a href="https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm" target="_blank" rel="noreferrer">NPS Naches Peak Loop</a> &mdash; route facts for the optional Monday farewell.</li><li><a href="https://www.nps.gov/mora/learn/news/mount-rainier-national-park-will-not-require-timed-entry-reservations-in-2026.htm" target="_blank" rel="noreferrer">NPS 2026 timed-entry announcement</a> &mdash; standing policy: no timed-entry reservation anywhere in the park in 2026.</li><li><a href="${CAM_INDEX}" target="_blank" rel="noreferrer">NPS Mount Rainier webcams</a> &mdash; the ${camLink('Paradise Mountain cam')} is the go/no-go view of the summit; the ${camLink('Tatoosh cam', CAM_TATOOSH)} looks south from Paradise at the range Pinnacle climbs into; East, West, Visitor Center and an <a href="https://www.nps.gov/subjects/air/webcams.htm?site=mora" target="_blank" rel="noreferrer">air-quality cam</a> round out the Paradise set. The Sunrise cams sit behind the closure and are not part of the morning gate.</li><li><a href="https://forecast.weather.gov/MapClick.php?lat=46.7857&amp;lon=-121.7351" target="_blank" rel="noreferrer">NWS point forecast for Paradise</a> &mdash; <b>read Aug. 31, 2026.</b> Cold front Wednesday&ndash;Thursday with rain, thunderstorms, and a rain-and-snow mix at Paradise elevations; light rain likely Friday; 25&ndash;36% shower chances through Labor Day. The packing blocks were re-baselined against this read; replace it with the hourly forecast 48 hours out.</li><li><a href="https://fire.airnow.gov/" target="_blank" rel="noreferrer">AirNow Fire and Smoke Map</a> and <a href="https://outlooks.airfire.org/outlook" target="_blank" rel="noreferrer">AirFire smoke outlooks</a> &mdash; live morning gates; never carry an earlier AQI reading forward.</li></ul>`);
+const sources = section('sources', 'Evidence', 'Sources behind the sunset rebuild', 'Official agencies decide access, fire safety and weather. Trail organizations, current hiker discussions and photography guides help choose the best light. All access claims were rechecked Sept. 2, 2026; wildfire conditions can change within hours.', `<ul class="source-list"><li><a href="https://www.nps.gov/mora/planyourvisit/conditions.htm" target="_blank" rel="noreferrer">NPS Alerts &amp; Conditions</a> and <a href="https://www.nps.gov/mora/learn/news/fire.htm" target="_blank" rel="noreferrer">NPS Wildland Fire Information</a> &mdash; updated Aug. 31: Sunrise Road, White River Road and their originating trails remain closed for the Grand Park 2 Fire; Pinnacle Peak Trail and Stevens Canyon Road are open.</li><li><a href="https://www.nps.gov/mora/planyourvisit/trails-and-backcountry-camp-conditions.htm" target="_blank" rel="noreferrer">NPS Trail Status Report</a> &mdash; Pinnacle, Skyline, Comet Falls, Naches, Tipsoo and the named south-side fallbacks currently read open. Recheck before every departure.</li><li><a href="https://www.nps.gov/mora/planyourvisit/road-status.htm" target="_blank" rel="noreferrer">NPS Road Status</a> and <a href="https://wsdot.com/Travel/Real-time/Map/" target="_blank" rel="noreferrer">WSDOT real-time map</a> &mdash; the planned Nisqually / Paradise / Stevens Canyon / SR 123 / SR 410 spine, subject to same-day change.</li><li><a href="https://forecast.weather.gov/MapClick.php?lat=46.7786&amp;lon=-121.7251" target="_blank" rel="noreferrer">NWS Paradise point forecast</a> &mdash; read Sept. 2: Friday showers likely with possible afternoon thunder; Saturday carries another afternoon shower / thunder chance; Sunday and Monday currently look drier and mostly sunny.</li><li><a href="https://fire.airnow.gov/" target="_blank" rel="noreferrer">AirNow Fire and Smoke Map</a> and <a href="https://outlooks.airfire.org/outlook" target="_blank" rel="noreferrer">AirFire outlooks</a> &mdash; the morning and pre-sunset smoke gates.</li><li><a href="https://www.nps.gov/mora/planyourvisit/pinacle-peak.htm" target="_blank" rel="noreferrer">NPS Pinnacle Peak Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/skyline-trail.htm" target="_blank" rel="noreferrer">NPS Skyline Trail</a>, <a href="https://www.nps.gov/mora/planyourvisit/comet-falls-van-trump-park-trail.htm" target="_blank" rel="noreferrer">NPS Comet / Van Trump</a>, and <a href="https://www.nps.gov/mora/planyourvisit/natches-peak-loop.htm" target="_blank" rel="noreferrer">NPS Naches Peak</a> &mdash; official route facts.</li><li><a href="https://www.wta.org/go-hiking/hikes/naches-peak-loop" target="_blank" rel="noreferrer">WTA Naches guide</a> and <a href="https://explore.pcta.org/trips/naches-peak-loop/print" target="_blank" rel="noreferrer">PCTA Naches guide</a> &mdash; both support clockwise travel for the Rainier-facing return.</li><li><a href="https://www.reddit.com/r/PNWhiking/comments/1vtqay4/skyline_loop_at_sunset/" target="_blank" rel="noreferrer">Recent Skyline sunset hikers</a> and <a href="https://visitrainier.com/sunset-hikes/" target="_blank" rel="noreferrer">Visit Rainier sunset guide</a> &mdash; community timing and photography rationale, subordinate to current NPS conditions.</li><li><a href="https://www.seattle.gov/parks/parks/discovery-park" target="_blank" rel="noreferrer">Seattle Parks Discovery Park</a> and <a href="https://www.wta.org/go-hiking/hikes/discovery-park-loop-trail" target="_blank" rel="noreferrer">WTA Discovery Park Loop</a> &mdash; legal parking, loop facts, bluff, beach and West Point access.</li><li><a href="https://www.timeanddate.com/sun/%405806025?month=9" target="_blank" rel="noreferrer">Rainier-area sun table</a> &mdash; sunset and civil-dusk times used in the schedule.</li></ul>`);
 
-const operationalSources = sources.replace('</ul>', '<li><a href="https://www.blantonsgrocery.com/" target="_blank" rel="noreferrer">Blanton&rsquo;s Market</a> &mdash; official Packwood address and current 7:00 AM&ndash;9:00 PM daily hours for the Friday grocery-and-beer stop.</li><li><a href="https://www.portseattle.org/sea/ground-transportation/rental-car" target="_blank" rel="noreferrer">SEA Rental Cars</a> &mdash; the rental facility is off-site and connected to the terminal by dedicated shuttle; the official page gives return directions.</li><li><a href="https://www.portseattle.org/page/traveler-updates-and-tips" target="_blank" rel="noreferrer">SEA traveler tips</a> &mdash; current airport guidance says to arrive at least two hours before a domestic flight.</li></ul>');
+const operationalSources = sources.replace('</ul>', '<li><a href="https://www.fredmeyer.com/stores/grocery/wa/spanaway/bethel-station/701/00604" target="_blank" rel="noreferrer">Fred Meyer Bethel Station</a> &mdash; full grocery plus beer, wine and liquor, open 7 AM&ndash;10 PM, directly on the official SR 7 approach. Router baseline: 54 minutes from the rental facility and 1 hour 40 minutes onward to Pinnacle before buffers.</li><li><a href="https://www.blantonsgrocery.com/" target="_blank" rel="noreferrer">Blanton&rsquo;s Market</a> &mdash; Packwood top-up only; the 9 PM close conflicts with a 7:39 mountain sunset.</li><li><a href="https://www.portseattle.org/sea/ground-transportation/rental-car" target="_blank" rel="noreferrer">SEA Rental Cars</a> and <a href="https://www.portseattle.org/page/traveler-updates-and-tips" target="_blank" rel="noreferrer">SEA traveler tips</a> &mdash; off-site rental shuttle and Tuesday airport buffer.</li></ul>');
 
 const main = `<main>
 ${closureUpdate}
@@ -865,7 +959,7 @@ ${edit(sectionFromBaseline('weather-history'), [
 ])}
 ${sectionFromBaseline('map')}
 ${closedTrails}
-${section('itinerary', 'Day by day', 'The rebuilt Packwood / Rainier itinerary', 'This is the schedule to follow. Every hike has a real cutoff and a named fallback.', `<div class="days">${days}</div>`)}
+${section('itinerary', 'Day by day', 'The sunset-protected Packwood / Rainier itinerary', 'Friday through Monday each has a real sunset hike, its drive time, a hard safety gate, and a shorter bailout. Tuesday is the sole exception because the new flights occupy the day.', `<div class="days">${sunsetDays}</div>`)}
 ${savedIdeas}
 ${recommended}
 ${trailGuide}
@@ -932,7 +1026,8 @@ const points = [
   ['SEA airport',47.4435,-122.3016,'seattle','flight'],
   ['Budget rental car',47.439,-122.297,'seattle','rental'],
   ['Packwood cabin (mountain base)',46.6505,-121.63574,'rainier','hotel'],
-  ['Blanton&rsquo;s Market (groceries + beer)',46.6084775,-121.669327,'rainier','food'],
+  ['Fred Meyer Bethel Station (planned groceries + beer)',47.0552394,-122.3973202,'rainier','food'],
+  ['Blanton&rsquo;s Market (Packwood top-up only)',46.6084775,-121.669327,'rainier','food'],
   ['Pinnacle Saddle trailhead',46.7683,-121.7314,'rainier','hike'],
   ['Pinnacle Glacier Tarn (unmaintained spur)',46.7586,-121.7307,'rainier','view'],
   ['Bench & Snow Lakes trailhead (fallback)',46.7649,-121.7038,'rainier','hike'],
@@ -944,7 +1039,8 @@ const points = [
   ['Tipsoo / Naches Peak',46.8686,-121.5178,'rainier','hike'],
   ['W Seattle (1112 4th Ave)',47.6074907,-122.3339425,'seattle','hotel'],
   ['Pike Place Market',47.6094,-122.3417,'seattle','sight'],
-  ['Kerry Park',47.6295,-122.3599,'seattle','view']
+  ['Discovery Park general parking',47.6577,-122.4064,'seattle','hike'],
+  ['West Point Lighthouse sunset',47.6613,-122.4356,'seattle','view']
 ].map(([n,lat,lng,r,t]) => ({n,lat,lng,r,g:`https://www.google.com/maps/search/?api=1&query=${lat},${lng}`,t}));
 
 if (!/window\.__MAP_POINTS__=\[[\s\S]*?\];window\.__MAP_COLORS__=/.test(html)) throw new Error('Map points block not found');
@@ -973,18 +1069,18 @@ for (const orphan of ['google_comet_falls_03', 'google_mildred_point_01', 'googl
 }
 if (/Mount Fremont Lookout|First \+ Second Burroughs/.test(html)) throw new Error('Closed-trail card survived filtering');
 if (!html.includes('id="tg-pinnacle"')) throw new Error('Reopened Pinnacle Saddle trail card missing');
-if (!html.includes('SEA &rarr; Pinnacle Saddle &rarr; Packwood')) throw new Error('Friday Pinnacle day missing');
+if (!html.includes('SEA &rarr; groceries &rarr; Pinnacle Saddle sunset')) throw new Error('Friday Pinnacle sunset day missing');
 if (!html.includes('id="tg-pinnacle-tarn"')) throw new Error('Pinnacle Glacier Tarn trail card missing');
 // The tarn card must state that it is unofficial; the whole point of separating it
 // from the Pinnacle Saddle card is that a reader never mistakes it for an NPS trail.
 if (!/It is not an NPS trail\./.test(html)) throw new Error('Tarn unmaintained-route caveat missing');
-for (const current of ['AS78', 'AS429', 'AS6776', 'SEA 9:14 AM', 'SEA 11:35', 'PIT 9:44 PM', 'data-trip-days="5"', 'Blanton&rsquo;s Market']) {
+for (const current of ['AS78', 'AS429', 'AS6776', 'SEA 9:14 AM', 'SEA 11:35', 'PIT 9:44 PM', 'data-trip-days="5"', 'Fred Meyer Bethel Station', 'Discovery Park']) {
   if (!html.includes(current)) throw new Error(`Updated schedule detail missing: ${current}`);
 }
 for (const stale of ['AS341', 'SEA 10:25 AM', 'SEA 1:45 PM &rarr; ORD', 'Budget by noon', '11:59 PM Eastern']) {
   if (html.includes(stale)) throw new Error(`Stale flight detail remains: ${stale}`);
 }
-for (const drive of ['Cabin &rarr; Paradise', 'Paradise &rarr; cabin', 'Cabin &rarr; Comet', 'Comet &rarr; cabin', 'Cabin &rarr; Tipsoo', 'Tipsoo &rarr; Seattle']) {
+for (const drive of ['Cabin &rarr; Paradise', 'Paradise &rarr; cabin', 'Cabin &rarr; Comet', 'Comet &rarr; cabin', 'Cabin &rarr; Tipsoo', 'Tipsoo &rarr; cabin', 'W &rarr; Discovery', 'Discovery &rarr; W']) {
   if (!html.includes(drive)) throw new Error(`Scheduled trail drive missing: ${drive}`);
 }
 {
