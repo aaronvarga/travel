@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "canary-islands",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -330,16 +330,16 @@
         "june2027ProtectedTicketVerified": false,
         "returnBuffer": "one Tenerife night",
         "singleTicket": false,
-        "currentFlightAudit": "PIT–Tenerife is available June 8–22 from about $1,178 per traveler with two stops. Binter sells exact June 15/20 Tenerife–La Palma nonstops from about $133 round trip; the planned Tenerife buffer remains prudent.",
+        "currentFlightAudit": "PIT–Tenerife is available June 8–22 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent.",
         "exact2027FlightsVerified": true,
         "june2027Verified": true
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "binter-canary-network-2026": "Binter 2026 press kit documents dense service among Tenerife and La Palma; exact 2027 dates/fare absent",
         "internal-itinerary": "canary-islands/main.json air section requires Tenerife reposition and prohibits a fragile direct SPC long-haul chain",
-        "google-flights-2027-current-audit": "PIT–Tenerife is available June 8–22 from about $1,178 per traveler with two stops. Binter sells exact June 15/20 Tenerife–La Palma nonstops from about $133 round trip; the planned Tenerife buffer remains prudent."
+        "google-flights-2027-current-audit": "PIT–Tenerife is available June 8–22 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent."
       },
       "claimType": "proxy"
     },
@@ -437,7 +437,7 @@
     "medium-confidence SST and budget claims"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "confirmed",
     "headline": "Both the long-haul dates and Tenerife–La Palma flights are selling"
   }

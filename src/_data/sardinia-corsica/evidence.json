@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "sardinia-corsica",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -113,11 +113,11 @@
         "lineItemCount": 4,
         "arithmetic": "5400–6400 + 3200–5500 + 1280–2400 + 3000–4000 = 12880–18300; displayed 12900–18300"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning."
+        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning."
       },
       "claimType": "proxy"
     },
@@ -301,19 +301,19 @@
         "maxConnections": 2,
         "route": "Santa Teresa Gallura ↔ Bonifacio as foot passengers; Sardinia rental car remains parked",
         "dateWindow": "June 2027 exact ferry dates unpublished",
-        "currentFlightAudit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning.",
+        "currentFlightAudit": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "moby-stg-bonifacio": "Official Moby route page checked 2026-07-10: multiple daily sailings, 50-minute crossing, 2026 terms; 2027 timetable not published",
         "internal-itinerary": "#health-check defaults to foot passengers because rental agreements may prohibit taking an Italian car into Corsica",
         "state-travel": "Italy and France Level 2 advisories reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Sardinia & Corsica; recheck before departure",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-OLB sold as single tickets (2-stop ~$514-540, ~15h, United/AC/Delta; BA 1-stop via LHR $715); CAG-PIT Wednesday verified same-day single ticket (Vueling+BA+Iberia via BCN+LHR, 16h, ~$1,057).",
-        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning."
+        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning."
       },
       "claimType": "proxy"
     },
@@ -422,7 +422,7 @@
     "exact 2027 timetable and rental terms remain open"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
     "headline": "Exact Sardinia inventory is live, but the old low airfare floor is gone"
   }

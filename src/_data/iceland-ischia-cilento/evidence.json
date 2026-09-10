@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "iceland-ischia-cilento",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "evidenceBasis": "Current operator schedules, official attraction prices, a live nearby June 2027 PIT–KEF fare signal, historical climate/sea proxies, and exact internal itinerary arithmetic.",
   "confidenceBasis": "The route shape and itemized arithmetic are high-confidence derived facts. Overall confidence is medium because the exact June 10–23 stopover airfare, operating days, lodging, cars, and 2027 hydrofoils are not yet quoted together.",
@@ -125,29 +125,22 @@
     {
       "id": "airfare-proxy",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
-      "confidence": "medium",
+      "proxyStatus": "reroute-required",
+      "confidence": "high",
       "sourceRefs": [
-        "icelandair-stopover",
-        "icelandair-pit-kef-2027-fare",
-        "icelandair-pit-fco-fare"
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "nearbyPitKefRoundTripPerPersonUsd": 719,
-        "separatePitFco2027SignalPerPersonUsd": 1114,
-        "familyPlanningBandUsd": [
-          3600,
-          4800
-        ],
-        "stopoverNights": 4,
-        "exactTripQuoteObserved": false
+        "pitKefRoundTripPerPersonUsd": 663,
+        "kefFcoOneWayPerPersonUsd": 241,
+        "exactTripQuoteObserved": true,
+        "assumedIcelandairStopoverAvailable": false,
+        "routeConclusion": "The exact dates require connections on both PIT–KEF and KEF–FCO; rebuild the air stack."
       },
-      "verifiedAt": "2026-07-12",
-      "expiresAt": "2026-08-15",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
-        "icelandair-stopover": "Most fares permit up to seven stopover nights with no additional airfare surcharge; demand can still alter the fare.",
-        "icelandair-pit-kef-2027-fare": "PIT–KEF page displayed nearby June 2027 round trips from $719 on July 12, 2026.",
-        "icelandair-pit-fco-fare": "PIT–FCO page displayed a separate 2027 round-trip window from $1,114 on July 12, 2026."
+        "google-flights-2027-current-audit": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking."
       },
       "claimType": "observed-quote"
     },
@@ -390,12 +383,12 @@
         "dailySafetyChecksRequired": true,
         "singleTicket": false,
         "maxConnections": 1,
-        "currentFlightAudit": "PIT–KEF has no nonstop on Thursday June 10. One-stop tickets sell, but they do not preserve the assumed Icelandair stopover fare to Rome; re-date the outbound or rebuild the air stack before treating this itinerary as bookable.",
+        "currentFlightAudit": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "icelandair-stopover": "Stopover product permits the route shape; exact days and fare remain unquoted.",
         "icelandair-pit-kef-2027-fare": "Nearby June 2027 service is selling, not the exact itinerary.",
@@ -405,7 +398,7 @@
         "safetravel-reynisfjara": "Official sneaker-wave warning protocol.",
         "internal-itinerary": "FCO buffer and weather alternatives bound the known risks.",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-KEF 2027-06-10 nonstop not sold (1-stop single tickets are); KEF-FCO Icelandair seasonal nonstop verified in the Aug 2026 pattern (4h45, ~$671); Jun 15 2027 is beyond the booking window.",
-        "google-flights-2027-current-audit": "PIT–KEF has no nonstop on Thursday June 10. One-stop tickets sell, but they do not preserve the assumed Icelandair stopover fare to Rome; re-date the outbound or rebuild the air stack before treating this itinerary as bookable."
+        "google-flights-2027-current-audit": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking."
       },
       "claimType": "proxy"
     },
@@ -517,7 +510,7 @@
     }
   },
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "reroute-required",
     "headline": "The June 10 Icelandair nonstop/stopover construction does not exist"
   }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "croatia",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -114,11 +114,11 @@
         "lineItemCount": 5,
         "arithmetic": "5600–6800 flights + 700–1300 grouped ground transport + 2100–3100 lodging + 1705–2900 grouped food/activities + 300–700 buffer = 10405–14800; displayed 10400–14800"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket."
+        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket."
       },
       "claimType": "proxy"
     },
@@ -315,12 +315,12 @@
           "private Korčula/DBV transfer with flight margin",
           "ETIAS status"
         ],
-        "currentFlightAudit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket.",
+        "currentFlightAudit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "Croatia #air-travel, #getting-around, #status and exact island-transfer/departure days",
         "jadrolinija-split-hvar-2026": "Jadrolinija official line 641/current page: direct Split–Hvar passenger service and 2026 seasonal timetable; not a June 2027 confirmation",
@@ -329,7 +329,7 @@
         "state-travel": "Croatia advisory review required before booking/departure",
         "cdc-travel": "Croatia destination health guidance to recheck before departure",
         "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck",
-        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket."
+        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket."
       },
       "claimType": "proxy"
     },
@@ -451,7 +451,7 @@
     "independent food/store audit and June 2027 schedules remain incomplete"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
     "headline": "Exact Split inventory is live, but the Dubrovnik open-jaw costs more than the old band"
   }

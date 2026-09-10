@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -115,12 +115,12 @@
         "arithmetic": "5300–6200 + 390–785 + 650–1250 + 250–350 + 2200–3500 + 1700–2300 = 10490–14385; displayed 10500–14400",
         "observedPartialInput": "TAP displayed a €221 one-passenger FAO–FNC round trip for 2027-06-13 to 2027-06-19; not the full family itinerary"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "portugal/main.json #totals budget table; six category rows and Grand total; lodging row explicitly says rough—not researched",
         "tap-faro-funchal": "TAP operator fare calendar observed 2026-07-10 displayed €221 for one passenger round trip 2027-06-13 to 2027-06-19; not a four-person through-ticket or lodging quote",
-        "google-flights-2027-current-audit": "PIT–LIS is about $1,332 per traveler for June 10–23. FAO–FNC sells June 18 via Lisbon in about 5h35; there is no Friday nonstop. The revised family air stack is roughly $5.7k–$7.0k."
+        "google-flights-2027-current-audit": "PIT–LIS is selling June 10–23 from $1,285 round trip. FAO–FNC sells June 18 via Lisbon in 5h35 from $169 one way; there is no Friday nonstop. The existing family air band still holds."
       },
       "claimType": "proxy"
     },
@@ -344,17 +344,17 @@
         "requiredDateNonstopVerified": false,
         "protectedOpenJawVerified": false,
         "singleTicket": false,
-        "currentFlightAudit": "PIT–LIS is about $1,332 per traveler for June 10–23. FAO–FNC sells June 18 via Lisbon in about 5h35; there is no Friday nonstop. The revised family air stack is roughly $5.7k–$7.0k.",
+        "currentFlightAudit": "PIT–LIS is selling June 10–23 from $1,285 round trip. FAO–FNC sells June 18 via Lisbon in 5h35 from $169 one way; there is no Friday nonstop. The existing family air band still holds.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "tap-faro-funchal": "TAP fare calendar observed 2026-07-10 displayed FAO–FNC round trip June 13–19, 2027 from €221; page did not establish nonstop operation on June 18 or ticket protection",
         "internal-itinerary": "portugal/main.json Plan Health-Check identifies FAO→FNC as the fragile joint and requires it to anchor the dates",
         "google-flights-2027-audit": "Checked 2026-07-19: TAP/Portugalia FAO-FNC nonstop (1h40, ~$253) sells Mon/Thu/Sun in the Aug 2026 pattern; Friday is NOT served, so the Friday 2027-06-18 anchor needs the Thu/Sun nonstop or the sold TAP one-stop via LIS (5h35 single ticket).",
-        "google-flights-2027-current-audit": "PIT–LIS is about $1,332 per traveler for June 10–23. FAO–FNC sells June 18 via Lisbon in about 5h35; there is no Friday nonstop. The revised family air stack is roughly $5.7k–$7.0k."
+        "google-flights-2027-current-audit": "PIT–LIS is selling June 10–23 from $1,285 round trip. FAO–FNC sells June 18 via Lisbon in 5h35 from $169 one way; there is no Friday nonstop. The existing family air band still holds."
       },
       "claimType": "proxy"
     },
@@ -474,7 +474,7 @@
     "unquoted June 2027 airfare/lodging and non-reproduced SST remain medium confidence"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
     "headline": "The exact Portugal flights sell, but current airfare is much higher"
   }

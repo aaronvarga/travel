@@ -24,10 +24,16 @@ module.exports = function () {
   return slugs.map((slug) => {
     const base = path.join(dir, slug);
     const readJson = (f) => JSON.parse(fs.readFileSync(path.join(base, f), 'utf8'));
+    const main = readJson('main.json');
     const flightAudit = flightAudits.trips[slug]
-      ? { ...flightAudits.trips[slug], reviewedAt: flightAudits.reviewedAt }
+      ? {
+          ...flightAudits.trips[slug],
+          reviewedAt: main.tripCategory === 'short'
+            ? flightAudits.reviewedAt
+            : (flightAudits.fullTripsReviewedAt || flightAudits.reviewedAt),
+        }
       : null;
-    const trip = { slug, main: readJson('main.json'), flightAudit };
+    const trip = { slug, main, flightAudit };
     if (fs.existsSync(path.join(base, 'photoGuide.json'))) trip.photoGuide = readJson('photoGuide.json');
     if (fs.existsSync(path.join(base, 'foodGuide.json'))) trip.foodGuide = readJson('foodGuide.json');
     if (fs.existsSync(path.join(base, 'evidence.json'))) {

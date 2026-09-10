@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-crete",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Five category rollups total $12,035–$16,800, consistent with the displayed $12,100–$16,800 gated band. Even the low case is slightly above target and the high case exceeds the preferred maximum; airfare remains unquoted.",
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $13,700–$18,100. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,24 +102,26 @@
       "sourceRefs": [
         "internal-itinerary",
         "aegean-lisbon-athens",
-        "aegean-athens-crete"
+        "aegean-athens-crete",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 12100,
+        "lowUsd": 13700,
         "expectedUsd": null,
-        "highUsd": 16800,
+        "highUsd": 18100,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "6580–8700 + 1955–3150 + 1850–2500 + 1150–1750 + 500–700 = 12035–16800; displayed 12100–16800"
+        "arithmetic": "8180–10000 + 1955–3150 + 1850–2500 + 1150–1750 + 500–700 = 13635–18100; displayed 13700–18100"
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "madeira-crete/main.json #totals five category rows; headline budget explicitly gated on flight stack",
         "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 showed January 2027 LIS–ATH one-way examples from €132; only one component of the flight stack",
-        "aegean-athens-crete": "Operator calendar observed 2026-07-10 showed current ATH–CHQ/HER examples from €26–€50; not June 2027 or the full family itinerary"
+        "aegean-athens-crete": "Operator calendar observed 2026-07-10 showed current ATH–CHQ/HER examples from €26–€50; not June 2027 or the full family itinerary",
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night."
       },
       "claimType": "proxy"
     },
@@ -333,11 +335,11 @@
         "june2027Verified": false,
         "trailReservationsRequired": true,
         "singleTicket": false,
-        "currentFlightAudit": "PIT–FNC sells June 8 from about $1,202 round trip and LIS–CHQ sells June 14 via ATH on one Aegean ticket. Keep the Lisbon weather-buffer night.",
+        "currentFlightAudit": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night.",
         "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "ana-madeira-wind-operations": "ANA official notice documents strong-wind flight disruption at Madeira; historical example only",
         "aegean-lisbon-athens": "Operator currently sells LIS–ATH but not the exact June 14, 2027 chain",
@@ -345,7 +347,7 @@
         "internal-itinerary": "madeira-crete/main.json Plan Health-Check mandates Lisbon wind buffer and protected tickets",
         "visit-madeira-hiking": "Official 2026 rules require timed reservation for all classified PR trails and live status checks",
         "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop sold for exact 2027-06-08; LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55 total, 1h10 ATH connection, ~$440); Aegean June 2027 inventory not yet loaded.",
-        "google-flights-2027-current-audit": "PIT–FNC sells June 8 from about $1,202 round trip and LIS–CHQ sells June 14 via ATH on one Aegean ticket. Keep the Lisbon weather-buffer night."
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night."
       },
       "claimType": "proxy"
     },
@@ -455,8 +457,8 @@
     "prices, properties, and non-reproduced SST remain medium"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
-    "headline": "The exact Madeira and Lisbon–Chania flights are selling"
+    "headline": "Every component is selling, but the family air floor has risen"
   }
 }

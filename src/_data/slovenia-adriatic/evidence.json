@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "slovenia-adriatic",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -330,18 +330,18 @@
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required, children apply without a fee",
         "vrsicOpening": "normally open by mid-June but not guaranteed; check promet.si, Predel/Tarvisio fallback",
         "note": "Not ready to book. Re-quote LJU vs Venice on ITA Matrix, confirm the Vršič Pass is open near travel, and verify ETIAS status once 2027 inventory opens.",
-        "currentFlightAudit": "PIT–LJU is available June 8–22 from about $1,348 per traveler with two stops; a British Airways one-stop via Heathrow also appears. The old ‘2027 not bookable’ language is obsolete.",
+        "currentFlightAudit": "PIT–LJU is available June 8–22 from $1,347 round trip with two stops. Exact inventory remains live; compare the protected Ljubljana routing with the Venice-drive fallback before purchase.",
         "exact2027FlightsVerified": true,
         "june2027Verified": true
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "lju-vce-routing": "No PIT-Europe nonstop and no LJU long-haul; two-stop LJU vs single-connection Venice gateway",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "slovenia-adriatic/main.json air-travel section and round-trip construction",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-LJU bookable NOW for the exact 2027-06-08 date - 2-stop single tickets $536-550 (United+SWISS via IAD/ZRH 13h05; Air Canada+Lufthansa via YUL/FRA 12h05); BA 1-stop via LHR $926.",
-        "google-flights-2027-current-audit": "PIT–LJU is available June 8–22 from about $1,348 per traveler with two stops; a British Airways one-stop via Heathrow also appears. The old ‘2027 not bookable’ language is obsolete."
+        "google-flights-2027-current-audit": "PIT–LJU is available June 8–22 from $1,347 round trip with two stops. Exact inventory remains live; compare the protected Ljubljana routing with the Venice-drive fallback before purchase."
       },
       "claimType": "proxy"
     },
@@ -439,7 +439,7 @@
     "medium-confidence swim claim (Adriatic SST is a proxy and cooler than the warm-water peers)"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "confirmed",
     "headline": "Exact Ljubljana round trips are selling"
   }

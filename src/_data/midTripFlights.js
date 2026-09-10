@@ -4,11 +4,11 @@ const flights = [
     trips: [
       { label: 'Madeira + Sicily', href: 'locations/madeira-sicily/index.html' },
     ],
-    transfer: '1 required buffer night + ~6½–10h one-stop journey',
-    timeValue: 32,
-    complexity: 5,
-    risk: 4,
-    watch: 'Exact June 15 inventory has no nonstop. Keep the Lisbon night, then use a sold one-stop via Rome, Zurich, or Munich rather than the former easyJet assumption.',
+    transfer: '1 required buffer night + ~3h nonstop',
+    timeValue: 27,
+    complexity: 4,
+    risk: 3,
+    watch: 'easyJet now sells the exact June 15 Lisbon–Palermo nonstop from $77. Keep the Lisbon night for Funchal wind and treat the separate-ticket handoff as the remaining risk.',
   },
   {
     route: 'Madeira → Lisbon buffer → Chania via Athens',
@@ -22,15 +22,15 @@ const flights = [
     watch: 'The June 14 Aegean Lisbon–Athens–Chania itinerary is selling on one ticket. Keep the buffer because FNC weather can still disrupt the positioning leg.',
   },
   {
-    route: 'Carvoeiro → Lisbon → Palermo',
+    route: 'Faro → Lisbon → Rome → Palermo',
     trips: [
       { label: 'Portugal (Algarve) + Sicily', href: 'locations/portugal-algarve-sicily/index.html' },
     ],
-    transfer: '~2h40 airport drive + ~3h flight',
-    timeValue: 9.67,
+    transfer: '~8h20 · 2 stops · same-day',
+    timeValue: 8.33,
     complexity: 5,
     risk: 5,
-    watch: 'A long Algarve-to-Lisbon reposition precedes the thin Lisbon–Palermo service. Add a Lisbon-airport night whenever the published departure is early or wrong-day.',
+    watch: 'The former Vueling/Barcelona chain is not sold. Use the exact-date TAP/ITA itinerary via Lisbon and Rome, and keep the whole internal move on one protected ticket.',
   },
   {
     route: 'Lisbon → Athens → Chania',

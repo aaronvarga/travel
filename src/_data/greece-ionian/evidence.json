@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "greece-ionian",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -335,12 +335,12 @@
         "navagio": "Cove closed to landing/swimming through Oct 31 2026 (landslide risk); boats view from the bay mouth. 2027 status unannounced.",
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; EUR20/adult if required, exempt under 18/over 70.",
         "note": "Exact-date PIT-EFL and ATH-PIT components are live. Price EFL-in/ATH-out as one protected multi-city ticket, reject PVK, and reconfirm the ferry timetable and Navagio status.",
-        "currentFlightAudit": "Google Flights returns no PIT–PVK options for the exact dates. The itinerary now drives from Lefkada to an Athens-airport buffer on June 21 and uses sold June 22 ATH–PIT inventory; price EFL-in/ATH-out together before booking.",
+        "currentFlightAudit": "PIT–EFL is selling June 9–22 from $1,363 round trip with two stops. Keep the corrected Lefkada-to-Athens buffer and price EFL-in/ATH-out together; do not restore the unavailable Preveza exit.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "aegean-ath-efl": "EFL arrival frequency and sold ATH return inventory supporting the corrected multi-city route",
         "ionion-pelagos-ferry": "Ferry route existence and seasonal-schedule caveat",
@@ -348,7 +348,7 @@
         "eu-etias": "Official Q4 2026 launch guidance, EUR20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "Corrected EFL-in/ATH-out construction with Jun 21 airport-buffer night",
         "google-flights-2027-audit": "Checked 2026-07-19: PVK-PIT interline single tickets exist but from ~$3,053 pp and 28-30h via ZRH (Tuesday Aug proxy), confirming the thin/charter-exit concern; ATH-EFL verified 4 nonstops/day (Aegean/Olympic, Sky Express, $97-202).",
-        "google-flights-2027-current-audit": "Google Flights returns no PIT–PVK options for the exact dates. The itinerary now drives from Lefkada to an Athens-airport buffer on June 21 and uses sold June 22 ATH–PIT inventory; price EFL-in/ATH-out together before booking."
+        "google-flights-2027-current-audit": "PIT–EFL is selling June 9–22 from $1,363 round trip with two stops. Keep the corrected Lefkada-to-Athens buffer and price EFL-in/ATH-out together; do not restore the unavailable Preveza exit."
       },
       "claimType": "proxy"
     },
@@ -446,7 +446,7 @@
     "explicit unknowns: live 2027 open-jaw fare, 2027 ferry timetable, Lefkada lodging precision, Egremni land access, and 2027 Navagio landing status"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
     "headline": "The corrected route exits through Athens, not Preveza"
   }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "turkish-riviera",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -113,11 +113,11 @@
         "lineItemCount": 6,
         "arithmetic": "7000–8000 + 1100–2000 + 1650–3400 + 1350–2250 + 700–2000 + 350–700 = 12150–18350; displayed 12200–18400"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "Turkish Riviera; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible."
+        "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from $1,563 round trip with one stop. Do not lower the family budget until DLM–PIT prices on the same protected open-jaw ticket."
       },
       "claimType": "proxy"
     },
@@ -284,17 +284,17 @@
         "maxConnections": 2,
         "route": "Turkish Riviera",
         "dateWindow": "2027-06-10 → 2027-06-23",
-        "currentFlightAudit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible.",
+        "currentFlightAudit": "PIT–AYT sells June 10–23 from $1,563 round trip with one stop. Do not lower the family budget until DLM–PIT prices on the same protected open-jaw ticket.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "#air-travel and #getting-around require AYT-in/DLM-out but contain only planning bands, not June 2027 bookings",
         "state-travel": "Türkiye Level 2 advisory issued 2026-06-09 and reviewed 2026-07-10; no-travel area is the Syria/Iraq border, not this southwest-coast route",
         "cdc-travel": "CDC Travelers' Health destination guidance for Turkish Riviera; recheck before departure",
-        "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible."
+        "google-flights-2027-current-audit": "PIT–AYT sells June 10–23 from $1,563 round trip with one stop. Do not lower the family budget until DLM–PIT prices on the same protected open-jaw ticket."
       },
       "claimType": "proxy"
     },
@@ -411,8 +411,8 @@
     "medium-confidence budget, swim, food and flight proxies"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
-    "headline": "Antalya inventory is live near the top of the existing band"
+    "headline": "Antalya inventory is live below the prior round-trip proxy"
   }
 }

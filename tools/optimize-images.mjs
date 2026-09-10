@@ -27,7 +27,11 @@ for (const slug of readdirSync(DATA)) {
     walk(JSON.parse(readFileSync(join(folder, name), 'utf8')), sources);
   }
 }
-walk(readFileSync(join(ROOT, 'src', 'index.njk'), 'utf8'), sources);
+for (const entry of readdirSync(join(ROOT, 'src'), { withFileTypes: true })) {
+  if (entry.isFile() && entry.name.endsWith('.njk')) {
+    walk(readFileSync(join(ROOT, 'src', entry.name), 'utf8'), sources);
+  }
+}
 walk(readFileSync(join(DATA, 'card-images.js'), 'utf8'), sources);
 
 const previous = existsSync(MANIFEST) ? JSON.parse(readFileSync(MANIFEST, 'utf8')) : { images: {} };

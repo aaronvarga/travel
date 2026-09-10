@@ -48,6 +48,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addTransform('all-trip-photos-in-hero', function (content) {
     if (!this.page.outputPath?.includes('/locations/') || !this.page.outputPath.endsWith('.html')) return content;
+    if (this.page.outputPath.includes('/locations/completed/')) return content;
     const $ = load(content, { decodeEntities: false });
     const shortTrip = this.page.outputPath.includes('/locations/short-');
     syncHeroCarousel($, shortTrip ? { maxPhotos: 10 } : undefined);

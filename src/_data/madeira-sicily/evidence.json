@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-sicily",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Five category rollups total $12,300–$15,550, consistent with the rounded $12,300–$15,500 band. The whole band is above target and the high case exceeds the preferred maximum; flight prices remain gated proxies.",
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $12,600–$15,900. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -45,8 +45,8 @@
       ]
     },
     "ease": {
-      "score": 2,
-      "rationale": "Four lodging sleeps, three base moves, two cars and a now-confirmed one-stop Lisbon–Palermo transfer are very high deterministic load, but the itinerary remains executable; Ease 2/5 is more consistent than 1/5.",
+      "score": 3,
+      "rationale": "Four lodging sleeps, three base moves and two cars remain a meaningful load, but the sold three-hour Lisbon–Palermo nonstop removes the former all-day connecting transfer; Ease is now 3/5.",
       "confidence": "high",
       "evidence": [
         "operational-load"
@@ -61,8 +61,8 @@
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "Verified 2026-07-19: the Tuesday easyJet LIS-PMO nonstop is selling in the current pattern and same-day one-stop backups (Vueling via BCN, TAP+ITA via FCO) are sold daily, so the no-same-day-recovery assumption behind 1/5 no longer holds. Madeira wind plus a separate-ticket, less-than-daily nonstop still cap this at 2/5 until June 2027 loads.",
+      "score": 3,
+      "rationale": "The exact June 15 easyJet Lisbon–Palermo nonstop is selling and same-day one-stop backups remain available. Madeira wind and separate tickets still require the Lisbon buffer, so Risk improves to 3/5 rather than higher.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -101,23 +101,25 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "easyjet-lis-pmo"
+        "easyjet-lis-pmo",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 12300,
+        "lowUsd": 12600,
         "expectedUsd": null,
-        "highUsd": 15500,
+        "highUsd": 15900,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "6900–8200 + 2350–3300 + 2100–2450 + 600–1100 + 350–500 = 12300–15550; displayed 12300–15500"
+        "arithmetic": "7200–8600 + 2350–3300 + 2100–2450 + 600–1100 + 350–500 = 12600–15950; displayed 12600–15900"
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "madeira-sicily/main.json #totals; five categories and explicit flight gate",
-        "easyjet-lis-pmo": "Operator timetable observed 2026-07-10 showed August 2026 one-way examples around €149–€258 per passenger before optional bags; not June 2027 or the full flight stack"
+        "easyjet-lis-pmo": "Operator timetable observed 2026-07-10 showed August 2026 one-way examples around €149–€258 per passenger before optional bags; not June 2027 or the full flight stack",
+        "google-flights-2027-current-audit": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer."
       },
       "claimType": "proxy"
     },
@@ -252,14 +254,14 @@
         "internal-itinerary"
       ],
       "value": {
-        "easeScore": 2,
+        "easeScore": 3,
         "maxConnections": 3,
         "singleTicket": false,
         "lodgingSleeps": 4,
         "baseMoves": 3,
         "internalFlights": 2,
         "rentalCars": 2,
-        "airHoursPlanningEstimate": 24.2,
+        "airHoursPlanningEstimate": 18.7,
         "groundHoursPlanningEstimate": 12.4
       },
       "verifiedAt": "2026-07-10",
@@ -327,20 +329,20 @@
         "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 3,
-        "criticalLeg": "LIS–PMO less-than-daily easyJet",
+        "criticalLeg": "exact June 15 easyJet LIS–PMO nonstop",
         "june2027Verified": false,
         "mandatoryBuffer": "Lisbon",
-        "currentFlightAudit": "Exact-date results show one-stop LIS–PMO itineraries via Zurich, Munich or Rome in roughly 6½–10 hours. Keep the Lisbon buffer and replace every claim that the Tuesday easyJet nonstop is the route hinge.",
+        "currentFlightAudit": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer.",
         "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "easyjet-lis-pmo": "Operator August 2026 timetable observed Tuesday/Friday service; exact June 2027 dates absent",
         "ana-madeira-wind-operations": "Official historical example of wind disruption at Madeira Airport",
         "internal-itinerary": "madeira-sicily/main.json air section calls LIS–PMO an easyJet monopoly and keeps a Lisbon buffer",
         "google-flights-2027-audit": "Checked 2026-07-19: easyJet LIS-PMO nonstop confirmed selling on Tuesday ($307, 3h); Monday not served; same-day one-stop backups sold daily (Vueling via BCN, TAP+ITA via FCO), so a same-day recovery path exists. United EWR-FNC sold for exact 2027-06-08.",
-        "google-flights-2027-current-audit": "Exact-date results show one-stop LIS–PMO itineraries via Zurich, Munich or Rome in roughly 6½–10 hours. Keep the Lisbon buffer and replace every claim that the Tuesday easyJet nonstop is the route hinge."
+        "google-flights-2027-current-audit": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer."
       },
       "claimType": "proxy"
     },
@@ -419,11 +421,11 @@
     }
   ],
   "metrics": {
-    "airHours": 24.2,
+    "airHours": 18.7,
     "groundHours": 12.4,
     "timeZones": 2,
     "baseMoves": 3,
-    "longestTransferHours": 8.5,
+    "longestTransferHours": 5.5,
     "highOutputDayStreak": 4,
     "fallbackDays": 1,
     "childActivityFit": {
@@ -451,8 +453,8 @@
     "medium-confidence budget, lodging, climate grid, and non-reproduced SST"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
-    "headline": "There is no June 15 Lisbon–Palermo nonstop"
+    "headline": "The exact June 15 Lisbon–Palermo nonstop is selling again"
   }
 }

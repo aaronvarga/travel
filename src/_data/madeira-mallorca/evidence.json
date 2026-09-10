@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-mallorca",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The $11,800–$14,800 planning band remains within the $15,000 preference, but its high case is only $200 below it and major flight, lodging, and car lines are not complete dated 2027 quotes; the confidence-aware rubric therefore scores 2/5.",
+      "score": 1,
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $13,100–$15,900. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 11800,
+        "lowUsd": 13100,
         "expectedUsd": null,
-        "highUsd": 14800,
+        "highUsd": 15900,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "6300–7700 + 2300–3150 + 1850–2250 + 800–1100 + 550–600 = 11800–14800"
+        "arithmetic": "7600–8800 + 2300–3150 + 1850–2250 + 800–1100 + 550–600 = 13100–15900"
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
-        "internal-itinerary": "madeira-mallorca/main.json #totals; five categories reconcile exactly; airfare and apartment-first gates are explicit"
+        "internal-itinerary": "madeira-mallorca/main.json #totals; five categories reconcile exactly; airfare and apartment-first gates are explicit",
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind."
       },
       "claimType": "proxy"
     },
@@ -331,17 +333,17 @@
         "june2027Verified": false,
         "mandatoryBuffer": "Lisbon",
         "singleTicket": false,
-        "currentFlightAudit": "United sells PIT–EWR–FNC on June 8, and TAP sells a June 15 LIS–PMI nonstop. The Lisbon buffer still protects the plan from Funchal wind.",
+        "currentFlightAudit": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind.",
         "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "tap-lisbon-palma": "TAP operator announcement confirms seasonal LIS–PMI route exists, not exact June 2027 days",
         "ana-madeira-wind-operations": "Official ANA historical notice confirms strong winds can disrupt Madeira operations",
         "internal-itinerary": "madeira-mallorca/main.json Air Travel and Plan Health-Check explicitly require exact 2027 operating days and protected quote",
         "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop is SOLD for the exact Tue 2027-06-08 ($1,139 one-way, 7:15 PM-7:05 AM) and PIT-FNC prices as one United ticket ($1,353, 9h40). LIS-PMI verified healthy: TAP x2 daily nonstop + easyJet + Vueling nonstops on the checked Tuesday.",
-        "google-flights-2027-current-audit": "United sells PIT–EWR–FNC on June 8, and TAP sells a June 15 LIS–PMI nonstop. The Lisbon buffer still protects the plan from Funchal wind."
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind."
       },
       "claimType": "proxy"
     },
@@ -450,8 +452,8 @@
     "medium-confidence unquoted budget, property inventory, and non-reproduced SST"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
-    "headline": "The exact Tuesday Madeira and Lisbon–Mallorca flights are selling"
+    "headline": "The exact Madeira and Mallorca components are selling"
   }
 }

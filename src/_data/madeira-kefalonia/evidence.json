@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-kefalonia",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The reconciled $10,900–$15,000 family band reaches the target in its lean case, but its high case consumes the entire preferred maximum and the protected multi-airport ticket and 2027 lodging remain unquoted. Medium confidence therefore caps Budget at 2/5 until the full family stack is confirmed.",
+      "score": 1,
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $14,000–$18,100. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,23 +101,25 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "aegean-kefalonia-official"
+        "aegean-kefalonia-official",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 10900,
+        "lowUsd": 14000,
         "expectedUsd": null,
-        "highUsd": 15000,
+        "highUsd": 18100,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "5950–7900 + 2100–3350 + 1550–2050 + 850–1150 + 450–550 = 10900–15000"
+        "arithmetic": "9000–11000 + 2100–3350 + 1550–2050 + 850–1150 + 450–550 = 13950–18100; displayed 14000–18100"
       },
-      "verifiedAt": "2026-07-12",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "internal-itinerary": "madeira-kefalonia/main.json #totals: five reconciled category rows and displayed $10.9k–$15.0k Grand Total.",
-        "aegean-kefalonia-official": "AEGEAN ATH–EFL page/fare calendar currently advertises the route; its fares are only one component of the unquoted June 2027 family stack."
+        "aegean-kefalonia-official": "AEGEAN ATH–EFL page/fare calendar currently advertises the route; its fares are only one component of the unquoted June 2027 family stack.",
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets."
       },
       "claimType": "proxy"
     },
@@ -336,18 +338,18 @@
         "routeRule": "FNC inbound / EFL outbound through Athens; reject PVK and self-transfer exit options.",
         "etias": "Current EU rule is €20 for eligible adults and exemption for children; activation is scheduled before the trip but needs final confirmation.",
         "navagioLanding": "unknown for 2027",
-        "currentFlightAudit": "The June 8 PIT–FNC leg is sold. Athens–Kefalonia has live June inventory, but the FNC/LIS/ATH/EFL chain and final return still need to price as protected tickets.",
+        "currentFlightAudit": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets.",
         "exact2027FlightsVerified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "ana-madeira-wind-operations": "Official ANA disruption notice documents strong-wind operational sensitivity at Madeira Airport; it supports the need for protected/rebookable routing, not a 2027 probability.",
         "aegean-kefalonia-official": "Official Aegean destination/route page shows ATH–EFL is a current service; June 2027 inventory, frequency and through-ticket protection require a live quote.",
         "eu-etias": "Official EU ETIAS guidance says operations are scheduled for late 2026 and the application fee is €20; eligibility/launch must be reconfirmed for June 2027.",
         "navagio-2026-status": "2026 closure reporting supports a view-only/conservative boat plan; it cannot establish the eventual 2027 cove-access decision.",
         "google-flights-2027-audit": "Checked 2026-07-19: ATH-EFL verified 4 nonstops/day (Aegean/Olympic + Sky Express, 1h-1h15, $97-202); United EWR-FNC nonstop sold for exact 2027-06-08.",
-        "google-flights-2027-current-audit": "The June 8 PIT–FNC leg is sold. Athens–Kefalonia has live June inventory, but the FNC/LIS/ATH/EFL chain and final return still need to price as protected tickets."
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets."
       },
       "claimType": "proxy"
     },
@@ -456,8 +458,8 @@
     "historical sea temperature and dining coverage remain medium-confidence planning inputs"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
-    "headline": "Madeira is live; the Kefalonia handoff still needs a complete quote"
+    "headline": "The exact components sell, but the old airfare gate is obsolete"
   }
 }

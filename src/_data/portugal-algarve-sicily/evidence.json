@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-algarve-sicily",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The independently itemized $12,850–$16,750 family planning band has a credible high case above the $15,000 strongly preferred maximum, which maps to 1/5 under the shared budget rubric; it remains visible, not excluded.",
+      "rationale": "The exact-date flight refresh moves the reconciled family band to $13,550–$17,350. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -45,8 +45,8 @@
       ]
     },
     "ease": {
-      "score": 3,
-      "rationale": "Three bases, two base moves, and one apartment per region — with a single Vueling Barcelona connection replacing the retired four-base Cascais opener and its Carvoeiro-to-Lisbon backtrack — is a moderate 3/5; two rental cars and one internal connecting flight keep it from higher. Ticket uncertainty is scored only under Risk.",
+      "score": 2,
+      "rationale": "Three bases and two base moves remain manageable, but the exact internal flight now requires two protected connections through Lisbon and Rome and about 8h20 in transit; Ease falls to 2/5.",
       "confidence": "high",
       "evidence": [
         "operational-load"
@@ -62,7 +62,7 @@
     },
     "risk": {
       "score": 3,
-      "rationale": "Removing the Carvoeiro-to-Lisbon same-day backtrack and the twice-weekly self-transfer, and routing the internal hop as a single Vueling Barcelona connection, cuts the worst failure mode to a moderate 3/5; the exact 2027 schedule and the single-through-ticket status remain unverified, which is why it is not higher.",
+      "rationale": "The planned Vueling/Barcelona chain is not sold, but a same-day TAP/ITA itinerary via Lisbon and Rome is. The exact route exists, while two connections and the outer open-jaw keep Risk at 3/5.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
       ],
       "value": {
-        "lowUsd": 12850,
+        "lowUsd": 13550,
         "expectedUsd": null,
-        "highUsd": 16750,
+        "highUsd": 17350,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "5,200–6,200 outer air + 600–1,100 Vueling hop + 2,900–4,200 lodging + 2,100–2,400 food + 1,250–1,700 rentals + 650–900 activities + 150–250 misc = 12,850–16,750"
+        "arithmetic": "5200–6200 outer air + 1300–1700 TAP/ITA hop + 2900–4200 lodging + 2100–2400 food + 1250–1800 cars + 300–500 activities + 500–550 contingency = 13550–17350"
       },
-      "verifiedAt": "2026-07-19",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Algarve + Sicily #budget and #totals; itemized 2026 planning proxies, not 2027 quotes"
+        "internal-itinerary": "Portugal + Algarve + Sicily #budget and #totals; itemized 2026 planning proxies, not 2027 quotes",
+        "google-flights-2027-current-audit": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears."
       },
       "claimType": "proxy"
     },
@@ -234,14 +236,14 @@
         "vueling-fao-bcn-pmo"
       ],
       "value": {
-        "easeScore": 3,
+        "easeScore": 2,
         "maxConnections": 2,
         "singleTicket": false,
-        "airHours": 27,
+        "airHours": 28.3,
         "groundHours": 8.5,
         "baseMoves": 2,
-        "longestTransferHours": 9,
-        "criticalTransfer": "Faro → Barcelona → Palermo → Cefalù"
+        "longestTransferHours": 11,
+        "criticalTransfer": "Faro → Lisbon → Rome → Palermo"
       },
       "verifiedAt": "2026-07-19",
       "expiresAt": "2027-02-01",
@@ -299,14 +301,14 @@
         "status": "current-proxy",
         "singleTicket": false,
         "maxConnections": 2,
-        "route": "Faro → Barcelona → Palermo → Cefalù",
+        "route": "Faro → Lisbon → Rome → Palermo → Cefalù",
         "dateWindow": "2027-06-17",
-        "currentFlightAudit": "PIT–FAO and CTA–PIT exact-date inventory exists. Retain the Barcelona one-stop plan only if Vueling sells FAO–BCN–PMO as one ticket on June 17.",
+        "currentFlightAudit": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "vueling-fao-bcn-pmo": "Google Flights (2026-07-19) confirms Vueling sells the FAO→BCN→PMO connection as one through-ticket via Barcelona (~6h55, 1 stop); the single-ticket routing is verified, but the exact June-2027 day is beyond the current booking window and unconfirmed",
         "flightconnections-fao-pmo": "Schedule aggregation checked 2026-07-19 lists Barcelona as the fastest FAO–PMO one-stop routing at ~6h55 total (1 stop); a current pattern, not a 2027 confirmation",
@@ -314,7 +316,7 @@
         "state-travel": "Portugal Level 1 and Italy Level 2 advisories reviewed 2026-07-19",
         "cdc-travel": "Portugal and Italy traveler pages reviewed 2026-07-19; recheck before departure",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-FAO sold for exact 2027-06-10 (BA 1-stop via LHR; 2-stop single tickets $733-754); CTA-PIT verified same-day pattern (Delta/KLM via JFK 17h42 lands 9:37 PM ~$961; ITA+American via FCO+PHL $1,026).",
-        "google-flights-2027-current-audit": "PIT–FAO and CTA–PIT exact-date inventory exists. Retain the Barcelona one-stop plan only if Vueling sells FAO–BCN–PMO as one ticket on June 17."
+        "google-flights-2027-current-audit": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears."
       },
       "claimType": "proxy"
     },
@@ -418,11 +420,11 @@
     }
   ],
   "metrics": {
-    "airHours": 27,
+    "airHours": 28.3,
     "groundHours": 8.5,
     "timeZones": 1,
     "baseMoves": 2,
-    "longestTransferHours": 9,
+    "longestTransferHours": 11,
     "highOutputDayStreak": 3,
     "fallbackDays": 5,
     "childActivityFit": {
@@ -448,8 +450,8 @@
     "exact-2027-schedule-required Algarve-to-Sicily Vueling gate"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
-    "headline": "The outer dates are live; the Faro–Palermo through-ticket remains the gate"
+    "headline": "The planned Barcelona connection is not sold; use the live two-stop route"
   }
 }

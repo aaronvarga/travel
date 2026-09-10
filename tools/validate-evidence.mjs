@@ -18,7 +18,7 @@ const problems = [];
 validateContract();
 if (args.has('--schema-only')) finish('evidence contract');
 
-const trips = discoverTrips();
+const trips = discoverTrips().filter((trip) => !args.has('--full-only') || trip.main.tripCategory !== 'short');
 if (args.has('--init')) initializeMissing(trips);
 validateTrips(trips);
 finish(`${trips.length} trip evidence records`);

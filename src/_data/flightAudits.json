@@ -1,121 +1,123 @@
 {
   "reviewedAt": "2026-08-08",
+  "fullTripsReviewedAt": "2026-09-10",
+  "fullTripsExpiresAt": "2026-10-10",
   "source": "Google Flights exact-date inventory checks plus current operator schedules",
   "trips": {
     "albania": {
       "status": "current-proxy",
       "headline": "Tirana inventory is live; the Corfu open-jaw still needs one protected quote",
-      "detail": "PIT–TIA is selling for June 7–22 from about $1,145 per traveler with one or two stops. Keep the current $5.3k–$7.8k flight/ferry family band until CFU–PIT is priced on the same multi-city ticket."
+      "detail": "PIT–TIA is selling June 7–22 from $1,228 round trip with one or two stops; CFU–PIT on June 22 is available from $795 one way. The existing $5.3k–$7.8k family air/ferry band still contains the observed components, but the protected TIA-in/CFU-out checkout remains the booking gate."
     },
     "balkans": {
       "status": "current-proxy",
-      "headline": "The July return is still outside some airlines’ full sale window",
-      "detail": "Keep PIT–DBV / CFU–PIT as a planning proxy. Do not lock the cross-border road route until the exact July 1–14 open-jaw and baggage protection can be priced together."
+      "headline": "Dubrovnik inventory is live; the Corfu open-jaw still needs one protected quote",
+      "detail": "PIT–DBV is selling July 1–14 from $1,290 round trip with a one-stop option. Keep the air plan provisional until CFU–PIT and baggage protection price together on the same open-jaw ticket; the cross-border car remains a separate gate."
     },
     "california-pacific-coast": {
       "status": "current-proxy",
-      "headline": "The July open-jaw is not fully comparable yet",
-      "detail": "PIT–SAN / SFO–PIT remains the correct shape, but the July 13 return is outside some carriers’ current booking horizon. Retain the one-stop fallback instead of promising nonstops."
+      "headline": "San Diego inventory is live; retain the one-stop open-jaw fallback",
+      "detail": "PIT–SAN is selling July 1–13 from $422 round trip with one stop. Price SFO–PIT on the same open-jaw before booking the road trip, and do not promise a nonstop on either end."
     },
     "canary-islands": {
       "status": "confirmed",
       "headline": "Both the long-haul dates and Tenerife–La Palma flights are selling",
-      "detail": "PIT–Tenerife is available June 8–22 from about $1,178 per traveler with two stops. Binter sells exact June 15/20 Tenerife–La Palma nonstops from about $133 round trip; the planned Tenerife buffer remains prudent."
+      "detail": "PIT–Tenerife is available June 8–22 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent."
     },
     "croatia": {
       "status": "current-proxy",
       "headline": "Exact Split inventory is live, but the Dubrovnik open-jaw costs more than the old band",
-      "detail": "PIT–SPU is selling June 10–23 from about $1,397 per traveler. Use a $5.6k–$6.8k family flight band while pricing DBV–PIT on the same multi-city ticket."
+      "detail": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket."
     },
     "dolomites-sardinia": {
       "status": "exact-2027-schedule-required",
-      "headline": "The July island hop and return are not fully in the sale window",
-      "detail": "VCE–OLB and OLB–PIT remain current-pattern evidence only because the July 11 return is beyond several carriers’ booking horizon. Do not book the Dolomites car or Sardinia stays around an assumed Volotea day."
+      "headline": "The exact Venice–Olbia hop is selling; the outer open-jaw remains the gate",
+      "detail": "PIT–VCE is selling June 27–July 11 from $1,297 round trip, and Volotea sells the exact July 5 VCE–OLB nonstop from $96 one way. Price OLB–PIT with the outbound before locking either rental car."
     },
     "greece-cyclades": {
       "status": "confirmed",
       "headline": "The exact Athens and Milos flight dates are selling",
-      "detail": "PIT–ATH is available June 8–21 from about $1,291 per traveler with one stop. MLO–ATH sells multiple 40-minute nonstops on June 20; ferries remain a separate timetable recheck."
+      "detail": "PIT–ATH is available June 8–21 from $1,296 round trip with one stop. MLO–ATH sells multiple 40-minute nonstops June 20 from $154; ferries remain a separate timetable recheck."
     },
     "greece-ionian": {
       "status": "current-proxy",
       "headline": "The corrected route exits through Athens, not Preveza",
-      "detail": "Google Flights returns no PIT–PVK options for the exact dates. The itinerary now drives from Lefkada to an Athens-airport buffer on June 21 and uses sold June 22 ATH–PIT inventory; price EFL-in/ATH-out together before booking."
+      "detail": "PIT–EFL is selling June 9–22 from $1,363 round trip with two stops. Keep the corrected Lefkada-to-Athens buffer and price EFL-in/ATH-out together; do not restore the unavailable Preveza exit."
     },
     "greece-via-lisbon": {
       "status": "current-proxy",
       "headline": "The Lisbon–Athens–Chania flight chain now sells on the exact dates",
-      "detail": "LIS–CHQ is selling June 14 via ATH on one Aegean itinerary (about 6 hours). The CHQ–PIT return must still be quoted as one protected multi-city ticket; do not route home through Lisbon on Tuesday."
+      "detail": "PIT–LIS is selling June 9–22 from $1,215 round trip, and LIS–CHQ sells June 14 via ATH in 6h05 from $220. The CHQ–PIT return still needs one protected multi-city quote; do not route home through Lisbon on Tuesday."
     },
     "hawaii": {
       "status": "confirmed",
       "headline": "Every exact 2027 flight leg remains bookable",
-      "detail": "PIT–HNL, HNL–KOA and the KOA red-eye home are sold on the planned dates. Keep the current one-ticket mainland rule and the inter-island buffer."
+      "detail": "PIT–HNL is selling June 5–15 from $859 round trip with one stop, and HNL–KOA sells the exact June 9 nonstop from $75. Keep the mainland legs protected on one ticket and retain the inter-island buffer."
     },
     "iceland": {
       "status": "confirmed",
       "headline": "The trip is bookable—but not with the assumed nonstop",
-      "detail": "June 8–21 sells protected one-stop PIT–KEF itineraries from about $649 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan is now one stop, not a seasonal nonstop."
+      "detail": "June 8–21 sells protected one-stop PIT–KEF itineraries from $703 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan remains one stop, not a seasonal nonstop."
     },
     "iceland-ischia-cilento": {
       "status": "reroute-required",
       "headline": "The June 10 Icelandair nonstop/stopover construction does not exist",
-      "detail": "PIT–KEF has no nonstop on Thursday June 10. One-stop tickets sell, but they do not preserve the assumed Icelandair stopover fare to Rome; re-date the outbound or rebuild the air stack before treating this itinerary as bookable."
+      "detail": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking."
     },
     "italy-salento-amalfi": {
       "status": "current-proxy",
       "headline": "Brindisi inventory is live and fits the existing flight band",
-      "detail": "PIT–BDS is selling June 10–23 from about $1,459 per traveler. Price BDS-in/NAP-out together before relying on the open-jaw protection."
+      "detail": "PIT–BDS is selling June 10–23 from $1,736 round trip with two stops. The old high airfare case is now the floor before seats and bags; price BDS-in/NAP-out together before relying on the open-jaw protection."
     },
     "madeira-crete": {
       "status": "current-proxy",
-      "headline": "The exact Madeira and Lisbon–Chania flights are selling",
-      "detail": "PIT–FNC sells June 8 from about $1,202 round trip and LIS–CHQ sells June 14 via ATH on one Aegean ticket. Keep the Lisbon weather-buffer night."
+      "headline": "Every component is selling, but the family air floor has risen",
+      "detail": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night."
     },
     "madeira-kefalonia": {
       "status": "current-proxy",
-      "headline": "Madeira is live; the Kefalonia handoff still needs a complete quote",
-      "detail": "The June 8 PIT–FNC leg is sold. Athens–Kefalonia has live June inventory, but the FNC/LIS/ATH/EFL chain and final return still need to price as protected tickets."
+      "headline": "The exact components sell, but the old airfare gate is obsolete",
+      "detail": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets."
     },
     "madeira-mallorca": {
       "status": "current-proxy",
-      "headline": "The exact Tuesday Madeira and Lisbon–Mallorca flights are selling",
-      "detail": "United sells PIT–EWR–FNC on June 8, and TAP sells a June 15 LIS–PMI nonstop. The Lisbon buffer still protects the plan from Funchal wind."
+      "headline": "The exact Madeira and Mallorca components are selling",
+      "detail": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind."
     },
     "madeira-sicily": {
       "status": "current-proxy",
-      "headline": "There is no June 15 Lisbon–Palermo nonstop",
-      "detail": "Exact-date results show one-stop LIS–PMO itineraries via Zurich, Munich or Rome in roughly 6½–10 hours. Keep the Lisbon buffer and replace every claim that the Tuesday easyJet nonstop is the route hinge."
+      "headline": "The exact June 15 Lisbon–Palermo nonstop is selling again",
+      "detail": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer."
     },
     "maui-kauai": {
       "status": "current-proxy",
       "headline": "The inter-island hop is confirmed; the complete open-jaw still needs one quote",
-      "detail": "OGG–LIH sells multiple exact June 15 nonstops of about 50 minutes. PIT–OGG was already live; verify LIH–PIT June 22 as one protected ticket before booking premium lodging."
+      "detail": "PIT–OGG is selling June 10–23 from $698 round trip, and OGG–LIH sells exact June 15 nonstops from $75 one way. Verify LIH–PIT June 22 on one protected ticket before booking premium lodging."
     },
     "portugal": {
       "status": "current-proxy",
       "headline": "The exact Portugal flights sell, but current airfare is much higher",
-      "detail": "PIT–LIS is about $1,332 per traveler for June 10–23. FAO–FNC sells June 18 via Lisbon in about 5h35; there is no Friday nonstop. The revised family air stack is roughly $5.7k–$7.0k."
+      "detail": "PIT–LIS is selling June 10–23 from $1,285 round trip. FAO–FNC sells June 18 via Lisbon in 5h35 from $169 one way; there is no Friday nonstop. The existing family air band still holds."
     },
     "portugal-algarve-sicily": {
       "status": "current-proxy",
-      "headline": "The outer dates are live; the Faro–Palermo through-ticket remains the gate",
-      "detail": "PIT–FAO and CTA–PIT exact-date inventory exists. Retain the Barcelona one-stop plan only if Vueling sells FAO–BCN–PMO as one ticket on June 17."
+      "headline": "The planned Barcelona connection is not sold; use the live two-stop route",
+      "detail": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears."
     },
     "portugal-crete": {
       "status": "current-proxy",
-      "headline": "The exact Lisbon–Chania connection is selling",
-      "detail": "Aegean sells LIS–ATH–CHQ on June 14 as one itinerary in about 6 hours. Price the full PIT/LIS/Crete open-jaw together, but the former schedule-publication gate is resolved."
+      "headline": "The exact Lisbon–Chania connection remains live",
+      "detail": "PIT–LIS is selling near the current family band, and Aegean sells LIS–ATH–CHQ June 14 in 6h05 from $220. Price the full PIT/Lisbon/Crete open-jaw together before booking."
     },
     "portugal-sicily": {
       "status": "current-proxy",
-      "headline": "The exact June 14 Lisbon–Palermo one-stop is selling",
-      "detail": "No nonstop is offered. One-stop itineraries via Zurich, Munich or Rome sell in roughly 6½–10 hours; keep the transfer day and do not advertise an easyJet nonstop."
+      "headline": "The exact June 14 Lisbon–Palermo one-stop remains the route",
+      "detail": "No Monday nonstop is offered. LIS–PMO sells June 14 from $290 with one stop in about 7h10; keep the transfer day clear and do not advertise the Tuesday easyJet nonstop for this itinerary."
     },
     "sardinia-corsica": {
       "status": "current-proxy",
       "headline": "Exact Sardinia inventory is live, but the old low airfare floor is gone",
-      "detail": "PIT–CAG is selling June 10–23 from about $1,356 per traveler. Price the northern-arrival/Cagliari-return open-jaw together; the trip already carries the correct Budget 1 warning."
+      "detail": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning."
     },
     "short-acadia": {
       "status": "confirmed",
@@ -170,37 +172,37 @@
     "sicily-malta": {
       "status": "current-proxy",
       "headline": "The exact Catania–Malta hop is selling",
-      "detail": "Ryanair/Malta Air sells June 20 CTA–MLA nonstops of 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote."
+      "detail": "PIT–CTA is selling June 10–23 from $1,449 round trip, and Ryanair/Malta Air sells June 20 CTA–MLA nonstops from $54 in 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote."
     },
     "slovenia-adriatic": {
       "status": "confirmed",
       "headline": "Exact Ljubljana round trips are selling",
-      "detail": "PIT–LJU is available June 8–22 from about $1,348 per traveler with two stops; a British Airways one-stop via Heathrow also appears. The old ‘2027 not bookable’ language is obsolete."
+      "detail": "PIT–LJU is available June 8–22 from $1,347 round trip with two stops. Exact inventory remains live; compare the protected Ljubljana routing with the Venice-drive fallback before purchase."
     },
     "southern-france": {
       "status": "current-proxy",
       "headline": "Nice inventory is live; Marseille must still price in the open-jaw",
-      "detail": "PIT–NCE sells June 10–23 from about $1,289 per traveler with one stop, consistent with the existing family band. Reject any MRS return arriving after June 23."
+      "detail": "PIT–NCE sells June 10–23 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23."
     },
     "spain": {
       "status": "current-proxy",
       "headline": "Madrid inventory is live and fits the current family band",
-      "detail": "PIT–MAD sells June 3–16 from about $1,092 per traveler with one stop. Confirm AGP–PIT on the same open-jaw ticket before removing the Madrid-train fallback."
+      "detail": "PIT–MAD sells June 3–16 from $1,092 round trip with one stop. Confirm AGP–PIT on the same protected open-jaw before removing the Madrid-train fallback."
     },
     "switzerland-crete": {
       "status": "current-proxy",
       "headline": "Zurich and the exact Heraklion hop are selling",
-      "detail": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells two June 14 ZRH–HER nonstops of about 2h50. Keep the Heraklion-to-Chania drive in the plan."
+      "detail": "PIT–ZRH is selling June 8–22 from $1,136 round trip. The exact June 14 ZRH–HER nonstop is available from $149 in 2h55; keep the Heraklion-to-Chania drive in the plan."
     },
     "switzerland-sicily": {
       "status": "current-proxy",
       "headline": "Zurich and the exact Catania hop are selling",
-      "detail": "PIT–ZRH starts near $1,129 per traveler; Edelweiss/SWISS sells a June 14 ZRH–CTA nonstop of about 2h05. The larger Catania gateway remains the easier island handoff."
+      "detail": "PIT–ZRH is selling June 8–22 from $1,136 round trip. Edelweiss/SWISS sells the exact June 14 ZRH–CTA nonstop from $202 in 2h05; cheaper one-stop options also exist."
     },
     "turkish-riviera": {
       "status": "current-proxy",
-      "headline": "Antalya inventory is live near the top of the existing band",
-      "detail": "PIT–AYT sells June 10–23 from about $1,734 per traveler. Price DLM–PIT on the same open-jaw ticket; the current $4.8k floor is no longer credible."
+      "headline": "Antalya inventory is live below the prior round-trip proxy",
+      "detail": "PIT–AYT sells June 10–23 from $1,563 round trip with one stop. Do not lower the family budget until DLM–PIT prices on the same protected open-jaw ticket."
     }
   }
 }

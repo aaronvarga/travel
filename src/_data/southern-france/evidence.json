@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "southern-france",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-10",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -366,18 +366,18 @@
         "route": "PIT → NCE / MRS → PIT open-jaw",
         "hardReturn": "2027-06-23",
         "rejectedReturn": "2027-06-24 or later",
-        "currentFlightAudit": "PIT–NCE sells June 10–23 from about $1,289 per traveler with one stop, consistent with the existing family band. Reject any MRS return arriving after June 23.",
+        "currentFlightAudit": "PIT–NCE sells June 10–23 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-10-10",
       "sourceLocators": {
         "google-flights-pit-nce": "Current proxy shows no PIT–Nice nonstop; exact June 2027 open-jaw schedule/fare is unconfirmed",
         "internal-itinerary": "#air-travel and #todo make June 23 PIT arrival a booking permission gate",
         "state-travel": "France advisory review required before booking/departure",
         "cdc-travel": "France destination health guidance to recheck before departure",
-        "google-flights-2027-current-audit": "PIT–NCE sells June 10–23 from about $1,289 per traveler with one stop, consistent with the existing family band. Reject any MRS return arriving after June 23."
+        "google-flights-2027-current-audit": "PIT–NCE sells June 10–23 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23."
       },
       "claimType": "proxy"
     },
@@ -549,7 +549,7 @@
     "explicit exact-2027 flight and seasonal-condition gates"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-10",
     "status": "current-proxy",
     "headline": "Nice inventory is live; Marseille must still price in the open-jaw"
   }
