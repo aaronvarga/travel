@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-joshua-tree",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Palm Springs + one Joshua Tree base",
+      "canonical": true,
+      "status": "documented-live-fares",
+      "nights": 4,
+      "ptoDays": 2,
+      "budget": {
+        "lowUsd": 4730,
+        "expectedUsd": null,
+        "highUsd": 7400,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [
+        "Anza-Borrego day trip"
+      ],
+      "notes": "PSP minimizes driving and preserves four nights for Joshua Tree, Pioneertown, family scrambling and a guided climb.",
+      "confidence": "medium",
+      "claimType": "observed-quote",
+      "sourceRefs": [
+        "google-flights-jtree-audit",
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "google-flights-jtree-audit": "Google Flights PIT–PSP exact dates Feb 19–23, 2027: $398 United baseline; PIT–SAN $328 Southwest baseline",
+        "internal-itinerary": "short-joshua-tree/main.json canonical route and budget"
+      }
+    },
+    {
+      "id": "san-anza",
+      "label": "San Diego + one Anza-Borrego night",
+      "canonical": false,
+      "status": "plausible-not-recommended",
+      "nights": 4,
+      "ptoDays": 2,
+      "budget": {
+        "lowUsd": 4700,
+        "expectedUsd": null,
+        "highUsd": 7500,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [
+        "First Joshua Tree sunset",
+        "One relaxed Joshua Tree morning"
+      ],
+      "notes": "The observed SAN fare saves about $280 for four and enables The Slot/Borrego Springs, but adds roughly five to six hours of airport driving and a hotel move.",
+      "confidence": "medium",
+      "claimType": "observed-quote",
+      "sourceRefs": [
+        "google-flights-jtree-audit",
+        "ca-parks-anza"
+      ],
+      "sourceLocators": {
+        "google-flights-jtree-audit": "Google Flights PIT–SAN Feb 19–23, 2027 Southwest $328 baseline",
+        "ca-parks-anza": "Official Anza-Borrego visitor and trail guidance"
+      }
+    }
+  ],
+  "alternateStatus": "documented",
+  "alternateNotes": "Use SAN only if Anza-Borrego is itself a headline goal. A day trip from the Joshua Tree cabin is rejected for a four-night stay."
+}

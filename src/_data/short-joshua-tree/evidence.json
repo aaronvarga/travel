@@ -1,0 +1,403 @@
+{
+  "schemaVersion": 1,
+  "slug": "short-joshua-tree",
+  "reviewedAt": "2026-09-10",
+  "overallConfidence": "medium",
+  "axes": {
+    "budget": {
+      "score": 5,
+      "rationale": "The reconciled $4,730–$7,400 family band is fully below the shared target.",
+      "confidence": "medium",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "February is usually hiking-friendly but winter wind, rain, freezing nights and occasional snow require swaps.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "fireRisk": {
+      "score": 5,
+      "rationale": "February is outside the usual summer restriction period; live NPS alerts remain authoritative.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
+      ]
+    },
+    "swim": {
+      "score": 1,
+      "rationale": "No meaningful swimming is planned.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "variety": {
+      "score": 4,
+      "rationale": "Scrambling, rope climbing, scenic drives, Pioneertown, food and night photography create distinct modes.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "ease": {
+      "score": 4,
+      "rationale": "One base and PSP are easy; one connection and the east-side drive prevent a perfect score.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "food": {
+      "score": 4,
+      "rationale": "A kitchen, Vons and named burger, pizza, pasta and taco fallbacks cover the only base.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "risk": {
+      "score": 4,
+      "rationale": "Dry-rock dependence, full-moon expectations and 2027 inventory are explicit, mitigated gates.",
+      "confidence": "medium",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 1,
+      "rationale": "Four nights derive 1/5 under the shared rubric.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "novelty": {
+      "score": 4,
+      "rationale": "Joshua Tree is a new California desert region despite prior California travel.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "pto": {
+      "score": 5,
+      "rationale": "Two PTO days derive 5/5 under the shared rubric.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
+  },
+  "facts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "lowUsd": 4730,
+        "highUsd": 7400,
+        "targetUsd": 12000,
+        "lineItemCount": 6,
+        "arithmetic": "1600–2100 + 1400–2600 + 500–850 + 700–1000 + 530–650 + 0–200 = 4730–7400"
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-09-17",
+      "sourceLocators": {
+        "internal-itinerary": "short-joshua-tree/main.json #budget and #totals; six visible line items reconcile to $4,730–$7,400"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "value": {
+        "depart": "2027-02-19",
+        "return": "2027-02-23",
+        "hotelNights": 4,
+        "ptoDays": 2
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "tripWindows.short-joshua-tree"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "confirmed",
+      "confidence": "medium",
+      "sourceRefs": [
+        "google-flights-jtree-audit"
+      ],
+      "value": {
+        "status": "confirmed",
+        "preferredGateway": "PSP",
+        "alternateGateway": "SAN",
+        "pspFareUsd": 398,
+        "sanFareUsd": 328,
+        "singleTicket": true,
+        "maxConnections": 1
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2026-09-17",
+      "sourceLocators": {
+        "google-flights-jtree-audit": "Exact-date economy results reviewed Sep 10, 2026; per-traveler baseline, optional bags/seats excluded"
+      },
+      "claimType": "observed-quote"
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "nps-jotr-hiking"
+      ],
+      "value": {
+        "hotelNights": 4,
+        "lodgingBases": 1,
+        "baseNames": [
+          "Joshua Tree / west Yucca Valley"
+        ],
+        "scheduledModes": [
+          "hiking",
+          "scrambling",
+          "guided climbing",
+          "town",
+          "photography"
+        ]
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": null,
+      "sourceLocators": {
+        "internal-itinerary": "itinerary.days and #stays",
+        "nps-jotr-hiking": "Official trail distances and trailheads"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "nps-jotr-conditions",
+        "nps-jotr-seasonal-closures"
+      ],
+      "value": {
+        "score": 5,
+        "season": "February",
+        "planningChanceBand": "very low; not a forecast"
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2027-02-12",
+      "sourceLocators": {
+        "nps-jotr-conditions": "Current alerts control legal access",
+        "nps-jotr-seasonal-closures": "Summer fire restrictions documented Jun 15–Oct 1"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "night-sky",
+      "category": "climate",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "jtree-guide-night",
+        "almanac-moon"
+      ],
+      "value": {
+        "fullMoon": "2027-02-20 15:24 PST",
+        "milkyWayCoreVisible": false,
+        "moonIllumination": "near full across trip"
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2027-02-24",
+      "sourceLocators": {
+        "jtree-guide-night": "Oct–Feb core below horizon; April–August prime",
+        "almanac-moon": "Joshua Tree full moon Feb 20, 2027 at 3:24 PM"
+      },
+      "claimType": "confirmed"
+    },
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "nps-jotr-conditions"
+      ],
+      "value": {
+        "score": 4,
+        "forecast": false,
+        "season": "February",
+        "weatherRisks": [
+          "freezing nights",
+          "wind",
+          "rain or occasional snow"
+        ]
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2027-02-12",
+      "sourceLocators": {
+        "nps-jotr-conditions": "Official NPS conditions guidance describes cool winter days, freezing nights and possible wind, rain or snow; this is climate planning, not a forecast"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "score": 1,
+        "temperatureF": [
+          28,
+          28
+        ],
+        "hasSwim": false,
+        "scheduledSwimDays": 0,
+        "primarySwim": "none"
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2027-02-24",
+      "sourceLocators": {
+        "internal-itinerary": "short-joshua-tree/main.json itinerary and scorecard schedule no swimming"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "value": {
+        "easeScore": 4,
+        "maxConnections": 1,
+        "singleTicket": true,
+        "lodgingBases": 1,
+        "baseMoves": 0,
+        "rentalCars": 1,
+        "longestTransferHours": 1.3,
+        "airHoursPlanningEstimate": 14.5,
+        "groundHoursPlanningEstimate": 10
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2027-02-24",
+      "sourceLocators": {
+        "internal-itinerary": "short-joshua-tree/main.json #calendar, #air-travel and #getting-around show one base, one connection and all driving times"
+      },
+      "claimType": "derived"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "jtree-guide-food"
+      ],
+      "value": {
+        "score": 4,
+        "plainFoodRequired": true,
+        "coveredBases": [
+          "Joshua Tree / west Yucca Valley"
+        ],
+        "fallbackTypes": [
+          "pizza",
+          "burgers",
+          "pasta",
+          "tacos",
+          "groceries"
+        ],
+        "lodgingKitchenConfirmed": false
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": "2027-02-12",
+      "sourceLocators": {
+        "internal-itinerary": "short-joshua-tree/main.json #food-guide and structured spot restaurant fallbacks",
+        "jtree-guide-food": "Current local restaurant directory; exact February 2027 days and hours require recheck"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "proxyStatus": "derived",
+      "confidence": "high",
+      "sourceRefs": [
+        "decision-profile",
+        "scorecard-contract"
+      ],
+      "value": {
+        "score": 4,
+        "overlap": [
+          "California state previously visited; Joshua Tree region not documented"
+        ]
+      },
+      "verifiedAt": "2026-09-10",
+      "expiresAt": null,
+      "sourceLocators": {
+        "decision-profile": "Documented visited-place list includes California but not Joshua Tree or the Mojave Desert",
+        "scorecard-contract": "Novelty rubric gives 4/5 to a mostly new region with familiar gateway/state overlap"
+      },
+      "claimType": "derived"
+    }
+  ],
+  "metrics": {
+    "airHours": 14.5,
+    "groundHours": 10,
+    "timeZones": 3,
+    "baseMoves": 0,
+    "longestTransferHours": 1.3,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 4,
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "childActivityNotes": {
+      "age13": "Guide-selected rope climbing and optional Ryan Mountain add challenge.",
+      "age8": "Short official loops and low supervised scrambling fit; technical climbing is guide-selected."
+    },
+    "lodgingComfort": {
+      "heating": "required",
+      "kitchen": "required",
+      "realBeds": "required"
+    },
+    "waterSafety": "No swim is scheduled.",
+    "crowdingPressure": "Popular trailheads can fill by midmorning on winter weekends; begin before 8 a.m.",
+    "medicalAccess": "Local services exist in Yucca Valley; family medical profile remains incomplete."
+  },
+  "confidenceBasis": [
+    "official NPS trail and conditions guidance",
+    "exact-date observed flight results",
+    "current guide-service rates",
+    "explicit astronomical date constraints"
+  ],
+  "evidenceBasis": "Official park and state sources lead access and safety; Visit Joshua Tree supplies local route/food nuance; observed flight quotes and explicit itinerary arithmetic support logistics and cost."
+}

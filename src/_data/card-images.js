@@ -126,6 +126,10 @@ module.exports = {
     path: 'assets/img/short-acadia/google_frenchman_bay_sunrise_04.jpg',
     alt: 'Fiery sunrise above Acadia’s island-dotted Frenchman Bay',
   },
+  'short-joshua-tree': {
+    path: 'assets/img/short-joshua-tree/google_hero_desert_03.jpg',
+    alt: 'Joshua trees and rounded granite formations beneath a clear desert sky',
+  },
   'short-puerto-rico': {
     path: 'assets/img/short-puerto-rico/google_luquillo_08.jpg',
     alt: 'Luquillo’s tropical shoreline beneath a dramatic painted sky',

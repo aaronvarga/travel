@@ -2127,5 +2127,61 @@
     "url": "https://www.google.com/travel/flights",
     "publisher": "Google Flights",
     "scope": "Exact-date inventory checked August 8, 2026 for the itinerary flight corridors. Prices are one-adult economy snapshots including required taxes and fees but excluding optional seats and bags; availability, through-ticket protection, and fares can change. Open-jaw trips remain provisional unless the complete multi-city ticket was observed."
+  },
+  "google-flights-jtree-audit": {
+    "label": "Google Flights Pittsburgh to Southern California exact-date audit",
+    "tier": "observed-quote",
+    "url": "https://www.google.com/travel/flights",
+    "publisher": "Google Flights",
+    "scope": "Exact Feb 19-23, 2027 inventory reviewed Sep 10, 2026 for PSP, ONT, LAX, SAN and LAS. Per-traveler economy snapshots include taxes but exclude optional seats and bags and can change."
+  },
+  "nps-jotr-hiking": {
+    "label": "Joshua Tree National Park hiking guide",
+    "tier": "official",
+    "url": "https://www.nps.gov/jotr/planyourvisit/hiking.htm",
+    "publisher": "National Park Service",
+    "scope": "Official trailheads, distances, elevation and estimated hiking times."
+  },
+  "nps-jotr-conditions": {
+    "label": "Joshua Tree National Park current conditions",
+    "tier": "official",
+    "url": "https://www.nps.gov/jotr/planyourvisit/conditions.htm",
+    "publisher": "National Park Service",
+    "scope": "Live alerts and closures; must be rechecked immediately before the trip."
+  },
+  "nps-jotr-seasonal-closures": {
+    "label": "Joshua Tree seasonal closures and restrictions",
+    "tier": "official",
+    "url": "https://www.nps.gov/jotr/planyourvisit/summer-seasonal-closures-and-restrictions.htm",
+    "publisher": "National Park Service",
+    "scope": "Current seasonal heat closures and June 15 through October 1 fire-restriction window; not a February forecast."
+  },
+  "jtree-guide-night": {
+    "label": "Visit Joshua Tree night sky guide",
+    "tier": "secondary",
+    "url": "https://www.joshuatree.guide/guide-to-the-night-sky",
+    "publisher": "Visit Joshua Tree",
+    "scope": "Local seasonal Milky Way visibility and practical stargazing guidance; NPS remains authoritative for access."
+  },
+  "jtree-guide-food": {
+    "label": "Visit Joshua Tree restaurant guide",
+    "tier": "secondary",
+    "url": "https://www.joshuatree.guide/restaurants",
+    "publisher": "Visit Joshua Tree",
+    "scope": "Current local restaurant directory; individual menus, hours and all-ages policies require direct recheck."
+  },
+  "almanac-moon": {
+    "label": "Joshua Tree February 2027 moon calendar",
+    "tier": "secondary",
+    "url": "https://www.almanac.com/astronomy/moon/calendar/CA/Joshua%20Tree/2027-02",
+    "publisher": "The Old Farmer's Almanac",
+    "scope": "Full-moon date and local time for Joshua Tree."
+  },
+  "ca-parks-anza": {
+    "label": "Anza-Borrego Desert State Park",
+    "tier": "official",
+    "url": "https://parks.ca.gov/?page_id=638",
+    "publisher": "California State Parks",
+    "scope": "Official park access, visitor information and conditions for the optional San Diego variant."
   }
 }

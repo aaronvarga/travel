@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-09T01:55:27.571Z",
+  "generatedAt": "2026-09-10T18:49:50.716Z",
   "trips": [
     {
       "slug": "albania",
@@ -1613,6 +1613,65 @@
           "text": "$700–$950",
           "lowUsd": 700,
           "highUsd": 950
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "short-joshua-tree",
+      "canonical": {
+        "lowUsd": 4730,
+        "highUsd": 7400
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 6,
+        "sumLowUsd": 4700,
+        "sumHighUsd": 7400,
+        "displayedLowUsd": 4730,
+        "displayedHighUsd": 7400,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Flights + bags/seats",
+          "text": "$1,600–$2,100",
+          "lowUsd": 1600,
+          "highUsd": 2100
+        },
+        {
+          "label": "4-night cabin",
+          "text": "$1,400–$2,600",
+          "lowUsd": 1400,
+          "highUsd": 2600
+        },
+        {
+          "label": "Rental car + fuel",
+          "text": "$500–$850",
+          "lowUsd": 500,
+          "highUsd": 850
+        },
+        {
+          "label": "Food + groceries",
+          "text": "$700–$1,000",
+          "lowUsd": 700,
+          "highUsd": 1000
+        },
+        {
+          "label": "Park + climbing guide",
+          "text": "$530–$650",
+          "lowUsd": 530,
+          "highUsd": 650
+        },
+        {
+          "label": "Contingency",
+          "text": "$0–$200",
+          "lowUsd": 0,
+          "highUsd": 200
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

@@ -13,6 +13,7 @@ const SHORT_TRIP_SLUGS = [
   'short-alaska',
   'short-sicily',
   'short-ischia',
+  'short-joshua-tree',
 ];
 const SHORT_WEIGHTS = {
   budget: 2,
@@ -36,6 +37,7 @@ const SHORT_VERDICTS = {
   'short-alaska': 'The biggest scenery on this list and the worst fit for it: tidewater glaciers and whales, but high cost, cold water, and a long Seattle connection.',
   'short-sicily': 'Best culture-plus-swim week: Greek theatres, golden Noto, a live volcano and 73°F Ionian coves — with June airfare and festival-season hotels as the price of admission.',
   'short-ischia': 'Warmest water on this list: 74°F sea plus thermal parks from one car-free island base, with the plane-bus-boat arrival chain as the tradeoff.',
+  'short-joshua-tree': 'Best compact family adventure: granite scrambling, a guided climb, Pioneertown and desert night photography from one base.',
 };
 
 module.exports = function () {
