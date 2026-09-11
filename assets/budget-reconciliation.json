@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-11T13:30:42.159Z",
+  "generatedAt": "2026-09-11T17:27:11.465Z",
   "trips": [
     {
       "slug": "albania",
@@ -217,16 +217,16 @@
     {
       "slug": "crete",
       "canonical": {
-        "lowUsd": 11200,
-        "highUsd": 15000
+        "lowUsd": 14350,
+        "highUsd": 17900
       },
       "status": "matched",
       "arithmetic": {
         "lineItems": 4,
-        "sumLowUsd": 11200,
-        "sumHighUsd": 15000,
-        "displayedLowUsd": 11200,
-        "displayedHighUsd": 15000,
+        "sumLowUsd": 14400,
+        "sumHighUsd": 17900,
+        "displayedLowUsd": 14350,
+        "displayedHighUsd": 17900,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -236,21 +236,21 @@
       "lineItems": [
         {
           "label": "Transportation",
-          "text": "$6,700–$8,100",
-          "lowUsd": 6700,
-          "highUsd": 8100
+          "text": "$9,550–$10,500",
+          "lowUsd": 9550,
+          "highUsd": 10500
         },
         {
           "label": "Lodging",
-          "text": "$2,100–$3,400",
-          "lowUsd": 2100,
-          "highUsd": 3400
+          "text": "$2,300–$3,700",
+          "lowUsd": 2300,
+          "highUsd": 3700
         },
         {
           "label": "Food",
-          "text": "$1,700–$2,300",
-          "lowUsd": 1700,
-          "highUsd": 2300
+          "text": "$1,800–$2,500",
+          "lowUsd": 1800,
+          "highUsd": 2500
         },
         {
           "label": "Activities",

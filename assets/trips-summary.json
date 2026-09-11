@@ -2191,6 +2191,20 @@
       "publisher": "Google Flights",
       "scope": "Exact-date inventory checked August 8, 2026 for the itinerary flight corridors. Prices are one-adult economy snapshots including required taxes and fees but excluding optional seats and bags; availability, through-ticket protection, and fares can change. Open-jaw trips remain provisional unless the complete multi-city ticket was observed."
     },
+    "google-flights-crete-outbound-2027": {
+      "label": "Google Flights PIT to Chania on June 9, 2027",
+      "tier": "observed-quote",
+      "url": "https://www.google.com/travel/flights?q=Flights%20from%20Pittsburgh%20to%20Chania%20on%20June%209%202027%20one%20way&hl=en&curr=USD",
+      "publisher": "Google Flights",
+      "scope": "Exact-date one-adult economy snapshot reviewed September 11, 2026. The recommended British Airways routing was $882 one way; availability, fares and connection details can change."
+    },
+    "google-flights-crete-return-2027": {
+      "label": "Google Flights Heraklion to Pittsburgh on June 23, 2027",
+      "tier": "observed-quote",
+      "url": "https://www.google.com/travel/flights?q=Flights%20from%20Heraklion%20to%20Pittsburgh%20on%20June%2023%202027%20one%20way&hl=en&curr=USD",
+      "publisher": "Google Flights",
+      "scope": "Exact-date one-adult economy snapshot reviewed September 11, 2026. The recommended Aegean and American routing was $1,106 one way; availability, fares and through-ticket protection can change."
+    },
     "google-flights-jtree-audit": {
       "label": "Google Flights Pittsburgh to Southern California exact-date audit",
       "tier": "observed-quote",
@@ -4468,7 +4482,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 4,
         "fireRisk": 3,
         "swim": 4,
@@ -4478,7 +4492,7 @@
         "risk": 3,
         "nights": 5,
         "novelty": 4,
-        "pto": 3
+        "pto": 2
       },
       "weightDefaults": {
         "budget": 2,
@@ -4494,14 +4508,14 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11200,
-        "ceilUsd": 15000,
+        "floorUsd": 14350,
+        "ceilUsd": 17900,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000
       },
       "pto": {
-        "days": 8,
-        "nights": 12
+        "days": 9,
+        "nights": 13
       },
       "facets": {
         "continent": "europe",
@@ -4514,15 +4528,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 39,
+      "totalBaked": 37,
       "travelWindow": [
         "2027-06-09",
-        "2027-06-22"
+        "2027-06-23"
       ],
       "routeReadiness": "current-proxy",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-09-10",
+        "reviewedAt": "2026-09-11",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -4538,8 +4552,8 @@
         },
         "axes": {
           "budget": {
-            "score": 2,
-            "rationale": "The reconciled family band is $11,200–$15,000. The high case reaches the preferred ceiling, but lodging and final ticket protection remain medium-confidence.",
+            "score": 1,
+            "rationale": "The conservative $14,350–$17,900 family band uses the two current one-way snapshots because the exact protected open-jaw through-fare was not captured. It crosses the preferred $15,000 ceiling and must be rescored if a lower protected fare appears.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -4579,7 +4593,7 @@
           },
           "ease": {
             "score": 3,
-            "rationale": "One island and no internal flight help, but three bases, two lodging moves, a two-stop outbound and several full driving days keep logistics moderate.",
+            "rationale": "One island, no internal flight and the new one-stop outbound help, but three bases, two lodging moves, a two-stop return and several full driving days keep logistics moderate.",
             "confidence": "medium",
             "evidence": [
               "operational-load"
@@ -4603,7 +4617,7 @@
           },
           "nights": {
             "score": 5,
-            "rationale": "Twelve hotel nights derive 5/5 under the shared rubric.",
+            "rationale": "Thirteen hotel nights derive 5/5 under the shared rubric.",
             "confidence": "high",
             "evidence": [
               "trip-window"
@@ -4618,8 +4632,8 @@
             ]
           },
           "pto": {
-            "score": 3,
-            "rationale": "Eight PTO days derive 3/5 and have zero default weight.",
+            "score": 2,
+            "rationale": "Nine PTO days derive 2/5 and have zero default weight.",
             "confidence": "high",
             "evidence": [
               "trip-window"
@@ -4633,18 +4647,20 @@
             "proxyStatus": "current-proxy",
             "confidence": "medium",
             "sourceRefs": [
-              "google-flights-2027-current-audit",
+              "google-flights-crete-outbound-2027",
+              "google-flights-crete-return-2027",
               "internal-itinerary"
             ],
             "value": {
-              "lowUsd": 11200,
-              "highUsd": 15000
+              "lowUsd": 14350,
+              "highUsd": 17900
             },
-            "verifiedAt": "2026-09-10",
-            "expiresAt": "2026-10-10",
+            "verifiedAt": "2026-09-11",
+            "expiresAt": "2026-10-11",
             "sourceLocators": {
-              "google-flights-2027-current-audit": "Google Flights exact multi-city search PIT-CHQ Jun 9 and HER-PIT Jun 22, 2027; $1,304 practical adult fare",
-              "internal-itinerary": "main.json budget and totals sections"
+              "google-flights-crete-outbound-2027": "Exact PIT-CHQ Jun 9 search: BA via LHR at $882 per adult",
+              "google-flights-crete-return-2027": "Exact HER-PIT Jun 23 search: Aegean/American via ATH and JFK at $1,106 per adult; direction-level snapshot, not a protected open-jaw quote",
+              "internal-itinerary": "main.json budget and totals sections; conservative airfare allowance adds seats and bags to the $7,952 family base snapshot"
             },
             "claimType": "mixed"
           },
@@ -4658,11 +4674,11 @@
             ],
             "value": {
               "depart": "2027-06-09",
-              "return": "2027-06-22",
-              "hotelNights": 12,
-              "ptoDays": 8
+              "return": "2027-06-23",
+              "hotelNights": 13,
+              "ptoDays": 9
             },
-            "verifiedAt": "2026-09-10",
+            "verifiedAt": "2026-09-11",
             "expiresAt": null,
             "sourceLocators": {
               "decision-profile": "decisionProfile.json tripWindows.crete and Pittsburgh requiredFullDays"
@@ -4749,16 +4765,16 @@
             ],
             "value": {
               "score": 5,
-              "hotelNights": 12,
+              "hotelNights": 13,
               "bases": 3,
               "waterPct": 45,
               "townPct": 30,
               "naturePct": 25
             },
-            "verifiedAt": "2026-09-10",
+            "verifiedAt": "2026-09-11",
             "expiresAt": null,
             "sourceLocators": {
-              "internal-itinerary": "crete/main.json day1-day12 and balance section"
+              "internal-itinerary": "crete/main.json day0-day14 and balance section"
             },
             "claimType": "derived"
           },
@@ -4769,7 +4785,8 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "google-flights-2027-current-audit"
+              "google-flights-crete-outbound-2027",
+              "google-flights-crete-return-2027"
             ],
             "value": {
               "easeScore": 3,
@@ -4779,11 +4796,12 @@
               "maxConnections": 2,
               "singleTicket": false
             },
-            "verifiedAt": "2026-09-10",
-            "expiresAt": "2026-10-10",
+            "verifiedAt": "2026-09-11",
+            "expiresAt": "2026-10-11",
             "sourceLocators": {
               "internal-itinerary": "crete/main.json air travel, getting around and daily route",
-              "google-flights-2027-current-audit": "Exact-date UI search showed a two-stop outbound and two-stop practical return"
+              "google-flights-crete-outbound-2027": "Exact-date UI search showed a one-stop 13h outbound",
+              "google-flights-crete-return-2027": "Exact-date UI search showed a two-stop 16h50 same-day return"
             },
             "claimType": "mixed"
           },
@@ -4816,20 +4834,22 @@
             "proxyStatus": "current-proxy",
             "confidence": "high",
             "sourceRefs": [
-              "google-flights-2027-current-audit"
+              "google-flights-crete-outbound-2027",
+              "google-flights-crete-return-2027"
             ],
             "value": {
               "status": "current-proxy",
-              "exactTripQuoteObserved": true,
+              "exactTripQuoteObserved": false,
               "finalProtectionVerified": false,
               "sameDayReturnObserved": true,
               "singleTicket": false,
               "maxConnections": 2
             },
-            "verifiedAt": "2026-09-10",
-            "expiresAt": "2026-10-10",
+            "verifiedAt": "2026-09-11",
+            "expiresAt": "2026-10-11",
             "sourceLocators": {
-              "google-flights-2027-current-audit": "Exact multi-city PIT-CHQ Jun 9 and HER-PIT Jun 22 search reviewed live; $1,304 practical adult fare"
+              "google-flights-crete-outbound-2027": "BA PIT-LHR-CHQ Jun 9/10 in 13h at $882 adult; 1h30 LHR connection",
+              "google-flights-crete-return-2027": "Aegean/American HER-ATH-JFK-PIT Jun 23 in 16h50 at $1,106 adult; exact protected multi-city through-fare remains unverified"
             },
             "claimType": "observed"
           },
@@ -4855,7 +4875,7 @@
         ]
       },
       "metrics": {
-        "airHours": 36.6,
+        "airHours": 29.8,
         "groundHours": 12,
         "timeZones": 7,
         "baseMoves": 2,
@@ -4879,20 +4899,20 @@
       "variants": [
         {
           "id": "canonical",
-          "label": "12-night west-to-east Crete",
+          "label": "13-night west-to-east Crete",
           "canonical": true,
           "status": "documented",
-          "nights": 12,
-          "ptoDays": 8,
+          "nights": 13,
+          "ptoDays": 9,
           "budget": {
-            "lowUsd": 11200,
+            "lowUsd": 14350,
             "expectedUsd": null,
-            "highUsd": 15000,
+            "highUsd": 17900,
             "distribution": "planning-band",
             "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
-          "notes": "Chania 5 + Rethymno 3 + Agios Nikolaos 4, CHQ inbound and HER outbound.",
+          "notes": "Chania 5 + Rethymno 3 + Agios Nikolaos 5, CHQ inbound and HER outbound. The June 23 return adds one full Crete day while preserving the June 24–26 Pittsburgh commitment.",
           "confidence": "medium",
           "claimType": "derived",
           "sourceRefs": [

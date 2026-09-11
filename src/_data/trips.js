@@ -28,9 +28,9 @@ module.exports = function () {
     const flightAudit = flightAudits.trips[slug]
       ? {
           ...flightAudits.trips[slug],
-          reviewedAt: main.tripCategory === 'short'
+          reviewedAt: flightAudits.trips[slug].reviewedAt || (main.tripCategory === 'short'
             ? flightAudits.reviewedAt
-            : (flightAudits.fullTripsReviewedAt || flightAudits.reviewedAt),
+            : (flightAudits.fullTripsReviewedAt || flightAudits.reviewedAt)),
         }
       : null;
     const trip = { slug, main, flightAudit };
