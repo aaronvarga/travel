@@ -62,6 +62,10 @@
     }
   },
   "tripWindows": {
+    "crete": [
+      "2027-06-09",
+      "2027-06-22"
+    ],
     "albania": [
       "2027-06-07",
       "2027-06-22"
@@ -228,6 +232,7 @@
     ]
   },
   "routeReadiness": {
+    "crete": "current-proxy",
     "maui-kauai": "current-proxy",
     "greece-ionian": "current-proxy",
     "greece-via-lisbon": "current-proxy",

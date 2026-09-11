@@ -146,6 +146,10 @@ module.exports = {
     path: 'assets/img/portugal-crete/g_elafonissi_wide.jpg',
     alt: 'Elafonissi’s pink sand and turquoise lagoon framed by black volcanic rock in Crete',
   },
+  crete: {
+    path: 'assets/img/crete/google_balos_gramvousa_view_02.jpg',
+    alt: 'Balos Lagoon’s turquoise sandbars and rugged Cretan headlands',
+  },
   'portugal-sicily': {
     path: 'assets/img/portugal-sicily/google_taormina_isola_bella_01.jpg',
     alt: 'Taormina’s Isola Bella framed by the vivid Ionian Sea',

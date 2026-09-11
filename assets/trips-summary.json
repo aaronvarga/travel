@@ -4460,6 +4460,464 @@
       }
     },
     {
+      "slug": "crete",
+      "token": "crete",
+      "title": "Crete: Chania · Rethymno · Agios Nikolaos — June 2027",
+      "displayName": "Crete: Chania + Rethymno + Agios Nikolaos",
+      "blurb": "One-island depth: lagoons, gorges, Venetian towns and Mirabello Bay",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 2,
+        "weather": 4,
+        "fireRisk": 3,
+        "swim": 4,
+        "variety": 5,
+        "ease": 3,
+        "food": 4,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 4,
+        "pto": 3
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "fireRisk": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 11200,
+        "ceilUsd": 15000,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 8,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 2,
+        "swimTempF": [
+          73,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 39,
+      "travelWindow": [
+        "2027-06-09",
+        "2027-06-22"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "within-preference",
+      "evidence": {
+        "reviewedAt": "2026-09-10",
+        "overallConfidence": "medium",
+        "limitingAxes": [
+          "budget",
+          "fireRisk",
+          "swim",
+          "ease",
+          "food"
+        ],
+        "confidence": {
+          "id": "medium",
+          "value": 2,
+          "label": "Medium evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 2,
+            "rationale": "The reconciled family band is $11,200–$15,000. The high case reaches the preferred ceiling, but lodging and final ticket protection remain medium-confidence.",
+            "confidence": "medium",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 4,
+            "rationale": "June is predominantly dry and warm; early starts manage exposed archaeology, gorge and fortress days.",
+            "confidence": "high",
+            "evidence": [
+              "climate-proxy"
+            ]
+          },
+          "fireRisk": {
+            "score": 3,
+            "rationale": "Greece is inside official fire season in June; wind, gorge access and road closure create moderate disruption exposure with three-base flexibility.",
+            "confidence": "medium",
+            "evidence": [
+              "wildfire-exposure"
+            ]
+          },
+          "swim": {
+            "score": 4,
+            "rationale": "The itinerary schedules repeated natural-water days in the 73–74°F planning range, with multiple wind-direction alternatives.",
+            "confidence": "medium",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "Substantial water, town/food, gorge/nature and archaeology/history modes are all scheduled.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 3,
+            "rationale": "One island and no internal flight help, but three bases, two lodging moves, a two-stop outbound and several full driving days keep logistics moderate.",
+            "confidence": "medium",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 4,
+            "rationale": "All three bases and remote days have named plain-food, grocery and apartment-kitchen fallbacks.",
+            "confidence": "medium",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 3,
+            "rationale": "Exact-date inventory exists, but final ticket protection and several 2027 activity access rules remain open.",
+            "confidence": "high",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights derive 5/5 under the shared rubric.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 4,
+            "rationale": "Crete is new, but the family has visited several Greek islands, so this is mostly new with a familiar destination type.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 3,
+            "rationale": "Eight PTO days derive 3/5 and have zero default weight.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "google-flights-2027-current-audit",
+              "internal-itinerary"
+            ],
+            "value": {
+              "lowUsd": 11200,
+              "highUsd": 15000
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": "2026-10-10",
+            "sourceLocators": {
+              "google-flights-2027-current-audit": "Google Flights exact multi-city search PIT-CHQ Jun 9 and HER-PIT Jun 22, 2027; $1,304 practical adult fare",
+              "internal-itinerary": "main.json budget and totals sections"
+            },
+            "claimType": "mixed"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "decision-profile"
+            ],
+            "value": {
+              "depart": "2027-06-09",
+              "return": "2027-06-22",
+              "hotelNights": 12,
+              "ptoDays": 8
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": null,
+            "sourceLocators": {
+              "decision-profile": "decisionProfile.json tripWindows.crete and Pittsburgh requiredFullDays"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "climate-proxy",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "meteo-heraklion-climate"
+            ],
+            "value": {
+              "temperatureF": [
+                66,
+                81
+              ],
+              "rainfallMm": 3,
+              "score": 4
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": "2027-04-01",
+            "sourceLocators": {
+              "meteo-heraklion-climate": "Hellenic meteorological June climate normals for Heraklion used as Crete planning proxy"
+            },
+            "claimType": "observed"
+          },
+          {
+            "id": "wildfire-exposure",
+            "category": "wildfire",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "greece-fire-season-2026",
+              "effis-2024-fire-report"
+            ],
+            "value": {
+              "score": 3,
+              "chanceBand": "5–10%"
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": "2027-06-01",
+            "sourceLocators": {
+              "greece-fire-season-2026": "Greek authority 2026 fire season dates May 1 through October 31",
+              "effis-2024-fire-report": "EFFIS annual fire report supports recent Mediterranean June-through-September seasonality"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "noaa-oisst",
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 4,
+              "temperatureF": [
+                73,
+                74
+              ],
+              "hasSwim": true,
+              "scheduledWaterDays": 6
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": "2027-05-15",
+            "sourceLocators": {
+              "noaa-oisst": "NOAA OISST June climatology proxy for waters surrounding Crete",
+              "internal-itinerary": "main.json schedules Balos, Elafonissi, Preveli, Elounda, Voulisma and town beaches"
+            },
+            "claimType": "mixed"
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 5,
+              "hotelNights": 12,
+              "bases": 3,
+              "waterPct": 45,
+              "townPct": 30,
+              "naturePct": 25
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": null,
+            "sourceLocators": {
+              "internal-itinerary": "crete/main.json day1-day12 and balance section"
+            },
+            "claimType": "derived"
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "internal-itinerary",
+              "google-flights-2027-current-audit"
+            ],
+            "value": {
+              "easeScore": 3,
+              "bases": 3,
+              "baseMoves": 2,
+              "internalFlights": 0,
+              "maxConnections": 2,
+              "singleTicket": false
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": "2026-10-10",
+            "sourceLocators": {
+              "internal-itinerary": "crete/main.json air travel, getting around and daily route",
+              "google-flights-2027-current-audit": "Exact-date UI search showed a two-stop outbound and two-stop practical return"
+            },
+            "claimType": "mixed"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "sklavenitis-crete-stores",
+              "internal-itinerary"
+            ],
+            "value": {
+              "score": 4,
+              "groceryCoverage": true,
+              "plainFoodRequired": true,
+              "plainFoodEveryBase": true
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": "2027-05-01",
+            "sourceLocators": {
+              "sklavenitis-crete-stores": "Current operator store locator confirms full grocery coverage on Crete",
+              "internal-itinerary": "crete/foodGuide.json and day-by-day restaurant fallbacks cover each base and remote day"
+            },
+            "claimType": "mixed"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "google-flights-2027-current-audit"
+            ],
+            "value": {
+              "status": "current-proxy",
+              "exactTripQuoteObserved": true,
+              "finalProtectionVerified": false,
+              "sameDayReturnObserved": true,
+              "singleTicket": false,
+              "maxConnections": 2
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": "2026-10-10",
+            "sourceLocators": {
+              "google-flights-2027-current-audit": "Exact multi-city PIT-CHQ Jun 9 and HER-PIT Jun 22 search reviewed live; $1,304 practical adult fare"
+            },
+            "claimType": "observed"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "proxyStatus": "derived",
+            "confidence": "high",
+            "sourceRefs": [
+              "decision-profile"
+            ],
+            "value": {
+              "overlap": [],
+              "familiarType": "Greek islands"
+            },
+            "verifiedAt": "2026-09-10",
+            "expiresAt": null,
+            "sourceLocators": {
+              "decision-profile": "Visited list includes Santorini, Mykonos and Rhodes but not Crete"
+            },
+            "claimType": "derived"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": 36.6,
+        "groundHours": 12,
+        "timeZones": 7,
+        "baseMoves": 2,
+        "longestTransferHours": 4.5,
+        "highOutputDayStreak": 3,
+        "fallbackDays": 2,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "required",
+          "kitchen": "required",
+          "laundry": "required",
+          "realBeds": "required"
+        },
+        "waterSafety": "Daily wind, flag and operator checks; familiar flotation gear where allowed.",
+        "crowdingPressure": "Early starts required for Knossos, Spinalonga, Balos and Elafonissi.",
+        "medicalAccess": "Hospitals in Chania, Rethymno and Agios Nikolaos; remote gorge and lagoon days require conservative turn-around rules."
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "12-night west-to-east Crete",
+          "canonical": true,
+          "status": "documented",
+          "nights": 12,
+          "ptoDays": 8,
+          "budget": {
+            "lowUsd": 11200,
+            "expectedUsd": null,
+            "highUsd": 15000,
+            "distribution": "planning-band",
+            "chanceUnderPreferredMax": null
+          },
+          "removedExperiences": [],
+          "notes": "Chania 5 + Rethymno 3 + Agios Nikolaos 4, CHQ inbound and HER outbound.",
+          "confidence": "medium",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "crete/main.json canonical route"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/crete/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
+        "bookable": false
+      }
+    },
+    {
       "slug": "croatia",
       "token": "croatia",
       "title": "Croatia · Split · Hvar · Korčula — June 2027",

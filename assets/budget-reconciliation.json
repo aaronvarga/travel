@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-10T19:41:04.386Z",
+  "generatedAt": "2026-09-11T13:30:42.159Z",
   "trips": [
     {
       "slug": "albania",
@@ -210,6 +210,53 @@
           "text": "$500 target / $1,100 high",
           "lowUsd": 500,
           "highUsd": 1100
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "crete",
+      "canonical": {
+        "lowUsd": 11200,
+        "highUsd": 15000
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 4,
+        "sumLowUsd": 11200,
+        "sumHighUsd": 15000,
+        "displayedLowUsd": 11200,
+        "displayedHighUsd": 15000,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "Transportation",
+          "text": "$6,700–$8,100",
+          "lowUsd": 6700,
+          "highUsd": 8100
+        },
+        {
+          "label": "Lodging",
+          "text": "$2,100–$3,400",
+          "lowUsd": 2100,
+          "highUsd": 3400
+        },
+        {
+          "label": "Food",
+          "text": "$1,700–$2,300",
+          "lowUsd": 1700,
+          "highUsd": 2300
+        },
+        {
+          "label": "Activities",
+          "text": "$700–$1,200",
+          "lowUsd": 700,
+          "highUsd": 1200
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

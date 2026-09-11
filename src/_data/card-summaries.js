@@ -29,6 +29,7 @@ module.exports = {
   portugal: 'Offers the best-value mix of Cascais, Algarve coves, and Madeira hiking with fewer expensive transfers and a relaxed three-base route.',
   'portugal-algarve-sicily': 'Moves from Lisbon and the Algarve to Sicily for golden coves, dramatic towns, Mount Etna, and Italian food, with more transfers than the simpler hybrids.',
   'portugal-crete': 'Blends Portugal’s cities and Atlantic coast with Crete’s warmer water, beaches, historic towns, and a balanced hiking-and-swimming finish.',
+  crete: 'Crosses Crete from Chania’s lagoons and Imbros Gorge through Venetian Rethymno to Knossos, Spinalonga, and the clear water of Mirabello Bay.',
   'portugal-sicily': 'Pairs Portugal’s coast and city time with Cefalù, Taormina, and Mount Etna for a scenery-rich mix of beaches, towns, and Italian food.',
   'sardinia-corsica': 'Centers the trip on exceptional Mediterranean swimming, pairing Sardinia’s turquoise coves with Bonifacio’s cliffs, boat days, and compact old towns.',
   'sicily-malta': 'Combines Sicily’s food, beaches, Mount Etna, and historic towns with Malta’s limestone cities, boat trips, and brilliant blue swimming.',
