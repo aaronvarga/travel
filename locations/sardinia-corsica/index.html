@@ -1093,7 +1093,7 @@ footer a{color:var(--muted)}
       <a href="#health-check">Health-Check</a>
       <a href="#timing">Week Later?</a>
       <a href="#todo">To-Do</a>
-      <a href="#budget">Budget</a>
+      <a href="#capital-one-points">Points &amp; Miles</a><a href="#budget">Budget</a>
       <a href="#tips">Travel Tips</a>
       <a href="#packing">Packing</a>
       <a href="#social">What People Say</a>
@@ -1996,7 +1996,74 @@ footer a{color:var(--muted)}
         </article>
       </div>
       <div class="todo-callout"><b>Why this no longer says "act now" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href="https://www.expedia.com/newsroom/expedia-2026-air-hacks/" target="_blank" rel="noreferrer">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href="https://www.going.com/guides/the-best-time-to-book-a-cheap-flight" target="_blank" rel="noreferrer">Going</a> puts international trips in a 2-8 month window, and <a href="https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/" target="_blank" rel="noreferrer">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget.</div>
-    </section><section id="budget" class="divider"><div class="section-label"><p class="eyebrow">The Money</p><h2>Budget, savers &amp; splurges</h2><p>Family of 4, US dollars unless noted. Exact-date Sardinia airfare is live; the open-jaw, cars and villas still need current checkout quotes. This is a preference-fit version; if flights, Bonifacio lodging, or rental quotes spike, the stress case rises above $15k.</p></div><div class="budget-scroll"><table class="budget-tbl"><tbody><tr><th>Line item</th><th>Estimate</th></tr><tr><td>Flights — PIT ↔ Sardinia open-jaw</td><td>$5,400-6,400</td></tr><tr><td>Lodging — 12 nights, apartments/pool-villa mix</td><td>$3,200-5,500</td></tr><tr><td>Sardinia rental car — automatic, one-way</td><td>$950-1,700</td></tr><tr><td>Corsica ferry — foot-passenger family round trip</td><td>$180-350</td></tr><tr><td>Corsica local taxis/boat/local rental</td><td>$150-350</td></tr><tr><td>Food — groceries + casual dinners</td><td>$1,400-2,200</td></tr><tr><td>Activities — one premium boat day, caves, permits, ruins</td><td>$900-1,600</td></tr><tr><td>Docs/extras — ETIAS, IDP, eSIM, parking buffers</td><td>$300-500</td></tr><tr><td>Grand total — family of 4</td><td>~$12,880–18,300 planning band · stress ~$18,600</td></tr></tbody></table></div><div class="twocol"><div class="listcard save-list"><h4>Save money</h4><ul><li><b>Use foot-passenger ferry</b> unless the Sardinia rental contract clearly allows Corsica.</li><li><b>Mix apartments with one pool villa</b>; private pools drive the lodging band.</li><li><b>Self-cater breakfasts and beach lunches</b>; Sardinia supermarkets are strong.</li><li><b>Pick one premium boat day</b>; Gulf of Orosei and Bonifacio/Lavezzi should not both be private splurges.</li></ul></div><div class="listcard splurge-list"><h4>Worth the splurge</h4><ul><li><b>Small-group Gulf of Orosei boat</b> — the signature water day.</li><li><b>One pool stay in Ogliastra</b> — heat + hiking makes a pool valuable.</li><li><b>Bonifacio cliff boat</b> — short, memorable, and easy with kids if the budget gate clears.</li><li><b>Automatic car one class up</b> — Sardinia mountain roads are tiring.</li></ul></div></div></section>
+    </section><style>
+  .points-plan-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:18px}
+  .points-plan-hero,.points-plan-metrics article,.points-plan-actions article{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 12px 30px rgba(30,32,28,.1)}
+  .points-plan-hero{position:relative;overflow:hidden;padding:24px;border-left:6px solid var(--c1)}
+  .points-plan-hero::after{content:"200K";position:absolute;right:-8px;bottom:-30px;color:rgba(31,111,120,.07);font:800 5rem/1 "Fraunces","Georgia",serif;pointer-events:none}
+  .points-plan-tag{display:inline-block;margin-bottom:8px;color:var(--c1);font-size:.7rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+  .points-plan-hero h3,.points-plan-actions h3{margin:0 0 10px;font-size:1.2rem}
+  .points-plan-hero p,.points-plan-actions p{position:relative;z-index:1;margin:8px 0 0;color:var(--muted);font-size:.9rem;line-height:1.55}
+  .points-plan-hero strong,.points-plan-actions strong{color:var(--ink)}
+  .points-plan-metrics{display:grid;gap:10px}
+  .points-plan-metrics article{padding:16px 18px}
+  .points-plan-metrics span{display:block;color:var(--muted);font-size:.69rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+  .points-plan-metrics strong{display:block;margin-top:2px;color:var(--ink);font:700 1.45rem/1.2 "Fraunces","Georgia",serif}
+  .points-plan-metrics p{margin:5px 0 0;color:var(--muted);font-size:.82rem;line-height:1.42}
+  .points-plan-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+  .points-plan-actions article{padding:20px 22px}
+  .points-plan-actions ol{margin:0;padding-left:1.2rem;color:var(--muted);font-size:.87rem;line-height:1.5}
+  .points-plan-actions li+li{margin-top:7px}
+  .points-plan-sources{margin:14px 0 0;color:var(--muted);font-size:.76rem;line-height:1.5}
+  .points-plan-sources a{color:var(--c1)}
+  @media(max-width:820px){.points-plan-grid,.points-plan-actions{grid-template-columns:1fr}}
+  @media print{.points-plan-hero,.points-plan-metrics article,.points-plan-actions article{box-shadow:none}}
+</style>
+<section id="capital-one-points" class="divider points-plan">
+  <div class="section-label">
+    <p class="eyebrow">200,000 Capital One Miles</p>
+    <h2>Use the points where this trip is most expensive</h2>
+    <p>This is a booking target, not observed award availability. Search all four seats first, compare the same itinerary in cash, and transfer only when the complete award is ready to ticket.</p>
+  </div>
+
+  <div class="points-plan-grid">
+    <article class="points-plan-hero">
+      <span class="points-plan-tag">Best use for this route</span>
+      <h3>PIT → northern Sardinia / Cagliari → PIT</h3>
+      <p><strong>Try Flying Blue first.</strong> The high-upside target is 25,000 miles per person each way in Economy Light. Eight one-way awards use all 200,000 miles and can cover the family round trip if every segment prices at that floor.</p>
+      <p>Search the open jaw as separate one-ways, including PIT and sensible U.S. gateway starts. Compare Light, Standard and Flex conditions; taxes and carrier surcharges are paid in cash.</p>
+    </article>
+
+    <div class="points-plan-metrics" aria-label="Capital One points value comparison">
+      <article><span>Cash-value floor</span><strong>$2,000</strong><p>200,000 miles at 1 cent each toward eligible travel.</p></article>
+      <article><span>Transfer benchmark</span><strong>$3,200–$3,700</strong><p>Independent 1.6–1.85¢ valuations; useful as a hurdle, not a guarantee.</p></article>
+      <article><span>This itinerary</span><strong>Airfare first</strong><p>Best case: displace $5,400–$6,400 of planned open-jaw airfare before award charges.</p></article>
+    </div>
+  </div>
+
+  <div class="points-plan-actions">
+    <article>
+      <h3>Booking sequence</h3>
+      <ol>
+        <li>Open free loyalty accounts for every program being compared; the Capital One and loyalty-account names must match.</li>
+        <li>Search for four award seats on every required date and verify the final points, cash charges, bags, seats and change rules.</li>
+        <li>Divide cash price minus unavoidable award charges by miles used. Transfer only when the result beats 1 cent per mile and the route remains protected.</li>
+        <li>Transfer the exact amount only after the award is visible. Capital One transfers cannot be reversed.</li>
+      </ol>
+    </article>
+    <article>
+      <h3>Second search and fallback</h3>
+      <p>Compare Flying Blue access via mainland Europe with Aeroplan Star Alliance options. Do not let an award force a Corsica backtrack.</p>
+      <p><strong>No worthwhile award?</strong> Keep the miles at Capital One and erase $2,000 of eligible flights, lodging, rental cars, rail, taxis or other qualifying travel after purchase. Never transfer merely because a temporary bonus appears.</p>
+    </article>
+  </div>
+
+  <p class="points-plan-sources">Research checked 9/11/2026:
+    <a href="https://www.capitalone.com/learn-grow/money-management/venture-miles-transfer-partnerships/" target="_blank" rel="noreferrer">Capital One transfer partners and ratios</a> ·
+    <a href="https://thepointsguy.com/credit-cards/redeem-capital-one-miles-fixed-value/" target="_blank" rel="noreferrer">Current fixed-value redemption guide</a> ·
+    <a href="https://www.nerdwallet.com/travel/learn/capital-one-miles-value" target="_blank" rel="noreferrer">Current independent Capital One valuation</a> · <a href="https://www.flyingblue.com/en/flights" target="_blank" rel="noreferrer">Flying Blue reward-ticket rules and monthly promos</a> · <a href="https://flightpoints.com/award-charts/air-france-flying-blue-award-chart-2026" target="_blank" rel="noreferrer">Independent 2026 Flying Blue award-floor tracker</a>
+  </p>
+</section><section id="budget" class="divider"><div class="section-label"><p class="eyebrow">The Money</p><h2>Budget, savers &amp; splurges</h2><p>Family of 4, US dollars unless noted. Exact-date Sardinia airfare is live; the open-jaw, cars and villas still need current checkout quotes. This is a preference-fit version; if flights, Bonifacio lodging, or rental quotes spike, the stress case rises above $15k.</p></div><div class="budget-scroll"><table class="budget-tbl"><tbody><tr><th>Line item</th><th>Estimate</th></tr><tr><td>Flights — PIT ↔ Sardinia open-jaw</td><td>$5,400-6,400</td></tr><tr><td>Lodging — 12 nights, apartments/pool-villa mix</td><td>$3,200-5,500</td></tr><tr><td>Sardinia rental car — automatic, one-way</td><td>$950-1,700</td></tr><tr><td>Corsica ferry — foot-passenger family round trip</td><td>$180-350</td></tr><tr><td>Corsica local taxis/boat/local rental</td><td>$150-350</td></tr><tr><td>Food — groceries + casual dinners</td><td>$1,400-2,200</td></tr><tr><td>Activities — one premium boat day, caves, permits, ruins</td><td>$900-1,600</td></tr><tr><td>Docs/extras — ETIAS, IDP, eSIM, parking buffers</td><td>$300-500</td></tr><tr><td>Grand total — family of 4</td><td>~$12,880–18,300 planning band · stress ~$18,600</td></tr></tbody></table></div><div class="twocol"><div class="listcard save-list"><h4>Save money</h4><ul><li><b>Use foot-passenger ferry</b> unless the Sardinia rental contract clearly allows Corsica.</li><li><b>Mix apartments with one pool villa</b>; private pools drive the lodging band.</li><li><b>Self-cater breakfasts and beach lunches</b>; Sardinia supermarkets are strong.</li><li><b>Pick one premium boat day</b>; Gulf of Orosei and Bonifacio/Lavezzi should not both be private splurges.</li></ul></div><div class="listcard splurge-list"><h4>Worth the splurge</h4><ul><li><b>Small-group Gulf of Orosei boat</b> — the signature water day.</li><li><b>One pool stay in Ogliastra</b> — heat + hiking makes a pool valuable.</li><li><b>Bonifacio cliff boat</b> — short, memorable, and easy with kids if the budget gate clears.</li><li><b>Automatic car one class up</b> — Sardinia mountain roads are tiring.</li></ul></div></div></section>
 <section id="totals" class="divider"><div class="section-label"><p class="eyebrow">Bottom Line</p><h2>Total trip cost</h2><p>The corrected 6/10/2027–6/23/2027 timing stays before peak July/August, but the flight and lodging bands needed a conservative reset. This is still the best Europe swim option, not the best value option.</p></div><div class="budget-scroll"><table class="budget-tbl grand"><tbody><tr><th>Category</th><th>Estimate</th></tr><tr><td>Flights</td><td>$5,400-6,400</td></tr><tr><td>Lodging</td><td>$3,200-5,500</td></tr><tr><td>Cars, ferry, local transport</td><td>$1,280-2,400</td></tr><tr><td>Food + activities + extras</td><td>$3,000-4,000</td></tr><tr class="total"><td>Grand total — family of 4</td><td>~$12.9k–18.3k preference-fit · stress ~$18.6k</td></tr></tbody></table></div><p class="rate-note">Daily costs exclude lodging, flights, main rental car, and documents to avoid double-counting. Length verdict: <b>12 nights is right if Bonifacio stays overnight</b>; below that, four bases get rushed. If quotes miss the cap, make Bonifacio a one-night/day-trip fallback rather than trimming the Ogliastra beach-hike core.</p></section>
 <section id="tips" class="divider"><div class="section-label"><p class="eyebrow">Travel Tips</p><h2>The stuff nobody tells you</h2><p>Non-obvious logistics for Sardinia/Corsica, researched July 2026.</p></div><div class="tips-order"><p class="mini-h">Book in roughly this order — exact target dates</p><ol><li>Confirm 6/23/2027 arrival time <span>· evening arrival is acceptable</span></li><li>Open-jaw flights <span>· when June 2027 loads</span></li><li>Automatic Sardinia rental car <span>· by Jan 2027</span></li><li>Pool villa / best apartments <span>· by Jan-Feb 2027</span></li><li>Bonifacio ferry <span>· once 2027 schedule opens</span></li><li>Cala Goloritze / Baunei QR tickets <span>· as soon as window opens</span></li><li>Gulf of Orosei boat <span>· 3-6 weeks ahead</span></li><li>Restaurants with views <span>· week of travel</span></li></ol></div><ul class="field-notes-list tips-list"><li class="field-note"><div class="field-note-head"><h4>Documents</h4><p class="sub">Before you go</p></div><div class="note-body"><ul><li class="flag"><b>ETIAS is expected to launch in Q4 2026</b>, but transitional and grace periods make the June 2027 requirement uncertain; check the official portal.</li><li><b>Bring passports for the Corsica ferry.</b> It is an Italy-France crossing.</li><li><b>Get an International Driving Permit from AAA</b> for Italy and keep it with the US license.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Rental cars</h4><p class="sub">Counter + road</p></div><div class="note-body"><ul><li class="flag"><b>Do not assume you can ferry a rental car to Corsica.</b> Get written permission or go as foot passengers.</li><li><b>Book automatic early.</b> Mountain roads and town parking are easier with a compact SUV, not a giant van.</li><li><b>Bring/confirm the 8-year-old booster.</b> Do not rely on a counter having one.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Beaches &amp; permits</h4><p class="sub">Timed access</p></div><div class="note-body"><ul><li><b>La Pelosa and Cala Goloritze are rule-heavy.</b> Expect caps, bookings, QR checks, and towel-mat rules.</li><li><b>Start hikes early.</b> The heat matters more than distance in June.</li><li><b>Water shoes help</b> in Ogliastra and Corsica pebble coves.</li></ul></div></li><li class="field-note"><div class="field-note-head"><h4>Food</h4><p class="sub">Picky-kid strategy</p></div><div class="note-body"><ul><li><b>Anchor every base near pizza/pasta.</b> Sardinia is easy for this if you stay in towns, not isolated villas.</li><li><b>Use agriturismo carefully.</b> Great for adults, often fixed-menu and not ideal for picky kids.</li><li><b>Gelato is the reward system.</b> It buys patience after old towns and hikes.</li></ul></div></li></ul></section>
     <section id="packing" class="divider">

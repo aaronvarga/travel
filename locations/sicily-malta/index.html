@@ -1095,7 +1095,7 @@ footer a{color:var(--muted)}
       <a href="#health-check">Health-Check</a>
       <a href="#timing">Best Time</a>
       <a href="#todo">To-Do</a>
-      <a href="#budget">Budget</a>
+      <a href="#capital-one-points">Points &amp; Miles</a><a href="#budget">Budget</a>
       <a href="#tips">Travel Tips</a>
       <a href="#packing">Packing</a>
       <a href="#social">What People Say</a>
@@ -1909,7 +1909,74 @@ footer a{color:var(--muted)}
         </article>
       </div>
       <div class="todo-callout"><b>Why this no longer says "act now" for flights:</b> airline seats may become searchable about 11 months out, but that is not the cheapest cash-buy signal. <a href="https://www.expedia.com/newsroom/expedia-2026-air-hacks/" target="_blank" rel="noreferrer">Expedia 2026 Air Hacks</a> found 180+ day bookings were the most expensive category in its data; <a href="https://www.going.com/guides/the-best-time-to-book-a-cheap-flight" target="_blank" rel="noreferrer">Going</a> puts international trips in a 2-8 month window, and <a href="https://blog.google/products-and-platforms/products/search/holiday-travel-trends-insights-2024/" target="_blank" rel="noreferrer">Google Flights</a> says U.S.-Europe trips cluster around 94 days out with risk rising inside 50 days. Track now, buy early only for award seats, unusually good protected routing, or a fare already inside budget.</div>
-    </section><section id="budget" class="divider"><div class="section-label"><p class="eyebrow">The Money</p><h2>Budget, savers &amp; splurges</h2><p>Current 2026 price bands where available, adjusted directionally for the corrected 6/10/2026–6/23/2026 window. Exact-date flight inventory is live; cars and lodging still require current quotes. Family of 4, USD unless noted.</p></div><div class="budget-scroll"><table class="budget-tbl"><tbody><tr><th>Line item</th><th>Estimate (family of 4)</th></tr><tr><td>Flights — PIT→Sicily / Malta→PIT open-jaw</td><td>$4,000–5,200</td></tr><tr><td>Internal flight CTA → MLA + bags</td><td>$250–500</td></tr><tr><td>Sicily rental car — 9–10 days automatic + one-way/tolls/fuel</td><td>$800–1,400</td></tr><tr><td>Malta ferries, taxis, transfers, Gozo driver</td><td>$250–450</td></tr><tr><td>Lodging — 12 nights, 4 bases</td><td>$3,400–5,200</td></tr><tr><td>Food — groceries and casual meals, saver plan</td><td>$800–1,500</td></tr><tr><td>Etna cable car / guided route choice</td><td>$190–350</td></tr><tr><td>Valley of Temples or baroque backup day</td><td>$75–180</td></tr><tr><td>Blue Lagoon boat + required free access pass</td><td>$150–280</td></tr><tr><td>Valletta sites / Gozo ferries / small museums</td><td>$150–300</td></tr><tr><td>Activities + attractions subtotal</td><td>~$650–1,150</td></tr></tbody></table></div><div class="twocol"><div class="listcard save-list"><h4>Save money</h4><ul><li>Anchor the trip on the cheapest of PMO/CTA arrivals and MLA/CTA returns before booking lodging.</li><li>Use beach public sections in Cefalù, Isola Bella and Fontane Bianche; rent lido sets only on true all-day swim days.</li><li>Make Etna paid ascent weather-dependent; free Silvestri craters may be enough for the 8-year-old.</li><li>Skip a Malta rental car and use ferries/ride-hail; parking and left-side driving are not worth it for three nights.</li><li>Self-cater breakfasts and simple apartment dinners from Conad/Lidl/Greens; restaurant fatigue is real with picky kids.</li><li>Book Ryanair/Malta Air CTA→MLA early; keep bags disciplined so the short hop stays near the low end.</li><li>Default to the public Ċirkewwa–Comino ferry (about €13–15 adult / €5–7 child return) plus bus/taxi to Ċirkewwa instead of a paid Blue Lagoon boat tour; the free landing pass still applies either way.</li></ul></div><div class="listcard splurge-list"><h4>Worth the splurge</h4><ul><li>Guaranteed-parking Sicily apartments; ZTL mistakes cost more than better lodging.</li><li>Etna 4x4/guided upper route only on a clear, low-wind morning.</li><li>A shared or private Blue Lagoon boat from Sliema only if you want shade/a swim ladder and are skipping the Ċirkewwa ferry crowds — treat it as an upgrade, not the default plan.</li><li>Gozo private driver if you want Victoria + beach + viewpoints without bus waits.</li></ul></div></div></section>
+    </section><style>
+  .points-plan-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(280px,.85fr);gap:18px}
+  .points-plan-hero,.points-plan-metrics article,.points-plan-actions article{border:1px solid var(--line);border-radius:14px;background:var(--card);box-shadow:0 12px 30px rgba(30,32,28,.1)}
+  .points-plan-hero{position:relative;overflow:hidden;padding:24px;border-left:6px solid var(--c1)}
+  .points-plan-hero::after{content:"200K";position:absolute;right:-8px;bottom:-30px;color:rgba(31,111,120,.07);font:800 5rem/1 "Fraunces","Georgia",serif;pointer-events:none}
+  .points-plan-tag{display:inline-block;margin-bottom:8px;color:var(--c1);font-size:.7rem;font-weight:900;letter-spacing:.09em;text-transform:uppercase}
+  .points-plan-hero h3,.points-plan-actions h3{margin:0 0 10px;font-size:1.2rem}
+  .points-plan-hero p,.points-plan-actions p{position:relative;z-index:1;margin:8px 0 0;color:var(--muted);font-size:.9rem;line-height:1.55}
+  .points-plan-hero strong,.points-plan-actions strong{color:var(--ink)}
+  .points-plan-metrics{display:grid;gap:10px}
+  .points-plan-metrics article{padding:16px 18px}
+  .points-plan-metrics span{display:block;color:var(--muted);font-size:.69rem;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
+  .points-plan-metrics strong{display:block;margin-top:2px;color:var(--ink);font:700 1.45rem/1.2 "Fraunces","Georgia",serif}
+  .points-plan-metrics p{margin:5px 0 0;color:var(--muted);font-size:.82rem;line-height:1.42}
+  .points-plan-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+  .points-plan-actions article{padding:20px 22px}
+  .points-plan-actions ol{margin:0;padding-left:1.2rem;color:var(--muted);font-size:.87rem;line-height:1.5}
+  .points-plan-actions li+li{margin-top:7px}
+  .points-plan-sources{margin:14px 0 0;color:var(--muted);font-size:.76rem;line-height:1.5}
+  .points-plan-sources a{color:var(--c1)}
+  @media(max-width:820px){.points-plan-grid,.points-plan-actions{grid-template-columns:1fr}}
+  @media print{.points-plan-hero,.points-plan-metrics article,.points-plan-actions article{box-shadow:none}}
+</style>
+<section id="capital-one-points" class="divider points-plan">
+  <div class="section-label">
+    <p class="eyebrow">200,000 Capital One Miles</p>
+    <h2>Use the points where this trip is most expensive</h2>
+    <p>This is a booking target, not observed award availability. Search all four seats first, compare the same itinerary in cash, and transfer only when the complete award is ready to ticket.</p>
+  </div>
+
+  <div class="points-plan-grid">
+    <article class="points-plan-hero">
+      <span class="points-plan-tag">Best use for this route</span>
+      <h3>PIT → Catania / Malta → PIT</h3>
+      <p><strong>Try Flying Blue first.</strong> The high-upside target is 25,000 miles per person each way in Economy Light. Eight one-way awards use all 200,000 miles and can cover the family round trip if every segment prices at that floor.</p>
+      <p>Search the open jaw as separate one-ways, including PIT and sensible U.S. gateway starts. Compare Light, Standard and Flex conditions; taxes and carrier surcharges are paid in cash.</p>
+    </article>
+
+    <div class="points-plan-metrics" aria-label="Capital One points value comparison">
+      <article><span>Cash-value floor</span><strong>$2,000</strong><p>200,000 miles at 1 cent each toward eligible travel.</p></article>
+      <article><span>Transfer benchmark</span><strong>$3,200–$3,700</strong><p>Independent 1.6–1.85¢ valuations; useful as a hurdle, not a guarantee.</p></article>
+      <article><span>This itinerary</span><strong>Airfare first</strong><p>Best case: displace the $4,000–$5,200 outer open-jaw allowance before award charges; keep the $250–$500 Catania–Malta hop in cash.</p></article>
+    </div>
+  </div>
+
+  <div class="points-plan-actions">
+    <article>
+      <h3>Booking sequence</h3>
+      <ol>
+        <li>Open free loyalty accounts for every program being compared; the Capital One and loyalty-account names must match.</li>
+        <li>Search for four award seats on every required date and verify the final points, cash charges, bags, seats and change rules.</li>
+        <li>Divide cash price minus unavoidable award charges by miles used. Transfer only when the result beats 1 cent per mile and the route remains protected.</li>
+        <li>Transfer the exact amount only after the award is visible. Capital One transfers cannot be reversed.</li>
+      </ol>
+    </article>
+    <article>
+      <h3>Second search and fallback</h3>
+      <p>Compare Aeroplan into Sicily and out of Malta. Preserve one protected transatlantic ticket in each direction.</p>
+      <p><strong>No worthwhile award?</strong> Keep the miles at Capital One and erase $2,000 of eligible flights, lodging, rental cars, rail, taxis or other qualifying travel after purchase. Never transfer merely because a temporary bonus appears.</p>
+    </article>
+  </div>
+
+  <p class="points-plan-sources">Research checked 9/11/2026:
+    <a href="https://www.capitalone.com/learn-grow/money-management/venture-miles-transfer-partnerships/" target="_blank" rel="noreferrer">Capital One transfer partners and ratios</a> ·
+    <a href="https://thepointsguy.com/credit-cards/redeem-capital-one-miles-fixed-value/" target="_blank" rel="noreferrer">Current fixed-value redemption guide</a> ·
+    <a href="https://www.nerdwallet.com/travel/learn/capital-one-miles-value" target="_blank" rel="noreferrer">Current independent Capital One valuation</a> · <a href="https://www.flyingblue.com/en/flights" target="_blank" rel="noreferrer">Flying Blue reward-ticket rules and monthly promos</a> · <a href="https://flightpoints.com/award-charts/air-france-flying-blue-award-chart-2026" target="_blank" rel="noreferrer">Independent 2026 Flying Blue award-floor tracker</a>
+  </p>
+</section><section id="budget" class="divider"><div class="section-label"><p class="eyebrow">The Money</p><h2>Budget, savers &amp; splurges</h2><p>Current 2026 price bands where available, adjusted directionally for the corrected 6/10/2026–6/23/2026 window. Exact-date flight inventory is live; cars and lodging still require current quotes. Family of 4, USD unless noted.</p></div><div class="budget-scroll"><table class="budget-tbl"><tbody><tr><th>Line item</th><th>Estimate (family of 4)</th></tr><tr><td>Flights — PIT→Sicily / Malta→PIT open-jaw</td><td>$4,000–5,200</td></tr><tr><td>Internal flight CTA → MLA + bags</td><td>$250–500</td></tr><tr><td>Sicily rental car — 9–10 days automatic + one-way/tolls/fuel</td><td>$800–1,400</td></tr><tr><td>Malta ferries, taxis, transfers, Gozo driver</td><td>$250–450</td></tr><tr><td>Lodging — 12 nights, 4 bases</td><td>$3,400–5,200</td></tr><tr><td>Food — groceries and casual meals, saver plan</td><td>$800–1,500</td></tr><tr><td>Etna cable car / guided route choice</td><td>$190–350</td></tr><tr><td>Valley of Temples or baroque backup day</td><td>$75–180</td></tr><tr><td>Blue Lagoon boat + required free access pass</td><td>$150–280</td></tr><tr><td>Valletta sites / Gozo ferries / small museums</td><td>$150–300</td></tr><tr><td>Activities + attractions subtotal</td><td>~$650–1,150</td></tr></tbody></table></div><div class="twocol"><div class="listcard save-list"><h4>Save money</h4><ul><li>Anchor the trip on the cheapest of PMO/CTA arrivals and MLA/CTA returns before booking lodging.</li><li>Use beach public sections in Cefalù, Isola Bella and Fontane Bianche; rent lido sets only on true all-day swim days.</li><li>Make Etna paid ascent weather-dependent; free Silvestri craters may be enough for the 8-year-old.</li><li>Skip a Malta rental car and use ferries/ride-hail; parking and left-side driving are not worth it for three nights.</li><li>Self-cater breakfasts and simple apartment dinners from Conad/Lidl/Greens; restaurant fatigue is real with picky kids.</li><li>Book Ryanair/Malta Air CTA→MLA early; keep bags disciplined so the short hop stays near the low end.</li><li>Default to the public Ċirkewwa–Comino ferry (about €13–15 adult / €5–7 child return) plus bus/taxi to Ċirkewwa instead of a paid Blue Lagoon boat tour; the free landing pass still applies either way.</li></ul></div><div class="listcard splurge-list"><h4>Worth the splurge</h4><ul><li>Guaranteed-parking Sicily apartments; ZTL mistakes cost more than better lodging.</li><li>Etna 4x4/guided upper route only on a clear, low-wind morning.</li><li>A shared or private Blue Lagoon boat from Sliema only if you want shade/a swim ladder and are skipping the Ċirkewwa ferry crowds — treat it as an upgrade, not the default plan.</li><li>Gozo private driver if you want Victoria + beach + viewpoints without bus waits.</li></ul></div></div></section>
 
   <section id="totals" class="divider"><div class="section-label"><p class="eyebrow">Bottom Line</p><h2>Total trip cost</h2><p>Family of 4, corrected 6/10/2027–6/23/2027. Converted at about €1 = $1.09 where needed; re-check every bookable item in early 2027.</p></div><div class="budget-scroll"><table class="budget-tbl grand"><tbody><tr><th>Category</th><th>Estimate (family of 4)</th></tr><tr><td>Flights — international open-jaw</td><td>$4,000–5,200</td></tr><tr><td>Internal flight — Catania → Malta + bags</td><td>$250–500</td></tr><tr><td>Ground transport — Sicily car + Malta no-car logistics</td><td>$1,050–1,850</td></tr><tr><td>Docs &amp; extras — ETIAS, IDP, eSIM, airport buffers</td><td>$250–400</td></tr><tr><td>Lodging — 12 nights, 4 bases</td><td>$3,400–5,200</td></tr><tr><td>Food + activities</td><td>$1,450–2,650</td></tr><tr class="total"><td>Grand total — family of 4</td><td>~$10,400–15,800</td></tr></tbody></table></div><p class="rate-note">Length verdict: <b>12 nights is just right</b>; four bases are busy, but cutting nights would make Sicily/Malta feel rushed. To keep this under the $15k strongly preferred maximum, use Giardini-Naxos/Letojanni near Taormina, Sliema/Gzira over premium Valletta if space/pool matters, make Etna upper-route spend weather-dependent, use the public Comino ferry plus free Blue Lagoon QR pass, and do not rent a car in Malta.</p></section>
 
