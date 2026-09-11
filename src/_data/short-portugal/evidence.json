@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-portugal",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 3,
       "rationale": "The simple route has no fragile internal flight, but exact June 2027 open-jaw air and CP rail are not confirmed. Protected-ticket and Lisbon-airport-night fallbacks keep that uncertainty manageable.",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         "route-readiness"
       ]
@@ -299,30 +299,28 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "current-proxy",
-      "confidence": "high",
+      "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "state-travel",
-        "google-flights-2027-current-audit"
+        "short-portugal-route-review-20260911"
       ],
       "value": {
         "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 1,
-        "outbound": "PIT–LIS with one protected connection",
-        "return": "FAO–PIT with one protected connection preferred",
         "exact2027FlightsVerified": false,
-        "exact2027RailVerified": false,
-        "fallback": "Lagos to Lisbon and LIS airport night if protected FAO return is poor",
-        "currentFlightAudit": "PIT–LIS is about $1,405 per traveler for June 12–20. The existing $5.0k–$6.2k family range remains plausible only if FAO–PIT prices cleanly in the multi-city search.",
-        "june2027Verified": false
+        "june2027Verified": false,
+        "fourSeatsVerified": false,
+        "protectionVerified": false,
+        "singleTicketIsBookingRequirement": true,
+        "currentFlightAudit": "TAP markets Lisbon service, not the required complete June 12–20, 2027 LIS-in/FAO-out Pittsburgh family ticket. Price both ends together; retain the Lisbon airport-night fallback if Faro does not work.",
+        "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "short-portugal/main.json #air-travel, #getting-around and day0/day3/day8; exact June 2027 air and CP rail are explicitly marked unconfirmed",
-        "state-travel": "U.S. State Department Portugal destination/advisory entry reviewed for country-level planning; it does not confirm airline or rail schedules",
-        "google-flights-2027-current-audit": "PIT–LIS is about $1,405 per traveler for June 12–20. The existing $5.0k–$6.2k family range remains plausible only if FAO–PIT prices cleanly in the multi-city search."
+        "internal-itinerary": "short-portugal/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-portugal-route-review-20260911": "TAP markets Lisbon service, not the required complete June 12–20, 2027 LIS-in/FAO-out Pittsburgh family ticket. Price both ends together; retain the Lisbon airport-night fallback if Faro does not work."
       },
       "claimType": "proxy"
     },
@@ -431,8 +429,41 @@
     "exact 2027 CP rail and protected open-jaw schedules not yet verified"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
+    "reviewedAt": "2026-09-11",
     "status": "current-proxy",
-    "headline": "Lisbon inventory is live; the Faro open-jaw must still price as one ticket"
-  }
+    "headline": "Route proxy only; previous fare is historical"
+  },
+  "archivedExpiredFacts": [
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "state-travel",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "outbound": "PIT–LIS with one protected connection",
+        "return": "FAO–PIT with one protected connection preferred",
+        "exact2027FlightsVerified": false,
+        "exact2027RailVerified": false,
+        "fallback": "Lagos to Lisbon and LIS airport night if protected FAO return is poor",
+        "currentFlightAudit": "PIT–LIS is about $1,405 per traveler for June 12–20, 2027. The existing $5.0k–$6.2k family range remains plausible only if FAO–PIT prices cleanly in the multi-city search.",
+        "june2027Verified": false
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "internal-itinerary": "short-portugal/main.json #air-travel, #getting-around and day0/day3/day8; exact June 2027 air and CP rail are explicitly marked unconfirmed",
+        "state-travel": "U.S. State Department Portugal destination/advisory entry reviewed for country-level planning; it does not confirm airline or rail schedules",
+        "google-flights-2027-current-audit": "PIT–LIS is about $1,405 per traveler for June 12–20, 2027. The existing $5.0k–$6.2k family range remains plausible only if FAO–PIT prices cleanly in the multi-city search."
+      },
+      "claimType": "proxy"
+    }
+  ]
 }

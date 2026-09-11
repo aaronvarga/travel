@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "switzerland-crete",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The eight categories reconcile exactly to $14,120–$19,440. The entire band is above the $12k target and the high case is $4,440 above the $15k preferred maximum. Switzerland's rail, lodging, and mountain-excursion costs drive this; the transatlantic open-jaw is proxy arithmetic, not a live quote.",
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $14,120–$19,440 less a single $2,000 fixed travel redemption yields $12,120–$17,440. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -61,8 +61,8 @@
       ]
     },
     "risk": {
-      "score": 2,
-      "rationale": "The open-jaw fare is 2026-proxy arithmetic with no live 2027 quote, the ZRH–Crete nonstop schedule for June 2027 is not yet loaded, Jungfraujoch weather can cancel the marquee day, and the Chania nonstop from Zurich is weekly-only.",
+      "score": 3,
+      "rationale": "The September 10 exact-date ZRH–HER June 14 nonstop is selling from $149/person, replacing the old unpublished/weekly-Chania assumption. Like Switzerland + Sicily, the open-jaw checkout and mountain weather remain gates: Risk 3/5, not 2/5. This is stored prior-day evidence, not four-seat award availability.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -101,25 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "jungfrau-railways"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 14120,
+        "lowUsd": 12120,
         "expectedUsd": null,
-        "highUsd": 19440,
+        "highUsd": 17440,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 6,
-        "arithmetic": "6300/9000 + 2170/2790 + 2150/2650 + 850/1150 + 2150/2750 + 500/1100 = 14120/19440"
+        "lineItemCount": 8,
+        "arithmetic": "5200/7200 + 1100/1800 + 1150/1450 + 1020/1340 + 2150/2650 + 850/1150 + 2150/2750 + 500/1100 = 14120/19440 gross; minus 2000/2000 = 12120/17440 net",
+        "grossLowUsd": 14120,
+        "grossHighUsd": 19440,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-11",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "switzerland-crete/main.json #totals target/high columns; exact category reconciliation",
-        "jungfrau-railways": "Jungfraujoch and First fares that dominate the Swiss excursion line"
+        "internal-itinerary": "switzerland-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

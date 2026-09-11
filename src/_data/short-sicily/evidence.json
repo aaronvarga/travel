@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-sicily",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -98,13 +98,11 @@
     {
       "id": "budget-band",
       "category": "budget",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "derived",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "kayak-pit-cta",
-        "etna-funivia",
-        "google-flights-2027-current-audit"
+        "short-sicily-route-review-20260911"
       ],
       "value": {
         "lowUsd": 11400,
@@ -115,15 +113,14 @@
         "distribution": "planning-band",
         "lineItemCount": 6,
         "arithmetic": "7600–8400 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 11400–14700",
-        "airfareObservation": "Kayak's US–Catania route data shows June as the most expensive month at about $1,379 per person average, with recent Pittsburgh–Catania round trips observed near $1,045; the $4,600–$5,800 family range assumes early booking of the one-connection Delta routing and is not a June 2027 quote"
+        "currentSupplierQuote": false,
+        "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "short-sicily/main.json #budget and #totals; six itemized categories reconcile to the displayed family total",
-        "kayak-pit-cta": "Route page reviewed 2026-07-16; June average $1,379 per traveler US–CTA and a recent $1,045 PIT–CTA round-trip observation, used as a planning proxy only",
-        "etna-funivia": "March 2026 tariff: cable car €54/€30, cable car + 4x4 €78/€50 — anchors the activities line",
-        "google-flights-2027-current-audit": "PIT–CTA sells June 12–20 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
+        "internal-itinerary": "short-sicily/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-sicily-route-review-20260911": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats."
       },
       "claimType": "proxy"
     },
@@ -322,34 +319,29 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "confirmed",
-      "confidence": "high",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
       "sourceRefs": [
-        "delta-jfk-cta",
-        "kayak-pit-cta",
         "internal-itinerary",
-        "eu-etias",
-        "google-flights-2027-current-audit"
+        "short-sicily-route-review-20260911"
       ],
       "value": {
-        "status": "confirmed",
+        "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 1,
-        "outbound": "PIT–JFK–CTA on one Delta ticket; JFK–CTA has run as a daily summer nonstop since May 2025",
-        "return": "CTA–JFK daytime nonstop connecting to PIT the same evening",
-        "exact2027FlightsVerified": true,
-        "fallback": "ITA or Delta partners via FCO with the hourly Rome–Catania shuttle if the nonstop misprices; never self-transfer",
-        "currentFlightAudit": "PIT–CTA sells June 12–20 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly.",
-        "june2027Verified": true
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false,
+        "fourSeatsVerified": false,
+        "protectionVerified": false,
+        "singleTicketIsBookingRequirement": true,
+        "currentFlightAudit": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats.",
+        "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "delta-jfk-cta": "Delta newsroom: daily JFK–Catania service launched May 21, 2025 (767-300), returned for summer 2026 with near-year-round extension — the only U.S. nonstop to Sicily; June 2027 schedule not yet published",
-        "kayak-pit-cta": "Current fare observations supporting the family airfare band",
-        "internal-itinerary": "short-sicily/main.json #air-travel and day0/day8 mark June 2027 schedules unconfirmed",
-        "eu-etias": "EU travel-authorization requirement horizon for U.S. citizens; recheck status before 2027 booking",
-        "google-flights-2027-current-audit": "PIT–CTA sells June 12–20 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
+        "internal-itinerary": "short-sicily/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-sicily-route-review-20260911": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats."
       },
       "claimType": "proxy"
     },
@@ -502,8 +494,76 @@
     "canonical two-base/one-car derivation; no exact June 2027 quotes yet"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
-    "status": "confirmed",
-    "headline": "The exact Catania flight is live—and materially more expensive"
-  }
+    "reviewedAt": "2026-09-11",
+    "status": "current-proxy",
+    "headline": "Route proxy only; previous fare is historical"
+  },
+  "archivedExpiredFacts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "kayak-pit-cta",
+        "etna-funivia",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "lowUsd": 11400,
+        "expectedUsd": null,
+        "highUsd": 14700,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "7600–8400 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 11400–14700",
+        "airfareObservation": "Kayak's US–Catania route data shows June as the most expensive month at about $1,379 per person average, with recent Pittsburgh–Catania round trips observed near $1,045; the $4,600–$5,800 family range assumes early booking of the one-connection Delta routing and is not a June 2027 quote"
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "internal-itinerary": "short-sicily/main.json #budget and #totals; six itemized categories reconcile to the displayed family total",
+        "kayak-pit-cta": "Route page reviewed 2026-07-16; June average $1,379 per traveler US–CTA and a recent $1,045 PIT–CTA round-trip observation, used as a planning proxy only",
+        "etna-funivia": "March 2026 tariff: cable car €54/€30, cable car + 4x4 €78/€50 — anchors the activities line",
+        "google-flights-2027-current-audit": "PIT–CTA sells June 12–20, 2027 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "delta-jfk-cta",
+        "kayak-pit-cta",
+        "internal-itinerary",
+        "eu-etias",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "status": "confirmed",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "outbound": "PIT–JFK–CTA on one Delta ticket; JFK–CTA has run as a daily summer nonstop since May 2025",
+        "return": "CTA–JFK daytime nonstop connecting to PIT the same evening",
+        "exact2027FlightsVerified": true,
+        "fallback": "ITA or Delta partners via FCO with the hourly Rome–Catania shuttle if the nonstop misprices; never self-transfer",
+        "currentFlightAudit": "PIT–CTA sells June 12–20, 2027 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly.",
+        "june2027Verified": true
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "delta-jfk-cta": "Delta newsroom: daily JFK–Catania service launched May 21, 2025 (767-300), returned for summer 2026 with near-year-round extension — the only U.S. nonstop to Sicily; June 2027 schedule not yet published",
+        "kayak-pit-cta": "Current fare observations supporting the family airfare band",
+        "internal-itinerary": "short-sicily/main.json #air-travel and day0/day8 mark June 2027 schedules unconfirmed",
+        "eu-etias": "EU travel-authorization requirement horizon for U.S. citizens; recheck status before 2027 booking",
+        "google-flights-2027-current-audit": "PIT–CTA sells June 12–20, 2027 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
+      },
+      "claimType": "proxy"
+    }
+  ]
 }

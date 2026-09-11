@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "iceland",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The five category targets reconcile exactly to $11,420–$14,720, but flights, lodging, and vehicle inventory remain unquoted June 2027 proxies. The medium-confidence band sits within $280 of the preferred maximum, so the rubric caps Budget at 2/5 until a high-confidence reconciliation is available.",
+      "score": 4,
+      "rationale": "Reprice family airfare to $3,600–4,200 including the observed Basic/Standard options, four checked bags and estimated seats; the former $2,600 floor excluded those costs. Gross $12,420–$15,320 less a single $2,000 fixed travel redemption yields $10,420–$13,320. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,24 +100,31 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 11420,
+        "lowUsd": 10420,
         "expectedUsd": null,
-        "highUsd": 14720,
+        "highUsd": 13320,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 5,
-        "arithmetic": "2600/3600 + 3200/3900 + 1570/1920 + 3550/4300 + 500/1000 = 11420/14720"
+        "lineItemCount": 6,
+        "arithmetic": "3600/4200 + 3200/3900 + 1570/1920 + 2300/2700 + 1250/1600 + 500/1000 = 12420/15320 gross; minus 2000/2000 = 10420/13320 net",
+        "grossLowUsd": 12420,
+        "grossHighUsd": 15320,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "iceland/main.json #totals target/high columns; exact category reconciliation"
+        "internal-itinerary": "iceland/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–YUL–KEF / KEF–YUL–PIT: complete round-trip, family base $2619; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

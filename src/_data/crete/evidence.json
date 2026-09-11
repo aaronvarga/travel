@@ -6,7 +6,7 @@
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The conservative $14,350–$17,900 family band uses the two current one-way snapshots because the exact protected open-jaw through-fare was not captured. It crosses the preferred $15,000 ceiling and must be rescored if a lower protected fare appears.",
+      "rationale": "Replace the two one-way sum with the $6,733 complete family option; allow $720 bags and $200–800 seats, rounded up to $7,700–8,300. Add a previously missing $500–900 insurance/contingency allowance (estimate). Gross $14,200–$18,300 less a single $2,000 fixed travel redemption yields $12,200–$16,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,28 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "google-flights-crete-outbound-2027",
-        "google-flights-crete-return-2027",
-        "internal-itinerary"
+        "internal-itinerary",
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 14350,
-        "highUsd": 17900
+        "lowUsd": 12200,
+        "highUsd": 16300,
+        "grossLowUsd": 14200,
+        "grossHighUsd": 18300,
+        "pointsSavingsUsd": 2000,
+        "lineItemCount": 6,
+        "expectedUsd": null,
+        "arithmetic": "7700/8300 + 2300/3700 + 1200/1700 + 1800/2500 + 700/1200 + 500/900 = 14200/18300 gross; minus 2000/2000 = 12200/16300 net"
       },
       "verifiedAt": "2026-09-11",
       "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "google-flights-crete-outbound-2027": "Exact PIT-CHQ Jun 9 search: BA via LHR at $882 per adult",
-        "google-flights-crete-return-2027": "Exact HER-PIT Jun 23 search: Aegean/American via ATH and JFK at $1,106 per adult; direction-level snapshot, not a protected open-jaw quote",
-        "internal-itinerary": "main.json budget and totals sections; conservative airfare allowance adds seats and bags to the $7,952 family base snapshot"
+        "internal-itinerary": "crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–LHR–CHQ / HER–ATH–JFK–PIT: complete open-jaw, family base $6733; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "mixed"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",
@@ -284,25 +290,25 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
-        "google-flights-crete-outbound-2027",
-        "google-flights-crete-return-2027"
+        "google-flights-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
-        "exactTripQuoteObserved": false,
+        "status": "confirmed",
+        "exactTripQuoteObserved": true,
         "finalProtectionVerified": false,
         "sameDayReturnObserved": true,
         "singleTicket": false,
-        "maxConnections": 2
+        "maxConnections": 2,
+        "quoteStage": "Google Flights four-passenger booking option, not final airline checkout",
+        "familyBaseFareUsd": 6733
       },
       "verifiedAt": "2026-09-11",
       "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "google-flights-crete-outbound-2027": "BA PIT-LHR-CHQ Jun 9/10 in 13h at $882 adult; 1h30 LHR connection",
-        "google-flights-crete-return-2027": "Aegean/American HER-ATH-JFK-PIT Jun 23 in 16h50 at $1,106 adult; exact protected multi-city through-fare remains unverified"
+        "google-flights-family-audit": "Four-passenger multi-city: BA PIT–LHR–CHQ June 9/10, 21:45–17:45; Aegean/American HER–ATH–JFK–PIT June 23, 11:35–21:25. American booking option $6,733, bags $720 family; paid seats and final protection unverified"
       },
       "claimType": "observed"
     },

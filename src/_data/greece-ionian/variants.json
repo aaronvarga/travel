@@ -11,11 +11,14 @@
       "nights": 12,
       "ptoDays": 9,
       "budget": {
-        "lowUsd": 10800,
+        "lowUsd": 8800,
         "expectedUsd": null,
-        "highUsd": 15000,
+        "highUsd": 13000,
         "distribution": "planning-band",
-        "chanceUnderPreferredMax": null
+        "chanceUnderPreferredMax": null,
+        "grossLowUsd": 10800,
+        "grossHighUsd": 15000,
+        "pointsSavingsUsd": 2000
       },
       "removedExperiences": [],
       "notes": "The checked-in canonical route is Kefalonia 7 nights, Lefkada 4 nights, and an Athens-airport buffer night; fly EFL in / ATH out and return Jun 22.",

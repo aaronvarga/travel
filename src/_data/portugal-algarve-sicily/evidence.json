@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-algarve-sicily",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $13,550–$17,350. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
+      "rationale": "Increase outer airfare allowance to $6,600–7,600 above the $6,260 Faro gateway proxy including bags/seats; this is not a Catania-return quote. Increase the former $150–250 insurance/misc line to an explicit $500–900 planning reserve. Gross $15,300–$19,400 less a single $2,000 fixed travel redemption yields $13,300–$17,400. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,25 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 13550,
+        "lowUsd": 13300,
         "expectedUsd": null,
-        "highUsd": 17350,
+        "highUsd": 17400,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "5200–6200 outer air + 1300–1700 TAP/ITA hop + 2900–4200 lodging + 2100–2400 food + 1250–1800 cars + 300–500 activities + 500–550 contingency = 13550–17350"
+        "arithmetic": "6600/7600 + 1300/1700 + 2900/4200 + 2100/2400 + 1250/1700 + 650/900 + 500/900 = 15300/19400 gross; minus 2000/2000 = 13300/17400 net",
+        "grossLowUsd": 15300,
+        "grossHighUsd": 19400,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Algarve + Sicily #budget and #totals; itemized 2026 planning proxies, not 2027 quotes",
-        "google-flights-2027-current-audit": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears."
+        "internal-itinerary": "portugal-algarve-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–LHR–FAO, June 10–23: gateway round-trip proxy for open-jaw, family base $6260; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

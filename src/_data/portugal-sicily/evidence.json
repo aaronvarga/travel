@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-sicily",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The reconciled 5-line-item family budget is $12,400–$14,700 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "score": 1,
+      "rationale": "Replace the unsupported $5,800 all-flight hard gate with $6,900–8,300: $4,798 Lisbon gateway return plus $1,160 stored Monday Palermo connection, $720 bag proxy, $200–800 seats and up to $800 open-jaw uncertainty. These are rounded allowances, not a Catania-return quote. Gross $14,150–$17,150 less a single $2,000 fixed travel redemption yields $12,150–$15,150. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,24 +100,31 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 12400,
+        "lowUsd": 12150,
         "expectedUsd": null,
-        "highUsd": 14700,
+        "highUsd": 15150,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 5,
-        "arithmetic": "6,600–7,450 transportation + 2,650–3,150 lodging + 2,100–2,450 food + 750–1,100 activities + 350–500 misc = 12,450–14,650; displayed band rounds outward to 12,400–14,700"
+        "lineItemCount": 7,
+        "arithmetic": "6900/8300 + 2650/3150 + 2100/2450 + 850/1000 + 550/650 + 750/1100 + 350/500 = 14150/17150 gross; minus 2000/2000 = 12150/15150 net",
+        "grossLowUsd": 14150,
+        "grossHighUsd": 17150,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "Portugal + Sicily; canonical 2027-06-08 → 2027-06-21; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "portugal-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–LHR–LIS, June 8–21: gateway round-trip proxy for open-jaw, family base $4798; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

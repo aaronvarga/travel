@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-ischia",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 4,
       "rationale": "Exact protected Naples inventory removes the transatlantic schedule gate. Bay crossing weather remains a managed fallback risk, supporting Risk 4/5.",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         "route-readiness"
       ]
@@ -319,34 +319,29 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "confirmed",
-      "confidence": "high",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "united-ewr-nap-schedule",
-        "alilauro-naples-ischia-2026",
-        "google-flights-2027-current-audit"
+        "short-ischia-route-review-20260911"
       ],
       "value": {
-        "status": "confirmed",
+        "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 1,
-        "nonstopExists": false,
-        "outbound": "PIT → EWR → NAP · United single ticket; EWR–NAP nonstop ~2x daily June 2026, historically 1x daily until ~Jun 23",
-        "return": "NAP → EWR → PIT · same-day arrival",
-        "exact2027FlightsVerified": true,
-        "hydrofoilWeatherRisk": "Alilauro suspends around 2 m waves; Porta di Massa car ferries almost never cancel Apr–Oct",
-        "deltaJfkNapBackup": true,
-        "currentFlightAudit": "PIT–NAP sells June 12–20 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound.",
-        "june2027Verified": true
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false,
+        "fourSeatsVerified": false,
+        "protectionVerified": false,
+        "singleTicketIsBookingRequirement": true,
+        "currentFlightAudit": "The airport-hosted United release documents Newark–Naples seasonal service historically, not June 2027 availability. Require a protected PIT–NAP ticket and a weather-safe Naples/Ischia ferry buffer.",
+        "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "short-ischia/main.json #air-travel marks all routings and fares as current proxies requiring 2027 verification",
-        "united-ewr-nap-schedule": "Flight-schedule data shows United EWR–NAP ~14 weekly June 2026 on 767-300, seasonal May–Oct; second daily historically starts ~Jun 23",
-        "alilauro-naples-ischia-2026": "Operator publishes June 15–Sept 15 2026 schedule with frequent daily Beverello–Forio/Ischia hydrofoils; 2027 times unpublished",
-        "google-flights-2027-current-audit": "PIT–NAP sells June 12–20 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound."
+        "internal-itinerary": "short-ischia/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-ischia-route-review-20260911": "The airport-hosted United release documents Newark–Naples seasonal service historically, not June 2027 availability. Require a protected PIT–NAP ticket and a weather-safe Naples/Ischia ferry buffer."
       },
       "claimType": "proxy"
     },
@@ -454,8 +449,44 @@
   ],
   "evidenceBasis": "Official operator and transit tariffs, published climate and sea-temperature normals, current-season ferry and flight schedules, and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and ferry times remain current-season proxies.",
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
-    "status": "confirmed",
-    "headline": "Exact Naples flights are selling with one stop"
-  }
+    "reviewedAt": "2026-09-11",
+    "status": "current-proxy",
+    "headline": "Route proxy only; previous fare is historical"
+  },
+  "archivedExpiredFacts": [
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "united-ewr-nap-schedule",
+        "alilauro-naples-ischia-2026",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "status": "confirmed",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "nonstopExists": false,
+        "outbound": "PIT → EWR → NAP · United single ticket; EWR–NAP nonstop ~2x daily June 2026, historically 1x daily until ~Jun 23",
+        "return": "NAP → EWR → PIT · same-day arrival",
+        "exact2027FlightsVerified": true,
+        "hydrofoilWeatherRisk": "Alilauro suspends around 2 m waves; Porta di Massa car ferries almost never cancel Apr–Oct",
+        "deltaJfkNapBackup": true,
+        "currentFlightAudit": "PIT–NAP sells June 12–20, 2027 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound.",
+        "june2027Verified": true
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "internal-itinerary": "short-ischia/main.json #air-travel marks all routings and fares as current proxies requiring 2027 verification",
+        "united-ewr-nap-schedule": "Flight-schedule data shows United EWR–NAP ~14 weekly June 2026 on 767-300, seasonal May–Oct; second daily historically starts ~Jun 23",
+        "alilauro-naples-ischia-2026": "Operator publishes June 15–Sept 15 2026 schedule with frequent daily Beverello–Forio/Ischia hydrofoils; 2027 times unpublished",
+        "google-flights-2027-current-audit": "PIT–NAP sells June 12–20, 2027 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound."
+      },
+      "claimType": "proxy"
+    }
+  ]
 }

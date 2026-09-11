@@ -625,164 +625,13 @@ footer a{color:var(--muted)}
     <p class="eyebrow">The Plan at a Glance</p>
     <div class="overview">
       <div class="ocard"><b>31 + 11</b><span>comparison plans plus eleven short escapes (22 ranked, 9 excluded)</span></div>
-      <div class="ocard"><b>$10.5k</b><span>lowest book-shaped ranked floor: Portugal</span></div>
+      <div class="ocard"><b>{{ hub.activeTrips[0].totalBaked }}/55</b><span>top default score: {{ hub.activeTrips[0].displayName }}; booking gates still apply</span></div>
       <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland &times; Crete/Sicily/Mallorca grid</span></div>
       <div class="ocard"><b data-preserve-date>June 24-26</b><span>Full days in Pittsburgh protected</span></div>
     </div>
   </section>
 
-  <section id="trip-length">
-    <p class="eyebrow">Reality Check</p>
-    <h2>Short trips aren&rsquo;t half price</h2>
-    <p>The short escapes exist because a first Europe trip with the kids feels like a big swing. But the flights are the expensive part &mdash; roughly $4.5&ndash;5k for the four of us &mdash; and that cost is identical whether we stay 7 nights or 12. Cutting nights only trims the cheap part of the trip.</p>
-    <div class="lm-legend"><span><i class="lm-short"></i>7-night escape</span><span><i></i>Full 12-night trip</span><span><i style="background:#d5cdbe"></i>Jet-lag adjustment day</span></div>
-    <div class="lm-grid">
-      <div class="lm-card">
-        <h3>Same destination, same airfare</h3>
-        <p class="lm-sub">Portugal head-to-head: mid-range planning total for the family of 4.</p>
-        <div class="lm-row" title="Short Portugal: $8.7k&ndash;$12.0k planning band">
-          <div class="lm-row-top"><span>Short Portugal &middot; 7 nights</span><b>$10.3k</b></div>
-          <div class="lm-bar lm-short" style="width:94%"></div>
-        </div>
-        <div class="lm-row" title="Full Portugal: $10.5k&ndash;$14.4k planning band">
-          <div class="lm-row-top"><span>Full Portugal &middot; 12 nights</span><b>$12.5k</b></div>
-          <div class="lm-bar" style="width:87%"></div>
-        </div>
-        <p class="lm-note"><b>The 12-night trip costs only about $2.2k more.</b> Five extra nights are relatively efficient because the long-haul airfare does not grow with the stay.</p>
-      </div>
-      <div class="lm-card">
-        <h3>What one night actually costs</h3>
-        <p class="lm-sub">Mid-range total &divide; nights, family of 4.</p>
-        <div class="lm-row" title="Full Portugal: $12.45k midpoint over 12 nights">
-          <div class="lm-row-top"><span>Full Portugal</span><b>$1,038</b></div>
-          <div class="lm-bar" style="width:50%"></div>
-        </div>
-        <div class="lm-row" title="Median of the 22 ranked two-week plans">
-          <div class="lm-row-top"><span>Typical full trip</span><b>$1,130</b></div>
-          <div class="lm-bar" style="width:71%"></div>
-        </div>
-        <div class="lm-row" title="Puerto Rico, Acadia, Azores, Iceland, Madeira average">
-          <div class="lm-row-top"><span>Short domestic / Atlantic</span><b>$1,140</b></div>
-          <div class="lm-bar lm-short" style="width:71%"></div>
-        </div>
-        <div class="lm-row" title="Algarve, Portugal, Sicily, Ischia escapes average">
-          <div class="lm-row-top"><span>Short Mediterranean</span><b>$1,490</b></div>
-          <div class="lm-bar lm-short" style="width:93%"></div>
-        </div>
-        <p class="lm-note"><b>Going long is the value play.</b> Stretching a Mediterranean escape to a typical full trip adds ~$3.2k for 5 more nights &mdash; about <b>$640 a night</b>, the cheapest nights we can buy in Europe.</p>
-      </div>
-      <div class="lm-card">
-        <h3>Jet lag takes the same bite</h3>
-        <p class="lm-sub">Kids new to Europe need ~2 days to adjust &mdash; on any length of trip.</p>
-        <div class="lm-row">
-          <div class="lm-row-top"><span>7-night escape</span><b>5 good days</b></div>
-          <div class="lm-days"><i class="lm-day lm-lost"></i><i class="lm-day lm-lost"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i><i class="lm-day lm-short"></i></div>
-        </div>
-        <div class="lm-row">
-          <div class="lm-row-top"><span>12-night trip</span><b>10 good days</b></div>
-          <div class="lm-days"><i class="lm-day lm-lost"></i><i class="lm-day lm-lost"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i><i class="lm-day"></i></div>
-        </div>
-        <p class="lm-note"><b>Same adjustment cost, double the payoff.</b> A 7-night Europe trip pays full airfare for about 5 fully-enjoyed days; 12 nights pays the same airfare for 10.</p>
-      </div>
-    </div>
-    <div class="lm-lab">
-      <div class="lm-lab-left">
-        <h3>Find the sweet spot</h3>
-        <p class="lm-sub">Drag the nights. Live model for a warm-Europe trip, family of 4: flights + transfers <b>$4.5&ndash;5k fixed</b>, plus <b>$600&ndash;800 per night</b> on the ground. Estimates only &mdash; the trip pages&rsquo; audited budgets stay the source of truth.</p>
-        <div class="lm-slider-row">
-          <input type="range" id="lm-nights" min="5" max="14" step="1" value="12" aria-label="Trip length in nights">
-          <output id="lm-nights-out" for="lm-nights">12 nights</output>
-        </div>
-        <div class="lm-tiles" aria-live="polite">
-          <div class="lm-tile"><span>Est. total</span><b id="lm-total">&nbsp;</b></div>
-          <div class="lm-tile"><span>Per night</span><b id="lm-pernight">&nbsp;</b></div>
-          <div class="lm-tile"><span>Good days</span><b id="lm-good">&nbsp;</b></div>
-          <div class="lm-tile"><span>Est. PTO</span><b id="lm-pto">&nbsp;</b></div>
-          <div class="lm-tile"><span>Nights score</span><b id="lm-nscore">&nbsp;</b></div>
-          <div class="lm-tile"><span>Score vs 12n plan</span><b id="lm-delta">&nbsp;</b></div>
-        </div>
-        <p class="lm-lab-verdict" id="lm-verdict-line">&nbsp;</p>
-        <p class="lm-lab-note">Not modeled: a shorter total can lift the double-weighted Budget axis for plans above the $15k line &mdash; that case is what per-trip variants are for.</p>
-      </div>
-      <div class="lm-lab-right">
-        <p class="lm-chart-title">Cost per <b>good</b> day (after the 2 jet-lag days) &mdash; watch it flatten</p>
-        <svg id="lm-curve" viewBox="0 0 340 224" role="img" aria-label="Cost per good day falls steeply from 5 to 11 nights, then flattens near 12 to 14 nights"></svg>
-      </div>
-    </div>
-    <script>
-    (function(){
-      var slider=document.getElementById('lm-nights');
-      var svg=document.getElementById('lm-curve');
-      if(!slider||!svg)return;
-      var FLO=4500,FHI=5000,NLO=600,NHI=800,NMIN=5,NMAX=14;
-      function model(n){
-        var lo=FLO+NLO*n,hi=FHI+NHI*n,mid=(lo+hi)/2;
-        var nscore=n>=12?5:(n===11?4:(n===10?3:(n===9?2:1)));
-        return{lo:lo,hi:hi,mid:mid,good:n-2,nscore:nscore,pto:Math.round((n+1)*8/13),perNight:mid/n,perGood:mid/(n-2)};
-      }
-      var PX0=44,PX1=326,PY0=14,PY1=192,YMIN=1100,YMAX=2900;
-      function X(n){return PX0+(n-NMIN)/(NMAX-NMIN)*(PX1-PX0);}
-      function Y(v){return PY1-(v-YMIN)/(YMAX-YMIN)*(PY1-PY0);}
-      function el(tag,attrs,text){
-        var e=document.createElementNS('http://www.w3.org/2000/svg',tag);
-        for(var k in attrs)e.setAttribute(k,attrs[k]);
-        if(text)e.textContent=text;
-        svg.appendChild(e);return e;
-      }
-      el('rect',{x:X(11),y:PY0,width:X(12.6)-X(11),height:PY1-PY0,fill:'#00939e',opacity:'.08'});
-      el('text',{x:(X(11)+X(12.6))/2,y:PY0+12,'text-anchor':'middle',fill:'#00737c','font-size':'9','font-weight':'800','letter-spacing':'.08em'},'SWEET SPOT');
-      [1500,2000,2500].forEach(function(v){
-        el('line',{x1:PX0,y1:Y(v),x2:PX1,y2:Y(v),stroke:'#e3dccc','stroke-width':'1'});
-        el('text',{x:PX0-6,y:Y(v)+3,'text-anchor':'end',fill:'#8d8676','font-size':'9'},'$'+(v/1000).toFixed(1)+'k');
-      });
-      var pts=[];
-      for(var n=NMIN;n<=NMAX;n++){pts.push(X(n)+','+Y(model(n).perGood));}
-      el('polyline',{points:pts.join(' '),fill:'none',stroke:'#00939e','stroke-width':'2','stroke-linejoin':'round'});
-      for(n=NMIN;n<=NMAX;n++){
-        el('circle',{cx:X(n),cy:Y(model(n).perGood),r:'2.5',fill:'#00939e'});
-        el('text',{x:X(n),y:PY1+14,'text-anchor':'middle',fill:'#8d8676','font-size':'9'},n);
-      }
-      el('text',{x:(PX0+PX1)/2,y:PY1+26,'text-anchor':'middle',fill:'#8d8676','font-size':'9','font-weight':'700'},'NIGHTS');
-      var marker=el('circle',{r:'6',fill:'#1a1712',stroke:'#fffdf8','stroke-width':'2'});
-      var markerLabel=el('text',{'text-anchor':'middle',fill:'#1a1712','font-size':'11','font-weight':'800'});
-      function fmtK(v){return '$'+(v/1000).toFixed(1)+'k';}
-      function fmt(v){return '$'+Math.round(v).toLocaleString('en-US');}
-      function verdictFor(n){
-        if(n<=8)return 'Worst-value zone: full airfare for '+(n-2)+' good days. This is the math the short Europe escapes pay — fine domestic, expensive across the Atlantic.';
-        if(n<=10)return 'The middle ground saves ~$'+((model(12).mid-model(n).mid)/1000).toFixed(1)+'k vs 12 nights but drops the Nights score to '+model(n).nscore+'/5. Only worth it if the trim pulls a too-expensive plan under the $15k line.';
-        if(n<=12)return 'Sweet spot: the airfare is fully amortized, Nights scores '+model(n).nscore+'/5, and the curve is flat — each extra night now costs only ~$700.';
-        return 'Diminishing returns: cost per good day barely falls, estimated PTO climbs to '+model(n).pto+' days, and the Jun 24–26 Pittsburgh commitment caps how far this stretches.';
-      }
-      function set(id,v){document.getElementById(id).textContent=v;}
-      function update(){
-        var n=+slider.value,m=model(n);
-        set('lm-nights-out',n+' nights');
-        set('lm-total',fmtK(m.lo)+'–'+fmtK(m.hi));
-        set('lm-pernight',fmt(m.perNight));
-        set('lm-good',m.good+' of '+n);
-        set('lm-pto',m.pto+' days');
-        set('lm-nscore',m.nscore+'/5');
-        set('lm-delta',(m.nscore===5?'±0':(m.nscore-5))+' /55');
-        set('lm-verdict-line',verdictFor(n));
-        var mx=X(n),my=Y(m.perGood);
-        marker.setAttribute('cx',mx);marker.setAttribute('cy',my);
-        markerLabel.setAttribute('x',Math.min(Math.max(mx,PX0+24),PX1-24));
-        markerLabel.setAttribute('y',my-11);
-        markerLabel.textContent=fmt(m.perGood);
-      }
-      slider.addEventListener('input',update);
-      update();
-    })();
-    </script>
-    <div class="lm-verdict">
-      <h3>The verdict</h3>
-      <div class="lm-verdict-grid">
-        <p><b>Book the full 12 nights.</b> Portugal&rsquo;s 12-night plan is the cheapest complete plan on the whole board &mdash; cheaper than most 7-night escapes. Going long is the budget move, not the splurge.</p>
-        <p><b>8&ndash;10 nights isn&rsquo;t a magic middle.</b> Trimming to 10 nights saves only about $1&ndash;1.5k and 2 PTO days. What actually protects a first Europe trip with kids is fewer bases and fewer connections &mdash; pick a calm 2&ndash;3 base plan, not a shorter one.</p>
-        <p><b>When short does make sense: cheap flights.</b> Puerto Rico, Acadia, and the Azores land near $8k because getting there is cheap &mdash; they&rsquo;re the escapes that don&rsquo;t burn a $5k airfare on a 7-night stay.</p>
-      </div>
-    </div>
-  </section>
+  {% include "hub/trip-length.njk" %}
 
   <section id="short-trips">
     <div class="short-head">
@@ -840,28 +689,14 @@ footer a{color:var(--muted)}
     <h2>Choose the priority</h2>
     <p>The default ranking uses Budget at double weight plus Weather, Fire safety, Swim, Variety, Ease, Food, Risk, Nights, and Novelty; PTO is displayed and available for custom weighting. Fire safety is the evidence-based planning chance that wildfire, smoke, evacuation, or closures materially disrupt the exact route during its exact dates. Scores remain provisional where exact 2027 schedules, complete quote sets, or next-season fire conditions are still unverified. Nine trips are excluded by family decision: <b>Albania</b>, <b>Balkans</b>, <b>California</b>, <b>Canary Islands</b>, <b>Croatia</b>, <b>Italy: Salento-Amalfi</b>, <b>Southern France</b>, <b>Spain</b>, and <b>Turkish Riviera</b>. Click a row to highlight that trip in the scoreboard.</p>
     <div class="matrix-wrap">
-      <table class="decision-table"><thead><tr><th>If you're optimizing for&hellip;</th><th>Winner</th><th>Runner-up</th><th>Why</th></tr></thead><tbody>
-        <tr class="decision-row on" data-priority="balanced" data-trip="slovenia-adriatic"><td><b>Best Overall On The Data</b></td><td>Slovenia + Adriatic</td><td>Portugal + Sicily</td><td>Slovenia leads at 40/55: its $10.7k&ndash;14.8k band stays within preference, the exact Ljubljana gateway has current inventory, and one country delivers both Julian Alps and Adriatic coast. Portugal + Sicily is #2 at 39/55 with stronger swim/food variety but four bases and an internal flight.</td></tr>
-        <tr class="decision-row" data-priority="hiking" data-trip="madeira-mallorca"><td><b>Best Epic Scenery + Hiking</b></td><td>Madeira + Mallorca</td><td>Slovenia + Adriatic</td><td>Madeira's Arieiro&ndash;Ruivo ridge, levadas, and Porto Moniz remain the strongest scenery/hiking week on the board. Mallorca is the highest-ranked Madeira hybrid at #3 and 39/55, but its refreshed $13.1k&ndash;15.9k band crosses the preferred maximum; Slovenia is easier and cheaper.</td></tr>
-        <tr class="decision-row" data-priority="bestofboth" data-trip="crete"><td><b>Best of Both, Calmest Version</b></td><td>Crete</td><td>Portugal + Sicily</td><td>Standalone Crete is #11 at 37/55 with lagoons, a family-scaled gorge, three historic towns, Knossos and Spinalonga—without an internal flight. The route is calmer than the hybrids, but the conservative one-way airfare reference now pushes its provisional high case to $17.9k.</td></tr>
-        <tr class="decision-row" data-priority="pure" data-trip="hawaii"><td><b>Best Warm Water Overall</b></td><td>Hawaii</td><td>Maui + Kauai</td><td>Both Hawaii routes deliver 78&ndash;81&deg;F Pacific water and score 5/5 for swimming. Oʻahu + Hawaiʻi Island ranks higher because it uses two fewer PTO days and its $11k&ndash;15.8k band is far below Maui + Kauai's premium $14.6k&ndash;21.6k range.</td></tr>
-        <tr class="decision-row" data-priority="value" data-trip="portugal"><td><b>Best Value</b></td><td>Portugal</td><td>Slovenia + Adriatic</td><td>Portugal has the lowest credible floor among book-shaped ranked routes at $10.5k&ndash;14.4k. Slovenia follows at $10.7k&ndash;14.8k and scores higher overall because it pairs a simpler one-country route with stronger hiking and lower disruption risk.</td></tr>
-        <tr class="decision-row" data-priority="europe" data-trip="sardinia"><td><b>Best Europe If Novelty Matters</b></td><td>Sardinia &amp; Corsica</td><td>Sicily &amp; Malta</td><td>Both are 5/5-novelty Italy-family routes at ordinary June Mediterranean temperatures (72&ndash;75&deg;F, swim 3); Sardinia/Corsica pairs that with dramatic limestone coves but reaches $16.8k. Sicily &amp; Malta adds Etna and Malta lagoons with a $15.8k high case. Salento-Amalfi is less novel because Capri and the Puglia towns repeat prior travel.</td></tr>
-        <tr class="decision-row" data-priority="warm-europe" data-trip="turkey"><td><b>Best Warm-Water Europe-Style Trip</b></td><td>Turkish Riviera</td><td>Crete</td><td>Turkey has the warmest non-Hawaii sea on the board (75&ndash;79&deg;F, swim 5), but it is excluded by family decision and also carries June heat, a scoped advisory, and an $18.4k high case. Standalone Crete is the #11 ranked alternative, with 73&ndash;74&deg;F sea and a provisional $17.9k planning high until the protected open-jaw fare is captured.</td></tr>
-        <tr class="decision-row" data-priority="italy" data-trip="italy"><td><b>Best Italy Option</b></td><td>Italy: Salento-Amalfi</td><td>Sardinia &amp; Corsica</td><td>Salento/Maratea/Amalfi has the strongest food and route variety, plus the warmer swim (Amalfi/Capri, swim 4 vs Sardinia/Corsica's swim 3); Sardinia/Corsica counters with dramatic limestone coves and a short Corsica ferry.</td></tr>
-        <tr class="decision-row" data-priority="swim" data-trip="hawaii"><td><b>Best Swim Overall</b></td><td>Hawaii</td><td>Maui + Kauai</td><td>The two ranked Hawaii routes are the board's clearest warm-water choices. Maui + Kauai adds three hotel nights and stronger scenery, while the existing Hawaii plan wins the tie-break on PTO and price.</td></tr>
-        <tr class="decision-row" data-priority="food" data-trip="italy"><td><b>Best Picky-Eater Food</b></td><td>Italy: Salento-Amalfi</td><td>Sicily &amp; Malta</td><td>Sicily/Malta is extremely safe for plain food, but the simpler three-base route nudges Italy ahead; both cross the preferred maximum without clean quotes.</td></tr>
-        <tr class="decision-row" data-priority="history" data-trip="spain"><td><b>Best Architecture &amp; History</b></td><td>Spain</td><td>Italy: Salento-Amalfi</td><td>Spain still concentrates the strongest Alhambra/Mezquita/Alcazar package; Italy counters with Herculaneum, Lecce, Amalfi, and Capri.</td></tr>
-        <tr class="decision-row" data-priority="domestic" data-trip="california"><td><b>Best Domestic Road Trip</b></td><td>California Pacific Coast</td><td>Hawaii</td><td>California would win if passport-free mainland driving is the brief, but it is excluded by family decision (kept here for reference). Hawaii is the closest ranked no-passport alternative, though it's a beach trip, not a road trip.</td></tr>
-        <tr class="decision-row" data-priority="adventure" data-trip="turkey"><td><b>Most Adventurous</b></td><td>Turkish Riviera</td><td>Balkans</td><td>Both are excluded references: Balkans has the biggest frontier feel, while Turkey has the cleaner three-base adventure-lite route.</td></tr>
-      </tbody></table>
+      <table class="decision-table"><thead><tr><th>If you're optimizing for&hellip;</th><th>Winner</th><th>Runner-up</th><th>Why</th></tr></thead><tbody>{% for row in hub.priorityRows %}<tr class="decision-row{% if loop.first %} on{% endif %}" data-priority="{{ row.id }}" data-trip="{{ row.winner.token }}"><td>{{ row.label }}</td><td>{{ row.winner.displayName }}</td><td>{{ row.runner.displayName }}</td><td>Preset weights from the shared engine. Default score {{ row.winner.totalBaked }}/55; default rank #{{ row.winner.appealRank }}. Net {{ row.winner.budget.floorUsd | money }}–{{ row.winner.budget.ceilUsd | money }}; gross {{ row.winner.budget.grossFloorUsd | money }}–{{ row.winner.budget.grossCeilUsd | money }}. {{ row.winner.routeReadiness }}.</td></tr>{% endfor %}</tbody></table>
     </div>
   </section>
 
   <section id="scoreboard">
     <p class="eyebrow">Scoreboard</p>
     <h2>Fast read on the tradeoffs</h2>
-    <div class="rubric-note"><b>How these scores work:</b> Budget is weighted <b>double</b> against your $12k target / $15k strongly preferred maximum; Weather, <b>Fire safety</b>, Swim, Variety, Ease, Food, Risk, <b>Nights</b>, and <b>Novelty</b> are each rated 1-5 once. Total is out of 55 (PTO is tracked as data but not part of the default total). Fire safety is higher-is-safer: 5 = &lt;2%, 4 = 2&ndash;5%, 3 = 5&ndash;10%, 2 = 10&ndash;20%, and 1 = &gt;20% planning chance of a material wildfire disruption during the exact dates. The bands combine official recent evidence, fire history, seasonality, route exposure, and itinerary flexibility; they are not actuarial forecasts. Live warnings always override them. <b>Nights</b> rewards trip length: 12+ nights &rarr; 5, 11 &rarr; 4, 10 &rarr; 3, 9 &rarr; 2, 8 or fewer &rarr; 1. <b>Novelty</b> scores route overlap against places already visited. Card order follows this table; default ties prefer a range within the budget preference, then fewer PTO days, then lower budget ceiling and floor. Cost never removes an itinerary. Explicit family exclusions stay visible but unranked.</div>
+    <div class="rubric-note"><b>How these scores work:</b> For the 22 ranked trips, Budget uses net cost after a single $2,000 Capital One travel credit; gross cash is also shown. Budget is weighted <b>double</b> against your $12k target / $15k strongly preferred maximum; Weather, <b>Fire safety</b>, Swim, Variety, Ease, Food, Risk, <b>Nights</b>, and <b>Novelty</b> are each rated 1-5 once. Total is out of 55 (PTO is tracked as data but not part of the default total). Fire safety is higher-is-safer: 5 = &lt;2%, 4 = 2&ndash;5%, 3 = 5&ndash;10%, 2 = 10&ndash;20%, and 1 = &gt;20% planning chance of a material wildfire disruption during the exact dates. The bands combine official recent evidence, fire history, seasonality, route exposure, and itinerary flexibility; they are not actuarial forecasts. Live warnings always override them. <b>Nights</b> rewards trip length: 12+ nights &rarr; 5, 11 &rarr; 4, 10 &rarr; 3, 9 &rarr; 2, 8 or fewer &rarr; 1. <b>Novelty</b> scores route overlap against places already visited. Card order follows this table; default ties prefer a range within the budget preference, then fewer PTO days, then lower budget ceiling and floor. Cost never removes an itinerary. Explicit family exclusions stay visible but unranked.</div>
     <div class="score-legend"><span class="good"><i></i>Green = preferred / strong</span><span class="mixed"><i></i>Amber = workable tradeoff</span><span class="weak"><i></i>Rust = weak fit</span></div>
     <div id="scenario-panel" class="scenario-panel" hidden></div>
     <div id="filter-bar" class="filter-bar" hidden></div>
@@ -877,7 +712,7 @@ footer a{color:var(--muted)}
     <h2>Where the days are doing real work</h2>
     <div class="budget-scroll"><table class="budget-tbl length-table"><tr><th>Trip</th><th>Length verdict</th><th>Why it matters</th></tr>
       <tr><td><b>Portugal</b></td><td>12 nights is right.</td><td>Three bases stay calm; the cold-water issue does not improve enough by cutting or stretching the route.</td></tr>
-      <tr><td><b>Madeira + Crete</b></td><td>13 nights away / 12 hotel nights is right.</td><td>Four Funchal nights buy two weather shots at a clear Arieiro summit; the Lisbon buffer night is wind insurance, not a base; Chania 5 + Rethymno 2 is the honest squeeze it costs.</td></tr>
+      <tr><td><b>Madeira + Crete</b></td><td>13 hotel nights plus the outbound travel night.</td><td>Funchal 4 + Lisbon buffer 1 + Chania 6 + Rethymno 2 matches the canonical calendar. The sixth Chania night protects the hiking load; the Lisbon buffer protects the onward connection.</td></tr>
       <tr><td><b>Madeira + Sicily</b></td><td>13 nights away / 12 hotel nights, and it is maxed out.</td><td>Five Funchal nights plus the Tuesday LIS-PMO hinge force Sicily down to six nights and two bases; there is no room left to re-add Ortigia without breaking the budget or the calendar.</td></tr>
       <tr><td><b>Portugal + Crete</b></td><td>13 nights away / 12 hotel nights is right.</td><td>Five Portugal + seven Crete nights is the honest balance: Cascais 5, Chania 4, Rethymno 3. It keeps the signature Crete water days and one realistic gorge without reducing Portugal to a stopover.</td></tr>
       <tr><td><b>Crete</b></td><td>13 hotel nights is right.</td><td>Chania 5 + Rethymno 3 + Agios Nikolaos 5 gives the west, south coast and Mirabello Bay distinct chapters, including one unhurried bonus day, without adding an internal flight or a fourth base.</td></tr>
@@ -892,50 +727,9 @@ footer a{color:var(--muted)}
     </table></div>
   </section>
 
-  <section id="winners">
-    <p class="eyebrow">Category Winners</p>
-    <h2>What wins each decision</h2>
-    <div class="winner-grid">
-      <article class="winner-card"><h3>Overall recommendation</h3><p><b>Slovenia + Adriatic</b> leads at 40/55: 12 nights of Julian Alps and Adriatic coast in one country, current one-stop Ljubljana inventory, and a $10.7k&ndash;14.8k band. <b>Portugal + Sicily</b> is #2 at 39/55; it adds warmer water and exceptional food but requires four bases and a separately gated Lisbon&ndash;Palermo handoff.</p></article>
-      <article class="winner-card"><h3>Best of both worlds</h3><p><b>Crete</b> is the calmest high-variety option at #11 and 37/55: 13 nights of lagoons, Imbros Gorge, Venetian towns, Knossos and Spinalonga without an internal flight. <b>Madeira + Mallorca</b> remains the strongest dedicated hiking-plus-warm-swim hybrid at #3, but crosses the preferred budget maximum.</p></article>
-      <article class="winner-card"><h3>Epic scenery + hiking</h3><p><b>Madeira + Mallorca</b> pairs Arieiro above the clouds, 25 Fontes and Porto Moniz with Mediterranean swimming, but it now needs acceptance of a $15.9k high case. <b>Slovenia + Adriatic</b> is the easier and cheaper scenery-first choice; the other Madeira hybrids also cross the preferred maximum.</p></article>
-      <article class="winner-card"><h3>Pure score</h3><p><b>Slovenia + Adriatic</b> leads at 40/55. <b>Portugal + Sicily</b> and <b>Madeira + Mallorca</b> follow at 39/55, with Iceland, Iceland + Ischia/Cilento, and Madeira + Sicily at 38/55. Portugal, Greece: Ionian, Portugal + Crete, Sicily + Malta, and Crete form the 37/55 tier. The Hawaii routes tie at 35/55; Oʻahu + Hawaiʻi Island ranks #18 on lower PTO and cost, while Maui + Kauai is #22 with a $21.6k high case.</p></article>
-      <article class="winner-card"><h3>Best Italy reference</h3><p><b>Italy: Salento-Amalfi</b> has the best food/variety stretch, but remains excluded by family decision and budget-gated.</p></article>
-      <article class="winner-card"><h3>Warm-water Europe</h3><p><b>Turkish Riviera</b> has the warmest non-Hawaii sea on the board (75&ndash;79&deg;F) and a clean three-base AYT-to-DLM route. It is an excluded reference at 36/55 because heat, moderate June fire exposure, long-haul airfare, the scoped advisory, and an $18.4k high case offset the swim advantage.</p></article>
-      <article class="winner-card"><h3>Best Europe value</h3><p><b>Portugal</b> is the ranked value winner at $10.5k&ndash;14.4k, the lowest credible book-shaped ranked band. <b>Slovenia + Adriatic</b> costs only slightly more at $10.7k&ndash;14.8k and wins overall on scenery, route simplicity, and risk.</p></article>
-      <article class="winner-card"><h3>Best food</h3><p><b>Italy: Salento-Amalfi</b> edges Sicily/Malta once route simplicity and family preference are considered.</p></article>
-      <article class="winner-card"><h3>Best domestic</h3><p><b>Oʻahu + Hawaiʻi Island</b> remains the highest-ranked passport-free plan. <b>Maui + Kauai</b> is the premium scenery alternative; California would win the mainland-road-trip niche but remains excluded.</p></article>
-      <article class="winner-card"><h3>Most adventurous</h3><p><b>Balkans</b> has the biggest adventure arc and <b>Turkish Riviera</b> is the cleaner three-base adventure-lite alternative; both are excluded references.</p></article>
-    </div>
-  </section>
+  <section id="winners"><p class="eyebrow">Default score leaders</p><h2>What the numbers favor</h2><p>Raw rank is not booking readiness. A reroute-required concept remains visible but must be rebuilt before purchase. Net costs use $2,000 fixed travel credit; no award-seat savings are assumed.</p><div class="winner-grid">{% for t in hub.activeTrips %}{% if loop.index <= 6 %}<article class="winner-card" data-winner="{{ t.slug }}"><h3>#{{ t.appealRank }} · {{ t.displayName }}</h3><p>{{ t.totalBaked }}/55 · {{ t.budget.floorUsd | money }}–{{ t.budget.ceilUsd | money }} net</p><p>Gross {{ t.budget.grossFloorUsd | money }}–{{ t.budget.grossCeilUsd | money }} · {{ t.routeReadiness }}</p></article>{% endif %}{% endfor %}</div></section>
 
-  <section id="matrix">
-    <p class="eyebrow">Full Comparison</p>
-    <h2>The practical call</h2>
-    <div class="budget-scroll"><table class="budget-tbl matrix-tbl"><colgroup><col style="width:13%"><col style="width:29%"><col style="width:27%"><col style="width:31%"></colgroup><tr><th>Option</th><th>Best reason to choose it</th><th>Reason to hesitate</th><th>Decision</th></tr>
-      <tr><td><b>Slovenia + Adriatic</b></td><td>The cleanest Alps-to-sea contrast: Lake Bohinj, Julian Alps hiking, caves, Piran, and the Adriatic without changing countries.</td><td>The sea is cooler than Greece or Hawaii, and the current PIT&ndash;LJU result still needs a protected family checkout with seats and bags.</td><td><b>#1 at 40/55: the only ranked plan combining a within-preference $10.7k&ndash;14.8k band with this much scenery and route simplicity.</b></td></tr>
-      <tr><td><b>Portugal + Sicily</b></td><td>Cascais/Sintra first, then the full Cefal&ugrave;&ndash;Ortigia&ndash;Taormina&ndash;Etna sweep at 72&ndash;75&deg;F.</td><td>Four bases; the exact Monday Lisbon&ndash;Palermo handoff is currently a one-stop itinerary, not a nonstop.</td><td><b>#2 at 39/55: the best full-Sicily version, conditional on the protected handoff quote.</b></td></tr>
-      <tr><td><b>Crete</b></td><td>Thirteen island nights connect Balos, Elafonissi, Imbros, Preveli, Knossos, Spinalonga and Mirabello Bay without an internal flight.</td><td>Three bases and several exposed day trips; the exact open-jaw fare still needs final through-ticket and baggage-protection proof.</td><td><b>#11 at 37/55: the calmest Greece-first plan, with a provisional $14.35k&ndash;17.9k band and nine PTO days.</b></td></tr>
-      <tr><td><b>Madeira + Mallorca</b></td><td>World-class Madeira ridge hiking followed by sandy Mediterranean swimming at Playa de Muro, Alc&uacute;dia, and Formentor.</td><td>A long multi-ticket chain, FNC wind risk, and a refreshed $13.1k&ndash;15.9k band that now crosses preference.</td><td><b>#3 at 39/55: the highest-scoring hiking/swim hybrid, but no longer a budget-safe one.</b></td></tr>
-      <tr><td><b>Iceland</b></td><td>Waterfalls, glacier walks, black-sand beaches, J&ouml;kuls&aacute;rl&oacute;n icebergs, and geothermal pools.</td><td>Cool, wet weather; the June dates show one- or two-stop inventory rather than the hoped-for Thursday nonstop.</td><td><b>#4 at 38/55: the strongest non-Mediterranean scenery option and a very-low fire-risk choice.</b></td></tr>
-      <tr><td><b>Iceland + Ischia/Cilento</b></td><td>Maximum contrast: Icelandic volcano-and-glacier scenery followed by warm Tyrrhenian swimming and Italian food.</td><td>The original Iceland&ndash;Rome stopover construction is not supported by the current exact-date routing; the trip needs a protected reroute before booking.</td><td><b>#5 at 38/55: a high-scoring concept whose current flight sketch is not book-ready.</b></td></tr>
-      <tr><td><b>Madeira + Sicily</b></td><td>Five Madeira nights for better summit odds, then Cefal&ugrave;, Taormina, Isola Bella, and Etna.</td><td>FNC wind and a $12.6k&ndash;15.9k band remain tradeoffs, though the exact Tuesday Lisbon&ndash;Palermo nonstop is now selling.</td><td><b>#6 at 38/55: newly more viable because its critical internal nonstop is live.</b></td></tr>
-      <tr><td><b>Portugal</b></td><td>The lowest book-shaped ranked budget, three calm bases, Madeira and Algarve scenery.</td><td>Cool Atlantic water and a complete Faro&ndash;Funchal family quote remain gates.</td><td><b>#7 at 37/55: the ranked value winner at $10.5k&ndash;14.4k.</b></td></tr>
-      <tr><td><b>Greece: Ionian Islands</b></td><td>Kefalonia and Lefkada deliver clear coves, mountain scenery, and warm-enough swimming in a focused island route.</td><td>Two island transport systems and the protected Kefalonia return still need complete quotes.</td><td><b>#8 at 37/55: the focused two-island alternative, with a $10.8k&ndash;15.0k band.</b></td></tr>
-      <tr><td><b>Portugal + Crete</b></td><td>Fixes Portugal's cold water at only three bases: Balos, Elafonissi, Chania, Rethymno, and Imbros.</td><td>The protected-ticket chain needs exact checkout proof and the $11.2k&ndash;15.4k band crosses the preferred maximum.</td><td><b>#9 at 37/55: the calmer warm-water Portugal hybrid.</b></td></tr>
-      <tr><td><b>Sicily &amp; Malta</b></td><td>Food-and-variety route with beaches, Etna, Ortigia, and Malta lagoons.</td><td>Four-base complexity and a $10.4k&ndash;15.8k band above the preferred maximum at the high end.</td><td><b>#10 at 37/55: compelling, but less route-simple than the higher hybrids.</b></td></tr>
-      <tr><td><b>Dolomites + Sardinia</b></td><td>The strongest pure mountain-and-sea contrast: Dolomite hiking followed by Sardinian coves.</td><td>Nine PTO days, complex north-to-island logistics, and an $18.9k ceiling.</td><td><b>#12 at 37/55: a scenery-first stretch, not a budget-safe recommendation.</b></td></tr>
-      <tr><td><b>Greek Cyclades</b></td><td>Naxos, Paros, and Milos combine whitewashed towns, varied beaches, and a classic island-hopping rhythm.</td><td>Ferry/weather exposure and a $16.0k high case weaken an otherwise intuitive route.</td><td><b>#13 at 36/55: the pure-islands alternative, conditional on the air-and-ferry chain.</b></td></tr>
-      <tr><td><b>Portugal + Algarve + Sicily</b></td><td>Six relaxed Algarve nights followed by Cefal&ugrave;, Taormina, and Etna in only three bases.</td><td>The planned Vueling Barcelona connection is not sold; the current same-day route is FAO&ndash;LIS&ndash;FCO&ndash;PMO, 8h20 with two stops, lifting the band to $13.55k&ndash;17.35k.</td><td><b>#14 at 36/55: viable only if the longer protected transfer is acceptable.</b></td></tr>
-      <tr><td><b>Switzerland + Sicily</b></td><td>Berner Oberland peaks and waterfalls followed by Taormina, Etna, and warm Sicilian swimming.</td><td>The exact Zurich&ndash;Catania nonstop exists, but the $14.0k&ndash;19.35k total is well above preference.</td><td><b>#15 at 36/55: spectacular and flight-feasible, but expensive.</b></td></tr>
-      <tr><td><b>Madeira + Crete</b></td><td>Madeira ridge hiking followed by Crete's 73&ndash;74&deg;F sea, the warmest water among the Madeira hybrids.</td><td>Long flight chain, FNC wind exposure, and a refreshed $13.7k&ndash;18.1k band.</td><td><b>#16 at 36/55: strong scenery and water, but weak value and logistics.</b></td></tr>
-      <tr><td><b>Madeira + Kefalonia</b></td><td>Madeira's ridges plus calmer Ionian swimming without relying on a Preveza exit.</td><td>Exact components total about $7.9k for family airfare before seats/bags, moving the trip to $14.0k&ndash;18.1k.</td><td><b>#17 at 36/55: the fare refresh removes its former budget advantage.</b></td></tr>
-      <tr><td><b>Hawaii</b></td><td>No passport, the warmest water, snorkeling, volcano landscapes, and history.</td><td>Only nine hotel nights, a long PIT haul, red-eye recovery, and an $11.0k&ndash;15.8k band.</td><td><b>#18 at 35/55: the higher-ranked Hawaii route because it uses fewer PTO days and costs less.</b></td></tr>
-      <tr><td><b>Greece via Lisbon</b></td><td>Lisbon plus Crete delivers old towns, hiking, warm water, and an optional Athens gateway.</td><td>The $10.75k&ndash;16.9k band crosses preference; the protected Chania return construction needs a complete quote.</td><td><b>#19 at 35/55: keep Athens as a gateway/buffer and do not self-transfer the return.</b></td></tr>
-      <tr><td><b>Sardinia &amp; Corsica</b></td><td>Dramatic limestone coastline and clear coves at ordinary June Mediterranean temperatures.</td><td>Four bases, ferry/cross-border car rules, and a $12.9k&ndash;18.3k planning band.</td><td><b>#20 at 35/55: choose it for coastline, not simplicity or value.</b></td></tr>
-      <tr><td><b>Switzerland + Crete</b></td><td>Jungfraujoch and Lauterbrunnen waterfalls followed by seven nights of Aegean swimming.</td><td>Two countries, an open-jaw ticket, and a $14.12k&ndash;19.44k band.</td><td><b>#21 at 35/55: epic Alps-to-Aegean scenery if the budget is acceptable.</b></td></tr>
-      <tr><td><b>Maui + Kauai</b></td><td>Twelve warm-water nights linking Haleakalā and Hāna with Waimea Canyon, Nā Pali, Poʻipū, and Hanalei.</td><td>Maui repeats prior travel; Hāʻena and Nā Pali are fragile; the $14.6k&ndash;21.6k band is the highest ranked-trip ceiling.</td><td><b>#22 at 35/55: maximum tropical scenery and trip length, not value or novelty.</b></td></tr>
-      <tr><td><b>Albania</b></td><td>Accursed Mountains hiking plus clear Riviera water at an unusually strong $9.7k&ndash;14.23k band.</td><td>Long two-stop PIT/Tirana routing and family preference override the raw score.</td><td><b>Excluded reference at 39/55 by family decision.</b></td></tr>
+  <section id="matrix"><p class="eyebrow">Full Comparison</p><h2>The practical call</h2><div class="budget-scroll"><table class="budget-tbl matrix-tbl"><tr><th>Trip</th><th>Gross cash</th><th>Net after miles</th><th>Decision / booking gate</th></tr>{% for t in hub.activeTrips %}<tr data-matrix-trip="{{ t.slug }}"><td>#{{ t.appealRank }} · {{ t.displayName }}</td><td>{{ t.budget.grossFloorUsd | money }}–{{ t.budget.grossCeilUsd | money }}</td><td>{{ t.budget.floorUsd | money }}–{{ t.budget.ceilUsd | money }}</td><td>{{ t.totalBaked }}/55 · {{ t.routeReadiness }}. {{ t.cardSummary }}</td></tr>{% endfor %}<tr><th colspan="4">Excluded references — unchanged cash basis</th></tr><tr><td><b>Albania</b></td><td>Accursed Mountains hiking plus clear Riviera water at an unusually strong $9.7k&ndash;14.23k band.</td><td>Long two-stop PIT/Tirana routing and family preference override the raw score.</td><td><b>Excluded reference at 39/55 by family decision.</b></td></tr>
       <tr><td><b>Southern France</b></td><td>Riviera and Provence depth with zero internal flights.</td><td>Only moderate swim fit and a premium $13.35k&ndash;19.1k band.</td><td><b>Excluded reference at 39/55 by family decision.</b></td></tr>
       <tr><td><b>Italy: Salento-Amalfi</b></td><td>Food, beaches, Maratea, Capri, Amalfi/Ravello, Procida, and only three bases.</td><td>The $11.4k&ndash;16.3k band crosses preference and repeats parts of prior Italy travel.</td><td><b>Excluded reference at 37/55 by family decision.</b></td></tr>
       <tr><td><b>Spain</b></td><td>The strongest Alhambra/Mezquita/Alc&aacute;zar history package with a within-preference $8.8k&ndash;14.8k band.</td><td>Heat, timed-entry pressure, nine PTO days, and family preference override the score.</td><td><b>Excluded reference at 37/55 by family decision.</b></td></tr>
@@ -948,22 +742,7 @@ footer a{color:var(--muted)}
     <p class="source-note">Comparison basis: 31 plans (22 ranked, 9 excluded by family decision) across an early-June-to-August planning range. Jun 6 is the nominal start, with Spain (Jun 3) and Hawaii (Jun 5) retained as explicit early-departure options. A Jun 23 return to Pittsburgh is acceptable and preferred, including an evening arrival; the only hard calendar rule is that the family must be in Pittsburgh all day Jun 24-26. Budgets are planning bands, not booking quotes, and several high cases exceed the $15k preferred maximum. Exact-date flight inventory was refreshed Sep 10, 2026; component fares are volatile snapshots, not held tickets, and every critical chain still needs a complete family checkout with seats, bags, and ticket protection.</p>
   </section>
 
-  <section id="risks">
-    <p class="eyebrow">Plan Health-Check</p>
-    <h2>Risks worth keeping visible</h2>
-    <ul class="hc-list">
-      <li class="fixed"><strong>The ranking now reflects the standalone Crete route and refreshed air market.</strong> <b>Slovenia + Adriatic</b> leads at 40/55; Portugal + Sicily and Madeira + Mallorca follow at 39; Iceland, Iceland + Ischia/Cilento, and Madeira + Sicily sit at 38. Crete is #11 at 37 because its conservative separate-direction airfare reference crosses the preferred maximum; reprice the protected open-jaw ticket before treating that cost score as final.</li>
-      <li class="solid"><strong>Hybrids resolve the core tension, at a price.</strong> Madeira openers buy epic hiking at the cost of extra flight legs and FNC wind risk; mainland openers stay calmer. The refreshed Madeira + Mallorca high case is now $15.9k, so no Madeira hybrid remains entirely inside the preferred band.</li>
-      <li class="head"><strong>Madeira runs on gates and buffers.</strong> Every Madeira variant needs verified ticket protection or deliberately buffered separate tickets and a hard family-airfare gate. The exact Tuesday Lisbon&ndash;Palermo nonstop is now selling for Madeira + Sicily; Portugal + Sicily's Monday handoff remains a one-stop, while Algarve + Sicily now requires a two-stop Faro&ndash;Lisbon&ndash;Rome&ndash;Palermo day.</li>
-      <li class="act"><strong>Italy drifted expensive.</strong> The Salento-Maratea-Amalfi file now reads ~$11.4k-16.3k realistic, with a preference-fit trim around ~$12.4k-14.8k. It is an excluded stretch reference, not a budget-safe pick.</li>
-      <li class="act"><strong>Hawaii's own rollup crosses the preferred maximum.</strong> Hawaii's line-item budget table sums to ~$11k&ndash;15.8k with insurance. Combined with only nine hotel nights, a been-there Maui factor, and moderate dry-season fire exposure, it sits #17 before complete quotes land.</li>
-      <li class="act"><strong>Maui + Kauai is the premium scenery benchmark.</strong> It fixes Hawaii's length penalty with 12 nights and adds Nā Pali, Waimea and Hanalei, but Maui is a repeat, Hāʻena/boat days are fragile, and the reconciled $14.6k&ndash;21.6k band places it #21 despite the same 35/55 raw score as the shorter Hawaii route.</li>
-      <li class="head"><strong>Turkey is a warm-water wild card, not the automatic winner.</strong> The Turkish Riviera has the warmest non-Hawaii sea on the board, but June heat, moderate fire exposure, long-haul airfare, the scoped advisory, and a reconciled $18.4k high case keep it an excluded reference at 36/55.</li>
-      <li class="fixed"><strong>Croatia is excluded outright.</strong> Croatia scores 35/55, but the family did Croatia in 2026 and this route repeats Split/Hvar/Korčula. Excluded from the recommendation by explicit decision; the row stays on the scoreboard for reference.</li>
-      <li class="act"><strong>The Pittsburgh commitment drives the date math.</strong> Returning on Jun 23 is valid and preferred; every plan must keep the family in Pittsburgh for the full days Jun 24-26. Some plans still use Jun 9-22 for schedule or price reasons, while Balkans and California move into early July.</li>
-      <li class="head"><strong>Complexity still matters.</strong> Sardinia/Corsica, Sicily/Malta, Greece via Lisbon, and the Balkans all offer major variety, but each adds either ferry, cross-border, flight-chain, or four-base friction. Balkans also picked up July peak-pricing risk.</li>
-    </ul>
-  </section>
+  <section id="risks"><p class="eyebrow">Booking gates</p><h2>What the scores cannot promise</h2><ul class="hc-list"><li>Only the 22 ranked comparison trips received this points-adjusted audit. The nine excluded references and separate short-escape band retain their original basis.</li><li>No four-seat award itinerary is confirmed. The rankable credit is $2,000, not a transfer valuation.</li><li>Gross cash remains visible. Lodging, car coverage, food and activities are planning allowances; no inventory is held.</li><li>Iceland + Ischia/Cilento remains reroute-required. Its score does not make its old airfare construction bookable.</li><li>Keep Pittsburgh June 24–26 entirely clear. Reject late returns and unprotected connections even if a fare looks cheaper.</li></ul></section>
 
   <section id="considered">
     <p class="eyebrow">Options Considered</p>
@@ -976,10 +755,10 @@ footer a{color:var(--muted)}
       <ul class="considered-list">
         <li><strong>Canary Islands</strong> (Tenerife + La Palma) &mdash; <span class="st st-go">built, excluded reference (36/55)</span> Madeira's ecological twin (Macaronesian laurel forest + Teide volcano) &mdash; but flight connectivity is the tradeoff, not the upgrade.</li>
         <li><strong>Albania</strong> (Accursed Mountains: Theth/Valbona + the Riviera: Ksamil) &mdash; <span class="st st-go">built, 39/55, excluded by family decision</span> The best <em>warm-sea + novel</em> pick: alpine drama + Caribbean-clear swimming, cheap, one-country ground transport, no island-hop trap.</li>
-        <li><strong>Crete</strong> (Chania + Rethymno + Agios Nikolaos) &mdash; <span class="st st-go">built, #11 (37/55)</span> The standalone island route carries the full mountain-vs-sea variety: lagoons, Imbros, Preveli, Knossos, Spinalonga and Mirabello Bay with no internal flight, plus the preferred June 23 return.</li>
-        <li><strong>Madeira + Mallorca</strong> &mdash; <span class="st st-go">built, #3 (39/55)</span> The Madeira ridge-hiking week paired with a sandy Mediterranean swim in Mallorca. It remains the strongest Madeira hybrid, though its refreshed high case now reaches $15.9k.</li>
-        <li><strong>Dolomites + Venice + Sardinia</strong> &mdash; <span class="st st-go">built, ranked #12 (37/55)</span> Best pure epic-hiking (Tre Cime, Seceda) with a Venice opener and an epic-beach Sardinia finale. Landlocked hiking half = the variety.</li>
-        <li><strong>Iceland</strong> (Reykjavík + Golden Circle + South Coast + Jökuls&aacute;rl&oacute;n) &mdash; <span class="st st-go">built, #4 on the data (38/55)</span> The most novel-looking option &mdash; nothing like the Med board or Mexico. Swim = warm geothermal lagoons, not the (cold) sea.</li>
+        <li><strong>Crete</strong> (Chania + Rethymno + Agios Nikolaos) &mdash; <span class="st st-go">built, #13 (37/55)</span> The standalone island route carries the full mountain-vs-sea variety: lagoons, Imbros, Preveli, Knossos, Spinalonga and Mirabello Bay with no internal flight, plus the preferred June 23 return.</li>
+        <li><strong>Madeira + Mallorca</strong> &mdash; <span class="st st-go">built, #4 (41/55)</span> The Madeira ridge-hiking week paired with a sandy Mediterranean swim in Mallorca. It remains the strongest Madeira hybrid, though its refreshed high case now reaches $15.9k.</li>
+        <li><strong>Dolomites + Venice + Sardinia</strong> &mdash; <span class="st st-go">built, #14 (37/55)</span> Best pure epic-hiking (Tre Cime, Seceda) with a Venice opener and an epic-beach Sardinia finale. Landlocked hiking half = the variety.</li>
+        <li><strong>Iceland</strong> (Reykjavík + Golden Circle + South Coast + Jökuls&aacute;rl&oacute;n) &mdash; <span class="st st-go">built, #3 (42/55)</span> The most novel-looking option &mdash; nothing like the Med board or Mexico. Swim = warm geothermal lagoons, not the (cold) sea.</li>
       </ul>
 
       <h3 class="considered-h">Considered, set aside</h3>

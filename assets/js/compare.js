@@ -125,7 +125,9 @@
     return [
       { label: 'Weighted total', num: (t) => B.total(t), val: (t) => String(B.total(t)), better: 'max', strong: true },
       ...axisRows,
-      { label: 'Budget ceiling', num: (t) => t.budget.ceilUsd, val: (t) => '$' + (t.budget.floorUsd / 1000) + '–' + (t.budget.ceilUsd / 1000) + 'k', better: 'min' },
+      { label: 'Budget (net where miles apply)', num: (t) => t.budget.ceilUsd, val: (t) => '$' + (t.budget.floorUsd / 1000) + '–' + (t.budget.ceilUsd / 1000) + 'k', better: 'min' },
+      { label: 'Gross cash trip', num: () => null, val: (t) => '$' + ((t.budget.grossFloorUsd ?? t.budget.floorUsd) / 1000) + '–' + ((t.budget.grossCeilUsd ?? t.budget.ceilUsd) / 1000) + 'k', better: null },
+      { label: 'Defensible miles savings', num: () => null, val: (t) => t.budget.pointsSavingsUsd ? '$2,000 / 200,000 miles; fixed value, no award seats assumed' : 'Not applied in this audit', better: null },
       { label: 'Budget preference', num: () => null, val: (t) => budgetLabel(RecommendationEngine.budgetStatus(t.budget, B.preferences()), B.preferences()), better: null },
       { label: 'Booking readiness', num: () => null, val: (t) => t.readiness?.label || 'Unknown', better: null },
       { label: 'Evidence confidence', num: (t) => t.evidence?.confidence?.value ?? null, val: (t) => t.evidence?.confidence?.label || 'Unknown', better: 'max' },

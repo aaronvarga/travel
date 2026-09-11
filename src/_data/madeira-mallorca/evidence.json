@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-mallorca",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 1,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $13,100–$15,900. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
+      "score": 2,
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,100–$15,900 less a single $2,000 fixed travel redemption yields $11,100–$13,900. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,25 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 13100,
+        "lowUsd": 11100,
         "expectedUsd": null,
-        "highUsd": 15900,
+        "highUsd": 13900,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 5,
-        "arithmetic": "7600–8800 + 2300–3150 + 1850–2250 + 800–1100 + 550–600 = 13100–15900"
+        "lineItemCount": 9,
+        "arithmetic": "6700/7500 + 800/1100 + 140/220 + 400/620 + 960/1210 + 900/1300 + 1850/2250 + 800/1100 + 550/600 = 13100/15900 gross; minus 2000/2000 = 11100/13900 net",
+        "grossLowUsd": 13100,
+        "grossHighUsd": 15900,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "madeira-mallorca/main.json #totals; five categories reconcile exactly; airfare and apartment-first gates are explicit",
-        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind."
+        "internal-itinerary": "madeira-mallorca/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

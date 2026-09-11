@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-azores",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 4,
       "rationale": "A sold protected PIT–EWR–PDL itinerary removes the separate-ticket Boston failure point. Island weather remains the principal uncertainty, supporting Risk 4/5.",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         "route-readiness"
       ]
@@ -97,11 +97,11 @@
     {
       "id": "budget-band",
       "category": "budget",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "derived",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "short-azores-route-review-20260911"
       ],
       "value": {
         "lowUsd": 9600,
@@ -110,13 +110,15 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "6600–7400 + 1050–1750 + 450–800 + 750–1150 + 300–500 + 450–600 = 9600–12200"
+        "arithmetic": "6600–7400 + 1050–1750 + 450–800 + 750–1150 + 300–500 + 450–600 = 9600–12200",
+        "currentSupplierQuote": false,
+        "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "short-azores/main.json #budget and #totals planning band",
-        "google-flights-2027-current-audit": "United sells PIT–EWR–PDL June 11–19 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required."
+        "internal-itinerary": "short-azores/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-azores-route-review-20260911": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote."
       },
       "claimType": "proxy"
     },
@@ -286,29 +288,29 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "confirmed",
-      "confidence": "high",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
       "sourceRefs": [
-        "azores-airlines-bos-pdl",
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "short-azores-route-review-20260911"
       ],
       "value": {
-        "status": "confirmed",
-        "routeRule": "Prefer a protected PIT–BOS–PDL itinerary; if tickets are separate, overnight in Boston each direction or reject",
-        "june2027Verified": true,
-        "currentPattern": "Azores Airlines currently advertises daily June Boston–Ponta Delgada service",
-        "maxConnections": 1,
+        "status": "current-proxy",
         "singleTicket": true,
-        "currentFlightAudit": "United sells PIT–EWR–PDL June 11–19 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required.",
-        "exact2027FlightsVerified": true
+        "maxConnections": 1,
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false,
+        "fourSeatsVerified": false,
+        "protectionVerified": false,
+        "singleTicketIsBookingRequirement": true,
+        "currentFlightAudit": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote.",
+        "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "azores-airlines-bos-pdl": "Official Azores Airlines Flights to Azores page, Boston <> Ponta Delgada: June through September all days; exact June 2027 inventory not yet confirmed",
-        "internal-itinerary": "main.json air-travel rules",
-        "google-flights-2027-current-audit": "United sells PIT–EWR–PDL June 11–19 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required."
+        "internal-itinerary": "short-azores/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-azores-route-review-20260911": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote."
       },
       "claimType": "proxy"
     },
@@ -401,8 +403,65 @@
     "June climate is a historical planning proxy"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
-    "status": "confirmed",
-    "headline": "A protected one-stop now replaces the Boston self-transfer"
-  }
+    "reviewedAt": "2026-09-11",
+    "status": "current-proxy",
+    "headline": "Route proxy only; previous fare is historical"
+  },
+  "archivedExpiredFacts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "lowUsd": 9600,
+        "highUsd": 12200,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "6600–7400 + 1050–1750 + 450–800 + 750–1150 + 300–500 + 450–600 = 9600–12200"
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "internal-itinerary": "short-azores/main.json #budget and #totals planning band",
+        "google-flights-2027-current-audit": "United sells PIT–EWR–PDL June 11–19, 2027 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required."
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "azores-airlines-bos-pdl",
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "status": "confirmed",
+        "routeRule": "Prefer a protected PIT–BOS–PDL itinerary; if tickets are separate, overnight in Boston each direction or reject",
+        "june2027Verified": true,
+        "currentPattern": "Azores Airlines currently advertises daily June Boston–Ponta Delgada service",
+        "maxConnections": 1,
+        "singleTicket": true,
+        "currentFlightAudit": "United sells PIT–EWR–PDL June 11–19, 2027 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required.",
+        "exact2027FlightsVerified": true
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "azores-airlines-bos-pdl": "Official Azores Airlines Flights to Azores page, Boston <> Ponta Delgada: June through September all days; exact June 2027 inventory not yet confirmed",
+        "internal-itinerary": "main.json air-travel rules",
+        "google-flights-2027-current-audit": "United sells PIT–EWR–PDL June 11–19, 2027 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required."
+      },
+      "claimType": "proxy"
+    }
+  ]
 }

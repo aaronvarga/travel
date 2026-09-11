@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-kefalonia",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $14,000–$18,100. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,700–$17,300 less a single $2,000 fixed travel redemption yields $11,700–$15,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,27 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "aegean-kefalonia-official",
-        "google-flights-2027-current-audit"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 14000,
+        "lowUsd": 11700,
         "expectedUsd": null,
-        "highUsd": 18100,
+        "highUsd": 15300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 5,
-        "arithmetic": "9000–11000 + 2100–3350 + 1550–2050 + 850–1150 + 450–550 = 13950–18100; displayed 14000–18100"
+        "lineItemCount": 7,
+        "arithmetic": "8000/9000 + 1050/1650 + 1050/1700 + 750/1200 + 1550/2050 + 850/1150 + 450/550 = 13700/17300 gross; minus 2000/2000 = 11700/15300 net",
+        "grossLowUsd": 13700,
+        "grossHighUsd": 17300,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "madeira-kefalonia/main.json #totals: five reconciled category rows and displayed $10.9k–$15.0k Grand Total.",
-        "aegean-kefalonia-official": "AEGEAN ATH–EFL page/fare calendar currently advertises the route; its fares are only one component of the unquoted June 2027 family stack.",
-        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets."
+        "internal-itinerary": "madeira-kefalonia/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

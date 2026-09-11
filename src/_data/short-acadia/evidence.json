@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-acadia",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -63,7 +63,7 @@
     "risk": {
       "score": 4,
       "rationale": "Domestic travel, one base and condition-flexible days remove most failure points. The exact 2027 seasonal nonstop and Cadillac booking remain explicit gates, with protected-connection and non-summit fallbacks.",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         "route-readiness"
       ]
@@ -97,11 +97,11 @@
     {
       "id": "budget-band",
       "category": "budget",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "derived",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "short-acadia-route-review-20260911"
       ],
       "value": {
         "lowUsd": 7700,
@@ -111,13 +111,15 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "1800–2200 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 7700–10800"
+        "arithmetic": "1800–2200 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 7700–10800",
+        "currentSupplierQuote": false,
+        "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "short-acadia/main.json #budget and #totals; six itemized categories reconcile to the displayed total",
-        "google-flights-2027-current-audit": "June 12–19 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
+        "internal-itinerary": "short-acadia/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-acadia-route-review-20260911": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote."
       },
       "claimType": "proxy"
     },
@@ -294,32 +296,29 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "confirmed",
-      "confidence": "high",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
       "sourceRefs": [
-        "flypittsburgh-pwm",
         "internal-itinerary",
-        "nps-acadia-cadillac",
-        "google-flights-2027-current-audit"
+        "short-acadia-route-review-20260911"
       ],
       "value": {
-        "status": "confirmed",
+        "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 1,
-        "outbound": "PIT–PWM seasonal nonstop preferred; one protected connection fallback",
-        "return": "PWM–PIT seasonal nonstop preferred; one protected connection fallback",
-        "exact2027FlightsVerified": true,
-        "cadillac2027RulesVerified": false,
-        "currentFlightAudit": "June 12–19 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band.",
-        "june2027Verified": true
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false,
+        "fourSeatsVerified": false,
+        "protectionVerified": false,
+        "singleTicketIsBookingRequirement": true,
+        "currentFlightAudit": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote.",
+        "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "flypittsburgh-pwm": "Official Pittsburgh destinations page reviewed for current seasonal Portland service; exact June 2027 dates are not confirmed",
-        "internal-itinerary": "short-acadia/main.json #air-travel clearly marks the nonstop and prices as proxies",
-        "nps-acadia-cadillac": "Official 2026 NPS reservation page: $6, online-only, 30% at 90 days and 70% at two days; recheck 2027",
-        "google-flights-2027-current-audit": "June 12–19 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
+        "internal-itinerary": "short-acadia/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-acadia-route-review-20260911": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote."
       },
       "claimType": "proxy"
     },
@@ -418,8 +417,69 @@
   ],
   "evidenceBasis": "Official federal park and weather sources, official airport route evidence, current local operator/destination material and line-by-line derivation from the one-base itinerary. Exact June 2027 prices, flights and reservation rules remain proxies.",
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
-    "status": "confirmed",
-    "headline": "No nonstop is sold on the exact dates"
-  }
+    "reviewedAt": "2026-09-11",
+    "status": "current-proxy",
+    "headline": "Route proxy only; previous fare is historical"
+  },
+  "archivedExpiredFacts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "lowUsd": 7700,
+        "expectedUsd": null,
+        "highUsd": 10800,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "1800–2200 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 7700–10800"
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "internal-itinerary": "short-acadia/main.json #budget and #totals; six itemized categories reconcile to the displayed total",
+        "google-flights-2027-current-audit": "June 12–19, 2027 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "flypittsburgh-pwm",
+        "internal-itinerary",
+        "nps-acadia-cadillac",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "status": "confirmed",
+        "singleTicket": true,
+        "maxConnections": 1,
+        "outbound": "PIT–PWM seasonal nonstop preferred; one protected connection fallback",
+        "return": "PWM–PIT seasonal nonstop preferred; one protected connection fallback",
+        "exact2027FlightsVerified": true,
+        "cadillac2027RulesVerified": false,
+        "currentFlightAudit": "June 12–19, 2027 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band.",
+        "june2027Verified": true
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "flypittsburgh-pwm": "Official Pittsburgh destinations page reviewed for current seasonal Portland service; exact June 2027 dates are not confirmed",
+        "internal-itinerary": "short-acadia/main.json #air-travel clearly marks the nonstop and prices as proxies",
+        "nps-acadia-cadillac": "Official 2026 NPS reservation page: $6, online-only, 30% at 90 days and 70% at two days; recheck 2027",
+        "google-flights-2027-current-audit": "June 12–19, 2027 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
+      },
+      "claimType": "proxy"
+    }
+  ]
 }

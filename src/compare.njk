@@ -132,7 +132,7 @@ footer{padding:30px 0 60px;color:var(--muted);font-size:.82rem}
             </td>
             <td>{% if t.rank %}<span class="rank">#{{ t.rank }}</span>{% else %}<span class="rank ex">EX</span>{% endif %}</td>
             <td class="tot {{ 'is-best' if not t.excluded and t.total == c.best.total }}">{{ t.total }}<span style="color:var(--muted);font-weight:600">/55</span></td>
-            <td class="budget {{ 'over' if t.budgetStatus == 'crosses-preference' }} {{ 'is-best' if not t.excluded and t.budget.ceilUsd == c.best.budgetCeil }}">{{ t.budget.ceilUsd | moneyK }}</td>
+            <td class="budget {{ 'over' if t.budgetStatus == 'crosses-preference' }} {{ 'is-best' if not t.excluded and t.budget.ceilUsd == c.best.budgetCeil }}">{{ t.budget.ceilUsd | moneyK }}{% if t.budget.pointsSavingsUsd %} net<br><small>{{ t.budget.grossCeilUsd | moneyK }} gross</small>{% endif %}</td>
             <td class="{{ 'is-best' if not t.excluded and t.nights == c.best.nights }}">{{ t.nights }}</td>
             {%- for a in countryGroups.axes -%}{%- if a.id != "pto" and a.id != "nights" -%}
               <td class="axis s{{ t.axes[a.id] }} {{ 'is-best' if not t.excluded and t.axes[a.id] == c.best[a.id] }}">{{ t.axes[a.id] }}</td>

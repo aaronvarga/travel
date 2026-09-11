@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "portugal",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 2,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $10,500–$14,400. The Budget 2/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "rationale": "Use $6,000–7,400 outer airfare, encompassing the observed $5,457 base and variable bags/seats; Faro–Madeira $750–1,000 is a conservative estimate from the stored $169/person component plus bags. Add an explicit $400–700 insurance/contingency allowance. Lodging remains unquoted. Gross $11,975–$16,500 less a single $2,000 fixed travel redemption yields $9,975–$14,500. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,31 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "tap-faro-funchal",
-        "google-flights-2027-current-audit"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 10500,
+        "lowUsd": 9975,
         "expectedUsd": null,
-        "highUsd": 14400,
+        "highUsd": 14500,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 6,
-        "arithmetic": "5300–6200 + 390–785 + 650–1250 + 250–350 + 2200–3500 + 1700–2300 = 10490–14385; displayed 10500–14400",
-        "observedPartialInput": "TAP displayed a €221 one-passenger FAO–FNC round trip for 2027-06-13 to 2027-06-19; not the full family itinerary"
+        "lineItemCount": 7,
+        "arithmetic": "6000/7400 + 750/1000 + 675/1250 + 250/350 + 2200/3500 + 1700/2300 + 400/700 = 11975/16500 gross; minus 2000/2000 = 9975/14500 net",
+        "observedPartialInput": "TAP displayed a €221 one-passenger FAO–FNC round trip for 2027-06-13 to 2027-06-19; not the full family itinerary",
+        "grossLowUsd": 11975,
+        "grossHighUsd": 16500,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "portugal/main.json #totals budget table; six category rows and Grand total; lodging row explicitly says rough—not researched",
-        "tap-faro-funchal": "TAP operator fare calendar observed 2026-07-10 displayed €221 for one passenger round trip 2027-06-13 to 2027-06-19; not a four-person through-ticket or lodging quote",
-        "google-flights-2027-current-audit": "PIT–LIS is selling June 10–23 from $1,285 round trip. FAO–FNC sells June 18 via Lisbon in 5h35 from $169 one way; there is no Friday nonstop. The existing family air band still holds."
+        "internal-itinerary": "portugal/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–BOS–LIS / FNC–LIS–BOS–PIT: complete open-jaw, internal flight separate, family base $5457; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

@@ -11,11 +11,14 @@
       "nights": 12,
       "ptoDays": 8,
       "budget": {
-        "lowUsd": 14120,
+        "lowUsd": 12120,
         "expectedUsd": null,
-        "highUsd": 19440,
+        "highUsd": 17440,
         "distribution": "planning-band",
-        "chanceUnderPreferredMax": null
+        "chanceUnderPreferredMax": null,
+        "grossLowUsd": 14120,
+        "grossHighUsd": 19440,
+        "pointsSavingsUsd": 2000
       },
       "removedExperiences": [],
       "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Chania 7 nights (car), open-jaw ZRH in / Crete out.",

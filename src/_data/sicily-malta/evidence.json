@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "sicily-malta",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 6-line-item family budget is $10,400–$15,800 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "Use $6,200–7,400 outer airfare as a conservative open-jaw planning proxy above the $5,667 Palermo round-trip result, not an observed Malta-return fare. Retain internal hop and local-cost estimates; add $400–700 insurance/contingency. Gross $13,000–$18,700 less a single $2,000 fixed travel redemption yields $11,000–$16,700. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,24 +100,31 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 10400,
+        "lowUsd": 11000,
         "expectedUsd": null,
-        "highUsd": 15800,
+        "highUsd": 16700,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 6,
-        "arithmetic": "10400–15800 line-item sum; tolerance 150"
+        "lineItemCount": 7,
+        "arithmetic": "6200/7400 + 250/500 + 1050/1850 + 250/400 + 3400/5200 + 1450/2650 + 400/700 = 13000/18700 gross; minus 2000/2000 = 11000/16700 net",
+        "grossLowUsd": 13000,
+        "grossHighUsd": 18700,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "Sicily & Malta; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "sicily-malta/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–LHR–PMO, June 10–23: gateway round-trip proxy for open-jaw, family base $5667; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

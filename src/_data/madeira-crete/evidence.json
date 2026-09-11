@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-crete",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $13,700–$18,100. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,710–$18,250 less a single $2,000 fixed travel redemption yields $11,710–$16,250. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,29 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "aegean-lisbon-athens",
-        "aegean-athens-crete",
-        "google-flights-2027-current-audit"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 13700,
+        "lowUsd": 11710,
         "expectedUsd": null,
-        "highUsd": 18100,
+        "highUsd": 16250,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 5,
-        "arithmetic": "8180–10000 + 1955–3150 + 1850–2500 + 1150–1750 + 500–700 = 13635–18100; displayed 13700–18100"
+        "lineItemCount": 11,
+        "arithmetic": "7000/8200 + 650/1050 + 130/200 + 1050/1700 + 300/500 + 280/450 + 800/1150 + 100/200 + 1750/2350 + 1150/1750 + 500/700 = 13710/18250 gross; minus 2000/2000 = 11710/16250 net",
+        "grossLowUsd": 13710,
+        "grossHighUsd": 18250,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "madeira-crete/main.json #totals five category rows; headline budget explicitly gated on flight stack",
-        "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 showed January 2027 LIS–ATH one-way examples from €132; only one component of the flight stack",
-        "aegean-athens-crete": "Operator calendar observed 2026-07-10 showed current ATH–CHQ/HER examples from €26–€50; not June 2027 or the full family itinerary",
-        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night."
+        "internal-itinerary": "madeira-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

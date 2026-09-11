@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "greece-cyclades",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 1,
-      "rationale": "The eight categories reconcile exactly to $11,650–$16,000. The low case slips just under the $12k target, but the credible high case reaches ~$16,000 — above the $15k strongly preferred maximum — driven by the transatlantic PIT–Athens airfare and peak-season island lodging. By the budget rubric, a high case above the preferred maximum scores 1. Cost never hides the trip, but it is the honest reason it is not ranked higher, and it is consistent with the other expensive-air island plans (e.g. greece-via-lisbon at $16,900).",
+      "score": 2,
+      "rationale": "Increase Athens airfare to $5,800–7,200 for bags/seats above the four-person fare snapshot. Increase Milos–Athens to $650–850: the stored $154/person September 10 snapshot already exceeds the old $300–480 family allowance before bags. Gross $12,800–$16,970 less a single $2,000 fixed travel redemption yields $10,800–$14,970. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,27 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "pit-ath-routing",
-        "kleftiko-operators"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 11650,
+        "lowUsd": 10800,
         "expectedUsd": null,
-        "highUsd": 16000,
+        "highUsd": 14970,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 8,
-        "arithmetic": "5000/6600 + 300/480 + 340/540 + 2150/2880 + 850/1200 + 900/1400 + 1650/2200 + 460/700 = 11650/16000"
+        "arithmetic": "5800/7200 + 650/850 + 340/540 + 2150/2880 + 850/1200 + 900/1400 + 1650/2200 + 460/700 = 12800/16970 gross; minus 2000/2000 = 10800/14970 net",
+        "grossLowUsd": 12800,
+        "grossHighUsd": 16970,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-11",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "greece-cyclades/main.json #totals target/high columns; exact category reconciliation",
-        "pit-ath-routing": "PIT->ATH two-stop June round-trip fare band that sets the airfare line (~$5,000-$6,600 family)",
-        "kleftiko-operators": "full-day Kleftiko cruise ~E120-175 pp drives the activities line"
+        "internal-itinerary": "greece-cyclades/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–YYZ–ATH, June 8–21: exact-date gateway round-trip search, not checkout, family base $5202; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

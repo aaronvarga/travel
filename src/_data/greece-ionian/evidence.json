@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "greece-ionian",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The seven categories reconcile to $10,800–$15,000, but the high case reaches the preferred maximum and the open-jaw airfare, peak-June lodging, and two island car rentals remain medium-confidence 2027 proxies. The rubric therefore caps Budget at 2/5 until a high-confidence family quote confirms the band.",
+      "score": 4,
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $10,800–$15,000 less a single $2,000 fixed travel redemption yields $8,800–$13,000. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,25 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "aegean-ath-efl"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 10800,
+        "lowUsd": 8800,
         "expectedUsd": null,
-        "highUsd": 15000,
+        "highUsd": 13000,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "5600/6700 + 1700/2800 + 800/1300 + 150/300 + 1560/2200 + 520/850 + 470/850 = 10800/15000"
+        "arithmetic": "5600/6700 + 1700/2800 + 800/1300 + 150/300 + 1560/2200 + 520/850 + 470/850 = 10800/15000 gross; minus 2000/2000 = 8800/13000 net",
+        "grossLowUsd": 10800,
+        "grossHighUsd": 15000,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-11",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "greece-ionian/main.json #totals target/high columns; exact category reconciliation",
-        "aegean-ath-efl": "Transatlantic-plus-ATH airfare context driving the largest line item; no live 2027 open-jaw quote"
+        "internal-itinerary": "greece-ionian/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–JFK–ATH–EFL, June 9–22: gateway round-trip proxy for open-jaw, family base $5529; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

@@ -5,15 +5,15 @@
   "source": "Google Flights exact-date inventory checks plus current operator schedules",
   "trips": {
     "crete": {
-      "status": "current-proxy",
+      "status": "confirmed",
       "reviewedAt": "2026-09-11",
-      "headline": "Use the one-stop BA outbound and the June 23 same-day return",
-      "detail": "PIT–LHR–CHQ leaves June 9 at 9:45 p.m. and reaches Chania June 10 at 5:45 p.m. in 13 hours. HER–ATH–JFK–PIT leaves June 23 at 11:35 a.m. and reaches Pittsburgh at 9:25 p.m. in 16h50, adding 26h55 in Crete versus the former June 22 departure. Current one-way snapshots are $882 and $1,106 per adult; price the exact open-jaw through-ticket before purchase and require protection through the 1h30 JFK immigration/customs connection."
+      "headline": "Family cash audit: complete open-jaw",
+      "detail": "PIT–LHR–CHQ / HER–ATH–JFK–PIT. Observed family base $6,733; complete open-jaw. Selected four-passenger multi-city booking option; one checked bag per person costs $180 for the itinerary. Final airline checkout, individual fare rules and paid seats remain unverified. The 1h30 JFK connection must be protected. Reject the BA return arriving June 24."
     },
     "albania": {
       "status": "current-proxy",
       "headline": "Tirana inventory is live; the Corfu open-jaw still needs one protected quote",
-      "detail": "PIT–TIA is selling June 7–22 from $1,228 round trip with one or two stops; CFU–PIT on June 22 is available from $795 one way. The existing $5.3k–$7.8k family air/ferry band still contains the observed components, but the protected TIA-in/CFU-out checkout remains the booking gate."
+      "detail": "PIT–TIA is selling June 7–22, 2027 from $1,228 round trip with one or two stops; CFU–PIT on June 22 is available from $795 one way. The existing $5.3k–$7.8k family air/ferry band still contains the observed components, but the protected TIA-in/CFU-out checkout remains the booking gate."
     },
     "balkans": {
       "status": "current-proxy",
@@ -28,187 +28,268 @@
     "canary-islands": {
       "status": "confirmed",
       "headline": "Both the long-haul dates and Tenerife–La Palma flights are selling",
-      "detail": "PIT–Tenerife is available June 8–22 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent."
+      "detail": "PIT–Tenerife is available June 8–22, 2027 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent."
     },
     "croatia": {
       "status": "current-proxy",
       "headline": "Exact Split inventory is live, but the Dubrovnik open-jaw costs more than the old band",
-      "detail": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket."
+      "detail": "PIT–SPU is selling June 10–23, 2027 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket."
     },
     "dolomites-sardinia": {
       "status": "exact-2027-schedule-required",
-      "headline": "The exact Venice–Olbia hop is selling; the outer open-jaw remains the gate",
-      "detail": "PIT–VCE is selling June 27–July 11 from $1,297 round trip, and Volotea sells the exact July 5 VCE–OLB nonstop from $96 one way. Price OLB–PIT with the outbound before locking either rental car."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–LHR–VCE, June 27–July 11. Observed family base $5,183; gateway round-trip proxy for open-jaw. Four-passenger BA result; does not price the required Olbia return.",
+      "reviewedAt": "2026-09-11"
     },
     "greece-cyclades": {
       "status": "confirmed",
-      "headline": "The exact Athens and Milos flight dates are selling",
-      "detail": "PIT–ATH is available June 8–21 from $1,296 round trip with one stop. MLO–ATH sells multiple 40-minute nonstops June 20 from $154; ferries remain a separate timetable recheck."
+      "headline": "Family cash audit: exact-date gateway round-trip search, not checkout",
+      "detail": "PIT–YYZ–ATH, June 8–21, 2027. Observed family base $5,202; exact-date gateway round-trip search, not checkout. Four-passenger Air Canada result; return flight and fare brand not selected. The $5,182 Montreal option has a 54-minute connection and is not the planning choice.",
+      "reviewedAt": "2026-09-11"
     },
     "greece-ionian": {
       "status": "current-proxy",
-      "headline": "The corrected route exits through Athens, not Preveza",
-      "detail": "PIT–EFL is selling June 9–22 from $1,363 round trip with two stops. Keep the corrected Lefkada-to-Athens buffer and price EFL-in/ATH-out together; do not restore the unavailable Preveza exit."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–JFK–ATH–EFL, June 9–22, 2027. Observed family base $5,529; gateway round-trip proxy for open-jaw. Four-passenger Aegean/American result; does not price the corrected Athens exit. Retain the Athens buffer night and drive.",
+      "reviewedAt": "2026-09-11"
     },
     "greece-via-lisbon": {
       "status": "current-proxy",
       "headline": "The Lisbon–Athens–Chania flight chain now sells on the exact dates",
-      "detail": "PIT–LIS is selling June 9–22 from $1,215 round trip, and LIS–CHQ sells June 14 via ATH in 6h05 from $220. The CHQ–PIT return still needs one protected multi-city quote; do not route home through Lisbon on Tuesday."
+      "detail": "PIT–LIS is selling June 9–22, 2027 from $1,215 round trip, and LIS–CHQ sells June 14 via ATH in 6h05 from $220. The CHQ–PIT return still needs one protected multi-city quote; do not route home through Lisbon on Tuesday. This prior September 10 component evidence was reviewed, not newly reproduced for four passengers; retain the booking gate.",
+      "reviewedAt": "2026-09-11"
     },
     "hawaii": {
       "status": "confirmed",
-      "headline": "Every exact 2027 flight leg remains bookable",
-      "detail": "PIT–HNL is selling June 5–15 from $859 round trip with one stop, and HNL–KOA sells the exact June 9 nonstop from $75. Keep the mainland legs protected on one ticket and retain the inter-island buffer."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–SEA–HNL, June 5–15, 2027. Observed family base $3,488; gateway round-trip proxy for open-jaw. Four-passenger Alaska result; return search date is a gateway proxy, not the required Kona June 14 red-eye. Bags/seat selection extra.",
+      "reviewedAt": "2026-09-11"
     },
     "iceland": {
       "status": "confirmed",
-      "headline": "The trip is bookable—but not with the assumed nonstop",
-      "detail": "June 8–21 sells protected one-stop PIT–KEF itineraries from $703 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan remains one stop, not a seasonal nonstop."
+      "headline": "Family cash audit: complete round-trip",
+      "detail": "PIT–YUL–KEF / KEF–YUL–PIT. Observed family base $2,619; complete round-trip. Basic $2,619 plus $180 checked bag per person; Standard $3,499 includes the checked bag but charges for seats. Flex $5,191 includes seats/refunds. Selected June 8–21, 2027 flights show a same-day return. No nonstop outbound in these results.",
+      "reviewedAt": "2026-09-11"
     },
     "iceland-ischia-cilento": {
       "status": "reroute-required",
       "headline": "The June 10 Icelandair nonstop/stopover construction does not exist",
-      "detail": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking."
+      "detail": "PIT–KEF is selling June 10–23, 2027 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking. This prior September 10 component evidence was reviewed, not newly reproduced for four passengers; retain the booking gate.",
+      "reviewedAt": "2026-09-11"
     },
     "italy-salento-amalfi": {
       "status": "current-proxy",
       "headline": "Brindisi inventory is live and fits the existing flight band",
-      "detail": "PIT–BDS is selling June 10–23 from $1,736 round trip with two stops. The old high airfare case is now the floor before seats and bags; price BDS-in/NAP-out together before relying on the open-jaw protection."
+      "detail": "PIT–BDS is selling June 10–23, 2027 from $1,736 round trip with two stops. The old high airfare case is now the floor before seats and bags; price BDS-in/NAP-out together before relying on the open-jaw protection."
     },
     "madeira-crete": {
       "status": "current-proxy",
-      "headline": "Every component is selling, but the family air floor has risen",
-      "detail": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–BOS–LIS–FNC, June 8–22, 2027. Observed family base $6,124; gateway round-trip proxy for open-jaw. Four-passenger TAP/JetBlue result; does not price Greece exit or internal flights. United EWR–FNC result from $6,882 confirms a current exact-date schedule option, not the whole hybrid.",
+      "reviewedAt": "2026-09-11"
     },
     "madeira-kefalonia": {
       "status": "current-proxy",
-      "headline": "The exact components sell, but the old airfare gate is obsolete",
-      "detail": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–BOS–LIS–FNC, June 8–22, 2027. Observed family base $6,124; gateway round-trip proxy for open-jaw. Four-passenger TAP/JetBlue result; does not price Greece exit or internal flights. United EWR–FNC result from $6,882 confirms a current exact-date schedule option, not the whole hybrid.",
+      "reviewedAt": "2026-09-11"
     },
     "madeira-mallorca": {
       "status": "current-proxy",
-      "headline": "The exact Madeira and Mallorca components are selling",
-      "detail": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–BOS–LIS–FNC, June 8–21, 2027. Observed family base $6,204; gateway round-trip proxy for open-jaw. Four-passenger TAP/JetBlue result; does not price Catania exit or internal flights. United nonstop EWR–FNC connection shown from $7,189 family round-trip.",
+      "reviewedAt": "2026-09-11"
     },
     "madeira-sicily": {
       "status": "current-proxy",
-      "headline": "The exact June 15 Lisbon–Palermo nonstop is selling again",
-      "detail": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–BOS–LIS–FNC, June 8–21, 2027. Observed family base $6,204; gateway round-trip proxy for open-jaw. Four-passenger TAP/JetBlue result; does not price Catania exit or internal flights. United nonstop EWR–FNC connection shown from $7,189 family round-trip.",
+      "reviewedAt": "2026-09-11"
     },
     "maui-kauai": {
       "status": "current-proxy",
-      "headline": "The inter-island hop is confirmed; the complete open-jaw still needs one quote",
-      "detail": "PIT–OGG is selling June 10–23 from $698 round trip, and OGG–LIH sells exact June 15 nonstops from $75 one way. Verify LIH–PIT June 22 on one protected ticket before booking premium lodging."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–PHX–OGG, June 10–23, 2027. Observed family base $3,904; gateway round-trip proxy for open-jaw. Four-passenger American result with 1h58 PHX connection; the cheaper $3,032 DFW option has only 53 minutes. This does not price LIH departure June 22, required for PIT arrival June 23.",
+      "reviewedAt": "2026-09-11"
     },
     "portugal": {
       "status": "current-proxy",
-      "headline": "The exact Portugal flights sell, but current airfare is much higher",
-      "detail": "PIT–LIS is selling June 10–23 from $1,285 round trip. FAO–FNC sells June 18 via Lisbon in 5h35 from $169 one way; there is no Friday nonstop. The existing family air band still holds."
+      "headline": "Family cash audit: complete open-jaw, internal flight separate",
+      "detail": "PIT–BOS–LIS / FNC–LIS–BOS–PIT. Observed family base $5,457; complete open-jaw, internal flight separate. Selected four-passenger booking option; displayed bag fee $0–262 per person depends on fare. Budget conservatively for bags; final fare brand and ticket protection need airline checkout. The separate Faro–Madeira flight is additional.",
+      "reviewedAt": "2026-09-11"
     },
     "portugal-algarve-sicily": {
       "status": "current-proxy",
-      "headline": "The planned Barcelona connection is not sold; use the live two-stop route",
-      "detail": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–LHR–FAO, June 10–23, 2027. Observed family base $6,260; gateway round-trip proxy for open-jaw. Four-passenger BA result; does not price Catania exit or the Faro–Palermo bridge.",
+      "reviewedAt": "2026-09-11"
     },
     "portugal-crete": {
       "status": "current-proxy",
-      "headline": "The exact Lisbon–Chania connection remains live",
-      "detail": "PIT–LIS is selling near the current family band, and Aegean sells LIS–ATH–CHQ June 14 in 6h05 from $220. Price the full PIT/Lisbon/Crete open-jaw together before booking."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–LHR–LIS, June 8–21, 2027. Observed family base $4,798; gateway round-trip proxy for open-jaw. Four-passenger British Airways result; the 2h35 LHR option avoids the shorter 1h30 connection at the same price. Not a Crete-return quote. Add the stored $220/person June 14 Lisbon–Athens–Chania component, family bag/seat allowances and an explicit open-jaw uncertainty reserve.",
+      "reviewedAt": "2026-09-11"
     },
     "portugal-sicily": {
       "status": "current-proxy",
-      "headline": "The exact June 14 Lisbon–Palermo one-stop remains the route",
-      "detail": "No Monday nonstop is offered. LIS–PMO sells June 14 from $290 with one stop in about 7h10; keep the transfer day clear and do not advertise the Tuesday easyJet nonstop for this itinerary."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–LHR–LIS, June 8–21, 2027. Observed family base $4,798; gateway round-trip proxy for open-jaw. Four-passenger British Airways result; not a Catania-return quote. The stored Monday June 14 Lisbon–Palermo component is $290/person, not Tuesday’s cheaper nonstop. Add bags/seats and an open-jaw uncertainty reserve.",
+      "reviewedAt": "2026-09-11"
     },
     "sardinia-corsica": {
       "status": "current-proxy",
-      "headline": "Exact Sardinia inventory is live, but the old low airfare floor is gone",
-      "detail": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–LHR–OLB, June 10–23, 2027. Observed family base $5,316; gateway round-trip proxy for open-jaw. Four-passenger BA result with a long LHR wait; does not price Cagliari exit. Reject London airport-change alternatives.",
+      "reviewedAt": "2026-09-11"
     },
     "short-acadia": {
-      "status": "confirmed",
-      "headline": "No nonstop is sold on the exact dates",
-      "detail": "June 12–19 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "No nonstop is sold on the exact dates",
+        "detail": "June 12–19, 2027 has protected one-stop PIT–PWM tickets from about $417 per traveler. Plan 3½–5 hours in the air each way and use a $1.8k–$2.2k family flight band."
+      }
     },
     "short-alaska": {
-      "status": "confirmed",
-      "headline": "Exact one-stop Alaska flights are selling",
-      "detail": "PIT–ANC is available June 12–19 from about $463 per traveler via Seattle, with practical 9h57–10h52 outbound options. The existing family flight band remains adequate."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "Alaska markets Pittsburgh–Anchorage fares, currently for other dates and one passenger. June 12–19, 2027 family availability, Seattle connections and eastbound arrival date require checkout verification. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "Exact one-stop Alaska flights are selling",
+        "detail": "PIT–ANC is available June 12–19, 2027 from about $463 per traveler via Seattle, with practical 9h57–10h52 outbound options. The existing family flight band remains adequate."
+      }
     },
     "short-algarve": {
-      "status": "confirmed",
-      "headline": "Exact Faro flights are selling near the top of the old band",
-      "detail": "PIT–FAO sells June 12–20 from about $1,513 per traveler with one stop. Raise the family flight allowance to $6.2k–$7.0k including seats and bags."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "BA lists London Heathrow and London City service to Faro. Require the same London airport and one through-ticket from Pittsburgh; no June 12–20, 2027 family quote was reproduced. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "Exact Faro flights are selling near the top of the old band",
+        "detail": "PIT–FAO sells June 12–20, 2027 from about $1,513 per traveler with one stop. Raise the family flight allowance to $6.2k–$7.0k including seats and bags."
+      }
     },
     "short-azores": {
-      "status": "confirmed",
-      "headline": "A protected one-stop now replaces the Boston self-transfer",
-      "detail": "United sells PIT–EWR–PDL June 11–19 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "A protected one-stop now replaces the Boston self-transfer",
+        "detail": "United sells PIT–EWR–PDL June 11–19, 2027 from about $1,627 per traveler. Use a $6.6k–$7.4k family air band; no Boston overnight or separate ticket is required."
+      }
     },
     "short-iceland": {
-      "status": "confirmed",
-      "headline": "The exact PIT–KEF nonstop is selling",
-      "detail": "Icelandair sells the June 13 outbound nonstop and the June 21 return from $709 per traveler; protected one-stop backups start near $654. The existing family air allowance still works."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "The exact PIT–KEF nonstop is selling",
+        "detail": "Icelandair sells the June 13 outbound nonstop and the June 21 return from $709 per traveler; protected one-stop backups start near $654. The existing family air allowance still works."
+      }
     },
     "short-ischia": {
-      "status": "confirmed",
-      "headline": "Exact Naples flights are selling with one stop",
-      "detail": "PIT–NAP sells June 12–20 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "The airport-hosted United release documents Newark–Naples seasonal service historically, not June 2027 availability. Require a protected PIT–NAP ticket and a weather-safe Naples/Ischia ferry buffer. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "Exact Naples flights are selling with one stop",
+        "detail": "PIT–NAP sells June 12–20, 2027 from about $1,353 per traveler with one stop, including Air Canada/United and British Airways options. The current family airfare band remains sound."
+      }
     },
     "short-madeira": {
-      "status": "confirmed",
-      "headline": "The dates are bookable, but the old airfare estimate is unusable",
-      "detail": "Acceptable protected PIT–FNC itineraries June 11–19 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "The dates are bookable, but the old airfare estimate is unusable",
+        "detail": "Acceptable protected PIT–FNC itineraries June 11–19, 2027 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
+      }
     },
     "short-portugal": {
+      "reviewedAt": "2026-09-11",
       "status": "current-proxy",
-      "headline": "Lisbon inventory is live; the Faro open-jaw must still price as one ticket",
-      "detail": "PIT–LIS is about $1,405 per traveler for June 12–20. The existing $5.0k–$6.2k family range remains plausible only if FAO–PIT prices cleanly in the multi-city search."
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "TAP markets Lisbon service, not the required complete June 12–20, 2027 LIS-in/FAO-out Pittsburgh family ticket. Price both ends together; retain the Lisbon airport-night fallback if Faro does not work. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "current-proxy",
+        "headline": "Lisbon inventory is live; the Faro open-jaw must still price as one ticket",
+        "detail": "PIT–LIS is about $1,405 per traveler for June 12–20, 2027. The existing $5.0k–$6.2k family range remains plausible only if FAO–PIT prices cleanly in the multi-city search."
+      }
     },
     "short-puerto-rico": {
-      "status": "confirmed",
-      "headline": "Exact protected one-stop flights are selling",
-      "detail": "PIT–SJU sells June 12–19 from about $571 per traveler via Charlotte or Philadelphia. Keep the one-stop itinerary and a $2.4k–$3.2k family allowance including seats and bags."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "American markets PIT–SJU for other dates and one adult; Basic Economy and optional-fee caveats apply. No June 12–19, 2027 four-passenger fare or connection protection was reproduced. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "Exact protected one-stop flights are selling",
+        "detail": "PIT–SJU sells June 12–19, 2027 from about $571 per traveler via Charlotte or Philadelphia. Keep the one-stop itinerary and a $2.4k–$3.2k family allowance including seats and bags."
+      }
     },
     "short-sicily": {
-      "status": "confirmed",
-      "headline": "The exact Catania flight is live—and materially more expensive",
-      "detail": "PIT–CTA sells June 12–20 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
+      "reviewedAt": "2026-09-11",
+      "status": "current-proxy",
+      "headline": "Recheck exact dates and four seats before booking",
+      "detail": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats. Existing costs are planning allowances, not a fresh quote. Bags, seats, fare rules and protected connections must be priced for all four.",
+      "historicalObservation": {
+        "status": "confirmed",
+        "headline": "The exact Catania flight is live—and materially more expensive",
+        "detail": "PIT–CTA sells June 12–20, 2027 from about $1,886 per traveler with one stop. Raise the family flight line to $7.6k–$8.4k and the trip total accordingly."
+      }
     },
     "sicily-malta": {
       "status": "current-proxy",
-      "headline": "The exact Catania–Malta hop is selling",
-      "detail": "PIT–CTA is selling June 10–23 from $1,449 round trip, and Ryanair/Malta Air sells June 20 CTA–MLA nonstops from $54 in 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–LHR–PMO, June 10–23, 2027. Observed family base $5,667; gateway round-trip proxy for open-jaw. Four-passenger BA result; does not price Malta exit or CTA–MLA flight.",
+      "reviewedAt": "2026-09-11"
     },
     "slovenia-adriatic": {
       "status": "confirmed",
-      "headline": "Exact Ljubljana round trips are selling",
-      "detail": "PIT–LJU is available June 8–22 from $1,347 round trip with two stops. Exact inventory remains live; compare the protected Ljubljana routing with the Venice-drive fallback before purchase."
+      "headline": "Family cash audit: complete round-trip",
+      "detail": "PIT–YYZ–MUC–LJU / LJU–EWR–PIT. Observed family base $5,342; complete round-trip. Four-passenger June 8–22, 2027 booking option. Outbound arrives June 9 12:35, with 3h05 YYZ and 1h35 MUC connections. Return nonstop LJU–EWR then 2h30 connection to PIT. This contradicts the old claim that Ljubljana has no long-haul service. Final airline checkout remains required.",
+      "reviewedAt": "2026-09-11"
     },
     "southern-france": {
       "status": "current-proxy",
       "headline": "Nice inventory is live; Marseille must still price in the open-jaw",
-      "detail": "PIT–NCE sells June 10–23 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23."
+      "detail": "PIT–NCE sells June 10–23, 2027 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23."
     },
     "spain": {
       "status": "current-proxy",
       "headline": "Madrid inventory is live and fits the current family band",
-      "detail": "PIT–MAD sells June 3–16 from $1,092 round trip with one stop. Confirm AGP–PIT on the same protected open-jaw before removing the Madrid-train fallback."
+      "detail": "PIT–MAD sells June 3–16, 2027 from $1,092 round trip with one stop. Confirm AGP–PIT on the same protected open-jaw before removing the Madrid-train fallback."
     },
     "switzerland-crete": {
       "status": "current-proxy",
-      "headline": "Zurich and the exact Heraklion hop are selling",
-      "detail": "PIT–ZRH is selling June 8–22 from $1,136 round trip. The exact June 14 ZRH–HER nonstop is available from $149 in 2h55; keep the Heraklion-to-Chania drive in the plan."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–JFK–ZRH, June 8–22, 2027. Observed family base $4,545; gateway round-trip proxy for open-jaw. Four-passenger Delta result; does not price Sicily exit or the Zurich–Catania hop.",
+      "reviewedAt": "2026-09-11"
     },
     "switzerland-sicily": {
       "status": "current-proxy",
-      "headline": "Zurich and the exact Catania hop are selling",
-      "detail": "PIT–ZRH is selling June 8–22 from $1,136 round trip. Edelweiss/SWISS sells the exact June 14 ZRH–CTA nonstop from $202 in 2h05; cheaper one-stop options also exist."
+      "headline": "Family cash audit: gateway round-trip proxy for open-jaw",
+      "detail": "PIT–JFK–ZRH, June 8–22, 2027. Observed family base $4,545; gateway round-trip proxy for open-jaw. Four-passenger Delta result; does not price Sicily exit or the Zurich–Catania hop.",
+      "reviewedAt": "2026-09-11"
     },
     "turkish-riviera": {
       "status": "current-proxy",
       "headline": "Antalya inventory is live below the prior round-trip proxy",
-      "detail": "PIT–AYT sells June 10–23 from $1,563 round trip with one stop. Do not lower the family budget until DLM–PIT prices on the same protected open-jaw ticket."
+      "detail": "PIT–AYT sells June 10–23, 2027 from $1,563 round trip with one stop. Do not lower the family budget until DLM–PIT prices on the same protected open-jaw ticket."
     }
   }
 }

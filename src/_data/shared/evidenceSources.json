@@ -1510,7 +1510,7 @@
     "tier": "observed-quote",
     "url": "https://www.icelandair.com/en-us/flights/flights-from-pittsburgh-to-rome",
     "publisher": "Icelandair",
-    "scope": "Observed July 12, 2026: a separate 2027 PIT–FCO round-trip window displayed from $1,114 per traveler. It is a bounded route-price signal, not the June 10–23 stopover quote."
+    "scope": "Observed July 12, 2026: a separate 2027 PIT–FCO round-trip window displayed from $1,114 per traveler. It is a bounded route-price signal, not the June 10–23, 2027 stopover quote."
   },
   "alilauro-naples-ischia-2026": {
     "label": "Alilauro Naples–Ischia 2026 summer schedule and fares",
@@ -2197,5 +2197,89 @@
     "url": "https://parks.ca.gov/?page_id=638",
     "publisher": "California State Parks",
     "scope": "Official park access, visitor information and conditions for the optional San Diego variant."
+  },
+  "capital-one-fixed-travel": {
+    "label": "Capital One eligible travel redemption rules",
+    "tier": "official",
+    "publisher": "Capital One",
+    "url": "https://www.capitalone.com/learn-grow/money-management/ways-to-redeem-venture-miles/",
+    "scope": "Eligible recent travel purchases can be covered within 90 days; merchant coding controls eligibility. No airline award seats are implied. Current 1-cent rate independently corroborated by The Points Guy fixed-value redemption guide."
+  },
+  "google-flights-family-audit": {
+    "label": "Four-passenger cash flight audit, September 11, 2026",
+    "tier": "observed-quote",
+    "publisher": "Google Flights",
+    "url": "https://www.google.com/travel/flights",
+    "scope": "Party is 3 adult fares plus 1 child age 2–11. Reproduction dates, airports, carriers, times and price stage are recorded per trip in rerankingAudit.json. Four complete outer cash booking options; other results are gateway proxies. No airline checkout or award-seat confirmation is implied."
+  },
+  "short-acadia-route-review-20260911": {
+    "label": "Pittsburgh International Airport route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "Pittsburgh International Airport",
+    "url": "https://flypittsburgh.com/pittsburgh-international-airport/flights/destinations/",
+    "scope": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote."
+  },
+  "short-alaska-route-review-20260911": {
+    "label": "Alaska Airlines route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "Alaska Airlines",
+    "url": "https://www.alaskaair.com/en/flights-from-pittsburgh-to-anchorage",
+    "scope": "Alaska markets Pittsburgh–Anchorage fares, currently for other dates and one passenger. June 12–19, 2027 family availability, Seattle connections and eastbound arrival date require checkout verification."
+  },
+  "short-algarve-route-review-20260911": {
+    "label": "British Airways route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "British Airways",
+    "url": "https://www.britishairways.com/content/en/us/flights/portugal/algarve",
+    "scope": "BA lists London Heathrow and London City service to Faro. Require the same London airport and one through-ticket from Pittsburgh; no June 12–20, 2027 family quote was reproduced."
+  },
+  "short-azores-route-review-20260911": {
+    "label": "Azores Airlines route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "Azores Airlines",
+    "url": "https://flights.azoresairlines.pt/en/flights-to-azores",
+    "scope": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote."
+  },
+  "short-iceland-route-review-20260911": {
+    "label": "Icelandair route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "Icelandair",
+    "url": "https://www.icelandair.com/en-us/flights/flights-from-pittsburgh-to-reykjavik",
+    "scope": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates."
+  },
+  "short-ischia-route-review-20260911": {
+    "label": "Naples Airport / United Airlines route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "Naples Airport / United Airlines",
+    "url": "https://www.aeroportodinapoli.it/documents/d/gesac/united-airlines-extends-seasonal-service-between-naples-and-new-york-final-pdf?download=true",
+    "scope": "The airport-hosted United release documents Newark–Naples seasonal service historically, not June 2027 availability. Require a protected PIT–NAP ticket and a weather-safe Naples/Ischia ferry buffer."
+  },
+  "short-madeira-route-review-20260911": {
+    "label": "TAP Air Portugal route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "TAP Air Portugal",
+    "url": "https://www.flytap.com/en_us/flights-to-funchal",
+    "scope": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk."
+  },
+  "short-portugal-route-review-20260911": {
+    "label": "TAP Air Portugal route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "TAP Air Portugal",
+    "url": "https://www.flytap.com/en_us/flights-to-lisbon",
+    "scope": "TAP markets Lisbon service, not the required complete June 12–20, 2027 LIS-in/FAO-out Pittsburgh family ticket. Price both ends together; retain the Lisbon airport-night fallback if Faro does not work."
+  },
+  "short-puerto-rico-route-review-20260911": {
+    "label": "American Airlines route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "American Airlines",
+    "url": "https://www.aa.com/en-us/flights-from-pittsburgh-to-san-juan",
+    "scope": "American markets PIT–SJU for other dates and one adult; Basic Economy and optional-fee caveats apply. No June 12–19, 2027 four-passenger fare or connection protection was reproduced."
+  },
+  "short-sicily-route-review-20260911": {
+    "label": "Delta Air Lines route evidence reviewed September 11, 2026",
+    "tier": "operator",
+    "publisher": "Delta Air Lines",
+    "url": "https://news.delta.com/discover-captivating-catania-delta-introduces-nonstop-service-sicily",
+    "scope": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats."
   }
 }

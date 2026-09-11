@@ -11,11 +11,14 @@
       "nights": 13,
       "ptoDays": 9,
       "budget": {
-        "lowUsd": 13200,
+        "lowUsd": 11200,
         "expectedUsd": null,
-        "highUsd": 18890,
+        "highUsd": 16890,
         "distribution": "planning-band",
-        "chanceUnderPreferredMax": null
+        "chanceUnderPreferredMax": null,
+        "grossLowUsd": 13200,
+        "grossHighUsd": 18890,
+        "pointsSavingsUsd": 2000
       },
       "removedExperiences": [],
       "notes": "The checked-in itinerary remains the immutable comparison baseline.",

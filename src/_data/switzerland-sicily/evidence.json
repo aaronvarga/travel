@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "switzerland-sicily",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The eight categories reconcile exactly to $14,000–$19,350. The entire band is above the $12k target and the high case is $4,350 above the $15k preferred maximum. Switzerland's rail, lodging, and mountain-excursion costs drive this; the transatlantic open-jaw is proxy arithmetic, not a live quote.",
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $14,000–$19,350 less a single $2,000 fixed travel redemption yields $12,000–$17,350. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,27 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "jungfrau-railways",
-        "etna-funivia"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 14000,
+        "lowUsd": 12000,
         "expectedUsd": null,
-        "highUsd": 19350,
+        "highUsd": 17350,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 6,
-        "arithmetic": "6200/8900 + 2230/2850 + 2150/2650 + 820/1150 + 2100/2700 + 500/1100 = 14000/19350"
+        "lineItemCount": 8,
+        "arithmetic": "5200/7200 + 1000/1700 + 1150/1450 + 1080/1400 + 2150/2650 + 820/1150 + 2100/2700 + 500/1100 = 14000/19350 gross; minus 2000/2000 = 12000/17350 net",
+        "grossLowUsd": 14000,
+        "grossHighUsd": 19350,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-11",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "switzerland-sicily/main.json #totals target/high columns; exact category reconciliation",
-        "jungfrau-railways": "Jungfraujoch and First fares that dominate the Swiss excursion line",
-        "etna-funivia": "Funivia dell'Etna cable-car fare anchoring the Sicily activity line"
+        "internal-itinerary": "switzerland-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

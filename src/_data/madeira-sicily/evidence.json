@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-sicily",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 1,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $12,600–$15,900. Budget 1/5 follows the shared rubric; component fares remain snapshots and require a final protected checkout.",
+      "score": 2,
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $12,600–$15,950 less a single $2,000 fixed travel redemption yields $10,600–$13,950. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,27 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "easyjet-lis-pmo",
-        "google-flights-2027-current-audit"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 12600,
+        "lowUsd": 10600,
         "expectedUsd": null,
-        "highUsd": 15900,
+        "highUsd": 13950,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 5,
-        "arithmetic": "7200–8600 + 2350–3300 + 2100–2450 + 600–1100 + 350–500 = 12600–15950; displayed 12600–15900"
+        "lineItemCount": 7,
+        "arithmetic": "5900/6800 + 2350/3300 + 2100/2450 + 850/1200 + 450/600 + 600/1100 + 350/500 = 12600/15950 gross; minus 2000/2000 = 10600/13950 net",
+        "grossLowUsd": 12600,
+        "grossHighUsd": 15950,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "madeira-sicily/main.json #totals; five categories and explicit flight gate",
-        "easyjet-lis-pmo": "Operator timetable observed 2026-07-10 showed August 2026 one-way examples around €149–€258 per passenger before optional bags; not June 2027 or the full flight stack",
-        "google-flights-2027-current-audit": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer."
+        "internal-itinerary": "madeira-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "slovenia-adriatic",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The six categories reconcile exactly to $10,700–$14,800, but the two-stop Ljubljana airfare and 2027 lodging remain planning proxies. With medium-confidence evidence and a high case within $200 of the preferred maximum, the rubric caps Budget at 2/5 until the full family quote is confirmed.",
+      "score": 4,
+      "rationale": "Raise airfare from $4,800–6,400 to $6,300–7,000: observed family base $5,342, four checked bags $720 and estimated paid seats $200–800. Round conservatively; do not assume free assigned seats. Gross $12,200–$15,400 less a single $2,000 fixed travel redemption yields $10,200–$13,400. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -46,7 +46,7 @@
     },
     "ease": {
       "score": 3,
-      "rationale": "On the ground this is one of the easiest plans on the board: one country, one rental car, four bases in a tidy loop, short drives, no intra-Europe flight and no open-jaw. It scores 3 rather than higher only because Ljubljana has no long-haul service, so the air routing is a two-stop itinerary with a fragile final leg.",
+      "rationale": "One country and one car, multiple bases and a long alpine/coastal loop support Ease 3/5. The observed practical outbound has two connections; the June 22 return has one via Newark. The old no-long-haul-service claim is obsolete.",
       "confidence": "high",
       "evidence": [
         "operational-load"
@@ -101,25 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "lju-vce-routing"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 10700,
+        "lowUsd": 10200,
         "expectedUsd": null,
-        "highUsd": 14800,
+        "highUsd": 13400,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "4800/6400 + 1950/2500 + 1000/1500 + 850/1250 + 1700/2250 + 400/900 = 10700/14800"
+        "arithmetic": "6300/7000 + 1950/2500 + 1000/1500 + 850/1250 + 1700/2250 + 400/900 = 12200/15400 gross; minus 2000/2000 = 10200/13400 net",
+        "grossLowUsd": 12200,
+        "grossHighUsd": 15400,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-11",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "slovenia-adriatic/main.json #totals target/high columns; exact category reconciliation",
-        "lju-vce-routing": "PIT->LJU two-stop vs PIT->VCE single-connection fare bands that set the airfare line"
+        "internal-itinerary": "slovenia-adriatic/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–YYZ–MUC–LJU / LJU–EWR–PIT: complete round-trip, family base $5342; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

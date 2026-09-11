@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "sardinia-corsica",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $12,900–$18,300. The Budget 1/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $12,880–$19,300 less a single $2,000 fixed travel redemption yields $10,880–$17,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,25 +101,30 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 12900,
+        "lowUsd": 10880,
         "expectedUsd": null,
-        "highUsd": 18300,
+        "highUsd": 17300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 4,
-        "arithmetic": "5400–6400 + 3200–5500 + 1280–2400 + 3000–4000 = 12880–18300; displayed 12900–18300"
+        "lineItemCount": 9,
+        "arithmetic": "5400/6400 + 3200/5500 + 950/1700 + 180/350 + 150/350 + 1400/2200 + 900/1600 + 300/500 + 400/700 = 12880/19300 gross; minus 2000/2000 = 10880/17300 net",
+        "grossLowUsd": 12880,
+        "grossHighUsd": 19300,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "Sardinia & Corsica; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning."
+        "internal-itinerary": "sardinia-corsica/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–LHR–OLB, June 10–23: gateway round-trip proxy for open-jaw, family base $5316; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

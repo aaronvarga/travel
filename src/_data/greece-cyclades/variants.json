@@ -11,11 +11,14 @@
       "nights": 12,
       "ptoDays": 8,
       "budget": {
-        "lowUsd": 11650,
+        "lowUsd": 10800,
         "expectedUsd": null,
-        "highUsd": 16000,
+        "highUsd": 14970,
         "distribution": "planning-band",
-        "chanceUnderPreferredMax": null
+        "chanceUnderPreferredMax": null,
+        "grossLowUsd": 12800,
+        "grossHighUsd": 16970,
+        "pointsSavingsUsd": 2000
       },
       "removedExperiences": [],
       "notes": "The checked-in itinerary is the immutable comparison baseline: Athens 2 nights + Naxos 4 + Paros 2 + Milos 3 + Athens 1 buffer, ferries outbound through the islands and a Milos->Athens domestic flight home, with a rental car on each island.",

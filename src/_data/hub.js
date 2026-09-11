@@ -39,5 +39,7 @@ module.exports = function () {
     });
   const active = orderedTrips.filter((trip) => !trip.excluded);
   const excluded = orderedTrips.filter((trip) => trip.excluded);
-  return { ...summary, orderedTrips, activeTrips: active, excludedTrips: excluded, analysis };
+  const labels = { default: 'Default /55', value: 'Value', 'lowest-friction': 'Lowest friction', 'maximum-swim': 'Maximum swim', 'epic-scenery': 'Epic scenery' };
+  const priorityRows = Object.entries(analysis?.presetResults || {}).map(([id, slugs]) => ({ id, label: labels[id] || id, winner: active.find(t => t.slug === slugs[0]), runner: active.find(t => t.slug === slugs[1]) }));
+  return { ...summary, orderedTrips, activeTrips: active, excludedTrips: excluded, analysis, priorityRows, portugal: active.find(t => t.slug === 'portugal') };
 };

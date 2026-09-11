@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-madeira",
-  "reviewedAt": "2026-08-08",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -64,7 +64,7 @@
     "risk": {
       "score": 3,
       "rationale": "The one-base plan avoids compounding logistics, but Madeira Airport wind, unpublished exact June 2027 protected routing, trail closures and Atlantic swell remain material managed risks.",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         "route-readiness"
       ]
@@ -98,11 +98,11 @@
     {
       "id": "budget-band",
       "category": "budget",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "derived",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "short-madeira-route-review-20260911"
       ],
       "value": {
         "lowUsd": 10900,
@@ -112,13 +112,15 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "8200/9000 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 10900/13500"
+        "arithmetic": "8200/9000 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 10900/13500",
+        "currentSupplierQuote": false,
+        "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "short-madeira/main.json #budget and #totals; exact six-line low/high category reconciliation",
-        "google-flights-2027-current-audit": "Acceptable protected PIT–FNC itineraries June 11–19 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
+        "internal-itinerary": "short-madeira/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-madeira-route-review-20260911": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk."
       },
       "claimType": "proxy"
     },
@@ -145,7 +147,7 @@
       "verifiedAt": "2026-07-13",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "decisionProfile.json tripWindows.short-madeira plus the required Pittsburgh full days June 24–26"
+        "decision-profile": "decisionProfile.json tripWindows.short-madeira plus the required Pittsburgh full days June 24–26, 2027"
       },
       "claimType": "confirmed"
     },
@@ -332,31 +334,29 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "confirmed",
-      "confidence": "high",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "ana-madeira-wind-operations",
-        "google-flights-2027-current-audit"
+        "short-madeira-route-review-20260911"
       ],
       "value": {
-        "status": "confirmed",
+        "status": "current-proxy",
         "singleTicket": true,
         "maxConnections": 2,
-        "preferredConnections": 1,
-        "june2027ProtectedTicketVerified": false,
-        "routeRule": "PIT–European hub–FNC on one protected round trip; reject separate tickets",
-        "observedRoundTripPerTravelerUsd": 723,
-        "currentFlightAudit": "Acceptable protected PIT–FNC itineraries June 11–19 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band.",
-        "exact2027FlightsVerified": true,
-        "june2027Verified": true
+        "exact2027FlightsVerified": false,
+        "june2027Verified": false,
+        "fourSeatsVerified": false,
+        "protectionVerified": false,
+        "singleTicketIsBookingRequirement": true,
+        "currentFlightAudit": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk.",
+        "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-08-08",
-      "expiresAt": "2026-09-08",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "Skyscanner PIT–FNC route page observed 2026-07-13: no nonstop, recent all-date round-trip low $723; exact June 2027 unavailable",
-        "ana-madeira-wind-operations": "Official ANA operational notice documents strong-wind disruption sensitivity at Madeira Airport",
-        "google-flights-2027-current-audit": "Acceptable protected PIT–FNC itineraries June 11–19 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
+        "internal-itinerary": "short-madeira/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
+        "short-madeira-route-review-20260911": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk."
       },
       "claimType": "proxy"
     },
@@ -454,8 +454,68 @@
     "Atlantic temperature and family menu details remain medium-confidence planning inputs"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-08-08",
-    "status": "confirmed",
-    "headline": "The dates are bookable, but the old airfare estimate is unusable"
-  }
+    "reviewedAt": "2026-09-11",
+    "status": "current-proxy",
+    "headline": "Route proxy only; previous fare is historical"
+  },
+  "archivedExpiredFacts": [
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "internal-itinerary",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "lowUsd": 10900,
+        "expectedUsd": null,
+        "highUsd": 13500,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000,
+        "distribution": "planning-band",
+        "lineItemCount": 6,
+        "arithmetic": "8200/9000 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 10900/13500"
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "internal-itinerary": "short-madeira/main.json #budget and #totals; exact six-line low/high category reconciliation",
+        "google-flights-2027-current-audit": "Acceptable protected PIT–FNC itineraries June 11–19, 2027 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "internal-itinerary",
+        "ana-madeira-wind-operations",
+        "google-flights-2027-current-audit"
+      ],
+      "value": {
+        "status": "confirmed",
+        "singleTicket": true,
+        "maxConnections": 2,
+        "preferredConnections": 1,
+        "june2027ProtectedTicketVerified": false,
+        "routeRule": "PIT–European hub–FNC on one protected round trip; reject separate tickets",
+        "observedRoundTripPerTravelerUsd": 723,
+        "currentFlightAudit": "Acceptable protected PIT–FNC itineraries June 11–19, 2027 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
+      },
+      "verifiedAt": "2026-08-08",
+      "expiresAt": "2026-09-08",
+      "sourceLocators": {
+        "internal-itinerary": "Skyscanner PIT–FNC route page observed 2026-07-13: no nonstop, recent all-date round-trip low $723; exact June 2027 unavailable",
+        "ana-madeira-wind-operations": "Official ANA operational notice documents strong-wind disruption sensitivity at Madeira Airport",
+        "google-flights-2027-current-audit": "Acceptable protected PIT–FNC itineraries June 11–19, 2027 are about $2,004–$2,053 per traveler with two stops; the cheaper $1,750 option changes London airports. Use an $8.2k–$9.0k family flight band."
+      },
+      "claimType": "proxy"
+    }
+  ]
 }

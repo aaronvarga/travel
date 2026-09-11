@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "dolomites-sardinia",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 6-line-item family budget is $13,200–$18,890 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,200–$18,890 less a single $2,000 fixed travel redemption yields $11,200–$16,890. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,24 +100,31 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 13200,
+        "lowUsd": 11200,
         "expectedUsd": null,
-        "highUsd": 18890,
+        "highUsd": 16890,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 6,
-        "arithmetic": "13200–18900 line-item sum; tolerance 150"
+        "lineItemCount": 11,
+        "arithmetic": "5400/7000 + 450/780 + 500/760 + 900/1400 + 750/1200 + 600/900 + 1200/1850 + 450/650 + 500/750 + 2000/2900 + 450/700 = 13200/18890 gross; minus 2000/2000 = 11200/16890 net",
+        "grossLowUsd": 13200,
+        "grossHighUsd": 18890,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "Venice, Dolomites & Sardinia; canonical 2027-06-27 → 2027-07-11; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "dolomites-sardinia/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–LHR–VCE, June 27–July 11: gateway round-trip proxy for open-jaw, family base $5183; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

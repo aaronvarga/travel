@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "hawaii",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-09-11",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 1,
-      "rationale": "The eight-line canonical rollup reconciles to $11,000–$15,800 including insurance/miscellaneous; the lower itemized table excludes that insurance line. Because the high case exceeds the $15,000 preference and no June 2027 quotes exist, the rubric supports 1/5.",
+      "score": 2,
+      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $11,000–$15,800 less a single $2,000 fixed travel redemption yields $9,000–$13,800. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,24 +100,31 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "capital-one-fixed-travel",
+        "google-flights-family-audit"
       ],
       "value": {
-        "lowUsd": 11000,
+        "lowUsd": 9000,
         "expectedUsd": null,
-        "highUsd": 15800,
+        "highUsd": 13800,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
-        "lineItemCount": 8,
-        "arithmetic": "5,000–6,400 transportation + 2,900–4,800 lodging + 1,600–2,200 food + 1,100–1,700 activities + 400–700 insurance/misc = 11,000–15,800"
+        "lineItemCount": 12,
+        "arithmetic": "3600/4400 + 300/600 + 1100/1400 + 1400/2300 + 900/1500 + 600/1000 + 1600/2200 + 180/280 + 180/260 + 420/650 + 320/510 + 400/700 = 11000/15800 gross; minus 2000/2000 = 9000/13800 net",
+        "grossLowUsd": 11000,
+        "grossHighUsd": 15800,
+        "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-09-11",
+      "expiresAt": "2026-10-11",
       "sourceLocators": {
-        "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "hawaii/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-family-audit": "PIT–SEA–HNL, June 5–15: gateway round-trip proxy for open-jaw, family base $3488; full allowances and unquoted components in rerankingAudit.json"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",

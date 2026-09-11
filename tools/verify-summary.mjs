@@ -65,6 +65,8 @@ active.forEach((trip, index) => {
   const card = $(`.shortlist > .sl-grid .sl-card[href="locations/${trip.slug}/index.html"]`).first();
   const displayed = card.find('.sl-rank').text().trim();
   if (displayed !== `#${index + 1}`) bad.push(`${trip.slug}: static rank ${displayed} != #${index + 1}`);
+  const matrix=$(`[data-matrix-trip="${trip.slug}"]`);
+  if(matrix.length!==1||!matrix.text().includes(`#${index+1} ·`)||!matrix.text().includes(`${trip.totalBaked}/55`))bad.push(`${trip.slug}: practical matrix rank/score mismatch`);
 });
 
 const renderedPages = siteMode
@@ -83,6 +85,11 @@ for (const page of renderedPages) {
   if (page !== indexTarget) {
     const pageSlug = page.match(/\/locations\/([^/]+)\/index\.html$/)?.[1];
     const pageTrip = summary.trips.find((trip) => trip.slug === pageSlug);
+    if(pageTrip && !pageTrip.excluded){
+      const rank=expectedSlugs.indexOf(pageSlug)+1;
+      if(pageDocument('.tldr').length!==1||Number(pageDocument('.tldr').attr('data-audit-rank'))!==rank)bad.push(`${pageSlug}: TLDR rank/duplicate mismatch`);
+      if(pageDocument('#capital-one-points').length!==1)bad.push(`${pageSlug}: points section duplicate/missing`);
+    }
     const expectedTravelFrame = formatCompactTravelWindow(pageTrip?.travelWindow);
     const travelFrames = pageDocument('[data-travel-frame]');
     if (travelFrames.length !== 1) bad.push(`${path.relative(root, page)}: expected one hero travel-frame block, found ${travelFrames.length}`);

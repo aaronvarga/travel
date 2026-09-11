@@ -37,15 +37,17 @@ for (const entry of fs.readdirSync(dataDir, { withFileTypes: true })) {
 
   const sumLow = rows.reduce((sum, row) => sum + row.lowUsd, 0);
   const sumHigh = rows.reduce((sum, row) => sum + row.highUsd, 0);
-  const toleranceUsd = 150;
-  const deltaLow = sumLow - budget.floorUsd;
-  const deltaHigh = sumHigh - budget.ceilUsd;
-  const displayedDeltaLow = displayed ? displayed.lowUsd - budget.floorUsd : null;
-  const displayedDeltaHigh = displayed ? displayed.highUsd - budget.ceilUsd : null;
+  const grossLow = budget.grossFloorUsd ?? budget.floorUsd;
+  const grossHigh = budget.grossCeilUsd ?? budget.ceilUsd;
+  const toleranceUsd = budget.pointsSavingsUsd == null ? 150 : 0;
+  const deltaLow = sumLow - grossLow;
+  const deltaHigh = sumHigh - grossHigh;
+  const displayedDeltaLow = displayed ? displayed.lowUsd - grossLow : null;
+  const displayedDeltaHigh = displayed ? displayed.highUsd - grossHigh : null;
   const arithmetic = {
     lineItems: rows.length,
-    sumLowUsd: roundHundred(sumLow),
-    sumHighUsd: roundHundred(sumHigh),
+    sumLowUsd: sumLow,
+    sumHighUsd: sumHigh,
     displayedLowUsd: displayed?.lowUsd ?? null,
     displayedHighUsd: displayed?.highUsd ?? null,
     deltaLowUsd: roundHundred(deltaLow),
@@ -58,7 +60,7 @@ for (const entry of fs.readdirSync(dataDir, { withFileTypes: true })) {
     ? 'matched' : 'needs-review';
   results.push({
     slug: entry.name,
-    canonical: { lowUsd: budget.floorUsd, highUsd: budget.ceilUsd },
+    canonical: { lowUsd: grossLow, highUsd: grossHigh, netLowUsd: budget.floorUsd, netHighUsd: budget.ceilUsd },
     status,
     arithmetic,
     lineItems: rows,

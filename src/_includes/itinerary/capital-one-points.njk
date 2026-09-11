@@ -27,9 +27,22 @@
   <div class="section-label">
     <p class="eyebrow">200,000 Capital One Miles</p>
     <h2>Use the points where this trip is most expensive</h2>
-    <p>This is a booking target, not observed award availability. Search all four seats first, compare the same itinerary in cash, and transfer only when the complete award is ready to ticket.</p>
+    {% if pointsPlan.rankableStrategy %}<p>The ranking uses a fixed $2,000 eligible-travel credit. No transfer award or four-seat award availability is confirmed.</p>{% else %}<p>This is a booking target, not observed award availability. Search all four seats first, compare the same itinerary in cash, and transfer only when the complete award is ready to ticket.</p>{% endif %}
   </div>
 
+{% if pointsPlan.rankableStrategy %}
+  <div class="points-plan-grid">
+    <article class="points-plan-hero"><span class="points-plan-tag">Defensible ranking strategy</span><h3>200,000 miles → $2,000 travel credit</h3><p>{{ pointsPlan.bookingCaveat }}</p><p>{{ pointsPlan.cashImpact }}</p><p><strong>No four-seat award is confirmed.</strong> Transfer opportunities below are unverified upside and contribute zero additional ranking savings.</p></article>
+    <div class="points-plan-metrics">
+      <article><span>Pay cash, retain all miles</span><strong>{{ pointsPlan.grossCashRangeUsd[0] | money }}–{{ pointsPlan.grossCashRangeUsd[1] | money }}</strong></article>
+      <article><span>Net trip after fixed redemption</span><strong>{{ pointsPlan.netCashRangeUsd[0] | money }}–{{ pointsPlan.netCashRangeUsd[1] | money }}</strong><p>$2,000 savings · 1¢ per mile · 200,000 miles used</p></article>
+      <article><span>Remaining airfare out of pocket</span><strong>{{ pointsPlan.remainingCashAirfareUsd[0] | money }}–{{ pointsPlan.remainingCashAirfareUsd[1] | money }}</strong><p>Cash airfare with its taxes/allowances, less the credit. No separate award charges because this is not an award booking.</p></article>
+    </div>
+  </div>
+  <div class="points-plan-actions"><article><h3>Mixed cash and awards</h3><p>{{ pointsPlan.mixedStrategy }}</p></article><article><h3>Transfer timing and confidence</h3><p>{{ pointsPlan.transferTiming }}</p><p>{{ pointsPlan.availabilityConfidence }}</p></article></div>
+  <details><summary>Airline partner screening — prices and seats are not confirmed</summary><div class="budget-scroll"><table class="budget-tbl"><tr><th>Program / ratio</th><th>Route relevance</th><th>Price and booking limits</th></tr>{% for candidate in pointsPlan.partnerComparisons %}<tr><td><a href="{{ candidate.sourceUrl }}" target="_blank" rel="noreferrer">{{ candidate.program }}</a><br>{{ candidate.ratio }}</td><td>{{ candidate.relevance }}</td><td>{{ candidate.pricing }} {{ candidate.availability }}. Exact award taxes, surcharges, bags, seats, cancellation and positioning totals remain unquoted.</td></tr>{% endfor %}</table></div></details>
+  <p class="points-plan-sources">Checked {{ capitalOnePoints.asOf }}: {% for source in pointsPlan.supportingSources %}<a href="{{ source.url }}" target="_blank" rel="noreferrer">{{ source.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% else %}
   <div class="points-plan-grid">
     <article class="points-plan-hero">
       <span class="points-plan-tag">Best use for this route</span>
@@ -84,5 +97,6 @@
     {%- if pointsPlan.strategy == "aeroplan-california" or pointsPlan.strategy == "aeroplan-hawaii" or pointsPlan.strategy == "fixed-value" or pointsPlan.strategy == "hold-reroute" %} · <a href="{{ capitalOnePoints.sources.aeroplan.url }}" target="_blank" rel="noreferrer">{{ capitalOnePoints.sources.aeroplan.label }}</a>{% endif %}
     {%- if trip.slug == "hawaii" or trip.slug == "maui-kauai" or trip.slug == "turkish-riviera" %} · <a href="{{ capitalOnePoints.sources.turkish.url }}" target="_blank" rel="noreferrer">{{ capitalOnePoints.sources.turkish.label }}</a>{% endif %}
   </p>
+{% endif %}
 </section>
 {%- endif -%}
