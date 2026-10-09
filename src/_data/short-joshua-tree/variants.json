@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-joshua-tree",
-  "canonicalId": "canonical",
+  "canonicalId": "booked-burbank-joshua-tree",
   "variants": [
     {
       "id": "canonical",
       "label": "Palm Springs + one Joshua Tree base",
-      "canonical": true,
+      "canonical": false,
       "status": "documented-live-fares",
       "nights": 4,
       "ptoDays": 2,
@@ -61,8 +61,48 @@
         "google-flights-jtree-audit": "Google Flights PIT–SAN Feb 19–23, 2027 Southwest $328 baseline",
         "ca-parks-anza": "Official Anza-Borrego visitor and trail guidance"
       }
+    },
+    {
+      "id": "booked-burbank-joshua-tree",
+      "label": "Booked Burbank arrival + four Joshua Tree nights",
+      "canonical": true,
+      "status": "travel-booked-airbnb-tentative",
+      "nights": 5,
+      "ptoDays": 4,
+      "budget": {
+        "lowUsd": 5972.52,
+        "expectedUsd": null,
+        "highUsd": 6872.52,
+        "distribution": "planning-band",
+        "chanceUnderPreferredMax": null
+      },
+      "removedExperiences": [
+        "San Diego / Anza-Borrego variant"
+      ],
+      "notes": "American flights, Burbank hotel and Alamo standard SUV booked. Agave Gold Airbnb selected, quoted at $1,597.08 including taxes for four nights, not booked. Optional guide and other expenses remain estimates.",
+      "confidence": "medium",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary",
+        "aa-jtree-booking-2026-10-08",
+        "costco-jtree-booking-2026-10-08",
+        "capitalone-jtree-hotel-2026-10-08",
+        "airbnb-agave-gold"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Updated October 8 itinerary, dates, booked subtotal and nine-item planning range",
+        "aa-jtree-booking-2026-10-08": "Booked receipt issued October 8; four travelers, total $1744.88",
+        "costco-jtree-booking-2026-10-08": "Confirmed Alamo standard SUV BUR–PSP, $557.34 pay later",
+        "capitalone-jtree-hotel-2026-10-08": "Booked hotel Feb18–19; latest selected checkout total $273.22",
+        "airbnb-agave-gold": "Oct8 unsubmitted checkout quote for Feb19–23, two adults and two children"
+      }
     }
   ],
   "alternateStatus": "documented",
-  "alternateNotes": "Use SAN only if Anza-Borrego is itself a headline goal. A day trip from the Joshua Tree cabin is rejected for a four-night stay."
+  "alternateNotes": "Prior variants are retained as historical comparisons; the booked Burbank/PSP route is now canonical.",
+  "historicalVariantIds": [
+    "canonical",
+    "san-anza"
+  ],
+  "bookingStatus": "travel-booked"
 }

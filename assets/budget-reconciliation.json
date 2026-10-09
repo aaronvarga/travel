@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-11T20:32:11.114Z",
+  "generatedAt": "2026-10-08T20:54:53.488Z",
   "trips": [
     {
       "slug": "albania",
@@ -2021,18 +2021,18 @@
     {
       "slug": "short-joshua-tree",
       "canonical": {
-        "lowUsd": 4730,
-        "highUsd": 7400,
-        "netLowUsd": 4730,
-        "netHighUsd": 7400
+        "lowUsd": 5972.52,
+        "highUsd": 6872.52,
+        "netLowUsd": 5972.52,
+        "netHighUsd": 6872.52
       },
       "status": "matched",
       "arithmetic": {
-        "lineItems": 6,
-        "sumLowUsd": 4730,
-        "sumHighUsd": 7400,
-        "displayedLowUsd": 4730,
-        "displayedHighUsd": 7400,
+        "lineItems": 9,
+        "sumLowUsd": 5972,
+        "sumHighUsd": 6872,
+        "displayedLowUsd": 5973,
+        "displayedHighUsd": 6873,
         "deltaLowUsd": 0,
         "deltaHighUsd": 0,
         "displayedDeltaLowUsd": 0,
@@ -2041,40 +2041,58 @@
       },
       "lineItems": [
         {
-          "label": "Flights + bags/seats",
-          "text": "$1,600–$2,100",
-          "lowUsd": 1600,
-          "highUsd": 2100
+          "label": "American flights · booked",
+          "text": "$1,744.88",
+          "lowUsd": 1745,
+          "highUsd": 1745
         },
         {
-          "label": "4-night cabin",
-          "text": "$1,400–$2,600",
-          "lowUsd": 1400,
-          "highUsd": 2600
+          "label": "Burbank hotel · booked, latest checkout total",
+          "text": "$273.22",
+          "lowUsd": 273,
+          "highUsd": 273
         },
         {
-          "label": "Rental car + fuel",
-          "text": "$500–$850",
-          "lowUsd": 500,
-          "highUsd": 850
+          "label": "Alamo standard SUV · booked, pay later",
+          "text": "$557.34",
+          "lowUsd": 557,
+          "highUsd": 557
         },
         {
-          "label": "Food + groceries",
-          "text": "$700–$1,000",
-          "lowUsd": 700,
-          "highUsd": 1000
+          "label": "Agave Gold Airbnb · quoted, not booked",
+          "text": "$1,597.08",
+          "lowUsd": 1597,
+          "highUsd": 1597
         },
         {
-          "label": "Park + climbing guide",
-          "text": "$530–$650",
-          "lowUsd": 530,
-          "highUsd": 650
+          "label": "Fuel + sightseeing parking · estimate",
+          "text": "$150–$250",
+          "lowUsd": 150,
+          "highUsd": 250
+        },
+        {
+          "label": "Food + groceries · estimate",
+          "text": "$800–$1,100",
+          "lowUsd": 800,
+          "highUsd": 1100
+        },
+        {
+          "label": "Park + optional climbing guide · estimate",
+          "text": "$650–$770",
+          "lowUsd": 650,
+          "highUsd": 770
+        },
+        {
+          "label": "Checked bags · optional allowance",
+          "text": "$0–$180",
+          "lowUsd": 0,
+          "highUsd": 180
         },
         {
           "label": "Contingency",
-          "text": "$0–$200",
-          "lowUsd": 0,
-          "highUsd": 200
+          "text": "$200–$400",
+          "lowUsd": 200,
+          "highUsd": 400
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."

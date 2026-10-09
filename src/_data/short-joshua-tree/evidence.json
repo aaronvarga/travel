@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-joshua-tree",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-10-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "The reconciled $4,730–$7,400 family band is fully below the shared target.",
+      "rationale": "Reconciled $5,972.52–$6,872.52 band remains below target; Airbnb is quoted but not booked.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -38,15 +38,15 @@
     },
     "variety": {
       "score": 4,
-      "rationale": "Scrambling, rope climbing, scenic drives, Pioneertown, food and night photography create distinct modes.",
+      "rationale": "Hollywood sightseeing adds a city afternoon to scrambling, optional guided climbing, Pioneertown and photography.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
       ]
     },
     "ease": {
-      "score": 4,
-      "rationale": "One base and PSP are easy; one connection and the east-side drive prevent a perfect score.",
+      "score": 3,
+      "rationale": "Two bases, one one-night hotel stop, two connected flight directions and a mandatory 3–4h desert transfer.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -54,7 +54,7 @@
     },
     "food": {
       "score": 4,
-      "rationale": "A kitchen, Vons and named burger, pizza, pasta and taco fallbacks cover the only base.",
+      "rationale": "Burbank breakfast and fridge/microwave plus a listed kitchen at Agave Gold, grocery run and plain-food fallbacks.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -62,15 +62,15 @@
     },
     "risk": {
       "score": 4,
-      "rationale": "Dry-rock dependence, full-moon expectations and 2027 inventory are explicit, mitigated gates.",
-      "confidence": "medium",
+      "rationale": "Flights and transport are booked; short protected return connection and weather-sensitive climbing require buffers.",
+      "confidence": "high",
       "evidence": [
         "route-readiness"
       ]
     },
     "nights": {
       "score": 1,
-      "rationale": "Four nights derive 1/5 under the shared rubric.",
+      "rationale": "Five nights derive 1/5 under the shared rubric.",
       "confidence": "high",
       "evidence": [
         "itinerary-structure"
@@ -86,7 +86,7 @@
     },
     "pto": {
       "score": 5,
-      "rationale": "Two PTO days derive 5/5 under the shared rubric.",
+      "rationale": "Four PTO weekdays derive 5/5 under the shared rubric.",
       "confidence": "high",
       "evidence": [
         "trip-window"
@@ -97,24 +97,24 @@
     {
       "id": "budget-band",
       "category": "budget",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "derived",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary"
       ],
       "value": {
-        "lowUsd": 4730,
-        "highUsd": 7400,
+        "lowUsd": 5972.52,
+        "highUsd": 6872.52,
         "targetUsd": 12000,
-        "lineItemCount": 6,
-        "arithmetic": "1600–2100 + 1400–2600 + 500–850 + 700–1000 + 530–650 + 0–200 = 4730–7400"
+        "lineItemCount": 9,
+        "arithmetic": "1744.88 + 273.22 + 557.34 + 1597.08 + 150–250 + 800–1100 + 650–770 + 0–180 + 200–400 = 5972.52–6872.52"
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-09-17",
+      "verifiedAt": "2026-10-08",
+      "expiresAt": "2027-02-11",
       "sourceLocators": {
-        "internal-itinerary": "short-joshua-tree/main.json #budget and #totals; six visible line items reconcile to $4,730–$7,400"
+        "internal-itinerary": "Nine items; Airbnb current unsubmitted checkout quote, other estimates explicit"
       },
-      "claimType": "proxy"
+      "claimType": "derived"
     },
     {
       "id": "trip-window",
@@ -125,15 +125,21 @@
         "decision-profile"
       ],
       "value": {
-        "depart": "2027-02-19",
+        "depart": "2027-02-18",
         "return": "2027-02-23",
-        "hotelNights": 4,
-        "ptoDays": 2
+        "hotelNights": 5,
+        "ptoDays": 4,
+        "ptoDates": [
+          "2027-02-18",
+          "2027-02-19",
+          "2027-02-22",
+          "2027-02-23"
+        ]
       },
-      "verifiedAt": "2026-09-10",
+      "verifiedAt": "2026-10-08",
       "expiresAt": null,
       "sourceLocators": {
-        "decision-profile": "tripWindows.short-joshua-tree"
+        "decision-profile": "tripWindows.short-joshua-tree; normal Monday–Friday workweek"
       },
       "claimType": "confirmed"
     },
@@ -141,25 +147,33 @@
       "id": "route-readiness",
       "category": "route",
       "proxyStatus": "confirmed",
-      "confidence": "medium",
+      "confidence": "high",
       "sourceRefs": [
-        "google-flights-jtree-audit"
+        "aa-jtree-booking-2026-10-08"
       ],
       "value": {
         "status": "confirmed",
-        "preferredGateway": "PSP",
-        "alternateGateway": "SAN",
-        "pspFareUsd": 398,
-        "sanFareUsd": 328,
+        "arrivalGateway": "BUR",
+        "departureGateway": "PSP",
+        "connectionAirport": "PHX",
+        "familyFareUsd": 1744.88,
         "singleTicket": true,
-        "maxConnections": 1
+        "maxConnections": 1,
+        "outboundFlights": [
+          "AA809",
+          "AA2910"
+        ],
+        "returnFlights": [
+          "AA1843",
+          "AA1012"
+        ]
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-09-17",
+      "verifiedAt": "2026-10-08",
+      "expiresAt": "2027-02-11",
       "sourceLocators": {
-        "google-flights-jtree-audit": "Exact-date economy results reviewed Sep 10, 2026; per-traveler baseline, optional bags/seats excluded"
+        "aa-jtree-booking-2026-10-08": "Open user booking receipt issued Oct 8; Feb 18 PIT–PHX–BUR, Feb 23 PSP–PHX–PIT; four travelers, $1744.88; schedule subject to changes"
       },
-      "claimType": "observed-quote"
+      "claimType": "confirmed"
     },
     {
       "id": "itinerary-structure",
@@ -171,24 +185,26 @@
         "nps-jotr-hiking"
       ],
       "value": {
-        "hotelNights": 4,
-        "lodgingBases": 1,
+        "hotelNights": 5,
+        "lodgingBases": 2,
         "baseNames": [
-          "Joshua Tree / west Yucca Valley"
+          "Burbank",
+          "Joshua Tree area · exact Airbnb pending"
         ],
         "scheduledModes": [
+          "Hollywood sightseeing",
           "hiking",
           "scrambling",
-          "guided climbing",
+          "optional guided climbing",
           "town",
           "photography"
         ]
       },
-      "verifiedAt": "2026-09-10",
+      "verifiedAt": "2026-10-08",
       "expiresAt": null,
       "sourceLocators": {
-        "internal-itinerary": "itinerary.days and #stays",
-        "nps-jotr-hiking": "Official trail distances and trailheads"
+        "internal-itinerary": "Six day cards, calendar, stays; 1 hotel + 4 tentative Airbnb nights",
+        "nps-jotr-hiking": "Existing official trail guidance"
       },
       "claimType": "derived"
     },
@@ -295,20 +311,20 @@
         "internal-itinerary"
       ],
       "value": {
-        "easeScore": 4,
+        "easeScore": 3,
         "maxConnections": 1,
         "singleTicket": true,
-        "lodgingBases": 1,
-        "baseMoves": 0,
+        "lodgingBases": 2,
+        "baseMoves": 1,
         "rentalCars": 1,
-        "longestTransferHours": 1.3,
-        "airHoursPlanningEstimate": 14.5,
-        "groundHoursPlanningEstimate": 10
+        "longestTransferHours": 4,
+        "airHoursPlanningEstimate": 14.3167,
+        "groundHoursPlanningEstimate": 14
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2027-02-24",
+      "verifiedAt": "2026-10-08",
+      "expiresAt": "2027-02-11",
       "sourceLocators": {
-        "internal-itinerary": "short-joshua-tree/main.json #calendar, #air-travel and #getting-around show one base, one connection and all driving times"
+        "internal-itinerary": "Booked flights total elapsed 7h53 + 6h26 = 14h19; Burbank–Joshua Tree 3–4h traffic planning estimate; other drives depend on Airbnb"
       },
       "claimType": "derived"
     },
@@ -319,12 +335,14 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "jtree-guide-food"
+        "jtree-guide-food",
+        "airbnb-agave-gold"
       ],
       "value": {
         "score": 4,
         "plainFoodRequired": true,
         "coveredBases": [
+          "Burbank",
           "Joshua Tree / west Yucca Valley"
         ],
         "fallbackTypes": [
@@ -334,13 +352,15 @@
           "tacos",
           "groceries"
         ],
-        "lodgingKitchenConfirmed": false
+        "lodgingKitchenConfirmed": true,
+        "lodgingBooked": false
       },
-      "verifiedAt": "2026-09-10",
+      "verifiedAt": "2026-10-08",
       "expiresAt": "2027-02-12",
       "sourceLocators": {
-        "internal-itinerary": "short-joshua-tree/main.json #food-guide and structured spot restaurant fallbacks",
-        "jtree-guide-food": "Current local restaurant directory; exact February 2027 days and hours require recheck"
+        "internal-itinerary": "Burbank included breakfast, fridge/microwave and dinner fallback; desert kitchen still a booking requirement",
+        "jtree-guide-food": "Current local restaurant directory; exact February 2027 days and hours require recheck",
+        "airbnb-agave-gold": "Chosen listing confirms kitchen; reservation remains tentative"
       },
       "claimType": "proxy"
     },
@@ -366,38 +386,120 @@
         "scorecard-contract": "Novelty rubric gives 4/5 to a mostly new region with familiar gateway/state overlap"
       },
       "claimType": "derived"
+    },
+    {
+      "id": "selected-airbnb",
+      "category": "reservation",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "airbnb-agave-gold"
+      ],
+      "value": {
+        "name": "Agave Gold",
+        "booked": false,
+        "checkIn": "2027-02-19 16:00 PST",
+        "checkOut": "2027-02-23 11:00 PST",
+        "fullRefundBefore": "2027-02-18 16:00 PST",
+        "adults": 2,
+        "children": 2,
+        "bedrooms": 3,
+        "beds": [
+          "king",
+          "king",
+          "queen"
+        ],
+        "bathrooms": 2,
+        "quoteBeforeTaxesUsd": 1492.6,
+        "taxUsd": 104.48,
+        "quoteTotalUsd": 1597.08,
+        "optionalInsuranceUsd": 112.32,
+        "access": "final dirt-road approach; get host directions",
+        "poolHeatingConfirmed": false,
+        "addressKnown": false
+      },
+      "verifiedAt": "2026-10-08",
+      "expiresAt": "2026-10-15",
+      "sourceLocators": {
+        "airbnb-agave-gold": "Listing rules, sleeping layout, location text and unsubmitted Confirm and pay checkout for four people Feb19–23. Private checkout IDs excluded."
+      },
+      "claimType": "observed-quote"
+    },
+    {
+      "id": "hollywood-arrival-activities",
+      "category": "itinerary",
+      "proxyStatus": "confirmed",
+      "confidence": "high",
+      "sourceRefs": [
+        "griffith-visit",
+        "griffith-planetarium",
+        "hollywood-star-map",
+        "tcl-theatre-tours",
+        "bobs-burbank-menu",
+        "patys-toluca-lake",
+        "smoke-house-burbank",
+        "wb-studio-tour"
+      ],
+      "value": {
+        "date": "2027-02-18",
+        "plan": "Short Hollywood walk, optional Griffith Observatory; free core attractions, paid parking and optional ticketed experiences",
+        "griffithThursdayHours": "12:00–22:00",
+        "optionalPlanetariumFamilyUsd": 40,
+        "childrenAges": [
+          8,
+          12
+        ],
+        "activityBookings": false
+      },
+      "verifiedAt": "2026-10-08",
+      "expiresAt": "2027-02-11",
+      "sourceLocators": {
+        "griffith-visit": "Thursday building hours noon–10 p.m., free building/grounds, paid nearby parking; February hours need recheck.",
+        "griffith-planetarium": "Adults $12, children 5–12 $8; tickets sold on-site for same-day shows only. Optional, not booked.",
+        "hollywood-star-map": "Star locations for a short self-guided walk.",
+        "tcl-theatre-tours": "30-minute interior tour; seven days excluding special events. Current availability and price must be checked.",
+        "bobs-burbank-menu": "Menu includes burgers, chicken fingers, spaghetti and milkshakes; 4211 W Riverside Drive.",
+        "patys-toluca-lake": "Official Feb 2026 menu includes burgers, grilled cheese and chicken strips. Currently daily 8 a.m.–9 p.m.; 10001 Riverside Drive.",
+        "smoke-house-burbank": "4420 W Lakeside Drive, Burbank; garlic cheese bread and reservations linked.",
+        "wb-studio-tour": "About three hours; optional replacement for Hollywood/Griffith, not booked. February departure times and specific backlot access unconfirmed."
+      },
+      "claimType": "confirmed"
     }
   ],
   "metrics": {
-    "airHours": 14.5,
-    "groundHours": 10,
+    "airHours": 14.3167,
+    "groundHours": 14,
     "timeZones": 3,
-    "baseMoves": 0,
-    "longestTransferHours": 1.3,
+    "baseMoves": 1,
+    "longestTransferHours": 4,
     "highOutputDayStreak": 2,
     "fallbackDays": 4,
     "childActivityFit": {
-      "age13": "fits",
+      "age12": "fits",
       "age8": "fits"
     },
     "childActivityNotes": {
-      "age13": "Guide-selected rope climbing and optional Ryan Mountain add challenge.",
-      "age8": "Short official loops and low supervised scrambling fit; technical climbing is guide-selected."
+      "age12": "Hollywood, short hikes and an optional guide-selected climbing challenge.",
+      "age8": "Short official loops, low supervised scrambling and short Hollywood visits; guide selects technical terrain."
     },
     "lodgingComfort": {
-      "heating": "required",
-      "kitchen": "required",
-      "realBeds": "required"
+      "heating": "listed at selected Airbnb; hotel confirmed",
+      "kitchen": "listed at selected Airbnb; not booked",
+      "realBeds": "2 king beds + 1 queen across 3 bedrooms; not booked"
     },
-    "waterSafety": "No swim is scheduled.",
+    "waterSafety": "Selected Airbnb has an ungated pool/hot tub; supervise children. Pool heating unconfirmed; no swimming promised.",
     "crowdingPressure": "Popular trailheads can fill by midmorning on winter weekends; begin before 8 a.m.",
-    "medicalAccess": "Local services exist in Yucca Valley; family medical profile remains incomplete."
+    "medicalAccess": "Local services exist in Yucca Valley; family medical profile remains incomplete.",
+    "childAges": [
+      12,
+      8
+    ]
   },
   "confidenceBasis": [
     "official NPS trail and conditions guidance",
-    "exact-date observed flight results",
+    "booked American flight receipt reviewed October 8, 2026",
     "current guide-service rates",
     "explicit astronomical date constraints"
   ],
-  "evidenceBasis": "Official park and state sources lead access and safety; Visit Joshua Tree supplies local route/food nuance; observed flight quotes and explicit itinerary arithmetic support logistics and cost."
+  "evidenceBasis": "Booked travel confirmations support flights, hotel and SUV. Remaining Airbnb and food costs are planning allowances. Official NPS and operator sources support activities; exact private booking identifiers are excluded."
 }
