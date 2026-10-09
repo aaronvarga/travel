@@ -20,7 +20,9 @@ test('all trips expose canonical travel burden and explicit unknown family facts
     const evidence = JSON.parse(fs.readFileSync(file, 'utf8'));
     assert.ok(Number.isFinite(evidence.metrics.airHours));
     assert.ok(Number.isFinite(evidence.metrics.groundHours));
-    assert.ok(['unknown', 'fits', 'does-not-fit', 'alternative-required'].includes(evidence.metrics.childActivityFit.age8));
-    assert.ok(['unknown', 'fits', 'does-not-fit', 'alternative-required'].includes(evidence.metrics.childActivityFit.age13));
+    // Winter trips can precede the older child's next birthday.
+    for (const age of evidence.metrics.childAges || [13, 8]) {
+      assert.ok(['unknown', 'fits', 'does-not-fit', 'alternative-required'].includes(evidence.metrics.childActivityFit[`age${age}`]), `${entry.name}: missing fit for age ${age}`);
+    }
   }
 });
