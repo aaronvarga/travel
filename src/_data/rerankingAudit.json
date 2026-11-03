@@ -399,7 +399,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "reroute-required",
+      "routeReadiness": "current-proxy",
       "cashCheck": null,
       "priorFlightEvidence": {
         "status": "reroute-required",
@@ -498,12 +498,12 @@
       ],
       "lineItems": [
         {
-          "label": "Air · PIT→KEF stopover→FCO / FCO→PIT, seats + bags",
-          "lowUsd": 3600,
-          "highUsd": 4800,
+          "label": "Air · PIT→KEF / FCO→PIT open-jaw + KEF→FCO nonstop, seats + bags",
+          "lowUsd": 6900,
+          "highUsd": 7500,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: Open-jaw PIT–KEF June 10 / FCO–PIT June 23, 2027 is sold on one ticket for $4,334 (Air Canada via Montreal out; United via Newark home 8:34 PM June 23), or $4,638 with the Icelandair nonstop. Add a separate Icelandair KEF–FCO nonstop on June 15 (7:50 AM–2:35 PM) at $1,480 for the family. No single ticket covering all three legs reaches Pittsburgh on June 23."
         },
         {
           "label": "Lodging · 4 Reykjavík / 3 Forio / 4 Castellabate / 1 Fiumicino",
@@ -547,41 +547,46 @@
         }
       ],
       "grossCashRangeUsd": [
-        10400,
-        14900
+        13700,
+        17600
       ],
       "netCashRangeUsd": [
-        8400,
-        12900
+        11700,
+        15600
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
       "axes": {
-        "budget": 4,
+        "budget": 1,
         "weather": 3,
         "fireRisk": 4,
         "swim": 5,
         "variety": 5,
         "ease": 2,
         "food": 5,
-        "risk": 1,
+        "risk": 3,
         "nights": 5,
         "novelty": 4,
         "pto": 3
       },
-      "score": 42,
+      "score": 38,
       "axisChanges": [
         {
           "axis": "budget",
           "from": 2,
-          "to": 4
+          "to": 1
+        },
+        {
+          "axis": "risk",
+          "from": 1,
+          "to": 3
         }
       ],
-      "newRank": 2,
+      "newRank": 7,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 4,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
           "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $10,400–$14,900 less a single $2,000 fixed travel redemption yields $8,400–$12,900. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
           "evidenceIds": [
@@ -652,7 +657,7 @@
           "reviewBasis": "rubric review of stored evidence; not a new exact-date forecast or quote"
         },
         "risk": {
-          "score": 1,
+          "score": 3,
           "rubric": "Uncertain disruption and safety only: unpublished/thin schedules, unprotected tickets, weather closures, critical single points of failure, advisories and realistic mitigations. Do not double-count ordinary transfer load.",
           "rationale": "The assumed June 10 Icelandair nonstop/stopover construction is not sold. Because the air stack must be re-dated or rebuilt before the trip works, Risk falls to 1/5.",
           "evidenceIds": [
@@ -917,7 +922,7 @@
           "to": 4
         }
       ],
-      "newRank": 3,
+      "newRank": 2,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
@@ -1072,7 +1077,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 6204,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -1295,7 +1300,7 @@
           "to": 2
         }
       ],
-      "newRank": 4,
+      "newRank": 3,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
@@ -1455,7 +1460,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 9,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 5529,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -1575,11 +1580,11 @@
       "lineItems": [
         {
           "label": "Airfare, multi-city (EFL in / ATH out), family of 4",
-          "lowUsd": 5600,
+          "lowUsd": 6300,
           "highUsd": 6700,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–EFL June 9 / ATH–PIT June 22, 2027 is sold on one ticket for $5,345 (home 9:25 PM via JFK in 1h30) or $5,673 via ORD in 1h55. A Preveza exit prices at $11,543 with three stops, so the Athens exit and buffer night stay."
         },
         {
           "label": "Lodging: 12 nights including Athens airport buffer (estimate)",
@@ -1631,11 +1636,11 @@
         }
       ],
       "grossCashRangeUsd": [
-        10800,
+        11500,
         15000
       ],
       "netCashRangeUsd": [
-        8800,
+        9500,
         13000
       ],
       "savingsUsd": 2000,
@@ -1661,7 +1666,7 @@
           "to": 4
         }
       ],
-      "newRank": 5,
+      "newRank": 4,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
@@ -1816,7 +1821,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 6204,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -1922,11 +1927,11 @@
       "lineItems": [
         {
           "label": "Flights · PIT-FNC + FNC-LIS + LIS-PMO + CTA-PIT, family of 4",
-          "lowUsd": 5900,
-          "highUsd": 6800,
+          "lowUsd": 7100,
+          "highUsd": 7700,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–FNC / CTA–PIT June 21, 2027: $5,160 for the family on United (CTA 1:35 PM via EWR, home 11:19 PM). FNC–LIS is $231; the Tuesday easyJet LIS–PMO nonstop is $431."
         },
         {
           "label": "Lodging · 12 nights, apartment-first (Funchal 5 + Lisbon 1 + Sicily 6)",
@@ -1978,12 +1983,12 @@
         }
       ],
       "grossCashRangeUsd": [
-        12600,
-        15950
+        13800,
+        16850
       ],
       "netCashRangeUsd": [
-        10600,
-        13950
+        11800,
+        14850
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -2008,7 +2013,7 @@
           "to": 2
         }
       ],
-      "newRank": 6,
+      "newRank": 5,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
@@ -2389,7 +2394,7 @@
           "to": 2
         }
       ],
-      "newRank": 7,
+      "newRank": 6,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
@@ -2969,7 +2974,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 5457,
         "scope": "complete open-jaw, internal flight separate",
@@ -3114,10 +3119,10 @@
         {
           "label": "Flights — international, open-jaw (PIT↔Lisbon / Madeira)",
           "lowUsd": 6000,
-          "highUsd": 7400,
+          "highUsd": 6800,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–LIS / FNC–PIT June 23, 2027: $5,208 for the family (FNC 9:40 AM via EWR, home 3:40 PM). Faro–Funchal on Friday has no nonstop; TAP via Lisbon is $628 for the family."
         },
         {
           "label": "Internal flight Faro–Lisbon–Funchal, bags and seats",
@@ -3170,11 +3175,11 @@
       ],
       "grossCashRangeUsd": [
         11975,
-        16500
+        15900
       ],
       "netCashRangeUsd": [
         9975,
-        14500
+        13900
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -3353,7 +3358,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 4798,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -3700,7 +3705,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 4798,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -3820,11 +3825,11 @@
       "lineItems": [
         {
           "label": "All flights, seats, bags - PIT/LIS/ATH/Crete/PIT",
-          "lowUsd": 6600,
+          "lowUsd": 7500,
           "highUsd": 8000,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–LIS June 8 / CHQ–PIT June 21, 2027: $5,185 for the family (home 11:56 PM via FRA and ORD); a Heraklion exit is $5,118 (home 11:22 PM via FRA and IAD). LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens."
         },
         {
           "label": "Cascais/Estoril lodging · 5 nights",
@@ -3892,11 +3897,11 @@
         }
       ],
       "grossCashRangeUsd": [
-        12530,
+        13430,
         17165
       ],
       "netCashRangeUsd": [
-        10530,
+        11430,
         15165
       ],
       "savingsUsd": 2000,
@@ -4204,12 +4209,12 @@
       ],
       "lineItems": [
         {
-          "label": "Outer airfare: Palermo in / Malta out, bags and seats (proxy)",
-          "lowUsd": 6200,
+          "label": "Outer airfare: Palermo in / Malta out, bags and seats",
+          "lowUsd": 6600,
           "highUsd": 7400,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: The cheapest PIT–PMO / MLA–PIT open-jaw lands June 24 and the same-day version is flagged as separate tickets. Two one-ways work: JetBlue/Turkish PIT–PMO June 10 $2,885 or BA $2,950, plus Lufthansa/United MLA–PIT June 23 $2,711 (home 4:57 PM). Ryanair CTA–MLA June 20 is $103 for the family."
         },
         {
           "label": "Internal flight — Catania → Malta + bags",
@@ -4261,11 +4266,11 @@
         }
       ],
       "grossCashRangeUsd": [
-        13000,
+        13400,
         18700
       ],
       "netCashRangeUsd": [
-        11000,
+        11400,
         16700
       ],
       "savingsUsd": 2000,
@@ -4532,11 +4537,11 @@
       "lineItems": [
         {
           "label": "Flights, seats and bags",
-          "lowUsd": 7700,
-          "highUsd": 8300,
+          "lowUsd": 6900,
+          "highUsd": 7500,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–CHQ June 9 / HER–PIT June 23, 2027 is sold on one ticket for $5,882 (September: $6,733); the return connects via Athens and ORD (1h55) and reaches Pittsburgh at 7:28 PM June 23."
         },
         {
           "label": "Lodging · 13 nights",
@@ -4580,12 +4585,12 @@
         }
       ],
       "grossCashRangeUsd": [
-        14200,
-        18300
+        13400,
+        17500
       ],
       "netCashRangeUsd": [
-        12200,
-        16300
+        11400,
+        15500
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -4759,7 +4764,7 @@
       ],
       "hotelNights": 13,
       "ptoDays": 9,
-      "routeReadiness": "exact-2027-schedule-required",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 5183,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -4900,11 +4905,11 @@
       "lineItems": [
         {
           "label": "Transatlantic airfare (open-jaw)",
-          "lowUsd": 5400,
+          "lowUsd": 6200,
           "highUsd": 7000,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–VCE June 27 / OLB–PIT July 11, 2027 is sold on one ticket for $5,188, home 11:22 PM July 11. Volotea VCE–OLB is $148 for the family before bags."
         },
         {
           "label": "Island hop VCE->OLB + bags",
@@ -4988,11 +4993,11 @@
         }
       ],
       "grossCashRangeUsd": [
-        13200,
+        14000,
         18890
       ],
       "netCashRangeUsd": [
-        11200,
+        12000,
         16890
       ],
       "savingsUsd": 2000,
@@ -5167,7 +5172,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 4545,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -5287,19 +5292,19 @@
       "lineItems": [
         {
           "label": "PIT -> Zurich / Catania -> PIT open-jaw airfare",
-          "lowUsd": 5200,
-          "highUsd": 7200,
+          "lowUsd": 5700,
+          "highUsd": 6300,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–ZRH June 8 / CTA–PIT June 22, 2027: $4,774 for the family (CTA 1:35 PM via EWR, home 11:19 PM). ZRH–CTA on June 14 is $689 on the Edelweiss nonstop."
         },
         {
           "label": "Zurich -> Catania intra-Europe hop",
           "lowUsd": 1000,
-          "highUsd": 1700,
+          "highUsd": 1100,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–ZRH June 8 / CTA–PIT June 22, 2027: $4,774 for the family (CTA 1:35 PM via EWR, home 11:19 PM). ZRH–CTA on June 14 is $689 on the Edelweiss nonstop."
         },
         {
           "label": "Lodging: Berner Oberland 5 nights",
@@ -5351,12 +5356,12 @@
         }
       ],
       "grossCashRangeUsd": [
-        14000,
-        19350
+        14500,
+        17850
       ],
       "netCashRangeUsd": [
-        12000,
-        17350
+        12500,
+        15850
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -5725,7 +5730,7 @@
       },
       "score": 36,
       "axisChanges": [],
-      "newRank": 16,
+      "newRank": 17,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
@@ -5880,7 +5885,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 4545,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -6001,19 +6006,19 @@
       "lineItems": [
         {
           "label": "PIT -> Zurich / Crete -> PIT open-jaw airfare",
-          "lowUsd": 5200,
-          "highUsd": 7200,
+          "lowUsd": 5900,
+          "highUsd": 6500,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–ZRH June 8 / CHQ–PIT June 22, 2027: $4,894 for the family on Air Canada with a 1h05 Munich connection (the $4,802 option has 55 minutes), home 10:38 PM. ZRH–HER on June 14 is $596 on the Condor nonstop."
         },
         {
           "label": "Zurich -> Heraklion intra-Europe hop",
-          "lowUsd": 1100,
-          "highUsd": 1800,
+          "lowUsd": 800,
+          "highUsd": 1000,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–ZRH June 8 / CHQ–PIT June 22, 2027: $4,894 for the family on Air Canada with a 1h05 Munich connection (the $4,802 option has 55 minutes), home 10:38 PM. ZRH–HER on June 14 is $596 on the Condor nonstop."
         },
         {
           "label": "Lodging: Berner Oberland 5 nights",
@@ -6065,12 +6070,12 @@
         }
       ],
       "grossCashRangeUsd": [
-        14120,
-        19440
+        14520,
+        17940
       ],
       "netCashRangeUsd": [
-        12120,
-        17440
+        12520,
+        15940
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -6095,7 +6100,7 @@
           "to": 3
         }
       ],
-      "newRank": 17,
+      "newRank": 16,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
@@ -6259,7 +6264,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 9,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 6124,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -6606,7 +6611,7 @@
       ],
       "hotelNights": 13,
       "ptoDays": 9,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 6124,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -6740,11 +6745,11 @@
       "lineItems": [
         {
           "label": "All flights, seats, bags - PIT/FNC/LIS/ATH/Crete/PIT (gated)",
-          "lowUsd": 7000,
+          "lowUsd": 7700,
           "highUsd": 8200,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–FNC (United via the EWR–FNC nonstop) / CHQ–PIT June 22, 2027: $5,000 for the family, home 10:38 PM via MUC and YYZ. FNC–LIS is $251; LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens (12:40 AM–8:45 AM), or $1,545 by day."
         },
         {
           "label": "Funchal lodging - 4 nights",
@@ -6828,11 +6833,11 @@
         }
       ],
       "grossCashRangeUsd": [
-        13710,
+        14410,
         18250
       ],
       "netCashRangeUsd": [
-        11710,
+        12410,
         16250
       ],
       "savingsUsd": 2000,
@@ -7012,7 +7017,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": null,
       "priorFlightEvidence": {
         "status": "current-proxy",
@@ -7133,11 +7138,11 @@
       "lineItems": [
         {
           "label": "International airfare and Lisbon–Athens allocation; Crete flights separate",
-          "lowUsd": 5200,
+          "lowUsd": 7700,
           "highUsd": 8200,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–LIS June 9 / CHQ–PIT June 22, 2027 is sold on one ticket for $5,899 (CHQ 8:20 AM via ATH and ORD, home 7:28 PM June 22). Aegean LIS–ATH nonstop is $706 and SKY express ATH–CHQ $316 for the family."
         },
         {
           "label": "Domestic flight — Athens ↔ Chania",
@@ -7189,11 +7194,11 @@
         }
       ],
       "grossCashRangeUsd": [
-        11150,
+        13650,
         17600
       ],
       "netCashRangeUsd": [
-        9150,
+        11650,
         15600
       ],
       "savingsUsd": 2000,
@@ -7368,7 +7373,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 8,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 5316,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -7474,11 +7479,11 @@
       "lineItems": [
         {
           "label": "Flights — PIT ↔ Sardinia open-jaw",
-          "lowUsd": 5400,
-          "highUsd": 6400,
+          "lowUsd": 6700,
+          "highUsd": 7300,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: Every CAG–PIT option on June 23, 2027 lands June 24, inside the Pittsburgh commitment. PIT–OLB June 10 / CAG–PIT June 22 is sold on one ticket: Lufthansa/United leaves CAG 6:35 PM, overnights at Munich and reaches Pittsburgh 4:57 PM June 23, at $5,746 for the family. An Olbia round trip ($6,033, home 11:19 PM June 23) is the backup."
         },
         {
           "label": "Lodging — 12 nights, apartments/pool-villa mix",
@@ -7546,12 +7551,12 @@
         }
       ],
       "grossCashRangeUsd": [
-        12880,
-        19300
+        14180,
+        20200
       ],
       "netCashRangeUsd": [
-        10880,
-        17300
+        12180,
+        18200
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -7730,7 +7735,7 @@
       ],
       "hotelNights": 12,
       "ptoDays": 9,
-      "routeReadiness": "current-proxy",
+      "routeReadiness": "confirmed",
       "cashCheck": {
         "baseFareUsd": 3904,
         "scope": "gateway round-trip proxy for open-jaw",
@@ -7850,11 +7855,11 @@
       "lineItems": [
         {
           "label": "Mainland open-jaw air · PIT→OGG / LIH→PIT",
-          "lowUsd": 4200,
-          "highUsd": 5200,
+          "lowUsd": 3500,
+          "highUsd": 4100,
           "basis": "planning-estimate",
           "confidence": "medium",
-          "note": "Retained itemized USD planning allowance; exact 2027 family checkout not verified."
+          "note": "Repriced 2026-11-03: PIT–OGG June 10 / LIH–PIT June 22, 2027 open-jaw: $2,893 for the family on American; the Lihue red-eye reaches Pittsburgh at 4:49 PM June 23. OGG–LIH is about $300."
         },
         {
           "label": "Inter-island OGG→LIH",
@@ -7922,12 +7927,12 @@
         }
       ],
       "grossCashRangeUsd": [
-        15600,
-        22400
+        14900,
+        21300
       ],
       "netCashRangeUsd": [
-        13600,
-        20400
+        12900,
+        19300
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -8166,5 +8171,10 @@
     "scope": "22 full trips reranked; all 11 short scorecards and variants unchanged. User-authorized follow-up corrected expired evidence and flight labels in 10 short escapes. Nine excluded source sets unchanged.",
     "browser": "Fresh local Chromium session; preview CacheStorage and service workers cleared. Homepage, comparison table, Crete points, Slovenia flight audit, Iceland/Ischia/Cilento warning and refreshed short-Iceland route warning inspected.",
     "commit": "See the commit containing this report (git log -1 -- docs/reranking-2026-09-11.md). Push result is reported separately; deployment is not verified."
+  },
+  "flightRefresh": {
+    "reviewedAt": "2026-11-03",
+    "sourceId": "google-flights-2026-11-03-family-audit",
+    "note": "Air line items, gross/net, axes, score, rank and route readiness updated from tools/flight-refresh-2026-11-03.json; previous* fields remain the 2026-09-11 baseline. axisChanges are recomputed against previousAxes; cashCheck, rankIfOnly* and movedOnlyBecauseOthersChanged remain the 2026-09-11 analysis (do not rerun report-reranking.mjs without refreshing them)."
   }
 }

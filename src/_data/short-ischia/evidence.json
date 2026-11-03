@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-ischia",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "The six-category family estimate reconciles exactly to $9,230–$12,670. The whole band sits below $13,000 but the ceiling exceeds the $12,000 target, so this scores 4 rather than 5, matching the Alaska precedent. Ground costs are cheap; the transatlantic June fare drives the range.",
+      "score": 2,
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,430–$13,970. Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,25 +102,27 @@
       "sourceRefs": [
         "internal-itinerary",
         "giardini-poseidon-prices",
-        "alilauro-naples-ischia-2026"
+        "alilauro-naples-ischia-2026",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9230,
+        "lowUsd": 11430,
         "expectedUsd": null,
-        "highUsd": 12670,
+        "highUsd": 13970,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "4400–5900 + 1900–2900 + 450–600 + 1300–1700 + 480–620 + 700–950 = 9230–12670",
+        "arithmetic": "4400–5900 + 1900–2900 + 450–600 + 1300–1700 + 480–620 + 700–950 = 9230–12670 | 2026-11-03: flight lines repriced, band $9,230–$12,670 -> $11,430–$13,970",
         "exceedsShortTripTarget": true
       },
-      "verifiedAt": "2026-07-16",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-ischia/main.json #budget and #totals; six itemized categories reconcile to the displayed total",
         "giardini-poseidon-prices": "Official 2026 tariff €50 adult / €45 afternoon / ages 4–11 half price supports the activities line",
-        "alilauro-naples-ischia-2026": "Current hydrofoil fares €23.90–24.10 adult, €15.90 child, €3.50 per qualifying bag support the ferries-and-transfers line"
+        "alilauro-naples-ischia-2026": "Current hydrofoil fares €23.90–24.10 adult, €15.90 child, €3.50 per qualifying bag support the ferries-and-transfers line",
+        "google-flights-2026-11-03-family-audit": "PIT–NAP June 12–20, 2027: $5,670 for the family (BA via LHR out; American NAP 3:00 PM via ORD, home 11:59 PM June 20). No Newark–Naples routing priced lower."
       },
       "claimType": "proxy"
     },
@@ -319,29 +321,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-ischia-route-review-20260911"
+        "short-ischia-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "The airport-hosted United release documents Newark–Naples seasonal service historically, not June 2027 availability. Require a protected PIT–NAP ticket and a weather-safe Naples/Ischia ferry buffer.",
+        "currentFlightAudit": "PIT–NAP June 12–20, 2027: $5,670 for the family (BA via LHR out; American NAP 3:00 PM via ORD, home 11:59 PM June 20). No Newark–Naples routing priced lower.",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-ischia/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-ischia-route-review-20260911": "The airport-hosted United release documents Newark–Naples seasonal service historically, not June 2027 availability. Require a protected PIT–NAP ticket and a weather-safe Naples/Ischia ferry buffer."
+        "short-ischia-route-review-20260911": "The airport-hosted United release documents Newark–Naples seasonal service historically, not June 2027 availability. Require a protected PIT–NAP ticket and a weather-safe Naples/Ischia ferry buffer.",
+        "google-flights-2026-11-03-family-audit": "PIT–NAP June 12–20, 2027: $5,670 for the family (BA via LHR out; American NAP 3:00 PM via ORD, home 11:59 PM June 20). No Newark–Naples routing priced lower."
       },
       "claimType": "proxy"
     },

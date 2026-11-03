@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-sicily",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 2,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $12,600–$15,950 less a single $2,000 fixed travel redemption yields $10,600–$13,950. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,800–$14,850 net ($13,800–$16,850 gross). Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10600,
+        "lowUsd": 11800,
         "expectedUsd": null,
-        "highUsd": 13950,
+        "highUsd": 14850,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "5900/6800 + 2350/3300 + 2100/2450 + 850/1200 + 450/600 + 600/1100 + 350/500 = 12600/15950 gross; minus 2000/2000 = 10600/13950 net",
-        "grossLowUsd": 12600,
-        "grossHighUsd": 15950,
+        "arithmetic": "5900/6800 + 2350/3300 + 2100/2450 + 850/1200 + 450/600 + 600/1100 + 350/500 = 12600/15950 gross; minus 2000/2000 = 10600/13950 net | 2026-11-03: flight lines repriced, band $10,600–$13,950 -> $11,800–$14,850",
+        "grossLowUsd": 13800,
+        "grossHighUsd": 16850,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "madeira-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC / CTA–PIT June 21, 2027: $5,160 for the family on United (CTA 1:35 PM via EWR, home 11:19 PM). FNC–LIS is $231; the Tuesday easyJet LIS–PMO nonstop is $431."
       },
       "claimType": "derived"
     },
@@ -319,33 +321,35 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "easyjet-lis-pmo",
         "ana-madeira-wind-operations",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": false,
         "maxConnections": 3,
         "criticalLeg": "exact June 15 easyJet LIS–PMO nonstop",
-        "june2027Verified": false,
+        "june2027Verified": true,
         "mandatoryBuffer": "Lisbon",
-        "currentFlightAudit": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer.",
-        "exact2027FlightsVerified": false
+        "currentFlightAudit": "PIT–FNC / CTA–PIT June 21, 2027: $5,160 for the family on United (CTA 1:35 PM via EWR, home 11:19 PM). FNC–LIS is $231; the Tuesday easyJet LIS–PMO nonstop is $431.",
+        "exact2027FlightsVerified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "easyjet-lis-pmo": "Operator August 2026 timetable observed Tuesday/Friday service; exact June 2027 dates absent",
         "ana-madeira-wind-operations": "Official historical example of wind disruption at Madeira Airport",
         "internal-itinerary": "madeira-sicily/main.json air section calls LIS–PMO an easyJet monopoly and keeps a Lisbon buffer",
         "google-flights-2027-audit": "Checked 2026-07-19: easyJet LIS-PMO nonstop confirmed selling on Tuesday ($307, 3h); Monday not served; same-day one-stop backups sold daily (Vueling via BCN, TAP+ITA via FCO), so a same-day recovery path exists. United EWR-FNC sold for exact 2027-06-08.",
-        "google-flights-2027-current-audit": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer."
+        "google-flights-2027-current-audit": "easyJet now sells the June 15 LIS–PMO nonstop in 3 hours from $77. Together with PIT–FNC $607, FNC–LIS $45 and CTA–PIT $695 one-way components, use a $5.9k–$6.8k family air band and keep the Lisbon wind buffer.",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC / CTA–PIT June 21, 2027: $5,160 for the family on United (CTA 1:35 PM via EWR, home 11:19 PM). FNC–LIS is $231; the Tuesday easyJet LIS–PMO nonstop is $431."
       },
       "claimType": "proxy"
     },
@@ -456,8 +460,8 @@
     "medium-confidence budget, lodging, climate grid, and non-reproduced SST"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "The exact June 15 Lisbon–Palermo nonstop is selling again"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: Funchal-in / Catania-out sold; the flight line rises"
   }
 }

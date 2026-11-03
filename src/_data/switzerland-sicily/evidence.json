@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "switzerland-sicily",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $14,000–$19,350 less a single $2,000 fixed travel redemption yields $12,000–$17,350. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,500–$15,850 net ($14,500–$17,850 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 12000,
+        "lowUsd": 12500,
         "expectedUsd": null,
-        "highUsd": 17350,
+        "highUsd": 15850,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 8,
-        "arithmetic": "5200/7200 + 1000/1700 + 1150/1450 + 1080/1400 + 2150/2650 + 820/1150 + 2100/2700 + 500/1100 = 14000/19350 gross; minus 2000/2000 = 12000/17350 net",
-        "grossLowUsd": 14000,
-        "grossHighUsd": 19350,
+        "arithmetic": "5200/7200 + 1000/1700 + 1150/1450 + 1080/1400 + 2150/2650 + 820/1150 + 2100/2700 + 500/1100 = 14000/19350 gross; minus 2000/2000 = 12000/17350 net | 2026-11-03: flight lines repriced, band $12,000–$17,350 -> $12,500–$15,850",
+        "grossLowUsd": 14500,
+        "grossHighUsd": 17850,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "switzerland-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–ZRH June 8 / CTA–PIT June 22, 2027: $4,774 for the family (CTA 1:35 PM via EWR, home 11:19 PM). ZRH–CTA on June 14 is $689 on the Edelweiss nonstop."
       },
       "claimType": "derived"
     },
@@ -304,17 +306,18 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "aci-driving-italy",
         "eu-etias",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": false,
         "singleTicketAssumption": false,
         "maxConnections": 2,
@@ -324,18 +327,19 @@
         "june2027ProtectedTicketVerified": false,
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required for the Schengen legs",
         "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Catania day once 2027 inventory opens.",
-        "currentFlightAudit": "PIT–ZRH is selling June 8–22 from $1,136 round trip. Edelweiss/SWISS sells the exact June 14 ZRH–CTA nonstop from $202 in 2h05; cheaper one-stop options also exist.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–ZRH June 8 / CTA–PIT June 22, 2027: $4,774 for the family (CTA 1:35 PM via EWR, home 11:19 PM). ZRH–CTA on June 14 is $689 on the Edelweiss nonstop.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "aci-driving-italy": "Italian driving/ZTL context for the Sicily ground leg",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "Open-jaw construction and Catania-connection plan",
         "google-flights-2027-audit": "Checked 2026-07-19: ZRH-CTA Edelweiss/SWISS nonstop verified selling (2h10, $276, Tuesday served); June 2027 beyond window.",
-        "google-flights-2027-current-audit": "PIT–ZRH is selling June 8–22 from $1,136 round trip. Edelweiss/SWISS sells the exact June 14 ZRH–CTA nonstop from $202 in 2h05; cheaper one-stop options also exist."
+        "google-flights-2027-current-audit": "PIT–ZRH is selling June 8–22 from $1,136 round trip. Edelweiss/SWISS sells the exact June 14 ZRH–CTA nonstop from $202 in 2h05; cheaper one-stop options also exist.",
+        "google-flights-2026-11-03-family-audit": "PIT–ZRH June 8 / CTA–PIT June 22, 2027: $4,774 for the family (CTA 1:35 PM via EWR, home 11:19 PM). ZRH–CTA on June 14 is $689 on the Edelweiss nonstop."
       },
       "claimType": "proxy"
     },
@@ -444,8 +448,8 @@
     "medium-confidence swim claim (Sicily SST is a proxy)"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Zurich and the exact Catania hop are selling"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Zurich-in / Catania-out ticket and an Edelweiss nonstop are sold"
   }
 }

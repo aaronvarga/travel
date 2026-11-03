@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "hawaii",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -102,7 +102,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 9000,
@@ -117,12 +118,13 @@
         "grossHighUsd": 15800,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "hawaii/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–SEA–HNL, June 5–15: gateway round-trip proxy for open-jaw, family base $3488; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–SEA–HNL, June 5–15: gateway round-trip proxy for open-jaw, family base $3488; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–HNL June 5 / KOA–PIT June 14, 2027 open-jaw: $3,188 for the family on United via ORD/DEN (Alaska via SEA $3,416); the Kona red-eye reaches Pittsburgh at 4:44 PM June 15. HNL–KOA is about $300. The $3,600–$4,400 flight line still holds."
       },
       "claimType": "derived"
     },
@@ -318,7 +320,8 @@
         "hanauma-reservations",
         "hawaii-volcanoes-conditions",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "confirmed",
@@ -334,19 +337,20 @@
           "USS Arizona timed reservation",
           "volcano, vog and closure check"
         ],
-        "currentFlightAudit": "PIT–HNL is selling June 5–15 from $859 round trip with one stop, and HNL–KOA sells the exact June 9 nonstop from $75. Keep the mainland legs protected on one ticket and retain the inter-island buffer.",
+        "currentFlightAudit": "PIT–HNL June 5 / KOA–PIT June 14, 2027 open-jaw: $3,188 for the family on United via ORD/DEN (Alaska via SEA $3,416); the Kona red-eye reaches Pittsburgh at 4:44 PM June 15. HNL–KOA is about $300. The $3,600–$4,400 flight line still holds.",
         "exact2027FlightsVerified": true,
         "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Hawaii; canonical 2027-06-05 → 2027-06-15; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
         "uss-arizona-programs": "NPS current rule: free reservations release daily at 3 pm HST in 8-week and 24-hour windows; $1 Recreation.gov fee; programs remain weather/repair dependent",
         "hanauma-reservations": "City and County of Honolulu reservation system/audit: online inventory opens two days ahead at 7:00 am HST; operating rules must be rechecked for 2027",
         "hawaii-volcanoes-conditions": "NPS Alerts & Conditions: eruption, volcanic gas, construction, parking and temporary area closures require a current check",
         "google-flights-2027-audit": "All three route legs verified SOLD for the exact trip dates on Google Flights 2026-07-19/20: PIT-HNL 2027-06-05 one-stop single tickets $382-572 (Alaska via SEA lands 3:05 PM; American via DFW lands 12:20 PM); HNL-KOA 2027-06-09 with 17 nonstops (Hawaiian/Alaska, 46 min, $75-125); KOA-PIT 2027-06-14 United red-eye via LAX 10:15 PM-4:44 PM+1 ($303). Route is bookable today; remaining gates are fare protection and activity reservations, not schedules.",
-        "google-flights-2027-current-audit": "PIT–HNL is selling June 5–15 from $859 round trip with one stop, and HNL–KOA sells the exact June 9 nonstop from $75. Keep the mainland legs protected on one ticket and retain the inter-island buffer."
+        "google-flights-2027-current-audit": "PIT–HNL is selling June 5–15 from $859 round trip with one stop, and HNL–KOA sells the exact June 9 nonstop from $75. Keep the mainland legs protected on one ticket and retain the inter-island buffer.",
+        "google-flights-2026-11-03-family-audit": "PIT–HNL June 5 / KOA–PIT June 14, 2027 open-jaw: $3,188 for the family on United via ORD/DEN (Alaska via SEA $3,416); the Kona red-eye reaches Pittsburgh at 4:44 PM June 15. HNL–KOA is about $300. The $3,600–$4,400 flight line still holds."
       },
       "claimType": "proxy"
     },
@@ -444,8 +448,8 @@
     "June 2027 air, lodging and activity inventory remains unquoted"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "confirmed",
-    "headline": "Every exact 2027 flight leg remains bookable"
+    "headline": "Four-passenger check: the Honolulu-in / Kona-out ticket is sold below the band"
   }
 }

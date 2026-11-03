@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "canary-islands",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The five categories reconcile exactly to $12,420–$16,690. The entire band is above target and the high case is $1,690 above the preferred maximum; long-haul airfare is not quoted.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $14,020–$17,390. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 12420,
+        "lowUsd": 14020,
         "expectedUsd": null,
-        "highUsd": 16690,
+        "highUsd": 17390,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "5020/6720 + 2450/3160 + 1130/1520 + 3320/4190 + 500/1100 = 12420/16690"
+        "arithmetic": "5020/6720 + 2450/3160 + 1130/1520 + 3320/4190 + 500/1100 = 12420/16690 | 2026-11-03: flight lines repriced, band $12,420–$16,690 -> $14,020–$17,390"
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "canary-islands/main.json #totals target/high columns; exact category reconciliation"
+        "internal-itinerary": "canary-islands/main.json #totals target/high columns; exact category reconciliation",
+        "google-flights-2026-11-03-family-audit": "PIT–TFS June 8–21, 2027: $5,006 for the family on BA/Iberia out and Iberia/American back (2:50 AM departure, home 7:29 PM June 21). Canaryfly TFN–SPC June 15 is $184 and SPC–TFN June 20 $199."
       },
       "claimType": "proxy"
     },
@@ -319,7 +321,8 @@
       "sourceRefs": [
         "binter-canary-network-2026",
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "confirmed",
@@ -330,16 +333,17 @@
         "june2027ProtectedTicketVerified": false,
         "returnBuffer": "one Tenerife night",
         "singleTicket": false,
-        "currentFlightAudit": "PIT–Tenerife is available June 8–22 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent.",
+        "currentFlightAudit": "PIT–TFS June 8–21, 2027: $5,006 for the family on BA/Iberia out and Iberia/American back (2:50 AM departure, home 7:29 PM June 21). Canaryfly TFN–SPC June 15 is $184 and SPC–TFN June 20 $199.",
         "exact2027FlightsVerified": true,
         "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "binter-canary-network-2026": "Binter 2026 press kit documents dense service among Tenerife and La Palma; exact 2027 dates/fare absent",
         "internal-itinerary": "canary-islands/main.json air section requires Tenerife reposition and prohibits a fragile direct SPC long-haul chain",
-        "google-flights-2027-current-audit": "PIT–Tenerife is available June 8–22 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent."
+        "google-flights-2027-current-audit": "PIT–Tenerife is available June 8–22 from $1,361 round trip with two stops. Binter sells the exact June 15/20 Tenerife–La Palma nonstops from $194 round trip; the current family flight band still holds and the Tenerife return buffer remains prudent.",
+        "google-flights-2026-11-03-family-audit": "PIT–TFS June 8–21, 2027: $5,006 for the family on BA/Iberia out and Iberia/American back (2:50 AM departure, home 7:29 PM June 21). Canaryfly TFN–SPC June 15 is $184 and SPC–TFN June 20 $199."
       },
       "claimType": "proxy"
     },
@@ -437,8 +441,8 @@
     "medium-confidence SST and budget claims"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "confirmed",
-    "headline": "Both the long-haul dates and Tenerife–La Palma flights are selling"
+    "headline": "Four-passenger check: the Tenerife round trip and both La Palma hops are sold"
   }
 }

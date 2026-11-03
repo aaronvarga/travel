@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "switzerland-crete",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $14,120–$19,440 less a single $2,000 fixed travel redemption yields $12,120–$17,440. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,520–$15,940 net ($14,520–$17,940 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 12120,
+        "lowUsd": 12520,
         "expectedUsd": null,
-        "highUsd": 17440,
+        "highUsd": 15940,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 8,
-        "arithmetic": "5200/7200 + 1100/1800 + 1150/1450 + 1020/1340 + 2150/2650 + 850/1150 + 2150/2750 + 500/1100 = 14120/19440 gross; minus 2000/2000 = 12120/17440 net",
-        "grossLowUsd": 14120,
-        "grossHighUsd": 19440,
+        "arithmetic": "5200/7200 + 1100/1800 + 1150/1450 + 1020/1340 + 2150/2650 + 850/1150 + 2150/2750 + 500/1100 = 14120/19440 gross; minus 2000/2000 = 12120/17440 net | 2026-11-03: flight lines repriced, band $12,120–$17,440 -> $12,520–$15,940",
+        "grossLowUsd": 14520,
+        "grossHighUsd": 17940,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "switzerland-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–ZRH June 8 / CHQ–PIT June 22, 2027: $4,894 for the family on Air Canada with a 1h05 Munich connection (the $4,802 option has 55 minutes), home 10:38 PM. ZRH–HER on June 14 is $596 on the Condor nonstop."
       },
       "claimType": "derived"
     },
@@ -308,17 +310,18 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "edelweiss-zrh-crete",
         "eu-etias",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": false,
         "singleTicketAssumption": false,
         "maxConnections": 2,
@@ -327,18 +330,19 @@
         "june2027ProtectedTicketVerified": false,
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required for the Schengen legs",
         "note": "Not ready to book. Re-quote the open-jaw on ITA Matrix and confirm the ZRH-Crete day once 2027 inventory opens.",
-        "currentFlightAudit": "PIT–ZRH is selling June 8–22 from $1,136 round trip. The exact June 14 ZRH–HER nonstop is available from $149 in 2h55; keep the Heraklion-to-Chania drive in the plan.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–ZRH June 8 / CHQ–PIT June 22, 2027: $4,894 for the family on Air Canada with a 1h05 Munich connection (the $4,802 option has 55 minutes), home 10:38 PM. ZRH–HER on June 14 is $596 on the Condor nonstop.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "edelweiss-zrh-crete": "ZRH-HER and ZRH-CHQ nonstop existence and frequency",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "Open-jaw construction and homebound-via-Athens plan",
         "google-flights-2027-audit": "Checked 2026-07-19: ZRH-HER verified with 4 nonstops on the checked Aug Tuesday (Edelweiss x2, Condor, Chair Airlines; 2h50, from $209).",
-        "google-flights-2027-current-audit": "PIT–ZRH is selling June 8–22 from $1,136 round trip. The exact June 14 ZRH–HER nonstop is available from $149 in 2h55; keep the Heraklion-to-Chania drive in the plan."
+        "google-flights-2027-current-audit": "PIT–ZRH is selling June 8–22 from $1,136 round trip. The exact June 14 ZRH–HER nonstop is available from $149 in 2h55; keep the Heraklion-to-Chania drive in the plan.",
+        "google-flights-2026-11-03-family-audit": "PIT–ZRH June 8 / CHQ–PIT June 22, 2027: $4,894 for the family on Air Canada with a 1h05 Munich connection (the $4,802 option has 55 minutes), home 10:38 PM. ZRH–HER on June 14 is $596 on the Condor nonstop."
       },
       "claimType": "proxy"
     },
@@ -447,8 +451,8 @@
     "medium-confidence swim claim (Crete SST is a proxy)"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Zurich and the exact Heraklion hop are selling"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Zurich-in / Chania-out ticket and a Condor nonstop are sold"
   }
 }

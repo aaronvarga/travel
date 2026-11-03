@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "balkans",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The five-category rollup reconciles to $10,600–$16,800. The high case exceeds the $15,000 preference and the $1,600–$2,800 cross-border-car line has no qualifying quote, so 1/5 is strongly supported.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $13,800–$19,000. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10600,
+        "lowUsd": 13800,
         "expectedUsd": null,
-        "highUsd": 16800,
+        "highUsd": 19000,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "10600–16800 line-item sum; tolerance 150"
+        "arithmetic": "10600–16800 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $10,600–$16,800 -> $13,800–$19,000"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "Balkan Coast Road Trip; canonical 2027-07-01 → 2027-07-14; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "Balkan Coast Road Trip; canonical 2027-07-01 → 2027-07-14; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2026-11-03-family-audit": "PIT–DBV July 1 / CFU–PIT July 14, 2027: $6,052 for the family (United via EWR out; Austrian/Lufthansa/United home 11:22 PM). Aegean/United is $6,881."
       },
       "claimType": "proxy"
     },
@@ -292,7 +294,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
@@ -305,10 +307,11 @@
         "state-travel",
         "cdc-travel",
         "eu-etias",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": false,
         "maxConnections": 2,
         "route": "PIT → DBV; Croatia/Bosnia/Montenegro/Albania drive; Saranda → Corfu ferry; CFU → PIT",
@@ -317,12 +320,12 @@
         "blockingGate": "written quote naming Croatia, Bosnia, Montenegro and Albania plus an accepted international one-way drop before Corfu",
         "fallback": "redesign with separate rentals/private transfers if no compliant through-car quote exists",
         "ferryGate": "exact July 11, 2027 Saranda–Corfu sailing after car return",
-        "currentFlightAudit": "PIT–DBV is selling July 1–14 from $1,290 round trip with a one-stop option. Keep the air plan provisional until CFU–PIT and baggage protection price together on the same open-jaw ticket; the cross-border car remains a separate gate.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–DBV July 1 / CFU–PIT July 14, 2027: $6,052 for the family (United via EWR out; Austrian/Lufthansa/United home 11:22 PM). Aegean/United is $6,881.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Balkans #getting-around, #tips and #status explicitly identify the cross-border one-way car as the make-or-break gate",
         "croatia-rental-albania-restrictions": "Croatia Rent's current published terms prohibit taking its vehicles into Albania; other suppliers differ, so a named supplier and written approval/drop quote are mandatory",
@@ -334,7 +337,8 @@
         "state-travel": "Country advisories for Bosnia and Herzegovina, Montenegro, Albania and Greece require recheck",
         "cdc-travel": "Destination health guidance for all four countries requires recheck",
         "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact date later; July 2027 Greece entry action remains a recheck",
-        "google-flights-2027-current-audit": "PIT–DBV is selling July 1–14 from $1,290 round trip with a one-stop option. Keep the air plan provisional until CFU–PIT and baggage protection price together on the same open-jaw ticket; the cross-border car remains a separate gate."
+        "google-flights-2027-current-audit": "PIT–DBV is selling July 1–14 from $1,290 round trip with a one-stop option. Keep the air plan provisional until CFU–PIT and baggage protection price together on the same open-jaw ticket; the cross-border car remains a separate gate.",
+        "google-flights-2026-11-03-family-audit": "PIT–DBV July 1 / CFU–PIT July 14, 2027: $6,052 for the family (United via EWR out; Austrian/Lufthansa/United home 11:22 PM). Aegean/United is $6,881."
       },
       "claimType": "proxy"
     },
@@ -432,8 +436,8 @@
     "no qualifying Dubrovnik-to-Saranda one-way-car quote yet"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Dubrovnik inventory is live; the Corfu open-jaw still needs one protected quote"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Dubrovnik-in / Corfu-out ticket is sold, well above the old band"
   }
 }

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "greece-ionian",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 4,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $10,800–$15,000 less a single $2,000 fixed travel redemption yields $8,800–$13,000. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $9,500–$13,000 net ($11,500–$15,000 gross). Budget 4/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 8800,
+        "lowUsd": 9500,
         "expectedUsd": null,
         "highUsd": 13000,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "5600/6700 + 1700/2800 + 800/1300 + 150/300 + 1560/2200 + 520/850 + 470/850 = 10800/15000 gross; minus 2000/2000 = 8800/13000 net",
-        "grossLowUsd": 10800,
+        "arithmetic": "5600/6700 + 1700/2800 + 800/1300 + 150/300 + 1560/2200 + 520/850 + 470/850 = 10800/15000 gross; minus 2000/2000 = 8800/13000 net | 2026-11-03: flight lines repriced, band $8,800–$13,000 -> $9,500–$13,000",
+        "grossLowUsd": 11500,
         "grossHighUsd": 15000,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "greece-ionian/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–JFK–ATH–EFL, June 9–22: gateway round-trip proxy for open-jaw, family base $5529; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–JFK–ATH–EFL, June 9–22: gateway round-trip proxy for open-jaw, family base $5529; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–EFL June 9 / ATH–PIT June 22, 2027 is sold on one ticket for $5,345 (home 9:25 PM via JFK in 1h30) or $5,673 via ORD in 1h55. A Preveza exit prices at $11,543 with three stops, so the Athens exit and buffer night stay."
       },
       "claimType": "derived"
     },
@@ -283,7 +285,7 @@
         "note": "One country and one ferry remain simple on the islands; the corrected exit adds a long Lefkada-to-ATH drive, a one-way mainland car return, and a third lodging sleep.",
         "easeScore": 3,
         "maxConnections": 2,
-        "singleTicket": false
+        "singleTicket": true
       },
       "verifiedAt": "2026-07-11",
       "expiresAt": "2027-05-01",
@@ -319,7 +321,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "aegean-ath-efl",
@@ -328,11 +330,12 @@
         "eu-etias",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
-        "singleTicket": false,
+        "status": "confirmed",
+        "singleTicket": true,
         "maxConnections": 2,
         "arrivalLeg": "PIT -> US gateway -> ATH -> EFL; ATH-EFL single-ticketable via Delta/Aegean interline or United/Aegean Star codeshare",
         "departureLeg": "Lefkada -> ATH by car on Jun 21; airport-buffer night; ATH -> one protected hub -> PIT on Jun 22",
@@ -340,12 +343,12 @@
         "navagio": "Cove closed to landing/swimming through Oct 31 2026 (landslide risk); boats view from the bay mouth. 2027 status unannounced.",
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; EUR20/adult if required, exempt under 18/over 70.",
         "note": "Exact-date PIT-EFL and ATH-PIT components are live. Price EFL-in/ATH-out as one protected multi-city ticket, reject PVK, and reconfirm the ferry timetable and Navagio status.",
-        "currentFlightAudit": "PIT–EFL is selling June 9–22 from $1,363 round trip with two stops. Keep the corrected Lefkada-to-Athens buffer and price EFL-in/ATH-out together; do not restore the unavailable Preveza exit.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–EFL June 9 / ATH–PIT June 22, 2027 is sold on one ticket for $5,345 (home 9:25 PM via JFK in 1h30) or $5,673 via ORD in 1h55. A Preveza exit prices at $11,543 with three stops, so the Athens exit and buffer night stay.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "aegean-ath-efl": "EFL arrival frequency and sold ATH return inventory supporting the corrected multi-city route",
         "ionion-pelagos-ferry": "Ferry route existence and seasonal-schedule caveat",
@@ -353,7 +356,8 @@
         "eu-etias": "Official Q4 2026 launch guidance, EUR20 adult fee, exemptions, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "Corrected EFL-in/ATH-out construction with Jun 21 airport-buffer night",
         "google-flights-2027-audit": "Checked 2026-07-19: PVK-PIT interline single tickets exist but from ~$3,053 pp and 28-30h via ZRH (Tuesday Aug proxy), confirming the thin/charter-exit concern; ATH-EFL verified 4 nonstops/day (Aegean/Olympic, Sky Express, $97-202).",
-        "google-flights-2027-current-audit": "PIT–EFL is selling June 9–22 from $1,363 round trip with two stops. Keep the corrected Lefkada-to-Athens buffer and price EFL-in/ATH-out together; do not restore the unavailable Preveza exit."
+        "google-flights-2027-current-audit": "PIT–EFL is selling June 9–22 from $1,363 round trip with two stops. Keep the corrected Lefkada-to-Athens buffer and price EFL-in/ATH-out together; do not restore the unavailable Preveza exit.",
+        "google-flights-2026-11-03-family-audit": "PIT–EFL June 9 / ATH–PIT June 22, 2027 is sold on one ticket for $5,345 (home 9:25 PM via JFK in 1h30) or $5,673 via ORD in 1h55. A Preveza exit prices at $11,543 with three stops, so the Athens exit and buffer night stay."
       },
       "claimType": "proxy"
     },
@@ -451,8 +455,8 @@
     "explicit unknowns: live 2027 open-jaw fare, 2027 ferry timetable, Lefkada lodging precision, Egremni land access, and 2027 Navagio landing status"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "The corrected route exits through Athens, not Preveza"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Kefalonia-in / Athens-out ticket is sold"
   }
 }

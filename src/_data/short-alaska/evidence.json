@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-alaska",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "The seven-category family estimate reconciles exactly to $9,140–$12,600. The entire band sits at or below $13,500 but the ceiling exceeds the $12,000 target, so this scores 4 rather than 5 — the only short escape where that gate binds. Cost never excludes the trip.",
+      "score": 2,
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,840–$13,900. Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,24 +101,26 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "majormarine-kenai-cruise"
+        "majormarine-kenai-cruise",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9140,
+        "lowUsd": 10840,
         "expectedUsd": null,
-        "highUsd": 12600,
+        "highUsd": 13900,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "2000–3000 + 2750–3500 + 700–1100 + 1500–2100 + 840–950 + 450–750 + 900–1200 = 9140–12600",
+        "arithmetic": "2000–3000 + 2750–3500 + 700–1100 + 1500–2100 + 840–950 + 450–750 + 900–1200 = 9140–12600 | 2026-11-03: flight lines repriced, band $9,140–$12,600 -> $10,840–$13,900",
         "exceedsShortTripTarget": true
       },
-      "verifiedAt": "2026-07-15",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-alaska/main.json #budget and #totals; seven itemized categories reconcile to the displayed total",
-        "majormarine-kenai-cruise": "Current 6-hour cruise fares $239 adult / $119.50 child (2–11) support the $840–$950 cruise line for three adult fares plus one child"
+        "majormarine-kenai-cruise": "Current 6-hour cruise fares $239 adult / $119.50 child (2–11) support the $840–$950 cruise line for three adult fares plus one child",
+        "google-flights-2026-11-03-family-audit": "PIT–ANC June 12–19, 2027: $3,114 for the family on Alaska via SEA (lands 2:40 AM June 13; the red-eye home reaches Pittsburgh 5:44 PM June 19). Delta via SLC, landing 11:34 PM June 12, is $3,638."
       },
       "claimType": "proxy"
     },
@@ -314,29 +316,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-alaska-route-review-20260911"
+        "short-alaska-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "Alaska markets Pittsburgh–Anchorage fares, currently for other dates and one passenger. June 12–19, 2027 family availability, Seattle connections and eastbound arrival date require checkout verification.",
+        "currentFlightAudit": "PIT–ANC June 12–19, 2027: $3,114 for the family on Alaska via SEA (lands 2:40 AM June 13; the red-eye home reaches Pittsburgh 5:44 PM June 19). Delta via SLC, landing 11:34 PM June 12, is $3,638.",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-alaska/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-alaska-route-review-20260911": "Alaska markets Pittsburgh–Anchorage fares, currently for other dates and one passenger. June 12–19, 2027 family availability, Seattle connections and eastbound arrival date require checkout verification."
+        "short-alaska-route-review-20260911": "Alaska markets Pittsburgh–Anchorage fares, currently for other dates and one passenger. June 12–19, 2027 family availability, Seattle connections and eastbound arrival date require checkout verification.",
+        "google-flights-2026-11-03-family-audit": "PIT–ANC June 12–19, 2027: $3,114 for the family on Alaska via SEA (lands 2:40 AM June 13; the red-eye home reaches Pittsburgh 5:44 PM June 19). Delta via SLC, landing 11:34 PM June 12, is $3,638."
       },
       "claimType": "proxy"
     },

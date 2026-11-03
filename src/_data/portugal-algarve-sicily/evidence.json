@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-algarve-sicily",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -102,7 +102,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 13300,
@@ -117,12 +118,13 @@
         "grossHighUsd": 19400,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "portugal-algarve-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–LHR–FAO, June 10–23: gateway round-trip proxy for open-jaw, family base $6260; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–LHR–FAO, June 10–23: gateway round-trip proxy for open-jaw, family base $6260; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "Same-day-home PIT–FAO / CTA–PIT open-jaws cost $7,600–$7,900 for the family; cheaper combinations land June 24 and are rejected. Two one-ways fit the band: Aer Lingus PIT–FAO June 10 $2,987 plus Lufthansa/United CTA–PIT June 23 $2,973 (home 4:57 PM). FAO–PMO June 17 is $1,181 on TAP/ITA via Lisbon and Rome. The existing flight lines still hold."
       },
       "claimType": "derived"
     },
@@ -300,7 +302,8 @@
         "state-travel",
         "cdc-travel",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -308,12 +311,12 @@
         "maxConnections": 2,
         "route": "Faro → Lisbon → Rome → Palermo → Cefalù",
         "dateWindow": "2027-06-17",
-        "currentFlightAudit": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears.",
+        "currentFlightAudit": "Same-day-home PIT–FAO / CTA–PIT open-jaws cost $7,600–$7,900 for the family; cheaper combinations land June 24 and are rejected. Two one-ways fit the band: Aer Lingus PIT–FAO June 10 $2,987 plus Lufthansa/United CTA–PIT June 23 $2,973 (home 4:57 PM). FAO–PMO June 17 is $1,181 on TAP/ITA via Lisbon and Rome. The existing flight lines still hold.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "vueling-fao-bcn-pmo": "Google Flights (2026-07-19) confirms Vueling sells the FAO→BCN→PMO connection as one through-ticket via Barcelona (~6h55, 1 stop); the single-ticket routing is verified, but the exact June-2027 day is beyond the current booking window and unconfirmed",
         "flightconnections-fao-pmo": "Schedule aggregation checked 2026-07-19 lists Barcelona as the fastest FAO–PMO one-stop routing at ~6h55 total (1 stop); a current pattern, not a 2027 confirmation",
@@ -321,7 +324,8 @@
         "state-travel": "Portugal Level 1 and Italy Level 2 advisories reviewed 2026-07-19",
         "cdc-travel": "Portugal and Italy traveler pages reviewed 2026-07-19; recheck before departure",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-FAO sold for exact 2027-06-10 (BA 1-stop via LHR; 2-stop single tickets $733-754); CTA-PIT verified same-day pattern (Delta/KLM via JFK 17h42 lands 9:37 PM ~$961; ITA+American via FCO+PHL $1,026).",
-        "google-flights-2027-current-audit": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears."
+        "google-flights-2027-current-audit": "PIT–FAO is selling June 10–23 from $1,556 round trip. On June 17 the practical same-day FAO–PMO option is TAP/ITA via Lisbon and Rome in 8h20 from $319; no protected Vueling Barcelona chain appears.",
+        "google-flights-2026-11-03-family-audit": "Same-day-home PIT–FAO / CTA–PIT open-jaws cost $7,600–$7,900 for the family; cheaper combinations land June 24 and are rejected. Two one-ways fit the band: Aer Lingus PIT–FAO June 10 $2,987 plus Lufthansa/United CTA–PIT June 23 $2,973 (home 4:57 PM). FAO–PMO June 17 is $1,181 on TAP/ITA via Lisbon and Rome. The existing flight lines still hold."
       },
       "claimType": "proxy"
     },
@@ -455,8 +459,8 @@
     "exact-2027-schedule-required Algarve-to-Sicily Vueling gate"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "current-proxy",
-    "headline": "The planned Barcelona connection is not sold; use the live two-stop route"
+    "headline": "Four-passenger check: two protected one-ways beat the open-jaw"
   }
 }

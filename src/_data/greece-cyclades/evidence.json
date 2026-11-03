@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "greece-cyclades",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -102,7 +102,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 10800,
@@ -117,12 +118,13 @@
         "grossHighUsd": 16970,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "greece-cyclades/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–YYZ–ATH, June 8–21: exact-date gateway round-trip search, not checkout, family base $5202; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–YYZ–ATH, June 8–21: exact-date gateway round-trip search, not checkout, family base $5202; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–ATH June 8–21, 2027 round trip: $5,198 for the family (September: $5,202). Milos–Athens is $230 for the family before bags. The existing airfare and domestic-flight lines still hold."
       },
       "claimType": "derived"
     },
@@ -301,7 +303,8 @@
         "meltemi-risk",
         "eu-etias",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "confirmed",
@@ -313,12 +316,12 @@
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; E20/adult if required, children apply without a fee",
         "meltemiRisk": "meltemi can cancel high-speed ferries and the Kleftiko boat; June is the calm shoulder, cancellations uncommon",
         "note": "Not ready to book. Re-quote PIT-Athens on ITA Matrix, confirm 2027 ferry sailings, keep the Kleftiko cruise early in the Milos stay and the flex day open.",
-        "currentFlightAudit": "PIT–ATH is available June 8–21 from $1,296 round trip with one stop. MLO–ATH sells multiple 40-minute nonstops June 20 from $154; ferries remain a separate timetable recheck.",
+        "currentFlightAudit": "PIT–ATH June 8–21, 2027 round trip: $5,198 for the family (September: $5,202). Milos–Athens is $230 for the family before bags. The existing airfare and domestic-flight lines still hold.",
         "exact2027FlightsVerified": true,
         "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "pit-ath-routing": "no PIT-ATH nonstop; two-stop routings via US gateway + European hub",
         "cyclades-ferries": "three inter-island legs; high-speed cats cancel first in strong wind",
@@ -326,7 +329,8 @@
         "meltemi-risk": "June calm shoulder; cancellations uncommon but possible; buffer days mitigate",
         "eu-etias": "Official Q4 2026 launch guidance, E20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "google-flights-2027-audit": "PIT-ATH verified for exact 2027-06-08 on Google Flights 2026-07-19: abundant 1-stop single tickets $569-586 (United via EWR 11h55; American via CLT/PHL; Air Canada via YYZ/YUL) - better than the 2-stop planning assumption.",
-        "google-flights-2027-current-audit": "PIT–ATH is available June 8–21 from $1,296 round trip with one stop. MLO–ATH sells multiple 40-minute nonstops June 20 from $154; ferries remain a separate timetable recheck."
+        "google-flights-2027-current-audit": "PIT–ATH is available June 8–21 from $1,296 round trip with one stop. MLO–ATH sells multiple 40-minute nonstops June 20 from $154; ferries remain a separate timetable recheck.",
+        "google-flights-2026-11-03-family-audit": "PIT–ATH June 8–21, 2027 round trip: $5,198 for the family (September: $5,202). Milos–Athens is $230 for the family before bags. The existing airfare and domestic-flight lines still hold."
       },
       "claimType": "proxy"
     },
@@ -419,8 +423,8 @@
     "medium-confidence swim claim (Aegean SST is a proxy, ~72°F, warmer beaches than temperature alone implies)"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "confirmed",
-    "headline": "The exact Athens and Milos flight dates are selling"
+    "headline": "Four-passenger check: Athens round trip and the Milos flight both sold"
   }
 }

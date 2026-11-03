@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "crete",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Replace the two one-way sum with the $6,733 complete family option; allow $720 bags and $200–800 seats, rounded up to $7,700–8,300. Add a previously missing $500–900 insurance/contingency allowance (estimate). Gross $14,200–$18,300 less a single $2,000 fixed travel redemption yields $12,200–$16,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,400–$15,500 net ($13,400–$17,500 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,24 +102,26 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 12200,
-        "highUsd": 16300,
-        "grossLowUsd": 14200,
-        "grossHighUsd": 18300,
+        "lowUsd": 11400,
+        "highUsd": 15500,
+        "grossLowUsd": 13400,
+        "grossHighUsd": 17500,
         "pointsSavingsUsd": 2000,
         "lineItemCount": 6,
         "expectedUsd": null,
-        "arithmetic": "7700/8300 + 2300/3700 + 1200/1700 + 1800/2500 + 700/1200 + 500/900 = 14200/18300 gross; minus 2000/2000 = 12200/16300 net"
+        "arithmetic": "7700/8300 + 2300/3700 + 1200/1700 + 1800/2500 + 700/1200 + 500/900 = 14200/18300 gross; minus 2000/2000 = 12200/16300 net | 2026-11-03: flight lines repriced, band $12,200–$16,300 -> $11,400–$15,500"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–LHR–CHQ / HER–ATH–JFK–PIT: complete open-jaw, family base $6733; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–LHR–CHQ / HER–ATH–JFK–PIT: complete open-jaw, family base $6733; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–CHQ June 9 / HER–PIT June 23, 2027 is sold on one ticket for $5,882 (September: $6,733); the return connects via Athens and ORD (1h55) and reaches Pittsburgh at 7:28 PM June 23."
       },
       "claimType": "derived"
     },
@@ -245,7 +247,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "google-flights-crete-outbound-2027",
-        "google-flights-crete-return-2027"
+        "google-flights-crete-return-2027",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "easeScore": 3,
@@ -253,14 +256,15 @@
         "baseMoves": 2,
         "internalFlights": 0,
         "maxConnections": 2,
-        "singleTicket": false
+        "singleTicket": true
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "crete/main.json air travel, getting around and daily route",
         "google-flights-crete-outbound-2027": "Exact-date UI search showed a one-stop 13h outbound",
-        "google-flights-crete-return-2027": "Exact-date UI search showed a two-stop 16h50 same-day return"
+        "google-flights-crete-return-2027": "Exact-date UI search showed a two-stop 16h50 same-day return",
+        "google-flights-2026-11-03-family-audit": "Nov 3 four-passenger search: PIT–CHQ June 9 / HER–PIT June 23 sold on one ticket, one stop out (LHR) and two stops back (ATH, ORD)"
       },
       "claimType": "mixed"
     },
@@ -293,22 +297,27 @@
       "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "confirmed",
         "exactTripQuoteObserved": true,
         "finalProtectionVerified": false,
         "sameDayReturnObserved": true,
-        "singleTicket": false,
+        "singleTicket": true,
         "maxConnections": 2,
         "quoteStage": "Google Flights four-passenger booking option, not final airline checkout",
-        "familyBaseFareUsd": 6733
+        "familyBaseFareUsd": 5882,
+        "currentFlightAudit": "PIT–CHQ June 9 / HER–PIT June 23, 2027 is sold on one ticket for $5,882 (September: $6,733); the return connects via Athens and ORD (1h55) and reaches Pittsburgh at 7:28 PM June 23.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "google-flights-family-audit": "Four-passenger multi-city: BA PIT–LHR–CHQ June 9/10, 21:45–17:45; Aegean/American HER–ATH–JFK–PIT June 23, 11:35–21:25. American booking option $6,733, bags $720 family; paid seats and final protection unverified"
+        "google-flights-family-audit": "Four-passenger multi-city: BA PIT–LHR–CHQ June 9/10, 21:45–17:45; Aegean/American HER–ATH–JFK–PIT June 23, 11:35–21:25. American booking option $6,733, bags $720 family; paid seats and final protection unverified",
+        "google-flights-2026-11-03-family-audit": "PIT–CHQ June 9 / HER–PIT June 23, 2027 is sold on one ticket for $5,882 (September: $6,733); the return connects via Athens and ORD (1h55) and reaches Pittsburgh at 7:28 PM June 23."
       },
       "claimType": "observed"
     },
@@ -353,5 +362,10 @@
     "waterSafety": "Daily wind, flag and operator checks; familiar flotation gear where allowed.",
     "crowdingPressure": "Early starts required for Knossos, Spinalonga, Balos and Elafonissi.",
     "medicalAccess": "Hospitals in Chania, Rethymno and Agios Nikolaos; remote gorge and lagoon days require conservative turn-around rules."
+  },
+  "flightAudit": {
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: complete Crete open-jaw sold for less"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "slovenia-adriatic",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -102,7 +102,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 10200,
@@ -117,12 +118,13 @@
         "grossHighUsd": 15400,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "slovenia-adriatic/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–YYZ–MUC–LJU / LJU–EWR–PIT: complete round-trip, family base $5342; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–YYZ–MUC–LJU / LJU–EWR–PIT: complete round-trip, family base $5342; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–LJU June 8–22, 2027 round trip: $5,343 for the family (September: $5,342). The $6,300–$7,000 airfare line with bags and seats still holds."
       },
       "claimType": "derived"
     },
@@ -323,7 +325,8 @@
         "eu-etias",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "confirmed",
@@ -335,18 +338,19 @@
         "etias": "Q4 2026 launch expected; June 2027 applicability remains uncertain during transitional/grace periods; €20/adult if required, children apply without a fee",
         "vrsicOpening": "normally open by mid-June but not guaranteed; check promet.si, Predel/Tarvisio fallback",
         "note": "Not ready to book. Re-quote LJU vs Venice on ITA Matrix, confirm the Vršič Pass is open near travel, and verify ETIAS status once 2027 inventory opens.",
-        "currentFlightAudit": "PIT–LJU is available June 8–22 from $1,347 round trip with two stops. Exact inventory remains live; compare the protected Ljubljana routing with the Venice-drive fallback before purchase.",
+        "currentFlightAudit": "PIT–LJU June 8–22, 2027 round trip: $5,343 for the family (September: $5,342). The $6,300–$7,000 airfare line with bags and seats still holds.",
         "exact2027FlightsVerified": true,
         "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "lju-vce-routing": "No PIT-Europe nonstop and no LJU long-haul; two-stop LJU vs single-connection Venice gateway",
         "eu-etias": "Official Q4 2026 launch guidance, €20 adult fee, child fee exemption, and at least 12 months of transitional/grace periods; June 2027 applicability requires a close-in recheck",
         "internal-itinerary": "slovenia-adriatic/main.json air-travel section and round-trip construction",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-LJU bookable NOW for the exact 2027-06-08 date - 2-stop single tickets $536-550 (United+SWISS via IAD/ZRH 13h05; Air Canada+Lufthansa via YUL/FRA 12h05); BA 1-stop via LHR $926.",
-        "google-flights-2027-current-audit": "PIT–LJU is available June 8–22 from $1,347 round trip with two stops. Exact inventory remains live; compare the protected Ljubljana routing with the Venice-drive fallback before purchase."
+        "google-flights-2027-current-audit": "PIT–LJU is available June 8–22 from $1,347 round trip with two stops. Exact inventory remains live; compare the protected Ljubljana routing with the Venice-drive fallback before purchase.",
+        "google-flights-2026-11-03-family-audit": "PIT–LJU June 8–22, 2027 round trip: $5,343 for the family (September: $5,342). The $6,300–$7,000 airfare line with bags and seats still holds."
       },
       "claimType": "proxy"
     },
@@ -444,8 +448,8 @@
     "medium-confidence swim claim (Adriatic SST is a proxy and cooler than the warm-water peers)"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "confirmed",
-    "headline": "Exact Ljubljana round trips are selling"
+    "headline": "Four-passenger check: exact Ljubljana round trip still sold at the same price"
   }
 }

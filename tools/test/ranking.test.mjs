@@ -11,7 +11,7 @@ const defaults = Object.fromEntries(summary.axes.map((axis) => [axis.id, axis.we
 test('default appeal order keeps all active and reference trips visible', () => {
   const ordered = [...summary.trips].sort((a, b) => compareDefault(a, b, summary.axes, defaults, summary.budgetTargets));
   assert.equal(ordered.length, 31);
-  assert.deepEqual(ordered.slice(0, 4).map((trip) => trip.slug), ['slovenia-adriatic', 'iceland-ischia-cilento', 'iceland', 'madeira-mallorca']);
+  assert.deepEqual(ordered.slice(0, 4).map((trip) => trip.slug), ['slovenia-adriatic', 'iceland', 'madeira-mallorca', 'greece-ionian']);
   assert.equal(ordered.filter((trip) => !trip.excluded).length, 22);
   assert.equal(ordered.filter((trip) => trip.excluded).length, 9);
 });
@@ -35,10 +35,10 @@ test('source prose rank and total citations match the default engine result', ()
 });
 
 test('readiness never changes appeal data', () => {
-  const greece = summary.trips.find((trip) => trip.slug === 'greece-via-lisbon');
+  const greece = summary.trips.find((trip) => trip.slug === 'iceland-ischia-cilento');
   assert.equal(readiness(greece).id, 'current-proxy');
   assert.equal(readiness(greece).bookable, false);
-  assert.equal(greece.totalBaked, 35);
+  assert.equal(greece.totalBaked, 38);
   assert.equal(greece.excluded, null);
 });
 

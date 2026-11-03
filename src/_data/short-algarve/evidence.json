@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-algarve",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 4,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $9,800–$12,650. The Budget 4/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,300–$12,650. Budget 4/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,25 +101,27 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-algarve-route-review-20260911"
+        "short-algarve-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9800,
+        "lowUsd": 10300,
         "expectedUsd": null,
         "highUsd": 12650,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "6200–7000 + 1600–2400 + 850–1150 + 350–650 + 300–650 + 500–800 = 9800–12650",
+        "arithmetic": "6200–7000 + 1600–2400 + 850–1150 + 350–650 + 300–650 + 500–800 = 9800–12650 | 2026-11-03: flight lines repriced, band $9,800–$12,650 -> $10,300–$12,650",
         "currentSupplierQuote": false,
         "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-algarve/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-algarve-route-review-20260911": "BA lists London Heathrow and London City service to Faro. Require the same London airport and one through-ticket from Pittsburgh; no June 12–20, 2027 family quote was reproduced."
+        "short-algarve-route-review-20260911": "BA lists London Heathrow and London City service to Faro. Require the same London airport and one through-ticket from Pittsburgh; no June 12–20, 2027 family quote was reproduced.",
+        "google-flights-2026-11-03-family-audit": "Aer Lingus PIT–FAO June 12, 2027 is $3,122 for the family (3h35 in Dublin) and Aer Lingus FAO–PIT June 20 is $2,643 (home 6:40 PM). The full round trip's return leg was not displayed, so this stays a component check."
       },
       "claimType": "proxy"
     },
@@ -307,7 +309,8 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-algarve-route-review-20260911"
+        "short-algarve-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -318,14 +321,15 @@
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "BA lists London Heathrow and London City service to Faro. Require the same London airport and one through-ticket from Pittsburgh; no June 12–20, 2027 family quote was reproduced.",
+        "currentFlightAudit": "Aer Lingus PIT–FAO June 12, 2027 is $3,122 for the family (3h35 in Dublin) and Aer Lingus FAO–PIT June 20 is $2,643 (home 6:40 PM). The full round trip's return leg was not displayed, so this stays a component check.",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-algarve/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-algarve-route-review-20260911": "BA lists London Heathrow and London City service to Faro. Require the same London airport and one through-ticket from Pittsburgh; no June 12–20, 2027 family quote was reproduced."
+        "short-algarve-route-review-20260911": "BA lists London Heathrow and London City service to Faro. Require the same London airport and one through-ticket from Pittsburgh; no June 12–20, 2027 family quote was reproduced.",
+        "google-flights-2026-11-03-family-audit": "Aer Lingus PIT–FAO June 12, 2027 is $3,122 for the family (3h35 in Dublin) and Aer Lingus FAO–PIT June 20 is $2,643 (home 6:40 PM). The full round trip's return leg was not displayed, so this stays a component check."
       },
       "claimType": "proxy"
     },

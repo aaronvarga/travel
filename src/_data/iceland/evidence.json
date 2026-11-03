@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "iceland",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -102,7 +102,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 10420,
@@ -117,12 +118,13 @@
         "grossHighUsd": 15320,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "iceland/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–YUL–KEF / KEF–YUL–PIT: complete round-trip, family base $2619; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–YUL–KEF / KEF–YUL–PIT: complete round-trip, family base $2619; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–KEF June 8–21, 2027: United via ORD $2,754 for the family; the Icelandair PIT–KEF nonstop is now sold for June 8 at $3,490 with a BWI return home 11:35 PM June 21. The $3,600–$4,200 protected airfare line still holds."
       },
       "claimType": "derived"
     },
@@ -325,7 +327,8 @@
         "safetravel-reynisfjara",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "confirmed",
@@ -337,12 +340,12 @@
         "dailySafetyChecksRequired": true,
         "singleTicket": true,
         "maxConnections": 1,
-        "currentFlightAudit": "June 8–21 sells protected one-stop PIT–KEF itineraries from $703 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan remains one stop, not a seasonal nonstop.",
+        "currentFlightAudit": "PIT–KEF June 8–21, 2027: United via ORD $2,754 for the family; the Icelandair PIT–KEF nonstop is now sold for June 8 at $3,490 with a BWI return home 11:35 PM June 21. The $3,600–$4,200 protected airfare line still holds.",
         "exact2027FlightsVerified": true,
         "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "flypittsburgh-icelandair-2026": "PIT official announcement confirms Icelandair service for summer 2026 only",
         "flypittsburgh-nonstop-destinations": "PIT current route list shows Reykjavík seasonal, up to four weekly; no exact 2027 date",
@@ -350,7 +353,8 @@
         "safetravel-reynisfjara": "Official warning protocol documents sneaker waves, falling rock, three hazard levels, and possible short-notice closure",
         "internal-itinerary": "iceland/main.json health check says verify summer 2027 nonstop and hold one-stop backup",
         "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-08: PIT-KEF Icelandair nonstop NOT sold; best sold single tickets are United 1-stop via IAD (8h30, ~$541 pp) and JetBlue+Icelandair via BOS (9h50, ~$642). Nonstop remains conditional on Icelandair re-filing the seasonal PIT route for 2027.",
-        "google-flights-2027-current-audit": "June 8–21 sells protected one-stop PIT–KEF itineraries from $703 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan remains one stop, not a seasonal nonstop."
+        "google-flights-2027-current-audit": "June 8–21 sells protected one-stop PIT–KEF itineraries from $703 round trip; no nonstop is offered on the Tuesday outbound. The canonical flight plan remains one stop, not a seasonal nonstop.",
+        "google-flights-2026-11-03-family-audit": "PIT–KEF June 8–21, 2027: United via ORD $2,754 for the family; the Icelandair PIT–KEF nonstop is now sold for June 8 at $3,490 with a BWI return home 11:35 PM June 21. The $3,600–$4,200 protected airfare line still holds."
       },
       "claimType": "proxy"
     },
@@ -448,8 +452,8 @@
     "medium-confidence climate range, lodging, and budget"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "confirmed",
-    "headline": "The trip is bookable—but not with the assumed nonstop"
+    "headline": "Four-passenger check: one-stop and nonstop Keflavík options both sold"
   }
 }

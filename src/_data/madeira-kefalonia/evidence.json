@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-kefalonia",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -102,7 +102,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 11700,
@@ -117,12 +118,13 @@
         "grossHighUsd": 17300,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "madeira-kefalonia/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC / EFL–PIT June 22, 2027: $5,781 for the family, home 10:38 PM via ZRH and YYZ. FNC–EFL on one ticket is $1,335. The $8,000–$9,000 all-air line still holds."
       },
       "claimType": "derived"
     },
@@ -323,7 +325,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "ana-madeira-wind-operations",
@@ -331,28 +333,30 @@
         "eu-etias",
         "navagio-2026-status",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": false,
         "maxConnections": 3,
-        "june2027Verified": false,
+        "june2027Verified": true,
         "routeRule": "FNC inbound / EFL outbound through Athens; reject PVK and self-transfer exit options.",
         "etias": "Current EU rule is €20 for eligible adults and exemption for children; activation is scheduled before the trip but needs final confirmation.",
         "navagioLanding": "unknown for 2027",
-        "currentFlightAudit": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets.",
-        "exact2027FlightsVerified": false
+        "currentFlightAudit": "PIT–FNC / EFL–PIT June 22, 2027: $5,781 for the family, home 10:38 PM via ZRH and YYZ. FNC–EFL on one ticket is $1,335. The $8,000–$9,000 all-air line still holds.",
+        "exact2027FlightsVerified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "ana-madeira-wind-operations": "Official ANA disruption notice documents strong-wind operational sensitivity at Madeira Airport; it supports the need for protected/rebookable routing, not a 2027 probability.",
         "aegean-kefalonia-official": "Official Aegean destination/route page shows ATH–EFL is a current service; June 2027 inventory, frequency and through-ticket protection require a live quote.",
         "eu-etias": "Official EU ETIAS guidance says operations are scheduled for late 2026 and the application fee is €20; eligibility/launch must be reconfirmed for June 2027.",
         "navagio-2026-status": "2026 closure reporting supports a view-only/conservative boat plan; it cannot establish the eventual 2027 cove-access decision.",
         "google-flights-2027-audit": "Checked 2026-07-19: ATH-EFL verified 4 nonstops/day (Aegean/Olympic + Sky Express, 1h-1h15, $97-202); United EWR-FNC nonstop sold for exact 2027-06-08.",
-        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets."
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–EFL $402 and EFL–PIT $967 per traveler. That is about $7.9k before seats and bags, so use an $8.0k–$9.0k family air band and require protected tickets.",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC / EFL–PIT June 22, 2027: $5,781 for the family, home 10:38 PM via ZRH and YYZ. FNC–EFL on one ticket is $1,335. The $8,000–$9,000 all-air line still holds."
       },
       "claimType": "proxy"
     },
@@ -461,8 +465,8 @@
     "historical sea temperature and dining coverage remain medium-confidence planning inputs"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "The exact components sell, but the old airfare gate is obsolete"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Funchal-in / Kefalonia-out ticket is sold"
   }
 }

@@ -8,7 +8,7 @@ const dataDir = path.join(root, 'src', '_data');
 const audit = readJson(path.join(dataDir, 'flightAudits.json'));
 const profilePath = path.join(dataDir, 'decisionProfile.json');
 const profile = readJson(profilePath);
-const sourceId = 'google-flights-2027-current-audit';
+const sourceId = audit.sourceId || 'google-flights-2027-current-audit';
 const reviewedAt = audit.fullTripsReviewedAt;
 const expiresAt = audit.fullTripsExpiresAt;
 
@@ -53,16 +53,11 @@ for (const [slug, flight] of Object.entries(audit.trips)) {
   if (slug === 'iceland-ischia-cilento') {
     const airfareFact = evidence.facts.find((fact) => fact.id === 'airfare-proxy');
     if (!airfareFact) throw new Error(`${slug}: missing airfare-proxy fact`);
-    airfareFact.proxyStatus = 'reroute-required';
+    airfareFact.proxyStatus = flight.status;
     airfareFact.confidence = 'high';
     airfareFact.sourceRefs = [sourceId];
-    airfareFact.value = {
-      pitKefRoundTripPerPersonUsd: 663,
-      kefFcoOneWayPerPersonUsd: 241,
-      exactTripQuoteObserved: true,
-      assumedIcelandairStopoverAvailable: false,
-      routeConclusion: 'The exact dates require connections on both PIT–KEF and KEF–FCO; rebuild the air stack.',
-    };
+    if (!flight.airfareFact) throw new Error(`${slug}: flightAudits entry must carry airfareFact`);
+    airfareFact.value = { ...airfareFact.value, ...flight.airfareFact };
     airfareFact.verifiedAt = reviewedAt;
     airfareFact.expiresAt = expiresAt;
     airfareFact.sourceLocators = { [sourceId]: flight.detail };

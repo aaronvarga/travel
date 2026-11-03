@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "croatia",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $10,400–$14,800. The Budget 2/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "score": 1,
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,500–$16,300. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,23 +102,25 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10400,
+        "lowUsd": 12500,
         "expectedUsd": null,
-        "highUsd": 14800,
+        "highUsd": 16300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "5600–6800 flights + 700–1300 grouped ground transport + 2100–3100 lodging + 1705–2900 grouped food/activities + 300–700 buffer = 10405–14800; displayed 10400–14800"
+        "arithmetic": "5600–6800 flights + 700–1300 grouped ground transport + 2100–3100 lodging + 1705–2900 grouped food/activities + 300–700 buffer = 10405–14800; displayed 10400–14800 | 2026-11-03: flight lines repriced, band $10,400–$14,800 -> $12,500–$16,300"
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Croatia; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
-        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket."
+        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket.",
+        "google-flights-2026-11-03-family-audit": "PIT–SPU June 10 / DBV–PIT June 23, 2027: the cheapest $5,944 fare lands June 24 and is rejected. Aer Lingus/American at $6,756 leaves DBV 12:50 PM and reaches Pittsburgh 11:59 PM June 23."
       },
       "claimType": "proxy"
     },
@@ -285,7 +287,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
@@ -295,10 +297,11 @@
         "state-travel",
         "cdc-travel",
         "eu-etias",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 2,
         "route": "PIT → SPU; Split → Hvar → Korčula; Korčula → DBV → PIT",
@@ -315,12 +318,12 @@
           "private Korčula/DBV transfer with flight margin",
           "ETIAS status"
         ],
-        "currentFlightAudit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–SPU June 10 / DBV–PIT June 23, 2027: the cheapest $5,944 fare lands June 24 and is rejected. Aer Lingus/American at $6,756 leaves DBV 12:50 PM and reaches Pittsburgh 11:59 PM June 23.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Croatia #air-travel, #getting-around, #status and exact island-transfer/departure days",
         "jadrolinija-split-hvar-2026": "Jadrolinija official line 641/current page: direct Split–Hvar passenger service and 2026 seasonal timetable; not a June 2027 confirmation",
@@ -329,7 +332,8 @@
         "state-travel": "Croatia advisory review required before booking/departure",
         "cdc-travel": "Croatia destination health guidance to recheck before departure",
         "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck",
-        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket."
+        "google-flights-2027-current-audit": "PIT–SPU is selling June 10–23 from $1,405 round trip. The $5.6k–$6.8k family air band still holds, but DBV–PIT must price with it on one protected multi-city ticket.",
+        "google-flights-2026-11-03-family-audit": "PIT–SPU June 10 / DBV–PIT June 23, 2027: the cheapest $5,944 fare lands June 24 and is rejected. Aer Lingus/American at $6,756 leaves DBV 12:50 PM and reaches Pittsburgh 11:59 PM June 23."
       },
       "claimType": "proxy"
     },
@@ -451,8 +455,8 @@
     "independent food/store audit and June 2027 schedules remain incomplete"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Exact Split inventory is live, but the Dubrovnik open-jaw costs more than the old band"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: only one same-day Dubrovnik return, above the old band"
   }
 }

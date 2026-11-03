@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "dolomites-sardinia",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,200–$18,890 less a single $2,000 fixed travel redemption yields $11,200–$16,890. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,000–$16,890 net ($14,000–$18,890 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11200,
+        "lowUsd": 12000,
         "expectedUsd": null,
         "highUsd": 16890,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 11,
-        "arithmetic": "5400/7000 + 450/780 + 500/760 + 900/1400 + 750/1200 + 600/900 + 1200/1850 + 450/650 + 500/750 + 2000/2900 + 450/700 = 13200/18890 gross; minus 2000/2000 = 11200/16890 net",
-        "grossLowUsd": 13200,
+        "arithmetic": "5400/7000 + 450/780 + 500/760 + 900/1400 + 750/1200 + 600/900 + 1200/1850 + 450/650 + 500/750 + 2000/2900 + 450/700 = 13200/18890 gross; minus 2000/2000 = 11200/16890 net | 2026-11-03: flight lines repriced, band $11,200–$16,890 -> $12,000–$16,890",
+        "grossLowUsd": 14000,
         "grossHighUsd": 18890,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "dolomites-sardinia/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–LHR–VCE, June 27–July 11: gateway round-trip proxy for open-jaw, family base $5183; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–LHR–VCE, June 27–July 11: gateway round-trip proxy for open-jaw, family base $5183; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–VCE June 27 / OLB–PIT July 11, 2027 is sold on one ticket for $5,188, home 11:22 PM July 11. Volotea VCE–OLB is $148 for the family before bags."
       },
       "claimType": "derived"
     },
@@ -288,7 +290,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "exact-2027-schedule-required",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "volotea-vce-olb",
@@ -297,10 +299,11 @@
         "state-travel",
         "cdc-travel",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "exact-2027-schedule-required",
+        "status": "confirmed",
         "singleTicket": false,
         "maxConnections": 2,
         "route": "PIT → VCE; Dolomites; VCE → OLB on separate ticket; OLB → PIT",
@@ -309,12 +312,12 @@
           "exact VCE–OLB date/time",
           "2027 mountain lift calendar"
         ],
-        "currentFlightAudit": "PIT–VCE is selling June 27–July 11 from $1,297 round trip, and Volotea sells the exact July 5 VCE–OLB nonstop from $96 one way. Price OLB–PIT with the outbound before locking either rental car.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–VCE June 27 / OLB–PIT July 11, 2027 is sold on one ticket for $5,188, home 11:22 PM July 11. Volotea VCE–OLB is $148 for the family before bags.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "volotea-vce-olb": "Official Volotea route page checked 2026-07-10 markets nonstop Venice–Olbia; July 2027 timetable not published",
         "dolomiti-lifts-2026": "Official 2026 Val Gardena lift calendar shows key lifts open through analogous dates; 2027 dates remain unpublished and weather-dependent",
@@ -322,7 +325,8 @@
         "state-travel": "Italy Level 2 advisory reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Venice, Dolomites & Sardinia; recheck before departure",
         "google-flights-2027-audit": "Checked 2026-07-19: Volotea VCE-OLB nonstop verified (1h25, x2 on checked Aug Thursday, from $36); OLB-PIT Sunday return verified sold as ONE ticket - British Airways+American via LHR, 14h35, lands PIT 7:55 PM same day (~$843, Aug 2026 proxy). Jul 2027 beyond window.",
-        "google-flights-2027-current-audit": "PIT–VCE is selling June 27–July 11 from $1,297 round trip, and Volotea sells the exact July 5 VCE–OLB nonstop from $96 one way. Price OLB–PIT with the outbound before locking either rental car."
+        "google-flights-2027-current-audit": "PIT–VCE is selling June 27–July 11 from $1,297 round trip, and Volotea sells the exact July 5 VCE–OLB nonstop from $96 one way. Price OLB–PIT with the outbound before locking either rental car.",
+        "google-flights-2026-11-03-family-audit": "PIT–VCE June 27 / OLB–PIT July 11, 2027 is sold on one ticket for $5,188, home 11:22 PM July 11. Volotea VCE–OLB is $148 for the family before bags."
       },
       "claimType": "proxy"
     },
@@ -431,8 +435,8 @@
     "exact 2027 flight and lift calendars remain open"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "exact-2027-schedule-required",
-    "headline": "The exact Venice–Olbia hop is selling; the outer open-jaw remains the gate"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the real Venice-in / Olbia-out open-jaw is now sold"
   }
 }

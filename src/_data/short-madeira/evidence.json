@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-madeira",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $10,900–$13,500. The Budget 4/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "score": 5,
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $9,100–$11,500. Budget 5/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,25 +102,27 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-madeira-route-review-20260911"
+        "short-madeira-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10900,
+        "lowUsd": 9100,
         "expectedUsd": null,
-        "highUsd": 13500,
+        "highUsd": 11500,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "8200/9000 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 10900/13500",
+        "arithmetic": "8200/9000 + 875/1575 + 550/950 + 700/1050 + 175/325 + 400/600 = 10900/13500 | 2026-11-03: flight lines repriced, band $10,900–$13,500 -> $9,100–$11,500",
         "currentSupplierQuote": false,
         "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-madeira/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-madeira-route-review-20260911": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk."
+        "short-madeira-route-review-20260911": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk.",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC June 11–19, 2027: $5,423 for the family on JetBlue/Azores Airlines via BOS and PDL; the return overnights in Boston and reaches Pittsburgh 8:10 AM June 20. No United Newark nonstop priced for these dates."
       },
       "claimType": "proxy"
     },
@@ -334,29 +336,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-madeira-route-review-20260911"
+        "short-madeira-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 2,
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk.",
+        "currentFlightAudit": "PIT–FNC June 11–19, 2027: $5,423 for the family on JetBlue/Azores Airlines via BOS and PDL; the return overnights in Boston and reaches Pittsburgh 8:10 AM June 20. No United Newark nonstop priced for these dates.",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-madeira/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-madeira-route-review-20260911": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk."
+        "short-madeira-route-review-20260911": "TAP markets Funchal service, but the destination page does not establish the complete June 11–19, 2027 Pittsburgh family itinerary. Reject London airport changes and separate-ticket connections; wind disruption remains a planning risk.",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC June 11–19, 2027: $5,423 for the family on JetBlue/Azores Airlines via BOS and PDL; the return overnights in Boston and reaches Pittsburgh 8:10 AM June 20. No United Newark nonstop priced for these dates."
       },
       "claimType": "proxy"
     },

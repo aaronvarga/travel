@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "albania",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The $9,715–$14,230 planning band crosses the $12,000 target and stays within the $15,000 preference, but airfare, automatic one-way car, and lodging remain unquoted planning proxies; the confidence-aware rubric therefore scores 2/5.",
+      "score": 1,
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,515–$15,230. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,22 +102,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9715,
+        "lowUsd": 10515,
         "expectedUsd": null,
-        "highUsd": 14230,
+        "highUsd": 15230,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "9700–14200 line-item sum; tolerance 150"
+        "arithmetic": "9700–14200 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $9,715–$14,230 -> $10,515–$15,230"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "Albania; canonical 2027-06-07 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "Albania; canonical 2027-06-07 → 2027-06-22; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2026-11-03-family-audit": "PIT–TIA June 7 / CFU–PIT June 21, 2027: the $5,017 family fare uses separate tickets with an overnight in London (home June 22). The protected same-day version is $7,093 on Aegean/Delta (home 10:14 PM June 21)."
       },
       "claimType": "proxy"
     },
@@ -302,7 +304,8 @@
         "state-travel",
         "cdc-travel",
         "eu-etias",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -318,12 +321,12 @@
           "Valbona and Koman day redesign/conditions",
           "ETIAS status for the Corfu exit"
         ],
-        "currentFlightAudit": "PIT–TIA is selling June 7–22 from $1,228 round trip with one or two stops; CFU–PIT on June 22 is available from $795 one way. The existing $5.3k–$7.8k family air/ferry band still contains the observed components, but the protected TIA-in/CFU-out checkout remains the booking gate.",
+        "currentFlightAudit": "PIT–TIA June 7 / CFU–PIT June 21, 2027: the $5,017 family fare uses separate tickets with an overnight in London (home June 22). The protected same-day version is $7,093 on Aegean/Delta (home 10:14 PM June 21).",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Albania #air-travel, #getting-around, #status and day-by-day routing",
         "finikas-saranda-corfu": "Finikas 2026 operator timetable shows daily seasonal Saranda/Corfu service and 30-minute hydrofoil/50-minute car-ferry products; June 20, 2027 operation is not published",
@@ -331,7 +334,8 @@
         "state-travel": "Albania advisory is Level 2 as of the cited current page; recheck before booking and departure",
         "cdc-travel": "Albania destination health guidance to recheck before departure",
         "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 action remains a recheck",
-        "google-flights-2027-current-audit": "PIT–TIA is selling June 7–22 from $1,228 round trip with one or two stops; CFU–PIT on June 22 is available from $795 one way. The existing $5.3k–$7.8k family air/ferry band still contains the observed components, but the protected TIA-in/CFU-out checkout remains the booking gate."
+        "google-flights-2027-current-audit": "PIT–TIA is selling June 7–22 from $1,228 round trip with one or two stops; CFU–PIT on June 22 is available from $795 one way. The existing $5.3k–$7.8k family air/ferry band still contains the observed components, but the protected TIA-in/CFU-out checkout remains the booking gate.",
+        "google-flights-2026-11-03-family-audit": "PIT–TIA June 7 / CFU–PIT June 21, 2027: the $5,017 family fare uses separate tickets with an overnight in London (home June 22). The protected same-day version is $7,093 on Aegean/Delta (home 10:14 PM June 21)."
       },
       "claimType": "proxy"
     },
@@ -474,8 +478,8 @@
     "station-specific climate/SST and independent food/store evidence still incomplete"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "current-proxy",
-    "headline": "Tirana inventory is live; the Corfu open-jaw still needs one protected quote"
+    "headline": "Four-passenger check: the cheap open-jaw is separate tickets; the protected one costs more"
   }
 }

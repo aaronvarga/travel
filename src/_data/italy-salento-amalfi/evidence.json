@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "italy-salento-amalfi",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The reconciled 4-line-item family budget is $11,400–$16,300 (sum tolerance ±$150); it is a planning band, not a live quote.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,600–$16,300. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11400,
+        "lowUsd": 12600,
         "expectedUsd": null,
         "highUsd": 16300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 4,
-        "arithmetic": "11400–16300 line-item sum; tolerance 150"
+        "arithmetic": "11400–16300 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $11,400–$16,300 -> $12,600–$16,300"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2026-11-03-family-audit": "PIT–BDS June 10 / NAP–PIT June 23, 2027: $5,395 for the family (Air Canada/SWISS out; United NAP 9:45 AM via EWR, home 7:04 PM)."
       },
       "claimType": "proxy"
     },
@@ -301,31 +303,33 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
         "state-travel",
         "cdc-travel",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 2,
         "route": "Italy: Salento-Amalfi",
         "dateWindow": "2027-06-10 → 2027-06-23",
-        "currentFlightAudit": "PIT–BDS is selling June 10–23 from $1,736 round trip with two stops. The old high airfare case is now the floor before seats and bags; price BDS-in/NAP-out together before relying on the open-jaw protection.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–BDS June 10 / NAP–PIT June 23, 2027: $5,395 for the family (Air Canada/SWISS out; United NAP 9:45 AM via EWR, home 7:04 PM).",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Italy: Salento-Amalfi; canonical 2027-06-10 → 2027-06-23; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
         "state-travel": "Italy Level 2 advisory reviewed 2026-07-10; recheck before booking/departure",
         "cdc-travel": "CDC Travelers' Health destination guidance for Italy: Salento-Amalfi; recheck before departure",
-        "google-flights-2027-current-audit": "PIT–BDS is selling June 10–23 from $1,736 round trip with two stops. The old high airfare case is now the floor before seats and bags; price BDS-in/NAP-out together before relying on the open-jaw protection."
+        "google-flights-2027-current-audit": "PIT–BDS is selling June 10–23 from $1,736 round trip with two stops. The old high airfare case is now the floor before seats and bags; price BDS-in/NAP-out together before relying on the open-jaw protection.",
+        "google-flights-2026-11-03-family-audit": "PIT–BDS June 10 / NAP–PIT June 23, 2027: $5,395 for the family (Air Canada/SWISS out; United NAP 9:45 AM via EWR, home 7:04 PM)."
       },
       "claimType": "proxy"
     },
@@ -442,8 +446,8 @@
     "medium-confidence budget, climate, swim and route proxies"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Brindisi inventory is live and fits the existing flight band"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Brindisi-in / Naples-out ticket is sold"
   }
 }

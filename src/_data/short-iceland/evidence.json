@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-iceland",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "The six cost categories add up to an estimated $7,100–$9,600, keeping even the high end below the $12,000 target. Icelandair has published June 2027 pricing, while lodging and rental-car costs still need live quotes.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $8,760–$11,100. Budget 5/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band",
@@ -104,23 +104,25 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "icelandair-pit-kef-2027-fare"
+        "icelandair-pit-kef-2027-fare",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 7100,
+        "lowUsd": 8760,
         "expectedUsd": null,
-        "highUsd": 9600,
+        "highUsd": 11100,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "2840/3600 + 1550/2150 + 650/950 + 1150/1550 + 560/850 + 350/500 = 7100/9600"
+        "arithmetic": "2840/3600 + 1550/2150 + 650/950 + 1150/1550 + 560/850 + 350/500 = 7100/9600 | 2026-11-03: flight lines repriced, band $7,100–$9,600 -> $8,760–$11,100"
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-iceland/main.json #budget and #totals; exact six-line reconciliation",
-        "icelandair-pit-kef-2027-fare": "Icelandair plan-ahead table displayed Jun 13–21, 2027 from $709 per traveler and nearby June dates from $709–719; retrieved 2026-07-13"
+        "icelandair-pit-kef-2027-fare": "Icelandair plan-ahead table displayed Jun 13–21, 2027 from $709 per traveler and nearby June dates from $709–719; retrieved 2026-07-13",
+        "google-flights-2026-11-03-family-audit": "PIT–KEF June 13–21, 2027: Icelandair nonstop out; the same-day BWI return (home 11:35 PM June 21) makes $3,528 for the family. The cheaper $3,246 version returns via an overnight in Boston."
       },
       "claimType": "proxy"
     },
@@ -131,27 +133,33 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-iceland-route-review-20260911"
+        "short-iceland-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "route": "PIT–KEF",
         "currentDisplayedFareUsdPerPerson": null,
         "historicalFareUsdPerPerson": 709,
         "historicalObservationDate": "2026-08-08",
-        "displayedDates": null,
+        "displayedDates": [
+          "2027-06-13",
+          "2027-06-21"
+        ],
         "requestedDates": [
           "2027-06-13",
           "2027-06-21"
         ],
         "fareIncludesFamilySeatsAndBags": false,
         "checkoutReconfirmationRequired": true,
-        "finding": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates."
+        "finding": "Icelandair sells the PIT–KEF nonstop on June 13, 2027; with a same-day BWI connection home on June 21 the family fare is $3,528 before bags and seats. Economy Light excludes checked bags.",
+        "currentDisplayedFamilyFareUsd": 3528
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-iceland/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-iceland-route-review-20260911": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates."
+        "short-iceland-route-review-20260911": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates.",
+        "google-flights-2026-11-03-family-audit": "Nov 3 four-passenger search, June 13–21, 2027: Icelandair nonstop out with BWI return $3,528 for the family; BOS-overnight return $3,246"
       },
       "claimType": "proxy"
     },
@@ -353,29 +361,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-iceland-route-review-20260911"
+        "short-iceland-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 0,
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates.",
+        "currentFlightAudit": "PIT–KEF June 13–21, 2027: Icelandair nonstop out; the same-day BWI return (home 11:35 PM June 21) makes $3,528 for the family. The cheaper $3,246 version returns via an overnight in Boston.",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-iceland/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-iceland-route-review-20260911": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates."
+        "short-iceland-route-review-20260911": "The operator markets PIT–KEF but the retrieved offers do not reproduce June 13–21, 2027 at $709. Economy Light offers exclude optional extras. Exact nonstop operating days, four seats, checked bags and seat fees remain booking gates.",
+        "google-flights-2026-11-03-family-audit": "PIT–KEF June 13–21, 2027: Icelandair nonstop out; the same-day BWI return (home 11:35 PM June 21) makes $3,528 for the family. The cheaper $3,246 version returns via an overnight in Boston."
       },
       "claimType": "proxy"
     },

@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "slug": "iceland-ischia-cilento",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "evidenceBasis": "Current operator schedules, official attraction prices, a live nearby June 2027 PIT–KEF fare signal, historical climate/sea proxies, and exact internal itinerary arithmetic.",
   "confidenceBasis": "The route shape and itemized arithmetic are high-confidence derived facts. Overall confidence is medium because the exact June 10–23 stopover airfare, operating days, lodging, cars, and 2027 hydrofoils are not yet quoted together.",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $10,400–$14,900 less a single $2,000 fixed travel redemption yields $8,400–$12,900. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "score": 1,
+      "rationale": "Airfare rises from the old stopover assumption to the sold open-jaw ($4,334) plus a separate KEF–FCO nonstop ($1,480). The 2026-11-03 four-passenger flight refresh moves the planning band to $11,700–$15,600 net ($13,700–$17,600 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band",
@@ -64,8 +64,8 @@
       ]
     },
     "risk": {
-      "score": 1,
-      "rationale": "The assumed June 10 Icelandair nonstop/stopover construction is not sold. Because the air stack must be re-dated or rebuilt before the trip works, Risk falls to 1/5.",
+      "score": 3,
+      "rationale": "The November 3 four-passenger check found a sold construction: one open-jaw ticket (PIT–KEF June 10, FCO–PIT June 23, home 8:34 PM) plus a separate Icelandair KEF–FCO nonstop on June 15. The separate ticket is a standalone travel day rather than a connection, so the route is workable; Risk recovers from 1/5 to 3/5 because the Italy leg stays outside the main ticket's protection.",
       "confidence": "high",
       "evidence": [
         "route-readiness"
@@ -104,48 +104,52 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel"
+        "capital-one-fixed-travel",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 8400,
+        "lowUsd": 11700,
         "expectedUsd": null,
-        "highUsd": 12900,
+        "highUsd": 15600,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "3600/4800 + 2550/3750 + 1400/2000 + 1550/2200 + 800/1350 + 500/800 = 10400/14900 gross; minus 2000/2000 = 8400/12900 net",
-        "grossLowUsd": 10400,
-        "grossHighUsd": 14900,
+        "arithmetic": "3600/4800 + 2550/3750 + 1400/2000 + 1550/2200 + 800/1350 + 500/800 = 10400/14900 gross; minus 2000/2000 = 8400/12900 net | 2026-11-03: flight lines repriced, band $8,400–$12,900 -> $11,700–$15,600",
+        "grossLowUsd": 13700,
+        "grossHighUsd": 17600,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "iceland-ischia-cilento/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources"
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-2026-11-03-family-audit": "Open-jaw PIT–KEF June 10 / FCO–PIT June 23, 2027 is sold on one ticket for $4,334 (Air Canada via Montreal out; United via Newark home 8:34 PM June 23), or $4,638 with the Icelandair nonstop. Add a separate Icelandair KEF–FCO nonstop on June 15 (7:50 AM–2:35 PM) at $1,480 for the family. No single ticket covering all three legs reaches Pittsburgh on June 23."
       },
       "claimType": "derived"
     },
     {
       "id": "airfare-proxy",
       "category": "route",
-      "proxyStatus": "reroute-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
-        "google-flights-2027-current-audit"
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "pitKefRoundTripPerPersonUsd": 663,
-        "kefFcoOneWayPerPersonUsd": 241,
+        "pitKefRoundTripPerPersonUsd": null,
+        "kefFcoOneWayPerPersonUsd": null,
         "exactTripQuoteObserved": true,
         "assumedIcelandairStopoverAvailable": false,
-        "routeConclusion": "The exact dates require connections on both PIT–KEF and KEF–FCO; rebuild the air stack."
+        "routeConclusion": "Book the PIT–KEF / FCO–PIT open-jaw as one ticket and the June 15 KEF–FCO Icelandair nonstop separately; the mid-trip leg is a standalone travel day, not a connection.",
+        "pitKefFcoOpenJawFamilyUsd": 4334,
+        "kefFcoNonstopFamilyUsd": 1480
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "google-flights-2027-current-audit": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking."
+        "google-flights-2026-11-03-family-audit": "Open-jaw PIT–KEF June 10 / FCO–PIT June 23, 2027 is sold on one ticket for $4,334 (Air Canada via Montreal out; United via Newark home 8:34 PM June 23), or $4,638 with the Icelandair nonstop. Add a separate Icelandair KEF–FCO nonstop on June 15 (7:50 AM–2:35 PM) at $1,480 for the family. No single ticket covering all three legs reaches Pittsburgh on June 23."
       },
       "claimType": "observed-quote"
     },
@@ -367,7 +371,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "reroute-required",
+      "proxyStatus": "current-proxy",
       "confidence": "high",
       "sourceRefs": [
         "icelandair-stopover",
@@ -378,22 +382,23 @@
         "safetravel-reynisfjara",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "reroute-required",
+        "status": "current-proxy",
         "currentProxy": "Icelandair stopover to Rome plus frequent 2026 Naples–Ischia hydrofoils",
         "june10StopoverVerified": false,
         "june23ReturnVerified": false,
         "dailySafetyChecksRequired": true,
         "singleTicket": false,
         "maxConnections": 1,
-        "currentFlightAudit": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking.",
+        "currentFlightAudit": "Open-jaw PIT–KEF June 10 / FCO–PIT June 23, 2027 is sold on one ticket for $4,334 (Air Canada via Montreal out; United via Newark home 8:34 PM June 23), or $4,638 with the Icelandair nonstop. Add a separate Icelandair KEF–FCO nonstop on June 15 (7:50 AM–2:35 PM) at $1,480 for the family. No single ticket covering all three legs reaches Pittsburgh on June 23.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "icelandair-stopover": "Stopover product permits the route shape; exact days and fare remain unquoted.",
         "icelandair-pit-kef-2027-fare": "Nearby June 2027 service is selling, not the exact itinerary.",
@@ -403,7 +408,8 @@
         "safetravel-reynisfjara": "Official sneaker-wave warning protocol.",
         "internal-itinerary": "FCO buffer and weather alternatives bound the known risks.",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-KEF 2027-06-10 nonstop not sold (1-stop single tickets are); KEF-FCO Icelandair seasonal nonstop verified in the Aug 2026 pattern (4h45, ~$671); Jun 15 2027 is beyond the booking window.",
-        "google-flights-2027-current-audit": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking."
+        "google-flights-2027-current-audit": "PIT–KEF is selling June 10–23 from $663 round trip, but no Thursday nonstop is offered; KEF–FCO on June 15 also requires a connection. The assumed Icelandair stopover construction still does not exist, so re-date or rebuild the air stack before booking.",
+        "google-flights-2026-11-03-family-audit": "Open-jaw PIT–KEF June 10 / FCO–PIT June 23, 2027 is sold on one ticket for $4,334 (Air Canada via Montreal out; United via Newark home 8:34 PM June 23), or $4,638 with the Icelandair nonstop. Add a separate Icelandair KEF–FCO nonstop on June 15 (7:50 AM–2:35 PM) at $1,480 for the family. No single ticket covering all three legs reaches Pittsburgh on June 23."
       },
       "claimType": "proxy"
     },
@@ -515,8 +521,8 @@
     }
   },
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "reroute-required",
-    "headline": "The June 10 Icelandair nonstop/stopover construction does not exist"
+    "reviewedAt": "2026-11-03",
+    "status": "current-proxy",
+    "headline": "Four-passenger check: a sold construction now exists, at a much higher air cost"
   }
 }

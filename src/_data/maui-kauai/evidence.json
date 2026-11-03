@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "maui-kauai",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "evidenceBasis": "The score uses an internally reconciled 12-night route, official NOAA climate and water observations, current state/federal park rules, current operator pricing, official lodging-market ADRs and observed air-route/fare proxies. Exact June 2027 air, rooms, cars, boats and reservations remain explicitly unconfirmed.",
   "confidenceBasis": [
@@ -13,7 +13,7 @@
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Use $4,200–5,200 outer airfare as a practical connection/bag/seat planning allowance above the $3,904 Maui round-trip proxy. Lihue June 22 return remains unquoted. Gross $15,600–$22,400 less a single $2,000 fixed travel redemption yields $13,600–$20,400. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,900–$19,300 net ($14,900–$21,300 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -110,27 +110,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 13600,
+        "lowUsd": 12900,
         "expectedUsd": null,
-        "highUsd": 20400,
+        "highUsd": 19300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 9,
-        "arithmetic": "4200/5200 + 250/500 + 1200/1700 + 2250/3200 + 1800/2800 + 1300/2200 + 2400/3200 + 1500/2500 + 700/1100 = 15600/22400 gross; minus 2000/2000 = 13600/20400 net",
-        "grossLowUsd": 15600,
-        "grossHighUsd": 22400,
+        "arithmetic": "4200/5200 + 250/500 + 1200/1700 + 2250/3200 + 1800/2800 + 1300/2200 + 2400/3200 + 1500/2500 + 700/1100 = 15600/22400 gross; minus 2000/2000 = 13600/20400 net | 2026-11-03: flight lines repriced, band $13,600–$20,400 -> $12,900–$19,300",
+        "grossLowUsd": 14900,
+        "grossHighUsd": 21300,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "maui-kauai/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–PHX–OGG, June 10–23: gateway round-trip proxy for open-jaw, family base $3904; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–PHX–OGG, June 10–23: gateway round-trip proxy for open-jaw, family base $3904; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–OGG June 10 / LIH–PIT June 22, 2027 open-jaw: $2,893 for the family on American; the Lihue red-eye reaches Pittsburgh at 4:49 PM June 23. OGG–LIH is about $300."
       },
       "claimType": "derived"
     },
@@ -352,7 +354,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
@@ -360,10 +362,11 @@
         "google-flights-pit-lih",
         "southwest-ogg-lih",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 2,
         "route": "PIT → OGG; OGG → LIH; LIH → PIT",
@@ -376,19 +379,20 @@
           "three exact lodging totals",
           "two rental quotes"
         ],
-        "currentFlightAudit": "PIT–OGG is selling June 10–23 from $698 round trip, and OGG–LIH sells exact June 15 nonstops from $75 one way. Verify LIH–PIT June 22 on one protected ticket before booking premium lodging.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–OGG June 10 / LIH–PIT June 22, 2027 open-jaw: $2,893 for the family on American; the Lihue red-eye reaches Pittsburgh at 4:49 PM June 23. OGG–LIH is about $300.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "#air-travel, #getting-around and #status define the open-jaw route, one hop, two cars and June 23 hard return",
         "southwest-pit-ogg": "Current airline route page supports connecting PIT-OGG feasibility but not exact June 2027 departure/arrival or price",
         "google-flights-pit-lih": "Current route page supports connecting Kauai-Pittsburgh service, no nonstop and long travel times; exact open-jaw return is unquoted",
         "southwest-ogg-lih": "Current nonstop Maui-Kauai service proves the proposed island hop is structurally credible; June 2027 schedule is not published",
         "google-flights-2027-audit": "Checked 2026-07-19 for exact 2027-06-10: PIT-OGG sold as American single tickets via DFW (12h05, $333, lands 12:05 PM) and via PHX; Southwest June 2027 schedule not yet open and no LAX-hub itinerary currently sold. LIH-PIT 2027-06-22 beyond current window; KOA-PIT Jun 14 red-eye pattern verified on United.",
-        "google-flights-2027-current-audit": "PIT–OGG is selling June 10–23 from $698 round trip, and OGG–LIH sells exact June 15 nonstops from $75 one way. Verify LIH–PIT June 22 on one protected ticket before booking premium lodging."
+        "google-flights-2027-current-audit": "PIT–OGG is selling June 10–23 from $698 round trip, and OGG–LIH sells exact June 15 nonstops from $75 one way. Verify LIH–PIT June 22 on one protected ticket before booking premium lodging.",
+        "google-flights-2026-11-03-family-audit": "PIT–OGG June 10 / LIH–PIT June 22, 2027 open-jaw: $2,893 for the family on American; the Lihue red-eye reaches Pittsburgh at 4:49 PM June 23. OGG–LIH is about $300."
       },
       "claimType": "proxy"
     },
@@ -531,8 +535,8 @@
     }
   },
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "The inter-island hop is confirmed; the complete open-jaw still needs one quote"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Maui-in / Kauai-out ticket is sold well below the band"
   }
 }

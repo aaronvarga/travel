@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-crete",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The old $4,800–5,900 all-flight gate is not a current complete quote. Use a $6,600–8,000 planning proxy: $4,798 family Lisbon gateway return plus $880 stored Crete connection, $720 checked-bag proxy, $200–800 seats and up to $800 open-jaw uncertainty. Exact Crete exit can still exceed this estimate. Gross $12,530–$17,165 less a single $2,000 fixed travel redemption yields $10,530–$15,165. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,430–$15,165 net ($13,430–$17,165 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10530,
+        "lowUsd": 11430,
         "expectedUsd": null,
         "highUsd": 15165,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 9,
-        "arithmetic": "6600/8000 + 900/1625 + 680/1140 + 450/750 + 650/950 + 300/500 + 1650/2250 + 800/1250 + 500/700 = 12530/17165 gross; minus 2000/2000 = 10530/15165 net",
-        "grossLowUsd": 12530,
+        "arithmetic": "6600/8000 + 900/1625 + 680/1140 + 450/750 + 650/950 + 300/500 + 1650/2250 + 800/1250 + 500/700 = 12530/17165 gross; minus 2000/2000 = 10530/15165 net | 2026-11-03: flight lines repriced, band $10,530–$15,165 -> $11,430–$15,165",
+        "grossLowUsd": 13430,
         "grossHighUsd": 17165,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "portugal-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–LHR–LIS, June 8–21: gateway round-trip proxy for open-jaw, family base $4798; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–LHR–LIS, June 8–21: gateway round-trip proxy for open-jaw, family base $4798; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–LIS June 8 / CHQ–PIT June 21, 2027: $5,185 for the family (home 11:56 PM via FRA and ORD); a Heraklion exit is $5,118 (home 11:22 PM via FRA and IAD). LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens."
       },
       "claimType": "derived"
     },
@@ -318,34 +320,36 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "aegean-lisbon-athens",
         "aegean-athens-crete",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicketAssumption": true,
         "maxConnections": 2,
         "criticalChain": "LIS–ATH–CHQ",
-        "june2027Verified": false,
+        "june2027Verified": true,
         "separateTightTicketsAllowed": false,
         "singleTicket": false,
-        "currentFlightAudit": "PIT–LIS is selling near the current family band, and Aegean sells LIS–ATH–CHQ June 14 in 6h05 from $220. Price the full PIT/Lisbon/Crete open-jaw together before booking.",
-        "exact2027FlightsVerified": false
+        "currentFlightAudit": "PIT–LIS June 8 / CHQ–PIT June 21, 2027: $5,185 for the family (home 11:56 PM via FRA and ORD); a Heraklion exit is $5,118 (home 11:22 PM via FRA and IAD). LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens.",
+        "exact2027FlightsVerified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "aegean-lisbon-athens": "Operator calendar observed 2026-07-10 sells LIS–ATH into January 2027, not June 2027",
         "aegean-athens-crete": "Operator route calendar observed 2026-07-10 shows ATH–CHQ and ATH–HER current service",
         "internal-itinerary": "portugal-crete/main.json air-travel and Plan Health-Check require one protected LIS–ATH–CHQ itinerary",
         "google-flights-2027-audit": "Checked 2026-07-19: LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55, 1h10 ATH connection, ~$440); Aegean June 2027 beyond its booking window; CHQ-PIT same-day single tickets verified (Aegean/Sky Express + American via ATH+CLT ~19h).",
-        "google-flights-2027-current-audit": "PIT–LIS is selling near the current family band, and Aegean sells LIS–ATH–CHQ June 14 in 6h05 from $220. Price the full PIT/Lisbon/Crete open-jaw together before booking."
+        "google-flights-2027-current-audit": "PIT–LIS is selling near the current family band, and Aegean sells LIS–ATH–CHQ June 14 in 6h05 from $220. Price the full PIT/Lisbon/Crete open-jaw together before booking.",
+        "google-flights-2026-11-03-family-audit": "PIT–LIS June 8 / CHQ–PIT June 21, 2027: $5,185 for the family (home 11:56 PM via FRA and ORD); a Heraklion exit is $5,118 (home 11:22 PM via FRA and IAD). LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens."
       },
       "claimType": "proxy"
     },
@@ -455,8 +459,8 @@
     "medium-confidence budget and non-reproduced SST"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "The exact Lisbon–Chania connection remains live"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Lisbon-in / Crete-out ticket is sold; the Crete hop costs more"
   }
 }

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-portugal",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 5,
-      "rationale": "The six cost categories add up to an estimated $8,700–$11,950, keeping even the high end under the $12,000 target. June 2027 flights, lodging and rail still need live quotes.",
+      "score": 4,
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,100–$12,750. Budget 4/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,23 +100,25 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 8700,
+        "lowUsd": 10100,
         "expectedUsd": null,
-        "highUsd": 11950,
+        "highUsd": 12750,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "5000–6200 + 1600–2400 + 900–1250 + 350–600 + 350–700 + 500–800 = 8700–11950",
+        "arithmetic": "5000–6200 + 1600–2400 + 900–1250 + 350–600 + 350–700 + 500–800 = 8700–11950 | 2026-11-03: flight lines repriced, band $8,700–$11,950 -> $10,100–$12,750",
         "airfareObservation": "Google Flights route page reviewed 2026-07-13 showed June historical typical prices of $1,250–$1,550 per traveler and no PIT–LIS nonstop; this is not an exact June 2027 family quote"
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "short-portugal/main.json #budget and #totals tables; six itemized categories reconcile to the displayed planning band and #air-travel records the observed Google Flights route-page range"
+        "internal-itinerary": "short-portugal/main.json #budget and #totals tables; six itemized categories reconcile to the displayed planning band and #air-travel records the observed Google Flights route-page range",
+        "google-flights-2026-11-03-family-audit": "The cheapest PIT–LIS June 12 / FAO–PIT June 20, 2027 open-jaw ($5,385) is flagged as separate tickets with a London overnight. Protected one-ways work: BA PIT–LIS $2,774 plus Aer Lingus FAO–PIT $2,643 (home 6:40 PM June 20)."
       },
       "claimType": "proxy"
     },
@@ -246,7 +248,7 @@
       "value": {
         "easeScore": 4,
         "maxConnections": 1,
-        "singleTicket": true,
+        "singleTicket": false,
         "lodgingBases": 2,
         "baseMoves": 1,
         "internalFlights": 0,
@@ -302,25 +304,27 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-portugal-route-review-20260911"
+        "short-portugal-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "current-proxy",
-        "singleTicket": true,
+        "singleTicket": false,
         "maxConnections": 1,
         "exact2027FlightsVerified": false,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "TAP markets Lisbon service, not the required complete June 12–20, 2027 LIS-in/FAO-out Pittsburgh family ticket. Price both ends together; retain the Lisbon airport-night fallback if Faro does not work.",
+        "currentFlightAudit": "The cheapest PIT–LIS June 12 / FAO–PIT June 20, 2027 open-jaw ($5,385) is flagged as separate tickets with a London overnight. Protected one-ways work: BA PIT–LIS $2,774 plus Aer Lingus FAO–PIT $2,643 (home 6:40 PM June 20).",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-portugal/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-portugal-route-review-20260911": "TAP markets Lisbon service, not the required complete June 12–20, 2027 LIS-in/FAO-out Pittsburgh family ticket. Price both ends together; retain the Lisbon airport-night fallback if Faro does not work."
+        "short-portugal-route-review-20260911": "TAP markets Lisbon service, not the required complete June 12–20, 2027 LIS-in/FAO-out Pittsburgh family ticket. Price both ends together; retain the Lisbon airport-night fallback if Faro does not work.",
+        "google-flights-2026-11-03-family-audit": "The cheapest PIT–LIS June 12 / FAO–PIT June 20, 2027 open-jaw ($5,385) is flagged as separate tickets with a London overnight. Protected one-ways work: BA PIT–LIS $2,774 plus Aer Lingus FAO–PIT $2,643 (home 6:40 PM June 20)."
       },
       "claimType": "proxy"
     },

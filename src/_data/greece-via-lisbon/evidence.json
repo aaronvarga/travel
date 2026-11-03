@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "greece-via-lisbon",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Keep the outer/Lisbon–Athens airfare allowance separate from Athens–Chania, and add a previously missing $400–700 insurance/contingency line. This remains an unquoted planning allocation, not a protected all-family through-fare. Gross $11,150–$17,600 less a single $2,000 fixed travel redemption yields $9,150–$15,600. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,650–$15,600 net ($13,650–$17,600 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,26 +101,28 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel"
+        "capital-one-fixed-travel",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9150,
+        "lowUsd": 11650,
         "expectedUsd": null,
         "highUsd": 15600,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "5200/8200 + 450/800 + 500/850 + 250/350 + 1850/3000 + 2500/3700 + 400/700 = 11150/17600 gross; minus 2000/2000 = 9150/15600 net",
-        "grossLowUsd": 11150,
+        "arithmetic": "5200/8200 + 450/800 + 500/850 + 250/350 + 1850/3000 + 2500/3700 + 400/700 = 11150/17600 gross; minus 2000/2000 = 9150/15600 net | 2026-11-03: flight lines repriced, band $9,150–$15,600 -> $11,650–$15,600",
+        "grossLowUsd": 13650,
         "grossHighUsd": 17600,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "greece-via-lisbon/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources"
+        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
+        "google-flights-2026-11-03-family-audit": "PIT–LIS June 9 / CHQ–PIT June 22, 2027 is sold on one ticket for $5,899 (CHQ 8:20 AM via ATH and ORD, home 7:28 PM June 22). Aegean LIS–ATH nonstop is $706 and SKY express ATH–CHQ $316 for the family."
       },
       "claimType": "derived"
     },
@@ -286,7 +288,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "aegean-ath-lis",
@@ -294,28 +296,30 @@
         "state-travel",
         "cdc-travel",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": false,
         "maxConnections": 2,
         "route": "CHQ -> ATH -> oneworld US gateway (CLT/ORD/PHL) -> PIT on one Aegean/Sky Express + American ticket",
         "dateWindow": "2027-06-22",
         "requiredAction": "rebuild return via a published ATH–LIS date or another protected hub",
-        "currentFlightAudit": "PIT–LIS is selling June 9–22 from $1,215 round trip, and LIS–CHQ sells June 14 via ATH in 6h05 from $220. The CHQ–PIT return still needs one protected multi-city quote; do not route home through Lisbon on Tuesday.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–LIS June 9 / CHQ–PIT June 22, 2027 is sold on one ticket for $5,899 (CHQ 8:20 AM via ATH and ORD, home 7:28 PM June 22). Aegean LIS–ATH nonstop is $706 and SKY express ATH–CHQ $316 for the family.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "aegean-ath-lis": "AEGEAN official fare calendar checked 2026-07-10 sells ATH–LIS on selected dates through April 2027 but does not publish or confirm 2027-06-22",
         "internal-itinerary": "#decisions explicitly says the current Tuesday ATH–LIS proxy does not operate and the return must be rebuilt",
         "state-travel": "Greece and Portugal Level 1 advisories reviewed 2026-07-10; Greece also flags summer heat/wildfire exposure",
         "cdc-travel": "CDC Travelers' Health destination guidance for Greece via Lisbon; recheck before departure",
         "google-flights-2027-audit": "Rebuilt return checked 2026-07-19 (Tuesday Aug 18 proxy): CHQ-ATH-CLT-PIT sells as one Aegean/Sky Express + American ticket (18h46, lands PIT 9:11 PM same day, ~$1,123-1,237 pp). ATH-LIS Tuesday nonstops DO sell in peak summer but both arrive LIS too late for a same-day PIT connection, so the via-Lisbon return stays dead.",
-        "google-flights-2027-current-audit": "PIT–LIS is selling June 9–22 from $1,215 round trip, and LIS–CHQ sells June 14 via ATH in 6h05 from $220. The CHQ–PIT return still needs one protected multi-city quote; do not route home through Lisbon on Tuesday."
+        "google-flights-2027-current-audit": "PIT–LIS is selling June 9–22 from $1,215 round trip, and LIS–CHQ sells June 14 via ATH in 6h05 from $220. The CHQ–PIT return still needs one protected multi-city quote; do not route home through Lisbon on Tuesday.",
+        "google-flights-2026-11-03-family-audit": "PIT–LIS June 9 / CHQ–PIT June 22, 2027 is sold on one ticket for $5,899 (CHQ 8:20 AM via ATH and ORD, home 7:28 PM June 22). Aegean LIS–ATH nonstop is $706 and SKY express ATH–CHQ $316 for the family."
       },
       "claimType": "proxy"
     },
@@ -424,8 +428,8 @@
     "reroute-required for the exact return"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "The Lisbon–Athens–Chania flight chain now sells on the exact dates"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Lisbon-in / Chania-out ticket and both hops are sold"
   }
 }

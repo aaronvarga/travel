@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-acadia",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $7,700–$10,800. The Budget 5/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $8,200–$11,500. Budget 5/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,25 +101,27 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-acadia-route-review-20260911"
+        "short-acadia-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 7700,
+        "lowUsd": 8200,
         "expectedUsd": null,
-        "highUsd": 10800,
+        "highUsd": 11500,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "1800–2200 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 7700–10800",
+        "arithmetic": "1800–2200 + 2450–3850 + 650–1100 + 1200–1700 + 300–550 + 1300–1400 = 7700–10800 | 2026-11-03: flight lines repriced, band $7,700–$10,800 -> $8,200–$11,500",
         "currentSupplierQuote": false,
         "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-acadia/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-acadia-route-review-20260911": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote."
+        "short-acadia-route-review-20260911": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote.",
+        "google-flights-2026-11-03-family-audit": "PIT–PWM June 12–19, 2027 round trip: $1,746 for the family on American via DCA or PHL; the morning return reaches Pittsburgh at 12:17 PM June 19."
       },
       "claimType": "proxy"
     },
@@ -296,29 +298,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-acadia-route-review-20260911"
+        "short-acadia-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote.",
+        "currentFlightAudit": "PIT–PWM June 12–19, 2027 round trip: $1,746 for the family on American via DCA or PHL; the morning return reaches Pittsburgh at 12:17 PM June 19.",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-acadia/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-acadia-route-review-20260911": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote."
+        "short-acadia-route-review-20260911": "The airport currently lists Portland, Maine on Breeze three times weekly, seasonally. This is not an exact June 12–19, 2027 schedule or a protected connecting-ticket quote.",
+        "google-flights-2026-11-03-family-audit": "PIT–PWM June 12–19, 2027 round trip: $1,746 for the family on American via DCA or PHL; the morning return reaches Pittsburgh at 12:17 PM June 19."
       },
       "claimType": "proxy"
     },

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-sicily",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 2,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $11,400–$14,700. The Budget 2/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,900–$14,000. Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,25 +102,27 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-sicily-route-review-20260911"
+        "short-sicily-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11400,
+        "lowUsd": 10900,
         "expectedUsd": null,
-        "highUsd": 14700,
+        "highUsd": 14000,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "7600–8400 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 11400–14700",
+        "arithmetic": "7600–8400 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 11400–14700 | 2026-11-03: flight lines repriced, band $11,400–$14,700 -> $10,900–$14,000",
         "currentSupplierQuote": false,
         "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-sicily/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-sicily-route-review-20260911": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats."
+        "short-sicily-route-review-20260911": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats.",
+        "google-flights-2026-11-03-family-audit": "PIT–CTA June 12–20, 2027: $6,144 for the family (Air Canada via YUL out; Air Canada/United CTA 10:40 AM, home 11:19 PM June 20)."
       },
       "claimType": "proxy"
     },
@@ -319,29 +321,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-sicily-route-review-20260911"
+        "short-sicily-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats.",
+        "currentFlightAudit": "PIT–CTA June 12–20, 2027: $6,144 for the family (Air Canada via YUL out; Air Canada/United CTA 10:40 AM, home 11:19 PM June 20).",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-sicily/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-sicily-route-review-20260911": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats."
+        "short-sicily-route-review-20260911": "Delta documents the daily JFK–Catania route launch in May 2025, not the June 12–20, 2027 family price or availability. Require a protected PIT–JFK–CTA ticket and reprice bags and seats.",
+        "google-flights-2026-11-03-family-audit": "PIT–CTA June 12–20, 2027: $6,144 for the family (Air Canada via YUL out; Air Canada/United CTA 10:40 AM, home 11:19 PM June 20)."
       },
       "claimType": "proxy"
     },

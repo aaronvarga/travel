@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-crete",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,710–$18,250 less a single $2,000 fixed travel redemption yields $11,710–$16,250. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,410–$16,250 net ($14,410–$18,250 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11710,
+        "lowUsd": 12410,
         "expectedUsd": null,
         "highUsd": 16250,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 11,
-        "arithmetic": "7000/8200 + 650/1050 + 130/200 + 1050/1700 + 300/500 + 280/450 + 800/1150 + 100/200 + 1750/2350 + 1150/1750 + 500/700 = 13710/18250 gross; minus 2000/2000 = 11710/16250 net",
-        "grossLowUsd": 13710,
+        "arithmetic": "7000/8200 + 650/1050 + 130/200 + 1050/1700 + 300/500 + 280/450 + 800/1150 + 100/200 + 1750/2350 + 1150/1750 + 500/700 = 13710/18250 gross; minus 2000/2000 = 11710/16250 net | 2026-11-03: flight lines repriced, band $11,710–$16,250 -> $12,410–$16,250",
+        "grossLowUsd": 14410,
         "grossHighUsd": 18250,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "madeira-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC (United via the EWR–FNC nonstop) / CHQ–PIT June 22, 2027: $5,000 for the family, home 10:38 PM via MUC and YYZ. FNC–LIS is $251; LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens (12:40 AM–8:45 AM), or $1,545 by day."
       },
       "claimType": "derived"
     },
@@ -317,7 +319,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "ana-madeira-wind-operations",
@@ -326,21 +328,22 @@
         "internal-itinerary",
         "visit-madeira-hiking",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicketAssumption": true,
         "maxConnections": 3,
         "mandatoryBuffer": "Lisbon night after FNC",
-        "june2027Verified": false,
+        "june2027Verified": true,
         "trailReservationsRequired": true,
         "singleTicket": false,
-        "currentFlightAudit": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night.",
-        "exact2027FlightsVerified": false
+        "currentFlightAudit": "PIT–FNC (United via the EWR–FNC nonstop) / CHQ–PIT June 22, 2027: $5,000 for the family, home 10:38 PM via MUC and YYZ. FNC–LIS is $251; LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens (12:40 AM–8:45 AM), or $1,545 by day.",
+        "exact2027FlightsVerified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "ana-madeira-wind-operations": "ANA official notice documents strong-wind flight disruption at Madeira; historical example only",
         "aegean-lisbon-athens": "Operator currently sells LIS–ATH but not the exact June 14, 2027 chain",
@@ -348,7 +351,8 @@
         "internal-itinerary": "madeira-crete/main.json Plan Health-Check mandates Lisbon wind buffer and protected tickets",
         "visit-madeira-hiking": "Official 2026 rules require timed reservation for all classified PR trails and live status checks",
         "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop sold for exact 2027-06-08; LIS-ATH-CHQ verified as ONE Aegean ticket in the current pattern (5h55 total, 1h10 ATH connection, ~$440); Aegean June 2027 inventory not yet loaded.",
-        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night."
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $63, LIS–CHQ $220 and CHQ–PIT $817 per traveler. Budget about $7.0k–$8.2k for four with seats and bags, and keep the Lisbon weather-buffer night.",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC (United via the EWR–FNC nonstop) / CHQ–PIT June 22, 2027: $5,000 for the family, home 10:38 PM via MUC and YYZ. FNC–LIS is $251; LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens (12:40 AM–8:45 AM), or $1,545 by day."
       },
       "claimType": "proxy"
     },
@@ -458,8 +462,8 @@
     "prices, properties, and non-reproduced SST remain medium"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Every component is selling, but the family air floor has risen"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: Funchal-in / Chania-out ticket and both hops are sold"
   }
 }

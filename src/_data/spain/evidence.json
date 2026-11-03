@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "spain",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "The canonical five-category rollup is $8,800–$14,800 and reconciles with its detailed lines. The band stays within the $15,000 preference, but airfare/lodging are unquoted and the high case is only $200 below it, so the rubric's low-confidence contingency rule supports 2/5.",
+      "score": 1,
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,400–$15,300. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 8800,
+        "lowUsd": 11400,
         "expectedUsd": null,
-        "highUsd": 14800,
+        "highUsd": 15300,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "8800–14800 line-item sum; tolerance 150"
+        "arithmetic": "8800–14800 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $8,800–$14,800 -> $11,400–$15,300"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "Spain; canonical 2027-06-03 → 2027-06-16; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2026-11-03-family-audit": "PIT–MAD June 3 / AGP–PIT June 16, 2027: $4,482 for the family on Icelandair (AGP 11:15 PM, long Keflavík connection, home 7:20 PM June 17). The same-day Iberia/American return ($4,764) is flagged as separate tickets."
       },
       "claimType": "proxy"
     },
@@ -290,7 +292,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
@@ -299,10 +301,11 @@
         "state-travel",
         "cdc-travel",
         "eu-etias",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "route": "PIT → MAD; MAD → Seville rail; Seville → Granada → Nerja rental; AGP → PIT",
@@ -314,12 +317,12 @@
           "named Alhambra General tickets with exact Nasrid time",
           "ETIAS official launch/status recheck"
         ],
-        "currentFlightAudit": "PIT–MAD sells June 3–16 from $1,092 round trip with one stop. Confirm AGP–PIT on the same protected open-jaw before removing the Madrid-train fallback.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–MAD June 3 / AGP–PIT June 16, 2027: $4,482 for the family on Icelandair (AGP 11:15 PM, long Keflavík connection, home 7:20 PM June 17). The same-day Iberia/American return ($4,764) is flagged as separate tickets.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Spain #air-travel, #getting-around, day-by-day route and explicit heat/activity fallbacks",
         "spain-renfe-madrid-seville": "Current direct-train pattern is an operator proxy only; June 4, 2027 train must be paired to the actual flight after schedules publish",
@@ -327,7 +330,8 @@
         "state-travel": "Spain advisory review required before booking and departure",
         "cdc-travel": "Spain destination health guidance to recheck before departure",
         "eu-etias": "Official EU page says ETIAS is expected in the last quarter of 2026 with exact start date later; June 2027 traveler action remains a recheck, not a confirmed current requirement",
-        "google-flights-2027-current-audit": "PIT–MAD sells June 3–16 from $1,092 round trip with one stop. Confirm AGP–PIT on the same protected open-jaw before removing the Madrid-train fallback."
+        "google-flights-2027-current-audit": "PIT–MAD sells June 3–16 from $1,092 round trip with one stop. Confirm AGP–PIT on the same protected open-jaw before removing the Madrid-train fallback.",
+        "google-flights-2026-11-03-family-audit": "PIT–MAD June 3 / AGP–PIT June 16, 2027: $4,482 for the family on Icelandair (AGP 11:15 PM, long Keflavík connection, home 7:20 PM June 17). The same-day Iberia/American return ($4,764) is flagged as separate tickets."
       },
       "claimType": "proxy"
     },
@@ -425,8 +429,8 @@
     "June 2027 airfare, lodging, exact train and sea-state remain open"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Madrid inventory is live and fits the current family band"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Madrid-in / Málaga-out ticket is sold"
   }
 }

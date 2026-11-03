@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-azores",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -101,7 +101,8 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-azores-route-review-20260911"
+        "short-azores-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 9600,
@@ -114,11 +115,12 @@
         "currentSupplierQuote": false,
         "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-azores/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-azores-route-review-20260911": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote."
+        "short-azores-route-review-20260911": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote.",
+        "google-flights-2026-11-03-family-audit": "PIT–PDL June 11–19, 2027: United via EWR prices at $5,914 for the family round trip; JetBlue/Azores Airlines via BOS is $5,146–$5,280 but the return overnights in Boston (home 8:10 AM June 20). The United return leg was not displayed, so the $6,600–$7,400 flight line holds as a proxy."
       },
       "claimType": "proxy"
     },
@@ -292,7 +294,8 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-azores-route-review-20260911"
+        "short-azores-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -303,14 +306,15 @@
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote.",
+        "currentFlightAudit": "PIT–PDL June 11–19, 2027: United via EWR prices at $5,914 for the family round trip; JetBlue/Azores Airlines via BOS is $5,146–$5,280 but the return overnights in Boston (home 8:10 AM June 20). The United return leg was not displayed, so the $6,600–$7,400 flight line holds as a proxy.",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-azores/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-azores-route-review-20260911": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote."
+        "short-azores-route-review-20260911": "The operator markets Boston–Ponta Delgada for other dates. No June 11–19, 2027 family ticket or Pittsburgh positioning protection was verified; the old Newark option is historical, not a renewed quote.",
+        "google-flights-2026-11-03-family-audit": "PIT–PDL June 11–19, 2027: United via EWR prices at $5,914 for the family round trip; JetBlue/Azores Airlines via BOS is $5,146–$5,280 but the return overnights in Boston (home 8:10 AM June 20). The United return leg was not displayed, so the $6,600–$7,400 flight line holds as a proxy."
       },
       "claimType": "proxy"
     },

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "sardinia-corsica",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $12,880–$19,300 less a single $2,000 fixed travel redemption yields $10,880–$17,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,180–$18,200 net ($14,180–$20,200 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10880,
+        "lowUsd": 12180,
         "expectedUsd": null,
-        "highUsd": 17300,
+        "highUsd": 18200,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 9,
-        "arithmetic": "5400/6400 + 3200/5500 + 950/1700 + 180/350 + 150/350 + 1400/2200 + 900/1600 + 300/500 + 400/700 = 12880/19300 gross; minus 2000/2000 = 10880/17300 net",
-        "grossLowUsd": 12880,
-        "grossHighUsd": 19300,
+        "arithmetic": "5400/6400 + 3200/5500 + 950/1700 + 180/350 + 150/350 + 1400/2200 + 900/1600 + 300/500 + 400/700 = 12880/19300 gross; minus 2000/2000 = 10880/17300 net | 2026-11-03: flight lines repriced, band $10,880–$17,300 -> $12,180–$18,200",
+        "grossLowUsd": 14180,
+        "grossHighUsd": 20200,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "sardinia-corsica/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–LHR–OLB, June 10–23: gateway round-trip proxy for open-jaw, family base $5316; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–LHR–OLB, June 10–23: gateway round-trip proxy for open-jaw, family base $5316; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "Every CAG–PIT option on June 23, 2027 lands June 24, inside the Pittsburgh commitment. PIT–OLB June 10 / CAG–PIT June 22 is sold on one ticket: Lufthansa/United leaves CAG 6:35 PM, overnights at Munich and reaches Pittsburgh 4:57 PM June 23, at $5,746 for the family. An Olbia round trip ($6,033, home 11:19 PM June 23) is the backup."
       },
       "claimType": "derived"
     },
@@ -241,7 +243,7 @@
       "value": {
         "easeScore": 2,
         "maxConnections": 2,
-        "singleTicket": false,
+        "singleTicket": true,
         "airHours": 21.3,
         "groundHours": 10.1,
         "bases": 4,
@@ -290,7 +292,7 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "moby-stg-bonifacio",
@@ -298,27 +300,29 @@
         "state-travel",
         "cdc-travel",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
-        "singleTicket": false,
+        "status": "confirmed",
+        "singleTicket": true,
         "maxConnections": 2,
         "route": "Santa Teresa Gallura ↔ Bonifacio as foot passengers; Sardinia rental car remains parked",
         "dateWindow": "June 2027 exact ferry dates unpublished",
-        "currentFlightAudit": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "Every CAG–PIT option on June 23, 2027 lands June 24, inside the Pittsburgh commitment. PIT–OLB June 10 / CAG–PIT June 22 is sold on one ticket: Lufthansa/United leaves CAG 6:35 PM, overnights at Munich and reaches Pittsburgh 4:57 PM June 23, at $5,746 for the family. An Olbia round trip ($6,033, home 11:19 PM June 23) is the backup.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "moby-stg-bonifacio": "Official Moby route page checked 2026-07-10: multiple daily sailings, 50-minute crossing, 2026 terms; 2027 timetable not published",
         "internal-itinerary": "#health-check defaults to foot passengers because rental agreements may prohibit taking an Italian car into Corsica",
         "state-travel": "Italy and France Level 2 advisories reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Sardinia & Corsica; recheck before departure",
         "google-flights-2027-audit": "Checked 2026-07-19: PIT-OLB sold as single tickets (2-stop ~$514-540, ~15h, United/AC/Delta; BA 1-stop via LHR $715); CAG-PIT Wednesday verified same-day single ticket (Vueling+BA+Iberia via BCN+LHR, 16h, ~$1,057).",
-        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning."
+        "google-flights-2027-current-audit": "PIT–CAG is selling June 10–23 from $1,535 round trip, with the best practical itinerary around $1,633. Price the northern-arrival/Cagliari-return open-jaw together; the trip still carries the correct Budget 1 warning.",
+        "google-flights-2026-11-03-family-audit": "Every CAG–PIT option on June 23, 2027 lands June 24, inside the Pittsburgh commitment. PIT–OLB June 10 / CAG–PIT June 22 is sold on one ticket: Lufthansa/United leaves CAG 6:35 PM, overnights at Munich and reaches Pittsburgh 4:57 PM June 23, at $5,746 for the family. An Olbia round trip ($6,033, home 11:19 PM June 23) is the backup."
       },
       "claimType": "proxy"
     },
@@ -427,8 +431,8 @@
     "exact 2027 timetable and rental terms remain open"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Exact Sardinia inventory is live, but the old low airfare floor is gone"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: no Wednesday Cagliari flight gets home the same day, so the exit moves to Tuesday evening"
   }
 }

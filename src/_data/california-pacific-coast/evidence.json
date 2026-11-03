@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "california-pacific-coast",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The five-category rollup is approximately $9,300–$16,200 and reconciles with the detailed lines. Its lodging and one-way-car tails put the high case above the $15,000 preference, so the rubric supports 1/5; no July 2027 quotes are claimed.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,075–$16,200. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -100,22 +100,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9275,
+        "lowUsd": 10075,
         "expectedUsd": null,
         "highUsd": 16200,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "9300–16200 line-item sum; tolerance 150"
+        "arithmetic": "9300–16200 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $9,275–$16,200 -> $10,075–$16,200"
       },
-      "verifiedAt": "2026-07-10",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json"
+        "internal-itinerary": "California Pacific Coast; canonical 2027-07-01 → 2027-07-13; source sections #totals, #itinerary, #air-travel, and #getting-around in main.json",
+        "google-flights-2026-11-03-family-audit": "PIT–SAN July 1 / SFO–PIT July 13, 2027: from $1,646 for the family (United via ORD out); the United SFO–PIT nonstop return prices at $1,783."
       },
       "claimType": "proxy"
     },
@@ -287,17 +289,18 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "internal-itinerary",
         "caltrans-highway-1",
         "caltrans-regents-slide",
         "point-lobos-official",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "route": "PIT → SAN; Highway 1 south-to-north; SFO → PIT",
@@ -305,18 +308,19 @@
         "confirmed2027": false,
         "mandatoryGate": "Caltrans Highway 1 status before the Santa Barbara–Monterey transfer",
         "crowdWindow": "Independence Day weekend in San Diego",
-        "currentFlightAudit": "PIT–SAN is selling July 1–13 from $422 round trip with one stop. Price SFO–PIT on the same open-jaw before booking the road trip, and do not promise a nonstop on either end.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–SAN July 1 / SFO–PIT July 13, 2027: from $1,646 for the family (United via ORD out); the United SFO–PIT nonstop return prices at $1,783.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "California Pacific Coast canonical route and current open booking gates",
         "caltrans-highway-1": "Caltrans current SR-1 road-information page; live controls and closures must be checked immediately before the Big Sur day",
         "caltrans-regents-slide": "Caltrans: full Big Sur route reopened in January 2026 after nearly three years, but subsequent storms caused temporary closure and ongoing controls",
         "point-lobos-official": "California State Parks current rules: 8am–7pm, $10 vehicle entry, approximately 150 in-reserve spaces; hours/fees/capacity can change before 2027",
-        "google-flights-2027-current-audit": "PIT–SAN is selling July 1–13 from $422 round trip with one stop. Price SFO–PIT on the same open-jaw before booking the road trip, and do not promise a nonstop on either end."
+        "google-flights-2027-current-audit": "PIT–SAN is selling July 1–13 from $422 round trip with one stop. Price SFO–PIT on the same open-jaw before booking the road trip, and do not promise a nonstop on either end.",
+        "google-flights-2026-11-03-family-audit": "PIT–SAN July 1 / SFO–PIT July 13, 2027: from $1,646 for the family (United via ORD out); the United SFO–PIT nonstop return prices at $1,783."
       },
       "claimType": "proxy"
     },
@@ -414,8 +418,8 @@
     "July 2027 flight, car and lodging inventory remains unquoted"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "San Diego inventory is live; retain the one-stop open-jaw fallback"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the San Diego-in / San Francisco-out ticket is sold"
   }
 }

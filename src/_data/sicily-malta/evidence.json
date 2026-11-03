@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "sicily-malta",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Use $6,200–7,400 outer airfare as a conservative open-jaw planning proxy above the $5,667 Palermo round-trip result, not an observed Malta-return fare. Retain internal hop and local-cost estimates; add $400–700 insurance/contingency. Gross $13,000–$18,700 less a single $2,000 fixed travel redemption yields $11,000–$16,700. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,400–$16,700 net ($13,400–$18,700 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -102,27 +102,29 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11000,
+        "lowUsd": 11400,
         "expectedUsd": null,
         "highUsd": 16700,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "6200/7400 + 250/500 + 1050/1850 + 250/400 + 3400/5200 + 1450/2650 + 400/700 = 13000/18700 gross; minus 2000/2000 = 11000/16700 net",
-        "grossLowUsd": 13000,
+        "arithmetic": "6200/7400 + 250/500 + 1050/1850 + 250/400 + 3400/5200 + 1450/2650 + 400/700 = 13000/18700 gross; minus 2000/2000 = 11000/16700 net | 2026-11-03: flight lines repriced, band $11,000–$16,700 -> $11,400–$16,700",
+        "grossLowUsd": 13400,
         "grossHighUsd": 18700,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "sicily-malta/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–LHR–PMO, June 10–23: gateway round-trip proxy for open-jaw, family base $5667; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–LHR–PMO, June 10–23: gateway round-trip proxy for open-jaw, family base $5667; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "The cheapest PIT–PMO / MLA–PIT open-jaw lands June 24 and the same-day version is flagged as separate tickets. Two one-ways work: JetBlue/Turkish PIT–PMO June 10 $2,885 or BA $2,950, plus Lufthansa/United MLA–PIT June 23 $2,711 (home 4:57 PM). Ryanair CTA–MLA June 20 is $103 for the family."
       },
       "claimType": "derived"
     },
@@ -298,7 +300,8 @@
         "state-travel",
         "cdc-travel",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "status": "current-proxy",
@@ -306,19 +309,20 @@
         "maxConnections": 2,
         "route": "CTA → MLA on a separate ticket",
         "dateWindow": "2027-06-20",
-        "currentFlightAudit": "PIT–CTA is selling June 10–23 from $1,449 round trip, and Ryanair/Malta Air sells June 20 CTA–MLA nonstops from $54 in 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote.",
+        "currentFlightAudit": "The cheapest PIT–PMO / MLA–PIT open-jaw lands June 24 and the same-day version is flagged as separate tickets. Two one-ways work: JetBlue/Turkish PIT–PMO June 10 $2,885 or BA $2,950, plus Lufthansa/United MLA–PIT June 23 $2,711 (home 4:57 PM). Ryanair CTA–MLA June 20 is $103 for the family.",
         "exact2027FlightsVerified": false,
         "june2027Verified": false
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "ryanair-cta-mla": "Official Ryanair route page checked 2026-07-10 sells CTA–MLA on current dates; it does not confirm 2027-06-20",
         "internal-itinerary": "#air-travel and #decisions require CTA–MLA on 2027-06-20 after the Sicily car drop",
         "state-travel": "Italy Level 2 and Malta Level 1 advisories reviewed 2026-07-10",
         "cdc-travel": "CDC Travelers' Health destination guidance for Sicily & Malta; recheck before departure",
         "google-flights-2027-audit": "Checked 2026-07-19: CTA-MLA verified - Ryanair/Malta Air x3 daily plus KM Malta/ITA nonstop (45-50 min, $45-137); MLA-PIT verified same-day single tickets (SWISS+United via ZRH+ORD 17h07 ~$1,630; Lufthansa+United ~16h; BA overnight ~$985).",
-        "google-flights-2027-current-audit": "PIT–CTA is selling June 10–23 from $1,449 round trip, and Ryanair/Malta Air sells June 20 CTA–MLA nonstops from $54 in 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote."
+        "google-flights-2027-current-audit": "PIT–CTA is selling June 10–23 from $1,449 round trip, and Ryanair/Malta Air sells June 20 CTA–MLA nonstops from $54 in 50 minutes. The Sicily-in/Malta-out transatlantic still needs a protected multi-city quote.",
+        "google-flights-2026-11-03-family-audit": "The cheapest PIT–PMO / MLA–PIT open-jaw lands June 24 and the same-day version is flagged as separate tickets. Two one-ways work: JetBlue/Turkish PIT–PMO June 10 $2,885 or BA $2,950, plus Lufthansa/United MLA–PIT June 23 $2,711 (home 4:57 PM). Ryanair CTA–MLA June 20 is $103 for the family."
       },
       "claimType": "proxy"
     },
@@ -429,8 +433,8 @@
     "exact 2027 date remains unconfirmed"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
+    "reviewedAt": "2026-11-03",
     "status": "current-proxy",
-    "headline": "The exact Catania–Malta hop is selling"
+    "headline": "Four-passenger check: two one-ways get the family home June 23"
   }
 }

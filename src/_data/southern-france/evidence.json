@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "southern-france",
-  "reviewedAt": "2026-09-10",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The independently itemized $13,350–$19,100 family band can approach the $15,000 preference only near its low case and has a material premium-price tail.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $14,550–$19,100. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -104,23 +104,25 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "google-flights-pit-nce"
+        "google-flights-pit-nce",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 13350,
+        "lowUsd": 14550,
         "expectedUsd": 16050,
         "highUsd": 19100,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 8,
-        "arithmetic": "5,200–6,800 air + 4,200–6,000 lodging + 150–250 Riviera transit + 650–950 car + 350–600 road costs + 1,800–2,600 food + 500–1,000 activities + 500–900 insurance/misc = 13,350–19,100"
+        "arithmetic": "5,200–6,800 air + 4,200–6,000 lodging + 150–250 Riviera transit + 650–950 car + 350–600 road costs + 1,800–2,600 food + 500–1,000 activities + 500–900 insurance/misc = 13,350–19,100 | 2026-11-03: flight lines repriced, band $13,350–$19,100 -> $14,550–$19,100"
       },
-      "verifiedAt": "2026-07-09",
-      "expiresAt": "2026-12-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "Southern France #budget and #totals; eight independently reconciled line items",
-        "google-flights-pit-nce": "July 2026 route snapshot describes June PIT–Nice round-trip fares around $1,300–1,600 per traveler; open-jaw 2027 price is unconfirmed"
+        "google-flights-pit-nce": "July 2026 route snapshot describes June PIT–Nice round-trip fares around $1,300–1,600 per traveler; open-jaw 2027 price is unconfirmed",
+        "google-flights-2026-11-03-family-audit": "PIT–NCE June 10 / MRS–PIT June 23, 2027: from $5,433 for the family (United via IAD out); a Lufthansa/United MRS return via MUC and ORD reaches Pittsburgh 4:57 PM for a $5,460 total."
       },
       "claimType": "proxy"
     },
@@ -350,34 +352,36 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "google-flights-pit-nce",
         "internal-itinerary",
         "state-travel",
         "cdc-travel",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
         "route": "PIT → NCE / MRS → PIT open-jaw",
         "hardReturn": "2027-06-23",
         "rejectedReturn": "2027-06-24 or later",
-        "currentFlightAudit": "PIT–NCE sells June 10–23 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23.",
-        "exact2027FlightsVerified": false,
-        "june2027Verified": false
+        "currentFlightAudit": "PIT–NCE June 10 / MRS–PIT June 23, 2027: from $5,433 for the family (United via IAD out); a Lufthansa/United MRS return via MUC and ORD reaches Pittsburgh 4:57 PM for a $5,460 total.",
+        "exact2027FlightsVerified": true,
+        "june2027Verified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "google-flights-pit-nce": "Current proxy shows no PIT–Nice nonstop; exact June 2027 open-jaw schedule/fare is unconfirmed",
         "internal-itinerary": "#air-travel and #todo make June 23 PIT arrival a booking permission gate",
         "state-travel": "France advisory review required before booking/departure",
         "cdc-travel": "France destination health guidance to recheck before departure",
-        "google-flights-2027-current-audit": "PIT–NCE sells June 10–23 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23."
+        "google-flights-2027-current-audit": "PIT–NCE sells June 10–23 from $1,295 round trip with one stop, consistent with the existing family band. Price MRS–PIT in the same open-jaw and reject any return arriving after June 23.",
+        "google-flights-2026-11-03-family-audit": "PIT–NCE June 10 / MRS–PIT June 23, 2027: from $5,433 for the family (United via IAD out); a Lufthansa/United MRS return via MUC and ORD reaches Pittsburgh 4:57 PM for a $5,460 total."
       },
       "claimType": "proxy"
     },
@@ -549,8 +553,8 @@
     "explicit exact-2027 flight and seasonal-condition gates"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "Nice inventory is live; Marseille must still price in the open-jaw"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Nice-in / Marseille-out ticket is sold"
   }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-mallorca",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -102,7 +102,8 @@
       "sourceRefs": [
         "internal-itinerary",
         "capital-one-fixed-travel",
-        "google-flights-family-audit"
+        "google-flights-family-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
         "lowUsd": 11100,
@@ -117,12 +118,13 @@
         "grossHighUsd": 15900,
         "pointsSavingsUsd": 2000
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "madeira-mallorca/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
         "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
-        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json"
+        "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC / PMI–PIT June 21, 2027: $4,921 for the family on United (PMI via EWR in 4h19, home 7:04 PM). FNC–LIS is $231 and the TAP LIS–PMI nonstop $587. The $6,700–$7,500 flight line still holds."
       },
       "claimType": "derived"
     },
@@ -316,17 +318,18 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "high",
       "sourceRefs": [
         "tap-lisbon-palma",
         "ana-madeira-wind-operations",
         "internal-itinerary",
         "google-flights-2027-audit",
-        "google-flights-2027-current-audit"
+        "google-flights-2027-current-audit",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicketAssumption": true,
         "maxConnections": 2,
         "criticalLegs": [
@@ -335,20 +338,21 @@
           "LIS–PMI",
           "PMI–PIT"
         ],
-        "june2027Verified": false,
+        "june2027Verified": true,
         "mandatoryBuffer": "Lisbon",
         "singleTicket": false,
-        "currentFlightAudit": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind.",
-        "exact2027FlightsVerified": false
+        "currentFlightAudit": "PIT–FNC / PMI–PIT June 21, 2027: $4,921 for the family on United (PMI via EWR in 4h19, home 7:04 PM). FNC–LIS is $231 and the TAP LIS–PMI nonstop $587. The $6,700–$7,500 flight line still holds.",
+        "exact2027FlightsVerified": true
       },
-      "verifiedAt": "2026-09-10",
-      "expiresAt": "2026-10-10",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "tap-lisbon-palma": "TAP operator announcement confirms seasonal LIS–PMI route exists, not exact June 2027 days",
         "ana-madeira-wind-operations": "Official ANA historical notice confirms strong winds can disrupt Madeira operations",
         "internal-itinerary": "madeira-mallorca/main.json Air Travel and Plan Health-Check explicitly require exact 2027 operating days and protected quote",
         "google-flights-2027-audit": "Checked 2026-07-19: United EWR-FNC nonstop is SOLD for the exact Tue 2027-06-08 ($1,139 one-way, 7:15 PM-7:05 AM) and PIT-FNC prices as one United ticket ($1,353, 9h40). LIS-PMI verified healthy: TAP x2 daily nonstop + easyJet + Vueling nonstops on the checked Tuesday.",
-        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind."
+        "google-flights-2027-current-audit": "Observed one-way components are PIT–FNC $607, FNC–LIS $45, LIS–PMI $88 and PMI–PIT $874 per traveler. Use a $6.7k–$7.5k family air band with seats and bags; the Lisbon buffer still protects the plan from Funchal wind.",
+        "google-flights-2026-11-03-family-audit": "PIT–FNC / PMI–PIT June 21, 2027: $4,921 for the family on United (PMI via EWR in 4h19, home 7:04 PM). FNC–LIS is $231 and the TAP LIS–PMI nonstop $587. The $6,700–$7,500 flight line still holds."
       },
       "claimType": "proxy"
     },
@@ -457,8 +461,8 @@
     "medium-confidence unquoted budget, property inventory, and non-reproduced SST"
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-10",
-    "status": "current-proxy",
-    "headline": "The exact Madeira and Mallorca components are selling"
+    "reviewedAt": "2026-11-03",
+    "status": "confirmed",
+    "headline": "Four-passenger check: the Funchal-in / Palma-out ticket and both hops are sold"
   }
 }

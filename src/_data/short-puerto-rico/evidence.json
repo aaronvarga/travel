@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-puerto-rico",
-  "reviewedAt": "2026-09-11",
+  "reviewedAt": "2026-11-03",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "The seven reconciled categories total $6,200–$9,630, below the shared $12,000 target. Exact June 2027 airfare, rooms and tours are not quoted, so the score remains medium-confidence.",
+      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $7,100–$9,630. Budget 5/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -103,22 +103,24 @@
       "proxyStatus": "current-proxy",
       "confidence": "medium",
       "sourceRefs": [
-        "internal-itinerary"
+        "internal-itinerary",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 6200,
+        "lowUsd": 7100,
         "expectedUsd": null,
         "highUsd": 9630,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "1800/3000 + 500/800 + 1100/1800 + 600/1030 + 900/1250 + 700/1100 + 600/650 = 6200/9630"
+        "arithmetic": "1800/3000 + 500/800 + 1100/1800 + 600/1030 + 900/1250 + 700/1100 + 600/650 = 6200/9630 | 2026-11-03: flight lines repriced, band $6,200–$9,630 -> $7,100–$9,630"
       },
-      "verifiedAt": "2026-07-13",
-      "expiresAt": "2026-10-31",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
-        "internal-itinerary": "short-puerto-rico/main.json #budget and #totals; exact seven-line reconciliation"
+        "internal-itinerary": "short-puerto-rico/main.json #budget and #totals; exact seven-line reconciliation",
+        "google-flights-2026-11-03-family-audit": "PIT–SJU June 12–19, 2027: $2,108 for the family on Southwest via BWI (American via CLT $2,184)."
       },
       "claimType": "proxy"
     },
@@ -306,29 +308,31 @@
     {
       "id": "route-readiness",
       "category": "route",
-      "proxyStatus": "current-proxy",
+      "proxyStatus": "confirmed",
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "short-puerto-rico-route-review-20260911"
+        "short-puerto-rico-route-review-20260911",
+        "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "maxConnections": 1,
-        "exact2027FlightsVerified": false,
+        "exact2027FlightsVerified": true,
         "june2027Verified": false,
         "fourSeatsVerified": false,
         "protectionVerified": false,
         "singleTicketIsBookingRequirement": true,
-        "currentFlightAudit": "American markets PIT–SJU for other dates and one adult; Basic Economy and optional-fee caveats apply. No June 12–19, 2027 four-passenger fare or connection protection was reproduced.",
+        "currentFlightAudit": "PIT–SJU June 12–19, 2027: $2,108 for the family on Southwest via BWI (American via CLT $2,184).",
         "historicalObservationDate": "2026-08-08"
       },
-      "verifiedAt": "2026-09-11",
-      "expiresAt": "2026-10-11",
+      "verifiedAt": "2026-11-03",
+      "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "short-puerto-rico/main.json: unchanged planning dates and itemized budget; prior fare observation archived, not re-quoted",
-        "short-puerto-rico-route-review-20260911": "American markets PIT–SJU for other dates and one adult; Basic Economy and optional-fee caveats apply. No June 12–19, 2027 four-passenger fare or connection protection was reproduced."
+        "short-puerto-rico-route-review-20260911": "American markets PIT–SJU for other dates and one adult; Basic Economy and optional-fee caveats apply. No June 12–19, 2027 four-passenger fare or connection protection was reproduced.",
+        "google-flights-2026-11-03-family-audit": "PIT–SJU June 12–19, 2027: $2,108 for the family on Southwest via BWI (American via CLT $2,184)."
       },
       "claimType": "proxy"
     },
