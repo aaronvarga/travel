@@ -6,7 +6,7 @@
  *   on demand as the user visits pages (no bulk pre-warming).
  * Cache names are versioned; bump VERSION on release to invalidate. */
 'use strict';
-const VERSION = 'tp-v16';
+const VERSION = 'tp-v18';
 const SHELL = VERSION + '-shell';
 const TILES = VERSION + '-tiles';
 const IMGS = VERSION + '-imgs';
@@ -21,14 +21,14 @@ const CORE = [
   'assets/css/composer-shell.css?v=20260712-parity-2',
   'assets/js/store.js',
   'assets/js/recommendation-engine.js',
-  'assets/js/board.js',
+  'assets/js/board.js?v=20261108-shared-cards',
   'assets/js/display-date.js?v=20260710-dates',
   'assets/js/weights.js',
   'assets/js/scenarios.js',
-  'assets/js/evidence.js?v=20260710-dates',
+  'assets/js/evidence.js?v=20261108-shared-cards',
   'assets/js/filters.js',
-  'assets/js/compare.js?v=20261107-cash',
-  'assets/js/meter.js?v=20260710-dates',
+  'assets/js/compare.js?v=20261108-shared-cards',
+  'assets/js/meter.js?v=20261108-shared-cards',
   'assets/js/urlstate.js',
   'assets/js/itinerary.js?v=20260710-gallery-full',
   'assets/js/builder.js?v=20260712-composer',
@@ -168,8 +168,13 @@ function postTo(client, message) {
 
 function networkFirst(req, cacheName) {
   return fetch(req)
-    .then((res) => {
-      if (res && res.ok) caches.open(cacheName).then((c) => c.put(req, res.clone()));
+    .then(async (res) => {
+      if (res && res.ok) {
+        try {
+          const cache = await caches.open(cacheName);
+          await cache.put(req, res.clone());
+        } catch (_) { /* Cache failure must not discard a successful network response. */ }
+      }
       return res;
     })
     .catch(() => caches.match(req));

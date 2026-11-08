@@ -1,5 +1,5 @@
-{% set routeFact = trip.evidence.facts | selectattr("id", "equalto", "route-readiness") | first %}
-{% set fireFact = trip.evidence.facts | selectattr("id", "equalto", "wildfire-exposure") | first %}
+{% set routeFact = trip.routeFact %}
+{% set fireFact = trip.fireFact %}
 <section id="recommendation-readiness" class="divider evidence-section">
   <div class="section-label"><p class="eyebrow">How It Stacks Up</p><h2>What works well—and what still needs checking</h2><p>The score reflects how well this trip fits the family. {% if trip.variants.bookingStatus == "travel-booked" %}Flights, the hotel and SUV are booked. Confirm the remaining Airbnb total and recheck flight schedules before departure.{% else %}Flight schedules, live prices, and availability still need a fresh check before booking.{% endif %}</p></div>
   <div class="evidence-summary-grid">

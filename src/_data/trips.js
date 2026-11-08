@@ -38,6 +38,8 @@ module.exports = function () {
     if (fs.existsSync(path.join(base, 'foodGuide.json'))) trip.foodGuide = readJson('foodGuide.json');
     if (fs.existsSync(path.join(base, 'evidence.json'))) {
       trip.evidence = readJson('evidence.json');
+      trip.routeFact = trip.evidence.facts.find((fact) => fact.id === 'route-readiness');
+      trip.fireFact = trip.evidence.facts.find((fact) => fact.id === 'wildfire-exposure');
       trip.evidence.limitingAxes = scoreManifest.axes
         .filter((axis) => axis.weightDefault > 0 && trip.evidence.axes?.[axis.id]?.confidence === trip.evidence.overallConfidence)
         .map((axis) => axis.label);

@@ -36,11 +36,11 @@ test('dynamic evidence dates use the shared display formatter', () => {
 test('date-formatting scripts bypass stale offline caches', () => {
   const hub = fs.readFileSync('src/index.njk', 'utf8');
   const serviceWorker = fs.readFileSync('sw.js', 'utf8');
-  for (const script of ['display-date.js', 'evidence.js', 'meter.js']) {
+  for (const script of ['display-date.js']) {
     assert.match(hub, new RegExp(`${script.replace('.', '\\.')}\\?v=20260710-dates`));
     assert.match(serviceWorker, new RegExp(`${script.replace('.', '\\.')}\\?v=20260710-dates`));
   }
-  assert.match(serviceWorker, /const VERSION = 'tp-v16'/);
+  assert.match(serviceWorker, /const VERSION = 'tp-v18'/);
   assert.match(serviceWorker, /builder\.js\?v=20260712-composer/);
 });
 
@@ -70,7 +70,7 @@ test('offline trip packages have no URL cap and report verified completion', () 
 });
 
 test('ranked and excluded cards provide a wrapping badge container', () => {
-  const cards = fs.readFileSync('src/_includes/hub/cards.njk', 'utf8');
+  const cards = fs.readFileSync('src/_includes/hub/cards.njk', 'utf8') + fs.readFileSync('src/_includes/hub/trip-card.njk', 'utf8');
   assert.equal((cards.match(/class="sl-tags"/g) || []).length, 2);
 });
 
@@ -106,4 +106,14 @@ test('hero travel frames use compact month-name ranges', () => {
   assert.match(config, /label\.text\('Travel frame'\)/);
   assert.match(config, /data-travel-frame/);
   assert.match(template, /data-trip-slug="\{\{ trip\.slug \}\}"/);
+});
+
+test('shared card scripts use the same cache version across the shell', () => {
+  const hub = fs.readFileSync('src/index.njk', 'utf8');
+  const serviceWorker = fs.readFileSync('sw.js', 'utf8');
+  for (const script of ['board', 'compare', 'evidence', 'meter']) {
+    const url = `assets/js/${script}.js?v=20261108-shared-cards`;
+    assert.ok(hub.includes(url), script);
+    assert.ok(serviceWorker.includes(url), script);
+  }
 });

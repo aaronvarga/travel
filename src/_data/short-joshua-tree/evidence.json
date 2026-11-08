@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "short-joshua-tree",
-  "reviewedAt": "2026-11-07",
+  "reviewedAt": "2026-11-08",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
@@ -391,8 +391,8 @@
     {
       "id": "selected-airbnb",
       "category": "reservation",
-      "proxyStatus": "confirmed",
-      "confidence": "high",
+      "proxyStatus": "unknown",
+      "confidence": "low",
       "sourceRefs": [
         "airbnb-agave-gold"
       ],
@@ -417,14 +417,18 @@
         "optionalInsuranceUsd": 112.32,
         "access": "final dirt-road approach; get host directions",
         "poolHeatingConfirmed": false,
-        "addressKnown": false
+        "addressKnown": false,
+        "historicalQuoteObservedAt": "2026-10-08",
+        "historicalQuoteExpiredAt": "2026-10-15",
+        "currentQuoteVerified": false,
+        "quoteStatus": "Historical October 8 checkout only; expired October 15. Current price, availability and terms are unknown. Retained as a planning allowance, not a live offer."
       },
-      "verifiedAt": "2026-10-08",
-      "expiresAt": "2026-10-15",
+      "verifiedAt": "2026-11-08",
+      "expiresAt": "2026-12-08",
       "sourceLocators": {
-        "airbnb-agave-gold": "Listing rules, sleeping layout, location text and unsubmitted Confirm and pay checkout for four people Feb19–23. Private checkout IDs excluded."
+        "airbnb-agave-gold": "Listing rules, sleeping layout, location text and unsubmitted Confirm and pay checkout for four people Feb19–23. Private checkout IDs excluded. Status audit November 8: October 8 observation expired October 15; no supplier refresh or reservation has occurred. Figures describe the historical checkout only."
       },
-      "claimType": "observed-quote"
+      "claimType": "derived"
     },
     {
       "id": "hollywood-arrival-activities",
