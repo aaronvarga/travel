@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-08T15:47:39.263Z",
+  "generatedAt": "2026-11-08T16:35:49.801Z",
   "trips": [
     {
       "slug": "albania",
@@ -2331,6 +2331,85 @@
           "text": "$500–$750",
           "lowUsd": 500,
           "highUsd": 750
+        }
+      ],
+      "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
+    },
+    {
+      "slug": "sicily",
+      "canonical": {
+        "lowUsd": 12260,
+        "highUsd": 16770,
+        "netLowUsd": 12260,
+        "netHighUsd": 16770
+      },
+      "status": "matched",
+      "arithmetic": {
+        "lineItems": 9,
+        "sumLowUsd": 12260,
+        "sumHighUsd": 16770,
+        "displayedLowUsd": 12260,
+        "displayedHighUsd": 16770,
+        "deltaLowUsd": 0,
+        "deltaHighUsd": 0,
+        "displayedDeltaLowUsd": 0,
+        "displayedDeltaHighUsd": 0,
+        "toleranceUsd": 150
+      },
+      "lineItems": [
+        {
+          "label": "International multi-city flights · unquoted family allowance",
+          "text": "$6,200–$8,200",
+          "lowUsd": 6200,
+          "highUsd": 8200
+        },
+        {
+          "label": "Ortigia · 4 nights incl. tax/cleaning allowance",
+          "text": "$800–$1,120",
+          "lowUsd": 800,
+          "highUsd": 1120
+        },
+        {
+          "label": "Giardini Naxos · 4 nights incl. tax allowance",
+          "text": "$880–$1,240",
+          "lowUsd": 880,
+          "highUsd": 1240
+        },
+        {
+          "label": "Cefalù · 4 nights incl. tax/cleaning allowance",
+          "text": "$880–$1,240",
+          "lowUsd": 880,
+          "highUsd": 1240
+        },
+        {
+          "label": "Automatic rental · insurance and one-way drop allowance",
+          "text": "$800–$1,150",
+          "lowUsd": 800,
+          "highUsd": 1150
+        },
+        {
+          "label": "Fuel, motorway tolls and parking",
+          "text": "$200–$320",
+          "lowUsd": 200,
+          "highUsd": 320
+        },
+        {
+          "label": "Food · 13 days for four",
+          "text": "$1,400–$1,800",
+          "lowUsd": 1400,
+          "highUsd": 1800
+        },
+        {
+          "label": "Activities · volcano, ruins and optional boat",
+          "text": "$500–$800",
+          "lowUsd": 500,
+          "highUsd": 800
+        },
+        {
+          "label": "Contingency",
+          "text": "$600–$900",
+          "lowUsd": 600,
+          "highUsd": 900
         }
       ],
       "note": "Line-item low/high sums and the displayed Grand Total agree with the canonical planning band within the rounding tolerance."
