@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T16:35:51.900Z",
+  "generatedAt": "2026-11-08T21:02:06.173Z",
   "budgets": {
     "maxVariantBytes": 700000,
     "maxWidth": 1280
@@ -92998,51 +92998,345 @@
         ]
       }
     },
-    "assets/img/sicily/etna-craters-trails.jpg": {
-      "sourceHash": "9903dab61cd53b5f",
+    "assets/img/sicily/etna-ash-plume.jpg": {
+      "sourceHash": "a80e5100ed9c4e20",
       "width": 2000,
-      "height": 2500,
+      "height": 1335,
       "variants": {
         "avif": [
           {
             "width": 640,
-            "height": 800,
-            "url": "assets/generated/images/sicily/etna-craters-trails-9903dab61cd53b5f-640.avif",
-            "bytes": 19311
+            "height": 427,
+            "url": "assets/generated/images/sicily/etna-ash-plume-a80e5100ed9c4e20-640.avif",
+            "bytes": 18730
           },
           {
             "width": 1280,
-            "height": 1600,
-            "url": "assets/generated/images/sicily/etna-craters-trails-9903dab61cd53b5f-1280.avif",
-            "bytes": 73473
+            "height": 854,
+            "url": "assets/generated/images/sicily/etna-ash-plume-a80e5100ed9c4e20-1280.avif",
+            "bytes": 71126
           }
         ],
         "webp": [
           {
             "width": 640,
-            "height": 800,
-            "url": "assets/generated/images/sicily/etna-craters-trails-9903dab61cd53b5f-640.webp",
-            "bytes": 23550
+            "height": 427,
+            "url": "assets/generated/images/sicily/etna-ash-plume-a80e5100ed9c4e20-640.webp",
+            "bytes": 31362
           },
           {
             "width": 1280,
-            "height": 1600,
-            "url": "assets/generated/images/sicily/etna-craters-trails-9903dab61cd53b5f-1280.webp",
-            "bytes": 89630
+            "height": 854,
+            "url": "assets/generated/images/sicily/etna-ash-plume-a80e5100ed9c4e20-1280.webp",
+            "bytes": 126560
           }
         ],
         "jpeg": [
           {
             "width": 640,
-            "height": 800,
-            "url": "assets/generated/images/sicily/etna-craters-trails-9903dab61cd53b5f-640.jpg",
-            "bytes": 34966
+            "height": 427,
+            "url": "assets/generated/images/sicily/etna-ash-plume-a80e5100ed9c4e20-640.jpg",
+            "bytes": 35491
           },
           {
             "width": 1280,
-            "height": 1600,
-            "url": "assets/generated/images/sicily/etna-craters-trails-9903dab61cd53b5f-1280.jpg",
-            "bytes": 130432
+            "height": 854,
+            "url": "assets/generated/images/sicily/etna-ash-plume-a80e5100ed9c4e20-1280.jpg",
+            "bytes": 138297
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/etna-lava-night.jpg": {
+      "sourceHash": "18ab6646b49fe1d8",
+      "width": 2000,
+      "height": 1330,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/etna-lava-night-18ab6646b49fe1d8-640.avif",
+            "bytes": 3994
+          },
+          {
+            "width": 1280,
+            "height": 851,
+            "url": "assets/generated/images/sicily/etna-lava-night-18ab6646b49fe1d8-1280.avif",
+            "bytes": 8749
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/etna-lava-night-18ab6646b49fe1d8-640.webp",
+            "bytes": 4344
+          },
+          {
+            "width": 1280,
+            "height": 851,
+            "url": "assets/generated/images/sicily/etna-lava-night-18ab6646b49fe1d8-1280.webp",
+            "bytes": 10874
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/etna-lava-night-18ab6646b49fe1d8-640.jpg",
+            "bytes": 7934
+          },
+          {
+            "width": 1280,
+            "height": 851,
+            "url": "assets/generated/images/sicily/etna-lava-night-18ab6646b49fe1d8-1280.jpg",
+            "bytes": 20283
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/etna-summit-clouds.jpg": {
+      "sourceHash": "bbf24924eaa8667c",
+      "width": 2000,
+      "height": 1334,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/etna-summit-clouds-bbf24924eaa8667c-640.avif",
+            "bytes": 14646
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/etna-summit-clouds-bbf24924eaa8667c-1280.avif",
+            "bytes": 52709
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/etna-summit-clouds-bbf24924eaa8667c-640.webp",
+            "bytes": 20080
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/etna-summit-clouds-bbf24924eaa8667c-1280.webp",
+            "bytes": 76458
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/etna-summit-clouds-bbf24924eaa8667c-640.jpg",
+            "bytes": 26234
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/etna-summit-clouds-bbf24924eaa8667c-1280.jpg",
+            "bytes": 95810
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_cefalu_aerial_01.jpg": {
+      "sourceHash": "b66bb3038b63ae91",
+      "width": 1800,
+      "height": 431,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 153,
+            "url": "assets/generated/images/sicily/google_cefalu_aerial_01-b66bb3038b63ae91-640.avif",
+            "bytes": 16417
+          },
+          {
+            "width": 1280,
+            "height": 306,
+            "url": "assets/generated/images/sicily/google_cefalu_aerial_01-b66bb3038b63ae91-1280.avif",
+            "bytes": 57908
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 153,
+            "url": "assets/generated/images/sicily/google_cefalu_aerial_01-b66bb3038b63ae91-640.webp",
+            "bytes": 27396
+          },
+          {
+            "width": 1280,
+            "height": 306,
+            "url": "assets/generated/images/sicily/google_cefalu_aerial_01-b66bb3038b63ae91-1280.webp",
+            "bytes": 104148
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 153,
+            "url": "assets/generated/images/sicily/google_cefalu_aerial_01-b66bb3038b63ae91-640.jpg",
+            "bytes": 26912
+          },
+          {
+            "width": 1280,
+            "height": 306,
+            "url": "assets/generated/images/sicily/google_cefalu_aerial_01-b66bb3038b63ae91-1280.jpg",
+            "bytes": 101481
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_cefalu_dusk_flickr_01.jpg": {
+      "sourceHash": "35bb258f69cfc4b7",
+      "width": 1024,
+      "height": 682,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_cefalu_dusk_flickr_01-35bb258f69cfc4b7-640.avif",
+            "bytes": 17460
+          },
+          {
+            "width": 1024,
+            "height": 682,
+            "url": "assets/generated/images/sicily/google_cefalu_dusk_flickr_01-35bb258f69cfc4b7-1024.avif",
+            "bytes": 40701
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_cefalu_dusk_flickr_01-35bb258f69cfc4b7-640.webp",
+            "bytes": 25788
+          },
+          {
+            "width": 1024,
+            "height": 682,
+            "url": "assets/generated/images/sicily/google_cefalu_dusk_flickr_01-35bb258f69cfc4b7-1024.webp",
+            "bytes": 62150
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_cefalu_dusk_flickr_01-35bb258f69cfc4b7-640.jpg",
+            "bytes": 32997
+          },
+          {
+            "width": 1024,
+            "height": 682,
+            "url": "assets/generated/images/sicily/google_cefalu_dusk_flickr_01-35bb258f69cfc4b7-1024.jpg",
+            "bytes": 79169
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_cefalu_larocca_beach_01.jpg": {
+      "sourceHash": "0427c59fc8dfae1d",
+      "width": 1023,
+      "height": 682,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_cefalu_larocca_beach_01-0427c59fc8dfae1d-640.avif",
+            "bytes": 28992
+          },
+          {
+            "width": 1023,
+            "height": 682,
+            "url": "assets/generated/images/sicily/google_cefalu_larocca_beach_01-0427c59fc8dfae1d-1023.avif",
+            "bytes": 73472
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_cefalu_larocca_beach_01-0427c59fc8dfae1d-640.webp",
+            "bytes": 48174
+          },
+          {
+            "width": 1023,
+            "height": 682,
+            "url": "assets/generated/images/sicily/google_cefalu_larocca_beach_01-0427c59fc8dfae1d-1023.webp",
+            "bytes": 112848
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_cefalu_larocca_beach_01-0427c59fc8dfae1d-640.jpg",
+            "bytes": 50666
+          },
+          {
+            "width": 1023,
+            "height": 682,
+            "url": "assets/generated/images/sicily/google_cefalu_larocca_beach_01-0427c59fc8dfae1d-1023.jpg",
+            "bytes": 126030
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_cefalu_rocca_trail_01.jpg": {
+      "sourceHash": "6516b332c53701e7",
+      "width": 1799,
+      "height": 1200,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_cefalu_rocca_trail_01-6516b332c53701e7-640.avif",
+            "bytes": 29911
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/google_cefalu_rocca_trail_01-6516b332c53701e7-1280.avif",
+            "bytes": 113264
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_cefalu_rocca_trail_01-6516b332c53701e7-640.webp",
+            "bytes": 50704
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/google_cefalu_rocca_trail_01-6516b332c53701e7-1280.webp",
+            "bytes": 193484
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_cefalu_rocca_trail_01-6516b332c53701e7-640.jpg",
+            "bytes": 53567
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/google_cefalu_rocca_trail_01-6516b332c53701e7-1280.jpg",
+            "bytes": 200385
           }
         ]
       }
@@ -93243,6 +93537,692 @@
         ]
       }
     },
+    "assets/img/sicily/google_mazzaro_evening_01.jpg": {
+      "sourceHash": "86c5cf6a659f08af",
+      "width": 1024,
+      "height": 638,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 399,
+            "url": "assets/generated/images/sicily/google_mazzaro_evening_01-86c5cf6a659f08af-640.avif",
+            "bytes": 18566
+          },
+          {
+            "width": 1024,
+            "height": 638,
+            "url": "assets/generated/images/sicily/google_mazzaro_evening_01-86c5cf6a659f08af-1024.avif",
+            "bytes": 44114
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 399,
+            "url": "assets/generated/images/sicily/google_mazzaro_evening_01-86c5cf6a659f08af-640.webp",
+            "bytes": 28470
+          },
+          {
+            "width": 1024,
+            "height": 638,
+            "url": "assets/generated/images/sicily/google_mazzaro_evening_01-86c5cf6a659f08af-1024.webp",
+            "bytes": 65824
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 399,
+            "url": "assets/generated/images/sicily/google_mazzaro_evening_01-86c5cf6a659f08af-640.jpg",
+            "bytes": 34199
+          },
+          {
+            "width": 1024,
+            "height": 638,
+            "url": "assets/generated/images/sicily/google_mazzaro_evening_01-86c5cf6a659f08af-1024.jpg",
+            "bytes": 80523
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_noto_baroque_dusk_01.jpg": {
+      "sourceHash": "38a76527ebdcbb2f",
+      "width": 1280,
+      "height": 494,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 247,
+            "url": "assets/generated/images/sicily/google_noto_baroque_dusk_01-38a76527ebdcbb2f-640.avif",
+            "bytes": 11662
+          },
+          {
+            "width": 1280,
+            "height": 494,
+            "url": "assets/generated/images/sicily/google_noto_baroque_dusk_01-38a76527ebdcbb2f-1280.avif",
+            "bytes": 32765
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 247,
+            "url": "assets/generated/images/sicily/google_noto_baroque_dusk_01-38a76527ebdcbb2f-640.webp",
+            "bytes": 17370
+          },
+          {
+            "width": 1280,
+            "height": 494,
+            "url": "assets/generated/images/sicily/google_noto_baroque_dusk_01-38a76527ebdcbb2f-1280.webp",
+            "bytes": 43960
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 247,
+            "url": "assets/generated/images/sicily/google_noto_baroque_dusk_01-38a76527ebdcbb2f-640.jpg",
+            "bytes": 22249
+          },
+          {
+            "width": 1280,
+            "height": 494,
+            "url": "assets/generated/images/sicily/google_noto_baroque_dusk_01-38a76527ebdcbb2f-1280.jpg",
+            "bytes": 64424
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_noto_cathedral_01.jpg": {
+      "sourceHash": "00fab41bd34abc14",
+      "width": 1024,
+      "height": 630,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 394,
+            "url": "assets/generated/images/sicily/google_noto_cathedral_01-00fab41bd34abc14-640.avif",
+            "bytes": 31447
+          },
+          {
+            "width": 1024,
+            "height": 630,
+            "url": "assets/generated/images/sicily/google_noto_cathedral_01-00fab41bd34abc14-1024.avif",
+            "bytes": 68966
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 394,
+            "url": "assets/generated/images/sicily/google_noto_cathedral_01-00fab41bd34abc14-640.webp",
+            "bytes": 51000
+          },
+          {
+            "width": 1024,
+            "height": 630,
+            "url": "assets/generated/images/sicily/google_noto_cathedral_01-00fab41bd34abc14-1024.webp",
+            "bytes": 104076
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 394,
+            "url": "assets/generated/images/sicily/google_noto_cathedral_01-00fab41bd34abc14-640.jpg",
+            "bytes": 53951
+          },
+          {
+            "width": 1024,
+            "height": 630,
+            "url": "assets/generated/images/sicily/google_noto_cathedral_01-00fab41bd34abc14-1024.jpg",
+            "bytes": 126619
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_ortigia_waterfront_01.jpg": {
+      "sourceHash": "c9e283739611f035",
+      "width": 1024,
+      "height": 683,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_ortigia_waterfront_01-c9e283739611f035-640.avif",
+            "bytes": 22508
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/google_ortigia_waterfront_01-c9e283739611f035-1024.avif",
+            "bytes": 54886
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_ortigia_waterfront_01-c9e283739611f035-640.webp",
+            "bytes": 39032
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/google_ortigia_waterfront_01-c9e283739611f035-1024.webp",
+            "bytes": 95124
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_ortigia_waterfront_01-c9e283739611f035-640.jpg",
+            "bytes": 43800
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/google_ortigia_waterfront_01-c9e283739611f035-1024.jpg",
+            "bytes": 105068
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_taormina_coast_01.jpg": {
+      "sourceHash": "dc1db878e15c9f1f",
+      "width": 1500,
+      "height": 1124,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/google_taormina_coast_01-dc1db878e15c9f1f-640.avif",
+            "bytes": 27889
+          },
+          {
+            "width": 1280,
+            "height": 959,
+            "url": "assets/generated/images/sicily/google_taormina_coast_01-dc1db878e15c9f1f-1280.avif",
+            "bytes": 97654
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/google_taormina_coast_01-dc1db878e15c9f1f-640.webp",
+            "bytes": 45498
+          },
+          {
+            "width": 1280,
+            "height": 959,
+            "url": "assets/generated/images/sicily/google_taormina_coast_01-dc1db878e15c9f1f-1280.webp",
+            "bytes": 155062
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/google_taormina_coast_01-dc1db878e15c9f1f-640.jpg",
+            "bytes": 49013
+          },
+          {
+            "width": 1280,
+            "height": 959,
+            "url": "assets/generated/images/sicily/google_taormina_coast_01-dc1db878e15c9f1f-1280.jpg",
+            "bytes": 175556
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_taormina_isola_bella_01.jpg": {
+      "sourceHash": "bb72e6506656affb",
+      "width": 1800,
+      "height": 1199,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_taormina_isola_bella_01-bb72e6506656affb-640.avif",
+            "bytes": 25720
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/google_taormina_isola_bella_01-bb72e6506656affb-1280.avif",
+            "bytes": 119606
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_taormina_isola_bella_01-bb72e6506656affb-640.webp",
+            "bytes": 45580
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/google_taormina_isola_bella_01-bb72e6506656affb-1280.webp",
+            "bytes": 218948
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_taormina_isola_bella_01-bb72e6506656affb-640.jpg",
+            "bytes": 46306
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/google_taormina_isola_bella_01-bb72e6506656affb-1280.jpg",
+            "bytes": 206756
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_taormina_mazzaro_01.jpg": {
+      "sourceHash": "62cfc90109941206",
+      "width": 1800,
+      "height": 1199,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_01-62cfc90109941206-640.avif",
+            "bytes": 33640
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_01-62cfc90109941206-1280.avif",
+            "bytes": 126339
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_01-62cfc90109941206-640.webp",
+            "bytes": 57178
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_01-62cfc90109941206-1280.webp",
+            "bytes": 226016
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_01-62cfc90109941206-640.jpg",
+            "bytes": 56725
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_01-62cfc90109941206-1280.jpg",
+            "bytes": 220869
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_taormina_mazzaro_sunset_01.jpg": {
+      "sourceHash": "9924c2dbbcd6612c",
+      "width": 1024,
+      "height": 693,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 433,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_sunset_01-9924c2dbbcd6612c-640.avif",
+            "bytes": 22990
+          },
+          {
+            "width": 1024,
+            "height": 693,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_sunset_01-9924c2dbbcd6612c-1024.avif",
+            "bytes": 58499
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 433,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_sunset_01-9924c2dbbcd6612c-640.webp",
+            "bytes": 33516
+          },
+          {
+            "width": 1024,
+            "height": 693,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_sunset_01-9924c2dbbcd6612c-1024.webp",
+            "bytes": 87864
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 433,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_sunset_01-9924c2dbbcd6612c-640.jpg",
+            "bytes": 41067
+          },
+          {
+            "width": 1024,
+            "height": 693,
+            "url": "assets/generated/images/sicily/google_taormina_mazzaro_sunset_01-9924c2dbbcd6612c-1024.jpg",
+            "bytes": 99524
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/google_taormina_viewpoint_01.jpg": {
+      "sourceHash": "c9890b4f03d97828",
+      "width": 1024,
+      "height": 683,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_taormina_viewpoint_01-c9890b4f03d97828-640.avif",
+            "bytes": 29113
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/google_taormina_viewpoint_01-c9890b4f03d97828-1024.avif",
+            "bytes": 70777
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_taormina_viewpoint_01-c9890b4f03d97828-640.webp",
+            "bytes": 47584
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/google_taormina_viewpoint_01-c9890b4f03d97828-1024.webp",
+            "bytes": 120046
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/google_taormina_viewpoint_01-c9890b4f03d97828-640.jpg",
+            "bytes": 52081
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/google_taormina_viewpoint_01-c9890b4f03d97828-1024.jpg",
+            "bytes": 129145
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/img-40c53e200cb6.jpg": {
+      "sourceHash": "b5bae0ff653602ad",
+      "width": 1200,
+      "height": 900,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/img-40c53e200cb6-b5bae0ff653602ad-640.avif",
+            "bytes": 36953
+          },
+          {
+            "width": 1200,
+            "height": 900,
+            "url": "assets/generated/images/sicily/img-40c53e200cb6-b5bae0ff653602ad-1200.avif",
+            "bytes": 110254
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/img-40c53e200cb6-b5bae0ff653602ad-640.webp",
+            "bytes": 60954
+          },
+          {
+            "width": 1200,
+            "height": 900,
+            "url": "assets/generated/images/sicily/img-40c53e200cb6-b5bae0ff653602ad-1200.webp",
+            "bytes": 179148
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/img-40c53e200cb6-b5bae0ff653602ad-640.jpg",
+            "bytes": 62435
+          },
+          {
+            "width": 1200,
+            "height": 900,
+            "url": "assets/generated/images/sicily/img-40c53e200cb6-b5bae0ff653602ad-1200.jpg",
+            "bytes": 193164
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/img-73ca456f296e.jpg": {
+      "sourceHash": "8e61488ed2d344d7",
+      "width": 1200,
+      "height": 800,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-73ca456f296e-8e61488ed2d344d7-640.avif",
+            "bytes": 20063
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/img-73ca456f296e-8e61488ed2d344d7-1200.avif",
+            "bytes": 65160
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-73ca456f296e-8e61488ed2d344d7-640.webp",
+            "bytes": 30014
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/img-73ca456f296e-8e61488ed2d344d7-1200.webp",
+            "bytes": 90434
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-73ca456f296e-8e61488ed2d344d7-640.jpg",
+            "bytes": 35888
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/img-73ca456f296e-8e61488ed2d344d7-1200.jpg",
+            "bytes": 122585
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/img-75f694baa4d3.jpg": {
+      "sourceHash": "84d3d9967160ab5f",
+      "width": 1200,
+      "height": 800,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-75f694baa4d3-84d3d9967160ab5f-640.avif",
+            "bytes": 23912
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/img-75f694baa4d3-84d3d9967160ab5f-1200.avif",
+            "bytes": 85737
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-75f694baa4d3-84d3d9967160ab5f-640.webp",
+            "bytes": 40244
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/img-75f694baa4d3-84d3d9967160ab5f-1200.webp",
+            "bytes": 133782
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-75f694baa4d3-84d3d9967160ab5f-640.jpg",
+            "bytes": 41844
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/img-75f694baa4d3-84d3d9967160ab5f-1200.jpg",
+            "bytes": 139626
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/img-9c38e7bec4f4.jpg": {
+      "sourceHash": "7d4b0ec9b5899eec",
+      "width": 1200,
+      "height": 675,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 360,
+            "url": "assets/generated/images/sicily/img-9c38e7bec4f4-7d4b0ec9b5899eec-640.avif",
+            "bytes": 17782
+          },
+          {
+            "width": 1200,
+            "height": 675,
+            "url": "assets/generated/images/sicily/img-9c38e7bec4f4-7d4b0ec9b5899eec-1200.avif",
+            "bytes": 51225
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 360,
+            "url": "assets/generated/images/sicily/img-9c38e7bec4f4-7d4b0ec9b5899eec-640.webp",
+            "bytes": 28308
+          },
+          {
+            "width": 1200,
+            "height": 675,
+            "url": "assets/generated/images/sicily/img-9c38e7bec4f4-7d4b0ec9b5899eec-1200.webp",
+            "bytes": 78210
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 360,
+            "url": "assets/generated/images/sicily/img-9c38e7bec4f4-7d4b0ec9b5899eec-640.jpg",
+            "bytes": 33638
+          },
+          {
+            "width": 1200,
+            "height": 675,
+            "url": "assets/generated/images/sicily/img-9c38e7bec4f4-7d4b0ec9b5899eec-1200.jpg",
+            "bytes": 100275
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/img-ca298a5ef143.jpg": {
+      "sourceHash": "9ae4f6eae851cb45",
+      "width": 1920,
+      "height": 1280,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-ca298a5ef143-9ae4f6eae851cb45-640.avif",
+            "bytes": 41946
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/img-ca298a5ef143-9ae4f6eae851cb45-1280.avif",
+            "bytes": 145103
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-ca298a5ef143-9ae4f6eae851cb45-640.webp",
+            "bytes": 69914
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/img-ca298a5ef143-9ae4f6eae851cb45-1280.webp",
+            "bytes": 253524
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/img-ca298a5ef143-9ae4f6eae851cb45-640.jpg",
+            "bytes": 70112
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/img-ca298a5ef143-9ae4f6eae851cb45-1280.jpg",
+            "bytes": 256792
+          }
+        ]
+      }
+    },
     "assets/img/sicily/isola-bella-aerial-blue.jpg": {
       "sourceHash": "88067d97646b3fcf",
       "width": 2000,
@@ -93292,51 +94272,247 @@
         ]
       }
     },
-    "assets/img/sicily/isola-bella-golden-boat.jpg": {
-      "sourceHash": "7978b5970e6b2ea6",
+    "assets/img/sicily/isola-bella-bay-panorama.jpg": {
+      "sourceHash": "1f021af8a5dab1a8",
       "width": 2000,
-      "height": 2500,
+      "height": 1500,
       "variants": {
         "avif": [
           {
             "width": 640,
-            "height": 800,
-            "url": "assets/generated/images/sicily/isola-bella-golden-boat-7978b5970e6b2ea6-640.avif",
-            "bytes": 72297
+            "height": 480,
+            "url": "assets/generated/images/sicily/isola-bella-bay-panorama-1f021af8a5dab1a8-640.avif",
+            "bytes": 40493
           },
           {
             "width": 1280,
-            "height": 1600,
-            "url": "assets/generated/images/sicily/isola-bella-golden-boat-7978b5970e6b2ea6-1280.avif",
-            "bytes": 253943
+            "height": 960,
+            "url": "assets/generated/images/sicily/isola-bella-bay-panorama-1f021af8a5dab1a8-1280.avif",
+            "bytes": 150967
           }
         ],
         "webp": [
           {
             "width": 640,
-            "height": 800,
-            "url": "assets/generated/images/sicily/isola-bella-golden-boat-7978b5970e6b2ea6-640.webp",
-            "bytes": 131166
+            "height": 480,
+            "url": "assets/generated/images/sicily/isola-bella-bay-panorama-1f021af8a5dab1a8-640.webp",
+            "bytes": 67012
           },
           {
             "width": 1280,
-            "height": 1600,
-            "url": "assets/generated/images/sicily/isola-bella-golden-boat-7978b5970e6b2ea6-1280.webp",
-            "bytes": 467784
+            "height": 960,
+            "url": "assets/generated/images/sicily/isola-bella-bay-panorama-1f021af8a5dab1a8-1280.webp",
+            "bytes": 249242
           }
         ],
         "jpeg": [
           {
             "width": 640,
-            "height": 800,
-            "url": "assets/generated/images/sicily/isola-bella-golden-boat-7978b5970e6b2ea6-640.jpg",
-            "bytes": 127959
+            "height": 480,
+            "url": "assets/generated/images/sicily/isola-bella-bay-panorama-1f021af8a5dab1a8-640.jpg",
+            "bytes": 67891
           },
           {
             "width": 1280,
-            "height": 1600,
-            "url": "assets/generated/images/sicily/isola-bella-golden-boat-7978b5970e6b2ea6-1280.jpg",
-            "bytes": 466318
+            "height": 960,
+            "url": "assets/generated/images/sicily/isola-bella-bay-panorama-1f021af8a5dab1a8-1280.jpg",
+            "bytes": 255791
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/marzamemi-piazza-aerial.jpg": {
+      "sourceHash": "f429668b1b5eaa96",
+      "width": 2000,
+      "height": 1500,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/marzamemi-piazza-aerial-f429668b1b5eaa96-640.avif",
+            "bytes": 36270
+          },
+          {
+            "width": 1280,
+            "height": 960,
+            "url": "assets/generated/images/sicily/marzamemi-piazza-aerial-f429668b1b5eaa96-1280.avif",
+            "bytes": 154700
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/marzamemi-piazza-aerial-f429668b1b5eaa96-640.webp",
+            "bytes": 66996
+          },
+          {
+            "width": 1280,
+            "height": 960,
+            "url": "assets/generated/images/sicily/marzamemi-piazza-aerial-f429668b1b5eaa96-1280.webp",
+            "bytes": 298788
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/marzamemi-piazza-aerial-f429668b1b5eaa96-640.jpg",
+            "bytes": 62415
+          },
+          {
+            "width": 1280,
+            "height": 960,
+            "url": "assets/generated/images/sicily/marzamemi-piazza-aerial-f429668b1b5eaa96-1280.jpg",
+            "bytes": 270760
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/marzamemi-waves-aerial.jpg": {
+      "sourceHash": "bcc43610d9a1e651",
+      "width": 2000,
+      "height": 1500,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/marzamemi-waves-aerial-bcc43610d9a1e651-640.avif",
+            "bytes": 36624
+          },
+          {
+            "width": 1280,
+            "height": 960,
+            "url": "assets/generated/images/sicily/marzamemi-waves-aerial-bcc43610d9a1e651-1280.avif",
+            "bytes": 146430
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/marzamemi-waves-aerial-bcc43610d9a1e651-640.webp",
+            "bytes": 67346
+          },
+          {
+            "width": 1280,
+            "height": 960,
+            "url": "assets/generated/images/sicily/marzamemi-waves-aerial-bcc43610d9a1e651-1280.webp",
+            "bytes": 277258
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/marzamemi-waves-aerial-bcc43610d9a1e651-640.jpg",
+            "bytes": 64463
+          },
+          {
+            "width": 1280,
+            "height": 960,
+            "url": "assets/generated/images/sicily/marzamemi-waves-aerial-bcc43610d9a1e651-1280.jpg",
+            "bytes": 262526
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/noto-cathedral-facade.jpg": {
+      "sourceHash": "8920f9e7e75c9d7b",
+      "width": 2000,
+      "height": 1334,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/noto-cathedral-facade-8920f9e7e75c9d7b-640.avif",
+            "bytes": 21042
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/noto-cathedral-facade-8920f9e7e75c9d7b-1280.avif",
+            "bytes": 64475
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/noto-cathedral-facade-8920f9e7e75c9d7b-640.webp",
+            "bytes": 31088
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/noto-cathedral-facade-8920f9e7e75c9d7b-1280.webp",
+            "bytes": 98600
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/noto-cathedral-facade-8920f9e7e75c9d7b-640.jpg",
+            "bytes": 40319
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/noto-cathedral-facade-8920f9e7e75c9d7b-1280.jpg",
+            "bytes": 134238
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/noto-dome-telephoto.jpg": {
+      "sourceHash": "12a4c425c0a06149",
+      "width": 2000,
+      "height": 1333,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/noto-dome-telephoto-12a4c425c0a06149-640.avif",
+            "bytes": 19261
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/noto-dome-telephoto-12a4c425c0a06149-1280.avif",
+            "bytes": 63230
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/noto-dome-telephoto-12a4c425c0a06149-640.webp",
+            "bytes": 32314
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/noto-dome-telephoto-12a4c425c0a06149-1280.webp",
+            "bytes": 113374
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/noto-dome-telephoto-12a4c425c0a06149-640.jpg",
+            "bytes": 40369
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/noto-dome-telephoto-12a4c425c0a06149-1280.jpg",
+            "bytes": 138765
           }
         ]
       }
@@ -93390,6 +94566,55 @@
         ]
       }
     },
+    "assets/img/sicily/ortigia-diana-fountain.jpg": {
+      "sourceHash": "34c1914e012ca32a",
+      "width": 2000,
+      "height": 1334,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/ortigia-diana-fountain-34c1914e012ca32a-640.avif",
+            "bytes": 30925
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/ortigia-diana-fountain-34c1914e012ca32a-1280.avif",
+            "bytes": 112908
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/ortigia-diana-fountain-34c1914e012ca32a-640.webp",
+            "bytes": 53400
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/ortigia-diana-fountain-34c1914e012ca32a-1280.webp",
+            "bytes": 201544
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/ortigia-diana-fountain-34c1914e012ca32a-640.jpg",
+            "bytes": 56887
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/ortigia-diana-fountain-34c1914e012ca32a-1280.jpg",
+            "bytes": 211195
+          }
+        ]
+      }
+    },
     "assets/img/sicily/ortigia-maniace-aerial.jpg": {
       "sourceHash": "1970d67d10f17d5b",
       "width": 2000,
@@ -93435,6 +94660,251 @@
             "height": 1921,
             "url": "assets/generated/images/sicily/ortigia-maniace-aerial-1970d67d10f17d5b-1280.jpg",
             "bytes": 252879
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/ortigia-maniace-sea.jpg": {
+      "sourceHash": "34663116daf6aa35",
+      "width": 2000,
+      "height": 1333,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/ortigia-maniace-sea-34663116daf6aa35-640.avif",
+            "bytes": 21905
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/ortigia-maniace-sea-34663116daf6aa35-1280.avif",
+            "bytes": 78675
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/ortigia-maniace-sea-34663116daf6aa35-640.webp",
+            "bytes": 35378
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/ortigia-maniace-sea-34663116daf6aa35-1280.webp",
+            "bytes": 132202
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/ortigia-maniace-sea-34663116daf6aa35-640.jpg",
+            "bytes": 40479
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/ortigia-maniace-sea-34663116daf6aa35-1280.jpg",
+            "bytes": 148164
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/ortigia-seafront-beach.jpg": {
+      "sourceHash": "add8eaa813560652",
+      "width": 2000,
+      "height": 1498,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 479,
+            "url": "assets/generated/images/sicily/ortigia-seafront-beach-add8eaa813560652-640.avif",
+            "bytes": 33577
+          },
+          {
+            "width": 1280,
+            "height": 959,
+            "url": "assets/generated/images/sicily/ortigia-seafront-beach-add8eaa813560652-1280.avif",
+            "bytes": 126823
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 479,
+            "url": "assets/generated/images/sicily/ortigia-seafront-beach-add8eaa813560652-640.webp",
+            "bytes": 55604
+          },
+          {
+            "width": 1280,
+            "height": 959,
+            "url": "assets/generated/images/sicily/ortigia-seafront-beach-add8eaa813560652-1280.webp",
+            "bytes": 222844
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 479,
+            "url": "assets/generated/images/sicily/ortigia-seafront-beach-add8eaa813560652-640.jpg",
+            "bytes": 57220
+          },
+          {
+            "width": 1280,
+            "height": 959,
+            "url": "assets/generated/images/sicily/ortigia-seafront-beach-add8eaa813560652-1280.jpg",
+            "bytes": 227439
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/shared_sicily_cefalu_oldtown_01.jpg": {
+      "sourceHash": "56e48a827f1d769c",
+      "width": 1200,
+      "height": 800,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_oldtown_01-56e48a827f1d769c-640.avif",
+            "bytes": 28874
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_oldtown_01-56e48a827f1d769c-1200.avif",
+            "bytes": 92615
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_oldtown_01-56e48a827f1d769c-640.webp",
+            "bytes": 48972
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_oldtown_01-56e48a827f1d769c-1200.webp",
+            "bytes": 147642
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_oldtown_01-56e48a827f1d769c-640.jpg",
+            "bytes": 51620
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_oldtown_01-56e48a827f1d769c-1200.jpg",
+            "bytes": 176998
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/shared_sicily_cefalu_rocca_waterfront_01.jpg": {
+      "sourceHash": "5228542362fba569",
+      "width": 1200,
+      "height": 800,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_rocca_waterfront_01-5228542362fba569-640.avif",
+            "bytes": 20779
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_rocca_waterfront_01-5228542362fba569-1200.avif",
+            "bytes": 64509
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_rocca_waterfront_01-5228542362fba569-640.webp",
+            "bytes": 34142
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_rocca_waterfront_01-5228542362fba569-1200.webp",
+            "bytes": 103398
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_rocca_waterfront_01-5228542362fba569-640.jpg",
+            "bytes": 38426
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_cefalu_rocca_waterfront_01-5228542362fba569-1200.jpg",
+            "bytes": 128559
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/shared_sicily_taormina_overlook_01.jpg": {
+      "sourceHash": "77425ca2f7eabe5b",
+      "width": 1200,
+      "height": 800,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_taormina_overlook_01-77425ca2f7eabe5b-640.avif",
+            "bytes": 16572
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_taormina_overlook_01-77425ca2f7eabe5b-1200.avif",
+            "bytes": 48315
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_taormina_overlook_01-77425ca2f7eabe5b-640.webp",
+            "bytes": 22648
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_taormina_overlook_01-77425ca2f7eabe5b-1200.webp",
+            "bytes": 64356
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/shared_sicily_taormina_overlook_01-77425ca2f7eabe5b-640.jpg",
+            "bytes": 30665
+          },
+          {
+            "width": 1200,
+            "height": 800,
+            "url": "assets/generated/images/sicily/shared_sicily_taormina_overlook_01-77425ca2f7eabe5b-1200.jpg",
+            "bytes": 97014
           }
         ]
       }
@@ -93488,6 +94958,1378 @@
         ]
       }
     },
+    "assets/img/sicily/siracusa-greek-theatre.jpg": {
+      "sourceHash": "b9cde6f5134c9951",
+      "width": 2000,
+      "height": 1125,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 360,
+            "url": "assets/generated/images/sicily/siracusa-greek-theatre-b9cde6f5134c9951-640.avif",
+            "bytes": 31220
+          },
+          {
+            "width": 1280,
+            "height": 720,
+            "url": "assets/generated/images/sicily/siracusa-greek-theatre-b9cde6f5134c9951-1280.avif",
+            "bytes": 118195
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 360,
+            "url": "assets/generated/images/sicily/siracusa-greek-theatre-b9cde6f5134c9951-640.webp",
+            "bytes": 55976
+          },
+          {
+            "width": 1280,
+            "height": 720,
+            "url": "assets/generated/images/sicily/siracusa-greek-theatre-b9cde6f5134c9951-1280.webp",
+            "bytes": 210232
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 360,
+            "url": "assets/generated/images/sicily/siracusa-greek-theatre-b9cde6f5134c9951-640.jpg",
+            "bytes": 52604
+          },
+          {
+            "width": 1280,
+            "height": 720,
+            "url": "assets/generated/images/sicily/siracusa-greek-theatre-b9cde6f5134c9951-1280.jpg",
+            "bytes": 199708
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_cefalu_adr_20.jpg": {
+      "sourceHash": "43cb8f98c5da6041",
+      "width": 1500,
+      "height": 1001,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_adr_20-43cb8f98c5da6041-640.avif",
+            "bytes": 21774
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_cefalu_adr_20-43cb8f98c5da6041-1280.avif",
+            "bytes": 65499
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_adr_20-43cb8f98c5da6041-640.webp",
+            "bytes": 34704
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_cefalu_adr_20-43cb8f98c5da6041-1280.webp",
+            "bytes": 103766
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_adr_20-43cb8f98c5da6041-640.jpg",
+            "bytes": 41435
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_cefalu_adr_20-43cb8f98c5da6041-1280.jpg",
+            "bytes": 134090
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_cefalu_et_11.jpg": {
+      "sourceHash": "0aa165baa9edd141",
+      "width": 1500,
+      "height": 1000,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_11-0aa165baa9edd141-640.avif",
+            "bytes": 29305
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_11-0aa165baa9edd141-1280.avif",
+            "bytes": 96580
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_11-0aa165baa9edd141-640.webp",
+            "bytes": 48382
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_11-0aa165baa9edd141-1280.webp",
+            "bytes": 159614
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_11-0aa165baa9edd141-640.jpg",
+            "bytes": 52605
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_11-0aa165baa9edd141-1280.jpg",
+            "bytes": 183191
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_cefalu_et_22.jpg": {
+      "sourceHash": "e1f9fc9d9bc43898",
+      "width": 1500,
+      "height": 1054,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 450,
+            "url": "assets/generated/images/sicily/source_cefalu_et_22-e1f9fc9d9bc43898-640.avif",
+            "bytes": 32056
+          },
+          {
+            "width": 1280,
+            "height": 899,
+            "url": "assets/generated/images/sicily/source_cefalu_et_22-e1f9fc9d9bc43898-1280.avif",
+            "bytes": 103115
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 450,
+            "url": "assets/generated/images/sicily/source_cefalu_et_22-e1f9fc9d9bc43898-640.webp",
+            "bytes": 52990
+          },
+          {
+            "width": 1280,
+            "height": 899,
+            "url": "assets/generated/images/sicily/source_cefalu_et_22-e1f9fc9d9bc43898-1280.webp",
+            "bytes": 177708
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 450,
+            "url": "assets/generated/images/sicily/source_cefalu_et_22-e1f9fc9d9bc43898-640.jpg",
+            "bytes": 57418
+          },
+          {
+            "width": 1280,
+            "height": 899,
+            "url": "assets/generated/images/sicily/source_cefalu_et_22-e1f9fc9d9bc43898-1280.jpg",
+            "bytes": 198995
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_cefalu_et_23.jpg": {
+      "sourceHash": "34e5ce19dc7495f4",
+      "width": 1500,
+      "height": 1000,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_23-34e5ce19dc7495f4-640.avif",
+            "bytes": 25504
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_23-34e5ce19dc7495f4-1280.avif",
+            "bytes": 88228
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_23-34e5ce19dc7495f4-640.webp",
+            "bytes": 43450
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_23-34e5ce19dc7495f4-1280.webp",
+            "bytes": 144600
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_23-34e5ce19dc7495f4-640.jpg",
+            "bytes": 46712
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_23-34e5ce19dc7495f4-1280.jpg",
+            "bytes": 166564
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_cefalu_et_24.jpg": {
+      "sourceHash": "6088971641ff26f5",
+      "width": 1500,
+      "height": 1000,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_24-6088971641ff26f5-640.avif",
+            "bytes": 23184
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_24-6088971641ff26f5-1280.avif",
+            "bytes": 77294
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_24-6088971641ff26f5-640.webp",
+            "bytes": 37648
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_24-6088971641ff26f5-1280.webp",
+            "bytes": 124274
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_cefalu_et_24-6088971641ff26f5-640.jpg",
+            "bytes": 42636
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_cefalu_et_24-6088971641ff26f5-1280.jpg",
+            "bytes": 149124
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_etna_go02.jpg": {
+      "sourceHash": "54d1b372128f3fcc",
+      "width": 1200,
+      "height": 797,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 425,
+            "url": "assets/generated/images/sicily/source_etna_go02-54d1b372128f3fcc-640.avif",
+            "bytes": 29459
+          },
+          {
+            "width": 1200,
+            "height": 797,
+            "url": "assets/generated/images/sicily/source_etna_go02-54d1b372128f3fcc-1200.avif",
+            "bytes": 107150
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 425,
+            "url": "assets/generated/images/sicily/source_etna_go02-54d1b372128f3fcc-640.webp",
+            "bytes": 48092
+          },
+          {
+            "width": 1200,
+            "height": 797,
+            "url": "assets/generated/images/sicily/source_etna_go02-54d1b372128f3fcc-1200.webp",
+            "bytes": 158896
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 425,
+            "url": "assets/generated/images/sicily/source_etna_go02-54d1b372128f3fcc-640.jpg",
+            "bytes": 48702
+          },
+          {
+            "width": 1200,
+            "height": 797,
+            "url": "assets/generated/images/sicily/source_etna_go02-54d1b372128f3fcc-1200.jpg",
+            "bytes": 168320
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_etna_go05.jpg": {
+      "sourceHash": "742f88cf36b48c3d",
+      "width": 900,
+      "height": 675,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/source_etna_go05-742f88cf36b48c3d-640.avif",
+            "bytes": 33773
+          },
+          {
+            "width": 900,
+            "height": 675,
+            "url": "assets/generated/images/sicily/source_etna_go05-742f88cf36b48c3d-900.avif",
+            "bytes": 67353
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/source_etna_go05-742f88cf36b48c3d-640.webp",
+            "bytes": 56920
+          },
+          {
+            "width": 900,
+            "height": 675,
+            "url": "assets/generated/images/sicily/source_etna_go05-742f88cf36b48c3d-900.webp",
+            "bytes": 118514
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 480,
+            "url": "assets/generated/images/sicily/source_etna_go05-742f88cf36b48c3d-640.jpg",
+            "bytes": 53637
+          },
+          {
+            "width": 900,
+            "height": 675,
+            "url": "assets/generated/images/sicily/source_etna_go05-742f88cf36b48c3d-900.jpg",
+            "bytes": 110890
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_etna_go07.jpg": {
+      "sourceHash": "3713c856a8718255",
+      "width": 1200,
+      "height": 801,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_go07-3713c856a8718255-640.avif",
+            "bytes": 26158
+          },
+          {
+            "width": 1200,
+            "height": 801,
+            "url": "assets/generated/images/sicily/source_etna_go07-3713c856a8718255-1200.avif",
+            "bytes": 93016
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_go07-3713c856a8718255-640.webp",
+            "bytes": 45384
+          },
+          {
+            "width": 1200,
+            "height": 801,
+            "url": "assets/generated/images/sicily/source_etna_go07-3713c856a8718255-1200.webp",
+            "bytes": 162310
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_go07-3713c856a8718255-640.jpg",
+            "bytes": 46113
+          },
+          {
+            "width": 1200,
+            "height": 801,
+            "url": "assets/generated/images/sicily/source_etna_go07-3713c856a8718255-1200.jpg",
+            "bytes": 163504
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_etna_tm_01.jpg": {
+      "sourceHash": "b4770c3635385bba",
+      "width": 1024,
+      "height": 732,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 458,
+            "url": "assets/generated/images/sicily/source_etna_tm_01-b4770c3635385bba-640.avif",
+            "bytes": 18520
+          },
+          {
+            "width": 1024,
+            "height": 732,
+            "url": "assets/generated/images/sicily/source_etna_tm_01-b4770c3635385bba-1024.avif",
+            "bytes": 46838
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 458,
+            "url": "assets/generated/images/sicily/source_etna_tm_01-b4770c3635385bba-640.webp",
+            "bytes": 26424
+          },
+          {
+            "width": 1024,
+            "height": 732,
+            "url": "assets/generated/images/sicily/source_etna_tm_01-b4770c3635385bba-1024.webp",
+            "bytes": 62404
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 458,
+            "url": "assets/generated/images/sicily/source_etna_tm_01-b4770c3635385bba-640.jpg",
+            "bytes": 32992
+          },
+          {
+            "width": 1024,
+            "height": 732,
+            "url": "assets/generated/images/sicily/source_etna_tm_01-b4770c3635385bba-1024.jpg",
+            "bytes": 86260
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_etna_tm_11.jpg": {
+      "sourceHash": "6f6f25384b543ce9",
+      "width": 1024,
+      "height": 683,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_11-6f6f25384b543ce9-640.avif",
+            "bytes": 20458
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_11-6f6f25384b543ce9-1024.avif",
+            "bytes": 48166
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_11-6f6f25384b543ce9-640.webp",
+            "bytes": 31764
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_11-6f6f25384b543ce9-1024.webp",
+            "bytes": 71132
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_11-6f6f25384b543ce9-640.jpg",
+            "bytes": 36621
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_11-6f6f25384b543ce9-1024.jpg",
+            "bytes": 92968
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_etna_tm_18.jpg": {
+      "sourceHash": "224755fdd7b9df59",
+      "width": 1024,
+      "height": 683,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_18-224755fdd7b9df59-640.avif",
+            "bytes": 22556
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_18-224755fdd7b9df59-1024.avif",
+            "bytes": 52452
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_18-224755fdd7b9df59-640.webp",
+            "bytes": 34246
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_18-224755fdd7b9df59-1024.webp",
+            "bytes": 74362
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_18-224755fdd7b9df59-640.jpg",
+            "bytes": 39677
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_18-224755fdd7b9df59-1024.jpg",
+            "bytes": 98038
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_etna_tm_19.jpg": {
+      "sourceHash": "f87eb0e17e007467",
+      "width": 1024,
+      "height": 683,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_19-f87eb0e17e007467-640.avif",
+            "bytes": 24087
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_19-f87eb0e17e007467-1024.avif",
+            "bytes": 57928
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_19-f87eb0e17e007467-640.webp",
+            "bytes": 40482
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_19-f87eb0e17e007467-1024.webp",
+            "bytes": 87050
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_etna_tm_19-f87eb0e17e007467-640.jpg",
+            "bytes": 42989
+          },
+          {
+            "width": 1024,
+            "height": 683,
+            "url": "assets/generated/images/sicily/source_etna_tm_19-f87eb0e17e007467-1024.jpg",
+            "bytes": 107750
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_marzamemi_moveo.jpg": {
+      "sourceHash": "55db63c556157268",
+      "width": 1500,
+      "height": 700,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 299,
+            "url": "assets/generated/images/sicily/source_marzamemi_moveo-55db63c556157268-640.avif",
+            "bytes": 19633
+          },
+          {
+            "width": 1280,
+            "height": 597,
+            "url": "assets/generated/images/sicily/source_marzamemi_moveo-55db63c556157268-1280.avif",
+            "bytes": 60298
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 299,
+            "url": "assets/generated/images/sicily/source_marzamemi_moveo-55db63c556157268-640.webp",
+            "bytes": 31058
+          },
+          {
+            "width": 1280,
+            "height": 597,
+            "url": "assets/generated/images/sicily/source_marzamemi_moveo-55db63c556157268-1280.webp",
+            "bytes": 96208
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 299,
+            "url": "assets/generated/images/sicily/source_marzamemi_moveo-55db63c556157268-640.jpg",
+            "bytes": 34968
+          },
+          {
+            "width": 1280,
+            "height": 597,
+            "url": "assets/generated/images/sicily/source_marzamemi_moveo-55db63c556157268-1280.jpg",
+            "bytes": 116103
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_marzamemi_volpi.jpg": {
+      "sourceHash": "847b4ca5cfff550c",
+      "width": 1024,
+      "height": 680,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 425,
+            "url": "assets/generated/images/sicily/source_marzamemi_volpi-847b4ca5cfff550c-640.avif",
+            "bytes": 16450
+          },
+          {
+            "width": 1024,
+            "height": 680,
+            "url": "assets/generated/images/sicily/source_marzamemi_volpi-847b4ca5cfff550c-1024.avif",
+            "bytes": 37589
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 425,
+            "url": "assets/generated/images/sicily/source_marzamemi_volpi-847b4ca5cfff550c-640.webp",
+            "bytes": 25060
+          },
+          {
+            "width": 1024,
+            "height": 680,
+            "url": "assets/generated/images/sicily/source_marzamemi_volpi-847b4ca5cfff550c-1024.webp",
+            "bytes": 58020
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 425,
+            "url": "assets/generated/images/sicily/source_marzamemi_volpi-847b4ca5cfff550c-640.jpg",
+            "bytes": 31217
+          },
+          {
+            "width": 1024,
+            "height": 680,
+            "url": "assets/generated/images/sicily/source_marzamemi_volpi-847b4ca5cfff550c-1024.jpg",
+            "bytes": 73438
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_noto_adr_05.jpg": {
+      "sourceHash": "6ec6411486cd1545",
+      "width": 1500,
+      "height": 1001,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_noto_adr_05-6ec6411486cd1545-640.avif",
+            "bytes": 24434
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_noto_adr_05-6ec6411486cd1545-1280.avif",
+            "bytes": 73182
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_noto_adr_05-6ec6411486cd1545-640.webp",
+            "bytes": 40220
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_noto_adr_05-6ec6411486cd1545-1280.webp",
+            "bytes": 115708
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_noto_adr_05-6ec6411486cd1545-640.jpg",
+            "bytes": 49026
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_noto_adr_05-6ec6411486cd1545-1280.jpg",
+            "bytes": 156097
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_noto_rm_08.jpg": {
+      "sourceHash": "b635acf2198acbe7",
+      "width": 1024,
+      "height": 678,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 424,
+            "url": "assets/generated/images/sicily/source_noto_rm_08-b635acf2198acbe7-640.avif",
+            "bytes": 28016
+          },
+          {
+            "width": 1024,
+            "height": 678,
+            "url": "assets/generated/images/sicily/source_noto_rm_08-b635acf2198acbe7-1024.avif",
+            "bytes": 64800
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 424,
+            "url": "assets/generated/images/sicily/source_noto_rm_08-b635acf2198acbe7-640.webp",
+            "bytes": 40682
+          },
+          {
+            "width": 1024,
+            "height": 678,
+            "url": "assets/generated/images/sicily/source_noto_rm_08-b635acf2198acbe7-1024.webp",
+            "bytes": 84648
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 424,
+            "url": "assets/generated/images/sicily/source_noto_rm_08-b635acf2198acbe7-640.jpg",
+            "bytes": 46666
+          },
+          {
+            "width": 1024,
+            "height": 678,
+            "url": "assets/generated/images/sicily/source_noto_rm_08-b635acf2198acbe7-1024.jpg",
+            "bytes": 116565
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_ortigia_adr_13.jpg": {
+      "sourceHash": "e0357965777c63bc",
+      "width": 1500,
+      "height": 1001,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_13-e0357965777c63bc-640.avif",
+            "bytes": 18820
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_13-e0357965777c63bc-1280.avif",
+            "bytes": 58856
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_13-e0357965777c63bc-640.webp",
+            "bytes": 30006
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_13-e0357965777c63bc-1280.webp",
+            "bytes": 94516
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_13-e0357965777c63bc-640.jpg",
+            "bytes": 36778
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_13-e0357965777c63bc-1280.jpg",
+            "bytes": 122276
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_ortigia_adr_18.jpg": {
+      "sourceHash": "6e8a18462a41dd76",
+      "width": 1500,
+      "height": 1000,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_18-6e8a18462a41dd76-640.avif",
+            "bytes": 22004
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_18-6e8a18462a41dd76-1280.avif",
+            "bytes": 63389
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_18-6e8a18462a41dd76-640.webp",
+            "bytes": 34214
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_18-6e8a18462a41dd76-1280.webp",
+            "bytes": 93828
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_18-6e8a18462a41dd76-640.jpg",
+            "bytes": 44576
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_18-6e8a18462a41dd76-1280.jpg",
+            "bytes": 138849
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_ortigia_adr_22.jpg": {
+      "sourceHash": "2c811af39d4658d5",
+      "width": 1500,
+      "height": 1000,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_22-2c811af39d4658d5-640.avif",
+            "bytes": 27958
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_22-2c811af39d4658d5-1280.avif",
+            "bytes": 78590
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_22-2c811af39d4658d5-640.webp",
+            "bytes": 46940
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_22-2c811af39d4658d5-1280.webp",
+            "bytes": 125744
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_22-2c811af39d4658d5-640.jpg",
+            "bytes": 54421
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_22-2c811af39d4658d5-1280.jpg",
+            "bytes": 164757
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_ortigia_adr_24.jpg": {
+      "sourceHash": "70bfe5089a6170c0",
+      "width": 1500,
+      "height": 1001,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_24-70bfe5089a6170c0-640.avif",
+            "bytes": 9869
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_24-70bfe5089a6170c0-1280.avif",
+            "bytes": 32038
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_24-70bfe5089a6170c0-640.webp",
+            "bytes": 12862
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_24-70bfe5089a6170c0-1280.webp",
+            "bytes": 42922
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_24-70bfe5089a6170c0-640.jpg",
+            "bytes": 19373
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_ortigia_adr_24-70bfe5089a6170c0-1280.jpg",
+            "bytes": 64622
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_ortigia_context.jpg": {
+      "sourceHash": "bd9991dc95e24c4e",
+      "width": 1600,
+      "height": 1066,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_ortigia_context-bd9991dc95e24c4e-640.avif",
+            "bytes": 23235
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_context-bd9991dc95e24c4e-1280.avif",
+            "bytes": 91502
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_ortigia_context-bd9991dc95e24c4e-640.webp",
+            "bytes": 38616
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_context-bd9991dc95e24c4e-1280.webp",
+            "bytes": 157252
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_ortigia_context-bd9991dc95e24c4e-640.jpg",
+            "bytes": 43064
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_ortigia_context-bd9991dc95e24c4e-1280.jpg",
+            "bytes": 169112
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_rocca_fotografo.jpg": {
+      "sourceHash": "d5f093fb34c4a876",
+      "width": 1600,
+      "height": 1068,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_rocca_fotografo-d5f093fb34c4a876-640.avif",
+            "bytes": 32494
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_rocca_fotografo-d5f093fb34c4a876-1280.avif",
+            "bytes": 117440
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_rocca_fotografo-d5f093fb34c4a876-640.webp",
+            "bytes": 54438
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_rocca_fotografo-d5f093fb34c4a876-1280.webp",
+            "bytes": 195240
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_rocca_fotografo-d5f093fb34c4a876-640.jpg",
+            "bytes": 53700
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_rocca_fotografo-d5f093fb34c4a876-1280.jpg",
+            "bytes": 198575
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_rocca_incao.jpg": {
+      "sourceHash": "60ea93ef8b58075a",
+      "width": 1140,
+      "height": 650,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 365,
+            "url": "assets/generated/images/sicily/source_rocca_incao-60ea93ef8b58075a-640.avif",
+            "bytes": 30685
+          },
+          {
+            "width": 1140,
+            "height": 650,
+            "url": "assets/generated/images/sicily/source_rocca_incao-60ea93ef8b58075a-1140.avif",
+            "bytes": 77392
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 365,
+            "url": "assets/generated/images/sicily/source_rocca_incao-60ea93ef8b58075a-640.webp",
+            "bytes": 50250
+          },
+          {
+            "width": 1140,
+            "height": 650,
+            "url": "assets/generated/images/sicily/source_rocca_incao-60ea93ef8b58075a-1140.webp",
+            "bytes": 128106
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 365,
+            "url": "assets/generated/images/sicily/source_rocca_incao-60ea93ef8b58075a-640.jpg",
+            "bytes": 52725
+          },
+          {
+            "width": 1140,
+            "height": 650,
+            "url": "assets/generated/images/sicily/source_rocca_incao-60ea93ef8b58075a-1140.jpg",
+            "bytes": 146389
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_rocca_mf_06.jpg": {
+      "sourceHash": "bce6747a209591b0",
+      "width": 1080,
+      "height": 658,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 390,
+            "url": "assets/generated/images/sicily/source_rocca_mf_06-bce6747a209591b0-640.avif",
+            "bytes": 27833
+          },
+          {
+            "width": 1080,
+            "height": 658,
+            "url": "assets/generated/images/sicily/source_rocca_mf_06-bce6747a209591b0-1080.avif",
+            "bytes": 71285
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 390,
+            "url": "assets/generated/images/sicily/source_rocca_mf_06-bce6747a209591b0-640.webp",
+            "bytes": 47954
+          },
+          {
+            "width": 1080,
+            "height": 658,
+            "url": "assets/generated/images/sicily/source_rocca_mf_06-bce6747a209591b0-1080.webp",
+            "bytes": 123086
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 390,
+            "url": "assets/generated/images/sicily/source_rocca_mf_06-bce6747a209591b0-640.jpg",
+            "bytes": 49668
+          },
+          {
+            "width": 1080,
+            "height": 658,
+            "url": "assets/generated/images/sicily/source_rocca_mf_06-bce6747a209591b0-1080.jpg",
+            "bytes": 138998
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_rocca_visit_03.jpg": {
+      "sourceHash": "857930097425bb72",
+      "width": 1600,
+      "height": 1067,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_rocca_visit_03-857930097425bb72-640.avif",
+            "bytes": 32196
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_rocca_visit_03-857930097425bb72-1280.avif",
+            "bytes": 115994
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_rocca_visit_03-857930097425bb72-640.webp",
+            "bytes": 55906
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_rocca_visit_03-857930097425bb72-1280.webp",
+            "bytes": 211006
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/source_rocca_visit_03-857930097425bb72-640.jpg",
+            "bytes": 55515
+          },
+          {
+            "width": 1280,
+            "height": 854,
+            "url": "assets/generated/images/sicily/source_rocca_visit_03-857930097425bb72-1280.jpg",
+            "bytes": 209887
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_rocca_visit_08.jpg": {
+      "sourceHash": "6c562962dc9e75c2",
+      "width": 1600,
+      "height": 1066,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_rocca_visit_08-6c562962dc9e75c2-640.avif",
+            "bytes": 43261
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_rocca_visit_08-6c562962dc9e75c2-1280.avif",
+            "bytes": 146757
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_rocca_visit_08-6c562962dc9e75c2-640.webp",
+            "bytes": 79256
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_rocca_visit_08-6c562962dc9e75c2-1280.webp",
+            "bytes": 269324
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_rocca_visit_08-6c562962dc9e75c2-640.jpg",
+            "bytes": 72664
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_rocca_visit_08-6c562962dc9e75c2-1280.jpg",
+            "bytes": 259686
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/source_rocca_visit_09.jpg": {
+      "sourceHash": "bc76b9040c2da319",
+      "width": 1600,
+      "height": 1066,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_rocca_visit_09-bc76b9040c2da319-640.avif",
+            "bytes": 29171
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_rocca_visit_09-bc76b9040c2da319-1280.avif",
+            "bytes": 91892
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_rocca_visit_09-bc76b9040c2da319-640.webp",
+            "bytes": 48744
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_rocca_visit_09-bc76b9040c2da319-1280.webp",
+            "bytes": 155984
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 426,
+            "url": "assets/generated/images/sicily/source_rocca_visit_09-bc76b9040c2da319-640.jpg",
+            "bytes": 50639
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/source_rocca_visit_09-bc76b9040c2da319-1280.jpg",
+            "bytes": 170410
+          }
+        ]
+      }
+    },
     "assets/img/sicily/taormina-teatro-etna.jpg": {
       "sourceHash": "ad6c525215aadda7",
       "width": 2000,
@@ -93533,6 +96375,55 @@
             "height": 858,
             "url": "assets/generated/images/sicily/taormina-teatro-etna-ad6c525215aadda7-1280.jpg",
             "bytes": 141360
+          }
+        ]
+      }
+    },
+    "assets/img/sicily/taormina-teatro-naxos-view.jpg": {
+      "sourceHash": "12a3c6d96b0736c8",
+      "width": 2000,
+      "height": 1333,
+      "variants": {
+        "avif": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/taormina-teatro-naxos-view-12a3c6d96b0736c8-640.avif",
+            "bytes": 32791
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/taormina-teatro-naxos-view-12a3c6d96b0736c8-1280.avif",
+            "bytes": 122591
+          }
+        ],
+        "webp": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/taormina-teatro-naxos-view-12a3c6d96b0736c8-640.webp",
+            "bytes": 56550
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/taormina-teatro-naxos-view-12a3c6d96b0736c8-1280.webp",
+            "bytes": 215024
+          }
+        ],
+        "jpeg": [
+          {
+            "width": 640,
+            "height": 427,
+            "url": "assets/generated/images/sicily/taormina-teatro-naxos-view-12a3c6d96b0736c8-640.jpg",
+            "bytes": 56348
+          },
+          {
+            "width": 1280,
+            "height": 853,
+            "url": "assets/generated/images/sicily/taormina-teatro-naxos-view-12a3c6d96b0736c8-1280.jpg",
+            "bytes": 212606
           }
         ]
       }
