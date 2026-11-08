@@ -6,6 +6,7 @@
  * is the visual promise of the entire trip, not a representative thumbnail.
  */
 module.exports = {
+  'sicily': {path: 'assets/img/sicily/google_cefalu_sunset_panorama_01.jpg', alt: 'Golden-hour view over Cefalù cathedral and terracotta rooftops above the turquoise Tyrrhenian Sea'},
   'venice-rome-sicily': { path: 'assets/img/sicily-rome/venice.jpg', alt: 'Venice’s Grand Canal in warm sunset light before the short Rome stop and Sicily stay' },
   'sicily-rome': { path: 'assets/img/short-sicily/isola-bella-tombolo-aerial.jpg', alt: 'Isola Bella’s turquoise shallows below Taormina on the Sicily and Rome trip' },
   albania: {

@@ -6,8 +6,8 @@
   'use strict';
   document.addEventListener('board:ready', function (e) {
     const B = e.detail;
-    Object.keys(B.cards).forEach(function (slug) {
-      const card = B.cards[slug];
+    B.cards.forEach(function (card) {
+      const slug = card.dataset.slug;
       const t = B.bySlug[slug];
       if (!t || !t.completeness) return;
       const c = t.completeness.complete;

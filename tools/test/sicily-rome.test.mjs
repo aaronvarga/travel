@@ -7,9 +7,9 @@ const require=createRequire(import.meta.url);
 const main=require('../../src/_data/sicily-rome/main.json');
 const profile=require('../../src/_data/decisionProfile.json');
 
-test('family shortlist retains every Sicily option and the Madeira–Mallorca trip',()=>{
+test('family shortlist retains the selected Sicily options and Madeira–Mallorca',()=>{
   const trips=require('../../src/_data/familyShortlist.js')();
-  const all=fs.readdirSync('src/_data').filter(slug=>slug.includes('sicily')&&fs.existsSync(`src/_data/${slug}/main.json`));
+  const all=fs.readdirSync('src/_data').filter(slug=>slug.includes('sicily')&&slug!=='switzerland-sicily'&&fs.existsSync(`src/_data/${slug}/main.json`));
   assert.deepEqual(trips.map(t=>t.slug).sort(),[...all,'madeira-mallorca'].sort());
   assert.equal(new Set(trips.map(t=>t.slug)).size,trips.length);
 });

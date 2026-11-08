@@ -40,7 +40,7 @@ const rowSlugs = $('.compare-table tbody tr[data-trip]')
   .map((row) => summary.trips.find((trip) => trip.token === $(row).attr('data-trip')))
   .filter((trip) => trip && activeTokens.has(trip.token))
   .map((trip) => trip.slug);
-const cardSlugs = $('.shortlist > .sl-grid')
+const cardSlugs = $('#trips > .sl-grid')
   .first()
   .find('.sl-card[href]')
   .toArray()

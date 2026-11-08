@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "sicily",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Sicily only · 12 nights · Jun 10–23",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 12,
+      "ptoDays": 9,
+      "budget": {
+        "lowUsd": 12260,
+        "highUsd": 16770,
+        "distribution": "planning-band"
+      },
+      "removedExperiences": [],
+      "notes": "4 Ortigia + 4 Giardini Naxos + 4 Cefalù. Every hotel night on Sicily; protected open-jaw international ticket required.",
+      "confidence": "low",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "sicily/main.json day plan, #stays and #totals"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "Seven-night short-sicily remains a separate existing escape."
+}

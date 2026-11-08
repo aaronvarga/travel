@@ -80,7 +80,7 @@ for (const { slug, main } of trips) {
 
 const comparisonTrips = trips.filter(({ main }) => main.tripCategory !== 'short');
 const excluded = comparisonTrips.filter(({ main }) => typeof main.excluded === 'string');
-if (comparisonTrips.length !== 33) issue("all", `expected 33 comparison trips, found ${comparisonTrips.length}`);
+if (comparisonTrips.length !== 34) issue("all", `expected 34 comparison trips, found ${comparisonTrips.length}`);
 if (excluded.length !== 9) issue('all', `expected 9 excluded trips, found ${excluded.length}`);
 
 if (problems.length) {

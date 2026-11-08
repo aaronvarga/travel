@@ -1,0 +1,106 @@
+{
+  "note": "Original assets retained where they passed visual review. Cefalù hero/card and Rocca photograph upgraded after Google Images discovery, five-candidate contact sheet and cross-surface crop review on Nov 8, 2026. No image edits beyond responsive display crops.",
+  "carousels": {
+    "sicily-ss-ortigia": [
+      {
+        "file": "ortigia-maniace-aerial.jpg",
+        "alt": "Castello Maniace on the tip of Ortigia from above",
+        "captionTitle": "Castello Maniace on the tip of Ortigia from above",
+        "credit": "Jacob Buchhave · Unsplash License",
+        "reusedFrom": "src/_data/short-sicily/main.json"
+      },
+      {
+        "file": "siracusa-duomo-facade.jpg",
+        "alt": "The Baroque facade of Siracusa Cathedral against the sun",
+        "captionTitle": "The Baroque facade of Siracusa Cathedral against the sun",
+        "credit": "Antonio Sessa · Unsplash License",
+        "reusedFrom": "src/_data/short-sicily/main.json"
+      }
+    ],
+    "sicily-ss-southeast": [
+      {
+        "file": "noto-skyline-clouds.jpg",
+        "alt": "Noto’s honey-gold Baroque skyline under summer clouds",
+        "captionTitle": "Noto’s honey-gold Baroque skyline under summer clouds",
+        "credit": "Antonio Sessa · Unsplash License",
+        "reusedFrom": "src/_data/short-sicily/main.json"
+      }
+    ],
+    "sicily-ss-etna": [
+      {
+        "file": "google_etna_lava_landscape_01.jpg",
+        "alt": "Jagged black lava in the foreground leads toward Etna’s volcanic slopes beneath a dramatic blue sky",
+        "captionTitle": "Etna’s lava landscape",
+        "credit": "Go-Etna · Google Images source",
+        "sourcePage": "https://www.go-etna.com/excursions/jeep-excursion-to-mount-etna/",
+        "sourceImage": "https://www.go-etna.com/wp-content/uploads/2022/04/Etna-Excursion-08.jpg",
+        "reusedFrom": "src/_data/switzerland-sicily/main.json"
+      },
+      {
+        "file": "etna-craters-trails.jpg",
+        "alt": "Trails winding between Etna’s red summit craters",
+        "captionTitle": "Trails winding between Etna’s red summit craters",
+        "credit": "Reegan Fraser · Unsplash License",
+        "reusedFrom": "src/_data/short-sicily/main.json"
+      }
+    ],
+    "sicily-ss-taormina": [
+      {
+        "file": "isola-bella-aerial-blue.jpg",
+        "alt": "Isola Bella’s pebble causeway in deep-blue water",
+        "captionTitle": "Isola Bella’s pebble causeway in deep-blue water",
+        "credit": "Maria Bobrova · Unsplash License",
+        "reusedFrom": "src/_data/short-sicily/main.json"
+      },
+      {
+        "file": "isola-bella-golden-boat.jpg",
+        "alt": "A small boat rounding Isola Bella in golden-hour light",
+        "captionTitle": "A small boat rounding Isola Bella in golden-hour light",
+        "credit": "Jacob Buchhave · Unsplash License",
+        "reusedFrom": "src/_data/short-sicily/main.json"
+      },
+      {
+        "file": "taormina-teatro-etna.jpg",
+        "alt": "Snow-capped Etna framed by the Teatro Antico’s broken columns",
+        "captionTitle": "Snow-capped Etna framed by the Teatro Antico’s broken columns",
+        "credit": "Casey Lovegrove · Unsplash License",
+        "reusedFrom": "src/_data/short-sicily/main.json"
+      }
+    ],
+    "sicily-cefalu": [
+      {
+        "file": "google_cefalu_sunset_panorama_01.jpg",
+        "alt": "Golden-hour light over Cefalù cathedral and terracotta rooftops above a turquoise sea, viewed from La Rocca",
+        "captionTitle": "Cefalù at golden hour",
+        "credit": "Citalia / Shutterstock · Google Images source",
+        "sourcePage": "https://www.citalia.com/holidays/italy/sicily-and-the-aeolian-islands/cefalu/",
+        "sourceImage": "https://www.citalia.com/-/media/Bynder/Citalia-destinations/Italy/Islands/Sicily-and-Aeolian-Islands/Cefalu/Cefalu-2024-La-Rocca-View-Shutterstock-2325897799-Hybris.jpg",
+        "discoveredVia": "Google Images",
+        "discoveryQuery": "Cefalu professional landscape photos"
+      },
+      {
+        "file": "google_cefalu_waterfront_01.jpg",
+        "alt": "Cefalù beach backed by medieval waterfront houses",
+        "captionTitle": "Waterfront Beach",
+        "credit": "Experto Italy &middot; Google Images source",
+        "reusedFrom": "src/_data/switzerland-sicily/main.json"
+      }
+    ],
+    "sicily-rocca": [
+      {
+        "file": "google_cefalu_rocca_window_01.jpg",
+        "alt": "Ancient stone walls on La Rocca frame Cefalù cathedral, red rooftops and the turquoise Tyrrhenian Sea",
+        "captionTitle": "La Rocca’s stone window",
+        "credit": "Francesco Puglisi · Google Images source",
+        "sourcePage": "https://www.juzaphoto.com/galleria.php?show=1&t=4822548",
+        "sourceImage": "https://img4.r3-it.storage.cloud.it/uploads/4822548.jpg",
+        "discoveredVia": "Google Images",
+        "discoveryQuery": "Cefalu professional landscape photos"
+      }
+    ]
+  },
+  "htmlReplacements": {
+    "<style>#stays .pcard{min-width:0}</style>": "<style>#stays .pcard{min-width:0}@media(max-width:680px){.preview .trip-gallery-trigger{position:static;margin:12px 18px}}</style>",
+    "PIT–CTA Jun 12–20;": "PIT–CTA June 12–20, 2027;"
+  }
+}

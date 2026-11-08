@@ -28,7 +28,8 @@
   });
 
   function injectCardButtons(B) {
-    Object.entries(B.cards).forEach(([slug, a]) => {
+    B.cards.forEach((a) => {
+      const slug = a.dataset.slug;
       const host = a.querySelector('.sl-photo') || a;
       if (getComputedStyle(host).position === 'static') host.style.position = 'relative';
       const btn = document.createElement('button');

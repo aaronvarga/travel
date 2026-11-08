@@ -10,7 +10,7 @@
   'use strict';
   const B = (window.Board = {
     loaded: false, axesDefs: [], budgetTargets: {}, evidenceSources: {}, trips: [],
-    byToken: {}, bySlug: {}, currentBySlug: {}, rows: {}, cards: {},
+    byToken: {}, bySlug: {}, currentBySlug: {}, rows: {}, cards: [],
   });
 
   fetch('assets/trips-summary.json')
@@ -48,7 +48,7 @@
     document.querySelectorAll('.sl-grid .sl-card[href]').forEach((a) => {
       const m = a.getAttribute('href').match(/locations\/([^/]+)\//);
       const t = m && B.bySlug[m[1]];
-      if (t) { B.cards[t.slug] = a; a.dataset.slug = t.slug; a.dataset.trip = t.token; }
+      if (t) { B.cards.push(a); a.dataset.slug = t.slug; a.dataset.trip = t.token; }
     });
 
     // Click-to-sort headers. Toggles direction on repeat clicks; numeric
@@ -162,7 +162,8 @@
     }
 
     // Cards keep editorial order; toggle visibility + compare state.
-    Object.entries(B.cards).forEach(([slug, a]) => {
+    B.cards.forEach((a) => {
+      const slug = a.dataset.slug;
       a.style.display = visibleSlugs.has(slug) ? '' : 'none';
       a.classList.toggle('is-compared', selected.includes(slug));
       const score = a.querySelector('.sl-score');

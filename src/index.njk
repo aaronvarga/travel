@@ -13,7 +13,7 @@ permalink: "/index.html"
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
-<title>Family Trip Decision Dashboard - 33-Trip Comparison</title>
+<title>Family Trip Decision Dashboard - 34-Trip Comparison</title>
 <style>
 :root{color-scheme:light;--ink:#1a1712;--muted:#6b645a;--paper:#f6f1e7;--card:#fffdf8;
  --line:rgba(26,23,18,.12);--c1:#1f6f78;--c2:#c25a3a;--c3:#3f7d4e;--gold:#d9a441;
@@ -338,7 +338,8 @@ footer a{color:var(--muted)}
 }
 
 /* ===== TRIP SHORTLIST (redesigned cards) ===== */
-#trips.shortlist{font-family:'Source Sans 3',system-ui,sans-serif;background:#efe8da;border-radius:22px;padding:40px clamp(20px,3vw,44px) 46px;border-top:0;margin-top:56px}
+.shortlist{font-family:'Source Sans 3',system-ui,sans-serif;background:#efe8da;border-radius:22px;padding:40px clamp(20px,3vw,44px) 46px;border-top:0;margin-top:56px}
+#family-shortlist.shortlist{margin-top:0}
 .sl-head{margin:0 0 26px;max-width:820px}
 .sl-head .sl-eyebrow{margin:0 0 8px;color:#c04a2f;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .sl-head h2{font-family:'Spectral',Georgia,serif;font-weight:700;color:#1c2620;font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.05;margin:0 0 12px;letter-spacing:-.01em}
@@ -621,7 +622,7 @@ footer a{color:var(--muted)}
 </nav>
 
 <main>
-  {% include "hub/family-shortlist.njk" %}
+  {%- include "hub/family-shortlist.njk" %}
 
   <section id="trips" class="shortlist">
     <div class="sl-head">
@@ -629,7 +630,7 @@ footer a{color:var(--muted)}
     <h2>Full trips</h2>
       <p>Full-length routes ranked by your priorities, with the family-excluded options kept for reference.</p>
     </div>
-    {% include "hub/cards.njk" %}
+    {%- include "hub/cards.njk" %}
   </section>
 
   <section id="short-trips">
@@ -663,10 +664,10 @@ footer a{color:var(--muted)}
 
   <section id="overview">
     <p class="eyebrow">The Plan at a Glance</p>
-    <p>A data-first ranking of 33 finished comparison itineraries (24 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The eleven short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
+    <p>A data-first ranking of 34 finished comparison itineraries (25 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The eleven short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
       <p class="short-method"><b>Ranked only against each other:</b> budget and ease count double; weather, fire safety, swimming, variety, food, risk, and PTO count once. Ties favor fewer PTO days, then the lower budget ceiling.</p>
     <div class="overview">
-      <div class="ocard"><b>33 + 11</b><span>comparison plans plus eleven short escapes (24 ranked, 9 excluded)</span></div>
+      <div class="ocard"><b>34 + 11</b><span>comparison plans plus eleven short escapes (25 ranked, 9 excluded)</span></div>
       <div class="ocard"><b>{{ hub.activeTrips[0].totalBaked }}/55</b><span>top default score: {{ hub.activeTrips[0].displayName }}; booking gates still apply</span></div>
       <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland &times; Crete/Sicily/Mallorca grid</span></div>
       <div class="ocard"><b data-preserve-date>June 24-26</b><span>Full days in Pittsburgh protected</span></div>
@@ -742,7 +743,7 @@ footer a{color:var(--muted)}
       <tr><td><b>Balkans</b></td><td>The most adventurous cross-border coast-and-mountain route.</td><td>July pricing, border/car rules, long drives, ferry timing, and family-friction risk.</td><td><b>Excluded reference at 32/55 by family decision.</b></td></tr>
       <tr><td><b>California Pacific Coast</b></td><td>The best mainland no-passport road trip with 12 hotel nights.</td><td>Cold water outside San Diego, a long driving load, and a $16.2k high case.</td><td><b>Excluded reference at 30/55 by family decision.</b></td></tr>
     </table></div>
-    <p class="source-note">Comparison basis: 33 plans (24 ranked, 9 excluded by family decision) across an early-June-to-August planning range. Jun 6 is the nominal start, with Spain (Jun 3) and Hawaii (Jun 5) retained as explicit early-departure options. A Jun 23 return to Pittsburgh is acceptable and preferred, including an evening arrival; the only hard calendar rule is that the family must be in Pittsburgh all day Jun 24-26. Budgets are planning bands, not booking quotes, and several high cases exceed the $15k preferred maximum. Exact-date flight inventory was refreshed Sep 10, 2026; component fares are volatile snapshots, not held tickets, and every critical chain still needs a complete family checkout with seats, bags, and ticket protection.</p>
+    <p class="source-note">Comparison basis: 34 plans (25 ranked, 9 excluded by family decision) across an early-June-to-August planning range. Jun 6 is the nominal start, with Spain (Jun 3) and Hawaii (Jun 5) retained as explicit early-departure options. A Jun 23 return to Pittsburgh is acceptable and preferred, including an evening arrival; the only hard calendar rule is that the family must be in Pittsburgh all day Jun 24-26. Budgets are planning bands, not booking quotes, and several high cases exceed the $15k preferred maximum. Exact-date flight inventory was refreshed Sep 10, 2026; component fares are volatile snapshots, not held tickets, and every critical chain still needs a complete family checkout with seats, bags, and ticket protection.</p>
   </section>
 
   <section id="risks"><p class="eyebrow">Booking gates</p><h2>What the scores cannot promise</h2><ul class="hc-list"><li>Every trip uses its full cash planning budget.</li><li> Lodging, car coverage, food and activities are planning allowances; no inventory is held.</li><li>Iceland + Ischia/Cilento remains reroute-required. Its score does not make its old airfare construction bookable.</li><li>Keep Pittsburgh June 24–26 entirely clear. Reject late returns and unprotected connections even if a fare looks cheaper.</li></ul></section>
@@ -806,14 +807,14 @@ footer a{color:var(--muted)}
 
 <script src="assets/js/store.js"></script>
 <script src="assets/js/recommendation-engine.js"></script>
-<script src="assets/js/board.js"></script>
+<script src="assets/js/board.js?v=20261108-shared-cards"></script>
 <script src="assets/js/display-date.js?v=20260710-dates"></script>
 <script src="assets/js/weights.js"></script>
 <script src="assets/js/scenarios.js"></script>
-<script src="assets/js/evidence.js?v=20260710-dates"></script>
+<script src="assets/js/evidence.js?v=20261108-shared-cards"></script>
 <script src="assets/js/filters.js"></script>
-<script src="assets/js/compare.js?v=20261107-cash"></script>
-<script src="assets/js/meter.js?v=20260710-dates"></script>
+<script src="assets/js/compare.js?v=20261108-shared-cards"></script>
+<script src="assets/js/meter.js?v=20261108-shared-cards"></script>
 <script src="assets/js/urlstate.js"></script>
 <dialog id="evidence-dialog" class="evidence-dialog" aria-label="Evidence & rationale"><div class="evidence-dialog-content"></div></dialog>
 <script>

@@ -304,7 +304,7 @@ function validateTrips(trips) {
     if (canonical && (canonical.nights !== trip.main.scorecard.pto.nights || canonical.ptoDays !== trip.main.scorecard.pto.days)) issue(trip.slug, 'canonical variant drift');
   }
   const comparisonTrips = trips.filter((trip) => trip.main.tripCategory !== 'short');
-  if (comparisonTrips.length !== 33) issue("all", `expected 33 comparison trips, found ${comparisonTrips.length}`);
+  if (comparisonTrips.length !== 34) issue("all", `expected 34 comparison trips, found ${comparisonTrips.length}`);
 }
 
 function numberOrNull(value) {

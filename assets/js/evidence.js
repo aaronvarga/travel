@@ -10,7 +10,8 @@
       button.type = 'button'; button.addEventListener('click', () => open(B.currentBySlug[slug] || B.bySlug[slug]));
       row.querySelector('th')?.appendChild(button);
     });
-    Object.entries(B.cards).forEach(([slug, card]) => {
+    B.cards.forEach((card) => {
+      const slug = card.dataset.slug;
       const trip = B.bySlug[slug];
       const tags = card.querySelector('.sl-tags') || card.querySelector('.sl-body');
       if (!trip || !tags) return;
@@ -83,7 +84,8 @@
 
     function refreshBudgetBadges() {
       const preferences = B.preferences();
-      Object.entries(B.cards).forEach(([slug, card]) => {
+      B.cards.forEach((card) => {
+        const slug = card.dataset.slug;
         const trip = B.currentBySlug[slug] || B.bySlug[slug];
         const badgeNode = card.querySelector('.scenario-budget-badge');
         if (!trip || !badgeNode) return;
