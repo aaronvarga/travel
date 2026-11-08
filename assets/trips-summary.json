@@ -2435,6 +2435,104 @@
       "url": "https://www.google.com/travel/flights",
       "publisher": "Google Flights",
       "scope": "Exact June/July 2027 dates searched November 3, 2026 for three adult fares plus one child fare in economy, as displayed family totals including taxes but excluding optional checked bags and seats. Itinerary lines add $720 transatlantic (or $320 domestic) for bags, $160 per low-cost hop and a $200-$800 seat allowance, rounded up to $100; an end of an existing band moves only when the repriced value differs by more than $300. Results flagged by Google as separate tickets are not treated as protected."
+    },
+    "sr-rome-fare": {
+      "label": "PIT–Rome June fare proxy",
+      "tier": "secondary",
+      "publisher": "Axel",
+      "url": "https://helloaxel.com/en/flights/from-pittsburgh-italy-summer",
+      "scope": "One adult on different June 2027 dates; not the canonical open-jaw family quote."
+    },
+    "sr-ryanair": {
+      "label": "Catania–Rome monthly fares",
+      "tier": "operator",
+      "publisher": "Ryanair",
+      "url": "https://www.ryanair.com/ie/en/flights/flights-from-catania-to-rome",
+      "scope": "June 2027 monthly advertised floor and current route duration; not selected-date four-seat availability."
+    },
+    "sr-colosseum": {
+      "label": "Colosseum tickets",
+      "tier": "official",
+      "publisher": "Parco archeologico del Colosseo",
+      "url": "https://colosseo.it/en/opening-times-and-tickets/",
+      "scope": "Current tariffs and entry products; recheck 2027 release and child reservation process."
+    },
+    "sr-trevi": {
+      "label": "Trevi basin entry fee",
+      "tier": "official",
+      "publisher": "Tourism Roma",
+      "url": "https://www.turismoroma.it/en/node/168455",
+      "scope": "February 2026 inner-perimeter fee; recheck 2027 access hours and exemptions."
+    },
+    "sr-darpoeta": {
+      "label": "Dar Poeta current menu",
+      "tier": "operator",
+      "publisher": "Dar Poeta",
+      "url": "https://www.darpoeta.com/en/menu-2/",
+      "scope": "Current Margherita, marinara and fries; no guaranteed future menu or reservation."
+    },
+    "sr-tonnarello": {
+      "label": "Tonnarello menus",
+      "tier": "operator",
+      "publisher": "Tonnarello",
+      "url": "https://tonnarello.it/",
+      "scope": "Current linked menus; no 2027 pricing or queue guarantee."
+    },
+    "sr-italo": {
+      "label": "Rome–Venice train route",
+      "tier": "operator",
+      "publisher": "Italo",
+      "url": "https://www.italotreno.com/en/destinations-timetable/rome-venice-tickets",
+      "scope": "Advertised from fare and typical duration; not a June 21 timetable or four-seat quote."
+    },
+    "vrs-italo": {
+      "label": "Venice–Rome train proxy",
+      "tier": "operator",
+      "publisher": "Italo",
+      "url": "https://www.italotreno.com/en/destinations-timetable/venice-rome-tickets",
+      "scope": "Advertised from €29.90 and typical 3h34; not Jun 13 four-seat availability."
+    },
+    "vrs-ryanair": {
+      "label": "Rome–Catania flight proxy",
+      "tier": "operator",
+      "publisher": "Ryanair",
+      "url": "https://www.ryanair.com/ie/en/flights/flights-from-rome-to-catania",
+      "scope": "June 2027 monthly floor €32.99 and current route duration; not the selected Jun 15 family flight."
+    },
+    "vrs-actv": {
+      "label": "Venice transport tariffs",
+      "tier": "operator",
+      "publisher": "AVM/ACTV",
+      "url": "https://avm.avmspa.it/it/content/vaporetto",
+      "scope": "Current 48h €35 standard pass; airport bus €10 one way is separate. Recheck 2027 and youth offers."
+    },
+    "vrs-access": {
+      "label": "Venice published 2027 access calendar",
+      "tier": "official",
+      "publisher": "Comune di Venezia",
+      "url": "https://live.comune.venezia.it/it/2026/10/contributo-di-accesso-il-calendario-2027-0",
+      "scope": "Oct 15 announcement includes Jun 11–13 and 08:30–16:30. Implementing acts on exemptions/payment remain pending; do not assume old rules apply."
+    },
+    "vrs-farini": {
+      "label": "Farini Venice menu",
+      "tier": "operator",
+      "publisher": "Farini",
+      "url": "https://farini.com/en/menu/venice/",
+      "scope": "Current bakery and pizza menu; not guaranteed June 2027 availability or prices."
+    },
+    "vrs-rossopomodoro": {
+      "label": "Rossopomodoro Venice menu",
+      "tier": "operator",
+      "publisher": "Rossopomodoro",
+      "url": "https://web.rossopomodoro.it/userfiles/file/venmenu.pdf",
+      "scope": "Published Venice classic pizza menu; exact future menu and pricing require recheck."
+    },
+    "vrs-venice-climate": {
+      "label": "Venice June climatology",
+      "tier": "secondary",
+      "publisher": "Current Results",
+      "url": "https://www.currentresults.com/Weather/Italy/Places/venice-temperatures-by-month-average.php",
+      "scope": "Historical June average 61–77°F; not a 2027 forecast or heatwave limit."
     }
   },
   "trips": [
@@ -2501,7 +2599,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -2524,7 +2622,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,515–$15,230. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $10,515–$15,230, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -2631,7 +2729,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 5,
-              "arithmetic": "9700–14200 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $9,715–$14,230 -> $10,515–$15,230"
+              "arithmetic": "Full cash total $10,515–$15,230; no miles credit. Itemized source: albania/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -3093,7 +3192,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -3116,7 +3215,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $13,800–$19,000. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $13,800–$19,000, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -3221,7 +3320,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 5,
-              "arithmetic": "10600–16800 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $10,600–$16,800 -> $13,800–$19,000"
+              "arithmetic": "Full cash total $13,800–$19,000; no miles credit. Itemized source: balkans/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -3643,7 +3743,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -3664,7 +3764,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,075–$16,200. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $10,075–$16,200, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -3769,7 +3869,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 5,
-              "arithmetic": "9300–16200 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $9,275–$16,200 -> $10,075–$16,200"
+              "arithmetic": "Full cash total $10,075–$16,200; no miles credit. Itemized source: california-pacific-coast/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -4173,7 +4274,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -4194,7 +4295,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $14,020–$17,390. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,020–$17,390, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -4299,7 +4400,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 5,
-              "arithmetic": "5020/6720 + 2450/3160 + 1130/1520 + 3320/4190 + 500/1100 = 12420/16690 | 2026-11-03: flight lines repriced, band $12,420–$16,690 -> $14,020–$17,390"
+              "arithmetic": "Full cash total $14,020–$17,390; no miles credit. Itemized source: canary-islands/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -4699,16 +4801,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11400,
-        "ceilUsd": 15500,
+        "floorUsd": 13400,
+        "ceilUsd": 17500,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13400,
-        "grossCeilUsd": 17500,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 9,
@@ -4733,7 +4829,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -4750,7 +4846,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,400–$15,500 net ($13,400–$17,500 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $13,400–$17,500, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -4845,25 +4941,21 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11400,
-              "highUsd": 15500,
-              "grossLowUsd": 13400,
-              "grossHighUsd": 17500,
-              "pointsSavingsUsd": 2000,
+              "lowUsd": 13400,
+              "highUsd": 17500,
               "lineItemCount": 6,
               "expectedUsd": null,
-              "arithmetic": "7700/8300 + 2300/3700 + 1200/1700 + 1800/2500 + 700/1200 + 500/900 = 14200/18300 gross; minus 2000/2000 = 12200/16300 net | 2026-11-03: flight lines repriced, band $12,200–$16,300 -> $11,400–$15,500"
+              "arithmetic": "Full cash total $13,400–$17,500; no miles credit. Itemized source: crete/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–LHR–CHQ / HER–ATH–JFK–PIT: complete open-jaw, family base $6733; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–CHQ June 9 / HER–PIT June 23, 2027 is sold on one ticket for $5,882 (September: $6,733); the return connects via Athens and ORD (1h55) and reaches Pittsburgh at 7:28 PM June 23."
             },
@@ -5117,14 +5209,11 @@
           "nights": 13,
           "ptoDays": 9,
           "budget": {
-            "lowUsd": 11400,
+            "lowUsd": 13400,
             "expectedUsd": null,
-            "highUsd": 15500,
+            "highUsd": 17500,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13400,
-            "grossHighUsd": 17500,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "Chania 5 + Rethymno 3 + Agios Nikolaos 5, CHQ inbound and HER outbound. The June 23 return adds one full Crete day while preserving the June 24–26 Pittsburgh commitment.",
@@ -5215,7 +5304,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -5237,7 +5326,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,500–$16,300. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $12,500–$16,300, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -5344,7 +5433,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 5,
-              "arithmetic": "5600–6800 flights + 700–1300 grouped ground transport + 2100–3100 lodging + 1705–2900 grouped food/activities + 300–700 buffer = 10405–14800; displayed 10400–14800 | 2026-11-03: flight lines repriced, band $10,400–$14,800 -> $12,500–$16,300"
+              "arithmetic": "Full cash total $12,500–$16,300; no miles credit. Itemized source: croatia/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -5755,16 +5845,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12000,
-        "ceilUsd": 16890,
+        "floorUsd": 14000,
+        "ceilUsd": 18890,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 14000,
-        "grossCeilUsd": 18890,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 9,
@@ -5789,7 +5873,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -5812,7 +5896,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,000–$16,890 net ($14,000–$18,890 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,000–$18,890, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -5907,28 +5991,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 12000,
+              "lowUsd": 14000,
               "expectedUsd": null,
-              "highUsd": 16890,
+              "highUsd": 18890,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 11,
-              "arithmetic": "5400/7000 + 450/780 + 500/760 + 900/1400 + 750/1200 + 600/900 + 1200/1850 + 450/650 + 500/750 + 2000/2900 + 450/700 = 13200/18890 gross; minus 2000/2000 = 11200/16890 net | 2026-11-03: flight lines repriced, band $11,200–$16,890 -> $12,000–$16,890",
-              "grossLowUsd": 14000,
-              "grossHighUsd": 18890,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $14,000–$18,890; no miles credit. Itemized source: dolomites-sardinia/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "dolomites-sardinia/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–LHR–VCE, June 27–July 11: gateway round-trip proxy for open-jaw, family base $5183; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–VCE June 27 / OLB–PIT July 11, 2027 is sold on one ticket for $5,188, home 11:22 PM July 11. Volotea VCE–OLB is $148 for the family before bags."
             },
@@ -6243,14 +6323,11 @@
           "nights": 13,
           "ptoDays": 9,
           "budget": {
-            "lowUsd": 12000,
+            "lowUsd": 14000,
             "expectedUsd": null,
-            "highUsd": 16890,
+            "highUsd": 18890,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 14000,
-            "grossHighUsd": 18890,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -6287,7 +6364,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 3,
         "fireRisk": 3,
         "swim": 4,
@@ -6313,16 +6390,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 10800,
-        "ceilUsd": 14970,
+        "floorUsd": 12800,
+        "ceilUsd": 16970,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 12800,
-        "grossCeilUsd": 16970,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -6339,15 +6410,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 38,
+      "totalBaked": 36,
       "travelWindow": [
         "2027-06-08",
         "2027-06-21"
       ],
       "routeReadiness": "confirmed",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -6369,8 +6440,8 @@
         },
         "axes": {
           "budget": {
-            "score": 2,
-            "rationale": "Increase Athens airfare to $5,800–7,200 for bags/seats above the four-person fare snapshot. Increase Milos–Athens to $650–850: the stored $154/person September 10 snapshot already exceeds the old $300–480 family allowance before bags. Gross $12,800–$16,970 less a single $2,000 fixed travel redemption yields $10,800–$14,970. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "score": 1,
+            "rationale": "Full cash planning band $12,800–$16,970, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -6465,28 +6536,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 10800,
+              "lowUsd": 12800,
               "expectedUsd": null,
-              "highUsd": 14970,
+              "highUsd": 16970,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 8,
-              "arithmetic": "5800/7200 + 650/850 + 340/540 + 2150/2880 + 850/1200 + 900/1400 + 1650/2200 + 460/700 = 12800/16970 gross; minus 2000/2000 = 10800/14970 net",
-              "grossLowUsd": 12800,
-              "grossHighUsd": 16970,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $12,800–$16,970; no miles credit. Itemized source: greece-cyclades/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "greece-cyclades/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–YYZ–ATH, June 8–21: exact-date gateway round-trip search, not checkout, family base $5202; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–ATH June 8–21, 2027 round trip: $5,198 for the family (September: $5,202). Milos–Athens is $230 for the family before bags. The existing airfare and domestic-flight lines still hold."
             },
@@ -6790,14 +6857,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 10800,
+            "lowUsd": 12800,
             "expectedUsd": null,
-            "highUsd": 14970,
+            "highUsd": 16970,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 12800,
-            "grossHighUsd": 16970,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary is the immutable comparison baseline: Athens 2 nights + Naxos 4 + Paros 2 + Milos 3 + Athens 1 buffer, ferries outbound through the islands and a Milos->Athens domestic flight home, with a rental car on each island.",
@@ -6834,7 +6898,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 4,
+        "budget": 2,
         "weather": 4,
         "fireRisk": 3,
         "swim": 4,
@@ -6860,16 +6924,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 9500,
-        "ceilUsd": 13000,
+        "floorUsd": 11500,
+        "ceilUsd": 15000,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 11500,
-        "grossCeilUsd": 15000,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 9,
@@ -6886,7 +6944,7 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 41,
+      "totalBaked": 37,
       "travelWindow": [
         "2027-06-09",
         "2027-06-22"
@@ -6894,7 +6952,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "within-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -6916,8 +6974,8 @@
         },
         "axes": {
           "budget": {
-            "score": 4,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $9,500–$13,000 net ($11,500–$15,000 gross). Budget 4/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "score": 2,
+            "rationale": "Full cash planning band $11,500–$15,000, with no miles redemption, scores 2/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -7012,28 +7070,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 9500,
+              "lowUsd": 11500,
               "expectedUsd": null,
-              "highUsd": 13000,
+              "highUsd": 15000,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "5600/6700 + 1700/2800 + 800/1300 + 150/300 + 1560/2200 + 520/850 + 470/850 = 10800/15000 gross; minus 2000/2000 = 8800/13000 net | 2026-11-03: flight lines repriced, band $8,800–$13,000 -> $9,500–$13,000",
-              "grossLowUsd": 11500,
-              "grossHighUsd": 15000,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $11,500–$15,000; no miles credit. Itemized source: greece-ionian/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "greece-ionian/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–JFK–ATH–EFL, June 9–22: gateway round-trip proxy for open-jaw, family base $5529; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–EFL June 9 / ATH–PIT June 22, 2027 is sold on one ticket for $5,345 (home 9:25 PM via JFK in 1h30) or $5,673 via ORD in 1h55. A Preveza exit prices at $11,543 with three stops, so the Athens exit and buffer night stay."
             },
@@ -7369,14 +7423,11 @@
           "nights": 12,
           "ptoDays": 9,
           "budget": {
-            "lowUsd": 9500,
+            "lowUsd": 11500,
             "expectedUsd": null,
-            "highUsd": 13000,
+            "highUsd": 15000,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 11500,
-            "grossHighUsd": 15000,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in canonical route is Kefalonia 7 nights, Lefkada 4 nights, and an Athens-airport buffer night; fly EFL in / ATH out and return Jun 22.",
@@ -7439,16 +7490,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11650,
-        "ceilUsd": 15600,
+        "floorUsd": 13650,
+        "ceilUsd": 17600,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13650,
-        "grossCeilUsd": 17600,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -7473,7 +7518,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -7496,7 +7541,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,650–$15,600 net ($13,650–$17,600 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $13,650–$17,600, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -7591,27 +7636,23 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11650,
+              "lowUsd": 13650,
               "expectedUsd": null,
-              "highUsd": 15600,
+              "highUsd": 17600,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "5200/8200 + 450/800 + 500/850 + 250/350 + 1850/3000 + 2500/3700 + 400/700 = 11150/17600 gross; minus 2000/2000 = 9150/15600 net | 2026-11-03: flight lines repriced, band $9,150–$15,600 -> $11,650–$15,600",
-              "grossLowUsd": 13650,
-              "grossHighUsd": 17600,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $13,650–$17,600; no miles credit. Itemized source: greece-via-lisbon/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "greece-via-lisbon/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-2026-11-03-family-audit": "PIT–LIS June 9 / CHQ–PIT June 22, 2027 is sold on one ticket for $5,899 (CHQ 8:20 AM via ATH and ORD, home 7:28 PM June 22). Aegean LIS–ATH nonstop is $706 and SKY express ATH–CHQ $316 for the family."
             },
             "claimType": "derived"
@@ -7920,14 +7961,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 11650,
+            "lowUsd": 13650,
             "expectedUsd": null,
-            "highUsd": 15600,
+            "highUsd": 17600,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13650,
-            "grossHighUsd": 17600,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -7964,7 +8002,7 @@
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 4,
         "fireRisk": 3,
         "swim": 5,
@@ -7990,16 +8028,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 9000,
-        "ceilUsd": 13800,
+        "floorUsd": 11000,
+        "ceilUsd": 15800,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 11000,
-        "grossCeilUsd": 15800,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 7,
@@ -8016,15 +8048,15 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 37,
+      "totalBaked": 35,
       "travelWindow": [
         "2027-06-05",
         "2027-06-15"
       ],
       "routeReadiness": "confirmed",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -8044,8 +8076,8 @@
         },
         "axes": {
           "budget": {
-            "score": 2,
-            "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $11,000–$15,800 less a single $2,000 fixed travel redemption yields $9,000–$13,800. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "score": 1,
+            "rationale": "Full cash planning band $11,000–$15,800, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -8140,28 +8172,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 9000,
+              "lowUsd": 11000,
               "expectedUsd": null,
-              "highUsd": 13800,
+              "highUsd": 15800,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 12,
-              "arithmetic": "3600/4400 + 300/600 + 1100/1400 + 1400/2300 + 900/1500 + 600/1000 + 1600/2200 + 180/280 + 180/260 + 420/650 + 320/510 + 400/700 = 11000/15800 gross; minus 2000/2000 = 9000/13800 net",
-              "grossLowUsd": 11000,
-              "grossHighUsd": 15800,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $11,000–$15,800; no miles credit. Itemized source: hawaii/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "hawaii/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–SEA–HNL, June 5–15: gateway round-trip proxy for open-jaw, family base $3488; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–HNL June 5 / KOA–PIT June 14, 2027 open-jaw: $3,188 for the family on United via ORD/DEN (Alaska via SEA $3,416); the Kona red-eye reaches Pittsburgh at 4:44 PM June 15. HNL–KOA is about $300. The $3,600–$4,400 flight line still holds."
             },
@@ -8489,14 +8517,11 @@
           "nights": 9,
           "ptoDays": 7,
           "budget": {
-            "lowUsd": 9000,
+            "lowUsd": 11000,
             "expectedUsd": null,
-            "highUsd": 13800,
+            "highUsd": 15800,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 11000,
-            "grossHighUsd": 15800,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -8533,7 +8558,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 4,
+        "budget": 1,
         "weather": 2,
         "fireRisk": 5,
         "swim": 3,
@@ -8559,16 +8584,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 10420,
-        "ceilUsd": 13320,
+        "floorUsd": 12420,
+        "ceilUsd": 15320,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 12420,
-        "grossCeilUsd": 15320,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -8590,15 +8609,15 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 42,
+      "totalBaked": 36,
       "travelWindow": [
         "2027-06-08",
         "2027-06-21"
       ],
       "routeReadiness": "confirmed",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -8618,8 +8637,8 @@
         },
         "axes": {
           "budget": {
-            "score": 4,
-            "rationale": "Reprice family airfare to $3,600–4,200 including the observed Basic/Standard options, four checked bags and estimated seats; the former $2,600 floor excluded those costs. Gross $12,420–$15,320 less a single $2,000 fixed travel redemption yields $10,420–$13,320. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "score": 1,
+            "rationale": "Full cash planning band $12,420–$15,320, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -8714,28 +8733,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 10420,
+              "lowUsd": 12420,
               "expectedUsd": null,
-              "highUsd": 13320,
+              "highUsd": 15320,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 6,
-              "arithmetic": "3600/4200 + 3200/3900 + 1570/1920 + 2300/2700 + 1250/1600 + 500/1000 = 12420/15320 gross; minus 2000/2000 = 10420/13320 net",
-              "grossLowUsd": 12420,
-              "grossHighUsd": 15320,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $12,420–$15,320; no miles credit. Itemized source: iceland/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "iceland/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–YUL–KEF / KEF–YUL–PIT: complete round-trip, family base $2619; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–KEF June 8–21, 2027: United via ORD $2,754 for the family; the Icelandair PIT–KEF nonstop is now sold for June 8 at $3,490 with a BWI return home 11:35 PM June 21. The $3,600–$4,200 protected airfare line still holds."
             },
@@ -9068,14 +9083,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 10420,
+            "lowUsd": 12420,
             "expectedUsd": null,
-            "highUsd": 13320,
+            "highUsd": 15320,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 12420,
-            "grossHighUsd": 15320,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -9138,16 +9150,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11700,
-        "ceilUsd": 15600,
+        "floorUsd": 13700,
+        "ceilUsd": 17600,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13700,
-        "grossCeilUsd": 17600,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -9177,7 +9183,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -9196,7 +9202,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "Airfare rises from the old stopover assumption to the sold open-jaw ($4,334) plus a separate KEF–FCO nonstop ($1,480). The 2026-11-03 four-passenger flight refresh moves the planning band to $11,700–$15,600 net ($13,700–$17,600 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $13,700–$17,600, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band",
@@ -9292,27 +9298,23 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11700,
+              "lowUsd": 13700,
               "expectedUsd": null,
-              "highUsd": 15600,
+              "highUsd": 17600,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 6,
-              "arithmetic": "3600/4800 + 2550/3750 + 1400/2000 + 1550/2200 + 800/1350 + 500/800 = 10400/14900 gross; minus 2000/2000 = 8400/12900 net | 2026-11-03: flight lines repriced, band $8,400–$12,900 -> $11,700–$15,600",
-              "grossLowUsd": 13700,
-              "grossHighUsd": 17600,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $13,700–$17,600; no miles credit. Itemized source: iceland-ischia-cilento/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "iceland-ischia-cilento/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-2026-11-03-family-audit": "Open-jaw PIT–KEF June 10 / FCO–PIT June 23, 2027 is sold on one ticket for $4,334 (Air Canada via Montreal out; United via Newark home 8:34 PM June 23), or $4,638 with the Icelandair nonstop. Add a separate Icelandair KEF–FCO nonstop on June 15 (7:50 AM–2:35 PM) at $1,480 for the family. No single ticket covering all three legs reaches Pittsburgh on June 23."
             },
             "claimType": "derived"
@@ -9718,14 +9720,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 11700,
+            "lowUsd": 13700,
             "expectedUsd": null,
-            "highUsd": 15600,
+            "highUsd": 17600,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13700,
-            "grossHighUsd": 17600,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [
             "Standalone La Mortella garden day"
@@ -9818,7 +9817,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -9841,7 +9840,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,600–$16,300. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $12,600–$16,300, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -9946,7 +9945,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 4,
-              "arithmetic": "11400–16300 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $11,400–$16,300 -> $12,600–$16,300"
+              "arithmetic": "Full cash total $12,600–$16,300; no miles credit. Itemized source: italy-salento-amalfi/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -10384,16 +10384,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12410,
-        "ceilUsd": 16250,
+        "floorUsd": 14410,
+        "ceilUsd": 18250,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 14410,
-        "grossCeilUsd": 18250,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 9,
@@ -10418,7 +10412,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -10440,7 +10434,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,410–$16,250 net ($14,410–$18,250 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,410–$18,250, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -10535,28 +10529,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 12410,
+              "lowUsd": 14410,
               "expectedUsd": null,
-              "highUsd": 16250,
+              "highUsd": 18250,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 11,
-              "arithmetic": "7000/8200 + 650/1050 + 130/200 + 1050/1700 + 300/500 + 280/450 + 800/1150 + 100/200 + 1750/2350 + 1150/1750 + 500/700 = 13710/18250 gross; minus 2000/2000 = 11710/16250 net | 2026-11-03: flight lines repriced, band $11,710–$16,250 -> $12,410–$16,250",
-              "grossLowUsd": 14410,
-              "grossHighUsd": 18250,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $14,410–$18,250; no miles credit. Itemized source: madeira-crete/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "madeira-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–FNC (United via the EWR–FNC nonstop) / CHQ–PIT June 22, 2027: $5,000 for the family, home 10:38 PM via MUC and YYZ. FNC–LIS is $251; LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens (12:40 AM–8:45 AM), or $1,545 by day."
             },
@@ -10898,14 +10888,11 @@
           "nights": 13,
           "ptoDays": 9,
           "budget": {
-            "lowUsd": 12410,
+            "lowUsd": 14410,
             "expectedUsd": null,
-            "highUsd": 16250,
+            "highUsd": 18250,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 14410,
-            "grossHighUsd": 18250,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -10968,16 +10955,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11700,
-        "ceilUsd": 15300,
+        "floorUsd": 13700,
+        "ceilUsd": 17300,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13700,
-        "grossCeilUsd": 17300,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 9,
@@ -11002,7 +10983,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -11026,7 +11007,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,700–$17,300 less a single $2,000 fixed travel redemption yields $11,700–$15,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "rationale": "Full cash planning band $13,700–$17,300, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -11121,28 +11102,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11700,
+              "lowUsd": 13700,
               "expectedUsd": null,
-              "highUsd": 15300,
+              "highUsd": 17300,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "8000/9000 + 1050/1650 + 1050/1700 + 750/1200 + 1550/2050 + 850/1150 + 450/550 = 13700/17300 gross; minus 2000/2000 = 11700/15300 net",
-              "grossLowUsd": 13700,
-              "grossHighUsd": 17300,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $13,700–$17,300; no miles credit. Itemized source: madeira-kefalonia/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "madeira-kefalonia/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–22: gateway round-trip proxy for open-jaw, family base $6124; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–FNC / EFL–PIT June 22, 2027: $5,781 for the family, home 10:38 PM via ZRH and YYZ. FNC–EFL on one ticket is $1,335. The $8,000–$9,000 all-air line still holds."
             },
@@ -11488,14 +11465,11 @@
           "nights": 12,
           "ptoDays": 9,
           "budget": {
-            "lowUsd": 11700,
+            "lowUsd": 13700,
             "expectedUsd": null,
-            "highUsd": 15300,
+            "highUsd": 17300,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13700,
-            "grossHighUsd": 17300,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "Immutable comparison baseline: Madeira 6 nights plus Kefalonia 6 nights; FNC in and EFL out through Athens, deliberately without Lefkada or PVK.",
@@ -11534,7 +11508,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 4,
         "fireRisk": 3,
         "swim": 4,
@@ -11560,16 +11534,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11100,
-        "ceilUsd": 13900,
+        "floorUsd": 13100,
+        "ceilUsd": 15900,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13100,
-        "grossCeilUsd": 15900,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -11586,15 +11554,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 41,
+      "totalBaked": 39,
       "travelWindow": [
         "2027-06-08",
         "2027-06-21"
       ],
       "routeReadiness": "confirmed",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -11614,8 +11582,8 @@
         },
         "axes": {
           "budget": {
-            "score": 2,
-            "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,100–$15,900 less a single $2,000 fixed travel redemption yields $11,100–$13,900. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "score": 1,
+            "rationale": "Full cash planning band $13,100–$15,900, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -11710,28 +11678,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11100,
+              "lowUsd": 13100,
               "expectedUsd": null,
-              "highUsd": 13900,
+              "highUsd": 15900,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 9,
-              "arithmetic": "6700/7500 + 800/1100 + 140/220 + 400/620 + 960/1210 + 900/1300 + 1850/2250 + 800/1100 + 550/600 = 13100/15900 gross; minus 2000/2000 = 11100/13900 net",
-              "grossLowUsd": 13100,
-              "grossHighUsd": 15900,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $13,100–$15,900; no miles credit. Itemized source: madeira-mallorca/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "madeira-mallorca/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–FNC / PMI–PIT June 21, 2027: $4,921 for the family on United (PMI via EWR in 4h19, home 7:04 PM). FNC–LIS is $231 and the TAP LIS–PMI nonstop $587. The $6,700–$7,500 flight line still holds."
             },
@@ -12073,14 +12037,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 11100,
+            "lowUsd": 13100,
             "expectedUsd": null,
-            "highUsd": 13900,
+            "highUsd": 15900,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13100,
-            "grossHighUsd": 15900,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -12117,7 +12078,7 @@
       "recommended": false,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 4,
         "fireRisk": 3,
         "swim": 3,
@@ -12143,16 +12104,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11800,
-        "ceilUsd": 14850,
+        "floorUsd": 13800,
+        "ceilUsd": 16850,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13800,
-        "grossCeilUsd": 16850,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -12169,15 +12124,15 @@
         "singleTicket": false,
         "hasSwim": true
       },
-      "totalBaked": 40,
+      "totalBaked": 38,
       "travelWindow": [
         "2027-06-08",
         "2027-06-21"
       ],
       "routeReadiness": "confirmed",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -12198,8 +12153,8 @@
         },
         "axes": {
           "budget": {
-            "score": 2,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,800–$14,850 net ($13,800–$16,850 gross). Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "score": 1,
+            "rationale": "Full cash planning band $13,800–$16,850, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -12294,28 +12249,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11800,
+              "lowUsd": 13800,
               "expectedUsd": null,
-              "highUsd": 14850,
+              "highUsd": 16850,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "5900/6800 + 2350/3300 + 2100/2450 + 850/1200 + 450/600 + 600/1100 + 350/500 = 12600/15950 gross; minus 2000/2000 = 10600/13950 net | 2026-11-03: flight lines repriced, band $10,600–$13,950 -> $11,800–$14,850",
-              "grossLowUsd": 13800,
-              "grossHighUsd": 16850,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $13,800–$16,850; no miles credit. Itemized source: madeira-sicily/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "madeira-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–FNC / CTA–PIT June 21, 2027: $5,160 for the family on United (CTA 1:35 PM via EWR, home 11:19 PM). FNC–LIS is $231; the Tuesday easyJet LIS–PMO nonstop is $431."
             },
@@ -12656,14 +12607,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 11800,
+            "lowUsd": 13800,
             "expectedUsd": null,
-            "highUsd": 14850,
+            "highUsd": 16850,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13800,
-            "grossHighUsd": 16850,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -12726,16 +12674,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12900,
-        "ceilUsd": 19300,
+        "floorUsd": 14900,
+        "ceilUsd": 21300,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 14900,
-        "grossCeilUsd": 21300,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 9,
@@ -12760,7 +12702,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -12781,7 +12723,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,900–$19,300 net ($14,900–$21,300 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,900–$21,300, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -12877,28 +12819,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 12900,
+              "lowUsd": 14900,
               "expectedUsd": null,
-              "highUsd": 19300,
+              "highUsd": 21300,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 9,
-              "arithmetic": "4200/5200 + 250/500 + 1200/1700 + 2250/3200 + 1800/2800 + 1300/2200 + 2400/3200 + 1500/2500 + 700/1100 = 15600/22400 gross; minus 2000/2000 = 13600/20400 net | 2026-11-03: flight lines repriced, band $13,600–$20,400 -> $12,900–$19,300",
-              "grossLowUsd": 14900,
-              "grossHighUsd": 21300,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $14,900–$21,300; no miles credit. Itemized source: maui-kauai/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "maui-kauai/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–PHX–OGG, June 10–23: gateway round-trip proxy for open-jaw, family base $3904; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–OGG June 10 / LIH–PIT June 22, 2027 open-jaw: $2,893 for the family on American; the Lihue red-eye reaches Pittsburgh at 4:49 PM June 23. OGG–LIH is about $300."
             },
@@ -13312,14 +13250,11 @@
           "nights": 12,
           "ptoDays": 9,
           "budget": {
-            "lowUsd": 12900,
+            "lowUsd": 14900,
             "expectedUsd": 17950,
-            "highUsd": 19300,
+            "highUsd": 21300,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 14900,
-            "grossHighUsd": 21300,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "Five Kihei nights, four Poipu nights and three Princeville/Hanalei nights; June 18 PTO depends on employer holiday observance.",
@@ -13356,7 +13291,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 2,
+        "budget": 1,
         "weather": 4,
         "fireRisk": 3,
         "swim": 2,
@@ -13382,16 +13317,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 9975,
-        "ceilUsd": 13900,
+        "floorUsd": 11975,
+        "ceilUsd": 15900,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 11975,
-        "grossCeilUsd": 15900,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -13408,15 +13337,15 @@
         "singleTicket": false,
         "hasSwim": false
       },
-      "totalBaked": 37,
+      "totalBaked": 35,
       "travelWindow": [
         "2027-06-10",
         "2027-06-23"
       ],
       "routeReadiness": "confirmed",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -13438,8 +13367,8 @@
         },
         "axes": {
           "budget": {
-            "score": 2,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $9,975–$13,900 net ($11,975–$15,900 gross). Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "score": 1,
+            "rationale": "Full cash planning band $11,975–$15,900, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -13534,29 +13463,25 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 9975,
+              "lowUsd": 11975,
               "expectedUsd": null,
-              "highUsd": 13900,
+              "highUsd": 15900,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "6000/7400 + 750/1000 + 675/1250 + 250/350 + 2200/3500 + 1700/2300 + 400/700 = 11975/16500 gross; minus 2000/2000 = 9975/14500 net | 2026-11-03: flight lines repriced, band $9,975–$14,500 -> $9,975–$13,900",
+              "arithmetic": "Full cash total $11,975–$15,900; no miles credit. Itemized source: portugal/main.json #totals.",
               "observedPartialInput": "TAP displayed a €221 one-passenger FAO–FNC round trip for 2027-06-13 to 2027-06-19; not the full family itinerary",
-              "grossLowUsd": 11975,
-              "grossHighUsd": 15900,
-              "pointsSavingsUsd": 2000
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "portugal/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–BOS–LIS / FNC–LIS–BOS–PIT: complete open-jaw, internal flight separate, family base $5457; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–LIS / FNC–PIT June 23, 2027: $5,208 for the family (FNC 9:40 AM via EWR, home 3:40 PM). Faro–Funchal on Friday has no nonstop; TAP via Lisbon is $628 for the family."
             },
@@ -13915,14 +13840,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 9975,
+            "lowUsd": 11975,
             "expectedUsd": null,
-            "highUsd": 13900,
+            "highUsd": 15900,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 11975,
-            "grossHighUsd": 15900,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -13985,16 +13907,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 13300,
-        "ceilUsd": 17400,
+        "floorUsd": 15300,
+        "ceilUsd": 19400,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 15300,
-        "grossCeilUsd": 19400,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -14017,9 +13933,9 @@
         "2027-06-23"
       ],
       "routeReadiness": "current-proxy",
-      "budgetStatus": "crosses-preference",
+      "budgetStatus": "likely-over-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -14042,7 +13958,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "Increase outer airfare allowance to $6,600–7,600 above the $6,260 Faro gateway proxy including bags/seats; this is not a Catania-return quote. Increase the former $150–250 insurance/misc line to an explicit $500–900 planning reserve. Gross $15,300–$19,400 less a single $2,000 fixed travel redemption yields $13,300–$17,400. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "rationale": "Full cash planning band $15,300–$19,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -14137,28 +14053,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 13300,
+              "lowUsd": 15300,
               "expectedUsd": null,
-              "highUsd": 17400,
+              "highUsd": 19400,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "6600/7600 + 1300/1700 + 2900/4200 + 2100/2400 + 1250/1700 + 650/900 + 500/900 = 15300/19400 gross; minus 2000/2000 = 13300/17400 net",
-              "grossLowUsd": 15300,
-              "grossHighUsd": 19400,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $15,300–$19,400; no miles credit. Itemized source: portugal-algarve-sicily/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "portugal-algarve-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–LHR–FAO, June 10–23: gateway round-trip proxy for open-jaw, family base $6260; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "Same-day-home PIT–FAO / CTA–PIT open-jaws cost $7,600–$7,900 for the family; cheaper combinations land June 24 and are rejected. Two one-ways fit the band: Aer Lingus PIT–FAO June 10 $2,987 plus Lufthansa/United CTA–PIT June 23 $2,973 (home 4:57 PM). FAO–PMO June 17 is $1,181 on TAP/ITA via Lisbon and Rome. The existing flight lines still hold."
             },
@@ -14497,14 +14409,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 13300,
+            "lowUsd": 15300,
             "expectedUsd": null,
-            "highUsd": 17400,
+            "highUsd": 19400,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 15300,
-            "grossHighUsd": 19400,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "6 Carvoeiro + 3 Cefalù + 3 Taormina coast, one apartment per region. The Faro→Barcelona→Palermo Vueling connection must pass exact-2027 schedule validation and its single-through-ticket must be verified; a generous Barcelona layover is the contingency, not an assumed same-terminal connection.",
@@ -14569,16 +14478,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11430,
-        "ceilUsd": 15165,
+        "floorUsd": 13430,
+        "ceilUsd": 17165,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13430,
-        "grossCeilUsd": 17165,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -14603,7 +14506,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -14625,7 +14528,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,430–$15,165 net ($13,430–$17,165 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $13,430–$17,165, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -14720,28 +14623,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11430,
+              "lowUsd": 13430,
               "expectedUsd": null,
-              "highUsd": 15165,
+              "highUsd": 17165,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 9,
-              "arithmetic": "6600/8000 + 900/1625 + 680/1140 + 450/750 + 650/950 + 300/500 + 1650/2250 + 800/1250 + 500/700 = 12530/17165 gross; minus 2000/2000 = 10530/15165 net | 2026-11-03: flight lines repriced, band $10,530–$15,165 -> $11,430–$15,165",
-              "grossLowUsd": 13430,
-              "grossHighUsd": 17165,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $13,430–$17,165; no miles credit. Itemized source: portugal-crete/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "portugal-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–LHR–LIS, June 8–21: gateway round-trip proxy for open-jaw, family base $4798; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–LIS June 8 / CHQ–PIT June 21, 2027: $5,185 for the family (home 11:56 PM via FRA and ORD); a Heraklion exit is $5,118 (home 11:22 PM via FRA and IAD). LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens."
             },
@@ -15080,14 +14979,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 11430,
+            "lowUsd": 13430,
             "expectedUsd": null,
-            "highUsd": 15165,
+            "highUsd": 17165,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13430,
-            "grossHighUsd": 17165,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The canonical baseline uses five Portugal nights (Jun 9-13) and seven Crete nights (Chania 4 + Rethymno 3), preserving 12 hotel nights and the Jun 21 return.",
@@ -15150,16 +15046,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12150,
-        "ceilUsd": 15150,
+        "floorUsd": 14150,
+        "ceilUsd": 17150,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 14150,
-        "grossCeilUsd": 17150,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -15184,7 +15074,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -15207,7 +15097,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "Replace the unsupported $5,800 all-flight hard gate with $6,900–8,300: $4,798 Lisbon gateway return plus $1,160 stored Monday Palermo connection, $720 bag proxy, $200–800 seats and up to $800 open-jaw uncertainty. These are rounded allowances, not a Catania-return quote. Gross $14,150–$17,150 less a single $2,000 fixed travel redemption yields $12,150–$15,150. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "rationale": "Full cash planning band $14,150–$17,150, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -15302,28 +15192,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 12150,
+              "lowUsd": 14150,
               "expectedUsd": null,
-              "highUsd": 15150,
+              "highUsd": 17150,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "6900/8300 + 2650/3150 + 2100/2450 + 850/1000 + 550/650 + 750/1100 + 350/500 = 14150/17150 gross; minus 2000/2000 = 12150/15150 net",
-              "grossLowUsd": 14150,
-              "grossHighUsd": 17150,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $14,150–$17,150; no miles credit. Itemized source: portugal-sicily/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "portugal-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–LHR–LIS, June 8–21: gateway round-trip proxy for open-jaw, family base $4798; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–LIS June 8 / CTA–PIT June 21, 2027: $5,151 for the family (CTA 1:35 PM via EWR, home 11:19 PM). Monday LIS–PMO has no nonstop: Vueling via Barcelona is $413, or $1,166 on TAP/ITA via Rome. The existing flight line still holds."
             },
@@ -15651,14 +15537,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 12150,
+            "lowUsd": 14150,
             "expectedUsd": null,
-            "highUsd": 15150,
+            "highUsd": 17150,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 14150,
-            "grossHighUsd": 17150,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -15721,16 +15604,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12180,
-        "ceilUsd": 18200,
+        "floorUsd": 14180,
+        "ceilUsd": 20200,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 14180,
-        "grossCeilUsd": 20200,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -15755,7 +15632,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -15778,7 +15655,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,180–$18,200 net ($14,180–$20,200 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,180–$20,200, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -15873,28 +15750,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 12180,
+              "lowUsd": 14180,
               "expectedUsd": null,
-              "highUsd": 18200,
+              "highUsd": 20200,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 9,
-              "arithmetic": "5400/6400 + 3200/5500 + 950/1700 + 180/350 + 150/350 + 1400/2200 + 900/1600 + 300/500 + 400/700 = 12880/19300 gross; minus 2000/2000 = 10880/17300 net | 2026-11-03: flight lines repriced, band $10,880–$17,300 -> $12,180–$18,200",
-              "grossLowUsd": 14180,
-              "grossHighUsd": 20200,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $14,180–$20,200; no miles credit. Itemized source: sardinia-corsica/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "sardinia-corsica/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–LHR–OLB, June 10–23: gateway round-trip proxy for open-jaw, family base $5316; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "Every CAG–PIT option on June 23, 2027 lands June 24, inside the Pittsburgh commitment. PIT–OLB June 10 / CAG–PIT June 22 is sold on one ticket: Lufthansa/United leaves CAG 6:35 PM, overnights at Munich and reaches Pittsburgh 4:57 PM June 23, at $5,746 for the family. An Olbia round trip ($6,033, home 11:19 PM June 23) is the backup."
             },
@@ -16205,14 +16078,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 12180,
+            "lowUsd": 14180,
             "expectedUsd": null,
-            "highUsd": 18200,
+            "highUsd": 20200,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 14180,
-            "grossHighUsd": 20200,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -16275,16 +16145,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 11400,
-        "ceilUsd": 16700,
+        "floorUsd": 13400,
+        "ceilUsd": 18700,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 13400,
-        "grossCeilUsd": 18700,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -16309,7 +16173,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -16332,7 +16196,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,400–$16,700 net ($13,400–$18,700 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $13,400–$18,700, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -16427,28 +16291,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 11400,
+              "lowUsd": 13400,
               "expectedUsd": null,
-              "highUsd": 16700,
+              "highUsd": 18700,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 7,
-              "arithmetic": "6200/7400 + 250/500 + 1050/1850 + 250/400 + 3400/5200 + 1450/2650 + 400/700 = 13000/18700 gross; minus 2000/2000 = 11000/16700 net | 2026-11-03: flight lines repriced, band $11,000–$16,700 -> $11,400–$16,700",
-              "grossLowUsd": 13400,
-              "grossHighUsd": 18700,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $13,400–$18,700; no miles credit. Itemized source: sicily-malta/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "sicily-malta/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–LHR–PMO, June 10–23: gateway round-trip proxy for open-jaw, family base $5667; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "The cheapest PIT–PMO / MLA–PIT open-jaw lands June 24 and the same-day version is flagged as separate tickets. Two one-ways work: JetBlue/Turkish PIT–PMO June 10 $2,885 or BA $2,950, plus Lufthansa/United MLA–PIT June 23 $2,711 (home 4:57 PM). Ryanair CTA–MLA June 20 is $103 for the family."
             },
@@ -16761,14 +16621,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 11400,
+            "lowUsd": 13400,
             "expectedUsd": null,
-            "highUsd": 16700,
+            "highUsd": 18700,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 13400,
-            "grossHighUsd": 18700,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline.",
@@ -16797,6 +16654,605 @@
       }
     },
     {
+      "slug": "sicily-rome",
+      "token": "sicily-rome",
+      "title": "Sicily + Rome · Ionian Coast + Eternal City — June 2027",
+      "displayName": "Sicily + Rome",
+      "blurb": "Eight island nights, four Roman nights; Venice stays optional",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 1,
+        "weather": 4,
+        "fireRisk": 3,
+        "swim": 4,
+        "variety": 5,
+        "ease": 3,
+        "food": 5,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 2
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "fireRisk": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 14000,
+        "ceilUsd": 19400,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 9,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 1,
+        "swimTempF": [
+          72,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 39,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "crosses-preference",
+      "evidence": {
+        "reviewedAt": "2026-11-07",
+        "overallConfidence": "low",
+        "limitingAxes": [
+          "budget",
+          "risk"
+        ],
+        "evidenceBasis": "Existing detailed southeast Sicily stop research retained with original timestamps. New operator route/fare floors and Rome admission/food checked Nov 7; exact international and lodging prices unknown.",
+        "confidence": {
+          "id": "low",
+          "value": 1,
+          "label": "Low evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 1,
+            "rationale": "Full cash planning band $14,000–$19,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
+            "confidence": "low",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 4,
+            "rationale": "Sicily June weather remains favorable; Rome introduces recurring midday heat management.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-proxy"
+            ]
+          },
+          "fireRisk": {
+            "score": 3,
+            "rationale": "Retains the existing conservative Sicily June moderate 5–10% planning band; not an actuarial prediction.",
+            "confidence": "medium",
+            "evidence": [
+              "wildfire-exposure"
+            ]
+          },
+          "swim": {
+            "score": 4,
+            "rationale": "Eight Sicily nights preserve frequent Ionian swims around 72–74°F; four Rome nights have no planned natural swimming.",
+            "confidence": "high",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "The scheduled coast, Etna, Baroque towns and ancient Rome give all three trip modes real time.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 3,
+            "rationale": "Three bases, one car, one inter-base drive and a separate domestic flight; no one-night stops.",
+            "confidence": "medium",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 5,
+            "rationale": "Sicily pizza and market food plus Rome pizza, pasta and groceries cover both children.",
+            "confidence": "medium",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 3,
+            "rationale": "Exact protected international open-jaw ticket and four-person domestic inventory remain unverified; four Rome nights buffer the separate flight.",
+            "confidence": "low",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "Twelve hotel nights produce 5/5 by the canonical rubric.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 5,
+            "rationale": "Sicily and Rome are absent from the documented visited-place list; no repeat stop is required.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 2,
+            "rationale": "Nine weekdays after observed Juneteenth, including departure; PTO score 2 with zero default weight.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "climate-proxy",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "weather-atlas-sicily-june"
+            ],
+            "value": {
+              "score": 4,
+              "normalPeriod": "recent climatology",
+              "juneMeanDailyLowHighF": {
+                "Siracusa": [
+                  64,
+                  83
+                ],
+                "Taormina": [
+                  61,
+                  77
+                ]
+              },
+              "rainDaysJune": 3,
+              "etnaSummitNote": "Summit stages run 20–30°F colder than the coast with strong UV; a packing consideration, not a weather-score penalty",
+              "forecast": false,
+              "romeNote": "Rome heat requires midday breaks; roughly 61–83°F is a secondary climatology proxy, not a forecast."
+            },
+            "verifiedAt": "2026-07-16",
+            "expiresAt": "2027-04-01",
+            "sourceLocators": {
+              "weather-atlas-sicily-june": "June pages for Syracuse (high 28.2°C / low 17.8°C) and Taormina (high ~25°C / low ~16°C), about 3 rain days and ~10 sunshine hours"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "seatemperature-sicily-june",
+              "visit-sicily-sea"
+            ],
+            "value": {
+              "score": 4,
+              "temperatureF": [
+                72,
+                74
+              ],
+              "temperatureC": [
+                22,
+                23.5
+              ],
+              "hasSwim": true,
+              "scheduledSwimDays": 5,
+              "beachTypes": "Ortigia sea decks and rocky coves; Fontane Bianche sand; Isola Bella and Mazzarò pebbles (water shoes)",
+              "warmWaterFallback": "Giardini Naxos lodging pool for the Taormina half; heating not confirmed until property selection"
+            },
+            "verifiedAt": "2026-07-16",
+            "expiresAt": "2027-05-15",
+            "sourceLocators": {
+              "seatemperature-sicily-june": "June averages: Siracusa about 22.8°C (~73°F), Taormina about 21.7–23.1°C (72–74°F)",
+              "visit-sicily-sea": "Official beach-character guidance for the Taormina and Giardini Naxos coast; not a live temperature report"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "wildfire-exposure",
+            "category": "wildfire",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "sicily-fire-history-2023",
+              "sicily-fire-emergency-2026"
+            ],
+            "value": {
+              "score": 3,
+              "level": "Moderate",
+              "chanceBand": "5–10%",
+              "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+              "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+              "routeProfiles": [
+                {
+                  "id": "sicily-june",
+                  "name": "Sicily in June",
+                  "score": 3,
+                  "level": "Moderate",
+                  "chanceBand": "5–10%",
+                  "rationale": "Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk."
+                }
+              ],
+              "routeNames": [
+                "Sicily in June"
+              ],
+              "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+              "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+            },
+            "verifiedAt": "2026-07-22",
+            "expiresAt": "2027-05-15",
+            "sourceLocators": {
+              "sicily-fire-history-2023": "Regional report pp. 14–17: no critical June/early-July phase; July 24 surge; 74,341 hectares burned in Sicily in 2023",
+              "sicily-fire-emergency-2026": "Sicilian Civil Protection July 19–20, 2026 update lists active and controlled fires across Palermo, Agrigento, Siracusa, Enna, Ragusa, and Catania"
+            },
+            "claimType": "inference"
+          },
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "value": {
+              "lowUsd": 14000,
+              "highUsd": 19400,
+              "distribution": "planning-band",
+              "lineItems": [
+                {
+                  "label": "International open-jaw flights · allowance, exact family quote unknown",
+                  "lowUsd": 6800,
+                  "highUsd": 8800
+                },
+                {
+                  "label": "Catania–Rome · bags + seats allowance",
+                  "lowUsd": 450,
+                  "highUsd": 850
+                },
+                {
+                  "label": "12 nights lodging · taxes and cleaning allowance",
+                  "lowUsd": 3000,
+                  "highUsd": 4200
+                },
+                {
+                  "label": "Sicily automatic car · insurance, fuel, parking",
+                  "lowUsd": 750,
+                  "highUsd": 1100
+                },
+                {
+                  "label": "Food · family of four",
+                  "lowUsd": 1400,
+                  "highUsd": 1900
+                },
+                {
+                  "label": "Activities · Etna, ruins, boats and Rome",
+                  "lowUsd": 600,
+                  "highUsd": 1000
+                },
+                {
+                  "label": "Rome transfers, local transport and taxis",
+                  "lowUsd": 400,
+                  "highUsd": 650
+                },
+                {
+                  "label": "Contingency",
+                  "lowUsd": 600,
+                  "highUsd": 900
+                }
+              ],
+              "exactFamilyQuote": false,
+              "paymentBasis": "cash",
+              "arithmetic": "Full cash total $14,000–$19,400; no miles credit. Itemized source: sicily-rome/main.json #totals."
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "sr-rome-fare",
+              "sr-ryanair"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "main.json #totals: $14,000–$19,400 gross; $2,000 fixed-value credit; Axel Jun 12–19 PIT–FCO $1,240 per adult only; Ryanair June monthly floor €36.29; neither quotes the canonical route",
+              "sr-rome-fare": "main.json #totals: $14,000–$19,400 gross; $2,000 fixed-value credit; Axel Jun 12–19 PIT–FCO $1,240 per adult only; Ryanair June monthly floor €36.29; neither quotes the canonical route",
+              "sr-ryanair": "main.json #totals: $14,000–$19,400 gross; $2,000 fixed-value credit; Axel Jun 12–19 PIT–FCO $1,240 per adult only; Ryanair June monthly floor €36.29; neither quotes the canonical route"
+            },
+            "confidence": "low",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "value": {
+              "depart": "2027-06-10",
+              "return": "2027-06-23",
+              "hotelNights": 12,
+              "ptoDays": 9,
+              "juneteenthObserved": "2027-06-18"
+            },
+            "sourceRefs": [
+              "decision-profile"
+            ],
+            "sourceLocators": {
+              "decision-profile": "sicily-rome/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+            },
+            "confidence": "high",
+            "proxyStatus": "derived",
+            "claimType": "derived",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": null
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "value": {
+              "score": 5,
+              "bases": [
+                "Ortigia 4",
+                "Giardini Naxos 4",
+                "Rome 4"
+              ],
+              "hotelNights": 12
+            },
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "sicily-rome/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+            },
+            "confidence": "high",
+            "proxyStatus": "derived",
+            "claimType": "derived",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": null
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "value": {
+              "easeScore": 3,
+              "maxConnections": 1,
+              "singleTicket": false,
+              "baseMoves": 2,
+              "domesticFlight": 1
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "sr-ryanair"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "Canonical 3-base plan; CTA–FCO separately ticketed on Jun 19 with four Rome nights before international return. Ryanair current route page shows about 1h25 flying time.",
+              "sr-ryanair": "Canonical 3-base plan; CTA–FCO separately ticketed on Jun 19 with four Rome nights before international return. Ryanair current route page shows about 1h25 flying time."
+            },
+            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "value": {
+              "score": 5,
+              "plainFoodRequired": true,
+              "rome": [
+                "Dar Poeta margherita/fries",
+                "Tonnarello pasta/pizza"
+              ],
+              "sicily": "Existing short-sicily restaurant picks retained; menus need recheck"
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "sr-darpoeta",
+              "sr-tonnarello"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices.",
+              "sr-darpoeta": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices.",
+              "sr-tonnarello": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices."
+            },
+            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "value": {
+              "status": "current-proxy",
+              "singleTicket": false,
+              "maxConnections": 1,
+              "exact2027FlightsVerified": false,
+              "internationalQuote": "unknown",
+              "outbound": "PIT → CTA Jun 10",
+              "return": "FCO → PIT Jun 23",
+              "internal": "CTA → FCO Jun 19"
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "sr-ryanair"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "Canonical international open-jaw and exact Jun 19 family flight have not been verified; Ryanair page advertises June 2027 monthly fares from €36.29, not the four-seat selected departure.",
+              "sr-ryanair": "Canonical international open-jaw and exact Jun 19 family flight have not been verified; Ryanair page advertises June 2027 monthly fares from €36.29, not the four-seat selected departure."
+            },
+            "confidence": "low",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "value": {
+              "score": 5,
+              "overlap": []
+            },
+            "sourceRefs": [
+              "scorecard-contract"
+            ],
+            "sourceLocators": {
+              "scorecard-contract": "sicily-rome/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+            },
+            "confidence": "high",
+            "proxyStatus": "derived",
+            "claimType": "derived",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": null
+          },
+          {
+            "id": "rome-admission",
+            "category": "reservation",
+            "value": {
+              "colosseumAdultEur": 18,
+              "under18Free": true,
+              "treviInnerEur": 2
+            },
+            "sourceRefs": [
+              "sr-colosseum",
+              "sr-trevi"
+            ],
+            "sourceLocators": {
+              "sr-colosseum": "Colosseum official basic 24h ticket and under-18 policy; Tourism Roma February 2026 Trevi €2 inner-perimeter ticket. Recheck 2027 release and access rules.",
+              "sr-trevi": "Colosseum official basic 24h ticket and under-18 policy; Tourism Roma February 2026 Trevi €2 inner-perimeter ticket. Recheck 2027 release and access rules."
+            },
+            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "venice-tradeoff",
+            "category": "logistics",
+            "value": {
+              "nights": 12,
+              "bases": 4,
+              "split": [
+                6,
+                4,
+                2
+              ],
+              "trainMinutesProxy": 214,
+              "advertisedTrainFloorEur": 29.9,
+              "exactFamilyQuote": false,
+              "totalBudget": "unknown",
+              "lost": "Two island swim/flex days"
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "sr-italo"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "main.json #venice-option same-length Jun 10–23 plan; Italo Rome–Venice official route page advertises from €29.90 and 3h34, not confirmed June 21 service or four seats.",
+              "sr-italo": "main.json #venice-option same-length Jun 10–23 plan; Italo Rome–Venice official route page advertises from €29.90 and 3h34, not confirmed June 21 service or four seats."
+            },
+            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": null,
+        "groundHours": 12,
+        "timeZones": 6,
+        "baseMoves": 2,
+        "longestTransferHours": 6,
+        "highOutputDayStreak": 2,
+        "fallbackDays": 3,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "required; unquoted",
+          "kitchen": "required in Ortigia and Rome; unquoted",
+          "laundry": "preferred; unquoted",
+          "realBeds": "four required; unquoted"
+        },
+        "waterSafety": "Pebble beaches need shoes and calm conditions; Naxos pool is the controlled fallback.",
+        "crowdingPressure": "Rome and Taormina need early starts and midday rest.",
+        "medicalAccess": "Urban bases; recheck current coverage and insurance."
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "Sicily 8 nights + Rome 4 · Jun 10–23",
+          "canonical": true,
+          "status": "documented-needs-live-quotes",
+          "nights": 12,
+          "ptoDays": 9,
+          "budget": {
+            "lowUsd": 14000,
+            "highUsd": 19400,
+            "distribution": "planning-band"
+          },
+          "removedExperiences": [],
+          "notes": "4 Ortigia + 4 Naxos + 4 Rome. Venice is an explicitly unpriced same-length substitution described in #venice-option.",
+          "confidence": "low",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "sicily-rome/main.json #stays, #calendar, #totals and #venice-option"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-yet-evidence-backed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/sicily-rome/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
+        "bookable": false
+      }
+    },
+    {
       "slug": "slovenia-adriatic",
       "token": "slovenia-adriatic",
       "title": "Slovenia + Adriatic · Julian Alps to Piran — June 2027",
@@ -16805,7 +17261,7 @@
       "recommended": true,
       "excluded": null,
       "axes": {
-        "budget": 4,
+        "budget": 1,
         "weather": 3,
         "fireRisk": 4,
         "swim": 3,
@@ -16831,16 +17287,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 10200,
-        "ceilUsd": 13400,
+        "floorUsd": 12200,
+        "ceilUsd": 15400,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 12200,
-        "grossCeilUsd": 15400,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -16857,15 +17307,15 @@
         "singleTicket": true,
         "hasSwim": true
       },
-      "totalBaked": 44,
+      "totalBaked": 38,
       "travelWindow": [
         "2027-06-08",
         "2027-06-22"
       ],
       "routeReadiness": "confirmed",
-      "budgetStatus": "within-preference",
+      "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -16887,8 +17337,8 @@
         },
         "axes": {
           "budget": {
-            "score": 4,
-            "rationale": "Raise airfare from $4,800–6,400 to $6,300–7,000: observed family base $5,342, four checked bags $720 and estimated paid seats $200–800. Round conservatively; do not assume free assigned seats. Gross $12,200–$15,400 less a single $2,000 fixed travel redemption yields $10,200–$13,400. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+            "score": 1,
+            "rationale": "Full cash planning band $12,200–$15,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -16983,28 +17433,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 10200,
+              "lowUsd": 12200,
               "expectedUsd": null,
-              "highUsd": 13400,
+              "highUsd": 15400,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 6,
-              "arithmetic": "6300/7000 + 1950/2500 + 1000/1500 + 850/1250 + 1700/2250 + 400/900 = 12200/15400 gross; minus 2000/2000 = 10200/13400 net",
-              "grossLowUsd": 12200,
-              "grossHighUsd": 15400,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $12,200–$15,400; no miles credit. Itemized source: slovenia-adriatic/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "slovenia-adriatic/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–YYZ–MUC–LJU / LJU–EWR–PIT: complete round-trip, family base $5342; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–LJU June 8–22, 2027 round trip: $5,343 for the family (September: $5,342). The $6,300–$7,000 airfare line with bags and seats still holds."
             },
@@ -17333,14 +17779,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 10200,
+            "lowUsd": 12200,
             "expectedUsd": null,
-            "highUsd": 13400,
+            "highUsd": 15400,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 12200,
-            "grossHighUsd": 15400,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline: Bled 4 nights + Bovec/Soča 3 (via the Vršič Pass) + Piran 3 (via the Škocjan Caves) + Ljubljana 2, round-trip Ljubljana, one rental car.",
@@ -17431,7 +17874,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -17453,7 +17896,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $14,550–$19,100. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,550–$19,100, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -17562,7 +18005,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 8,
-              "arithmetic": "5,200–6,800 air + 4,200–6,000 lodging + 150–250 Riviera transit + 650–950 car + 350–600 road costs + 1,800–2,600 food + 500–1,000 activities + 500–900 insurance/misc = 13,350–19,100 | 2026-11-03: flight lines repriced, band $13,350–$19,100 -> $14,550–$19,100"
+              "arithmetic": "Full cash total $14,550–$19,100; no miles credit. Itemized source: southern-france/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -18097,7 +18541,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -18119,7 +18563,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,400–$15,300. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $11,400–$15,300, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -18224,7 +18668,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 5,
-              "arithmetic": "8800–14800 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $8,800–$14,800 -> $11,400–$15,300"
+              "arithmetic": "Full cash total $11,400–$15,300; no miles credit. Itemized source: spain/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -18611,16 +19056,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12520,
-        "ceilUsd": 15940,
+        "floorUsd": 14520,
+        "ceilUsd": 17940,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 14520,
-        "grossCeilUsd": 17940,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -18645,7 +19084,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -18667,7 +19106,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,520–$15,940 net ($14,520–$17,940 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,520–$17,940, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -18762,28 +19201,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 12520,
+              "lowUsd": 14520,
               "expectedUsd": null,
-              "highUsd": 15940,
+              "highUsd": 17940,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 8,
-              "arithmetic": "5200/7200 + 1100/1800 + 1150/1450 + 1020/1340 + 2150/2650 + 850/1150 + 2150/2750 + 500/1100 = 14120/19440 gross; minus 2000/2000 = 12120/17440 net | 2026-11-03: flight lines repriced, band $12,120–$17,440 -> $12,520–$15,940",
-              "grossLowUsd": 14520,
-              "grossHighUsd": 17940,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $14,520–$17,940; no miles credit. Itemized source: switzerland-crete/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "switzerland-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–ZRH June 8 / CHQ–PIT June 22, 2027: $4,894 for the family on Air Canada with a 1h05 Munich connection (the $4,802 option has 55 minutes), home 10:38 PM. ZRH–HER on June 14 is $596 on the Condor nonstop."
             },
@@ -19115,14 +19550,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 12520,
+            "lowUsd": 14520,
             "expectedUsd": null,
-            "highUsd": 15940,
+            "highUsd": 17940,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 14520,
-            "grossHighUsd": 17940,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Chania 7 nights (car), open-jaw ZRH in / Crete out.",
@@ -19185,16 +19617,10 @@
         "pto": 0
       },
       "budget": {
-        "floorUsd": 12500,
-        "ceilUsd": 15850,
+        "floorUsd": 14500,
+        "ceilUsd": 17850,
         "targetUsd": 12000,
-        "preferredMaxUsd": 15000,
-        "grossFloorUsd": 14500,
-        "grossCeilUsd": 17850,
-        "pointsSavingsUsd": 2000,
-        "milesRequired": 200000,
-        "centsPerMile": 1,
-        "basis": "fixed-value-travel"
+        "preferredMaxUsd": 15000
       },
       "pto": {
         "days": 8,
@@ -19219,7 +19645,7 @@
       "routeReadiness": "confirmed",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -19241,7 +19667,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,500–$15,850 net ($14,500–$17,850 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $14,500–$17,850, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -19336,28 +19762,24 @@
             "confidence": "medium",
             "sourceRefs": [
               "internal-itinerary",
-              "capital-one-fixed-travel",
               "google-flights-family-audit",
               "google-flights-2026-11-03-family-audit"
             ],
             "value": {
-              "lowUsd": 12500,
+              "lowUsd": 14500,
               "expectedUsd": null,
-              "highUsd": 15850,
+              "highUsd": 17850,
               "targetUsd": 12000,
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 8,
-              "arithmetic": "5200/7200 + 1000/1700 + 1150/1450 + 1080/1400 + 2150/2650 + 820/1150 + 2100/2700 + 500/1100 = 14000/19350 gross; minus 2000/2000 = 12000/17350 net | 2026-11-03: flight lines repriced, band $12,000–$17,350 -> $12,500–$15,850",
-              "grossLowUsd": 14500,
-              "grossHighUsd": 17850,
-              "pointsSavingsUsd": 2000
+              "arithmetic": "Full cash total $14,500–$17,850; no miles credit. Itemized source: switzerland-sicily/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
             "sourceLocators": {
               "internal-itinerary": "switzerland-sicily/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-              "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
               "google-flights-family-audit": "PIT–JFK–ZRH, June 8–22: gateway round-trip proxy for open-jaw, family base $4545; full allowances and unquoted components in rerankingAudit.json",
               "google-flights-2026-11-03-family-audit": "PIT–ZRH June 8 / CTA–PIT June 22, 2027: $4,774 for the family (CTA 1:35 PM via EWR, home 11:19 PM). ZRH–CTA on June 14 is $689 on the Edelweiss nonstop."
             },
@@ -19686,14 +20108,11 @@
           "nights": 12,
           "ptoDays": 8,
           "budget": {
-            "lowUsd": 12500,
+            "lowUsd": 14500,
             "expectedUsd": null,
-            "highUsd": 15850,
+            "highUsd": 17850,
             "distribution": "planning-band",
-            "chanceUnderPreferredMax": null,
-            "grossLowUsd": 14500,
-            "grossHighUsd": 17850,
-            "pointsSavingsUsd": 2000
+            "chanceUnderPreferredMax": null
           },
           "removedExperiences": [],
           "notes": "The checked-in itinerary remains the immutable comparison baseline: Berner Oberland 5 nights (rail) + Sicily 7 nights (car) across Taormina and Siracusa, open-jaw ZRH in / Catania out.",
@@ -19784,7 +20203,7 @@
       "routeReadiness": "current-proxy",
       "budgetStatus": "crosses-preference",
       "evidence": {
-        "reviewedAt": "2026-11-03",
+        "reviewedAt": "2026-11-07",
         "overallConfidence": "medium",
         "limitingAxes": [
           "budget",
@@ -19807,7 +20226,7 @@
         "axes": {
           "budget": {
             "score": 1,
-            "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,800–$18,400. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+            "rationale": "Full cash planning band $11,800–$18,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
             "confidence": "medium",
             "evidence": [
               "budget-band"
@@ -19913,7 +20332,8 @@
               "preferredMaxUsd": 15000,
               "distribution": "planning-band",
               "lineItemCount": 6,
-              "arithmetic": "7000–8000 + 1100–2000 + 1650–3400 + 1350–2250 + 700–2000 + 350–700 = 12150–18350; displayed 12200–18400 | 2026-11-03: flight lines repriced, band $12,200–$18,400 -> $11,800–$18,400"
+              "arithmetic": "Full cash total $11,800–$18,400; no miles credit. Itemized source: turkish-riviera/main.json #totals.",
+              "paymentBasis": "cash"
             },
             "verifiedAt": "2026-11-03",
             "expiresAt": "2026-12-03",
@@ -20247,6 +20667,632 @@
         "id": "family-excluded",
         "label": "Family-excluded reference",
         "tone": "muted",
+        "bookable": false
+      }
+    },
+    {
+      "slug": "venice-rome-sicily",
+      "token": "venice-rome-sicily",
+      "title": "Venice + Rome + Sicily · Short City Stops + Ionian Coast — June 2027",
+      "displayName": "Venice + Rome + Sicily",
+      "blurb": "Two nights in each city, eight nights by the Ionian Sea",
+      "recommended": true,
+      "excluded": null,
+      "axes": {
+        "budget": 1,
+        "weather": 4,
+        "fireRisk": 3,
+        "swim": 4,
+        "variety": 5,
+        "ease": 2,
+        "food": 5,
+        "risk": 3,
+        "nights": 5,
+        "novelty": 5,
+        "pto": 2
+      },
+      "weightDefaults": {
+        "budget": 2,
+        "weather": 1,
+        "fireRisk": 1,
+        "swim": 1,
+        "variety": 1,
+        "ease": 1,
+        "food": 1,
+        "risk": 1,
+        "nights": 1,
+        "novelty": 1,
+        "pto": 0
+      },
+      "budget": {
+        "floorUsd": 14530,
+        "ceilUsd": 20580,
+        "targetUsd": 12000,
+        "preferredMaxUsd": 15000
+      },
+      "pto": {
+        "days": 9,
+        "nights": 12
+      },
+      "facets": {
+        "continent": "europe",
+        "maxConnections": 1,
+        "swimTempF": [
+          72,
+          74
+        ],
+        "noPassport": false,
+        "singleTicket": false,
+        "hasSwim": true
+      },
+      "totalBaked": 38,
+      "travelWindow": [
+        "2027-06-10",
+        "2027-06-23"
+      ],
+      "routeReadiness": "current-proxy",
+      "budgetStatus": "crosses-preference",
+      "evidence": {
+        "reviewedAt": "2026-11-07",
+        "overallConfidence": "low",
+        "limitingAxes": [
+          "budget",
+          "risk"
+        ],
+        "evidenceBasis": "Detailed Sicily and Rome stop research retained with its timestamps; Venice operator fares, food and published 2027 access calendar reviewed Nov 7. Exact international family ticket, selected domestic flight/train and lodging unknown.",
+        "confidence": {
+          "id": "low",
+          "value": 1,
+          "label": "Low evidence confidence"
+        },
+        "axes": {
+          "budget": {
+            "score": 1,
+            "rationale": "Full cash $14,530–$20,580; high case above preference and exact international/room quotes unknown.",
+            "confidence": "low",
+            "evidence": [
+              "budget-band"
+            ]
+          },
+          "weather": {
+            "score": 4,
+            "rationale": "Sicily June weather remains favorable; Rome introduces recurring midday heat management.",
+            "confidence": "medium",
+            "evidence": [
+              "climate-proxy"
+            ]
+          },
+          "fireRisk": {
+            "score": 3,
+            "rationale": "Retains the existing conservative Sicily June moderate 5–10% planning band; not an actuarial prediction.",
+            "confidence": "medium",
+            "evidence": [
+              "wildfire-exposure"
+            ]
+          },
+          "swim": {
+            "score": 4,
+            "rationale": "All eight Sicily nights remain, with frequent 72–74°F Ionian swimming; Venice and Rome have no planned natural swimming.",
+            "confidence": "high",
+            "evidence": [
+              "swim-conditions"
+            ]
+          },
+          "variety": {
+            "score": 5,
+            "rationale": "Canal city, one ancient-Rome day, Baroque island towns, volcano and swimming all have scheduled time.",
+            "confidence": "high",
+            "evidence": [
+              "itinerary-structure"
+            ]
+          },
+          "ease": {
+            "score": 2,
+            "rationale": "Four bases, one intercity rail move, one domestic flight and one Sicily drive; no one-night stops.",
+            "confidence": "medium",
+            "evidence": [
+              "operational-load"
+            ]
+          },
+          "food": {
+            "score": 5,
+            "rationale": "Named pizza/bakery fallbacks in Venice, Rome pizza/pasta, and the existing detailed Sicily food picks cover every base.",
+            "confidence": "medium",
+            "evidence": [
+              "family-food-coverage"
+            ]
+          },
+          "risk": {
+            "score": 3,
+            "rationale": "Exact international and internal four-seat inventory unverified; Sicily’s eight nights buffer the separate domestic flight, but CTA ash remains a return-airport risk.",
+            "confidence": "low",
+            "evidence": [
+              "route-readiness"
+            ]
+          },
+          "nights": {
+            "score": 5,
+            "rationale": "12 hotel nights derive 5/5.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          },
+          "novelty": {
+            "score": 5,
+            "rationale": "Venice, Rome and southeast Sicily are absent from the documented visited-place list; no repeat stop required.",
+            "confidence": "high",
+            "evidence": [
+              "visited-overlap"
+            ]
+          },
+          "pto": {
+            "score": 2,
+            "rationale": "Nine conservative PTO days include departure, with observed Juneteenth excluded; zero default weight.",
+            "confidence": "high",
+            "evidence": [
+              "trip-window"
+            ]
+          }
+        },
+        "facts": [
+          {
+            "id": "climate-proxy",
+            "category": "climate",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "weather-atlas-sicily-june",
+              "vrs-venice-climate"
+            ],
+            "value": {
+              "score": 4,
+              "normalPeriod": "recent climatology",
+              "juneMeanDailyLowHighF": {
+                "Siracusa": [
+                  64,
+                  83
+                ],
+                "Taormina": [
+                  61,
+                  77
+                ],
+                "Venice": [
+                  61,
+                  77
+                ]
+              },
+              "rainDaysJune": 3,
+              "etnaSummitNote": "Summit stages run 20–30°F colder than the coast with strong UV; a packing consideration, not a weather-score penalty",
+              "forecast": false,
+              "romeNote": "Rome heat requires midday breaks; roughly 61–83°F is a secondary climatology proxy, not a forecast."
+            },
+            "verifiedAt": "2026-07-16",
+            "expiresAt": "2027-04-01",
+            "sourceLocators": {
+              "weather-atlas-sicily-june": "June pages for Syracuse (high 28.2°C / low 17.8°C) and Taormina (high ~25°C / low ~16°C), about 3 rain days and ~10 sunshine hours",
+              "vrs-venice-climate": "Venice June historical climatology about 61–77°F; humidity/showers are possible; not a 2027 forecast"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "swim-conditions",
+            "category": "swim",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "seatemperature-sicily-june",
+              "visit-sicily-sea"
+            ],
+            "value": {
+              "score": 4,
+              "temperatureF": [
+                72,
+                74
+              ],
+              "temperatureC": [
+                22,
+                23.5
+              ],
+              "hasSwim": true,
+              "scheduledSwimDays": 5,
+              "beachTypes": "Ortigia sea decks and rocky coves; Fontane Bianche sand; Isola Bella and Mazzarò pebbles (water shoes)",
+              "warmWaterFallback": "Giardini Naxos lodging pool for the Taormina half; heating not confirmed until property selection"
+            },
+            "verifiedAt": "2026-07-16",
+            "expiresAt": "2027-05-15",
+            "sourceLocators": {
+              "seatemperature-sicily-june": "June averages: Siracusa about 22.8°C (~73°F), Taormina about 21.7–23.1°C (72–74°F)",
+              "visit-sicily-sea": "Official beach-character guidance for the Taormina and Giardini Naxos coast; not a live temperature report"
+            },
+            "claimType": "proxy"
+          },
+          {
+            "id": "wildfire-exposure",
+            "category": "wildfire",
+            "proxyStatus": "current-proxy",
+            "confidence": "medium",
+            "sourceRefs": [
+              "sicily-fire-history-2023",
+              "sicily-fire-emergency-2026"
+            ],
+            "value": {
+              "score": 3,
+              "level": "Moderate",
+              "chanceBand": "5–10%",
+              "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+              "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+              "routeProfiles": [
+                {
+                  "id": "sicily-june",
+                  "name": "Sicily in June",
+                  "score": 3,
+                  "level": "Moderate",
+                  "chanceBand": "5–10%",
+                  "rationale": "Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk."
+                }
+              ],
+              "routeNames": [
+                "Sicily in June"
+              ],
+              "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+              "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+            },
+            "verifiedAt": "2026-07-22",
+            "expiresAt": "2027-05-15",
+            "sourceLocators": {
+              "sicily-fire-history-2023": "Regional report pp. 14–17: no critical June/early-July phase; July 24 surge; 74,341 hectares burned in Sicily in 2023",
+              "sicily-fire-emergency-2026": "Sicilian Civil Protection July 19–20, 2026 update lists active and controlled fires across Palermo, Agrigento, Siracusa, Enna, Ragusa, and Catania"
+            },
+            "claimType": "inference"
+          },
+          {
+            "id": "budget-band",
+            "category": "budget",
+            "value": {
+              "lowUsd": 14530,
+              "highUsd": 20580,
+              "targetUsd": 12000,
+              "preferredMaxUsd": 15000,
+              "distribution": "planning-band",
+              "paymentBasis": "cash",
+              "exactFamilyQuote": false,
+              "lineItems": [
+                {
+                  "label": "International open-jaw flights · PIT–VCE / CTA–PIT · unquoted allowance",
+                  "lowUsd": 6800,
+                  "highUsd": 9000
+                },
+                {
+                  "label": "Rome–Catania flight · four travelers, bags and seats allowance",
+                  "lowUsd": 450,
+                  "highUsd": 850
+                },
+                {
+                  "label": "Venice–Rome train · four seats allowance",
+                  "lowUsd": 180,
+                  "highUsd": 360
+                },
+                {
+                  "label": "12 hotel nights · four bases, tax/cleaning reserve",
+                  "lowUsd": 3100,
+                  "highUsd": 4420
+                },
+                {
+                  "label": "Sicily automatic rental, coverage, fuel and parking",
+                  "lowUsd": 750,
+                  "highUsd": 1100
+                },
+                {
+                  "label": "Food · family of four",
+                  "lowUsd": 1400,
+                  "highUsd": 1900
+                },
+                {
+                  "label": "Activities · Etna, Colosseum, boats and ruins",
+                  "lowUsd": 650,
+                  "highUsd": 1050
+                },
+                {
+                  "label": "City/airport transfers, vaporetto and urban transport",
+                  "lowUsd": 600,
+                  "highUsd": 900
+                },
+                {
+                  "label": "Contingency and Venice registration/fee reserve",
+                  "lowUsd": 600,
+                  "highUsd": 1000
+                }
+              ],
+              "arithmetic": "$14,530–$20,580 cash; nine line items in #totals"
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "vrs-italo",
+              "vrs-ryanair",
+              "vrs-actv"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "venice-rome-sicily/main.json #totals; nine auditable full-cash categories; international ticket and all four stays unquoted",
+              "vrs-italo": "Official Venice–Rome route page from €29.90, 3h34; not the Jun 13 four-person train",
+              "vrs-ryanair": "Official FCO–CTA June 2027 advertised monthly floor €32.99; selected Jun 15 flight not quoted",
+              "vrs-actv": "Official AVM standard tariff: 48h €35; airport bus separate €10 one way; youth offers not assumed"
+            },
+            "confidence": "low",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "trip-window",
+            "category": "dates",
+            "value": {
+              "depart": "2027-06-10",
+              "return": "2027-06-23",
+              "hotelNights": 12,
+              "ptoDays": 9,
+              "juneteenthObserved": "2027-06-18"
+            },
+            "sourceRefs": [
+              "decision-profile"
+            ],
+            "sourceLocators": {
+              "decision-profile": "venice-rome-sicily/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+            },
+            "confidence": "high",
+            "proxyStatus": "derived",
+            "claimType": "derived",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": null
+          },
+          {
+            "id": "itinerary-structure",
+            "category": "itinerary",
+            "value": {
+              "score": 5,
+              "hotelNights": 12,
+              "bases": [
+                "Venice 2",
+                "Rome 2",
+                "Ortigia 4",
+                "Giardini Naxos 4"
+              ]
+            },
+            "sourceRefs": [
+              "internal-itinerary"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "venice-rome-sicily/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+            },
+            "confidence": "high",
+            "proxyStatus": "derived",
+            "claimType": "derived",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": null
+          },
+          {
+            "id": "operational-load",
+            "category": "logistics",
+            "value": {
+              "easeScore": 2,
+              "maxConnections": 1,
+              "singleTicket": false,
+              "baseMoves": 3,
+              "domesticFlight": 1,
+              "railTransfer": 1
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "vrs-italo",
+              "vrs-ryanair"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "Four bases, three hotel moves; train Jun 13, domestic flight Jun 15, Sicily drive Jun 19; no one-night stops",
+              "vrs-italo": "Venice–Rome 3h34 current route proxy; selected-date family service remains unverified",
+              "vrs-ryanair": "Rome–Catania current 1h20 route proxy; selected-date family service remains unverified"
+            },
+            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "family-food-coverage",
+            "category": "food",
+            "value": {
+              "score": 5,
+              "plainFoodRequired": true,
+              "rome": [
+                "Dar Poeta margherita/fries",
+                "Tonnarello pasta/pizza"
+              ],
+              "sicily": "Existing short-sicily restaurant picks retained; menus need recheck",
+              "venice": [
+                "Farini pizza/bakery",
+                "Rossopomodoro classic pizza"
+              ]
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "sr-darpoeta",
+              "sr-tonnarello",
+              "vrs-farini",
+              "vrs-rossopomodoro"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices.",
+              "sr-darpoeta": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices.",
+              "sr-tonnarello": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices.",
+              "vrs-farini": "Official Venice menu and locations list bakery breakfasts and pizza slices; no future menu guarantee",
+              "vrs-rossopomodoro": "Official Venice menu PDF lists classic pizzas; use as a plain-food fallback, recheck current availability"
+            },
+            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "route-readiness",
+            "category": "route",
+            "value": {
+              "status": "current-proxy",
+              "singleTicket": false,
+              "maxConnections": 1,
+              "exact2027FlightsVerified": false,
+              "internationalQuote": "unknown",
+              "outbound": "PIT → VCE Jun 10",
+              "return": "CTA → PIT Jun 23",
+              "internal": "VCE city → Rome by rail Jun 13; FCO → CTA Jun 15"
+            },
+            "sourceRefs": [
+              "internal-itinerary",
+              "vrs-italo",
+              "vrs-ryanair"
+            ],
+            "sourceLocators": {
+              "internal-itinerary": "PIT → VCE Jun 10 / CTA → PIT Jun 23 open-jaw ticket and family occupancy unverified; target max one international connection",
+              "vrs-italo": "Venice–Rome official current route proxy; Jun 13 four-seat train unknown",
+              "vrs-ryanair": "FCO–CTA official current route proxy; Jun 15 four-seat flight unknown"
+            },
+            "confidence": "low",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "visited-overlap",
+            "category": "novelty",
+            "value": {
+              "score": 5,
+              "overlap": []
+            },
+            "sourceRefs": [
+              "scorecard-contract"
+            ],
+            "sourceLocators": {
+              "scorecard-contract": "venice-rome-sicily/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+            },
+            "confidence": "high",
+            "proxyStatus": "derived",
+            "claimType": "derived",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": null
+          },
+          {
+            "id": "rome-admission",
+            "category": "reservation",
+            "value": {
+              "colosseumAdultEur": 18,
+              "under18Free": true,
+              "treviInnerEur": 2
+            },
+            "sourceRefs": [
+              "sr-colosseum",
+              "sr-trevi"
+            ],
+            "sourceLocators": {
+              "sr-colosseum": "Colosseum official basic 24h ticket and under-18 policy; Tourism Roma February 2026 Trevi €2 inner-perimeter ticket. Recheck 2027 release and access rules.",
+              "sr-trevi": "Colosseum official basic 24h ticket and under-18 policy; Tourism Roma February 2026 Trevi €2 inner-perimeter ticket. Recheck 2027 release and access rules."
+            },
+            "confidence": "medium",
+            "proxyStatus": "current-proxy",
+            "claimType": "proxy",
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07"
+          },
+          {
+            "id": "venice-access",
+            "category": "regulation",
+            "proxyStatus": "current-proxy",
+            "confidence": "high",
+            "sourceRefs": [
+              "vrs-access"
+            ],
+            "sourceLocators": {
+              "vrs-access": "Municipality announcement Oct 15, 2026: Jun 11,12,13 included in 2027 calendar, 08:30–16:30; implementing acts on exemptions/payment still pending"
+            },
+            "value": {
+              "datesApplicable": [
+                "2027-06-11",
+                "2027-06-12",
+                "2027-06-13"
+              ],
+              "finalRulesVerified": false
+            },
+            "verifiedAt": "2026-11-07",
+            "expiresAt": "2026-12-07",
+            "claimType": "proxy"
+          }
+        ]
+      },
+      "metrics": {
+        "airHours": null,
+        "groundHours": 18,
+        "timeZones": 6,
+        "baseMoves": 3,
+        "longestTransferHours": 7,
+        "highOutputDayStreak": 2,
+        "fallbackDays": 3,
+        "childActivityFit": {
+          "age13": "fits",
+          "age8": "fits"
+        },
+        "lodgingComfort": {
+          "airConditioning": "required; unquoted",
+          "kitchen": "required in Ortigia and Rome; unquoted",
+          "laundry": "preferred; unquoted",
+          "realBeds": "four required; unquoted"
+        },
+        "waterSafety": "Pebble beaches need shoes and calm conditions; Naxos pool is the controlled fallback.",
+        "crowdingPressure": "Venice and Rome each have one full sightseeing day; early starts, short loops and AC rest. Venice Jun 11–13 falls inside the published 2027 access-fee calendar.",
+        "medicalAccess": "Urban bases; recheck current coverage and insurance.",
+        "childActivityNotes": {
+          "age13": "Public boats, Etna, sea-cave boats and a short Colosseum visit.",
+          "age8": "One main city sight per day, plain-food backups, then eight Sicily nights with pools and swims."
+        }
+      },
+      "variants": [
+        {
+          "id": "canonical",
+          "label": "Venice 2 + Rome 2 + Sicily 8 · Jun 10–23",
+          "canonical": true,
+          "status": "documented-needs-live-quotes",
+          "nights": 12,
+          "ptoDays": 9,
+          "budget": {
+            "lowUsd": 14530,
+            "highUsd": 20580,
+            "distribution": "planning-band"
+          },
+          "removedExperiences": [
+            "Vatican Museums and extended Rome sightseeing omitted in favor of Venice"
+          ],
+          "notes": "Two Venice nights, two Rome nights, four Ortigia nights, four Giardini Naxos nights. International VCE inbound / CTA outbound; one rail move, one domestic flight.",
+          "confidence": "low",
+          "claimType": "derived",
+          "sourceRefs": [
+            "internal-itinerary"
+          ],
+          "sourceLocators": {
+            "internal-itinerary": "venice-rome-sicily/main.json #stays, #calendar and #totals"
+          }
+        }
+      ],
+      "canonicalVariantId": "canonical",
+      "alternateStatus": "not-needed",
+      "completeness": {
+        "complete": 17,
+        "total": 17
+      },
+      "href": "locations/venice-rome-sicily/index.html",
+      "readiness": {
+        "id": "current-proxy",
+        "label": "Not ready to book",
+        "tone": "info",
         "bookable": false
       }
     }
