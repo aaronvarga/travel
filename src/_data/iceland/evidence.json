@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "iceland",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "Reprice family airfare to $3,600–4,200 including the observed Basic/Standard options, four checked bags and estimated seats; the former $2,600 floor excluded those costs. Gross $12,420–$15,320 less a single $2,000 fixed travel redemption yields $10,420–$13,320. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "score": 1,
+      "rationale": "Full cash planning band $12,420–$15,320, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10420,
+        "lowUsd": 12420,
         "expectedUsd": null,
-        "highUsd": 13320,
+        "highUsd": 15320,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "3600/4200 + 3200/3900 + 1570/1920 + 2300/2700 + 1250/1600 + 500/1000 = 12420/15320 gross; minus 2000/2000 = 10420/13320 net",
-        "grossLowUsd": 12420,
-        "grossHighUsd": 15320,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $12,420–$15,320; no miles credit. Itemized source: iceland/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "iceland/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–YUL–KEF / KEF–YUL–PIT: complete round-trip, family base $2619; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "PIT–KEF June 8–21, 2027: United via ORD $2,754 for the family; the Icelandair PIT–KEF nonstop is now sold for June 8 at $3,490 with a BWI return home 11:35 PM June 21. The $3,600–$4,200 protected airfare line still holds."
       },

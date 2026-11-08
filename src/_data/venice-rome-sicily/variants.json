@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "slug": "venice-rome-sicily",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Venice 2 + Rome 2 + Sicily 8 · Jun 10–23",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 12,
+      "ptoDays": 9,
+      "budget": {
+        "lowUsd": 14530,
+        "highUsd": 20580,
+        "distribution": "planning-band"
+      },
+      "removedExperiences": [
+        "Vatican Museums and extended Rome sightseeing omitted in favor of Venice"
+      ],
+      "notes": "Two Venice nights, two Rome nights, four Ortigia nights, four Giardini Naxos nights. International VCE inbound / CTA outbound; one rail move, one domestic flight.",
+      "confidence": "low",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "venice-rome-sicily/main.json #stays, #calendar and #totals"
+      }
+    }
+  ],
+  "alternateStatus": "not-needed",
+  "alternateNotes": "The separate Sicily + Rome itinerary remains the simpler three-base comparison; this canonical plan specifically limits Rome to two nights."
+}

@@ -88,7 +88,7 @@ for (const page of renderedPages) {
     if(pageTrip && !pageTrip.excluded){
       const rank=expectedSlugs.indexOf(pageSlug)+1;
       if(pageDocument('.tldr').length!==1||Number(pageDocument('.tldr').attr('data-audit-rank'))!==rank)bad.push(`${pageSlug}: TLDR rank/duplicate mismatch`);
-      if(pageDocument('#capital-one-points').length!==1)bad.push(`${pageSlug}: points section duplicate/missing`);
+      if(pageDocument('#capital-one-points').length)bad.push(`${pageSlug}: obsolete miles section`);
     }
     const expectedTravelFrame = formatCompactTravelWindow(pageTrip?.travelWindow);
     const travelFrames = pageDocument('[data-travel-frame]');

@@ -2372,5 +2372,103 @@
     "url": "https://www.google.com/travel/flights",
     "publisher": "Google Flights",
     "scope": "Exact June/July 2027 dates searched November 3, 2026 for three adult fares plus one child fare in economy, as displayed family totals including taxes but excluding optional checked bags and seats. Itinerary lines add $720 transatlantic (or $320 domestic) for bags, $160 per low-cost hop and a $200-$800 seat allowance, rounded up to $100; an end of an existing band moves only when the repriced value differs by more than $300. Results flagged by Google as separate tickets are not treated as protected."
+  },
+  "sr-rome-fare": {
+    "label": "PIT–Rome June fare proxy",
+    "tier": "secondary",
+    "publisher": "Axel",
+    "url": "https://helloaxel.com/en/flights/from-pittsburgh-italy-summer",
+    "scope": "One adult on different June 2027 dates; not the canonical open-jaw family quote."
+  },
+  "sr-ryanair": {
+    "label": "Catania–Rome monthly fares",
+    "tier": "operator",
+    "publisher": "Ryanair",
+    "url": "https://www.ryanair.com/ie/en/flights/flights-from-catania-to-rome",
+    "scope": "June 2027 monthly advertised floor and current route duration; not selected-date four-seat availability."
+  },
+  "sr-colosseum": {
+    "label": "Colosseum tickets",
+    "tier": "official",
+    "publisher": "Parco archeologico del Colosseo",
+    "url": "https://colosseo.it/en/opening-times-and-tickets/",
+    "scope": "Current tariffs and entry products; recheck 2027 release and child reservation process."
+  },
+  "sr-trevi": {
+    "label": "Trevi basin entry fee",
+    "tier": "official",
+    "publisher": "Tourism Roma",
+    "url": "https://www.turismoroma.it/en/node/168455",
+    "scope": "February 2026 inner-perimeter fee; recheck 2027 access hours and exemptions."
+  },
+  "sr-darpoeta": {
+    "label": "Dar Poeta current menu",
+    "tier": "operator",
+    "publisher": "Dar Poeta",
+    "url": "https://www.darpoeta.com/en/menu-2/",
+    "scope": "Current Margherita, marinara and fries; no guaranteed future menu or reservation."
+  },
+  "sr-tonnarello": {
+    "label": "Tonnarello menus",
+    "tier": "operator",
+    "publisher": "Tonnarello",
+    "url": "https://tonnarello.it/",
+    "scope": "Current linked menus; no 2027 pricing or queue guarantee."
+  },
+  "sr-italo": {
+    "label": "Rome–Venice train route",
+    "tier": "operator",
+    "publisher": "Italo",
+    "url": "https://www.italotreno.com/en/destinations-timetable/rome-venice-tickets",
+    "scope": "Advertised from fare and typical duration; not a June 21 timetable or four-seat quote."
+  },
+  "vrs-italo": {
+    "label": "Venice–Rome train proxy",
+    "tier": "operator",
+    "publisher": "Italo",
+    "url": "https://www.italotreno.com/en/destinations-timetable/venice-rome-tickets",
+    "scope": "Advertised from €29.90 and typical 3h34; not Jun 13 four-seat availability."
+  },
+  "vrs-ryanair": {
+    "label": "Rome–Catania flight proxy",
+    "tier": "operator",
+    "publisher": "Ryanair",
+    "url": "https://www.ryanair.com/ie/en/flights/flights-from-rome-to-catania",
+    "scope": "June 2027 monthly floor €32.99 and current route duration; not the selected Jun 15 family flight."
+  },
+  "vrs-actv": {
+    "label": "Venice transport tariffs",
+    "tier": "operator",
+    "publisher": "AVM/ACTV",
+    "url": "https://avm.avmspa.it/it/content/vaporetto",
+    "scope": "Current 48h €35 standard pass; airport bus €10 one way is separate. Recheck 2027 and youth offers."
+  },
+  "vrs-access": {
+    "label": "Venice published 2027 access calendar",
+    "tier": "official",
+    "publisher": "Comune di Venezia",
+    "url": "https://live.comune.venezia.it/it/2026/10/contributo-di-accesso-il-calendario-2027-0",
+    "scope": "Oct 15 announcement includes Jun 11–13 and 08:30–16:30. Implementing acts on exemptions/payment remain pending; do not assume old rules apply."
+  },
+  "vrs-farini": {
+    "label": "Farini Venice menu",
+    "tier": "operator",
+    "publisher": "Farini",
+    "url": "https://farini.com/en/menu/venice/",
+    "scope": "Current bakery and pizza menu; not guaranteed June 2027 availability or prices."
+  },
+  "vrs-rossopomodoro": {
+    "label": "Rossopomodoro Venice menu",
+    "tier": "operator",
+    "publisher": "Rossopomodoro",
+    "url": "https://web.rossopomodoro.it/userfiles/file/venmenu.pdf",
+    "scope": "Published Venice classic pizza menu; exact future menu and pricing require recheck."
+  },
+  "vrs-venice-climate": {
+    "label": "Venice June climatology",
+    "tier": "secondary",
+    "publisher": "Current Results",
+    "url": "https://www.currentresults.com/Weather/Italy/Places/venice-temperatures-by-month-average.php",
+    "scope": "Historical June average 61–77°F; not a 2027 forecast or heatwave limit."
   }
 }

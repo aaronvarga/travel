@@ -218,8 +218,8 @@
         15400
       ],
       "netCashRangeUsd": [
-        10200,
-        13400
+        12200,
+        15400
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -236,7 +236,7 @@
         "novelty": 5,
         "pto": 3
       },
-      "score": 44,
+      "score": 38,
       "axisChanges": [
         {
           "axis": "budget",
@@ -244,13 +244,13 @@
           "to": 4
         }
       ],
-      "newRank": 1,
+      "newRank": 3,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 4,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Raise airfare from $4,800–6,400 to $6,300–7,000: observed family base $5,342, four checked bags $720 and estimated paid seats $200–800. Round conservatively; do not assume free assigned seats. Gross $12,200–$15,400 less a single $2,000 fixed travel redemption yields $10,200–$13,400. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $12,200–$15,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -369,7 +369,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 1,
-      "rankIfOnlyOthersChanged": 6
+      "rankIfOnlyOthersChanged": 6,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "iceland-ischia-cilento",
@@ -551,8 +553,8 @@
         17600
       ],
       "netCashRangeUsd": [
-        11700,
-        15600
+        13700,
+        17600
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -582,13 +584,13 @@
           "to": 3
         }
       ],
-      "newRank": 7,
+      "newRank": 5,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $10,400–$14,900 less a single $2,000 fixed travel redemption yields $8,400–$12,900. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,700–$17,600, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band",
             "airfare-proxy"
@@ -708,7 +710,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 1,
-      "rankIfOnlyOthersChanged": 6
+      "rankIfOnlyOthersChanged": 6,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "iceland",
@@ -896,8 +900,8 @@
         15320
       ],
       "netCashRangeUsd": [
-        10420,
-        13320
+        12420,
+        15320
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -914,7 +918,7 @@
         "novelty": 5,
         "pto": 3
       },
-      "score": 42,
+      "score": 36,
       "axisChanges": [
         {
           "axis": "budget",
@@ -922,13 +926,13 @@
           "to": 4
         }
       ],
-      "newRank": 2,
+      "newRank": 12,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 4,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reprice family airfare to $3,600–4,200 including the observed Basic/Standard options, four checked bags and estimated seats; the former $2,600 floor excluded those costs. Gross $12,420–$15,320 less a single $2,000 fixed travel redemption yields $10,420–$13,320. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $12,420–$15,320, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -1047,7 +1051,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 1,
-      "rankIfOnlyOthersChanged": 6
+      "rankIfOnlyOthersChanged": 6,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "madeira-mallorca",
@@ -1274,8 +1280,8 @@
         15900
       ],
       "netCashRangeUsd": [
-        11100,
-        13900
+        13100,
+        15900
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -1292,7 +1298,7 @@
         "novelty": 5,
         "pto": 3
       },
-      "score": 41,
+      "score": 39,
       "axisChanges": [
         {
           "axis": "budget",
@@ -1300,13 +1306,13 @@
           "to": 2
         }
       ],
-      "newRank": 3,
+      "newRank": 1,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 2,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,100–$15,900 less a single $2,000 fixed travel redemption yields $11,100–$13,900. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,100–$15,900, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -1430,7 +1436,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 1,
-      "rankIfOnlyOthersChanged": 6
+      "rankIfOnlyOthersChanged": 6,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "greece-ionian",
@@ -1640,8 +1648,8 @@
         15000
       ],
       "netCashRangeUsd": [
-        9500,
-        13000
+        11500,
+        15000
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -1658,7 +1666,7 @@
         "novelty": 4,
         "pto": 2
       },
-      "score": 41,
+      "score": 37,
       "axisChanges": [
         {
           "axis": "budget",
@@ -1666,13 +1674,13 @@
           "to": 4
         }
       ],
-      "newRank": 4,
+      "newRank": 6,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 4,
+          "score": 2,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $10,800–$15,000 less a single $2,000 fixed travel redemption yields $8,800–$13,000. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $11,500–$15,000, with no miles redemption, scores 2/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -1791,7 +1799,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 1,
-      "rankIfOnlyOthersChanged": 9
+      "rankIfOnlyOthersChanged": 9,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "madeira-sicily",
@@ -1987,8 +1997,8 @@
         16850
       ],
       "netCashRangeUsd": [
-        11800,
-        14850
+        13800,
+        16850
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -2005,7 +2015,7 @@
         "novelty": 5,
         "pto": 3
       },
-      "score": 40,
+      "score": 38,
       "axisChanges": [
         {
           "axis": "budget",
@@ -2013,13 +2023,13 @@
           "to": 2
         }
       ],
-      "newRank": 5,
+      "newRank": 4,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 2,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $12,600–$15,950 less a single $2,000 fixed travel redemption yields $10,600–$13,950. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,800–$16,850, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -2143,7 +2153,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 1,
-      "rankIfOnlyOthersChanged": 7
+      "rankIfOnlyOthersChanged": 7,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "greece-cyclades",
@@ -2368,8 +2380,8 @@
         16970
       ],
       "netCashRangeUsd": [
-        10800,
-        14970
+        12800,
+        16970
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -2386,7 +2398,7 @@
         "novelty": 4,
         "pto": 3
       },
-      "score": 38,
+      "score": 36,
       "axisChanges": [
         {
           "axis": "budget",
@@ -2394,13 +2406,13 @@
           "to": 2
         }
       ],
-      "newRank": 6,
+      "newRank": 13,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 2,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Increase Athens airfare to $5,800–7,200 for bags/seats above the four-person fare snapshot. Increase Milos–Athens to $650–850: the stored $154/person September 10 snapshot already exceeds the old $300–480 family allowance before bags. Gross $12,800–$16,970 less a single $2,000 fixed travel redemption yields $10,800–$14,970. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $12,800–$16,970, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -2524,7 +2536,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 6,
-      "rankIfOnlyOthersChanged": 14
+      "rankIfOnlyOthersChanged": 14,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "hawaii",
@@ -2788,8 +2802,8 @@
         15800
       ],
       "netCashRangeUsd": [
-        9000,
-        13800
+        11000,
+        15800
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -2806,7 +2820,7 @@
         "novelty": 3,
         "pto": 4
       },
-      "score": 37,
+      "score": 35,
       "axisChanges": [
         {
           "axis": "budget",
@@ -2814,13 +2828,13 @@
           "to": 2
         }
       ],
-      "newRank": 8,
+      "newRank": 19,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
-          "score": 2,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $11,000–$15,800 less a single $2,000 fixed travel redemption yields $9,000–$13,800. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $11,000–$15,800, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -2944,7 +2958,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 7,
-      "rankIfOnlyOthersChanged": 19
+      "rankIfOnlyOthersChanged": 19,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "portugal",
@@ -3178,8 +3194,8 @@
         15900
       ],
       "netCashRangeUsd": [
-        9975,
-        13900
+        11975,
+        15900
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -3196,15 +3212,15 @@
         "novelty": 5,
         "pto": 3
       },
-      "score": 37,
+      "score": 35,
       "axisChanges": [],
-      "newRank": 9,
+      "newRank": 20,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
-          "score": 2,
+          "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Use $6,000–7,400 outer airfare, encompassing the observed $5,457 base and variable bags/seats; Faro–Madeira $750–1,000 is a conservative estimate from the stored $169/person component plus bags. Add an explicit $400–700 insurance/contingency allowance. Lodging remains unquoted. Gross $11,975–$16,500 less a single $2,000 fixed travel redemption yields $9,975–$14,500. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $11,975–$15,900, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -3328,7 +3344,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 7,
-      "rankIfOnlyOthersChanged": 9
+      "rankIfOnlyOthersChanged": 9,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "portugal-sicily",
@@ -3524,8 +3542,8 @@
         17150
       ],
       "netCashRangeUsd": [
-        12150,
-        15150
+        14150,
+        17150
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -3550,13 +3568,13 @@
           "to": 1
         }
       ],
-      "newRank": 10,
+      "newRank": 7,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Replace the unsupported $5,800 all-flight hard gate with $6,900–8,300: $4,798 Lisbon gateway return plus $1,160 stored Monday Palermo connection, $720 bag proxy, $200–800 seats and up to $800 open-jaw uncertainty. These are rounded allowances, not a Catania-return quote. Gross $14,150–$17,150 less a single $2,000 fixed travel redemption yields $12,150–$15,150. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $14,150–$17,150, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -3675,7 +3693,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 8,
-      "rankIfOnlyOthersChanged": 7
+      "rankIfOnlyOthersChanged": 7,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "portugal-crete",
@@ -3901,8 +3921,8 @@
         17165
       ],
       "netCashRangeUsd": [
-        11430,
-        15165
+        13430,
+        17165
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -3921,13 +3941,13 @@
       },
       "score": 37,
       "axisChanges": [],
-      "newRank": 11,
+      "newRank": 8,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "The old $4,800–5,900 all-flight gate is not a current complete quote. Use a $6,600–8,000 planning proxy: $4,798 family Lisbon gateway return plus $880 stored Crete connection, $720 checked-bag proxy, $200–800 seats and up to $800 open-jaw uncertainty. Exact Crete exit can still exceed this estimate. Gross $12,530–$17,165 less a single $2,000 fixed travel redemption yields $10,530–$15,165. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,430–$17,165, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -4046,7 +4066,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 9,
-      "rankIfOnlyOthersChanged": 11
+      "rankIfOnlyOthersChanged": 11,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "sicily-malta",
@@ -4270,8 +4292,8 @@
         18700
       ],
       "netCashRangeUsd": [
-        11400,
-        16700
+        13400,
+        18700
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -4290,13 +4312,13 @@
       },
       "score": 37,
       "axisChanges": [],
-      "newRank": 12,
+      "newRank": 9,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Use $6,200–7,400 outer airfare as a conservative open-jaw planning proxy above the $5,667 Palermo round-trip result, not an observed Malta-return fare. Retain internal hop and local-cost estimates; add $400–700 insurance/contingency. Gross $13,000–$18,700 less a single $2,000 fixed travel redemption yields $11,000–$16,700. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,400–$18,700, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -4415,7 +4437,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 10,
-      "rankIfOnlyOthersChanged": 12
+      "rankIfOnlyOthersChanged": 12,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "crete",
@@ -4589,8 +4613,8 @@
         17500
       ],
       "netCashRangeUsd": [
-        11400,
-        15500
+        13400,
+        17500
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -4609,13 +4633,13 @@
       },
       "score": 37,
       "axisChanges": [],
-      "newRank": 13,
+      "newRank": 10,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Replace the two one-way sum with the $6,733 complete family option; allow $720 bags and $200–800 seats, rounded up to $7,700–8,300. Add a previously missing $500–900 insurance/contingency allowance (estimate). Gross $14,200–$18,300 less a single $2,000 fixed travel redemption yields $12,200–$16,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,400–$17,500, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -4734,7 +4758,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 11,
-      "rankIfOnlyOthersChanged": 14
+      "rankIfOnlyOthersChanged": 14,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "dolomites-sardinia",
@@ -4997,8 +5023,8 @@
         18890
       ],
       "netCashRangeUsd": [
-        12000,
-        16890
+        14000,
+        18890
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -5017,13 +5043,13 @@
       },
       "score": 37,
       "axisChanges": [],
-      "newRank": 14,
+      "newRank": 11,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,200–$18,890 less a single $2,000 fixed travel redemption yields $11,200–$16,890. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $14,000–$18,890, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -5142,7 +5168,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 11,
-      "rankIfOnlyOthersChanged": 14
+      "rankIfOnlyOthersChanged": 14,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "switzerland-sicily",
@@ -5360,8 +5388,8 @@
         17850
       ],
       "netCashRangeUsd": [
-        12500,
-        15850
+        14500,
+        17850
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -5380,13 +5408,13 @@
       },
       "score": 36,
       "axisChanges": [],
-      "newRank": 15,
+      "newRank": 14,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $14,000–$19,350 less a single $2,000 fixed travel redemption yields $12,000–$17,350. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $14,500–$17,850, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -5514,7 +5542,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 14,
-      "rankIfOnlyOthersChanged": 17
+      "rankIfOnlyOthersChanged": 17,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "portugal-algarve-sicily",
@@ -5710,8 +5740,8 @@
         19400
       ],
       "netCashRangeUsd": [
-        13300,
-        17400
+        15300,
+        19400
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -5730,13 +5760,13 @@
       },
       "score": 36,
       "axisChanges": [],
-      "newRank": 17,
+      "newRank": 18,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Increase outer airfare allowance to $6,600–7,600 above the $6,260 Faro gateway proxy including bags/seats; this is not a Catania-return quote. Increase the former $150–250 insurance/misc line to an explicit $500–900 planning reserve. Gross $15,300–$19,400 less a single $2,000 fixed travel redemption yields $13,300–$17,400. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $15,300–$19,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -5855,7 +5885,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 14,
-      "rankIfOnlyOthersChanged": 16
+      "rankIfOnlyOthersChanged": 16,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "switzerland-crete",
@@ -6074,8 +6106,8 @@
         17940
       ],
       "netCashRangeUsd": [
-        12520,
-        15940
+        14520,
+        17940
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -6100,13 +6132,13 @@
           "to": 3
         }
       ],
-      "newRank": 16,
+      "newRank": 15,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $14,120–$19,440 less a single $2,000 fixed travel redemption yields $12,120–$17,440. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $14,520–$17,940, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -6234,7 +6266,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 15,
-      "rankIfOnlyOthersChanged": 21
+      "rankIfOnlyOthersChanged": 21,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "madeira-kefalonia",
@@ -6431,8 +6465,8 @@
         17300
       ],
       "netCashRangeUsd": [
-        11700,
-        15300
+        13700,
+        17300
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -6451,13 +6485,13 @@
       },
       "score": 36,
       "axisChanges": [],
-      "newRank": 18,
+      "newRank": 16,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,700–$17,300 less a single $2,000 fixed travel redemption yields $11,700–$15,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,700–$17,300, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -6581,7 +6615,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 16,
-      "rankIfOnlyOthersChanged": 19
+      "rankIfOnlyOthersChanged": 19,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "madeira-crete",
@@ -6837,8 +6873,8 @@
         18250
       ],
       "netCashRangeUsd": [
-        12410,
-        16250
+        14410,
+        18250
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -6857,13 +6893,13 @@
       },
       "score": 36,
       "axisChanges": [],
-      "newRank": 19,
+      "newRank": 17,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,710–$18,250 less a single $2,000 fixed travel redemption yields $11,710–$16,250. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $14,410–$18,250, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -6987,7 +7023,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 16,
-      "rankIfOnlyOthersChanged": 19
+      "rankIfOnlyOthersChanged": 19,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "greece-via-lisbon",
@@ -7198,8 +7236,8 @@
         17600
       ],
       "netCashRangeUsd": [
-        11650,
-        15600
+        13650,
+        17600
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -7218,13 +7256,13 @@
       },
       "score": 35,
       "axisChanges": [],
-      "newRank": 20,
+      "newRank": 21,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Keep the outer/Lisbon–Athens airfare allowance separate from Athens–Chania, and add a previously missing $400–700 insurance/contingency line. This remains an unquoted planning allocation, not a protected all-family through-fare. Gross $11,150–$17,600 less a single $2,000 fixed travel redemption yields $9,150–$15,600. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $13,650–$17,600, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -7343,7 +7381,9 @@
       },
       "operatorChecks": [],
       "rankIfOnlyThisTripChanged": 19,
-      "rankIfOnlyOthersChanged": 20
+      "rankIfOnlyOthersChanged": 20,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "sardinia-corsica",
@@ -7555,8 +7595,8 @@
         20200
       ],
       "netCashRangeUsd": [
-        12180,
-        18200
+        14180,
+        20200
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -7575,13 +7615,13 @@
       },
       "score": 35,
       "axisChanges": [],
-      "newRank": 21,
+      "newRank": 22,
       "movedOnlyBecauseOthersChanged": true,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $12,880–$19,300 less a single $2,000 fixed travel redemption yields $10,880–$17,300. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $14,180–$20,200, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -7705,7 +7745,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 20,
-      "rankIfOnlyOthersChanged": 21
+      "rankIfOnlyOthersChanged": 21,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     },
     {
       "slug": "maui-kauai",
@@ -7931,8 +7973,8 @@
         21300
       ],
       "netCashRangeUsd": [
-        12900,
-        19300
+        14900,
+        21300
       ],
       "savingsUsd": 2000,
       "redemptionConfidence": "high for fixed-value eligibility; unverified for awards",
@@ -7951,13 +7993,13 @@
       },
       "score": 35,
       "axisChanges": [],
-      "newRank": 22,
+      "newRank": 23,
       "movedOnlyBecauseOthersChanged": false,
       "axisReview": {
         "budget": {
           "score": 1,
           "rubric": "Use the reconciled all-in family planning band and evidence confidence. 5 = entire band at or below the $12k target; 4 = entire band at or below $13.5k; 3 = low case at/below $12k and high case at/below the $15k strongly preferred maximum with a reconciled, high-confidence estimate; 2 = within the preferred maximum but above target, or within $500 of it with a material unitemized or low-confidence contingency; 1 = credible high case above the preferred maximum. A low score is a strong warning, never an exclusion rule.",
-          "rationale": "Use $4,200–5,200 outer airfare as a practical connection/bag/seat planning allowance above the $3,904 Maui round-trip proxy. Lihue June 22 return remains unquoted. Gross $15,600–$22,400 less a single $2,000 fixed travel redemption yields $13,600–$20,400. Budget 1/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+          "rationale": "Full cash planning band $14,900–$21,300, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
           "evidenceIds": [
             "budget-band"
           ],
@@ -8082,7 +8124,9 @@
         }
       ],
       "rankIfOnlyThisTripChanged": 22,
-      "rankIfOnlyOthersChanged": 22
+      "rankIfOnlyOthersChanged": 22,
+      "fixedCreditUsd": 0,
+      "paymentBasis": "cash"
     }
   ],
   "sources": {

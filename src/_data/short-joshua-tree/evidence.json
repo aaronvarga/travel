@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-joshua-tree",
-  "reviewedAt": "2026-10-08",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "Reconciled $5,972.52–$6,872.52 band remains below target; Airbnb is quoted but not booked.",
+      "rationale": "Full cash planning band $5,972.52–$6,872.52, with no miles redemption, scores 5/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -107,7 +107,8 @@
         "highUsd": 6872.52,
         "targetUsd": 12000,
         "lineItemCount": 9,
-        "arithmetic": "1744.88 + 273.22 + 557.34 + 1597.08 + 150–250 + 800–1100 + 650–770 + 0–180 + 200–400 = 5972.52–6872.52"
+        "arithmetic": "Full cash total $5,972.52–$6,872.52; no miles credit. Itemized source: short-joshua-tree/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-10-08",
       "expiresAt": "2027-02-11",

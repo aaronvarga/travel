@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "turkish-riviera",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,800–$18,400. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $11,800–$18,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -112,7 +112,8 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "7000–8000 + 1100–2000 + 1650–3400 + 1350–2250 + 700–2000 + 350–700 = 12150–18350; displayed 12200–18400 | 2026-11-03: flight lines repriced, band $12,200–$18,400 -> $11,800–$18,400"
+        "arithmetic": "Full cash total $11,800–$18,400; no miles credit. Itemized source: turkish-riviera/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",

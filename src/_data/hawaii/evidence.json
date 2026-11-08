@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "hawaii",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $11,000–$15,800 less a single $2,000 fixed travel redemption yields $9,000–$13,800. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "score": 1,
+      "rationale": "Full cash planning band $11,000–$15,800, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9000,
+        "lowUsd": 11000,
         "expectedUsd": null,
-        "highUsd": 13800,
+        "highUsd": 15800,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 12,
-        "arithmetic": "3600/4400 + 300/600 + 1100/1400 + 1400/2300 + 900/1500 + 600/1000 + 1600/2200 + 180/280 + 180/260 + 420/650 + 320/510 + 400/700 = 11000/15800 gross; minus 2000/2000 = 9000/13800 net",
-        "grossLowUsd": 11000,
-        "grossHighUsd": 15800,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $11,000–$15,800; no miles credit. Itemized source: hawaii/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "hawaii/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–SEA–HNL, June 5–15: gateway round-trip proxy for open-jaw, family base $3488; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "PIT–HNL June 5 / KOA–PIT June 14, 2027 open-jaw: $3,188 for the family on United via ORD/DEN (Alaska via SEA $3,416); the Kona red-eye reaches Pittsburgh at 4:44 PM June 15. HNL–KOA is about $300. The $3,600–$4,400 flight line still holds."
       },

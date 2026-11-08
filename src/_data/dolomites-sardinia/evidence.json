@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "dolomites-sardinia",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,000–$16,890 net ($14,000–$18,890 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $14,000–$18,890, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 12000,
+        "lowUsd": 14000,
         "expectedUsd": null,
-        "highUsd": 16890,
+        "highUsd": 18890,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 11,
-        "arithmetic": "5400/7000 + 450/780 + 500/760 + 900/1400 + 750/1200 + 600/900 + 1200/1850 + 450/650 + 500/750 + 2000/2900 + 450/700 = 13200/18890 gross; minus 2000/2000 = 11200/16890 net | 2026-11-03: flight lines repriced, band $11,200–$16,890 -> $12,000–$16,890",
-        "grossLowUsd": 14000,
-        "grossHighUsd": 18890,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $14,000–$18,890; no miles credit. Itemized source: dolomites-sardinia/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "dolomites-sardinia/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–LHR–VCE, June 27–July 11: gateway round-trip proxy for open-jaw, family base $5183; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "PIT–VCE June 27 / OLB–PIT July 11, 2027 is sold on one ticket for $5,188, home 11:22 PM July 11. Volotea VCE–OLB is $148 for the family before bags."
       },

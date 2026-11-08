@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "slug": "sicily-rome",
+  "canonicalId": "canonical",
+  "variants": [
+    {
+      "id": "canonical",
+      "label": "Sicily 8 nights + Rome 4 · Jun 10–23",
+      "canonical": true,
+      "status": "documented-needs-live-quotes",
+      "nights": 12,
+      "ptoDays": 9,
+      "budget": {
+        "lowUsd": 14000,
+        "highUsd": 19400,
+        "distribution": "planning-band"
+      },
+      "removedExperiences": [],
+      "notes": "4 Ortigia + 4 Naxos + 4 Rome. Venice is an explicitly unpriced same-length substitution described in #venice-option.",
+      "confidence": "low",
+      "claimType": "derived",
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "sicily-rome/main.json #stays, #calendar, #totals and #venice-option"
+      }
+    }
+  ],
+  "alternateStatus": "not-yet-evidence-backed",
+  "alternateNotes": "Venice route and train proxy researched; exact VCE return, accommodation difference and total not established. Do not create a priced alternative until those gaps close."
+}

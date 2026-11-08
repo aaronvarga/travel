@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-sicily",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 2,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,900–$14,000. Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $10,900–$14,000, with no miles redemption, scores 2/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -113,9 +113,9 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "7600–8400 + 600–1050 + 1150–2150 + 900–1300 + 650–1050 + 500–750 = 11400–14700 | 2026-11-03: flight lines repriced, band $11,400–$14,700 -> $10,900–$14,000",
+        "arithmetic": "Full cash total $10,900–$14,000; no miles credit. Itemized source: short-sicily/main.json #totals.",
         "currentSupplierQuote": false,
-        "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",

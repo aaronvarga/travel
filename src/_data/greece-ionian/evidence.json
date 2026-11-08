@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "greece-ionian",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $9,500–$13,000 net ($11,500–$15,000 gross). Budget 4/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "score": 2,
+      "rationale": "Full cash planning band $11,500–$15,000, with no miles redemption, scores 2/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 9500,
+        "lowUsd": 11500,
         "expectedUsd": null,
-        "highUsd": 13000,
+        "highUsd": 15000,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "5600/6700 + 1700/2800 + 800/1300 + 150/300 + 1560/2200 + 520/850 + 470/850 = 10800/15000 gross; minus 2000/2000 = 8800/13000 net | 2026-11-03: flight lines repriced, band $8,800–$13,000 -> $9,500–$13,000",
-        "grossLowUsd": 11500,
-        "grossHighUsd": 15000,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $11,500–$15,000; no miles credit. Itemized source: greece-ionian/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "greece-ionian/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–JFK–ATH–EFL, June 9–22: gateway round-trip proxy for open-jaw, family base $5529; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "PIT–EFL June 9 / ATH–PIT June 22, 2027 is sold on one ticket for $5,345 (home 9:25 PM via JFK in 1h30) or $5,673 via ORD in 1h55. A Preveza exit prices at $11,543 with three stops, so the Athens exit and buffer night stay."
       },

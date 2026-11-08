@@ -5,6 +5,8 @@
  * evidence, and readiness already have dedicated UI elsewhere on each card.
  */
 module.exports = {
+  'venice-rome-sicily': 'Samples Venice and Rome with two nights in each, then keeps eight nights in Sicily for Ortigia, Taormina, Mount Etna and repeated Ionian swims.',
+  'sicily-rome': 'Pairs eight nights of Ionian swimming, Ortigia and Mount Etna with four nights in Rome, keeping Venice as an optional swap that needs a separate price check.',
   albania: 'Combines five nights in the Accursed Mountains with historic towns and a long Ksamil finish for clear, warm Ionian swimming.',
   balkans: 'Road-trips from Mostar and the Bay of Kotor to Albania and Corfu, balancing dramatic old towns, mountain scenery, and Adriatic swims.',
   'california-pacific-coast': 'Links San Diego, Santa Barbara, Monterey, and San Francisco with beaches, wildlife, coastal hikes, and the classic Big Sur drive.',

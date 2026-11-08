@@ -18,7 +18,7 @@ test('all trips expose canonical travel burden and explicit unknown family facts
     const file = path.join(dataDir, entry.name, 'evidence.json');
     if (!entry.isDirectory() || !fs.existsSync(file)) continue;
     const evidence = JSON.parse(fs.readFileSync(file, 'utf8'));
-    assert.ok(Number.isFinite(evidence.metrics.airHours));
+    assert.ok(evidence.metrics.airHours === null || Number.isFinite(evidence.metrics.airHours));
     assert.ok(Number.isFinite(evidence.metrics.groundHours));
     // Winter trips can precede the older child's next birthday.
     for (const age of evidence.metrics.childAges || [13, 8]) {

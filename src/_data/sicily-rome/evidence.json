@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "slug": "sicily-rome",
+  "reviewedAt": "2026-11-07",
+  "facts": [
+    {
+      "id": "climate-proxy",
+      "category": "climate",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "weather-atlas-sicily-june"
+      ],
+      "value": {
+        "score": 4,
+        "normalPeriod": "recent climatology",
+        "juneMeanDailyLowHighF": {
+          "Siracusa": [
+            64,
+            83
+          ],
+          "Taormina": [
+            61,
+            77
+          ]
+        },
+        "rainDaysJune": 3,
+        "etnaSummitNote": "Summit stages run 20–30°F colder than the coast with strong UV; a packing consideration, not a weather-score penalty",
+        "forecast": false,
+        "romeNote": "Rome heat requires midday breaks; roughly 61–83°F is a secondary climatology proxy, not a forecast."
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-04-01",
+      "sourceLocators": {
+        "weather-atlas-sicily-june": "June pages for Syracuse (high 28.2°C / low 17.8°C) and Taormina (high ~25°C / low ~16°C), about 3 rain days and ~10 sunshine hours"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "swim-conditions",
+      "category": "swim",
+      "proxyStatus": "current-proxy",
+      "confidence": "high",
+      "sourceRefs": [
+        "seatemperature-sicily-june",
+        "visit-sicily-sea"
+      ],
+      "value": {
+        "score": 4,
+        "temperatureF": [
+          72,
+          74
+        ],
+        "temperatureC": [
+          22,
+          23.5
+        ],
+        "hasSwim": true,
+        "scheduledSwimDays": 5,
+        "beachTypes": "Ortigia sea decks and rocky coves; Fontane Bianche sand; Isola Bella and Mazzarò pebbles (water shoes)",
+        "warmWaterFallback": "Giardini Naxos lodging pool for the Taormina half; heating not confirmed until property selection"
+      },
+      "verifiedAt": "2026-07-16",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "seatemperature-sicily-june": "June averages: Siracusa about 22.8°C (~73°F), Taormina about 21.7–23.1°C (72–74°F)",
+        "visit-sicily-sea": "Official beach-character guidance for the Taormina and Giardini Naxos coast; not a live temperature report"
+      },
+      "claimType": "proxy"
+    },
+    {
+      "id": "wildfire-exposure",
+      "category": "wildfire",
+      "proxyStatus": "current-proxy",
+      "confidence": "medium",
+      "sourceRefs": [
+        "sicily-fire-history-2023",
+        "sicily-fire-emergency-2026"
+      ],
+      "value": {
+        "score": 3,
+        "level": "Moderate",
+        "chanceBand": "5–10%",
+        "outcome": "A wildfire, smoke episode, evacuation, road closure, park closure, or flight disruption that materially changes the checked-in itinerary during its exact travel window.",
+        "estimateType": "A conservative planning band inferred from recent official evidence, historical fire records, seasonality, route exposure, and itinerary flexibility. It is not an actuarial forecast.",
+        "routeProfiles": [
+          {
+            "id": "sicily-june",
+            "name": "Sicily in June",
+            "score": 3,
+            "level": "Moderate",
+            "chanceBand": "5–10%",
+            "rationale": "Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk."
+          }
+        ],
+        "routeNames": [
+          "Sicily in June"
+        ],
+        "aggregation": "The trip inherits the lowest safety score among its route profiles so one exposed base cannot be hidden by a low-risk base.",
+        "monitoring": "Recheck official daily fire-danger maps and active incidents 14 days, 72 hours, and each morning before a rural drive or hike. A live red/extreme warning overrides this climatology."
+      },
+      "verifiedAt": "2026-07-22",
+      "expiresAt": "2027-05-15",
+      "sourceLocators": {
+        "sicily-fire-history-2023": "Regional report pp. 14–17: no critical June/early-July phase; July 24 surge; 74,341 hectares burned in Sicily in 2023",
+        "sicily-fire-emergency-2026": "Sicilian Civil Protection July 19–20, 2026 update lists active and controlled fires across Palermo, Agrigento, Siracusa, Enna, Ragusa, and Catania"
+      },
+      "claimType": "inference"
+    },
+    {
+      "id": "budget-band",
+      "category": "budget",
+      "value": {
+        "lowUsd": 14000,
+        "highUsd": 19400,
+        "distribution": "planning-band",
+        "lineItems": [
+          {
+            "label": "International open-jaw flights · allowance, exact family quote unknown",
+            "lowUsd": 6800,
+            "highUsd": 8800
+          },
+          {
+            "label": "Catania–Rome · bags + seats allowance",
+            "lowUsd": 450,
+            "highUsd": 850
+          },
+          {
+            "label": "12 nights lodging · taxes and cleaning allowance",
+            "lowUsd": 3000,
+            "highUsd": 4200
+          },
+          {
+            "label": "Sicily automatic car · insurance, fuel, parking",
+            "lowUsd": 750,
+            "highUsd": 1100
+          },
+          {
+            "label": "Food · family of four",
+            "lowUsd": 1400,
+            "highUsd": 1900
+          },
+          {
+            "label": "Activities · Etna, ruins, boats and Rome",
+            "lowUsd": 600,
+            "highUsd": 1000
+          },
+          {
+            "label": "Rome transfers, local transport and taxis",
+            "lowUsd": 400,
+            "highUsd": 650
+          },
+          {
+            "label": "Contingency",
+            "lowUsd": 600,
+            "highUsd": 900
+          }
+        ],
+        "exactFamilyQuote": false,
+        "paymentBasis": "cash",
+        "arithmetic": "Full cash total $14,000–$19,400; no miles credit. Itemized source: sicily-rome/main.json #totals."
+      },
+      "sourceRefs": [
+        "internal-itinerary",
+        "sr-rome-fare",
+        "sr-ryanair"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "main.json #totals: $14,000–$19,400 gross; $2,000 fixed-value credit; Axel Jun 12–19 PIT–FCO $1,240 per adult only; Ryanair June monthly floor €36.29; neither quotes the canonical route",
+        "sr-rome-fare": "main.json #totals: $14,000–$19,400 gross; $2,000 fixed-value credit; Axel Jun 12–19 PIT–FCO $1,240 per adult only; Ryanair June monthly floor €36.29; neither quotes the canonical route",
+        "sr-ryanair": "main.json #totals: $14,000–$19,400 gross; $2,000 fixed-value credit; Axel Jun 12–19 PIT–FCO $1,240 per adult only; Ryanair June monthly floor €36.29; neither quotes the canonical route"
+      },
+      "confidence": "low",
+      "proxyStatus": "current-proxy",
+      "claimType": "proxy",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": "2026-12-07"
+    },
+    {
+      "id": "trip-window",
+      "category": "dates",
+      "value": {
+        "depart": "2027-06-10",
+        "return": "2027-06-23",
+        "hotelNights": 12,
+        "ptoDays": 9,
+        "juneteenthObserved": "2027-06-18"
+      },
+      "sourceRefs": [
+        "decision-profile"
+      ],
+      "sourceLocators": {
+        "decision-profile": "sicily-rome/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+      },
+      "confidence": "high",
+      "proxyStatus": "derived",
+      "claimType": "derived",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": null
+    },
+    {
+      "id": "itinerary-structure",
+      "category": "itinerary",
+      "value": {
+        "score": 5,
+        "bases": [
+          "Ortigia 4",
+          "Giardini Naxos 4",
+          "Rome 4"
+        ],
+        "hotelNights": 12
+      },
+      "sourceRefs": [
+        "internal-itinerary"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "sicily-rome/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+      },
+      "confidence": "high",
+      "proxyStatus": "derived",
+      "claimType": "derived",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": null
+    },
+    {
+      "id": "operational-load",
+      "category": "logistics",
+      "value": {
+        "easeScore": 3,
+        "maxConnections": 1,
+        "singleTicket": false,
+        "baseMoves": 2,
+        "domesticFlight": 1
+      },
+      "sourceRefs": [
+        "internal-itinerary",
+        "sr-ryanair"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Canonical 3-base plan; CTA–FCO separately ticketed on Jun 19 with four Rome nights before international return. Ryanair current route page shows about 1h25 flying time.",
+        "sr-ryanair": "Canonical 3-base plan; CTA–FCO separately ticketed on Jun 19 with four Rome nights before international return. Ryanair current route page shows about 1h25 flying time."
+      },
+      "confidence": "medium",
+      "proxyStatus": "current-proxy",
+      "claimType": "proxy",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": "2026-12-07"
+    },
+    {
+      "id": "family-food-coverage",
+      "category": "food",
+      "value": {
+        "score": 5,
+        "plainFoodRequired": true,
+        "rome": [
+          "Dar Poeta margherita/fries",
+          "Tonnarello pasta/pizza"
+        ],
+        "sicily": "Existing short-sicily restaurant picks retained; menus need recheck"
+      },
+      "sourceRefs": [
+        "internal-itinerary",
+        "sr-darpoeta",
+        "sr-tonnarello"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices.",
+        "sr-darpoeta": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices.",
+        "sr-tonnarello": "Dar Poeta official English menu lists Margherita, marinara and fries; Tonnarello current official menu links; Sicily stop cards retain named pizza, sandwich and pasta choices."
+      },
+      "confidence": "medium",
+      "proxyStatus": "current-proxy",
+      "claimType": "proxy",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": "2026-12-07"
+    },
+    {
+      "id": "route-readiness",
+      "category": "route",
+      "value": {
+        "status": "current-proxy",
+        "singleTicket": false,
+        "maxConnections": 1,
+        "exact2027FlightsVerified": false,
+        "internationalQuote": "unknown",
+        "outbound": "PIT → CTA Jun 10",
+        "return": "FCO → PIT Jun 23",
+        "internal": "CTA → FCO Jun 19"
+      },
+      "sourceRefs": [
+        "internal-itinerary",
+        "sr-ryanair"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "Canonical international open-jaw and exact Jun 19 family flight have not been verified; Ryanair page advertises June 2027 monthly fares from €36.29, not the four-seat selected departure.",
+        "sr-ryanair": "Canonical international open-jaw and exact Jun 19 family flight have not been verified; Ryanair page advertises June 2027 monthly fares from €36.29, not the four-seat selected departure."
+      },
+      "confidence": "low",
+      "proxyStatus": "current-proxy",
+      "claimType": "proxy",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": "2026-12-07"
+    },
+    {
+      "id": "visited-overlap",
+      "category": "novelty",
+      "value": {
+        "score": 5,
+        "overlap": []
+      },
+      "sourceRefs": [
+        "scorecard-contract"
+      ],
+      "sourceLocators": {
+        "scorecard-contract": "sicily-rome/main.json canonical itinerary, cost tables and explicitly unquoted allowances"
+      },
+      "confidence": "high",
+      "proxyStatus": "derived",
+      "claimType": "derived",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": null
+    },
+    {
+      "id": "rome-admission",
+      "category": "reservation",
+      "value": {
+        "colosseumAdultEur": 18,
+        "under18Free": true,
+        "treviInnerEur": 2
+      },
+      "sourceRefs": [
+        "sr-colosseum",
+        "sr-trevi"
+      ],
+      "sourceLocators": {
+        "sr-colosseum": "Colosseum official basic 24h ticket and under-18 policy; Tourism Roma February 2026 Trevi €2 inner-perimeter ticket. Recheck 2027 release and access rules.",
+        "sr-trevi": "Colosseum official basic 24h ticket and under-18 policy; Tourism Roma February 2026 Trevi €2 inner-perimeter ticket. Recheck 2027 release and access rules."
+      },
+      "confidence": "medium",
+      "proxyStatus": "current-proxy",
+      "claimType": "proxy",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": "2026-12-07"
+    },
+    {
+      "id": "venice-tradeoff",
+      "category": "logistics",
+      "value": {
+        "nights": 12,
+        "bases": 4,
+        "split": [
+          6,
+          4,
+          2
+        ],
+        "trainMinutesProxy": 214,
+        "advertisedTrainFloorEur": 29.9,
+        "exactFamilyQuote": false,
+        "totalBudget": "unknown",
+        "lost": "Two island swim/flex days"
+      },
+      "sourceRefs": [
+        "internal-itinerary",
+        "sr-italo"
+      ],
+      "sourceLocators": {
+        "internal-itinerary": "main.json #venice-option same-length Jun 10–23 plan; Italo Rome–Venice official route page advertises from €29.90 and 3h34, not confirmed June 21 service or four seats.",
+        "sr-italo": "main.json #venice-option same-length Jun 10–23 plan; Italo Rome–Venice official route page advertises from €29.90 and 3h34, not confirmed June 21 service or four seats."
+      },
+      "confidence": "medium",
+      "proxyStatus": "current-proxy",
+      "claimType": "proxy",
+      "verifiedAt": "2026-11-07",
+      "expiresAt": "2026-12-07"
+    }
+  ],
+  "axes": {
+    "budget": {
+      "score": 1,
+      "rationale": "Full cash planning band $14,000–$19,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
+      "confidence": "low",
+      "evidence": [
+        "budget-band"
+      ]
+    },
+    "weather": {
+      "score": 4,
+      "rationale": "Sicily June weather remains favorable; Rome introduces recurring midday heat management.",
+      "confidence": "medium",
+      "evidence": [
+        "climate-proxy"
+      ]
+    },
+    "fireRisk": {
+      "score": 3,
+      "rationale": "Retains the existing conservative Sicily June moderate 5–10% planning band; not an actuarial prediction.",
+      "confidence": "medium",
+      "evidence": [
+        "wildfire-exposure"
+      ]
+    },
+    "swim": {
+      "score": 4,
+      "rationale": "Eight Sicily nights preserve frequent Ionian swims around 72–74°F; four Rome nights have no planned natural swimming.",
+      "confidence": "high",
+      "evidence": [
+        "swim-conditions"
+      ]
+    },
+    "variety": {
+      "score": 5,
+      "rationale": "The scheduled coast, Etna, Baroque towns and ancient Rome give all three trip modes real time.",
+      "confidence": "high",
+      "evidence": [
+        "itinerary-structure"
+      ]
+    },
+    "ease": {
+      "score": 3,
+      "rationale": "Three bases, one car, one inter-base drive and a separate domestic flight; no one-night stops.",
+      "confidence": "medium",
+      "evidence": [
+        "operational-load"
+      ]
+    },
+    "food": {
+      "score": 5,
+      "rationale": "Sicily pizza and market food plus Rome pizza, pasta and groceries cover both children.",
+      "confidence": "medium",
+      "evidence": [
+        "family-food-coverage"
+      ]
+    },
+    "risk": {
+      "score": 3,
+      "rationale": "Exact protected international open-jaw ticket and four-person domestic inventory remain unverified; four Rome nights buffer the separate flight.",
+      "confidence": "low",
+      "evidence": [
+        "route-readiness"
+      ]
+    },
+    "nights": {
+      "score": 5,
+      "rationale": "Twelve hotel nights produce 5/5 by the canonical rubric.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    },
+    "novelty": {
+      "score": 5,
+      "rationale": "Sicily and Rome are absent from the documented visited-place list; no repeat stop is required.",
+      "confidence": "high",
+      "evidence": [
+        "visited-overlap"
+      ]
+    },
+    "pto": {
+      "score": 2,
+      "rationale": "Nine weekdays after observed Juneteenth, including departure; PTO score 2 with zero default weight.",
+      "confidence": "high",
+      "evidence": [
+        "trip-window"
+      ]
+    }
+  },
+  "metrics": {
+    "airHours": null,
+    "groundHours": 12,
+    "timeZones": 6,
+    "baseMoves": 2,
+    "longestTransferHours": 6,
+    "highOutputDayStreak": 2,
+    "fallbackDays": 3,
+    "childActivityFit": {
+      "age13": "fits",
+      "age8": "fits"
+    },
+    "lodgingComfort": {
+      "airConditioning": "required; unquoted",
+      "kitchen": "required in Ortigia and Rome; unquoted",
+      "laundry": "preferred; unquoted",
+      "realBeds": "four required; unquoted"
+    },
+    "waterSafety": "Pebble beaches need shoes and calm conditions; Naxos pool is the controlled fallback.",
+    "crowdingPressure": "Rome and Taormina need early starts and midday rest.",
+    "medicalAccess": "Urban bases; recheck current coverage and insurance."
+  },
+  "evidenceBasis": "Existing detailed southeast Sicily stop research retained with original timestamps. New operator route/fare floors and Rome admission/food checked Nov 7; exact international and lodging prices unknown.",
+  "overallConfidence": "low"
+}

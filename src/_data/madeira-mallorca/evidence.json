@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "madeira-mallorca",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 2,
-      "rationale": "Reconcile the detailed itemized budget instead of retaining the rounded Grand Total. Previously grouped or mismatched category figures are replaced by the itemized sum; unquoted costs remain estimates. Gross $13,100–$15,900 less a single $2,000 fixed travel redemption yields $11,100–$13,900. Budget 2/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "score": 1,
+      "rationale": "Full cash planning band $13,100–$15,900, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11100,
+        "lowUsd": 13100,
         "expectedUsd": null,
-        "highUsd": 13900,
+        "highUsd": 15900,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 9,
-        "arithmetic": "6700/7500 + 800/1100 + 140/220 + 400/620 + 960/1210 + 900/1300 + 1850/2250 + 800/1100 + 550/600 = 13100/15900 gross; minus 2000/2000 = 11100/13900 net",
-        "grossLowUsd": 13100,
-        "grossHighUsd": 15900,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $13,100–$15,900; no miles credit. Itemized source: madeira-mallorca/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "madeira-mallorca/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–BOS–LIS–FNC, June 8–21: gateway round-trip proxy for open-jaw, family base $6204; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "PIT–FNC / PMI–PIT June 21, 2027: $4,921 for the family on United (PMI via EWR in 4h19, home 7:04 PM). FNC–LIS is $231 and the TAP LIS–PMI nonstop $587. The $6,700–$7,500 flight line still holds."
       },

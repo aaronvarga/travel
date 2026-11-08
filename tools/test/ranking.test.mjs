@@ -10,9 +10,9 @@ const defaults = Object.fromEntries(summary.axes.map((axis) => [axis.id, axis.we
 
 test('default appeal order keeps all active and reference trips visible', () => {
   const ordered = [...summary.trips].sort((a, b) => compareDefault(a, b, summary.axes, defaults, summary.budgetTargets));
-  assert.equal(ordered.length, 31);
-  assert.deepEqual(ordered.slice(0, 4).map((trip) => trip.slug), ['slovenia-adriatic', 'iceland', 'madeira-mallorca', 'greece-ionian']);
-  assert.equal(ordered.filter((trip) => !trip.excluded).length, 22);
+  assert.equal(ordered.length, 33);
+  assert.deepEqual(ordered.slice(0, 4).map((trip) => trip.slug), ['madeira-mallorca', 'sicily-rome', 'slovenia-adriatic', 'madeira-sicily']);
+  assert.equal(ordered.filter((trip) => !trip.excluded).length, 24);
   assert.equal(ordered.filter((trip) => trip.excluded).length, 9);
 });
 
@@ -67,8 +67,8 @@ test('zero Budget weight removes every cost-based tie-break', () => {
 test('preferred maximum changes warning status but never visibility data', () => {
   const alternative = summary.trips.find((trip) => trip.slug === 'portugal-algarve-sicily');
   const statusAt15 = budgetStatus(alternative.budget, { targetUsd: 12000, preferredMaxUsd: 15000 });
-  const statusAt18 = budgetStatus(alternative.budget, { targetUsd: 12000, preferredMaxUsd: 18000 });
-  assert.equal(statusAt15, 'crosses-preference');
+  const statusAt18 = budgetStatus(alternative.budget, { targetUsd: 12000, preferredMaxUsd: 20000 });
+  assert.equal(statusAt15, 'likely-over-preference');
   assert.equal(statusAt18, 'within-preference');
   assert.equal(alternative.excluded, null);
 });

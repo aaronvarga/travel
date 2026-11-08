@@ -1,0 +1,17 @@
+<section id="family-shortlist">
+  <p class="eyebrow">Your family shortlist</p>
+  <h2>Sicily routes + Madeira &amp; Mallorca</h2>
+  <p>All Sicily routes are saved here, together with the combined Madeira–Mallorca trip. The new Venice–Rome–Sicily option has just two nights in each city and eight in Sicily. The full comparison remains below.</p>
+  <div class="plan-grid">
+  {%- for trip in familyShortlist %}
+    <div class="pcard" data-shortlisted-trip="{{ trip.slug }}">
+      <a href="locations/{{ trip.slug }}/index.html"><img src="{{ trip.image }}" alt="{{ trip.displayName }}" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:10px"></a>
+      <h3><a href="locations/{{ trip.slug }}/index.html">{{ trip.displayName }}</a></h3>
+      <p>{{ trip.blurb }}</p>
+      <p><b>{{ trip.pto.nights }} nights · {{ trip.pto.days }} PTO</b><br>{{ trip.budget.floorUsd | money }}–{{ trip.budget.ceilUsd | money }} cash</p>
+      {%- if trip.slug == 'venice-rome-sicily' %}<p>New · Venice 2 + Rome 2 + Sicily 8. One full sightseeing day per city; exact family flights and rooms unquoted.</p>{%- endif %}
+      {%- if trip.slug == 'sicily-rome' %}<p>Original comparison · 8 nights Sicily + 4 Rome. Exact family airfare and rooms unquoted.</p><p><a href="locations/sicily-rome/index.html#venice-option">Compare adding Venice →</a></p>{%- endif %}
+    </div>
+  {%- endfor %}
+  </div>
+</section>

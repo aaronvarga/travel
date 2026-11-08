@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-alaska",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 2,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,840–$13,900. Budget 2/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $10,840–$13,900, with no miles redemption, scores 2/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -112,8 +112,9 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "2000–3000 + 2750–3500 + 700–1100 + 1500–2100 + 840–950 + 450–750 + 900–1200 = 9140–12600 | 2026-11-03: flight lines repriced, band $9,140–$12,600 -> $10,840–$13,900",
-        "exceedsShortTripTarget": true
+        "arithmetic": "Full cash total $10,840–$13,900; no miles credit. Itemized source: short-alaska/main.json #totals.",
+        "exceedsShortTripTarget": true,
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-azores",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 4,
-      "rationale": "The exact-date flight refresh moves the reconciled family band to $9,600–$12,200. The Budget 4/5 score follows the shared rubric; current airfare is an observed snapshot and must be re-priced before purchase.",
+      "rationale": "Full cash planning band $9,600–$12,200, with no miles redemption, scores 4/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -111,9 +111,9 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "6600–7400 + 1050–1750 + 450–800 + 750–1150 + 300–500 + 450–600 = 9600–12200",
+        "arithmetic": "Full cash total $9,600–$12,200; no miles credit. Itemized source: short-azores/main.json #totals.",
         "currentSupplierQuote": false,
-        "basis": "Itemized planning arithmetic reviewed; historical airfare and unquoted lodging/other allowances retained, not confirmed current prices."
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",

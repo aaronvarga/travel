@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "slovenia-adriatic",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
-      "score": 4,
-      "rationale": "Raise airfare from $4,800–6,400 to $6,300–7,000: observed family base $5,342, four checked bags $720 and estimated paid seats $200–800. Round conservatively; do not assume free assigned seats. Gross $12,200–$15,400 less a single $2,000 fixed travel redemption yields $10,200–$13,400. Budget 4/5 follows the manifest; unresolved quotes prevent the high-confidence 3/5 exception.",
+      "score": 1,
+      "rationale": "Full cash planning band $12,200–$15,400, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 10200,
+        "lowUsd": 12200,
         "expectedUsd": null,
-        "highUsd": 13400,
+        "highUsd": 15400,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "6300/7000 + 1950/2500 + 1000/1500 + 850/1250 + 1700/2250 + 400/900 = 12200/15400 gross; minus 2000/2000 = 10200/13400 net",
-        "grossLowUsd": 12200,
-        "grossHighUsd": 15400,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $12,200–$15,400; no miles credit. Itemized source: slovenia-adriatic/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "slovenia-adriatic/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–YYZ–MUC–LJU / LJU–EWR–PIT: complete round-trip, family base $5342; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "PIT–LJU June 8–22, 2027 round trip: $5,343 for the family (September: $5,342). The $6,300–$7,000 airfare line with bags and seats still holds."
       },

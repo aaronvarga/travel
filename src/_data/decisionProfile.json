@@ -28,7 +28,8 @@
   "budget": {
     "targetUsd": 12000,
     "preferredMaxUsd": 15000,
-    "hardMaxUsd": null
+    "hardMaxUsd": null,
+    "useMiles": false
   },
   "needs": [
     "plain-food fallback in every base",
@@ -229,6 +230,14 @@
     "short-ischia": [
       "2027-06-12",
       "2027-06-20"
+    ],
+    "sicily-rome": [
+      "2027-06-10",
+      "2027-06-23"
+    ],
+    "venice-rome-sicily": [
+      "2027-06-10",
+      "2027-06-23"
     ]
   },
   "routeReadiness": {
@@ -273,6 +282,8 @@
     "croatia": "confirmed",
     "italy-salento-amalfi": "confirmed",
     "spain": "confirmed",
-    "turkish-riviera": "current-proxy"
+    "turkish-riviera": "current-proxy",
+    "sicily-rome": "current-proxy",
+    "venice-rome-sicily": "current-proxy"
   }
 }

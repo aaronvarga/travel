@@ -6,6 +6,8 @@
  * is the visual promise of the entire trip, not a representative thumbnail.
  */
 module.exports = {
+  'venice-rome-sicily': { path: 'assets/img/sicily-rome/venice.jpg', alt: 'Venice’s Grand Canal in warm sunset light before the short Rome stop and Sicily stay' },
+  'sicily-rome': { path: 'assets/img/short-sicily/isola-bella-tombolo-aerial.jpg', alt: 'Isola Bella’s turquoise shallows below Taormina on the Sicily and Rome trip' },
   albania: {
     path: 'assets/img/albania/img-04455db0cae3.jpg',
     alt: 'Turquoise Ksamil islets and clear Ionian water on Albania’s Riviera',

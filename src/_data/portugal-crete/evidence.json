@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "portugal-crete",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $11,430–$15,165 net ($13,430–$17,165 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $13,430–$17,165, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11430,
+        "lowUsd": 13430,
         "expectedUsd": null,
-        "highUsd": 15165,
+        "highUsd": 17165,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 9,
-        "arithmetic": "6600/8000 + 900/1625 + 680/1140 + 450/750 + 650/950 + 300/500 + 1650/2250 + 800/1250 + 500/700 = 12530/17165 gross; minus 2000/2000 = 10530/15165 net | 2026-11-03: flight lines repriced, band $10,530–$15,165 -> $11,430–$15,165",
-        "grossLowUsd": 13430,
-        "grossHighUsd": 17165,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $13,430–$17,165; no miles credit. Itemized source: portugal-crete/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "portugal-crete/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–LHR–LIS, June 8–21: gateway round-trip proxy for open-jaw, family base $4798; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "PIT–LIS June 8 / CHQ–PIT June 21, 2027: $5,185 for the family (home 11:56 PM via FRA and ORD); a Heraklion exit is $5,118 (home 11:22 PM via FRA and IAD). LIS–CHQ on June 14 is $1,180 on Aegean's overnight via Athens."
       },

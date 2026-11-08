@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "sardinia-corsica",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $12,180–$18,200 net ($14,180–$20,200 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $14,180–$20,200, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -101,28 +101,24 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-family-audit",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 12180,
+        "lowUsd": 14180,
         "expectedUsd": null,
-        "highUsd": 18200,
+        "highUsd": 20200,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 9,
-        "arithmetic": "5400/6400 + 3200/5500 + 950/1700 + 180/350 + 150/350 + 1400/2200 + 900/1600 + 300/500 + 400/700 = 12880/19300 gross; minus 2000/2000 = 10880/17300 net | 2026-11-03: flight lines repriced, band $10,880–$17,300 -> $12,180–$18,200",
-        "grossLowUsd": 14180,
-        "grossHighUsd": 20200,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $14,180–$20,200; no miles credit. Itemized source: sardinia-corsica/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "sardinia-corsica/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-family-audit": "PIT–LHR–OLB, June 10–23: gateway round-trip proxy for open-jaw, family base $5316; full allowances and unquoted components in rerankingAudit.json",
         "google-flights-2026-11-03-family-audit": "Every CAG–PIT option on June 23, 2027 lands June 24, inside the Pittsburgh commitment. PIT–OLB June 10 / CAG–PIT June 22 is sold on one ticket: Lufthansa/United leaves CAG 6:35 PM, overnights at Munich and reaches Pittsburgh 4:57 PM June 23, at $5,746 for the family. An Olbia round trip ($6,033, home 11:19 PM June 23) is the backup."
       },

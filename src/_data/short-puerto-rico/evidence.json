@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "short-puerto-rico",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 5,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $7,100–$9,630. Budget 5/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $7,100–$9,630, with no miles redemption, scores 5/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -114,7 +114,8 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 7,
-        "arithmetic": "1800/3000 + 500/800 + 1100/1800 + 600/1030 + 900/1250 + 700/1100 + 600/650 = 6200/9630 | 2026-11-03: flight lines repriced, band $6,200–$9,630 -> $7,100–$9,630"
+        "arithmetic": "Full cash total $7,100–$9,630; no miles credit. Itemized source: short-puerto-rico/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",

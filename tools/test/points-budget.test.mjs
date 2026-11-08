@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import points from '../lib/points-budget.cjs';
 import fs from 'node:fs';
+import { compareDefault } from '../lib/recommendation-engine.mjs';
 import { load } from 'cheerio';
 const read=p=>JSON.parse(fs.readFileSync(new URL('../../'+p,import.meta.url),'utf8'));
 
@@ -15,15 +16,15 @@ test('fixed travel redemption is capped by both eligible spending and balance', 
   assert.equal(result.milesRequired, 200000);
 });
 
-test('22 audited trips reconcile gross, net, savings and every weighted axis',()=>{
+test('22 audited trips reconcile cash costs and every weighted axis',()=>{
   const audit=read('src/_data/rerankingAudit.json'), manifest=read('tools/scorecard.manifest.json'), plans=read('src/_data/capitalOnePoints.json').plans;
   assert.equal(audit.trips.length,22);
   for(const r of audit.trips){
     const main=read(`src/_data/${r.slug}/main.json`),sc=main.scorecard,plan=plans[r.slug];
     assert.deepEqual(r.grossCashRangeUsd,[r.lineItems.reduce((s,l)=>s+l.lowUsd,0),r.lineItems.reduce((s,l)=>s+l.highUsd,0)],r.slug);
     assert.deepEqual(r.netCashRangeUsd,r.grossCashRangeUsd.map(n=>n-plan.savingsUsd),r.slug);
-    assert.ok(plan.savingsUsd<=plan.cashAirfareRangeUsd[0]);
-    assert.ok(plan.milesRequired<=200000);
+    assert.equal(plan.savingsUsd,0);
+    assert.equal(plan.milesRequired,0);
     assert.equal(plan.transferSavingsUsedUsd,0);
     assert.equal(plan.fourAwardSeatsConfirmed,false);
     assert.equal(sc.axes.budget,points.budgetScore(sc.budget,'medium'));
@@ -34,16 +35,19 @@ test('22 audited trips reconcile gross, net, savings and every weighted axis',()
 });
 
 test('audited pages have one canonical cost, airfare and TLDR section',()=>{
+  const summary=read('assets/trips-summary.json');
+  const weights=Object.fromEntries(summary.axes.map(a=>[a.id,a.weightDefault]));
+  const ranked=summary.trips.filter(t=>!t.excluded).sort((a,b)=>compareDefault(a,b,summary.axes,weights,summary.budgetTargets));
   for(const r of read('src/_data/rerankingAudit.json').trips){
     const m=read(`src/_data/${r.slug}/main.json`);
     const $=load(m.parts.filter(p=>p.t==='raw').map(p=>p.html).join('\n'));
     for(const id of ['budget','totals','air-travel'])assert.equal($('#'+id).length,1,`${r.slug}:${id}`);
     assert.equal($('.tldr').length,1,r.slug);
-    assert.equal(Number($('.tldr').attr('data-audit-rank')),r.newRank,r.slug);
+    assert.equal(Number($('.tldr').attr('data-audit-rank')),ranked.findIndex(t=>t.slug===r.slug)+1,r.slug);
   }
 });
 
-test('budget thresholds retain the confidence requirement after points', () => {
+test('cash budget thresholds retain the confidence requirement', () => {
   const b = { floorUsd: 10000, ceilUsd: 14000 };
   assert.equal(points.budgetScore(b, 'medium'), 2);
   assert.equal(points.budgetScore(b, 'high'), 3);

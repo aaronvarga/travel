@@ -29,7 +29,8 @@ for (const record of records) {
   const rank = rankBySlug.get(record.slug);
   record.main.parts = recursiveStrings(record.main.parts, (value) => value
     .replace(/\b\d{2}\/55\b/g, `${total}/55`)
-    .replace(/#\d+ of \d+/g, (match) => rank ? `#${rank} of ${ranked.length}` : match));
+    .replace(/#\d+ of \d+/g, (match) => rank ? `#${rank} of ${ranked.length}` : match)
+    .replace(/data-audit-rank="\d+"/g, (match) => rank ? `data-audit-rank="${rank}"` : match));
 }
 
 for (const record of records) writeJson(record.file, record.main);

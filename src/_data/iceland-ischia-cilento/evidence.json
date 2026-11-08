@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "slug": "iceland-ischia-cilento",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "evidenceBasis": "Current operator schedules, official attraction prices, a live nearby June 2027 PIT–KEF fare signal, historical climate/sea proxies, and exact internal itinerary arithmetic.",
   "confidenceBasis": "The route shape and itemized arithmetic are high-confidence derived facts. Overall confidence is medium because the exact June 10–23 stopover airfare, operating days, lodging, cars, and 2027 hydrofoils are not yet quoted together.",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Airfare rises from the old stopover assumption to the sold open-jaw ($4,334) plus a separate KEF–FCO nonstop ($1,480). The 2026-11-03 four-passenger flight refresh moves the planning band to $11,700–$15,600 net ($13,700–$17,600 gross). Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $13,700–$17,600, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band",
@@ -104,27 +104,23 @@
       "confidence": "medium",
       "sourceRefs": [
         "internal-itinerary",
-        "capital-one-fixed-travel",
         "google-flights-2026-11-03-family-audit"
       ],
       "value": {
-        "lowUsd": 11700,
+        "lowUsd": 13700,
         "expectedUsd": null,
-        "highUsd": 15600,
+        "highUsd": 17600,
         "targetUsd": 12000,
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 6,
-        "arithmetic": "3600/4800 + 2550/3750 + 1400/2000 + 1550/2200 + 800/1350 + 500/800 = 10400/14900 gross; minus 2000/2000 = 8400/12900 net | 2026-11-03: flight lines repriced, band $8,400–$12,900 -> $11,700–$15,600",
-        "grossLowUsd": 13700,
-        "grossHighUsd": 17600,
-        "pointsSavingsUsd": 2000
+        "arithmetic": "Full cash total $13,700–$17,600; no miles credit. Itemized source: iceland-ischia-cilento/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
       "sourceLocators": {
         "internal-itinerary": "iceland-ischia-cilento/main.json budget table; exact sum recorded in rerankingAudit.json; supplier checkouts remain open",
-        "capital-one-fixed-travel": "Capital One travel-purchase redemption, eligibility by merchant coding and redemption within 90 days; independent rate confirmation in capitalOnePoints sources",
         "google-flights-2026-11-03-family-audit": "Open-jaw PIT–KEF June 10 / FCO–PIT June 23, 2027 is sold on one ticket for $4,334 (Air Canada via Montreal out; United via Newark home 8:34 PM June 23), or $4,638 with the Icelandair nonstop. Add a separate Icelandair KEF–FCO nonstop on June 15 (7:50 AM–2:35 PM) at $1,480 for the family. No single ticket covering all three legs reaches Pittsburgh on June 23."
       },
       "claimType": "derived"

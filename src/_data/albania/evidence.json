@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "slug": "albania",
-  "reviewedAt": "2026-11-03",
+  "reviewedAt": "2026-11-07",
   "overallConfidence": "medium",
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "The 2026-11-03 four-passenger flight refresh moves the planning band to $10,515–$15,230. Budget 1/5 follows the shared rubric; fares are aggregator snapshots, not held tickets.",
+      "rationale": "Full cash planning band $10,515–$15,230, with no miles redemption, scores 1/5 against the $12,000 target and $15,000 preferred maximum. Existing supplier observations have not been refreshed.",
       "confidence": "medium",
       "evidence": [
         "budget-band"
@@ -113,7 +113,8 @@
         "preferredMaxUsd": 15000,
         "distribution": "planning-band",
         "lineItemCount": 5,
-        "arithmetic": "9700–14200 line-item sum; tolerance 150 | 2026-11-03: flight lines repriced, band $9,715–$14,230 -> $10,515–$15,230"
+        "arithmetic": "Full cash total $10,515–$15,230; no miles credit. Itemized source: albania/main.json #totals.",
+        "paymentBasis": "cash"
       },
       "verifiedAt": "2026-11-03",
       "expiresAt": "2026-12-03",
