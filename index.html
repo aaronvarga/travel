@@ -21,13 +21,13 @@ h1,h2,h3,h4{font-family:"Fraunces","Georgia",serif;letter-spacing:-.01em}
 a{color:var(--c1)}
 .eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 /* HERO */
-header{position:relative;isolation:isolate;min-height:clamp(380px,62vh,640px);display:grid;align-items:end;padding:32px clamp(20px,5vw,80px) 42px;color:#fff;overflow:hidden;background:linear-gradient(90deg,#17130f 0%,#17130f 30%,#3b2419 64%,#6c3f25 100%)}
+header{position:relative;isolation:isolate;min-height:0;display:grid;align-items:end;padding:22px clamp(20px,5vw,80px) 26px;color:#fff;overflow:hidden;background:linear-gradient(90deg,#17130f 0%,#17130f 30%,#3b2419 64%,#6c3f25 100%)}
 header::before{content:"";position:absolute;top:0;right:-2vw;bottom:0;width:min(72vw,1160px);background:url("assets/family-cartoon.png") center / cover no-repeat;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.14) 7%,rgba(0,0,0,.58) 17%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.14) 7%,rgba(0,0,0,.58) 17%,#000 30%)}
 header::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,16,12,.99) 0%,rgba(18,16,12,.96) 29%,rgba(18,16,12,.78) 42%,rgba(18,16,12,.38) 57%,rgba(18,16,12,.1) 72%,rgba(18,16,12,.27) 100%),linear-gradient(180deg,rgba(10,20,24,.02),rgba(10,18,22,.12) 45%,rgba(8,14,18,.72));z-index:0}
 .hero-inner{max-width:700px}
 .hero-inner{position:relative;z-index:1}
 header .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}
-h1{max-width:660px;margin:0 0 16px;font-size:clamp(2.55rem,4.85vw,4.35rem);line-height:.95;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+h1{max-width:660px;margin:0;font-size:clamp(1.8rem,3vw,2.75rem);line-height:.95;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}
 header .lead{max-width:620px;margin:0 0 24px;font-size:clamp(1rem,1.35vw,1.08rem);color:rgba(255,255,255,.94);line-height:1.48}
 .hero-meta{display:flex;flex-wrap:wrap;gap:26px}
 .hero-meta div{display:flex;flex-direction:column}
@@ -321,7 +321,7 @@ main>section>h2+p{margin:0 0 30px;color:var(--muted);max-width:760px;font-size:1
 footer{max-width:1360px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
 @media(max-width:860px){
- header{min-height:80vh}
+ header{min-height:0}
  h1{font-size:clamp(2.15rem,9.4vw,2.65rem);line-height:.94;overflow-wrap:anywhere}
  header .lead{max-width:100%;font-size:1rem}
  .plan-grid,.status,.twocol{grid-template-columns:1fr}
@@ -589,8 +589,7 @@ footer a{color:var(--muted)}
 <header class="decision-hero">
   <div class="hero-inner">
     <p class="eyebrow">Family Travel Decision Dashboard</p>
-    <h1>Epic Family Vacation: 33-Trip Comparison</h1>
-    <p class="lead">A data-first ranking of 33 finished comparison itineraries (24 ranked, 9 excluded by family decision) — every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The eleven short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
+    <h1>Family trips · June 2027</h1>
   </div>
 </header>
 
@@ -598,10 +597,11 @@ footer a{color:var(--muted)}
   <details class="site-nav-menu">
     <summary><span>Sections</span></summary>
     <div class="site-nav-links">
+      <a href="#family-shortlist">Short List</a>
+      <a href="#trips">Full Trips</a>
+      <a href="#short-trips">Short Trips</a>
       <a href="locations/completed/">Completed Trips →</a>
       <a href="#trip-length">Short vs Full</a>
-      <a href="#short-trips">Short Trips</a>
-      <a href="#family-shortlist">Family shortlist</a><a href="#trips">Trips</a>
       <a href="locations/trip-builder/">Trip Builder →</a>
       <a href="locations/compare/">Compare by Country →</a>
       <a href="#decision">Quick Decision</a>
@@ -616,45 +616,10 @@ footer a{color:var(--muted)}
 </nav>
 
 <main>
-  <section id="overview">
-    <p class="eyebrow">The Plan at a Glance</p>
-    <div class="overview">
-      <div class="ocard"><b>33 + 11</b><span>comparison plans plus eleven short escapes (24 ranked, 9 excluded)</span></div>
-      <div class="ocard"><b>39/55</b><span>top default score: Madeira + Mallorca; booking gates still apply</span></div>
-      <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland × Crete/Sicily/Mallorca grid</span></div>
-      <div class="ocard"><b data-preserve-date="">June 24-26</b><span>Full days in Pittsburgh protected</span></div>
-    </div>
-  </section>
-
-    <section id="trip-length">
-    <p class="eyebrow">Reality Check</p>
-    <h2>Compare the whole cost, not just the nights</h2>
-    <p>Shorter stays reduce lodging and daily expenses, but airfare changes with the dates and routing. A seven-night trip is not automatically half the price of a twelve-night trip. Compare current quotes before choosing a length.</p>
-    <div class="lm-grid">
-      <div class="lm-card">
-        <h3>Portugal: current full-trip estimate</h3>
-        <p>12 hotel nights for the family of four.</p>
-        <p><strong>$11,975–$15,900 cash</strong></p>
-        <p>These are itemized planning allowances, not a guaranteed booking price. The protected multi-city airfare and internal flights must be priced together.</p>
-      </div>
-      <div class="lm-card">
-        <h3>Short escapes: separate comparison</h3>
-        <p>The short-escape cards below use full cash budgets and a separate ranking.</p>
-        <p>Compare the same travelers, baggage, room occupancy and included activities when weighing a short trip against a longer one.</p>
-      </div>
-      <div class="lm-card">
-        <h3>Protect usable vacation time</h3>
-        <p>Compare hotel nights, flight arrival times, base changes and recovery time—not just calendar days. Jet lag varies; a fixed number of “good days” is not promised.</p>
-        <p>Shortening a trip may change airfare, PTO and the Nights score. No hypothetical shorter variant changes the canonical ranking. Every option must preserve the full 6/24/2027–6/26/2027 Pittsburgh commitment.</p>
-      </div>
-    </div>
-  </section>
-
-
   <section id="family-shortlist">
   <p class="eyebrow">Your family shortlist</p>
-  <h2>Sicily routes + Madeira &amp; Mallorca</h2>
-  <p>All Sicily routes are saved here, together with the combined Madeira–Mallorca trip. The new Venice–Rome–Sicily option has just two nights in each city and eight in Sicily. The full comparison remains below.</p>
+  <h2>Short list</h2>
+  <p>Sicily routes and Madeira–Mallorca, including the new Venice–Rome–Sicily itinerary.</p>
   <div class="plan-grid">
     <div class="pcard" data-shortlisted-trip="venice-rome-sicily">
       <a href="locations/venice-rome-sicily/index.html"><picture><source type="image/avif" srcset="assets/generated/images/sicily-rome/venice-d24dc586d41aafd2-640.avif 640w, assets/generated/images/sicily-rome/venice-d24dc586d41aafd2-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/sicily-rome/venice-d24dc586d41aafd2-640.webp 640w, assets/generated/images/sicily-rome/venice-d24dc586d41aafd2-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/sicily-rome/venice-d24dc586d41aafd2-1280.jpg" alt="Venice + Rome + Sicily" loading="eager" style="width:100%;height:180px;object-fit:cover;border-radius:10px" srcset="assets/generated/images/sicily-rome/venice-d24dc586d41aafd2-640.webp 640w, assets/generated/images/sicily-rome/venice-d24dc586d41aafd2-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1600" height="2000" decoding="async" fetchpriority="high"></picture></a>
@@ -714,246 +679,11 @@ footer a{color:var(--muted)}
 </section>
 
 
-  <section id="short-trips">
-    <div class="short-head">
-      <p class="eyebrow">New · 7 Nights or Less</p>
-      <h2>Short, easy escapes</h2>
-      <p>Smaller-budget trips built around fewer bases, lighter logistics, and enough breathing room to feel like a vacation. Warm water is a bonus here, not the price of admission.</p>
-      <p class="short-method"><b>Ranked only against each other:</b> budget and ease count double; weather, fire safety, swimming, variety, food, risk, and PTO count once. Ties favor fewer PTO days, then the lower budget ceiling.</p>
-    </div>
-    <div class="short-grid">
-      <a class="short-card" href="locations/short-puerto-rico/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-640.avif 640w, assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.avif 1024w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-640.webp 640w, assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.webp 1024w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.jpg" alt="Color in every block" loading="lazy" srcset="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-640.webp 640w, assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.webp 1024w" sizes="(max-width: 700px) 100vw, 900px" width="1024" height="683" decoding="async"></picture><span class="short-badge">#1 · 7 nights</span><span class="short-score">47/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/12/2027–6/19/2027</span>
-          <h3>Puerto Rico: San Juan + Luquillo</h3>
-          <p>Warm water, rainforest and domestic-trip ease</p>
-          <p class="short-verdict">Best warm-water week: Old San Juan, rainforest and easy beach days, with hurricane-season risk to manage.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$7.1k–$9.6k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>2</b></div>
-            <div class="short-stat"><span>Swimming</span><b>81–83°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-azores/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-640.avif 640w, assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-640.webp 640w, assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.jpg" alt="Hidden Lagoons" loading="lazy" srcset="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-640.webp 640w, assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1500" height="840" decoding="async"></picture><span class="short-badge">#2 · 7 nights</span><span class="short-score">45/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/11/2027–6/19/2027</span>
-          <h3>Portugal (Azores)</h3>
-          <p>One volcanic island, one easy base, thermal swimming</p>
-          <p class="short-verdict">Best one-base volcanic week: crater lakes and thermal swims; the United Newark routing prices but its return leg still needs a full-ticket check.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$9.6k–$12.2k</b></div>
-            <div class="short-stat"><span>PTO</span><b>5 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>1</b></div>
-            <div class="short-stat"><span>Swimming</span><b>Warm geothermal</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Very low · &lt;2%</b></div>
-          </div>
-          <div class="short-ready">Not ready to book →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-algarve/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-640.avif 640w, assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-640.webp 640w, assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.jpg" alt="Sagres lighthouse and sheer cliffs glowing above the Atlantic" loading="lazy" srcset="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-640.webp 640w, assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2500" height="1668" decoding="async"></picture><span class="short-badge">#3 · 7 nights</span><span class="short-score">44/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/12/2027–6/20/2027</span>
-          <h3>Portugal (Algarve)</h3>
-          <p>Seven nights in one easy coast base</p>
-          <p class="short-verdict">Best pure ease-and-value week: one base, pool access, and flexible coast days.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$10.3k–$12.7k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>1</b></div>
-            <div class="short-stat"><span>Swimming</span><b>68–72°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Moderate · 5–10%</b></div>
-          </div>
-          <div class="short-ready">Not ready to book →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-iceland/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-640.avif 640w, assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-640.webp 640w, assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.jpg" alt="Gullfoss waterfall from above" loading="lazy" srcset="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-640.webp 640w, assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1600" height="1067" decoding="async"></picture><span class="short-badge">#4 · 7 nights</span><span class="short-score">44/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/13/2027–6/21/2027</span>
-          <h3>Iceland: Reykjavík + South Coast</h3>
-          <p>Direct, dramatic and deliberately compact</p>
-          <p class="short-verdict">Best nonstop adventure: the exact weekend flight is selling, with cold weather still the tradeoff.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$8.8k–$11.1k</b></div>
-            <div class="short-stat"><span>PTO</span><b>5 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>3</b></div>
-            <div class="short-stat"><span>Swimming</span><b>Warm geothermal</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Very low · &lt;2%</b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-madeira/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-640.avif 640w, assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-640.webp 640w, assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.jpg" alt="Funchal and its Atlantic bay seen from the green slopes above the city" loading="lazy" srcset="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-640.webp 640w, assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2400" height="1600" decoding="async"></picture><span class="short-badge">#5 · 7 nights</span><span class="short-score">44/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/11/2027–6/19/2027</span>
-          <h3>Portugal: Madeira</h3>
-          <p>One easy base, big scenery, controlled spend</p>
-          <p class="short-verdict">Best one-base scenery trip, now with a sold one-ticket fare that restores its value; a long Boston connection is the tradeoff.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$9.1k–$11.5k</b></div>
-            <div class="short-stat"><span>PTO</span><b>5 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>1</b></div>
-            <div class="short-stat"><span>Swimming</span><b>68–71°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-joshua-tree/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-640.avif 640w, assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-640.webp 640w, assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.jpg" alt="Joshua Tree Nationalpark Hidden Valley Nature Tr" loading="lazy" srcset="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-640.webp 640w, assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1920" height="1440" decoding="async"></picture><span class="short-badge">#6 · 5 nights</span><span class="short-score">43/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">2/18/2027–2/23/2027</span>
-          <h3>Joshua Tree</h3>
-          <p>Booked American flights, Burbank hotel and standard SUV; four tentative nights at Agave Gold Airbnb</p>
-          <p class="short-verdict">Best compact family adventure: granite scrambling, a guided climb, Pioneertown and desert night photography from one base.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$6k–$6.9k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>2</b></div>
-            <div class="short-stat"><span>Swimming</span><b>28–28°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b> · </b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-acadia/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-640.avif 640w, assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-640.webp 640w, assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.jpg" alt="Frenchman Bay Sunrise" loading="lazy" srcset="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-640.webp 640w, assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1728" height="492" decoding="async"></picture><span class="short-badge">#7 · 7 nights</span><span class="short-score">42/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/12/2027–6/19/2027</span>
-          <h3>Maine: Acadia</h3>
-          <p>One easy base for America’s most dramatic Atlantic park</p>
-          <p class="short-verdict">Best domestic nature week: major coastal scenery, with cold water and the Portland drive as the tradeoffs.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$8.2k–$11.5k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>1</b></div>
-            <div class="short-stat"><span>Swimming</span><b>55–65°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Very low · &lt;2%</b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-portugal/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-640.avif 640w, assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.avif 1200w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-640.webp 640w, assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.jpg" alt="Alfama rooftops and tiled terraces glowing above the Tagus at sunrise" loading="lazy" srcset="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-640.webp 640w, assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 900px" width="1200" height="800" decoding="async"></picture><span class="short-badge">#8 · 7 nights</span><span class="short-score">42/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/12/2027–6/20/2027</span>
-          <h3>Portugal (Lisbon + Algarve)</h3>
-          <p>One-week, two-base value trip</p>
-          <p class="short-verdict">Best overall balance of cost, easy rail travel, food, and optional beach time.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$10.1k–$12.8k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>2</b></div>
-            <div class="short-stat"><span>Swimming</span><b>68–72°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Moderate · 5–10%</b></div>
-          </div>
-          <div class="short-ready">Not ready to book →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-sicily/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-640.avif 640w, assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-640.webp 640w, assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.jpg" alt="The sand causeway from above" loading="lazy" srcset="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-640.webp 640w, assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2000" height="3002" decoding="async"></picture><span class="short-badge">#9 · 7 nights</span><span class="short-score">42/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/12/2027–6/20/2027</span>
-          <h3>Sicily: Ortigia + Taormina</h3>
-          <p>Seven nights, two bases and a volcano</p>
-          <p class="short-verdict">Best culture-plus-swim week: Greek theatres, golden Noto, a live volcano and 73°F Ionian coves — with June airfare and festival-season hotels as the price of admission.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$10.9k–$14k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>2</b></div>
-            <div class="short-stat"><span>Swimming</span><b>72–74°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Moderate · 5–10%</b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-ischia/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-640.avif 640w, assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-640.webp 640w, assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.jpg" alt="Castello Aragonese at Sunset" loading="lazy" srcset="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-640.webp 640w, assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2000" height="1333" decoding="async"></picture><span class="short-badge">#10 · 7 nights</span><span class="short-score">41/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/12/2027–6/20/2027</span>
-          <h3>Ischia + Procida</h3>
-          <p>Warmest swim on the short board: 74°F sea plus thermal parks, no car</p>
-          <p class="short-verdict">Warmest water on this list: 74°F sea plus thermal parks from one car-free island base, with the plane-bus-boat arrival chain as the tradeoff.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$11.4k–$14k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>1</b></div>
-            <div class="short-stat"><span>Swimming</span><b>75°F sea + thermal</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-      <a class="short-card" href="locations/short-alaska/index.html">
-        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-640.avif 640w, assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-640.webp 640w, assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.jpg" alt="Turnagain Arm" loading="lazy" srcset="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-640.webp 640w, assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="3200" height="1800" decoding="async"></picture><span class="short-badge">#11 · 7 nights</span><span class="short-score">34/55</span></div>
-        <div class="short-body">
-          <span class="short-dates">6/12/2027–6/19/2027</span>
-          <h3>Alaska: Kenai + Girdwood</h3>
-          <p>Tidewater glaciers and 19-hour daylight from two Southcentral bases</p>
-          <p class="short-verdict">The biggest scenery on this list and the worst fit for it: tidewater glaciers and whales, but high cost, cold water, and a long Seattle connection.</p>
-          <div class="short-stats">
-            <div class="short-stat"><span>Family budget</span><b>$10.8k–$13.9k</b></div>
-            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
-            <div class="short-stat"><span>Home bases</span><b>2</b></div>
-            <div class="short-stat"><span>Swimming</span><b>48–51°F water</b></div>
-            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
-          </div>
-          <div class="short-ready">Route confirmed →</div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section id="fire-risk">
-    <p class="eyebrow">New decision factor</p>
-    <h2>Wildfire disruption by location and season</h2>
-    <p>These bands estimate the chance that fire, smoke, evacuation, road or park closures, or related flight disruption materially changes the itinerary during its exact dates. They are conservative planning estimates inferred from official recent evidence and fire history—not promises or actuarial forecasts. Each trip takes the least-safe score among its route segments.</p>
-    <div class="rubric-note"><b>Higher is safer:</b> 5 = very low (&lt;2%); 4 = low (2–5%); 3 = moderate (5–10%); 2 = high (10–20%); 1 = very high (&gt;20%). Recheck official daily danger maps and active incidents 14 days, 72 hours, and each morning before rural drives or hikes. A live red/extreme warning overrides the historical band.</div>
-    <div class="matrix-wrap"><table class="budget-tbl"><thead><tr><th>Location and trip window</th><th>Planning chance</th><th>Safety score</th><th>Why</th></tr></thead><tbody>
-      <tr><td><b>Venice and the Dolomites in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>The high, relatively moist Dolomite portion of this June route has very low material wildfire-disruption exposure. Italy's national campaign covers the summer season, but the country's large-fire damage is concentrated later and farther south; live local warnings still take precedence during dry or windy spells.</td></tr>
-      <tr><td><b>Acadia and Mount Desert Island in mid-June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>Acadia has a serious wildfire history, but its defining 1947 disaster followed an exceptionally dry summer and occurred in October. Recent June fires have generally been small and rapidly contained, so material itinerary disruption in this cool coastal window is very unlikely.</td></tr>
-      <tr><td><b>Dubrovnik, Kotor, the Albanian Riviera, and Corfu in early July</b></td><td>High · 10–20%</td><td><b>2/5</b></td><td>This route spends two weeks in dry coastal vegetation during the accelerating Mediterranean fire season. Montenegro's 2024 activity peaked in July–August, Albania recorded severe July seasons in 2024–2025, and the multi-border road route has limited detour simplicity if smoke or closures affect a corridor.</td></tr>
-      <tr><td><b>Seward, Kenai Fjords, Girdwood, and Turnagain Arm in mid-June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Most June visits are unaffected, but the route has a real single-corridor precedent: the June 2019 Swan Lake Fire produced heavy smoke, recreation closures, and intermittent Sterling Highway disruption. The wetter Seward/Girdwood side lowers exposure compared with interior Alaska.</td></tr>
-      <tr><td><b>Theth, Tirana, and the Albanian Riviera in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Albania has meaningful summer wildfire exposure and recent severe seasons, including fires near Theth and Sarandë, but the worst recent activity has clustered in July and August. A June route is lower risk than the same itinerary a month later.</td></tr>
-      <tr><td><b>The Algarve in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Portugal is one of Europe's highest absolute fire-danger countries and the official summer campaign begins 6/1/2027. Coastal Lagos is less exposed than the wooded interior, but Monchique, Sagres, and east–west road excursions add enough wildland interface that fire belongs in the plan.</td></tr>
-      <tr><td><b>Seville, Granada, and the Costa del Sol in early June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Spain's official summer wildfire campaign starts 6/1/2027, and recent large fires have occurred from June through August in central and southern regions. Dense cities and the coast provide alternatives, but the Granada and mountain-road portions remain exposed.</td></tr>
-      <tr><td><b>São Miguel, Azores in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>The Azores' humid maritime climate and official regional planning describe forest fires as a potential hazard without enough regional expression to rank among the archipelago's major recurring natural risks. Material fire disruption is very unlikely.</td></tr>
-      <tr><td><b>San Diego to San Francisco by Highway 1 in early July</b></td><td>High · 10–20%</td><td><b>2/5</b></td><td>July is an active California fire month, and this itinerary repeatedly crosses exposed coastal ranges and single-corridor road sections around Santa Barbara, San Luis Obispo, Big Sur, and Monterey. A fire need not reach a hotel to close Highway 1, create smoke, or force a long reroute.</td></tr>
-      <tr><td><b>Tenerife and La Palma in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>The Canary Islands have experienced major wildfires and Spain's summer campaign begins 6/1/2027, but June is generally earlier than the islands' hottest, driest late-summer peak. Coastal bases are resilient; forest and caldera days are the exposed pieces.</td></tr>
-      <tr><td><b>Naples, Ischia, and Cilento in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Italy's national summer firefighting campaign starts 6/15/2024, but three quarters of Italy's 2024 burned area occurred in July and August. Island/coastal bases reduce direct exposure; inland Cilento drives and wooded Ischia slopes remain the watch points.</td></tr>
-      <tr><td><b>Southern Corsica in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Corsica's maquis and mountain roads are fire-prone, and France publishes daily forest-danger maps from June through September. June is earlier than the historic late-summer peak, but a coastal road closure can materially disrupt this compact driving route.</td></tr>
-      <tr><td><b>Split, Hvar, and Korčula in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Dalmatia's legal high-fire controls begin 6/1/2026 and late-June lightning fires do occur, including Hvar/Šibenik incidents in 2026. The largest recent coastal fires have clustered in late July and August, so this June itinerary is low rather than high risk.</td></tr>
-      <tr><td><b>Athens and the Greek islands in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Greece's official fire season runs 5/1/2027–10/31/2027, EFFIS shows the main recent season from June through September, and late-June red-code conditions have occurred on Crete. Island geography limits fire spread but wind can quickly close gorges, roads, beaches, or ferry approaches.</td></tr>
-      <tr><td><b>Oʻahu, Hawaiʻi Island, Maui, and Kauaʻi in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>June begins Hawaiʻi's dry-season lookout period, and statewide fire-history maps show repeated starts on every planned island. Resort/coastal alternatives are strong, but leeward Maui and Hawaiʻi Island, Haleakalā, Hāna, Waimea, and Kōkeʻe expose the route to smoke or road closures.</td></tr>
-      <tr><td><b>Reykjavík, Reykjanes, and Iceland's South Coast in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>Iceland has had rare large grass fires, but its maritime climate, sparse tree cover, and limited fire history make wildfire a very small June travel risk. Volcanic hazards remain important, but they stay in the separate general Risk axis.</td></tr>
-      <tr><td><b>Lisbon, Cascais, and Sintra in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Central Portugal has severe wildfire history, but this route is mainly urban/coastal and travels before the usual late-summer peak. Sintra-Cascais Natural Park and wooded day trips create a real but low closure/smoke exposure.</td></tr>
-      <tr><td><b>Madeira in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day.</td></tr>
-      <tr><td><b>Mallorca in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Mallorca's pine-covered Tramuntana roads and coves sit inside Spain's June–October summer fire campaign. The route has beach and town substitutions, but a mountain closure could remove several signature days at once.</td></tr>
-      <tr><td><b>Malta and Gozo in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Malta has dry grass and brush fires, but limited forest cover and short road distances make landscape-scale travel disruption less likely than on Sicily or Sardinia. Smoke or a localized road closure is the more plausible impact.</td></tr>
-      <tr><td><b>San Juan, Luquillo, Fajardo, and El Yunque in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Puerto Rico experiences many wildland fires and June remains within its extended vulnerable season, but official evidence identifies the drier south and west as the main hotspots. This itinerary stays in the wetter northeast with dense road alternatives.</td></tr>
-      <tr><td><b>Sardinia from June into early July</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Sardinia formally designates 6/1/2026–10/31/2026 as high fire danger. In 2026 the island recorded roughly 670 June fires before the full July aerial deployment, making this a recurring planning issue even when most ignitions remain small.</td></tr>
-      <tr><td><b>Sicily in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk.</td></tr>
-      <tr><td><b>Ljubljana, the Julian Alps, Soča Valley, and Piran in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>The moist alpine half is low risk; the Karst and coastal southwest can burn. EFFIS mapped only two Slovenian fires in 2024, while the July 2024 Karst fire demonstrates that localized disruption is credible later in summer.</td></tr>
-      <tr><td><b>Nice, Cassis, and Provence in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Provence and the Riviera are fire-prone and France begins daily forest-danger mapping in June. This itinerary is early in the season and has urban/coastal substitutes, but calanque and inland-forest closures are realistic during a hot, windy spell.</td></tr>
-      <tr><td><b>Salento, Basilicata, and the Amalfi Coast in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>The route enters Italy's official summer campaign on 6/15/2027, but recent national damage is concentrated in July and August. Coastal towns are resilient; wooded Basilicata/Cilento transfers and cliff-road closures are the practical exposure.</td></tr>
-      <tr><td><b>The Bernese Oberland in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>Swiss forest fires are usually small and the greatest burned area is historically south of the Alps or in dry winter surface fires. The lush, high-elevation Bernese Oberland in June has very low material trip-disruption exposure.</td></tr>
-      <tr><td><b>Antalya, Kaş, and Fethiye in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>The Turkish Riviera combines dry pine forest, steep roads, and a June entry into the eastern Mediterranean fire season. Türkiye's 2024 burned area was more than double its long-term average; exact resort exposure varies sharply with wind and heat.</td></tr>
-    </tbody></table></div>
-  </section>
-
   <section id="trips" class="shortlist">
     <div class="sl-head">
-      <p class="sl-eyebrow">Trip Shortlist</p>
-    <h2>Twenty-four ranked ways to spend the same two weeks</h2>
-      <p>Ranked by the scoreboard — pure data, no preference thumb on the scale; the top score is outlined in red. Tap any card for the full day-by-day itinerary. Nights pill = hotel (bed) nights; the <b>+1</b> chip is the red-eye/travel night away.</p>
+      <p class="sl-eyebrow">All routes</p>
+    <h2>Full trips</h2>
+      <p>Full-length routes ranked by your priorities, with the family-excluded options kept for reference.</p>
     </div>
     <div class="sl-grid">
     <a class="sl-card top madeira-stairway-card" href="locations/madeira-mallorca/index.html">
@@ -1342,6 +1072,277 @@ footer a{color:var(--muted)}
     </a>
 </div>
 
+  </section>
+
+  <section id="short-trips">
+    <div class="short-head">
+      <p class="eyebrow">New · 7 Nights or Less</p>
+      <h2>Short trips</h2>
+      <p>Smaller-budget trips built around fewer bases, lighter logistics, and enough breathing room to feel like a vacation. Warm water is a bonus here, not the price of admission.</p>
+    </div>
+    <div class="short-grid">
+      <a class="short-card" href="locations/short-puerto-rico/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-640.avif 640w, assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.avif 1024w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-640.webp 640w, assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.webp 1024w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.jpg" alt="Color in every block" loading="lazy" srcset="assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-640.webp 640w, assets/generated/images/short-puerto-rico/google_san_juan_01-4f211759abe512de-1024.webp 1024w" sizes="(max-width: 700px) 100vw, 900px" width="1024" height="683" decoding="async"></picture><span class="short-badge">#1 · 7 nights</span><span class="short-score">47/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/12/2027–6/19/2027</span>
+          <h3>Puerto Rico: San Juan + Luquillo</h3>
+          <p>Warm water, rainforest and domestic-trip ease</p>
+          <p class="short-verdict">Best warm-water week: Old San Juan, rainforest and easy beach days, with hurricane-season risk to manage.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$7.1k–$9.6k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>2</b></div>
+            <div class="short-stat"><span>Swimming</span><b>81–83°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-azores/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-640.avif 640w, assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-640.webp 640w, assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.jpg" alt="Hidden Lagoons" loading="lazy" srcset="assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-640.webp 640w, assets/generated/images/short-azores/google_sete_05-8d0211a70c2b7893-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1500" height="840" decoding="async"></picture><span class="short-badge">#2 · 7 nights</span><span class="short-score">45/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/11/2027–6/19/2027</span>
+          <h3>Portugal (Azores)</h3>
+          <p>One volcanic island, one easy base, thermal swimming</p>
+          <p class="short-verdict">Best one-base volcanic week: crater lakes and thermal swims; the United Newark routing prices but its return leg still needs a full-ticket check.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$9.6k–$12.2k</b></div>
+            <div class="short-stat"><span>PTO</span><b>5 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>1</b></div>
+            <div class="short-stat"><span>Swimming</span><b>Warm geothermal</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Very low · &lt;2%</b></div>
+          </div>
+          <div class="short-ready">Not ready to book →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-algarve/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-640.avif 640w, assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-640.webp 640w, assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.jpg" alt="Sagres lighthouse and sheer cliffs glowing above the Atlantic" loading="lazy" srcset="assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-640.webp 640w, assets/generated/images/short-algarve/google_sagres_headland_01-938e9dea98408b21-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2500" height="1668" decoding="async"></picture><span class="short-badge">#3 · 7 nights</span><span class="short-score">44/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/12/2027–6/20/2027</span>
+          <h3>Portugal (Algarve)</h3>
+          <p>Seven nights in one easy coast base</p>
+          <p class="short-verdict">Best pure ease-and-value week: one base, pool access, and flexible coast days.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$10.3k–$12.7k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>1</b></div>
+            <div class="short-stat"><span>Swimming</span><b>68–72°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Moderate · 5–10%</b></div>
+          </div>
+          <div class="short-ready">Not ready to book →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-iceland/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-640.avif 640w, assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-640.webp 640w, assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.jpg" alt="Gullfoss waterfall from above" loading="lazy" srcset="assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-640.webp 640w, assets/generated/images/short-iceland/google_golden_09-b092a05131bb1437-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1600" height="1067" decoding="async"></picture><span class="short-badge">#4 · 7 nights</span><span class="short-score">44/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/13/2027–6/21/2027</span>
+          <h3>Iceland: Reykjavík + South Coast</h3>
+          <p>Direct, dramatic and deliberately compact</p>
+          <p class="short-verdict">Best nonstop adventure: the exact weekend flight is selling, with cold weather still the tradeoff.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$8.8k–$11.1k</b></div>
+            <div class="short-stat"><span>PTO</span><b>5 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>3</b></div>
+            <div class="short-stat"><span>Swimming</span><b>Warm geothermal</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Very low · &lt;2%</b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-madeira/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-640.avif 640w, assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-640.webp 640w, assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.jpg" alt="Funchal and its Atlantic bay seen from the green slopes above the city" loading="lazy" srcset="assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-640.webp 640w, assets/generated/images/short-madeira/google_funchal_bay_02-00c8770523b4e733-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2400" height="1600" decoding="async"></picture><span class="short-badge">#5 · 7 nights</span><span class="short-score">44/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/11/2027–6/19/2027</span>
+          <h3>Portugal: Madeira</h3>
+          <p>One easy base, big scenery, controlled spend</p>
+          <p class="short-verdict">Best one-base scenery trip, now with a sold one-ticket fare that restores its value; a long Boston connection is the tradeoff.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$9.1k–$11.5k</b></div>
+            <div class="short-stat"><span>PTO</span><b>5 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>1</b></div>
+            <div class="short-stat"><span>Swimming</span><b>68–71°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-joshua-tree/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-640.avif 640w, assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-640.webp 640w, assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.jpg" alt="Joshua Tree Nationalpark Hidden Valley Nature Tr" loading="lazy" srcset="assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-640.webp 640w, assets/generated/images/short-joshua-tree/google_hero_desert_01-e553e4ae3eae59fe-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1920" height="1440" decoding="async"></picture><span class="short-badge">#6 · 5 nights</span><span class="short-score">43/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">2/18/2027–2/23/2027</span>
+          <h3>Joshua Tree</h3>
+          <p>Booked American flights, Burbank hotel and standard SUV; four tentative nights at Agave Gold Airbnb</p>
+          <p class="short-verdict">Best compact family adventure: granite scrambling, a guided climb, Pioneertown and desert night photography from one base.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$6k–$6.9k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>2</b></div>
+            <div class="short-stat"><span>Swimming</span><b>28–28°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b> · </b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-acadia/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-640.avif 640w, assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-640.webp 640w, assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.jpg" alt="Frenchman Bay Sunrise" loading="lazy" srcset="assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-640.webp 640w, assets/generated/images/short-acadia/google_frenchman_bay_sunrise_04-a6257fc2e64b0a90-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="1728" height="492" decoding="async"></picture><span class="short-badge">#7 · 7 nights</span><span class="short-score">42/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/12/2027–6/19/2027</span>
+          <h3>Maine: Acadia</h3>
+          <p>One easy base for America’s most dramatic Atlantic park</p>
+          <p class="short-verdict">Best domestic nature week: major coastal scenery, with cold water and the Portland drive as the tradeoffs.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$8.2k–$11.5k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>1</b></div>
+            <div class="short-stat"><span>Swimming</span><b>55–65°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Very low · &lt;2%</b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-portugal/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-640.avif 640w, assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.avif 1200w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-640.webp 640w, assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.jpg" alt="Alfama rooftops and tiled terraces glowing above the Tagus at sunrise" loading="lazy" srcset="assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-640.webp 640w, assets/generated/images/short-portugal/google_lisbon_alfama_sunrise_01-b75338eb70740118-1200.webp 1200w" sizes="(max-width: 700px) 100vw, 900px" width="1200" height="800" decoding="async"></picture><span class="short-badge">#8 · 7 nights</span><span class="short-score">42/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/12/2027–6/20/2027</span>
+          <h3>Portugal (Lisbon + Algarve)</h3>
+          <p>One-week, two-base value trip</p>
+          <p class="short-verdict">Best overall balance of cost, easy rail travel, food, and optional beach time.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$10.1k–$12.8k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>2</b></div>
+            <div class="short-stat"><span>Swimming</span><b>68–72°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Moderate · 5–10%</b></div>
+          </div>
+          <div class="short-ready">Not ready to book →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-sicily/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-640.avif 640w, assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-640.webp 640w, assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.jpg" alt="The sand causeway from above" loading="lazy" srcset="assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-640.webp 640w, assets/generated/images/short-sicily/isola-bella-tombolo-aerial-688fbc6a6cd99a5c-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2000" height="3002" decoding="async"></picture><span class="short-badge">#9 · 7 nights</span><span class="short-score">42/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/12/2027–6/20/2027</span>
+          <h3>Sicily: Ortigia + Taormina</h3>
+          <p>Seven nights, two bases and a volcano</p>
+          <p class="short-verdict">Best culture-plus-swim week: Greek theatres, golden Noto, a live volcano and 73°F Ionian coves — with June airfare and festival-season hotels as the price of admission.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$10.9k–$14k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>2</b></div>
+            <div class="short-stat"><span>Swimming</span><b>72–74°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Moderate · 5–10%</b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-ischia/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-640.avif 640w, assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-640.webp 640w, assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.jpg" alt="Castello Aragonese at Sunset" loading="lazy" srcset="assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-640.webp 640w, assets/generated/images/short-ischia/castello-sunset-5c98562a96751228-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="2000" height="1333" decoding="async"></picture><span class="short-badge">#10 · 7 nights</span><span class="short-score">41/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/12/2027–6/20/2027</span>
+          <h3>Ischia + Procida</h3>
+          <p>Warmest swim on the short board: 74°F sea plus thermal parks, no car</p>
+          <p class="short-verdict">Warmest water on this list: 74°F sea plus thermal parks from one car-free island base, with the plane-bus-boat arrival chain as the tradeoff.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$11.4k–$14k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>1</b></div>
+            <div class="short-stat"><span>Swimming</span><b>75°F sea + thermal</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+      <a class="short-card" href="locations/short-alaska/index.html">
+        <div class="short-photo"><picture><source type="image/avif" srcset="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-640.avif 640w, assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.avif 1280w" sizes="(max-width: 700px) 100vw, 900px"><source type="image/webp" srcset="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-640.webp 640w, assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px"><img src="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.jpg" alt="Turnagain Arm" loading="lazy" srcset="assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-640.webp 640w, assets/generated/images/short-alaska/google_turnagain_arm_sunset_01-e5dd1cf0713b9d41-1280.webp 1280w" sizes="(max-width: 700px) 100vw, 900px" width="3200" height="1800" decoding="async"></picture><span class="short-badge">#11 · 7 nights</span><span class="short-score">34/55</span></div>
+        <div class="short-body">
+          <span class="short-dates">6/12/2027–6/19/2027</span>
+          <h3>Alaska: Kenai + Girdwood</h3>
+          <p>Tidewater glaciers and 19-hour daylight from two Southcentral bases</p>
+          <p class="short-verdict">The biggest scenery on this list and the worst fit for it: tidewater glaciers and whales, but high cost, cold water, and a long Seattle connection.</p>
+          <div class="short-stats">
+            <div class="short-stat"><span>Family budget</span><b>$10.8k–$13.9k</b></div>
+            <div class="short-stat"><span>PTO</span><b>4 days</b></div>
+            <div class="short-stat"><span>Home bases</span><b>2</b></div>
+            <div class="short-stat"><span>Swimming</span><b>48–51°F water</b></div>
+            <div class="short-stat"><span>Fire disruption</span><b>Low · 2–5%</b></div>
+          </div>
+          <div class="short-ready">Route confirmed →</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="overview">
+    <p class="eyebrow">The Plan at a Glance</p>
+    <p>A data-first ranking of 33 finished comparison itineraries (24 ranked, 9 excluded by family decision) — every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The eleven short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
+      <p class="short-method"><b>Ranked only against each other:</b> budget and ease count double; weather, fire safety, swimming, variety, food, risk, and PTO count once. Ties favor fewer PTO days, then the lower budget ceiling.</p>
+    <div class="overview">
+      <div class="ocard"><b>33 + 11</b><span>comparison plans plus eleven short escapes (24 ranked, 9 excluded)</span></div>
+      <div class="ocard"><b>39/55</b><span>top default score: Madeira + Mallorca; booking gates still apply</span></div>
+      <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland × Crete/Sicily/Mallorca grid</span></div>
+      <div class="ocard"><b data-preserve-date="">June 24-26</b><span>Full days in Pittsburgh protected</span></div>
+    </div>
+  </section>
+
+    <section id="trip-length">
+    <p class="eyebrow">Reality Check</p>
+    <h2>Compare the whole cost, not just the nights</h2>
+    <p>Shorter stays reduce lodging and daily expenses, but airfare changes with the dates and routing. A seven-night trip is not automatically half the price of a twelve-night trip. Compare current quotes before choosing a length.</p>
+    <div class="lm-grid">
+      <div class="lm-card">
+        <h3>Portugal: current full-trip estimate</h3>
+        <p>12 hotel nights for the family of four.</p>
+        <p><strong>$11,975–$15,900 cash</strong></p>
+        <p>These are itemized planning allowances, not a guaranteed booking price. The protected multi-city airfare and internal flights must be priced together.</p>
+      </div>
+      <div class="lm-card">
+        <h3>Short escapes: separate comparison</h3>
+        <p>The short-escape cards below use full cash budgets and a separate ranking.</p>
+        <p>Compare the same travelers, baggage, room occupancy and included activities when weighing a short trip against a longer one.</p>
+      </div>
+      <div class="lm-card">
+        <h3>Protect usable vacation time</h3>
+        <p>Compare hotel nights, flight arrival times, base changes and recovery time—not just calendar days. Jet lag varies; a fixed number of “good days” is not promised.</p>
+        <p>Shortening a trip may change airfare, PTO and the Nights score. No hypothetical shorter variant changes the canonical ranking. Every option must preserve the full 6/24/2027–6/26/2027 Pittsburgh commitment.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="fire-risk">
+    <p class="eyebrow">New decision factor</p>
+    <h2>Wildfire disruption by location and season</h2>
+    <p>These bands estimate the chance that fire, smoke, evacuation, road or park closures, or related flight disruption materially changes the itinerary during its exact dates. They are conservative planning estimates inferred from official recent evidence and fire history—not promises or actuarial forecasts. Each trip takes the least-safe score among its route segments.</p>
+    <div class="rubric-note"><b>Higher is safer:</b> 5 = very low (&lt;2%); 4 = low (2–5%); 3 = moderate (5–10%); 2 = high (10–20%); 1 = very high (&gt;20%). Recheck official daily danger maps and active incidents 14 days, 72 hours, and each morning before rural drives or hikes. A live red/extreme warning overrides the historical band.</div>
+    <div class="matrix-wrap"><table class="budget-tbl"><thead><tr><th>Location and trip window</th><th>Planning chance</th><th>Safety score</th><th>Why</th></tr></thead><tbody>
+      <tr><td><b>Venice and the Dolomites in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>The high, relatively moist Dolomite portion of this June route has very low material wildfire-disruption exposure. Italy's national campaign covers the summer season, but the country's large-fire damage is concentrated later and farther south; live local warnings still take precedence during dry or windy spells.</td></tr>
+      <tr><td><b>Acadia and Mount Desert Island in mid-June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>Acadia has a serious wildfire history, but its defining 1947 disaster followed an exceptionally dry summer and occurred in October. Recent June fires have generally been small and rapidly contained, so material itinerary disruption in this cool coastal window is very unlikely.</td></tr>
+      <tr><td><b>Dubrovnik, Kotor, the Albanian Riviera, and Corfu in early July</b></td><td>High · 10–20%</td><td><b>2/5</b></td><td>This route spends two weeks in dry coastal vegetation during the accelerating Mediterranean fire season. Montenegro's 2024 activity peaked in July–August, Albania recorded severe July seasons in 2024–2025, and the multi-border road route has limited detour simplicity if smoke or closures affect a corridor.</td></tr>
+      <tr><td><b>Seward, Kenai Fjords, Girdwood, and Turnagain Arm in mid-June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Most June visits are unaffected, but the route has a real single-corridor precedent: the June 2019 Swan Lake Fire produced heavy smoke, recreation closures, and intermittent Sterling Highway disruption. The wetter Seward/Girdwood side lowers exposure compared with interior Alaska.</td></tr>
+      <tr><td><b>Theth, Tirana, and the Albanian Riviera in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Albania has meaningful summer wildfire exposure and recent severe seasons, including fires near Theth and Sarandë, but the worst recent activity has clustered in July and August. A June route is lower risk than the same itinerary a month later.</td></tr>
+      <tr><td><b>The Algarve in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Portugal is one of Europe's highest absolute fire-danger countries and the official summer campaign begins 6/1/2027. Coastal Lagos is less exposed than the wooded interior, but Monchique, Sagres, and east–west road excursions add enough wildland interface that fire belongs in the plan.</td></tr>
+      <tr><td><b>Seville, Granada, and the Costa del Sol in early June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Spain's official summer wildfire campaign starts 6/1/2027, and recent large fires have occurred from June through August in central and southern regions. Dense cities and the coast provide alternatives, but the Granada and mountain-road portions remain exposed.</td></tr>
+      <tr><td><b>São Miguel, Azores in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>The Azores' humid maritime climate and official regional planning describe forest fires as a potential hazard without enough regional expression to rank among the archipelago's major recurring natural risks. Material fire disruption is very unlikely.</td></tr>
+      <tr><td><b>San Diego to San Francisco by Highway 1 in early July</b></td><td>High · 10–20%</td><td><b>2/5</b></td><td>July is an active California fire month, and this itinerary repeatedly crosses exposed coastal ranges and single-corridor road sections around Santa Barbara, San Luis Obispo, Big Sur, and Monterey. A fire need not reach a hotel to close Highway 1, create smoke, or force a long reroute.</td></tr>
+      <tr><td><b>Tenerife and La Palma in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>The Canary Islands have experienced major wildfires and Spain's summer campaign begins 6/1/2027, but June is generally earlier than the islands' hottest, driest late-summer peak. Coastal bases are resilient; forest and caldera days are the exposed pieces.</td></tr>
+      <tr><td><b>Naples, Ischia, and Cilento in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Italy's national summer firefighting campaign starts 6/15/2024, but three quarters of Italy's 2024 burned area occurred in July and August. Island/coastal bases reduce direct exposure; inland Cilento drives and wooded Ischia slopes remain the watch points.</td></tr>
+      <tr><td><b>Southern Corsica in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Corsica's maquis and mountain roads are fire-prone, and France publishes daily forest-danger maps from June through September. June is earlier than the historic late-summer peak, but a coastal road closure can materially disrupt this compact driving route.</td></tr>
+      <tr><td><b>Split, Hvar, and Korčula in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Dalmatia's legal high-fire controls begin 6/1/2026 and late-June lightning fires do occur, including Hvar/Šibenik incidents in 2026. The largest recent coastal fires have clustered in late July and August, so this June itinerary is low rather than high risk.</td></tr>
+      <tr><td><b>Athens and the Greek islands in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Greece's official fire season runs 5/1/2027–10/31/2027, EFFIS shows the main recent season from June through September, and late-June red-code conditions have occurred on Crete. Island geography limits fire spread but wind can quickly close gorges, roads, beaches, or ferry approaches.</td></tr>
+      <tr><td><b>Oʻahu, Hawaiʻi Island, Maui, and Kauaʻi in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>June begins Hawaiʻi's dry-season lookout period, and statewide fire-history maps show repeated starts on every planned island. Resort/coastal alternatives are strong, but leeward Maui and Hawaiʻi Island, Haleakalā, Hāna, Waimea, and Kōkeʻe expose the route to smoke or road closures.</td></tr>
+      <tr><td><b>Reykjavík, Reykjanes, and Iceland's South Coast in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>Iceland has had rare large grass fires, but its maritime climate, sparse tree cover, and limited fire history make wildfire a very small June travel risk. Volcanic hazards remain important, but they stay in the separate general Risk axis.</td></tr>
+      <tr><td><b>Lisbon, Cascais, and Sintra in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Central Portugal has severe wildfire history, but this route is mainly urban/coastal and travels before the usual late-summer peak. Sintra-Cascais Natural Park and wooded day trips create a real but low closure/smoke exposure.</td></tr>
+      <tr><td><b>Madeira in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Madeira can sustain large, terrain-driven fires—the August 2024 event burned about 5,000 hectares—but June is earlier and normally milder. A single mountain road or trail closure can still remove a headline levada or ridge day.</td></tr>
+      <tr><td><b>Mallorca in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Mallorca's pine-covered Tramuntana roads and coves sit inside Spain's June–October summer fire campaign. The route has beach and town substitutions, but a mountain closure could remove several signature days at once.</td></tr>
+      <tr><td><b>Malta and Gozo in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Malta has dry grass and brush fires, but limited forest cover and short road distances make landscape-scale travel disruption less likely than on Sicily or Sardinia. Smoke or a localized road closure is the more plausible impact.</td></tr>
+      <tr><td><b>San Juan, Luquillo, Fajardo, and El Yunque in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Puerto Rico experiences many wildland fires and June remains within its extended vulnerable season, but official evidence identifies the drier south and west as the main hotspots. This itinerary stays in the wetter northeast with dense road alternatives.</td></tr>
+      <tr><td><b>Sardinia from June into early July</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Sardinia formally designates 6/1/2026–10/31/2026 as high fire danger. In 2026 the island recorded roughly 670 June fires before the full July aerial deployment, making this a recurring planning issue even when most ignitions remain small.</td></tr>
+      <tr><td><b>Sicily in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>Sicily is highly fire-prone and the July 2026 island-wide emergency confirms that the consequence can be severe. Timing matters: the regional 2023 analysis found no critical fire conditions from early summer through mid-July before a sharp late-July surge. June is meaningfully safer than July, but not low-risk.</td></tr>
+      <tr><td><b>Ljubljana, the Julian Alps, Soča Valley, and Piran in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>The moist alpine half is low risk; the Karst and coastal southwest can burn. EFFIS mapped only two Slovenian fires in 2024, while the July 2024 Karst fire demonstrates that localized disruption is credible later in summer.</td></tr>
+      <tr><td><b>Nice, Cassis, and Provence in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>Provence and the Riviera are fire-prone and France begins daily forest-danger mapping in June. This itinerary is early in the season and has urban/coastal substitutes, but calanque and inland-forest closures are realistic during a hot, windy spell.</td></tr>
+      <tr><td><b>Salento, Basilicata, and the Amalfi Coast in June</b></td><td>Low · 2–5%</td><td><b>4/5</b></td><td>The route enters Italy's official summer campaign on 6/15/2027, but recent national damage is concentrated in July and August. Coastal towns are resilient; wooded Basilicata/Cilento transfers and cliff-road closures are the practical exposure.</td></tr>
+      <tr><td><b>The Bernese Oberland in June</b></td><td>Very low · &lt;2%</td><td><b>5/5</b></td><td>Swiss forest fires are usually small and the greatest burned area is historically south of the Alps or in dry winter surface fires. The lush, high-elevation Bernese Oberland in June has very low material trip-disruption exposure.</td></tr>
+      <tr><td><b>Antalya, Kaş, and Fethiye in June</b></td><td>Moderate · 5–10%</td><td><b>3/5</b></td><td>The Turkish Riviera combines dry pine forest, steep roads, and a June entry into the eastern Mediterranean fire season. Türkiye's 2024 burned area was more than double its long-term average; exact resort exposure varies sharply with wind and heat.</td></tr>
+    </tbody></table></div>
   </section>
 
   <section id="decision">

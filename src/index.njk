@@ -26,13 +26,13 @@ h1,h2,h3,h4{font-family:"Fraunces","Georgia",serif;letter-spacing:-.01em}
 a{color:var(--c1)}
 .eyebrow{margin:0 0 8px;color:var(--c2);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 /* HERO */
-header{position:relative;isolation:isolate;min-height:clamp(380px,62vh,640px);display:grid;align-items:end;padding:32px clamp(20px,5vw,80px) 42px;color:#fff;overflow:hidden;background:linear-gradient(90deg,#17130f 0%,#17130f 30%,#3b2419 64%,#6c3f25 100%)}
+header{position:relative;isolation:isolate;min-height:0;display:grid;align-items:end;padding:22px clamp(20px,5vw,80px) 26px;color:#fff;overflow:hidden;background:linear-gradient(90deg,#17130f 0%,#17130f 30%,#3b2419 64%,#6c3f25 100%)}
 header::before{content:"";position:absolute;top:0;right:-2vw;bottom:0;width:min(72vw,1160px);background:url("assets/family-cartoon.png") center / cover no-repeat;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.14) 7%,rgba(0,0,0,.58) 17%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.14) 7%,rgba(0,0,0,.58) 17%,#000 30%)}
 header::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,16,12,.99) 0%,rgba(18,16,12,.96) 29%,rgba(18,16,12,.78) 42%,rgba(18,16,12,.38) 57%,rgba(18,16,12,.1) 72%,rgba(18,16,12,.27) 100%),linear-gradient(180deg,rgba(10,20,24,.02),rgba(10,18,22,.12) 45%,rgba(8,14,18,.72));z-index:0}
 .hero-inner{max-width:700px}
 .hero-inner{position:relative;z-index:1}
 header .kicker{display:inline-flex;gap:10px;align-items:center;margin:0 0 20px;padding:7px 15px;border:1px solid rgba(255,255,255,.4);border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(6px);background:rgba(255,255,255,.08)}
-h1{max-width:660px;margin:0 0 16px;font-size:clamp(2.55rem,4.85vw,4.35rem);line-height:.95;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+h1{max-width:660px;margin:0;font-size:clamp(1.8rem,3vw,2.75rem);line-height:.95;font-weight:600;text-shadow:0 2px 30px rgba(0,0,0,.35)}
 header .lead{max-width:620px;margin:0 0 24px;font-size:clamp(1rem,1.35vw,1.08rem);color:rgba(255,255,255,.94);line-height:1.48}
 .hero-meta{display:flex;flex-wrap:wrap;gap:26px}
 .hero-meta div{display:flex;flex-direction:column}
@@ -326,7 +326,7 @@ main>section>h2+p{margin:0 0 30px;color:var(--muted);max-width:760px;font-size:1
 footer{max-width:1360px;margin:0 auto;padding:20px clamp(18px,5vw,60px) 60px;color:var(--muted);font-size:.8rem;text-align:center;border-top:1px solid var(--line)}
 footer a{color:var(--muted)}
 @media(max-width:860px){
- header{min-height:80vh}
+ header{min-height:0}
  h1{font-size:clamp(2.15rem,9.4vw,2.65rem);line-height:.94;overflow-wrap:anywhere}
  header .lead{max-width:100%;font-size:1rem}
  .plan-grid,.status,.twocol{grid-template-columns:1fr}
@@ -594,8 +594,7 @@ footer a{color:var(--muted)}
 <header class="decision-hero">
   <div class="hero-inner">
     <p class="eyebrow">Family Travel Decision Dashboard</p>
-    <h1>Epic Family Vacation: 33-Trip Comparison</h1>
-    <p class="lead">A data-first ranking of 33 finished comparison itineraries (24 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The eleven short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
+    <h1>Family trips · June 2027</h1>
   </div>
 </header>
 
@@ -603,10 +602,11 @@ footer a{color:var(--muted)}
   <details class="site-nav-menu">
     <summary><span>Sections</span></summary>
     <div class="site-nav-links">
+      <a href="#family-shortlist">Short List</a>
+      <a href="#trips">Full Trips</a>
+      <a href="#short-trips">Short Trips</a>
       <a href="locations/completed/">Completed Trips →</a>
       <a href="#trip-length">Short vs Full</a>
-      <a href="#short-trips">Short Trips</a>
-      <a href="#family-shortlist">Family shortlist</a><a href="#trips">Trips</a>
       <a href="locations/trip-builder/">Trip Builder →</a>
       <a href="locations/compare/">Compare by Country →</a>
       <a href="#decision">Quick Decision</a>
@@ -621,26 +621,22 @@ footer a{color:var(--muted)}
 </nav>
 
 <main>
-  <section id="overview">
-    <p class="eyebrow">The Plan at a Glance</p>
-    <div class="overview">
-      <div class="ocard"><b>33 + 11</b><span>comparison plans plus eleven short escapes (24 ranked, 9 excluded)</span></div>
-      <div class="ocard"><b>{{ hub.activeTrips[0].totalBaked }}/55</b><span>top default score: {{ hub.activeTrips[0].displayName }}; booking gates still apply</span></div>
-      <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland &times; Crete/Sicily/Mallorca grid</span></div>
-      <div class="ocard"><b data-preserve-date>June 24-26</b><span>Full days in Pittsburgh protected</span></div>
-    </div>
-  </section>
-
-  {% include "hub/trip-length.njk" %}
-
   {% include "hub/family-shortlist.njk" %}
+
+  <section id="trips" class="shortlist">
+    <div class="sl-head">
+      <p class="sl-eyebrow">All routes</p>
+    <h2>Full trips</h2>
+      <p>Full-length routes ranked by your priorities, with the family-excluded options kept for reference.</p>
+    </div>
+    {% include "hub/cards.njk" %}
+  </section>
 
   <section id="short-trips">
     <div class="short-head">
       <p class="eyebrow">New · 7 Nights or Less</p>
-      <h2>Short, easy escapes</h2>
+      <h2>Short trips</h2>
       <p>Smaller-budget trips built around fewer bases, lighter logistics, and enough breathing room to feel like a vacation. Warm water is a bonus here, not the price of admission.</p>
-      <p class="short-method"><b>Ranked only against each other:</b> budget and ease count double; weather, fire safety, swimming, variety, food, risk, and PTO count once. Ties favor fewer PTO days, then the lower budget ceiling.</p>
     </div>
     <div class="short-grid">
       {%- for trip in shortTrips %}
@@ -665,6 +661,20 @@ footer a{color:var(--muted)}
     </div>
   </section>
 
+  <section id="overview">
+    <p class="eyebrow">The Plan at a Glance</p>
+    <p>A data-first ranking of 33 finished comparison itineraries (24 ranked, 9 excluded by family decision) &mdash; every score re-derived from the built-out trip pages (budget rollups, flight chains, verified June sea temps, PTO math) across ten axes. The eleven short escapes below use the same evidence standard but stay outside this two-week ranking. The numbers, at a glance:</p>
+      <p class="short-method"><b>Ranked only against each other:</b> budget and ease count double; weather, fire safety, swimming, variety, food, risk, and PTO count once. Ties favor fewer PTO days, then the lower budget ceiling.</p>
+    <div class="overview">
+      <div class="ocard"><b>33 + 11</b><span>comparison plans plus eleven short escapes (24 ranked, 9 excluded)</span></div>
+      <div class="ocard"><b>{{ hub.activeTrips[0].totalBaked }}/55</b><span>top default score: {{ hub.activeTrips[0].displayName }}; booking gates still apply</span></div>
+      <div class="ocard"><b>5 hybrids</b><span>Madeira/mainland &times; Crete/Sicily/Mallorca grid</span></div>
+      <div class="ocard"><b data-preserve-date>June 24-26</b><span>Full days in Pittsburgh protected</span></div>
+    </div>
+  </section>
+
+  {% include "hub/trip-length.njk" %}
+
   <section id="fire-risk">
     <p class="eyebrow">New decision factor</p>
     <h2>Wildfire disruption by location and season</h2>
@@ -675,15 +685,6 @@ footer a{color:var(--muted)}
       <tr><td><b>{{ profile.name }}</b></td><td>{% if profile.score == 5 %}Very low · &lt;2%{% elif profile.score == 4 %}Low · 2&ndash;5%{% elif profile.score == 3 %}Moderate · 5&ndash;10%{% elif profile.score == 2 %}High · 10&ndash;20%{% else %}Very high · &gt;20%{% endif %}</td><td><b>{{ profile.score }}/5</b></td><td>{{ profile.rationale }}</td></tr>
       {%- endfor %}
     </tbody></table></div>
-  </section>
-
-  <section id="trips" class="shortlist">
-    <div class="sl-head">
-      <p class="sl-eyebrow">Trip Shortlist</p>
-    <h2>Twenty-four ranked ways to spend the same two weeks</h2>
-      <p>Ranked by the scoreboard — pure data, no preference thumb on the scale; the top score is outlined in red. Tap any card for the full day-by-day itinerary. Nights pill = hotel (bed) nights; the <b>+1</b> chip is the red-eye/travel night away.</p>
-    </div>
-    {% include "hub/cards.njk" %}
   </section>
 
   <section id="decision">

@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import test from 'node:test';
 import { createRequire } from 'node:module';
+import { load } from 'cheerio';
 
 const root = path.resolve(import.meta.dirname, '../..');
 const require = createRequire(import.meta.url);
@@ -39,9 +40,16 @@ test('short escapes stay compact, budget-first, and outside the long-trip rankin
   }
 });
 
-test('the short-escape band appears before the comparison shortlist', () => {
-  const source = fs.readFileSync(path.join(root, 'src/index.njk'), 'utf8');
-  assert.ok(source.indexOf('<section id="short-trips">') < source.indexOf('<section id="trips"'));
+test('home page leads with short list, full trips and short trips before guidance', () => {
+  const $ = load(fs.readFileSync(path.join(root, 'index.html'), 'utf8'));
+  const sections = $('main > section').map((_, el) => $(el).attr('id')).get();
+  assert.deepEqual(sections.slice(0, 3), ['family-shortlist', 'trips', 'short-trips']);
+  assert.equal(new Set(sections).size, sections.length);
+  for (const id of ['overview', 'trip-length', 'fire-risk', 'decision', 'scoreboard']) {
+    assert.ok(sections.indexOf(id) > 2, `${id} must follow the trip cards`);
+  }
+  assert.deepEqual($('.site-nav-links a').slice(0, 3).map((_, el) => $(el).attr('href')).get(),
+    ['#family-shortlist', '#trips', '#short-trips']);
 });
 
 test('every short escape uses one continuous hourly calendar', () => {
