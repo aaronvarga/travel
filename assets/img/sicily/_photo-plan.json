@@ -1,106 +1,703 @@
 {
-  "note": "Original assets retained where they passed visual review. Cefalù hero/card and Rocca photograph upgraded after Google Images discovery, five-candidate contact sheet and cross-surface crop review on Nov 8, 2026. No image edits beyond responsive display crops.",
+  "reviewedAt": "2026-11-08",
+  "note": "Expanded six activity galleries from 11 to 68 individually reviewed photographs. Actual discovery is recorded: Google Images was CAPTCHA-blocked; new source pages were found via Bing Images and links on those pages. Existing local images retain their original credits and provenance. No watermarks removed and no generated imagery. Archival eruption and seasonal-snow photos are illustrative, not promises of tour conditions.",
+  "visualBrief": {
+    "sicily-ss-ortigia": "Island-wide sunset, turquoise waterfront, warm limestone architecture, boats and intimate lanes.",
+    "sicily-ss-southeast": "Honey-gold Baroque Noto, theatrical ancient stone and Marzamemi’s blue chairs and harbor.",
+    "sicily-ss-etna": "Black lava, red ridges, vast crater scale and volcanic drama, clearly captioning archival eruptions.",
+    "sicily-ss-taormina": "Theatre-and-volcano reveal, luminous Ionian coves and dawn-to-dusk coastal views.",
+    "sicily-cefalu": "Sea-level waterfront, warm evening color, cathedral details and a transporting golden-hour lead.",
+    "sicily-rocca": "The actual walking payoff: cliff-framed town views, fortress ridges, rock windows and trail context."
+  },
   "carousels": {
     "sicily-ss-ortigia": [
       {
-        "file": "ortigia-maniace-aerial.jpg",
-        "alt": "Castello Maniace on the tip of Ortigia from above",
-        "captionTitle": "Castello Maniace on the tip of Ortigia from above",
-        "credit": "Jacob Buchhave · Unsplash License",
-        "reusedFrom": "src/_data/short-sicily/main.json"
+        "file": "source_ortigia_context.jpg",
+        "alt": "A golden sunset spreads over Ortigia, with Castello Maniace and the island skyline surrounded by the sea.",
+        "captionTitle": "Ortigia at sunset",
+        "credit": "Context Travel · Source photograph",
+        "selectionId": "ortigia-context",
+        "sourcePage": "https://www.contexttravel.com/cities/sicily/tours/sunset-walk-in-ortigia-with-wine-tasting",
+        "sourceImage": "https://cdn.contexttravel.com/image/upload/c_fill,q_60,w_2400/v1734024261/production/product_image/image__1734024261.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
+      },
+      {
+        "file": "google_ortigia_waterfront_01.jpg",
+        "alt": "Ortigia’s pale waterfront palaces rise above transparent turquoise water beneath a textured sky.",
+        "captionTitle": "Ionian waterfront",
+        "credit": "Michele Ponzio · Google Images source",
+        "selectionId": "local-11",
+        "reusedFrom": "assets/img/switzerland-sicily/google_ortigia_waterfront_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
       },
       {
         "file": "siracusa-duomo-facade.jpg",
-        "alt": "The Baroque facade of Siracusa Cathedral against the sun",
-        "captionTitle": "The Baroque facade of Siracusa Cathedral against the sun",
+        "alt": "An upward architectural view of Siracusa Cathedral’s ornate Baroque facade against a rich blue sky.",
+        "captionTitle": "Siracusa Cathedral",
         "credit": "Antonio Sessa · Unsplash License",
-        "reusedFrom": "src/_data/short-sicily/main.json"
+        "reusedFrom": "assets/img/sicily/siracusa-duomo-facade.jpg",
+        "selectionId": "local-01",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "ortigia-seafront-beach.jpg",
+        "alt": "Old stone buildings and the seawall frame a small clear-water beach in Ortigia.",
+        "captionTitle": "Ortigia sea walls",
+        "credit": "Megan Kotlus · Unsplash License",
+        "selectionId": "local-08",
+        "reusedFrom": "assets/img/short-sicily/ortigia-seafront-beach.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_ortigia_adr_22.jpg",
+        "alt": "Blue and turquoise wooden fishing boats reflect in the water beside Ortigia.",
+        "captionTitle": "Fishing-boat colors",
+        "credit": "Along Dusty Roads · Source photograph",
+        "selectionId": "ortigia-adr-22",
+        "sourcePage": "https://www.alongdustyroads.com/posts/syracuse-sicily-ortigia",
+        "sourceImage": "https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1626170224307-ZQLAR7VP5JO3ZQOCUOC3/2L1A6942.jpg?format=1500w",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Sunset Drinks on Lungomare Alfeo"
+      },
+      {
+        "file": "ortigia-diana-fountain.jpg",
+        "alt": "Golden sculpture and splashing water at the Fountain of Diana in Ortigia’s Piazza Archimede.",
+        "captionTitle": "Diana Fountain",
+        "credit": "Antonio Sessa · Unsplash License",
+        "selectionId": "local-09",
+        "reusedFrom": "assets/img/short-sicily/ortigia-diana-fountain.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "ortigia-maniace-sea.jpg",
+        "alt": "Castello Maniace’s pale stone walls stand above deep-blue water at Ortigia’s southern tip.",
+        "captionTitle": "Castello Maniace",
+        "credit": "Antonio Sessa · Unsplash License",
+        "selectionId": "local-10",
+        "reusedFrom": "assets/img/short-sicily/ortigia-maniace-sea.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_ortigia_adr_18.jpg",
+        "alt": "A sunlit lane winds between finely carved balconies and weathered limestone facades in Ortigia.",
+        "captionTitle": "A walk through Ortigia",
+        "credit": "Along Dusty Roads · Source photograph",
+        "selectionId": "ortigia-adr-18",
+        "sourcePage": "https://www.alongdustyroads.com/posts/syracuse-sicily-ortigia",
+        "sourceImage": "https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1626010258771-OROGQ1ZO28NOMMFVJ6ZS/2L1A7002.jpg?format=1500w",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Get Lost in Ortigia"
+      },
+      {
+        "file": "source_ortigia_adr_13.jpg",
+        "alt": "Café umbrellas line a broad Ortigia square beneath elaborate Baroque balconies.",
+        "captionTitle": "Piazza cafés",
+        "credit": "Along Dusty Roads · Source photograph",
+        "selectionId": "ortigia-adr-13",
+        "sourcePage": "https://www.alongdustyroads.com/posts/syracuse-sicily-ortigia",
+        "sourceImage": "https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1626104149630-NF0OQ9D2EI7AEYSBFS8W/DSC01383.jpg?format=1500w",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Linger Around Piazza Duomo"
+      },
+      {
+        "file": "source_ortigia_adr_24.jpg",
+        "alt": "Soft sunset colors reflect across the harbor beside Ortigia’s Lungomare Alfeo.",
+        "captionTitle": "Lungomare sunset",
+        "credit": "Along Dusty Roads · Source photograph",
+        "selectionId": "ortigia-adr-24",
+        "sourcePage": "https://www.alongdustyroads.com/posts/syracuse-sicily-ortigia",
+        "sourceImage": "https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/1626170156527-5K39GLFL03XSNZHMZCDP/DSC01195.jpg?format=1500w",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Sunset Drinks on Lungomare Alfeo"
       }
     ],
     "sicily-ss-southeast": [
       {
         "file": "noto-skyline-clouds.jpg",
-        "alt": "Noto’s honey-gold Baroque skyline under summer clouds",
-        "captionTitle": "Noto’s honey-gold Baroque skyline under summer clouds",
+        "alt": "Noto Cathedral and honey-colored Baroque buildings rise beneath sculpted summer clouds.",
+        "captionTitle": "Noto’s golden skyline",
         "credit": "Antonio Sessa · Unsplash License",
-        "reusedFrom": "src/_data/short-sicily/main.json"
+        "reusedFrom": "assets/img/sicily/noto-skyline-clouds.jpg",
+        "selectionId": "local-02",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_marzamemi_moveo.jpg",
+        "alt": "Turquoise café chairs stand in Marzamemi’s broad stone piazza beneath a vivid blue sky.",
+        "captionTitle": "Marzamemi’s blue chairs",
+        "credit": "Moveo / Telepass · Source photograph",
+        "selectionId": "marzamemi-moveo",
+        "sourcePage": "https://moveo.telepass.com/borghi-piu-belli-val-di-noto/",
+        "sourceImage": "https://moveo.telepass.com/wp-content/uploads/2024/04/borghi-val-di-noto-marzamemi.jpeg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
+      },
+      {
+        "file": "siracusa-greek-theatre.jpg",
+        "alt": "The sweeping ancient stone seating of Syracuse’s Greek Theatre fills a landscaped hillside.",
+        "captionTitle": "Syracuse Greek Theatre",
+        "credit": "Roger Lipera · Unsplash License",
+        "selectionId": "local-14",
+        "reusedFrom": "assets/img/short-sicily/siracusa-greek-theatre.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_noto_baroque_dusk_01.jpg",
+        "alt": "Noto’s Baroque cathedral and palaces glow above the street at blue hour.",
+        "captionTitle": "Noto after dark",
+        "credit": "Home Ortigia · Google Images source",
+        "selectionId": "local-19",
+        "reusedFrom": "assets/img/switzerland-sicily/google_noto_baroque_dusk_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "marzamemi-waves-aerial.jpg",
+        "alt": "Aerial perspective over Marzamemi’s seaside square and pale buildings beside breaking waves.",
+        "captionTitle": "Marzamemi waterfront",
+        "credit": "Andrea Cappiello · Unsplash License",
+        "selectionId": "local-17",
+        "reusedFrom": "assets/img/short-sicily/marzamemi-waves-aerial.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "noto-cathedral-facade.jpg",
+        "alt": "The symmetrical honey-stone facade and dome of Noto Cathedral rise above its staircase.",
+        "captionTitle": "Noto Cathedral",
+        "credit": "Sabrina Mazzeo · Unsplash License",
+        "selectionId": "local-15",
+        "reusedFrom": "assets/img/short-sicily/noto-cathedral-facade.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_noto_adr_05.jpg",
+        "alt": "Warm stone balconies frame a quiet narrow street in Noto’s Baroque center.",
+        "captionTitle": "Baroque side streets",
+        "credit": "Along Dusty Roads · Source photograph",
+        "selectionId": "noto-adr-05",
+        "sourcePage": "https://www.alongdustyroads.com/posts/noto-sicily-guide",
+        "sourceImage": "https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/4ad01579-7990-416e-930e-c710bd706580/DSC08288.jpg?format=1500w",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Fall in Love With Baroque Architecture"
+      },
+      {
+        "file": "marzamemi-piazza-aerial.jpg",
+        "alt": "An aerial view traces Marzamemi’s stone piazza, tiny church and surrounding fishing-village houses.",
+        "captionTitle": "Piazza from above",
+        "credit": "Andrea Cappiello · Unsplash License",
+        "selectionId": "local-18",
+        "reusedFrom": "assets/img/short-sicily/marzamemi-piazza-aerial.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "noto-dome-telephoto.jpg",
+        "alt": "Noto’s cathedral dome rises above layered terracotta rooftops in warm afternoon light.",
+        "captionTitle": "Noto rooftops",
+        "credit": "Krzysztof · Unsplash License",
+        "selectionId": "local-16",
+        "reusedFrom": "assets/img/short-sicily/noto-dome-telephoto.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_noto_cathedral_01.jpg",
+        "alt": "Expressive carved figures support an ornate wrought-iron balcony in Noto.",
+        "captionTitle": "Carved stone balconies",
+        "credit": "Visit Sicily · Google Images source",
+        "selectionId": "local-20",
+        "reusedFrom": "assets/img/switzerland-sicily/google_noto_cathedral_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_noto_rm_08.jpg",
+        "alt": "Carved limestone brackets, a small balcony and climbing plants reveal Noto’s architectural details.",
+        "captionTitle": "Baroque details",
+        "credit": "Rhianna May · Source photograph",
+        "selectionId": "noto-rm-08",
+        "sourcePage": "https://rhiannamay.com/2022/03/visit-noto-sicily-what-where/",
+        "sourceImage": "https://rhiannamay.com/wp-content/uploads/2022/03/Visit-Noto-Sicily-Sicily-Travel-Photographer-Rhianna-May-Photography-5-1024x678.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Visit Noto: Where to Eat in Noto & Avola"
+      },
+      {
+        "file": "source_marzamemi_volpi.jpg",
+        "alt": "A sailboat rests in silhouette as the sun sets over Marzamemi harbor.",
+        "captionTitle": "Harbor sunset",
+        "credit": "Luca Volpi · Source photograph",
+        "selectionId": "marzamemi-volpi",
+        "sourcePage": "https://www.flickr.com/photos/luca_volpi/6076283566",
+        "sourceImage": "https://live.staticflickr.com/6191/6076283566_65e696b5f0_b.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
       }
     ],
     "sicily-ss-etna": [
       {
         "file": "google_etna_lava_landscape_01.jpg",
-        "alt": "Jagged black lava in the foreground leads toward Etna’s volcanic slopes beneath a dramatic blue sky",
+        "alt": "Jagged black lava in the foreground leads toward Etna’s volcanic slopes beneath a dramatic blue sky.",
         "captionTitle": "Etna’s lava landscape",
         "credit": "Go-Etna · Google Images source",
         "sourcePage": "https://www.go-etna.com/excursions/jeep-excursion-to-mount-etna/",
         "sourceImage": "https://www.go-etna.com/wp-content/uploads/2022/04/Etna-Excursion-08.jpg",
-        "reusedFrom": "src/_data/switzerland-sicily/main.json"
+        "reusedFrom": "assets/img/sicily/google_etna_lava_landscape_01.jpg",
+        "selectionId": "local-03",
+        "discoveredVia": "Existing self-hosted trip gallery"
       },
       {
-        "file": "etna-craters-trails.jpg",
-        "alt": "Trails winding between Etna’s red summit craters",
-        "captionTitle": "Trails winding between Etna’s red summit craters",
-        "credit": "Reegan Fraser · Unsplash License",
-        "reusedFrom": "src/_data/short-sicily/main.json"
+        "file": "source_etna_tm_01.jpg",
+        "alt": "An aerial view reveals Etna’s steep, dark summit cone, sulfur-colored rock and drifting steam.",
+        "captionTitle": "Etna from above",
+        "credit": "Travel Made Me Do It · Source photograph",
+        "selectionId": "etna-tm-01",
+        "sourcePage": "https://travelmademedoit.com/mount-etna/",
+        "sourceImage": "https://travelmademedoit.com/wp-content/uploads/2023/04/DJI_0548-1-1024x732.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Hiking Mount Etna With or Without A Guide"
+      },
+      {
+        "file": "source_etna_go07.jpg",
+        "alt": "A red volcanic crater rim cuts across Etna’s stark ash slopes beneath a textured sky.",
+        "captionTitle": "Red crater rim",
+        "credit": "Go-Etna · Source photograph",
+        "selectionId": "etna-go07",
+        "sourcePage": "https://www.go-etna.com/excursions/jeep-excursion-to-mount-etna/",
+        "sourceImage": "https://www.go-etna.com/wp-content/uploads/2022/04/Go-Etna_Etna07.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
+      },
+      {
+        "file": "img-75f694baa4d3.jpg",
+        "alt": "An ochre crater ridge and winding paths lead toward Etna’s smoking upper slopes.",
+        "captionTitle": "Crater trails",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-39",
+        "reusedFrom": "assets/img/portugal-sicily/img-75f694baa4d3.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_etna_tm_11.jpg",
+        "alt": "A hiker looks across the vast volcanic amphitheater of Etna’s Valle del Bove.",
+        "captionTitle": "Valle del Bove",
+        "credit": "Travel Made Me Do It · Source photograph",
+        "selectionId": "etna-tm-11",
+        "sourcePage": "https://travelmademedoit.com/mount-etna/",
+        "sourceImage": "https://travelmademedoit.com/wp-content/uploads/2023/04/DSC06758-1024x683.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Exploring Europe's Highest Active Volcano"
+      },
+      {
+        "file": "source_etna_go02.jpg",
+        "alt": "A winding trail crosses red and black volcanic slopes with yellow flowering plants on Mount Etna.",
+        "captionTitle": "Volcanic colors",
+        "credit": "Go-Etna · Source photograph",
+        "selectionId": "etna-go02",
+        "sourcePage": "https://www.go-etna.com/excursions/jeep-excursion-to-mount-etna/",
+        "sourceImage": "https://www.go-etna.com/wp-content/uploads/2022/04/Go-Etna_Tours_02.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
+      },
+      {
+        "file": "etna-lava-night.jpg",
+        "alt": "Archival night photograph of glowing lava and an orange eruption plume on Etna; not a promised tour condition.",
+        "captionTitle": "Etna after dark",
+        "credit": "Shawn Appel · Unsplash License",
+        "selectionId": "local-21",
+        "reusedFrom": "assets/img/short-sicily/etna-lava-night.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_etna_tm_19.jpg",
+        "alt": "Dark layers and lingering seasonal snow curve around the inside of an Etna crater.",
+        "captionTitle": "A crater’s inner bowl",
+        "credit": "Travel Made Me Do It · Source photograph",
+        "selectionId": "etna-tm-19",
+        "sourcePage": "https://travelmademedoit.com/mount-etna/",
+        "sourceImage": "https://travelmademedoit.com/wp-content/uploads/2023/04/DSC06772-1024x683.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "FAQs"
+      },
+      {
+        "file": "etna-summit-clouds.jpg",
+        "alt": "Drifting clouds curl around Etna’s dark volcanic summit above patches of seasonal snow.",
+        "captionTitle": "Summit atmosphere",
+        "credit": "Asa Rodger · Unsplash License",
+        "selectionId": "local-22",
+        "reusedFrom": "assets/img/short-sicily/etna-summit-clouds.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_etna_go05.jpg",
+        "alt": "A walker provides scale beneath a dark Etna crater rim and sculpted volcanic slopes.",
+        "captionTitle": "Walking the ash slopes",
+        "credit": "Go-Etna · Source photograph",
+        "selectionId": "etna-go05",
+        "sourcePage": "https://www.go-etna.com/excursions/jeep-excursion-to-mount-etna/",
+        "sourceImage": "https://www.go-etna.com/wp-content/uploads/2022/04/Etna-Excursion-05.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
+      },
+      {
+        "file": "source_etna_tm_18.jpg",
+        "alt": "A hiker looks across Etna’s red volcanic ridges and remnant seasonal snow.",
+        "captionTitle": "Across the red ridges",
+        "credit": "Travel Made Me Do It · Source photograph",
+        "selectionId": "etna-tm-18",
+        "sourcePage": "https://travelmademedoit.com/mount-etna/",
+        "sourceImage": "https://travelmademedoit.com/wp-content/uploads/2023/04/DSC06746-1024x683.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Mount Etna Facts and Useful Things to Know"
+      },
+      {
+        "file": "etna-ash-plume.jpg",
+        "alt": "Archival view of Etna releasing a dramatic ash plume; an illustration of the volcano, not a safe-access forecast.",
+        "captionTitle": "Volcanic power",
+        "credit": "Piermanuele Sberni · Unsplash License",
+        "selectionId": "local-23",
+        "reusedFrom": "assets/img/short-sicily/etna-ash-plume.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
       }
     ],
     "sicily-ss-taormina": [
       {
-        "file": "isola-bella-aerial-blue.jpg",
-        "alt": "Isola Bella’s pebble causeway in deep-blue water",
-        "captionTitle": "Isola Bella’s pebble causeway in deep-blue water",
-        "credit": "Maria Bobrova · Unsplash License",
-        "reusedFrom": "src/_data/short-sicily/main.json"
-      },
-      {
-        "file": "isola-bella-golden-boat.jpg",
-        "alt": "A small boat rounding Isola Bella in golden-hour light",
-        "captionTitle": "A small boat rounding Isola Bella in golden-hour light",
-        "credit": "Jacob Buchhave · Unsplash License",
-        "reusedFrom": "src/_data/short-sicily/main.json"
+        "file": "google_taormina_isola_bella_01.jpg",
+        "alt": "Warm dawn light touches Isola Bella and its narrow causeway beneath Taormina.",
+        "captionTitle": "Isola Bella at dawn",
+        "credit": "Antonino Bartuccio · Google Images source",
+        "selectionId": "local-30",
+        "reusedFrom": "assets/img/switzerland-sicily/google_taormina_isola_bella_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
       },
       {
         "file": "taormina-teatro-etna.jpg",
-        "alt": "Snow-capped Etna framed by the Teatro Antico’s broken columns",
-        "captionTitle": "Snow-capped Etna framed by the Teatro Antico’s broken columns",
+        "alt": "Mount Etna rises beyond the ancient columns and stage of Taormina’s Greek Theatre.",
+        "captionTitle": "Theatre and Etna",
         "credit": "Casey Lovegrove · Unsplash License",
-        "reusedFrom": "src/_data/short-sicily/main.json"
+        "reusedFrom": "assets/img/sicily/taormina-teatro-etna.jpg",
+        "selectionId": "local-04",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_taormina_mazzaro_sunset_01.jpg",
+        "alt": "Pink sunset clouds hang above Mazzarò Bay and the coastline below Taormina.",
+        "captionTitle": "Mazzarò’s evening sky",
+        "credit": "Alastair Graham · Google Images source",
+        "selectionId": "local-49",
+        "reusedFrom": "assets/img/madeira-sicily/google_taormina_mazzaro_sunset_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "img-9c38e7bec4f4.jpg",
+        "alt": "A wide aerial view shows Isola Bella, the headlands and brilliant blue Ionian coves below Taormina.",
+        "captionTitle": "Ionian coves",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-47",
+        "reusedFrom": "assets/img/madeira-sicily/img-9c38e7bec4f4.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_taormina_viewpoint_01.jpg",
+        "alt": "Taormina’s colorful buildings and terraces follow a cliff above the deep-blue Ionian Sea.",
+        "captionTitle": "Town above the sea",
+        "credit": "Natalia Macheda · Google Images source",
+        "selectionId": "local-34",
+        "reusedFrom": "assets/img/switzerland-sicily/google_taormina_viewpoint_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "taormina-teatro-naxos-view.jpg",
+        "alt": "Giardini Naxos Bay appears between the ancient brick arches of Taormina’s Greek Theatre.",
+        "captionTitle": "Theatre arches",
+        "credit": "Stepan Dudycha · Unsplash License",
+        "selectionId": "local-29",
+        "reusedFrom": "assets/img/short-sicily/taormina-teatro-naxos-view.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_taormina_mazzaro_01.jpg",
+        "alt": "Isola Bella, Mazzarò and layered rocky headlands curve around clear Ionian water.",
+        "captionTitle": "Isola Bella panorama",
+        "credit": "Celebrated Experiences · Google Images source",
+        "selectionId": "local-31",
+        "reusedFrom": "assets/img/switzerland-sicily/google_taormina_mazzaro_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "isola-bella-bay-panorama.jpg",
+        "alt": "Green hills and Taormina’s buildings frame a turquoise swimming bay below the town.",
+        "captionTitle": "Mazzarò Bay",
+        "credit": "Lyle Wilkinson · Unsplash License",
+        "selectionId": "local-27",
+        "reusedFrom": "assets/img/short-sicily/isola-bella-bay-panorama.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_taormina_coast_01.jpg",
+        "alt": "Taormina’s coast sweeps toward Mount Etna beneath a wide blue sky.",
+        "captionTitle": "Coast and volcano",
+        "credit": "CountryClubuk · Google Images source",
+        "selectionId": "local-33",
+        "reusedFrom": "assets/img/switzerland-sicily/google_taormina_coast_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "img-73ca456f296e.jpg",
+        "alt": "A warm evening sky fades above Taormina’s cliffside gardens and the Ionian coast.",
+        "captionTitle": "Clifftop evening",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-48",
+        "reusedFrom": "assets/img/madeira-sicily/img-73ca456f296e.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_mazzaro_evening_01.jpg",
+        "alt": "The lights of Mazzarò Bay reflect in calm water beneath its rocky island.",
+        "captionTitle": "Mazzarò by night",
+        "credit": "Graham Heywood · Google Images source",
+        "selectionId": "local-41",
+        "reusedFrom": "assets/img/portugal-sicily/google_mazzaro_evening_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "shared_sicily_taormina_overlook_01.jpg",
+        "alt": "A pastel sunset stretches over Taormina’s twin coves, headlands and anchored boats.",
+        "captionTitle": "Last light over the coves",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-51",
+        "reusedFrom": "assets/img/madeira-sicily/shared_sicily_taormina_overlook_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
       }
     ],
     "sicily-cefalu": [
       {
         "file": "google_cefalu_sunset_panorama_01.jpg",
-        "alt": "Golden-hour light over Cefalù cathedral and terracotta rooftops above a turquoise sea, viewed from La Rocca",
+        "alt": "Golden-hour light illuminates Cefalù’s cathedral and red rooftops above a turquoise sea.",
         "captionTitle": "Cefalù at golden hour",
         "credit": "Citalia / Shutterstock · Google Images source",
         "sourcePage": "https://www.citalia.com/holidays/italy/sicily-and-the-aeolian-islands/cefalu/",
         "sourceImage": "https://www.citalia.com/-/media/Bynder/Citalia-destinations/Italy/Islands/Sicily-and-Aeolian-Islands/Cefalu/Cefalu-2024-La-Rocca-View-Shutterstock-2325897799-Hybris.jpg",
         "discoveredVia": "Google Images",
-        "discoveryQuery": "Cefalu professional landscape photos"
+        "discoveryQuery": "Cefalu professional landscape photos",
+        "selectionId": "local-05",
+        "reusedFrom": "assets/img/sicily/google_cefalu_sunset_panorama_01.jpg"
+      },
+      {
+        "file": "google_cefalu_larocca_beach_01.jpg",
+        "alt": "Low warm light catches Cefalù’s old waterfront houses beside the sand.",
+        "captionTitle": "Golden waterfront",
+        "credit": "Damiano Giuliano · Google Images source",
+        "selectionId": "local-35",
+        "reusedFrom": "assets/img/switzerland-sicily/google_cefalu_larocca_beach_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "google_cefalu_dusk_flickr_01.jpg",
+        "alt": "Pink evening clouds rise over La Rocca and Cefalù’s waterfront, reflected in the calm sea.",
+        "captionTitle": "La Rocca at dusk",
+        "credit": "Naval S · Google Images source",
+        "selectionId": "local-37",
+        "reusedFrom": "assets/img/switzerland-sicily/google_cefalu_dusk_flickr_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "img-40c53e200cb6.jpg",
+        "alt": "Cefalù’s tightly packed waterfront houses and cathedral stand above transparent turquoise water.",
+        "captionTitle": "Old harbor colors",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-43",
+        "reusedFrom": "assets/img/madeira-sicily/img-40c53e200cb6.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_cefalu_et_24.jpg",
+        "alt": "Cefalù’s old stone waterfront rises directly above rugged rocks and the still Tyrrhenian Sea.",
+        "captionTitle": "Houses above the rocks",
+        "credit": "Earth Trekkers · Source photograph",
+        "selectionId": "cefalu-et-24",
+        "sourcePage": "https://www.earthtrekkers.com/cefalu-sicily/",
+        "sourceImage": "https://www.earthtrekkers.com/wp-content/uploads/2025/02/Cefalu-Coast.jpg.optimal.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "6. Walk Along Cefalù’s Rocky Coastline"
+      },
+      {
+        "file": "google_cefalu_aerial_01.jpg",
+        "alt": "A boat-side panorama reveals Cefalù’s pale waterfront buildings and blue-green Tyrrhenian water.",
+        "captionTitle": "Cefalù from the water",
+        "credit": "Alpitour · Google Images source",
+        "selectionId": "local-36",
+        "reusedFrom": "assets/img/switzerland-sicily/google_cefalu_aerial_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_cefalu_et_23.jpg",
+        "alt": "A repeating line of carved columns and stone arches frames the green courtyard of Cefalù Cathedral.",
+        "captionTitle": "Cathedral cloister",
+        "credit": "Earth Trekkers · Source photograph",
+        "selectionId": "cefalu-et-23",
+        "sourcePage": "https://www.earthtrekkers.com/cefalu-sicily/",
+        "sourceImage": "https://www.earthtrekkers.com/wp-content/uploads/2025/02/Cefalu-Cathedral-Cloister.jpg.optimal.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "5. See the Byzantine Mosaics Inside the Cathedral of Cefalù"
+      },
+      {
+        "file": "shared_sicily_cefalu_oldtown_01.jpg",
+        "alt": "Cefalù’s stone pier leads toward waterfront houses and the dramatic face of La Rocca.",
+        "captionTitle": "The old stone pier",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-44",
+        "reusedFrom": "assets/img/madeira-sicily/shared_sicily_cefalu_oldtown_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_cefalu_et_22.jpg",
+        "alt": "Terracotta roofs and Piazza Duomo open toward the blue sea from Cefalù Cathedral’s tower.",
+        "captionTitle": "Above Piazza Duomo",
+        "credit": "Earth Trekkers · Source photograph",
+        "selectionId": "cefalu-et-22",
+        "sourcePage": "https://www.earthtrekkers.com/cefalu-sicily/",
+        "sourceImage": "https://www.earthtrekkers.com/wp-content/uploads/2025/02/Piazza-Garibaldi.jpg.optimal.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "5. See the Byzantine Mosaics Inside the Cathedral of Cefalù"
+      },
+      {
+        "file": "shared_sicily_cefalu_rocca_waterfront_01.jpg",
+        "alt": "Cefalù’s cathedral and pastel waterfront sit below the broad limestone face of La Rocca.",
+        "captionTitle": "Town beneath the rock",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-46",
+        "reusedFrom": "assets/img/madeira-sicily/shared_sicily_cefalu_rocca_waterfront_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_cefalu_adr_20.jpg",
+        "alt": "A stone harbor wall draws the eye toward Cefalù’s old-town facades and small beach.",
+        "captionTitle": "Along the harbor wall",
+        "credit": "Along Dusty Roads · Source photograph",
+        "selectionId": "cefalu-adr-20",
+        "sourcePage": "https://www.alongdustyroads.com/posts/things-to-do-in-cefalu-sicily",
+        "sourceImage": "https://images.squarespace-cdn.com/content/v1/53172b1be4b0cc8a5401db4a/e85b4053-fb6e-44bc-9d38-fd2f43c6b3bd/DSC09251.jpg?format=1500w",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Wander, Explore & Get Lost"
       },
       {
         "file": "google_cefalu_waterfront_01.jpg",
-        "alt": "Cefalù beach backed by medieval waterfront houses",
-        "captionTitle": "Waterfront Beach",
-        "credit": "Experto Italy &middot; Google Images source",
-        "reusedFrom": "src/_data/switzerland-sicily/main.json"
+        "alt": "Cefalù’s illuminated old waterfront reflects in still water beneath a moonlit blue-hour sky.",
+        "captionTitle": "Waterfront blue hour",
+        "credit": "Experto Italy · Google Images source",
+        "reusedFrom": "assets/img/sicily/google_cefalu_waterfront_01.jpg",
+        "selectionId": "local-06",
+        "discoveredVia": "Existing self-hosted trip gallery"
       }
     ],
     "sicily-rocca": [
       {
         "file": "google_cefalu_rocca_window_01.jpg",
-        "alt": "Ancient stone walls on La Rocca frame Cefalù cathedral, red rooftops and the turquoise Tyrrhenian Sea",
+        "alt": "Ancient stone walls frame Cefalù’s cathedral, red rooftops and turquoise sea from La Rocca.",
         "captionTitle": "La Rocca’s stone window",
         "credit": "Francesco Puglisi · Google Images source",
         "sourcePage": "https://www.juzaphoto.com/galleria.php?show=1&t=4822548",
         "sourceImage": "https://img4.r3-it.storage.cloud.it/uploads/4822548.jpg",
         "discoveredVia": "Google Images",
-        "discoveryQuery": "Cefalu professional landscape photos"
+        "discoveryQuery": "Cefalu professional landscape photos",
+        "selectionId": "local-07",
+        "reusedFrom": "assets/img/sicily/google_cefalu_rocca_window_01.jpg"
+      },
+      {
+        "file": "google_cefalu_rocca_trail_01.jpg",
+        "alt": "La Rocca’s ancient battlements frame Cefalù and the long curve of the Tyrrhenian coast.",
+        "captionTitle": "Castle-wall panorama",
+        "credit": "BucketListly Blog · Google Images source",
+        "selectionId": "local-38",
+        "reusedFrom": "assets/img/switzerland-sicily/google_cefalu_rocca_trail_01.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_rocca_fotografo.jpg",
+        "alt": "A cave-like rock opening on La Rocca frames Cefalù’s cathedral and old town far below.",
+        "captionTitle": "A natural rock frame",
+        "credit": "Il Fotografo · Source photograph",
+        "selectionId": "rocca-fotografo",
+        "sourcePage": "https://ilfotografo.it/portfolio/cefalu-dalla-rocca/",
+        "sourceImage": "https://ilfotografo.it/wp-content/uploads/2021/11/cefalu__dalla_rocca__1058081793-scaled.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
+      },
+      {
+        "file": "source_rocca_visit_09.jpg",
+        "alt": "A winding trail follows La Rocca’s rugged crest toward its ruined fortress above the sea.",
+        "captionTitle": "The fortress ridge",
+        "credit": "Visit Cefalù · Source photograph",
+        "selectionId": "rocca-visit-09",
+        "sourcePage": "https://www.visitcefalu.com/en/rocca-di-cefalu/",
+        "sourceImage": "https://www.visitcefalu.com/wp-content/uploads/2022/06/rocca-cefalu-2026-8.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "The lead through the Rocca di Cefalù: how to reach it, prices and timetable"
+      },
+      {
+        "file": "img-ca298a5ef143.jpg",
+        "alt": "Cefalù’s cathedral and red roofs spread below La Rocca beside the bright turquoise coast.",
+        "captionTitle": "Rooftops and turquoise sea",
+        "credit": "Existing self-hosted trip gallery",
+        "selectionId": "local-42",
+        "reusedFrom": "assets/img/madeira-sicily/img-ca298a5ef143.jpg",
+        "discoveredVia": "Existing self-hosted trip gallery"
+      },
+      {
+        "file": "source_rocca_visit_08.jpg",
+        "alt": "A steep sequence of stone stairs climbs beside La Rocca’s rock face and ancient walls.",
+        "captionTitle": "The ascent from above",
+        "credit": "Visit Cefalù · Source photograph",
+        "selectionId": "rocca-visit-08",
+        "sourcePage": "https://www.visitcefalu.com/en/rocca-di-cefalu/",
+        "sourceImage": "https://www.visitcefalu.com/wp-content/uploads/2022/06/rocca-cefalu-2026-7.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "The lead through the Rocca di Cefalù: how to reach it, prices and timetable"
+      },
+      {
+        "file": "source_cefalu_et_11.jpg",
+        "alt": "Cefalù Cathedral and the compact old town sit far below the cliff-edge viewpoint on La Rocca.",
+        "captionTitle": "Cathedral below the cliffs",
+        "credit": "Earth Trekkers · Source photograph",
+        "selectionId": "cefalu-et-11",
+        "sourcePage": "https://www.earthtrekkers.com/cefalu-sicily/",
+        "sourceImage": "https://www.earthtrekkers.com/wp-content/uploads/2025/02/Cefalu-Sicily.jpg.optimal.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "1. Hike La Rocca (Cefalù Rock) for the Best Views of Cefalù"
+      },
+      {
+        "file": "source_rocca_visit_03.jpg",
+        "alt": "The ancient stone walls of the Temple of Diana stand in a pine-framed clearing on La Rocca.",
+        "captionTitle": "Temple of Diana",
+        "credit": "Visit Cefalù · Source photograph",
+        "selectionId": "rocca-visit-03",
+        "sourcePage": "https://www.visitcefalu.com/en/rocca-di-cefalu/",
+        "sourceImage": "https://www.visitcefalu.com/wp-content/uploads/2022/06/rocca-cefalu-2026-2.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "The lead through the Rocca di Cefalù: how to reach it, prices and timetable"
+      },
+      {
+        "file": "source_rocca_mf_06.jpg",
+        "alt": "Golden grasses frame a high view of Cefalù’s cathedral and rooftops above the sea.",
+        "captionTitle": "Evening over the rooftops",
+        "credit": "Magnets on the Fridge · Source photograph",
+        "selectionId": "rocca-mf-06",
+        "sourcePage": "https://magnetsonthefridge.com/visiting-la-rocca-di-cefalu/",
+        "sourceImage": "https://magnetsonthefridge.com/wp-content/uploads/2019/10/view-from-la-rocca-di-cefalu-over-town-and-cathedral-1080x658.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Paths, ruins of the castle and archeological site"
+      },
+      {
+        "file": "source_rocca_incao.jpg",
+        "alt": "La Rocca and Cefalù’s cathedral glow above the old town at blue hour, viewed from outside the hill.",
+        "captionTitle": "The rock after sunset",
+        "credit": "Incao Holiday · Source photograph",
+        "selectionId": "rocca-incao",
+        "sourcePage": "https://www.incaoholiday.com/en/experiences-eng/excursion-at-sunset-to-the-rocca-di-cefalu/",
+        "sourceImage": "https://www.incaoholiday.com/wp-content/uploads/2020/12/rocca-1140x650.jpg",
+        "discoveredVia": "Bing Images / original source-page links",
+        "sourceLocator": "Photograph on source page"
       }
     ]
   },
   "htmlReplacements": {
-    "<style>#stays .pcard{min-width:0}</style>": "<style>#stays .pcard{min-width:0}@media(max-width:680px){.preview .trip-gallery-trigger{position:static;margin:12px 18px}}</style>",
-    "PIT–CTA Jun 12–20;": "PIT–CTA June 12–20, 2027;"
+    "<style>#stays .pcard{min-width:0}@media(max-width:680px){.preview .trip-gallery-trigger{position:static;margin:12px 18px}}</style>": "<style>#stays .pcard{min-width:0}@media(max-width:680px){.preview .trip-gallery-trigger{position:static;margin:12px 18px}}@media(min-width:821px){.preview .pvcar .track{position:absolute;inset:0;height:100%!important}.preview .pvcar figure,.preview .pvcar img{height:100%!important;min-height:0}.preview .pvcar img{object-fit:cover}}</style>"
   }
 }
