@@ -15,8 +15,8 @@ test('readiness renders the route and wildfire facts rather than the first fact'
  env.addFilter('moneyK',v=>'$'+v/1000+'k');
  const $=load(env.render('itinerary/readiness.njk',{trip,verificationLog:{events:[]}}));
  const route=$('.evidence-summary-grid article').eq(1);
- assert.equal(route.find('strong').text(),'Current Proxy');
- assert.match(route.text(),/Low confidence/);
+ assert.equal(route.find('strong').text(),'Confirmed');
+ assert.match(route.text(),/High confidence/);
  const fire=$('.evidence-summary-grid article').last().text();
  assert.match(fire,/Moderate/);assert.match(fire,/5–10%/);
 });

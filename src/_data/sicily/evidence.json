@@ -6,7 +6,7 @@
   "axes": {
     "budget": {
       "score": 1,
-      "rationale": "Cash $12,260–$16,770; high end exceeds $15k. Unquoted airfare, lodging and rental limit confidence.",
+      "rationale": "Cash $12,260–$16,770; high end exceeds $15k. United Economy airfare was observed at $6,097.66 for four, but lodging and rental remain unquoted, so the planning band and low overall budget confidence are retained.",
       "evidence": [
         "budget-band"
       ],
@@ -62,12 +62,12 @@
     },
     "risk": {
       "score": 3,
-      "rationale": "Exact protected open-jaw flight and one-way rental unquoted. Etna access remains conditional; two flex days protect activities.",
+      "rationale": "Exact four-person flights reached United checkout, but the 64-minute Montréal connection is tight, early PMO rental return remains unquoted, and Etna access is conditional. Two flex days protect activities; final fare and ticket rules still require review.",
       "evidence": [
         "route-readiness",
         "etna-conditions"
       ],
-      "confidence": "low"
+      "confidence": "medium"
     },
     "nights": {
       "score": 5,
@@ -283,7 +283,7 @@
         "currentSupplierQuote": false,
         "lineItems": [
           {
-            "label": "International multi-city flights · unquoted family allowance",
+            "label": "International multi-city flights · allowance; current Economy quote $6,097.66",
             "lowUsd": 6200,
             "highUsd": 8200
           },
@@ -327,7 +327,9 @@
             "lowUsd": 600,
             "highUsd": 900
           }
-        ]
+        ],
+        "observedFlightQuoteUsd": 6097.66,
+        "observedFlightQuoteDate": "2026-11-08"
       },
       "sourceRefs": [
         "internal-itinerary"
@@ -403,7 +405,9 @@
         "internalFlights": 0,
         "mandatoryFerries": 0,
         "longestMandatoryDriveHours": 3.5,
-        "oneWayRentalQuote": false
+        "oneWayRentalQuote": false,
+        "plannedDrivingHours": 15.5,
+        "drivingBasis": "Six driving allowances are grouped into the single cumulative rental-car timeline block in #getting-around, with individual airport/base drives detailed below; not measured journeys or exact-lodging routes."
       },
       "sourceRefs": [
         "internal-itinerary"
@@ -450,30 +454,37 @@
       "id": "route-readiness",
       "category": "route",
       "value": {
-        "status": "current-proxy",
+        "status": "confirmed",
         "singleTicket": true,
         "singleTicketIsBookingRequirement": true,
         "maxConnections": 1,
-        "exact2027FlightsVerified": false,
-        "fourSeatsVerified": false,
+        "exact2027FlightsVerified": true,
+        "fourSeatsVerified": true,
+        "singleAirlineCheckoutVerified": true,
         "protectionVerified": false,
-        "outbound": "PIT → CTA June 10",
-        "return": "PMO → PIT June 23",
-        "exactFamilyFare": "unknown"
+        "protectionNote": "Both directions and all four segments are offered together by United. Final fare rules and ticket conditions must still be checked; no ticket has been issued.",
+        "outbound": "AC 8586 PIT–YUL June 10 3:25–5:11 PM; AC 932 YUL 6:15 PM–CTA June 11 8:55 AM; 1h04 connection",
+        "return": "UA 736 PMO–EWR June 23 9:45 AM–2:05 PM; UA 3591 EWR–PIT 4:10–5:44 PM; 2h05 connection",
+        "exactFamilyFareUsd": 6097.66,
+        "fareFamily": "Economy",
+        "baggage": "First checked bag per person included",
+        "ticketed": false,
+        "tightOutboundConnectionMinutes": 64,
+        "homeArrivalDate": "2027-06-23"
       },
       "sourceRefs": [
-        "internal-itinerary",
-        "sicily-current-flight-listing"
+        "sicily-google-flights-2026-11-08",
+        "sicily-united-checkout-2026-11-08"
       ],
       "sourceLocators": {
-        "internal-itinerary": "Expedia PIT–CTA current $727–$752 Nov/Dec 2026 one-adult round trips; not canonical June open-jaw pricing. Exact multi-city route remains unquoted.",
-        "sicily-current-flight-listing": "Expedia PIT–CTA current $727–$752 Nov/Dec 2026 one-adult round trips; not canonical June open-jaw pricing. Exact multi-city route remains unquoted."
+        "sicily-google-flights-2026-11-08": "Exact-date search PIT–CTA June 10 / PMO–PIT June 23 for three adult fares and one child; expanded flight numbers, local times and connections. Selected United Economy $6,098; Basic $5,138; refundable $6,898. Retained in sicily/flightAudit.json.",
+        "sicily-united-checkout-2026-11-08": "United traveler-information checkout after the Economy handoff: both directions and four segments together, four travelers, $5,660 base fare + $437.66 taxes = $6,097.66. General-traveler baggage table: first bag $0 for each direction. No names, birth dates or payment entered. Cropped price capture in docs/research/sicily-united-economy-2026-11-08.jpg."
       },
-      "confidence": "low",
-      "proxyStatus": "current-proxy",
-      "claimType": "proxy",
+      "confidence": "high",
+      "proxyStatus": "confirmed",
+      "claimType": "observed",
       "verifiedAt": "2026-11-08",
-      "expiresAt": "2026-12-08"
+      "expiresAt": "2026-11-09"
     },
     {
       "id": "cefalu-admission",
@@ -498,8 +509,8 @@
     }
   ],
   "metrics": {
-    "airHours": null,
-    "groundHours": 12,
+    "airHours": 22.333333333333332,
+    "groundHours": 15.5,
     "timeZones": 6,
     "baseMoves": 2,
     "longestTransferHours": 3.5,
@@ -512,7 +523,7 @@
     "lodgingComfort": {
       "airConditioning": "required in June Sicily; unknown until property selection",
       "kitchen": "required at the Ortigia base; unknown until property selection",
-      "laundry": "preferred at one of the two bases",
+      "laundry": "preferred at one of the three bases",
       "realBeds": "required but unknown until property selection"
     },
     "waterSafety": "Ionian swimming is calm-morning friendly, but pebble entries need water shoes and the sea decks require basic swim confidence; the Naxos pool is the controlled fallback.",
@@ -521,20 +532,24 @@
     "childActivityNotes": {
       "age13": "the volcano jeep stage, sea-cave boats, theatre ruins and independent granita runs give real teen material",
       "age8": "short town mornings, daily swim or pool time, the cable car and a cold-river canyon keep the energy managed"
-    }
+    },
+    "connectionHours": 3.15,
+    "airElapsedHours": 25.483333333333334
   },
-  "evidenceBasis": "Retained dated Sicily climatology, fire and attraction proxies; municipal Cefalù access and two official menus checked Nov 8. Exact June multi-city flights, rooms and rental unknown. Self-hosted repository photography reused after contact-sheet review.",
+  "evidenceBasis": "Exact June 10 / June 23 four-passenger flights and $6,097.66 United Economy checkout verified November 8, 2026; quote not held. Retained dated Sicily climate, fire and attraction evidence; stays and rental remain unquoted. See flightAudit.json for clocks, baggage, caveats and alternative-route rejection.",
   "confidenceBasis": [
     "official Neapolis and Teatro Antico tariff pages",
     "operator Funivia dell'Etna pricing effective March 2026",
-    "Delta newsroom route confirmation for the JFK–Catania nonstop through 2026",
     "June climatology and 72–74°F Ionian sea-temperature references",
-    "canonical two-base/one-car derivation; no exact June 2027 quotes yet"
+    "United four-traveler Economy checkout and Google exact-date flight details observed November 8; no booking or payment submitted."
   ],
   "flightAudit": {
-    "reviewedAt": "2026-09-11",
-    "status": "current-proxy",
-    "headline": "Route proxy only; previous fare is historical"
+    "reviewedAt": "2026-11-08",
+    "expiresAt": "2026-11-09",
+    "status": "confirmed",
+    "headline": "Exact June flights verified: $6,097.66 Economy for four; tight Montréal connection",
+    "sourcePath": "src/_data/sicily/flightAudit.json",
+    "note": "One United airline checkout observed, not ticketed. Reprice before paying; no conditional credit-card discount is applied."
   },
   "archivedExpiredFacts": [
     {

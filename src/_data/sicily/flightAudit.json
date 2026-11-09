@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "slug": "sicily",
+  "verifiedAt": "2026-11-08",
+  "expiresAt": "2026-11-09",
+  "status": "confirmed",
+  "scope": "An exact-date, four-passenger multi-city itinerary reached United's traveler-information checkout. No traveler information was entered, no payment was submitted, and no ticket or fare hold was created.",
+  "passengers": {
+    "total": 4,
+    "adultFares": 3,
+    "childFares": 1,
+    "note": "Google Flights search used three adult fares and one child fare for the two adults and children 13/8. United displayed three adult-priced travelers and one child. Birth dates and passenger eligibility still require verification when booking."
+  },
+  "searchUrl": "https://www.google.com/travel/flights/search?tfs=CBwQAhoeEgoyMDI3LTA2LTEwagcIARIDUElUcgcIARIDQ1RBGh4SCjIwMjctMDYtMjNqBwgBEgNQTU9yBwgBEgNQSVRAAUABQAFAAkgBcAGCAQsI____________AZgBAw&hl=en&curr=USD",
+  "selectedUrl": "https://www.google.com/travel/flights/booking?tfs=CBwQAhphEgoyMDI3LTA2LTEwIiAKA1BJVBIKMjAyNy0wNi0xMBoDWVVMKgJBQzIEODU4NiIfCgNZVUwSCjIwMjctMDYtMTAaA0NUQSoCQUMyAzkzMmoHCAESA1BJVHIHCAESA0NUQRphEgoyMDI3LTA2LTIzIh8KA1BNTxIKMjAyNy0wNi0yMxoDRVdSKgJVQTIDNzM2IiAKA0VXUhIKMjAyNy0wNi0yMxoDUElUKgJVQTIEMzU5MWoHCAESA1BNT3IHCAESA1BJVEABQAFAAUACSAFwAYIBCwj___________8BmAED&hl=en&curr=USD",
+  "seller": "United Airlines",
+  "singleAirlineCheckoutVerified": true,
+  "ticketed": false,
+  "outbound": {
+    "departureDate": "2027-06-10",
+    "arrivalDate": "2027-06-11",
+    "route": ["PIT", "YUL", "CTA"],
+    "elapsedMinutes": 690,
+    "connectionMinutes": 64,
+    "airportChange": false,
+    "flights": [
+      {
+        "number": "AC 8586",
+        "operator": "Air Canada Express - Jazz",
+        "from": "PIT",
+        "to": "YUL",
+        "departsAt": "2027-06-10T15:25:00-04:00",
+        "arrivesAt": "2027-06-10T17:11:00-04:00",
+        "durationMinutes": 106
+      },
+      {
+        "number": "AC 932",
+        "operator": "Air Canada",
+        "from": "YUL",
+        "to": "CTA",
+        "departsAt": "2027-06-10T18:15:00-04:00",
+        "arrivesAt": "2027-06-11T08:55:00+02:00",
+        "durationMinutes": 520
+      }
+    ],
+    "caution": "The 64-minute Montreal connection is tight for a family. A saleable connection is not a guarantee against missed flights; compare a longer protected connection before paying."
+  },
+  "inbound": {
+    "departureDate": "2027-06-23",
+    "arrivalDate": "2027-06-23",
+    "route": ["PMO", "EWR", "PIT"],
+    "elapsedMinutes": 839,
+    "connectionMinutes": 125,
+    "airportChange": false,
+    "flights": [
+      {
+        "number": "UA 736",
+        "operator": "United Airlines",
+        "from": "PMO",
+        "to": "EWR",
+        "departsAt": "2027-06-23T09:45:00+02:00",
+        "arrivesAt": "2027-06-23T14:05:00-04:00",
+        "durationMinutes": 620
+      },
+      {
+        "number": "UA 3591",
+        "operator": "Republic Airways dba United Express",
+        "from": "EWR",
+        "to": "PIT",
+        "departsAt": "2027-06-23T16:10:00-04:00",
+        "arrivesAt": "2027-06-23T17:44:00-04:00",
+        "durationMinutes": 94
+      }
+    ],
+    "caution": "The Newark connection requires US entry formalities and checked-bag reclaim/recheck. The 9:45 AM Palermo departure means a very early drive from Cefalù."
+  },
+  "fare": {
+    "currency": "USD",
+    "cabin": "Economy",
+    "totalUsd": 6097.66,
+    "baseFareUsd": 5660,
+    "taxesAndFeesUsd": 437.66,
+    "verifiedAtAirlineCheckout": true,
+    "carryOnPerPerson": 1,
+    "firstCheckedBagPerPersonIncluded": true,
+    "checkedBagWeightKg": 23,
+    "standardSeatSelectionIncluded": true,
+    "refundable": false,
+    "changes": "Google's airline-offer panel displayed no change fee, with any fare difference payable. Recheck the airline fare rules for every operating carrier.",
+    "excludedCredit": "United displayed a conditional $500 statement-credit promotion. No credit, miles, status benefit, or card discount is deducted from this cash quote."
+  },
+  "otherDisplayedFares": [
+    {
+      "name": "Basic Economy or similar",
+      "totalUsd": 5138,
+      "verification": "Google Flights airline-offer panel; rounded display, not separately carried through United checkout",
+      "caution": "Seat selection costs extra and the displayed first-checked-bag charge is $180 per person for the entire trip. Do not compare this headline fare directly with Economy including bags and standard seats."
+    },
+    {
+      "name": "Economy Fully Refundable or similar",
+      "totalUsd": 6898,
+      "verification": "Google Flights airline-offer panel; rounded display, not separately carried through United checkout"
+    }
+  ],
+  "rejectedOutbound": {
+    "carrier": "British Airways / BA Euroflyer",
+    "displayedEntireTripUsd": 5783,
+    "verification": "Exact-date multi-city outbound result, not a completed selection of both directions or airline checkout",
+    "flights": ["BA 170 PIT–LHR 9:10 PM June 10–9:35 AM June 11", "BA 2612 LGW–CTA 1:45 PM–5:55 PM June 11"],
+    "elapsedMinutes": 885,
+    "airportChange": "LHR to LGW",
+    "connectionMinutes": 250,
+    "reason": "A four-hour-ten-minute London connection includes a cross-city airport transfer. It loses most of arrival day and is not the convenient one-stop alternative its headline suggests."
+  },
+  "sources": [
+    "Google Flights exact-date search, expanded flight details, and United fare-family booking options",
+    "United traveler-information checkout: both flight directions together, four travelers, $5,660 fare plus $437.66 taxes, and general-traveler first-bag charge $0 in both directions"
+  ],
+  "checkoutEvidenceImage": "docs/research/sicily-united-economy-2026-11-08.jpg"
+}
